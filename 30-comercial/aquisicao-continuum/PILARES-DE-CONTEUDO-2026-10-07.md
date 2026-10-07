@@ -22,7 +22,17 @@ O conteúdo do perfil gira em **quatro pilares**, nesta ordem de rodízio:
 **O que não muda:**
 - a lista pública das cinco perguntas (§0-quater) continua sendo a da DM, da call e do presencial;
 - a ordem de **construção** continua ICP → promessa → oferta → narrativa (§0-bis). A ordem acima é de **rodízio de conteúdo**, não de método;
-- a ação única de toda peça continua **ORDEM na direct**, com a entrega das perguntas em sim ou não.
+- a ação única de toda peça é **a conversa na direct**.
+
+### 1-bis. 🔴 CTA da série: direct sem palavra-chave (decisão do Victor, 07/10/2026)
+
+**Nenhuma peça de pilar usa "manda ORDEM" ou "comenta ORDEM".** O CTA pede, na direct, **o resultado do teste que a própria peça ensinou**: o número, a frase, a contagem de sins.
+
+**Por quê:** palavra-chave abre a conversa com um gatilho de automação, e a resposta vira entrega de material. O resultado do teste abre a conversa com **um dado da operação da pessoa**, e a primeira resposta nossa já é leitura, não envio. É a mesma lógica do canal que converte para nós: conversa, não funil.
+
+**Formato fixo do CTA:** *me manda [o resultado do teste] na direct* + *o que eu devolvo*. A resposta nossa é uma pergunta que puxa o pilar seguinte, nunca um material.
+
+**Fronteira:** as peças DR com ORDEM (`PECA-DR-01`, `PECA-DR-02`) e a `LINHA-EDITORIAL-30-DIAS` ficam como estão, porque são registro do que foi gravado. Peça nova de pilar segue esta seção.
 
 ---
 
@@ -53,8 +63,8 @@ Toda peça de pilar obedece a três regras. Peça que falha em uma volta.
 **Reels curto (6 a 8 segundos) com CTA na tela e o conteúdo útil inteiro na legenda.**
 
 - **Vídeo:** close da mão do Victor escrevendo no papel o número ou a frase da cena, e riscando. O vídeo é o próprio exercício, e a mão no papel vira a identidade visual da série.
-- **Tela:** tarja preta com a cena (conflito), uma segunda linha com a virada, e no fim *"o teste tá na legenda ↓"*. A seta é microcomando, não segunda ação.
-- **Legenda:** cena real → o que estava errado de verdade → teste em sim ou não → critério de fechado → CTA ORDEM.
+- **Tela:** tarja preta com a cena (conflito), uma segunda linha com a virada, e no fim o CTA para a direct, pedindo o resultado do teste da legenda.
+- **Legenda:** cena real → o que estava errado de verdade → teste em sim ou não → critério de fechado → CTA para a direct com o resultado do teste (§1-bis).
 - **Música:** instrumental em alta, sem letra.
 
 ---
@@ -70,7 +80,7 @@ Toda peça de pilar obedece a três regras. Peça que falha em uma volta.
 | **Pivô** | você acha que vende pouco por falta de alcance **E** a audiência já é grande. **MAS** ela foi formada pelo produto antigo, de outro preço. **POR ISSO** tráfego traria mais gente que não compra o produto novo |
 | **Procedência** | cena: `METODO-QUATRO-PILARES-2026-09-12.md` §Pilar 1, "A cena de campo" · faixa de preço: `NARRATIVA-CENTRAL-CONTINUUM-2026-09-07.md` §4, camada 1 · critério de fechado: `METODO-QUATRO-PILARES` §0-quater, pergunta 1 |
 | **Léxico do ICP** | 🟡 não existe arquivo de léxico do nosso ICP em `30-comercial/`. Não bloqueia esta peça (sentimento não é identificação), mas bloqueia qualquer peça de identificação até existir |
-| **Ação única** | ORDEM na direct. A entrega da DM já está escrita em `PECA-DR-01-TRES-CLIENTES-2026-09-20.md` §5-bis |
+| **Ação única** | mandar na direct o número que deu na divisão (§1-bis). A resposta está logo abaixo da legenda |
 
 **Gravação (7 segundos, vertical 9:16)**
 
@@ -89,7 +99,7 @@ Uma tomada só, sem corte. Caneta preta grossa, para o número ler no celular. O
 |---|---|
 | 0s | **[tarja preta] Quase vinte mil seguidores. E vendia pouco.** |
 | 2s | Ela achou que faltava tráfego. Faltava outra coisa. |
-| 5s | o teste tá na legenda ↓ |
+| 5s | faz o teste da legenda e me manda o número na direct |
 
 **Capa (frame do grid):** o frame final, com o R$ 200 circulado, e a tarja *"Quase vinte mil seguidores. E vendia pouco."*
 
@@ -117,8 +127,15 @@ aí a pergunta deixa de ser como atrair mais gente. passa a ser quem compra o se
 
 é a primeira pergunta da ordem: pra quem. ela fecha quando cabe numa frase, sem "depende", dizendo quem é e o que já tentou.
 
-quer saber qual pilar está aberto na tua operação? me manda ORDEM na direct que eu te mando as perguntas em sim ou não.
+me manda na direct o número que deu na tua divisão. eu te devolvo a pergunta que vem depois dele.
 ```
+
+**Resposta na direct, para quem mandar o número**
+```
+recebi. agora me diz uma coisa: quem comprou de você o produto mais caro até hoje, e o que essa pessoa tinha tentado antes de chegar em você?
+```
+
+*A resposta não julga o número e não usa limiar: puxa a pergunta pra quem com o caso real da pessoa. Daí a conversa segue pelo diagnóstico.*
 
 **O que mudou do rascunho:** a primeira linha da legenda passou a carregar a cena inteira, porque é a única que aparece antes do "mais". O passo 3 deixou de usar um limiar inventado ("cinco, dez vezes") e passou a ser uma divisão, ancorada no único número real da cena (dez).
 
@@ -131,7 +148,7 @@ quer saber qual pilar está aberto na tua operação? me manda ORDEM na direct q
 **Tela**
 > **[tarja] Uma frase obrigou a reescrever a página inteira.**
 > A promessa pedia um desejo que o cliente não tinha.
-> o teste tá na legenda ↓
+> faz o teste da legenda e me manda o resultado na direct
 
 **Legenda**
 ```
@@ -152,7 +169,7 @@ e decide a promessa antes de montar a oferta. é a promessa que diz o que entra 
 
 é a segunda pergunta da ordem: pra quê.
 
-quer saber qual pilar está aberto na tua operação? me manda ORDEM na direct que eu te mando as perguntas em sim ou não.
+me manda na direct a tua promessa do jeito que você fala hoje. eu te digo qual desejo ela está pressupondo.
 ```
 
 ### P-MEC-01 · "Dezesseis vendas com uma coisa sem nome"
@@ -164,7 +181,7 @@ quer saber qual pilar está aberto na tua operação? me manda ORDEM na direct q
 **Tela**
 > **[tarja] Dezesseis vendas com uma coisa sem nome.**
 > Por isso ela não podia entrar em nenhum anúncio.
-> o teste tá na legenda ↓
+> faz o teste da legenda e me manda o resultado na direct
 
 **Legenda**
 ```
@@ -186,7 +203,7 @@ onde procurar: no que mais converte hoje. quase sempre ele já existe e só falt
 
 é a pergunta por que em você, e não no outro.
 
-quer saber qual pilar está aberto na tua operação? me manda ORDEM na direct que eu te mando as perguntas em sim ou não.
+me manda na direct a frase que você escreveu no passo 1. eu te digo se ela é mecanismo ou adjetivo.
 ```
 
 ### P-OFE-01 · "A mesma mentoria, quatro preços em trinta dias"
@@ -198,7 +215,7 @@ quer saber qual pilar está aberto na tua operação? me manda ORDEM na direct q
 **Tela**
 > **[tarja] A mesma mentoria. Quatro preços em trinta dias.**
 > O desconto vendeu duas vagas e ensinou a base a esperar.
-> o teste tá na legenda ↓
+> faz o teste da legenda e me manda o resultado na direct
 
 **Legenda**
 ```
@@ -221,7 +238,7 @@ oferta fechada tem um preço por degrau, o mesmo no post, na call e no whatsapp.
 
 são as perguntas o quê e por quanto.
 
-quer saber qual pilar está aberto na tua operação? me manda ORDEM na direct que eu te mando as perguntas em sim ou não.
+quantos sins deram? me manda na direct o número e qual foi a pergunta que mais te incomodou.
 ```
 
 ---
