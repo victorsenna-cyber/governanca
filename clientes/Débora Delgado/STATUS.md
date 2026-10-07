@@ -18,6 +18,7 @@
 | **Carga real** | **< 8h/mês** de operação (o repo dizia ~40h — corrigido 03/09) | `STATUS.md` (Governança), 03/09 |
 | **Frente ativa** | ⭐ **funil de resposta direta do curso de Eneagrama para líderes** — onda 1 liderança; onda 2 carreira (curso *Reconhecer a sua Maestria*) | `ESTRUTURA-ESCALADA-2026-09-22.md` |
 | **Funis** | testar os dois: **A** anúncio → quiz → VSL · **B** anúncio → VSL — mesma VSL, abertura muda | `DECISOES.md` 25/09 |
+| 🔴 **Anúncio dela (07/10)** | **subiu sozinha** um post impulsionado → consultoria gratuita · 318 visitas a R$ 0,13 · **0 conversão** · decisão: **pausar**; tráfego frio vai para **sessão paga** (regra de 25/08); próximo anúncio em formato story-texto, fase 1 bloqueada por preço, horários, checkout e agenda | `REGISTRO-WHATSAPP-2026-10-07.md` · `03 - tráfego pago/criativos/story-texto-2026-10-07/` |
 | **Mídia** | ⚠️ **capital para 2–3 tentativas não reservado** — bloqueia o primeiro real de mídia, não a escrita | `METODO-FUNIL-DE-VSL.md` §2.2 |
 
 ---
@@ -72,6 +73,7 @@ Não interromper o fluxo dela, direcionar (princípio 7) · nenhuma promessa aci
 
 | Passo | Dono |
 |---|---|
+| ⭐ **enviar a mensagem do `REGISTRO-WHATSAPP-2026-10-07.md` §4 (pausar + 3 fatos) e decidir verba** | **Victor** |
 | pedir a VSL → rodar G1 e aprovar o apelido | **Victor** |
 | enviar o pedido único da §4 junto com a estrutura | Victor |
 | dizer o número da renovação | Victor |

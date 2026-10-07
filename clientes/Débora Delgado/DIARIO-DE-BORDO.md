@@ -3,6 +3,13 @@
 > **Protocolo de contexto entre sessões de terminal.** Toda sessão ABRE lendo: `CLAUDE.md` → `DIRETRIZES-EXECUCAO-LANCAMENTO.md` (sua tarefa) → as 3 últimas entradas daqui → `03 - tráfego pago/LOG-DECISOES.md` (se tráfego). Toda sessão FECHA registrando entrada abaixo. **Sessão sem entrada no diário = trabalho perdido.**
 > A cada passo relevante DENTRO da sessão (arquivo criado, decisão aplicada, bloqueio), registrar na hora, não no final (terminal cai, contexto não).
 
+### 2026-10-07 · Opus (Claude Code, CEO) · 🔴 **ela subiu anúncio sozinha; anúncios story-texto escritos**
+
+- **Fato:** post *"Você é muito competente."* impulsionado por ela → consultoria gratuita · 318 visitas a R$ 0,13 · 0 conversão. Registro em 4 camadas: `REGISTRO-WHATSAPP-2026-10-07.md`.
+- **Leitura:** destino sem depósito (contrariava a regra de 25/08: paga para tráfego frio) + objetivo de tráfego + Advantage+ = clique barato e sem intenção. Erro nosso: Victor elogiou o custo por visita.
+- **Feito:** `03 - tráfego pago/criativos/story-texto-2026-10-07/` — leitura dos 4 modelos enviados, decisão por fase (A → sessão paga já · B → VSL · C → quiz), 3 anúncios com fonte por linha, prévias PNG, gate. Biblioteca de Anúncios: o modelo Rucci roda há 7 dias (formato em teste, não escalado — declarado).
+- **Bloqueia:** preço e horários da sessão, checkout, agenda (dela) · verba (Victor).
+
 ### 2026-10-02 (noite) · Opus (Cowork, CEO) · ⭐ **produção da VSL por agentes montada; VSL ainda não iniciada**
 
 - Criados: método `100-métodos/METODO-PRODUCAO-VSL-POR-AGENTES.md` · 13 agentes (`.claude/agents/vsl-*.md`, oficina em `900-…/agentes-vsl/`) · **briefing da conta** `12 - Direct Response/vsl/BRIEFING-VSL.md` (consolida as decisões até 02/10, a estrutura R1 com as trocas de 01/10, a pilha done-for-you e os vetos de linguagem).
