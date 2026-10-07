@@ -1,0 +1,1194 @@
+{
+  "date": "2026-09-21T16:41:13.878Z",
+  "failures": [],
+  "results": [
+    {
+      "key": "home",
+      "lang": 0,
+      "skipFocused": true,
+      "nojsText": 4609,
+      "menu": true,
+      "equivalent": [
+        "/",
+        "/en/",
+        "/es/"
+      ],
+      "faqWorks": null,
+      "focus": {
+        "outline": "solid",
+        "width": "3px"
+      },
+      "languageNavigated": true,
+      "widths": [
+        {
+          "width": 390,
+          "overflow": false
+        },
+        {
+          "width": 768,
+          "overflow": false
+        },
+        {
+          "width": 1440,
+          "overflow": false
+        }
+      ],
+      "reduced": {
+        "lenis": false,
+        "triggers": 0,
+        "depth": "static"
+      },
+      "zoomOverflow": false,
+      "errors": [],
+      "external": [
+        "https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js",
+        "https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js",
+        "https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"
+      ]
+    },
+    {
+      "key": "templo",
+      "lang": 0,
+      "skipFocused": true,
+      "nojsText": 1629,
+      "menu": true,
+      "equivalent": [
+        "/o-templo/",
+        "/en/the-temple/",
+        "/es/el-templo/"
+      ],
+      "faqWorks": null,
+      "focus": {
+        "outline": "solid",
+        "width": "3px"
+      },
+      "languageNavigated": true,
+      "widths": [
+        {
+          "width": 390,
+          "overflow": false
+        },
+        {
+          "width": 768,
+          "overflow": false
+        },
+        {
+          "width": 1440,
+          "overflow": false
+        }
+      ],
+      "reduced": {
+        "lenis": false,
+        "triggers": 0,
+        "depth": null
+      },
+      "zoomOverflow": false,
+      "errors": [],
+      "external": [
+        "https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js",
+        "https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js",
+        "https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"
+      ]
+    },
+    {
+      "key": "metodo",
+      "lang": 0,
+      "skipFocused": true,
+      "nojsText": 2044,
+      "menu": true,
+      "equivalent": [
+        "/metodo/",
+        "/en/method/",
+        "/es/metodo/"
+      ],
+      "faqWorks": null,
+      "focus": {
+        "outline": "solid",
+        "width": "3px"
+      },
+      "languageNavigated": true,
+      "widths": [
+        {
+          "width": 390,
+          "overflow": false
+        },
+        {
+          "width": 768,
+          "overflow": false
+        },
+        {
+          "width": 1440,
+          "overflow": false
+        }
+      ],
+      "reduced": {
+        "lenis": false,
+        "triggers": 0,
+        "depth": null
+      },
+      "zoomOverflow": false,
+      "errors": [],
+      "external": [
+        "https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js",
+        "https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js",
+        "https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"
+      ]
+    },
+    {
+      "key": "caminhos",
+      "lang": 0,
+      "skipFocused": true,
+      "nojsText": 940,
+      "menu": true,
+      "equivalent": [
+        "/caminhos/",
+        "/en/paths/",
+        "/es/caminos/"
+      ],
+      "faqWorks": null,
+      "focus": {
+        "outline": "solid",
+        "width": "3px"
+      },
+      "languageNavigated": true,
+      "widths": [
+        {
+          "width": 390,
+          "overflow": false
+        },
+        {
+          "width": 768,
+          "overflow": false
+        },
+        {
+          "width": 1440,
+          "overflow": false
+        }
+      ],
+      "reduced": {
+        "lenis": false,
+        "triggers": 0,
+        "depth": null
+      },
+      "zoomOverflow": false,
+      "errors": [],
+      "external": [
+        "https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js",
+        "https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js",
+        "https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"
+      ]
+    },
+    {
+      "key": "mentoria",
+      "lang": 0,
+      "skipFocused": true,
+      "nojsText": 6227,
+      "menu": true,
+      "equivalent": [
+        "/mentoria/",
+        "/en/mentorship/",
+        "/es/mentoria/"
+      ],
+      "faqWorks": true,
+      "focus": {
+        "outline": "solid",
+        "width": "3px"
+      },
+      "languageNavigated": true,
+      "widths": [
+        {
+          "width": 390,
+          "overflow": false
+        },
+        {
+          "width": 768,
+          "overflow": false
+        },
+        {
+          "width": 1440,
+          "overflow": false
+        }
+      ],
+      "reduced": {
+        "lenis": false,
+        "triggers": 0,
+        "depth": null
+      },
+      "zoomOverflow": false,
+      "errors": [],
+      "external": [
+        "https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js",
+        "https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js",
+        "https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"
+      ]
+    },
+    {
+      "key": "visao",
+      "lang": 0,
+      "skipFocused": true,
+      "nojsText": 4529,
+      "menu": true,
+      "equivalent": [
+        "/visao-uterina/",
+        "/en/uterine-vision/",
+        "/es/vision-uterina/"
+      ],
+      "faqWorks": true,
+      "focus": {
+        "outline": "solid",
+        "width": "3px"
+      },
+      "languageNavigated": true,
+      "widths": [
+        {
+          "width": 390,
+          "overflow": false
+        },
+        {
+          "width": 768,
+          "overflow": false
+        },
+        {
+          "width": 1440,
+          "overflow": false
+        }
+      ],
+      "reduced": {
+        "lenis": false,
+        "triggers": 0,
+        "depth": null
+      },
+      "zoomOverflow": false,
+      "errors": [],
+      "external": [
+        "https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js",
+        "https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js",
+        "https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"
+      ]
+    },
+    {
+      "key": "curso",
+      "lang": 0,
+      "skipFocused": true,
+      "nojsText": 2767,
+      "menu": true,
+      "equivalent": [
+        "/curso/",
+        "/en/course/",
+        "/es/curso/"
+      ],
+      "faqWorks": true,
+      "focus": {
+        "outline": "solid",
+        "width": "3px"
+      },
+      "languageNavigated": true,
+      "widths": [
+        {
+          "width": 390,
+          "overflow": false
+        },
+        {
+          "width": 768,
+          "overflow": false
+        },
+        {
+          "width": 1440,
+          "overflow": false
+        }
+      ],
+      "reduced": {
+        "lenis": false,
+        "triggers": 0,
+        "depth": null
+      },
+      "zoomOverflow": false,
+      "errors": [],
+      "external": [
+        "https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js",
+        "https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js",
+        "https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"
+      ]
+    },
+    {
+      "key": "arte",
+      "lang": 0,
+      "skipFocused": true,
+      "nojsText": 132,
+      "menu": true,
+      "equivalent": [
+        "/arte/",
+        "/en/art/",
+        "/es/arte/"
+      ],
+      "faqWorks": null,
+      "focus": {
+        "outline": "solid",
+        "width": "3px"
+      },
+      "languageNavigated": true,
+      "widths": [
+        {
+          "width": 390,
+          "overflow": false
+        },
+        {
+          "width": 768,
+          "overflow": false
+        },
+        {
+          "width": 1440,
+          "overflow": false
+        }
+      ],
+      "reduced": {
+        "lenis": false,
+        "triggers": 0,
+        "depth": null
+      },
+      "zoomOverflow": false,
+      "errors": [],
+      "external": [
+        "https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js",
+        "https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js",
+        "https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"
+      ]
+    },
+    {
+      "key": "prana",
+      "lang": 0,
+      "skipFocused": true,
+      "nojsText": 1361,
+      "menu": true,
+      "equivalent": [
+        "/prana/",
+        "/en/prana/",
+        "/es/prana/"
+      ],
+      "faqWorks": null,
+      "focus": {
+        "outline": "solid",
+        "width": "3px"
+      },
+      "languageNavigated": true,
+      "widths": [
+        {
+          "width": 390,
+          "overflow": false
+        },
+        {
+          "width": 768,
+          "overflow": false
+        },
+        {
+          "width": 1440,
+          "overflow": false
+        }
+      ],
+      "reduced": {
+        "lenis": false,
+        "triggers": 0,
+        "depth": null
+      },
+      "zoomOverflow": false,
+      "errors": [],
+      "external": [
+        "https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js",
+        "https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js",
+        "https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"
+      ]
+    },
+    {
+      "key": "home",
+      "lang": 1,
+      "skipFocused": true,
+      "nojsText": 5910,
+      "menu": true,
+      "equivalent": [
+        "/",
+        "/en/",
+        "/es/"
+      ],
+      "faqWorks": null,
+      "focus": {
+        "outline": "solid",
+        "width": "3px"
+      },
+      "languageNavigated": true,
+      "widths": [
+        {
+          "width": 390,
+          "overflow": false
+        },
+        {
+          "width": 768,
+          "overflow": false
+        },
+        {
+          "width": 1440,
+          "overflow": false
+        }
+      ],
+      "reduced": {
+        "lenis": false,
+        "triggers": 0,
+        "depth": "static"
+      },
+      "zoomOverflow": false,
+      "errors": [],
+      "external": [
+        "https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js",
+        "https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js",
+        "https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"
+      ]
+    },
+    {
+      "key": "templo",
+      "lang": 1,
+      "skipFocused": true,
+      "nojsText": 1736,
+      "menu": true,
+      "equivalent": [
+        "/o-templo/",
+        "/en/the-temple/",
+        "/es/el-templo/"
+      ],
+      "faqWorks": null,
+      "focus": {
+        "outline": "solid",
+        "width": "3px"
+      },
+      "languageNavigated": true,
+      "widths": [
+        {
+          "width": 390,
+          "overflow": false
+        },
+        {
+          "width": 768,
+          "overflow": false
+        },
+        {
+          "width": 1440,
+          "overflow": false
+        }
+      ],
+      "reduced": {
+        "lenis": false,
+        "triggers": 0,
+        "depth": null
+      },
+      "zoomOverflow": false,
+      "errors": [],
+      "external": [
+        "https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js",
+        "https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js",
+        "https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"
+      ]
+    },
+    {
+      "key": "metodo",
+      "lang": 1,
+      "skipFocused": true,
+      "nojsText": 2155,
+      "menu": true,
+      "equivalent": [
+        "/metodo/",
+        "/en/method/",
+        "/es/metodo/"
+      ],
+      "faqWorks": null,
+      "focus": {
+        "outline": "solid",
+        "width": "3px"
+      },
+      "languageNavigated": true,
+      "widths": [
+        {
+          "width": 390,
+          "overflow": false
+        },
+        {
+          "width": 768,
+          "overflow": false
+        },
+        {
+          "width": 1440,
+          "overflow": false
+        }
+      ],
+      "reduced": {
+        "lenis": false,
+        "triggers": 0,
+        "depth": null
+      },
+      "zoomOverflow": false,
+      "errors": [],
+      "external": [
+        "https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js",
+        "https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js",
+        "https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"
+      ]
+    },
+    {
+      "key": "caminhos",
+      "lang": 1,
+      "skipFocused": true,
+      "nojsText": 946,
+      "menu": true,
+      "equivalent": [
+        "/caminhos/",
+        "/en/paths/",
+        "/es/caminos/"
+      ],
+      "faqWorks": null,
+      "focus": {
+        "outline": "solid",
+        "width": "3px"
+      },
+      "languageNavigated": true,
+      "widths": [
+        {
+          "width": 390,
+          "overflow": false
+        },
+        {
+          "width": 768,
+          "overflow": false
+        },
+        {
+          "width": 1440,
+          "overflow": false
+        }
+      ],
+      "reduced": {
+        "lenis": false,
+        "triggers": 0,
+        "depth": null
+      },
+      "zoomOverflow": false,
+      "errors": [],
+      "external": [
+        "https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js",
+        "https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js",
+        "https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"
+      ]
+    },
+    {
+      "key": "mentoria",
+      "lang": 1,
+      "skipFocused": true,
+      "nojsText": 6375,
+      "menu": true,
+      "equivalent": [
+        "/mentoria/",
+        "/en/mentorship/",
+        "/es/mentoria/"
+      ],
+      "faqWorks": true,
+      "focus": {
+        "outline": "solid",
+        "width": "3px"
+      },
+      "languageNavigated": true,
+      "widths": [
+        {
+          "width": 390,
+          "overflow": false
+        },
+        {
+          "width": 768,
+          "overflow": false
+        },
+        {
+          "width": 1440,
+          "overflow": false
+        }
+      ],
+      "reduced": {
+        "lenis": false,
+        "triggers": 0,
+        "depth": null
+      },
+      "zoomOverflow": false,
+      "errors": [],
+      "external": [
+        "https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js",
+        "https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js",
+        "https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"
+      ]
+    },
+    {
+      "key": "visao",
+      "lang": 1,
+      "skipFocused": true,
+      "nojsText": 5751,
+      "menu": true,
+      "equivalent": [
+        "/visao-uterina/",
+        "/en/uterine-vision/",
+        "/es/vision-uterina/"
+      ],
+      "faqWorks": true,
+      "focus": {
+        "outline": "solid",
+        "width": "3px"
+      },
+      "languageNavigated": true,
+      "widths": [
+        {
+          "width": 390,
+          "overflow": false
+        },
+        {
+          "width": 768,
+          "overflow": false
+        },
+        {
+          "width": 1440,
+          "overflow": false
+        }
+      ],
+      "reduced": {
+        "lenis": false,
+        "triggers": 0,
+        "depth": null
+      },
+      "zoomOverflow": false,
+      "errors": [],
+      "external": [
+        "https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js",
+        "https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js",
+        "https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"
+      ]
+    },
+    {
+      "key": "curso",
+      "lang": 1,
+      "skipFocused": true,
+      "nojsText": 3187,
+      "menu": true,
+      "equivalent": [
+        "/curso/",
+        "/en/course/",
+        "/es/curso/"
+      ],
+      "faqWorks": true,
+      "focus": {
+        "outline": "solid",
+        "width": "3px"
+      },
+      "languageNavigated": true,
+      "widths": [
+        {
+          "width": 390,
+          "overflow": false
+        },
+        {
+          "width": 768,
+          "overflow": false
+        },
+        {
+          "width": 1440,
+          "overflow": false
+        }
+      ],
+      "reduced": {
+        "lenis": false,
+        "triggers": 0,
+        "depth": null
+      },
+      "zoomOverflow": false,
+      "errors": [],
+      "external": [
+        "https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js",
+        "https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js",
+        "https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"
+      ]
+    },
+    {
+      "key": "arte",
+      "lang": 1,
+      "skipFocused": true,
+      "nojsText": 139,
+      "menu": true,
+      "equivalent": [
+        "/arte/",
+        "/en/art/",
+        "/es/arte/"
+      ],
+      "faqWorks": null,
+      "focus": {
+        "outline": "solid",
+        "width": "3px"
+      },
+      "languageNavigated": true,
+      "widths": [
+        {
+          "width": 390,
+          "overflow": false
+        },
+        {
+          "width": 768,
+          "overflow": false
+        },
+        {
+          "width": 1440,
+          "overflow": false
+        }
+      ],
+      "reduced": {
+        "lenis": false,
+        "triggers": 0,
+        "depth": null
+      },
+      "zoomOverflow": false,
+      "errors": [],
+      "external": [
+        "https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js",
+        "https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js",
+        "https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"
+      ]
+    },
+    {
+      "key": "prana",
+      "lang": 1,
+      "skipFocused": true,
+      "nojsText": 1425,
+      "menu": true,
+      "equivalent": [
+        "/prana/",
+        "/en/prana/",
+        "/es/prana/"
+      ],
+      "faqWorks": null,
+      "focus": {
+        "outline": "solid",
+        "width": "3px"
+      },
+      "languageNavigated": true,
+      "widths": [
+        {
+          "width": 390,
+          "overflow": false
+        },
+        {
+          "width": 768,
+          "overflow": false
+        },
+        {
+          "width": 1440,
+          "overflow": false
+        }
+      ],
+      "reduced": {
+        "lenis": false,
+        "triggers": 0,
+        "depth": null
+      },
+      "zoomOverflow": false,
+      "errors": [],
+      "external": [
+        "https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js",
+        "https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js",
+        "https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"
+      ]
+    },
+    {
+      "key": "home",
+      "lang": 2,
+      "skipFocused": true,
+      "nojsText": 5813,
+      "menu": true,
+      "equivalent": [
+        "/",
+        "/en/",
+        "/es/"
+      ],
+      "faqWorks": null,
+      "focus": {
+        "outline": "solid",
+        "width": "3px"
+      },
+      "languageNavigated": true,
+      "widths": [
+        {
+          "width": 390,
+          "overflow": false
+        },
+        {
+          "width": 768,
+          "overflow": false
+        },
+        {
+          "width": 1440,
+          "overflow": false
+        }
+      ],
+      "reduced": {
+        "lenis": false,
+        "triggers": 0,
+        "depth": "static"
+      },
+      "zoomOverflow": false,
+      "errors": [],
+      "external": [
+        "https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js",
+        "https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js",
+        "https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"
+      ]
+    },
+    {
+      "key": "templo",
+      "lang": 2,
+      "skipFocused": true,
+      "nojsText": 1667,
+      "menu": true,
+      "equivalent": [
+        "/o-templo/",
+        "/en/the-temple/",
+        "/es/el-templo/"
+      ],
+      "faqWorks": null,
+      "focus": {
+        "outline": "solid",
+        "width": "3px"
+      },
+      "languageNavigated": true,
+      "widths": [
+        {
+          "width": 390,
+          "overflow": false
+        },
+        {
+          "width": 768,
+          "overflow": false
+        },
+        {
+          "width": 1440,
+          "overflow": false
+        }
+      ],
+      "reduced": {
+        "lenis": false,
+        "triggers": 0,
+        "depth": null
+      },
+      "zoomOverflow": false,
+      "errors": [],
+      "external": [
+        "https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js",
+        "https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js",
+        "https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"
+      ]
+    },
+    {
+      "key": "metodo",
+      "lang": 2,
+      "skipFocused": true,
+      "nojsText": 2116,
+      "menu": true,
+      "equivalent": [
+        "/metodo/",
+        "/en/method/",
+        "/es/metodo/"
+      ],
+      "faqWorks": null,
+      "focus": {
+        "outline": "solid",
+        "width": "3px"
+      },
+      "languageNavigated": true,
+      "widths": [
+        {
+          "width": 390,
+          "overflow": false
+        },
+        {
+          "width": 768,
+          "overflow": false
+        },
+        {
+          "width": 1440,
+          "overflow": false
+        }
+      ],
+      "reduced": {
+        "lenis": false,
+        "triggers": 0,
+        "depth": null
+      },
+      "zoomOverflow": false,
+      "errors": [],
+      "external": [
+        "https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js",
+        "https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js",
+        "https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"
+      ]
+    },
+    {
+      "key": "caminhos",
+      "lang": 2,
+      "skipFocused": true,
+      "nojsText": 926,
+      "menu": true,
+      "equivalent": [
+        "/caminhos/",
+        "/en/paths/",
+        "/es/caminos/"
+      ],
+      "faqWorks": null,
+      "focus": {
+        "outline": "solid",
+        "width": "3px"
+      },
+      "languageNavigated": true,
+      "widths": [
+        {
+          "width": 390,
+          "overflow": false
+        },
+        {
+          "width": 768,
+          "overflow": false
+        },
+        {
+          "width": 1440,
+          "overflow": false
+        }
+      ],
+      "reduced": {
+        "lenis": false,
+        "triggers": 0,
+        "depth": null
+      },
+      "zoomOverflow": false,
+      "errors": [],
+      "external": [
+        "https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js",
+        "https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js",
+        "https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"
+      ]
+    },
+    {
+      "key": "mentoria",
+      "lang": 2,
+      "skipFocused": true,
+      "nojsText": 6350,
+      "menu": true,
+      "equivalent": [
+        "/mentoria/",
+        "/en/mentorship/",
+        "/es/mentoria/"
+      ],
+      "faqWorks": true,
+      "focus": {
+        "outline": "solid",
+        "width": "3px"
+      },
+      "languageNavigated": true,
+      "widths": [
+        {
+          "width": 390,
+          "overflow": false
+        },
+        {
+          "width": 768,
+          "overflow": false
+        },
+        {
+          "width": 1440,
+          "overflow": false
+        }
+      ],
+      "reduced": {
+        "lenis": false,
+        "triggers": 0,
+        "depth": null
+      },
+      "zoomOverflow": false,
+      "errors": [],
+      "external": [
+        "https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js",
+        "https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js",
+        "https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"
+      ]
+    },
+    {
+      "key": "visao",
+      "lang": 2,
+      "skipFocused": true,
+      "nojsText": 5655,
+      "menu": true,
+      "equivalent": [
+        "/visao-uterina/",
+        "/en/uterine-vision/",
+        "/es/vision-uterina/"
+      ],
+      "faqWorks": true,
+      "focus": {
+        "outline": "solid",
+        "width": "3px"
+      },
+      "languageNavigated": true,
+      "widths": [
+        {
+          "width": 390,
+          "overflow": false
+        },
+        {
+          "width": 768,
+          "overflow": false
+        },
+        {
+          "width": 1440,
+          "overflow": false
+        }
+      ],
+      "reduced": {
+        "lenis": false,
+        "triggers": 0,
+        "depth": null
+      },
+      "zoomOverflow": false,
+      "errors": [],
+      "external": [
+        "https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js",
+        "https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js",
+        "https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"
+      ]
+    },
+    {
+      "key": "curso",
+      "lang": 2,
+      "skipFocused": true,
+      "nojsText": 3008,
+      "menu": true,
+      "equivalent": [
+        "/curso/",
+        "/en/course/",
+        "/es/curso/"
+      ],
+      "faqWorks": true,
+      "focus": {
+        "outline": "solid",
+        "width": "3px"
+      },
+      "languageNavigated": true,
+      "widths": [
+        {
+          "width": 390,
+          "overflow": false
+        },
+        {
+          "width": 768,
+          "overflow": false
+        },
+        {
+          "width": 1440,
+          "overflow": false
+        }
+      ],
+      "reduced": {
+        "lenis": false,
+        "triggers": 0,
+        "depth": null
+      },
+      "zoomOverflow": false,
+      "errors": [],
+      "external": [
+        "https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js",
+        "https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js",
+        "https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"
+      ]
+    },
+    {
+      "key": "arte",
+      "lang": 2,
+      "skipFocused": true,
+      "nojsText": 141,
+      "menu": true,
+      "equivalent": [
+        "/arte/",
+        "/en/art/",
+        "/es/arte/"
+      ],
+      "faqWorks": null,
+      "focus": {
+        "outline": "solid",
+        "width": "3px"
+      },
+      "languageNavigated": true,
+      "widths": [
+        {
+          "width": 390,
+          "overflow": false
+        },
+        {
+          "width": 768,
+          "overflow": false
+        },
+        {
+          "width": 1440,
+          "overflow": false
+        }
+      ],
+      "reduced": {
+        "lenis": false,
+        "triggers": 0,
+        "depth": null
+      },
+      "zoomOverflow": false,
+      "errors": [],
+      "external": [
+        "https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js",
+        "https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js",
+        "https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"
+      ]
+    },
+    {
+      "key": "prana",
+      "lang": 2,
+      "skipFocused": true,
+      "nojsText": 1357,
+      "menu": true,
+      "equivalent": [
+        "/prana/",
+        "/en/prana/",
+        "/es/prana/"
+      ],
+      "faqWorks": null,
+      "focus": {
+        "outline": "solid",
+        "width": "3px"
+      },
+      "languageNavigated": true,
+      "widths": [
+        {
+          "width": 390,
+          "overflow": false
+        },
+        {
+          "width": 768,
+          "overflow": false
+        },
+        {
+          "width": 1440,
+          "overflow": false
+        }
+      ],
+      "reduced": {
+        "lenis": false,
+        "triggers": 0,
+        "depth": null
+      },
+      "zoomOverflow": false,
+      "errors": [],
+      "external": [
+        "https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js",
+        "https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js",
+        "https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mapa do Repo — Continuum AI Systems</title>
+<style>
+  :root{
+    --bg:#0d1117; --panel:#161b22; --line:#30363d;
+    --txt:#e6edf3; --dim:#8b949e; --gold:#d4a24c; --red:#f05d5d; --star:#7ee0c0;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--txt);
+       font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;}
+  .wrap{display:flex;min-height:100vh}
+  nav{width:250px;flex:0 0 250px;background:var(--panel);border-right:1px solid var(--line);
+      padding:26px 18px;position:sticky;top:0;height:100vh;overflow-y:auto}
+  nav h2{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);
+         margin:0 0 16px;font-weight:600}
+  nav a{display:block;color:var(--txt);text-decoration:none;padding:7px 10px;border-radius:6px;
+        font-size:13.5px;margin-bottom:2px;border-left:2px solid transparent}
+  nav a:hover{background:#21262d;border-left-color:var(--gold)}
+  nav a .n{color:var(--gold);font-weight:700;margin-right:7px;font-variant-numeric:tabular-nums}
+  main{flex:1;padding:44px 52px 90px;max-width:1080px}
+  header.top{border-bottom:1px solid var(--line);padding-bottom:22px;margin-bottom:38px}
+  header.top h1{margin:0 0 8px;font-size:30px;letter-spacing:-.02em}
+  header.top p{margin:0;color:var(--dim);font-size:14.5px}
+  section{margin-bottom:60px;scroll-margin-top:24px}
+  h2.sec{font-size:22px;margin:0 0 6px;letter-spacing:-.01em}
+  h2.sec .num{color:var(--gold);margin-right:10px}
+  .sub{color:var(--dim);font-size:14.5px;margin:0 0 22px}
+  .mermaid{background:var(--panel);border:1px solid var(--line);border-radius:10px;
+           padding:26px;margin:22px 0;text-align:center;overflow-x:auto}
+  table{width:100%;border-collapse:collapse;margin:18px 0;font-size:14.5px}
+  th,td{border:1px solid var(--line);padding:9px 12px;text-align:left;vertical-align:top}
+  th{background:#1c2128;font-weight:600;color:var(--dim);font-size:12.5px;
+     text-transform:uppercase;letter-spacing:.06em}
+  blockquote{border-left:3px solid var(--gold);margin:20px 0;padding:4px 0 4px 18px;color:#c9d1d9}
+  blockquote.red{border-left-color:var(--red)}
+  blockquote strong{color:#fff}
+  .big{font-size:19px;line-height:1.5;color:#fff;font-weight:600}
+  code{background:#1c2128;padding:2px 6px;border-radius:4px;font-size:13px;color:var(--gold)}
+  .r{color:var(--red);font-weight:700}
+  .s{color:var(--star)}
+  em{color:#b9c4cf}
+  footer{border-top:1px solid var(--line);padding-top:20px;color:var(--dim);font-size:13px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav>
+  <h2>Mapa do Repo</h2>
+  <a href="#mapa"><span class="n">0</span>O mapa inteiro</a>
+  <a href="#carga"><span class="n">1</span>Carga</a>
+  <a href="#roteador"><span class="n">2</span>Roteador</a>
+  <a href="#alcada"><span class="n">3</span>Alçada</a>
+  <a href="#execucao"><span class="n">4</span>Execução</a>
+  <a href="#circuito"><span class="n">5</span>Circuito</a>
+  <a href="#gates"><span class="n">6</span>Gates</a>
+  <a href="#registro"><span class="n">7</span>Registro</a>
+  <a href="#falta"><span class="n">8</span>O que falta</a>
+  <a href="#nao"><span class="n">9</span>O que não faz</a>
+</nav>
+
+<main>
+<header class="top">
+  <h1>Mapa do Repo</h1>
+  <p>Como a Continuum decide, roteia, produz e registra &nbsp;·&nbsp; 20/09/2026 &nbsp;·&nbsp;
+     fonte versionável em <code>MAPA-DO-REPO.md</code></p>
+</header>
+
+<section id="mapa">
+  <h2 class="sec"><span class="num">0</span>O mapa inteiro</h2>
+  <p class="sub">Um pedido entra por cima e sai por baixo — e o que sai volta a alimentar o que entra.</p>
+<pre class="mermaid">
+flowchart TD
+    P([Pedido chega]) --> C[1 · CARGA<br/>o que se lê sempre]
+    C --> R[2 · ROTEADOR<br/>pedido vira árvore]
+    R --> A{3 · ALÇADA<br/>é fato ou estrutura?}
+    A -- "FATO<br/>dado do negócio dele" --> PG[Perguntar ao dono<br/>vazio PARA a produção]
+    PG --> A
+    A -- "ESTRUTURA<br/>como vender" --> X{4 · EXECUÇÃO<br/>decide ou executa?}
+    X -- "decide" --> CIR[5 · CIRCUITO<br/>produção da peça]
+    X -- "executa" --> ANT[Antessala do Codex<br/>proposta, nunca estado]
+    ANT --> CIR
+    CIR --> G{6 · GATES<br/>passa nos vetos?}
+    G -- "Ainda não" --> CIR
+    G -- "Sim" --> RG[7 · ENTREGA<br/>E REGISTRO]
+    RG --> ST[(ESTADO VIVO<br/>STATUS + STATUS-CODEX)]
+    ST --> C
+</pre>
+  <blockquote><p class="big">⭐ Tudo que vem depois é o detalhe de uma destas sete caixas.</p></blockquote>
+  <table>
+    <tr><th>#</th><th>O que o grafo mostra e nenhum texto do repo dizia junto</th></tr>
+    <tr><td><b>1</b></td><td><span class="r">A alçada vem ANTES da produção, não durante.</span> O losango 3 é a <code>REGRA Nº 0</code>, e ela está <em>no caminho</em> — não é uma checagem que se faz depois de escrever.</td></tr>
+    <tr><td><b>2</b></td><td><b>Há dois loops, e são os dois lugares onde o trabalho volta:</b> gate que reprova devolve à produção · pacote do Codex que não passa no rito <b>fica na antessala</b>.</td></tr>
+    <tr><td><b>3</b></td><td><span class="s">⭐ O ciclo fecha.</span> O registro alimenta o estado, e o estado é o que se carrega no próximo pedido. <b>Registro que não acontece quebra o círculo — e o próximo pedido começa cego.</b></td></tr>
+  </table>
+</section>
+
+<section id="carga">
+  <h2 class="sec"><span class="num">1</span>Carga — o que se lê antes de qualquer coisa</h2>
+  <p class="sub">Esta seção não tem diagrama, e a ausência é o método funcionando: carga e precedência são <b>acervo</b>, não processo.</p>
+  <table>
+    <tr><th>Arquivo</th><th>Camada</th><th>O que dá</th></tr>
+    <tr><td><code>CLAUDE.md</code></td><td>—</td><td>autoridade, roteador, método, regra de registro</td></tr>
+    <tr><td><code>00-core/*</code></td><td><b>Identidade</b></td><td>princípio, cultura, e as <b>políticas que têm os números</b></td></tr>
+    <tr><td><code>STATUS.md</code></td><td><b>Estado</b></td><td>o que É</td></tr>
+    <tr><td><span class="r">🔴</span> <code>execução Codex/STATUS-CODEX.md</code></td><td><b>Estado</b></td><td>o que está <b>na antessala</b></td></tr>
+    <tr><td>1 skill dominante</td><td>—</td><td>escolhida no roteador</td></tr>
+  </table>
+  <blockquote class="red"><p><span class="r">Estado = os dois arquivos, sempre.</span> Ler o canônico sem a antessala dá retrato incompleto <b>e sem aviso</b> — o trabalho existe, está pronto, e o estado não o menciona. <em>Aconteceu em 16/09: destilação entregue às 12h16, estado da conta parado no dia anterior.</em></p></blockquote>
+  <p><b>Precedência:</b> <code>CLAUDE.md</code> → <code>POLITICAS-DE-DECISAO.md</code> → skill dominante → artefato de área.<br>
+  <b>Exceções que invertem:</b> fato comercial → <code>ICP.md</code> · estado atual → <code>STATUS.md</code>.</p>
+</section>
+
+<section id="roteador">
+  <h2 class="sec"><span class="num">2</span>Roteador — como um pedido vira método carregado</h2>
+  <p class="sub">O <code>CLAUDE.md</code> §6 tem 30+ linhas de roteamento. <b>Reescrito em 26/09: sete árvores</b>, cada uma com arquivo próprio em <code>00-core/roteador/</code> e a linha do processo preenchida. A ESCRITA tem portão: peça para cliente só entra com a CONTA passada.</p>
+<pre class="mermaid">
+flowchart TD
+    S([Pedido]) --> F{Que árvore?}
+    F -- "decidir o negócio" --> NE[NEGÓCIO]
+    F -- "abrir ou destravar conta" --> CO[CONTA]
+    F -- "ler o que existe" --> LE[LEITURA]
+    F -- "produzir peça" --> ES{ESCRITA<br/>conta já passou?}
+    F -- "executar e entregar" --> OP[OPERAÇÃO]
+    F -- "o próprio repo" --> CA[CASA]
+    F -- "contrato e risco" --> JU[JURÍDICO]
+    ES -- "Ainda não" --> CP[CONTA primeiro<br/>pilares e léxico]
+    CP --> ES
+    ES -- "Sim" --> PR[Processo da árvore<br/>tipos em ordem]
+    NE --> PR
+    CO --> PR
+    LE --> PR
+    OP --> PR
+    CA --> PR
+    JU --> PR
+</pre>
+
+  <h3 style="font-size:17px;margin:34px 0 4px">2.1 &nbsp;A família que mais cresceu — escrever para vender</h3>
+  <p class="sub">Desde 18/09 ela tem tronco. Antes eram quatro métodos irmãos sem nada que os ligasse.</p>
+<pre class="mermaid">
+flowchart TD
+    T[TRONCO<br/>METODO-DIRECT-RESPONSE] --> B1[FUNIL-DE-VSL<br/>um formato]
+    T --> B2[BENCHMARKING<br/>uma prática]
+    T --> B3[ESTRUTURA-INVISIVEL<br/>uma teoria]
+    T --> B4[PONTOS-LOGICOS<br/>uma técnica]
+    T --> B5[MECANISMO E ONE BELIEF<br/>o destino da cadeia]
+    T --> B6[CRIATIVOS-DR<br/>+ hooks + lateralização]
+    B1 --> SK[skill de copy<br/>escreve a frase]
+    B2 --> SK
+    B3 --> SK
+    B4 --> SK
+    B5 --> SK
+    B6 --> SK
+</pre>
+  <blockquote><p><b>A regra que resolve quase todo conflito dentro da família:</b> em conflito, <b>vence o método de FORMATO</b> — ele conhece a física do canal. <b>Mas formato não revoga princípio:</b> se aplicar um formato parece exigir violar a fronteira de margem do DFY ou a régua de prova, o errado é a aplicação.</p></blockquote>
+  <table>
+    <tr><th>Tipo em <code>10-skills/</code></th><th>Regra</th></tr>
+    <tr><td><b>Ponteiro</b> (<code># PONTEIRO —</code>)</td><td><span class="r">nunca é fonte.</span> Seguir para onde ele aponta</td></tr>
+    <tr><td><b>Legado</b> (<code>_legado/</code>)</td><td><span class="r">nunca se carrega.</span> Serve para entender por que uma regra existe</td></tr>
+    <tr><td><b>Portátil / persona / método</b></td><td>fonte ativa</td></tr>
+  </table>
+  <blockquote class="red"><p><span class="r">REGRA Nº 1: nunca se ativa método na mão.</span> Se aplicar um método depende de alguém <b>lembrar</b> de carregá-lo, ele não está em produção — está guardado. <b>O roteador é o único mecanismo de carga que existe.</b></p></blockquote>
+</section>
+
+<section id="alcada">
+  <h2 class="sec"><span class="num">3</span>Alçada — o losango mais importante da casa</h2>
+  <p class="sub"><code>REGRA Nº 0</code>, instituída 15/09 depois de a conta Débora perder a alçada da estrutura por 18 dias.</p>
+<pre class="mermaid">
+flowchart TD
+    L([Lacuna no brief]) --> Q{É um dado sobre o negócio dele,<br/>ou uma decisão sobre como vender?}
+    Q -- "DADO<br/>preço, capacidade, prova,<br/>palavra do público" --> F[Perguntar. Obrigatório.<br/>Campo vazio PARA a produção]
+    Q -- "DECISÃO<br/>promessa, mecanismo, narrativa,<br/>headline, ordem, recorte" --> D[Decidir. Obrigatório.<br/>Perguntar é erro de método]
+    D --> O{Cliente objeta<br/>congruência?}
+    O -- "Sim" --> R[Alterar do nosso jeito<br/>OU explicar por escrito]
+    R --> D
+    O -- "Não" --> P([Produzir])
+    F --> P
+</pre>
+  <blockquote><p><b>Por que a alçada é legítima e não arrogância:</b> o cliente contrata <b>porque não sabe estruturar aquilo para vender.</b> Devolver a decisão de estrutura a ele é devolver o produto sem entregá-lo — e é entregar a pior versão, porque ele escolhe pelo que soa confortável, não pelo que converte.</p>
+  <p><b>O contrapeso que a torna justa:</b> ele tem <b>direito de objeção de congruência.</b> A mudança passa sempre por nós — <b>ou alteramos, ou explicamos por que não. Sempre, e por escrito.</b></p>
+  <p>⚠️ <b>E propriedade do ativo não é autoria da estrutura.</b> O site, o perfil e a marca são dele; o que dentro deles faz vender é nosso.</p></blockquote>
+</section>
+
+<section id="execucao">
+  <h2 class="sec"><span class="num">4</span>Execução — quem decide, quem executa, e a antessala</h2>
+<pre class="mermaid">
+flowchart TD
+    T([Tarefa]) --> Q{Decide ou executa?}
+    Q -- "decide" --> CL[Claude · papel de CEO<br/>lê CLAUDE.md]
+    Q -- "executa<br/>frontend, varredura, volume" --> CX[Codex · GPT-6 Astra<br/>lê AGENTS.md]
+    CL --> CAN[(CANÔNICOS<br/>escrita direta)]
+    CX --> ANT[(execução Codex/<br/>ÚNICA escrita dele)]
+    ANT --> IDX[Linha no STATUS-CODEX<br/>na mesma tarefa]
+    IDX --> RIT{RITO DE INTEGRAÇÃO<br/>gate de 5 passa?}
+    RIT -- "Ainda não" --> ANT
+    RIT -- "Sim" --> CAN
+    CAN --> ST[(ESTADO VIVO)]
+</pre>
+  <table>
+    <tr><th>Regra</th><th>Por que existe</th></tr>
+    <tr><td><span class="r">O Codex só escreve em <code>execução Codex/</code></span></td><td>§0 do <code>AGENTS.md</code>. Sem isso, proposta vira estado sem ninguém decidir</td></tr>
+    <tr><td><span class="r">Pacote isolado é PROPOSTA, nunca estado</span></td><td>e <b>a promoção é sempre nossa</b> — divergência entre antessala e canônico é sinal de promoção pendente, não de canônico desatualizado</td></tr>
+  </table>
+  <blockquote class="red"><p><b>O buraco que o rito existe para fechar, e ele é real:</b> a §0 proíbe o Codex de escrever nos canônicos e o §11.3 exige que nada termine sem registro. <b>Sem rito, as duas regras se anulam</b> — o trabalho é feito, fica na antessala, e a memória não recebe.</p>
+  <p><span class="r">E o <code>AGENTS.md</code> hoje é um CLONE do <code>CLAUDE.md</code> + a §0</span>, por decisão de 15/09. <b>A fronteira "quem decide × quem executa" existe como desenho e não como estado.</b> A contenção real vem da §0 e da <code>REGRA Nº 0</code>. <b>Quem altera o <code>CLAUDE.md</code> regenera o <code>AGENTS.md</code> na mesma tarefa</b> — replicar à mão foi tentado duas vezes e falhou as duas.</p></blockquote>
+</section>
+
+<section id="circuito">
+  <h2 class="sec"><span class="num">5</span>Circuito — como uma peça de conversão é produzida</h2>
+  <p class="sub">"Criar uma página" não carrega uma skill: abre um circuito de três skills em cinco etapas.</p>
+<pre class="mermaid">
+flowchart TD
+    E1[1 · FÍSICA<br/>gerador-web-designer] --> V1{Brief de 9 campos<br/>existe?}
+    V1 -- "Não" --> E1
+    V1 -- "Sim" --> E2[2 · DIREÇÃO VISUAL<br/>ui-ux, modo direção]
+    E2 --> V2{Direção declarada<br/>com limite de caracteres?}
+    V2 -- "Genérica" --> E2
+    V2 -- "Sim" --> E3[3 · ESCRITA<br/>copywriter-senior]
+    E3 --> V3{Pivô apontável<br/>por linha?}
+    V3 -- "Não" --> E3
+    V3 -- "Sim" --> E4[4 · EXECUÇÃO VISUAL<br/>ui-ux, modo execução]
+    E4 --> V4{Clímax na decisão?}
+    V4 -- "Não" --> E4
+    V4 -- "Sim" --> E5[5 · GATE<br/>gerador, papel do juiz]
+    E5 --> S([Veredito de publicação])
+</pre>
+  <p><b>Por que a ui-ux entra duas vezes:</b> antes, para <b>dar restrição</b> — quem escreve precisa saber quantos caracteres cabem num título. Depois, porque <b>desenhar sobre texto real é diferente de desenhar sobre texto simulado.</b></p>
+  <p><b>Fronteiras que não se cruzam:</b> quem faz a física não escreve a frase nem escolhe a fonte · quem escreve não muda a ordem das dobras · quem desenha não reescreve a copy nem move o clímax.</p>
+  <p><b>Quando encolhe:</b> auditar página existente → 1 e 5 · trocar oferta → 1 parcial, 3, 5 · refazer só o visual → 2, 4, 5.<br>
+  <span class="r">Nunca encolhem:</span> a classificação, o brief e o gate.</p>
+  <blockquote><p><span class="s">⭐ Proposta comercial entra aqui desde 17/09.</span> Proposta não é documento, é peça de conversão — e segue o circuito como qualquer página.</p></blockquote>
+</section>
+
+<section id="gates">
+  <h2 class="sec"><span class="num">6</span>Gates — o que reprova, e quem checa</h2>
+  <p class="sub">Havia sete métodos com gate declarado, três com gate sob outro nome e dois juízes de skill. Nenhum auditava o conjunto.</p>
+<pre class="mermaid">
+flowchart TD
+    O([Output pronto]) --> DC[Declaração de carga<br/>o que foi carregado]
+    DC --> P0{P0 · Proporcionalidade<br/>método carregado decidiu algo?}
+    P0 -- "Sobrou método" --> CORR[Corrigir]
+    P0 -- "OK" --> P1{P1 · Régua de veto<br/>de cada método carregado}
+    P1 -- "Veto batido" --> CORR
+    P1 -- "OK" --> P3{P3 · Contradição<br/>entre métodos}
+    P3 -- "resolvida em silêncio" --> CORR
+    P3 -- "declarada ou inexistente" --> ENT([Entregar])
+    CORR --> O
+</pre>
+  <blockquote><p><span class="s">⭐ As duas peças que tornam o gate barato:</span> a <b>declaração de carga</b> no fecho, e a <b>tabela de vetos</b> — uma linha por método, com o que reprova sozinho. <b>O auditor checa essas linhas, não relê os métodos.</b></p></blockquote>
+  <table>
+    <tr><th>Veto — todos binários</th><th>De onde vem</th></tr>
+    <tr><td>cena ou fala de ICP <b>sem fonte apontável</b></td><td>procedência (§6.1)</td></tr>
+    <tr><td>peça <b>sem pivô</b> E · Mas · Por isso</td><td>skill de copy</td></tr>
+    <tr><td><b>P1 ou P4 reprovando</b> nos pilares</td><td>bloqueia produção de copy</td></tr>
+    <tr><td>proposta <b>sem bloco de onboarding</b></td><td>Gate F da ancoragem</td></tr>
+    <tr><td>elo de cadeia <b>que não desaba</b> ao remover o anterior</td><td>pontos lógicos</td></tr>
+    <tr><td>peça no swipe file <b>sem dado de performance</b></td><td>§11.5</td></tr>
+    <tr><td><span class="r">contradição entre métodos resolvida em silêncio</span></td><td>gate de congruência</td></tr>
+  </table>
+</section>
+
+<section id="registro">
+  <h2 class="sec"><span class="num">7</span>Entrega e registro — onde o ciclo fecha</h2>
+  <p class="sub">Este repositório é o único sistema de memória da empresa. Sem CRM, sem git ativo, sem segundo lugar.</p>
+<pre class="mermaid">
+flowchart TD
+    E([Entrega feita]) --> T{Que natureza<br/>tem o que aconteceu?}
+    T -- "conversa externa" --> R1[Registro de 4 camadas]
+    T -- "call gravada" --> R2[Destilação<br/>nunca resumo]
+    T -- "decisão tomada" --> R3[DECISOES do cliente<br/>+ STATUS]
+    T -- "peça que performou" --> R4[swipe-file<br/>só com dado]
+    R1 --> S[(STATUS.md<br/>atualizado)]
+    R2 --> S
+    R3 --> S
+    R4 --> S
+    S --> PROX([Próxima sessão<br/>carrega daqui])
+</pre>
+  <table>
+    <tr><th>#</th><th>Camada do registro</th><th>Sem ela</th></tr>
+    <tr><td>1</td><td>fatos e números</td><td>não se sabe onde estamos</td></tr>
+    <tr><td>2</td><td>decisões <b>e o descartado</b></td><td>alguém refaz o caminho já andado</td></tr>
+    <tr><td>3</td><td><span class="s">⭐ tom e conduta</span></td><td><b>é a que sempre falta.</b> A próxima mensagem quebra o clima que a anterior construiu</td></tr>
+    <tr><td>4</td><td>mensagens literais</td><td>não se sabe o que a outra parte já ouviu</td></tr>
+  </table>
+  <blockquote><p><b>O teste de suficiência, e é um só:</b> <em>outra IA, abrindo só este arquivo, escreveria a próxima mensagem no tom certo e sem repetir erro nosso?</em><br>Se não, <b>falta a camada 3 ou a 4.</b></p></blockquote>
+</section>
+
+<section id="falta">
+  <h2 class="sec"><span class="num">8</span>O que falta — nosso × seu</h2>
+  <table>
+    <tr><th>O quê</th><th>De quem</th><th>Estado</th></tr>
+    <tr><td>Promover os pacotes do Codex pendentes</td><td><b>nosso</b></td><td><span class="r">fila no RITO §9</span></td></tr>
+    <tr><td>Inventário Done For You (<code>oferta.md</code> §7-bis)</td><td><b>nosso</b></td><td><span class="r">tabela criada e vazia</span></td></tr>
+    <tr><td>Verificação em caso real dos métodos 🟡 provisórios</td><td><b>nosso</b></td><td>pendente</td></tr>
+    <tr><td>Conferir este mapa depois de cada método novo</td><td><b>nosso</b></td><td>ver §9</td></tr>
+  </table>
+</section>
+
+<section id="nao">
+  <h2 class="sec"><span class="num">9</span>O que este mapa não faz</h2>
+  <ul>
+    <li><b>Não substitui o <code>CLAUDE.md</code>.</b> O mapa dá o modelo; o kernel dá a autoridade e os detalhes. <b>Diagrama sozinho vira organograma bonito que ninguém sabe defender.</b></li>
+    <li><b>Não é fonte de regra.</b> Se divergir do <code>CLAUDE.md</code>, <b>vale o kernel</b> — e a divergência é sinal de que o mapa envelheceu.</li>
+    <li><b>Não lista todos os métodos.</b> Lista as seis famílias. O acervo completo está no §7 do kernel.</li>
+    <li><span class="r">Não se mantém sozinho.</span> Método novo muda o roteador, e o roteador é a §2 daqui. <b>Este arquivo entra na mesma tarefa da <code>REGRA Nº 1</code></b> — ou vira o desenho de um repositório que não existe mais.</li>
+  </ul>
+</section>
+
+<footer>
+  Instituído em 20/09/2026 · Aplicação do <code>METODO-CAMADA-DE-VER.md</code>: arquitetura §7-bis, gramática §2, Mermaid §4.<br>
+  <b>Teste de correspondência: sete caixas no mapa, sete seções — fecha.</b> A §1 é deliberadamente sem diagrama (acervo, §6 do método).
+</footer>
+</main>
+</div>
+
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({
+    startOnLoad:true,
+    theme:'base',
+    themeVariables:{
+      background:'#161b22', primaryColor:'#1f2630', primaryTextColor:'#e6edf3',
+      primaryBorderColor:'#4d5866', lineColor:'#8b949e', secondaryColor:'#22303c',
+      tertiaryColor:'#1a2028', fontSize:'15px', fontFamily:'-apple-system,Segoe UI,Roboto,sans-serif'
+    },
+    flowchart:{ curve:'basis', nodeSpacing:46, rankSpacing:52, useMaxWidth:true }
+  });
+</script>
+</body>
+</html>

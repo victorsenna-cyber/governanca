@@ -1,0 +1,4037 @@
+[
+  {
+    "id": 0,
+    "text": "Pular para o conteúdo",
+    "html": "Pular para o conteúdo",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "home",
+      "templo",
+      "metodo",
+      "caminhos",
+      "mentoria",
+      "visao",
+      "curso",
+      "arte",
+      "prana"
+    ]
+  },
+  {
+    "id": 1,
+    "text": "The Golden Temple",
+    "html": "The Golden Temple",
+    "type": "text",
+    "proof": false,
+    "pages": [
+      "home",
+      "templo",
+      "metodo",
+      "caminhos",
+      "mentoria",
+      "visao",
+      "curso",
+      "arte",
+      "prana"
+    ]
+  },
+  {
+    "id": 2,
+    "text": "The Art of Living Devotion",
+    "html": "The Art of Living Devotion",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "home",
+      "templo",
+      "metodo",
+      "caminhos",
+      "mentoria",
+      "visao",
+      "curso",
+      "arte",
+      "prana"
+    ]
+  },
+  {
+    "id": 3,
+    "text": "O Templo",
+    "html": "O Templo",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "home",
+      "templo",
+      "metodo",
+      "caminhos",
+      "mentoria",
+      "visao",
+      "curso",
+      "arte",
+      "prana"
+    ]
+  },
+  {
+    "id": 4,
+    "text": "Método S.E.R.",
+    "html": "Método S.E.R.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "home",
+      "templo",
+      "metodo",
+      "caminhos",
+      "mentoria",
+      "visao",
+      "curso",
+      "arte",
+      "prana"
+    ]
+  },
+  {
+    "id": 5,
+    "text": "Caminhos",
+    "html": "Caminhos",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "home",
+      "templo",
+      "metodo",
+      "caminhos",
+      "mentoria",
+      "visao",
+      "curso",
+      "arte",
+      "prana"
+    ]
+  },
+  {
+    "id": 6,
+    "text": "Arte",
+    "html": "Arte",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "home",
+      "templo",
+      "metodo",
+      "caminhos",
+      "mentoria",
+      "visao",
+      "curso",
+      "arte",
+      "prana"
+    ]
+  },
+  {
+    "id": 7,
+    "text": "Prana Ka",
+    "html": "Prana Ka",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "home",
+      "templo",
+      "metodo",
+      "caminhos",
+      "mentoria",
+      "visao",
+      "curso",
+      "arte",
+      "prana"
+    ]
+  },
+  {
+    "id": 8,
+    "text": "PT",
+    "html": "PT",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "home",
+      "templo",
+      "metodo",
+      "caminhos",
+      "mentoria",
+      "visao",
+      "curso",
+      "arte",
+      "prana"
+    ]
+  },
+  {
+    "id": 9,
+    "text": "EN",
+    "html": "EN",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "home",
+      "templo",
+      "metodo",
+      "caminhos",
+      "mentoria",
+      "visao",
+      "curso",
+      "arte",
+      "prana"
+    ]
+  },
+  {
+    "id": 10,
+    "text": "ES",
+    "html": "ES",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "home",
+      "templo",
+      "metodo",
+      "caminhos",
+      "mentoria",
+      "visao",
+      "curso",
+      "arte",
+      "prana"
+    ]
+  },
+  {
+    "id": 11,
+    "text": "Menu",
+    "html": "Menu",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "home",
+      "templo",
+      "metodo",
+      "caminhos",
+      "mentoria",
+      "visao",
+      "curso",
+      "arte",
+      "prana"
+    ]
+  },
+  {
+    "id": 12,
+    "text": "Escola iniciática de saberes femininos",
+    "html": "Escola iniciática de saberes femininos",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "home"
+    ]
+  },
+  {
+    "id": 13,
+    "text": "The GoldenTemple",
+    "html": "The Golden<br>Temple",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "home"
+    ]
+  },
+  {
+    "id": 14,
+    "text": "Você não está quebrada. Apenas esquecida de si.",
+    "html": "Você não está quebrada. Apenas esquecida de si.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "home"
+    ]
+  },
+  {
+    "id": 15,
+    "text": "Uma escola para mulheres sensíveis, criativas e intensas demais para os lugares onde precisaram caber. Aqui o corpo volta a ser casa, e a força volta a ter dona.",
+    "html": "Uma escola para mulheres sensíveis, criativas e intensas demais para os lugares onde precisaram caber. Aqui o corpo volta a ser casa, e a força volta a ter dona.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "home"
+    ]
+  },
+  {
+    "id": 16,
+    "text": "Encontrar meu caminho ↘",
+    "html": "Encontrar meu caminho <span aria-hidden=\"true\">↘</span>",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "home"
+    ]
+  },
+  {
+    "id": 17,
+    "text": "The Golden Temple · Prana Ka",
+    "html": "The Golden Temple · Prana Ka",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "home"
+    ]
+  },
+  {
+    "id": 18,
+    "text": "Ativar profundidade",
+    "html": "Ativar profundidade",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "home"
+    ]
+  },
+  {
+    "id": 19,
+    "text": "Descer para recordar ↓",
+    "html": "Descer para recordar ↓",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "home"
+    ]
+  },
+  {
+    "id": 20,
+    "text": "Aqui o corpo é templo.",
+    "html": "Aqui o corpo é templo.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "home"
+    ]
+  },
+  {
+    "id": 21,
+    "text": "O ventre é altar.",
+    "html": "O ventre é altar.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "home"
+    ]
+  },
+  {
+    "id": 22,
+    "text": "A voz é portal.",
+    "html": "A voz é portal.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "home",
+      "arte"
+    ]
+  },
+  {
+    "id": 23,
+    "text": "A arte é oração.",
+    "html": "A arte é oração.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "home",
+      "arte"
+    ]
+  },
+  {
+    "id": 24,
+    "text": "O prazer é meditação.",
+    "html": "O prazer é meditação.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "home"
+    ]
+  },
+  {
+    "id": 25,
+    "text": "A sombra é mestra.",
+    "html": "A sombra é mestra.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "home"
+    ]
+  },
+  {
+    "id": 26,
+    "text": "O amor é lei.",
+    "html": "O amor é lei.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "home"
+    ]
+  },
+  {
+    "id": 27,
+    "text": "Cada mulher caminha no seu ritmo, mas nenhuma caminha sozinha.",
+    "html": "Cada mulher caminha no seu ritmo, mas nenhuma caminha sozinha.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "home"
+    ]
+  },
+  {
+    "id": 28,
+    "text": "Os dois portais",
+    "html": "Os dois portais",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "home"
+    ]
+  },
+  {
+    "id": 29,
+    "text": "Por onde o teu corpo pede para começar?",
+    "html": "Por onde o teu corpo pede para começar?",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "home",
+      "caminhos"
+    ]
+  },
+  {
+    "id": 30,
+    "text": "Despertar do Prazer Sagrado",
+    "html": "Despertar do Prazer Sagrado",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "home",
+      "templo",
+      "metodo",
+      "caminhos",
+      "mentoria",
+      "visao",
+      "curso",
+      "arte",
+      "prana"
+    ]
+  },
+  {
+    "id": 31,
+    "text": "A primeira travessia. Sete meditações que reconduzem você ao prazer como presença, e não como performance.",
+    "html": "A primeira travessia. Sete meditações que reconduzem você ao prazer como presença, e não como performance.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "home"
+    ]
+  },
+  {
+    "id": 32,
+    "text": "Começar pelo corpo ↗",
+    "html": "Começar pelo corpo ↗",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "home"
+    ]
+  },
+  {
+    "id": 33,
+    "text": "Mentoria O Templo Dourado",
+    "html": "Mentoria O Templo Dourado",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "home"
+    ]
+  },
+  {
+    "id": 34,
+    "text": "A Iniciação Dourada vivida em grupo, com a Prana conduzindo, do primeiro portal à coroação.",
+    "html": "A Iniciação Dourada vivida em grupo, com a Prana conduzindo, do primeiro portal à coroação.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "home"
+    ]
+  },
+  {
+    "id": 35,
+    "text": "Atravessar a jornada inteira ↗",
+    "html": "Atravessar a jornada inteira ↗",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "home"
+    ]
+  },
+  {
+    "id": 36,
+    "text": "O que é The Golden Temple",
+    "html": "O que é The Golden Temple",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "home",
+      "templo"
+    ]
+  },
+  {
+    "id": 37,
+    "text": "Guiar mulheres do exílio de si ao templo vivo da própria soberania.",
+    "html": "Guiar mulheres do exílio de si ao templo vivo da própria soberania.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "home",
+      "templo"
+    ]
+  },
+  {
+    "id": 38,
+    "text": "Essa é a missão, e ela explica o resto.",
+    "html": "Essa é a missão, e ela explica o resto.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "home"
+    ]
+  },
+  {
+    "id": 39,
+    "text": "The Golden Temple é uma escola iniciática de saberes femininos, fundada por Prana Ka. Não é um curso com módulos: é uma escada, e cada degrau pede mais do que o anterior.",
+    "html": "The Golden Temple é uma escola iniciática de saberes femininos, fundada por Prana Ka. Não é um curso com módulos: é uma escada, e cada degrau pede mais do que o anterior.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "home"
+    ]
+  },
+  {
+    "id": 40,
+    "text": "O que se ensina aqui não foi inventado. Vem de linhagens que a Prana atravessou, estudou e serve.",
+    "html": "O que se ensina aqui não foi inventado. Vem de linhagens que a Prana atravessou, estudou e serve.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "home",
+      "templo"
+    ]
+  },
+  {
+    "id": 41,
+    "text": "O Templo ↗",
+    "html": "O Templo ↗",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "home"
+    ]
+  },
+  {
+    "id": 42,
+    "text": "A verdade não se pensa. Corporifica-se.",
+    "html": "A verdade não se pensa. Corporifica-se.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "home",
+      "templo",
+      "metodo"
+    ]
+  },
+  {
+    "id": 43,
+    "text": "Método S.E.R. ↗",
+    "html": "Método S.E.R. ↗",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "home"
+    ]
+  },
+  {
+    "id": 44,
+    "text": "Aterrar",
+    "html": "Aterrar",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "home",
+      "mentoria"
+    ]
+  },
+  {
+    "id": 45,
+    "text": "Escutar o corpo e criar presença suficiente para permanecer consigo.",
+    "html": "Escutar o corpo e criar presença suficiente para permanecer consigo.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "home",
+      "mentoria"
+    ]
+  },
+  {
+    "id": 46,
+    "text": "Compreender",
+    "html": "Compreender",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "home",
+      "mentoria"
+    ]
+  },
+  {
+    "id": 47,
+    "text": "Dar nome aos padrões que atravessam escolhas, vínculos e expressão.",
+    "html": "Dar nome aos padrões que atravessam escolhas, vínculos e expressão.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "home",
+      "mentoria"
+    ]
+  },
+  {
+    "id": 48,
+    "text": "Alquimizar",
+    "html": "Alquimizar",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "home",
+      "mentoria"
+    ]
+  },
+  {
+    "id": 49,
+    "text": "Atravessar o que perdeu função e abrir espaço para uma resposta mais inteira.",
+    "html": "Atravessar o que perdeu função e abrir espaço para uma resposta mais inteira.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "home",
+      "mentoria"
+    ]
+  },
+  {
+    "id": 50,
+    "text": "Ressoar",
+    "html": "Ressoar",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "home",
+      "mentoria"
+    ]
+  },
+  {
+    "id": 51,
+    "text": "Dar som, gesto, arte e linguagem ao que antes vivia sem expressão.",
+    "html": "Dar som, gesto, arte e linguagem ao que antes vivia sem expressão.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "home",
+      "mentoria"
+    ]
+  },
+  {
+    "id": 52,
+    "text": "Corporificar",
+    "html": "Corporificar",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "home",
+      "mentoria"
+    ]
+  },
+  {
+    "id": 53,
+    "text": "Levar a experiência para a rotina, os limites, os vínculos e as decisões.",
+    "html": "Levar a experiência para a rotina, os limites, os vínculos e as decisões.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "home",
+      "mentoria"
+    ]
+  },
+  {
+    "id": 54,
+    "text": "Os caminhos",
+    "html": "Os caminhos",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "home"
+    ]
+  },
+  {
+    "id": 55,
+    "text": "O Templo Dourado",
+    "html": "O Templo Dourado",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "home",
+      "templo",
+      "metodo",
+      "caminhos",
+      "mentoria",
+      "visao",
+      "curso",
+      "arte",
+      "prana"
+    ]
+  },
+  {
+    "id": 56,
+    "text": "O Templo Dourado é uma jornada para mulheres que atravessam uma mudança e desejam voltar a reconhecer limites, expressar a própria voz e sustentar a vida a partir de dentro.",
+    "html": "\n            O Templo Dourado é uma jornada para mulheres que atravessam uma mudança e desejam voltar a\n            reconhecer limites, expressar a própria voz e sustentar a vida a partir de dentro.\n          ",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "home",
+      "caminhos",
+      "mentoria"
+    ]
+  },
+  {
+    "id": 57,
+    "text": "Quero selar minha entrada↗",
+    "html": "Quero selar minha entrada<span aria-hidden=\"true\">↗</span>",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "home",
+      "caminhos"
+    ]
+  },
+  {
+    "id": 58,
+    "text": "Visão Uterina",
+    "html": "Visão Uterina",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "home",
+      "templo",
+      "metodo",
+      "caminhos",
+      "mentoria",
+      "visao",
+      "curso",
+      "arte",
+      "prana"
+    ]
+  },
+  {
+    "id": 59,
+    "text": "Um encontro para olhar para o seu momento, acessar seus desejos e encontrar clareza para suas escolhas.",
+    "html": "Um encontro para olhar para o seu momento, acessar seus desejos e encontrar clareza para suas escolhas.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "home",
+      "caminhos",
+      "visao"
+    ]
+  },
+  {
+    "id": 60,
+    "text": "Quero minha Visão Uterina↗",
+    "html": "Quero minha Visão Uterina<span aria-hidden=\"true\">↗</span>",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "home",
+      "caminhos"
+    ]
+  },
+  {
+    "id": 61,
+    "text": "Sete meditações guiadas para reabrir a fonte que você aprendeu a tampar. No teu ritmo, sem plateia e sem cobrança.",
+    "html": "Sete meditações guiadas para reabrir a fonte que você aprendeu a tampar. No teu ritmo, sem plateia e sem cobrança.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "home",
+      "caminhos",
+      "curso"
+    ]
+  },
+  {
+    "id": 62,
+    "text": "Quero reabrir a fonte↗",
+    "html": "Quero reabrir a fonte<span aria-hidden=\"true\">↗</span>",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "home",
+      "caminhos"
+    ]
+  },
+  {
+    "id": 63,
+    "text": "A arte.",
+    "html": "A arte.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "home"
+    ]
+  },
+  {
+    "id": 64,
+    "text": "Spotify ↗",
+    "html": "Spotify <span aria-hidden=\"true\">↗</span>",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "home",
+      "arte"
+    ]
+  },
+  {
+    "id": 65,
+    "text": "YouTube ↗",
+    "html": "YouTube <span aria-hidden=\"true\">↗</span>",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "home",
+      "arte"
+    ]
+  },
+  {
+    "id": 66,
+    "text": "Arte ↗",
+    "html": "Arte ↗",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "home"
+    ]
+  },
+  {
+    "id": 67,
+    "text": "Quem conduz",
+    "html": "Quem conduz",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "home"
+    ]
+  },
+  {
+    "id": 68,
+    "text": "“Eu guio não porque sei tudo, mas porque vivo tudo.”",
+    "html": "“Eu guio não porque sei tudo, mas porque vivo tudo.”",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "home",
+      "mentoria",
+      "prana"
+    ]
+  },
+  {
+    "id": 69,
+    "text": "Psicanalista, psicoterapeuta, artista, compositora e sacerdotisa do ventre, Prana reúne escuta, psicologia, ritual e expressão artística em um trabalho que acompanha mulheres em travessias.",
+    "html": "\n            Psicanalista, psicoterapeuta, artista, compositora e sacerdotisa do ventre, Prana reúne escuta,\n            psicologia, ritual e expressão artística em um trabalho que acompanha mulheres em travessias.\n          ",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "home",
+      "mentoria",
+      "prana"
+    ]
+  },
+  {
+    "id": 70,
+    "text": "Antes de qualquer título, é uma mulher que atravessou o fogo e mergulhou fundo. Deixou muitas peles pelo caminho e renasceu das cinzas quantas vezes foi preciso. É dessa travessia, e não só dos estudos, que nasce o que ela oferece.",
+    "html": "Antes de qualquer título, é uma mulher que atravessou o fogo e mergulhou fundo. Deixou muitas peles pelo caminho e renasceu das cinzas quantas vezes foi preciso. É dessa travessia, e não só dos estudos, que nasce o que ela oferece.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "home"
+    ]
+  },
+  {
+    "id": 71,
+    "text": "Prana Ka ↗",
+    "html": "Prana Ka ↗",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "home"
+    ]
+  },
+  {
+    "id": 72,
+    "text": "Quase todas contama mesma coisa:voltaram a se expressar.",
+    "html": "Quase todas contam<br>a mesma coisa:<br><em>voltaram a se expressar.</em>",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "home",
+      "visao"
+    ]
+  },
+  {
+    "id": 73,
+    "text": "Mulheres que percorreram os Portais do Ventre com Prana Ka.",
+    "html": "Mulheres que percorreram os Portais do Ventre com Prana Ka.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "home",
+      "visao"
+    ]
+  },
+  {
+    "id": 74,
+    "text": "“Navegar pelos 8 Portais do Ventre foi e ainda é caminho para expressar livremente tudo o que sinto por dentro… Uma jornada vivencial que me liberou do medo da rejeição, da falta de confiança e da ausência de reconhecimento… Que refletiu faces até então ocultas da minha verdadeira natureza.”",
+    "html": "“Navegar pelos 8 Portais do Ventre foi e ainda é caminho para <strong>expressar livremente tudo o que sinto por dentro</strong>… Uma jornada vivencial que me liberou do medo da rejeição, da falta de confiança e da ausência de reconhecimento… Que refletiu faces até então ocultas da minha verdadeira natureza.”",
+    "type": "html",
+    "proof": true,
+    "pages": [
+      "home",
+      "visao"
+    ]
+  },
+  {
+    "id": 75,
+    "text": "Monica Brito Maduro",
+    "html": "Monica Brito Maduro",
+    "type": "text",
+    "proof": false,
+    "pages": [
+      "home",
+      "visao"
+    ]
+  },
+  {
+    "id": 76,
+    "text": "“Todos os encontros foram uma oportunidade de encontrar com meu feminino sagrado, muitas vezes esquecido e adormecido, onde pude sentir com toda sutileza e delicadeza meu poder, minha força e meu valor, reconectando com minha voz interior e assim podendo expressar minha verdade com mais naturalidade e confiança.”",
+    "html": "“Todos os encontros foram uma oportunidade de encontrar com meu feminino sagrado, muitas vezes esquecido e adormecido, onde pude sentir com toda sutileza e delicadeza meu poder, minha força e meu valor, <strong>reconectando com minha voz interior</strong> e assim podendo expressar minha verdade com mais naturalidade e confiança.”",
+    "type": "html",
+    "proof": true,
+    "pages": [
+      "home",
+      "visao"
+    ]
+  },
+  {
+    "id": 77,
+    "text": "Natália Miranda",
+    "html": "Natália Miranda",
+    "type": "text",
+    "proof": false,
+    "pages": [
+      "home",
+      "visao"
+    ]
+  },
+  {
+    "id": 78,
+    "text": "“Vivenciar os Portais do Ventre foi uma experiência maravilhosa na minha vida. Consegui me expressar com mais clareza, entendendo minha potencialidade feminina, além de aprender MUITAS coisas interessantes de diversas áreas diferentes. Eu AMEI.”",
+    "html": "“Vivenciar os Portais do Ventre foi uma experiência maravilhosa na minha vida. <strong>Consegui me expressar com mais clareza</strong>, entendendo minha potencialidade feminina, além de aprender MUITAS coisas interessantes de diversas áreas diferentes. Eu AMEI.”",
+    "type": "html",
+    "proof": true,
+    "pages": [
+      "home",
+      "visao"
+    ]
+  },
+  {
+    "id": 79,
+    "text": "Taynah Serpa",
+    "html": "Taynah Serpa",
+    "type": "text",
+    "proof": false,
+    "pages": [
+      "home",
+      "visao"
+    ]
+  },
+  {
+    "id": 80,
+    "text": "“A cada portal que adentrei, despertei partes adormecidas dentro de mim e senti uma força especial nascendo e transbordando. Hoje, me sinto mais confiante, leve e aberta para o novo. Foi como se eu estivesse desabrochando como uma rosa, revelando potenciais, beleza e cura em cada pétala.”",
+    "html": "“A cada portal que adentrei, despertei partes adormecidas dentro de mim e senti uma força especial nascendo e transbordando. Hoje, me sinto mais confiante, leve e aberta para o novo. <strong>Foi como se eu estivesse desabrochando como uma rosa</strong>, revelando potenciais, beleza e cura em cada pétala.”",
+    "type": "html",
+    "proof": true,
+    "pages": [
+      "home",
+      "visao"
+    ]
+  },
+  {
+    "id": 81,
+    "text": "Sami Harisha",
+    "html": "Sami Harisha",
+    "type": "text",
+    "proof": false,
+    "pages": [
+      "home",
+      "visao"
+    ]
+  },
+  {
+    "id": 82,
+    "text": "[COPY PENDENTE]",
+    "html": "[COPY PENDENTE]",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "home"
+    ]
+  },
+  {
+    "id": 83,
+    "text": "O portal permanece aberto",
+    "html": "O portal permanece aberto",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "home",
+      "templo",
+      "metodo",
+      "caminhos",
+      "prana"
+    ]
+  },
+  {
+    "id": 84,
+    "text": "Você não veio para ser desejada. Você veio para gestar mundos.",
+    "html": "Você não veio para ser desejada. Você veio para gestar mundos.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "home",
+      "templo",
+      "metodo",
+      "caminhos",
+      "prana"
+    ]
+  },
+  {
+    "id": 85,
+    "text": "Do chamado à coroação, cada passo é uma iniciação. E o primeiro é escolher por onde começar.",
+    "html": "Do chamado à coroação, cada passo é uma iniciação. E o primeiro é escolher por onde começar.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "home",
+      "templo",
+      "metodo",
+      "caminhos",
+      "prana"
+    ]
+  },
+  {
+    "id": 86,
+    "text": "Encontrar meu caminho ↗",
+    "html": "Encontrar meu caminho <span aria-hidden=\"true\">↗</span>",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "home",
+      "templo",
+      "metodo",
+      "caminhos",
+      "prana"
+    ]
+  },
+  {
+    "id": 87,
+    "text": "Assim é. Assim pulsa. Assim desperta.",
+    "html": "Assim é. Assim pulsa. Assim desperta.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "home",
+      "templo",
+      "metodo",
+      "caminhos",
+      "curso",
+      "prana"
+    ]
+  },
+  {
+    "id": 88,
+    "text": "Som desligado ♫",
+    "html": "Som desligado ♫",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "home"
+    ]
+  },
+  {
+    "id": 89,
+    "text": "Ouvir Prana Ka",
+    "html": "Ouvir Prana Ka",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "home"
+    ]
+  },
+  {
+    "id": 90,
+    "text": "Abrir Spotify ↗",
+    "html": "Abrir Spotify ↗",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "home"
+    ]
+  },
+  {
+    "id": 91,
+    "text": "Abrir YouTube ↗",
+    "html": "Abrir YouTube ↗",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "home"
+    ]
+  },
+  {
+    "id": 92,
+    "text": "Fechar",
+    "html": "Fechar",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "home"
+    ]
+  },
+  {
+    "id": 93,
+    "text": "The Art of Living Devotion · Prana Ka",
+    "html": "The Art of Living Devotion · Prana Ka",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "home",
+      "templo",
+      "metodo",
+      "caminhos",
+      "mentoria",
+      "visao",
+      "curso",
+      "arte",
+      "prana"
+    ]
+  },
+  {
+    "id": 94,
+    "text": "Prana Ka · The Golden Temple",
+    "html": "Prana Ka · The Golden Temple",
+    "type": "text",
+    "proof": false,
+    "pages": [
+      "home",
+      "templo",
+      "metodo",
+      "caminhos",
+      "mentoria",
+      "visao",
+      "curso",
+      "arte",
+      "prana"
+    ]
+  },
+  {
+    "id": 95,
+    "text": "Voltar ao início ↑",
+    "html": "Voltar ao início ↑",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "home",
+      "templo",
+      "metodo",
+      "caminhos",
+      "mentoria",
+      "visao",
+      "curso",
+      "arte",
+      "prana"
+    ]
+  },
+  {
+    "id": 96,
+    "text": "The Golden Temple — início",
+    "type": "attribute",
+    "proof": false,
+    "pages": [
+      "home",
+      "templo",
+      "metodo",
+      "caminhos",
+      "mentoria",
+      "visao",
+      "curso",
+      "arte",
+      "prana"
+    ]
+  },
+  {
+    "id": 97,
+    "text": "Principal",
+    "type": "attribute",
+    "proof": false,
+    "pages": [
+      "home",
+      "templo",
+      "metodo",
+      "caminhos",
+      "mentoria",
+      "visao",
+      "curso",
+      "arte",
+      "prana"
+    ]
+  },
+  {
+    "id": 98,
+    "text": "Idioma",
+    "type": "attribute",
+    "proof": false,
+    "pages": [
+      "home",
+      "templo",
+      "metodo",
+      "caminhos",
+      "mentoria",
+      "visao",
+      "curso",
+      "arte",
+      "prana"
+    ]
+  },
+  {
+    "id": 99,
+    "text": "O credo",
+    "type": "attribute",
+    "proof": false,
+    "pages": [
+      "home"
+    ]
+  },
+  {
+    "id": 100,
+    "text": "Os cinco passos do Método S.E.R.",
+    "type": "attribute",
+    "proof": false,
+    "pages": [
+      "home",
+      "mentoria"
+    ]
+  },
+  {
+    "id": 101,
+    "text": "Ofertas",
+    "type": "attribute",
+    "proof": false,
+    "pages": [
+      "home",
+      "templo",
+      "metodo",
+      "caminhos",
+      "mentoria",
+      "visao",
+      "curso",
+      "arte",
+      "prana"
+    ]
+  },
+  {
+    "id": 102,
+    "text": "↓",
+    "html": "↓",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "templo",
+      "metodo",
+      "caminhos",
+      "arte",
+      "prana"
+    ]
+  },
+  {
+    "id": 103,
+    "text": "Essa é a missão, e ela explica o resto. The Golden Temple é uma escola iniciática de saberes femininos, fundada por Prana Ka. Não é um curso com módulos: é uma escada, e cada degrau pede mais do que o anterior.",
+    "html": "Essa é a missão, e ela explica o resto. The Golden Temple é uma escola iniciática de saberes femininos, fundada por Prana Ka. Não é um curso com módulos: é uma escada, e cada degrau pede mais do que o anterior.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "templo"
+    ]
+  },
+  {
+    "id": 104,
+    "text": "As linhagens",
+    "html": "As linhagens",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "templo"
+    ]
+  },
+  {
+    "id": 105,
+    "text": "Shivaísmo da Caxemira",
+    "html": "Shivaísmo da Caxemira",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "templo"
+    ]
+  },
+  {
+    "id": 106,
+    "text": "Shiva e Shakti, o corpo como templo, a consciência que pulsa.",
+    "html": "Shiva e Shakti, o corpo como templo, a consciência que pulsa.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "templo"
+    ]
+  },
+  {
+    "id": 107,
+    "text": "Kemet · Egito antigo",
+    "html": "Kemet · Egito antigo",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "templo"
+    ]
+  },
+  {
+    "id": 108,
+    "text": "Aset, Hathor, Heru, Ma'at. Alquimia e os mistérios do ventre.",
+    "html": "Aset, Hathor, Heru, Ma'at. Alquimia e os mistérios do ventre.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "templo"
+    ]
+  },
+  {
+    "id": 109,
+    "text": "A Rosa · Suméria, Avalon, Madalena",
+    "html": "A Rosa · Suméria, Avalon, Madalena",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "templo"
+    ]
+  },
+  {
+    "id": 110,
+    "text": "A linhagem da sacerdotisa. Inanna, o cálice, a rosa vermelha.",
+    "html": "A linhagem da sacerdotisa. Inanna, o cálice, a rosa vermelha.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "templo"
+    ]
+  },
+  {
+    "id": 111,
+    "text": "As quatro dimensões",
+    "html": "As quatro dimensões",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "templo"
+    ]
+  },
+  {
+    "id": 112,
+    "text": "espiritualidade encarnada",
+    "html": "espiritualidade encarnada",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "templo"
+    ]
+  },
+  {
+    "id": 113,
+    "text": "psicologia profunda",
+    "html": "psicologia profunda",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "templo"
+    ]
+  },
+  {
+    "id": 114,
+    "text": "multidimensional",
+    "html": "multidimensional",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "templo"
+    ]
+  },
+  {
+    "id": 115,
+    "text": "expressão artística",
+    "html": "expressão artística",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "templo"
+    ]
+  },
+  {
+    "id": 116,
+    "text": "Para quem o Templo abre, e para quem não",
+    "html": "Para quem o Templo abre, e para quem não",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "templo"
+    ]
+  },
+  {
+    "id": 117,
+    "text": "A Rosa chama aquelas que estão prontas.",
+    "html": "A Rosa chama aquelas que estão prontas.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "templo"
+    ]
+  },
+  {
+    "id": 118,
+    "text": "Mulheres sensíveis, criativas, muitas neurodivergentes. As que sentem cedo e fundo. As que têm um chamado e ainda não souberam como honrá-lo. As que querem prazer com alma, e não só intensidade.",
+    "html": "Mulheres sensíveis, criativas, muitas neurodivergentes. As que sentem cedo e fundo. As que têm um chamado e ainda não souberam como honrá-lo. As que querem prazer com alma, e não só intensidade.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "templo"
+    ]
+  },
+  {
+    "id": 119,
+    "text": "Talvez ainda não seja a hora se você procura técnica sem corpo, resposta pronta, ou alguém que atravesse no teu lugar. Aqui ninguém atravessa por você.",
+    "html": "Talvez ainda não seja a hora se você procura técnica sem corpo, resposta pronta, ou alguém que atravesse no teu lugar. Aqui ninguém atravessa por você.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "templo"
+    ]
+  },
+  {
+    "id": 120,
+    "text": "Se tu quer que a tua vida fique igual, não chega perto de mim.",
+    "html": "Se tu quer que a tua vida fique igual, não chega perto de mim.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "templo"
+    ]
+  },
+  {
+    "id": 121,
+    "text": "Método S.E.R. · Ressonância Corporificada do Sagrado",
+    "html": "Método S.E.R. · Ressonância Corporificada do Sagrado",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "metodo"
+    ]
+  },
+  {
+    "id": 122,
+    "text": "O S.E.R. desce antes de subir. Começa na terra do ventre, não na mente, e cada camada prepara a próxima. São cinco passos, e cada um tem um fundamento, uma pergunta que ele responde e uma coisa concreta que ele devolve.",
+    "html": "O S.E.R. desce antes de subir. Começa na terra do ventre, não na mente, e cada camada prepara a próxima. São cinco passos, e cada um tem um fundamento, uma pergunta que ele responde e uma coisa concreta que ele devolve.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "metodo"
+    ]
+  },
+  {
+    "id": 123,
+    "text": "01 · ATERRAR",
+    "html": "01 · ATERRAR",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "metodo"
+    ]
+  },
+  {
+    "id": 124,
+    "text": "Fundamento: espiritualidade encarnada",
+    "html": "Fundamento: espiritualidade encarnada",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "metodo"
+    ]
+  },
+  {
+    "id": 125,
+    "text": "Antes de entender, é preciso habitar. Presença, respiração e o corpo reconhecido como solo seguro.",
+    "html": "Antes de entender, é preciso habitar. Presença, respiração e o corpo reconhecido como solo seguro.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "metodo"
+    ]
+  },
+  {
+    "id": 126,
+    "text": "Pergunta: Estou aqui? Habito o meu próprio templo?",
+    "html": "Pergunta: Estou aqui? Habito o meu próprio templo?",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "metodo"
+    ]
+  },
+  {
+    "id": 127,
+    "text": "Entrega: sair da dissociação e criar chão firme para a jornada.",
+    "html": "Entrega: sair da dissociação e criar chão firme para a jornada.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "metodo"
+    ]
+  },
+  {
+    "id": 128,
+    "text": "02 · COMPREENDER",
+    "html": "02 · COMPREENDER",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "metodo"
+    ]
+  },
+  {
+    "id": 129,
+    "text": "Fundamento: psicologia profunda",
+    "html": "Fundamento: psicologia profunda",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "metodo"
+    ]
+  },
+  {
+    "id": 130,
+    "text": "Com o corpo aterrado, entra a luz da consciência. Os padrões, os emaranhados, a voz do Guardião do Véu ganham nome.",
+    "html": "Com o corpo aterrado, entra a luz da consciência. Os padrões, os emaranhados, a voz do Guardião do Véu ganham nome.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "metodo"
+    ]
+  },
+  {
+    "id": 131,
+    "text": "Pergunta: O que em mim aprendeu a se calar? De onde vem essa voz?",
+    "html": "Pergunta: O que em mim aprendeu a se calar? De onde vem essa voz?",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "metodo"
+    ]
+  },
+  {
+    "id": 132,
+    "text": "Entrega: clareza mental, o inconsciente tornado consciente.",
+    "html": "Entrega: clareza mental, o inconsciente tornado consciente.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "metodo"
+    ]
+  },
+  {
+    "id": 133,
+    "text": "03 · ALQUIMIZAR",
+    "html": "03 · ALQUIMIZAR",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "metodo"
+    ]
+  },
+  {
+    "id": 134,
+    "text": "Fundamento: multidimensional",
+    "html": "Fundamento: multidimensional",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "metodo"
+    ]
+  },
+  {
+    "id": 135,
+    "text": "O que foi compreendido agora é solto. Não se luta contra a sombra: escuta-se, traduz-se e reintegra-se.",
+    "html": "O que foi compreendido agora é solto. Não se luta contra a sombra: escuta-se, traduz-se e reintegra-se.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "metodo"
+    ]
+  },
+  {
+    "id": 136,
+    "text": "Pergunta: O que estou pronta para soltar e regenerar?",
+    "html": "Pergunta: O que estou pronta para soltar e regenerar?",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "metodo"
+    ]
+  },
+  {
+    "id": 137,
+    "text": "Entrega: libertação vibracional e campo energético renovado.",
+    "html": "Entrega: libertação vibracional e campo energético renovado.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "metodo"
+    ]
+  },
+  {
+    "id": 138,
+    "text": "04 · RESSOAR",
+    "html": "04 · RESSOAR",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "metodo"
+    ]
+  },
+  {
+    "id": 139,
+    "text": "Fundamento: expressão artística",
+    "html": "Fundamento: expressão artística",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "metodo"
+    ]
+  },
+  {
+    "id": 140,
+    "text": "Livre e clara, a verdade encontra som, gesto e forma. A voz, a dança, a arte como oração.",
+    "html": "Livre e clara, a verdade encontra som, gesto e forma. A voz, a dança, a arte como oração.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "metodo"
+    ]
+  },
+  {
+    "id": 141,
+    "text": "Pergunta: Como a minha verdade quer se expressar no mundo?",
+    "html": "Pergunta: Como a minha verdade quer se expressar no mundo?",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "metodo"
+    ]
+  },
+  {
+    "id": 142,
+    "text": "Entrega: expressão autêntica e criatividade destravada.",
+    "html": "Entrega: expressão autêntica e criatividade destravada.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "metodo"
+    ]
+  },
+  {
+    "id": 143,
+    "text": "05 · CORPORIFICAR",
+    "html": "05 · CORPORIFICAR",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "metodo"
+    ]
+  },
+  {
+    "id": 144,
+    "text": "Fundamento: soberania e liderança",
+    "html": "Fundamento: soberania e liderança",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "metodo"
+    ]
+  },
+  {
+    "id": 145,
+    "text": "O Selamento Dourado. A ressonância deixa de ser experiência de círculo e vira modo de vida.",
+    "html": "O Selamento Dourado. A ressonância deixa de ser experiência de círculo e vira modo de vida.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "metodo"
+    ]
+  },
+  {
+    "id": 146,
+    "text": "Pergunta: Como eu vivo isso todos os dias, como mulher soberana?",
+    "html": "Pergunta: Como eu vivo isso todos os dias, como mulher soberana?",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "metodo"
+    ]
+  },
+  {
+    "id": 147,
+    "text": "Entrega: The Art of Living Devotion.",
+    "html": "Entrega: The Art of Living Devotion.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "metodo"
+    ]
+  },
+  {
+    "id": 148,
+    "text": "O que era vergonha vira potência. O que era dor vira consciência. O que era bloqueio vira combustível.",
+    "html": "O que era vergonha vira potência. O que era dor vira consciência. O que era bloqueio vira combustível.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "metodo"
+    ]
+  },
+  {
+    "id": 149,
+    "text": "O Templo Dourado · Visão Uterina · Despertar do Prazer Sagrado",
+    "html": "O Templo Dourado · Visão Uterina · Despertar do Prazer Sagrado",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "caminhos"
+    ]
+  },
+  {
+    "id": 150,
+    "text": "Mentoria em grupo • 12 encontros",
+    "html": "Mentoria em grupo <span aria-hidden=\"true\">•</span> 12 encontros",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 151,
+    "text": "Uma iniciação para transformar consciência em presença vivida.",
+    "html": "\n            Uma iniciação para transformar consciência em presença vivida.\n          ",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 152,
+    "text": "Viva a partir do poder que nasce no teu ventre.",
+    "html": "Viva a partir do poder que nasce no teu ventre.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 153,
+    "text": "Quero selar minha entrada ↘",
+    "html": "\n              Quero selar minha entrada\n              <span class=\"button__arrow\" aria-hidden=\"true\">↘</span>\n            ",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 154,
+    "text": "Conheça primeiro a jornada completa e o que sustenta cada passagem.",
+    "html": "Conheça primeiro a jornada completa e o que sustenta cada passagem.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 155,
+    "text": "encontrosem grupo",
+    "html": "encontros<br>em grupo",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 156,
+    "text": "Do portal à morada",
+    "html": "Do portal à morada",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 157,
+    "text": "Continue a travessia",
+    "html": "\n          Continue a travessia\n        ",
+    "type": "text",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 158,
+    "text": "I",
+    "html": "I",
+    "type": "text",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 159,
+    "text": "A travessia já começou",
+    "html": "A travessia já começou",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 160,
+    "text": "Talvez você já tenha mudado por fora.",
+    "html": "Talvez você já tenha mudado por fora.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 161,
+    "text": "Um relacionamento terminou. O trabalho que servia já não serve. A cidade, a rotina ou o lugar que você ocupava perderam a medida.",
+    "html": "\n            Um relacionamento terminou. O trabalho que servia já não serve. A cidade, a rotina ou o lugar que\n            você ocupava perderam a medida.\n          ",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 162,
+    "text": "Mesmo assim, uma parte sua ainda espera um sinal de fora para confiar no que já sabe por dentro.",
+    "html": "\n              Mesmo assim, uma parte sua ainda espera um sinal de fora para confiar no que já sabe por dentro.\n            ",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 163,
+    "text": "Quando esse intervalo se alonga, não falta sensibilidade. Falta chão para sustentar a própria voz.",
+    "html": "\n              Quando esse intervalo se alonga, não falta sensibilidade. Falta chão para sustentar a própria voz.\n            ",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 164,
+    "text": "O ponto de reconhecimento",
+    "html": "O ponto de reconhecimento",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 165,
+    "text": "Você sente muito. E já aprendeu a compreender muito do que sente.",
+    "html": "Você sente muito. E já aprendeu a compreender muito do que sente.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 166,
+    "text": "Leituras, terapias, retiros e práticas abriram caminhos reais. A passagem que se apresenta agora pede integração: levar o que você já sabe para os limites que coloca, para a voz que expressa e para as escolhas que sustenta todos os dias.",
+    "html": "\n            Leituras, terapias, retiros e práticas abriram caminhos reais. A passagem que se apresenta agora pede\n            integração: levar o que você já sabe para os limites que coloca, para a voz que expressa e para as\n            escolhas que sustenta todos os dias.\n          ",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 167,
+    "text": "“Você não está quebrada. Apenas esquecida de si.”",
+    "html": "“Você não está quebrada. Apenas esquecida de si.”",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 168,
+    "text": "II",
+    "html": "II",
+    "type": "text",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 169,
+    "text": "A Iniciação Dourada",
+    "html": "A Iniciação Dourada",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 170,
+    "text": "Um caminho de retorno ao poder que nasce no ventre.",
+    "html": "Um caminho de retorno ao poder que nasce no ventre.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 171,
+    "text": "Chamo de Poder Distorcido o hábito de entregar para fora a medida do próprio valor, da própria voz e do próprio desejo. A Iniciação Dourada devolve essa medida ao corpo por meio do Método S.E.R.",
+    "html": "\n            Chamo de Poder Distorcido o hábito de entregar para fora a medida do próprio valor, da própria voz e\n            do próprio desejo. A Iniciação Dourada devolve essa medida ao corpo por meio do Método S.E.R.\n          ",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 172,
+    "text": "O Guardião do Véu nomeia a voz de vergonha e repressão que costuma aparecer quando uma mulher volta a se escolher. Ele ajuda a compreender a passagem. A transformação permanece no centro.",
+    "html": "\n            O Guardião do Véu nomeia a voz de vergonha e repressão que costuma aparecer quando uma mulher volta a\n            se escolher. Ele ajuda a compreender a passagem. A transformação permanece no centro.\n          ",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 173,
+    "text": "III",
+    "html": "III",
+    "type": "text",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 174,
+    "text": "A jornada completa",
+    "html": "A jornada completa",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 175,
+    "text": "Quatro fases para fazer do portal uma morada.",
+    "html": "Quatro fases para fazer do portal uma morada.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 176,
+    "text": "Cada fase prepara a seguinte. O ritmo respeita a profundidade do processo e mantém a experiência ligada à vida real.",
+    "html": "\n            Cada fase prepara a seguinte. O ritmo respeita a profundidade do processo e mantém a experiência\n            ligada à vida real.\n          ",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 177,
+    "text": "Ver",
+    "html": "Ver",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 178,
+    "text": "Tomada de consciência",
+    "html": "Tomada de consciência",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 179,
+    "text": "Reconhecer o chão atual, os padrões em curso e o chamado da travessia.",
+    "html": "Reconhecer o chão atual, os padrões em curso e o chamado da travessia.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 180,
+    "text": "Atravessar",
+    "html": "Atravessar",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 181,
+    "text": "Transmutação e alquimia",
+    "html": "Transmutação e alquimia",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 182,
+    "text": "Passar pelos oito Portais do Ventre e transformar percepção em experiência encarnada.",
+    "html": "Passar pelos oito Portais do Ventre e transformar percepção em experiência encarnada.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 183,
+    "text": "Renascer",
+    "html": "Renascer",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 184,
+    "text": "Renascer crístico",
+    "html": "Renascer crístico",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 185,
+    "text": "Reorganizar presença, escolha e expressão a partir do que foi integrado.",
+    "html": "Reorganizar presença, escolha e expressão a partir do que foi integrado.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 186,
+    "text": "Habitar",
+    "html": "Habitar",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 187,
+    "text": "Reinar e celebrar",
+    "html": "Reinar e celebrar",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 188,
+    "text": "Sustentar a própria vida com mais verdade, devoção e autoria.",
+    "html": "Sustentar a própria vida com mais verdade, devoção e autoria.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 189,
+    "text": "O que sustenta o percurso",
+    "html": "O que sustenta o percurso",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 190,
+    "text": "Profundidade com estrutura para integrar.",
+    "html": "Profundidade com estrutura para integrar.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 191,
+    "text": "12",
+    "html": "12",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 192,
+    "text": "encontros em grupo para transmissão, prática e integração",
+    "html": "encontros em grupo para transmissão, prática e integração",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 193,
+    "text": "Presença",
+    "html": "Presença",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 194,
+    "text": "meditações guiadas e transmissões ao longo da jornada",
+    "html": "meditações guiadas e transmissões ao longo da jornada",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 195,
+    "text": "Corpo",
+    "html": "Corpo",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 196,
+    "text": "rituais femininos e práticas para levar a experiência à vida",
+    "html": "rituais femininos e práticas para levar a experiência à vida",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 197,
+    "text": "Biblioteca",
+    "html": "Biblioteca",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 198,
+    "text": "aulas e práticas de cerca de 20 minutos para revisitar no seu ritmo",
+    "html": "aulas e práticas de cerca de 20 minutos para revisitar no seu ritmo",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 199,
+    "text": "Individual",
+    "html": "Individual",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 200,
+    "text": "uma sessão de Mesa Radiônica para cada participante",
+    "html": "uma sessão de Mesa Radiônica para cada participante",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 201,
+    "text": "Prana Ka • The Golden Temple",
+    "html": "Prana Ka <span>•</span> The Golden Temple",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 202,
+    "text": "Quem conduz a passagem",
+    "html": "Quem conduz a passagem",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria",
+      "prana"
+    ]
+  },
+  {
+    "id": 203,
+    "text": "Prana Ka, doula de passagem.",
+    "html": "Prana Ka, doula de passagem.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria",
+      "prana"
+    ]
+  },
+  {
+    "id": 204,
+    "text": "Desde 2021, a versão individual desta jornada vem sendo vivida e refinada. A mentoria em grupo leva esse percurso para um campo de presença compartilhada, preservando a responsabilidade de cada mulher sobre a própria passagem.",
+    "html": "\n            Desde 2021, a versão individual desta jornada vem sendo vivida e refinada. A mentoria em grupo leva\n            esse percurso para um campo de presença compartilhada, preservando a responsabilidade de cada mulher\n            sobre a própria passagem.\n          ",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria",
+      "prana"
+    ]
+  },
+  {
+    "id": 205,
+    "text": "O Templo Dourado é uma experiência educativa e vivencial. Não substitui psicoterapia, acompanhamento médico ou atendimento de emergência.",
+    "html": "\n            O Templo Dourado é uma experiência educativa e vivencial. Não substitui psicoterapia, acompanhamento\n            médico ou atendimento de emergência.\n          ",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria",
+      "prana"
+    ]
+  },
+  {
+    "id": 206,
+    "text": "IV",
+    "html": "IV",
+    "type": "text",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 207,
+    "text": "A dedicação é o filtro",
+    "html": "A dedicação é o filtro",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 208,
+    "text": "Há um momento em que reconhecer o chamado também significa escolher o caminho.",
+    "html": "Há um momento em que reconhecer o chamado também significa escolher o caminho.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 209,
+    "text": "Esta jornada conversa com você se",
+    "html": "Esta jornada conversa com você se",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 210,
+    "text": "você vive uma travessia e a antiga forma de se conduzir perdeu sentido",
+    "html": "você vive uma travessia e a antiga forma de se conduzir perdeu sentido",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 211,
+    "text": "já percorreu caminhos de autoconhecimento e deseja integrar o que sabe no corpo",
+    "html": "já percorreu caminhos de autoconhecimento e deseja integrar o que sabe no corpo",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 212,
+    "text": "aceita dedicar presença às práticas e ao espaço entre os encontros",
+    "html": "aceita dedicar presença às práticas e ao espaço entre os encontros",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 213,
+    "text": "quer reconhecer limites, expressar sua voz e sustentar escolhas próprias",
+    "html": "quer reconhecer limites, expressar sua voz e sustentar escolhas próprias",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 214,
+    "text": "Talvez ainda não seja a hora se",
+    "html": "Talvez ainda não seja a hora se",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 215,
+    "text": "você procura uma solução que não peça participação ativa",
+    "html": "você procura uma solução que não peça participação ativa",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 216,
+    "text": "quer que outra pessoa determine quem você deve ser ou como deve viver",
+    "html": "quer que outra pessoa determine quem você deve ser ou como deve viver",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 217,
+    "text": "precisa agora de cuidado clínico individual ou suporte de emergência",
+    "html": "precisa agora de cuidado clínico individual ou suporte de emergência",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 218,
+    "text": "A turma é um espaço para mulheres dispostas a atravessar com presença, respeito e responsabilidade.",
+    "html": "\n          A turma é um espaço para mulheres dispostas a atravessar com presença, respeito e responsabilidade.\n        ",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 219,
+    "text": "O que você sela ao entrar.",
+    "html": "O que você sela ao entrar.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 220,
+    "text": "Uma mentoria em grupo de 12 encontros para transformar percepção em presença, expressão e escolhas sustentadas na vida.",
+    "html": "\n            Uma mentoria em grupo de 12 encontros para transformar percepção em presença, expressão e escolhas\n            sustentadas na vida.\n          ",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 221,
+    "text": "Sua entrada inclui",
+    "html": "Sua entrada inclui",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 222,
+    "text": "os cinco passos do Método S.E.R.",
+    "html": "os cinco passos do Método S.E.R.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 223,
+    "text": "as quatro fases e os oito Portais do Ventre",
+    "html": "as quatro fases e os oito Portais do Ventre",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 224,
+    "text": "transmissões, meditações e rituais femininos",
+    "html": "transmissões, meditações e rituais femininos",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 225,
+    "text": "biblioteca de aulas e práticas breves",
+    "html": "biblioteca de aulas e práticas breves",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 226,
+    "text": "uma sessão individual de Mesa Radiônica",
+    "html": "uma sessão individual de Mesa Radiônica",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 227,
+    "text": "Próxima turma em preparação",
+    "html": "Próxima turma em preparação",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 228,
+    "text": "Preço, calendário, capacidade, prazo e política de cancelamento serão publicados juntos, depois de confirmados.",
+    "html": "\n                Preço, calendário, capacidade, prazo e política de cancelamento serão publicados juntos, depois\n                de confirmados.\n              ",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 229,
+    "text": "A entrada é por conversa",
+    "html": "A entrada é por conversa",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 230,
+    "text": "Antes de você entrar, nós conversamos. Não é uma triagem — é o modo como esse caminho começa: eu preciso sentir o seu campo, e você precisa sentir o meu.",
+    "html": "\n                Antes de você entrar, nós conversamos. Não é uma triagem — é o modo como esse caminho\n                começa: eu preciso sentir o seu campo, e você precisa sentir o meu.\n              ",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 231,
+    "text": "Início",
+    "html": "Início",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 232,
+    "text": "Entrada a qualquer momento — o ciclo é contínuo",
+    "html": "Entrada a qualquer momento — o ciclo é contínuo",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 233,
+    "text": "Encontros",
+    "html": "Encontros",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 234,
+    "text": "Encontros a cada 14 dias, às quartas, 19h",
+    "html": "Encontros a cada 14 dias, às quartas, 19h",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 235,
+    "text": "Turma",
+    "html": "Turma",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 236,
+    "text": "Sem limite de vagas — cada mulher percorre no próprio ritmo",
+    "html": "Sem limite de vagas — cada mulher percorre no próprio ritmo",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 237,
+    "text": "Inscrições",
+    "html": "Inscrições",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 238,
+    "text": "Sem prazo de inscrição — a entrada é perene",
+    "html": "Sem prazo de inscrição — a entrada é perene",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 239,
+    "text": "Quero conversar sobre minha entrada ↘",
+    "html": "\n              Quero conversar sobre minha entrada\n              <span class=\"button__arrow\" aria-hidden=\"true\">↘</span>\n            ",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 240,
+    "text": "A entrada será aberta quando os termos da próxima travessia estiverem confirmados.",
+    "html": "\n              A entrada será aberta quando os termos da próxima travessia estiverem confirmados.\n            ",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 241,
+    "text": "Depois da conversa Depois da conversa, você recebe o acesso à plataforma e o caminho dos oito Portais do Ventre, para percorrer no seu tempo.",
+    "html": "<strong>Depois da conversa</strong> <span data-post-purchase=\"\">Depois da conversa, você recebe o acesso à plataforma e o caminho dos oito Portais do Ventre, para percorrer no seu tempo.</span>",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 242,
+    "text": "Política de cancelamento",
+    "html": "<strong>Política de cancelamento</strong> <span data-policy=\"\"></span>",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 243,
+    "text": "V",
+    "html": "V",
+    "type": "text",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 244,
+    "text": "Perguntas antes da passagem",
+    "html": "Perguntas antes da passagem",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 245,
+    "text": "Clareza também é parte do cuidado.",
+    "html": "Clareza também é parte do cuidado.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 246,
+    "text": "Eu já faço terapia. O que esta jornada acrescenta?",
+    "html": "\n              <span>Eu já faço terapia. O que esta jornada acrescenta?</span>\n              <span class=\"faq__icon\" aria-hidden=\"true\"></span>\n            ",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 247,
+    "text": "A mentoria reúne reflexão psicológica, práticas corporais, ritual e expressão artística em um percurso de integração. Ela pode caminhar ao lado da terapia, mas não ocupa o lugar do cuidado clínico.",
+    "html": "\n                A mentoria reúne reflexão psicológica, práticas corporais, ritual e expressão artística em um\n                percurso de integração. Ela pode caminhar ao lado da terapia, mas não ocupa o lugar do cuidado\n                clínico.\n              ",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 248,
+    "text": "Preciso ter experiência com práticas espirituais?",
+    "html": "\n              <span>Preciso ter experiência com práticas espirituais?</span>\n              <span class=\"faq__icon\" aria-hidden=\"true\"></span>\n            ",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 249,
+    "text": "Não. Você precisa de abertura, discernimento e disposição para experimentar. Toda prática será apresentada dentro do contexto da jornada, sem exigir uma formação anterior.",
+    "html": "\n                Não. Você precisa de abertura, discernimento e disposição para experimentar. Toda prática será\n                apresentada dentro do contexto da jornada, sem exigir uma formação anterior.\n              ",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 250,
+    "text": "Como funcionam os 12 encontros?",
+    "html": "\n              <span>Como funcionam os 12 encontros?</span>\n              <span class=\"faq__icon\" aria-hidden=\"true\"></span>\n            ",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 251,
+    "text": "São 12 encontros em grupo que combinam transmissão, prática e integração. O calendário e a cadência completos serão apresentados antes da abertura do checkout.",
+    "html": "\n                São 12 encontros em grupo que combinam transmissão, prática e integração. O calendário e a\n                cadência completos serão apresentados antes da abertura do checkout.\n              ",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 252,
+    "text": "Quanto tempo as práticas pedem?",
+    "html": "\n              <span>Quanto tempo as práticas pedem?</span>\n              <span class=\"faq__icon\" aria-hidden=\"true\"></span>\n            ",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 253,
+    "text": "A biblioteca inclui aulas e práticas de cerca de 20 minutos. A dedicação entre encontros importa mais do que uma performance de constância perfeita.",
+    "html": "\n                A biblioteca inclui aulas e práticas de cerca de 20 minutos. A dedicação entre encontros importa\n                mais do que uma performance de constância perfeita.\n              ",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 254,
+    "text": "E se eu sentir medo de tocar em algo profundo?",
+    "html": "\n              <span>E se eu sentir medo de tocar em algo profundo?</span>\n              <span class=\"faq__icon\" aria-hidden=\"true\"></span>\n            ",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 255,
+    "text": "Medo pode fazer parte de uma travessia. Aqui, profundidade caminha com respeito aos limites e com responsabilidade. Quando houver necessidade de cuidado clínico, a orientação é buscar o suporte profissional adequado.",
+    "html": "\n                Medo pode fazer parte de uma travessia. Aqui, profundidade caminha com respeito aos limites e com\n                responsabilidade. Quando houver necessidade de cuidado clínico, a orientação é buscar o suporte\n                profissional adequado.\n              ",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 256,
+    "text": "Quando minha entrada está realmente selada?",
+    "html": "\n              <span>Quando minha entrada está realmente selada?</span>\n              <span class=\"faq__icon\" aria-hidden=\"true\"></span>\n            ",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 257,
+    "text": "Quando as inscrições estiverem abertas, sua entrada será confirmada após a aprovação do pagamento no checkout. O próximo passo chegará pelo canal informado na própria oferta.",
+    "html": "\n                Quando as inscrições estiverem abertas, sua entrada será confirmada após a aprovação do pagamento\n                no checkout. O próximo passo chegará pelo canal informado na própria oferta.\n              ",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 258,
+    "text": "O poder que nasce no teu ventre pede espaço para virar vida.",
+    "html": "O poder que nasce no teu ventre pede espaço para virar vida.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 259,
+    "text": "Se este é o seu tempo, atravesse com presença. O Templo começa a ser habitado na escolha que você sustenta por dentro.",
+    "html": "\n            Se este é o seu tempo, atravesse com presença. O Templo começa a ser habitado na escolha que você\n            sustenta por dentro.\n          ",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 260,
+    "text": "O Templo Dourado é uma mentoria em grupo de 12 encontros para mulheres que desejam habitar o corpo, reconhecer limites e sustentar a própria voz.",
+    "type": "attribute",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 261,
+    "text": "Fóssil de espiral dourada",
+    "type": "attribute",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 262,
+    "text": "As quatro fases do O Templo Dourado",
+    "type": "attribute",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 263,
+    "text": "Prana Ka diante de um templo",
+    "type": "attribute",
+    "proof": false,
+    "pages": [
+      "mentoria"
+    ]
+  },
+  {
+    "id": 264,
+    "text": "UMA SESSÃO INDIVIDUAL COM PRANA KA",
+    "html": "UMA SESSÃO INDIVIDUAL COM PRANA KA",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "visao"
+    ]
+  },
+  {
+    "id": 265,
+    "text": "VisãoUterina",
+    "html": "Visão<br><em>Uterina</em>",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "visao"
+    ]
+  },
+  {
+    "id": 266,
+    "text": "O que você deseja,quando se permite escutar?",
+    "html": "O que você deseja,<br>quando se permite escutar?",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "visao"
+    ]
+  },
+  {
+    "id": 267,
+    "text": "Quero minha Visão Uterina ↗",
+    "html": "Quero minha Visão Uterina <span aria-hidden=\"true\">↗</span>",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "visao"
+    ]
+  },
+  {
+    "id": 268,
+    "text": "Sessão paga · Informações e agendamento pelo WhatsApp",
+    "html": "Sessão paga · Informações e agendamento pelo WhatsApp",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "visao"
+    ]
+  },
+  {
+    "id": 269,
+    "text": "VENTRE. ESCUTA. CLAREZA.",
+    "html": "VENTRE. ESCUTA. CLAREZA.",
+    "type": "text",
+    "proof": false,
+    "pages": [
+      "visao"
+    ]
+  },
+  {
+    "id": 270,
+    "text": "Um espaço para você ↓",
+    "html": "Um espaço para você <span aria-hidden=\"true\">↓</span>",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "visao"
+    ]
+  },
+  {
+    "id": 271,
+    "text": "O QUE FICA POR DIZER",
+    "html": "O QUE FICA POR DIZER",
+    "type": "text",
+    "proof": false,
+    "pages": [
+      "visao"
+    ]
+  },
+  {
+    "id": 272,
+    "text": "A conversa termina.Mas algo em vocêainda quer falar.",
+    "html": "A conversa termina.<br>Mas algo em você<br><em>ainda quer falar.</em>",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "visao"
+    ]
+  },
+  {
+    "id": 273,
+    "text": "Só depois, no banho, vêm as palavras. O limite que você queria colocar. O desejo que engoliu. O “sim” que saiu quando, por dentro, era “não”.",
+    "html": "Só depois, no banho, vêm as palavras. O limite que você queria colocar. O desejo que engoliu. O “sim” que saiu quando, por dentro, era “não”.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "visao"
+    ]
+  },
+  {
+    "id": 274,
+    "text": "Você construiu seu caminho, assume responsabilidades e tem tanto a oferecer. Mas, na hora de escolher por você, pode acabar procurando fora a permissão que gostaria de sentir por dentro.",
+    "html": "Você construiu seu caminho, assume responsabilidades e tem tanto a oferecer. Mas, na hora de escolher por você, pode acabar procurando fora a permissão que gostaria de sentir por dentro.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "visao"
+    ]
+  },
+  {
+    "id": 275,
+    "text": "Por isso, este encontro começa com uma pausa para escutar o que é seu.",
+    "html": "Por isso, este encontro começa com uma pausa para escutar o que é seu.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "visao"
+    ]
+  },
+  {
+    "id": 276,
+    "text": "A VISÃO UTERINA",
+    "html": "A VISÃO UTERINA",
+    "type": "text",
+    "proof": false,
+    "pages": [
+      "visao"
+    ]
+  },
+  {
+    "id": 277,
+    "text": "Um tempo para sentir.Espaço para perceber.",
+    "html": "Um tempo para sentir.<br><em>Espaço para perceber.</em>",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "visao"
+    ]
+  },
+  {
+    "id": 278,
+    "text": "Na sessão individual, Prana conduz uma meditação e uma escuta voltada ao ventre e ao corpo. O convite é perceber seus desejos para além das expectativas, dos medos e da tentativa de racionalizar tudo.",
+    "html": "Na sessão individual, Prana conduz uma meditação e uma escuta voltada ao ventre e ao corpo. O convite é perceber seus desejos para além das expectativas, dos medos e da tentativa de racionalizar tudo.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "visao"
+    ]
+  },
+  {
+    "id": 279,
+    "text": "I.",
+    "html": "I.",
+    "type": "text",
+    "proof": false,
+    "pages": [
+      "visao"
+    ]
+  },
+  {
+    "id": 280,
+    "text": "Olhar para o agora",
+    "html": "Olhar para o agora",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "visao"
+    ]
+  },
+  {
+    "id": 281,
+    "text": "Trazer o momento que você está vivendo: uma escolha, uma relação ou um desejo que pede mais espaço.",
+    "html": "Trazer o momento que você está vivendo: uma escolha, uma relação ou um desejo que pede mais espaço.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "visao"
+    ]
+  },
+  {
+    "id": 282,
+    "text": "II.",
+    "html": "II.",
+    "type": "text",
+    "proof": false,
+    "pages": [
+      "visao"
+    ]
+  },
+  {
+    "id": 283,
+    "text": "Escutar o ventre",
+    "html": "Escutar o ventre",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "visao"
+    ]
+  },
+  {
+    "id": 284,
+    "text": "Desacelerar a análise e voltar a atenção às sensações e percepções que aparecem na prática guiada.",
+    "html": "Desacelerar a análise e voltar a atenção às sensações e percepções que aparecem na prática guiada.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "visao"
+    ]
+  },
+  {
+    "id": 285,
+    "text": "III.",
+    "html": "III.",
+    "type": "text",
+    "proof": false,
+    "pages": [
+      "visao"
+    ]
+  },
+  {
+    "id": 286,
+    "text": "Reconhecer o que quer",
+    "html": "Reconhecer o que quer",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "visao"
+    ]
+  },
+  {
+    "id": 287,
+    "text": "Dar palavras ao que percebeu e olhar para suas escolhas com mais presença e confiança em si.",
+    "html": "Dar palavras ao que percebeu e olhar para suas escolhas com mais presença e confiança em si.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "visao"
+    ]
+  },
+  {
+    "id": 288,
+    "text": "Um encontro individual de escuta e autoconhecimento, conduzido por Prana Ka.",
+    "html": "Um encontro individual de escuta e autoconhecimento, conduzido por Prana Ka.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "visao"
+    ]
+  },
+  {
+    "id": 289,
+    "text": "ESTE CONVITE É PARA VOCÊ",
+    "html": "ESTE CONVITE É PARA VOCÊ",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "visao"
+    ]
+  },
+  {
+    "id": 290,
+    "text": "Há um desejopedindo passagem.",
+    "html": "Há um desejo<br>pedindo <em>passagem.</em>",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "visao"
+    ]
+  },
+  {
+    "id": 291,
+    "text": "Talvez seja uma mudança que você adia. A vontade de expressar seus limites com mais firmeza. Ou o chamado de oferecer ao mundo um trabalho que tenha mais a ver com quem você é.",
+    "html": "Talvez seja uma mudança que você adia. A vontade de expressar seus limites com mais firmeza. Ou o chamado de oferecer ao mundo um trabalho que tenha mais a ver com quem você é.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "visao"
+    ]
+  },
+  {
+    "id": 292,
+    "text": "Se você está disposta a dedicar tempo e investir na própria escuta, a Visão Uterina pode ser um primeiro encontro com esse movimento.",
+    "html": "Se você está disposta a dedicar tempo e investir na própria escuta, a Visão Uterina pode ser um primeiro encontro com esse movimento.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "visao"
+    ]
+  },
+  {
+    "id": 293,
+    "text": "Quero conversar sobre a sessão ↗",
+    "html": "Quero conversar sobre a sessão <span aria-hidden=\"true\">↗</span>",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "visao"
+    ]
+  },
+  {
+    "id": 294,
+    "text": "QUEM CONDUZ",
+    "html": "QUEM CONDUZ",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "visao"
+    ]
+  },
+  {
+    "id": 295,
+    "text": "Fundadora da The Golden Temple",
+    "html": "Fundadora da The Golden Temple",
+    "type": "text",
+    "proof": false,
+    "pages": [
+      "visao"
+    ]
+  },
+  {
+    "id": 296,
+    "text": "“Poético e selvagem,mas com extrema clareza,um discernimentoe um pé no chão.”",
+    "html": "“Poético e selvagem,<br>mas com extrema clareza,<br>um discernimento<br>e um pé no chão.”",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "visao",
+      "prana"
+    ]
+  },
+  {
+    "id": 297,
+    "text": "É assim que Prana descreve a essência do seu trabalho. Criadora do Método S.E.R., ela reúne escuta, corpo, voz e expressão artística em seu acompanhamento de mulheres.",
+    "html": "É assim que Prana descreve a essência do seu trabalho. Criadora do Método S.E.R., ela reúne escuta, corpo, voz e expressão artística em seu acompanhamento de mulheres.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "visao",
+      "prana"
+    ]
+  },
+  {
+    "id": 298,
+    "text": "Na Visão Uterina, essa escuta se volta para você: o seu momento, as suas percepções e aquilo que deseja viver.",
+    "html": "Na Visão Uterina, essa escuta se volta para você: o seu momento, as suas percepções e aquilo que deseja viver.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "visao",
+      "prana"
+    ]
+  },
+  {
+    "id": 299,
+    "text": "QUEM JÁ ATRAVESSOU",
+    "html": "QUEM JÁ ATRAVESSOU",
+    "type": "text",
+    "proof": false,
+    "pages": [
+      "visao"
+    ]
+  },
+  {
+    "id": 300,
+    "text": "O INVESTIMENTO",
+    "html": "O INVESTIMENTO",
+    "type": "text",
+    "proof": false,
+    "pages": [
+      "visao"
+    ]
+  },
+  {
+    "id": 301,
+    "text": "Uma sessão.Uma escolha por você.",
+    "html": "Uma sessão.<br><em>Uma escolha por você.</em>",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "visao"
+    ]
+  },
+  {
+    "id": 302,
+    "text": "R$333",
+    "html": "<span class=\"price-currency\">R$</span><span class=\"price-number\">333</span>",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "visao"
+    ]
+  },
+  {
+    "id": 303,
+    "text": "Sessão individual e online, conduzida por Prana Ka.",
+    "html": "Sessão individual e online, conduzida por Prana Ka.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "visao"
+    ]
+  },
+  {
+    "id": 304,
+    "text": "Você separa tempo e dinheiro para muita coisa que sustenta outras pessoas. Aqui, você separa para si. A sessão começa antes de começar — no momento em que você marca esse espaço como seu.",
+    "html": "Você separa tempo e dinheiro para muita coisa que sustenta outras pessoas. Aqui, você separa para si. A sessão começa antes de começar — no momento em que você marca esse espaço como seu.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "visao"
+    ]
+  },
+  {
+    "id": 305,
+    "text": "Quero agendar minha sessão ↗",
+    "html": "Quero agendar minha sessão <span aria-hidden=\"true\">↗</span>",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "visao"
+    ]
+  },
+  {
+    "id": 306,
+    "text": "Você fala direto com a Prana. Ela envia as formas de pagamento e os horários disponíveis.",
+    "html": "Você fala direto com a Prana. Ela envia as formas de pagamento e os horários disponíveis.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "visao"
+    ]
+  },
+  {
+    "id": 307,
+    "text": "ANTES DO ENCONTRO",
+    "html": "ANTES DO ENCONTRO",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "visao"
+    ]
+  },
+  {
+    "id": 308,
+    "text": "Algumas respostas.",
+    "html": "Algumas<br> <em>respostas.</em>",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "visao"
+    ]
+  },
+  {
+    "id": 309,
+    "text": "A Visão Uterina é uma sessão individual?+",
+    "html": "A Visão Uterina é uma sessão individual?<span aria-hidden=\"true\">+</span>",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "visao"
+    ]
+  },
+  {
+    "id": 310,
+    "text": "Sim. É um encontro individual com Prana Ka, voltado à escuta dos seus desejos e à percepção do momento que você está vivendo.",
+    "html": "Sim. É um encontro individual com Prana Ka, voltado à escuta dos seus desejos e à percepção do momento que você está vivendo.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "visao"
+    ]
+  },
+  {
+    "id": 311,
+    "text": "Preciso ter experiência com meditação?+",
+    "html": "Preciso ter experiência com meditação?<span aria-hidden=\"true\">+</span>",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "visao"
+    ]
+  },
+  {
+    "id": 312,
+    "text": "A prática é conduzida por Prana. Se você tem dúvidas sobre a experiência ou sobre como participar, pode contar isso a ela na conversa pelo WhatsApp, antes de agendar.",
+    "html": "A prática é conduzida por Prana. Se você tem dúvidas sobre a experiência ou sobre como participar, pode contar isso a ela na conversa pelo WhatsApp, antes de agendar.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "visao"
+    ]
+  },
+  {
+    "id": 313,
+    "text": "Qual é o investimento e como agendo?+",
+    "html": "Qual é o investimento e como agendo?<span aria-hidden=\"true\">+</span>",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "visao"
+    ]
+  },
+  {
+    "id": 314,
+    "text": "A sessão é de R$ 333. Você fala com a Prana pelo WhatsApp: ela envia as formas de pagamento e os horários disponíveis antes da sua confirmação.",
+    "html": "A sessão é de <strong>R$ 333</strong>. Você fala com a Prana pelo WhatsApp: ela envia as formas de pagamento e os horários disponíveis antes da sua confirmação.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "visao"
+    ]
+  },
+  {
+    "id": 315,
+    "text": "Falar com a Prana pelo WhatsApp ↗",
+    "html": "Falar com a Prana pelo WhatsApp ↗",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "visao"
+    ]
+  },
+  {
+    "id": 316,
+    "text": "É a mesma experiência da mentoria?+",
+    "html": "É a mesma experiência da mentoria?<span aria-hidden=\"true\">+</span>",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "visao"
+    ]
+  },
+  {
+    "id": 317,
+    "text": "A Visão Uterina é uma sessão individual. A mentoria The Golden Temple é uma jornada de acompanhamento. Aqui, o convite é conhecer a sessão e conversar com Prana sobre o seu momento.",
+    "html": "A Visão Uterina é uma sessão individual. A mentoria The Golden Temple é uma jornada de acompanhamento. Aqui, o convite é conhecer a sessão e conversar com Prana sobre o seu momento.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "visao"
+    ]
+  },
+  {
+    "id": 318,
+    "text": "O PRIMEIRO PASSO É UMA CONVERSA",
+    "html": "O PRIMEIRO PASSO É UMA CONVERSA",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "visao"
+    ]
+  },
+  {
+    "id": 319,
+    "text": "Dê espaço ao quepulsa em você.",
+    "html": "Dê espaço ao que<br><em>pulsa em você.</em>",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "visao"
+    ]
+  },
+  {
+    "id": 320,
+    "text": "Converse com a Prana sobre o seu momentoe saiba como viver a Visão Uterina.",
+    "html": "Converse com a Prana sobre o seu momento<br>e saiba como viver a Visão Uterina.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "visao"
+    ]
+  },
+  {
+    "id": 321,
+    "text": "Você será direcionada ao WhatsApp da Prana.",
+    "html": "Você será direcionada ao WhatsApp da Prana.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "visao"
+    ]
+  },
+  {
+    "id": 322,
+    "text": "Visão Uterina: uma sessão individual com Prana Ka para escutar seus desejos, olhar para o seu momento e encontrar clareza para suas escolhas. Converse pelo WhatsApp.",
+    "type": "attribute",
+    "proof": false,
+    "pages": [
+      "visao"
+    ]
+  },
+  {
+    "id": 323,
+    "text": "Prana Ka, fundadora da The Golden Temple.",
+    "type": "attribute",
+    "proof": false,
+    "pages": [
+      "visao"
+    ]
+  },
+  {
+    "id": 324,
+    "text": "Curso gravado · The Golden Temple",
+    "html": "Curso gravado · The Golden Temple",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "curso"
+    ]
+  },
+  {
+    "id": 325,
+    "text": "O prazer não foi embora.Ele foi calado.",
+    "html": "O prazer não foi embora.<br>Ele foi calado.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "curso"
+    ]
+  },
+  {
+    "id": 326,
+    "text": "Acesso imediato · R$ 97 · começa quando você quiser",
+    "html": "Acesso imediato <span aria-hidden=\"true\">·</span> <strong>R$ 97</strong> <span aria-hidden=\"true\">·</span> começa quando você quiser",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "curso"
+    ]
+  },
+  {
+    "id": 327,
+    "text": "Quero reabrir a fonte",
+    "html": "Quero reabrir a fonte",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "curso"
+    ]
+  },
+  {
+    "id": 328,
+    "text": "Gravado. Você entra hoje e faz na ordem que o teu corpo pedir.",
+    "html": "Gravado. Você entra hoje e faz na ordem que o teu corpo pedir.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "curso"
+    ]
+  },
+  {
+    "id": 329,
+    "text": "Continue para dentro",
+    "html": "<span></span> Continue para dentro",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "curso"
+    ]
+  },
+  {
+    "id": 330,
+    "text": "O que aconteceu",
+    "html": "O que aconteceu",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "curso"
+    ]
+  },
+  {
+    "id": 331,
+    "text": "Você não está quebrada.Apenas esquecida de si.",
+    "html": "Você não está quebrada.<br>Apenas esquecida de si.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "curso"
+    ]
+  },
+  {
+    "id": 332,
+    "text": "Em algum momento o prazer virou assunto complicado. Ou pesou de culpa, ou virou coisa a cumprir, ou simplesmente sumiu do mapa junto com a energia de tudo o mais.",
+    "html": "Em algum momento o prazer virou assunto complicado. Ou pesou de culpa, ou virou coisa a cumprir, ou simplesmente sumiu do mapa junto com a energia de tudo o mais.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "curso"
+    ]
+  },
+  {
+    "id": 333,
+    "text": "Aí você fez o que dava para fazer: entendeu. Leu, foi para a terapia, deu nome ao que aconteceu. E entender ajudou de verdade, sabe, só que não abriu nada. Porque o que fechou não fechou na cabeça.",
+    "html": "Aí você fez o que dava para fazer: entendeu. Leu, foi para a terapia, deu nome ao que aconteceu. E entender ajudou de verdade, sabe, só que não abriu nada. Porque o que fechou não fechou na cabeça.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "curso"
+    ]
+  },
+  {
+    "id": 334,
+    "text": "O corpo não responde a explicação.Ele responde a presença.",
+    "html": "O corpo não responde a explicação.<br>Ele responde a presença.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "curso"
+    ]
+  },
+  {
+    "id": 335,
+    "text": "02 · A travessia",
+    "html": "02 · A travessia",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "curso"
+    ]
+  },
+  {
+    "id": 336,
+    "text": "Sete passagens,uma de cada vez.",
+    "html": "Sete passagens,<br>uma de cada vez.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "curso"
+    ]
+  },
+  {
+    "id": 337,
+    "text": "Não é um pacote de áudios para escutar quando sobrar tempo. É um caminho com entrada, sete passagens e saída. Cada uma abre a seguinte, e o corpo é quem dá o ritmo.",
+    "html": "Não é um pacote de áudios para escutar quando sobrar tempo. É um caminho com entrada, sete passagens e saída. Cada uma abre a seguinte, e o corpo é quem dá o ritmo.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "curso"
+    ]
+  },
+  {
+    "id": 338,
+    "text": "Entrada",
+    "html": "Entrada",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "curso"
+    ]
+  },
+  {
+    "id": 339,
+    "text": "O vídeo que ancora",
+    "html": "O vídeo que ancora",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "curso"
+    ]
+  },
+  {
+    "id": 340,
+    "text": "Antes de qualquer prática, um encontro para você chegar. Descer da pressa, reconhecer onde está e combinar consigo mesma como vai atravessar.",
+    "html": "Antes de qualquer prática, um encontro para você chegar. Descer da pressa, reconhecer onde está e combinar consigo mesma como vai atravessar.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "curso"
+    ]
+  },
+  {
+    "id": 341,
+    "text": "Permissão de habitar o corpo",
+    "html": "Permissão de habitar o corpo",
+    "type": "text",
+    "proof": false,
+    "pages": [
+      "curso"
+    ]
+  },
+  {
+    "id": 342,
+    "text": "Corpo templo, prazer sem culpa",
+    "html": "Corpo templo, prazer sem culpa",
+    "type": "text",
+    "proof": false,
+    "pages": [
+      "curso"
+    ]
+  },
+  {
+    "id": 343,
+    "text": "Permissão de sentir as águas internas",
+    "html": "Permissão de sentir as águas internas",
+    "type": "text",
+    "proof": false,
+    "pages": [
+      "curso"
+    ]
+  },
+  {
+    "id": 344,
+    "text": "A dança de Shiva-Shakti",
+    "html": "A dança de Shiva-Shakti",
+    "type": "text",
+    "proof": false,
+    "pages": [
+      "curso"
+    ]
+  },
+  {
+    "id": 345,
+    "text": "A voz do prazer",
+    "html": "A voz do prazer",
+    "type": "text",
+    "proof": false,
+    "pages": [
+      "curso"
+    ]
+  },
+  {
+    "id": 346,
+    "text": "Espelhos do amor",
+    "html": "Espelhos do amor",
+    "type": "text",
+    "proof": false,
+    "pages": [
+      "curso"
+    ]
+  },
+  {
+    "id": 347,
+    "text": "Consagração da rosa",
+    "html": "Consagração da rosa",
+    "type": "text",
+    "proof": false,
+    "pages": [
+      "curso"
+    ]
+  },
+  {
+    "id": 348,
+    "text": "Saída",
+    "html": "Saída",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "curso"
+    ]
+  },
+  {
+    "id": 349,
+    "text": "O vídeo que devolve",
+    "html": "O vídeo que devolve",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "curso"
+    ]
+  },
+  {
+    "id": 350,
+    "text": "No fim, o caminho não termina no fone de ouvido. O último encontro leva o que foi vivido para a tua vida, e abre a porta do que vem depois, se você quiser continuar.",
+    "html": "No fim, o caminho não termina no fone de ouvido. O último encontro leva o que foi vivido para a tua vida, e abre a porta do que vem depois, se você quiser continuar.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "curso"
+    ]
+  },
+  {
+    "id": 351,
+    "text": "03 · O que você recebe",
+    "html": "03 · O que você recebe",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "curso"
+    ]
+  },
+  {
+    "id": 352,
+    "text": "Simples de começar.Fundo de atravessar.",
+    "html": "Simples de começar.<br>Fundo de atravessar.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "curso"
+    ]
+  },
+  {
+    "id": 353,
+    "text": "Sete meditações guiadas, gravadas",
+    "html": "Sete meditações guiadas, gravadas",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "curso"
+    ]
+  },
+  {
+    "id": 354,
+    "text": "Um vídeo de entrada e um de saída",
+    "html": "Um vídeo de entrada e um de saída",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "curso"
+    ]
+  },
+  {
+    "id": 355,
+    "text": "Feito no teu ritmo, sem turma e sem data",
+    "html": "Feito no teu ritmo, sem turma e sem data",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "curso"
+    ]
+  },
+  {
+    "id": 356,
+    "text": "Quem conduz é Prana Ka: fundadora do Templo Dourado, sacerdotisa do ventre e da voz, psicanalista integrativa, artista e facilitadora de música ritual. A voz que guia as sete passagens é a mesma que canta.",
+    "html": "Quem conduz é Prana Ka: fundadora do Templo Dourado, sacerdotisa do ventre e da voz, psicanalista integrativa, artista e facilitadora de música ritual. A voz que guia as sete passagens é a mesma que canta.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "curso"
+    ]
+  },
+  {
+    "id": 357,
+    "text": "“Não te ensino a seduzir. Te reconduzo à tua própria fonte.”",
+    "html": "“Não te ensino a seduzir. Te reconduzo à tua própria fonte.”",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "curso"
+    ]
+  },
+  {
+    "id": 358,
+    "text": "04 · Para entrar",
+    "html": "04 · Para entrar",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "curso"
+    ]
+  },
+  {
+    "id": 359,
+    "text": "Uma decisão pequenapara uma porta grande.",
+    "html": "Uma decisão pequena<br>para uma porta grande.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "curso"
+    ]
+  },
+  {
+    "id": 360,
+    "text": "Sete meditações guiadas. O vídeo que ancora antes e o que devolve depois. A condução de quem construiu o método e atravessou o caminho que transmite.",
+    "html": "Sete meditações guiadas. O vídeo que ancora antes e o que devolve depois. A condução de quem construiu o método e atravessou o caminho que transmite.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "curso"
+    ]
+  },
+  {
+    "id": 361,
+    "text": "R$ 97",
+    "html": "<span>R$</span> 97",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "curso"
+    ]
+  },
+  {
+    "id": 362,
+    "text": "Você me chama no WhatsApp e eu te envio o caminho do pagamento e o acesso.",
+    "html": "Você me chama no WhatsApp e eu te envio o caminho do pagamento e o acesso.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "curso"
+    ]
+  },
+  {
+    "id": 363,
+    "text": "05 · Antes de decidir",
+    "html": "05 · Antes de decidir",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "curso"
+    ]
+  },
+  {
+    "id": 364,
+    "text": "“Eu não tenho tempo.”",
+    "html": "“Eu não tenho tempo.”",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "curso"
+    ]
+  },
+  {
+    "id": 365,
+    "text": "Cada passagem cabe num intervalo do teu dia. E não tem prazo para terminar: o curso espera você, não o contrário.",
+    "html": "Cada passagem cabe num intervalo do teu dia. E não tem prazo para terminar: o curso espera você, não o contrário.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "curso"
+    ]
+  },
+  {
+    "id": 366,
+    "text": "“Já tentei meditação e não funcionou comigo.”",
+    "html": "“Já tentei meditação e não funcionou comigo.”",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "curso"
+    ]
+  },
+  {
+    "id": 367,
+    "text": "Meditação de esvaziar a mente costuma não funcionar para quem sente muito. Estas não pedem que você pare de sentir. Pedem o contrário.",
+    "html": "Meditação de esvaziar a mente costuma não funcionar para quem sente muito. Estas não pedem que você pare de sentir. Pedem o contrário.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "curso"
+    ]
+  },
+  {
+    "id": 368,
+    "text": "“Isso é sobre sexo?”",
+    "html": "“Isso é sobre sexo?”",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "curso"
+    ]
+  },
+  {
+    "id": 369,
+    "text": "É sobre presença. O prazer aqui é o de estar viva dentro do próprio corpo, e ele aparece na comida, na música, na pele, no descanso. O resto é consequência, não objetivo.",
+    "html": "É sobre presença. O prazer aqui é o de estar viva dentro do próprio corpo, e ele aparece na comida, na música, na pele, no descanso. O resto é consequência, não objetivo.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "curso"
+    ]
+  },
+  {
+    "id": 370,
+    "text": "❦",
+    "html": "❦",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "curso"
+    ]
+  },
+  {
+    "id": 371,
+    "text": "A fonte nunca secou.Só foi tampada.",
+    "html": "A fonte nunca secou.<br>Só foi tampada.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "curso"
+    ]
+  },
+  {
+    "id": 372,
+    "text": "Destampar leva menos tempo do que você imagina, e começa hoje se você quiser.",
+    "html": "Destampar leva menos tempo do que você imagina, e começa hoje se você quiser.",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "curso"
+    ]
+  },
+  {
+    "id": 373,
+    "text": "Despertar do Prazer Sagrado: sete meditações guiadas por Prana Ka para uma experiência de presença no corpo.",
+    "type": "attribute",
+    "proof": false,
+    "pages": [
+      "curso"
+    ]
+  },
+  {
+    "id": 374,
+    "text": "As sete passagens",
+    "type": "attribute",
+    "proof": false,
+    "pages": [
+      "curso"
+    ]
+  },
+  {
+    "id": 375,
+    "text": "Capa do curso Despertar do Prazer Sagrado com Prana Ka segurando uma rosa",
+    "type": "attribute",
+    "proof": false,
+    "pages": [
+      "curso"
+    ]
+  },
+  {
+    "id": 376,
+    "text": "Retrato de Prana Ka, fundadora do The Golden Temple",
+    "type": "attribute",
+    "proof": false,
+    "pages": [
+      "curso"
+    ]
+  },
+  {
+    "id": 377,
+    "text": "Singles · DJ sets",
+    "html": "Singles · DJ sets",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "arte"
+    ]
+  },
+  {
+    "id": 378,
+    "text": "[EM BREVE]",
+    "html": "[EM BREVE]",
+    "type": "html",
+    "proof": false,
+    "pages": [
+      "arte"
+    ]
+  },
+  {
+    "id": 379,
+    "text": "Prana Ka · Spotify · YouTube",
+    "type": "attribute",
+    "proof": false,
+    "pages": [
+      "arte"
+    ]
+  }
+]

@@ -1,0 +1,14 @@
+const fs=require('fs'),path=require('path');
+const {ROOT,route}=require('./foundation.cjs');
+const outputDir=path.join(ROOT,'_qa/iteration-2026-09-26/lighthouse');
+const temp=path.join(ROOT,'_qa/browser-temp');process.env.TEMP=temp;process.env.TMP=temp;
+fs.mkdirSync(outputDir,{recursive:true});const profile=fs.mkdtempSync(path.join(temp,'iteration-lighthouse-'));
+(async()=>{const {default:lighthouse}=await import('./qa-tools/node_modules/lighthouse/core/index.js');const {launch}=await import('./qa-tools/node_modules/chrome-launcher/dist/index.js');
+const chrome=await launch({chromePath:'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe',chromeFlags:['--headless=new','--disable-background-networking','--no-first-run'],userDataDir:profile});
+const keys=(process.argv.find(a=>a.startsWith('--keys='))?.slice(7)||'home,mentoria,visao,curso').split(',');
+const langs=(process.argv.find(a=>a.startsWith('--langs='))?.slice(8)||'0,1,2').split(',').map(Number);
+const summary=path.join(outputDir,'summary.json');const results=fs.existsSync(summary)?JSON.parse(fs.readFileSync(summary)).results:[];
+try{for(const lang of langs)for(const key of keys){const {lhr}=await lighthouse('http://127.0.0.1:8794'+route(key,lang),{port:chrome.port,output:'json',logLevel:'error',onlyCategories:['performance','accessibility','best-practices','seo']});
+const item={key,lang,route:route(key,lang),scores:Object.fromEntries(Object.entries(lhr.categories).map(([k,v])=>[k,Math.round(v.score*100)])),metrics:Object.fromEntries(['first-contentful-paint','largest-contentful-paint','total-blocking-time','cumulative-layout-shift','speed-index'].map(k=>[k,lhr.audits[k]?.displayValue])),failures:Object.values(lhr.audits).filter(a=>a.score!==null&&a.score<.9).map(a=>({id:a.id,score:a.score,title:a.title,displayValue:a.displayValue}))};
+const old=results.findIndex(r=>r.key===key&&r.lang===lang);if(old!==-1)results.splice(old,1);results.push(item);fs.writeFileSync(path.join(outputDir,`${lang}-${key}-${Date.now()}.json`),JSON.stringify(lhr));fs.writeFileSync(summary,JSON.stringify({date:new Date().toISOString(),version:lhr.lighthouseVersion,environment:lhr.environment,results},null,2));console.log(JSON.stringify(item));
+}}finally{await chrome.kill();}})().catch(e=>{console.error(e);process.exitCode=1});

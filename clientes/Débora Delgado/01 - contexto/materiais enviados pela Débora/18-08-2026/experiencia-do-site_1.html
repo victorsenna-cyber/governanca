@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A experiência de entrar no site — Débora Delgado</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#f6f1ea; --card:#fffdf9; --ink:#3d352e; --soft:#6f6459; --line:#e7ddd1;
+    --accent:#3f6b57; --accent-dark:#2f5245; --salvia:#7f9c78; --argila:#a86b52; --dir:#4f8278;
+    --shadow:0 8px 30px rgba(60,70,55,.10);
+    --serif:"Fraunces",Georgia,serif; --sans:"Inter",system-ui,sans-serif;
+  }
+  *{box-sizing:border-box}
+  body{margin:0; font-family:var(--sans); background:var(--bg); color:var(--ink); line-height:1.6;}
+  .wrap{max-width:900px; margin:0 auto; padding:30px 22px 90px;}
+  header.hero{text-align:center; padding:36px 26px; background:linear-gradient(160deg,#3f6b57,#2f5245); color:#fff; border-radius:20px; box-shadow:var(--shadow); margin-bottom:18px;}
+  header.hero .kick{color:#cfe0d4; font-weight:700; letter-spacing:2px; font-size:.76rem; text-transform:uppercase;}
+  header.hero h1{font-family:var(--serif); font-weight:600; margin:10px 0 8px; font-size:1.95rem;}
+  header.hero p{margin:0; color:#eaf2ec; font-size:.96rem;}
+
+  .pillars{display:grid; grid-template-columns:1fr; gap:9px; margin-bottom:22px;}
+  .pil{border-radius:13px; padding:11px 15px; color:#fff; box-shadow:var(--shadow); font-size:.86rem;}
+  .pil b{font-family:var(--serif); font-weight:600; font-size:.98rem;}
+  .pil.maes{background:var(--salvia);} .pil.raiz{background:var(--argila);} .pil.dir{background:var(--dir);}
+  @media(min-width:720px){ .pillars{grid-template-columns:1fr 1fr 1fr;} }
+
+  .jhead{display:flex; align-items:center; gap:14px; margin:30px 0 4px; padding:16px 20px; border-radius:16px; color:#fff; box-shadow:var(--shadow);}
+  .jhead.vis{background:linear-gradient(160deg,#4f8278,#3f6b57);} .jhead.men{background:linear-gradient(160deg,#a86b52,#8a5334);}
+  .jhead .ji{font-size:1.7rem;}
+  .jhead h2{font-family:var(--serif); font-weight:600; font-size:1.4rem; margin:0;}
+  .jhead .js{font-size:.86rem; opacity:.92; margin-top:2px;}
+  .jintro{font-size:.92rem; color:var(--soft); margin:12px 4px 16px; font-style:italic;}
+
+  .rail{position:relative; padding-left:34px;}
+  .rail::before{content:""; position:absolute; left:11px; top:6px; bottom:24px; width:2px; background:var(--line);}
+  .mom{position:relative; margin-bottom:15px;}
+  .mom .num{position:absolute; left:-34px; top:0; width:24px; height:24px; border-radius:50%; color:#fff; font-size:.78rem; font-weight:800; display:flex; align-items:center; justify-content:center; box-shadow:0 2px 6px rgba(60,70,55,.2);}
+  .vis .mom .num{background:var(--dir);} .men .mom .num{background:var(--argila);}
+  .card{background:var(--card); border:1px solid var(--line); border-radius:14px; box-shadow:var(--shadow); padding:13px 16px;}
+  .card .mt{font-weight:700; font-size:1rem; color:var(--ink);}
+  .card .feel{font-size:.88rem; color:var(--soft); margin-top:4px;}
+  .card .feel .q{color:var(--accent-dark); font-style:italic;}
+  .card .meta{margin-top:8px; display:flex; gap:6px; flex-wrap:wrap; align-items:center;}
+  .chip{font-size:.62rem; font-weight:700; text-transform:uppercase; letter-spacing:.4px; padding:2px 8px; border-radius:9px;}
+  .c-maes{background:#eef1e8; color:#5f7550;} .c-raiz{background:#f4ece2; color:#a86b52;} .c-dir{background:#e6f0ee; color:#4f8278;} .c-desc{background:#eef3ec; color:#3f6b57;} .c-door{background:#f3efe8; color:#6f6459;}
+
+  .turn{background:linear-gradient(160deg,#3f6b57,#2f5245); color:#fff; border-radius:16px; box-shadow:var(--shadow); padding:16px 20px; margin:6px 0 4px; text-align:center;}
+  .turn .tn{font-size:.66rem; font-weight:800; text-transform:uppercase; letter-spacing:1.2px; color:#cfe0d4;}
+  .turn .tt{font-family:var(--serif); font-weight:600; font-size:1.1rem; margin-top:3px;}
+  .turn p{margin:5px 0 0; font-size:.87rem; color:#eaf4f1;}
+
+  .close{background:var(--card); border:1px solid var(--line); border-left:6px solid var(--accent); border-radius:16px; box-shadow:var(--shadow); padding:16px 22px; margin-top:26px; font-size:.93rem;}
+  .close b{color:var(--accent-dark);}
+  .foot{text-align:center; color:var(--soft); font-size:.8rem; margin-top:24px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="hero">
+    <div class="kick">A experiência antes das páginas</div>
+    <h1>Como é entrar no seu site</h1>
+    <p>Dois caminhos pela mesma casa: quem ainda não te conhece e o mentorado que já mora dentro</p>
+  </header>
+
+  <div class="pillars">
+    <div class="pil maes"><b>✨ Maestria</b><br>reconhecer o seu valor</div>
+    <div class="pil raiz"><b>🌱 Raiz</b><br>soltar um padrão</div>
+    <div class="pil dir"><b>🧭 Direção</b><br>liderar melhor</div>
+  </div>
+  <p style="font-size:.88rem; color:var(--soft); margin:-8px 4px 6px;">Os três pilares são os mesmos pros dois. O que muda é a profundidade: o visitante prova, o mentorado mergulha.</p>
+
+  <!-- VISITANTE -->
+  <div class="jhead vis"><span class="ji">🚪</span><div><h2>Quem ainda não te conhece</h2><div class="js">Chega por uma dor, precisa reconhecer, provar e confiar antes de decidir</div></div></div>
+  <p class="jintro">Ela chega tensa, achando que o problema está no time, na agenda, nas pessoas difíceis. Ainda não sabe que o caminho começa nela. O site não empurra isso goela abaixo: ele deixa ela se reconhecer sozinha, no ritmo dela.</p>
+
+  <div class="rail vis">
+    <div class="mom"><span class="num">1</span><div class="card"><div class="mt">Chega por uma dor específica</div><div class="feel">Vem do Instagram, de uma indicação, de uma busca. O que a move é concreta: <span class="q">"eu travo pra dar feedback", "piso em ovos com gente reativa", "decido bem mas fico remoendo"</span>. Ela não veio buscar autoconhecimento, veio resolver.</div><div class="meta"><span class="chip c-door">home ou uma ferramenta</span></div></div></div>
+
+    <div class="mom"><span class="num">2</span><div class="card"><div class="mt">Entende quem é você em segundos</div><div class="feel">Bate no "Quem sou eu" e sente firmeza: uma coach que vai fundo mas é prática, que fala a língua de líder. Não é papo místico solto, tem método. Baixa a guarda.</div><div class="meta"><span class="chip c-door">quem sou eu</span></div></div></div>
+
+    <div class="mom"><span class="num">3</span><div class="card"><div class="mt">Recebe um espelho na hora</div><div class="feel">Faz o diagnóstico da liderança (o quiz). Sai com uma leitura de si que faz sentido e uma pontinha de <span class="q">"opa, tem algo aqui pra olhar"</span>. Deixa o e-mail sem pensar duas vezes, porque recebeu valor antes de dar.</div><div class="meta"><span class="chip c-dir">direção</span><span class="chip c-door">quiz</span></div></div></div>
+
+    <div class="mom"><span class="num">4</span><div class="card"><div class="mt">Se reconhece, sem veredito</div><div class="feel">Explora a personalidade no Eneagrama pelas histórias e se vê numa delas. Reconhece a própria maestria, o que ela faz bem sendo quem é. Pela primeira vez o olhar vira pra dentro, e é gostoso, não ameaçador.</div><div class="meta"><span class="chip c-desc">descoberta</span><span class="chip c-maes">maestria</span></div></div></div>
+
+    <div class="mom"><span class="num">5</span><div class="card"><div class="mt">Sente a dor nomeada, e que dá pra mudar</div><div class="feel">Chega no "Descubra o que te impede" e no "Mude o seu padrão". A amostra nomeia o que trava e ela sente: <span class="q">"é isso mesmo, e parece que tem saída"</span>. O método prova valor sem abrir a ferida sozinha em casa. A vontade de ir mais fundo nasce aqui.</div><div class="meta"><span class="chip c-raiz">raiz (amostra)</span></div></div></div>
+
+    <div class="mom"><span class="num">6</span><div class="card"><div class="mt">Encontra a próxima porta natural</div><div class="feel">Em todo lugar que passou, o convite estava lá, sem pressão: uma conversa gratuita pra entender o momento dela. Não parece venda, parece o passo óbvio depois de tudo que ela já sentiu.</div><div class="meta"><span class="chip c-door">CTA em toda página</span></div></div></div>
+  </div>
+
+  <div class="turn"><div class="tn">A ponte</div><div class="tt">A consultoria gratuita</div><p>Na conversa ela sente o valor de perto e entende o que é possível. Só aqui, depois de já confiar, ela recebe a proposta. É onde o interesse vira mentorado, e é o motor de voltar a vender rápido.</p></div>
+
+  <!-- MENTORADO -->
+  <div class="jhead men"><span class="ji">🏡</span><div><h2>O mentorado, já dentro</h2><div class="js">Fez login. A casa é dele agora, e ele percorre os três pilares em profundidade</div></div></div>
+  <p class="jintro">Agora não é mais provar valor, é entregar transformação. O que muda no tom: acolhimento, foco e continuidade. Ele nunca se sente perdido nem sozinho, porque tudo tem um lugar e você está por perto.</p>
+
+  <div class="rail men">
+    <div class="mom"><span class="num">1</span><div class="card"><div class="mt">Chega no espaço dele</div><div class="feel">O login abre o lugar só dele: o objetivo do ciclo, a dor real que o trouxe, onde ele está no caminho. Isso segura o foco, resolve aquilo que te incomodou no Maestria Natural de abrir demais e não fechar.</div><div class="meta"><span class="chip c-door">espaço por mentorado</span></div></div></div>
+
+    <div class="mom"><span class="num">2</span><div class="card"><div class="mt">Conhece a si no próprio ritmo</div><div class="feel">O curso de entrada é a base do "conhecer": maestria completa, o Eneagrama por dentro, os princípios de como os padrões se formam. Auto-guiado e leve, ele chega nos encontros já com terreno preparado.</div><div class="meta"><span class="chip c-maes">maestria</span><span class="chip c-desc">descoberta</span></div></div></div>
+
+    <div class="mom"><span class="num">3</span><div class="card"><div class="mt">Desce à raiz, com você segurando</div><div class="feel">Aqui o mergulho: Método Raiz, Mapa dos Bloqueios, criança, EFT. É profundo, toca emoção, vai na origem. Mas nunca solto: é held, com intenção, e sempre volta pra superfície com um aprendizado. Ele sai entendendo de si e de como as pessoas funcionam.</div><div class="meta"><span class="chip c-raiz">raiz</span></div></div></div>
+
+    <div class="mom"><span class="num">4</span><div class="card"><div class="mt">Vive o campo do grupo</div><div class="feel">Os encontros semanais em grupo: a situação real dele destrinchada ali, e o espelho dos outros líderes que acelera. Ele percebe que não está sozinho no que sente, e isso muda tudo.</div><div class="meta"><span class="chip c-raiz">raiz</span><span class="chip c-dir">direção</span></div></div></div>
+
+    <div class="mom"><span class="num">5</span><div class="card"><div class="mt">Aplica na segunda-feira</div><div class="feel">O acervo prático: roteiros de conversa pra feedback, conflito, carreira, gente reativa. O seu "Sou líder e agora?". Ele sai do profundo e leva algo concreto pra usar já, sem que a mentoria vire terapia sem saída.</div><div class="meta"><span class="chip c-dir">direção</span></div></div></div>
+
+    <div class="mom"><span class="num">6</span><div class="card"><div class="mt">Sustenta a mudança</div><div class="feel">Os 5 individuais no ritmo do ciclo, o registro do que mudou, o padrão soltando de verdade. No fim ele não é só um líder melhor: é um ponto de consciência num sistema, alguém que planta semente do bem onde trabalha.</div><div class="meta"><span class="chip c-raiz">raiz</span><span class="chip c-dir">direção</span></div></div></div>
+  </div>
+
+  <div class="close">
+    <b>A leitura dos dois caminhos:</b> é uma casa só, com duas profundidades. O visitante caminha pela fachada e prova cada pilar de leve, até que a consultoria vira a porta pra dentro. O mentorado atravessa os mesmos pilares, mas fundo, com você junto e um lugar pra cada coisa. O visitante precisa <b>reconhecer e confiar</b>. O mentorado precisa <b>focar e sustentar</b>. Toda página que a gente for desenhar responde a uma dessas duas necessidades.
+  </div>
+
+  <p class="foot">A experiência antes das páginas · dois caminhos, três pilares, uma casa · Débora Delgado</p>
+</div>
+</body>
+</html>

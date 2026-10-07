@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Continuum · Onde estamos e para onde vamos</title>
+<style>
+  :root{
+    --bg:#0c0d10; --bg2:#131419; --card:#16181f; --card2:#1b1e27;
+    --line:#262a36; --txt:#e8eaf0; --txt2:#a4a9b8; --txt3:#6e7384;
+    --acc:#5b8cff; --acc2:#7aa2ff; --ok:#3ecf8e; --warn:#f5a623; --bad:#ff5f6d;
+    --okbg:rgba(62,207,142,.10); --warnbg:rgba(245,166,35,.10); --badbg:rgba(255,95,109,.10);
+    --shadow:0 1px 0 rgba(255,255,255,.02),0 8px 30px rgba(0,0,0,.35);
+  }
+  [data-theme="light"]{
+    --bg:#f4f5f8; --bg2:#eceef3; --card:#ffffff; --card2:#f7f8fb;
+    --line:#e2e5ec; --txt:#1a1d26; --txt2:#4a5060; --txt3:#878d9c;
+    --acc:#2f63e6; --acc2:#3f74f0; --ok:#13935f; --warn:#b9760a; --bad:#d83644;
+    --okbg:rgba(19,147,95,.08); --warnbg:rgba(185,118,10,.08); --badbg:rgba(216,54,68,.08);
+    --shadow:0 1px 2px rgba(20,30,60,.04),0 8px 28px rgba(20,30,60,.08);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased;transition:background .3s,color .3s}
+  .wrap{max-width:920px;margin:0 auto;padding:0 24px 96px}
+  header.top{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);padding:14px 0;margin-bottom:8px}
+  .top-in{max-width:920px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:.3px}
+  .dot{width:10px;height:10px;border-radius:50%;background:var(--acc);box-shadow:0 0 0 4px color-mix(in srgb,var(--acc) 22%,transparent)}
+  .brand small{display:block;font-weight:500;color:var(--txt3);font-size:11px;letter-spacing:.5px;text-transform:uppercase}
+  .toggle{cursor:pointer;border:1px solid var(--line);background:var(--card);color:var(--txt2);border-radius:10px;padding:8px 12px;font-size:13px;display:flex;align-items:center;gap:7px;transition:.2s}
+  .toggle:hover{border-color:var(--acc);color:var(--txt)}
+  .hero{padding:54px 0 30px}
+  .kicker{color:var(--acc2);font-weight:600;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:14px}
+  h1{font-size:38px;line-height:1.15;letter-spacing:-.5px;margin-bottom:18px;font-weight:760}
+  .lead{font-size:18px;color:var(--txt2);max-width:680px}
+  .meta-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+  .pill{font-size:12.5px;color:var(--txt2);border:1px solid var(--line);background:var(--card);border-radius:999px;padding:6px 13px}
+  .pill b{color:var(--txt)}
+  section{margin-top:46px}
+  .sec-head{display:flex;align-items:baseline;gap:12px;margin-bottom:20px}
+  .sec-num{font-variant-numeric:tabular-nums;color:var(--acc);font-weight:700;font-size:14px;border:1px solid var(--line);border-radius:8px;padding:3px 9px;background:var(--card)}
+  h2{font-size:23px;letter-spacing:-.3px;font-weight:720}
+  h2 + .sub{color:var(--txt3);font-size:14px;margin-top:3px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px 24px;box-shadow:var(--shadow)}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+  .grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+  @media(max-width:720px){.grid2,.grid3,.grid4{grid-template-columns:1fr}h1{font-size:30px}.lead{font-size:16px}}
+  .stat{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;box-shadow:var(--shadow)}
+  .stat .lbl{font-size:12px;color:var(--txt3);text-transform:uppercase;letter-spacing:.6px;margin-bottom:8px}
+  .stat .val{font-size:27px;font-weight:740;font-variant-numeric:tabular-nums;letter-spacing:-.5px}
+  .stat .note{font-size:12.5px;color:var(--txt2);margin-top:5px}
+  .stat.ok .val{color:var(--ok)} .stat.warn .val{color:var(--warn)} .stat.acc .val{color:var(--acc2)}
+  .stat.ok{border-color:color-mix(in srgb,var(--ok) 32%,var(--line))}
+  .tag{display:inline-block;font-size:11px;font-weight:600;padding:2px 9px;border-radius:999px;letter-spacing:.3px}
+  .tag.live{background:var(--okbg);color:var(--ok)} .tag.soon{background:var(--warnbg);color:var(--warn)} .tag.next{background:rgba(91,140,255,.12);color:var(--acc2)}
+  .frente{display:flex;gap:16px;padding:18px 0;border-bottom:1px solid var(--line)}
+  .frente:last-child{border-bottom:none}
+  .frente .idx{flex:0 0 42px;height:42px;border-radius:12px;background:var(--card2);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;font-weight:740;color:var(--acc)}
+  .frente h3{font-size:16px;margin-bottom:4px;display:flex;align-items:center;gap:9px;flex-wrap:wrap}
+  .frente p{color:var(--txt2);font-size:14.5px}
+  .frente .why{font-size:13px;color:var(--txt3);margin-top:6px}
+  .callout{border-left:3px solid var(--acc);background:var(--card2);border-radius:0 12px 12px 0;padding:16px 20px;margin-top:4px}
+  .callout.heart{border-left-color:var(--ok);background:var(--okbg)}
+  .callout h3{font-size:16px;margin-bottom:7px;color:var(--txt)}
+  .callout p{color:var(--txt2);font-size:14.5px}
+  .callout p + p{margin-top:9px}
+  .timeline{position:relative;padding-left:26px}
+  .timeline::before{content:"";position:absolute;left:7px;top:6px;bottom:6px;width:2px;background:var(--line)}
+  .tl{position:relative;padding:0 0 20px}
+  .tl::before{content:"";position:absolute;left:-23px;top:5px;width:12px;height:12px;border-radius:50%;background:var(--acc);box-shadow:0 0 0 4px color-mix(in srgb,var(--acc) 20%,transparent)}
+  .tl.done::before{background:var(--ok);box-shadow:0 0 0 4px color-mix(in srgb,var(--ok) 20%,transparent)}
+  .tl h4{font-size:15px;margin-bottom:3px}
+  .tl p{font-size:14px;color:var(--txt2)}
+  .tl .when{font-size:11.5px;color:var(--acc2);font-weight:600;letter-spacing:.5px;text-transform:uppercase;margin-bottom:4px}
+  .tl.done .when{color:var(--ok)}
+  .foot{margin-top:54px;padding-top:22px;border-top:1px solid var(--line);color:var(--txt3);font-size:13px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+  .principle{text-align:center;font-size:19px;font-weight:600;color:var(--txt);padding:30px 0 6px;letter-spacing:-.2px}
+  .principle small{display:block;color:var(--txt3);font-size:13px;font-weight:500;margin-top:6px;letter-spacing:.5px;text-transform:uppercase}
+  .sign{font-size:14.5px;color:var(--txt2);margin-top:10px}
+  .sign b{color:var(--txt)}
+</style>
+</head>
+<body data-theme="dark">
+<header class="top">
+  <div class="top-in">
+    <div class="brand"><span class="dot"></span><div>CONTINUUM AI SYSTEMS<small>Para quem caminhou comigo</small></div></div>
+    <button class="toggle" id="tg" onclick="tog()"><span id="tgi">◐</span><span id="tgt">Claro</span></button>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <div class="hero">
+    <div class="kicker">Mensagem do fundador</div>
+    <h1>A operação está rodando.<br>E você faz parte do motivo.</h1>
+    <p class="lead">Quero te mostrar, com clareza, onde a Continuum está agora, o que já está em execução, e para onde isto vai nos próximos meses. Não em promessa — em plano e em movimento.</p>
+    <div class="meta-row">
+      <span class="pill">Operação <b>ativa</b></span>
+      <span class="pill">Prospecção <b>rodando</b></span>
+      <span class="pill">Pipeline <b>em rampa</b></span>
+      <span class="pill">Negociações <b>em andamento</b></span>
+    </div>
+  </div>
+
+  <!-- 1. ESTAMOS RODANDO -->
+  <section>
+    <div class="sec-head"><span class="sec-num">01</span><div><h2>O que já está acontecendo</h2><div class="sub">Não é projeto de gaveta. É a máquina em funcionamento, hoje.</div></div></div>
+    <div class="grid3" style="margin-bottom:16px">
+      <div class="stat ok"><div class="lbl">Prospecção</div><div class="val">Ativa</div><div class="note">abordagens sendo executadas diariamente</div></div>
+      <div class="stat acc"><div class="lbl">CRM</div><div class="val">Populado</div><div class="note">leads entrando e avançando no funil</div></div>
+      <div class="stat ok"><div class="lbl">Negociações</div><div class="val">Em curso</div><div class="note">deals que superam a meta inicial do plano</div></div>
+    </div>
+    <div class="callout">
+      <p>A fase mais difícil de qualquer operação é tirá-la do zero — sair da ideia e fazer a engrenagem girar. <b>Essa parte já passou.</b> Temos prospecção ativa, um CRM com leads reais avançando no processo comercial em rampa, e negociações abertas com tickets que vão além do que o plano original previa para esta fase.</p>
+    </div>
+  </section>
+
+  <!-- 2. O PLANO -->
+  <section>
+    <div class="sec-head"><span class="sec-num">02</span><div><h2>O plano em quatro frentes</h2><div class="sub">Duas velocidades: o que gera caixa agora, e o que constrói o futuro.</div></div></div>
+    <div class="card">
+      <div class="frente">
+        <div class="idx">1</div>
+        <div>
+          <h3>Caixa imediato <span class="tag live">em execução</span></h3>
+          <p>Vendas rápidas de alto giro e baixa fricção, com entrega curta. É o que paga as contas do mês enquanto a recorrência é construída.</p>
+          <p class="why">Já está rodando — é daqui que vem a primeira tração de receita.</p>
+        </div>
+      </div>
+      <div class="frente">
+        <div class="idx">2</div>
+        <div>
+          <h3>Processo comercial em rampa <span class="tag live">em execução</span></h3>
+          <p>Prospecção ativa alimentando um CRM organizado, com cada lead avançando por etapas claras até o fechamento. Previsibilidade no lugar de improviso.</p>
+          <p class="why">É o que transforma esforço em resultado repetível, mês após mês.</p>
+        </div>
+      </div>
+      <div class="frente">
+        <div class="idx">3</div>
+        <div>
+          <h3>Negociações de maior porte <span class="tag soon">em andamento</span></h3>
+          <p>Deals abertos com ticket acima da média do plano. Cada um deles, ao fechar, acelera a curva e antecipa a virada de caixa.</p>
+          <p class="why">São a alavanca que pode encurtar o caminho de meses para semanas.</p>
+        </div>
+      </div>
+      <div class="frente">
+        <div class="idx">4</div>
+        <div>
+          <h3>Receita recorrente <span class="tag next">o que muda o jogo</span></h3>
+          <p>Converter parte dos clientes em contratos mensais. Quando a receita se repete sozinha, o ponto de equilíbrio deixa de depender de começar do zero toda manhã.</p>
+          <p class="why">É esta frente que tira a operação do modo de guerra e a coloca em pé de forma estável.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. PARA ONDE VAI -->
+  <section>
+    <div class="sec-head"><span class="sec-num">03</span><div><h2>A linha do tempo</h2><div class="sub">Onde estamos, e o que vem a seguir.</div></div></div>
+    <div class="card">
+      <div class="timeline">
+        <div class="tl done"><div class="when">Já feito</div><h4>Operação saiu do zero</h4><p>Prospecção ativa, CRM populado, processo comercial em funcionamento.</p></div>
+        <div class="tl done"><div class="when">Acontecendo agora</div><h4>Primeiras receitas e negociações</h4><p>Caixa começando a entrar e deals de maior porte em mesa.</p></div>
+        <div class="tl"><div class="when">Próximas semanas</div><h4>Fechamento dos deals em andamento</h4><p>Cada fechamento acelera a curva e fortalece o caixa.</p></div>
+        <div class="tl"><div class="when">Próximos meses</div><h4>Recorrência cobrindo o ponto de equilíbrio</h4><p>Quando a receita recorrente sustenta a operação, entramos no azul — e começamos a devolver tudo o que recebemos.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. RECONHECIMENTO -->
+  <section>
+    <div class="sec-head"><span class="sec-num">04</span><div><h2>Como eu reconheço quem caminhou comigo</h2><div class="sub">Quem acreditou na fase mais difícil não será tratado como favor — e sim como parte.</div></div></div>
+    <div class="callout heart">
+      <h3>O apoio que recebi, eu conto como investimento na empresa.</h3>
+      <p>Você não estendeu a mão num momento qualquer — estendeu no momento em que mais importava. Para mim, isso não é uma gentileza a ser esquecida quando as coisas melhorarem. É uma aposta na Continuum, e eu quero registrá-la como tal.</p>
+      <p>Minha intenção, a ser formalizada entre nós em um acordo simples, é tratar esse apoio como <b>investimento na operação</b> — com retorno atrelado ao resultado da empresa, mirando até <b>2x sobre o valor</b> em participação no lucro à medida que crescermos. Não é uma promessa de número fixo numa data: é um compromisso de te colocar do lado certo da mesa, como quem investiu e merece colher quando a colheita vier.</p>
+    </div>
+    <p class="sign">Obrigado por confiar antes de ser fácil confiar.<br><b>— Victor · Continuum AI Systems</b></p>
+  </section>
+
+  <div class="principle">
+    Quem integra o sistema vence com ele.
+    <small>Dominamos o Ritmo: crescemos para gerar ordem</small>
+  </div>
+
+  <div class="foot">
+    <span>Continuum AI Systems · apresentação pessoal</span>
+    <span>Operação em execução · plano em movimento</span>
+  </div>
+
+</div>
+
+<script>
+  function tog(){
+    const b=document.body, cur=b.getAttribute('data-theme');
+    const nx=cur==='dark'?'light':'dark';
+    b.setAttribute('data-theme',nx);
+    document.getElementById('tgt').textContent = nx==='dark'?'Claro':'Escuro';
+    document.getElementById('tgi').textContent = nx==='dark'?'◐':'◑';
+  }
+</script>
+</body>
+</html>

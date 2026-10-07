@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="no-js">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Portal das Felinas · Masterclass 8/8 com Prana Ka</title>
+<meta name="description" content="Masterclass ao vivo, 8 de Agosto (Portal do Leão), para mulheres na travessia da princesa à rainha — do feminino inseguro à autoconfiança. Pelo corpo e pelo ventre." />
+<meta name="robots" content="index,follow" />
+<meta property="og:title" content="Portal das Felinas · Da Princesa à Rainha" />
+<meta property="og:description" content="Uma masterclass viva no 8/8 para atravessar do feminino inseguro à sua autoconfiança — pelo corpo e pelo ventre, não pela mente." />
+<meta property="og:type" content="website" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+<style>
+  /* ================================================================ */
+  /* PORTAL DAS FELINAS — pele Velvet Gold + Rubi                     */
+  /* Engenharia herdada do index da Débora (tokens, glass, reveal,   */
+  /* halo, lote-JS). Pele: dourado/rubi/vinho sobre fundo escuro.    */
+  /* ================================================================ */
+  :root {
+    /* PALETA: preto + dourado brilhoso (empowerment) — extraída da imagem 06 da Prana.
+       Nomes --wine/--ruby mantidos como aliases de preto para não quebrar referências. */
+    --black:     #080807;   /* fundo base (~90% da página) */
+    --black-2:   #0e0d0b;   /* seções ligeiramente elevadas */
+    --char:      #14120e;   /* carvão quente, cards */
+    --wine:      var(--black);      /* alias -> preto */
+    --wine-deep: #050504;          /* alias -> preto mais fundo */
+    --ruby:      var(--gold);       /* alias -> dourado (era rubi de acento) */
+
+    --gold:      #e8b84b;   /* dourado principal, vivo */
+    --gold-lite: #f7e2a0;   /* dourado claro, brilho/glitter */
+    --gold-deep: #9a7320;   /* dourado escuro, borda */
+    --gold-glow: #ffcf5c;   /* dourado luminoso p/ realces e brilho */
+    --cream:     #f4ecd9;   /* texto claro sobre preto */
+    --sand:      #efe2c6;
+
+    --ink:       var(--cream);
+    --ink-soft:  rgba(244, 236, 217, 0.62);
+    --line:      rgba(232, 184, 75, 0.20);
+    --line-soft: rgba(232, 184, 75, 0.10);
+    --card:      rgba(20, 18, 14, 0.55);
+    --card-glow: 0 18px 50px -18px rgba(0,0,0,0.75);
+    --glass-blur: 14px;
+
+    --font-display: 'Fraunces', Georgia, 'Times New Roman', serif;
+    --font-body: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+    --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+    --wrap: 64rem;
+    --read: 40rem;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+
+  body {
+    margin: 0;
+    color: var(--ink);
+    background-color: var(--black);
+    /* fundo pontilhado premium: grade de pontos dourados sutis + brilho radial no topo */
+    background-image:
+      radial-gradient(circle at 50% -10%, rgba(232,184,75,0.10), transparent 55%),
+      radial-gradient(rgba(232,184,75,0.15) 0.6px, transparent 0.6px);
+    background-size: auto, 22px 22px;
+    background-position: center top, center top;
+    font-family: var(--font-body);
+    font-size: 1.0625rem;
+    line-height: 1.62;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+  /* camada de glitter fino, fixa, bem sutil (partículas douradas como na imagem 06) */
+  body::before {
+    content: ""; position: fixed; inset: 0; z-index: -1; pointer-events: none;
+    background-image:
+      radial-gradient(rgba(247,226,160,0.55) 0.5px, transparent 0.5px),
+      radial-gradient(rgba(255,207,92,0.35) 0.5px, transparent 0.5px);
+    background-size: 140px 140px, 90px 90px;
+    background-position: 0 0, 45px 60px;
+    opacity: 0.5;
+  }
+
+  .wrap { width: 100%; max-width: var(--wrap); margin: 0 auto; padding: 0 1.5rem; }
+  .read { max-width: var(--read); margin-left: auto; margin-right: auto; }
+
+  h1, h2, h3 { font-family: var(--font-display); font-weight: 500; line-height: 1.12; margin: 0; }
+  p { margin: 0 0 1.1rem; }
+  strong { color: var(--gold-lite); font-weight: 600; }
+  em { color: var(--gold-lite); font-style: italic; }
+
+  .eyebrow {
+    font-family: var(--font-body); font-size: 0.78rem; font-weight: 600;
+    letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold);
+    margin: 0 0 1rem;
+  }
+
+  /* Halo / orbe de fundo (herdado) */
+  .halo {
+    position: absolute; border-radius: 50%; pointer-events: none; z-index: 0;
+    background: radial-gradient(circle at 50% 40%, rgba(255,207,92,0.30), rgba(232,184,75,0.10) 42%, transparent 68%);
+    filter: blur(10px);
+  }
+
+  /* Reveal no scroll (herdado) */
+  [data-reveal] {
+    opacity: 0; transform: translateY(18px);
+    transition: opacity 700ms var(--ease-out), transform 700ms var(--ease-out);
+    transition-delay: var(--reveal-delay, 0ms);
+    will-change: opacity, transform;
+  }
+  [data-reveal].is-visible { opacity: 1; transform: none; }
+  html.no-js [data-reveal] { opacity: 1; transform: none; }
+  @media (prefers-reduced-motion: reduce) {
+    [data-reveal] { opacity: 1 !important; transform: none !important; transition: none; }
+    html { scroll-behavior: auto; }
+  }
+
+  /* CTA dourado premium — brilho metálico + sweep de luz no hover, não degradê único */
+  .btn-glass {
+    position: relative; overflow: hidden;
+    display: inline-flex; align-items: center; justify-content: center; gap: 0.6rem;
+    min-height: 58px; border-radius: 999px; padding: 1.05rem 2.4rem;
+    font-family: var(--font-body); font-weight: 600; font-size: 1.02rem; letter-spacing: 0.01em;
+    color: #1a1509; text-decoration: none; cursor: pointer;
+    background:
+      linear-gradient(120deg, var(--gold-deep) 0%, var(--gold) 28%, var(--gold-glow) 50%, var(--gold-lite) 62%, var(--gold) 78%, var(--gold-deep) 100%);
+    border: 1px solid var(--gold-lite);
+    box-shadow: 0 14px 40px -12px rgba(232,184,75,0.55), inset 0 1px 0 rgba(255,255,255,0.35);
+    transition: transform 220ms var(--ease-out), box-shadow 220ms var(--ease-out);
+  }
+  .btn-glass::after {
+    content: ""; position: absolute; top: 0; left: -60%; width: 45%; height: 100%;
+    background: linear-gradient(100deg, transparent, rgba(255,255,255,0.55), transparent);
+    transform: skewX(-20deg); transition: left 620ms var(--ease-out);
+  }
+  .btn-glass:hover { transform: translateY(-2px); box-shadow: 0 22px 56px -12px rgba(255,207,92,0.7), inset 0 1px 0 rgba(255,255,255,0.45); }
+  .btn-glass:hover::after { left: 120%; }
+  .btn-glass:active { transform: translateY(0); }
+  .btn-glass:focus-visible { outline: 3px solid var(--gold-lite); outline-offset: 3px; }
+  @media (prefers-reduced-motion: reduce) { .btn-glass::after { display: none; } }
+
+  .cta-note { font-size: 0.85rem; color: var(--ink-soft); margin: 0.85rem 0 0; }
+
+  /* Topbar */
+  .topbar { position: relative; z-index: 20; border-bottom: 1px solid var(--line-soft); }
+  .topbar-inner { display: flex; align-items: center; justify-content: space-between; padding: 1rem 0; }
+  .brand { display: flex; align-items: center; gap: 0.6rem; font-family: var(--font-display); font-size: 1.1rem; color: var(--gold-lite); letter-spacing: 0.02em; }
+  .brand .mark { width: 26px; height: 26px; }
+  .topbar .date-tag { font-size: 0.8rem; color: var(--ink-soft); letter-spacing: 0.06em; }
+
+  /* D1 · Hero */
+  .hero { position: relative; overflow: hidden; padding: clamp(3rem, 7vw, 5.5rem) 0 clamp(3.5rem, 8vw, 6rem); }
+  .hero .halo { top: -18rem; left: 50%; width: 48rem; height: 48rem; transform: translateX(-50%); }
+  .hero-grid { position: relative; z-index: 10; display: grid; grid-template-columns: 1.05fr 0.95fr; gap: clamp(2rem, 5vw, 4rem); align-items: center; }
+  .hero-figure { position: relative; }
+  /* Hero: geometria sagrada autoral (Vesica Piscis + Semente da Vida) */
+  .hero-geo { width: 100%; height: auto; display: block; overflow: visible; }
+  .hero-geo .geo-halo { fill: url(#geoGlow); }
+  .hero-geo .geo-line { fill: none; stroke: var(--gold); stroke-width: 1.1; opacity: 0.55; }
+  .hero-geo .geo-seed { fill: none; stroke: var(--gold-lite); stroke-width: 1.4; opacity: 0.9; }
+  .hero-geo .geo-mandorla { fill: url(#mandorlaFill); stroke: var(--gold-lite); stroke-width: 1.6; }
+  .hero-geo .geo-vesica { fill: none; stroke: var(--gold-lite); stroke-width: 1.8; opacity: 0.95; }
+  .hero-geo .geo-spin { transform-origin: 260px 260px; animation: geospin 90s linear infinite; }
+  .hero-geo .geo-breathe { transform-origin: 260px 260px; animation: geobreathe 8s ease-in-out infinite; }
+  @keyframes geospin { to { transform: rotate(360deg); } }
+  @keyframes geobreathe { 0%,100%{ opacity: 0.9; } 50%{ opacity: 1; } }
+  @media (prefers-reduced-motion: reduce) { .hero-geo .geo-spin, .hero-geo .geo-breathe { animation: none; } }
+  .hero h1 {
+    font-size: clamp(2.6rem, 6vw, 4.4rem); letter-spacing: 0.01em; color: var(--gold-lite);
+    text-shadow: 0 2px 30px rgba(217,164,65,0.25); margin: 0 0 0.6rem;
+  }
+  .hero .sub-h1 { font-family: var(--font-display); font-style: italic; font-size: clamp(1.15rem, 2.4vw, 1.5rem); color: var(--cream); margin: 0 0 1.4rem; }
+  .hero .subhead { font-size: 1.08rem; color: var(--ink-soft); max-width: 34rem; margin: 0 0 1.8rem; }
+  .hero .cta-microcopy { font-size: 0.82rem; color: var(--ink-soft); margin-top: 0.9rem; letter-spacing: 0.02em; }
+
+  /* Seções genéricas */
+  section { position: relative; }
+  .band { padding: clamp(3.5rem, 8vw, 6rem) 0; border-top: 1px solid var(--line-soft); }
+  .band h2 { font-size: clamp(1.9rem, 4vw, 2.8rem); color: var(--gold-lite); margin: 0 0 1.4rem; }
+  .band .lead-in { font-size: 1.15rem; color: var(--cream); }
+
+  /* D2 sintomas / listas */
+  ul.symptoms { list-style: none; padding: 0; margin: 1.4rem 0 0; display: grid; gap: 0.8rem; }
+  ul.symptoms li { position: relative; padding-left: 1.7rem; color: var(--ink-soft); }
+  ul.symptoms li::before { content: "✦"; position: absolute; left: 0; top: 0.05rem; color: var(--gold); font-size: 0.85rem; }
+
+  /* D3 · custo — preto mais fundo, brilho dourado sutil no topo */
+  .band--custo { background: radial-gradient(ellipse at 50% 0%, rgba(232,184,75,0.06), var(--wine-deep) 65%); }
+  .band--custo h2 { color: var(--gold); }
+  .band--custo .close-q { font-family: var(--font-display); font-style: italic; font-size: clamp(1.3rem, 3vw, 1.9rem); color: var(--gold-lite); margin-top: 1.6rem; }
+
+  /* D4 · mecanismo — passos em glass suspenso, numerados */
+  .steps { display: grid; gap: 1.3rem; margin: 1.8rem 0 0; }
+  .step {
+    position: relative;
+    background: linear-gradient(160deg, rgba(30,27,20,0.60), rgba(12,11,9,0.45));
+    border: 1px solid var(--line); border-radius: 1rem;
+    padding: 1.6rem 1.7rem 1.6rem 4.2rem;
+    box-shadow: var(--card-glow), inset 0 1px 0 rgba(247,226,160,0.08);
+    backdrop-filter: blur(var(--glass-blur)); -webkit-backdrop-filter: blur(var(--glass-blur));
+  }
+  .step .step-num {
+    position: absolute; left: 1.4rem; top: 1.5rem;
+    width: 2rem; height: 2rem; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-family: var(--font-display); font-size: 1rem; color: var(--gold-glow);
+    border: 1px solid var(--gold-deep); background: rgba(232,184,75,0.08);
+  }
+  .step .step-title { font-family: var(--font-display); font-size: 1.2rem; color: var(--gold-lite); margin: 0 0 0.5rem; display: block; }
+  .step p { margin: 0; color: var(--ink-soft); }
+  .step p strong { color: var(--gold-lite); }
+
+  /* D5 · oferta — CLÍMAX VISUAL da página (Lei 8): ponto mais luminoso sobre o preto */
+  .band--oferta { background: radial-gradient(ellipse at 50% 12%, rgba(232,184,75,0.16), rgba(232,184,75,0.04) 42%, var(--black) 72%); border-top: 1px solid var(--line); }
+  .offer-card {
+    position: relative;
+    max-width: 40rem; margin: 0 auto; text-align: center;
+    background: linear-gradient(165deg, rgba(232,184,75,0.14), rgba(20,18,14,0.55) 60%);
+    border: 1px solid var(--gold); border-radius: 1.4rem;
+    padding: clamp(2rem, 5vw, 3rem);
+    box-shadow: 0 30px 90px -24px rgba(0,0,0,0.8), 0 0 60px -14px rgba(232,184,75,0.35), inset 0 1px 0 rgba(247,226,160,0.18);
+    backdrop-filter: blur(var(--glass-blur)); -webkit-backdrop-filter: blur(var(--glass-blur));
+  }
+  .offer-card .price { font-family: var(--font-display); font-size: clamp(3rem, 8vw, 4.5rem); color: var(--gold-lite); line-height: 1; margin: 0.4rem 0 0.2rem; }
+  .offer-card .price-when { font-size: 0.95rem; color: var(--ink-soft); letter-spacing: 0.04em; margin-bottom: 1.6rem; }
+  .offer-list { list-style: none; padding: 0; margin: 0 0 1.8rem; text-align: left; display: grid; gap: 0.7rem; }
+  .offer-list li { position: relative; padding-left: 1.7rem; color: var(--cream); }
+  .offer-list li::before { content: "✦"; position: absolute; left: 0; color: var(--gold); }
+  .scarcity { font-size: 0.9rem; color: var(--ink-soft); margin: 1.4rem 0 0; }
+  .qualify { display: grid; gap: 1.2rem; max-width: 44rem; margin: 0 auto 2.6rem; }
+  .qualify .q-block { border-left: 2px solid var(--gold-deep); padding-left: 1.2rem; }
+  .qualify .q-block.q-no { border-left-color: rgba(244,236,217,0.28); }
+  .qualify h3 { font-size: 1.1rem; color: var(--gold-lite); margin: 0 0 0.4rem; }
+  .qualify p { margin: 0; color: var(--ink-soft); }
+
+  /* D6 · Prova (autoridade como segurança) — glass suspenso */
+  .proof-card {
+    max-width: 42rem; margin: 0 auto;
+    background: linear-gradient(160deg, rgba(30,27,20,0.55), rgba(12,11,9,0.4));
+    border: 1px solid var(--line); border-radius: 1.2rem; padding: clamp(1.6rem, 4vw, 2.4rem);
+    box-shadow: var(--card-glow); backdrop-filter: blur(var(--glass-blur)); -webkit-backdrop-filter: blur(var(--glass-blur));
+  }
+  .proof-card .who { font-family: var(--font-display); font-size: 1.3rem; color: var(--gold-lite); margin: 0 0 0.3rem; }
+  .proof-card .cred { font-size: 0.92rem; color: var(--gold); letter-spacing: 0.03em; margin: 0 0 1rem; }
+  .proof-card p { color: var(--ink-soft); margin: 0; }
+  .proof-quote { border-left: 2px solid var(--gold-deep); padding-left: 1.1rem; font-family: var(--font-display); font-style: italic; color: var(--cream); }
+
+  /* D9 · FAQ (acordeão) */
+  .faq { max-width: 42rem; margin: 0 auto; }
+  .faq details { border-bottom: 1px solid var(--line-soft); padding: 0.3rem 0; }
+  .faq summary { cursor: pointer; list-style: none; padding: 1rem 0; font-family: var(--font-display); font-size: 1.1rem; color: var(--gold-lite); display: flex; justify-content: space-between; gap: 1rem; }
+  .faq summary::-webkit-details-marker { display: none; }
+  .faq summary::after { content: "+"; color: var(--gold); font-size: 1.4rem; line-height: 1; transition: transform 250ms var(--ease-out); }
+  .faq details[open] summary::after { transform: rotate(45deg); }
+  .faq details p { color: var(--ink-soft); margin: 0 0 1rem; }
+
+  /* ===== Timeline de lotes — PRONTA e OCULTA (modo preço único) ===== */
+  .offer-timeline { display: none; } /* oculta enquanto for preço único */
+  html.lotes-on .offer-timeline { display: flex; }
+  html.lotes-on .offer-card .price-single { display: none; }
+  .offer-timeline { gap: 0.8rem; list-style: none; padding: 0; margin: 0 0 1.6rem; justify-content: center; flex-wrap: wrap; }
+  .timeline-lote { flex: 1 1 8rem; border: 1px solid var(--line); border-radius: 0.9rem; padding: 1rem; opacity: 0.4; text-align: center; }
+  .timeline-lote.is-vigente { opacity: 1; border-color: var(--gold); background: rgba(217,164,65,0.08); }
+  .timeline-lote.is-encerrado { opacity: 0.2; }
+  .timeline-lote .lote-tag { font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); }
+  .timeline-lote .lote-price { font-family: var(--font-display); font-size: 1.5rem; color: var(--gold-lite); }
+  .timeline-lote .lote-window { font-size: 0.78rem; color: var(--ink-soft); }
+  .timeline-lote .lote-live { display: none; font-size: 0.72rem; color: var(--gold); }
+  .timeline-lote.is-vigente .lote-live { display: block; }
+
+  .facilit { max-width: 40rem; margin: 2.6rem auto 0; text-align: center; color: var(--ink-soft); font-size: 0.98rem; }
+  .facilit strong { color: var(--gold-lite); }
+
+  /* Fecho */
+  .close { text-align: center; padding: clamp(4rem, 9vw, 7rem) 0; background: linear-gradient(180deg, var(--wine-deep), var(--wine)); }
+  .close .halo { top: -10rem; left: 50%; width: 40rem; height: 40rem; transform: translateX(-50%); }
+  .close h2 { font-size: clamp(2rem, 5vw, 3.2rem); color: var(--gold-lite); position: relative; z-index: 2; }
+  .close p { position: relative; z-index: 2; color: var(--cream); }
+  .close .sela { font-family: var(--font-display); font-style: italic; color: var(--gold); letter-spacing: 0.1em; margin-top: 1.4rem; }
+
+  footer { border-top: 1px solid var(--line-soft); padding: 2rem 0; text-align: center; color: var(--ink-soft); font-size: 0.82rem; }
+
+  /* Sticky mobile CTA */
+  .sticky-cta { display: none; position: fixed; left: 0; right: 0; bottom: 0; z-index: 40; padding: 0.7rem 1rem; background: rgba(28,9,12,0.92); backdrop-filter: blur(8px); border-top: 1px solid var(--line); align-items: center; justify-content: space-between; gap: 0.8rem; }
+  .sticky-cta .sc-price { font-family: var(--font-display); color: var(--gold-lite); font-size: 1.1rem; }
+  .sticky-cta .btn-glass { min-height: 0; padding: 0.7rem 1.3rem; font-size: 0.9rem; }
+
+  /* ===== Popup de captura de lead ===== */
+  .lead-modal { position: fixed; inset: 0; z-index: 999; display: flex; align-items: center; justify-content: center; padding: 1.25rem; }
+  .lead-modal[hidden] { display: none; }
+  .lead-modal__backdrop { position: absolute; inset: 0; background: rgba(12,4,6,0.72); backdrop-filter: blur(3px); }
+  .lead-modal__card {
+    position: relative; width: 100%; max-width: 27rem;
+    background: linear-gradient(165deg, #34141a, var(--wine-deep));
+    border: 1px solid var(--gold-deep); border-radius: 1.2rem;
+    padding: 2rem 1.8rem 1.7rem; box-shadow: 0 40px 90px -30px rgba(0,0,0,0.85);
+  }
+  .lead-modal__x { position: absolute; top: 0.8rem; right: 1rem; background: none; border: none; color: var(--ink-soft); font-size: 1.6rem; line-height: 1; cursor: pointer; }
+  .lead-modal__x:hover { color: var(--gold-lite); }
+  .lead-modal__title { font-family: var(--font-display); font-size: 1.6rem; color: var(--gold-lite); margin: 0 0 0.35rem; }
+  .lead-modal__sub { color: var(--ink-soft); font-size: 0.96rem; margin: 0 0 1.4rem; }
+  .lead-field { display: block; margin-bottom: 1rem; }
+  .lead-field span { display: block; font-size: 0.82rem; color: var(--gold); letter-spacing: 0.04em; margin-bottom: 0.35rem; }
+  .lead-field input {
+    width: 100%; min-height: 48px; padding: 0 0.95rem; border-radius: 0.7rem;
+    background: rgba(246,236,216,0.06); border: 1px solid var(--line);
+    color: var(--cream); font-family: var(--font-body); font-size: 1rem;
+  }
+  .lead-field input:focus { outline: 2px solid var(--gold); outline-offset: 1px; border-color: var(--gold); }
+  .lead-field input::placeholder { color: rgba(246,236,216,0.35); }
+  .lead-submit { width: 100%; margin-top: 0.4rem; }
+  .lead-erro { color: #f0b8b0; font-size: 0.88rem; margin: 0.8rem 0 0; }
+  .lead-seguro { text-align: center; font-size: 0.8rem; color: var(--ink-soft); margin: 0.9rem 0 0; }
+
+  /* Responsivo */
+  @media (max-width: 860px) {
+    .hero-grid { grid-template-columns: 1fr; }
+    .hero-figure { order: -1; max-width: 24rem; margin: 0 auto; }
+  }
+  @media (max-width: 767px) {
+    .sticky-cta { display: flex; }
+    body { padding-bottom: 4.5rem; }
+  }
+</style>
+</head>
+<body>
+
+  <!-- TOPBAR -->
+  <div class="topbar">
+    <div class="wrap topbar-inner">
+      <span class="brand"><span class="mark">🦁</span> The Golden Temple</span>
+      <span class="date-tag">8 · 8 · Portal do Leão</span>
+    </div>
+  </div>
+
+  <!-- D1 · HERO -->
+  <header class="hero">
+    <span class="halo"></span>
+    <div class="wrap hero-grid">
+      <div data-reveal>
+        <p class="eyebrow">Masterclass ao vivo · 8 de Agosto · Portal do Leão</p>
+        <h1>Portal das Felinas</h1>
+        <p class="sub-h1">Da Princesa à Rainha: a travessia do feminino inseguro à autoconfiança</p>
+        <p class="subhead">Existe uma mulher dentro de você cansada de esperar ser escolhida. E existe outra, pulsando por baixo, que se escolhe primeiro. No 8/8, numa masterclass viva, você atravessa do feminino inseguro à sua autoconfiança: pelo corpo e pelo ventre, não pela mente.</p>
+        <a href="#oferta" class="btn-glass">Quero atravessar o Portal →</a>
+        <p class="cta-microcopy">Masterclass ao vivo · sábado, 8 de Agosto · 9h30 · cerca de 2h30 · R$ 88</p>
+      </div>
+      <div class="hero-figure" data-reveal style="--reveal-delay:120ms">
+        <svg class="hero-geo" viewBox="0 0 520 520" role="img" aria-label="Geometria sagrada do Templo Dourado: a Vesica Piscis, portal do 8 de agosto, envolvida pela Semente da Vida em dourado" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="geoGlow" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#f2d38a" stop-opacity="0.35"/>
+              <stop offset="45%" stop-color="#d9a441" stop-opacity="0.12"/>
+              <stop offset="100%" stop-color="#d9a441" stop-opacity="0"/>
+            </radialGradient>
+            <radialGradient id="mandorlaFill" cx="50%" cy="50%" r="60%">
+              <stop offset="0%" stop-color="#f2d38a" stop-opacity="0.30"/>
+              <stop offset="100%" stop-color="#d9a441" stop-opacity="0.04"/>
+            </radialGradient>
+          </defs>
+
+          <circle class="geo-halo" cx="260" cy="260" r="255"/>
+
+          <g class="geo-breathe">
+            <g class="geo-spin">
+              <circle class="geo-line" cx="260" cy="260" r="210"/>
+              <circle class="geo-line" cx="260" cy="260" r="175"/>
+
+              <g class="geo-seed">
+                <circle cx="260" cy="260" r="70"/>
+                <circle cx="260" cy="190" r="70"/>
+                <circle cx="260" cy="330" r="70"/>
+                <circle cx="320.6" cy="225" r="70"/>
+                <circle cx="320.6" cy="295" r="70"/>
+                <circle cx="199.4" cy="225" r="70"/>
+                <circle cx="199.4" cy="295" r="70"/>
+              </g>
+            </g>
+
+            <g>
+              <circle class="geo-vesica" cx="225" cy="260" r="70"/>
+              <circle class="geo-vesica" cx="295" cy="260" r="70"/>
+              <path class="geo-mandorla" d="M260 199.4 A70 70 0 0 0 260 320.6 A70 70 0 0 0 260 199.4 Z"/>
+            </g>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </header>
+
+  <!-- D2 · ESPELHO -->
+  <section class="band">
+    <div class="wrap read" data-reveal>
+      <p class="lead-in">Você conhece esse cansaço. Não é do corpo. É mais fundo.</p>
+      <p>É o cansaço de esperar ser escolhida. De se fazer pequena para caber onde nunca coube. De adiar dizer o que pensa, colocar seu limite, ocupar o seu lugar. De confiar mais no que o outro diz do que na sua própria intuição, e depois sentir o aperto de ter entregado seu poder sem perceber.</p>
+      <p>Esse é o Portal 1: a Donzela. Sensível, potente, e ainda à espera.</p>
+      <p>Talvez você reconheça:</p>
+      <ul class="symptoms">
+        <li>sente tudo com uma intensidade que ninguém ao redor parece sentir</li>
+        <li>espera ser escolhida, no amor, no trabalho, na sua própria vida</li>
+        <li>adia se posicionar e depois se cobra por ter se calado</li>
+        <li>tem um chamado que pulsa, e ainda não soube como honrar</li>
+      </ul>
+      <p style="margin-top:1.6rem"><strong>Não há nada de errado com você. Você só aprendeu a se calar.</strong></p>
+    </div>
+  </section>
+
+  <!-- D3 · CUSTO -->
+  <section class="band band--custo">
+    <div class="wrap read" data-reveal>
+      <h2>Cada ciclo esperando ser escolhida cobra a mesma coisa</h2>
+      <p>Um pouco da sua própria voz.</p>
+      <p>A Donzela não é um defeito. É uma fase. Mas quando ela vira morada, a vida começa a se repetir. Os mesmos relacionamentos com outro rosto. A mesma sensação de estar "quase". O mesmo chamado batendo na porta, e você adiando abrir.</p>
+      <p>O 8/8 é o Portal do Leão: a janela do ano de coragem, poder solar e soberania do coração. É quando essa travessia acontece com o campo a favor.</p>
+      <p class="close-q">Você quer atravessar esse portal coroada, ou esperar mais um ano na porta?</p>
+    </div>
+  </section>
+
+  <!-- D4 · MECANISMO -->
+  <section class="band">
+    <div class="wrap read">
+      <div data-reveal>
+        <p class="eyebrow" style="margin-bottom:0.6rem">A Travessia das Felinas</p>
+        <h2>Por que pelo ventre, e não pela mente</h2>
+        <p>Não é uma aula sobre autoestima. Autoconfiança que nasce na cabeça dura até a próxima dúvida. A que nasce no corpo fica.</p>
+        <p>Por isso essa passagem não se faz pela mente. A mente entende e continua insegura. O ventre, quando lembra da própria força, não precisa de permissão. Em cerca de duas horas juntas, na ordem em que acontece:</p>
+      </div>
+      <div class="steps">
+      <div class="step" data-reveal>
+        <span class="step-num">1</span>
+        <span class="step-title">Primeiro o corpo desce</span>
+        <p>A masterclass abre com uma ancoragem sonora, a voz e o som da Prana, que tiram você da cabeça e levam ao ventre. Antes de qualquer conceito, você sai do pensamento e entra na sensação. É a única forma de o que vem depois entrar de verdade.</p>
+      </div>
+      <div class="step" data-reveal style="--reveal-delay:80ms">
+        <span class="step-num">2</span>
+        <span class="step-title">Depois você enxerga o mapa</span>
+        <p>Quem é a Donzela ferida, os sinais de que ela ainda dirige a sua vida, o padrão do "esperar ser escolhida". E quem é a Rainha, nos seus quatro rostos: Mãe, Amante, Líder, Rainha. Você reconhece, em você, onde uma termina e a outra começa.</p>
+      </div>
+      <div class="step" data-reveal style="--reveal-delay:160ms">
+        <span class="step-num">3</span>
+        <span class="step-title">Então você atravessa, no corpo</span>
+        <p>Uma prática guiada de ventre, com respiração e presença, para encontrar a Donzela, honrá-la e coroá-la Rainha. Não é visualização bonita: é o corpo fazendo a passagem que a mente sozinha nunca consegue.</p>
+      </div>
+      <div class="step" data-reveal style="--reveal-delay:240ms">
+        <span class="step-num">4</span>
+        <span class="step-title">E você sela</span>
+        <p>Um momento de escrita e voz respondendo a uma só pergunta, <em>o que a minha Rainha veio realizar?</em>, e um selamento simbólico da travessia. Você sai com isso registrado, não só sentido.</p>
+      </div>
+      </div>
+      <div data-reveal style="margin-top:2rem">
+        <p>As felinas não hesitam. A leoa, a tigresa, a onça: presentes, encarnadas, donas do próprio território. É essa força que a masterclass acende em você.</p>
+        <p><strong>Quando você atravessa esse portal, não é a mente que muda de ideia. É o ventre que lembra.</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- D6 · PROVA (autoridade como segurança) -->
+  <section class="band">
+    <div class="wrap" data-reveal>
+      <div class="proof-card">
+        <p class="who">Quem conduz a travessia</p>
+        <p class="cred">Prana Ka · psicóloga · psicanalista · sacerdotisa do ventre · facilitadora de música ritual</p>
+        <p class="proof-quote">Guio não porque sei tudo, mas porque vivi tudo. Já mergulhei nas águas escuras onde muitas se afogam, e voltei. É de lá que eu te acompanho.</p>
+        <p style="margin-top:1.1rem">A jornada do Templo Dourado roda há anos no atendimento individual. As mulheres que atravessam saem de outro lugar: reunindo os pedaços de si que estavam perdidos por aí. <span data-depoimentos>{DEPOIMENTOS — inserir 1 a 2 depoimentos reais quando a Prana enviar}</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- D5 · QUALIFICAÇÃO + OFERTA + FECHO -->
+  <section class="band band--oferta" id="oferta">
+    <div class="wrap">
+      <div class="qualify" data-reveal>
+        <div class="q-block">
+          <h3>Para quem é o Portal das Felinas</h3>
+          <p>Mulheres sensíveis, criativas e potentes que sentem que já é hora de se escolher, criar a vida a partir do próprio ventre e liderar com alma, beleza e presença.</p>
+        </div>
+        <div class="q-block q-no">
+          <h3>Talvez ainda não seja a sua hora, se</h3>
+          <p>você quer que tudo continue como está. Aqui a gente convida a transformar, com muito respeito e muita força ao mesmo tempo. As felinas não são muitas. São as certas.</p>
+        </div>
+      </div>
+
+      <div class="offer-card" data-reveal>
+        <p class="eyebrow" style="justify-self:center">A sua vaga</p>
+
+        <!-- Timeline de lotes: pronta e OCULTA (ativar com html.lotes-on) -->
+        <ul class="offer-timeline" aria-label="Lotes por data">
+          <li class="timeline-lote" data-lote="1"><span class="lote-tag">Lote 1</span><div class="lote-price">R$ 88</div><div class="lote-window">até 8/8</div><span class="lote-live">Vigente</span></li>
+          <li class="timeline-lote" data-lote="2"><span class="lote-tag">Lote 2</span><div class="lote-price" data-lote-price>—</div><div class="lote-window">—</div><span class="lote-live">Vigente</span></li>
+        </ul>
+
+        <ul class="offer-list">
+          <li>a masterclass ao vivo: o mapa da passagem da Princesa à Rainha</li>
+          <li>a vivência guiada de coroação, uma prática de ventre para sentir na pele</li>
+          <li>a ancoragem sonora da Prana, uma amostra viva do método</li>
+          <li>o convite às condições especiais das Felinas para a jornada completa do Templo Dourado</li>
+        </ul>
+
+        <div class="price-single">
+          <div class="price">R$ 88</div>
+          <p class="price-when">sábado, 8 de Agosto · 9h30 · ao vivo · cerca de 2h30</p>
+        </div>
+
+        <a href="{LINK_CHECKOUT_PAGTRUST}" class="btn-glass" data-checkout>Quero atravessar o Portal →</a>
+        <p class="cta-note">Sua vaga é selada no pagamento, direto pelo PagTrust. Se ao chegar você sentir que não é o seu tempo, é só falar com a gente antes do encontro. Sem burocracia.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- D9 · FAQ -->
+  <section class="band">
+    <div class="wrap" data-reveal>
+      <h2 style="text-align:center; margin-bottom:2rem">Antes de atravessar</h2>
+      <div class="faq">
+        <details>
+          <summary>Isso não é muito místico para mim?</summary>
+          <p>Sou pé no chão. Muito. O sagrado aqui vem com clareza e método, não com fumaça. E não existe espiritualidade sem aterramento: se vive no corpo, na rotina, na matéria.</p>
+        </details>
+        <details>
+          <summary>E se eu não conseguir sentir nada?</summary>
+          <p>A masterclass começa exatamente por aí: uma ancoragem sonora que tira você da cabeça e leva ao corpo, no seu ritmo. Sentir não é performance. É permissão. E ela é guiada.</p>
+        </details>
+        <details>
+          <summary>É ao vivo? E se eu não puder estar no horário?</summary>
+          <p>É ao vivo, sábado 8/8 às 9h30, cerca de 2h30. A presença é parte da travessia, o campo se forma ali. Quem se inscreve recebe as orientações por e-mail e WhatsApp.</p>
+        </details>
+        <details>
+          <summary>Preciso ter experiência com esse tipo de trabalho?</summary>
+          <p>Não. Você só precisa chegar disposta. As felinas certas não são as que já sabem tudo, são as que querem atravessar.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- FECHO -->
+  <section class="close">
+    <span class="halo"></span>
+    <div class="wrap read" data-reveal>
+      <h2>O Portal do Leão se abre no 8/8</h2>
+      <p style="margin-top:1.2rem">Existe uma mulher dentro de você que está cansada de esperar. Eu te convido a atravessar esse portal comigo, e sair dele com a coroa que sempre foi tua.</p>
+      <p style="margin-top:1.6rem"><a href="#oferta" class="btn-glass">Quero atravessar o Portal →</a></p>
+      <p class="sela">Selado.</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">The Golden Temple · Prana Ka · Masterclass Portal das Felinas · 8 de Agosto</div>
+  </footer>
+
+  <!-- Sticky mobile CTA -->
+  <div class="sticky-cta">
+    <span class="sc-price">R$ 88 · 8/8</span>
+    <a href="#oferta" class="btn-glass">Quero minha vaga →</a>
+  </div>
+
+  <!-- Popup de captura de lead -->
+  <div class="lead-modal" id="leadModal" hidden aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="leadModalTitle">
+    <div class="lead-modal__backdrop" data-modal-close></div>
+    <div class="lead-modal__card" role="document">
+      <button type="button" class="lead-modal__x" data-modal-close aria-label="Fechar">&times;</button>
+      <h2 class="lead-modal__title" id="leadModalTitle">Atravesse o Portal</h2>
+      <p class="lead-modal__sub">Deixe seu contato e siga para o pagamento seguro. Sua vaga na masterclass do 8/8.</p>
+      <form id="leadForm" novalidate>
+        <label class="lead-field">
+          <span>Nome</span>
+          <input type="text" name="nome" autocomplete="name" required placeholder="Como você quer ser chamada" />
+        </label>
+        <label class="lead-field">
+          <span>WhatsApp</span>
+          <input type="tel" name="telefone" autocomplete="tel" inputmode="tel" required placeholder="(48) 9 9999-9999" />
+        </label>
+        <label class="lead-field">
+          <span>E-mail</span>
+          <input type="email" name="email" autocomplete="email" required placeholder="voce@email.com" />
+        </label>
+        <button type="submit" class="btn-glass lead-submit">Ir para o pagamento →</button>
+        <p class="lead-erro" data-lead-erro hidden></p>
+        <p class="lead-seguro">Pagamento seguro via PagTrust.</p>
+      </form>
+    </div>
+  </div>
+
+<script>
+(function () {
+  'use strict';
+  document.documentElement.classList.remove('no-js');
+
+  /* ============================================================
+     CONFIG — preencher no deploy
+     ============================================================ */
+  var CHECKOUT_URL   = '{LINK_CHECKOUT_PAGTRUST}';  // link do checkout PagTrust
+  var LEADS_ENDPOINT = '{APP_SCRIPT_WEBAPP_URL}';   // Web App /exec do Google Apps Script
+
+  /* Lote (INATIVO por padrão — preço único R$ 88). Padrão herdado da Débora. */
+  var LOTES_ON  = false;
+  var LOTE1_FIM = '2026-08-08';
+  var LOTES = { 1: { price: 'R$ 88', url: CHECKOUT_URL } };
+
+  /* ---- Reveal on scroll ---- */
+  (function(){
+    var els = document.querySelectorAll('[data-reveal]');
+    if (!('IntersectionObserver' in window)) { els.forEach(function(e){e.classList.add('is-visible');}); return; }
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('is-visible'); io.unobserve(en.target); } });
+    }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+    els.forEach(function(e){ io.observe(e); });
+  })();
+
+  /* ---- Lote engine (só roda se LOTES_ON) ---- */
+  if (LOTES_ON) {
+    document.documentElement.classList.add('lotes-on');
+    var endOfDay = function(iso){ return new Date(iso + 'T23:59:59'); };
+    var lote = (new Date() <= endOfDay(LOTE1_FIM)) ? 1 : 2;
+    var data = LOTES[lote] || LOTES[1];
+    document.querySelectorAll('.timeline-lote').forEach(function(c){
+      var n = parseInt(c.getAttribute('data-lote'),10);
+      c.classList.toggle('is-vigente', n===lote);
+      c.classList.toggle('is-encerrado', n<lote);
+    });
+  }
+
+  /* ---- Pixel Meta (opcional; só dispara se fbq existir) ---- */
+  function track(ev){ if (typeof window.fbq === 'function') window.fbq('track', ev); }
+
+  /* ---- UTMs para propagar ao lead e ao checkout ---- */
+  function getUTMs(){
+    var p = new URLSearchParams(location.search), out = {};
+    ['utm_source','utm_medium','utm_campaign','utm_content','utm_term'].forEach(function(k){ if (p.get(k)) out[k] = p.get(k); });
+    return out;
+  }
+
+  /* ---- Popup de captura de lead ---- */
+  var modal = document.getElementById('leadModal');
+  var leadForm = document.getElementById('leadForm');
+  var leadErro = modal ? modal.querySelector('[data-lead-erro]') : null;
+  var lastFocus = null;
+
+  function openModal(){
+    lastFocus = document.activeElement;
+    modal.hidden = false; modal.setAttribute('aria-hidden','false');
+    document.body.style.overflow = 'hidden';
+    var f = modal.querySelector('input[name="nome"]'); if (f) f.focus();
+  }
+  function closeModal(){
+    modal.hidden = true; modal.setAttribute('aria-hidden','true');
+    document.body.style.overflow = '';
+    if (lastFocus) lastFocus.focus();
+  }
+
+  if (modal && leadForm) {
+    modal.querySelectorAll('[data-modal-close]').forEach(function(el){ el.addEventListener('click', closeModal); });
+    document.addEventListener('keydown', function(e){ if (e.key === 'Escape' && !modal.hidden) closeModal(); });
+
+    /* Todo CTA de oferta abre o popup; os âncora (#oferta) do topo/fecho seguem como âncora. */
+    document.querySelectorAll('[data-checkout]').forEach(function(btn){
+      btn.addEventListener('click', function(e){ e.preventDefault(); track('InitiateCheckout'); openModal(); });
+    });
+
+    leadForm.addEventListener('submit', function(e){
+      e.preventDefault();
+      if (leadErro){ leadErro.hidden = true; leadErro.textContent = ''; }
+      if (!leadForm.checkValidity()){ leadForm.reportValidity(); return; }
+
+      var nome = leadForm.nome.value.trim();
+      var telefone = leadForm.telefone.value.trim();
+      var email = leadForm.email.value.trim();
+      var utms = getUTMs();
+
+      /* 1) grava o lead no Google Sheets via App Script — nunca trava a venda */
+      if (LEADS_ENDPOINT && LEADS_ENDPOINT.indexOf('script.google.com') > -1) {
+        try {
+          var payload = { nome: nome, telefone: telefone, email: email, produto: 'Portal das Felinas 8/8', ts: new Date().toISOString() };
+          Object.keys(utms).forEach(function(k){ payload[k] = utms[k]; });
+          fetch(LEADS_ENDPOINT, { method:'POST', mode:'no-cors', headers:{'Content-Type':'text/plain;charset=utf-8'}, body: JSON.stringify(payload) });
+        } catch (err) { /* segue para o checkout de qualquer forma */ }
+      }
+
+      /* 2) pixel Lead */
+      track('Lead');
+
+      /* 3) redireciona para o checkout com PREFILL nome + email (& , nunca ? extra) */
+      var url = CHECKOUT_URL;
+      if (url && url.indexOf('{') === -1) {
+        var sep = url.indexOf('?') > -1 ? '&' : '?';
+        url += sep + 'name=' + encodeURIComponent(nome) + '&email=' + encodeURIComponent(email);
+        Object.keys(utms).forEach(function(k){ url += '&' + k + '=' + encodeURIComponent(utms[k]); });
+        window.location.href = url;
+      } else {
+        /* checkout ainda não configurado: mostra aviso amigável, o lead já foi salvo */
+        if (leadErro){ leadErro.textContent = 'Recebemos seu contato. O link de pagamento chega em instantes no seu WhatsApp.'; leadErro.hidden = false; }
+      }
+    });
+  }
+})();
+</script>
+</body>
+</html>

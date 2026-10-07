@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Proposta Continuum · Renata Betta</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="Proposta de Assessoria Estratégica Continuum para Renata Betta. Válida até 29 de agosto de 2026.">
+<meta property="og:title" content="Proposta Continuum · Renata Betta">
+<meta property="og:description" content="Proposta de Assessoria Estratégica Continuum. Válida até 29 de agosto de 2026.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap">
+
+<style>
+:root{
+  --paper:#FAF9F7; --surface:#FFFFFF; --raised:#F1EFEA;
+  --ink:#1A1815; --body:#3A3630; --muted:#6E675D;
+  --rule:#DFDAD1; --rule-strong:#B8B0A4;
+  --brass:#8A6A2F; --brass-soft:#F2EBDC;
+  --limit:#9C4426; --limit-soft:#F6E7E1;
+  --sans:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --serif:"Newsreader",Georgia,"Times New Roman",serif;
+  --mono:"IBM Plex Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#14120F; --surface:#1C1A16; --raised:#241F1A;
+    --ink:#F0EDE6; --body:#CDC6B9; --muted:#948C7E;
+    --rule:#2E2A24; --rule-strong:#4A443A;
+    --brass:#D9AE62; --brass-soft:#2A2114;
+    --limit:#E0906E; --limit-soft:#2D1A13;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#14120F; --surface:#1C1A16; --raised:#241F1A;
+  --ink:#F0EDE6; --body:#CDC6B9; --muted:#948C7E;
+  --rule:#2E2A24; --rule-strong:#4A443A;
+  --brass:#D9AE62; --brass-soft:#2A2114;
+  --limit:#E0906E; --limit-soft:#2D1A13;
+}
+
+*{box-sizing:border-box}
+body{
+  background:var(--paper); color:var(--body);
+  font-family:var(--sans); font-size:16px; line-height:1.65;
+  margin:0; padding:0 22px 100px; -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:730px;margin:0 auto}
+p{margin:0 0 1.05em;max-width:64ch}
+strong{color:var(--ink);font-weight:600}
+em{font-style:italic}
+
+/* ---------- capa ---------- */
+.masthead{padding:70px 0 34px;border-bottom:1px solid var(--rule-strong)}
+.org{
+  font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--brass);margin:0 0 28px;font-weight:600;
+}
+h1{
+  font-family:var(--serif);font-weight:500;color:var(--ink);
+  font-size:clamp(36px,6.4vw,54px);line-height:1.06;letter-spacing:-.015em;
+  margin:0 0 20px;text-wrap:balance;
+}
+.standfirst{
+  font-family:var(--serif);font-size:19.5px;line-height:1.55;color:var(--body);
+  max-width:58ch;margin:0 0 30px;
+}
+.meta{
+  display:flex;flex-wrap:wrap;gap:0 34px;font-family:var(--mono);font-size:11.5px;
+  color:var(--muted);letter-spacing:.03em;line-height:2;
+}
+.meta b{color:var(--body);font-weight:500}
+
+/* ---------- seções numeradas ---------- */
+section{padding:44px 0;border-bottom:1px solid var(--rule)}
+section:last-of-type{border-bottom:none}
+.head{display:grid;grid-template-columns:38px 1fr;gap:16px;align-items:baseline;margin-bottom:20px}
+.num{
+  font-family:var(--mono);font-size:12px;font-weight:600;color:var(--brass);
+  letter-spacing:.06em;padding-top:5px;
+}
+h2{
+  font-family:var(--serif);font-weight:500;color:var(--ink);
+  font-size:clamp(24px,3.6vw,29px);line-height:1.2;letter-spacing:-.01em;
+  margin:0;text-wrap:balance;
+}
+h3{
+  font-family:var(--sans);font-weight:600;color:var(--ink);
+  font-size:16px;line-height:1.4;margin:30px 0 10px;
+}
+.body-indent{padding-left:54px}
+@media (max-width:620px){ .body-indent{padding-left:0} .head{grid-template-columns:30px 1fr;gap:12px} }
+
+/* ---------- tabelas ---------- */
+.scroll{overflow-x:auto;margin:22px 0;-webkit-overflow-scrolling:touch}
+table{border-collapse:collapse;width:100%;font-size:14.5px;min-width:min(100%,460px)}
+caption{
+  caption-side:bottom;text-align:left;color:var(--muted);font-size:12.5px;
+  line-height:1.55;padding-top:12px;
+}
+th,td{padding:10px 13px;text-align:left;border-bottom:1px solid var(--rule);vertical-align:baseline}
+thead th{
+  font-family:var(--mono);font-size:10.5px;letter-spacing:.11em;text-transform:uppercase;
+  color:var(--muted);font-weight:500;border-bottom:1px solid var(--rule-strong);
+  padding-bottom:9px;white-space:nowrap;
+}
+td.n,th.n{text-align:right;font-family:var(--mono);font-variant-numeric:tabular-nums;white-space:nowrap}
+tbody tr:last-child td{border-bottom:none}
+th[scope="row"]{font-weight:400;color:var(--body)}
+tr.pick{background:var(--brass-soft)}
+tr.pick th[scope="row"],tr.pick td{color:var(--ink);font-weight:600}
+tr.total td{border-top:1px solid var(--rule-strong);color:var(--ink);font-weight:600}
+
+/* ---------- blocos ---------- */
+.pull{
+  font-family:var(--serif);font-size:clamp(19px,3vw,23px);line-height:1.38;color:var(--ink);
+  margin:30px 0;padding:0 0 0 22px;border-left:2px solid var(--brass);text-wrap:balance;
+}
+.flag{
+  font-size:14.5px;line-height:1.6;color:var(--body);
+  padding:18px 20px;background:var(--brass-soft);border-radius:2px;margin:22px 0;
+}
+.flag strong{color:var(--ink)}
+.note{
+  font-size:13.5px;line-height:1.6;color:var(--muted);
+  padding:15px 17px;background:var(--raised);border-radius:2px;margin:20px 0;
+}
+.note strong{color:var(--ink)}
+
+/* ---------- fases ---------- */
+.phases{display:flex;flex-direction:column;gap:1px;background:var(--rule);border-radius:2px;overflow:hidden;margin:24px 0}
+.phase{background:var(--surface);padding:19px 21px}
+.phase-when{
+  font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--brass);font-weight:600;margin-bottom:8px;
+}
+.phase h4{margin:0 0 8px;font-size:15.5px;color:var(--ink);font-weight:600;font-family:var(--sans)}
+.phase ul{margin:0;padding-left:1.15em;font-size:14.5px;line-height:1.6}
+.phase li{margin-bottom:.3em}
+
+/* ---------- listas ---------- */
+ul,ol{margin:0 0 1em;padding-left:1.15em;max-width:64ch}
+li{margin-bottom:.45em}
+li::marker{color:var(--muted)}
+
+/* ---------- números soltos ---------- */
+.figures{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(158px,1fr));gap:1px;
+  background:var(--rule);margin:26px 0;border:1px solid var(--rule);border-radius:2px;
+}
+.fig{background:var(--surface);padding:19px 17px}
+.fig dt{font-family:var(--mono);font-size:10.5px;letter-spacing:.11em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+.fig dd{margin:0;font-family:var(--mono);font-size:24px;font-weight:500;color:var(--ink);font-variant-numeric:tabular-nums;line-height:1.15}
+.fig dd small{display:block;font-family:var(--sans);font-size:12.5px;font-weight:400;color:var(--muted);margin-top:8px;line-height:1.5;font-variant-numeric:normal}
+.fig.accent dd{color:var(--brass)}
+
+/* ---------- fecho ---------- */
+.sign{
+  border:1px solid var(--rule-strong);border-radius:2px;padding:28px 26px;margin:30px 0 0;
+  background:var(--surface);
+}
+.sign .lbl{font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:12px}
+.sign p:last-child{margin-bottom:0}
+footer{
+  margin-top:52px;padding-top:22px;border-top:1px solid var(--rule);
+  font-family:var(--mono);font-size:11.5px;color:var(--muted);line-height:1.75;
+}
+
+a{color:var(--brass);text-decoration:underline;text-underline-offset:3px}
+a:focus-visible{outline:2px solid var(--brass);outline-offset:3px;border-radius:2px}
+@media (max-width:560px){
+  body{padding:0 17px 70px}
+  .masthead{padding:48px 0 28px}
+  section{padding:34px 0}
+  th,td{padding:9px 10px;font-size:13.5px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="masthead">
+  <p class="org">Continuum</p>
+  <h1>Proposta de Assessoria Estratégica</h1>
+  <p class="standfirst">Renata, esta é a proposta que você me pediu no sábado. Ela começa pelo que você quer construir, segue pelo que está entre você e isso, e termina em datas e números que você pode conferir.</p>
+  <div class="meta">
+    <span><b>Para</b> Renata Betta</span>
+    <span><b>De</b> Victor Senna</span>
+    <span><b>Data</b> 22 de agosto de 2026</span>
+    <span><b>Válida até</b> 29 de agosto de 2026</span>
+  </div>
+</header>
+
+<section>
+  <div class="head"><span class="num">01</span><h2>O que você quer, e o que está entre você e isso</h2></div>
+  <div class="body-indent">
+    <p>Você disse três coisas que organizam esta proposta inteira: <em>"minha única demanda é vender"</em>, <em>"eu cheguei no gargalo que eu queria ter"</em>, e <em>"tá na hora de virar esse jogo"</em>.</p>
+
+    <p>Você não está pedindo mais volume no presencial. <strong>Você quer o mesmo trabalho rendendo mais, e uma estrutura que venda sem depender de você fazer na unha.</strong></p>
+
+    <p>A sua operação já provou que converte. Cinco a seis consultas por semana, metade a sessenta por cento fechando tratamento, e dezesseis mentorias vendidas sem tráfego, sem página e sem oferta escrita. <strong>Essas taxas são boas, e são suas.</strong></p>
+
+    <p>É por isso que os dois números abaixo interessam.</p>
+
+    <div class="scroll">
+      <table>
+        <caption>Os dois números vêm de informações suas, das nossas duas conversas.</caption>
+        <thead><tr><th>Origem do número</th><th class="n">Faturamento/mês</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">O que as suas taxas alcançam quando tudo alinha</th><td class="n">R$ 33.000 a 46.000</td></tr>
+          <tr><th scope="row">O que julho e agosto entregaram</th><td class="n">R$ 15.000</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="pull">A distância entre esses dois números não mede um erro. Mede exatamente o que uma estrutura recupera.</p>
+
+    <p>Taxa é o que o seu funil faz nas semanas em que tudo acontece. Resultado é o que sobra depois de tudo que não aconteceu: a semana em que não deu para gravar criativo, o lead que foi respondido tarde, <strong>a mentoria parada há cinco meses</strong>, a agenda que encheu antes.</p>
+
+    <h3>O que hoje não existe, e não é falha de ninguém</h3>
+
+    <p>Você sabe exatamente quanto entrou. <strong>O que ainda não existe é o caminho entre o anúncio e o depósito:</strong> de onde veio cada venda, quanto custou cada lead, em que etapa a pessoa parou, e qual das suas ofertas paga a conta.</p>
+
+    <p><strong>Ninguém montou isso para você, e não era para montar.</strong> O tráfego que roda hoje foi contratado para encher a sua agenda de presencial, e faz isso bem. Ele não foi feito para te dizer onde está a próxima venda, nem para vender uma mentoria em grupo.</p>
+
+    <p>Sem esse caminho montado, crescer vira aposta. E aposta escala mal por um motivo específico: <strong>ela multiplica junto o que funciona e o que não funciona</strong>, e você só descobre qual era qual depois de ter gasto.</p>
+
+    <h3>O que custa continuar assim</h3>
+
+    <div class="flag">Cinco meses sem vender mentoria. Duas mentorias que você paga vencendo em setembro e outubro. Tráfego saindo todo mês para um funil que já está no teto. E a sua agenda, que é o único insumo do seu negócio que não dá para comprar mais.
+    <br><br><strong>Cada mês assim custa um mês de estrutura não construída.</strong> O tráfego você paga de novo no mês seguinte, e ele recomeça do zero. A estrutura não: ela fica, e trabalha nos meses seguintes.</div>
+
+    <p><strong>Você é a única pessoa da sua empresa, e é também o único canal de venda dela.</strong> Todo real que entra hoje passa pela sua agenda ou pela sua boca. Enquanto for assim, o seu faturamento tem o mesmo teto que o seu dia.</p>
+
+    <div class="note"><strong>Uma nota sobre os cenários que eu te mostrei na call:</strong> eles foram montados antes de eu ter o seu faturamento realizado. <strong>Por isso não vão nesta proposta.</strong> Voltam refeitos no primeiro relatório, com o caminho já medido, e aí deixam de ser estimativa e viram meta.</div>
+  </div>
+</section>
+
+<section>
+  <div class="head"><span class="num">02</span><h2>O que eu proponho fazer</h2></div>
+  <div class="body-indent">
+    <p>Seis meses, escopo fechado. Tudo o que vem abaixo existe para montar o caminho que hoje não existe, e para tirar a venda de dentro da sua agenda.</p>
+
+    <div class="phases">
+      <div class="phase">
+        <div class="phase-when">Dias 1 a 14 · Alicerce</div>
+        <h4>Decidir o que se vende, para quem, e com que palavras</h4>
+        <ul>
+          <li>Diagnóstico da operação: para onde vai o seu tempo hoje, e quanto cada hora produz</li>
+          <li>Quem é a sua cliente, escrito</li>
+          <li><strong>A conta do preço novo do presencial:</strong> quanto subir, quanto volume isso custa, e quanto sobra. A decisão é sua, a conta é minha</li>
+          <li>A oferta da mentoria: formato, preço, promessa, número de encontros</li>
+          <li>A narrativa central, e o nome fixo do seu mecanismo de diagnóstico</li>
+          <li>Roteiro da call de vendas, formalizando a ferramenta que já te fez vender dezesseis</li>
+        </ul>
+      </div>
+      <div class="phase">
+        <div class="phase-when">Dias 15 a 21 · No ar</div>
+        <h4>A estrutura que vende sem você fazer na unha</h4>
+        <ul>
+          <li>Página de vendas da mentoria</li>
+          <li>Seis a dez criativos, com roteiro de gravação para você</li>
+          <li>Campanha digital nova, fora do raio de 50 km, na sua conta de anúncios</li>
+          <li>Medição ponta a ponta: do anúncio até a venda, com custo por etapa</li>
+        </ul>
+      </div>
+      <div class="phase">
+        <div class="phase-when">Meses 2 a 6 · Operação</div>
+        <h4>Rodar, medir, corrigir e escalar</h4>
+        <ul>
+          <li>Gestão da campanha e criativos de reposição</li>
+          <li>Onboarding orquestrado da mentoria, que é o que segura renovação e tira você de apagar incêndio</li>
+          <li>Otimização do funil pelo dado: qual criativo, qual público e qual etapa merecem mais verba</li>
+          <li>Call quinzenal comigo e relatório mensal escrito, com meta contra realizado</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="flag"><strong>Primeiro valor no dia 14: a primeira venda no preço novo do presencial.</strong> O preço é decidido na semana 1 e vale para quem entrar depois dela. <strong>Não depende de anúncio no ar, de página pronta, nem de você fazer nada diferente do que já faz.</strong> É a única alavanca que devolve dinheiro sem depender de nada ser construído.</div>
+  </div>
+</section>
+
+<section>
+  <div class="head"><span class="num">03</span><h2>O que fica de fora, e por quê</h2></div>
+  <div class="body-indent">
+    <p><strong>O tráfego local que você já tem rodando fica onde está.</strong> Ele funciona, já está pago dentro da mentoria, e a conta é sua. Eu não cobro para gerir o que já funciona, e recomendo que você mantenha com eles enquanto durar.</p>
+    <p>Também ficam de fora, e cada um deles é orçado à parte se você quiser depois: VSL, área de membros, mais de uma página, funil de e-mail, produção de conteúdo orgânico e gestão do seu Instagram.</p>
+    <div class="note">O sistema de gestão que eu comentei no fim da call <strong>não faz parte desta proposta</strong> e não tem preço aqui. Eu não deveria ter trazido aquilo junto do orçamento. Fica registrado como conversa de outro momento.</div>
+  </div>
+</section>
+
+<section>
+  <div class="head"><span class="num">04</span><h2>Investimento</h2></div>
+  <div class="body-indent">
+    <dl class="figures">
+      <div class="fig"><dt>Assessoria</dt><dd>R$ 27.000<small>seis meses, escopo fechado</small></dd></div>
+      <div class="fig"><dt>Verba de mídia</dt><dd>R$ 2.500<small>por mês, no mínimo. Sua, direto na plataforma. Não passa por mim, e sobe conforme o custo por venda se provar</small></dd></div>
+    </dl>
+
+    <h3>Três formas de pagar o mesmo contrato</h3>
+    <p>O trabalho é idêntico nas três. O que muda é quando o dinheiro sai do seu caixa.</p>
+
+    <div class="scroll">
+      <table>
+        <caption>A linha destacada é a que eu recomendo para o seu caso, pelo motivo da seção seguinte.</caption>
+        <thead><tr><th>Forma</th><th class="n">Você paga</th><th class="n">Total</th><th class="n">Sai por mês</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Pix à vista</th><td class="n">uma vez</td><td class="n">R$ 25.650</td><td class="n">nada</td></tr>
+          <tr class="pick"><th scope="row">Cartão em 12x</th><td class="n">12 × R$ 2.565</td><td class="n">R$ 30.780</td><td class="n">R$ 2.565</td></tr>
+          <tr><th scope="row">Entrada e mensal</th><td class="n">R$ 6.000 + 6 × R$ 3.500</td><td class="n">R$ 27.000</td><td class="n">R$ 3.500</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>No Pix o valor cai cinco por cento por antecipação. No cartão, a taxa da operadora está dentro da parcela, visível, e não escondida no preço. Na terceira, a entrada cobre o mês de construção e a mensalidade cobre a operação.</p>
+  </div>
+</section>
+
+<section>
+  <div class="head"><span class="num">05</span><h2>Por que o cartão, no seu caso</h2></div>
+  <div class="body-indent">
+    <p>Você me disse a objeção real, e ela não era o preço: <em>"eu não sei como absorver isso botando nas contas, porque eu já tenho esse outro povo que eu pago"</em>. E depois: <em>"senão daqui a pouco eu tô pagando três coisas."</em></p>
+
+    <p><strong>Essa preocupação está certa, e ela tem prazo de validade.</strong> Você mesma me disse que as duas mentorias em que está vencem em setembro e outubro, e que uma delas você já decidiu não renovar.</p>
+
+    <div class="scroll">
+      <table>
+        <caption>O que muda entre as duas primeiras parcelas e as demais é o seu calendário, não o meu preço.</caption>
+        <thead><tr><th>Parcelas</th><th>Quando caem</th><th>Competem com o que você já paga?</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">1 e 2</th><td>setembro e outubro</td><td>sim, enquanto as mentorias correm</td></tr>
+          <tr class="pick"><th scope="row">3 a 12</th><td>novembro em diante</td><td>não. As mentorias já venceram</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="pull">Você paga seis meses de trabalho ao longo de doze. A estrutura fica pronta no sexto mês e continua trabalhando enquanto você termina de pagar.</p>
+
+    <p>Das três formas, o cartão é a de menor saída mensal, e é a única que não empilha um custo novo em cima de dois que estão terminando.</p>
+
+    <div class="flag"><strong>E é ela que faz a conta fechar com duas vendas.</strong> A parcela mais a verba mínima somam R$ 5.065 por mês. Duas vendas de mentoria a R$ 2.500 dão R$ 5.000, ou seja, <strong>duas vendas por mês cobrem a assessoria e a mídia inteiras.</strong> Da terceira em diante é seu. Você já fechou dezesseis, na unha, sem tráfego, sem página e sem oferta escrita.</div>
+  </div>
+</section>
+
+<section>
+  <div class="head"><span class="num">06</span><h2>A garantia</h2></div>
+  <div class="body-indent">
+    <p class="pull">Se uma entrega marcada como minha não sair na data marcada, e o atraso for meu, você não paga aquele mês.</p>
+    <p>Sem discussão de mérito e sem análise de causa. As datas ficam escritas no plano, com o meu nome ao lado de cada uma, e elas valem contra mim.</p>
+    <p><strong>Repare no que essa garantia é e no que ela não é.</strong> Ela cobre execução, que está inteira na minha mão. <strong>Ela não cobre faturamento, que depende de você, do mercado e do tempo.</strong> Eu não vendo garantia de resultado. Quem vende está garantindo uma coisa que não controla.</p>
+  </div>
+</section>
+
+<section>
+  <div class="head"><span class="num">07</span><h2>O que eu preciso de você</h2></div>
+  <div class="body-indent">
+    <p>Pouco, e concentrado no começo. O objetivo do desenho é o oposto de te dar mais tarefa.</p>
+    <div class="scroll">
+      <table>
+        <thead><tr><th>O que</th><th class="n">Quando</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Acesso à conta de anúncios e ao seu Instagram</th><td class="n">semana 1</td></tr>
+          <tr><th scope="row">Uma call de diagnóstico comigo, cerca de 90 minutos</th><td class="n">semana 1</td></tr>
+          <tr><th scope="row">Decidir o preço novo do presencial</th><td class="n">semana 1</td></tr>
+          <tr><th scope="row">Decidir formato e preço da mentoria, comigo</th><td class="n">semana 2</td></tr>
+          <tr><th scope="row">Gravar os criativos a partir do roteiro que eu entrego</th><td class="n">semana 3</td></tr>
+          <tr><th scope="row">Call quinzenal de acompanhamento</th><td class="n">a cada 15 dias</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>O resto é meu: estratégia, oferta, narrativa, copy, página, funil, campanha, medição, relatório e onboarding.</p>
+  </div>
+</section>
+
+<section>
+  <div class="head"><span class="num">08</span><h2>Prazo e próximo passo</h2></div>
+  <div class="body-indent">
+    <p>Você me disse que recebe na terça a resposta do pessoal da mentoria sobre o tráfego. <strong>Faz sentido você ouvir os dois antes de decidir, e eu não vou te pedir para decidir antes disso.</strong></p>
+
+    <div class="scroll">
+      <table>
+        <thead><tr><th>Quando</th><th>O quê</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Terça, 25/08</th><td>você recebe a proposta deles</td></tr>
+          <tr class="pick"><th scope="row">Quarta, 27/08, às 16h</th><td>meia hora comigo, para você decidir com as duas na mão. Se preferir outro horário, me diga qual</td></tr>
+          <tr><th scope="row">Sexta, 29/08</th><td>esta proposta vence nas condições acima</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p><strong>O que vence na sexta é o preço e o calendário desta proposta, não a conversa.</strong> Depois dessa data eu refaço, e o número pode ser outro porque a minha agenda dos próximos meses pode ser outra. Não é pressão, é como a minha operação funciona.</p>
+
+    <div class="sign">
+      <p class="lbl">Uma última coisa</p>
+      <p>Se em algum momento ficar claro que este não é o caminho para você, eu te falo na hora. <strong>Prefiro te devolver a conversa a te vender a coisa errada.</strong></p>
+      <p>E se a resposta deles resolver o que você precisa, me diga também. Eu não vou insistir. <strong>Você chegou até mim por indicação e por confiança, e essas duas coisas valem mais do que um contrato.</strong></p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  Victor Senna · Continuum · 22 de agosto de 2026<br>
+  Todos os números de operação nesta proposta vieram de você, nas conversas de 21 e 22 de agosto.<br>
+  As estimativas estão nomeadas como estimativas, e nenhuma delas é apresentada como fato seu.
+</footer>
+
+</div>
+</body>
+</html>

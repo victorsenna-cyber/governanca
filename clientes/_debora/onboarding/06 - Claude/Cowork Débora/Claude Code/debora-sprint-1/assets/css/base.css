@@ -1,0 +1,155 @@
+/* Débora Delgado — Base Styles
+   Scoped to .debora-artifact */
+
+.debora-artifact {
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  font-weight: var(--weight-regular);
+  line-height: var(--leading-normal);
+  color: var(--color-text-primary);
+  background-color: var(--color-bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+
+.debora-artifact *,
+.debora-artifact *::before,
+.debora-artifact *::after {
+  box-sizing: inherit;
+}
+
+.debora-artifact h1,
+.debora-artifact h2,
+.debora-artifact h3,
+.debora-artifact h4,
+.debora-artifact h5,
+.debora-artifact h6 {
+  margin: 0;
+  padding: 0;
+  font-weight: var(--weight-semibold);
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-tight);
+  color: var(--color-text-primary);
+}
+
+.debora-artifact p {
+  margin: 0;
+  padding: 0;
+}
+
+.debora-artifact ul,
+.debora-artifact ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.debora-artifact a {
+  color: var(--color-gold);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.debora-artifact a:hover {
+  color: var(--color-gold-light);
+}
+
+.debora-artifact img {
+  max-width: 100%;
+  height: auto;
+}
+
+.debora-artifact table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* ---- Layout ---- */
+.debora-artifact .artifact-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.debora-artifact .artifact-sidebar {
+  width: var(--sidebar-width);
+  flex-shrink: 0;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+  background: var(--color-surface-1);
+  border-right: var(--border-thin);
+  padding: var(--space-6);
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-border) transparent;
+}
+
+.debora-artifact .artifact-main {
+  flex: 1;
+  min-width: 0;
+  max-width: var(--max-width-main);
+  padding: 0 var(--space-10) var(--space-20);
+}
+
+.debora-artifact .artifact-section {
+  padding: var(--space-12) 0 var(--space-10);
+  border-bottom: var(--border-subtle);
+  scroll-margin-top: var(--space-8);
+}
+
+.debora-artifact .artifact-section:last-of-type {
+  border-bottom: none;
+}
+
+/* ---- Typography utilities ---- */
+.debora-artifact .label {
+  font-size: var(--text-xs);
+  font-weight: var(--weight-semibold);
+  letter-spacing: var(--tracking-widest);
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.debora-artifact .caption {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+  line-height: var(--leading-snug);
+}
+
+.debora-artifact .text-gold {
+  color: var(--color-gold);
+}
+
+.debora-artifact .text-muted {
+  color: var(--color-text-muted);
+}
+
+.debora-artifact .text-secondary {
+  color: var(--color-text-secondary);
+}
+
+/* ---- Spacing utilities ---- */
+.debora-artifact .mt-2  { margin-top: var(--space-2); }
+.debora-artifact .mt-3  { margin-top: var(--space-3); }
+.debora-artifact .mt-4  { margin-top: var(--space-4); }
+.debora-artifact .mt-6  { margin-top: var(--space-6); }
+.debora-artifact .mt-8  { margin-top: var(--space-8); }
+.debora-artifact .mt-10 { margin-top: var(--space-10); }
+.debora-artifact .mb-4  { margin-bottom: var(--space-4); }
+.debora-artifact .mb-6  { margin-bottom: var(--space-6); }
+
+/* ---- Responsive ---- */
+@media (max-width: 820px) {
+  .debora-artifact .artifact-layout {
+    flex-direction: column;
+  }
+
+  .debora-artifact .artifact-sidebar {
+    display: none;
+  }
+
+  .debora-artifact .artifact-main {
+    padding: 0 var(--space-5) var(--space-16);
+  }
+}

@@ -1,0 +1,749 @@
+{
+  "runs": [
+    {
+      "quiz": "permissao",
+      "width": 390,
+      "mode": "highpoints",
+      "sign": 0,
+      "result": "BAIXO",
+      "points": 21,
+      "steps": 24,
+      "overflow": 0,
+      "consentVisible": true,
+      "keys": [
+        "p01_atuacao",
+        "p02_tempo_atende",
+        "p03_formacoes",
+        "p04_faturamento",
+        "p05_recebe_equivalente",
+        "p05_recebe_equivalente_pts",
+        "p06_hora_do_preco",
+        "p06_hora_do_preco_pts",
+        "p07_desconto",
+        "p07_desconto_pts",
+        "p08_culpa",
+        "p08_culpa_pts",
+        "p09_entrega_a_mais",
+        "p09_entrega_a_mais_pts",
+        "p10_teto",
+        "p10_teto_pts",
+        "p11_familia_origem",
+        "p11_familia_origem_pts",
+        "p12_ja_tentou",
+        "p13_impede",
+        "p14_mudaria",
+        "p15_disposicao",
+        "p16_acredita"
+      ],
+      "requests": [
+        "https://checkout.pagtrust.com.br/ck1a8c1922?funnel=fn7a9c7bc3&utm_source=qa&quiz=permissao&nivel=BAIXO"
+      ]
+    },
+    {
+      "quiz": "teto",
+      "width": 390,
+      "mode": "highpoints",
+      "sign": 0,
+      "result": "BAIXO",
+      "points": 21,
+      "steps": 24,
+      "overflow": 0,
+      "consentVisible": true,
+      "keys": [
+        "p01_atuacao",
+        "p02_tempo_atende",
+        "p03_formacoes",
+        "p04_faturamento",
+        "p05_recebe_equivalente",
+        "p05_recebe_equivalente_pts",
+        "p06_hora_do_preco",
+        "p06_hora_do_preco_pts",
+        "p07_desconto",
+        "p07_desconto_pts",
+        "p08_culpa",
+        "p08_culpa_pts",
+        "p09_entrega_a_mais",
+        "p09_entrega_a_mais_pts",
+        "p10_teto",
+        "p10_teto_pts",
+        "p11_familia_origem",
+        "p11_familia_origem_pts",
+        "p12_ja_tentou",
+        "p13_impede",
+        "p14_mudaria",
+        "p15_disposicao",
+        "p16_acredita"
+      ],
+      "requests": [
+        "https://checkout.pagtrust.com.br/ck463a9f5e?funnel=fn40e6df87&utm_source=qa&quiz=teto&nivel=BAIXO"
+      ]
+    },
+    {
+      "quiz": "signos",
+      "width": 390,
+      "mode": "highpoints",
+      "sign": 0,
+      "result": "Fogo",
+      "steps": 16,
+      "overflow": 0,
+      "consentVisible": true,
+      "keys": [
+        "p01_signo",
+        "p02_acompanha",
+        "p03_area",
+        "p04_comeca_semana",
+        "p05_decide",
+        "p06_repete",
+        "p07_renda",
+        "p08_ja_fez_leitura",
+        "p09_quer",
+        "p10_quer_receber"
+      ],
+      "requests": [
+        "https://checkout.pagtrust.com.br/cka958004d?funnel=fn3e33837b&utm_source=qa&quiz=signos&elemento=Fogo"
+      ]
+    },
+    {
+      "quiz": "permissao",
+      "width": 360,
+      "mode": "highpoints",
+      "sign": 0,
+      "result": "BAIXO",
+      "points": 21,
+      "steps": 24,
+      "overflow": 0,
+      "consentVisible": true,
+      "keys": [
+        "p01_atuacao",
+        "p02_tempo_atende",
+        "p03_formacoes",
+        "p04_faturamento",
+        "p05_recebe_equivalente",
+        "p05_recebe_equivalente_pts",
+        "p06_hora_do_preco",
+        "p06_hora_do_preco_pts",
+        "p07_desconto",
+        "p07_desconto_pts",
+        "p08_culpa",
+        "p08_culpa_pts",
+        "p09_entrega_a_mais",
+        "p09_entrega_a_mais_pts",
+        "p10_teto",
+        "p10_teto_pts",
+        "p11_familia_origem",
+        "p11_familia_origem_pts",
+        "p12_ja_tentou",
+        "p13_impede",
+        "p14_mudaria",
+        "p15_disposicao",
+        "p16_acredita"
+      ],
+      "requests": [
+        "https://checkout.pagtrust.com.br/ck1a8c1922?funnel=fn7a9c7bc3&utm_source=qa&quiz=permissao&nivel=BAIXO"
+      ]
+    },
+    {
+      "quiz": "teto",
+      "width": 360,
+      "mode": "highpoints",
+      "sign": 0,
+      "result": "BAIXO",
+      "points": 21,
+      "steps": 24,
+      "overflow": 0,
+      "consentVisible": true,
+      "keys": [
+        "p01_atuacao",
+        "p02_tempo_atende",
+        "p03_formacoes",
+        "p04_faturamento",
+        "p05_recebe_equivalente",
+        "p05_recebe_equivalente_pts",
+        "p06_hora_do_preco",
+        "p06_hora_do_preco_pts",
+        "p07_desconto",
+        "p07_desconto_pts",
+        "p08_culpa",
+        "p08_culpa_pts",
+        "p09_entrega_a_mais",
+        "p09_entrega_a_mais_pts",
+        "p10_teto",
+        "p10_teto_pts",
+        "p11_familia_origem",
+        "p11_familia_origem_pts",
+        "p12_ja_tentou",
+        "p13_impede",
+        "p14_mudaria",
+        "p15_disposicao",
+        "p16_acredita"
+      ],
+      "requests": [
+        "https://checkout.pagtrust.com.br/ck463a9f5e?funnel=fn40e6df87&utm_source=qa&quiz=teto&nivel=BAIXO"
+      ]
+    },
+    {
+      "quiz": "signos",
+      "width": 360,
+      "mode": "highpoints",
+      "sign": 0,
+      "result": "Fogo",
+      "steps": 16,
+      "overflow": 0,
+      "consentVisible": true,
+      "keys": [
+        "p01_signo",
+        "p02_acompanha",
+        "p03_area",
+        "p04_comeca_semana",
+        "p05_decide",
+        "p06_repete",
+        "p07_renda",
+        "p08_ja_fez_leitura",
+        "p09_quer",
+        "p10_quer_receber"
+      ],
+      "requests": [
+        "https://checkout.pagtrust.com.br/cka958004d?funnel=fn3e33837b&utm_source=qa&quiz=signos&elemento=Fogo"
+      ]
+    },
+    {
+      "quiz": "permissao",
+      "width": 1440,
+      "mode": "highpoints",
+      "sign": 0,
+      "result": "BAIXO",
+      "points": 21,
+      "steps": 24,
+      "overflow": 0,
+      "consentVisible": true,
+      "keys": [
+        "p01_atuacao",
+        "p02_tempo_atende",
+        "p03_formacoes",
+        "p04_faturamento",
+        "p05_recebe_equivalente",
+        "p05_recebe_equivalente_pts",
+        "p06_hora_do_preco",
+        "p06_hora_do_preco_pts",
+        "p07_desconto",
+        "p07_desconto_pts",
+        "p08_culpa",
+        "p08_culpa_pts",
+        "p09_entrega_a_mais",
+        "p09_entrega_a_mais_pts",
+        "p10_teto",
+        "p10_teto_pts",
+        "p11_familia_origem",
+        "p11_familia_origem_pts",
+        "p12_ja_tentou",
+        "p13_impede",
+        "p14_mudaria",
+        "p15_disposicao",
+        "p16_acredita"
+      ],
+      "requests": [
+        "https://checkout.pagtrust.com.br/ck1a8c1922?funnel=fn7a9c7bc3&utm_source=qa&quiz=permissao&nivel=BAIXO"
+      ]
+    },
+    {
+      "quiz": "teto",
+      "width": 1440,
+      "mode": "highpoints",
+      "sign": 0,
+      "result": "BAIXO",
+      "points": 21,
+      "steps": 24,
+      "overflow": 0,
+      "consentVisible": true,
+      "keys": [
+        "p01_atuacao",
+        "p02_tempo_atende",
+        "p03_formacoes",
+        "p04_faturamento",
+        "p05_recebe_equivalente",
+        "p05_recebe_equivalente_pts",
+        "p06_hora_do_preco",
+        "p06_hora_do_preco_pts",
+        "p07_desconto",
+        "p07_desconto_pts",
+        "p08_culpa",
+        "p08_culpa_pts",
+        "p09_entrega_a_mais",
+        "p09_entrega_a_mais_pts",
+        "p10_teto",
+        "p10_teto_pts",
+        "p11_familia_origem",
+        "p11_familia_origem_pts",
+        "p12_ja_tentou",
+        "p13_impede",
+        "p14_mudaria",
+        "p15_disposicao",
+        "p16_acredita"
+      ],
+      "requests": [
+        "https://checkout.pagtrust.com.br/ck463a9f5e?funnel=fn40e6df87&utm_source=qa&quiz=teto&nivel=BAIXO"
+      ]
+    },
+    {
+      "quiz": "signos",
+      "width": 1440,
+      "mode": "highpoints",
+      "sign": 0,
+      "result": "Fogo",
+      "steps": 16,
+      "overflow": 0,
+      "consentVisible": true,
+      "keys": [
+        "p01_signo",
+        "p02_acompanha",
+        "p03_area",
+        "p04_comeca_semana",
+        "p05_decide",
+        "p06_repete",
+        "p07_renda",
+        "p08_ja_fez_leitura",
+        "p09_quer",
+        "p10_quer_receber"
+      ],
+      "requests": [
+        "https://checkout.pagtrust.com.br/cka958004d?funnel=fn3e33837b&utm_source=qa&quiz=signos&elemento=Fogo"
+      ]
+    },
+    {
+      "quiz": "permissao",
+      "width": 390,
+      "mode": "zero",
+      "sign": 0,
+      "result": "ALTO",
+      "points": 0,
+      "steps": 21,
+      "overflow": 0,
+      "consentVisible": true,
+      "keys": [
+        "p01_atuacao",
+        "p02_tempo_atende",
+        "p03_formacoes",
+        "p04_faturamento",
+        "p05_recebe_equivalente",
+        "p05_recebe_equivalente_pts",
+        "p06_hora_do_preco",
+        "p06_hora_do_preco_pts",
+        "p07_desconto",
+        "p07_desconto_pts",
+        "p08_culpa",
+        "p08_culpa_pts",
+        "p09_entrega_a_mais",
+        "p09_entrega_a_mais_pts",
+        "p10_teto",
+        "p10_teto_pts",
+        "p11_familia_origem",
+        "p11_familia_origem_pts",
+        "p12_ja_tentou",
+        "p13_impede",
+        "p14_mudaria",
+        "p15_disposicao",
+        "p16_acredita"
+      ],
+      "requests": [
+        "https://checkout.pagtrust.com.br/ck1a8c1922?funnel=fn7a9c7bc3&utm_source=qa&quiz=permissao&nivel=ALTO"
+      ]
+    },
+    {
+      "quiz": "permissao",
+      "width": 390,
+      "mode": "mixed",
+      "sign": 0,
+      "result": "MÉDIO",
+      "points": 13,
+      "steps": 24,
+      "overflow": 0,
+      "consentVisible": true,
+      "keys": [
+        "p01_atuacao",
+        "p02_tempo_atende",
+        "p03_formacoes",
+        "p04_faturamento",
+        "p05_recebe_equivalente",
+        "p05_recebe_equivalente_pts",
+        "p06_hora_do_preco",
+        "p06_hora_do_preco_pts",
+        "p07_desconto",
+        "p07_desconto_pts",
+        "p08_culpa",
+        "p08_culpa_pts",
+        "p09_entrega_a_mais",
+        "p09_entrega_a_mais_pts",
+        "p10_teto",
+        "p10_teto_pts",
+        "p11_familia_origem",
+        "p11_familia_origem_pts",
+        "p12_ja_tentou",
+        "p13_impede",
+        "p14_mudaria",
+        "p15_disposicao",
+        "p16_acredita"
+      ],
+      "requests": [
+        "https://checkout.pagtrust.com.br/ck1a8c1922?funnel=fn7a9c7bc3&utm_source=qa&quiz=permissao&nivel=M%C3%89DIO"
+      ]
+    },
+    {
+      "quiz": "teto",
+      "width": 390,
+      "mode": "zero",
+      "sign": 0,
+      "result": "ALTO",
+      "points": 0,
+      "steps": 21,
+      "overflow": 0,
+      "consentVisible": true,
+      "keys": [
+        "p01_atuacao",
+        "p02_tempo_atende",
+        "p03_formacoes",
+        "p04_faturamento",
+        "p05_recebe_equivalente",
+        "p05_recebe_equivalente_pts",
+        "p06_hora_do_preco",
+        "p06_hora_do_preco_pts",
+        "p07_desconto",
+        "p07_desconto_pts",
+        "p08_culpa",
+        "p08_culpa_pts",
+        "p09_entrega_a_mais",
+        "p09_entrega_a_mais_pts",
+        "p10_teto",
+        "p10_teto_pts",
+        "p11_familia_origem",
+        "p11_familia_origem_pts",
+        "p12_ja_tentou",
+        "p13_impede",
+        "p14_mudaria",
+        "p15_disposicao",
+        "p16_acredita"
+      ],
+      "requests": [
+        "https://checkout.pagtrust.com.br/ck463a9f5e?funnel=fn40e6df87&utm_source=qa&quiz=teto&nivel=ALTO"
+      ]
+    },
+    {
+      "quiz": "teto",
+      "width": 390,
+      "mode": "mixed",
+      "sign": 0,
+      "result": "MÉDIO",
+      "points": 13,
+      "steps": 24,
+      "overflow": 0,
+      "consentVisible": true,
+      "keys": [
+        "p01_atuacao",
+        "p02_tempo_atende",
+        "p03_formacoes",
+        "p04_faturamento",
+        "p05_recebe_equivalente",
+        "p05_recebe_equivalente_pts",
+        "p06_hora_do_preco",
+        "p06_hora_do_preco_pts",
+        "p07_desconto",
+        "p07_desconto_pts",
+        "p08_culpa",
+        "p08_culpa_pts",
+        "p09_entrega_a_mais",
+        "p09_entrega_a_mais_pts",
+        "p10_teto",
+        "p10_teto_pts",
+        "p11_familia_origem",
+        "p11_familia_origem_pts",
+        "p12_ja_tentou",
+        "p13_impede",
+        "p14_mudaria",
+        "p15_disposicao",
+        "p16_acredita"
+      ],
+      "requests": [
+        "https://checkout.pagtrust.com.br/ck463a9f5e?funnel=fn40e6df87&utm_source=qa&quiz=teto&nivel=M%C3%89DIO"
+      ]
+    },
+    {
+      "quiz": "signos",
+      "width": 390,
+      "mode": "highpoints",
+      "sign": 1,
+      "result": "Terra",
+      "steps": 16,
+      "overflow": 0,
+      "consentVisible": true,
+      "keys": [
+        "p01_signo",
+        "p02_acompanha",
+        "p03_area",
+        "p04_comeca_semana",
+        "p05_decide",
+        "p06_repete",
+        "p07_renda",
+        "p08_ja_fez_leitura",
+        "p09_quer",
+        "p10_quer_receber"
+      ],
+      "requests": [
+        "https://checkout.pagtrust.com.br/ck2067e260?funnel=fn30848615&utm_source=qa&quiz=signos&elemento=Terra"
+      ]
+    },
+    {
+      "quiz": "signos",
+      "width": 390,
+      "mode": "highpoints",
+      "sign": 2,
+      "result": "Ar",
+      "steps": 16,
+      "overflow": 0,
+      "consentVisible": true,
+      "keys": [
+        "p01_signo",
+        "p02_acompanha",
+        "p03_area",
+        "p04_comeca_semana",
+        "p05_decide",
+        "p06_repete",
+        "p07_renda",
+        "p08_ja_fez_leitura",
+        "p09_quer",
+        "p10_quer_receber"
+      ],
+      "requests": [
+        "https://checkout.pagtrust.com.br/ck80405657?funnel=fn652a2102&utm_source=qa&quiz=signos&elemento=Ar"
+      ]
+    },
+    {
+      "quiz": "signos",
+      "width": 390,
+      "mode": "highpoints",
+      "sign": 3,
+      "result": "Água",
+      "steps": 16,
+      "overflow": 0,
+      "consentVisible": true,
+      "keys": [
+        "p01_signo",
+        "p02_acompanha",
+        "p03_area",
+        "p04_comeca_semana",
+        "p05_decide",
+        "p06_repete",
+        "p07_renda",
+        "p08_ja_fez_leitura",
+        "p09_quer",
+        "p10_quer_receber"
+      ],
+      "requests": [
+        "https://checkout.pagtrust.com.br/ck902e943e?funnel=fn72ce1e70&utm_source=qa&quiz=signos&elemento=%C3%81gua"
+      ]
+    },
+    {
+      "quiz": "signos",
+      "width": 390,
+      "mode": "highpoints",
+      "sign": 4,
+      "result": "Fogo",
+      "steps": 16,
+      "overflow": 0,
+      "consentVisible": true,
+      "keys": [
+        "p01_signo",
+        "p02_acompanha",
+        "p03_area",
+        "p04_comeca_semana",
+        "p05_decide",
+        "p06_repete",
+        "p07_renda",
+        "p08_ja_fez_leitura",
+        "p09_quer",
+        "p10_quer_receber"
+      ],
+      "requests": [
+        "https://checkout.pagtrust.com.br/cka958004d?funnel=fn3e33837b&utm_source=qa&quiz=signos&elemento=Fogo"
+      ]
+    },
+    {
+      "quiz": "signos",
+      "width": 390,
+      "mode": "highpoints",
+      "sign": 5,
+      "result": "Terra",
+      "steps": 16,
+      "overflow": 0,
+      "consentVisible": true,
+      "keys": [
+        "p01_signo",
+        "p02_acompanha",
+        "p03_area",
+        "p04_comeca_semana",
+        "p05_decide",
+        "p06_repete",
+        "p07_renda",
+        "p08_ja_fez_leitura",
+        "p09_quer",
+        "p10_quer_receber"
+      ],
+      "requests": [
+        "https://checkout.pagtrust.com.br/ck2067e260?funnel=fn30848615&utm_source=qa&quiz=signos&elemento=Terra"
+      ]
+    },
+    {
+      "quiz": "signos",
+      "width": 390,
+      "mode": "highpoints",
+      "sign": 6,
+      "result": "Ar",
+      "steps": 16,
+      "overflow": 0,
+      "consentVisible": true,
+      "keys": [
+        "p01_signo",
+        "p02_acompanha",
+        "p03_area",
+        "p04_comeca_semana",
+        "p05_decide",
+        "p06_repete",
+        "p07_renda",
+        "p08_ja_fez_leitura",
+        "p09_quer",
+        "p10_quer_receber"
+      ],
+      "requests": [
+        "https://checkout.pagtrust.com.br/ck80405657?funnel=fn652a2102&utm_source=qa&quiz=signos&elemento=Ar"
+      ]
+    },
+    {
+      "quiz": "signos",
+      "width": 390,
+      "mode": "highpoints",
+      "sign": 7,
+      "result": "Água",
+      "steps": 16,
+      "overflow": 0,
+      "consentVisible": true,
+      "keys": [
+        "p01_signo",
+        "p02_acompanha",
+        "p03_area",
+        "p04_comeca_semana",
+        "p05_decide",
+        "p06_repete",
+        "p07_renda",
+        "p08_ja_fez_leitura",
+        "p09_quer",
+        "p10_quer_receber"
+      ],
+      "requests": [
+        "https://checkout.pagtrust.com.br/ck902e943e?funnel=fn72ce1e70&utm_source=qa&quiz=signos&elemento=%C3%81gua"
+      ]
+    },
+    {
+      "quiz": "signos",
+      "width": 390,
+      "mode": "highpoints",
+      "sign": 8,
+      "result": "Fogo",
+      "steps": 16,
+      "overflow": 0,
+      "consentVisible": true,
+      "keys": [
+        "p01_signo",
+        "p02_acompanha",
+        "p03_area",
+        "p04_comeca_semana",
+        "p05_decide",
+        "p06_repete",
+        "p07_renda",
+        "p08_ja_fez_leitura",
+        "p09_quer",
+        "p10_quer_receber"
+      ],
+      "requests": [
+        "https://checkout.pagtrust.com.br/cka958004d?funnel=fn3e33837b&utm_source=qa&quiz=signos&elemento=Fogo"
+      ]
+    },
+    {
+      "quiz": "signos",
+      "width": 390,
+      "mode": "highpoints",
+      "sign": 9,
+      "result": "Terra",
+      "steps": 16,
+      "overflow": 0,
+      "consentVisible": true,
+      "keys": [
+        "p01_signo",
+        "p02_acompanha",
+        "p03_area",
+        "p04_comeca_semana",
+        "p05_decide",
+        "p06_repete",
+        "p07_renda",
+        "p08_ja_fez_leitura",
+        "p09_quer",
+        "p10_quer_receber"
+      ],
+      "requests": [
+        "https://checkout.pagtrust.com.br/ck2067e260?funnel=fn30848615&utm_source=qa&quiz=signos&elemento=Terra"
+      ]
+    },
+    {
+      "quiz": "signos",
+      "width": 390,
+      "mode": "highpoints",
+      "sign": 10,
+      "result": "Ar",
+      "steps": 16,
+      "overflow": 0,
+      "consentVisible": true,
+      "keys": [
+        "p01_signo",
+        "p02_acompanha",
+        "p03_area",
+        "p04_comeca_semana",
+        "p05_decide",
+        "p06_repete",
+        "p07_renda",
+        "p08_ja_fez_leitura",
+        "p09_quer",
+        "p10_quer_receber"
+      ],
+      "requests": [
+        "https://checkout.pagtrust.com.br/ck80405657?funnel=fn652a2102&utm_source=qa&quiz=signos&elemento=Ar"
+      ]
+    },
+    {
+      "quiz": "signos",
+      "width": 390,
+      "mode": "highpoints",
+      "sign": 11,
+      "result": "Água",
+      "steps": 16,
+      "overflow": 0,
+      "consentVisible": false,
+      "keys": [
+        "p01_signo",
+        "p02_acompanha",
+        "p03_area",
+        "p04_comeca_semana",
+        "p05_decide",
+        "p06_repete",
+        "p07_renda",
+        "p08_ja_fez_leitura",
+        "p09_quer",
+        "p10_quer_receber"
+      ],
+      "requests": [
+        "https://checkout.pagtrust.com.br/ck902e943e?funnel=fn72ce1e70&utm_source=qa&quiz=signos&elemento=%C3%81gua"
+      ]
+    }
+  ],
+  "errors": [],
+  "externalRequests": [],
+  "checks": {
+    "complete": true
+  }
+}

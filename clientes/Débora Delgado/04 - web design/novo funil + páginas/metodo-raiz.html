@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Método Raiz</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#f6f1ea; --card:#fffdf9; --ink:#3d352e; --soft:#6f6459; --line:#e7ddd1;
+    --accent:#3f6b57; --accent-dark:#2f5245; --salvia:#7f9c78; --argila:#a86b52;
+    --ok:#7f9c78; --shadow:0 8px 30px rgba(60,70,55,.10); --soft-bg:#eef3ec;
+    --serif:"Fraunces",Georgia,serif; --sans:"Inter","Segoe UI",system-ui,-apple-system,sans-serif;
+  }
+  *{box-sizing:border-box}
+  body{margin:0; font-family:var(--sans); background:var(--bg); color:var(--ink); line-height:1.6;}
+  .wrap{max-width:720px; margin:0 auto; padding:26px 20px 90px;}
+  header.hero{text-align:center; padding:32px 22px; background:linear-gradient(160deg,#3f6b57,#2f5245); color:#fff; border-radius:20px; box-shadow:var(--shadow); margin-bottom:18px;}
+  header.hero .kicker{color:#cfe0d4; font-weight:700; letter-spacing:2px; font-size:.76rem; text-transform:uppercase;}
+  header.hero h1{margin:8px 0 6px; font-size:2rem; font-weight:600; font-family:var(--serif); letter-spacing:-.3px;}
+  header.hero p{margin:0; color:#eaf2ec;}
+
+  .progress-wrap{display:flex; align-items:center; gap:12px; margin:0 6px 18px;}
+  .progress{flex:1; background:#e7ddd1; border-radius:20px; height:9px; overflow:hidden;}
+  .progress > i{display:block; height:100%; width:0; background:linear-gradient(90deg,var(--salvia),var(--accent)); border-radius:20px; transition:width .35s ease;}
+  .progress-label{font-size:.8rem; color:var(--soft); white-space:nowrap;}
+
+  .card{background:var(--card); border:1px solid var(--line); border-radius:18px; padding:26px 26px 22px; box-shadow:var(--shadow); margin-bottom:16px;}
+  .step-kicker{color:var(--accent); font-weight:700; font-size:.8rem; letter-spacing:1.5px; text-transform:uppercase; margin-bottom:6px;}
+  .card h2{margin:0 0 6px; font-size:1.5rem; color:var(--accent-dark); font-family:var(--serif); font-weight:600;}
+  .card .lead{color:var(--soft); margin:0 0 16px; font-size:1rem;}
+
+  label.field{display:block; margin:16px 0 4px; font-weight:600; font-size:.98rem;}
+  .ex{color:var(--soft); font-size:.86rem; margin:2px 0 8px; font-style:italic;}
+  textarea, input[type=text]{width:100%; padding:12px 13px; border:1px solid var(--line); border-radius:11px; font-family:inherit; font-size:1rem; background:#fff; color:var(--ink); resize:vertical;}
+  textarea{min-height:66px;}
+  textarea:focus, input:focus{outline:none; border-color:var(--accent);}
+
+  .box{background:var(--soft-bg); border-radius:13px; border-left:4px solid var(--accent); padding:14px 18px; margin:14px 0; font-size:.96rem;}
+  .box.warm{background:#f4ece2; border-left-color:var(--argila);}
+  .box.care{background:#eef3ec; border-left-color:var(--ok);}
+  .box b{color:var(--accent-dark);}
+  .quote{font-size:1.06rem; font-style:italic; color:var(--accent-dark); text-align:center; margin:6px 0; font-family:var(--serif);}
+
+  .recall{background:#fbf7f0; border:1px dashed #d8ccbb; border-radius:12px; padding:11px 15px; margin:12px 0; font-size:.92rem;}
+  .recall .rk{font-size:.72rem; text-transform:uppercase; letter-spacing:1px; color:var(--accent); font-weight:700; margin-bottom:3px;}
+  .recall .rv{color:var(--ink); white-space:pre-wrap;}
+  .recall .rv.empty{color:#b8ac9c; font-style:italic;}
+
+  .belief{background:#f4f7f2; border:1px solid #dfe8da; border-radius:13px; padding:13px 15px; margin-bottom:10px;}
+  .belief .btop{display:flex; gap:10px; align-items:flex-start;}
+  .belief .btxt{flex:1; font-size:.98rem;}
+  .belief .bdel{background:none; border:none; color:var(--soft); cursor:pointer; font-size:1.15rem; line-height:1;}
+  .belief .bdel:hover{color:var(--argila);}
+  .belief .choose{margin-top:10px;}
+  .belief.sel{border-color:var(--accent); box-shadow:0 0 0 2px rgba(63,107,87,.15);}
+  .pickbtn{background:none; border:1px solid var(--accent); color:var(--accent-dark); padding:7px 15px; border-radius:20px; cursor:pointer; font-size:.85rem; font-weight:600;}
+  .pickbtn.on{background:var(--accent); color:#fff;}
+  .addbtn{background:none; border:1px dashed var(--accent); color:var(--accent-dark); padding:10px 18px; border-radius:22px; cursor:pointer; font-size:.9rem; font-weight:600; margin-top:6px;}
+  .addbtn:hover{background:#eef3ec;}
+  .subq{margin-top:12px; padding-left:14px; border-left:2px solid var(--line);}
+
+  /* escala 0-10 */
+  .scale10{display:flex; flex-wrap:wrap; gap:6px; margin:8px 0;}
+  .scale10 button{flex:1; min-width:38px; padding:11px 0; border:1px solid var(--line); background:#fff; border-radius:10px; cursor:pointer; font-weight:700; color:var(--accent-dark); font-size:.98rem; transition:.15s;}
+  .scale10 button:hover{border-color:var(--accent);}
+  .scale10 button.on{background:var(--accent); color:#fff; border-color:var(--accent);}
+  .scale-ends{display:flex; justify-content:space-between; font-size:.78rem; color:var(--soft); margin-top:2px;}
+
+  /* eft rounds */
+  .rounds{display:flex; align-items:center; gap:8px; flex-wrap:wrap; margin:10px 0;}
+  .rounds .rd{background:var(--soft-bg); border-radius:20px; padding:6px 13px; font-weight:700; color:var(--accent-dark); font-size:.9rem;}
+  .rounds .arrow{color:var(--soft);}
+  .eft-done{background:#eef3ec; border-left:4px solid var(--ok); border-radius:12px; padding:13px 16px; margin-top:8px; color:var(--accent-dark); font-weight:600;}
+
+  .nav{display:flex; justify-content:space-between; align-items:center; margin:20px 6px 0;}
+  .btn{border:none; border-radius:26px; padding:13px 30px; font-size:1rem; font-weight:700; cursor:pointer; font-family:inherit;}
+  .btn-primary{background:var(--accent); color:#fff;}
+  .btn-primary:hover{background:var(--accent-dark);}
+  .btn-ghost{background:none; color:var(--soft);}
+  .btn-ghost:hover{color:var(--accent-dark);}
+  .err{color:var(--argila); font-size:.86rem; margin-top:8px; display:none;}
+  .err.show{display:block;}
+
+  .pending{background:#f4ece2; border:1px dashed var(--argila); border-radius:11px; padding:11px 15px; font-size:.86rem; color:#8a5a1e; margin:12px 0;}
+  .aula-btn{display:inline-flex; align-items:center; gap:8px; background:var(--argila); color:#fff; text-decoration:none; font-weight:700; font-size:.95rem; padding:11px 20px; border-radius:24px; margin:8px 0 4px;}
+  .aula-btn:hover{background:#8a5334;}
+  .guide{background:#faf6ef; border:1px solid #e7ddce; border-radius:13px; padding:14px 18px; margin:12px 0; font-size:.95rem;}
+  .guide p{margin:0 0 9px;} .guide p:last-child{margin-bottom:0;}
+  .guide b{color:var(--accent-dark);}
+  .pts{background:#eef3ec; border-radius:10px; padding:10px 14px; margin:6px 0 2px; font-size:.9rem; color:var(--accent-dark); font-weight:600; line-height:1.55;}
+  .footer-note{text-align:center; color:var(--soft); font-size:.82rem; margin-top:24px; line-height:1.5;}
+  .unworked{background:#fbf7f0; border:1px solid var(--line); border-radius:13px; padding:14px 17px; margin-top:14px;}
+  .unworked .u{padding:6px 0; border-bottom:1px solid var(--line); font-size:.93rem;}
+  .unworked .u:last-child{border-bottom:none;}
+  .dev h3{font-family:var(--serif); font-weight:600; font-size:1.06rem; color:var(--accent-dark); margin:18px 0 4px; border-bottom:1px solid var(--line); padding-bottom:4px;}
+  .dev .qa{margin:7px 0;}
+  .dev .q{font-weight:600; font-size:.9rem; color:var(--ink);}
+  .dev .a{font-size:.95rem; color:var(--soft); white-space:pre-wrap; margin-top:1px;}
+  .dev .a.empty{color:#b8ac9c; font-style:italic;}
+  @media print{
+    .nav,.progress-wrap,.err,#btnNext,#btnBack{display:none !important;}
+    body{background:#fff;}
+    .card{box-shadow:none;}
+    header.hero{-webkit-print-color-adjust:exact; print-color-adjust:exact;}
+  }
+</style>
+
+<style>
+.lnr-nav{position:sticky;top:0;z-index:9999;display:flex;align-items:center;justify-content:space-between;gap:12px;background:#2f5245;color:#fff;padding:10px 18px;font-family:'Inter',system-ui,-apple-system,sans-serif;box-shadow:0 2px 12px rgba(0,0,0,.12);}
+.lnr-brand{color:#fff;font-weight:700;text-decoration:none;font-size:.98rem;letter-spacing:.3px;font-family:'Fraunces',Georgia,serif;}
+.lnr-links{display:flex;align-items:center;gap:4px;flex-wrap:wrap;}
+.lnr-links a{color:#e8f0ec;text-decoration:none;font-size:.85rem;font-weight:600;padding:6px 11px;border-radius:16px;}
+.lnr-links a:hover{background:rgba(255,255,255,.14);color:#fff;}
+.lnr-links a.lnr-cta{background:#a86b52;color:#fff;}
+.lnr-links a.lnr-cta:hover{background:#8a5334;}
+.lnr-toggle{display:none;background:none;border:none;color:#fff;font-size:1.35rem;cursor:pointer;line-height:1;}
+@media(max-width:640px){
+  .lnr-nav{flex-wrap:wrap;}
+  .lnr-toggle{display:block;}
+  .lnr-links{display:none;flex-direction:column;align-items:stretch;width:100%;order:3;gap:2px;padding-top:6px;}
+  .lnr-links.open{display:flex;}
+  .lnr-links a{padding:9px 8px;}
+}
+</style>
+
+<script>(function(){try{if(localStorage.getItem('lnr_membro')!=='ok'&&sessionStorage.getItem('lnr_membro')!=='ok'){location.replace('membros.html');}}catch(e){}})();window.lnrSair=function(){try{localStorage.removeItem('lnr_membro');sessionStorage.removeItem('lnr_membro');}catch(e){}location.href='index.html';};</script></head>
+<body>
+<nav class="lnr-nav">
+  <a class="lnr-brand" href="index.html">Liderança na Raiz</a>
+  <button class="lnr-toggle" aria-label="Abrir menu" onclick="var l=this.parentNode.querySelector('.lnr-links'); l.classList.toggle('open');">☰</button>
+  <div class="lnr-links">
+    <a href="index.html">Início</a>
+    <a href="membros.html">← Área de membros</a>
+    <a class="lnr-cta" href="#" onclick="lnrSair();return false;">Sair</a>
+  </div>
+</nav>
+<div class="wrap">
+  <header class="hero">
+    <div class="kicker">Método Raiz</div>
+    <h1>Mudar um padrão pela raiz</h1>
+    <p>Um passo a passo para as situações difíceis</p>
+  </header>
+
+  <div class="progress-wrap">
+    <div class="progress"><i id="pbar"></i></div>
+    <div class="progress-label" id="plabel"></div>
+  </div>
+
+  <div id="stepArea"></div>
+
+  <div class="nav">
+    <button class="btn btn-ghost" id="btnBack" onclick="prev()">← Voltar</button>
+    <button class="btn btn-primary" id="btnNext" onclick="next()">Continuar →</button>
+  </div>
+  <div class="err" id="err">Preencha para continuar.</div>
+
+  <p class="footer-note">Este é um instrumento de autoconhecimento e não substitui acompanhamento psicológico ou terapêutico. Se sentir dor emocional intensa, pare, respire e busque apoio de um profissional de saúde mental.</p>
+</div>
+
+<script>
+const EFT_AULA_URL = "https://youtu.be/0AukQ4xwd5s";
+const S = {
+  desejo:"", notaInicial:null, barreira:"",
+  p1:"", p2:"", p3:"", pior:"",
+  crencas:[], escolhida:null,
+  ganhoNao:"", perderia:"", quemAfasta:"",
+  emocao:"", sensacao:"",
+  primeiraVez:"",
+  eftRounds:[],
+  criancaSente:"", criancaPrecisou:"", criancaAcolher:"",
+  aindaVerdade:"", notaFinal:null, novaCrenca:"", acao:""
+};
+
+const STEPS = [
+  "intro","desejo","porques","crencas","ganho","sensacao","primeira","eft","crianca","nova","resumo"
+];
+const TITLES = ["Cuide de você","O seu desejo","Os porquês","As crenças","O ganho escondido","A sensação","A primeira vez","A liberação","A sua criança","A nova escolha","O seu mapa"];
+let cur = 0;
+
+function esc(s){return String(s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
+function recall(kicker, val){
+  const empty = !val || !String(val).trim();
+  return `<div class="recall"><div class="rk">${kicker}</div><div class="rv ${empty?'empty':''}">${empty?'(em branco)':esc(val)}</div></div>`;
+}
+function scale10(current, cb){
+  let h='<div class="scale10">';
+  for(let n=0;n<=10;n++){ h+=`<button class="${current===n?'on':''}" onclick="${cb}(${n})">${n}</button>`; }
+  h+='</div>';
+  return h;
+}
+
+function render(){
+  const area=document.getElementById('stepArea');
+  const name=STEPS[cur];
+  document.getElementById('pbar').style.width = (cur/(STEPS.length-1)*100)+'%';
+  document.getElementById('plabel').textContent = `Passo ${cur} de ${STEPS.length-1}`;
+  document.getElementById('btnBack').style.visibility = cur===0 ? 'hidden':'visible';
+  document.getElementById('btnNext').textContent = cur===STEPS.length-1 ? 'Recomeçar' : 'Continuar →';
+  document.getElementById('err').classList.remove('show');
+  area.innerHTML = STEPMAP[name]();
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+
+const STEPMAP = {
+  intro(){ return `
+    <div class="card">
+      <div class="step-kicker">Antes de começar</div>
+      <h2>Cuide de você</h2>
+      <p class="lead">Este é um trabalho de profundidade. Faça com carinho.</p>
+      <div class="box care"><b>Combine consigo antes de seguir:</b> escolha um momento tranquilo. Tenha por perto um recurso de aterramento (respiração, água, um pé no chão). Se vier algo grande demais, pare, respire e volte ao presente. Ir devagar também é ir fundo. Se precisar, busque apoio de alguém de confiança ou de um profissional.</div>
+      <p><b>A regra de ouro:</b> só se solta o que se sente. O objetivo nunca é entender na cabeça. É chegar à emoção viva no corpo e liberá-la.</p>
+      <div class="box warm">
+        <p class="quote" style="margin:0 0 6px">"Cultive um desejo que possa ser maior que o medo."</p>
+        <p class="quote" style="margin:0">"E lembre-se que o que você quer está atrás da porta do medo, às vezes você só precisa atravessar."</p>
+      </div>
+    </div>`; },
+
+  desejo(){ return `
+    <div class="card">
+      <div class="step-kicker">Passo 1</div>
+      <h2>O seu desejo</h2>
+      <p class="lead">Tudo começa pelo que você quer. O desejo é a lanterna que ilumina o caminho.</p>
+      <label class="field">O que você gostaria de alcançar? O que gostaria de mudar? Qual situação difícil você vive e não quer mais viver?</label>
+      <div class="ex">Ex: Gostaria de fazer uma transição de carreira. Gostaria de me priorizar e fazer atividade física. Gostaria de ter conversas mais saudáveis e abertas com meus liderados.</div>
+      <textarea id="i_desejo" placeholder="Escreva com liberdade...">${esc(S.desejo)}</textarea>
+
+      <label class="field">De 0 a 10, o quanto você acredita que pode alcançar esse desejo hoje?</label>
+      ${scale10(S.notaInicial, 'setNotaInicial')}
+      <div class="scale-ends"><span>0 · não acredito</span><span>10 · acredito totalmente</span></div>
+
+      <label class="field">O que, hoje, você enxerga que te impede de alcançar isso? Qual é a principal barreira?</label>
+      <div class="ex">Ex: Tenho medo de não dar conta. Não tenho tempo pra mim. Acho que vão me achar frágil se eu me abrir.</div>
+      <textarea id="i_barreira" placeholder="A barreira que você percebe...">${esc(S.barreira)}</textarea>
+    </div>`; },
+
+  porques(){ return `
+    <div class="card">
+      <div class="step-kicker">Passo 2</div>
+      <h2>Os porquês</h2>
+      <p class="lead">Vamos descer. Não se contente com o primeiro porquê: o de baixo costuma ser o verdadeiro.</p>
+      ${recall('A sua barreira', S.barreira)}
+      <label class="field">Por que essa barreira existe?</label>
+      <div class="ex">Ex: Porque sempre coloco os outros na frente de mim.</div>
+      <textarea id="i_p1" placeholder="Deixe vir sem filtrar...">${esc(S.p1)}</textarea>
+
+      <label class="field">E por que isso?</label>
+      <div class="ex">Ex: Porque aprendi que pedir pra mim é ser um peso.</div>
+      <textarea id="i_p2" placeholder="Vá mais fundo...">${esc(S.p2)}</textarea>
+
+      <label class="field">E por que isso?</label>
+      <div class="ex">Ex: Porque, no fundo, acho que não mereço.</div>
+      <textarea id="i_p3" placeholder="O porquê da raiz...">${esc(S.p3)}</textarea>
+
+      ${recall('O seu desejo (passo 1)', S.desejo)}
+      <label class="field">Qual é o pior cenário que pode acontecer se você conseguir o que desejou no passo 1?</label>
+      <div class="ex">Ex: Se eu conseguir, vou ter mais responsabilidade e posso falhar na frente de todos. Vão esperar ainda mais de mim.</div>
+      <textarea id="i_pior" placeholder="O pior cenário de conseguir...">${esc(S.pior)}</textarea>
+    </div>`; },
+
+  crencas(){
+    let list='';
+    S.crencas.forEach((c,i)=>{
+      const sel = S.escolhida===i;
+      list += `<div class="belief ${sel?'sel':''}">
+        <div class="btop"><div class="btxt">${esc(c.texto)}</div><button class="bdel" onclick="delCrenca(${i})" title="remover">✕</button></div>
+        <div class="choose"><button class="pickbtn ${sel?'on':''}" onclick="pickCrenca(${i})">${sel?'✓ trabalhando esta':'trabalhar esta'}</button></div>`;
+      if(sel){
+        list += `<div class="subq">
+          <label class="field">Isso é meu, ou eu aprendi isso em algum momento da minha vida?</label>
+          <div class="ex">Ex: Acho que aprendi. Lá em casa, trabalho vinha antes de tudo.</div>
+          <textarea id="c_meu" oninput="S.crencas[${i}].meu=this.value">${esc(c.meu)}</textarea>
+          <label class="field">Se aprendi, quem me ensinou? Quando?</label>
+          <div class="ex">Ex: Meu pai, quando eu era criança e ele me cobrava notas altas.</div>
+          <textarea id="c_quem" oninput="S.crencas[${i}].quemQuando=this.value">${esc(c.quemQuando)}</textarea>
+          <label class="field">Isso é verdade pra todo mundo?</label>
+          <div class="ex">Ex: Não. Conheço gente que se prioriza e é uma ótima liderança.</div>
+          <textarea id="c_verdade" oninput="S.crencas[${i}].verdade=this.value">${esc(c.verdade)}</textarea>
+        </div>`;
+      }
+      list += `</div>`;
+    });
+    return `
+    <div class="card">
+      <div class="step-kicker">Passo 3</div>
+      <h2>As crenças</h2>
+      <p class="lead">Agora a gente transforma o que você escreveu em crenças. Uma crença é uma frase que você repete por dentro como se fosse verdade absoluta, sobre você, sobre os outros ou sobre a vida.</p>
+      ${recall('Porquê 1', S.p1)}${recall('Porquê 2', S.p2)}${recall('Porquê 3', S.p3)}${recall('Pior cenário', S.pior)}
+      <div class="box care"><b>Como achar as suas crenças:</b>
+        <p style="margin:8px 0 0"><b>1.</b> Pegue cada porquê e pergunte: o que isso diz que eu acredito sobre mim? Vire uma afirmação curta. Ex: "porque não confio no valor do que entrego" vira "o que eu entrego não vale tanto", ou "não sou boa o suficiente".</p>
+        <p style="margin:8px 0 0"><b>2.</b> Pegue o pior cenário e escreva em corrente, ligando com "se... então...". Ex: "se eu cobrar caro, preciso sustentar uma operação pesada; se eu trabalhar demais, abandono a minha filha". Cada elo esconde uma crença.</p>
+        <p style="margin:8px 0 0"><b>3.</b> Leia tudo em voz alta e repare qual frase dá o maior pico emocional ou desconforto no corpo. Quanto mais simples e mais sobre você ("eu sou", "eu não mereço"), mais perto da raiz.</p>
+      </div>
+      <label class="field">Liste todas as crenças que você percebe</label>
+      <div class="ex">Ex: O que eu entrego não vale tanto. Não sou boa o suficiente. Se eu me priorizar, abandono quem eu amo.</div>
+      <textarea id="i_newcrenca" placeholder="Escreva uma crença e clique em adicionar..."></textarea>
+      <button class="addbtn" onclick="addCrenca()">+ Adicionar crença</button>
+      <p class="ex" style="margin-top:6px">Adicione uma por vez. Todas ficam registradas aqui embaixo. Só depois você escolhe uma pra trabalhar agora.</p>
+      ${S.crencas.length
+        ? `<div style="margin-top:16px"><p class="lead" style="margin-bottom:10px">As suas crenças${S.escolhida===null?'. Terminou de listar? Escolha uma pra trabalhar agora, respondendo as 3 perguntas dela. As outras ficam guardadas pra depois.':' (você está trabalhando a que está marcada).'}</p>${list}</div>`
+        : '<p class="ex" style="margin-top:16px">Nenhuma crença adicionada ainda.</p>'}
+    </div>`;
+  },
+
+  ganho(){
+    const c = S.escolhida!==null ? S.crencas[S.escolhida] : null;
+    return `
+    <div class="card">
+      <div class="step-kicker">Passo 4</div>
+      <h2>O ganho escondido</h2>
+      <p class="lead">Todo padrão que fica tem uma função. Vamos olhar, sem julgamento, o que ele protege.</p>
+      ${recall('O seu desejo', S.desejo)}${recall('O pior cenário', S.pior)}
+      <label class="field">O que você ganha ao NÃO alcançar o que deseja?</label>
+      <div class="ex">Ex: Não preciso lidar com a cobrança de um cargo maior. Tenho mais tempo do jeito que está. Não preciso ser mais política, e eu não quero ser.</div>
+      <textarea id="i_ganhoNao" placeholder="O que você não precisa enfrentar assim...">${esc(S.ganhoNao)}</textarea>
+      <label class="field">O que você perderia se conseguisse o que deseja?</label>
+      <div class="ex">Ex: Perderia tempo de qualidade com meus filhos. Perderia a segurança que tenho hoje.</div>
+      <textarea id="i_perderia" placeholder="O que estaria em risco...">${esc(S.perderia)}</textarea>
+      <label class="field">Quem se afastaria ou se sentiria mal se você concretizasse?</label>
+      <div class="ex">Ex: Acho que meu pai me julgaria se eu ganhasse dinheiro fácil. Alguém que cuida de mim poderia se afastar.</div>
+      <textarea id="i_quemAfasta" placeholder="Quem, e por quê...">${esc(S.quemAfasta)}</textarea>
+    </div>`;
+  },
+
+  sensacao(){
+    const c = S.escolhida!==null ? S.crencas[S.escolhida].texto : '';
+    return `
+    <div class="card">
+      <div class="step-kicker">Passo 5</div>
+      <h2>A sensação</h2>
+      <p class="lead">Agora saímos da cabeça e descemos para a emoção e o corpo. É por aí que se chega à raiz.</p>
+      ${recall('A crença que você escolheu', c)}
+      <div class="box"><b>Diga a crença em voz alta</b> e repita algumas vezes, devagar. Deixe que ela toque você.</div>
+      <p class="ex" style="font-style:normal; color:var(--soft)">Crenças de raiz costumam soar assim: "sinto que não sou boa o suficiente", "sinto que as pessoas não se importam comigo", "sinto que não posso ser eu mesma".</p>
+      <label class="field">Que emoção esse pensamento gera em você?</label>
+      <div class="ex">Ex: Medo. Tristeza. Raiva. Vergonha. Culpa. Solidão. Uma sensação de impotência.</div>
+      <textarea id="i_emocao" placeholder="O sentimento que vem quando você repete a crença...">${esc(S.emocao)}</textarea>
+      <label class="field">E onde essa emoção aparece no seu corpo? O que você sente fisicamente?</label>
+      <div class="ex">Ex: Aperto no peito. Nó na garganta. Embrulho no estômago. Peso nos ombros. Um calor no rosto.</div>
+      <textarea id="i_sensacao" placeholder="A sensação física, onde e como...">${esc(S.sensacao)}</textarea>
+    </div>`;
+  },
+
+  primeira(){ return `
+    <div class="card">
+      <div class="step-kicker">Passo 6</div>
+      <h2>A primeira vez</h2>
+      <p class="lead">Fique na emoção e na sensação e deixe que elas te levem. A memória vem pelo sentir, não pela lógica. Não force, apenas deixe surgir.</p>
+      ${recall('A emoção que a crença gera', S.emocao)}${recall('A sensação no corpo', S.sensacao)}
+      <label class="field">Qual é a primeira vez, ou uma das mais antigas, em que você lembra de sentir exatamente isso?</label>
+      <div class="ex">Ex: Lembrei de quando tinha uns 7 anos e minha mãe não foi na minha apresentação da escola. Senti esse mesmo aperto.</div>
+      <textarea id="i_primeira" placeholder="A cena que surgir, mesmo que pareça pequena. Se não vier nada, tudo bem, é só seguir.">${esc(S.primeiraVez)}</textarea>
+    </div>`; },
+
+  eft(){
+    const c = S.escolhida!==null ? S.crencas[S.escolhida].texto : '';
+    let roundsHtml='';
+    if(S.eftRounds.length){
+      roundsHtml = '<div class="rounds">';
+      S.eftRounds.forEach((r,i)=>{ roundsHtml += `${i>0?'<span class="arrow">→</span>':''}<span class="rd">${r}</span>`; });
+      roundsHtml += '</div>';
+    }
+    const last = S.eftRounds.length? S.eftRounds[S.eftRounds.length-1]:null;
+    return `
+    <div class="card">
+      <div class="step-kicker">Passo 7</div>
+      <h2>A liberação</h2>
+      <p class="lead">Agora a gente solta o que sente, com EFT (tapping). Só se solta o que se sente, então mantenha a sensação viva enquanto faz.</p>
+      ${recall('A crença', c)}${recall('A emoção', S.emocao)}${recall('A sensação no corpo', S.sensacao)}
+      <div class="box care">Se nenhuma cena de infância surgiu no passo 6, tudo bem. Use a <b>crença do adulto</b> ou uma situação específica que "comprovou" essa crença na sua experiência, e faça o tapping a partir dela.</div>
+      <a class="aula-btn" href="${EFT_AULA_URL}" target="_blank" rel="noopener">▶ Assista à aula da EFT</a>
+      <div class="guide">
+        <p><b>Como fazer a EFT, passo a passo:</b></p>
+        <p><b>1. Escolha a cena.</b> Da situação que você trouxe, pare o filme no momento de maior pico emocional, onde você sentiu mais raiva, tristeza ou agonia. Se não souber nomear a emoção, vá pela sensação no corpo.</p>
+        <p><b>2. Faça a varredura da cena.</b> Olhe com detalhe: a emoção que aparece, a sensação no corpo, um cheiro, um som, uma imagem que chama atenção, o que você pensava ali. Conforme você faz o tapping, a cena vai mudando de ângulo, de cor, algo some. É sinal de que está liberando.</p>
+        <p><b>3. Classifique de 0 a 10</b> a intensidade agora, no medidor abaixo. É normal subir um pouco no começo, depois ela tende a baixar.</p>
+        <p><b>4. Comece pelo ponto do karatê</b> (a lateral da mão). Batendo nele, repita 3 vezes: "mesmo que eu sinta essa emoção, ou essa sensação, eu me amo e me aceito profunda e completamente". Isso dissolve as resistências antes de começar.</p>
+        <p><b>5. Percorra os pontos falando o que sente.</b> Em cada ponto, diga só o sentimento ("essa raiva, essa raiva") ou descreva o porquê ("senti raiva quando ele pediu aquilo, porque foi injusto"). Deixe vir tudo que você sente e pensa sobre a cena.</p>
+        <div class="pts">A sequência dos pontos: topo da cabeça, sobrancelha, lateral do olho, embaixo do olho, embaixo do nariz, queixo, clavícula (o ossinho), ponto do peito. Depois volte pro topo da cabeça e repita.</div>
+        <p><b>6. Remeça a cada rodada.</b> Ao fim de cada volta nos pontos, olhe a cena de novo e classifique de 0 a 10 outra vez. Vá repetindo até a carga daquela cena chegar a 0.</p>
+      </div>
+      <label class="field">Intensidade da sensação nesta rodada</label>
+      ${scale10(null, 'addEftRound')}
+      <div class="scale-ends"><span>0 · não sinto mais</span><span>10 · muito intensa</span></div>
+      ${roundsHtml}
+      ${last===0 ? '<div class="eft-done">✓ Chegou a zero. A carga daquela sensação foi liberada. Respire e siga com carinho.</div>' : (last!==null? '<p class="ex">Continue as rodadas até a sensação chegar a 0.</p>':'')}
+    </div>`;
+  },
+
+  crianca(){ return `
+    <div class="card">
+      <div class="step-kicker">Passo 8</div>
+      <h2>A sua criança</h2>
+      <p class="lead">Mesmo que você não lembre de nada do passo 6, este encontro cura.</p>
+      <div class="box">Feche os olhos e imagine a sua criança, você pequeno(a), sentindo exatamente essa sensação. Olhe para essa criança. Imagine ela sentindo o que você está sentindo.</div>
+      <label class="field">Pergunte a ela: o que você está sentindo? O que você precisava e não recebeu?</label>
+      <div class="ex">Ex: Ela se sente sozinha e com medo. Ela precisava de colo e de ouvir que estava tudo bem, que não era culpa dela.</div>
+      <textarea id="i_criancaSente" placeholder="O que a criança sente e do que precisava...">${esc(S.criancaSente)}</textarea>
+      <label class="field">Perceba: você, como adulto, pode dar a essa criança aquilo que ela não recebeu? Peça essa autorização e acolha essa criança.</label>
+      <div class="ex">Ex: Sim. Eu disse a ela que agora eu cuido dela, que ela é amada e não precisa provar nada. Dei o colo que faltou.</div>
+      <textarea id="i_criancaAcolher" placeholder="Como você acolheu essa criança...">${esc(S.criancaAcolher)}</textarea>
+    </div>`; },
+
+  nova(){
+    const c = S.escolhida!==null ? S.crencas[S.escolhida].texto : '';
+    return `
+    <div class="card">
+      <div class="step-kicker">Passo 9</div>
+      <h2>A nova escolha</h2>
+      <p class="lead">Você olhou, sentiu e liberou. Agora vamos revisitar e escolher de novo.</p>
+      ${recall('A crença que você trabalhou', c)}
+      <label class="field">Leia a crença de novo. Ela ainda soa verdadeira para você?</label>
+      <div class="ex">Ex: Não como antes. Ainda aparece um eco, mas já não me convence.</div>
+      <textarea id="i_aindaVerdade" placeholder="Como a crença soa agora...">${esc(S.aindaVerdade)}</textarea>
+
+      <div class="recall"><div class="rk">O seu desejo</div><div class="rv">${esc(S.desejo)||'(em branco)'}</div></div>
+      <label class="field">De 0 a 10, o quanto você acredita agora que pode alcançar esse desejo?</label>
+      ${scale10(S.notaFinal, 'setNotaFinal')}
+      <div class="scale-ends"><span>0 · não acredito</span><span>10 · acredito totalmente</span></div>
+      ${S.notaInicial!==null ? `<p class="ex">No começo você marcou <b>${S.notaInicial}</b>.${S.notaFinal!==null?` Agora marcou <b>${S.notaFinal}</b>.`:''}</p>`:''}
+
+      <label class="field">Escolha uma nova crença para colocar no lugar da antiga.</label>
+      <div class="ex">Ex: Eu sou suficiente do jeito que sou. O meu valor não depende do quanto eu entrego.</div>
+      <textarea id="i_novaCrenca" placeholder="A crença que você escolhe agora...">${esc(S.novaCrenca)}</textarea>
+      <div class="box care" style="margin-top:10px">Dica: você pode fixar essa nova crença com <b>EFT positiva</b>, fazendo o tapping enquanto repete ela em voz alta, como quem cultiva. Funciona ainda melhor agora que você já liberou o passado.</div>
+
+      <label class="field">Uma ação simples que você pode fazer para se aproximar do seu desejo.</label>
+      <div class="ex">Ex: Vou marcar uma conversa aberta com um liderado esta semana. Vou reservar 30 minutos pra mim amanhã.</div>
+      <textarea id="i_acao" placeholder="Um passo concreto...">${esc(S.acao)}</textarea>
+    </div>`;
+  },
+
+  resumo(){
+    const g=(q,a)=>{ const e=!a||!String(a).trim(); return `<div class="qa"><div class="q">${q}</div><div class="a ${e?'empty':''}">${e?'(não respondido)':esc(a)}</div></div>`; };
+    const worked = S.escolhida!==null ? S.crencas[S.escolhida] : null;
+    const allCrencas = S.crencas.length
+      ? S.crencas.map((c,i)=>`<div class="qa"><div class="a">• ${esc(c.texto)}${i===S.escolhida?' <b style="color:var(--accent)">(trabalhada agora)</b>':''}</div></div>`).join('')
+      : '<div class="qa"><div class="a empty">(nenhuma registrada)</div></div>';
+    const eft = S.eftRounds.length ? S.eftRounds.join(' → ') : '';
+    const conf = (S.notaInicial!==null||S.notaFinal!==null) ? `${S.notaInicial!==null?S.notaInicial:'?'} no começo, ${S.notaFinal!==null?S.notaFinal:'?'} agora` : '';
+    const restantes = S.crencas.filter((c,i)=> i!==S.escolhida);
+    let outras='';
+    if(restantes.length){
+      outras = `<h3>Crenças que ainda não olhamos</h3>` + restantes.map(c=>`<div class="qa"><div class="a">• ${esc(c.texto)}</div></div>`).join('') + `<p class="ex" style="margin-top:6px">Você pode voltar depois e trabalhar uma destas.</p>`;
+    }
+    return `
+    <div class="card">
+      <div class="step-kicker">A sua devolutiva</div>
+      <h2>O que você percorreu</h2>
+      <div class="box care">Este é o registro completo do seu processo, com tudo que você escreveu. Clique em salvar em PDF e, se quiser, me envie. Assim a gente conversa sobre o que apareceu.</div>
+      <div class="dev">
+        <h3>O seu desejo</h3>
+        ${g('O que você quer alcançar ou mudar', S.desejo)}
+        ${g('A barreira que você percebe', S.barreira)}
+        <h3>Os porquês</h3>
+        ${g('Por que essa barreira existe', S.p1)}
+        ${g('E por que isso', S.p2)}
+        ${g('E por que isso (a raiz)', S.p3)}
+        ${g('O pior cenário se você conseguir o desejo', S.pior)}
+        <h3>As crenças que você percebeu</h3>
+        ${allCrencas}
+        <h3>A crença que você trabalhou</h3>
+        ${g('A crença', worked?worked.texto:'')}
+        ${g('Isso é meu ou eu aprendi', worked?worked.meu:'')}
+        ${g('Se aprendi, quem me ensinou e quando', worked?worked.quemQuando:'')}
+        ${g('Isso é verdade pra todo mundo', worked?worked.verdade:'')}
+        <h3>O ganho escondido</h3>
+        ${g('O que eu ganho ao não alcançar o desejo', S.ganhoNao)}
+        ${g('O que eu perderia se conseguisse', S.perderia)}
+        ${g('Quem se afastaria ou se sentiria mal', S.quemAfasta)}
+        <h3>A emoção e a sensação</h3>
+        ${g('A emoção que o pensamento gera', S.emocao)}
+        ${g('Onde ela aparece no corpo', S.sensacao)}
+        <h3>A primeira vez</h3>
+        ${g('A memória mais antiga dessa sensação', S.primeiraVez)}
+        <h3>A liberação (EFT)</h3>
+        ${g('As notas de intensidade a cada rodada', eft)}
+        <h3>A sua criança</h3>
+        ${g('O que a criança sente e do que precisava', S.criancaSente)}
+        ${g('Como eu acolhi essa criança', S.criancaAcolher)}
+        <h3>A nova escolha</h3>
+        ${g('A crença ainda soa verdadeira', S.aindaVerdade)}
+        ${g('A nova crença que eu escolho', S.novaCrenca)}
+        ${g('A minha ação concreta', S.acao)}
+        <h3>Confiança no desejo</h3>
+        ${g('Do começo ao fim', conf)}
+        ${outras}
+      </div>
+      <div class="box warm"><p class="quote" style="margin:0">"O que você quer está atrás da porta do medo, às vezes você só precisa atravessar."</p></div>
+      <div style="text-align:center;margin-top:14px"><button class="btn btn-primary" onclick="window.print()">Salvar em PDF pra me enviar</button></div>
+    </div>`;
+  }
+};
+
+/* ---- interações ---- */
+function setNotaInicial(n){ saveCurrent(); S.notaInicial=n; render(); }
+function setNotaFinal(n){ saveCurrent(); S.notaFinal=n; render(); }
+function addCrenca(){
+  const t=document.getElementById('i_newcrenca');
+  const v=t?t.value.trim():'';
+  if(!v) return;
+  S.crencas.push({texto:v, meu:'', quemQuando:'', verdade:''});
+  render();
+}
+function delCrenca(i){
+  S.crencas.splice(i,1);
+  if(S.escolhida===i) S.escolhida = S.crencas.length? 0 : null;
+  else if(S.escolhida>i) S.escolhida--;
+  render();
+}
+function pickCrenca(i){ S.escolhida=i; render(); }
+function addEftRound(n){ S.eftRounds.push(n); render(); }
+
+/* ---- salvar inputs do passo atual ---- */
+function saveCurrent(){
+  const g=id=>{const e=document.getElementById(id); return e?e.value:undefined;};
+  const name=STEPS[cur];
+  if(name==='desejo'){ S.desejo=g('i_desejo')??S.desejo; S.barreira=g('i_barreira')??S.barreira; }
+  else if(name==='porques'){ S.p1=g('i_p1')??S.p1; S.p2=g('i_p2')??S.p2; S.p3=g('i_p3')??S.p3; S.pior=g('i_pior')??S.pior; }
+  else if(name==='ganho'){ S.ganhoNao=g('i_ganhoNao')??S.ganhoNao; S.perderia=g('i_perderia')??S.perderia; S.quemAfasta=g('i_quemAfasta')??S.quemAfasta; }
+  else if(name==='sensacao'){ S.emocao=g('i_emocao')??S.emocao; S.sensacao=g('i_sensacao')??S.sensacao; }
+  else if(name==='primeira'){ S.primeiraVez=g('i_primeira')??S.primeiraVez; }
+  else if(name==='crianca'){ S.criancaSente=g('i_criancaSente')??S.criancaSente; S.criancaAcolher=g('i_criancaAcolher')??S.criancaAcolher; }
+  else if(name==='nova'){ S.aindaVerdade=g('i_aindaVerdade')??S.aindaVerdade; S.novaCrenca=g('i_novaCrenca')??S.novaCrenca; S.acao=g('i_acao')??S.acao; }
+}
+
+function validate(){
+  const name=STEPS[cur];
+  const g=id=>{const e=document.getElementById(id); return e?e.value.trim():'';};
+  if(name==='desejo' && !g('i_desejo')) return 'Escreva o seu desejo para continuar.';
+  if(name==='crencas' && S.crencas.length===0) return 'Adicione ao menos uma crença para continuar.';
+  if(name==='crencas' && S.escolhida===null) return 'Escolha uma crença para trabalhar.';
+  return null;
+}
+
+function next(){
+  if(cur===STEPS.length-1){ // recomeçar
+    if(confirm('Recomeçar o caminho? As respostas atuais serão apagadas.')){ location.reload(); }
+    return;
+  }
+  saveCurrent();
+  const msg=validate();
+  if(msg){ const e=document.getElementById('err'); e.textContent=msg; e.classList.add('show'); return; }
+  cur++; render();
+}
+function prev(){ saveCurrent(); if(cur>0){ cur--; render(); } }
+
+render();
+</script>
+<script src="nav.js"></script>
+</body>
+</html>

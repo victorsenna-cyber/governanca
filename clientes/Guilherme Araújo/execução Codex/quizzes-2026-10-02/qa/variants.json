@@ -1,0 +1,161 @@
+{
+  "variants": [
+    {
+      "variant": 0,
+      "passed": true
+    },
+    {
+      "variant": 1,
+      "passed": true
+    },
+    {
+      "variant": 2,
+      "passed": true
+    },
+    {
+      "variant": 3,
+      "passed": true
+    }
+  ],
+  "signRoutes": [
+    {
+      "sign": "Áries",
+      "element": "Fogo",
+      "target": "https://example.test/checkout_fogo?utm_source=qa&quiz=signos&elemento=Fogo",
+      "testOnly": true
+    },
+    {
+      "sign": "Touro",
+      "element": "Terra",
+      "target": "https://example.test/checkout_terra?utm_source=qa&quiz=signos&elemento=Terra",
+      "testOnly": true
+    },
+    {
+      "sign": "Gêmeos",
+      "element": "Ar",
+      "target": "https://example.test/checkout_ar?utm_source=qa&quiz=signos&elemento=Ar",
+      "testOnly": true
+    },
+    {
+      "sign": "Câncer",
+      "element": "Água",
+      "target": "https://example.test/checkout_agua?utm_source=qa&quiz=signos&elemento=%C3%81gua",
+      "testOnly": true
+    },
+    {
+      "sign": "Leão",
+      "element": "Fogo",
+      "target": "https://example.test/checkout_fogo?utm_source=qa&quiz=signos&elemento=Fogo",
+      "testOnly": true
+    },
+    {
+      "sign": "Virgem",
+      "element": "Terra",
+      "target": "https://example.test/checkout_terra?utm_source=qa&quiz=signos&elemento=Terra",
+      "testOnly": true
+    },
+    {
+      "sign": "Libra",
+      "element": "Ar",
+      "target": "https://example.test/checkout_ar?utm_source=qa&quiz=signos&elemento=Ar",
+      "testOnly": true
+    },
+    {
+      "sign": "Escorpião",
+      "element": "Água",
+      "target": "https://example.test/checkout_agua?utm_source=qa&quiz=signos&elemento=%C3%81gua",
+      "testOnly": true
+    },
+    {
+      "sign": "Sagitário",
+      "element": "Fogo",
+      "target": "https://example.test/checkout_fogo?utm_source=qa&quiz=signos&elemento=Fogo",
+      "testOnly": true
+    },
+    {
+      "sign": "Capricórnio",
+      "element": "Terra",
+      "target": "https://example.test/checkout_terra?utm_source=qa&quiz=signos&elemento=Terra",
+      "testOnly": true
+    },
+    {
+      "sign": "Aquário",
+      "element": "Ar",
+      "target": "https://example.test/checkout_ar?utm_source=qa&quiz=signos&elemento=Ar",
+      "testOnly": true
+    },
+    {
+      "sign": "Peixes",
+      "element": "Água",
+      "target": "https://example.test/checkout_agua?utm_source=qa&quiz=signos&elemento=%C3%81gua",
+      "testOnly": true
+    }
+  ],
+  "network": [
+    {
+      "quiz": "permissao",
+      "requests": 2,
+      "elapsed": 52,
+      "advanced": true,
+      "retryOnce": true
+    },
+    {
+      "quiz": "signos",
+      "requests": 2,
+      "elapsed": 52,
+      "advanced": true,
+      "retryOnce": true
+    }
+  ],
+  "privacy": [
+    {
+      "quiz": "permissao",
+      "dataLayer": [
+        {
+          "event": "PageView",
+          "quiz": "permissao"
+        },
+        {
+          "event": "quiz_step",
+          "quiz": "permissao",
+          "tela": "T23"
+        },
+        {
+          "event": "Lead",
+          "quiz": "permissao"
+        },
+        {
+          "event": "quiz_step",
+          "quiz": "permissao",
+          "tela": "T24"
+        }
+      ]
+    },
+    {
+      "quiz": "signos",
+      "dataLayer": [
+        {
+          "event": "PageView",
+          "quiz": "signos"
+        },
+        {
+          "event": "quiz_step",
+          "quiz": "signos",
+          "tela": "S15"
+        },
+        {
+          "event": "Lead",
+          "quiz": "signos"
+        },
+        {
+          "event": "quiz_step",
+          "quiz": "signos",
+          "tela": "S16"
+        }
+      ]
+    }
+  ],
+  "copy": [],
+  "errors": [],
+  "complete": true
+}

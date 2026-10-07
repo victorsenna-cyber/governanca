@@ -1,0 +1,39 @@
+CONTEXTO E REFERÊNCIAS — ESTEIRA JORNADA DE CONSTELAÇÃO E VENDAS
+
+== Projetos relacionados no ecossistema ==
+- ../../CONTEXTO_NEGOCIO_GUILHERME.md   (contexto de negócio — obrigatório)
+- ../../CLAUDE.md                        (governança Meta Ads do ecossistema)
+- ../../FUNIL_CONSTELACAO/               (Formação CORE — destino de ascensão da esteira)
+- ../../Páginas de vendas/              (design system de LP + lição de performance/LPV)
+- ../../Ecossistema Guilherme Araújo.md (relatório de design system / LP)
+
+== Pesquisa (fontes consultadas em 2026-06-02) ==
+Preço de sessão / renda do constelador (BR):
+- https://www.cronoshare.com.br/quanto-custa/constelacao-familiar
+- https://isabelafalcon.com.br/preco-de-sessao-de-constelacao-familiar/
+- https://constelacaoclinica.com/constelacao-familiar-preco/
+- https://www.getninjas.com.br/saude/terapias-alternativas/preco/constelacao-familiar
+
+Concorrência / formações:
+- https://constelacaoclinica.com
+- https://institutokoziner.com/formacao-em-constelacao-familiar-online-e-ao-vivo/
+- https://miltongobbo.com.br/formacaoconstelacao/
+- https://www.familiasistemica.com/produtos/treinamento-aprenda-a-constelar-online-curso-constelacao-familiar/
+
+Tripwire / lead magnet / benchmarks:
+- https://www.clickfunnels.com/blog/high-ticket-coaching-funnel/
+- https://stan.store/blog/tripwire-funnels/
+- https://cartflows.com/blog/tripwire-funnel/
+- https://segmetrics.io/articles/tripwires-101-stop-with-the-free-stuff/
+
+Receita recorrente para terapeutas:
+- https://www.brightervision.com/blog/business-model/
+- https://upsellhealth.com/membership-models-that-work-creating-recurring-revenue-with-continued-care-programs/
+- https://drkimfoster.com/070-2/
+
+== Pendências (links a adicionar quando existirem) ==
+- [ ] URL da LP Low (JC)
+- [ ] URL de checkout + order bump
+- [ ] URL upsell/downsell
+- [ ] URL da plataforma de membros
+- [ ] (opção B) URL da aula gratuita

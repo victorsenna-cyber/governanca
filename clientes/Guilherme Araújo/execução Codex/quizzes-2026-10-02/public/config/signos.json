@@ -1,0 +1,725 @@
+{
+  "quiz_versao": "1.0",
+  "apps_script_url": "",
+  "pixel_id": "1259363302489132",
+  "dados_legais": "© 2026 Guilherme Araújo · Todos os direitos reservados.",
+  "url_termos": "",
+  "url_privacidade": "",
+  "depoimentos_ativos": false,
+  "depoimentos": [],
+  "photo": "assets/guilherme.jpeg",
+  "ui": {
+    "loading": "Carregando…",
+    "faq": "Perguntas frequentes",
+    "back": "Voltar",
+    "progress": "Progresso do teste",
+    "noscript": "Ative o JavaScript para fazer o teste.",
+    "photoAlt": "Guilherme Araújo",
+    "mapAlt": "Exemplo de mapa da Permissão",
+    "footer": "Ao acessar esta página, você está de acordo com:",
+    "terms": "Termos de Uso",
+    "privacy": "Política de Privacidade",
+    "legalPending": "[[COPY PENDENTE: dados legais do rodapé]]",
+    "consent": "Ao continuar, você autoriza o uso do seu nome, e-mail, WhatsApp e das suas respostas neste teste para receber o resultado, para contato do Guilherme Araújo e para acompanhar a sua evolução ao longo do tempo. Você pode pedir a remoção dos seus dados a qualquer momento.",
+    "fields": [
+      {
+        "key": "nome",
+        "label": "Primeiro nome",
+        "placeholder": "Digite seu primeiro nome",
+        "error": "Informe o seu primeiro nome.",
+        "type": "text",
+        "autocomplete": "given-name"
+      },
+      {
+        "key": "whatsapp",
+        "label": "WhatsApp",
+        "placeholder": "(00) 00000-0000",
+        "error": "Informe um WhatsApp válido, com DDD.",
+        "type": "tel",
+        "autocomplete": "tel"
+      },
+      {
+        "key": "email",
+        "label": "E-mail",
+        "placeholder": "Digite seu e-mail",
+        "error": "Informe um e-mail válido.",
+        "type": "email",
+        "autocomplete": "email"
+      }
+    ]
+  },
+  "quiz": "signos",
+  "resultMode": "group",
+  "title": "Teste do padrão de decisão · Guilherme Araújo",
+  "description": "Descubra o seu padrão de decisão. Teste gratuito: comece pelo seu signo.",
+  "checkout_fogo": "https://checkout.pagtrust.com.br/cka958004d?funnel=fn3e33837b",
+  "checkout_terra": "https://checkout.pagtrust.com.br/ck2067e260?funnel=fn30848615",
+  "checkout_ar": "https://checkout.pagtrust.com.br/ck80405657?funnel=fn652a2102",
+  "checkout_agua": "https://checkout.pagtrust.com.br/ck902e943e?funnel=fn72ce1e70",
+  "preco_signos_valor": "R$ 297",
+  "preco_signos_apoio": "Plano trimestral · três meses no grupo do seu elemento.",
+  "cancelamento_signos": "O plano é trimestral. Você pode cancelar a renovação quando quiser.",
+  "descricao_elemento": {
+    "Fogo": "",
+    "Terra": "",
+    "Ar": "",
+    "Água": ""
+  },
+  "groups": [
+    {
+      "label": "Fogo",
+      "emoji": "🔥",
+      "members": [
+        "Áries",
+        "Leão",
+        "Sagitário"
+      ],
+      "checkoutKey": "checkout_fogo"
+    },
+    {
+      "label": "Terra",
+      "emoji": "🌍",
+      "members": [
+        "Touro",
+        "Virgem",
+        "Capricórnio"
+      ],
+      "checkoutKey": "checkout_terra"
+    },
+    {
+      "label": "Ar",
+      "emoji": "💨",
+      "members": [
+        "Gêmeos",
+        "Libra",
+        "Aquário"
+      ],
+      "checkoutKey": "checkout_ar"
+    },
+    {
+      "label": "Água",
+      "emoji": "💧",
+      "members": [
+        "Câncer",
+        "Escorpião",
+        "Peixes"
+      ],
+      "checkoutKey": "checkout_agua"
+    }
+  ],
+  "groupQuestion": "p01_signo",
+  "joiner": " e ",
+  "steps": [
+    {
+      "id": "S01",
+      "type": "opening",
+      "key": "p01_signo",
+      "title": "Qual é o seu signo?",
+      "options": [
+        {
+          "label": "Áries",
+          "emoji": "♈",
+          "image": ""
+        },
+        {
+          "label": "Touro",
+          "emoji": "♉",
+          "image": ""
+        },
+        {
+          "label": "Gêmeos",
+          "emoji": "♊",
+          "image": ""
+        },
+        {
+          "label": "Câncer",
+          "emoji": "♋",
+          "image": ""
+        },
+        {
+          "label": "Leão",
+          "emoji": "♌",
+          "image": ""
+        },
+        {
+          "label": "Virgem",
+          "emoji": "♍",
+          "image": ""
+        },
+        {
+          "label": "Libra",
+          "emoji": "♎",
+          "image": ""
+        },
+        {
+          "label": "Escorpião",
+          "emoji": "♏",
+          "image": ""
+        },
+        {
+          "label": "Sagitário",
+          "emoji": "♐",
+          "image": ""
+        },
+        {
+          "label": "Capricórnio",
+          "emoji": "♑",
+          "image": ""
+        },
+        {
+          "label": "Aquário",
+          "emoji": "♒",
+          "image": ""
+        },
+        {
+          "label": "Peixes",
+          "emoji": "♓",
+          "image": ""
+        }
+      ],
+      "layout": "grid",
+      "columns": 3,
+      "variable": "signo",
+      "banner": "RESPONDA E DESCUBRA O SEU PADRÃO DE DECISÃO:",
+      "headline": "QUAL É O SEU <g>PADRÃO DE DECISÃO</g> QUANDO A SEMANA APERTA?",
+      "subheadline": "<u>TESTE GRATUITO</u>. COMECE PELO SEU SIGNO E VEJA COMO VOCÊ DECIDE, ONDE PESA E O QUE SE REPETE.",
+      "cue": "↓ RESPONDA PARA COMEÇAR ↓"
+    },
+    {
+      "id": "S02",
+      "type": "insertion",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "{{signo}} é do elemento <g>{{elemento}}</g>.",
+          "style": "h2",
+          "emphasis": true
+        },
+        {
+          "type": "photo",
+          "ratio": "authority"
+        },
+        {
+          "type": "text",
+          "text": "Toda semana eu tiro as cartas para o seu elemento e aprofundo para o seu signo. Antes do seu resultado, algumas perguntas rápidas sobre a sua semana e o jeito como você decide.",
+          "style": "body"
+        }
+      ],
+      "button": "Continuar"
+    },
+    {
+      "id": "S03",
+      "type": "question",
+      "key": "p02_acompanha",
+      "title": "Você costuma acompanhar tiragens ou previsões do seu signo?",
+      "options": [
+        {
+          "label": "Toda semana",
+          "emoji": "🔮",
+          "image": ""
+        },
+        {
+          "label": "De vez em quando",
+          "emoji": "🌙",
+          "image": ""
+        },
+        {
+          "label": "Raramente",
+          "emoji": "☁️",
+          "image": ""
+        },
+        {
+          "label": "Nunca acompanhei",
+          "emoji": "🆕",
+          "image": ""
+        }
+      ]
+    },
+    {
+      "id": "S04",
+      "type": "question",
+      "key": "p03_area",
+      "title": "Em que área você mais precisa de direção agora?",
+      "options": [
+        {
+          "label": "Trabalho e dinheiro",
+          "emoji": "💼",
+          "image": ""
+        },
+        {
+          "label": "Amor e relacionamentos",
+          "emoji": "❤️",
+          "image": ""
+        },
+        {
+          "label": "Família",
+          "emoji": "🏠",
+          "image": ""
+        },
+        {
+          "label": "Eu comigo",
+          "emoji": "🪞",
+          "image": ""
+        }
+      ],
+      "variable": "area",
+      "values": [
+        "trabalho e dinheiro",
+        "amor e relacionamentos",
+        "família",
+        "a sua relação com você"
+      ]
+    },
+    {
+      "id": "S05",
+      "type": "question",
+      "key": "p04_comeca_semana",
+      "title": "Como você costuma começar a semana?",
+      "options": [
+        {
+          "label": "Com clareza do que fazer",
+          "emoji": "🌅",
+          "image": ""
+        },
+        {
+          "label": "Com algumas dúvidas",
+          "emoji": "🤔",
+          "image": ""
+        },
+        {
+          "label": "No automático, resolvendo o que aparece",
+          "emoji": "🔄",
+          "image": ""
+        },
+        {
+          "label": "Com ansiedade pelo que vem",
+          "emoji": "😰",
+          "image": ""
+        }
+      ],
+      "variable": "semana",
+      "values": [
+        "com clareza do que fazer",
+        "com algumas dúvidas",
+        "no automático",
+        "com ansiedade pelo que vem"
+      ]
+    },
+    {
+      "id": "S06",
+      "type": "question",
+      "key": "p05_decide",
+      "title": "Quando precisa decidir algo importante, o que você faz?",
+      "options": [
+        {
+          "label": "Decido rápido e depois vejo",
+          "emoji": "⚡",
+          "image": ""
+        },
+        {
+          "label": "Fico adiando",
+          "emoji": "⏳",
+          "image": ""
+        },
+        {
+          "label": "Peço a opinião de várias pessoas",
+          "emoji": "🗣️",
+          "image": ""
+        },
+        {
+          "label": "Procuro um sinal",
+          "emoji": "🔍",
+          "image": ""
+        }
+      ],
+      "variable": "padrao",
+      "values": [
+        "age no impulso",
+        "adia",
+        "terceiriza a decisão",
+        "espera um sinal"
+      ]
+    },
+    {
+      "id": "S07",
+      "type": "question",
+      "key": "p06_repete",
+      "title": "Você sente que repete as mesmas situações?",
+      "options": [
+        {
+          "label": "Sim, parece um ciclo",
+          "emoji": "🔁",
+          "image": ""
+        },
+        {
+          "label": "Em algumas áreas",
+          "emoji": "〰️",
+          "image": ""
+        },
+        {
+          "label": "Não",
+          "emoji": "➡️",
+          "image": ""
+        }
+      ],
+      "variable": "repete",
+      "values": [
+        "sim, parece um ciclo",
+        "em algumas áreas",
+        "não"
+      ]
+    },
+    {
+      "id": "S08",
+      "type": "question",
+      "key": "p07_renda",
+      "title": "Qual é a sua renda mensal hoje?",
+      "options": [
+        {
+          "label": "Até R$ 2 mil",
+          "emoji": "🪙",
+          "image": ""
+        },
+        {
+          "label": "De R$ 2 mil a R$ 5 mil",
+          "emoji": "💵",
+          "image": ""
+        },
+        {
+          "label": "De R$ 5 mil a R$ 10 mil",
+          "emoji": "💰",
+          "image": ""
+        },
+        {
+          "label": "Mais de R$ 10 mil",
+          "emoji": "💎",
+          "image": ""
+        },
+        {
+          "label": "Não tenho renda no momento",
+          "emoji": "🌱",
+          "image": ""
+        }
+      ],
+      "private": true
+    },
+    {
+      "id": "S09",
+      "type": "insertion",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "As cartas não decidem por você. Elas mostram <g>onde você ainda não se deu permissão para agir</g>.",
+          "style": "h2",
+          "emphasis": true
+        },
+        {
+          "type": "text",
+          "text": "O conselho da semana é isso: uma direção clara para o seu elemento, e um aprofundamento para o seu signo.",
+          "style": "body"
+        },
+        {
+          "type": "testimonials"
+        }
+      ],
+      "button": "Continuar"
+    },
+    {
+      "id": "S10",
+      "type": "question",
+      "key": "p08_ja_fez_leitura",
+      "title": "Você já fez uma leitura de cartas antes?",
+      "options": [
+        {
+          "label": "Sim, faço com frequência",
+          "emoji": "🃏",
+          "image": ""
+        },
+        {
+          "label": "Já fiz algumas vezes",
+          "emoji": "✨",
+          "image": ""
+        },
+        {
+          "label": "Nunca fiz, mas tenho curiosidade",
+          "emoji": "👀",
+          "image": ""
+        }
+      ]
+    },
+    {
+      "id": "S11",
+      "type": "question",
+      "key": "p09_quer",
+      "title": "O que você mais quer de um conselho semanal?",
+      "options": [
+        {
+          "label": "Clareza para decidir",
+          "emoji": "🧭",
+          "image": ""
+        },
+        {
+          "label": "Coragem para agir",
+          "emoji": "🦁",
+          "image": ""
+        },
+        {
+          "label": "Calma para atravessar a semana",
+          "emoji": "🍃",
+          "image": ""
+        },
+        {
+          "label": "Entender o que estou vivendo",
+          "emoji": "💡",
+          "image": ""
+        }
+      ],
+      "variable": "quer",
+      "values": [
+        "clareza para decidir",
+        "coragem para agir",
+        "calma para atravessar a semana",
+        "entender o que você está vivendo"
+      ]
+    },
+    {
+      "id": "S12",
+      "type": "loading",
+      "duration": 5000,
+      "text": "Montando o seu resultado…"
+    },
+    {
+      "id": "S13",
+      "type": "result",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Aqui está o seu resultado.",
+          "style": "body"
+        },
+        {
+          "type": "resultBanner",
+          "text": "SEU PADRÃO DE DECISÃO",
+          "variants": {
+            "key": "p05_decide",
+            "cases": {
+              "0": "SEU PADRÃO: ⚡ AGE NO IMPULSO",
+              "1": "SEU PADRÃO: ⏳ ADIA",
+              "2": "SEU PADRÃO: 🗣️ TERCEIRIZA A DECISÃO",
+              "3": "SEU PADRÃO: 🔍 ESPERA UM SINAL"
+            }
+          }
+        },
+        {
+          "type": "text",
+          "style": "body",
+          "text": "Este é o jeito como você costuma decidir.",
+          "variants": {
+            "key": "p05_decide",
+            "cases": {
+              "0": "Você decide rápido para sair logo da dúvida. O custo aparece depois, quando precisa consertar o que decidiu no calor.",
+              "1": "Você empurra a decisão esperando a hora certa. Enquanto isso, a situação decide por você.",
+              "2": "Você pergunta para várias pessoas antes de decidir. Com tanta opinião, fica difícil ouvir a sua.",
+              "3": "Você espera uma confirmação antes de agir. Quando o sinal não vem, a decisão fica parada."
+            }
+          }
+        },
+        {
+          "type": "text",
+          "text": "O seu diagnóstico",
+          "style": "h1"
+        },
+        {
+          "type": "echo",
+          "items": [
+            "✅ Padrão: {{padrao}}",
+            "✅ Onde pesa: {{area}}",
+            "✅ Como você entra na semana: {{semana}}",
+            "✅ Repete as mesmas situações: {{repete}}",
+            "✅ Seu elemento: {{EMOJI}} {{elemento}} · {{signo}}, com {{outros_dois_signos}}"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "O que fazer com isso",
+          "style": "h2",
+          "emphasis": true
+        },
+        {
+          "type": "text",
+          "style": "body",
+          "text": "Saber o padrão não muda a semana sozinho. O que muda é ter uma direção antes de decidir."
+        },
+        {
+          "type": "text",
+          "style": "body",
+          "text": "É isso que o Grupo de Conselho Semanal de {{elemento}} entrega: toda semana, o conselho das cartas para o seu elemento e um aprofundamento para {{signo}}."
+        }
+      ],
+      "button": "Ver como funciona"
+    },
+    {
+      "id": "S14",
+      "type": "question",
+      "key": "p10_quer_receber",
+      "title": "Quer receber o conselho do seu elemento toda semana?",
+      "options": [
+        {
+          "label": "Sim, quero começar",
+          "emoji": "✅",
+          "image": ""
+        },
+        {
+          "label": "Quero entender melhor primeiro",
+          "emoji": "🔎",
+          "image": ""
+        }
+      ]
+    },
+    {
+      "id": "S15",
+      "type": "capture",
+      "title": "Para onde eu envio o próximo passo?",
+      "button": "Ver como funciona"
+    },
+    {
+      "id": "S16",
+      "type": "offer",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "{{nome}}, O GRUPO DE <g>{{ELEMENTO}}</g> ESTÁ ABERTO PARA {{SIGNO}}.",
+          "style": "h2",
+          "emphasis": true
+        },
+        {
+          "type": "alert",
+          "text": "↓ ROLE PARA BAIXO ↓",
+          "tone": "danger",
+          "full": false
+        },
+        {
+          "type": "photo",
+          "ratio": "expert"
+        },
+        {
+          "type": "text",
+          "text": "{{nome}}, Guilherme aqui.",
+          "style": "body"
+        },
+        {
+          "type": "text",
+          "text": "Sou professor de Cartomancia Sistêmica. Toda semana eu tiro as cartas para cada elemento e aprofundo para cada signo.",
+          "style": "body"
+        },
+        {
+          "type": "alert",
+          "text": "GRUPO DE CONSELHO SEMANAL · {{ELEMENTO}}",
+          "tone": "success",
+          "full": true
+        },
+        {
+          "type": "text",
+          "text": "Como funciona",
+          "style": "h2",
+          "emphasis": true
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "title": "1 · O conselho do elemento",
+              "text": "Toda semana, a direção das cartas para {{elemento}}."
+            },
+            {
+              "title": "2 · O aprofundamento do seu signo",
+              "text": "Um direcionamento exclusivo para {{signo}}, dentro do grupo."
+            },
+            {
+              "title": "3 · No seu WhatsApp",
+              "text": "Você recebe no grupo do seu elemento."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Conforme você respondeu",
+          "style": "h2",
+          "emphasis": true
+        },
+        {
+          "type": "echo",
+          "items": [
+            "✅ Seu signo: {{signo}} · elemento {{elemento}}",
+            "✅ Seu padrão de decisão: {{padrao}}",
+            "✅ Onde você precisa de direção: {{area}}",
+            "✅ O que você quer do conselho: {{quer}}"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "O que isto <r>não é</r>",
+          "style": "h2",
+          "emphasis": true
+        },
+        {
+          "type": "list",
+          "items": [
+            "Não é previsão do que vai acontecer.",
+            "Não é consulta individual.",
+            "É uma orientação para a sua semana, a partir das cartas."
+          ]
+        },
+        {
+          "type": "testimonials"
+        },
+        {
+          "type": "price",
+          "title": "GRUPO {{ELEMENTO}}",
+          "valueKey": "preco_signos_valor",
+          "supportKey": "preco_signos_apoio",
+          "valuePending": "[[COPY PENDENTE: preço do grupo de signos]]",
+          "supportPending": "[[COPY PENDENTE: apoio do preço do grupo de signos]]"
+        },
+        {
+          "type": "checkout",
+          "text": "ENTRAR NO GRUPO DE {{ELEMENTO}}"
+        },
+        {
+          "type": "text",
+          "text": "Depois do pagamento, você recebe o acesso ao grupo.",
+          "style": "small"
+        },
+        {
+          "type": "faq",
+          "items": [
+            [
+              "Como eu recebo?",
+              "No grupo de WhatsApp do seu elemento."
+            ],
+            [
+              "É uma consulta individual?",
+              "Não. É um conselho para o seu elemento, com aprofundamento para o seu signo."
+            ],
+            [
+              "Posso cancelar?",
+              {
+                "key": "cancelamento_signos",
+                "pending": "[[COPY PENDENTE: resposta de Posso cancelar?]]"
+              }
+            ],
+            [
+              "E se eu quiser uma tiragem só para mim?",
+              "É possível, à parte. Dentro do grupo eu explico como."
+            ]
+          ]
+        },
+        {
+          "type": "footer",
+          "text": "Conteúdo de orientação e autoconhecimento. Não substitui acompanhamento psicológico, médico, jurídico ou financeiro."
+        }
+      ],
+      "button": ""
+    }
+  ]
+}

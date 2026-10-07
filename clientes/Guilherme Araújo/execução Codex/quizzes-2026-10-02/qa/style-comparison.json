@@ -1,0 +1,242 @@
+[
+  {
+    "width": 390,
+    "quiz": "permissao",
+    "step": "T01",
+    "ref": "01",
+    "selector": ".h1 h1 strong",
+    "diffs": []
+  },
+  {
+    "width": 390,
+    "quiz": "permissao",
+    "step": "T01",
+    "ref": "01",
+    "selector": ".subheadline",
+    "diffs": []
+  },
+  {
+    "width": 390,
+    "quiz": "permissao",
+    "step": "T01",
+    "ref": "01",
+    "selector": ".h2 h2",
+    "diffs": []
+  },
+  {
+    "width": 390,
+    "quiz": "permissao",
+    "step": "T03",
+    "ref": "03",
+    "selector": "h1 strong",
+    "diffs": []
+  },
+  {
+    "width": 390,
+    "quiz": "permissao",
+    "step": "T04",
+    "ref": "09",
+    "selector": "h2 strong",
+    "diffs": []
+  },
+  {
+    "width": 390,
+    "quiz": "permissao",
+    "step": "T19",
+    "ref": "32",
+    "selector": ".h1 h1",
+    "diffs": []
+  },
+  {
+    "width": 390,
+    "quiz": "permissao",
+    "step": "T23",
+    "ref": "40",
+    "selector": "h2 strong",
+    "diffs": []
+  },
+  {
+    "width": 390,
+    "quiz": "permissao",
+    "step": "T24",
+    "ref": "41",
+    "selector": ".h2 h2 strong",
+    "diffs": []
+  },
+  {
+    "width": 390,
+    "quiz": "signos",
+    "step": "S01",
+    "ref": "01",
+    "selector": ".h1 h1 strong",
+    "diffs": []
+  },
+  {
+    "width": 390,
+    "quiz": "signos",
+    "step": "S01",
+    "ref": "01",
+    "selector": ".subheadline",
+    "diffs": []
+  },
+  {
+    "width": 390,
+    "quiz": "signos",
+    "step": "S01",
+    "ref": "01",
+    "selector": ".h2 h2",
+    "diffs": []
+  },
+  {
+    "width": 390,
+    "quiz": "signos",
+    "step": "S03",
+    "ref": "03",
+    "selector": "h1 strong",
+    "diffs": []
+  },
+  {
+    "width": 390,
+    "quiz": "signos",
+    "step": "S13",
+    "ref": "32",
+    "selector": ".h1 h1",
+    "diffs": []
+  },
+  {
+    "width": 390,
+    "quiz": "signos",
+    "step": "S15",
+    "ref": "40",
+    "selector": "h2 strong",
+    "diffs": []
+  },
+  {
+    "width": 390,
+    "quiz": "signos",
+    "step": "S16",
+    "ref": "41",
+    "selector": ".h2 h2 strong",
+    "diffs": []
+  },
+  {
+    "width": 1440,
+    "quiz": "permissao",
+    "step": "T01",
+    "ref": "01",
+    "selector": ".h1 h1 strong",
+    "diffs": []
+  },
+  {
+    "width": 1440,
+    "quiz": "permissao",
+    "step": "T01",
+    "ref": "01",
+    "selector": ".subheadline",
+    "diffs": []
+  },
+  {
+    "width": 1440,
+    "quiz": "permissao",
+    "step": "T01",
+    "ref": "01",
+    "selector": ".h2 h2",
+    "diffs": []
+  },
+  {
+    "width": 1440,
+    "quiz": "permissao",
+    "step": "T03",
+    "ref": "03",
+    "selector": "h1 strong",
+    "diffs": []
+  },
+  {
+    "width": 1440,
+    "quiz": "permissao",
+    "step": "T04",
+    "ref": "09",
+    "selector": "h2 strong",
+    "diffs": []
+  },
+  {
+    "width": 1440,
+    "quiz": "permissao",
+    "step": "T19",
+    "ref": "32",
+    "selector": ".h1 h1",
+    "diffs": []
+  },
+  {
+    "width": 1440,
+    "quiz": "permissao",
+    "step": "T23",
+    "ref": "40",
+    "selector": "h2 strong",
+    "diffs": []
+  },
+  {
+    "width": 1440,
+    "quiz": "permissao",
+    "step": "T24",
+    "ref": "41",
+    "selector": ".h2 h2 strong",
+    "diffs": []
+  },
+  {
+    "width": 1440,
+    "quiz": "signos",
+    "step": "S01",
+    "ref": "01",
+    "selector": ".h1 h1 strong",
+    "diffs": []
+  },
+  {
+    "width": 1440,
+    "quiz": "signos",
+    "step": "S01",
+    "ref": "01",
+    "selector": ".subheadline",
+    "diffs": []
+  },
+  {
+    "width": 1440,
+    "quiz": "signos",
+    "step": "S01",
+    "ref": "01",
+    "selector": ".h2 h2",
+    "diffs": []
+  },
+  {
+    "width": 1440,
+    "quiz": "signos",
+    "step": "S03",
+    "ref": "03",
+    "selector": "h1 strong",
+    "diffs": []
+  },
+  {
+    "width": 1440,
+    "quiz": "signos",
+    "step": "S13",
+    "ref": "32",
+    "selector": ".h1 h1",
+    "diffs": []
+  },
+  {
+    "width": 1440,
+    "quiz": "signos",
+    "step": "S15",
+    "ref": "40",
+    "selector": "h2 strong",
+    "diffs": []
+  },
+  {
+    "width": 1440,
+    "quiz": "signos",
+    "step": "S16",
+    "ref": "41",
+    "selector": ".h2 h2 strong",
+    "diffs": []
+  }
+]

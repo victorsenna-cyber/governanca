@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Inscrição confirmada · Workshop Eixo · Turma Meio de Semana</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root{
+      --paper:#faf8f3; --sand:#f4f0e7; --ink:#223036; --gold:#b89b72;
+      --moss:#3e5a4b; --ink-soft:rgba(34,48,54,.60);
+      --line:rgba(34,48,54,.10); --line-soft:rgba(34,48,54,.07);
+      --card-shadow:0 8px 30px rgba(34,48,54,.06);
+      --wa:#25a366; --wa-ink:#128c7e;
+      --font-display:'Fraunces',Georgia,'Times New Roman',serif;
+      --font-body:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;
+      --ease-out:cubic-bezier(.22,1,.36,1); --wrap:44rem;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{
+      font-family:var(--font-body); color:var(--ink); background:var(--paper);
+      line-height:1.6; -webkit-font-smoothing:antialiased;
+      min-height:100vh; padding:clamp(20px,6vw,64px) 20px;
+      /* grid de fundo (1px, textura, sem trocar fundo) */
+      background-image:
+        linear-gradient(var(--line-soft) 1px,transparent 1px),
+        linear-gradient(90deg,var(--line-soft) 1px,transparent 1px);
+      background-size:56px 56px; background-position:center top;
+    }
+    .wrap{max-width:var(--wrap);margin:0 auto}
+    .eyebrow{font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-soft);font-weight:600}
+
+    /* B1: selo escuro (único bloco escuro, ecoa o card de oferta) */
+    .seal{
+      background:var(--ink); color:var(--paper); border:1px solid var(--gold);
+      border-radius:20px; padding:clamp(28px,5vw,44px);
+      box-shadow:0 24px 80px rgba(34,48,54,.28); text-align:center;
+    }
+    .check{
+      width:56px;height:56px;border-radius:50%;border:1.5px solid var(--gold);
+      display:flex;align-items:center;justify-content:center;margin:0 auto 20px;
+    }
+    .check svg{width:26px;height:26px;stroke:var(--gold);fill:none;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+    .seal .kicker{font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-weight:600}
+    .seal h1{font-family:var(--font-display);font-weight:500;font-size:clamp(1.9rem,5vw,2.9rem);line-height:1.1;margin:.35em 0 .5em}
+    .seal .turma{font-size:1.02rem;color:rgba(250,248,243,.82);max-width:30rem;margin:0 auto}
+    .seal .turma strong{color:var(--paper);font-weight:600}
+
+    /* B2: CTA do grupo (o job da página) */
+    .next{margin-top:clamp(28px,5vw,44px);text-align:center}
+    .next .lead{font-family:var(--font-display);font-weight:500;font-size:clamp(1.3rem,3.4vw,1.75rem);line-height:1.25;margin-bottom:1.1em}
+    .cta{
+      display:inline-flex;align-items:center;gap:12px;
+      background:var(--wa);color:#fff;text-decoration:none;font-weight:600;font-size:1.08rem;
+      padding:20px 34px;border-radius:14px;min-height:60px;
+      box-shadow:0 12px 34px rgba(37,163,102,.34);transition:transform .2s var(--ease-out),box-shadow .2s var(--ease-out);
+      width:100%;max-width:26rem;justify-content:center;
+    }
+    .cta:hover{transform:translateY(-2px);box-shadow:0 16px 44px rgba(37,163,102,.42)}
+    .cta svg{width:24px;height:24px;fill:#fff;flex-shrink:0}
+    .next .micro{margin-top:14px;font-size:.94rem;color:var(--ink-soft);max-width:30rem;margin-left:auto;margin-right:auto}
+
+    /* B3: o que acontece agora */
+    .steps{margin-top:clamp(34px,6vw,56px)}
+    .steps h2{font-family:var(--font-display);font-weight:500;font-size:1.4rem;margin-bottom:1em;text-align:center}
+    .steps ol{list-style:none;display:grid;gap:14px;max-width:34rem;margin:0 auto;counter-reset:s}
+    .steps li{
+      background:var(--sand);border:1px solid var(--line-soft);border-radius:14px;
+      padding:18px 20px 18px 58px;position:relative;font-size:1rem;box-shadow:var(--card-shadow);
+    }
+    .steps li::before{
+      counter-increment:s;content:counter(s);
+      position:absolute;left:18px;top:16px;width:26px;height:26px;border-radius:50%;
+      border:1px solid var(--gold);color:var(--gold);font-family:var(--font-display);
+      font-size:.9rem;display:flex;align-items:center;justify-content:center;font-weight:600;
+    }
+
+    /* B4: resgate do bump (discreto, abaixo, outline) */
+    .bump{margin-top:clamp(30px,5vw,48px);max-width:34rem;margin-left:auto;margin-right:auto;
+      border:1px dashed var(--line);border-radius:14px;padding:22px 24px;text-align:center;background:transparent}
+    .bump p{font-size:.98rem;color:var(--ink-soft);margin-bottom:.9em}
+    .bump p strong{color:var(--ink)}
+    .bump a{
+      display:inline-flex;align-items:center;justify-content:center;
+      border:1.5px solid var(--gold);color:var(--ink);text-decoration:none;font-weight:600;
+      padding:13px 26px;border-radius:12px;font-size:.98rem;transition:background .2s var(--ease-out);
+    }
+    .bump a:hover{background:var(--sand)}
+
+    /* B5: rodapé */
+    .foot{margin-top:clamp(34px,6vw,56px);text-align:center;font-size:.88rem;color:var(--ink-soft);border-top:1px solid var(--line-soft);padding-top:24px}
+    .foot .mark{font-family:var(--font-display);letter-spacing:.06em;color:var(--ink);font-size:1rem;margin-bottom:6px}
+
+    @media (max-width:520px){
+      body{background-size:44px 44px}
+      .steps li{padding-left:54px}
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+
+    <!-- B1 · Selo de confirmação -->
+    <section class="seal" aria-labelledby="confirm">
+      <div class="check" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>
+      </div>
+      <p class="kicker">Inscrição confirmada</p>
+      <h1 id="confirm">Você está no Eixo.</h1>
+      <p class="turma"><strong>Turma meio de semana</strong><br>Quarta a sexta, das 9h às 11h.</p>
+    </section>
+
+    <!-- B2 · Próximo passo único -->
+    <section class="next">
+      <p class="lead">Falta um passo: entrar no grupo da sua turma.</p>
+      <a class="cta" href="https://chat.whatsapp.com/LyRJ3tBxCioE1TnUicmWoq" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm5.8 14.13c-.24.68-1.42 1.32-1.95 1.36-.5.05-.97.24-3.27-.68-2.76-1.09-4.5-3.94-4.64-4.12-.14-.18-1.11-1.48-1.11-2.82 0-1.34.7-2 .95-2.28.24-.27.53-.34.71-.34.18 0 .35 0 .5.01.16.01.38-.06.59.45.24.58.79 1.99.86 2.13.07.14.11.31.02.5-.09.18-.14.29-.27.45-.14.16-.29.36-.41.48-.14.14-.28.29-.12.56.16.27.71 1.17 1.53 1.9 1.05.94 1.94 1.23 2.21 1.37.27.14.43.12.59-.07.16-.18.68-.79.86-1.07.18-.27.36-.22.61-.13.24.09 1.55.73 1.82.86.27.14.45.2.51.31.07.11.07.64-.17 1.32Z"/></svg>
+        Entrar no grupo da minha turma
+      </a>
+      <p class="micro">É um grupo silencioso, só para avisos. Perto do workshop você recebe ali o link da sala e os lembretes da véspera e do dia. Entre agora para não ficar de fora.</p>
+    </section>
+
+    <!-- B3 · O que acontece agora -->
+    <section class="steps">
+      <h2>Como funciona a partir daqui</h2>
+      <ol>
+        <li>Entre no grupo da sua turma pelo botão acima. É um canal só de avisos, sem conversa no dia a dia.</li>
+        <li>Perto do workshop, você recebe ali o link da sala, a agenda dos três dias e os lembretes da véspera e do dia.</li>
+        <li>Se você incluiu o Curso de Eneagrama, o acesso já está no seu e-mail. Comece por ele para chegar ao Dia 1 já sabendo como você funciona.</li>
+      </ol>
+    </section>
+
+    <!-- B4 · Resgate do bump (discreto) -->
+    <section class="bump">
+      <p>Ainda dá tempo de chegar sabendo como você funciona. O <strong>Curso de Eneagrama</strong> da Débora prepara você para o Dia 1: identifique sua personalidade e seu subtipo antes do workshop. De R$ 297 por R$ 57.</p>
+      <a href="https://checkout.pagtrust.com.br/ck5663bdc8?funnel=fna115c4e3" target="_blank" rel="noopener">Adicionar o Curso de Eneagrama</a>
+    </section>
+
+    <!-- B5 · Rodapé -->
+    <footer class="foot">
+      <div class="mark">EIXO</div>
+      <p>Dúvidas? Responda o e-mail de confirmação que você recebeu.</p>
+    </footer>
+
+  </main>
+</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex,nofollow" />
+<title>Painel do Funil · Seu Eixo</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.0/dist/chart.umd.js"></script>
+<style>
+  :root{
+    --bg:#0f1417; --card:#161d21; --line:#263037; --ink:#eef2f3; --soft:#9fb0b6;
+    --gold:#b89b72; --green:#3e5a4b; --live:#7bb98f; --barro:#c07a5f;
+    --font:'Inter',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);font-size:15px}
+  .wrap{max-width:1200px;margin:0 auto;padding:24px}
+  header{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-bottom:20px}
+  h1{font-size:1.35rem;margin:0;font-weight:600}
+  .updated{color:var(--soft);font-size:.8rem}
+  .btn{background:var(--card);border:1px solid var(--line);color:var(--ink);padding:8px 14px;border-radius:8px;cursor:pointer;font-family:inherit;font-size:.85rem}
+  .btn:hover{border-color:var(--gold)}
+  .grid{display:grid;gap:16px}
+  .kpis{grid-template-columns:repeat(auto-fit,minmax(160px,1fr))}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px}
+  .kpi .label{color:var(--soft);font-size:.78rem;text-transform:uppercase;letter-spacing:.04em}
+  .kpi .value{font-size:1.9rem;font-weight:600;margin-top:6px;font-variant-numeric:tabular-nums}
+  .kpi .sub{color:var(--soft);font-size:.8rem;margin-top:4px}
+  .cols{grid-template-columns:1fr 1fr;margin-top:16px}
+  @media(max-width:820px){.cols{grid-template-columns:1fr}}
+  h2{font-size:.95rem;font-weight:600;margin:0 0 12px;color:var(--ink)}
+  .funnel-row{display:flex;align-items:center;gap:12px;margin:10px 0}
+  .funnel-bar{height:34px;border-radius:7px;background:linear-gradient(90deg,var(--green),var(--live));display:flex;align-items:center;padding:0 12px;color:#fff;font-weight:600;font-size:.85rem;min-width:60px}
+  .funnel-lbl{width:130px;color:var(--soft);font-size:.85rem}
+  table{width:100%;border-collapse:collapse;font-size:.85rem}
+  th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line)}
+  th{color:var(--soft);font-weight:500;font-size:.78rem;text-transform:uppercase}
+  td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
+  .chip{display:inline-block;padding:2px 8px;border-radius:20px;font-size:.75rem;background:rgba(184,155,114,.15);color:var(--gold)}
+  .gate{max-width:340px;margin:16vh auto;text-align:center}
+  .gate input{width:100%;padding:12px;margin:12px 0;background:var(--card);border:1px solid var(--line);border-radius:8px;color:var(--ink);font-size:1rem}
+  .err{color:var(--barro);font-size:.85rem;margin-top:8px;min-height:1.2em}
+  canvas{max-height:260px}
+  .muted{color:var(--soft)}
+  .scrollbox{max-height:320px;overflow:auto}
+</style>
+</head>
+<body>
+
+<div id="gate" class="gate">
+  <h1>Painel do Funil</h1>
+  <p class="muted">Acesso restrito</p>
+  <input id="pw" type="password" placeholder="Senha" />
+  <button class="btn" onclick="unlock()">Entrar</button>
+  <div class="err" id="gateErr"></div>
+</div>
+
+<div id="app" class="wrap" style="display:none">
+  <header>
+    <div>
+      <h1>Painel do Funil · Seu Eixo</h1>
+      <div class="updated" id="updated">—</div>
+    </div>
+    <div>
+      <label class="muted" style="font-size:.8rem">Auto</label>
+      <button class="btn" onclick="load()">↻ Atualizar</button>
+    </div>
+  </header>
+
+  <div class="grid kpis" id="kpis"></div>
+
+  <div class="grid cols">
+    <div class="card">
+      <h2>Funil</h2>
+      <div id="funnel"></div>
+    </div>
+    <div class="card">
+      <h2>Receita por produto</h2>
+      <canvas id="chTurma"></canvas>
+    </div>
+  </div>
+
+  <div class="grid cols">
+    <div class="card">
+      <h2>Origem do tráfego (UTM) → conversão</h2>
+      <div class="scrollbox"><table id="tblUtm"><thead><tr>
+        <th>Origem</th><th class="num">Leads</th><th class="num">Vendas</th><th class="num">Conv.</th><th class="num">Receita</th>
+      </tr></thead><tbody></tbody></table></div>
+    </div>
+    <div class="card">
+      <h2>Ciclo de vida do aluno</h2>
+      <canvas id="chLote"></canvas>
+    </div>
+  </div>
+
+  <div class="card" style="margin-top:16px">
+    <h2>Recuperação — leads sem compra <span class="chip" id="abCount">0</span></h2>
+    <div class="scrollbox"><table id="tblAband"><thead><tr>
+      <th>Nome</th><th>E-mail</th><th>Telefone</th><th>Turma</th><th>Quando</th>
+    </tr></thead><tbody></tbody></table></div>
+  </div>
+</div>
+
+<script>
+// ⬇️ COLE AQUI a URL /exec do Apps Script (mesma dos leads)
+var ENDPOINT = 'https://script.google.com/macros/s/AKfycbykXCnjSUFUNSUwAEJxS1XIwKxFg-kvFTISRMua8TsMsgre0GWZbcmLtxlVtA6oqx-hJg/exec';
+// senha simples do painel (troque)
+var SENHA = 'eixo2026';
+
+var chTurma, chLote;
+function unlock(){
+  var v = document.getElementById('pw').value;
+  if(v === SENHA){ sessionStorage.setItem('ok','1'); showApp(); }
+  else document.getElementById('gateErr').textContent = 'Senha incorreta.';
+}
+function showApp(){ document.getElementById('gate').style.display='none'; document.getElementById('app').style.display='block'; load(); setInterval(load, 60000); }
+if(sessionStorage.getItem('ok')==='1'){ showApp(); }
+
+function brl(n){ return (n||0).toLocaleString('pt-BR',{style:'currency',currency:'BRL'}); }
+function pct(n){ return ((n||0)*100).toFixed(1)+'%'; }
+
+function load(){
+  fetch(ENDPOINT + '?report=funnel', { cache:'no-store' })
+    .then(function(r){ return r.json(); })
+    .then(render)
+    .catch(function(e){ document.getElementById('updated').textContent = 'Erro ao carregar: '+e; });
+}
+
+function render(d){
+  document.getElementById('updated').textContent = 'Atualizado: ' + new Date(d.updated).toLocaleString('pt-BR');
+  var f = d.funil||{};
+  var cv = d.cicloVida||{};
+  // KPIs
+  var kpis = [
+    { label:'Leads', value:f.leads||0 },
+    { label:'Vendas', value:f.vendas||0 },
+    { label:'Conversão', value:pct(f.conv) },
+    { label:'Receita', value:brl(d.receita) },
+    { label:'Ticket médio', value:brl(d.ticket) },
+    { label:'Reembolsos/CB', value:d.refunds||0 }
+  ];
+  document.getElementById('kpis').innerHTML = kpis.map(function(k){
+    return '<div class="card kpi"><div class="label">'+k.label+'</div><div class="value">'+k.value+'</div></div>';
+  }).join('');
+
+  // Funil (lead → pix gerado → venda aprovada)
+  var maxN = Math.max(f.leads||1, 1);
+  var steps = [
+    { lbl:'Leads', n:f.leads||0 },
+    { lbl:'Pix gerado', n:f.pix||0 },
+    { lbl:'Vendas', n:f.vendas||0 }
+  ];
+  document.getElementById('funnel').innerHTML = steps.map(function(s){
+    var w = Math.max((s.n/maxN)*100, 6);
+    return '<div class="funnel-row"><div class="funnel-lbl">'+s.lbl+'</div>'+
+           '<div class="funnel-bar" style="width:'+w+'%">'+s.n+'</div></div>';
+  }).join('');
+
+  // Receita por produto (chart)
+  var prods = Object.keys(d.porProduto||{});
+  var vProd = prods.map(function(p){ return d.porProduto[p].receita; });
+  chTurma = mkBar(chTurma, 'chTurma', prods, vProd, '#7bb98f');
+
+  // Ciclo de vida (chart)
+  var cvLabels = ['Assinat. criadas','Renovadas','Canceladas','Acesso encerrado'];
+  var cvData = [cv.subCreated||0, cv.subRenewed||0, cv.subCancel||0, cv.accessEnded||0];
+  chLote = mkBar(chLote, 'chLote', cvLabels, cvData, '#b89b72');
+
+  // UTM table
+  var utmBody = Object.keys(d.porUtm||{}).sort(function(a,b){return (d.porUtm[b].receita||0)-(d.porUtm[a].receita||0);})
+    .map(function(k){ var u=d.porUtm[k]; var c=u.lead?(u.venda/u.lead):0;
+      return '<tr><td>'+k+'</td><td class="num">'+u.lead+'</td><td class="num">'+u.venda+'</td><td class="num">'+pct(c)+'</td><td class="num">'+brl(u.receita)+'</td></tr>';
+    }).join('');
+  document.querySelector('#tblUtm tbody').innerHTML = utmBody || '<tr><td colspan="5" class="muted">Sem dados ainda.</td></tr>';
+
+  // Abandono
+  var ab = d.abandono||[];
+  document.getElementById('abCount').textContent = ab.length;
+  document.querySelector('#tblAband tbody').innerHTML = ab.length ? ab.map(function(a){
+    return '<tr><td>'+(a.nome||'')+'</td><td>'+(a.email||'')+'</td><td>'+(a.telefone||'')+'</td><td>'+nomeTurma(a.turma)+'</td><td class="muted">'+fmtTs(a.ts)+'</td></tr>';
+  }).join('') : '<tr><td colspan="5" class="muted">Ninguém pendente. 🎉</td></tr>';
+}
+
+function nomeTurma(t){ return t==='fds'?'Fim de semana':(t==='semana'?'Meio de semana':(t||'?')); }
+function fmtTs(ts){ try{ return new Date(ts).toLocaleString('pt-BR'); }catch(e){ return ts||''; } }
+function mkBar(inst, id, labels, data, color){
+  if(inst) inst.destroy();
+  return new Chart(document.getElementById(id), {
+    type:'bar',
+    data:{ labels:labels, datasets:[{ data:data, backgroundColor:color, borderRadius:6 }] },
+    options:{ responsive:true, maintainAspectRatio:false,
+      plugins:{ legend:{display:false} },
+      scales:{ x:{ ticks:{color:'#9fb0b6'}, grid:{display:false} },
+               y:{ ticks:{color:'#9fb0b6',precision:0}, grid:{color:'#263037'} } } }
+  });
+}
+</script>
+</body>
+</html>

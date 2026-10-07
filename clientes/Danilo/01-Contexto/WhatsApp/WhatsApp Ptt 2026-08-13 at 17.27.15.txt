@@ -1,0 +1,17 @@
+(Transcrito por TurboScribe. Atualize para Ilimitado para remover esta mensagem.)
+
+Hoje o projeto está em andamento e ele está sendo projetado para uso em aluguel de prova. Isso tem umas mudanças, como alguns travamentos a mais. É pouca coisa, a placa em si acredito que vai terminar sendo a mesma.
+
+Mas, de qualquer forma, eu preciso organizar esse primeiro lote para aluguel. Eu estou com umas prioridades aí para poder atender o pessoal de velocidade. E aí a gente consegue pensar no lote para venda.
+
+E aí eu queria, na verdade, fazer uma venda de 100 unidades fixas. Os 200 GPS que eu estou comprando a mais é porque está em falta no mercado. Então eu quero garantir que eu tenha um, porque se chegar amanhã um rali dos sertões, eu não tenho um GPS para fabricar o meu equipamento.
+
+Então eu estou fazendo esse investimento para ter o módulo do GPS pronto. Mas isso envolve todo o restante da montagem, PCB, compra de todos os outros componentes, fabricação de caixa, etc. Então eu queria tentar fazer uma venda de 100 peças para janeiro.
+
+E eu te falo que tem um potencial de que a gente consiga vender tudo ainda em dezembro. Porque em janeiro tem o Serapiol, que são 180 competidores. Tem competidores que compra dois.
+
+Então se pensar que todo mundo do Serapiol vai ter interesse, só aí já são 180 unidades, pelo menos. Mas muitos não vão querer, isso é fato. Enfim, o bom desse log é que ele pode funcionar para navegação, quanto para apuração da prova com maior precisão.
+
+Mas o pessoal não tem isso muito claro ainda. Então é algo também que a gente precisa reforçar na comunicação.
+
+(Transcrito por TurboScribe. Atualize para Ilimitado para remover esta mensagem.)

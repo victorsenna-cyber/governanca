@@ -1,0 +1,2438 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cartomancia Sistêmica — Curso Completo de Gravação</title>
+<meta name="description" content="Um método para enxergar padrões, conduzir leituras com consciência e romper o teto da sua prática. Acesso imediato ao curso gravado.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+/* ============================================================
+   DESIGN TOKENS
+   ============================================================ */
+:root {
+  --bg-deep:        #070C09;
+  --bg-base:        #0C1410;
+  --bg-card:        #111A14;
+  --bg-card-hover:  #162019;
+  --bg-elevated:    #1A2820;
+
+  --gold-primary:   #C9A961;
+  --gold-light:     #E2C47A;
+  --gold-dim:       #8A6A2E;
+  --gold-ghost:     rgba(201,169,97,0.12);
+  --gold-line:      rgba(201,169,97,0.22);
+  --gold-line-soft: rgba(201,169,97,0.10);
+
+  --text-primary:   #F2EBDA;
+  --text-secondary: #B9AE94;
+  --text-muted:     #7A7468;
+  --text-inverse:   #0C1410;
+
+  --radius-sm:  6px;
+  --radius-md:  12px;
+  --radius-lg:  20px;
+  --radius-xl:  32px;
+
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-body:    'Manrope', system-ui, sans-serif;
+
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out:   cubic-bezier(0.4, 0, 0.2, 1);
+
+  --section-pad: clamp(72px, 10vw, 130px);
+  --container:   1160px;
+  --gap:         clamp(16px, 3vw, 32px);
+}
+
+/* ============================================================
+   RESET & BASE
+   ============================================================ */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; font-size: 16px; }
+body {
+  background: var(--bg-deep);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  font-weight: 400;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+img { display: block; max-width: 100%; }
+a { color: inherit; text-decoration: none; }
+ul { list-style: none; }
+button { cursor: pointer; font-family: inherit; border: none; background: none; }
+
+/* ============================================================
+   GRAIN OVERLAY
+   ============================================================ */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='1'/%3E%3C/svg%3E");
+  opacity: 0.028;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+/* ============================================================
+   UTILITY
+   ============================================================ */
+.container {
+  width: 100%;
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 clamp(20px, 5vw, 60px);
+}
+
+.section { padding: var(--section-pad) 0; }
+
+.eyebrow {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold-primary);
+  margin-bottom: 20px;
+}
+
+.divider {
+  width: 48px;
+  height: 1px;
+  background: var(--gold-primary);
+  margin: 0 auto;
+  opacity: 0.5;
+}
+
+.divider-left {
+  margin: 0;
+}
+
+/* ornament symbol */
+.ornament {
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  color: var(--gold-dim);
+  opacity: 0.6;
+  margin: 48px auto;
+  letter-spacing: 12px;
+}
+
+/* hairline border */
+.hairline { border: 1px solid var(--gold-line); }
+.hairline-soft { border: 1px solid var(--gold-line-soft); }
+
+/* ============================================================
+   ANIMATIONS
+   ============================================================ */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(28px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes pulseGold {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(201,169,97,0); }
+  50%       { box-shadow: 0 0 28px 6px rgba(201,169,97,0.18); }
+}
+@keyframes shimmer {
+  from { background-position: -200% center; }
+  to   { background-position: 200% center; }
+}
+@keyframes rotateSlow {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+.animate-up {
+  animation: fadeUp 0.9s var(--ease-out-expo) both;
+}
+.delay-1 { animation-delay: 0.1s; }
+.delay-2 { animation-delay: 0.22s; }
+.delay-3 { animation-delay: 0.36s; }
+.delay-4 { animation-delay: 0.52s; }
+.delay-5 { animation-delay: 0.68s; }
+
+/* Scroll reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.85s var(--ease-out-expo), transform 0.85s var(--ease-out-expo);
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.32s; }
+.reveal-delay-4 { transition-delay: 0.44s; }
+
+/* ============================================================
+   TYPOGRAPHY
+   ============================================================ */
+.display-xl {
+  font-family: var(--font-display);
+  font-size: clamp(44px, 7vw, 88px);
+  font-weight: 600;
+  line-height: 1.04;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+}
+.display-xl em {
+  font-style: italic;
+  color: var(--gold-primary);
+}
+
+.display-lg {
+  font-family: var(--font-display);
+  font-size: clamp(34px, 5vw, 62px);
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+.display-lg em {
+  font-style: italic;
+  color: var(--gold-primary);
+}
+
+.display-md {
+  font-family: var(--font-display);
+  font-size: clamp(26px, 3.5vw, 44px);
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+.display-md em {
+  font-style: italic;
+  color: var(--gold-primary);
+}
+
+.display-sm {
+  font-family: var(--font-display);
+  font-size: clamp(20px, 2.5vw, 30px);
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.body-lg {
+  font-size: clamp(16px, 1.8vw, 19px);
+  line-height: 1.68;
+  color: var(--text-secondary);
+  font-weight: 300;
+}
+
+.body-md {
+  font-size: clamp(14px, 1.5vw, 16px);
+  line-height: 1.7;
+  color: var(--text-secondary);
+}
+
+/* ============================================================
+   BUTTONS
+   ============================================================ */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 18px 40px;
+  background: var(--gold-primary);
+  color: var(--text-inverse);
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  border-radius: var(--radius-sm);
+  transition: all 0.3s var(--ease-out-expo);
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+}
+.btn-primary::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.15) 50%, transparent 100%);
+  background-size: 200% 100%;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.btn-primary:hover {
+  background: var(--gold-light);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 40px rgba(201,169,97,0.35);
+}
+.btn-primary:hover::before {
+  opacity: 1;
+  animation: shimmer 1.2s ease infinite;
+}
+.btn-primary:active { transform: translateY(0); }
+
+.btn-primary-lg {
+  padding: 22px 52px;
+  font-size: 16px;
+  border-radius: var(--radius-sm);
+}
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 16px 36px;
+  background: transparent;
+  color: var(--gold-primary);
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  border: 1px solid var(--gold-line);
+  border-radius: var(--radius-sm);
+  transition: all 0.3s var(--ease-out-expo);
+  text-decoration: none;
+}
+.btn-outline:hover {
+  background: var(--gold-ghost);
+  border-color: var(--gold-primary);
+  transform: translateY(-1px);
+}
+
+.btn-text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--text-muted);
+  font-size: 14px;
+  font-weight: 400;
+  transition: color 0.2s;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+.btn-text-link:hover {
+  color: var(--gold-primary);
+  border-bottom-color: rgba(201,169,97,0.4);
+}
+
+/* ============================================================
+   STICKY CTA MOBILE
+   ============================================================ */
+.sticky-cta {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: linear-gradient(to top, var(--bg-deep) 70%, transparent);
+  padding: 16px 20px 24px;
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  transform: translateY(100%);
+  transition: transform 0.5s var(--ease-out-expo);
+}
+.sticky-cta.show { transform: translateY(0); }
+.sticky-cta-primary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 16px 24px;
+  background: var(--gold-primary);
+  color: var(--text-inverse);
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  animation: pulseGold 3s ease-in-out infinite;
+}
+.sticky-cta-secondary {
+  text-align: center;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+.sticky-cta-secondary a {
+  color: var(--gold-dim);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+@media (max-width: 767px) { .sticky-cta { display: flex; } }
+
+/* ============================================================
+   NAV BAR (minimal)
+   ============================================================ */
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 900;
+  padding: 18px clamp(20px,5vw,60px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background 0.4s, backdrop-filter 0.4s;
+}
+.nav.scrolled {
+  background: rgba(7,12,9,0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--gold-line-soft);
+}
+.nav-logo {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--text-primary);
+}
+.nav-logo span { color: var(--gold-primary); }
+.nav-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 22px;
+  background: var(--gold-ghost);
+  border: 1px solid var(--gold-line);
+  border-radius: var(--radius-sm);
+  color: var(--gold-primary);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+.nav-cta:hover { background: var(--gold-primary); color: var(--text-inverse); }
+@media (max-width: 600px) { .nav-cta { display: none; } }
+
+/* ============================================================
+   HERO
+   ============================================================ */
+.hero {
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  padding: 120px 0 80px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* background subtle radial */
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -20%;
+  right: -10%;
+  width: 70vw;
+  height: 70vw;
+  background: radial-gradient(ellipse at center, rgba(201,169,97,0.055) 0%, transparent 65%);
+  pointer-events: none;
+}
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: -10%;
+  left: -5%;
+  width: 50vw;
+  height: 50vw;
+  background: radial-gradient(ellipse at center, rgba(12,40,20,0.6) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.hero-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(40px, 6vw, 80px);
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-content {}
+
+.hero-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+.hero-eyebrow-line {
+  width: 32px;
+  height: 1px;
+  background: var(--gold-primary);
+  opacity: 0.6;
+}
+.hero-eyebrow-text {
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold-primary);
+}
+
+.hero-title {
+  margin-bottom: 28px;
+}
+
+.hero-subtitle {
+  margin-bottom: 40px;
+  max-width: 480px;
+}
+
+.hero-bullets {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 44px;
+}
+.hero-bullet {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 15px;
+  color: var(--text-secondary);
+  font-weight: 300;
+}
+.hero-bullet-icon {
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  margin-top: 2px;
+  color: var(--gold-primary);
+}
+
+.hero-cta-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+.hero-microcopy {
+  font-size: 12px;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.hero-microcopy::before {
+  content: '';
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--gold-dim);
+}
+
+/* VSL block */
+.hero-vsl {
+  position: relative;
+}
+.vsl-wrapper {
+  position: relative;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--gold-line);
+  box-shadow:
+    0 0 0 1px rgba(201,169,97,0.06),
+    0 32px 80px rgba(0,0,0,0.7),
+    0 0 60px rgba(201,169,97,0.06);
+}
+.vsl-ratio {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  background: var(--bg-deep);
+}
+.vsl-ratio iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+.vsl-badge {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--bg-card);
+  border: 1px solid var(--gold-line);
+  border-radius: 40px;
+  padding: 6px 18px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold-primary);
+  white-space: nowrap;
+}
+.vsl-caption {
+  text-align: center;
+  margin-top: 16px;
+  font-size: 13px;
+  color: var(--text-muted);
+  font-style: italic;
+  font-family: var(--font-display);
+}
+
+/* ============================================================
+   PROOF BAR
+   ============================================================ */
+.proof-bar {
+  border-top: 1px solid var(--gold-line-soft);
+  border-bottom: 1px solid var(--gold-line-soft);
+  background: var(--bg-card);
+  padding: 28px 0;
+}
+.proof-bar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(24px, 5vw, 72px);
+  flex-wrap: wrap;
+}
+.proof-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  text-align: center;
+}
+.proof-item-number {
+  font-family: var(--font-display);
+  font-size: clamp(26px, 3vw, 38px);
+  font-weight: 600;
+  color: var(--gold-primary);
+  line-height: 1;
+}
+.proof-item-label {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+.proof-separator {
+  width: 1px;
+  height: 36px;
+  background: var(--gold-line-soft);
+  flex-shrink: 0;
+}
+
+/* ============================================================
+   DIAGNOSIS
+   ============================================================ */
+.diagnosis {
+  background: var(--bg-base);
+  position: relative;
+  overflow: hidden;
+}
+.diagnosis::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent, var(--gold-line-soft), transparent);
+}
+.diagnosis-inner {
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
+}
+.diagnosis-text {
+  font-family: var(--font-display);
+  font-size: clamp(20px, 2.8vw, 28px);
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.55;
+  color: var(--text-secondary);
+  margin: 32px 0;
+}
+.diagnosis-text strong {
+  color: var(--text-primary);
+  font-style: normal;
+  font-weight: 600;
+}
+.diagnosis-hook {
+  font-family: var(--font-display);
+  font-size: clamp(16px, 2vw, 21px);
+  font-style: italic;
+  color: var(--gold-dim);
+  letter-spacing: 0.02em;
+}
+
+/* ============================================================
+   CONCEPT (3 layers)
+   ============================================================ */
+.concept { background: var(--bg-deep); }
+.concept-header {
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto 72px;
+}
+.concept-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+  border: 1px solid var(--gold-line-soft);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+.concept-card {
+  background: var(--bg-card);
+  padding: clamp(32px, 4vw, 52px) clamp(24px, 3vw, 40px);
+  position: relative;
+  transition: background 0.3s;
+}
+.concept-card:hover { background: var(--bg-card-hover); }
+.concept-card + .concept-card {
+  border-left: 1px solid var(--gold-line-soft);
+}
+.concept-num {
+  font-family: var(--font-display);
+  font-size: 64px;
+  font-weight: 300;
+  color: var(--gold-primary);
+  opacity: 0.15;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+.concept-icon {
+  width: 36px;
+  height: 36px;
+  margin-bottom: 20px;
+  color: var(--gold-primary);
+  opacity: 0.8;
+}
+.concept-title {
+  font-family: var(--font-display);
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+}
+.concept-text {
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  font-weight: 300;
+}
+
+/* ============================================================
+   QUALIFY (para quem é / não é)
+   ============================================================ */
+.qualify { background: var(--bg-base); }
+.qualify-header {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 72px;
+}
+.qualify-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(16px, 3vw, 32px);
+}
+.qualify-card {
+  padding: clamp(28px, 4vw, 48px);
+  border-radius: var(--radius-md);
+}
+.qualify-card-yes {
+  background: var(--bg-card);
+  border: 1px solid var(--gold-line);
+}
+.qualify-card-no {
+  background: var(--bg-deep);
+  border: 1px solid var(--gold-line-soft);
+}
+.qualify-card-title {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 28px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.qualify-list { display: flex; flex-direction: column; gap: 16px; }
+.qualify-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--text-secondary);
+  font-weight: 300;
+}
+.qualify-item-yes-icon { color: var(--gold-primary); flex-shrink: 0; margin-top: 2px; }
+.qualify-item-no-icon  { color: var(--text-muted);   flex-shrink: 0; margin-top: 2px; opacity: 0.5; }
+
+/* ============================================================
+   PILLARS
+   ============================================================ */
+.pillars { background: var(--bg-deep); }
+.pillars-header {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 72px;
+}
+.pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(12px, 2vw, 24px);
+}
+.pillar-card {
+  background: var(--bg-card);
+  border: 1px solid var(--gold-line-soft);
+  border-radius: var(--radius-md);
+  padding: clamp(28px, 3vw, 44px) clamp(20px, 2.5vw, 36px);
+  transition: border-color 0.3s, transform 0.3s var(--ease-out-expo);
+  position: relative;
+  overflow: hidden;
+}
+.pillar-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, var(--gold-ghost) 0%, transparent 60%);
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+.pillar-card:hover {
+  border-color: var(--gold-line);
+  transform: translateY(-4px);
+}
+.pillar-card:hover::before { opacity: 1; }
+.pillar-number {
+  font-family: var(--font-display);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: var(--gold-dim);
+  margin-bottom: 16px;
+}
+.pillar-title {
+  font-family: var(--font-display);
+  font-size: clamp(18px, 2vw, 22px);
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+  line-height: 1.3;
+}
+.pillar-text {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  font-weight: 300;
+}
+
+/* ============================================================
+   CURRICULUM
+   ============================================================ */
+.curriculum { background: var(--bg-base); }
+.curriculum-header {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 64px;
+}
+.accordion { max-width: 840px; margin: 0 auto; }
+.accordion-item {
+  border-bottom: 1px solid var(--gold-line-soft);
+}
+.accordion-item:first-child { border-top: 1px solid var(--gold-line-soft); }
+.accordion-trigger {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 24px 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  transition: color 0.2s;
+}
+.accordion-trigger:hover .accordion-title { color: var(--gold-primary); }
+.accordion-num {
+  font-family: var(--font-display);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: var(--gold-dim);
+  flex-shrink: 0;
+  width: 32px;
+}
+.accordion-title-wrap {
+  flex: 1;
+}
+.accordion-title {
+  font-family: var(--font-display);
+  font-size: clamp(17px, 2vw, 21px);
+  font-weight: 600;
+  color: var(--text-primary);
+  transition: color 0.2s;
+  line-height: 1.3;
+}
+.accordion-subtitle {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+.accordion-icon {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  color: var(--gold-dim);
+  transition: transform 0.35s var(--ease-out-expo), color 0.2s;
+}
+.accordion-item.open .accordion-icon {
+  transform: rotate(45deg);
+  color: var(--gold-primary);
+}
+.accordion-body {
+  display: none;
+  padding: 0 0 28px 48px;
+}
+.accordion-item.open .accordion-body { display: block; }
+.accordion-topics {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.accordion-topic {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  font-weight: 300;
+}
+.accordion-topic::before {
+  content: '';
+  flex-shrink: 0;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--gold-dim);
+  margin-top: 8px;
+}
+.curriculum-cta {
+  text-align: center;
+  margin-top: 56px;
+}
+
+/* ============================================================
+   TESTIMONIALS
+   ============================================================ */
+.testimonials { background: var(--bg-deep); }
+.testimonials-header {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 64px;
+}
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(12px, 2vw, 24px);
+}
+.testimonial-card {
+  background: var(--bg-card);
+  border: 1px solid var(--gold-line-soft);
+  border-radius: var(--radius-md);
+  padding: clamp(24px, 3vw, 36px);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transition: border-color 0.3s, transform 0.3s var(--ease-out-expo);
+}
+.testimonial-card:hover {
+  border-color: var(--gold-line);
+  transform: translateY(-3px);
+}
+.testimonial-stars {
+  display: flex;
+  gap: 3px;
+  color: var(--gold-primary);
+  font-size: 14px;
+}
+.testimonial-text {
+  font-family: var(--font-display);
+  font-size: clamp(15px, 1.8vw, 18px);
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  flex: 1;
+}
+.testimonial-text strong { color: var(--text-primary); font-style: normal; }
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.testimonial-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--bg-elevated);
+  border: 1px solid var(--gold-line-soft);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--gold-primary);
+  flex-shrink: 0;
+}
+.testimonial-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+.testimonial-role {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+.testimonial-card-featured {
+  border-color: var(--gold-line);
+  background: var(--bg-card-hover);
+  grid-column: span 1;
+}
+
+/* ============================================================
+   ABOUT
+   ============================================================ */
+.about { background: var(--bg-base); }
+.about-inner {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: clamp(40px, 6vw, 80px);
+  align-items: start;
+}
+.about-image-wrap {
+  position: relative;
+}
+.about-image-frame {
+  border: 1px solid var(--gold-line);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  aspect-ratio: 3/4;
+  background: var(--bg-card);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-image-placeholder {
+  font-family: var(--font-display);
+  font-size: 14px;
+  color: var(--text-muted);
+  text-align: center;
+  padding: 24px;
+  font-style: italic;
+}
+.about-accent {
+  position: absolute;
+  bottom: -16px;
+  right: -16px;
+  width: 80px;
+  height: 80px;
+  border: 1px solid var(--gold-line);
+  border-radius: var(--radius-sm);
+  background: var(--bg-card);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2px;
+}
+.about-accent-num {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--gold-primary);
+  line-height: 1;
+}
+.about-accent-label { font-size: 10px; color: var(--text-muted); letter-spacing: 0.08em; }
+.about-content {}
+.about-bio {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 28px 0 40px;
+}
+.about-bio p { font-size: 16px; line-height: 1.75; color: var(--text-secondary); font-weight: 300; }
+.about-bio strong { color: var(--text-primary); font-weight: 500; }
+
+/* ============================================================
+   OFFER / PRICING
+   ============================================================ */
+.offer { background: var(--bg-deep); position: relative; overflow: hidden; }
+.offer::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80vw;
+  height: 80vw;
+  background: radial-gradient(ellipse at center, rgba(201,169,97,0.04) 0%, transparent 60%);
+  pointer-events: none;
+}
+.offer-header {
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto 64px;
+  position: relative;
+}
+.offer-card {
+  max-width: 720px;
+  margin: 0 auto;
+  background: var(--bg-card);
+  border: 1px solid var(--gold-line);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 40px 120px rgba(0,0,0,0.5), 0 0 60px rgba(201,169,97,0.06);
+}
+.offer-card-top {
+  background: linear-gradient(135deg, var(--bg-elevated) 0%, var(--bg-card) 100%);
+  border-bottom: 1px solid var(--gold-line-soft);
+  padding: clamp(28px,4vw,48px) clamp(28px,4vw,52px);
+  text-align: center;
+}
+.offer-badge {
+  display: inline-block;
+  background: var(--gold-ghost);
+  border: 1px solid var(--gold-line);
+  border-radius: 40px;
+  padding: 6px 18px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold-primary);
+  margin-bottom: 20px;
+}
+.offer-product-name {
+  font-family: var(--font-display);
+  font-size: clamp(28px, 4vw, 44px);
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+  line-height: 1.2;
+}
+.offer-tagline {
+  font-size: 16px;
+  color: var(--text-secondary);
+  font-weight: 300;
+  max-width: 440px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+.offer-card-body {
+  padding: clamp(28px,4vw,48px) clamp(28px,4vw,52px);
+}
+.offer-includes {
+  margin-bottom: 36px;
+}
+.offer-includes-title {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+}
+.offer-include-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.offer-include-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--text-secondary);
+  font-weight: 300;
+}
+.offer-include-icon {
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  margin-top: 2px;
+  color: var(--gold-primary);
+}
+.offer-divider {
+  height: 1px;
+  background: var(--gold-line-soft);
+  margin: 32px 0;
+}
+.offer-price-block {
+  text-align: center;
+  margin-bottom: 28px;
+}
+.offer-price-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+}
+.offer-price-installment {
+  font-family: var(--font-display);
+  font-size: clamp(40px, 5vw, 58px);
+  font-weight: 600;
+  color: var(--text-primary);
+  line-height: 1;
+  margin-bottom: 8px;
+}
+.offer-price-installment span {
+  font-size: 0.45em;
+  font-weight: 400;
+  color: var(--text-muted);
+  vertical-align: super;
+  margin-right: 4px;
+}
+.offer-price-cash {
+  font-size: 14px;
+  color: var(--text-muted);
+  font-weight: 300;
+}
+.offer-price-cash strong { color: var(--gold-dim); font-weight: 500; }
+.offer-cta-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+.offer-cta-wrap .btn-primary { width: 100%; justify-content: center; }
+.offer-security {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.offer-security-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+.offer-security-icon { width: 14px; height: 14px; color: var(--gold-dim); flex-shrink: 0; }
+.offer-guarantee {
+  margin-top: 24px;
+  background: var(--bg-deep);
+  border: 1px solid var(--gold-line-soft);
+  border-radius: var(--radius-sm);
+  padding: 20px 24px;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+.offer-guarantee-icon {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  color: var(--gold-primary);
+  margin-top: 2px;
+}
+.offer-guarantee-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+.offer-guarantee-text {
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+/* APPLICATION BLOCK */
+.application-block {
+  max-width: 720px;
+  margin: 48px auto 0;
+  background: var(--bg-card);
+  border: 1px solid var(--gold-line-soft);
+  border-radius: var(--radius-lg);
+  padding: clamp(28px,4vw,48px) clamp(28px,4vw,52px);
+  text-align: center;
+}
+.application-block-title {
+  font-family: var(--font-display);
+  font-size: clamp(22px, 3vw, 32px);
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 16px;
+}
+.application-block-text {
+  font-size: 15px;
+  color: var(--text-secondary);
+  font-weight: 300;
+  line-height: 1.7;
+  max-width: 520px;
+  margin: 0 auto 32px;
+}
+.application-steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(12px, 2vw, 24px);
+  margin-bottom: 36px;
+}
+.application-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.application-step-num {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid var(--gold-line);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--gold-primary);
+}
+.application-step-title { font-size: 13px; font-weight: 600; color: var(--text-primary); }
+.application-step-text { font-size: 12px; color: var(--text-muted); line-height: 1.5; }
+.application-block .btn-outline { width: 100%; }
+.application-block-note {
+  margin-top: 14px;
+  font-size: 12px;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+/* ============================================================
+   FAQ
+   ============================================================ */
+.faq { background: var(--bg-base); }
+.faq-header {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 64px;
+}
+.faq-list {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.faq-item { border-bottom: 1px solid var(--gold-line-soft); }
+.faq-item:first-child { border-top: 1px solid var(--gold-line-soft); }
+.faq-trigger {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 24px 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  transition: color 0.2s;
+}
+.faq-trigger:hover .faq-question { color: var(--gold-primary); }
+.faq-question {
+  font-family: var(--font-display);
+  font-size: clamp(16px, 1.8vw, 20px);
+  font-weight: 600;
+  color: var(--text-primary);
+  transition: color 0.2s;
+  line-height: 1.4;
+}
+.faq-icon {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  color: var(--gold-dim);
+  transition: transform 0.35s var(--ease-out-expo), color 0.2s;
+  margin-top: 3px;
+}
+.faq-item.open .faq-icon {
+  transform: rotate(45deg);
+  color: var(--gold-primary);
+}
+.faq-answer {
+  display: none;
+  padding: 0 32px 24px 0;
+  font-size: 15px;
+  line-height: 1.75;
+  color: var(--text-secondary);
+  font-weight: 300;
+}
+.faq-item.open .faq-answer { display: block; }
+
+/* ============================================================
+   CLOSING CTA
+   ============================================================ */
+.closing { background: var(--bg-deep); position: relative; overflow: hidden; }
+.closing::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--gold-primary), transparent);
+  opacity: 0.3;
+}
+.closing-inner {
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto;
+  position: relative;
+}
+.closing-ornament {
+  font-family: var(--font-display);
+  font-size: 48px;
+  color: var(--gold-dim);
+  opacity: 0.2;
+  margin-bottom: 24px;
+  line-height: 1;
+}
+.closing-cta-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-top: 44px;
+}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+.footer {
+  background: var(--bg-deep);
+  border-top: 1px solid var(--gold-line-soft);
+  padding: 40px 0;
+}
+.footer-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+.footer-logo {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+.footer-logo span { color: var(--gold-dim); }
+.footer-disclaimer {
+  font-size: 12px;
+  line-height: 1.7;
+  color: var(--text-muted);
+  max-width: 640px;
+  font-weight: 300;
+}
+.footer-copy {
+  font-size: 12px;
+  color: var(--text-muted);
+  opacity: 0.5;
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 1023px) {
+  .hero-inner { grid-template-columns: 1fr; gap: 52px; }
+  .hero-content { order: 1; }
+  .hero-vsl { order: 2; }
+  .hero-subtitle { max-width: 100%; }
+  .concept-grid { grid-template-columns: 1fr; }
+  .concept-card + .concept-card { border-left: none; border-top: 1px solid var(--gold-line-soft); }
+  .pillars-grid { grid-template-columns: repeat(2, 1fr); }
+  .testimonials-grid { grid-template-columns: 1fr; }
+  .about-inner { grid-template-columns: 1fr; }
+  .about-image-wrap { max-width: 340px; margin: 0 auto; }
+  .qualify-grid { grid-template-columns: 1fr; }
+  .application-steps { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 767px) {
+  .pillars-grid { grid-template-columns: 1fr; }
+  .proof-separator { display: none; }
+  .hero-cta-group { width: 100%; }
+  .btn-primary-lg { width: 100%; }
+  .offer-card-top, .offer-card-body { padding: 28px 24px; }
+  .application-block { padding: 28px 24px; }
+  .closing-cta-group .btn-primary-lg { width: 100%; }
+  .accordion-body { padding-left: 0; }
+  .accordion-num { display: none; }
+}
+
+@media (max-width: 480px) {
+  .hero-microcopy { flex-direction: column; align-items: flex-start; gap: 4px; }
+  .offer-security { flex-direction: column; align-items: center; gap: 10px; }
+}
+</style>
+</head>
+<body>
+
+<!-- ============================================================
+     NAV
+     ============================================================ -->
+<nav class="nav" id="nav">
+  <div class="nav-logo">Guilherme <span>Araújo</span></div>
+  <!-- CHECKOUT LINK: substitua # pelo link do checkout -->
+  <a href="#" class="nav-cta" id="navCta">Acessar o Curso →</a>
+</nav>
+
+<!-- ============================================================
+     STICKY CTA MOBILE
+     ============================================================ -->
+<div class="sticky-cta" id="stickyCta">
+  <!-- CHECKOUT LINK: substitua # pelo link do checkout -->
+  <a href="#" class="sticky-cta-primary" id="stickyCtaBtn">
+    Quero acessar o Curso — R$ 997
+  </a>
+  <p class="sticky-cta-secondary">
+    Acesso imediato · Pagamento seguro
+  </p>
+</div>
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<section class="hero" id="hero">
+  <div class="container">
+    <div class="hero-inner">
+
+      <!-- Content -->
+      <div class="hero-content">
+        <div class="hero-eyebrow animate-up">
+          <div class="hero-eyebrow-line"></div>
+          <span class="hero-eyebrow-text">Cartomancia Sistêmica</span>
+        </div>
+
+        <h1 class="display-xl hero-title animate-up delay-1">
+          Aprenda a ler<br>o que as cartas<br><em>não dizem em voz alta.</em>
+        </h1>
+
+        <p class="body-lg hero-subtitle animate-up delay-2">
+          Um método para enxergar padrões, conduzir leituras com consciência e romper o teto da sua prática — com estrutura, profundidade e responsabilidade.
+        </p>
+
+        <ul class="hero-bullets animate-up delay-3">
+          <li class="hero-bullet">
+            <svg class="hero-bullet-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M10 2l1.6 4.9H17l-4.2 3 1.6 4.9L10 12 5.6 14.8l1.6-4.9L3 7h5.4L10 2z"/>
+            </svg>
+            Leitura com camada sistêmica — além dos significados isolados
+          </li>
+          <li class="hero-bullet">
+            <svg class="hero-bullet-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M10 2l1.6 4.9H17l-4.2 3 1.6 4.9L10 12 5.6 14.8l1.6-4.9L3 7h5.4L10 2z"/>
+            </svg>
+            Formação estruturada — não fragmentada, não dispersa
+          </li>
+          <li class="hero-bullet">
+            <svg class="hero-bullet-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M10 2l1.6 4.9H17l-4.2 3 1.6 4.9L10 12 5.6 14.8l1.6-4.9L3 7h5.4L10 2z"/>
+            </svg>
+            Acesso imediato — estude no seu ritmo, com método real
+          </li>
+        </ul>
+
+        <div class="hero-cta-group animate-up delay-4">
+          <!-- CHECKOUT LINK: substitua # pelo link do checkout -->
+          <a href="#" class="btn-primary btn-primary-lg" id="heroCta">
+            Quero acessar o Curso Gravado
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+          </a>
+          <p class="hero-microcopy">Acesso imediato · R$ 997 · Pagamento seguro</p>
+        </div>
+      </div>
+
+      <!-- VSL -->
+      <div class="hero-vsl animate-up delay-3">
+        <div class="vsl-wrapper">
+          <div class="vsl-badge">Assista antes de decidir</div>
+          <div class="vsl-ratio">
+            <iframe
+              src="https://www.youtube.com/embed/eKRW1JwOLL8?rel=0&modestbranding=1&color=white"
+              title="Cartomancia Sistêmica — Assista antes de decidir"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              loading="lazy">
+            </iframe>
+          </div>
+        </div>
+        <p class="vsl-caption">Assista ao vídeo completo para entender o método</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PROOF BAR
+     ============================================================ -->
+<div class="proof-bar reveal">
+  <div class="container">
+    <div class="proof-bar-inner">
+      <div class="proof-item">
+        <span class="proof-item-number">+12</span>
+        <span class="proof-item-label">Anos de prática</span>
+      </div>
+      <div class="proof-separator"></div>
+      <div class="proof-item">
+        <span class="proof-item-number">+800</span>
+        <span class="proof-item-label">Alunos formados</span>
+      </div>
+      <div class="proof-separator"></div>
+      <div class="proof-item">
+        <span class="proof-item-number">6</span>
+        <span class="proof-item-label">Módulos estruturados</span>
+      </div>
+      <div class="proof-separator"></div>
+      <div class="proof-item">
+        <span class="proof-item-number">Método</span>
+        <span class="proof-item-label">Próprio e exclusivo</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================
+     DIAGNOSIS
+     ============================================================ -->
+<section class="section diagnosis reveal">
+  <div class="container">
+    <div class="diagnosis-inner">
+      <span class="eyebrow">O diagnóstico</span>
+      <h2 class="display-lg">Se você já lê cartas,<br>mas sente que <em>não rompeu</em><br>seu nível mais alto —</h2>
+      <p class="diagnosis-text">
+        isso não é falta de sensibilidade.<br>
+        Não é falta de dom.<br>
+        Não é falta de prática.<br>
+        É <strong>falta de estrutura sistêmica</strong>.
+      </p>
+      <p class="diagnosis-hook">isso tem um motivo...</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CONCEPT
+     ============================================================ -->
+<section class="section concept">
+  <div class="container">
+    <div class="concept-header reveal">
+      <span class="eyebrow">O método</span>
+      <h2 class="display-lg">O que é a <em>Cartomancia<br>Sistêmica</em></h2>
+      <p class="body-lg" style="margin-top:20px;">Não é uma técnica. É uma forma de enxergar. Três camadas que mudam como você lê, interpreta e conduz.</p>
+    </div>
+    <div class="concept-grid">
+      <div class="concept-card reveal">
+        <div class="concept-num">I</div>
+        <svg class="concept-icon" viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.2">
+          <circle cx="18" cy="18" r="14"/>
+          <path d="M18 8v10l6 4"/>
+        </svg>
+        <h3 class="concept-title">Leitura</h3>
+        <p class="concept-text">Não é decorar o significado de cada carta. É aprender a ler o conjunto, o movimento, a tensão entre os símbolos e o contexto do consultante.</p>
+      </div>
+      <div class="concept-card reveal reveal-delay-1">
+        <div class="concept-num">II</div>
+        <svg class="concept-icon" viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.2">
+          <path d="M6 18h24M18 6v24M9 9l18 18M27 9L9 27"/>
+        </svg>
+        <h3 class="concept-title">Padrão</h3>
+        <p class="concept-text">Reconhecer o que se repete, o que se nega, o que se esconde. A leitura sistêmica enxerga estrutura onde outros veem acaso.</p>
+      </div>
+      <div class="concept-card reveal reveal-delay-2">
+        <div class="concept-num">III</div>
+        <svg class="concept-icon" viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.2">
+          <path d="M8 28l6-12 6 8 4-8 4 12"/>
+          <circle cx="8" cy="28" r="2" fill="currentColor" stroke="none"/>
+        </svg>
+        <h3 class="concept-title">Movimento</h3>
+        <p class="concept-text">Interpretar o que está em transformação, o que está parado e o que está prestes a se mover. A leitura vira consciência sobre o momento.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     QUALIFY
+     ============================================================ -->
+<section class="section qualify">
+  <div class="container">
+    <div class="qualify-header reveal">
+      <span class="eyebrow">Qualificação</span>
+      <h2 class="display-md">Para quem é — e para quem não é</h2>
+    </div>
+    <div class="qualify-grid">
+      <!-- YES -->
+      <div class="qualify-card qualify-card-yes reveal">
+        <h3 class="qualify-card-title display-sm">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="#C9A961" stroke-width="1.5"><circle cx="11" cy="11" r="9"/><path d="M7 11l3 3 5-6"/></svg>
+          Este curso é para você se…
+        </h3>
+        <ul class="qualify-list">
+          <li class="qualify-item">
+            <svg class="qualify-item-yes-icon" width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 9l4 4 6-8"/></svg>
+            Você já tem alguma experiência com cartomancia, tarô ou práticas espirituais e sente que não rompeu o próximo nível
+          </li>
+          <li class="qualify-item">
+            <svg class="qualify-item-yes-icon" width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 9l4 4 6-8"/></svg>
+            Você quer conduzir leituras com mais profundidade, método e responsabilidade
+          </li>
+          <li class="qualify-item">
+            <svg class="qualify-item-yes-icon" width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 9l4 4 6-8"/></svg>
+            Você busca uma formação estruturada — não mais conteúdo fragmentado e sem fio condutor
+          </li>
+          <li class="qualify-item">
+            <svg class="qualify-item-yes-icon" width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 9l4 4 6-8"/></svg>
+            Você quer aplicar isso em atendimentos reais com mais clareza e segurança
+          </li>
+          <li class="qualify-item">
+            <svg class="qualify-item-yes-icon" width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 9l4 4 6-8"/></svg>
+            Você valoriza uma abordagem séria, ética e com rigor metodológico
+          </li>
+        </ul>
+      </div>
+      <!-- NO -->
+      <div class="qualify-card qualify-card-no reveal reveal-delay-1">
+        <h3 class="qualify-card-title display-sm" style="color:var(--text-muted);">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="var(--text-muted)" stroke-width="1.5" opacity="0.5"><circle cx="11" cy="11" r="9"/><path d="M7 15l8-8M15 15L7 7"/></svg>
+          Não é para você se…
+        </h3>
+        <ul class="qualify-list">
+          <li class="qualify-item">
+            <svg class="qualify-item-no-icon" width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 13L13 5M13 13L5 5"/></svg>
+            Você procura um curso rápido de significados e não quer aprofundar estrutura
+          </li>
+          <li class="qualify-item">
+            <svg class="qualify-item-no-icon" width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 13L13 5M13 13L5 5"/></svg>
+            Você espera que a cartomancia funcione como previsão infalível de destino
+          </li>
+          <li class="qualify-item">
+            <svg class="qualify-item-no-icon" width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 13L13 5M13 13L5 5"/></svg>
+            Você não tem disposição para estudar com profundidade e praticar com consistência
+          </li>
+          <li class="qualify-item">
+            <svg class="qualify-item-no-icon" width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 13L13 5M13 13L5 5"/></svg>
+            Você busca respostas prontas para situações pessoais urgentes
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PILLARS
+     ============================================================ -->
+<section class="section pillars">
+  <div class="container">
+    <div class="pillars-header reveal">
+      <span class="eyebrow">Fundamentos</span>
+      <h2 class="display-lg">Os pilares do <em>método</em></h2>
+      <p class="body-lg" style="margin-top:20px; max-width:560px; margin-left:auto; margin-right:auto;">Cada pilar é um eixo de formação. Juntos, constroem o olhar sistêmico.</p>
+    </div>
+    <div class="pillars-grid">
+      <div class="pillar-card reveal">
+        <p class="pillar-number">Pilar I</p>
+        <h3 class="pillar-title">Leitura Simbólica em Camadas</h3>
+        <p class="pillar-text">Cada símbolo fala em múltiplos níveis. Você aprende a ler o que está na superfície e o que está operando por baixo — ao mesmo tempo.</p>
+      </div>
+      <div class="pillar-card reveal reveal-delay-1">
+        <p class="pillar-number">Pilar II</p>
+        <h3 class="pillar-title">Mapeamento Sistêmico</h3>
+        <p class="pillar-text">Como as forças, padrões e movimentos de um contexto se organizam em campo. A leitura deixa de ser sequencial e passa a ser sistêmica.</p>
+      </div>
+      <div class="pillar-card reveal reveal-delay-2">
+        <p class="pillar-number">Pilar III</p>
+        <h3 class="pillar-title">Tempo e Movimento</h3>
+        <p class="pillar-text">O que está se movendo, o que está estagnado, o que já passou e o que está chegando. Leitura com senso de tempo e direção.</p>
+      </div>
+      <div class="pillar-card reveal">
+        <p class="pillar-number">Pilar IV</p>
+        <h3 class="pillar-title">Condução Ética da Leitura</h3>
+        <p class="pillar-text">Como conduzir um atendimento com responsabilidade, clareza e presença — sem projetar, sem alarmar, sem criar dependência.</p>
+      </div>
+      <div class="pillar-card reveal reveal-delay-1">
+        <p class="pillar-number">Pilar V</p>
+        <h3 class="pillar-title">Integração com o Atendimento</h3>
+        <p class="pillar-text">Como aplicar o método em sessões reais — individual, online, presencial — com estrutura que sustenta a qualidade da entrega.</p>
+      </div>
+      <div class="pillar-card reveal reveal-delay-2">
+        <p class="pillar-number">Pilar VI</p>
+        <h3 class="pillar-title">Expansão da Percepção</h3>
+        <p class="pillar-text">O método muda quem o aprende. Você expande sua percepção sobre padrões — nas cartas, nos contextos e em você mesmo.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CURRICULUM
+     ============================================================ -->
+<section class="section curriculum">
+  <div class="container">
+    <div class="curriculum-header reveal">
+      <span class="eyebrow">Estrutura do curso</span>
+      <h2 class="display-lg">O que você vai <em>aprender</em></h2>
+    </div>
+    <div class="accordion reveal">
+
+      <div class="accordion-item">
+        <button class="accordion-trigger" aria-expanded="false">
+          <span class="accordion-num">01</span>
+          <div class="accordion-title-wrap">
+            <span class="accordion-title">Fundamentos da Visão Sistêmica</span>
+            <span class="accordion-subtitle">A base que muda como você lê</span>
+          </div>
+          <svg class="accordion-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 4v12M4 10h12"/></svg>
+        </button>
+        <div class="accordion-body">
+          <div class="accordion-topics">
+            <p class="accordion-topic">O que é pensamento sistêmico e por que ele muda tudo na leitura de cartas</p>
+            <p class="accordion-topic">A diferença entre significado isolado e leitura em campo</p>
+            <p class="accordion-topic">Os princípios que organizam qualquer leitura sistêmica</p>
+            <p class="accordion-topic">Exercícios práticos de percepção e calibração do olhar</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-trigger" aria-expanded="false">
+          <span class="accordion-num">02</span>
+          <div class="accordion-title-wrap">
+            <span class="accordion-title">As Camadas do Símbolo</span>
+            <span class="accordion-subtitle">Leitura além da superfície</span>
+          </div>
+          <svg class="accordion-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 4v12M4 10h12"/></svg>
+        </button>
+        <div class="accordion-body">
+          <div class="accordion-topics">
+            <p class="accordion-topic">Como cada carta opera em múltiplos planos simultaneamente</p>
+            <p class="accordion-topic">A camada literal, a camada de padrão e a camada de campo</p>
+            <p class="accordion-topic">Como identificar qual camada está ativa em cada leitura</p>
+            <p class="accordion-topic">Prática com baralhos diversos — o método é independente do sistema</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-trigger" aria-expanded="false">
+          <span class="accordion-num">03</span>
+          <div class="accordion-title-wrap">
+            <span class="accordion-title">Mapeamento de Campo</span>
+            <span class="accordion-subtitle">Estrutura e padrão em qualquer leitura</span>
+          </div>
+          <svg class="accordion-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 4v12M4 10h12"/></svg>
+        </button>
+        <div class="accordion-body">
+          <div class="accordion-topics">
+            <p class="accordion-topic">Como organizar uma leitura em campo — não em linha ou posição</p>
+            <p class="accordion-topic">Reconhecimento de forças dominantes, forças ausentes e tensões</p>
+            <p class="accordion-topic">A leitura do espaço entre as cartas</p>
+            <p class="accordion-topic">Dinâmicas de compensação, projeção e cegueira sistêmica</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-trigger" aria-expanded="false">
+          <span class="accordion-num">04</span>
+          <div class="accordion-title-wrap">
+            <span class="accordion-title">Tempo, Movimento e Direção</span>
+            <span class="accordion-subtitle">A dimensão dinâmica da leitura</span>
+          </div>
+          <svg class="accordion-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 4v12M4 10h12"/></svg>
+        </button>
+        <div class="accordion-body">
+          <div class="accordion-topics">
+            <p class="accordion-topic">Como identificar movimentos que estão em curso e movimentos potenciais</p>
+            <p class="accordion-topic">A leitura de ciclos — o que está chegando ao fim e o que está nascendo</p>
+            <p class="accordion-topic">Tempo de maturação e urgência na leitura sistêmica</p>
+            <p class="accordion-topic">Como transmitir direção ao consultante sem impor um destino</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-trigger" aria-expanded="false">
+          <span class="accordion-num">05</span>
+          <div class="accordion-title-wrap">
+            <span class="accordion-title">Condução e Ética do Atendimento</span>
+            <span class="accordion-subtitle">Responsabilidade em prática</span>
+          </div>
+          <svg class="accordion-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 4v12M4 10h12"/></svg>
+        </button>
+        <div class="accordion-body">
+          <div class="accordion-topics">
+            <p class="accordion-topic">Como estruturar e conduzir um atendimento do início ao fim</p>
+            <p class="accordion-topic">Limites éticos — o que compete à leitura e o que não compete</p>
+            <p class="accordion-topic">Como lidar com temas sensíveis: saúde, morte, relacionamentos, finanças</p>
+            <p class="accordion-topic">A presença do leitor — como não contaminar a leitura com suas projeções</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-trigger" aria-expanded="false">
+          <span class="accordion-num">06</span>
+          <div class="accordion-title-wrap">
+            <span class="accordion-title">Integração e Expansão da Prática</span>
+            <span class="accordion-subtitle">O método aplicado ao seu contexto real</span>
+          </div>
+          <svg class="accordion-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 4v12M4 10h12"/></svg>
+        </button>
+        <div class="accordion-body">
+          <div class="accordion-topics">
+            <p class="accordion-topic">Como aplicar o método em contextos diferentes — individual, casal, empresarial, pessoal</p>
+            <p class="accordion-topic">Construção do seu próprio processo de atendimento</p>
+            <p class="accordion-topic">O que muda em você quando você domina o olhar sistêmico</p>
+            <p class="accordion-topic">Próximos passos — como continuar expandindo após a formação</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="curriculum-cta reveal">
+      <!-- CHECKOUT LINK: substitua # pelo link do checkout -->
+      <a href="#" class="btn-primary btn-primary-lg" id="curriculumCta">
+        Quero acessar todos os módulos
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     TESTIMONIALS
+     ============================================================ -->
+<section class="section testimonials">
+  <div class="container">
+    <div class="testimonials-header reveal">
+      <span class="eyebrow">Relatos</span>
+      <h2 class="display-lg">O que muda quando você <em>enxerga diferente</em></h2>
+    </div>
+    <div class="testimonials-grid">
+
+      <div class="testimonial-card reveal">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">"Eu lia cartas há 5 anos. Achava que era boa. Depois do Guilherme, entendi que eu <strong>descrevia</strong> cartas — não lia situações. A diferença é enorme."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">A</div>
+          <div>
+            <p class="testimonial-name">Ana Carolina</p>
+            <p class="testimonial-role">Cartomante e terapeuta integrativa</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card testimonial-card-featured reveal reveal-delay-1">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">"O método muda como você pensa, não só como você lê. Levei 3 semanas para absorver o que aprendi no primeiro módulo. <strong>E foi exatamente isso que eu precisava.</strong>"</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">R</div>
+          <div>
+            <p class="testimonial-name">Renata Melo</p>
+            <p class="testimonial-role">Terapeuta holística — São Paulo</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card reveal reveal-delay-2">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">"Nunca tinha encontrado alguém que ensinasse <strong>estrutura</strong> na cartomancia. Sempre foi intuição ou decoreba. Aqui é diferente — e funciona."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">M</div>
+          <div>
+            <p class="testimonial-name">Marcos Tavares</p>
+            <p class="testimonial-role">Estudante de hermetismo — RJ</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card reveal">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">"Eu atendia, mas ficava insegura. Com o método sistêmico, minha presença no atendimento mudou. <strong>Hoje conduzo com calma.</strong>"</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">F</div>
+          <div>
+            <p class="testimonial-name">Fernanda Lins</p>
+            <p class="testimonial-role">Leitora de cartas — Recife</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card reveal reveal-delay-1">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">"A formação me deu o que eu buscava em anos de estudo solto. <strong>Método, organização e profundidade</strong> no mesmo lugar."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">J</div>
+          <div>
+            <p class="testimonial-name">Juliana Prates</p>
+            <p class="testimonial-role">Cartomante profissional — BH</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card reveal reveal-delay-2">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">"Aprendi mais sobre como eu projeto nos consultantes do que sobre as cartas. Esse autoconhecimento é parte do método — e é <strong>fundamental</strong>."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">L</div>
+          <div>
+            <p class="testimonial-name">Lucas Andrade</p>
+            <p class="testimonial-role">Psicoterapeuta e leitor de cartas</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     ABOUT
+     ============================================================ -->
+<section class="section about">
+  <div class="container">
+    <div class="about-inner">
+      <div class="about-image-wrap reveal">
+        <div class="about-image-frame">
+          <!-- FOTO: substitua o conteúdo abaixo por uma tag <img> com a foto do Guilherme -->
+          <p class="about-image-placeholder">Foto do Guilherme Araújo<br><br>Substitua por: &lt;img src="foto-guilherme.jpg" alt="Guilherme Araújo"&gt;</p>
+        </div>
+        <div class="about-accent">
+          <span class="about-accent-num">+12</span>
+          <span class="about-accent-label">anos</span>
+        </div>
+      </div>
+      <div class="about-content reveal reveal-delay-1">
+        <span class="eyebrow">Sobre o professor</span>
+        <h2 class="display-md">Guilherme <em>Araújo</em></h2>
+        <div class="about-bio">
+          <p>Guilherme Araújo é professor e mentor na área da espiritualidade com mais de uma década de prática. <strong>Desenvolveu a Cartomancia Sistêmica como um método próprio</strong> — não como uma adaptação de sistemas existentes, mas como uma abordagem original que integra visão sistêmica, leitura simbólica e ética no atendimento.</p>
+          <p>Seu trabalho parte de uma premissa simples: <strong>a leitura de cartas não é sobre prever um destino fixo</strong>. É sobre desenvolver um olhar que enxerga padrões, compreende movimentos e auxilia o consultante a navegar com mais clareza e consciência.</p>
+          <p>Ao longo dos anos, <strong>formou mais de 800 alunos</strong> — cartomantes, terapeutas e praticantes espirituais — que passaram a conduzir seus atendimentos com mais profundidade, responsabilidade e método.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     OFFER (Curso Gravado)
+     ============================================================ -->
+<section class="section offer" id="oferta">
+  <div class="container">
+    <div class="offer-header reveal">
+      <span class="eyebrow">A oferta</span>
+      <h2 class="display-lg">Acesso <em>imediato</em> ao curso gravado</h2>
+      <p class="body-lg" style="margin-top:20px;">Estude no seu ritmo, com acesso completo ao método, aos módulos e ao material de apoio.</p>
+    </div>
+
+    <!-- PRICING CARD -->
+    <div class="offer-card reveal">
+      <div class="offer-card-top">
+        <div class="offer-badge">Curso Gravado — Acesso Imediato</div>
+        <h3 class="offer-product-name">Curso de Cartomancia Sistêmica</h3>
+        <p class="offer-tagline">Formação estruturada para conduzir leituras com método, profundidade sistêmica e responsabilidade.</p>
+      </div>
+      <div class="offer-card-body">
+        <div class="offer-includes">
+          <p class="offer-includes-title">O que está incluso</p>
+          <ul class="offer-include-list">
+            <li class="offer-include-item">
+              <svg class="offer-include-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 9l4 4 6-8"/></svg>
+              6 módulos estruturados de Cartomancia Sistêmica
+            </li>
+            <li class="offer-include-item">
+              <svg class="offer-include-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 9l4 4 6-8"/></svg>
+              Método completo — dos fundamentos à aplicação em atendimento
+            </li>
+            <li class="offer-include-item">
+              <svg class="offer-include-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 9l4 4 6-8"/></svg>
+              Demonstrações reais de leituras conduzidas pelo Guilherme
+            </li>
+            <li class="offer-include-item">
+              <svg class="offer-include-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 9l4 4 6-8"/></svg>
+              Material de apoio e exercícios práticos por módulo
+            </li>
+            <li class="offer-include-item">
+              <svg class="offer-include-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 9l4 4 6-8"/></svg>
+              Acesso ao conteúdo gravado para rever quando quiser
+            </li>
+            <li class="offer-include-item">
+              <svg class="offer-include-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 9l4 4 6-8"/></svg>
+              Acesso imediato após a confirmação do pagamento
+            </li>
+          </ul>
+        </div>
+
+        <div class="offer-divider"></div>
+
+        <div class="offer-price-block">
+          <p class="offer-price-label">Investimento</p>
+          <p class="offer-price-installment">
+            <span>12x de</span>R$ 111
+          </p>
+          <p class="offer-price-cash">ou <strong>R$ 997 à vista</strong></p>
+        </div>
+
+        <div class="offer-cta-wrap">
+          <!-- CHECKOUT LINK: substitua # pelo link do checkout -->
+          <a href="#" class="btn-primary btn-primary-lg" id="offerCta">
+            Quero acessar o Curso Gravado
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+          </a>
+          <div class="offer-security">
+            <span class="offer-security-item">
+              <svg class="offer-security-icon" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="2" y="5" width="10" height="8" rx="1"/><path d="M5 5V4a2 2 0 0 1 4 0v1"/></svg>
+              Pagamento seguro
+            </span>
+            <span class="offer-security-item">
+              <svg class="offer-security-icon" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="7" cy="7" r="5"/><path d="M7 4v3l2 1.5"/></svg>
+              Acesso imediato
+            </span>
+            <span class="offer-security-item">
+              <svg class="offer-security-icon" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M7 2l1.3 3.9H13l-3.4 2.5 1.3 3.9L7 10 3.1 12.3l1.3-3.9L1 5.9h4.7L7 2z"/></svg>
+              Suporte incluso
+            </span>
+          </div>
+
+          <div class="offer-guarantee">
+            <svg class="offer-guarantee-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.2">
+              <path d="M16 3L4 8v8c0 7.7 5.2 13.7 12 15.7 6.8-2 12-8 12-15.7V8L16 3z"/>
+              <path d="M11 16l4 4 7-8"/>
+            </svg>
+            <div>
+              <p class="offer-guarantee-title">Garantia incondicional de 7 dias</p>
+              <p class="offer-guarantee-text">Se em até 7 dias após a compra você avaliar que o curso não é para você, devolvemos o valor integral. Sem questionamentos.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- APPLICATION BLOCK -->
+    <div class="application-block reveal" id="aplicacao">
+      <span class="eyebrow" style="display:block; margin-bottom:16px;">Formação Completa</span>
+      <h3 class="application-block-title">Pronto para a formação completa com acompanhamento?</h3>
+      <p class="application-block-text">O Curso Completo de Cartomancia Sistêmica é oferecido por seleção — com acompanhamento próximo, turmas limitadas e profundidade de formação presencial. O ingresso é via aplicação.</p>
+      <div class="application-steps">
+        <div class="application-step">
+          <div class="application-step-num">1</div>
+          <p class="application-step-title">Você aplica</p>
+          <p class="application-step-text">Responde o formulário sobre sua prática e seu contexto atual</p>
+        </div>
+        <div class="application-step">
+          <div class="application-step-num">2</div>
+          <p class="application-step-title">Avaliamos</p>
+          <p class="application-step-text">Analisamos sua candidatura em até alguns dias úteis</p>
+        </div>
+        <div class="application-step">
+          <div class="application-step-num">3</div>
+          <p class="application-step-title">Próximos passos</p>
+          <p class="application-step-text">Se aprovado, você recebe formato, cronograma e investimento</p>
+        </div>
+      </div>
+      <!-- APLICAÇÃO LINK: substitua # pelo link do formulário de aplicação -->
+      <a href="#" class="btn-outline" id="applicationCta">
+        Quero me candidatar à Formação Completa
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 7h10M8 3l4 4-4 4"/></svg>
+      </a>
+      <p class="application-block-note">O formulário leva cerca de 5 minutos. Resposta em até 3 dias úteis.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================================
+     FAQ
+     ============================================================ -->
+<section class="section faq">
+  <div class="container">
+    <div class="faq-header reveal">
+      <span class="eyebrow">Dúvidas</span>
+      <h2 class="display-md">Perguntas <em>frequentes</em></h2>
+    </div>
+    <div class="faq-list reveal">
+
+      <div class="faq-item">
+        <button class="faq-trigger" aria-expanded="false">
+          <span class="faq-question">Preciso ter experiência com cartomancia para fazer o curso?</span>
+          <svg class="faq-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 4v12M4 10h12"/></svg>
+        </button>
+        <div class="faq-answer">Alguma familiaridade com cartas ajuda, mas não é requisito absoluto. O método é ensinado do fundamento à aplicação. Se você nunca tocou em cartas mas tem interesse sério em aprender com estrutura, pode começar aqui. O que não funciona é expectativa de conteúdo superficial ou de atalho para "acertar" leituras.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-trigger" aria-expanded="false">
+          <span class="faq-question">Qual a diferença entre o curso gravado e a formação completa?</span>
+          <svg class="faq-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 4v12M4 10h12"/></svg>
+        </button>
+        <div class="faq-answer">O curso gravado (R$ 997) dá acesso imediato a todos os módulos, demonstrações e materiais — você estuda no seu ritmo, de forma independente. A formação completa (por aplicação) inclui acompanhamento próximo do Guilherme, turmas selecionadas, profundidade adicional e formato de formação presencial ou síncrona. São dois caminhos diferentes no mesmo ecossistema — o gravado é a porta de acesso autônoma; o completo é o aprofundamento com presença.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-trigger" aria-expanded="false">
+          <span class="faq-question">O método é compatível com tarô, baralho cigano ou outros sistemas?</span>
+          <svg class="faq-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 4v12M4 10h12"/></svg>
+        </button>
+        <div class="faq-answer">Sim. A Cartomancia Sistêmica é um método de leitura — não um sistema de cartas específico. Você pode aplicá-lo ao baralho que já usa. O que muda é a forma de ler, interpretar e conduzir — não o baralho em si.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-trigger" aria-expanded="false">
+          <span class="faq-question">Por quanto tempo terei acesso ao conteúdo?</span>
+          <svg class="faq-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 4v12M4 10h12"/></svg>
+        </button>
+        <div class="faq-answer">O acesso ao curso gravado é por prazo definido na plataforma de entrega. Confirme o prazo exato no checkout. O conteúdo pode ser revisitado quantas vezes quiser durante o período de acesso.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-trigger" aria-expanded="false">
+          <span class="faq-question">Posso usar o aprendizado em atendimentos profissionais?</span>
+          <svg class="faq-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 4v12M4 10h12"/></svg>
+        </button>
+        <div class="faq-answer">Sim — e esse é exatamente um dos objetivos do método. O módulo de condução e ética do atendimento é dedicado a como aplicar a leitura sistêmica em sessões reais com responsabilidade e clareza.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-trigger" aria-expanded="false">
+          <span class="faq-question">Como funciona a garantia?</span>
+          <svg class="faq-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 4v12M4 10h12"/></svg>
+        </button>
+        <div class="faq-answer">Você tem 7 dias corridos após a compra para avaliar o curso. Se em qualquer momento desse período você concluir que o conteúdo não é para você, entre em contato e faremos o reembolso integral. Sem perguntas, sem burocracia.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-trigger" aria-expanded="false">
+          <span class="faq-question">Se eu comprar o gravado, posso depois aplicar para a formação completa?</span>
+          <svg class="faq-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 4v12M4 10h12"/></svg>
+        </button>
+        <div class="faq-answer">Sim. Os dois caminhos não são mutuamente exclusivos. Muitos alunos começam pelo gravado, aprofundam o olhar e depois aplicam para a formação completa com mais clareza sobre o que buscam. O ingresso na formação completa continua sendo via aplicação, independentemente de você já ter o gravado.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-trigger" aria-expanded="false">
+          <span class="faq-question">A cartomancia sistêmica substitui acompanhamento terapêutico ou médico?</span>
+          <svg class="faq-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 4v12M4 10h12"/></svg>
+        </button>
+        <div class="faq-answer">Não. A Cartomancia Sistêmica é uma ferramenta de autoconhecimento, percepção e leitura simbólica. Ela não substitui acompanhamento médico, psicológico, jurídico, financeiro ou terapêutico. Um dos pilares do método é exatamente a clareza sobre o que compete à leitura e o que está fora do seu escopo.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CLOSING CTA
+     ============================================================ -->
+<section class="section closing reveal">
+  <div class="container">
+    <div class="closing-inner">
+      <div class="closing-ornament">✦</div>
+      <h2 class="display-lg">Dois caminhos.<br><em>Uma direção.</em></h2>
+      <p class="body-lg" style="margin-top:24px;">Escolha onde você está agora. O método te espera nos dois.</p>
+      <div class="closing-cta-group">
+        <!-- CHECKOUT LINK: substitua # pelo link do checkout -->
+        <a href="#" class="btn-primary btn-primary-lg" id="closingCta">
+          Acessar o Curso Gravado — R$ 997
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+        </a>
+        <!-- APLICAÇÃO LINK: substitua # pelo link do formulário de aplicação -->
+        <a href="#" class="btn-text-link" id="closingAppCta">
+          Ou candidatar-me à Formação Completa →
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <p class="footer-logo">Guilherme <span>Araújo</span></p>
+      <p class="footer-disclaimer">
+        A Cartomancia Sistêmica é uma ferramenta de autoconhecimento, percepção e leitura simbólica. Ela não substitui acompanhamento médico, psicológico, jurídico, financeiro ou terapêutico. Os resultados dos alunos dependem de comprometimento individual e aplicação do método — não há garantia de resultado específico.
+      </p>
+      <p class="footer-copy">© 2025 Guilherme Araújo. Todos os direitos reservados.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ============================================================
+     JAVASCRIPT
+     ============================================================ -->
+<script>
+(function() {
+  'use strict';
+
+  // ── Nav scroll ──────────────────────────────────────────────
+  const nav = document.getElementById('nav');
+  function onScroll() {
+    nav.classList.toggle('scrolled', window.scrollY > 40);
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  // ── Sticky CTA mobile ───────────────────────────────────────
+  const stickyCta = document.getElementById('stickyCta');
+  const heroSection = document.getElementById('hero');
+
+  function checkSticky() {
+    if (!stickyCta || !heroSection) return;
+    const heroBottom = heroSection.getBoundingClientRect().bottom;
+    stickyCta.classList.toggle('show', heroBottom < 0);
+  }
+  window.addEventListener('scroll', checkSticky, { passive: true });
+
+  // ── Scroll reveal ────────────────────────────────────────────
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+  reveals.forEach(function(el) { observer.observe(el); });
+
+  // ── Accordion (módulos) ──────────────────────────────────────
+  document.querySelectorAll('.accordion-trigger').forEach(function(trigger) {
+    trigger.addEventListener('click', function() {
+      const item = this.closest('.accordion-item');
+      const isOpen = item.classList.contains('open');
+      // close all
+      document.querySelectorAll('.accordion-item.open').forEach(function(i) {
+        i.classList.remove('open');
+        i.querySelector('.accordion-trigger').setAttribute('aria-expanded', 'false');
+      });
+      if (!isOpen) {
+        item.classList.add('open');
+        this.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+
+  // ── FAQ accordion ────────────────────────────────────────────
+  document.querySelectorAll('.faq-trigger').forEach(function(trigger) {
+    trigger.addEventListener('click', function() {
+      const item = this.closest('.faq-item');
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(function(i) {
+        i.classList.remove('open');
+        i.querySelector('.faq-trigger').setAttribute('aria-expanded', 'false');
+      });
+      if (!isOpen) {
+        item.classList.add('open');
+        this.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+
+  // ── GA4 CTA tracking ─────────────────────────────────────────
+  function trackCta(position, target) {
+    if (typeof gtag === 'function') {
+      gtag('event', 'cta_click', {
+        cta_position: position,
+        cta_target: target
+      });
+    }
+  }
+
+  var ctaMap = [
+    { id: 'navCta',         pos: 'nav',            target: 'checkout' },
+    { id: 'heroCta',        pos: 'hero',           target: 'checkout' },
+    { id: 'curriculumCta',  pos: 'after_modules',  target: 'checkout' },
+    { id: 'offerCta',       pos: 'offer',          target: 'checkout' },
+    { id: 'closingCta',     pos: 'closing',        target: 'checkout' },
+    { id: 'applicationCta', pos: 'offer',          target: 'application' },
+    { id: 'closingAppCta',  pos: 'closing',        target: 'application' },
+    { id: 'stickyCtaBtn',   pos: 'sticky_mobile',  target: 'checkout' }
+  ];
+
+  ctaMap.forEach(function(item) {
+    var el = document.getElementById(item.id);
+    if (el) {
+      el.addEventListener('click', function() {
+        trackCta(item.pos, item.target);
+      });
+    }
+  });
+
+  // ── UTM persistence ──────────────────────────────────────────
+  (function persistUTM() {
+    var params = ['utm_source','utm_medium','utm_campaign','utm_content','utm_term','utm_id'];
+    var urlParams = new URLSearchParams(window.location.search);
+    var stored = {};
+    params.forEach(function(p) {
+      var val = urlParams.get(p);
+      if (val) {
+        stored[p] = val;
+        try { localStorage.setItem(p, val); } catch(e) {}
+      } else {
+        try {
+          var lsVal = localStorage.getItem(p);
+          if (lsVal) stored[p] = lsVal;
+        } catch(e) {}
+      }
+    });
+
+    // Append UTMs to all checkout links
+    if (Object.keys(stored).length > 0) {
+      document.querySelectorAll('a[href]').forEach(function(a) {
+        var href = a.getAttribute('href');
+        if (!href || href === '#' || href.startsWith('mailto') || href.startsWith('tel')) return;
+        try {
+          var url = new URL(href, window.location.origin);
+          Object.keys(stored).forEach(function(k) {
+            if (!url.searchParams.has(k)) url.searchParams.set(k, stored[k]);
+          });
+          a.setAttribute('href', url.toString());
+        } catch(e) {}
+      });
+    }
+  })();
+
+})();
+</script>
+
+</body>
+</html>

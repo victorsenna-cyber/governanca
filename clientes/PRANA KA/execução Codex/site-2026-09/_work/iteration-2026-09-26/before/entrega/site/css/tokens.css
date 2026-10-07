@@ -1,0 +1,16 @@
+:root {
+  --ruby:#6d2338; --ruby-deep:#481625; --wine:#45162a; --obsidian:#150f12;
+  --ivory:#f3ebdd; --ivory-light:#faf5eb; --paper:#f4eee4; --ink:#211a18; --ink-soft:#554743;
+  --gold:#b88a43; --gold-light:#d8b66d; --gold-amber:#c8912f; --gold-line:#ae7d31;
+  --line:rgba(33,26,24,.18); --line-light:rgba(243,235,221,.2);
+  --serif:Fraunces,"Iowan Old Style",Georgia,serif; --sans:Manrope,"Segoe UI",sans-serif;
+  --display-axes:'SOFT' 60,'WONK' 1;
+  --page-pad:clamp(1.25rem,4.5vw,5.5rem); --section-pad:clamp(5rem,9vw,9rem); --content:90rem;
+  --s1:.25rem; --s2:.5rem; --s3:.75rem; --s4:1rem; --s5:1.5rem; --s6:2rem; --s7:3rem; --s8:4rem; --s9:6rem; --s10:8rem;
+  --display:clamp(3rem,6.1vw,5.5rem); --heading:clamp(2.25rem,3.8vw,3rem); --subheading:clamp(1.5rem,2.5vw,2rem);
+  --body:1rem; --small:.8125rem; --micro:.6875rem; --reading:1.75; --title-leading:1.08;
+  --header-height:5.25rem; --reading-width:38rem; --radius:2px; --pill:100px;
+  --veil:linear-gradient(90deg,rgba(21,15,18,.92),rgba(21,15,18,.64) 45%,rgba(21,15,18,.04));
+  --rosewash:#ecddd9; --gold-text:#805b27; --on-dark:var(--ivory-light); --on-dark-soft:#dfcfc5;
+  --fast:200ms; --reveal:700ms; --ease:cubic-bezier(.22,1,.36,1);
+}

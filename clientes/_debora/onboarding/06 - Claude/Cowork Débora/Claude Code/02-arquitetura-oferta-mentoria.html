@@ -1,0 +1,1353 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arquitetura da Oferta e Mentoria | Débora Delgado</title>
+<style>
+/* === RESET === */
+.debora-artifact *, .debora-artifact *::before, .debora-artifact *::after {
+  box-sizing: border-box; margin: 0; padding: 0;
+}
+
+/* === TOKENS LIGHT === */
+.debora-artifact {
+  --bg: #f5f4f0;
+  --bg-surface: #ffffff;
+  --bg-subtle: #efede8;
+  --bg-muted: #e6e2db;
+  --border: #dbd7cf;
+  --border-strong: #c4bfb6;
+  --text-primary: #191816;
+  --text-secondary: #58544e;
+  --text-muted: #8a857d;
+  --accent: #2d5a3d;
+  --accent-mid: #3d7a55;
+  --accent-light: #e6f0ea;
+  --accent-text: #1a3d28;
+  --gold: #92651a;
+  --gold-light: #fdf4e3;
+  --gold-border: #c9862a;
+  --red: #7a1f1f;
+  --red-light: #fdf2f2;
+  --red-border: #c93030;
+  --blue: #1a3a5f;
+  --blue-light: #eef4fb;
+  --blue-border: #3b76c0;
+  --nav-bg: #ffffff;
+  --shadow: 0 1px 3px rgba(0,0,0,0.07), 0 1px 2px rgba(0,0,0,0.04);
+  --shadow-md: 0 4px 16px rgba(0,0,0,0.08);
+  --r: 8px; --r-sm: 4px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text-primary);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* === TOKENS DARK === */
+.debora-artifact.dark {
+  --bg: #131210;
+  --bg-surface: #1c1b18;
+  --bg-subtle: #232119;
+  --bg-muted: #2c2a24;
+  --border: #38352c;
+  --border-strong: #48453a;
+  --text-primary: #edeae4;
+  --text-secondary: #a09b93;
+  --text-muted: #6a665e;
+  --accent: #4ade80;
+  --accent-mid: #6ee7a0;
+  --accent-light: #112219;
+  --accent-text: #86efac;
+  --gold: #fbbf24;
+  --gold-light: #1a1405;
+  --gold-border: #d97706;
+  --red: #f87171;
+  --red-light: #1a0505;
+  --red-border: #ef4444;
+  --blue: #60a5fa;
+  --blue-light: #0a1828;
+  --blue-border: #3b82f6;
+  --nav-bg: #1c1b18;
+}
+
+/* === NAV === */
+.debora-artifact .da-nav {
+  position: sticky; top: 0; z-index: 100;
+  background: var(--nav-bg); border-bottom: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+.debora-artifact .da-nav-inner {
+  max-width: 1120px; margin: 0 auto; padding: 0 20px;
+  display: flex; align-items: center; justify-content: space-between;
+  height: 50px; gap: 12px;
+}
+.debora-artifact .da-nav-links {
+  display: flex; align-items: center; gap: 2px;
+  overflow-x: auto; scrollbar-width: none; flex: 1;
+}
+.debora-artifact .da-nav-links::-webkit-scrollbar { display: none; }
+.debora-artifact .da-nl {
+  white-space: nowrap; font-size: 11px; font-weight: 600;
+  letter-spacing: 0.04em; color: var(--text-muted); text-transform: uppercase;
+  padding: 5px 9px; border-radius: var(--r-sm); transition: all 0.14s;
+  cursor: pointer; border: none; background: none;
+}
+.debora-artifact .da-nl:hover { color: var(--text-primary); background: var(--bg-subtle); }
+.debora-artifact .da-theme-btn {
+  flex-shrink: 0; font-size: 11px; font-weight: 700; letter-spacing: 0.06em;
+  text-transform: uppercase; color: var(--text-secondary);
+  background: var(--bg-subtle); border: 1px solid var(--border);
+  border-radius: var(--r-sm); padding: 5px 12px; cursor: pointer; transition: all 0.14s;
+}
+.debora-artifact .da-theme-btn:hover { background: var(--bg-muted); color: var(--text-primary); }
+
+/* === LAYOUT === */
+.debora-artifact .da-wrap { max-width: 1120px; margin: 0 auto; padding: 0 20px 80px; }
+
+/* === HEADER === */
+.debora-artifact .da-header { padding: 48px 0 40px; border-bottom: 1px solid var(--border); }
+.debora-artifact .da-tag {
+  display: inline-block; font-size: 10.5px; font-weight: 700;
+  letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--accent); background: var(--accent-light);
+  border: 1px solid var(--accent-mid); border-radius: var(--r-sm);
+  padding: 3px 10px; margin-bottom: 18px;
+}
+.debora-artifact .da-header h1 {
+  font-size: clamp(24px, 3.5vw, 36px); font-weight: 700;
+  letter-spacing: -0.03em; color: var(--text-primary);
+  line-height: 1.15; margin-bottom: 12px;
+  font-family: Georgia, 'Times New Roman', serif;
+}
+.debora-artifact .da-header-sub {
+  font-size: 15px; color: var(--text-secondary);
+  max-width: 620px; line-height: 1.65;
+}
+.debora-artifact .da-header-meta {
+  display: flex; gap: 24px; margin-top: 24px; flex-wrap: wrap;
+}
+.debora-artifact .da-meta-item { display: flex; flex-direction: column; gap: 3px; }
+.debora-artifact .da-ml {
+  font-size: 10px; font-weight: 700; letter-spacing: 0.1em;
+  text-transform: uppercase; color: var(--text-muted);
+}
+.debora-artifact .da-mv { font-size: 13px; font-weight: 600; color: var(--text-primary); }
+
+/* === SECTION === */
+.debora-artifact .da-section { padding: 52px 0 0; scroll-margin-top: 62px; }
+.debora-artifact .da-sh {
+  display: flex; align-items: baseline; gap: 14px;
+  margin-bottom: 26px; padding-bottom: 14px;
+  border-bottom: 1px solid var(--border);
+}
+.debora-artifact .da-sn {
+  font-size: 11px; font-weight: 700; letter-spacing: 0.1em;
+  text-transform: uppercase; color: var(--text-muted); flex-shrink: 0;
+}
+.debora-artifact .da-st {
+  font-size: 19px; font-weight: 700; letter-spacing: -0.02em;
+  color: var(--text-primary); font-family: Georgia, serif;
+}
+
+/* === CARDS === */
+.debora-artifact .da-card {
+  background: var(--bg-surface); border: 1px solid var(--border);
+  border-radius: var(--r); padding: 22px 24px; box-shadow: var(--shadow);
+}
+.debora-artifact .da-card-title {
+  font-size: 10.5px; font-weight: 700; letter-spacing: 0.1em;
+  text-transform: uppercase; color: var(--text-muted); margin-bottom: 12px;
+}
+.debora-artifact .da-grid-2 { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; }
+.debora-artifact .da-grid-3 { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 12px; }
+
+/* === DECISION === */
+.debora-artifact .da-decision {
+  background: var(--accent-light); border: 1.5px solid var(--accent-mid);
+  border-radius: var(--r); padding: 22px 26px;
+}
+.debora-artifact .da-decision-label {
+  font-size: 10.5px; font-weight: 700; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--accent); margin-bottom: 10px;
+}
+.debora-artifact .da-decision-text { font-size: 14.5px; color: var(--accent-text); line-height: 1.65; margin-bottom: 14px; }
+.debora-artifact .da-d-opts { display: flex; flex-wrap: wrap; gap: 8px; }
+.debora-artifact .da-d-opt {
+  font-size: 12.5px; font-weight: 600; color: var(--accent-text);
+  background: var(--bg-surface); border: 1px solid var(--accent-mid);
+  border-radius: var(--r-sm); padding: 6px 14px;
+}
+
+/* === GOVERNANCE === */
+.debora-artifact .da-gov {
+  border: 1px solid var(--border); border-radius: var(--r);
+  overflow: hidden; display: grid; grid-template-columns: 1fr 1fr;
+}
+.debora-artifact .da-gov-row { display: contents; }
+.debora-artifact .da-gov-row > div {
+  padding: 11px 18px; border-bottom: 1px solid var(--border); font-size: 13px;
+}
+.debora-artifact .da-gov-row:last-child > div { border-bottom: none; }
+.debora-artifact .da-gk {
+  background: var(--bg-subtle); font-weight: 600; color: var(--text-secondary);
+  font-size: 11.5px; letter-spacing: 0.02em; border-right: 1px solid var(--border);
+}
+.debora-artifact .da-gv { background: var(--bg-surface); color: var(--text-primary); line-height: 1.5; }
+
+/* === PROBLEMA === */
+.debora-artifact .da-prob-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 9px; }
+.debora-artifact .da-prob-item {
+  background: var(--gold-light); border: 1px solid var(--gold-border);
+  border-left: 3px solid var(--gold-border); border-radius: var(--r-sm);
+  padding: 11px 15px; font-size: 13px; color: var(--gold); line-height: 1.5;
+}
+.debora-artifact.dark .da-prob-item { color: var(--gold-border); }
+
+/* === NARRATIVA / PROMISE === */
+.debora-artifact .da-promise {
+  background: var(--bg-surface); border: 2px solid var(--accent-mid);
+  border-radius: var(--r); padding: 28px 32px; text-align: center;
+  box-shadow: var(--shadow-md);
+}
+.debora-artifact .da-promise-title {
+  font-size: 11px; font-weight: 700; letter-spacing: 0.14em;
+  text-transform: uppercase; color: var(--accent); margin-bottom: 14px;
+}
+.debora-artifact .da-promise-main {
+  font-size: clamp(18px, 2.5vw, 24px); font-weight: 700;
+  color: var(--text-primary); line-height: 1.3; margin-bottom: 10px;
+  font-family: Georgia, serif; letter-spacing: -0.02em;
+}
+.debora-artifact .da-promise-sub {
+  font-size: 14px; color: var(--text-secondary); line-height: 1.6; max-width: 560px; margin: 0 auto;
+}
+
+/* === ESTADO A/B === */
+.debora-artifact .da-estado-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.debora-artifact .da-estado-a {
+  background: var(--red-light); border: 1px solid var(--red-border);
+  border-top: 3px solid var(--red-border); border-radius: var(--r); padding: 20px;
+}
+.debora-artifact .da-estado-b {
+  background: var(--accent-light); border: 1px solid var(--accent-mid);
+  border-top: 3px solid var(--accent-mid); border-radius: var(--r); padding: 20px;
+}
+.debora-artifact .da-estado-label {
+  font-size: 10px; font-weight: 800; letter-spacing: 0.14em;
+  text-transform: uppercase; margin-bottom: 8px;
+}
+.debora-artifact .da-estado-a .da-estado-label { color: var(--red); }
+.debora-artifact .da-estado-b .da-estado-label { color: var(--accent); }
+.debora-artifact.dark .da-estado-a .da-estado-label { color: var(--red-border); }
+.debora-artifact .da-estado-title {
+  font-size: 15px; font-weight: 700; margin-bottom: 12px;
+  font-family: Georgia, serif; color: var(--text-primary);
+}
+.debora-artifact .da-estado-item {
+  font-size: 12.5px; color: var(--text-secondary);
+  padding: 5px 0; border-bottom: 1px solid var(--border); line-height: 1.45;
+}
+.debora-artifact .da-estado-item:last-child { border-bottom: none; }
+
+/* === TAGS === */
+.debora-artifact .da-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+.debora-artifact .da-tag-item {
+  font-size: 11.5px; font-weight: 500; color: var(--text-secondary);
+  background: var(--bg-subtle); border: 1px solid var(--border);
+  border-radius: 20px; padding: 3px 10px;
+}
+.debora-artifact .da-tag-green {
+  color: var(--accent-text); background: var(--accent-light); border-color: var(--accent-mid);
+}
+.debora-artifact .da-tag-red {
+  color: var(--red); background: var(--red-light); border-color: var(--red-border);
+}
+
+/* === MATRIX TABLE === */
+.debora-artifact .da-table-wrap {
+  overflow-x: auto; border-radius: var(--r); border: 1px solid var(--border);
+}
+.debora-artifact .da-table {
+  width: 100%; border-collapse: collapse; font-size: 12.5px; min-width: 600px;
+}
+.debora-artifact .da-table th {
+  background: var(--bg-subtle); font-size: 10.5px; font-weight: 700;
+  letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-muted);
+  padding: 10px 14px; text-align: left; border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+}
+.debora-artifact .da-table td {
+  padding: 13px 14px; border-bottom: 1px solid var(--border);
+  vertical-align: top; line-height: 1.5; color: var(--text-primary);
+}
+.debora-artifact .da-table tr:last-child td { border-bottom: none; }
+.debora-artifact .da-table tr:hover td { background: var(--bg-subtle); }
+
+/* === PILARES === */
+.debora-artifact .da-pilar {
+  background: var(--bg-surface); border: 1px solid var(--border);
+  border-radius: var(--r); padding: 24px; box-shadow: var(--shadow);
+  transition: box-shadow 0.15s;
+}
+.debora-artifact .da-pilar:hover { box-shadow: var(--shadow-md); }
+.debora-artifact .da-pilar-num {
+  font-size: 10px; font-weight: 800; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--accent); margin-bottom: 8px;
+}
+.debora-artifact .da-pilar-title {
+  font-size: 17px; font-weight: 700; color: var(--text-primary);
+  margin-bottom: 10px; font-family: Georgia, serif; letter-spacing: -0.01em;
+}
+.debora-artifact .da-pilar-desc {
+  font-size: 13.5px; color: var(--text-secondary); line-height: 1.6;
+  margin-bottom: 14px; font-style: italic;
+  border-left: 2px solid var(--border-strong); padding-left: 12px;
+}
+.debora-artifact .da-pilar-section {
+  font-size: 10px; font-weight: 700; letter-spacing: 0.1em;
+  text-transform: uppercase; color: var(--text-muted); margin: 12px 0 6px;
+}
+.debora-artifact .da-pilar-tags { display: flex; flex-wrap: wrap; gap: 5px; }
+.debora-artifact .da-ptag {
+  font-size: 11px; color: var(--text-secondary);
+  background: var(--bg-subtle); border: 1px solid var(--border);
+  border-radius: 4px; padding: 2px 8px;
+}
+.debora-artifact .da-pilar-cuidado {
+  background: var(--gold-light); border: 1px solid var(--gold-border);
+  border-radius: var(--r-sm); padding: 10px 14px; margin-top: 14px;
+  font-size: 12px; color: var(--gold); line-height: 1.5;
+}
+.debora-artifact.dark .da-pilar-cuidado { color: var(--gold-border); }
+
+/* === MECANISMO === */
+.debora-artifact .da-mec-steps { display: flex; flex-direction: column; gap: 6px; }
+.debora-artifact .da-mec-step {
+  display: flex; align-items: flex-start; gap: 14px;
+  padding: 14px 18px; background: var(--bg-surface);
+  border: 1px solid var(--border); border-radius: var(--r); box-shadow: var(--shadow);
+}
+.debora-artifact .da-mec-num {
+  flex-shrink: 0; width: 28px; height: 28px; border-radius: 50%;
+  background: var(--accent); color: #fff; font-size: 12px; font-weight: 800;
+  display: flex; align-items: center; justify-content: center;
+}
+.debora-artifact .da-mec-text { font-size: 14px; color: var(--text-primary); line-height: 1.5; padding-top: 4px; }
+.debora-artifact .da-mec-sub { font-size: 12px; color: var(--text-secondary); margin-top: 3px; }
+
+/* === LIMITES === */
+.debora-artifact .da-limite-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 9px; }
+.debora-artifact .da-limite-item {
+  background: var(--red-light); border: 1px solid var(--red-border);
+  border-left: 3px solid var(--red-border); border-radius: var(--r-sm);
+  padding: 10px 14px; font-size: 13px; color: var(--red); line-height: 1.5;
+}
+.debora-artifact.dark .da-limite-item { color: var(--red-border); }
+
+/* === FRASES === */
+.debora-artifact .da-frase-list { display: flex; flex-direction: column; gap: 6px; }
+.debora-artifact .da-frase {
+  padding: 13px 18px; background: var(--bg-surface);
+  border: 1px solid var(--border); border-left: 3px solid var(--accent-mid);
+  border-radius: var(--r-sm); font-size: 14px; color: var(--text-primary);
+  font-style: italic; line-height: 1.55; box-shadow: var(--shadow);
+}
+.debora-artifact .da-frase-proib {
+  border-left-color: var(--red-border);
+  background: var(--red-light); color: var(--red);
+  text-decoration: line-through; font-style: normal;
+}
+.debora-artifact.dark .da-frase-proib { color: var(--red-border); }
+
+/* === CHECKLIST === */
+.debora-artifact .da-checklist { display: flex; flex-direction: column; gap: 6px; }
+.debora-artifact .da-check-item {
+  display: flex; align-items: flex-start; gap: 12px;
+  padding: 12px 16px; background: var(--bg-surface);
+  border: 1px solid var(--border); border-radius: var(--r);
+  cursor: pointer; transition: background 0.12s; user-select: none;
+}
+.debora-artifact .da-check-item:hover { background: var(--bg-subtle); }
+.debora-artifact .da-check-box {
+  flex-shrink: 0; width: 18px; height: 18px; border-radius: 3px;
+  border: 2px solid var(--border-strong); background: var(--bg-subtle);
+  margin-top: 2px; transition: all 0.14s; display: flex;
+  align-items: center; justify-content: center;
+}
+.debora-artifact .da-check-item.checked .da-check-box {
+  background: var(--accent); border-color: var(--accent);
+}
+.debora-artifact .da-check-item.checked .da-check-box::after {
+  content: ''; display: block; width: 5px; height: 9px;
+  border: 2px solid #fff; border-top: none; border-left: none;
+  transform: rotate(45deg) translateY(-1px);
+}
+.debora-artifact .da-check-text { font-size: 13.5px; color: var(--text-primary); line-height: 1.5; }
+.debora-artifact .da-check-item.checked .da-check-text { color: var(--text-muted); text-decoration: line-through; }
+.debora-artifact .da-check-progress {
+  font-size: 12px; color: var(--text-muted); margin-bottom: 10px;
+  font-weight: 600; letter-spacing: 0.04em;
+}
+
+/* === IF-THEN === */
+.debora-artifact .da-ifthen-list { display: flex; flex-direction: column; gap: 7px; }
+.debora-artifact .da-ifthen {
+  display: flex; align-items: stretch; gap: 0;
+  border-radius: var(--r); overflow: hidden;
+  border: 1px solid var(--border); box-shadow: var(--shadow);
+}
+.debora-artifact .da-if {
+  background: var(--bg-subtle); padding: 13px 16px;
+  font-size: 13px; color: var(--text-secondary);
+  flex: 1; border-right: 1px solid var(--border);
+  display: flex; align-items: center; gap: 10px;
+}
+.debora-artifact .da-if-badge {
+  font-size: 9px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--text-muted); background: var(--bg-muted);
+  border-radius: 3px; padding: 2px 6px; flex-shrink: 0;
+}
+.debora-artifact .da-then {
+  background: var(--bg-surface); padding: 13px 16px;
+  font-size: 13px; color: var(--text-primary);
+  flex: 1; font-weight: 600; display: flex; align-items: center; gap: 10px;
+}
+.debora-artifact .da-then-badge {
+  font-size: 9px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--accent-text); background: var(--accent-light);
+  border-radius: 3px; padding: 2px 6px; border: 1px solid var(--accent-mid); flex-shrink: 0;
+}
+
+/* === ERRORS === */
+.debora-artifact .da-error-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 11px; }
+.debora-artifact .da-error-item {
+  background: var(--bg-surface); border: 1px solid var(--border);
+  border-top: 3px solid var(--red-border); border-radius: var(--r);
+  padding: 15px 18px; box-shadow: var(--shadow);
+}
+.debora-artifact .da-error-title { font-size: 13px; font-weight: 700; color: var(--red); margin-bottom: 5px; }
+.debora-artifact.dark .da-error-title { color: var(--red-border); }
+.debora-artifact .da-error-body { font-size: 12.5px; color: var(--text-secondary); line-height: 1.5; }
+
+/* === ACTION STEPS === */
+.debora-artifact .da-action-steps { display: flex; flex-direction: column; gap: 7px; }
+.debora-artifact .da-action-step {
+  display: flex; align-items: flex-start; gap: 14px;
+  padding: 13px 18px; background: var(--bg-surface);
+  border: 1px solid var(--border); border-radius: var(--r); box-shadow: var(--shadow);
+}
+.debora-artifact .da-step-num {
+  flex-shrink: 0; width: 26px; height: 26px; border-radius: 50%;
+  background: var(--accent); color: #fff; font-size: 12px; font-weight: 800;
+  display: flex; align-items: center; justify-content: center;
+}
+.debora-artifact .da-step-text { font-size: 13.5px; color: var(--text-primary); line-height: 1.5; padding-top: 3px; }
+
+/* === KPI === */
+.debora-artifact .da-kpi-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(195px, 1fr)); gap: 11px; }
+.debora-artifact .da-kpi-item {
+  background: var(--bg-surface); border: 1px solid var(--border);
+  border-radius: var(--r); padding: 15px 17px; box-shadow: var(--shadow);
+}
+.debora-artifact .da-kpi-label {
+  font-size: 10.5px; font-weight: 700; letter-spacing: 0.1em;
+  text-transform: uppercase; color: var(--text-muted); margin-bottom: 5px;
+}
+.debora-artifact .da-kpi-val { font-size: 13px; color: var(--text-primary); line-height: 1.45; }
+.debora-artifact .da-kpi-primary { border-top: 3px solid var(--accent); }
+.debora-artifact .da-kpi-primary .da-kpi-label { color: var(--accent-text); }
+
+/* === APPROVAL === */
+.debora-artifact .da-approval {
+  background: var(--accent-light); border: 1.5px solid var(--accent-mid);
+  border-radius: var(--r); padding: 18px 22px;
+  display: flex; align-items: flex-start; gap: 14px; margin-top: 14px;
+}
+.debora-artifact .da-approval-icon {
+  width: 26px; height: 26px; border-radius: 50%; background: var(--accent);
+  color: #fff; font-size: 13px; font-weight: 800; display: flex;
+  align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;
+}
+.debora-artifact .da-approval-text { font-size: 13.5px; color: var(--accent-text); font-weight: 600; line-height: 1.55; }
+
+/* === RISK === */
+.debora-artifact .da-risk {
+  background: var(--red-light); border: 1px solid var(--red-border);
+  border-left: 3px solid var(--red-border); border-radius: var(--r-sm);
+  padding: 11px 15px; font-size: 13px; color: var(--red);
+  line-height: 1.5; margin-bottom: 7px;
+}
+.debora-artifact.dark .da-risk { color: var(--red-border); }
+
+/* === EFT === */
+.debora-artifact .da-eft-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.debora-artifact .da-eft-ok {
+  background: var(--accent-light); border: 1px solid var(--accent-mid);
+  border-radius: var(--r); padding: 18px 20px;
+}
+.debora-artifact .da-eft-no {
+  background: var(--red-light); border: 1px solid var(--red-border);
+  border-radius: var(--r); padding: 18px 20px;
+}
+.debora-artifact .da-eft-label {
+  font-size: 10px; font-weight: 800; letter-spacing: 0.12em;
+  text-transform: uppercase; margin-bottom: 10px;
+}
+.debora-artifact .da-eft-ok .da-eft-label { color: var(--accent); }
+.debora-artifact .da-eft-no .da-eft-label { color: var(--red); }
+.debora-artifact.dark .da-eft-no .da-eft-label { color: var(--red-border); }
+.debora-artifact .da-eft-item {
+  font-size: 13px; padding: 5px 0; border-bottom: 1px solid var(--border); line-height: 1.45;
+}
+.debora-artifact .da-eft-item:last-child { border-bottom: none; }
+.debora-artifact .da-eft-ok .da-eft-item { color: var(--accent-text); }
+.debora-artifact .da-eft-no .da-eft-item { color: var(--red); }
+.debora-artifact.dark .da-eft-no .da-eft-item { color: var(--red-border); }
+
+/* === FOOTER === */
+.debora-artifact .da-footer {
+  margin-top: 72px; padding: 24px 0; border-top: 1px solid var(--border);
+  display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;
+}
+.debora-artifact .da-footer-brand {
+  font-size: 11.5px; font-weight: 700; letter-spacing: 0.08em;
+  text-transform: uppercase; color: var(--text-muted);
+}
+.debora-artifact .da-footer-meta {
+  font-size: 11px; color: var(--text-muted); display: flex; gap: 16px; flex-wrap: wrap;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .debora-artifact .da-gov { grid-template-columns: 1fr; }
+  .debora-artifact .da-gk { border-right: none; border-bottom: 1px solid var(--border); }
+  .debora-artifact .da-estado-grid { grid-template-columns: 1fr; }
+  .debora-artifact .da-ifthen { flex-direction: column; }
+  .debora-artifact .da-if { border-right: none; border-bottom: 1px solid var(--border); }
+  .debora-artifact .da-eft-grid { grid-template-columns: 1fr; }
+  .debora-artifact .da-nl { padding: 4px 6px; font-size: 10px; }
+}
+@media (max-width: 480px) {
+  .debora-artifact .da-wrap { padding: 0 14px 60px; }
+  .debora-artifact .da-footer { flex-direction: column; align-items: flex-start; }
+}
+</style>
+</head>
+<body>
+<div class="debora-artifact" id="daRoot">
+
+<!-- NAV -->
+<nav class="da-nav">
+  <div class="da-nav-inner">
+    <div class="da-nav-links">
+      <button class="da-nl" onclick="daScroll('sec-decisao')">Decisão</button>
+      <button class="da-nl" onclick="daScroll('sec-gov')">Arquitetura</button>
+      <button class="da-nl" onclick="daScroll('sec-narrativa')">Narrativa</button>
+      <button class="da-nl" onclick="daScroll('sec-promessa')">Promessa</button>
+      <button class="da-nl" onclick="daScroll('sec-estados')">A → B</button>
+      <button class="da-nl" onclick="daScroll('sec-dores')">Dores</button>
+      <button class="da-nl" onclick="daScroll('sec-pilares')">Pilares</button>
+      <button class="da-nl" onclick="daScroll('sec-mecanismo')">Mecanismo</button>
+      <button class="da-nl" onclick="daScroll('sec-limites')">Limites</button>
+      <button class="da-nl" onclick="daScroll('sec-eft')">EFT</button>
+      <button class="da-nl" onclick="daScroll('sec-frases')">Frases</button>
+      <button class="da-nl" onclick="daScroll('sec-checklist')">Teste</button>
+      <button class="da-nl" onclick="daScroll('sec-matriz')">Matriz</button>
+      <button class="da-nl" onclick="daScroll('sec-protocolo')">Protocolo</button>
+      <button class="da-nl" onclick="daScroll('sec-erros')">Erros</button>
+      <button class="da-nl" onclick="daScroll('sec-acao')">Ação</button>
+      <button class="da-nl" onclick="daScroll('sec-kpi')">Sinais</button>
+    </div>
+    <button class="da-theme-btn" id="themeBtn" onclick="daToggleTheme()">Dark</button>
+  </div>
+</nav>
+
+<div class="da-wrap">
+
+  <!-- HEADER -->
+  <header class="da-header">
+    <div class="da-tag">Framework Interno</div>
+    <h1>Arquitetura da Oferta e Mentoria</h1>
+    <p class="da-header-sub">Framework interno para preservar a profundidade da mentoria e traduzi-la em linguagem clara, segura e coerente — da promessa à entrega.</p>
+    <div class="da-header-meta">
+      <div class="da-meta-item"><span class="da-ml">Função</span><span class="da-mv">Arquitetura da oferta e mentoria</span></div>
+      <div class="da-meta-item"><span class="da-ml">Autoria</span><span class="da-mv">Débora Delgado</span></div>
+      <div class="da-meta-item"><span class="da-ml">Tempo de clareza</span><span class="da-mv">3 min para explicar a mentoria</span></div>
+      <div class="da-meta-item"><span class="da-ml">Versão</span><span class="da-mv">1.0</span></div>
+    </div>
+  </header>
+
+  <!-- 01 DECISÃO -->
+  <section class="da-section" id="sec-decisao">
+    <div class="da-sh"><span class="da-sn">01</span><h2 class="da-st">Tese Central do Framework</h2></div>
+    <div class="da-decision">
+      <div class="da-decision-label">Para que existe este sistema</div>
+      <p class="da-decision-text">Este sistema existe para que Débora decida se a mentoria está clara o suficiente para ser explicada, vendida e entregue sem distorção. A oferta deve preservar profundidade e reduzir ambiguidade ao mesmo tempo.</p>
+      <div class="da-d-opts">
+        <span class="da-d-opt">A promessa está clara?</span>
+        <span class="da-d-opt">Para quem é?</span>
+        <span class="da-d-opt">Para quem não é?</span>
+        <span class="da-d-opt">O que entrega?</span>
+        <span class="da-d-opt">O que não entrega?</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 GOVERNANÇA -->
+  <section class="da-section" id="sec-gov">
+    <div class="da-sh"><span class="da-sn">02</span><h2 class="da-st">Arquitetura do Framework</h2></div>
+    <div class="da-gov">
+      <div class="da-gov-row"><div class="da-gk">Framework</div><div class="da-gv">Arquitetura da Oferta e Mentoria</div></div>
+      <div class="da-gov-row"><div class="da-gk">Função estratégica</div><div class="da-gv">Preservar profundidade e traduzir em oferta clara, segura e coerente</div></div>
+      <div class="da-gov-row"><div class="da-gk">Quando consultar</div><div class="da-gv">Sempre que for comunicar, vender, revisar oferta ou criar produto derivado</div></div>
+      <div class="da-gov-row"><div class="da-gk">Condições de uso</div><div class="da-gv">Visão da mentoria, dores do ICP, pilares, método, objeções, casos e linguagem real</div></div>
+      <div class="da-gov-row"><div class="da-gk">Resultado esperado</div><div class="da-gv">Oferta clara, promessa segura, narrativa central e estrutura de decisão</div></div>
+      <div class="da-gov-row"><div class="da-gk">Decisão que orienta</div><div class="da-gv">A mentoria está pronta para ser comunicada, vendida e encaminhada corretamente?</div></div>
+      <div class="da-gov-row"><div class="da-gk">Indicador de clareza</div><div class="da-gv">Clareza da oferta sustentada nas conversas</div></div>
+      <div class="da-gov-row"><div class="da-gk">Desalinhamentos que evita</div><div class="da-gv">Promessa ampla, venda desalinhada, expectativa errada, sobrecarga e baixa conversão</div></div>
+      <div class="da-gov-row"><div class="da-gk">Sinais de clareza</div><div class="da-gv">Débora consegue explicar a mentoria com clareza sem reduzir sua profundidade</div></div>
+      <div class="da-gov-row"><div class="da-gk">Como aplicar</div><div class="da-gv">Retornar a este framework após conversas reais para refinamento de linguagem</div></div>
+    </div>
+  </section>
+
+  <!-- 03 CONTEXTO -->
+  <section class="da-section" id="sec-contexto">
+    <div class="da-sh"><span class="da-sn">03</span><h2 class="da-st">Contexto do Problema</h2></div>
+    <div class="da-card" style="margin-bottom:14px;">
+      <p class="da-card-title">O problema central</p>
+      <p style="font-size:15px; font-weight:600; color:var(--text-primary); margin-bottom:8px;">O problema não é falta de profundidade. O problema é transformar profundidade em oferta compreensível.</p>
+      <p style="font-size:13.5px; color:var(--text-secondary); line-height:1.65;">Sem arquitetura de oferta, o risco não é vender menos. O risco é vender errado, atrair quem não está pronto, gerar expectativa equivocada e transformar o que deveria ser entrega em sobrecarga operacional.</p>
+    </div>
+    <div class="da-prob-grid">
+      <div class="da-prob-item">Explicar demais e aumentar confusão</div>
+      <div class="da-prob-item">Vender pela complexidade em vez de pela clareza</div>
+      <div class="da-prob-item">Atrair pessoas com baixa prontidão</div>
+      <div class="da-prob-item">Gerar expectativa terapêutica inadvertida</div>
+      <div class="da-prob-item">Confundir mentoria com cura ou terapia</div>
+      <div class="da-prob-item">Comunicar para um público amplo demais</div>
+      <div class="da-prob-item">Vender transformação profunda para quem quer solução rápida</div>
+      <div class="da-prob-item">Aumentar a própria carga operacional</div>
+    </div>
+  </section>
+
+  <!-- 04 NARRATIVA -->
+  <section class="da-section" id="sec-narrativa">
+    <div class="da-sh"><span class="da-sn">04</span><h2 class="da-st">Narrativa Central</h2></div>
+    <div class="da-card" style="margin-bottom:16px;">
+      <p class="da-card-title">Para quem é a mentoria</p>
+      <p style="font-size:15px; color:var(--text-primary); line-height:1.7; margin-bottom:14px;">A mentoria é para <strong>pessoas que já geram ou desejam gerar impacto real</strong>, mas percebem que a forma atual de viver, trabalhar, liderar, criar ou contribuir ainda não está congruente com quem são.</p>
+      <p style="font-size:13.5px; color:var(--text-secondary); margin-bottom:12px; line-height:1.6;">O corporativo pode ser um contexto possível. Não é a fronteira do ICP. A narrativa conecta:</p>
+      <div class="da-tags">
+        <span class="da-tag-item da-tag-green">Propósito</span>
+        <span class="da-tag-item da-tag-green">Impacto</span>
+        <span class="da-tag-item da-tag-green">Trabalho</span>
+        <span class="da-tag-item da-tag-green">Valor</span>
+        <span class="da-tag-item da-tag-green">Carreira</span>
+        <span class="da-tag-item da-tag-green">Contribuição</span>
+        <span class="da-tag-item da-tag-green">Padrões</span>
+        <span class="da-tag-item da-tag-green">Inconsciente</span>
+        <span class="da-tag-item da-tag-green">Relações</span>
+        <span class="da-tag-item da-tag-green">Entusiasmo</span>
+        <span class="da-tag-item da-tag-green">Prosperidade</span>
+        <span class="da-tag-item da-tag-green">Congruência</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 05 PROMESSA -->
+  <section class="da-section" id="sec-promessa">
+    <div class="da-sh"><span class="da-sn">05</span><h2 class="da-st">Promessa Principal</h2></div>
+    <div class="da-promise" style="margin-bottom:20px;">
+      <div class="da-promise-title">Promessa central</div>
+      <div class="da-promise-main">Impacto com congruência.</div>
+      <p class="da-promise-sub">Viver, trabalhar, liderar, criar, contribuir e receber sem se trair.</p>
+    </div>
+    <div class="da-grid-2">
+      <div class="da-card">
+        <p class="da-card-title">O que significa</p>
+        <p style="font-size:13.5px; color:var(--text-primary); line-height:1.6;">Gerar impacto genuíno sem sacrificar quem se é no processo. Não é apenas sobre produtividade. É sobre expressão real, valor autêntico e sustentação interna de tudo o que se constrói.</p>
+      </div>
+      <div class="da-card">
+        <p class="da-card-title">Por que importa</p>
+        <p style="font-size:13.5px; color:var(--text-primary); line-height:1.6;">Porque muitas pessoas já geram impacto. O custo é a autotraição silenciosa. Não é falta de competência. É desalinhamento entre quem se é e como se opera.</p>
+      </div>
+      <div class="da-card">
+        <p class="da-card-title">Para quem é</p>
+        <p style="font-size:13.5px; color:var(--text-primary); line-height:1.6;">Pessoas que já têm competência, propósito ou desejo de contribuição, mas sentem que a forma atual de trabalhar, criar ou liderar não expressa quem de fato são.</p>
+      </div>
+      <div class="da-card">
+        <p class="da-card-title">Que problema resolve</p>
+        <p style="font-size:13.5px; color:var(--text-primary); line-height:1.6;">O desalinhamento entre quem se é e como se vive, trabalha, decide, se relaciona e gera valor. Não é problema de estratégia externa. É padrão interno não reconhecido.</p>
+      </div>
+      <div class="da-card">
+        <p class="da-card-title">Qual transformação aponta</p>
+        <p style="font-size:13.5px; color:var(--text-primary); line-height:1.6;">Da adaptação constante à expressão congruente. Do esforço como justificativa à entrega com sentido. Da autotraição ao posicionamento com inteireza.</p>
+      </div>
+      <div class="da-card">
+        <p class="da-card-title">Qual limite precisa respeitar</p>
+        <p style="font-size:13.5px; color:var(--text-primary); line-height:1.6;">Não é cura. Não é garantia. Não é resolução de conflito de vida em meses. É processo de consciência, clareza e aplicação progressiva com compromisso real do mentorado.</p>
+      </div>
+    </div>
+    <div class="da-card" style="margin-top:16px; border-top:2px solid var(--accent-mid);">
+      <p class="da-card-title">Promessa expandida</p>
+      <p style="font-size:14px; color:var(--text-primary); line-height:1.7; font-style:italic;">A mentoria conduz pessoas que já geram ou desejam gerar impacto real a reconhecerem seus padrões, reorganizarem sua relação com trabalho, valor, dinheiro, propósito, relações e energia vital, para construir uma forma mais congruente de viver, trabalhar, criar, contribuir e receber.</p>
+    </div>
+  </section>
+
+  <!-- 06 ESTADOS A → B -->
+  <section class="da-section" id="sec-estados">
+    <div class="da-sh"><span class="da-sn">06</span><h2 class="da-st">Ponto A → Ponto B</h2></div>
+    <div class="da-estado-grid">
+      <div class="da-estado-a">
+        <div class="da-estado-label">Ponto A — Estado atual</div>
+        <div class="da-estado-title">Impacto sem congruência</div>
+        <div class="da-estado-item">Trabalha, entrega ou lidera, mas sente desalinhamento</div>
+        <div class="da-estado-item">Sente que se adaptou demais</div>
+        <div class="da-estado-item">Tem competência, mas não sente plena expressão</div>
+        <div class="da-estado-item">Sente algo latente ainda sem forma</div>
+        <div class="da-estado-item">Quer gerar valor para a sociedade, mas não sabe como</div>
+        <div class="da-estado-item">Sente custo emocional no modo atual de funcionar</div>
+        <div class="da-estado-item">Reconhece padrões, mas ainda não sabe conduzi-los</div>
+        <div class="da-estado-item">Pode querer permanecer, expandir, criar projeto ou transicionar</div>
+      </div>
+      <div class="da-estado-b">
+        <div class="da-estado-label">Ponto B — Estado desejado</div>
+        <div class="da-estado-title">Impacto com congruência</div>
+        <div class="da-estado-item">Reconhece valor próprio sem depender de validação</div>
+        <div class="da-estado-item">Sustenta limites com clareza e sem culpa</div>
+        <div class="da-estado-item">Trabalha com mais sentido e menos autotraição</div>
+        <div class="da-estado-item">Gera contribuição sem sacrificar quem é</div>
+        <div class="da-estado-item">Integra propósito, carreira e vida de forma sustentável</div>
+        <div class="da-estado-item">Sustenta prosperidade sem culpa</div>
+        <div class="da-estado-item">Decide com mais consciência e menos reatividade</div>
+        <div class="da-estado-item">Usa entusiasmo como dado estratégico</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 07 DORES -->
+  <section class="da-section" id="sec-dores">
+    <div class="da-sh"><span class="da-sn">07</span><h2 class="da-st">Mapa de Dores e Transformações</h2></div>
+    <div class="da-table-wrap">
+      <table class="da-table">
+        <thead>
+          <tr>
+            <th>Dor atual</th>
+            <th>Causa provável</th>
+            <th>Transformação desejada</th>
+            <th>Pilar</th>
+            <th>Linguagem de oferta</th>
+            <th>Risco de promessa exagerada</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Gera impacto, mas não reconhece seu próprio valor</td>
+            <td>Crença de que valor vem do esforço ou da validação externa</td>
+            <td>Reconhecer valor autêntico independente de aprovação</td>
+            <td>Automaestria</td>
+            <td>"Seu valor não depende de quanto você se esforça"</td>
+            <td>Não prometer que o problema desaparece. É processo.</td>
+          </tr>
+          <tr>
+            <td>Trabalha muito, mas sente incongruência</td>
+            <td>Padrão de adaptação. Desconexão entre função e essência</td>
+            <td>Trabalhar com mais sentido e menor custo interno</td>
+            <td>Automaestria + Entusiasmo</td>
+            <td>"Trabalho não precisa ser sofrimento para ser legítimo"</td>
+            <td>Não prometer saída imediata do trabalho ou mudança radical rápida</td>
+          </tr>
+          <tr>
+            <td>Tem propósito latente, mas não sabe dar forma</td>
+            <td>Falta de clareza sobre valor autêntico. Medo de exposição</td>
+            <td>Reconhecer e organizar contribuição possível</td>
+            <td>Entusiasmo + Automaestria</td>
+            <td>"O que é natural para você pode ser valioso para outra pessoa"</td>
+            <td>Não prometer que propósito resolve tudo ou que existe um único propósito</td>
+          </tr>
+          <tr>
+            <td>Quer transicionar ou expandir, mas teme perder segurança</td>
+            <td>Crença de que segurança e mudança são incompatíveis</td>
+            <td>Criar novo caminho sem abandonar sustentação</td>
+            <td>Automaestria + Relacionamentos</td>
+            <td>"Você não precisa jogar fora tudo que construiu"</td>
+            <td>Não prometer que a transição será fácil ou sem desconforto</td>
+          </tr>
+          <tr>
+            <td>Sente culpa ao receber ou cobrar</td>
+            <td>Relação disfuncional com valor, merecimento e dinheiro</td>
+            <td>Sustentar recebimento com integridade e sem culpa</td>
+            <td>Automaestria</td>
+            <td>"Receber bem pelo que se entrega é congruência, não ganância"</td>
+            <td>Não prometer cura de crença nem resultado financeiro específico</td>
+          </tr>
+          <tr>
+            <td>Repete padrões em trabalho e relações</td>
+            <td>Mecanismos de defesa inconscientes operando no automático</td>
+            <td>Perceber o padrão antes de obedecê-lo</td>
+            <td>Automaestria + Relacionamentos</td>
+            <td>"O que se repete não te pune. Está mostrando um padrão"</td>
+            <td>Não prometer eliminação de padrões. O objetivo é consciência e escolha</td>
+          </tr>
+          <tr>
+            <td>Busca metas, mas não sustenta mudança</td>
+            <td>Identidade ainda desalinhada com o novo estado desejado</td>
+            <td>Criar metas que emergem de quem se está se tornando</td>
+            <td>Automaestria</td>
+            <td>"Meta sem identidade vira esforço sem raiz"</td>
+            <td>Não prometer que as metas serão automaticamente alcançadas</td>
+          </tr>
+          <tr>
+            <td>Se adapta demais e perde energia vital</td>
+            <td>Padrão de agradar, pertencer ou evitar conflito a qualquer custo</td>
+            <td>Sustento de limites com respeito e sem autotraição</td>
+            <td>Relacionamentos + Entusiasmo</td>
+            <td>"Adaptar-se demais tem um custo que aparece no corpo e na energia"</td>
+            <td>Não prometer que a pessoa vai parar de se adaptar. É progressão.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- 08 PILARES -->
+  <section class="da-section" id="sec-pilares">
+    <div class="da-sh"><span class="da-sn">08</span><h2 class="da-st">Pilares da Mentoria</h2></div>
+    <div class="da-grid-3">
+      <div class="da-pilar">
+        <div class="da-pilar-num">Pilar 1</div>
+        <div class="da-pilar-title">Automaestria</div>
+        <div class="da-pilar-desc">Não é mudar quem a pessoa é. É parar de ser governada pelo que ainda não percebe.</div>
+        <div class="da-pilar-section">Função</div>
+        <p style="font-size:13px; color:var(--text-secondary); line-height:1.55; margin-bottom:10px;">Ajudar a pessoa a reconhecer padrões internos, emoções, crenças e mecanismos que conduzem escolhas no automático.</p>
+        <div class="da-pilar-section">Inclui</div>
+        <div class="da-pilar-tags">
+          <span class="da-ptag">Personalidade</span><span class="da-ptag">Eneagrama</span>
+          <span class="da-ptag">Padrões</span><span class="da-ptag">Emoções</span>
+          <span class="da-ptag">Crenças</span><span class="da-ptag">Inconsciente</span>
+          <span class="da-ptag">Mecanismos de defesa</span><span class="da-ptag">Relação com trabalho</span>
+          <span class="da-ptag">Relação com valor</span><span class="da-ptag">Relação com dinheiro</span>
+          <span class="da-ptag">Metas e identidade</span>
+        </div>
+        <div class="da-pilar-section">Transformação esperada</div>
+        <p style="font-size:13px; color:var(--text-secondary); line-height:1.55; margin-bottom:10px;">A pessoa diferencia o que é essência, o que aprendeu a ser e o que pode escolher a partir de agora.</p>
+        <div class="da-pilar-section">Uso na venda</div>
+        <p style="font-size:13px; color:var(--text-secondary); line-height:1.55; margin-bottom:10px;">Mostrar que o problema não é externo. Os padrões operam no automático. Nomear isso já é um primeiro movimento de consciência.</p>
+        <div class="da-pilar-cuidado">Cuidado: não usar Eneagrama como rótulo fixo. É ferramenta de consciência, não identidade.</div>
+      </div>
+      <div class="da-pilar">
+        <div class="da-pilar-num">Pilar 2</div>
+        <div class="da-pilar-title">Dinâmica dos Relacionamentos</div>
+        <div class="da-pilar-desc">Relações revelam padrões, limites, expectativas, papéis e formas de adaptação.</div>
+        <div class="da-pilar-section">Função</div>
+        <p style="font-size:13px; color:var(--text-secondary); line-height:1.55; margin-bottom:10px;">Ajudar a pessoa a gerar impacto humano sem se trair. Compreender como se posiciona, se cala, se adapta ou cobra nas relações.</p>
+        <div class="da-pilar-section">Inclui</div>
+        <div class="da-pilar-tags">
+          <span class="da-ptag">Relações como espelho</span><span class="da-ptag">Limites</span>
+          <span class="da-ptag">Comunicação</span><span class="da-ptag">Pertencimento</span>
+          <span class="da-ptag">Validação</span><span class="da-ptag">Autorrespeito</span>
+          <span class="da-ptag">Dar e receber</span><span class="da-ptag">Impacto sem autotraição</span>
+        </div>
+        <div class="da-pilar-section">Transformação esperada</div>
+        <p style="font-size:13px; color:var(--text-secondary); line-height:1.55; margin-bottom:10px;">A pessoa sustenta presença, limites e voz sem precisar agradar, performar ou desaparecer nas relações.</p>
+        <div class="da-pilar-section">Uso na venda</div>
+        <p style="font-size:13px; color:var(--text-secondary); line-height:1.55; margin-bottom:10px;">Conectar com quem sente que se adapta demais, que perde energia nas relações ou que não consegue sustentar limites sem culpa.</p>
+        <div class="da-pilar-cuidado">Cuidado: não posicionar como terapia de casal, mediação de conflito ou aconselhamento relacional clínico.</div>
+      </div>
+      <div class="da-pilar">
+        <div class="da-pilar-num">Pilar 3</div>
+        <div class="da-pilar-title">Química do Entusiasmo</div>
+        <div class="da-pilar-desc">Entusiasmo é dado estratégico. Não é euforia. É sinal de vida autêntica.</div>
+        <div class="da-pilar-section">Função</div>
+        <p style="font-size:13px; color:var(--text-secondary); line-height:1.55; margin-bottom:10px;">Ajudar a pessoa a reconhecer o que expande sua energia vital e usar isso como bússola de direção prática.</p>
+        <div class="da-pilar-section">Inclui</div>
+        <div class="da-pilar-tags">
+          <span class="da-ptag">Interesses genuínos</span><span class="da-ptag">Corpo como bússola</span>
+          <span class="da-ptag">Energia vital</span><span class="da-ptag">Atividades expansivas</span>
+          <span class="da-ptag">Atividades que drenam</span><span class="da-ptag">Rotina sustentável</span>
+          <span class="da-ptag">Projeto autoral</span><span class="da-ptag">Propósito aplicado</span>
+          <span class="da-ptag">Leveza e prosperidade</span>
+        </div>
+        <div class="da-pilar-section">Transformação esperada</div>
+        <p style="font-size:13px; color:var(--text-secondary); line-height:1.55; margin-bottom:10px;">A pessoa identifica e protege o que a expande. Para de operar apenas pelo esforço. Sustenta projetos com mais leveza e direção.</p>
+        <div class="da-pilar-section">Uso na venda</div>
+        <p style="font-size:13px; color:var(--text-secondary); line-height:1.55; margin-bottom:10px;">Conectar com quem sente que perdeu contato com o que gosta de fazer, que não sente entusiasmo genuíno há muito tempo.</p>
+        <div class="da-pilar-cuidado">Cuidado: não prometer que entusiasmo leva a resultado financeiro imediato. É dado de direção, não garantia de mercado.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 09 MECANISMO -->
+  <section class="da-section" id="sec-mecanismo">
+    <div class="da-sh"><span class="da-sn">09</span><h2 class="da-st">Arquitetura da Transformação</h2></div>
+    <p style="font-size:13.5px; color:var(--text-secondary); margin-bottom:18px; line-height:1.6;">Como a transformação acontece na mentoria. Não é um processo rígido. É uma arquitetura de progressão com ritmo próprio para cada pessoa.</p>
+    <div class="da-mec-steps">
+      <div class="da-mec-step">
+        <div class="da-mec-num">1</div>
+        <div>
+          <div class="da-mec-text"><strong>Perceber o incômodo</strong></div>
+          <div class="da-mec-sub">Nomear o que já estava presente, mas ainda não tinha forma. Dar palavra ao que a pessoa sente como vago ou difuso.</div>
+        </div>
+      </div>
+      <div class="da-mec-step">
+        <div class="da-mec-num">2</div>
+        <div>
+          <div class="da-mec-text"><strong>Nomear o padrão</strong></div>
+          <div class="da-mec-sub">Identificar o que se repete em contextos diferentes. Trabalho, relações, dinheiro, decisões, corpo, energia.</div>
+        </div>
+      </div>
+      <div class="da-mec-step">
+        <div class="da-mec-num">3</div>
+        <div>
+          <div class="da-mec-text"><strong>Entender a função do padrão</strong></div>
+          <div class="da-mec-sub">Todo padrão protege algo. Compreender a função original reduz a resistência e amplia a liberdade de escolha.</div>
+        </div>
+      </div>
+      <div class="da-mec-step">
+        <div class="da-mec-num">4</div>
+        <div>
+          <div class="da-mec-text"><strong>Revisar crenças e interpretações</strong></div>
+          <div class="da-mec-sub">Questionar o que se aprendeu a acreditar sobre trabalho, valor, dinheiro, relações e merecimento.</div>
+        </div>
+      </div>
+      <div class="da-mec-step">
+        <div class="da-mec-num">5</div>
+        <div>
+          <div class="da-mec-text"><strong>Reconhecer valor autêntico</strong></div>
+          <div class="da-mec-sub">Mapear o que já existe em termos de talentos, história, interesses, entusiasmo e forma singular de contribuir.</div>
+        </div>
+      </div>
+      <div class="da-mec-step">
+        <div class="da-mec-num">6</div>
+        <div>
+          <div class="da-mec-text"><strong>Criar novas respostas</strong></div>
+          <div class="da-mec-sub">Com consciência do padrão, a pessoa começa a criar respostas diferentes. Não por força de vontade. Por clareza interna.</div>
+        </div>
+      </div>
+      <div class="da-mec-step">
+        <div class="da-mec-num">7</div>
+        <div>
+          <div class="da-mec-text"><strong>Sustentar escolhas congruentes</strong></div>
+          <div class="da-mec-sub">O desafio não é ter um insight. É sustentar a nova forma de operar quando o padrão antigo é ativado.</div>
+        </div>
+      </div>
+      <div class="da-mec-step">
+        <div class="da-mec-num">8</div>
+        <div>
+          <div class="da-mec-text"><strong>Transformar impacto em expressão prática</strong></div>
+          <div class="da-mec-sub">Integrar tudo o que foi reconhecido, revisado e expandido na forma de trabalhar, criar, contribuir e receber no cotidiano.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10 LIMITES -->
+  <section class="da-section" id="sec-limites">
+    <div class="da-sh"><span class="da-sn">10</span><h2 class="da-st">Limites da Promessa</h2></div>
+    <div class="da-card" style="margin-bottom:16px; border-top:2px solid var(--red-border);">
+      <p class="da-card-title">Posicionamento obrigatório</p>
+      <p style="font-size:14px; color:var(--text-primary); line-height:1.65;">A mentoria trabalha <strong>consciência, clareza, aplicação e progressão</strong>. Não é promessa terapêutica. Não é garantia financeira. Não é transformação instantânea. O processo tem ritmo próprio e exige compromisso genuíno do mentorado.</p>
+    </div>
+    <p style="font-size:12px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:var(--text-muted); margin-bottom:10px;">Nunca prometer</p>
+    <div class="da-limite-grid">
+      <div class="da-limite-item">Cura de qualquer condição</div>
+      <div class="da-limite-item">Diagnóstico clínico ou psicológico</div>
+      <div class="da-limite-item">Resultado garantido</div>
+      <div class="da-limite-item">Transformação instantânea</div>
+      <div class="da-limite-item">Enriquecimento rápido</div>
+      <div class="da-limite-item">Eliminação total de padrões</div>
+      <div class="da-limite-item">Substituição de terapia</div>
+      <div class="da-limite-item">Solução mágica</div>
+      <div class="da-limite-item">Controle emocional absoluto</div>
+      <div class="da-limite-item">Mudança sem desconforto</div>
+      <div class="da-limite-item">Prosperidade sem processo</div>
+      <div class="da-limite-item">Descoberta definitiva de propósito</div>
+    </div>
+  </section>
+
+  <!-- 11 EFT -->
+  <section class="da-section" id="sec-eft">
+    <div class="da-sh"><span class="da-sn">11</span><h2 class="da-st">EFT no Processo</h2></div>
+    <div class="da-card" style="margin-bottom:16px;">
+      <p class="da-card-title">Posicionamento correto</p>
+      <p style="font-size:14px; color:var(--text-primary); line-height:1.65;">EFT é uma ferramenta cotidiana de apoio para percepção emocional, liberação de carga e progressão no processo. Não é a promessa. É um instrumento dentro de uma arquitetura maior.</p>
+    </div>
+    <div class="da-eft-grid">
+      <div class="da-eft-ok">
+        <div class="da-eft-label">Usar como</div>
+        <div class="da-eft-item">Apoio interno da mentoria</div>
+        <div class="da-eft-item">Ferramenta de percepção emocional</div>
+        <div class="da-eft-item">Suporte para liberar carga emocional</div>
+        <div class="da-eft-item">Integração entre consciência e corpo</div>
+        <div class="da-eft-item">Auxílio na progressão entre sessões</div>
+      </div>
+      <div class="da-eft-no">
+        <div class="da-eft-label">Nunca usar como</div>
+        <div class="da-eft-item">Promessa principal da mentoria</div>
+        <div class="da-eft-item">Argumento comercial central</div>
+        <div class="da-eft-item">Garantia de cura ou resultado</div>
+        <div class="da-eft-item">Solução isolada fora do processo</div>
+        <div class="da-eft-item">Eixo da narrativa de vendas</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 12 FRASES APROVADAS -->
+  <section class="da-section" id="sec-frases">
+    <div class="da-sh"><span class="da-sn">12</span><h2 class="da-st">Frases Aprovadas e Proibidas</h2></div>
+    <p style="font-size:12px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:var(--text-muted); margin-bottom:10px;">Frases aprovadas para comunicação</p>
+    <div class="da-frase-list" style="margin-bottom:22px;">
+      <div class="da-frase">Impacto com congruência.</div>
+      <div class="da-frase">Viver, trabalhar, liderar, criar, contribuir e receber sem se trair.</div>
+      <div class="da-frase">Trabalho não precisa ser sofrimento para ser legítimo.</div>
+      <div class="da-frase">Valor não nasce apenas do esforço.</div>
+      <div class="da-frase">O que se repete não está te punindo. Está mostrando um padrão.</div>
+      <div class="da-frase">Automaestria começa quando você percebe o automático.</div>
+      <div class="da-frase">Próspero não é quem corre mais. É quem sustenta valor com coerência.</div>
+      <div class="da-frase">O que é natural para você pode ser valioso para outra pessoa.</div>
+      <div class="da-frase">Entusiasmo é dado estratégico.</div>
+      <div class="da-frase">Sua história também é fonte de valor.</div>
+      <div class="da-frase">Propósito não precisa viver separado do trabalho.</div>
+      <div class="da-frase">Você não precisa jogar fora tudo que construiu para viver com mais congruência.</div>
+    </div>
+    <p style="font-size:12px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:var(--text-muted); margin-bottom:10px;">Frases proibidas</p>
+    <div class="da-frase-list">
+      <div class="da-frase da-frase-proib">Cure seus bloqueios</div>
+      <div class="da-frase da-frase-proib">Destrave sua vida rapidamente</div>
+      <div class="da-frase da-frase-proib">Elimine seus padrões</div>
+      <div class="da-frase da-frase-proib">Manifeste prosperidade sem esforço</div>
+      <div class="da-frase da-frase-proib">Resultado garantido</div>
+      <div class="da-frase da-frase-proib">Basta querer</div>
+      <div class="da-frase da-frase-proib">Qualquer pessoa pode fazer</div>
+      <div class="da-frase da-frase-proib">Mude tudo em poucos dias</div>
+      <div class="da-frase da-frase-proib">Reprograme sua vida instantaneamente</div>
+      <div class="da-frase da-frase-proib">Fique rica com propósito</div>
+      <div class="da-frase da-frase-proib">Descubra sua missão definitiva em uma aula</div>
+      <div class="da-frase da-frase-proib">Tudo depende só de você</div>
+    </div>
+  </section>
+
+  <!-- 13 CHECKLIST DE CLAREZA -->
+  <section class="da-section" id="sec-checklist">
+    <div class="da-sh"><span class="da-sn">13</span><h2 class="da-st">Teste de Clareza da Oferta</h2></div>
+    <p style="font-size:13.5px; color:var(--text-secondary); margin-bottom:14px; line-height:1.6;">Aplique este checklist antes de comunicar ou vender a mentoria. Clique em cada item para marcar.</p>
+    <div id="checkProgress" class="da-check-progress">0 de 12 aprovados</div>
+    <div class="da-checklist" id="checkList">
+      <div class="da-check-item" onclick="daCheck(this)">
+        <div class="da-check-box"></div><div class="da-check-text">Está claro para quem é a mentoria?</div>
+      </div>
+      <div class="da-check-item" onclick="daCheck(this)">
+        <div class="da-check-box"></div><div class="da-check-text">Está claro para quem não é?</div>
+      </div>
+      <div class="da-check-item" onclick="daCheck(this)">
+        <div class="da-check-box"></div><div class="da-check-text">A promessa é forte sem ser irresponsável?</div>
+      </div>
+      <div class="da-check-item" onclick="daCheck(this)">
+        <div class="da-check-box"></div><div class="da-check-text">A linguagem preserva profundidade sem virar complexidade?</div>
+      </div>
+      <div class="da-check-item" onclick="daCheck(this)">
+        <div class="da-check-box"></div><div class="da-check-text">O ICP não foi limitado ao corporativo?</div>
+      </div>
+      <div class="da-check-item" onclick="daCheck(this)">
+        <div class="da-check-box"></div><div class="da-check-text">O anti-ICP foi tratado como baixa prontidão, não como julgamento?</div>
+      </div>
+      <div class="da-check-item" onclick="daCheck(this)">
+        <div class="da-check-box"></div><div class="da-check-text">A mentoria não foi confundida com terapia?</div>
+      </div>
+      <div class="da-check-item" onclick="daCheck(this)">
+        <div class="da-check-box"></div><div class="da-check-text">EFT não virou promessa central?</div>
+      </div>
+      <div class="da-check-item" onclick="daCheck(this)">
+        <div class="da-check-box"></div><div class="da-check-text">Existe próximo passo claro para o lead?</div>
+      </div>
+      <div class="da-check-item" onclick="daCheck(this)">
+        <div class="da-check-box"></div><div class="da-check-text">A oferta reduz carga operacional da Débora?</div>
+      </div>
+      <div class="da-check-item" onclick="daCheck(this)">
+        <div class="da-check-box"></div><div class="da-check-text">A entrega sustenta a promessa?</div>
+      </div>
+      <div class="da-check-item" onclick="daCheck(this)">
+        <div class="da-check-box"></div><div class="da-check-text">A pessoa certa consegue se reconhecer na comunicação?</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 14 MATRIZ COMUNICAÇÃO -->
+  <section class="da-section" id="sec-matriz">
+    <div class="da-sh"><span class="da-sn">14</span><h2 class="da-st">Matriz de Comunicação da Oferta</h2></div>
+    <div class="da-table-wrap">
+      <table class="da-table">
+        <thead>
+          <tr>
+            <th>Contexto do lead</th>
+            <th>Dor percebida</th>
+            <th>Linguagem recomendada</th>
+            <th>Risco de linguagem</th>
+            <th>Próximo passo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Pessoa em transição</strong></td>
+            <td>Medo de perder segurança. Dúvida sobre identidade profissional.</td>
+            <td>"Você não precisa jogar fora tudo que construiu. É sobre integrar, não abandonar."</td>
+            <td>Não prometer que a transição será fácil ou imediata</td>
+            <td>Investigar motivação real. Avaliar se busca estratégia ou transformação.</td>
+          </tr>
+          <tr>
+            <td><strong>Criando projeto paralelo</strong></td>
+            <td>Algo latente sem forma. Insegurança sobre valor e direção.</td>
+            <td>"O que é natural para você pode ser valioso para outra pessoa. Sua história é fonte de valor."</td>
+            <td>Não prometer que o projeto terá sucesso financeiro rápido</td>
+            <td>Investigar Mapa de Valor Autêntico. Verificar prontidão.</td>
+          </tr>
+          <tr>
+            <td><strong>Alta responsabilidade</strong></td>
+            <td>Cansaço com adaptação. Custo interno da entrega constante.</td>
+            <td>"Trabalho não precisa ser sofrimento para ser legítimo. Resultado sem autotraição é possível."</td>
+            <td>Não prometer saída do trabalho ou redução de desempenho</td>
+            <td>Explorar padrão de adaptação. Score de prontidão.</td>
+          </tr>
+          <tr>
+            <td><strong>Orientada por propósito</strong></td>
+            <td>Desalinhamento entre ação e missão. Sente que poderia contribuir mais.</td>
+            <td>"Propósito não precisa viver separado do trabalho. Impacto com congruência é possível."</td>
+            <td>Não prometer que propósito resolve todos os conflitos externos</td>
+            <td>Avaliar nível de consciência e abertura. Score de prontidão.</td>
+          </tr>
+          <tr>
+            <td><strong>Vem do corporativo</strong></td>
+            <td>Pode ter performance sólida mas baixa satisfação. Ou transição iminente.</td>
+            <td>Não presumir que o corporativo é o único contexto. Investigar o que realmente importa para ela.</td>
+            <td>Não limitar comunicação ao vocabulário corporativo</td>
+            <td>Investigar o que está em jogo. Verificar abertura além do cargo.</td>
+          </tr>
+          <tr>
+            <td><strong>Já investe em desenvolvimento</strong></td>
+            <td>Já tentou muitas abordagens. Quer algo que vá mais fundo.</td>
+            <td>"O que separa autoconhecimento de automaestria é a aplicação no cotidiano."</td>
+            <td>Não parecer mais uma abordagem de autoconhecimento sem diferenciação</td>
+            <td>Explorar o que já foi feito. Mostrar diferença de método. Score.</td>
+          </tr>
+          <tr>
+            <td><strong>Quer prosperar com congruência</strong></td>
+            <td>Culpa por receber. Crença de que prosperidade e propósito não convivem.</td>
+            <td>"Receber bem pelo que se entrega é congruência. Valor não nasce apenas do esforço."</td>
+            <td>Não prometer resultado financeiro específico</td>
+            <td>Investigar relação com valor e merecimento. Mapa de Valor Autêntico.</td>
+          </tr>
+          <tr>
+            <td><strong>Curiosa, sem prontidão</strong></td>
+            <td>Interesse difuso. Sem dor reconhecida. Sem urgência real.</td>
+            <td>Não vender mentoria agora. Oferecer conteúdo ou produto inicial.</td>
+            <td>Não criar expectativa que a mentoria é para todo mundo</td>
+            <td>Nutrição com conteúdo. Reavaliar prontidão em 30 a 60 dias.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- 15 PROTOCOLO SE-ENTÃO -->
+  <section class="da-section" id="sec-protocolo">
+    <div class="da-sh"><span class="da-sn">15</span><h2 class="da-st">Protocolo: Se X, Faça Y</h2></div>
+    <div class="da-ifthen-list">
+      <div class="da-ifthen">
+        <div class="da-if"><span class="da-if-badge">Se</span>A pessoa pede resultado rápido</div>
+        <div class="da-then"><span class="da-then-badge">Então</span>Não prometer mentoria como atalho. Investigar expectativa. Produto inicial se houver abertura.</div>
+      </div>
+      <div class="da-ifthen">
+        <div class="da-if"><span class="da-if-badge">Se</span>A pessoa quer propósito</div>
+        <div class="da-then"><span class="da-then-badge">Então</span>Investigar padrão e sustentação interna. Verificar se quer direção real ou apenas validação.</div>
+      </div>
+      <div class="da-ifthen">
+        <div class="da-if"><span class="da-if-badge">Se</span>A pessoa vem do corporativo</div>
+        <div class="da-then"><span class="da-then-badge">Então</span>Não presumir que o ICP é só corporativo. Avaliar por propósito e abertura, não por cargo.</div>
+      </div>
+      <div class="da-ifthen">
+        <div class="da-if"><span class="da-if-badge">Se</span>A pessoa tem culpa por receber</div>
+        <div class="da-then"><span class="da-then-badge">Então</span>Conectar com trabalho e valor. Alta aderência potencial. Investigar relação com merecimento.</div>
+      </div>
+      <div class="da-ifthen">
+        <div class="da-if"><span class="da-if-badge">Se</span>A pessoa quer fazer transição</div>
+        <div class="da-then"><span class="da-then-badge">Então</span>Investigar segurança, identidade e valor autêntico. Checar se quer estratégia ou transformação.</div>
+      </div>
+      <div class="da-ifthen">
+        <div class="da-if"><span class="da-if-badge">Se</span>A pessoa busca autoconhecimento</div>
+        <div class="da-then"><span class="da-then-badge">Então</span>Medir prontidão. Autoconhecimento sem processo é consumo. Verificar disposição para aplicação.</div>
+      </div>
+      <div class="da-ifthen">
+        <div class="da-if"><span class="da-if-badge">Se</span>A pessoa resiste a novas perspectivas</div>
+        <div class="da-then"><span class="da-then-badge">Então</span>Não avançar para mentoria principal. Produto inicial se houver abertura parcial.</div>
+      </div>
+      <div class="da-ifthen">
+        <div class="da-if"><span class="da-if-badge">Se</span>A pessoa reconhece padrão e tem abertura</div>
+        <div class="da-then"><span class="da-then-badge">Então</span>Avaliar score de prontidão. Se 18+, conversa de oferta da mentoria principal.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 16 ERROS COMUNS -->
+  <section class="da-section" id="sec-erros">
+    <div class="da-sh"><span class="da-sn">16</span><h2 class="da-st">Erros Comuns na Comunicação da Oferta</h2></div>
+    <div class="da-error-grid">
+      <div class="da-error-item">
+        <div class="da-error-title">Explicar a mentoria demais</div>
+        <div class="da-error-body">Complexidade não é profundidade. Quanto mais se explica, menor a clareza percebida. Promessa simples, entrega profunda.</div>
+      </div>
+      <div class="da-error-item">
+        <div class="da-error-title">Vender profundidade sem critério</div>
+        <div class="da-error-body">Pessoa sem prontidão não se beneficia de profundidade. Gera resistência e sobrecarga para quem entrega.</div>
+      </div>
+      <div class="da-error-item">
+        <div class="da-error-title">Usar promessa terapêutica</div>
+        <div class="da-error-body">Gera expectativa de cura, risco legal e confusão sobre o que é mentoria. Nunca posicionar como substituto de terapia.</div>
+      </div>
+      <div class="da-error-item">
+        <div class="da-error-title">Limitar o público ao corporativo</div>
+        <div class="da-error-body">Exclui ICP real e inclui anti-ICP corporativo. O eixo é propósito, abertura e prontidão, não cargo ou setor.</div>
+      </div>
+      <div class="da-error-item">
+        <div class="da-error-title">Parecer autoajuda genérica</div>
+        <div class="da-error-body">O método da Débora tem profundidade própria. Linguagem de autoajuda enfraquece a percepção de valor e atrai quem quer resposta rápida.</div>
+      </div>
+      <div class="da-error-item">
+        <div class="da-error-title">Confundir produto inicial com mentoria</div>
+        <div class="da-error-body">O produto inicial existe para amadurecer e qualificar. Misturar os dois dilui a mentoria e gera expectativa equivocada.</div>
+      </div>
+      <div class="da-error-item">
+        <div class="da-error-title">Vender EFT como solução central</div>
+        <div class="da-error-body">EFT é ferramenta. Quando vira promessa principal, restringe o ICP e enfraquece a arquitetura da oferta.</div>
+      </div>
+      <div class="da-error-item">
+        <div class="da-error-title">Usar linguagem espiritual como eixo comercial</div>
+        <div class="da-error-body">Linguagem espiritual pode ser parte da profundidade, mas não deve ser o eixo da comunicação. Filtra quem poderia ser ICP real.</div>
+      </div>
+      <div class="da-error-item">
+        <div class="da-error-title">Não deixar claro para quem não é</div>
+        <div class="da-error-body">Clareza de anti-ICP protege a entrega e fortalece a percepção de que a mentoria tem critério real.</div>
+      </div>
+      <div class="da-error-item">
+        <div class="da-error-title">Comunicar para todo mundo</div>
+        <div class="da-error-body">Comunicação ampla dilui o ICP, reduz conversão e atrai quem não tem aderência ao método.</div>
+      </div>
+      <div class="da-error-item">
+        <div class="da-error-title">Não conectar promessa com entrega</div>
+        <div class="da-error-body">Promessa e entrega desconectadas geram frustração, baixa retenção e risco de percepção de desentrega.</div>
+      </div>
+      <div class="da-error-item">
+        <div class="da-error-title">Prometer resultado financeiro</div>
+        <div class="da-error-body">A mentoria pode impactar a relação com valor e dinheiro, mas não garante resultado financeiro específico.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 17 CAMINHO DE APLICAÇÃO -->
+  <section class="da-section" id="sec-acao">
+    <div class="da-sh"><span class="da-sn">17</span><h2 class="da-st">Caminho de Aplicação</h2></div>
+    <p style="font-size:13.5px; color:var(--text-secondary); margin-bottom:16px; line-height:1.6;">Para ativar esta arquitetura, Débora aplica esta sequência.</p>
+    <div class="da-action-steps">
+      <div class="da-action-step"><div class="da-step-num">1</div><div class="da-step-text"><strong>Validar a promessa principal</strong> — "Impacto com congruência" representa com precisão o que a mentoria entrega?</div></div>
+      <div class="da-action-step"><div class="da-step-num">2</div><div class="da-step-text"><strong>Validar a promessa expandida</strong> — A narrativa completa está clara, precisa e sem excesso?</div></div>
+      <div class="da-action-step"><div class="da-step-num">3</div><div class="da-step-text"><strong>Revisar os pilares</strong> — Automaestria, Relacionamentos e Entusiasmo representam a visão real da mentoria?</div></div>
+      <div class="da-action-step"><div class="da-step-num">4</div><div class="da-step-text"><strong>Testar em conversas reais</strong> — Como o lead reage à explicação? O que gera identificação? O que gera confusão?</div></div>
+      <div class="da-action-step"><div class="da-step-num">5</div><div class="da-step-text"><strong>Observar quais frases geram identificação</strong> — Registrar o que o ICP repete ou destaca na conversa.</div></div>
+      <div class="da-action-step"><div class="da-step-num">6</div><div class="da-step-text"><strong>Identificar dúvidas recorrentes</strong> — Dúvidas repetidas indicam ambiguidade na oferta. Ajustar linguagem.</div></div>
+      <div class="da-action-step"><div class="da-step-num">7</div><div class="da-step-text"><strong>Ajustar linguagem sem alterar a essência</strong> — O método não muda. A forma de comunicar pode ser refinada continuamente.</div></div>
+      <div class="da-action-step"><div class="da-step-num">8</div><div class="da-step-text"><strong>Conectar com o protocolo comercial</strong> — Usar o Protocolo de Qualificação Comercial para conduzir a qualificação após a oferta estar clara.</div></div>
+    </div>
+  </section>
+
+  <!-- 18 SINAIS DE APLICAÇÃO -->
+  <section class="da-section" id="sec-kpi">
+    <div class="da-sh"><span class="da-sn">18</span><h2 class="da-st">Sinais de Aplicação</h2></div>
+    <div class="da-kpi-grid">
+      <div class="da-kpi-item da-kpi-primary">
+        <div class="da-kpi-label">Indicador principal</div>
+        <div class="da-kpi-val">Clareza da oferta sustentada nas conversas</div>
+      </div>
+      <div class="da-kpi-item">
+        <div class="da-kpi-label">Tempo de explicação</div>
+        <div class="da-kpi-val">Mentoria explicada em até 3 minutos</div>
+      </div>
+      <div class="da-kpi-item">
+        <div class="da-kpi-label">Taxa de entendimento</div>
+        <div class="da-kpi-val">Lead entende o que é e para quem é</div>
+      </div>
+      <div class="da-kpi-item">
+        <div class="da-kpi-label">Dúvidas recorrentes</div>
+        <div class="da-kpi-val">Redução após ajuste de linguagem</div>
+      </div>
+      <div class="da-kpi-item">
+        <div class="da-kpi-label">Conversas qualificadas</div>
+        <div class="da-kpi-val">Taxa de leads com perfil ICP</div>
+      </div>
+      <div class="da-kpi-item">
+        <div class="da-kpi-label">Objeções por confusão</div>
+        <div class="da-kpi-val">Objeções geradas por promessa pouco clara</div>
+      </div>
+      <div class="da-kpi-item">
+        <div class="da-kpi-label">Percepção de valor</div>
+        <div class="da-kpi-val">Lead percebe diferenciação do método</div>
+      </div>
+      <div class="da-kpi-item">
+        <div class="da-kpi-label">Aderência venda–entrega</div>
+        <div class="da-kpi-val">O que foi prometido é o que foi entregue</div>
+      </div>
+    </div>
+    <div class="da-approval">
+      <div class="da-approval-icon">&#10003;</div>
+      <div class="da-approval-text">Sinal de clareza: Débora consegue explicar a mentoria em até 3 minutos, com clareza, profundidade e segurança, sem reduzir a essência e sem gerar confusão com terapia ou promessa irresponsável.</div>
+    </div>
+    <div style="margin-top:18px;">
+      <p style="font-size:12px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:var(--text-muted); margin-bottom:10px;">Sinais de desalinhamento</p>
+      <div class="da-risk">Leads recorrentes com dúvidas sobre o que a mentoria faz: sinal de ambiguidade na promessa. Revisar a explicação.</div>
+      <div class="da-risk">Vendas seguidas com baixa retenção ou alta resistência: sinal de desalinhamento entre venda e entrega. Auditar promessa.</div>
+      <div class="da-risk">Débora sentindo dificuldade em explicar a mentoria sem perder a profundidade: retornar a este framework para refinamento.</div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="da-footer">
+    <span class="da-footer-brand">Débora Delgado · Framework Interno</span>
+    <div class="da-footer-meta">
+      <span>Arquitetura da Oferta e Mentoria</span><span>Estruturado por Continuum AI Systems</span>
+    </div>
+  </footer>
+
+</div>
+</div>
+
+<script>
+/* THEME */
+(function(){
+  var el = document.getElementById('daRoot');
+  var btn = document.getElementById('themeBtn');
+  var s; try { s = localStorage.getItem('da2-theme'); } catch(e) {}
+  if (s === 'dark') { el.classList.add('dark'); btn.textContent = 'Light'; }
+  window.daToggleTheme = function() {
+    var d = el.classList.toggle('dark');
+    btn.textContent = d ? 'Light' : 'Dark';
+    try { localStorage.setItem('da2-theme', d ? 'dark' : 'light'); } catch(e) {}
+  };
+})();
+
+/* SCROLL */
+window.daScroll = function(id) {
+  var el = document.getElementById(id);
+  if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+};
+
+/* CHECKLIST */
+window.daCheck = function(item) {
+  item.classList.toggle('checked');
+  var all = document.querySelectorAll('#checkList .da-check-item');
+  var done = document.querySelectorAll('#checkList .da-check-item.checked').length;
+  document.getElementById('checkProgress').textContent = done + ' de ' + all.length + ' aprovados';
+};
+</script>
+
+</body>
+</html>

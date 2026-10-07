@@ -1,0 +1,539 @@
+[
+  {
+    "id": "V1",
+    "arquivo": "Video by felipenonino.txt",
+    "titulo": "Empilhamento e lateralização",
+    "sha256": "367B350EB68377AA4A79BDAEF358BF9A0B71F25DA140F209D52B91B971F21D6B",
+    "palavras": 490,
+    "elementos": [
+      {
+        "id": "V1-01",
+        "bloco": "Abertura",
+        "elemento": "gancho",
+        "funcao": "G1: tese contrária à expectativa",
+        "ancora": "Oferta é boa",
+        "palavras": 7,
+        "texto": "Oferta é boa, não salva criativo ruim."
+      },
+      {
+        "id": "V1-02",
+        "bloco": "Abertura",
+        "elemento": "promessa",
+        "funcao": "G2: promessa de lista e escala; micro-CTA de atenção",
+        "ancora": "Então anota aí",
+        "palavras": 20,
+        "texto": "Então anota aí as 5 maneiras de começar um criativo de Direct Response que escala mais de 100k por dia."
+      },
+      {
+        "id": "V1-03",
+        "bloco": "Abertura",
+        "elemento": "credencial",
+        "funcao": "G3a: experiência de quem ensina",
+        "ancora": "Eu e o Lucas Miki",
+        "palavras": 15,
+        "texto": "Eu e o Lucas Miki, a gente já escalou o ticket desde 2024 no Perpétuo."
+      },
+      {
+        "id": "V1-04",
+        "bloco": "Abertura",
+        "elemento": "credencial",
+        "funcao": "G3b: resultado financeiro alegado",
+        "ancora": "A gente já fez",
+        "palavras": 10,
+        "texto": "A gente já fez mais de 20 milhões de faturamento"
+      },
+      {
+        "id": "V1-05",
+        "bloco": "Abertura",
+        "elemento": "curiosidade",
+        "funcao": "G3c: abre o laço da chave",
+        "ancora": "e essa aqui é a chave",
+        "palavras": 11,
+        "texto": "e essa aqui é a chave para conseguir escrever bons criativos."
+      },
+      {
+        "id": "V1-06",
+        "bloco": "Abertura",
+        "elemento": "contrarian",
+        "funcao": "Reforço da tese de abertura",
+        "ancora": "Você sabe que só",
+        "palavras": 12,
+        "texto": "Você sabe que só a sua oferta não segura o seu funil."
+      },
+      {
+        "id": "V1-07",
+        "bloco": "Abertura",
+        "elemento": "demonstração",
+        "funcao": "Antes/depois visual alegado",
+        "ancora": "A prova disso",
+        "palavras": 33,
+        "texto": "A prova disso é um funil que a gente tirou dessa retenção aqui para essa retenção, só trocando o criativo e o faturamento dele saiu disso para isso, só de mudar os criativos."
+      },
+      {
+        "id": "V1-08",
+        "bloco": "Revelação",
+        "elemento": "transição",
+        "funcao": "Regancho de importância; micro-CTA de atenção",
+        "ancora": "Então preste atenção",
+        "palavras": 15,
+        "texto": "Então preste atenção aqui porque isso muda a forma como você vê os seus anúncios."
+      },
+      {
+        "id": "V1-09",
+        "bloco": "Revelação",
+        "elemento": "mecanismo",
+        "funcao": "Nomeação da técnica",
+        "ancora": "E o hack de hoje",
+        "palavras": 10,
+        "texto": "E o hack de hoje é de empilhamento de gancho."
+      },
+      {
+        "id": "V1-10",
+        "bloco": "Revelação",
+        "elemento": "demonstração",
+        "funcao": "Virada autorreferente: a abertura era a demonstração",
+        "ancora": "O que é empilhamento",
+        "palavras": 15,
+        "texto": "O que é empilhamento de gancho? É o que você acabou de ver nesse vídeo."
+      },
+      {
+        "id": "V1-11",
+        "bloco": "Revelação",
+        "elemento": "reason-why",
+        "funcao": "Explica a função dos três ganchos",
+        "ancora": "Você viu que eu empilhei",
+        "palavras": 18,
+        "texto": "Você viu que eu empilhei 3 ganchos diferentes para reter a atenção da pessoa dentro do seu criativo?"
+      },
+      {
+        "id": "V1-12",
+        "bloco": "Aplicação",
+        "elemento": "descrição",
+        "funcao": "Transfere a técnica ao espectador e permite desconexão",
+        "ancora": "Isso você pode fazer",
+        "palavras": 34,
+        "texto": "Isso você pode fazer no seu anúncio. E mesmo que você fale frases que não comunicam diretamente uma com a outra, elas ainda assim prendem a atenção da pessoa para ela continuar naquele criativo."
+      },
+      {
+        "id": "V1-13",
+        "bloco": "Aplicação",
+        "elemento": "cena",
+        "funcao": "Cenário hipotético com dois anúncios complementares",
+        "ancora": "Então vamos supor",
+        "palavras": 41,
+        "texto": "Então vamos supor que você já tem um criativo validado que já está vendendo e ele tem um gancho X. Tem outro criativo que o hook rate dele está bom, ele está com um gancho bom, mas ele não está convertendo."
+      },
+      {
+        "id": "V1-14",
+        "bloco": "Aplicação",
+        "elemento": "descrição",
+        "funcao": "Instrução de recombinação dos ganchos",
+        "ancora": "Você pode pegar",
+        "palavras": 22,
+        "texto": "Você pode pegar esse gancho e colocar na frente o seu criativo validado. Você pode adicionar mais algum gancho que está funcionando."
+      },
+      {
+        "id": "V1-15",
+        "bloco": "Aplicação",
+        "elemento": "transição",
+        "funcao": "Amplia da técnica para lateralização",
+        "ancora": "Essa estrutura é",
+        "palavras": 10,
+        "texto": "Essa estrutura é uma estrutura muito importante para a lateralização."
+      },
+      {
+        "id": "V1-16",
+        "bloco": "Justificativa",
+        "elemento": "curiosidade",
+        "funcao": "Pergunta que abre a razão da lateralização",
+        "ancora": "Então por que",
+        "palavras": 8,
+        "texto": "Então por que a lateralização é tão importante?"
+      },
+      {
+        "id": "V1-17",
+        "bloco": "Justificativa",
+        "elemento": "ponto-lógico",
+        "funcao": "Dificuldade e relevância de acertar um anúncio",
+        "ancora": "Porque você sabe",
+        "palavras": 21,
+        "texto": "Porque você sabe o quão difícil é acertar um anúncio. Mas você já viu que acertar um anúncio é muito relevante."
+      },
+      {
+        "id": "V1-18",
+        "bloco": "Justificativa",
+        "elemento": "benefício",
+        "funcao": "Assertividade e prolongamento do que funcionou",
+        "ancora": "A lateralização é como",
+        "palavras": 24,
+        "texto": "A lateralização é como você aumenta a assertividade dos seus anúncios.\n\nComo você pega o que funcionou e dá mais meia vida para ele."
+      },
+      {
+        "id": "V1-19",
+        "bloco": "Justificativa",
+        "elemento": "descrição",
+        "funcao": "Regra de produção 70/30 relatada",
+        "ancora": "Então quando a gente",
+        "palavras": 23,
+        "texto": "Então quando a gente acerta um anúncio aqui, a gente faz 70% dos anúncios lateralizando que já funcionou e 30% de novos testes."
+      },
+      {
+        "id": "V1-20",
+        "bloco": "Justificativa",
+        "elemento": "dor",
+        "funcao": "Acusação de testar sem aproveitar aprendizagem",
+        "ancora": "E você está subindo",
+        "palavras": 26,
+        "texto": "E você está subindo o teste adoidado como se cada leva fosse um teste novo, que não tem como base um anúncio que já performou anteriormente."
+      },
+      {
+        "id": "V1-21",
+        "bloco": "Justificativa",
+        "elemento": "custo-inação",
+        "funcao": "Consequência financeira atribuída à prática",
+        "ancora": "Aí é pedir",
+        "palavras": 9,
+        "texto": "Aí é pedir para tomar prejuízo no teste criativo."
+      },
+      {
+        "id": "V1-22",
+        "bloco": "Justificativa",
+        "elemento": "autoridade",
+        "funcao": "Validação por prática de operadores estrangeiros",
+        "ancora": "Essa estratégia de lateralização",
+        "palavras": 32,
+        "texto": "Essa estratégia de lateralização do que funciona, esse hack de empilhar novos ganchos, isso tudo são estratégias que empresas de direct response que rodam lá na gringa já utilizam faz muito tempo."
+      },
+      {
+        "id": "V1-23",
+        "bloco": "Justificativa",
+        "elemento": "benefício",
+        "funcao": "Ponte de aplicabilidade ao Brasil",
+        "ancora": "E você pode literalmente",
+        "palavras": 16,
+        "texto": "E você pode literalmente copiar e colar essas estratégias para o seu expert white no Brasil."
+      },
+      {
+        "id": "V1-24",
+        "bloco": "Fechamento",
+        "elemento": "segmentação",
+        "funcao": "Contexto de mercado em expansão",
+        "ancora": "Os funis de direct response",
+        "palavras": 14,
+        "texto": "Os funis de direct response estão cada vez mais em alta, VSL, quiz, perpétuo."
+      },
+      {
+        "id": "V1-25",
+        "bloco": "Fechamento",
+        "elemento": "contrarian",
+        "funcao": "Lacuna entre falar de funis e ensinar criativos",
+        "ancora": "Todo mundo falando",
+        "palavras": 12,
+        "texto": "Todo mundo falando disso, mas ninguém está explicando como escrever bons criativos."
+      },
+      {
+        "id": "V1-26",
+        "bloco": "Fechamento",
+        "elemento": "cta",
+        "funcao": "Convite condicional para seguir o perfil",
+        "ancora": "Então se você quer aprender",
+        "palavras": 14,
+        "texto": "Então se você quer aprender a escrever bons criativos, já me segue nesse perfil,"
+      },
+      {
+        "id": "V1-27",
+        "bloco": "Fechamento",
+        "elemento": "benefício",
+        "funcao": "Cadência e valor da entrega futura",
+        "ancora": "porque nesse perfil",
+        "palavras": 18,
+        "texto": "porque nesse perfil eu compartilho uma dica por dia de como você escreve criativos para escalar no perpétuo."
+      }
+    ],
+    "blocos": [
+      {
+        "bloco": "Abertura",
+        "palavras": 108.0,
+        "percentual": 22.04
+      },
+      {
+        "bloco": "Revelação",
+        "palavras": 58.0,
+        "percentual": 11.84
+      },
+      {
+        "bloco": "Aplicação",
+        "palavras": 107.0,
+        "percentual": 21.84
+      },
+      {
+        "bloco": "Justificativa",
+        "palavras": 159.0,
+        "percentual": 32.45
+      },
+      {
+        "bloco": "Fechamento",
+        "palavras": 58.0,
+        "percentual": 11.84
+      }
+    ],
+    "conservacaoVerificada": true
+  },
+  {
+    "id": "V2",
+    "arquivo": "Video by felipenonino (1).txt",
+    "titulo": "Modelo de criativo com gancho de conteúdo",
+    "sha256": "61B7B20BBCFD82B8EE909CEE10D9A933DAEB120E292D670792D5FB11B3179A0F",
+    "palavras": 541,
+    "elementos": [
+      {
+        "id": "V2-01",
+        "bloco": "Abertura",
+        "elemento": "gancho",
+        "funcao": "G1: tese contrária à expectativa",
+        "ancora": "Não tem funil bom",
+        "palavras": 8,
+        "texto": "Não tem funil bom que salva criativo ruim."
+      },
+      {
+        "id": "V2-02",
+        "bloco": "Abertura",
+        "elemento": "promessa",
+        "funcao": "G2: promessa de instrução; micro-CTA de atenção",
+        "ancora": "Então já anota",
+        "palavras": 15,
+        "texto": "Então já anota aí o que você precisa fazer para os seus criativos performarem bem."
+      },
+      {
+        "id": "V2-03",
+        "bloco": "Abertura",
+        "elemento": "demonstração",
+        "funcao": "G3: resultado antes/depois alegado",
+        "ancora": "Esse modelo de criativo foi",
+        "palavras": 16,
+        "texto": "Esse modelo de criativo foi responsável por tirar um funil desse resultado para esse resultado aqui."
+      },
+      {
+        "id": "V2-04",
+        "bloco": "Abertura",
+        "elemento": "demonstração",
+        "funcao": "Amplia o resultado para métricas de interação",
+        "ancora": "E esse modelo de criativo",
+        "palavras": 14,
+        "texto": "E esse modelo de criativo aqui mudou totalmente as métricas de interação no funil."
+      },
+      {
+        "id": "V2-05",
+        "bloco": "Abertura",
+        "elemento": "demonstração",
+        "funcao": "Especifica quiz e pede observação do comparativo",
+        "ancora": "Então é um funil",
+        "palavras": 27,
+        "texto": "Então é um funil de quiz, dá uma olhada nas métricas antes de aplicar esse modelo de criativo e agora depois de aplicar esse modelo de criativo."
+      },
+      {
+        "id": "V2-06",
+        "bloco": "Abertura",
+        "elemento": "credencial",
+        "funcao": "Resultado financeiro e experiência alegados",
+        "ancora": "Eu e o Lucas Miki",
+        "palavras": 29,
+        "texto": "Eu e o Lucas Miki já vendemos mais de 20 milhões em produtos low ticket e foi através desse modelo de criativo que a gente mais conseguiu ter escala."
+      },
+      {
+        "id": "V2-07",
+        "bloco": "Entrada didática",
+        "elemento": "transição",
+        "funcao": "Regancho da promessa; micro-CTAs de atenção",
+        "ancora": "Então presta atenção",
+        "palavras": 20,
+        "texto": "Então presta atenção e anota aí para você saber como que você vai estruturar um criativo que performa muito bem."
+      },
+      {
+        "id": "V2-08",
+        "bloco": "Entrada didática",
+        "elemento": "mecanismo",
+        "funcao": "Nomeia o primeiro componente ensinado",
+        "ancora": "Primeiro o hook",
+        "palavras": 8,
+        "texto": "Primeiro o hook, o gancho do seu criativo."
+      },
+      {
+        "id": "V2-09",
+        "bloco": "Entrada didática",
+        "elemento": "objeção",
+        "funcao": "Rompe a equivalência entre gancho e três segundos",
+        "ancora": "Não pensa no gancho",
+        "palavras": 16,
+        "texto": "Não pensa no gancho do seu criativo como se fosse só os 3 primeiros segundos, não."
+      },
+      {
+        "id": "V2-10",
+        "bloco": "Entrada didática",
+        "elemento": "mecanismo",
+        "funcao": "Virada: redefine gancho por função",
+        "ancora": "Na realidade o gancho",
+        "palavras": 23,
+        "texto": "Na realidade o gancho do seu criativo é o que vai prender aquela pessoa para ela assistir o seu corpo do seu criativo."
+      },
+      {
+        "id": "V2-11",
+        "bloco": "Entrada didática",
+        "elemento": "descrição",
+        "funcao": "Critérios de conexão, interesse e ligação ao corpo",
+        "ancora": "Então tem que ser",
+        "palavras": 32,
+        "texto": "Então tem que ser uma coisa que conecte com aquela pessoa, que ela engaje, ela agrega alguma coisa para ela e que ao mesmo tempo conecte com o corpo do seu criativo."
+      },
+      {
+        "id": "V2-12",
+        "bloco": "Entrada didática",
+        "elemento": "objeção",
+        "funcao": "Retira o limite de cinco ou dez segundos",
+        "ancora": "Então não precisa",
+        "palavras": 13,
+        "texto": "Então não precisa ficar se limitando a fazer gancho de 5, 10 segundos."
+      },
+      {
+        "id": "V2-13",
+        "bloco": "Entrada didática",
+        "elemento": "demonstração",
+        "funcao": "Caso alegado de gancho acima de um minuto",
+        "ancora": "Não, o modelo",
+        "palavras": 34,
+        "texto": "Não, o modelo de criativo que conseguiu ter esse resultado, tirar desse resultado para esse, ele tinha um gancho que era mais de 1 minuto, ou seja, era um conteúdo no começo do criativo."
+      },
+      {
+        "id": "V2-14",
+        "bloco": "Corpo ensinado",
+        "elemento": "transição",
+        "funcao": "Muda da retenção para a conversão",
+        "ancora": "Agora você precisa",
+        "palavras": 9,
+        "texto": "Agora você precisa de um corpo que vai converter."
+      },
+      {
+        "id": "V2-15",
+        "bloco": "Corpo ensinado",
+        "elemento": "descrição",
+        "funcao": "Anuncia mecanismo do problema, solução e CTA",
+        "ancora": "O que esse corpo",
+        "palavras": 27,
+        "texto": "O que esse corpo precisa ter? Ele vai precisar falar do mecanismo do problema, do mecanismo da solução e você vai fazer uma CTA clara para isso."
+      },
+      {
+        "id": "V2-16",
+        "bloco": "Corpo ensinado",
+        "elemento": "mecanismo",
+        "funcao": "Exemplo hipotético: problema e causa atribuída",
+        "ancora": "Então por exemplo, o frio",
+        "palavras": 41,
+        "texto": "Então por exemplo, o frio de emagrecimento. Qual que é o mecanismo do problema? O que que impede a pessoa de emagrecer? Por que ela nunca teve resultado antes? Ah, foi por conta que ela estava com o metabolismo dela travado."
+      },
+      {
+        "id": "V2-17",
+        "bloco": "Corpo ensinado",
+        "elemento": "mecanismo",
+        "funcao": "Exemplo hipotético: intervenção e resultado prometido",
+        "ancora": "Qual que é o mecanismo da solução",
+        "palavras": 29,
+        "texto": "Qual que é o mecanismo da solução? Você vai aplicar o protocolo XYZ que destrava seu metabolismo em X dias e um CTA claro com valor para a pessoa."
+      },
+      {
+        "id": "V2-18",
+        "bloco": "Corpo ensinado",
+        "elemento": "benefício",
+        "funcao": "Ensina o valor do próximo passo no quiz",
+        "ancora": "Então se for um funil",
+        "palavras": 36,
+        "texto": "Então se for um funil de quiz, por exemplo, o seu quiz tem que entregar valor para a pessoa. Ela tem que receber um diagnóstico, ela tem que ter um motivo para ela clicar naquele botão."
+      },
+      {
+        "id": "V2-19",
+        "bloco": "Corpo ensinado",
+        "elemento": "descrição",
+        "funcao": "Instrui inserir depoimento ligado ao CTA",
+        "ancora": "Depois, você vai colocar",
+        "palavras": 15,
+        "texto": "Depois, você vai colocar um depoimento e você vai atrelar esse depoimento com o CTA."
+      },
+      {
+        "id": "V2-20",
+        "bloco": "Corpo ensinado",
+        "elemento": "história",
+        "funcao": "Exemplo de Juliana; sem depoimento verificável no material",
+        "ancora": "Então por exemplo, você faz",
+        "palavras": 38,
+        "texto": "Então por exemplo, você faz a CTA com valor e fala como foi o caso da Juliana, que ela clicou no botão para encher o quiz, recebeu o diagnóstico e ela conseguiu em X dias eliminar X quilos."
+      },
+      {
+        "id": "V2-21",
+        "bloco": "Corpo ensinado",
+        "elemento": "reason-why",
+        "funcao": "Amarra o exemplo à relação problema-solução",
+        "ancora": "Isso porque ela descobriu",
+        "palavras": 15,
+        "texto": "Isso porque ela descobriu como resolver o mecanismo do problema através do mecanismo da solução."
+      },
+      {
+        "id": "V2-22",
+        "bloco": "Corpo ensinado",
+        "elemento": "descrição",
+        "funcao": "Instrui repetir o CTA do anúncio ensinado",
+        "ancora": "E aí você reforça",
+        "palavras": 8,
+        "texto": "E aí você reforça o CTA de novo."
+      },
+      {
+        "id": "V2-23",
+        "bloco": "Fechamento",
+        "elemento": "recapitulação",
+        "funcao": "Reconstitui a sequência ensinada",
+        "ancora": "Então ele é composto",
+        "palavras": 30,
+        "texto": "Então ele é composto por um hook de conteúdo, um corpo com o mecanismo do problema e o mecanismo da solução, um CTA com valor, depoimento e um segundo CTA."
+      },
+      {
+        "id": "V2-24",
+        "bloco": "Fechamento",
+        "elemento": "promessa",
+        "funcao": "Reafirma superioridade do modelo em escala",
+        "ancora": "Então esse é o modelo",
+        "palavras": 15,
+        "texto": "Então esse é o modelo de criativos que mais escala nos funils de tráfego direto."
+      },
+      {
+        "id": "V2-25",
+        "bloco": "Fechamento",
+        "elemento": "cta",
+        "funcao": "Convite condicional para seguir o perfil",
+        "ancora": "E se você quer aprender",
+        "palavras": 23,
+        "texto": "E se você quer aprender mais dicas de como escalar seu funil de Direct Response aqui no Brasil, já me segue nesse perfil."
+      }
+    ],
+    "blocos": [
+      {
+        "bloco": "Abertura",
+        "palavras": 109.0,
+        "percentual": 20.15
+      },
+      {
+        "bloco": "Entrada didática",
+        "palavras": 146.0,
+        "percentual": 26.99
+      },
+      {
+        "bloco": "Corpo ensinado",
+        "palavras": 218.0,
+        "percentual": 40.3
+      },
+      {
+        "bloco": "Fechamento",
+        "palavras": 68.0,
+        "percentual": 12.57
+      }
+    ],
+    "conservacaoVerificada": true
+  }
+]

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sobre mim — Débora Delgado</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#f6f1ea; --card:#fffdf9; --ink:#3d352e; --soft:#6f6459; --line:#e7ddd1;
+    --accent:#3f6b57; --accent-dark:#2f5245; --salvia:#7f9c78; --salvia-dark:#5f7550; --argila:#a86b52; --dir:#4f8278;
+    --shadow:0 8px 30px rgba(60,70,55,.10); --shadow-lg:0 20px 55px -22px rgba(47,82,69,.38);
+    --serif:"Fraunces",Georgia,serif; --sans:"Inter",system-ui,sans-serif;
+  }
+  *{box-sizing:border-box}
+  body{margin:0; font-family:var(--sans); background:var(--bg); color:var(--ink); line-height:1.72;}
+  .wrap{max-width:860px; margin:0 auto; padding:0 22px 90px;}
+  img,svg{max-width:100%;}
+  .octa path{vector-effect:non-scaling-stroke;}
+
+  /* HERO */
+  .hero{position:relative; overflow:hidden; margin:22px 0 22px; border-radius:26px; color:#fff;
+    background:linear-gradient(158deg,#3f6b57,#2f5245); box-shadow:var(--shadow-lg);
+    display:grid; grid-template-columns:300px 1fr; gap:0;}
+  .hero .octa-bg{position:absolute; color:#fff; opacity:.08; width:250px; height:250px; top:-70px; right:-56px; pointer-events:none;}
+  .hero .photo{position:relative; min-height:100%;}
+  .hero .photo img{width:100%; height:100%; object-fit:cover; display:block;}
+  .hero .htext{position:relative; z-index:1; padding:46px 38px;}
+  .hero .kick{display:inline-flex; align-items:center; gap:9px; color:#cfe0d4; font-weight:700; letter-spacing:2.5px; font-size:.72rem; text-transform:uppercase;}
+  .hero .kick .octa{width:15px; height:15px; color:#a8c6b1;}
+  .hero h1{font-family:var(--serif); font-weight:600; margin:14px 0 14px; font-size:2.6rem; line-height:1.05;}
+  .hero p{margin:0; color:#e7f0e9; font-size:1.08rem; font-family:var(--serif); font-style:italic; line-height:1.4;}
+  @media(max-width:640px){
+    .hero{grid-template-columns:1fr;}
+    .hero .photo{height:320px;}
+    .hero .htext{padding:32px 26px;}
+    .hero h1{font-size:2.1rem;}
+  }
+
+  .lbl{display:inline-flex; align-items:center; gap:8px; font-size:.72rem; font-weight:800; text-transform:uppercase; letter-spacing:1.8px; color:var(--argila); margin-bottom:14px;}
+  .lbl .octa{width:15px; height:15px; color:var(--salvia);}
+
+  section.blk{background:var(--card); border:1px solid var(--line); border-radius:20px; box-shadow:var(--shadow); padding:34px 36px; margin-bottom:20px;}
+  section.blk h2{font-family:var(--serif); font-weight:600; font-size:1.55rem; color:var(--accent-dark); margin:0 0 14px; line-height:1.2;}
+  section.blk p{margin:0 0 15px; font-size:1.05rem;}
+  section.blk p:last-child{margin-bottom:0;}
+  @media(max-width:560px){ section.blk{padding:26px 22px;} }
+
+  .anchor{position:relative; text-align:center; margin:32px auto; padding:6px 12px; max-width:680px;}
+  .anchor .octa{width:26px; height:26px; color:var(--salvia); margin:0 auto 14px;}
+  .anchor p{font-family:var(--serif); font-style:italic; font-weight:500; font-size:1.45rem; line-height:1.34; color:var(--accent-dark); margin:0;}
+  @media(max-width:560px){ .anchor p{font-size:1.2rem;} }
+
+  /* história com foto secundária */
+  .story-photo{float:right; width:230px; margin:4px 0 16px 24px; border-radius:16px; box-shadow:var(--shadow-lg); border:4px solid #fff;}
+  @media(max-width:560px){ .story-photo{float:none; width:100%; margin:0 0 16px;} }
+
+  /* números */
+  .stats{display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin:6px 0 22px;}
+  .stat{text-align:center; background:#f2ede4; border:1px solid var(--line); border-radius:14px; padding:16px 10px;}
+  .stat .n{font-family:var(--serif); font-weight:700; font-size:1.9rem; color:var(--accent); line-height:1;}
+  .stat .t{font-size:.8rem; color:var(--soft); margin-top:6px; line-height:1.4;}
+  @media(max-width:560px){ .stats{grid-template-columns:1fr;} .stat{display:flex; align-items:baseline; gap:12px; text-align:left;} .stat .t{margin-top:0;} }
+
+  /* formações */
+  .forma{display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:6px;}
+  @media(max-width:560px){ .forma{grid-template-columns:1fr;} }
+  .forma .f{display:flex; gap:11px; align-items:flex-start; background:#faf6ef; border:1px solid var(--line); border-radius:12px; padding:13px 15px;}
+  .forma .f .octa{width:16px; height:16px; color:var(--salvia); flex:none; margin-top:3px;}
+  .forma .f b{display:block; font-size:.95rem; color:var(--accent-dark);}
+  .forma .f span{font-size:.84rem; color:var(--soft);}
+
+  /* lentes (eneagrama + DH) */
+  .lentes{display:grid; grid-template-columns:1fr 1fr; gap:16px;}
+  @media(max-width:640px){ .lentes{grid-template-columns:1fr;} }
+  .lente{background:linear-gradient(160deg,#f2ede4,#fffdf9); border:1px solid var(--line); border-top:4px solid var(--salvia); border-radius:16px; padding:22px 22px;}
+  .lente.dh{border-top-color:var(--argila);}
+  .lente .ico{width:44px; height:44px; border-radius:12px; background:#eef3ee; color:var(--accent); display:flex; align-items:center; justify-content:center; margin-bottom:12px;}
+  .lente.dh .ico{background:#f6ece4; color:var(--argila);}
+  .lente .ico .octa{width:24px; height:24px;}
+  .lente h3{font-family:var(--serif); font-weight:600; font-size:1.2rem; color:var(--accent-dark); margin:0 0 4px;}
+  .lente .tag{font-size:.72rem; font-weight:700; color:var(--argila); text-transform:uppercase; letter-spacing:.6px;}
+  .lente p{margin:10px 0 0; font-size:.96rem; color:var(--ink); line-height:1.6;}
+
+  /* crenças */
+  .beliefs{display:grid; grid-template-columns:1fr 1fr; gap:14px; margin:18px 0 4px;}
+  @media(max-width:600px){ .beliefs{grid-template-columns:1fr;} }
+  .belief{background:#faf6ef; border:1px solid var(--line); border-left:4px solid var(--salvia); border-radius:14px; padding:18px 20px;}
+  .belief q{display:block; font-family:var(--serif); font-style:italic; font-weight:500; font-size:1.12rem; color:var(--accent-dark); line-height:1.3; quotes:none;}
+  .belief span{display:block; margin-top:8px; font-size:.9rem; color:var(--soft); line-height:1.5;}
+  .values{margin-top:18px; padding-top:16px; border-top:1px solid var(--line); font-size:.96rem; color:var(--soft);}
+  .values b{color:var(--accent-dark);}
+
+  .cta{position:relative; overflow:hidden; background:linear-gradient(158deg,#4f8278,#3f6b57); color:#fff; border-radius:22px; box-shadow:var(--shadow-lg); padding:42px 30px; margin-top:22px; text-align:center;}
+  .cta .octa-bg{position:absolute; color:#fff; opacity:.07; width:220px; height:220px; bottom:-70px; right:-60px;}
+  .cta h2{font-family:var(--serif); font-weight:600; font-size:1.6rem; margin:0 0 10px; color:#fff; position:relative;}
+  .cta p{margin:0 auto 18px; font-size:1rem; color:#eaf4f1; max-width:460px; position:relative;}
+  .cta a{position:relative; display:inline-block; background:#fff; color:var(--accent-dark); font-weight:700; text-decoration:none; padding:14px 32px; border-radius:30px; box-shadow:0 10px 24px -12px rgba(0,0,0,.5);}
+  .foot{text-align:center; color:var(--soft); font-size:.82rem; margin-top:32px; line-height:1.6;}
+  .foot .octa{width:20px; height:20px; color:var(--salvia); margin:0 auto 8px; display:block;}
+
+  /* nav */
+  .lnr-nav{position:sticky;top:0;z-index:9999;display:flex;align-items:center;justify-content:space-between;gap:12px;background:#2f5245;color:#fff;padding:10px 18px;font-family:'Inter',system-ui,-apple-system,sans-serif;box-shadow:0 2px 12px rgba(0,0,0,.12);}
+  .lnr-brand{display:flex;align-items:center;gap:9px;color:#fff;font-weight:700;text-decoration:none;font-size:.98rem;letter-spacing:.3px;font-family:'Fraunces',Georgia,serif;}
+  .lnr-brand .octa{width:20px;height:20px;color:#a8c6b1;}
+  .lnr-links{display:flex;align-items:center;gap:3px;flex-wrap:wrap;}
+  .lnr-links a{color:#e8f0ec;text-decoration:none;font-size:.83rem;font-weight:600;padding:6px 10px;border-radius:16px;}
+  .lnr-links a:hover{background:rgba(255,255,255,.14);color:#fff;}
+  .lnr-links a.lnr-cta{background:#a86b52;color:#fff;}
+  .lnr-links a.lnr-cta:hover{background:#8a5334;}
+  .lnr-toggle{display:none;background:none;border:none;color:#fff;font-size:1.35rem;cursor:pointer;line-height:1;}
+  @media(max-width:720px){
+    .lnr-nav{flex-wrap:wrap;}
+    .lnr-toggle{display:block;}
+    .lnr-links{display:none;flex-direction:column;align-items:stretch;width:100%;order:3;gap:2px;padding-top:6px;}
+    .lnr-links.open{display:flex;}
+    .lnr-links a{padding:9px 8px;}
+  }
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <g id="octa"><g fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M50 6 L94 50 L50 94 L6 50 Z"/><path d="M50 6 L50 94"/>
+    <path d="M6 50 L50 61 L94 50"/><path d="M6 50 L50 39 L94 50" opacity=".45" stroke-dasharray="4 5"/>
+  </g></g>
+</defs></svg>
+
+<nav class="lnr-nav">
+  <a class="lnr-brand" href="index.html"><svg class="octa" viewBox="0 0 100 100"><use href="#octa"/></svg>Liderança na Raiz</a>
+  <button class="lnr-toggle" aria-label="Abrir menu" onclick="var l=this.parentNode.querySelector('.lnr-links'); l.classList.toggle('open');">☰</button>
+  <div class="lnr-links">
+    <a href="index.html">Início</a>
+    <a href="comece.html">Comece por aqui</a>
+    <a href="sobre.html">Sobre mim</a>
+    <a href="servicos.html">Serviços</a>
+    <a href="membros.html">Entrar</a>
+    <a class="lnr-cta" href="consultoria.html">Conversa gratuita</a>
+  </div>
+</nav>
+
+<div class="wrap">
+
+  <header class="hero">
+    <svg class="octa octa-bg" viewBox="0 0 100 100"><use href="#octa"/></svg>
+    <div class="photo"><img src="img/debora.jpg" alt="Débora Delgado"></div>
+    <div class="htext">
+      <span class="kick"><svg class="octa" viewBox="0 0 100 100"><use href="#octa"/></svg> Débora Delgado</span>
+      <h1>Prazer, sou a Débora</h1>
+      <p>Ajudo líderes a resolverem, na raiz, o que se repete na liderança e na gestão de pessoas.</p>
+    </div>
+  </header>
+
+  <section class="blk">
+    <div class="lbl"><svg class="octa" viewBox="0 0 100 100"><use href="#octa"/></svg> A minha história</div>
+    <img class="story-photo" src="img/debora-2.jpg" alt="Débora Delgado">
+    <p>Antes de ajudar líderes, eu fui a líder que precisou de ajuda. Por fora, uma carreira bem-sucedida e reconhecida. Por dentro, um cansaço que nenhuma competência resolvia, e a sensação de que eu vivia pra aguentar, provar e compensar.</p>
+    <p>Foi na própria pele que eu descobri o que hoje é o centro do meu trabalho: o que trava a liderança não é falta de técnica, é invisível e emocional. Enquanto eu mexia no comportamento e não na raiz, os mesmos padrões voltavam, por mais que eu me esforçasse.</p>
+    <p>Quando eu fui na raiz, tudo mudou. A maternidade foi a virada que me ensinou a me priorizar: deixei de viver pra não decepcionar e comecei a viver pra não me abandonar, parei de tentar ser outra pessoa e voltei pra minha própria força.</p>
+    <p>Hoje é isso que eu ofereço: ajudo líderes a resolverem na raiz o que se repete. Junto o olhar sistêmico da engenheira com a leitura do inconsciente, pra enxergar a engenharia invisível que sustenta o comportamento. Porque quando a raiz muda, o comportamento muda junto, e se sustenta.</p>
+  </section>
+
+  <div class="anchor">
+    <svg class="octa" viewBox="0 0 100 100"><use href="#octa"/></svg>
+    <p>A liderança é um espelho que revela, todos os dias, como a gente se relaciona consigo, com os outros e com o sistema.</p>
+  </div>
+
+  <section class="blk">
+    <div class="lbl"><svg class="octa" viewBox="0 0 100 100"><use href="#octa"/></svg> No que eu acredito</div>
+    <h2>Naturalizar o humano, em vez de julgar</h2>
+    <p>Gosto de estudar com profundidade o que se passa na psique humana, pra que os relacionamentos fiquem leves e virem matéria-prima de crescimento. A gente mergulha fundo, mas tudo volta pra prática: uma conversa melhor, uma decisão mais leve, uma relação que destrava. Estes são os princípios que guiam o meu trabalho.</p>
+    <div class="beliefs">
+      <div class="belief"><q>O que trava não é técnica. É invisível e emocional.</q><span>Por isso a gente vai na raiz, não no sintoma.</span></div>
+      <div class="belief"><q>As pessoas nascem poderosas.</q><span>Meu trabalho revela o potencial que já está aí, não conserta ninguém.</span></div>
+      <div class="belief"><q>Antes de aprender a lidar com o outro, aprenda a lidar com você.</q><span>A liderança é, antes de tudo, uma relação sua com você mesma.</span></div>
+      <div class="belief"><q>Ninguém precisa se quebrar pra performar.</q><span>Inteireza no lugar da sobrevivência.</span></div>
+    </div>
+    <p class="values"><b>Os valores que me movem:</b> consciência, evolução, verdade, amor, honestidade, família, profundidade, transformação, saúde e alegria.</p>
+  </section>
+
+  <section class="blk">
+    <div class="lbl"><svg class="octa" viewBox="0 0 100 100"><use href="#octa"/></svg> Formação e experiência</div>
+    <div class="stats">
+      <div class="stat"><div class="n">10+</div><div class="t">anos de experiência em liderança</div></div>
+      <div class="stat"><div class="n">400+</div><div class="t">horas de formação, com o Eneagrama como mapa</div></div>
+      <div class="stat"><div class="n">60+</div><div class="t">pessoas que descobriram o seu modo de funcionar</div></div>
+    </div>
+    <div class="forma">
+      <div class="f"><svg class="octa" viewBox="0 0 100 100"><use href="#octa"/></svg><div><b>Engenharia Química</b><span>UFSJ</span></div></div>
+      <div class="f"><svg class="octa" viewBox="0 0 100 100"><use href="#octa"/></svg><div><b>Pós em Gestão Empresarial</b><span>FGV</span></div></div>
+      <div class="f"><svg class="octa" viewBox="0 0 100 100"><use href="#octa"/></svg><div><b>Agile Coach</b><span>PUC Minas</span></div></div>
+      <div class="f"><svg class="octa" viewBox="0 0 100 100"><use href="#octa"/></svg><div><b>Eneagrama</b><span>IEsh e CP Enneagram</span></div></div>
+      <div class="f"><svg class="octa" viewBox="0 0 100 100"><use href="#octa"/></svg><div><b>Desenvolvimento Organizacional, Aprendizagem e HR Business Partner</b><span>AIHR</span></div></div>
+      <div class="f"><svg class="octa" viewBox="0 0 100 100"><use href="#octa"/></svg><div><b>Riscos psicossociais no trabalho (NR-01)</b><span>INBRAEP</span></div></div>
+      <div class="f"><svg class="octa" viewBox="0 0 100 100"><use href="#octa"/></svg><div><b>Liberação Emocional (EFT) e ThetaHealing</b><span>Terapias de regulação emocional</span></div></div>
+      <div class="f"><svg class="octa" viewBox="0 0 100 100"><use href="#octa"/></svg><div><b>Estudo do inconsciente e neurociência</b><span>Escola do Inconsciente</span></div></div>
+    </div>
+  </section>
+
+  <section class="blk">
+    <div class="lbl"><svg class="octa" viewBox="0 0 100 100"><use href="#octa"/></svg> Pelas minhas próprias lentes</div>
+    <h2>Eu pratico o que ofereço a você</h2>
+    <p>Me olho pelas mesmas ferramentas que uso no meu trabalho. Elas me ajudam a entender de onde vêm a minha força e os meus pontos cegos, e a liderar a minha própria vida com mais consciência.</p>
+    <div class="lentes">
+      <div class="lente">
+        <div class="ico"><svg class="octa" viewBox="0 0 100 100"><use href="#octa"/></svg></div>
+        <div class="tag">Eneagrama</div>
+        <h3>Tipo 7, com o social forte</h3>
+        <p>Conheço de perto a fuga pra frente, o excesso de ideias e a dificuldade de ficar com a dor. Foi trabalhando o meu próprio tipo que aprendi a transformar o entusiasmo em presença, e a sentir o que antes eu evitava.</p>
+      </div>
+      <div class="lente dh">
+        <div class="ico"><svg class="octa" viewBox="0 0 100 100"><use href="#octa"/></svg></div>
+        <div class="tag">Desenho Humano</div>
+        <h3>Cruz do Serviço, Geradora sacral</h3>
+        <p>Meu mapa fala de investigar a fundo, aperfeiçoar e servir elevando padrões, respondendo no timing certo e movida por amor à vida. Tem o perfil de quem aprende na pele e depois guia os outros. É quase a tradução literal do que eu faço hoje.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="cta">
+    <svg class="octa octa-bg" viewBox="0 0 100 100"><use href="#octa"/></svg>
+    <h2>Quer olhar o seu momento comigo?</h2>
+    <p>Se a minha história tocou em algo seu, o melhor primeiro passo é uma conversa. Sem custo, sem pressão.</p>
+    <a href="consultoria.html">Marcar minha conversa gratuita</a>
+  </div>
+
+  <p class="foot">
+    <svg class="octa" viewBox="0 0 100 100"><use href="#octa"/></svg>
+    Liderança na Raiz · Débora Delgado
+  </p>
+</div>
+<script src="nav.js"></script>
+</body>
+</html>

@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>A Primeira Jornada — Estruture sua Jornada de Constelação | Guilherme Araújo</title>
+  <meta name="description" content="Do atendimento avulso à jornada conduzida. Estruture uma Jornada de Constelação — início, continuidade e fechamento — em vez de viver de sessão solta. Acesso imediato. R$47. Garantia de 7 dias." />
+
+  <!-- Meta Pixel — ID do ecossistema. CONFIRMAR com Guilherme se usa pixel/evento próprio p/ esta esteira. -->
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1259363302489132');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1259363302489132&ev=PageView&noscript=1"/></noscript>
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-5KFCDH6N');</script>
+
+  <!-- Fonts: preconnect + display=swap (texto renderiza imediato em fallback; não bloqueia LCP) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ─── RESET & BASE ─────────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:         #0D0B0A;
+      --bg-soft:    #131110;
+      --bg-card:    #1A1714;
+      --line:       rgba(201,169,110,0.15);
+      --line-soft:  rgba(240,234,216,0.08);
+      --gold:       #C9A96E;
+      --gold-light: #DFC08A;
+      --cream:      #F0EAD8;
+      --cream-dim:  #B8AFA0;
+      --white:      #FAF7F2;
+
+      --serif:  'Cormorant Garamond', Georgia, serif;
+      --sans:   'Jost', system-ui, sans-serif;
+
+      --max:    1100px;
+      --gutter: clamp(1.5rem, 5vw, 4rem);
+
+      --ease:   cubic-bezier(0.22, 1, 0.36, 1);
+      --ease-soft: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--cream);
+      font-family: var(--sans);
+      font-weight: 300;
+      font-size: clamp(0.95rem, 1.1vw, 1.05rem);
+      line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    /* Grain overlay */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='1'/%3E%3C/svg%3E");
+      opacity: 0.025;
+      pointer-events: none;
+      z-index: 9999;
+    }
+    body::after {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background: radial-gradient(ellipse at center, transparent 55%, rgba(0,0,0,0.35) 100%);
+      pointer-events: none;
+      z-index: 9998;
+    }
+
+    /* ─── UTILITIES ────────────────────────────────────────────── */
+    .container { max-width: var(--max); margin-inline: auto; padding-inline: var(--gutter); }
+    .serif { font-family: var(--serif); }
+    .gold  { color: var(--gold); }
+    .divider { width: 3rem; height: 1px; background: var(--gold); opacity: .5; }
+
+    .section-num {
+      font-family: var(--serif); font-style: italic; color: var(--gold);
+      opacity: 0.7; margin-right: 0.5rem;
+    }
+
+    a:focus-visible, button:focus-visible {
+      outline: 2px solid var(--gold); outline-offset: 3px; border-radius: 2px;
+    }
+
+    /* ─── SCROLL REVEAL ────────────────────────────────────────── */
+    .reveal {
+      opacity: 0; transform: translateY(28px);
+      transition: opacity 0.8s var(--ease), transform 0.8s var(--ease);
+    }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    .reveal-delay-3 { transition-delay: 0.3s; }
+
+    /* ─── LOAD ANIMATION (escada curta; headline NÃO inicia oculta → LCP rápido) ── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .load-1 { animation: fadeUp .7s var(--ease) both; animation-delay: .08s; }
+    .load-2 { animation: fadeUp .7s var(--ease) both; animation-delay: .18s; }
+    .load-3 { animation: fadeUp .7s var(--ease) both; animation-delay: .28s; }
+
+    /* ─── BUTTONS ──────────────────────────────────────────────── */
+    .btn {
+      display: inline-block; font-family: var(--sans); font-weight: 400;
+      font-size: 0.85rem; letter-spacing: 0.12em; text-transform: uppercase;
+      text-decoration: none; padding: 1rem 2.5rem; border-radius: 2px;
+      transition: background 0.35s var(--ease-soft), color 0.35s var(--ease-soft), border-color 0.35s var(--ease-soft), transform 0.35s var(--ease);
+      cursor: pointer;
+    }
+    .btn-primary { background: var(--gold); color: #0D0B0A; border: 1px solid var(--gold); }
+    .btn-primary:hover { background: var(--gold-light); border-color: var(--gold-light); transform: translateY(-2px); }
+    .btn-ghost { background: transparent; color: var(--cream); border: 1px solid rgba(240,234,216,0.3); }
+    .btn-ghost:hover { border-color: var(--gold); color: var(--gold); transform: translateY(-2px); }
+    .btn .arrow { display: inline-block; transition: transform 0.35s var(--ease); }
+    .btn:hover .arrow { transform: translateX(4px); }
+
+    /* ─── NAV ──────────────────────────────────────────────────── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      padding: 1.5rem var(--gutter); display: flex; align-items: center; justify-content: space-between;
+      background: linear-gradient(to bottom, rgba(13,11,10,0.95), transparent);
+      backdrop-filter: blur(2px);
+    }
+    .nav-logo {
+      font-family: var(--serif); font-size: 1.1rem; font-weight: 400; letter-spacing: 0.05em;
+      color: var(--cream); text-decoration: none; opacity: 0.85;
+    }
+    .nav-cta {
+      font-family: var(--sans); font-size: 0.75rem; font-weight: 400; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--gold); text-decoration: none;
+      border-bottom: 1px solid rgba(201,169,110,0.4); padding-bottom: 1px;
+      transition: border-color 0.2s var(--ease-soft);
+    }
+    .nav-cta:hover { border-color: var(--gold); }
+
+    /* ─── HERO ─────────────────────────────────────────────────── */
+    #hero {
+      min-height: 88svh; display: flex; flex-direction: column; align-items: center; justify-content: center;
+      text-align: center; padding: 8rem var(--gutter) 4rem; position: relative;
+    }
+    .hero-eyebrow {
+      font-family: var(--sans); font-size: 0.72rem; font-weight: 400; letter-spacing: 0.2em;
+      text-transform: uppercase; color: var(--gold); margin-bottom: 2rem;
+    }
+    .hero-headline {
+      font-family: var(--serif); font-size: clamp(2.8rem, 6vw, 5.5rem); font-weight: 400;
+      line-height: 1.1; color: var(--white); max-width: 820px; margin-bottom: 1.75rem;
+    }
+    .hero-headline em { font-style: italic; color: var(--gold-light); }
+    .hero-sub { font-size: 0.95rem; color: var(--cream-dim); letter-spacing: 0.04em; margin-bottom: 1.5rem; max-width: 620px; }
+    .hero-value { font-family: var(--serif); font-style: italic; font-size: 1.05rem; color: var(--cream); margin-bottom: 2.5rem; }
+    .hero-value span { color: var(--gold-light); }
+    .hero-cta-group { display: flex; flex-direction: row; align-items: center; justify-content: center; gap: 1rem; flex-wrap: wrap; }
+    .hero-anchor { font-size: 0.72rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--cream-dim); opacity: 0.6; margin-top: 2rem; }
+    .hero-anchor span { color: var(--gold); opacity: 1; }
+
+    /* ─── FAIXA DE CONFIANÇA ───────────────────────────────────── */
+    #confianca { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: var(--bg-soft); padding-block: 1.75rem; }
+    .confianca-inner { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: clamp(1.5rem, 5vw, 4rem); }
+    .confianca-item { display: flex; align-items: baseline; gap: 0.6rem; }
+    .confianca-num { font-family: var(--serif); font-size: 1.5rem; color: var(--gold-light); line-height: 1; }
+    .confianca-label { font-size: 0.68rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--cream-dim); opacity: 0.75; }
+    .confianca-sep { width: 1px; height: 1.6rem; background: var(--line); }
+
+    /* ─── SECTION BASE ─────────────────────────────────────────── */
+    section { padding-block: clamp(4rem, 8vw, 7rem); }
+    .section-label { font-size: 0.7rem; font-weight: 400; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 1rem; }
+    .section-title { font-family: var(--serif); font-size: clamp(2rem, 4vw, 3.2rem); font-weight: 400; line-height: 1.2; color: var(--white); margin-bottom: 1.5rem; }
+    .section-title em { font-style: italic; color: var(--gold-light); }
+
+    /* ─── IDENTIFICAÇÃO ────────────────────────────────────────── */
+    #identificacao { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: var(--bg-soft); }
+    .identificacao-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; }
+    .identificacao-left { padding-top: 0.5rem; }
+    .momento-list { list-style: none; display: flex; flex-direction: column; gap: 2rem; }
+    .momento-item { padding-left: 1.5rem; border-left: 1px solid var(--line); transition: border-color 0.4s var(--ease-soft); }
+    .momento-item:hover { border-color: var(--gold); }
+    .momento-item p { font-family: var(--serif); font-size: 1.05rem; font-style: italic; color: var(--cream); line-height: 1.6; }
+    .momento-item p + p { margin-top: 0.35rem; color: var(--cream-dim); font-style: normal; font-size: 0.9rem; font-family: var(--sans); }
+
+    /* ─── DOR INVISÍVEL ────────────────────────────────────────── */
+    #dor { text-align: center; }
+    .dor-text { max-width: 720px; margin-inline: auto; color: var(--cream-dim); font-size: 1rem; line-height: 1.9; }
+    .dor-text + .dor-text { margin-top: 1.5rem; }
+    blockquote.destaque { margin: 4rem auto; max-width: 600px; padding: 2.5rem 3rem; border: 1px solid var(--line); background: var(--bg-card); position: relative; }
+    blockquote.destaque::before { content: '\201C'; font-family: var(--serif); font-size: 5rem; color: var(--gold); opacity: 0.3; position: absolute; top: -1.5rem; left: 1.5rem; line-height: 1; }
+    blockquote.destaque p { font-family: var(--serif); font-size: clamp(1.3rem, 2.5vw, 1.7rem); font-style: italic; font-weight: 300; color: var(--white); line-height: 1.5; }
+
+    /* ─── MECANISMO (3 movimentos) ─────────────────────────────── */
+    #mecanismo { background: var(--bg-soft); }
+    .mecanismo-intro { text-align: center; max-width: 640px; margin-inline: auto; margin-bottom: 3.5rem; }
+    .mecanismo-intro p { font-family: var(--serif); font-size: 1.15rem; font-style: italic; color: var(--cream-dim); line-height: 1.7; }
+    .mecanismo-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; }
+    .movimento {
+      background: var(--bg-card); padding: 2.5rem 2rem; display: flex; flex-direction: column; gap: 1rem;
+      transition: background 0.4s var(--ease-soft);
+    }
+    .movimento:hover { background: #201D19; }
+    .movimento-num { font-family: var(--serif); font-style: italic; font-size: 2.6rem; color: var(--gold); line-height: 1; }
+    .movimento-nome { font-family: var(--serif); font-size: 1.45rem; font-weight: 500; color: var(--white); }
+    .movimento-desc { font-size: 0.92rem; color: var(--cream-dim); line-height: 1.75; }
+    .mecanismo-cta { text-align: center; padding-top: 3.5rem; }
+
+    /* ─── O QUE VOCÊ RECEBE (stack) ────────────────────────────── */
+    #entrega { border-top: 1px solid var(--line); }
+    .stack-list { max-width: 760px; margin-inline: auto; list-style: none; }
+    .stack-item {
+      display: flex; align-items: baseline; gap: 1.25rem; justify-content: space-between;
+      padding: 1.4rem 0; border-top: 1px solid var(--line);
+    }
+    .stack-item:last-of-type { border-bottom: 1px solid var(--line); }
+    .stack-item.bonus .stack-nome { color: var(--gold-light); }
+    .stack-main { display: flex; align-items: baseline; gap: 1rem; flex: 1; }
+    .stack-mark { color: var(--gold); font-size: 0.6rem; transform: translateY(-2px); }
+    .stack-nome { font-family: var(--serif); font-size: 1.1rem; color: var(--cream); }
+    .stack-nome small { display: block; font-family: var(--sans); font-size: 0.82rem; color: var(--cream-dim); font-weight: 300; margin-top: 0.15rem; }
+    .stack-valor { font-size: 0.78rem; letter-spacing: 0.08em; color: var(--cream-dim); white-space: nowrap; }
+    .stack-total { text-align: center; margin-top: 2rem; font-family: var(--serif); font-style: italic; font-size: 1.1rem; color: var(--cream); }
+    .stack-total span { color: var(--gold-light); }
+    .entrega-cta { text-align: center; padding-top: 3rem; }
+
+    /* ─── QUEM ENSINA ──────────────────────────────────────────── */
+    #autor { background: var(--bg-soft); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    .autor-inner { display: grid; grid-template-columns: 340px 1fr; gap: 5rem; align-items: center; }
+    .autor-foto-wrap { position: relative; }
+    .autor-foto { width: 100%; aspect-ratio: 3/4; object-fit: cover; object-position: top; display: block; filter: grayscale(20%); }
+    .autor-foto-frame { position: absolute; inset: 1rem; border: 1px solid rgba(201,169,110,0.25); pointer-events: none; }
+    .autor-anos { position: absolute; bottom: -1rem; right: -1rem; background: var(--gold); color: #0D0B0A; font-family: var(--serif); font-size: 0.85rem; font-weight: 600; padding: 0.6rem 1rem; letter-spacing: 0.05em; }
+    .autor-bio { color: var(--cream-dim); line-height: 1.85; margin-bottom: 2rem; }
+    .autor-credenciais { list-style: none; display: flex; flex-direction: column; gap: 0.75rem; }
+    .autor-credenciais li { display: flex; gap: 0.75rem; font-size: 0.88rem; color: var(--cream-dim); }
+    .autor-credenciais li::before { content: '—'; color: var(--gold); opacity: 0.7; flex-shrink: 0; }
+
+    /* ─── OFERTA ───────────────────────────────────────────────── */
+    #oferta { text-align: center; }
+    .oferta-ancora { font-family: var(--serif); font-style: italic; color: var(--cream-dim); font-size: 1rem; max-width: 560px; margin-inline: auto; margin-bottom: 2.5rem; }
+    .oferta-box { max-width: 560px; margin-inline: auto; border: 1px solid var(--line); background: var(--bg-card); padding: 3rem 2.5rem; }
+    .oferta-titulo { font-family: var(--serif); font-size: 1.5rem; font-weight: 400; color: var(--white); margin-bottom: 0.5rem; }
+    .oferta-subtitulo { font-size: 0.82rem; color: var(--cream-dim); letter-spacing: 0.1em; margin-bottom: 2rem; }
+    .oferta-preco { font-family: var(--serif); font-size: clamp(3.5rem, 7vw, 5rem); font-weight: 300; color: var(--white); line-height: 1; margin-bottom: 0.25rem; font-variant-numeric: tabular-nums; }
+    .oferta-preco sup { font-size: 1.5rem; vertical-align: top; margin-top: 1rem; color: var(--gold); }
+    .oferta-condicao { font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--cream-dim); margin-bottom: 2rem; }
+    .oferta-bullets { list-style: none; text-align: left; margin-bottom: 2.5rem; display: flex; flex-direction: column; gap: 0.6rem; }
+    .oferta-bullets li { font-size: 0.88rem; color: var(--cream-dim); display: flex; gap: 0.75rem; align-items: flex-start; }
+    .oferta-bullets li::before { content: '✦'; color: var(--gold); font-size: 0.6rem; margin-top: 0.35rem; flex-shrink: 0; }
+    .oferta-garantia { margin-top: 1.75rem; padding-top: 1.75rem; border-top: 1px solid var(--line); font-size: 0.82rem; color: var(--cream-dim); line-height: 1.6; }
+    .oferta-garantia strong { color: var(--cream); font-weight: 400; }
+
+    /* ─── FECHAMENTO ───────────────────────────────────────────── */
+    #fechamento { text-align: center; background: var(--bg-soft); border-top: 1px solid var(--line); }
+    .fechamento-texto { max-width: 600px; margin-inline: auto; margin-bottom: 2.5rem; }
+    .fechamento-texto p { font-family: var(--serif); font-size: clamp(1.1rem, 2vw, 1.35rem); font-style: italic; color: var(--cream-dim); line-height: 1.75; }
+    .fechamento-texto p + p { margin-top: 1.25rem; }
+    .fechamento-texto p strong { color: var(--cream); font-style: normal; font-weight: 400; }
+
+    /* ─── FAQ ──────────────────────────────────────────────────── */
+    #faq { border-top: 1px solid var(--line); }
+    .faq-inner { max-width: 720px; margin-inline: auto; }
+    .faq-item { border-top: 1px solid var(--line); }
+    .faq-item:last-child { border-bottom: 1px solid var(--line); }
+    .faq-trigger { width: 100%; background: none; border: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 1.5rem; padding: 1.4rem 0; text-align: left; }
+    .faq-pergunta { font-family: var(--serif); font-size: 1.05rem; color: var(--cream); line-height: 1.4; transition: color 0.25s var(--ease-soft); }
+    .faq-trigger:hover .faq-pergunta { color: var(--gold-light); }
+    .faq-icon { color: var(--gold); font-size: 1.2rem; opacity: 0.6; transition: transform 0.4s var(--ease), opacity 0.25s var(--ease-soft); flex-shrink: 0; }
+    .faq-item.open .faq-icon { transform: rotate(45deg); opacity: 1; }
+    .faq-body { max-height: 0; overflow: hidden; transition: max-height 0.45s var(--ease); }
+    .faq-body-inner { padding-bottom: 1.5rem; color: var(--cream-dim); font-size: 0.92rem; line-height: 1.8; }
+
+    /* ─── STICKY BUY BAR ───────────────────────────────────────── */
+    .sticky-buy {
+      position: fixed; z-index: 90; left: 0; right: 0; bottom: 0; padding: 0.85rem var(--gutter);
+      display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+      background: rgba(13,11,10,0.72); backdrop-filter: blur(14px) saturate(120%); -webkit-backdrop-filter: blur(14px) saturate(120%);
+      border-top: 1px solid var(--gold); transform: translateY(110%); opacity: 0;
+      transition: transform 0.5s var(--ease), opacity 0.4s var(--ease-soft); pointer-events: none;
+    }
+    .sticky-buy.show { transform: translateY(0); opacity: 1; pointer-events: auto; }
+    .sticky-buy-info { display: flex; flex-direction: column; line-height: 1.2; min-width: 0; }
+    .sticky-buy-prod { font-family: var(--serif); font-size: 0.95rem; color: var(--cream); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .sticky-buy-price { font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--cream-dim); }
+    .sticky-buy-price span { color: var(--gold); }
+    .sticky-buy .btn { padding: 0.75rem 1.75rem; font-size: 0.78rem; white-space: nowrap; flex-shrink: 0; }
+    @media (min-width: 901px) {
+      .sticky-buy { left: auto; right: 2rem; bottom: 2rem; border: 1px solid var(--gold); border-radius: 999px; padding: 0.65rem 0.65rem 0.65rem 1.6rem; box-shadow: 0 12px 40px rgba(0,0,0,0.45); max-width: 440px; }
+      .sticky-buy .btn { border-radius: 999px; }
+    }
+
+    /* ─── FOOTER ───────────────────────────────────────────────── */
+    footer { border-top: 1px solid var(--line); padding: 2.5rem var(--gutter); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+    .footer-nome { font-family: var(--serif); font-size: 0.95rem; color: var(--cream-dim); opacity: 0.7; }
+    .footer-links { display: flex; gap: 2rem; }
+    .footer-links a { font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--cream-dim); text-decoration: none; opacity: 0.5; transition: opacity 0.25s var(--ease-soft); }
+    .footer-links a:hover { opacity: 0.8; }
+
+    /* ─── RESPONSIVE ───────────────────────────────────────────── */
+    @media (max-width: 900px) {
+      .identificacao-inner { grid-template-columns: 1fr; gap: 2.5rem; }
+      .mecanismo-grid { grid-template-columns: 1fr; gap: 1px; }
+      .autor-inner { grid-template-columns: 1fr; gap: 3rem; }
+      .autor-foto-wrap { max-width: 280px; margin-inline: auto; }
+      footer { padding-bottom: 6rem; }
+    }
+    @media (max-width: 600px) {
+      .hero-cta-group { flex-direction: column; width: 100%; }
+      .hero-cta-group .btn { width: 100%; max-width: 320px; }
+      .oferta-box { padding: 2rem 1.5rem; }
+      .stack-item { flex-direction: column; gap: 0.35rem; }
+      footer { flex-direction: column; text-align: center; }
+      .footer-links { justify-content: center; }
+    }
+
+    /* ─── REDUCED MOTION ───────────────────────────────────────── */
+    @media (prefers-reduced-motion: reduce) {
+      * { animation-duration: 0.001ms !important; animation-delay: 0s !important; transition-duration: 0.001ms !important; }
+      .reveal { opacity: 1; transform: none; }
+      html { scroll-behavior: auto; }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- GTM noscript -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5KFCDH6N" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<!-- ══════════════════════════════════════════════════ NAV -->
+<nav>
+  <a href="#hero" class="nav-logo">Guilherme Araújo</a>
+  <a href="#" class="nav-cta js-checkout" data-cta="nav">Quero estruturar minha jornada</a>
+</nav>
+
+<!-- ══════════════════════════════════════════════════ HERO -->
+<section id="hero">
+  <p class="hero-eyebrow load-1">Para consteladores que já atendem — ou querem começar</p>
+
+  <h1 class="hero-headline">
+    Do atendimento avulso<br>
+    <em>à jornada conduzida.</em>
+  </h1>
+
+  <p class="hero-sub load-2">
+    Estruture uma Jornada de Constelação — início, continuidade e fechamento —<br>
+    em vez de viver de sessão solta.
+  </p>
+
+  <p class="hero-value load-2">
+    Menos do que 1/3 de uma sessão — <span>R$47</span> — pelo método que sustenta todas as próximas.
+  </p>
+
+  <div class="hero-cta-group load-3">
+    <a href="#mecanismo" class="btn btn-primary">Ver como funciona</a>
+    <a href="#" class="btn btn-ghost js-checkout" data-cta="hero">Quero estruturar minha jornada</a>
+  </div>
+
+  <p class="hero-anchor load-3">
+    Acesso imediato&nbsp;·&nbsp;<span>R$47</span>&nbsp;·&nbsp;Garantia de 7 dias
+  </p>
+</section>
+
+<!-- ══════════════════════════════════════════════════ FAIXA DE CONFIANÇA -->
+<section id="confianca">
+  <div class="container">
+    <div class="confianca-inner reveal">
+      <div class="confianca-item">
+        <span class="confianca-num">+800</span>
+        <span class="confianca-label">alunos formados</span>
+      </div>
+      <span class="confianca-sep" aria-hidden="true"></span>
+      <div class="confianca-item">
+        <span class="confianca-num">+12</span>
+        <span class="confianca-label">anos de prática</span>
+      </div>
+      <span class="confianca-sep" aria-hidden="true"></span>
+      <div class="confianca-item">
+        <span class="confianca-num">7</span>
+        <span class="confianca-label">dias de garantia</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════ IDENTIFICAÇÃO -->
+<section id="identificacao">
+  <div class="container">
+    <div class="identificacao-inner">
+
+      <div class="identificacao-left reveal">
+        <p class="section-label"><span class="section-num">01</span>Reconhecimento</p>
+        <h2 class="section-title">Você reconhece<br>algum desses<br><em>momentos?</em></h2>
+        <div class="divider"></div>
+      </div>
+
+      <ul class="momento-list">
+        <li class="momento-item reveal reveal-delay-1">
+          <p>A sessão foi profunda — e o cliente não voltou.</p>
+          <p>Você sentiu o campo se mover, mas não havia um próximo passo combinado. Ele agradeceu e sumiu.</p>
+        </li>
+        <li class="momento-item reveal reveal-delay-2">
+          <p>Cada atendimento começa do zero,</p>
+          <p>como se o que aconteceu na sessão anterior não tivesse deixado um fio para continuar.</p>
+        </li>
+        <li class="momento-item reveal reveal-delay-3">
+          <p>Você lê o campo com precisão,</p>
+          <p>mas não sabe o que fazer no intervalo entre uma sessão e outra — e a continuidade se perde.</p>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════ DOR INVISÍVEL -->
+<section id="dor">
+  <div class="container">
+
+    <div class="reveal">
+      <p class="section-label" style="text-align:center;"><span class="section-num">02</span>Nomeação</p>
+      <h2 class="section-title" style="text-align:center; max-width:680px; margin-inline:auto;">
+        Não é falta de dom.<br>Não é falta de técnica.<br><em>É falta de uma jornada estruturada.</em>
+      </h2>
+    </div>
+
+    <p class="dor-text reveal">
+      Quem constela há algum tempo acumula percepção real. Sente o campo. Conduz uma sessão com cuidado.
+      Mas uma sessão isolada, por mais profunda que seja, não cria continuidade.
+    </p>
+    <p class="dor-text reveal">
+      O cliente vive a experiência, agradece — e volta para a vida sem um processo que sustente o que se moveu.
+      Sem continuidade, não há acompanhamento. Sem acompanhamento, você vende sempre a próxima sessão avulsa,
+      sempre recomeçando do zero, com uma agenda que nunca se estabiliza.
+    </p>
+    <p class="dor-text reveal">
+      O teto que você sente não é espiritual. É estrutural. Falta o método que transforma a técnica
+      que você já domina em uma jornada com início, continuidade e fechamento.
+    </p>
+
+    <blockquote class="destaque reveal">
+      <p>Sessão avulsa começa do zero toda vez.<br>Jornada constrói sobre o que já aconteceu.</p>
+    </blockquote>
+
+    <div style="text-align:center;" class="reveal">
+      <a href="#" class="btn btn-ghost js-checkout" data-cta="dor">
+        Quero estruturar minha jornada
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════ MECANISMO -->
+<section id="mecanismo">
+  <div class="container">
+
+    <div class="mecanismo-intro reveal">
+      <p class="section-label"><span class="section-num">03</span>Como funciona</p>
+      <h2 class="section-title">Uma jornada tem<br><em>três movimentos.</em></h2>
+      <p>O que está abaixo não é teoria. É o mapa que transforma sessões soltas em um processo que o cliente percorre — e no qual ele permanece.</p>
+    </div>
+
+    <div class="mecanismo-grid">
+      <div class="movimento reveal reveal-delay-1">
+        <span class="movimento-num">I</span>
+        <span class="movimento-nome">Início</span>
+        <p class="movimento-desc">Como abrir uma jornada — e não apenas uma sessão. Contrato simbólico, leitura do campo e definição do arco do processo, para que o cliente entre em um caminho, não em um evento isolado.</p>
+      </div>
+      <div class="movimento reveal reveal-delay-2">
+        <span class="movimento-num">II</span>
+        <span class="movimento-nome">Continuidade</span>
+        <p class="movimento-desc">O que sustenta o processo entre os encontros: o protocolo entre-sessões, a linguagem que mantém o campo ativo e a presença que faz o cliente voltar — em vez de sumir depois da catarse.</p>
+      </div>
+      <div class="movimento reveal reveal-delay-3">
+        <span class="movimento-num">III</span>
+        <span class="movimento-nome">Fechamento</span>
+        <p class="movimento-desc">Como concluir uma jornada com resultado percebido pelo cliente — o que gera a sensação de transformação completa, abre espaço para o depoimento e para a indicação natural.</p>
+      </div>
+    </div>
+
+    <div class="mecanismo-cta reveal">
+      <a href="#" class="btn btn-primary js-checkout" data-cta="mecanismo">
+        Quero a minha primeira jornada <span class="arrow">→</span>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════ O QUE VOCÊ RECEBE -->
+<section id="entrega">
+  <div class="container">
+
+    <div class="reveal" style="text-align:center; margin-bottom:3rem;">
+      <p class="section-label"><span class="section-num">04</span>O que você recebe</p>
+      <h2 class="section-title">Tudo o que você precisa<br><em>para desenhar a sua.</em></h2>
+    </div>
+
+    <ul class="stack-list reveal">
+      <li class="stack-item">
+        <span class="stack-main"><span class="stack-mark">✦</span>
+          <span class="stack-nome">Mapa da Jornada
+            <small>Início, continuidade e fechamento em um só caminho.</small>
+          </span>
+        </span>
+        <span class="stack-valor">R$ 197</span>
+      </li>
+      <li class="stack-item">
+        <span class="stack-main"><span class="stack-mark">✦</span>
+          <span class="stack-nome">Modelo de 1ª sessão (abertura da jornada)
+            <small>Engaja o cliente no processo — não no avulso.</small>
+          </span>
+        </span>
+        <span class="stack-valor">R$ 97</span>
+      </li>
+      <li class="stack-item">
+        <span class="stack-main"><span class="stack-mark">✦</span>
+          <span class="stack-nome">Protocolo entre-sessões
+            <small>O que o cliente faz entre os encontros — resolve a evasão.</small>
+          </span>
+        </span>
+        <span class="stack-valor">R$ 97</span>
+      </li>
+      <li class="stack-item">
+        <span class="stack-main"><span class="stack-mark">✦</span>
+          <span class="stack-nome">Mini-aula: como apresentar a jornada
+            <small>A primeira ponte para oferecer o acompanhamento.</small>
+          </span>
+        </span>
+        <span class="stack-valor">R$ 97</span>
+      </li>
+      <li class="stack-item bonus">
+        <span class="stack-main"><span class="stack-mark">✦</span>
+          <span class="stack-nome">Bônus · Checklist “Sua primeira jornada em 1 página”
+            <small>Para aplicar imediatamente, no seu próximo atendimento.</small>
+          </span>
+        </span>
+        <span class="stack-valor">R$ 47</span>
+      </li>
+    </ul>
+
+    <p class="stack-total reveal">Valor real de tudo isso: <span>R$ 535</span> — hoje, por R$ 47.</p>
+
+    <div class="entrega-cta reveal">
+      <a href="#" class="btn btn-primary js-checkout" data-cta="entrega">
+        Quero estruturar minha jornada
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════ QUEM ENSINA -->
+<section id="autor">
+  <div class="container">
+    <div class="autor-inner">
+
+      <div class="autor-foto-wrap reveal">
+        <img
+          src="https://professorguilhermearaujo.com.br/wp-content/uploads/2026/05/Foto-Guilherme-LP.jpeg"
+          alt="Guilherme Araújo — criador do método de Cartomância Sistêmica e Constelação"
+          class="autor-foto"
+          loading="lazy"
+          width="340" height="453"
+        />
+        <div class="autor-foto-frame"></div>
+        <div class="autor-anos">+12 anos</div>
+      </div>
+
+      <div class="reveal reveal-delay-2">
+        <p class="section-label"><span class="section-num">05</span>Quem ensina</p>
+        <h2 class="section-title">Guilherme<br><em>Araújo</em></h2>
+        <p class="autor-bio">
+          Guilherme Araújo desenvolveu uma abordagem própria que integra leitura simbólica, visão sistêmica
+          e ética no atendimento. Mais do que ensinar a técnica, ele ensina a conduzir — a transformar o que
+          você já sabe fazer em um processo que o cliente percorre do início ao fim.
+        </p>
+        <ul class="autor-credenciais">
+          <li>Mais de 12 anos de prática em Constelação e Cartomância Sistêmica</li>
+          <li>Mais de 800 alunos formados no método sistêmico</li>
+          <li>Criador de método próprio que une condução sistêmica e estrutura de atendimento</li>
+          <li>Formações em Constelação Familiar, hermetismo e leitura simbólica</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════ OFERTA -->
+<section id="oferta">
+  <div class="container">
+
+    <div class="reveal" style="text-align:center; margin-bottom:2.5rem;">
+      <p class="section-label"><span class="section-num">06</span>A entrada</p>
+      <h2 class="section-title" style="max-width:560px; margin-inline:auto;">
+        A Primeira<br><em>Jornada</em>
+      </h2>
+    </div>
+
+    <p class="oferta-ancora reveal">
+      Uma sessão de constelação custa entre R$150 e R$500.
+      Por menos de 1/3 de uma única sessão, você estrutura o método que sustenta todas as próximas.
+    </p>
+
+    <div class="oferta-box reveal">
+      <p class="oferta-titulo">A Primeira Jornada</p>
+      <p class="oferta-subtitulo">Do atendimento avulso à jornada conduzida</p>
+
+      <div class="oferta-preco"><sup>R$</sup>47</div>
+      <p class="oferta-condicao">pagamento único · acesso imediato</p>
+
+      <a href="#" class="btn btn-primary js-checkout" data-cta="oferta" style="width:100%; text-align:center; display:block;">
+        Quero estruturar minha jornada
+      </a>
+
+      <ul class="oferta-bullets" style="margin-top:2rem;">
+        <li>Mapa da Jornada — início, continuidade e fechamento</li>
+        <li>Modelo de 1ª sessão e protocolo entre-sessões</li>
+        <li>Mini-aula: como apresentar a jornada ao cliente</li>
+        <li>Bônus: checklist “Sua primeira jornada em 1 página”</li>
+        <li>Acesso imediato — estude no seu ritmo</li>
+      </ul>
+
+      <div class="oferta-garantia">
+        <strong>7 dias de garantia incondicional.</strong><br>
+        Você tem uma semana para entrar no conteúdo e avaliar se o método faz sentido.
+        Se concluir que não é para você, basta pedir o reembolso — devolvemos o valor integral,
+        sem perguntas, sem burocracia.
+        <br><br>
+        <a href="#" class="btn btn-ghost js-checkout" data-cta="garantia" style="font-size:0.75rem; padding:0.75rem 1.75rem; margin-top:0.5rem;">
+          Entrar com garantia de 7 dias
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════ FECHAMENTO -->
+<section id="fechamento">
+  <div class="container">
+    <div class="fechamento-texto reveal">
+      <p>
+        Você chegou até aqui porque reconheceu algo no que foi dito.
+      </p>
+      <p>
+        <strong>Não faltou dom. Não faltou técnica.</strong><br>
+        Faltou a estrutura que transforma sessão solta em jornada conduzida.
+      </p>
+      <p>
+        Esse é o primeiro passo.<br>
+        Não é aprender a constelar de novo.<br>
+        É dar forma de jornada ao que você já sabe fazer.
+      </p>
+    </div>
+    <div style="text-align:center;" class="reveal">
+      <a href="#" class="btn btn-primary js-checkout" data-cta="fechamento">
+        Começar agora
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════ FAQ -->
+<section id="faq">
+  <div class="container">
+    <div class="reveal" style="text-align:center; margin-bottom:3rem;">
+      <p class="section-label"><span class="section-num">07</span>Dúvidas</p>
+      <h2 class="section-title">Perguntas<br><em>frequentes</em></h2>
+    </div>
+
+    <div class="faq-inner">
+
+      <div class="faq-item reveal">
+        <button class="faq-trigger" aria-expanded="false">
+          <span class="faq-pergunta">Preciso já atender para fazer?</span>
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-body">
+          <div class="faq-body-inner">
+            Não. Serve tanto para quem já atende e quer estruturar um processo, quanto para quem está se preparando para começar a atender e quer iniciar já com a lógica de jornada — em vez de aprender a vender sessão solta.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-trigger" aria-expanded="false">
+          <span class="faq-pergunta">Isso ensina a constelar?</span>
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-body">
+          <div class="faq-body-inner">
+            Não. Pressupõe que você já constela. O que você vai aprender aqui é a <em>conduzir e estruturar a jornada</em> — como começar, como dar continuidade e como fechar um processo de várias sessões. É condução, não técnica.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-trigger" aria-expanded="false">
+          <span class="faq-pergunta">Funciona com a minha linha ou abordagem?</span>
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-body">
+          <div class="faq-body-inner">
+            Sim. É um método de <em>condução</em>, independente da linha que você pratica. Você aplica a estrutura da jornada ao seu jeito de constelar — não é necessário mudar a sua abordagem.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-trigger" aria-expanded="false">
+          <span class="faq-pergunta">Como recebo o acesso?</span>
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-body">
+          <div class="faq-body-inner">
+            O acesso é imediato, logo após a confirmação do pagamento. Você estuda no seu ritmo, quantas vezes quiser durante o período de acesso da plataforma.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-trigger" aria-expanded="false">
+          <span class="faq-pergunta">E a garantia?</span>
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-body">
+          <div class="faq-body-inner">
+            Você tem 7 dias corridos após a compra para avaliar o conteúdo. Se concluir que não é para você, basta entrar em contato e devolvemos o valor integral. Sem perguntas, sem burocracia.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════ FOOTER -->
+<footer>
+  <p class="footer-nome">Guilherme Araújo © 2026</p>
+  <nav class="footer-links" aria-label="Links legais">
+    <a href="#">Política de Privacidade</a>
+    <a href="#">Termos de Uso</a>
+  </nav>
+</footer>
+
+<!-- ══════════════════════════════════════════════════ STICKY BUY BAR -->
+<div class="sticky-buy" id="stickyBuy" aria-hidden="true">
+  <div class="sticky-buy-info">
+    <span class="sticky-buy-prod">A Primeira Jornada</span>
+    <span class="sticky-buy-price">Acesso imediato · <span>R$47</span></span>
+  </div>
+  <a href="#" class="btn btn-primary js-checkout" data-cta="sticky" tabindex="-1">Acessar</a>
+</div>
+
+<!-- ══════════════════════════════════════════════════ JS -->
+<script>
+  // ─────────────────────────────────────────────────────────────
+  // CHECKOUT — TROCAR pela URL real do produto "A Primeira Jornada".
+  // Fonte única: altere apenas esta constante e todos os CTAs atualizam.
+  const CHECKOUT_URL = 'https://CONFIGURAR-CHECKOUT-A-PRIMEIRA-JORNADA';
+  // ─────────────────────────────────────────────────────────────
+
+  document.querySelectorAll('.js-checkout').forEach(link => {
+    link.setAttribute('href', CHECKOUT_URL);
+  });
+
+  // ── Tracking: InitiateCheckout em todos os CTAs (Pixel + dataLayer)
+  function fireCheckout(position) {
+    if (typeof fbq !== 'undefined') {
+      fbq('track', 'InitiateCheckout', {
+        content_name: 'A Primeira Jornada',
+        content_type: 'product',
+        value: 47,
+        currency: 'BRL',
+        cta_position: position
+      });
+    }
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      event: 'initiate_checkout',
+      content_name: 'A Primeira Jornada',
+      cta_position: position,
+      value: 47,
+      currency: 'BRL'
+    });
+  }
+
+  document.querySelectorAll('.js-checkout').forEach(link => {
+    link.addEventListener('click', () => {
+      fireCheckout(link.dataset.cta || 'desconhecido');
+    });
+  });
+
+  // ── Accordion: FAQ
+  document.querySelectorAll('.faq-trigger').forEach(trigger => {
+    trigger.addEventListener('click', () => {
+      const item = trigger.closest('.faq-item');
+      const body = item.querySelector('.faq-body');
+      const isOpen = item.classList.contains('open');
+
+      document.querySelectorAll('.faq-item.open').forEach(openItem => {
+        openItem.classList.remove('open');
+        openItem.querySelector('.faq-body').style.maxHeight = '0';
+        openItem.querySelector('.faq-trigger').setAttribute('aria-expanded', 'false');
+      });
+
+      if (!isOpen) {
+        item.classList.add('open');
+        body.style.maxHeight = body.scrollHeight + 'px';
+        trigger.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+
+  // ── Scroll Reveal
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+  document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+  // ── Sticky buy bar: aparece após sair do hero, some quando a oferta entra em cena
+  const stickyBuy = document.getElementById('stickyBuy');
+  const hero = document.getElementById('hero');
+  const oferta = document.getElementById('oferta');
+  let heroVisible = true;
+  let ofertaVisible = false;
+
+  const stickyLink = stickyBuy.querySelector('.js-checkout');
+  function updateSticky() {
+    const show = !heroVisible && !ofertaVisible;
+    stickyBuy.classList.toggle('show', show);
+    stickyBuy.setAttribute('aria-hidden', show ? 'false' : 'true');
+    // a11y: não deixar o link focável enquanto a barra está escondida (aria-hidden)
+    stickyLink.setAttribute('tabindex', show ? '0' : '-1');
+  }
+
+  new IntersectionObserver((entries) => {
+    heroVisible = entries[0].isIntersecting;
+    updateSticky();
+  }, { threshold: 0.15 }).observe(hero);
+
+  new IntersectionObserver((entries) => {
+    ofertaVisible = entries[0].isIntersecting;
+    updateSticky();
+  }, { threshold: 0.2 }).observe(oferta);
+
+  // ── Pixel: ViewContent
+  if (typeof fbq !== 'undefined') {
+    fbq('track', 'ViewContent', {
+      content_name: 'A Primeira Jornada',
+      content_type: 'product',
+      value: 47,
+      currency: 'BRL'
+    });
+  }
+</script>
+
+</body>
+</html>

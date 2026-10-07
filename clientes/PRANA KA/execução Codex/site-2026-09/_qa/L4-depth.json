@@ -1,0 +1,32 @@
+{
+  "desktop": {
+    "state": "active",
+    "canvas": 1,
+    "imageDecoded": true
+  },
+  "pointerOffset": [
+    0.0021048099733889103,
+    0.0015786074800416827
+  ],
+  "smoothScroll": true,
+  "dynamicReduced": true,
+  "reduced": {
+    "state": "static",
+    "canvases": 0
+  },
+  "noWebGL": {
+    "state": "static",
+    "imageVisible": true
+  },
+  "mobileBeforePermission": {
+    "state": "static",
+    "canvases": 0
+  },
+  "mobileDenied": true,
+  "decodePending": {
+    "state": "static",
+    "canvases": 0
+  },
+  "decodeResumed": true,
+  "pass": true
+}

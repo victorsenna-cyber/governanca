@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fluxo do funil — Liderança na Raiz</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--papel:#FAF7F2;--tinta:#2E2A26;--musgo:#52604A;--terra:#A8754F;--vinho:#7A3B4A;
+--cinza:#8A8378;--linha:#E6DFD4;--card:#fff;--ok:#52604A;--falta:#9B3B3B;--meio:#C08A3E}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--papel);color:var(--tinta);font-family:Inter,system-ui,sans-serif;font-size:15px;line-height:1.5;padding:36px 18px 70px}
+.wrap{max-width:1400px;margin:0 auto}
+h1{font-family:Fraunces,Georgia,serif;font-size:36px;font-weight:600;line-height:1.1}
+.sub{color:var(--cinza);margin:6px 0 8px;font-size:15px}
+.lead{max-width:80ch;margin:14px 0 30px;font-size:15.5px}
+h2{font-family:Fraunces,Georgia,serif;font-size:25px;font-weight:600;margin:52px 0 6px;padding-bottom:9px;border-bottom:2px solid var(--linha)}
+
+/* legenda */
+.leg{display:flex;gap:18px;flex-wrap:wrap;margin:0 0 22px;font-size:12.5px;color:var(--cinza)}
+.leg b{display:inline-block;width:11px;height:11px;border-radius:2px;margin-right:5px;vertical-align:-1px}
+.b-ok{background:var(--ok)} .b-meio{background:var(--meio)} .b-falta{background:var(--falta)}
+
+/* diagrama */
+.scroll{overflow-x:auto;padding-bottom:14px;-webkit-overflow-scrolling:touch}
+.diagrama{min-width:1180px;display:grid;grid-template-columns:132px repeat(6,1fr);gap:8px}
+
+.fase{background:var(--musgo);color:#fff;padding:10px 8px;border-radius:5px;text-align:center;font-size:11px;letter-spacing:.09em;text-transform:uppercase;font-weight:600}
+.fase small{display:block;font-size:10px;opacity:.72;letter-spacing:.02em;text-transform:none;margin-top:3px;font-weight:400}
+.vazio{background:transparent}
+
+.raia{background:#EFE9DF;border-radius:5px;padding:12px 10px;display:flex;flex-direction:column;justify-content:center;font-family:Fraunces,serif;font-size:14.5px;font-weight:600}
+.raia small{display:block;font-family:Inter,sans-serif;font-size:11px;font-weight:400;color:var(--cinza);margin-top:3px;line-height:1.35}
+
+.cel{background:var(--card);border:1px solid var(--linha);border-radius:5px;padding:11px 12px;font-size:13.2px;line-height:1.45;position:relative}
+.cel.nada{background:transparent;border:1px dashed #E6DFD4}
+.cel .st{position:absolute;top:8px;right:9px;width:8px;height:8px;border-radius:50%}
+.s-ok{background:var(--ok)} .s-meio{background:var(--meio)} .s-falta{background:var(--falta)}
+.cel b{font-weight:600}
+.cel .nota{display:block;margin-top:6px;font-size:11.5px;color:var(--cinza);line-height:1.4}
+
+/* porque */
+.porque{background:#F5F1EA;border-radius:5px;padding:11px 12px;font-size:12.8px;line-height:1.45;color:#4A443D}
+.porque b{color:var(--vinho);font-weight:600;display:block;font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;margin-bottom:4px}
+
+/* blocos de texto */
+.box{background:var(--card);border:1px solid var(--linha);border-left:5px solid var(--terra);border-radius:6px;padding:19px 22px;margin:22px 0}
+.box.alerta{border-left-color:var(--falta);background:#FDF8F8}
+.box .t{font-family:Fraunces,serif;font-size:17.5px;font-weight:600;margin-bottom:7px}
+table{width:100%;border-collapse:collapse;margin:16px 0;font-size:14px;background:var(--card);border:1px solid var(--linha);border-radius:6px;overflow:hidden}
+th{background:#F2EDE5;text-align:left;padding:9px 13px;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--cinza);font-weight:600}
+td{padding:9px 13px;border-top:1px solid var(--linha);vertical-align:top}
+.dica{color:var(--cinza);font-size:12.5px;margin:-14px 0 18px}
+.rodape{margin-top:52px;padding-top:16px;border-top:2px solid var(--linha);color:var(--cinza);font-size:13px}
+@media(max-width:640px){body{padding:22px 12px 50px}h1{font-size:27px}h2{font-size:21px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<h1>Fluxo do funil</h1>
+<p class="sub">Liderança na Raiz · Débora Delgado &nbsp;·&nbsp; agosto de 2026</p>
+<p class="lead">Seis fases, quatro raias. Cada coluna é um momento do caminho, cada linha é quem age. A última linha responde por que aquela fase existe. <strong>Onde a bolinha estiver vermelha, a peça ainda não existe.</strong></p>
+
+<div class="leg">
+  <span><b class="b-ok"></b>pronto</span>
+  <span><b class="b-meio"></b>existe, precisa de ajuste</span>
+  <span><b class="b-falta"></b>não existe ainda</span>
+</div>
+
+<p class="dica">Em tela pequena, arraste o diagrama para o lado.</p>
+
+<div class="scroll">
+<div class="diagrama">
+
+  <div class="vazio"></div>
+  <div class="fase">1 · Atrair<small>alguém te vê</small></div>
+  <div class="fase">2 · Engajar<small>levanta a mão</small></div>
+  <div class="fase">3 · Qualificar<small>se reconhece</small></div>
+  <div class="fase">4 · Conversar<small>a consultoria</small></div>
+  <div class="fase">5 · Entregar<small>o processo</small></div>
+  <div class="fase">6 · Expandir<small>vira indicação</small></div>
+
+  <!-- LEAD -->
+  <div class="raia">Quem chega<small>o líder, do lado de lá</small></div>
+  <div class="cel"><span class="st s-ok"></span>Vê um vídeo seu e <b>se reconhece na cena</b></div>
+  <div class="cel"><span class="st s-falta"></span><b>Comenta uma palavra</b><span class="nota">Ex: HISTÓRIAS, MAESTRIA, RAIZ</span></div>
+  <div class="cel"><span class="st s-ok"></span>Faz o quiz ou lê as histórias, e <b>preenche o formulário</b></div>
+  <div class="cel"><span class="st s-ok"></span>Entra na conversa e <b>conta a situação real</b></div>
+  <div class="cel"><span class="st s-ok"></span>Escolhe grupo, individual ou avulso, e <b>entra</b></div>
+  <div class="cel"><span class="st s-ok"></span><b>Indica alguém</b> que vive o mesmo</div>
+
+  <!-- ATIVOS -->
+  <div class="raia">O que trabalha sozinho<small>site, páginas, automação</small></div>
+  <div class="cel nada">&nbsp;</div>
+  <div class="cel"><span class="st s-falta"></span><b>Automação na direct</b> entrega o link<span class="nota">um link por porta, nada de quatro na bio</span></div>
+  <div class="cel"><span class="st s-meio"></span><b>Quiz · Histórias · Luz e sombra · VSL</b><span class="nota">os três primeiros prontos. Formulário: cortar de 22 para 12</span></div>
+  <div class="cel nada">&nbsp;</div>
+  <div class="cel"><span class="st s-meio"></span><b>Área de membros</b>: Método Raiz, eneagrama, maestria<span class="nota">acesso ainda sem senha individual</span></div>
+  <div class="cel nada">&nbsp;</div>
+
+  <!-- DEBORA -->
+  <div class="raia">Você<small>onde é insubstituível</small></div>
+  <div class="cel"><span class="st s-falta"></span><b>Publica</b> um conteúdo por dia útil</div>
+  <div class="cel"><span class="st s-ok"></span><b>Responde todo comentário com pergunta</b><span class="nota">e pede licença antes de chamar na direct</span></div>
+  <div class="cel nada">&nbsp;</div>
+  <div class="cel"><span class="st s-ok"></span><b>Conduz a consultoria</b> e devolve o que viu, com as palavras dela</div>
+  <div class="cel"><span class="st s-ok"></span><b>Encontros de grupo e individuais</b></div>
+  <div class="cel"><span class="st s-ok"></span><b>Pede a indicação no encerramento</b>, não depois</div>
+
+  <!-- CONTINUUM -->
+  <div class="raia">Continuum<small>o que a gente segura</small></div>
+  <div class="cel"><span class="st s-meio"></span>Direção de conteúdo e <b>campanha de R$ 12/dia</b></div>
+  <div class="cel"><span class="st s-falta"></span>Montar a <b>automação</b></div>
+  <div class="cel"><span class="st s-falta"></span><b>Pixel e medição</b> · enxugar o formulário · escrever a <b>VSL</b></div>
+  <div class="cel nada">&nbsp;</div>
+  <div class="cel"><span class="st s-falta"></span><b>Gate de acesso</b> com senha por pessoa</div>
+  <div class="cel"><span class="st s-falta"></span><b>Material para empresa</b><span class="nota">a indicação B2B morre sem ele</span></div>
+
+  <!-- PORQUE -->
+  <div class="raia" style="background:#EDE6DC">Por que existe<small>a razão de cada fase</small></div>
+  <div class="porque"><b>volume</b>É a única entrada que não custa verba. E o algoritmo mudou: consistência passou a valer mais que viralizar.</div>
+  <div class="porque"><b>intenção</b>Comentário não é lead. Mas quem comenta uma palavra específica declarou interesse, e isso muda a conversa.</div>
+  <div class="porque"><b>filtro</b>Como a conversa é gratuita, o formulário é o preço. Quem escreve doze respostas já pagou em atenção.</div>
+  <div class="porque"><b>prova</b>É onde você é insubstituível. E é onde nasce a linguagem que alimenta todo o resto do funil.</div>
+  <div class="porque"><b>resultado</b>A área de membros reduz sua hora por aluno e faz o ciclo seguinte ser mais fácil de vender.</div>
+  <div class="porque"><b>multiplicação</b>Indicação é o canal que funciona. Cinco de cinco oportunidades reais vieram daqui.</div>
+
+</div>
+</div>
+
+<h2>Onde a narrativa entra</h2>
+<p class="lead">A narrativa não é uma fase. Ela atravessa as três primeiras e é o que faz alguém chegar já entendendo o que vai encontrar.</p>
+
+<table>
+<tr><th>Camada</th><th>O que é</th><th>Onde aparece</th></tr>
+<tr><td><b>Âncora</b></td><td>Muda a pessoa, a sensação é a mesma</td><td>abre vídeo, abre página, abre conversa</td></tr>
+<tr><td><b>Pivô</b></td><td>Você lidera bem. Mas troca a pessoa e a sensação é idêntica. Por isso o que costuma faltar não é outra técnica: é enxergar de outro lugar.</td><td>corpo do conteúdo e da VSL</td></tr>
+<tr><td><b>Promessa</b></td><td>Quando você passa a enxergar de outro lugar, o que te consumia pode continuar ali e deixar de te custar.</td><td>fecho da isca e abertura da consultoria</td></tr>
+<tr><td><b>Reenquadre</b></td><td>Sua cabeça volta naquela conversa porque ainda está procurando o ângulo que resolve. Não é fraqueza, é busca.</td><td>o ângulo que mais desarma</td></tr>
+</table>
+
+<h2>O funil da empresa</h2>
+<p class="lead">Mais curto, mais caro, e quase todo por indicação. <strong>Hoje ele para na segunda etapa.</strong></p>
+
+<div class="scroll">
+<div class="diagrama" style="grid-template-columns:132px repeat(4,1fr);min-width:820px">
+  <div class="vazio"></div>
+  <div class="fase" style="background:var(--terra)">1 · Indicação</div>
+  <div class="fase" style="background:var(--terra)">2 · Material</div>
+  <div class="fase" style="background:var(--terra)">3 · Diagnóstico</div>
+  <div class="fase" style="background:var(--terra)">4 · Proposta</div>
+
+  <div class="raia">A empresa</div>
+  <div class="cel"><span class="st s-ok"></span>Alguém da sua rede fala seu nome lá dentro</div>
+  <div class="cel"><span class="st s-falta"></span><b>Pede material antes de marcar</b></div>
+  <div class="cel"><span class="st s-ok"></span>Conta o problema real de gente e de liderança</div>
+  <div class="cel"><span class="st s-meio"></span>Decide em comitê</div>
+
+  <div class="raia">Você</div>
+  <div class="cel"><span class="st s-ok"></span>Pede indicação a cada entrega concluída</div>
+  <div class="cel nada">&nbsp;</div>
+  <div class="cel"><span class="st s-ok"></span><b>Conduz o diagnóstico</b></div>
+  <div class="cel"><span class="st s-meio"></span>Apresenta escopo e valor por líder</div>
+
+  <div class="raia">Continuum</div>
+  <div class="cel nada">&nbsp;</div>
+  <div class="cel"><span class="st s-falta"></span><b>Duas ou três telas na língua da empresa</b></div>
+  <div class="cel nada">&nbsp;</div>
+  <div class="cel"><span class="st s-meio"></span>Monta a proposta com medição antes e depois</div>
+
+  <div class="raia" style="background:#EDE6DC">Por que existe</div>
+  <div class="porque"><b>canal</b>É o que funciona. Não há aquisição paga que substitua alguém dizendo seu nome dentro de uma empresa.</div>
+  <div class="porque"><b>credencial</b>Empresa não marca conversa sem ver alguma coisa antes. Sem isso, a indicação esfria sozinha.</div>
+  <div class="porque"><b>escopo</b>Empresa não compra programa. Compra solução para um problema que ela sabe nomear.</div>
+  <div class="porque"><b>âncora</b>Referência real: <b>R$ 70.000 por 14 líderes, ou seja, R$ 5.000 por líder.</b></div>
+</div>
+</div>
+
+<div class="box alerta">
+  <div class="t">O ponto que trava o funil da empresa hoje</div>
+  <p>Uma gerente pediu material e não recebeu nada. <strong>É a etapa 2 do fluxo acima, e ela é a única que não existe.</strong> As outras três você já sabe fazer.</p>
+  <p style="margin-top:8px">E vale lembrar do que aconteceu antes: um projeto de <strong>R$ 70.000 para 14 líderes já foi aprovado</strong> por uma empresa e caiu <strong>não por preço</strong>, mas por não haver um formato de entrega que coubesse na sua agenda. <strong>Esse formato agora existe.</strong></p>
+</div>
+
+<h2>A ordem, se for para escolher</h2>
+<div class="box">
+  <p><b>1. O que já tem gente dentro.</b> Fechar o encerramento, conversar um a um com os quatro, e definir data e vagas da turma. É receita esperando decisão, não construção.</p>
+  <p style="margin-top:9px"><b>2. O que destrava dinheiro parado.</b> O material para a empresa que pediu, e a medição no site.</p>
+  <p style="margin-top:9px"><b>3. Só então o topo.</b> VSL, campanha e conteúdo diário.</p>
+  <p style="margin-top:12px;padding-top:12px;border-top:1px solid var(--linha)"><strong>A razão da ordem: topo de funil sem medição é gasto, não investimento.</strong> Enquanto o site não tiver pixel, qualquer verba roda no escuro.</p>
+</div>
+
+<div class="rodape">
+Mapa construído sobre o que já existe. Nenhuma peça foi alterada, nenhuma campanha ativada.<br>
+Continuum AI Systems · agosto de 2026
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Eneagrama — Débora Delgado</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  :root{--bg:#f6f1ea;--card:#fffdf9;--ink:#3d352e;--soft:#6f6459;--line:#e7ddd1;--accent:#3f6b57;--accent-dark:#2f5245;--salvia:#7f9c78;--salvia-dark:#5f7550;--argila:#a86b52;--dir:#4f8278;--shadow:0 8px 30px rgba(60,70,55,.10);--serif:"Fraunces",Georgia,serif;--sans:"Inter",system-ui,sans-serif;}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:var(--sans);background:var(--bg);color:var(--ink);line-height:1.68;}
+  .wrap{max-width:780px;margin:0 auto;padding:26px 22px 80px;}
+  header.hero{text-align:center;padding:46px 28px;color:#fff;border-radius:22px;box-shadow:var(--shadow);margin-bottom:22px;}
+  header.hero.g-pinho{background:linear-gradient(160deg,#3f6b57,#2f5245);}
+  header.hero.g-salvia{background:linear-gradient(160deg,#7f9c78,#5f7550);}
+  header.hero.g-argila{background:linear-gradient(160deg,#a86b52,#8a5334);}
+  header.hero.g-dir{background:linear-gradient(160deg,#4f8278,#3f6b57);}
+  header.hero .kick{color:#eaf2ec;font-weight:700;letter-spacing:2px;font-size:.74rem;text-transform:uppercase;opacity:.9;}
+  header.hero h1{font-family:var(--serif);font-weight:600;margin:10px 0 12px;font-size:2.15rem;line-height:1.1;}
+  header.hero p{margin:0 auto;color:#eef4ef;font-size:1rem;max-width:470px;}
+  section.blk{background:var(--card);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow);padding:22px 26px;margin-bottom:14px;}
+  section.blk .lbl{font-size:.72rem;font-weight:800;text-transform:uppercase;letter-spacing:1.5px;color:var(--argila);margin-bottom:8px;}
+  section.blk h2{font-family:var(--serif);font-weight:600;font-size:1.4rem;color:var(--accent-dark);margin:0 0 10px;}
+  section.blk p{margin:0 0 11px;font-size:1.02rem;} section.blk p:last-child{margin-bottom:0;}
+  section.blk ul{margin:6px 0 0;padding-left:20px;} section.blk li{margin:6px 0;font-size:1rem;}
+  .cards{display:grid;grid-template-columns:1fr;gap:11px;}
+  @media(min-width:620px){.cards.two{grid-template-columns:1fr 1fr;}}
+  a.step,.stepx{display:block;text-decoration:none;color:inherit;background:var(--card);border:1px solid var(--line);border-left:5px solid var(--accent);border-radius:13px;padding:15px 17px;transition:.16s;box-shadow:var(--shadow);}
+  a.step:hover{transform:translateY(-2px);}
+  a.step.s1{border-left-color:var(--dir);}a.step.s2{border-left-color:var(--argila);}a.step.s3{border-left-color:var(--accent);}a.step.s4{border-left-color:var(--salvia);}
+  a.step .k{font-size:.66rem;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--soft);}
+  a.step h3{font-family:var(--serif);font-weight:600;font-size:1.15rem;margin:3px 0 3px;color:var(--accent-dark);}
+  a.step p{margin:0;color:var(--soft);font-size:.9rem;}
+  .soon{opacity:.7;border-left-color:var(--line)!important;}
+  .soon .tag{font-size:.6rem;font-weight:800;text-transform:uppercase;letter-spacing:.5px;color:var(--argila);background:#f4ece2;padding:2px 8px;border-radius:10px;}
+  .cta{background:linear-gradient(160deg,#4f8278,#3f6b57);color:#fff;border-radius:18px;box-shadow:var(--shadow);padding:26px 26px;margin-top:16px;text-align:center;}
+  .cta h2{font-family:var(--serif);font-weight:600;font-size:1.4rem;margin:0 0 8px;color:#fff;}
+  .cta p{margin:0 auto 15px;font-size:.95rem;color:#eaf4f1;max-width:440px;}
+  .cta a{display:inline-block;background:#fff;color:var(--accent-dark);font-weight:700;text-decoration:none;padding:12px 26px;border-radius:24px;}
+  .held{background:#f4ece2;border-left:4px solid var(--argila);border-radius:12px;padding:12px 16px;font-size:.9rem;color:#7a5a3e;margin-top:10px;}
+  .foot{text-align:center;color:var(--soft);font-size:.82rem;margin-top:26px;line-height:1.5;}
+</style>
+<style>
+.lnr-nav{position:sticky;top:0;z-index:9999;display:flex;align-items:center;justify-content:space-between;gap:12px;background:#2f5245;color:#fff;padding:10px 18px;font-family:'Inter',system-ui,-apple-system,sans-serif;box-shadow:0 2px 12px rgba(0,0,0,.12);}
+.lnr-brand{color:#fff;font-weight:700;text-decoration:none;font-size:.98rem;letter-spacing:.3px;font-family:'Fraunces',Georgia,serif;}
+.lnr-links{display:flex;align-items:center;gap:3px;flex-wrap:wrap;}
+.lnr-links a{color:#e8f0ec;text-decoration:none;font-size:.82rem;font-weight:600;padding:6px 9px;border-radius:16px;}
+.lnr-links a:hover{background:rgba(255,255,255,.14);color:#fff;}
+.lnr-links a.lnr-cta{background:#a86b52;color:#fff;}
+.lnr-links a.lnr-cta:hover{background:#8a5334;}
+.lnr-toggle{display:none;background:none;border:none;color:#fff;font-size:1.35rem;cursor:pointer;line-height:1;}
+@media(max-width:760px){.lnr-nav{flex-wrap:wrap;}.lnr-toggle{display:block;}.lnr-links{display:none;flex-direction:column;align-items:stretch;width:100%;order:3;gap:2px;padding-top:6px;}.lnr-links.open{display:flex;}.lnr-links a{padding:9px 8px;}}
+</style></head><body>
+<nav class="lnr-nav">
+  <a class="lnr-brand" href="index.html">Liderança na Raiz</a>
+  <button class="lnr-toggle" aria-label="Abrir menu" onclick="var l=this.parentNode.querySelector('.lnr-links'); l.classList.toggle('open');">☰</button>
+  <div class="lnr-links">
+    <a href="index.html">Início</a>
+    <a href="comece.html">Comece por aqui</a>
+    <a href="quiz.html">Diagnóstico da liderança</a>
+    <a href="servicos.html">Serviços</a>
+    <a href="membros.html">Entrar</a>
+    <a class="lnr-cta" href="consultoria.html">Conversa gratuita</a>
+  </div>
+</nav><div class="wrap">
+  <header class="hero g-pinho"><div class="kick">Aprofunde no Eneagrama</div><h1>Entenda você e as pessoas ao seu redor</h1><p>Um mapa de nove jeitos de ser. Um espelho pra se reconhecer, não um rótulo que te define.</p></header>
+  <section class="blk"><div class="lbl">O que é</div><h2>Nove tipos, uma lente pra liderança</h2>
+    <p>O Eneagrama descreve nove formas de ver e reagir ao mundo. Entender o seu tipo te ajuda a enxergar os seus dons, os seus pontos cegos e o que te trava. Entender os outros tipos te ajuda a liderar cada pessoa do jeito que ela precisa, e a ter menos atrito nas relações.</p>
+    <p>Aqui ele é sempre um espelho pra você se reconhecer, nunca um veredito que te encaixa numa caixa.</p>
+  </section>
+  <section class="blk"><div class="lbl">Comece descobrindo</div>
+    <p>O jeito mais gostoso de começar é pelas histórias. Leia nove líderes e veja em qual deles você mais se reconhece.</p>
+    <div style="margin-top:10px"><a class="step s3" href="historias.html"><div class="k">Grátis</div><h3>Histórias de líderes</h3><p>Leia, dê uma nota de quanto se reconhece, e descubra o seu tipo.</p></a></div>
+  </section>
+  <div class="cta"><h2>Quer aprofundar na sua personalidade?</h2><p>Na mentoria você aprofunda no seu tipo: os talentos, a criança ferida, o estilo de liderança e comunicação. Comece por uma conversa gratuita.</p><a href="consultoria.html">Marcar minha conversa gratuita</a></div>
+  <p class="foot">Eneagrama · Liderança na Raiz · Débora Delgado</p></div><script src="nav.js"></script>
+</body></html>

@@ -1,0 +1,15 @@
+const fs=require('fs'),path=require('path');const {launch,ROOT}=require('./browser.cjs');
+(async()=>{const b=await launch(),report={};try{
+ const c=await b.newContext({javaScriptEnabled:false,viewport:{width:390,height:844}}),p=await c.newPage();
+ for(const slug of ['mentoria','visao-uterina','curso']){
+  await p.goto('http://127.0.0.1:8794/'+slug+'/');
+  const item=await p.evaluate(()=>({geometries:document.querySelectorAll('main .geometry').length,visiblePrice:document.querySelector('main').innerText.match(/R\$\s*\d+/g)||[],policyHidden:[...document.querySelectorAll('[data-offer-policy]')].every(e=>e.hidden),purchaseTargets:[...document.querySelectorAll('main a[href^="https://"]')].map(a=>a.href),heroSeal:!!document.querySelector('main>section:first-child img[src*="selo"]'),footerSeal:!!document.querySelector('footer img[src*="selo"]'),creds:document.querySelector('main').innerText.match(/Desde 2021|quarta[^\n]*19h/gi)||[]}));
+  await p.locator('details summary').last().click();item.nativeFAQ=await p.locator('main details[open]').count()>0;
+  await p.locator('.language-nav a[lang=en]').click();item.equivalentEnglish=p.url();report[slug]=item;
+ }
+ await p.goto('http://127.0.0.1:8794/');report.home=await p.evaluate(()=>({order:[...document.querySelectorAll('main>section')].map(s=>s.id),credo:[...document.querySelectorAll('.credo-line')].map(e=>e.textContent).join(' '),prices:/R\$\s*\d/.test(document.querySelector('main').innerText),geometries:document.querySelectorAll('main .geometry').length,proofCards:document.querySelectorAll('.proof-card').length,pending:document.querySelectorAll('.video-pending').length}));await c.close();
+ const normal=await b.newContext({viewport:{width:390,height:844}}),n=await normal.newPage();await n.route('https://cdn.jsdelivr.net/**',r=>r.abort());await n.goto('http://127.0.0.1:8794/');await n.locator('[data-sound]').click();report.sound={panel:await n.locator('#sound-panel').isVisible(),noAutoplay:await n.locator('audio[autoplay],video[autoplay]').count()===0};await n.keyboard.press('Escape');report.sound.escapeCloses=!(await n.locator('#sound-panel').isVisible());report.cdnFailureContent=await n.locator('h1').isVisible();await normal.close();
+ const credo='Aqui o corpo é templo. O ventre é altar. A voz é portal. A arte é oração. O prazer é meditação. A sombra é mestra. O amor é lei.';
+ report.pass=report.home.credo===credo&&!report.home.prices&&report.home.proofCards===4&&report.mentoria.visiblePrice.length===0&&report.mentoria.policyHidden&&['mentoria','visao-uterina','curso'].every(s=>report[s].nativeFAQ&&report[s].geometries>=3&&report[s].heroSeal&&report[s].footerSeal&&report[s].purchaseTargets.every(u=>u.startsWith('https://wa.me/5548984248922')))&&report.sound.escapeCloses&&report.cdnFailureContent;
+ fs.writeFileSync(path.join(ROOT,'_qa','L1-L4-gates.json'),JSON.stringify(report,null,2));console.log(report);if(!report.pass)process.exitCode=1;
+}finally{await b.close()}})().catch(e=>{console.error(e);process.exitCode=1});

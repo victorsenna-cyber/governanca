@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guilherme Araújo — Dashboard de Campanhas (Filtro por Campanha)</title>
+    <!-- Tailwind CSS & Google Fonts -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#EEF2FF',
+                            100: '#E0E7FF',
+                            500: '#6366F1',
+                            600: '#4F46E5',
+                            700: '#4338CA',
+                            900: '#312E81',
+                        },
+                        darkBg: '#090D16',
+                        darkCard: '#111827',
+                        darkBorder: '#1F2937'
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 dark:bg-darkBg dark:text-slate-100 min-h-screen flex flex-col lg:flex-row">
+
+    <!-- Sidebar Lateral -->
+    <aside class="w-full lg:w-64 bg-white dark:bg-darkCard border-b lg:border-b-0 lg:border-r border-slate-200 dark:border-darkBorder flex flex-col justify-between p-6 shrink-0">
+        <div>
+            <!-- Header Logo -->
+            <div class="flex items-center gap-3 mb-8">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-500 to-indigo-600 flex items-center justify-center text-white font-bold text-lg shadow-md shadow-brand-500/20">
+                    GA
+                </div>
+                <div>
+                    <h2 class="font-bold text-sm leading-tight">Guilherme Araújo</h2>
+                    <p class="text-xs text-slate-400 dark:text-slate-500">Business Analytics</p>
+                </div>
+            </div>
+
+            <!-- Menu de Opções -->
+            <nav class="space-y-1">
+                <a href="#" class="flex items-center gap-3 px-4 py-3 rounded-lg text-sm font-semibold bg-brand-50 dark:bg-brand-900/20 text-brand-600 dark:text-brand-400 transition-all duration-150">
+                    <i class="fa-solid fa-chart-pie text-base"></i>
+                    <span>Visão Geral</span>
+                </a>
+                <a href="#campanhas-table-sec" class="flex items-center gap-3 px-4 py-3 rounded-lg text-sm font-semibold text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800/50 transition-all duration-150">
+                    <i class="fa-solid fa-layer-group text-base"></i>
+                    <span>Campanhas</span>
+                </a>
+                <a href="#insights-sec" class="flex items-center gap-3 px-4 py-3 rounded-lg text-sm font-semibold text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800/50 transition-all duration-150">
+                    <i class="fa-regular fa-lightbulb text-base"></i>
+                    <span>Insights</span>
+                </a>
+            </nav>
+        </div>
+
+        <!-- Rodapé do Sidebar -->
+        <div class="pt-6 border-t border-slate-200 dark:border-darkBorder mt-6 lg:mt-0">
+            <div class="flex items-center justify-between mb-4">
+                <span class="text-xs font-semibold text-slate-400 dark:text-slate-500">APARÊNCIA</span>
+                <button onclick="toggleTheme()" class="w-10 h-10 rounded-lg border border-slate-200 dark:border-darkBorder hover:bg-slate-100 dark:hover:bg-slate-800 flex items-center justify-center transition-colors">
+                    <i id="theme-toggle-icon" class="fa-solid fa-sun text-amber-500 text-sm"></i>
+                </button>
+            </div>
+            <div class="flex items-center gap-3">
+                <div class="w-9 h-9 rounded-full bg-slate-300 dark:bg-slate-700 flex items-center justify-center text-xs font-bold text-slate-600 dark:text-slate-300">
+                    GA
+                </div>
+                <div>
+                    <h4 class="text-xs font-bold">Guilherme A.</h4>
+                    <span class="text-[10px] text-slate-400">Administrador</span>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Área de Conteúdo Principal -->
+    <main class="flex-1 p-6 lg:p-8 overflow-y-auto space-y-8">
+        
+        <!-- Top Bar Informativo -->
+        <header class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-200 dark:border-darkBorder pb-6">
+            <div>
+                <span class="text-xs font-bold text-brand-600 dark:text-brand-400 uppercase tracking-wider">Meta Ads Performance</span>
+                <h1 class="text-2xl lg:text-3xl font-extrabold mt-1">Resultados de Junho</h1>
+                <p class="text-sm text-slate-500 dark:text-slate-400">Análise de dados integrados de campanhas</p>
+            </div>
+            <div class="flex items-center gap-3">
+                <div class="px-4 py-2 bg-white dark:bg-darkCard border border-slate-200 dark:border-darkBorder rounded-lg text-xs font-bold flex items-center gap-2 shadow-sm">
+                    <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 inline-block animate-pulse"></span>
+                    Dados Atualizados
+                </div>
+            </div>
+        </header>
+
+        <!-- Filtros Rápidos Dinâmicos por Campanha -->
+        <section class="space-y-2">
+            <span class="text-xs font-bold text-slate-400 dark:text-slate-500 block uppercase tracking-wider">Filtrar por Campanha:</span>
+            <div id="filter-container" class="flex flex-wrap gap-2 items-center">
+                <!-- Inserido dinamicamente via JS -->
+            </div>
+        </section>
+
+        <!-- Grade de KPIs -->
+        <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Investimento -->
+            <div class="bg-white dark:bg-darkCard p-6 rounded-2xl border border-slate-100 dark:border-darkBorder/60 shadow-sm">
+                <div class="flex items-center justify-between mb-3">
+                    <span class="text-xs font-bold text-slate-400 dark:text-slate-500 uppercase">Investimento</span>
+                    <div class="w-8 h-8 rounded-lg bg-indigo-50 dark:bg-indigo-950/40 text-brand-600 dark:text-indigo-400 flex items-center justify-center">
+                        <i class="fa-solid fa-wallet text-sm"></i>
+                    </div>
+                </div>
+                <h3 id="kpi-spend" class="text-2xl font-black tracking-tight">R$ 0,00</h3>
+                <p id="kpi-spend-subtitle" class="text-[10px] text-slate-400 mt-1">Carregando...</p>
+            </div>
+
+            <!-- Conversas -->
+            <div class="bg-white dark:bg-darkCard p-6 rounded-2xl border border-slate-100 dark:border-darkBorder/60 shadow-sm">
+                <div class="flex items-center justify-between mb-3">
+                    <span class="text-xs font-bold text-slate-400 dark:text-slate-500 uppercase">Conversas</span>
+                    <div class="w-8 h-8 rounded-lg bg-emerald-50 dark:bg-emerald-950/40 text-emerald-600 dark:text-emerald-400 flex items-center justify-center">
+                        <i class="fa-solid fa-comments text-sm"></i>
+                    </div>
+                </div>
+                <h3 id="kpi-conversas" class="text-2xl font-black tracking-tight text-emerald-500">0</h3>
+                <p id="kpi-custo-conversa" class="text-xs font-medium text-slate-500 dark:text-slate-400 mt-1">CPA Médio: <strong class="text-emerald-500">R$ 0,00</strong></p>
+            </div>
+
+            <!-- Cliques & CTR -->
+            <div class="bg-white dark:bg-darkCard p-6 rounded-2xl border border-slate-100 dark:border-darkBorder/60 shadow-sm">
+                <div class="flex items-center justify-between mb-3">
+                    <span class="text-xs font-bold text-slate-400 dark:text-slate-500 uppercase">Cliques & CTR</span>
+                    <div class="w-8 h-8 rounded-lg bg-amber-50 dark:bg-amber-950/40 text-amber-600 dark:text-amber-400 flex items-center justify-center">
+                        <i class="fa-solid fa-arrow-pointer text-sm"></i>
+                    </div>
+                </div>
+                <h3 id="kpi-cliques" class="text-2xl font-black tracking-tight">0 <span class="text-sm font-semibold text-slate-400">cliques</span></h3>
+                <p id="kpi-ctr" class="text-xs font-medium text-slate-500 dark:text-slate-400 mt-1">CTR Geral: <strong class="text-amber-500">0,00%</strong></p>
+            </div>
+
+            <!-- Audiência -->
+            <div class="bg-white dark:bg-darkCard p-6 rounded-2xl border border-slate-100 dark:border-darkBorder/60 shadow-sm">
+                <div class="flex items-center justify-between mb-3">
+                    <span class="text-xs font-bold text-slate-400 dark:text-slate-500 uppercase">Audiência</span>
+                    <div class="w-8 h-8 rounded-lg bg-rose-50 dark:bg-rose-950/40 text-rose-600 dark:text-rose-400 flex items-center justify-center">
+                        <i class="fa-solid fa-users text-sm"></i>
+                    </div>
+                </div>
+                <h3 id="kpi-visitas" class="text-2xl font-black tracking-tight">0 <span class="text-xs font-semibold text-slate-400">visitas</span></h3>
+                <p id="kpi-seguidores" class="text-xs font-medium text-slate-500 dark:text-slate-400 mt-1">Novos Seguidores: <strong class="text-rose-500">+0</strong></p>
+            </div>
+        </section>
+
+        <!-- Seção de Gráficos -->
+        <section class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <div class="bg-white dark:bg-darkCard p-6 rounded-2xl border border-slate-100 dark:border-darkBorder/60 shadow-sm">
+                <div class="mb-4">
+                    <h4 class="text-sm font-bold text-slate-400 dark:text-slate-500 uppercase tracking-wider">Investimento vs. Conversas</h4>
+                </div>
+                <div class="h-64">
+                    <canvas id="chartPerformance"></canvas>
+                </div>
+            </div>
+
+            <div class="bg-white dark:bg-darkCard p-6 rounded-2xl border border-slate-100 dark:border-darkBorder/60 shadow-sm">
+                <div class="mb-4">
+                    <h4 class="text-sm font-bold text-slate-400 dark:text-slate-500 uppercase tracking-wider">Detalhamento de Custos (CPA / CPC)</h4>
+                </div>
+                <div class="h-64">
+                    <canvas id="chartEfficiency"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tabela Completa de Campanhas -->
+        <section id="campanhas-table-sec" class="bg-white dark:bg-darkCard rounded-2xl border border-slate-100 dark:border-darkBorder/60 shadow-sm overflow-hidden">
+            <div class="p-6 border-b border-slate-100 dark:border-darkBorder/60 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+                <div>
+                    <h3 class="font-bold text-base">Especificação de Campanhas</h3>
+                    <p class="text-xs text-slate-400">Dados integrados com filtros aplicados em tempo real</p>
+                </div>
+            </div>
+            
+            <div class="overflow-x-auto">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="bg-slate-50 dark:bg-slate-900/50 text-[10px] uppercase text-slate-400 font-bold tracking-wider border-b border-slate-100 dark:border-darkBorder">
+                            <th class="py-4 px-6">Campanha</th>
+                            <th class="py-4 px-3 text-center">Status</th>
+                            <th class="py-4 px-3 text-center">Funil</th>
+                            <th class="py-4 px-3 text-right">Investimento</th>
+                            <th class="py-4 px-3 text-right">Conversas (CPA)</th>
+                            <th class="py-4 px-3 text-right">Cliques (CPC)</th>
+                            <th class="py-4 px-3 text-right">Visitas (Custo)</th>
+                            <th class="py-4 px-3 text-right">CTR</th>
+                            <th class="py-4 px-6 text-right">Frequência</th>
+                        </tr>
+                    </thead>
+                    <tbody id="campanhas-tbody" class="divide-y divide-slate-100 dark:divide-darkBorder text-xs">
+                        <!-- Renderizado via JS -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Insights Estratégicos -->
+        <section id="insights-sec" class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="p-6 bg-gradient-to-br from-brand-50 to-indigo-100/50 dark:from-indigo-950/20 dark:to-slate-900 border border-brand-100 dark:border-indigo-900/40 rounded-2xl">
+                <div class="w-8 h-8 rounded-lg bg-brand-500 text-white flex items-center justify-center mb-4 shadow-sm">
+                    <i class="fa-solid fa-arrow-trend-up"></i>
+                </div>
+                <h4 class="font-bold text-sm text-brand-900 dark:text-indigo-200 mb-2">Máxima Eficiência de Cliques</h4>
+                <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                    A campanha <code class="bg-white/60 dark:bg-slate-800 px-1 py-0.5 rounded">TRAFEGO-LP</code> apresentou um CTR extraordinário de <strong>12,18%</strong> com um CPC de apenas <strong>R$ 0,05</strong>.
+                </p>
+            </div>
+
+            <div class="p-6 bg-gradient-to-br from-emerald-50 to-teal-100/50 dark:from-emerald-950/20 dark:to-slate-900 border border-emerald-100 dark:border-emerald-900/40 rounded-2xl">
+                <div class="w-8 h-8 rounded-lg bg-emerald-500 text-white flex items-center justify-center mb-4 shadow-sm">
+                    <i class="fa-regular fa-comments"></i>
+                </div>
+                <h4 class="font-bold text-sm text-emerald-900 dark:text-emerald-200 mb-2">Otimização de Custos (CPA)</h4>
+                <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                    A campanha permanente de Meio de Funil (<code class="bg-white/60 dark:bg-slate-800 px-1 py-0.5 rounded">CS-PERM</code> ativa) alcançou custo por conversa de <strong>R$ 5,71</strong> por lead, otimização de 47% em relação ao teste inicial.
+                </p>
+            </div>
+
+            <div class="p-6 bg-gradient-to-br from-amber-50 to-orange-100/50 dark:from-amber-950/20 dark:to-slate-900 border border-amber-100 dark:border-amber-900/40 rounded-2xl">
+                <div class="w-8 h-8 rounded-lg bg-amber-500 text-white flex items-center justify-center mb-4 shadow-sm">
+                    <i class="fa-solid fa-crosshairs"></i>
+                </div>
+                <h4 class="font-bold text-sm text-amber-900 dark:text-amber-200 mb-2">Engajamento de Perfil Orgânico</h4>
+                <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                    A campanha de tráfego no Instagram (<code class="bg-white/60 dark:bg-slate-800 px-1 py-0.5 rounded">TRÁFEGO-IG</code>) gerou 500 visitas ao perfil (R$ 0,20/visita) e obteve indiretamente <strong>23 conversas</strong> iniciadas.
+                </p>
+            </div>
+        </section>
+
+        <!-- Rodapé -->
+        <footer class="text-center text-xs text-slate-400 dark:text-slate-600 pt-6 border-t border-slate-200 dark:border-darkBorder">
+            Guilherme Araújo Analytics &copy; 2026 • Filtros Dinâmicos Base Meta Ads.
+        </footer>
+    </main>
+
+    <script>
+        const rawCampaigns = [
+            {
+                name: "GA|MOFU|CS|CONVERSAS-WPP|META|20260603",
+                status: "inactive",
+                funnel: "MOFU",
+                visitas: 33,
+                custoVisitas: 5.24151515,
+                seguidores: 0,
+                custoSeguidores: 0,
+                conversas: 16,
+                custoConversas: 10.810625,
+                spend: 172.97,
+                impressoes: 3800,
+                alcance: 1928,
+                cliques: 37,
+                cpc: 4.67486486,
+                cpm: 45.51842105,
+                ctr: 0.97368421,
+                frequencia: 1.97095436
+            },
+            {
+                name: "GA|MOFU|CS-PERM|CONVERSAS-WPP|META|20260619",
+                status: "active",
+                funnel: "MOFU",
+                visitas: 66,
+                custoVisitas: 1.64348485,
+                seguidores: 0,
+                custoSeguidores: 0,
+                conversas: 19,
+                custoConversas: 5.70894737,
+                spend: 108.47,
+                impressoes: 3074,
+                alcance: 858,
+                cliques: 14,
+                cpc: 7.74785714,
+                cpm: 35.28627196,
+                ctr: 0.45543266,
+                frequencia: 3.58275058
+            },
+            {
+                name: "GA|MOFU|CS-PERM|CONVERSAS-WPP|META|20260615",
+                status: "inactive",
+                funnel: "MOFU",
+                visitas: 28,
+                custoVisitas: 3.61678571,
+                seguidores: 2,
+                custoSeguidores: 50.635,
+                conversas: 16,
+                custoConversas: 6.329375,
+                spend: 101.27,
+                impressoes: 1554,
+                alcance: 620,
+                cliques: 15,
+                cpc: 6.75133333,
+                cpm: 65.16731017,
+                ctr: 0.96525097,
+                frequencia: 2.50645161
+            },
+            {
+                name: "GA|TOFU|CS|TRÁFEGO-IG|META|20260619",
+                status: "active",
+                funnel: "TOFU",
+                visitas: 500,
+                custoVisitas: 0.19972,
+                seguidores: 65,
+                custoSeguidores: 1.53630769,
+                conversas: 23,
+                custoConversas: 4.34173913,
+                spend: 99.86,
+                impressoes: 6977,
+                alcance: 5552,
+                cliques: 460,
+                cpc: 0.21708696,
+                cpm: 14.31274187,
+                ctr: 6.59309159,
+                frequencia: 1.25666427
+            },
+            {
+                name: "GA|FUFU|CONVERSAS-WPP|META|20260619",
+                status: "active",
+                funnel: "FUFU",
+                visitas: 155,
+                custoVisitas: 0.62677419,
+                seguidores: 5,
+                custoSeguidores: 19.43,
+                conversas: 12,
+                custoConversas: 8.09583333,
+                spend: 97.15,
+                impressoes: 20180,
+                alcance: 15197,
+                cliques: 0,
+                cpc: 0,
+                cpm: 4.81417245,
+                ctr: 0,
+                frequencia: 1.32789366
+            },
+            {
+                name: "GA|TOFU|CS|TRAFEGO-LP|META|20260523",
+                status: "inactive",
+                funnel: "TOFU",
+                visitas: 59,
+                custoVisitas: 1.20101695,
+                seguidores: 0,
+                custoSeguidores: 0,
+                conversas: 0,
+                custoConversas: 0,
+                spend: 70.86,
+                impressoes: 11942,
+                alcance: 8793,
+                cliques: 1455,
+                cpc: 0.04870103,
+                cpm: 5.93367945,
+                ctr: 12.1838888,
+                frequencia: 1.35812578
+            }
+        ];
+
+        let activeCampaignFilter = 'ALL';
+        let chartInstance1 = null;
+        let chartInstance2 = null;
+
+        const formatBRL = (val) => val > 0 ? `R$ ${val.toFixed(2).replace('.', ',')}` : 'R$ 0,00';
+        const formatNum = (val) => val.toLocaleString('pt-BR');
+
+        function toggleTheme() {
+            const html = document.documentElement;
+            const icon = document.getElementById('theme-toggle-icon');
+            if (html.classList.contains('dark')) {
+                html.classList.remove('dark');
+                icon.className = 'fa-solid fa-moon text-indigo-600 text-sm';
+            } else {
+                html.classList.add('dark');
+                icon.className = 'fa-solid fa-sun text-amber-500 text-sm';
+            }
+            updateDashboard();
+        }
+
+        // Simplifica o nome da campanha para exibição nos botões do filtro
+        function getShortName(fullName) {
+            return fullName.replace("GA|", "").replace("|META", "");
+        }
+
+        // Constrói dinamicamente os botões de filtro no container
+        function generateFilterButtons() {
+            const container = document.getElementById('filter-container');
+            container.innerHTML = '';
+
+            // Botão "Todos"
+            const btnAll = document.createElement('button');
+            btnAll.id = 'btn-filter-ALL';
+            btnAll.innerText = 'Todos';
+            btnAll.onclick = () => selectFilter('ALL');
+            btnAll.className = "px-4 py-1.5 rounded-full text-xs font-bold border transition-all bg-brand-600 border-brand-600 text-white shadow-sm shadow-brand-500/10";
+            container.appendChild(btnAll);
+
+            // Botão para cada campanha
+            rawCampaigns.forEach((camp, index) => {
+                const btn = document.createElement('button');
+                btn.id = `btn-filter-${index}`;
+                btn.innerText = getShortName(camp.name);
+                btn.onclick = () => selectFilter(camp.name, `btn-filter-${index}`);
+                btn.className = "px-4 py-1.5 rounded-full text-xs font-bold border border-slate-200 dark:border-darkBorder hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-500 dark:text-slate-400 transition-all";
+                container.appendChild(btn);
+            });
+        }
+
+        // Controla a seleção dos filtros e estilos
+        function selectFilter(filterValue, buttonId = 'btn-filter-ALL') {
+            activeCampaignFilter = filterValue;
+
+            // Reseta estilo de todos os botões
+            const buttons = document.querySelectorAll('#filter-container button');
+            buttons.forEach(btn => {
+                btn.className = "px-4 py-1.5 rounded-full text-xs font-bold border border-slate-200 dark:border-darkBorder hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-500 dark:text-slate-400 transition-all";
+            });
+
+            // Aplica estilo ativo ao selecionado
+            const activeBtn = document.getElementById(buttonId);
+            if (activeBtn) {
+                activeBtn.className = "px-4 py-1.5 rounded-full text-xs font-bold border transition-all bg-brand-600 border-brand-600 text-white shadow-sm shadow-brand-500/10";
+            }
+
+            updateDashboard();
+        }
+
+        // Recalcula KPIs, tabela e redesenha gráficos
+        function updateDashboard() {
+            const filtered = activeCampaignFilter === 'ALL'
+                ? rawCampaigns
+                : rawCampaigns.filter(c => c.name === activeCampaignFilter);
+
+            // Cálculos
+            const totalSpend = filtered.reduce((acc, c) => acc + c.spend, 0);
+            const totalConversas = filtered.reduce((acc, c) => acc + c.conversas, 0);
+            const avgCPA = totalConversas > 0 ? totalSpend / totalConversas : 0;
+            const totalCliques = filtered.reduce((acc, c) => acc + c.cliques, 0);
+            const totalImpressions = filtered.reduce((acc, c) => acc + c.impressoes, 0);
+            const totalVisitas = filtered.reduce((acc, c) => acc + c.visitas, 0);
+            const totalSeguidores = filtered.reduce((acc, c) => acc + c.seguidores, 0);
+
+            // Interface
+            document.getElementById('kpi-spend').innerText = formatBRL(totalSpend);
+            document.getElementById('kpi-spend-subtitle').innerText = activeCampaignFilter === 'ALL' 
+                ? 'Valor usado em 6 campanhas' 
+                : 'Valor usado na campanha selecionada';
+
+            document.getElementById('kpi-conversas').innerText = totalConversas;
+            document.getElementById('kpi-custo-conversa').innerHTML = `CPA Médio: <strong class="text-emerald-500">${formatBRL(avgCPA)}</strong>`;
+            document.getElementById('kpi-cliques').innerHTML = `${formatNum(totalCliques)} <span class="text-xs font-semibold text-slate-400">cliques</span>`;
+            document.getElementById('kpi-ctr').innerHTML = `CTR Médio: <strong class="text-amber-500">${(totalImpressions > 0 ? (totalCliques / totalImpressions * 100) : 0).toFixed(2)}%</strong>`;
+            document.getElementById('kpi-visitas').innerHTML = `${formatNum(totalVisitas)} <span class="text-xs font-semibold text-slate-400">visitas</span>`;
+            document.getElementById('kpi-seguidores').innerHTML = `Novos Seguidores: <strong class="text-rose-500">+${totalSeguidores}</strong>`;
+
+            // Preenchimento da Tabela
+            const tbody = document.getElementById('campanhas-tbody');
+            tbody.innerHTML = '';
+
+            filtered.forEach(c => {
+                const tr = document.createElement('tr');
+                tr.className = "hover:bg-slate-50 dark:hover:bg-slate-800/20 transition-all";
+                
+                tr.innerHTML = `
+                    <td class="py-4 px-6 font-bold text-slate-800 dark:text-slate-200">
+                        <span class="block">${getShortName(c.name)}</span>
+                        <span class="text-[10px] text-slate-400 font-normal">Meta Ads</span>
+                    </td>
+                    <td class="py-4 px-3 text-center">
+                        <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold ${c.status === 'active' ? 'bg-emerald-100 dark:bg-emerald-950/40 text-emerald-600 dark:text-emerald-400' : 'bg-slate-100 dark:bg-slate-800 text-slate-400'}">
+                            ${c.status === 'active' ? 'Ativo' : 'Pausado'}
+                        </span>
+                    </td>
+                    <td class="py-4 px-3 text-center">
+                        <span class="px-2 py-0.5 rounded text-[10px] font-bold ${c.funnel === 'TOFU' ? 'bg-blue-100 dark:bg-blue-950/40 text-blue-600 dark:text-blue-400' : c.funnel === 'MOFU' ? 'bg-teal-100 dark:bg-teal-950/40 text-teal-600' : 'bg-purple-100 dark:bg-purple-950/40 text-purple-600 dark:text-purple-400'}">
+                            ${c.funnel}
+                        </span>
+                    </td>
+                    <td class="py-4 px-3 text-right font-bold text-slate-900 dark:text-slate-100">${formatBRL(c.spend)}</td>
+                    <td class="py-4 px-3 text-right">
+                        <div class="font-bold">${c.conversas}</div>
+                        <div class="text-[10px] text-slate-400">${c.conversas > 0 ? formatBRL(c.custoConversas) : '-'}</div>
+                    </td>
+                    <td class="py-4 px-3 text-right">
+                        <div class="font-bold">${c.cliques}</div>
+                        <div class="text-[10px] text-slate-400">${c.cliques > 0 ? formatBRL(c.cpc) : '-'}</div>
+                    </td>
+                    <td class="py-4 px-3 text-right">
+                        <div class="font-bold">${c.visitas}</div>
+                        <div class="text-[10px] text-slate-400">${formatBRL(c.custoVisitas)}</div>
+                    </td>
+                    <td class="py-4 px-3 text-right font-medium text-amber-500">${c.ctr.toFixed(2)}%</td>
+                    <td class="py-4 px-6 text-right text-slate-400">${c.frequencia.toFixed(2)}x</td>
+                `;
+                tbody.appendChild(tr);
+            });
+
+            // Atualização dos gráficos
+            renderCharts(filtered);
+        }
+
+        function renderCharts(filteredData) {
+            const isDark = document.documentElement.classList.contains('dark');
+            const textColor = isDark ? '#94A3B8' : '#64748B';
+            const gridColor = isDark ? 'rgba(31, 41, 55, 0.5)' : 'rgba(226, 232, 240, 0.8)';
+
+            // Mapeamento de rótulos dos gráficos
+            const names = filteredData.map(c => getShortName(c.name).split('|')[2] || 'Iniciativa');
+            const spends = filteredData.map(c => c.spend);
+            const results = filteredData.map(c => c.conversas);
+            const cpcs = filteredData.map(c => c.cpc || 0);
+            const cpas = filteredData.map(c => c.custoConversas || 0);
+
+            if (chartInstance1) chartInstance1.destroy();
+            if (chartInstance2) chartInstance2.destroy();
+
+            const ctx1 = document.getElementById('chartPerformance').getContext('2d');
+            chartInstance1 = new Chart(ctx1, {
+                type: 'bar',
+                data: {
+                    labels: names,
+                    datasets: [
+                        {
+                            label: 'Investimento (R$)',
+                            data: spends,
+                            backgroundColor: 'rgba(99, 102, 241, 0.85)',
+                            borderColor: '#6366F1',
+                            borderWidth: 1.5,
+                            borderRadius: 6,
+                            yAxisID: 'y'
+                        },
+                        {
+                            label: 'Conversas Iniciadas',
+                            data: results,
+                            backgroundColor: 'rgba(16, 185, 129, 0.85)',
+                            borderColor: '#10B981',
+                            borderWidth: 1.5,
+                            borderRadius: 6,
+                            yAxisID: 'y1'
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            labels: { color: textColor, font: { family: 'Plus Jakarta Sans', weight: 'bold', size: 10 } }
+                        }
+                    },
+                    scales: {
+                        x: {
+                            grid: { display: false },
+                            ticks: { color: textColor, font: { family: 'Plus Jakarta Sans', size: 9 } }
+                        },
+                        y: {
+                            type: 'linear',
+                            position: 'left',
+                            grid: { color: gridColor },
+                            ticks: { color: textColor, font: { family: 'Plus Jakarta Sans', size: 9 } }
+                        },
+                        y1: {
+                            type: 'linear',
+                            position: 'right',
+                            grid: { display: false },
+                            ticks: { color: textColor, font: { family: 'Plus Jakarta Sans', size: 9 } }
+                        }
+                    }
+                }
+            });
+
+            const ctx2 = document.getElementById('chartEfficiency').getContext('2d');
+            chartInstance2 = new Chart(ctx2, {
+                type: 'line',
+                data: {
+                    labels: names,
+                    datasets: [
+                        {
+                            label: 'Custo por Conversa (CPA)',
+                            data: cpas,
+                            borderColor: '#EC4899',
+                            backgroundColor: 'rgba(236, 72, 153, 0.1)',
+                            borderWidth: 3,
+                            pointRadius: 4,
+                            tension: 0.35,
+                            fill: true
+                        },
+                        {
+                            label: 'Custo por Clique (CPC)',
+                            data: cpcs,
+                            borderColor: '#F59E0B',
+                            backgroundColor: 'rgba(245, 158, 11, 0.1)',
+                            borderWidth: 2,
+                            pointRadius: 4,
+                            tension: 0.35,
+                            fill: false
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            labels: { color: textColor, font: { family: 'Plus Jakarta Sans', weight: 'bold', size: 10 } }
+                        }
+                    },
+                    scales: {
+                        x: {
+                            grid: { display: false },
+                            ticks: { color: textColor, font: { family: 'Plus Jakarta Sans', size: 9 } }
+                        },
+                        y: {
+                            grid: { color: gridColor },
+                            ticks: { color: textColor, font: { family: 'Plus Jakarta Sans', size: 9 } }
+                        }
+                    }
+                }
+            });
+        }
+
+        window.onload = () => {
+            generateFilterButtons();
+            updateDashboard();
+        };
+    </script>
+</body>
+</html>

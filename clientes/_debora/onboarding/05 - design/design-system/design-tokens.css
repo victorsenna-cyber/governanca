@@ -1,0 +1,219 @@
+/* ==========================================================================
+   DESIGN TOKENS, Marca Débora Delgado (Workshop "Carreira Alinhada")
+   Fonte da verdade visual: BRAND-BRIEF.md. Nada aqui é inventado fora do brief.
+
+   Proporção da paleta: areia domina (fundo), musgo estrutura (superfícies),
+   petróleo dá o texto, dourado pontua (acento fino, nunca grande área chapada).
+
+   Contraste (WCAG): valores AA/AAA documentados ao lado de cada par de texto.
+   Regra de ouro: nenhum dourado chapado como fundo de texto longo.
+   ========================================================================== */
+
+/* Títulos em Fraunces (serifada editorial, optical sizing variável). Corpo em Inter.
+   Alternativa a validar, Newsreader: troque o import abaixo e --fonte-titulo por
+   @import url('https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,300..600&display=swap');
+   e --fonte-titulo: 'Newsreader', Georgia, serif;                                    */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..600&family=Inter:wght@400;500;600&display=swap');
+
+:root {
+  /* ---- COR, base canônica (BRAND-BRIEF) ---------------------------------- */
+  --cor-papel: #FAF8F3;        /* quase branco quente, fundo de página premium */
+  --cor-areia: #F1EDE4;        /* off white, superfícies e cards (papel calmo) */
+  --cor-musgo: #7A9E89;        /* verde sálvia, cor assinatura, superfícies   */
+  --cor-petroleo: #2E3D45;     /* azul petróleo, texto e títulos              */
+  --cor-dourado: #B89B72;      /* acento: fingerprint, linhas, bordas finas   */
+  --cor-terracota: #C08552;    /* acento quente alternativo, parcimônia       */
+
+  /* ---- COR, papéis semânticos ------------------------------------------- */
+  --cor-fundo: var(--cor-papel);            /* fundo de página (claro premium) */
+  --cor-fundo-alt: #EFE9DD;                 /* areia mais funda, seção alterna */
+  --cor-superficie: var(--cor-musgo);       /* bloco/seção em musgo (display)  */
+  --cor-superficie-forte: #3E5A4B;          /* musgo escuro p/ texto de corpo  */
+  --cor-texto: var(--cor-petroleo);         /* texto sobre areia, 9.6:1 AAA    */
+  --cor-texto-suave: #5A6B72;               /* texto secundário, 4.8:1 AA      */
+  --cor-texto-claro: var(--cor-areia);      /* texto sobre superfícies escuras */
+  --cor-acento: var(--cor-dourado);         /* linhas, selos, detalhe          */
+  --cor-acento-quente: var(--cor-terracota);
+  --cor-borda: #DAD2C4;                     /* divisória sutil sobre areia     */
+  --cor-borda-forte: #C7BCA8;
+
+  /* ---- COR, estados de cor da assinatura (escala derivada do musgo) ------ */
+  --cor-musgo-claro: #9CB8A8;
+  --cor-musgo-medio: var(--cor-musgo);
+  --cor-musgo-escuro: var(--cor-superficie-forte);
+
+  /* ---- COR, escala do dourado (acento, não preencher texto) ------------- */
+  --cor-dourado-claro: #CDB591;
+  --cor-dourado-medio: var(--cor-dourado);
+  --cor-dourado-escuro: #9C8159;
+
+  /* ---- CTA, petróleo com texto areia e borda fina dourada ---------------
+     Decisão de contraste: areia sobre petróleo = 9.6:1 (AAA). O dourado entra
+     como borda fina (acento), nunca como fundo chapado. Hover só clareia o
+     petróleo e aviva a borda, sem perder contraste.                          */
+  --cor-cta-fundo: var(--cor-petroleo);
+  --cor-cta-fundo-hover: #38484F;
+  --cor-cta-texto: var(--cor-areia);
+  --cor-cta-borda: var(--cor-dourado);
+  --cor-cta-borda-hover: var(--cor-dourado-claro);
+
+  /* CTA secundário: areia com texto petróleo e borda petróleo fina          */
+  --cor-cta2-fundo: transparent;
+  --cor-cta2-fundo-hover: rgba(46, 61, 69, 0.06);
+  --cor-cta2-texto: var(--cor-petroleo);
+  --cor-cta2-borda: var(--cor-petroleo);
+
+  /* ---- COR, foco (acessibilidade de teclado) ---------------------------- */
+  --cor-foco: #2E3D45;
+  --foco-anel: 0 0 0 2px var(--cor-areia), 0 0 0 4px var(--cor-petroleo);
+
+  /* ---- COR, semânticos de estado (sóbrios, não berrantes) --------------- */
+  --cor-sucesso: #5C7E63;
+  --cor-erro: #9A4A3A;
+
+  /* ---- TIPOGRAFIA ------------------------------------------------------- */
+  --fonte-titulo: 'Fraunces', 'Georgia', 'Times New Roman', serif;
+  --fonte-corpo: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --fonte-titulo-opsz: 'opsz' 144;   /* optical sizing alto para títulos grandes     */
+
+  --peso-regular: 400;
+  --peso-medio: 500;
+  --peso-semi: 600;
+
+  /* Escala modular (~1.25, terça maior), base 16/18px ---------------------- */
+  --txt-2xs: 0.75rem;    /* 12px, rótulo                                      */
+  --txt-xs: 0.875rem;    /* 14px, small                                       */
+  --txt-sm: 1rem;        /* 16px, corpo padrão                                */
+  --txt-md: 1.125rem;    /* 18px, corpo confortável                          */
+  --txt-lg: 1.25rem;     /* 20px, lead                                        */
+  --txt-h5: 1.5rem;      /* 24px                                              */
+  --txt-h4: 1.875rem;    /* 30px                                             */
+  --txt-h3: 2.5rem;      /* 40px                                              */
+  --txt-h2: 3.25rem;     /* 52px                                             */
+  --txt-h1: 4.25rem;     /* 68px                                             */
+
+  /* Entrelinha (corpo generoso, título compacto) -------------------------- */
+  --lh-titulo: 1.1;
+  --lh-subtitulo: 1.25;
+  --lh-corpo: 1.7;
+  --lh-corpo-solto: 1.85;
+
+  /* Tracking. Títulos serifados em caixa mista respiram com tracking quase nulo,
+     levemente negativo nos tamanhos grandes. Eyebrows e rótulos seguem caixa-alta. */
+  --track-titulo: -0.015em;   /* h1, h2 (serifada, caixa mista)               */
+  --track-titulo-sm: -0.005em;/* h3 a h5                                      */
+  --track-rotulo: 0.18em;     /* selos, eyebrows, nav em caixa-alta           */
+  --track-corpo: 0;
+
+  /* ---- ESPAÇAMENTO (escala 4 / 8) --------------------------------------- */
+  --esp-3xs: 0.25rem;   /* 4  */
+  --esp-2xs: 0.5rem;    /* 8  */
+  --esp-xs: 0.75rem;    /* 12 */
+  --esp-sm: 1rem;       /* 16 */
+  --esp-md: 1.5rem;     /* 24 */
+  --esp-lg: 2rem;       /* 32 */
+  --esp-xl: 3rem;       /* 48 */
+  --esp-2xl: 4rem;      /* 64 */
+  --esp-3xl: 6rem;      /* 96 */
+  --esp-4xl: 8rem;      /* 128 */
+
+  /* Largura de leitura e container ---------------------------------------- */
+  --largura-conteudo: 72ch;     /* medida de leitura calma                   */
+  --largura-container: 1120px;  /* container de página                       */
+  --largura-container-estreito: 760px;
+
+  /* ---- RAIO -------------------------------------------------------------- */
+  --raio-sm: 4px;
+  --raio-md: 10px;
+  --raio-lg: 16px;
+  --raio-xl: 24px;
+  --raio-pill: 999px;
+
+  /* ---- SOMBRA (elevação suave em camadas, não sombra dura) -------------- */
+  --sombra-sm:
+    0 1px 2px rgba(46, 61, 69, 0.04),
+    0 2px 6px rgba(46, 61, 69, 0.05);
+  --sombra-md:
+    0 1px 2px rgba(46, 61, 69, 0.04),
+    0 8px 20px rgba(46, 61, 69, 0.06),
+    0 20px 40px rgba(46, 61, 69, 0.05);
+  --sombra-lg:
+    0 2px 6px rgba(46, 61, 69, 0.05),
+    0 16px 36px rgba(46, 61, 69, 0.07),
+    0 40px 80px rgba(46, 61, 69, 0.06);
+
+  /* ---- TRAÇO (geometria sagrada, linha fina) ---------------------------- */
+  --traco-fino: 1.25px;
+  --traco-medio: 1.75px;
+
+  /* ---- MOVIMENTO -------------------------------------------------------- */
+  --ease-saida: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --ease-entrada: cubic-bezier(0.4, 0, 0.2, 1);
+  --dur-rapida: 160ms;
+  --dur-media: 240ms;
+  --dur-lenta: 360ms;
+
+  /* ---- CAMADAS (z-index) ------------------------------------------------ */
+  --z-base: 0;
+  --z-conteudo: 10;
+  --z-sticky: 20;
+  --z-overlay: 40;
+  --z-modal: 100;
+
+  /* ---- ATMOSFERA / CAMADA PREMIUM (blueprint claro) ---------------------
+     A régua é sutileza: deve parecer luz natural e papel fino, não efeito.
+     Tudo claro e terroso. Nunca inverter para dark.                         */
+
+  /* Gradiente de volume do fundo (radial muito suave, mais claro no topo) */
+  --grad-fundo: radial-gradient(135% 110% at 50% -10%,
+    #FDFBF7 0%, #FAF8F3 42%, #F4EFE6 100%);
+
+  /* Grid técnico (papel de arquitetura). Reutilizável como background-image. */
+  --grid-cor: rgba(46, 61, 69, 0.05);
+  --grid-tamanho: 34px;
+  --grid-blueprint:
+    repeating-linear-gradient(0deg, var(--grid-cor) 0 1px, transparent 1px var(--grid-tamanho)),
+    repeating-linear-gradient(90deg, var(--grid-cor) 0 1px, transparent 1px var(--grid-tamanho));
+
+  /* Glow radial (halo de foco atrás de hero / eneagrama), bem diluído */
+  --glow-musgo: radial-gradient(closest-side,
+    rgba(122, 158, 137, 0.30), rgba(122, 158, 137, 0) 72%);
+  --glow-dourado: radial-gradient(closest-side,
+    rgba(184, 155, 114, 0.24), rgba(184, 155, 114, 0) 72%);
+
+  /* Orbes de cor desfocados (atmosfera de profundidade) */
+  --orbe-blur: 64px;
+  --orbe-opacidade: 0.55;
+  --orbe-musgo: rgba(122, 158, 137, 0.40);
+  --orbe-areia: rgba(214, 198, 170, 0.45);
+  --orbe-dourado: rgba(184, 155, 114, 0.32);
+
+  /* Glassmorphism discreto (só cards-âncora) */
+  --vidro-fundo: rgba(252, 250, 245, 0.58);
+  --vidro-borda: rgba(255, 255, 255, 0.70);
+  --vidro-blur: 10px;
+  --vidro-luz-topo: inset 0 1px 0 rgba(255, 255, 255, 0.65);
+
+  /* CTA vidro (espelho elegante, sem neon) */
+  --cta-grad: linear-gradient(180deg, #3E5059 0%, #2E3D45 54%, #28353C 100%);
+  --cta-grad-hover: linear-gradient(180deg, #46596A 0%, #324249 54%, #2B3941 100%);
+  --cta-highlight: inset 0 1px 0 rgba(255, 255, 255, 0.22);
+  --cta-luz-dourada: 0 0 0 1px rgba(184, 155, 114, 0.55);
+  --cta-sombra:
+    0 1px 1px rgba(46, 61, 69, 0.20),
+    0 6px 16px rgba(46, 61, 69, 0.18),
+    0 14px 30px rgba(46, 61, 69, 0.14);
+  --cta-sombra-hover:
+    0 1px 1px rgba(46, 61, 69, 0.22),
+    0 8px 20px rgba(46, 61, 69, 0.22),
+    0 18px 38px rgba(46, 61, 69, 0.18);
+}
+
+/* Reduz movimento quando o usuário pede (acessibilidade) */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --dur-rapida: 0ms;
+    --dur-media: 0ms;
+    --dur-lenta: 0ms;
+  }
+}

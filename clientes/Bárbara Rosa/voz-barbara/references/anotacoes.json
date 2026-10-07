@@ -1,0 +1,334 @@
+{
+  "nota": "Revisão manual após leitura integral. IDs gerados pelo léxico fechado do script; inclui metáforas rotuladas C/V, não mede personalidade. Metaprogramas: amostra intencional de dez unidades por eixo, escolhidas por explicitar o critério; não estimativa representativa da fala total. Unidades entre eixos podem se repetir; dentro de um eixo são únicas. Sem validação por áudio ou pela Bárbara.",
+  "vak_aceitos": {
+    "VAK-001": "D",
+    "VAK-002": "C",
+    "VAK-003": "D",
+    "VAK-004": "V",
+    "VAK-006": "D",
+    "VAK-007": "C",
+    "VAK-009": "C",
+    "VAK-010": "C",
+    "VAK-011": "C",
+    "VAK-014": "C",
+    "VAK-016": "V",
+    "VAK-021": "C",
+    "VAK-022": "C",
+    "VAK-023": "C",
+    "VAK-024": "C",
+    "VAK-026": "D",
+    "VAK-027": "D",
+    "VAK-028": "C",
+    "VAK-029": "C",
+    "VAK-030": "D",
+    "VAK-032": "D",
+    "VAK-033": "C",
+    "VAK-036": "D",
+    "VAK-042": "C",
+    "VAK-051": "V",
+    "VAK-052": "V",
+    "VAK-058": "D",
+    "VAK-059": "V"
+  },
+  "vak_excluidos": {
+    "VAK-005": "Repetição imediata do mesmo predicado e da mesma oração; contar uma unidade.",
+    "VAK-008": "Repetição imediata do sentir de L167; não é novo episódio.",
+    "VAK-012": "Fala atribuída a terceiro e julgamento de condição econômica pela aparência; não usar como voz ou qualificação.",
+    "VAK-013": "Conhecimento como tema da discussão sobre IA; não como processo perceptivo.",
+    "VAK-015": "Mostrar resultados é instrução de conteúdo/prova, não predicado perceptivo discriminante.",
+    "VAK-017": "Reconta recomendação atribuída ao John; origem verbal externa.",
+    "VAK-018": "Reconta recomendação atribuída ao John; origem verbal externa.",
+    "VAK-019": "Texto corrompido: nem olho para a minha cara. Não reconstruir como evidência.",
+    "VAK-020": "Olhar para isso = pedido genérico de atenção/revisão.",
+    "VAK-025": "Olha como marcador de atenção; analisa é a ação cognitiva contada.",
+    "VAK-031": "Não vai ficar apertado contradiz L1271; trecho incerto sem áudio.",
+    "VAK-034": "Mostrar a própria vida é tema de conteúdo.",
+    "VAK-035": "Trecho misturar pra entender sem sentido estabilizado.",
+    "VAK-037": "Coerência como valor/critério; contabilizado separadamente.",
+    "VAK-038": "Ver ela assim introduz conversa relatada; provável ruído de transcrição.",
+    "VAK-039": "Incoerente como palavra-critério; não classificar valor como canal.",
+    "VAK-040": "Tu veja = chamada de atenção para argumento, sem imagem definida.",
+    "VAK-041": "Incoerente como palavra-critério; não classificar valor como canal.",
+    "VAK-043": "Encarar = assumir tarefa; verbo lexicalizado sem representação definida.",
+    "VAK-044": "Vou ver o que pode = disponibilidade/regra, não visão.",
+    "VAK-045": "Olhar = solicitação de atenção à tarefa, sem imagem definida.",
+    "VAK-046": "Olhar = solicitação de atenção à tarefa, sem imagem definida.",
+    "VAK-047": "Vejo o que dá para fazer: formulação ambígua e genérica.",
+    "VAK-048": "Corrigido no segmento seguinte por falando para Emily; provável ruído.",
+    "VAK-049": "Minha visão = minha opinião, marcador discursivo.",
+    "VAK-050": "Vejo que tem capacidade = avaliação abstrata lexicalizada.",
+    "VAK-053": "Inspeção da plataforma é assunto do trecho, não assinatura.",
+    "VAK-054": "Mesma inspeção da plataforma e repetição imediata.",
+    "VAK-055": "Olha como marcador de atenção.",
+    "VAK-056": "Na minha visão = minha opinião, marcador discursivo.",
+    "VAK-057": "Na minha visão = meu entendimento do nome, marcador discursivo.",
+    "VAK-060": "Entender como assentimento ao interlocutor, sem operação analítica nova.",
+    "VAK-061": "Trecho sintaticamente corrompido junto a despedida.",
+    "VAK-062": "Escutar é recepção neutra da conversa; não predicado de som.",
+    "VAK-063": "Olhar como pedido genérico de ajuda; sem imagem definida.",
+    "VAK-064": "Olhado para mandar mensagem: provável horário transcrito incorretamente.",
+    "VAK-065": "Mostrar como quer a plataforma é demonstração de produto, tema."
+  },
+  "metaprogramas": {
+    "direcao": [
+      {
+        "line": 50,
+        "quote": "Não tive coragem de falar no final de semana, porque eu não gosto dessas coisas.",
+        "code": "afastamento"
+      },
+      {
+        "line": 326,
+        "quote": "A gente precisa ser assertivo e trazer o cliente ideal",
+        "code": "busca"
+      },
+      {
+        "line": 689,
+        "quote": "precisamos muito ser humanas nessas cópias e mostrar resultados.",
+        "code": "busca"
+      },
+      {
+        "line": 947,
+        "quote": "E eu só entrei em bola de dívida. E eu não vou fazer isso.",
+        "code": "afastamento"
+      },
+      {
+        "line": 1109,
+        "quote": "Eu preciso trabalhar essa semana para sair. Negativo, entendeu?",
+        "code": "afastamento"
+      },
+      {
+        "line": 1367,
+        "quote": "Eu tenho que ser honesta, até na dívida comigo mesma.",
+        "code": "afastamento"
+      },
+      {
+        "line": 1727,
+        "quote": "Porque eu não quero chatear ninguém.",
+        "code": "afastamento"
+      },
+      {
+        "line": 1946,
+        "quote": "Sabe, para que venda.",
+        "code": "busca"
+      },
+      {
+        "line": 2450,
+        "quote": "eu não quero perder minha empresa. Eu não quero perder minha equipe.",
+        "code": "afastamento"
+      },
+      {
+        "line": 2459,
+        "quote": "Eu quero crescer mais e mais.",
+        "code": "busca"
+      }
+    ],
+    "referencia": [
+      {
+        "line": 50,
+        "quote": "Sou muito cautelosa.",
+        "code": "interna"
+      },
+      {
+        "line": 56,
+        "quote": "Eu trabalho com as pessoas e sei como é isso.",
+        "code": "interna"
+      },
+      {
+        "line": 974,
+        "quote": "Ele disse: Aposta no vitão, né?",
+        "code": "externa"
+      },
+      {
+        "line": 1130,
+        "quote": "E a Ana disse que realmente social cela é close.",
+        "code": "externa"
+      },
+      {
+        "line": 1367,
+        "quote": "Eu tenho que ser honesta, até na dívida comigo mesma.",
+        "code": "interna"
+      },
+      {
+        "line": 1610,
+        "quote": "É para mim. É desonestidade. É falta de caráter.",
+        "code": "interna"
+      },
+      {
+        "line": 1664,
+        "quote": "Não sei se tu concorda com isso. Nem tem que concordar",
+        "code": "interna"
+      },
+      {
+        "line": 2042,
+        "quote": "A minha visão é que a gente vende com certeza.",
+        "code": "interna"
+      },
+      {
+        "line": 2264,
+        "quote": "Eu já verifiquei. Já vi ela fazendo.",
+        "code": "externa"
+      },
+      {
+        "line": 2438,
+        "quote": "tudo que o guia sempre me dá de orientação. Sempre faço.",
+        "code": "externa"
+      }
+    ],
+    "chunk": [
+      {
+        "line": 326,
+        "quote": "A gente precisa ser assertivo e trazer o cliente ideal",
+        "code": "global"
+      },
+      {
+        "line": 689,
+        "quote": "precisamos muito ser humanas nessas cópias e mostrar resultados.",
+        "code": "global"
+      },
+      {
+        "line": 1115,
+        "quote": "Eu consigo pagar o valor que eu pago para. Bem, é um.seiscentos.",
+        "code": "especifico"
+      },
+      {
+        "line": 1382,
+        "quote": "um.seiscentos a cada mês, durante três meses.",
+        "code": "especifico"
+      },
+      {
+        "line": 1547,
+        "quote": "É sobre palavra mesmo, né? Nem todo mundo tem.",
+        "code": "global"
+      },
+      {
+        "line": 1907,
+        "quote": "Porque em um dia, a gente grava dez.",
+        "code": "especifico"
+      },
+      {
+        "line": 1934,
+        "quote": "Para a primeira semana. Agora que vai entrar, né?",
+        "code": "especifico"
+      },
+      {
+        "line": 2033,
+        "quote": "é duas mentorias por dia.",
+        "code": "especifico"
+      },
+      {
+        "line": 2267,
+        "quote": "Depois de dois dias. Qual era a aula? Mesmo.",
+        "code": "especifico"
+      },
+      {
+        "line": 2459,
+        "quote": "Eu quero crescer mais e mais.",
+        "code": "global"
+      }
+    ],
+    "opcoes_procedimentos": [
+      {
+        "line": 56,
+        "quote": "Eu acho que segunda feira. Eu chego, converso com ela.",
+        "code": "procedimentos"
+      },
+      {
+        "line": 332,
+        "quote": "independente se eu faço e a Emily trouxe a porcentagem da Emily.",
+        "code": "procedimentos"
+      },
+      {
+        "line": 953,
+        "quote": "Eu prefiro pagar ali e ficar negativo no banco, mas no cartão, eu não consigo.",
+        "code": "opcoes"
+      },
+      {
+        "line": 983,
+        "quote": "alguém tinha até dado uma outra ideia",
+        "code": "opcoes"
+      },
+      {
+        "line": 1715,
+        "quote": "Ou de repente eu converso com ela na segunda feira. E daí? Nós vamos finalizar uns grupos. Retirar ela, né?",
+        "code": "procedimentos"
+      },
+      {
+        "line": 1835,
+        "quote": "Ela quer quinze em quinze dias",
+        "code": "opcoes"
+      },
+      {
+        "line": 1916,
+        "quote": "Se for necessário gravar essa a gente também grava.",
+        "code": "opcoes"
+      },
+      {
+        "line": 1985,
+        "quote": "A gente também pode fazer isso. Ou jogar pra próxima semana.",
+        "code": "opcoes"
+      },
+      {
+        "line": 2135,
+        "quote": "Depois assistir essas duas aulas",
+        "code": "procedimentos"
+      },
+      {
+        "line": 2264,
+        "quote": "E aí que a Emily entra, explicando, passo a passo.",
+        "code": "procedimentos"
+      }
+    ],
+    "match_mismatch": [
+      {
+        "line": 65,
+        "quote": "se ela pergunta mais para ele, não tem, por que eu estar com ela.",
+        "code": "mismatch"
+      },
+      {
+        "line": 689,
+        "quote": "Porque não está no nosso perfil.",
+        "code": "mismatch"
+      },
+      {
+        "line": 710,
+        "quote": "Eu cumpro com o que eu faço.",
+        "code": "match"
+      },
+      {
+        "line": 1010,
+        "quote": "Eu não posso menosprezar ao trabalho dele.",
+        "code": "match"
+      },
+      {
+        "line": 1121,
+        "quote": "A beija entrou bem no que eu precisava.",
+        "code": "match"
+      },
+      {
+        "line": 1304,
+        "quote": "Eu tenho histórico de venda, mas é um histórico de venda me matando.",
+        "code": "mismatch"
+      },
+      {
+        "line": 1586,
+        "quote": "é incoerente eu estar lá no negativo. E o cara me devendo.",
+        "code": "mismatch"
+      },
+      {
+        "line": 2066,
+        "quote": "Eu vejo que a equipe tem capacidade.",
+        "code": "match"
+      },
+      {
+        "line": 2252,
+        "quote": "Eu entendi. Mas elas sabem dessa aula que é para assistir",
+        "code": "mismatch"
+      },
+      {
+        "line": 2306,
+        "quote": "Mas é porque eu acho que pra mim. Elas não estão acostumadas.",
+        "code": "mismatch"
+      }
+    ]
+  }
+}

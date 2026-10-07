@@ -1,0 +1,2567 @@
+WEBVTT
+
+00:05:32.000 --> 00:05:33.000
+Debora Maciel: E aí?
+
+00:05:33.000 --> 00:05:36.000
+Debora Maciel: Oi, gente.
+
+00:05:35.000 --> 00:05:38.000
+Continuum AI Systems: E aí, Débora?
+
+00:05:36.000 --> 00:05:37.000
+Debora Maciel: Tudo bem.
+
+00:05:37.000 --> 00:05:39.000
+Debora Maciel: Tudo bom.
+
+00:05:39.000 --> 00:05:40.000
+Debora Maciel: De.
+
+00:05:39.000 --> 00:05:43.000
+Continuum AI Systems: Tudo, joia. Como é que foi esses dias por aí?
+
+00:05:42.000 --> 00:05:42.000
+Debora Maciel: E aí?
+
+00:05:43.000 --> 00:05:46.000
+Debora Maciel: Tudo tranquilo. Graças a Deus.
+
+00:05:45.000 --> 00:05:46.000
+Continuum AI Systems: Tranquila.
+
+00:05:47.000 --> 00:05:49.000
+Debora Maciel: Tive reunião com a Sara hoje. Também foi muito bom.
+
+00:05:49.000 --> 00:05:51.000
+Debora Maciel: A segunda parte.
+
+00:05:49.000 --> 00:05:50.000
+Continuum AI Systems: É.
+
+00:05:51.000 --> 00:05:52.000
+Debora Maciel: E aí?
+
+00:05:52.000 --> 00:05:53.000
+Continuum AI Systems: Muito bom.
+
+00:05:53.000 --> 00:05:55.000
+Continuum AI Systems: Gerando clareza cada vez mais.
+
+00:05:53.000 --> 00:05:55.000
+Debora Maciel: E por aí.
+
+00:05:55.000 --> 00:05:59.000
+Continuum AI Systems: Tudo ótimo também. Graças a Deus.
+
+00:05:56.000 --> 00:05:57.000
+Debora Maciel: Uhum.
+
+00:05:58.000 --> 00:05:58.000
+Debora Maciel: E aí?
+
+00:06:00.000 --> 00:06:02.000
+Continuum AI Systems: Muitas coisas sendo criadas aqui.
+
+00:06:00.000 --> 00:06:01.000
+Debora Maciel: E aí?
+
+00:06:03.000 --> 00:06:06.000
+Continuum AI Systems: Tem muita coisa boa vindo por aí.
+
+00:06:06.000 --> 00:06:08.000
+Debora Maciel: Ai, que bom!
+
+00:06:08.000 --> 00:06:21.000
+Debora Maciel: Só vou pedir uma coisa. Talvez eu tenha que almoçar no meio da reunião, porque, meu amor, você ia chegar meia de e meia, mas não chegou aí. É por isso que eu ia atrasar cinco minutos porque o amor falou. Já saiu. Eu não vai dar tempo, então. Mas não deu.
+
+00:06:13.000 --> 00:06:14.000
+Continuum AI Systems: Tá.
+
+00:06:17.000 --> 00:06:17.000
+Continuum AI Systems: E aí?
+
+00:06:21.000 --> 00:06:26.000
+Debora Maciel: Vamos ver. Hoje a gente termina o almoço depois que eu tenho outra reunião, duas horas ou.
+
+00:06:26.000 --> 00:06:30.000
+Debora Maciel: Talvez ela mostre um pouquinho da reunião, tá?
+
+00:06:27.000 --> 00:06:29.000
+Continuum AI Systems: Não, tudo bem.
+
+00:06:30.000 --> 00:06:33.000
+Continuum AI Systems: Eu acredito que vai ser bem rapidinho mesmo. Débora.
+
+00:06:33.000 --> 00:06:38.000
+Continuum AI Systems: Porque é mais sobre mostrar para você o que.
+
+00:06:38.000 --> 00:06:41.000
+Continuum AI Systems: Quais são as questões aqui que a gente vai construir?
+
+00:06:42.000 --> 00:06:47.000
+Continuum AI Systems: Nesses próximos sete dias, para a gente já subir as primeiras campanhas ali e tudo mais.
+
+00:06:47.000 --> 00:06:52.000
+Continuum AI Systems: Então é bem simples. Mesmo. Acredito que nem vai precisar de uma hora inteira para isso.
+
+00:06:53.000 --> 00:06:57.000
+Continuum AI Systems: A gente acabou de voltar também do almoço. A gente foi almoçar fora. Ali.
+
+00:06:59.000 --> 00:07:01.000
+Continuum AI Systems: Eu vou enviar para você um link.
+
+00:07:02.000 --> 00:07:05.000
+Continuum AI Systems: Contendo, basicamente.
+
+00:07:05.000 --> 00:07:07.000
+Continuum AI Systems: O que a gente vai criar ali. Nesses dias.
+
+00:07:09.000 --> 00:07:11.000
+Continuum AI Systems: Que é algo bem inciso.
+
+00:07:10.000 --> 00:07:13.000
+Debora Maciel: Você vai mandar no Slack ou no.
+
+00:07:14.000 --> 00:07:16.000
+Continuum AI Systems: Vou enviar aqui mesmo no.
+
+00:07:16.000 --> 00:07:17.000
+Debora Maciel: Ah, tá.
+
+00:07:18.000 --> 00:07:19.000
+Continuum AI Systems: No grupo.
+
+00:07:18.000 --> 00:07:19.000
+Debora Maciel: Beleza.
+
+00:07:19.000 --> 00:07:20.000
+Debora Maciel: Show!
+
+00:07:25.000 --> 00:07:28.000
+Continuum AI Systems: É porque é mais sobre um roadmap.
+
+00:07:25.000 --> 00:07:26.000
+Debora Maciel: E aí?
+
+00:07:26.000 --> 00:07:27.000
+Debora Maciel: E aí?
+
+00:07:28.000 --> 00:07:34.000
+Continuum AI Systems: Entre aspas. Superficial somente para te dar uma visão, mesmo do que vai ser criado.
+
+00:07:34.000 --> 00:07:38.000
+Continuum AI Systems: Aí por baixo dele, que tem todo o detalhamento técnico.
+
+00:07:34.000 --> 00:07:35.000
+Debora Maciel: Uhum.
+
+00:07:38.000 --> 00:07:40.000
+Continuum AI Systems: Eu acredito que não seja.
+
+00:07:41.000 --> 00:07:45.000
+Continuum AI Systems: É tão importante te passar aqui? É claro que.
+
+00:07:45.000 --> 00:07:48.000
+Continuum AI Systems: Posteriormente todas as questões técnicas.
+
+00:07:47.000 --> 00:07:47.000
+Debora Maciel: E aí?
+
+00:07:48.000 --> 00:07:51.000
+Continuum AI Systems: Serão todos anotados e tudo mais.
+
+00:08:04.000 --> 00:08:05.000
+Debora Maciel: Uhum.
+
+00:08:08.000 --> 00:08:09.000
+Debora Maciel: E bom.
+
+00:08:22.000 --> 00:08:24.000
+Debora Maciel: E aí?
+
+00:08:24.000 --> 00:08:26.000
+Debora Maciel: Roselliano. Já.
+
+00:08:26.000 --> 00:08:27.000
+Continuum AI Systems: É.
+
+00:08:27.000 --> 00:08:27.000
+Debora Maciel: E aí?
+
+00:08:27.000 --> 00:08:29.000
+Continuum AI Systems: Vou colocar na tela aqui.
+
+00:08:28.000 --> 00:08:29.000
+Debora Maciel: Uhum.
+
+00:08:29.000 --> 00:08:30.000
+Debora Maciel: Sim.
+
+00:08:40.000 --> 00:08:42.000
+Debora Maciel: E aí?
+
+00:08:45.000 --> 00:08:46.000
+Debora Maciel: E aí?
+
+00:08:47.000 --> 00:08:48.000
+Debora Maciel: E aí?
+
+00:08:49.000 --> 00:08:50.000
+Debora Maciel: E aí?
+
+00:08:54.000 --> 00:08:55.000
+Debora Maciel: E aí?
+
+00:08:55.000 --> 00:08:59.000
+Continuum AI Systems: Então o workshop. Esse carreira é alinhada. Você falou que.
+
+00:08:59.000 --> 00:09:01.000
+Continuum AI Systems: É mais uma direção.
+
+00:09:02.000 --> 00:09:06.000
+Continuum AI Systems: Uma direção conceitual, digamos assim. Não é mesmo.
+
+00:09:06.000 --> 00:09:07.000
+Debora Maciel: Uhum, Uhum.
+
+00:09:06.000 --> 00:09:10.000
+Continuum AI Systems: Aí essa questão do nome. Não sei se você já reformulou.
+
+00:09:10.000 --> 00:09:12.000
+Debora Maciel: E aí?
+
+00:09:13.000 --> 00:09:19.000
+Debora Maciel: A única coisa que mudou na minha cabeça não mudou nada conversando com a Sara. Agora, o que rolou.
+
+00:09:19.000 --> 00:09:27.000
+Debora Maciel: Ficou bem claro, mesmo o caminho de empresas e as camadas que eu já tinha falado com vocês, empresas, líderes e pessoas.
+
+00:09:27.000 --> 00:09:34.000
+Debora Maciel: Só que se eu falar com líderes e pessoas ao mesmo tempo no Instagram, vai ficar confuso.
+
+00:09:28.000 --> 00:09:29.000
+Continuum AI Systems: Sim.
+
+00:09:34.000 --> 00:09:39.000
+Debora Maciel: Então ficou assim na minha cabeça. Então eu vou direcionar só para líderes.
+
+00:09:40.000 --> 00:09:46.000
+Debora Maciel: E esse método poderia ser aplicado a qualquer pessoa. Mas o líder poderia aplicar para pessoas, entendeu?
+
+00:09:48.000 --> 00:09:50.000
+Debora Maciel: Não sei se.
+
+00:09:48.000 --> 00:09:49.000
+Continuum AI Systems: Entendi.
+
+00:09:50.000 --> 00:09:51.000
+Debora Maciel: Aí. Assim.
+
+00:09:50.000 --> 00:09:53.000
+Continuum AI Systems: É tipo assim. É como se fosse uma segunda camada.
+
+00:09:54.000 --> 00:10:00.000
+Debora Maciel: É? É porque hoje minha mentoria tem pessoas que não têm problemas de liderança.
+
+00:09:55.000 --> 00:09:56.000
+Continuum AI Systems: Você passa.
+
+00:10:00.000 --> 00:10:09.000
+Debora Maciel: Eles são só líderes, mas tem poucas pessoas abaixo deles ou não orientam pessoas. Então assim não tem o escopo de liderança em si.
+
+00:10:09.000 --> 00:10:16.000
+Debora Maciel: E aí, o que acho que muda do Icp é a pessoa realmente ter o escopo de liderança, liderar pessoas.
+
+00:10:16.000 --> 00:10:22.000
+Debora Maciel: E ela querer primeiro testar nela para fazer nas outras pessoas, possivelmente depois, como próximo passo.
+
+00:10:22.000 --> 00:10:24.000
+Debora Maciel: Não muda muita coisa. Não.
+
+00:10:23.000 --> 00:10:24.000
+Continuum AI Systems: Entendi. Tô te ouvindo.
+
+00:10:24.000 --> 00:10:26.000
+Debora Maciel: Pode, tá.
+
+00:10:24.000 --> 00:10:25.000
+Continuum AI Systems: Ah.
+
+00:10:29.000 --> 00:10:29.000
+Debora Maciel: E aí?
+
+00:10:29.000 --> 00:10:29.000
+Continuum AI Systems: E aí?
+
+00:10:30.000 --> 00:10:31.000
+Continuum AI Systems: Obrigado.
+
+00:10:31.000 --> 00:10:33.000
+Debora Maciel: E aí?
+
+00:10:35.000 --> 00:10:37.000
+Continuum AI Systems: É.
+
+00:10:37.000 --> 00:10:42.000
+Continuum AI Systems: É como se fosse ao invés de B2c. Passar para B2b.
+
+00:10:44.000 --> 00:10:46.000
+Debora Maciel: É? Não vai me passar pra vítima.
+
+00:10:45.000 --> 00:10:45.000
+Continuum AI Systems: Assim.
+
+00:10:46.000 --> 00:10:51.000
+Debora Maciel: Ainda não vamos passar por B2b. Não, mas no primeiro Cp que a gente construiu.
+
+00:10:51.000 --> 00:10:54.000
+Debora Maciel: A pessoa poderia, por exemplo, querer empreender.
+
+00:10:54.000 --> 00:11:01.000
+Debora Maciel: E aí eu não estava tão focada em líderes dentro das empresas, certo? E foi isso que eu comecei a atrair.
+
+00:11:01.000 --> 00:11:07.000
+Debora Maciel: Pessoas que, de alguma forma, no futuro, se veem fora da empresa e tal, e nada contra isso.
+
+00:11:07.000 --> 00:11:16.000
+Debora Maciel: Mas a transformação que eu estou buscando, maior. Ela acaba englobando empresas e sistemas de trabalho.
+
+00:11:16.000 --> 00:11:17.000
+Debora Maciel: E aí?
+
+00:11:17.000 --> 00:11:19.000
+Debora Maciel: É.
+
+00:11:19.000 --> 00:11:22.000
+Debora Maciel: Esse processo de olhar para a carreira.
+
+00:11:23.000 --> 00:11:25.000
+Debora Maciel: Dentro da empresa.
+
+00:11:28.000 --> 00:11:33.000
+Debora Maciel: Não vai mudar o workshop. Talvez mude um pouco a comunicação da promessa.
+
+00:11:36.000 --> 00:11:37.000
+Continuum AI Systems: Compreendo. É.
+
+00:11:36.000 --> 00:11:41.000
+Debora Maciel: Para eu não falar com pessoas porque pensa só. Talvez o líder.
+
+00:11:41.000 --> 00:11:43.000
+Debora Maciel: Ele quer alinhar.
+
+00:11:43.000 --> 00:11:46.000
+Debora Maciel: Mas talvez não necessariamente. Ele quer crescer.
+
+00:11:46.000 --> 00:11:55.000
+Debora Maciel: É só por causa dessa palavra. Antes de crescer, é preciso reconhecer de onde se parte. Talvez o líder já percebe uma incongruência. Mas ele não necessariamente.
+
+00:11:55.000 --> 00:11:57.000
+Debora Maciel: Está buscando crescer super.
+
+00:11:57.000 --> 00:12:00.000
+Debora Maciel: Mas o liderado dele quer crescer.
+
+00:11:57.000 --> 00:11:58.000
+Continuum AI Systems: Entendi.
+
+00:12:02.000 --> 00:12:06.000
+Debora Maciel: E aí é só para eu não falar com.
+
+00:12:06.000 --> 00:12:12.000
+Debora Maciel: Muitos públicos. Então, assim, acho que esse é o caminho. Mas eu acho que precisa de um refinamento do Icp.
+
+00:12:08.000 --> 00:12:09.000
+Continuum AI Systems: E aí?
+
+00:12:13.000 --> 00:12:14.000
+Debora Maciel: Entendeu?
+
+00:12:14.000 --> 00:12:16.000
+Continuum AI Systems: Aham, entendi.
+
+00:12:15.000 --> 00:12:18.000
+Debora Maciel: Para que o texto converse com o Icp.
+
+00:12:18.000 --> 00:12:20.000
+Continuum AI Systems: Perfeito. Maravilha.
+
+00:12:19.000 --> 00:12:20.000
+Debora Maciel: E aí?
+
+00:12:21.000 --> 00:12:24.000
+Continuum AI Systems: Esse ajuste. Eu acredito que vai trazer ainda mais clareza.
+
+00:12:21.000 --> 00:12:22.000
+Debora Maciel: Que.
+
+00:12:24.000 --> 00:12:26.000
+Continuum AI Systems: Em toda a comunicação.
+
+00:12:26.000 --> 00:12:26.000
+Debora Maciel: E aí?
+
+00:12:26.000 --> 00:12:27.000
+Debora Maciel: É.
+
+00:12:27.000 --> 00:12:32.000
+Continuum AI Systems: Em tudo. No seu Instagram, nos criativos, na promessa. Ali na página, tudo tudo.
+
+00:12:28.000 --> 00:12:29.000
+Debora Maciel: E aí?
+
+00:12:32.000 --> 00:12:42.000
+Debora Maciel: E eu só tive clareza disso com a Sara. Eu só tive clareza disso hoje de manhã, entendeu? Aí eu falei? Ai tomara que não mude muita coisa, mas eu não acho que muda. Eu vou fazer workshop. É isso.
+
+00:12:33.000 --> 00:12:35.000
+Continuum AI Systems: Vai ser bem assertivo. Mesmo.
+
+00:12:38.000 --> 00:12:39.000
+Continuum AI Systems: Aham!
+
+00:12:42.000 --> 00:12:45.000
+Debora Maciel: A pessoa se alinhar. Tudo aquilo ali. É isso.
+
+00:12:45.000 --> 00:12:46.000
+Debora Maciel: Mas.
+
+00:12:47.000 --> 00:12:52.000
+Debora Maciel: O pra quem muda. E se o pra quem muda? Pode ser que a oferta tenha um pequeno ajuste.
+
+00:12:53.000 --> 00:12:54.000
+Continuum AI Systems: Sim, sim.
+
+00:12:56.000 --> 00:12:59.000
+Debora Maciel: Então bora ver Bora ver direitinho.
+
+00:12:59.000 --> 00:13:01.000
+Debora Maciel: E aí, por exemplo.
+
+00:12:59.000 --> 00:13:02.000
+Continuum AI Systems: Como que é a frase que você falou antes de crescer.
+
+00:13:03.000 --> 00:13:09.000
+Debora Maciel: É porque está aqui carreira alinhada. Antes de crescer, é preciso reconhecer de onde se parte.
+
+00:13:06.000 --> 00:13:07.000
+Continuum AI Systems: Ah, tá.
+
+00:13:10.000 --> 00:13:17.000
+Debora Maciel: E aí você percebe que o antes de crescer, eu já pressuponho que o desejo da pessoa crescer.
+
+00:13:18.000 --> 00:13:24.000
+Debora Maciel: E aí pode não ser exatamente esse desejo do Icp. Por isso que me veio na cabeça de refinar o Icp.
+
+00:13:24.000 --> 00:13:28.000
+Debora Maciel: Para a gente. Só fazer um pente fino na promessa do workshop.
+
+00:13:28.000 --> 00:13:30.000
+Debora Maciel: Para a gente atrair o público, certo.
+
+00:13:28.000 --> 00:13:29.000
+Continuum AI Systems: E aí?
+
+00:13:31.000 --> 00:13:32.000
+Continuum AI Systems: Entendi.
+
+00:13:34.000 --> 00:13:41.000
+Debora Maciel: E uma outra coisa que me veio, que eu ainda não. Talvez nesse. Eu acho que a gente segue esse assim, sabe, pra fazer as coisas.
+
+00:13:41.000 --> 00:13:45.000
+Debora Maciel: E isso é não falar com muitas pessoas diferentes. Então a comunicação.
+
+00:13:45.000 --> 00:13:50.000
+Debora Maciel: Acertar a comunicação para mirar o público, certo? Só isso que eu acho que precisa ajustar para a gente, já ir.
+
+00:13:50.000 --> 00:13:53.000
+Debora Maciel: Nos próximos.
+
+00:13:53.000 --> 00:13:56.000
+Debora Maciel: Eu penso já em começar a vender produto para a empresa.
+
+00:13:56.000 --> 00:13:58.000
+Debora Maciel: Então imagina só.
+
+00:13:59.000 --> 00:14:00.000
+Debora Maciel: É.
+
+00:14:00.000 --> 00:14:01.000
+Debora Maciel: Enfim.
+
+00:14:01.000 --> 00:14:07.000
+Debora Maciel: Não sei isso ainda, mas não acho que a gente precisa focar nisso. Agora, vamos focar nesse fazer esse acontecer da velocidade.
+
+00:14:07.000 --> 00:14:10.000
+Debora Maciel: E aí os próximos. A gente vai melhorando, trazendo mais ofertas.
+
+00:14:11.000 --> 00:14:12.000
+Debora Maciel: E aí?
+
+00:14:12.000 --> 00:14:14.000
+Continuum AI Systems: Nesse da empresa. Eu já.
+
+00:14:13.000 --> 00:14:14.000
+Debora Maciel: E aí?
+
+00:14:14.000 --> 00:14:20.000
+Continuum AI Systems: Pensei em algumas coisas. Aqui me veio algumas referências de outras pessoas que já fazem algo.
+
+00:14:16.000 --> 00:14:17.000
+Debora Maciel: E aí?
+
+00:14:18.000 --> 00:14:18.000
+Debora Maciel: E aí?
+
+00:14:19.000 --> 00:14:20.000
+Debora Maciel: De.
+
+00:14:20.000 --> 00:14:24.000
+Continuum AI Systems: Algo similar no sentido de.
+
+00:14:24.000 --> 00:14:25.000
+Continuum AI Systems: Com foco em empresas.
+
+00:14:26.000 --> 00:14:27.000
+Debora Maciel: Uhum.
+
+00:14:26.000 --> 00:14:29.000
+Continuum AI Systems: Não similar no sentido de conteúdo em si.
+
+00:14:29.000 --> 00:14:30.000
+Debora Maciel: Uhum.
+
+00:14:29.000 --> 00:14:33.000
+Continuum AI Systems: Mas aí já me veio um panorama, mais ou menos do que.
+
+00:14:33.000 --> 00:14:34.000
+Debora Maciel: E aí?
+
+00:14:34.000 --> 00:14:37.000
+Continuum AI Systems: Como pode ser férreo e tudo mais?
+
+00:14:35.000 --> 00:14:36.000
+Debora Maciel: E aí?
+
+00:14:37.000 --> 00:14:39.000
+Debora Maciel: Uhum.
+
+00:14:40.000 --> 00:14:41.000
+Continuum AI Systems: Maravilha!
+
+00:14:40.000 --> 00:14:41.000
+Debora Maciel: E aí?
+
+00:14:41.000 --> 00:14:42.000
+Continuum AI Systems: Eu vou passar aqui para você.
+
+00:14:41.000 --> 00:14:42.000
+Debora Maciel: E aí?
+
+00:14:42.000 --> 00:14:42.000
+Debora Maciel: E aí?
+
+00:14:43.000 --> 00:14:44.000
+Debora Maciel: E aí?
+
+00:14:43.000 --> 00:14:44.000
+Continuum AI Systems: E aí?
+
+00:14:44.000 --> 00:14:46.000
+Continuum AI Systems: Essa questão do Icp.
+
+00:14:46.000 --> 00:14:48.000
+Continuum AI Systems: Eu vou ajustar.
+
+00:14:48.000 --> 00:14:51.000
+Continuum AI Systems: Com relação àquilo que você trouxe agora.
+
+00:14:51.000 --> 00:14:54.000
+Continuum AI Systems: Que essa primeira parte que você falou.
+
+00:14:54.000 --> 00:15:01.000
+Continuum AI Systems: Já dá uma clareza muito boa. E uma direção interessante para fazer essa interação. Nesse Cp.
+
+00:14:55.000 --> 00:14:56.000
+Debora Maciel: E aí?
+
+00:15:00.000 --> 00:15:00.000
+Debora Maciel: E aí?
+
+00:15:00.000 --> 00:15:01.000
+Debora Maciel: E aí?
+
+00:15:01.000 --> 00:15:04.000
+Debora Maciel: Uhum.
+
+00:15:01.000 --> 00:15:02.000
+Continuum AI Systems: Então, realmente.
+
+00:15:03.000 --> 00:15:09.000
+Continuum AI Systems: Bastante clareza. Eu vou pegar a transcrição na íntegra dessa reunião. Nossa.
+
+00:15:06.000 --> 00:15:07.000
+Debora Maciel: E aí?
+
+00:15:09.000 --> 00:15:11.000
+Continuum AI Systems: E já vou passar para fazer esse.
+
+00:15:09.000 --> 00:15:10.000
+Debora Maciel: Para.
+
+00:15:10.000 --> 00:15:12.000
+Debora Maciel: E aí?
+
+00:15:11.000 --> 00:15:13.000
+Continuum AI Systems: Ajustes.
+
+00:15:13.000 --> 00:15:14.000
+Debora Maciel: Show!
+
+00:15:16.000 --> 00:15:17.000
+Continuum AI Systems: Workshop.
+
+00:15:17.000 --> 00:15:23.000
+Continuum AI Systems: A porta. Mentoria, acompanhamento individual. Então são duas opções. Basicamente, ali.
+
+00:15:23.000 --> 00:15:24.000
+Continuum AI Systems: Depois.
+
+00:15:24.000 --> 00:15:26.000
+Continuum AI Systems: Durante o workshop, né? Débora.
+
+00:15:24.000 --> 00:15:26.000
+Debora Maciel: E aí?
+
+00:15:26.000 --> 00:15:27.000
+Debora Maciel: Uhum.
+
+00:15:26.000 --> 00:15:32.000
+Continuum AI Systems: Tanto a mentoria quanto a possibilidade de algumas pessoas.
+
+00:15:32.000 --> 00:15:35.000
+Continuum AI Systems: Entrarem no acompanhamento individual.
+
+00:15:35.000 --> 00:15:41.000
+Debora Maciel: E aí eu faria bem. Escassez. Dez vagas para mentoria em grupo e duas vagas para mentoria individual.
+
+00:15:41.000 --> 00:15:43.000
+Debora Maciel: E essa escassez.
+
+00:15:42.000 --> 00:15:43.000
+Continuum AI Systems: E aí?
+
+00:15:43.000 --> 00:15:48.000
+Debora Maciel: Não é nem porque eu quero ter outros projetos.
+
+00:15:48.000 --> 00:15:52.000
+Debora Maciel: Para a gente dar continuidade com outros produtos e projetos, entendeu?
+
+00:15:48.000 --> 00:15:49.000
+Continuum AI Systems: Aham!
+
+00:15:52.000 --> 00:15:53.000
+Continuum AI Systems: Uhum.
+
+00:15:53.000 --> 00:15:57.000
+Debora Maciel: Porque vem aí o produto de Team Building. E essa.
+
+00:15:57.000 --> 00:15:58.000
+Debora Maciel: E aí?
+
+00:15:58.000 --> 00:16:03.000
+Debora Maciel: Essa mentoria aí eu ainda vou ter que fazer a proposta dela direitinho.
+
+00:16:03.000 --> 00:16:06.000
+Debora Maciel: Mas ela vai ser.
+
+00:16:06.000 --> 00:16:10.000
+Debora Maciel: Eu até fiz aqui com a Sara. Já a mentoria individual.
+
+00:16:10.000 --> 00:16:14.000
+Debora Maciel: Ela vai ter três pilares ali de mentalidade.
+
+00:16:11.000 --> 00:16:12.000
+Continuum AI Systems: Sim.
+
+00:16:14.000 --> 00:16:20.000
+Debora Maciel: Então, o que a pessoa pensa? Como que a mentalidade pode impulsionar ou.
+
+00:16:20.000 --> 00:16:27.000
+Debora Maciel: Não impulsionar a carreira dela entre as crenças e tudo e tal história, talentos.
+
+00:16:27.000 --> 00:16:31.000
+Debora Maciel: Então a pessoa saber mais dos seus talentos e tomadas de decisão.
+
+00:16:31.000 --> 00:16:35.000
+Debora Maciel: Enfim. Mas eu não tenho certeza desses pilares. Eu vou só.
+
+00:16:35.000 --> 00:16:40.000
+Debora Maciel: O que eu vou fazer. Eu vou trazer uma estrutura dessa mentoria de três meses. Melhor.
+
+00:16:40.000 --> 00:16:47.000
+Debora Maciel: Eu vou refacturar, revisar a mentoria que eu fiz. E vou delimitar ela melhor do que seria essa mentoria em grupo.
+
+00:16:47.000 --> 00:16:52.000
+Debora Maciel: Mas até o workshop, eu consigo fazer essa estiltração tranquila. E para apresentar.
+
+00:16:52.000 --> 00:17:02.000
+Debora Maciel: E o acompanhamento individual também vai ser três meses também. Enfim, eu estou pensando só em ciclos curtos e promessas mais bem delimitadas.
+
+00:17:03.000 --> 00:17:04.000
+Continuum AI Systems: Show! Maravilha!
+
+00:17:05.000 --> 00:17:09.000
+Continuum AI Systems: Você falou dez pessoas aqui. E quantas pessoas no individual, mesmo.
+
+00:17:06.000 --> 00:17:06.000
+Debora Maciel: E aí?
+
+00:17:08.000 --> 00:17:09.000
+Debora Maciel: E aí?
+
+00:17:09.000 --> 00:17:10.000
+Debora Maciel: Duas.
+
+00:17:11.000 --> 00:17:13.000
+Continuum AI Systems: Duas pessoas no individual.
+
+00:17:20.000 --> 00:17:24.000
+Continuum AI Systems: Passar bem rapidamente aqui, um arco vai de.
+
+00:17:21.000 --> 00:17:22.000
+Debora Maciel: E aí?
+
+00:17:24.000 --> 00:17:29.000
+Continuum AI Systems: Reconhecer se a orientar se. Ok, aqui é mais com relação.
+
+00:17:29.000 --> 00:17:32.000
+Continuum AI Systems: A estrutura em si, né?
+
+00:17:35.000 --> 00:17:36.000
+Continuum AI Systems: No workshop.
+
+00:17:35.000 --> 00:17:36.000
+Debora Maciel: Uhum.
+
+00:17:37.000 --> 00:17:40.000
+Continuum AI Systems: Eu vou passar aqui para você mais rapidamente. Essa questão.
+
+00:17:40.000 --> 00:17:43.000
+Continuum AI Systems: Da estruturação em si, né? E que a gente vai.
+
+00:17:42.000 --> 00:17:43.000
+Debora Maciel: E aí?
+
+00:17:43.000 --> 00:17:44.000
+Continuum AI Systems: Fazendo ali? Ó.
+
+00:17:43.000 --> 00:17:45.000
+Debora Maciel: E aí?
+
+00:17:45.000 --> 00:17:46.000
+Continuum AI Systems: Então.
+
+00:17:46.000 --> 00:17:52.000
+Continuum AI Systems: Dividido aqui em três lotes. Que foi aquilo que a gente havia conversado que você trouxe.
+
+00:17:51.000 --> 00:17:52.000
+Debora Maciel: E aí?
+
+00:17:52.000 --> 00:17:57.000
+Continuum AI Systems: Meu primeiro lote ali, noventa e sete. Segundo, cento e noventa e sete.
+
+00:17:53.000 --> 00:17:54.000
+Debora Maciel: Uhum.
+
+00:17:57.000 --> 00:17:59.000
+Continuum AI Systems: Terceiro lote duzentos e cinquenta e sete.
+
+00:18:00.000 --> 00:18:01.000
+Debora Maciel: Show!
+
+00:18:01.000 --> 00:18:01.000
+Continuum AI Systems: E aí?
+
+00:18:02.000 --> 00:18:03.000
+Continuum AI Systems: Mentoria em grupo.
+
+00:18:03.000 --> 00:18:04.000
+Continuum AI Systems: Quatro.zero.
+
+00:18:04.000 --> 00:18:06.000
+Continuum AI Systems: Aí. Acompanhamento individual.
+
+00:18:06.000 --> 00:18:10.000
+Continuum AI Systems: Então aqui, ao invés de ser três a quatro vagas, vamos reduzir.
+
+00:18:11.000 --> 00:18:13.000
+Continuum AI Systems: Para duas vagas.
+
+00:18:13.000 --> 00:18:14.000
+Debora Maciel: Uhum.
+
+00:18:14.000 --> 00:18:15.000
+Debora Maciel: Uhum.
+
+00:18:14.000 --> 00:18:18.000
+Continuum AI Systems: E aí o Order Bump, ali no checkout do curso de enneagrama.
+
+00:18:19.000 --> 00:18:20.000
+Debora Maciel: Beleza.
+
+00:18:20.000 --> 00:18:23.000
+Continuum AI Systems: Não me recordo. Esse curso de enneagrama. Já está.
+
+00:18:22.000 --> 00:18:22.000
+Debora Maciel: E aí?
+
+00:18:24.000 --> 00:18:26.000
+Debora Maciel: Tá na pague. Trust.
+
+00:18:24.000 --> 00:18:26.000
+Continuum AI Systems: Criado o curso.
+
+00:18:27.000 --> 00:18:31.000
+Continuum AI Systems: Ele está desmembrado já do restante dos outros cursos.
+
+00:18:27.000 --> 00:18:28.000
+Debora Maciel: E.
+
+00:18:30.000 --> 00:18:31.000
+Debora Maciel: E aí?
+
+00:18:31.000 --> 00:18:32.000
+Debora Maciel: Tá.
+
+00:18:33.000 --> 00:18:35.000
+Debora Maciel: Ele é separado.
+
+00:18:33.000 --> 00:18:34.000
+Continuum AI Systems: Ah, perfeito.
+
+00:18:35.000 --> 00:18:40.000
+Debora Maciel: Ele chama? Conheça a sua personalidade. Até pode ser.
+
+00:18:36.000 --> 00:18:36.000
+Continuum AI Systems: E aí?
+
+00:18:40.000 --> 00:18:46.000
+Debora Maciel: Ele tem o foco de conhecer a personalidade, mas a pessoa vai conseguir conhecer todas as personalidades dentro dele.
+
+00:18:48.000 --> 00:18:48.000
+Continuum AI Systems: Show!
+
+00:18:49.000 --> 00:18:52.000
+Continuum AI Systems: Você pensa em vender ele? Por quanto Débora?
+
+00:18:52.000 --> 00:18:54.000
+Continuum AI Systems: No Commander Bump.
+
+00:18:54.000 --> 00:18:57.000
+Debora Maciel: Eu aceito sugestões. Não faço ideia.
+
+00:18:59.000 --> 00:19:01.000
+Continuum AI Systems: Tchau.
+
+00:18:59.000 --> 00:19:03.000
+Debora Maciel: Eu estou bem tranquila de ser baratinho. Não tenho problema dele ser baratinho.
+
+00:19:04.000 --> 00:19:07.000
+Continuum AI Systems: Perfeito só para a pessoa. Já.
+
+00:19:06.000 --> 00:19:07.000
+Debora Maciel: E aí?
+
+00:19:08.000 --> 00:19:10.000
+Continuum AI Systems: Primeiro. Para já, agregar um valor.
+
+00:19:10.000 --> 00:19:12.000
+Continuum AI Systems: E também já.
+
+00:19:12.000 --> 00:19:18.000
+Continuum AI Systems: Aumentar o Ltv ali e tudo mais. E a pessoa também já recebeu uma estrutura sensacional.
+
+00:19:18.000 --> 00:19:19.000
+Debora Maciel: Uhum.
+
+00:19:20.000 --> 00:19:22.000
+Continuum AI Systems: Então. Primeiro contato.
+
+00:19:22.000 --> 00:19:25.000
+Continuum AI Systems: A transformação sustentada.
+
+00:19:25.000 --> 00:19:26.000
+Continuum AI Systems: Anúncio.
+
+00:19:26.000 --> 00:19:31.000
+Continuum AI Systems: Primeiro página de vendas. Check Off.
+
+00:19:31.000 --> 00:19:32.000
+Continuum AI Systems: Grupo no Whatsapp.
+
+00:19:33.000 --> 00:19:35.000
+Continuum AI Systems: Workshop e mentoria.
+
+00:19:35.000 --> 00:19:39.000
+Continuum AI Systems: Então essas etapas, basicamente, o processo ali.
+
+00:19:41.000 --> 00:19:44.000
+Continuum AI Systems: E aí, com relação à construção de infraestrutura.
+
+00:19:44.000 --> 00:19:50.000
+Continuum AI Systems: Que é o dia? Fundação Técnica Contras, Pixel, medição, preparação ali e tudo mais.
+
+00:19:50.000 --> 00:19:53.000
+Continuum AI Systems: Aí no dia dois. Eu já produzo essa página de vendas.
+
+00:19:54.000 --> 00:19:58.000
+Continuum AI Systems: Cópia e narrativa com relação àquilo que você trouxe aqui. Também.
+
+00:19:58.000 --> 00:20:01.000
+Continuum AI Systems: E aí vem para a questão dos criativos.
+
+00:20:02.000 --> 00:20:04.000
+Continuum AI Systems: Que a gente vai construir.
+
+00:20:02.000 --> 00:20:04.000
+Debora Maciel: Uhum.
+
+00:20:04.000 --> 00:20:07.000
+Continuum AI Systems: Esses criativos que a gente vai fazer. Vai ser algo mais.
+
+00:20:08.000 --> 00:20:10.000
+Continuum AI Systems: Digamos que eu penso.
+
+00:20:11.000 --> 00:20:12.000
+Continuum AI Systems: Por enquanto, né.
+
+00:20:12.000 --> 00:20:14.000
+Continuum AI Systems: De uma coisa mais.
+
+00:20:14.000 --> 00:20:15.000
+Continuum AI Systems: Clean.
+
+00:20:14.000 --> 00:20:15.000
+Debora Maciel: E aí?
+
+00:20:16.000 --> 00:20:17.000
+Debora Maciel: E aí?
+
+00:20:17.000 --> 00:20:23.000
+Continuum AI Systems: Tem muita coisa arada. Uma coisa mais bem estruturada, com menos cara de ar possível.
+
+00:20:17.000 --> 00:20:18.000
+Debora Maciel: E aí?
+
+00:20:23.000 --> 00:20:25.000
+Debora Maciel: Uhum, sim.
+
+00:20:24.000 --> 00:20:30.000
+Continuum AI Systems: Uma coisa mais tipo minimalista, sofisticada, algo desse tipo assim. E é claro que.
+
+00:20:26.000 --> 00:20:27.000
+Debora Maciel: E aí?
+
+00:20:28.000 --> 00:20:29.000
+Debora Maciel: E aí?
+
+00:20:30.000 --> 00:20:35.000
+Continuum AI Systems: Eu vou criando o design System. E aí eu passo para você para você avaliar e tudo mais.
+
+00:20:35.000 --> 00:20:36.000
+Continuum AI Systems: Para verificar se está.
+
+00:20:36.000 --> 00:20:41.000
+Continuum AI Systems: De acordo com aquilo que você acredita que seja viável a gente implementar.
+
+00:20:42.000 --> 00:20:43.000
+Debora Maciel: Uhum.
+
+00:20:42.000 --> 00:20:43.000
+Continuum AI Systems: Então.
+
+00:20:43.000 --> 00:20:46.000
+Continuum AI Systems: Veio a questão aqui do guia também, né?
+
+00:20:45.000 --> 00:20:46.000
+Debora Maciel: E aí?
+
+00:20:46.000 --> 00:20:49.000
+Debora Maciel: Os criativos. Eu. Que faço.
+
+00:20:49.000 --> 00:20:50.000
+Debora Maciel: É.
+
+00:20:50.000 --> 00:20:51.000
+Continuum AI Systems: Bom.
+
+00:20:51.000 --> 00:20:56.000
+Continuum AI Systems: Há os criativos que a gente vai fazer. E os criativos que você faz também.
+
+00:20:56.000 --> 00:20:58.000
+Continuum AI Systems: Então, no que a gente vai fazer.
+
+00:20:56.000 --> 00:20:57.000
+Debora Maciel: E aí?
+
+00:20:58.000 --> 00:20:59.000
+Continuum AI Systems: Entra aqui, né.
+
+00:21:00.000 --> 00:21:02.000
+Continuum AI Systems: Nesses criativos aqui.
+
+00:21:01.000 --> 00:21:03.000
+Debora Maciel: Ah, tá.
+
+00:21:03.000 --> 00:21:05.000
+Continuum AI Systems: Se você for fazer, a gente vai implementar.
+
+00:21:05.000 --> 00:21:07.000
+Continuum AI Systems: Criar um guia para você.
+
+00:21:07.000 --> 00:21:12.000
+Continuum AI Systems: Guia de gancho de corpo de Cta. Aquilo que a gente havia combinado.
+
+00:21:11.000 --> 00:21:12.000
+Debora Maciel: Boa.
+
+00:21:12.000 --> 00:21:14.000
+Debora Maciel: Boa.
+
+00:21:14.000 --> 00:21:15.000
+Continuum AI Systems: E aí?
+
+00:21:15.000 --> 00:21:19.000
+Continuum AI Systems: Eu passo essa estrutura para você. Desse guia.
+
+00:21:19.000 --> 00:21:24.000
+Continuum AI Systems: Você está encaixando ali. Verifica se está de acordo com aquilo que você flui melhor.
+
+00:21:25.000 --> 00:21:25.000
+Continuum AI Systems: Bom dia.
+
+00:21:25.000 --> 00:21:26.000
+Debora Maciel: Uhum.
+
+00:21:25.000 --> 00:21:26.000
+Continuum AI Systems: A mensagem.
+
+00:21:26.000 --> 00:21:28.000
+Continuum AI Systems: Você quer transmitir também? E tudo mais.
+
+00:21:29.000 --> 00:21:29.000
+Continuum AI Systems: Então.
+
+00:21:29.000 --> 00:21:35.000
+Continuum AI Systems: Depois de toda a criação dessa estrutura, a gente vem para a fase aqui de revisão e aprovação.
+
+00:21:36.000 --> 00:21:39.000
+Continuum AI Systems: E depois Go Live. Campanha no ar.
+
+00:21:38.000 --> 00:21:39.000
+Debora Maciel: E aí?
+
+00:21:41.000 --> 00:21:42.000
+Continuum AI Systems: E aí a gente já.
+
+00:21:41.000 --> 00:21:42.000
+Debora Maciel: Show!
+
+00:21:43.000 --> 00:21:44.000
+Continuum AI Systems: Começa a vender.
+
+00:21:44.000 --> 00:21:48.000
+Continuum AI Systems: Com relação à data. Débora você falou que iria.
+
+00:21:48.000 --> 00:21:49.000
+Continuum AI Systems: Verificar. Certinho.
+
+00:21:49.000 --> 00:21:50.000
+Continuum AI Systems: Quatro minutos.
+
+00:21:49.000 --> 00:21:55.000
+Debora Maciel: Quanto tempo você acha que precisa rodar o tráfego para ter algumas inscrições.
+
+00:21:50.000 --> 00:21:51.000
+Continuum AI Systems: Obrigado.
+
+00:21:55.000 --> 00:22:00.000
+Debora Maciel: Eu imagino que a gente dá um mês para frente.
+
+00:21:57.000 --> 00:21:57.000
+Continuum AI Systems: Olha.
+
+00:22:02.000 --> 00:22:04.000
+Continuum AI Systems: Exatamente.
+
+00:22:05.000 --> 00:22:10.000
+Continuum AI Systems: Quarenta e cinco dias de hoje até uns quarenta e cinco dias. Eu acredito que seja interessante.
+
+00:22:11.000 --> 00:22:13.000
+Debora Maciel: Então seria lá.
+
+00:22:11.000 --> 00:22:12.000
+Continuum AI Systems: Porque aí.
+
+00:22:13.000 --> 00:22:17.000
+Debora Maciel: Dia a gente tá falando em julho.
+
+00:22:15.000 --> 00:22:17.000
+Continuum AI Systems: Dá tempo de escutar.
+
+00:22:18.000 --> 00:22:19.000
+Continuum AI Systems: Isso.
+
+00:22:21.000 --> 00:22:27.000
+Debora Maciel: Gente. Eu tô doida, gente, não peraí. A gente tá em Junho. Julho passou. Vai ser em Agosto.
+
+00:22:22.000 --> 00:22:23.000
+Continuum AI Systems: Bom dia.
+
+00:22:27.000 --> 00:22:30.000
+Continuum AI Systems: Agosto é os primeiros dias ali de agosto.
+
+00:22:29.000 --> 00:22:30.000
+Debora Maciel: Não.
+
+00:22:30.000 --> 00:22:31.000
+Debora Maciel: É.
+
+00:22:33.000 --> 00:22:36.000
+Debora Maciel: Dia, dois anos. Vai viajar, então.
+
+00:22:37.000 --> 00:22:38.000
+Debora Maciel: E aí?
+
+00:22:38.000 --> 00:22:44.000
+Debora Maciel: Seria aqui para o dia sete? Não, sete ainda não dá quarenta e cinco dias. Dia catorze dá quarenta e cinco dias.
+
+00:22:46.000 --> 00:22:56.000
+Debora Maciel: Dá para marcar. Por exemplo, no dia quinze de agosto, você lembra que eu falei de fazer mais de uma opção. Então uma opção pode ser na sexta, dia catorze.
+
+00:22:53.000 --> 00:22:54.000
+Continuum AI Systems: Sim, bem.
+
+00:22:57.000 --> 00:22:59.000
+Debora Maciel: Aí a primeira.
+
+00:22:59.000 --> 00:23:04.000
+Debora Maciel: A primeira data poderia ser. Pode deixar aí. Eu arrumei.
+
+00:23:04.000 --> 00:23:12.000
+Debora Maciel: A primeira idade seria de catorze. Não sei, dezenove horas da noite, assim de dezanove a vinte e um, na sexta.
+
+00:23:12.000 --> 00:23:19.000
+Debora Maciel: E aí, no dia quinze, no sábado, poderia ser. A gente faz de.
+
+00:23:20.000 --> 00:23:23.000
+Debora Maciel: Nove às onze. Dá uma pausa.
+
+00:23:23.000 --> 00:23:30.000
+Debora Maciel: Eu quero sugestão, tá? Tô só pensando em possibilidades. Aí poderia ser de treze às quinze.
+
+00:23:32.000 --> 00:23:39.000
+Debora Maciel: Ou de dez a meio dia, dez a meio dia, melhor dez a meio dia e depois dá uma pausa. Três às quinze.
+
+00:23:40.000 --> 00:23:46.000
+Debora Maciel: Porque são três blocos, entendeu? Isso seria uma possibilidade de turma.
+
+00:23:46.000 --> 00:23:48.000
+Debora Maciel: Aí outra possibilidade.
+
+00:23:47.000 --> 00:23:48.000
+Continuum AI Systems: Ah, entendi.
+
+00:23:48.000 --> 00:23:53.000
+Debora Maciel: É porque a gente vai abrir duas ou três turmas. A gente pode testar.
+
+00:23:52.000 --> 00:23:53.000
+Continuum AI Systems: Sim.
+
+00:23:54.000 --> 00:23:55.000
+Debora Maciel: É.
+
+00:23:54.000 --> 00:23:57.000
+Continuum AI Systems: Um ano, meio de semana. Outro final de semana, né?
+
+00:23:57.000 --> 00:24:01.000
+Debora Maciel: É aí meio de semana. A gente também pode testar duas coisas.
+
+00:24:02.000 --> 00:24:03.000
+Debora Maciel: É.
+
+00:24:04.000 --> 00:24:08.000
+Debora Maciel: Numa possibilidade, por exemplo, seria.
+
+00:24:10.000 --> 00:24:16.000
+Debora Maciel: Três dias seguidos mesmo. Então, por exemplo, terça, quarta, quinta? Não, eu gosto mais de quarta, quinta e sexta.
+
+00:24:16.000 --> 00:24:19.000
+Debora Maciel: Que aí seria de manhã.
+
+00:24:17.000 --> 00:24:18.000
+Continuum AI Systems: Quarta. Quinto, assisto.
+
+00:24:19.000 --> 00:24:24.000
+Debora Maciel: Todo dia. Aí a gente coloca aí nove da manhã. Por exemplo.
+
+00:24:24.000 --> 00:24:30.000
+Debora Maciel: Quarta, quinta e sexta, nove da manhã, de nove às onze. Por que eu estou falando isso? Porque pode ser.
+
+00:24:30.000 --> 00:24:36.000
+Debora Maciel: Que esse horário não atraia pessoas, mas seria ótimo para mim. Mas vamos ver.
+
+00:24:36.000 --> 00:24:41.000
+Debora Maciel: E uma outra possibilidade seria.
+
+00:24:41.000 --> 00:24:45.000
+Debora Maciel: Pode ser quarta, quinta e sexta também. Mas 19h.
+
+00:24:45.000 --> 00:24:47.000
+Debora Maciel: De dezanove a vinte e um.
+
+00:24:52.000 --> 00:24:53.000
+Debora Maciel: E aí?
+
+00:24:53.000 --> 00:24:58.000
+Debora Maciel: Só tem um ponto. Vai, que tem um inscrito de quarta, quinta e sexta.
+
+00:24:59.000 --> 00:25:01.000
+Debora Maciel: Eu faço com esse homem escrito.
+
+00:25:02.000 --> 00:25:06.000
+Debora Maciel: Estou falando com a raça que você entendeu o que eu tô pensando?
+
+00:25:06.000 --> 00:25:11.000
+Debora Maciel: Mas eu gostaria de testar essas três possibilidades de horário.
+
+00:25:06.000 --> 00:25:07.000
+Continuum AI Systems: Uhum.
+
+00:25:07.000 --> 00:25:08.000
+Continuum AI Systems: E aí?
+
+00:25:11.000 --> 00:25:12.000
+Continuum AI Systems: Uhum.
+
+00:25:12.000 --> 00:25:14.000
+Debora Maciel: É aí.
+
+00:25:12.000 --> 00:25:14.000
+Continuum AI Systems: É interessantíssimo.
+
+00:25:14.000 --> 00:25:17.000
+Continuum AI Systems: Que varia né? Público para público.
+
+00:25:14.000 --> 00:25:16.000
+Debora Maciel: Pode ser.
+
+00:25:16.000 --> 00:25:23.000
+Debora Maciel: E aí poderia ser quarta, quinta, sexta, dezanove, vinte, vinte e um.
+
+00:25:28.000 --> 00:25:33.000
+Debora Maciel: E aí pode ser dezanove-vinte, vinte, vinte e um. Pode ter se a turma de manhã e à noite, mesmo.
+
+00:25:36.000 --> 00:25:41.000
+Continuum AI Systems: No caso, nesses mesmos dias. Turmas de manhã e turma à noite.
+
+00:25:41.000 --> 00:25:43.000
+Debora Maciel: É? São duas turmas diferentes.
+
+00:25:44.000 --> 00:25:44.000
+Continuum AI Systems: Uhum.
+
+00:25:45.000 --> 00:25:49.000
+Continuum AI Systems: Eu acredito que ao longo do tempo, a gente vai verificando.
+
+00:25:50.000 --> 00:25:51.000
+Debora Maciel: E aí?
+
+00:25:50.000 --> 00:25:51.000
+Continuum AI Systems: O que mais?
+
+00:25:53.000 --> 00:25:54.000
+Continuum AI Systems: Sai.
+
+00:25:54.000 --> 00:25:55.000
+Continuum AI Systems: Então, por exemplo.
+
+00:25:54.000 --> 00:25:55.000
+Debora Maciel: Uhum.
+
+00:25:55.000 --> 00:25:56.000
+Continuum AI Systems: Teve.
+
+00:25:56.000 --> 00:25:59.000
+Continuum AI Systems: Dez vendas da turma da de manhã.
+
+00:25:59.000 --> 00:26:01.000
+Continuum AI Systems: E uma venda para a noite.
+
+00:26:02.000 --> 00:26:08.000
+Continuum AI Systems: É uma possibilidade de a gente comunicar essa pessoa e transferir ela para uma outra turma.
+
+00:26:08.000 --> 00:26:12.000
+Debora Maciel: É? E se ela não puder restar seu dinheiro? Alguma coisa assim, né?
+
+00:26:12.000 --> 00:26:13.000
+Continuum AI Systems: É.
+
+00:26:14.000 --> 00:26:16.000
+Continuum AI Systems: É uma possibilidade.
+
+00:26:15.000 --> 00:26:16.000
+Debora Maciel: Uhum.
+
+00:26:17.000 --> 00:26:18.000
+Debora Maciel: E aí?
+
+00:26:18.000 --> 00:26:21.000
+Debora Maciel: Bora testar e a gente lida com o que vier.
+
+00:26:21.000 --> 00:26:22.000
+Continuum AI Systems: Fechou, mano.
+
+00:26:21.000 --> 00:26:22.000
+Debora Maciel: E aí?
+
+00:26:22.000 --> 00:26:28.000
+Debora Maciel: O pior cenário. Eu vou dar um workshop pra uma pessoa, mas tá tudo bem. Vai ganhar uma mentoria individual.
+
+00:26:29.000 --> 00:26:30.000
+Debora Maciel: E aí?
+
+00:26:29.000 --> 00:26:31.000
+Continuum AI Systems: É vai que essa pessoa.
+
+00:26:30.000 --> 00:26:31.000
+Debora Maciel: E aí?
+
+00:26:31.000 --> 00:26:34.000
+Continuum AI Systems: É a que entra na mentoria, né?
+
+00:26:34.000 --> 00:26:35.000
+Debora Maciel: Uhum.
+
+00:26:36.000 --> 00:26:38.000
+Continuum AI Systems: Enfim. Mas a gente também não.
+
+00:26:38.000 --> 00:26:40.000
+Continuum AI Systems: Não trata. Não lida com.
+
+00:26:40.000 --> 00:26:45.000
+Continuum AI Systems: Essas questões mais, né? É uma questão ali. Mais de taxa, mesmo de.
+
+00:26:46.000 --> 00:26:49.000
+Continuum AI Systems: De conversão de comparecimento, assim por diante.
+
+00:26:49.000 --> 00:26:49.000
+Debora Maciel: E aí?
+
+00:26:50.000 --> 00:26:53.000
+Debora Maciel: E aí isso. Acho que otimiza o tráfego, porque.
+
+00:26:53.000 --> 00:26:59.000
+Debora Maciel: A pessoa vai poder. Quando ela entrar na página de inscrição, ela escolhe o dia que ela quer participar.
+
+00:27:01.000 --> 00:27:04.000
+Debora Maciel: Entendeu? Para não ser vários tráfegos separados.
+
+00:27:01.000 --> 00:27:02.000
+Continuum AI Systems: Sim, exatamente.
+
+00:27:06.000 --> 00:27:07.000
+Continuum AI Systems: Isso.
+
+00:27:07.000 --> 00:27:09.000
+Continuum AI Systems: Aí na página de vendas. Já andou me.
+
+00:27:09.000 --> 00:27:11.000
+Continuum AI Systems: Já andou Misa, né.
+
+00:27:11.000 --> 00:27:15.000
+Continuum AI Systems: A pessoa já escolhe ali. Já entra no checkout.
+
+00:27:15.000 --> 00:27:16.000
+Continuum AI Systems: Exato.
+
+00:27:16.000 --> 00:27:18.000
+Continuum AI Systems: Do dia que ela escolheu.
+
+00:27:18.000 --> 00:27:20.000
+Continuum AI Systems: Que aí não tem erro.
+
+00:27:20.000 --> 00:27:27.000
+Continuum AI Systems: Não tem margem para erro ali de Ah, depois que a pessoa escolhe Data. Não, ela já escolhe antes da compra.
+
+00:27:27.000 --> 00:27:29.000
+Continuum AI Systems: E aí já compra exatamente.
+
+00:27:30.000 --> 00:27:32.000
+Continuum AI Systems: O horário que ela escolheu. Ali.
+
+00:27:32.000 --> 00:27:35.000
+Continuum AI Systems: E já é encaminhada diretamente para o grupo que for.
+
+00:27:37.000 --> 00:27:39.000
+Continuum AI Systems: Daquela turma lá, entendeu.
+
+00:27:39.000 --> 00:27:41.000
+Debora Maciel: Uhum.
+
+00:27:42.000 --> 00:27:43.000
+Debora Maciel: E aí?
+
+00:27:42.000 --> 00:27:43.000
+Continuum AI Systems: Tá beleza.
+
+00:27:47.000 --> 00:27:50.000
+Continuum AI Systems: Essa turma da quarta, quinta e sexta.
+
+00:27:50.000 --> 00:27:54.000
+Continuum AI Systems: No caso das nove da manhã. Até que horas? Mesmo.
+
+00:27:54.000 --> 00:27:55.000
+Continuum AI Systems: Na parte da manhã.
+
+00:27:54.000 --> 00:27:55.000
+Debora Maciel: E aí?
+
+00:27:55.000 --> 00:27:58.000
+Debora Maciel: Nove, às onze.
+
+00:27:58.000 --> 00:27:59.000
+Continuum AI Systems: Nove, às onze.
+
+00:27:58.000 --> 00:28:00.000
+Debora Maciel: Não.
+
+00:28:00.000 --> 00:28:04.000
+Debora Maciel: Eu não sei o que melhora de horário. Sabe, eu tô colocando nove às onze.
+
+00:28:05.000 --> 00:28:09.000
+Debora Maciel: Que geralmente nove horas é o horário que eu me libero aqui.
+
+00:28:09.000 --> 00:28:10.000
+Continuum AI Systems: Uhum.
+
+00:28:10.000 --> 00:28:14.000
+Debora Maciel: O que eu penso é tipo assim. Eu gostaria que fosse entre nove e às quinze.
+
+00:28:14.000 --> 00:28:19.000
+Debora Maciel: E aí eu não sei qual. Que é o horário que esse público teria menos restrição. Esse teste de horário aí.
+
+00:28:21.000 --> 00:28:22.000
+Continuum AI Systems: Entendi.
+
+00:28:24.000 --> 00:28:27.000
+Debora Maciel: Talvez de treze às quinze.
+
+00:28:28.000 --> 00:28:30.000
+Debora Maciel: Seja melhor.
+
+00:28:30.000 --> 00:28:34.000
+Debora Maciel: Sabe por quê? Porque o povo já trabalhou de manhã e consegue.
+
+00:28:35.000 --> 00:28:36.000
+Debora Maciel: É.
+
+00:28:38.000 --> 00:28:41.000
+Debora Maciel: Já consegue dar uma escapada. Sabe do trabalho.
+
+00:28:41.000 --> 00:28:45.000
+Debora Maciel: Geralmente nove horas. A galera tem dele e tal.
+
+00:28:42.000 --> 00:28:43.000
+Continuum AI Systems: Show!
+
+00:28:46.000 --> 00:28:49.000
+Continuum AI Systems: Eu acredito que seja interessante. Também.
+
+00:28:49.000 --> 00:28:50.000
+Continuum AI Systems: Alinhar.
+
+00:28:49.000 --> 00:28:50.000
+Debora Maciel: De.
+
+00:28:50.000 --> 00:28:52.000
+Continuum AI Systems: Com a sua disponibilidade.
+
+00:28:53.000 --> 00:28:55.000
+Continuum AI Systems: Porque assim.
+
+00:28:54.000 --> 00:28:56.000
+Debora Maciel: E aí?
+
+00:28:56.000 --> 00:29:01.000
+Continuum AI Systems: É o mínimo de resistência no sentido de modificar a sua rotina. Sabe.
+
+00:29:00.000 --> 00:29:01.000
+Debora Maciel: E aí?
+
+00:29:01.000 --> 00:29:05.000
+Debora Maciel: Interna, né? Pois é. Dezanove a vinte e um. Não é um horário que eu gosto.
+
+00:29:03.000 --> 00:29:04.000
+Continuum AI Systems: É isso aí.
+
+00:29:05.000 --> 00:29:06.000
+Debora Maciel: Porque.
+
+00:29:06.000 --> 00:29:14.000
+Debora Maciel: Tem mel e ela só dorme comigo. Então, pra eu fazer esses três dias, Dalila vai ter que se virar. E se for uma semana apertada de trabalho para ele, pode ser ruim.
+
+00:29:15.000 --> 00:29:16.000
+Continuum AI Systems: Uhum.
+
+00:29:16.000 --> 00:29:20.000
+Continuum AI Systems: É? Eu acredito que seja mais viável, mesmo de acertar ali.
+
+00:29:20.000 --> 00:29:22.000
+Continuum AI Systems: Das umas três.
+
+00:29:21.000 --> 00:29:21.000
+Debora Maciel: E aí?
+
+00:29:22.000 --> 00:29:27.000
+Debora Maciel: Ah, então vamos fazer só umas três. A gente exclui de dezanove. Por enquanto.
+
+00:29:27.000 --> 00:29:28.000
+Continuum AI Systems: Uhum, beleza.
+
+00:29:27.000 --> 00:29:33.000
+Debora Maciel: Porque já vai ter o sábado, sexta, sábado e domingo. Então eu já tenho essa possibilidade. A gente tem acessar essas duas turcas.
+
+00:29:33.000 --> 00:29:39.000
+Continuum AI Systems: Vai ser no caso sexta, sábado e domingo também. Ou sexta e sábado.
+
+00:29:39.000 --> 00:29:41.000
+Continuum AI Systems: Dois períodos.
+
+00:29:41.000 --> 00:29:43.000
+Continuum AI Systems: No sábado, sexto sábado e domingo.
+
+00:29:41.000 --> 00:29:42.000
+Debora Maciel: E aí?
+
+00:29:44.000 --> 00:29:47.000
+Debora Maciel: Dois períodos no sábado.
+
+00:29:47.000 --> 00:29:50.000
+Continuum AI Systems: Ah, tá. Então, ao invés de ser domingo, vamos fazer duas.
+
+00:29:51.000 --> 00:29:54.000
+Debora Maciel: É. Seria.
+
+00:29:52.000 --> 00:29:55.000
+Continuum AI Systems: Dois blocos ali. Um dia só.
+
+00:29:55.000 --> 00:30:01.000
+Debora Maciel: Sexta de 19h, às vinte e um, às sábados de dez ao meio dia, depois de 11h, às quinze.
+
+00:30:15.000 --> 00:30:16.000
+Continuum AI Systems: Perfeito.
+
+00:30:24.000 --> 00:30:26.000
+Continuum AI Systems: Olha. Então o que.
+
+00:30:26.000 --> 00:30:28.000
+Continuum AI Systems: Com relação às datas.
+
+00:30:28.000 --> 00:30:29.000
+Debora Maciel: E aí?
+
+00:30:29.000 --> 00:30:30.000
+Continuum AI Systems: Já estamos.
+
+00:30:29.000 --> 00:30:30.000
+Debora Maciel: E aí?
+
+00:30:30.000 --> 00:30:32.000
+Continuum AI Systems: Basicamente aqui definido.
+
+00:30:32.000 --> 00:30:39.000
+Continuum AI Systems: Com relação à promessa. Você já passou também uma estrutura bem interessante que a gente já pode trabalhar.
+
+00:30:40.000 --> 00:30:44.000
+Continuum AI Systems: Com relação ao depoimento. A gente não vai utilizar agora.
+
+00:30:45.000 --> 00:30:46.000
+Debora Maciel: Uhum.
+
+00:30:45.000 --> 00:30:49.000
+Continuum AI Systems: Mas aí, o que vai restar aqui é somente essa questão.
+
+00:30:49.000 --> 00:30:51.000
+Continuum AI Systems: De nome e identidade visual.
+
+00:30:51.000 --> 00:30:54.000
+Continuum AI Systems: Questão ali, estética e de nome mesmo.
+
+00:30:55.000 --> 00:30:56.000
+Continuum AI Systems: Não é.
+
+00:30:56.000 --> 00:30:56.000
+Debora Maciel: E aí?
+
+00:30:56.000 --> 00:31:00.000
+Debora Maciel: Identidade visual. Eu gosto muito dos elementos da Terra.
+
+00:31:00.000 --> 00:31:02.000
+Debora Maciel: Eu tenho feito isso.
+
+00:31:02.000 --> 00:31:08.000
+Debora Maciel: Que é cor, mais terra e verde. Gosto muito de verde. Musgo.
+
+00:31:08.000 --> 00:31:11.000
+Debora Maciel: Cores da natureza, sabe.
+
+00:31:11.000 --> 00:31:18.000
+Debora Maciel: E elementos na natureza. Tem duas coisas que eu gosto muito, mas eu não sei quando eu quero mais credibilidade.
+
+00:31:12.000 --> 00:31:13.000
+Continuum AI Systems: Uhum.
+
+00:31:18.000 --> 00:31:21.000
+Debora Maciel: Eu vou para a estética da Geometria Sagrada.
+
+00:31:21.000 --> 00:31:27.000
+Debora Maciel: E aí eu gosto das formas geométricas, por exemplo, dos sólidos platônicos.
+
+00:31:27.000 --> 00:31:36.000
+Debora Maciel: E aí eu acho que eu sempre uso do decaetro. Não sei. E quando eu quero um negócio mais fluido, eu gosto das folhas.
+
+00:31:27.000 --> 00:31:28.000
+Continuum AI Systems: Uhum.
+
+00:31:36.000 --> 00:31:37.000
+Debora Maciel: E aí?
+
+00:31:37.000 --> 00:31:38.000
+Debora Maciel: De folhas assim.
+
+00:31:38.000 --> 00:31:42.000
+Debora Maciel: É algo que eu tenho feito. Ou ondas.
+
+00:31:42.000 --> 00:31:45.000
+Debora Maciel: Que dá esse negócio mais fluido. Assim.
+
+00:31:45.000 --> 00:31:45.000
+Debora Maciel: E aí?
+
+00:31:46.000 --> 00:31:47.000
+Continuum AI Systems: Perfeito.
+
+00:31:48.000 --> 00:31:52.000
+Debora Maciel: Eu tenho umas identidades que o Claudio fez pra mim. Mas.
+
+00:31:52.000 --> 00:31:55.000
+Debora Maciel: É bem normal. Não tem nada de mais.
+
+00:31:55.000 --> 00:31:59.000
+Debora Maciel: Eu posso te mandar umas.
+
+00:31:59.000 --> 00:32:04.000
+Debora Maciel: Propostas que eu já fiz com cores que eu escolhi. Aí você vai ter uma noção.
+
+00:32:04.000 --> 00:32:07.000
+Debora Maciel: Do que eu faço, geralmente de identidade visual.
+
+00:32:04.000 --> 00:32:06.000
+Continuum AI Systems: Beleza.
+
+00:32:08.000 --> 00:32:09.000
+Continuum AI Systems: Fechou.
+
+00:32:11.000 --> 00:32:13.000
+Continuum AI Systems: Vou gerar algumas coisas. Pelo.
+
+00:32:14.000 --> 00:32:17.000
+Continuum AI Systems: Do lado de design. Vou criar um.
+
+00:32:18.000 --> 00:32:20.000
+Continuum AI Systems: Design system para você.
+
+00:32:21.000 --> 00:32:24.000
+Continuum AI Systems: Com as suas cores. Ali também as questões.
+
+00:32:21.000 --> 00:32:22.000
+Debora Maciel: Uhum.
+
+00:32:25.000 --> 00:32:26.000
+Continuum AI Systems: Com relação.
+
+00:32:26.000 --> 00:32:33.000
+Continuum AI Systems: A Geometria Sagrada. Também as questões ali, com relação a plantas e tudo mais.
+
+00:32:33.000 --> 00:32:36.000
+Continuum AI Systems: De acordo com aquilo que.
+
+00:32:37.000 --> 00:32:40.000
+Continuum AI Systems: A gente quer gerar naquele criativo em si.
+
+00:32:40.000 --> 00:32:47.000
+Continuum AI Systems: E vou gerar também algumas opções através do chat gpt, que ele está muito bom também. Para gerar imagem.
+
+00:32:47.000 --> 00:32:48.000
+Continuum AI Systems: Então acredito que.
+
+00:32:47.000 --> 00:32:48.000
+Debora Maciel: Ah, legal.
+
+00:32:49.000 --> 00:32:51.000
+Continuum AI Systems: E aí eu vou fazer uma variação.
+
+00:32:49.000 --> 00:32:56.000
+Debora Maciel: Eu até mandei uns materiais que eu lembrei que eu mandei lá no Slack. Você chegou a ver.
+
+00:32:58.000 --> 00:33:00.000
+Continuum AI Systems: Material gráfico.
+
+00:33:00.000 --> 00:33:01.000
+Debora Maciel: Uhum.
+
+00:33:03.000 --> 00:33:05.000
+Debora Maciel: Eu sempre aqui.
+
+00:33:04.000 --> 00:33:05.000
+Continuum AI Systems: Olha, eu.
+
+00:33:05.000 --> 00:33:07.000
+Continuum AI Systems: Fiz o download de tudo.
+
+00:33:05.000 --> 00:33:07.000
+Debora Maciel: Eu mandei um cadu de coisa.
+
+00:33:08.000 --> 00:33:10.000
+Continuum AI Systems: Eu baixei tudo.
+
+00:33:09.000 --> 00:33:15.000
+Debora Maciel: Esses cadernos. Eles não têm um design gráfico. Só tem as cores.
+
+00:33:16.000 --> 00:33:18.000
+Debora Maciel: Vê aí.
+
+00:33:20.000 --> 00:33:23.000
+Debora Maciel: Eu estou no slack da assessoria. Débora contini.
+
+00:33:31.000 --> 00:33:31.000
+Debora Maciel: E aí?
+
+00:33:32.000 --> 00:33:33.000
+Debora Maciel: E aí?
+
+00:33:34.000 --> 00:33:36.000
+Debora Maciel: Um, um.
+
+00:33:44.000 --> 00:33:46.000
+Continuum AI Systems: Os cadernos. Você fala.
+
+00:33:46.000 --> 00:33:47.000
+Debora Maciel: É.
+
+00:33:50.000 --> 00:33:52.000
+Debora Maciel: O caderno. Você chegou a ver.
+
+00:33:54.000 --> 00:33:57.000
+Continuum AI Systems: Eu estou abrindo aqui em Powerpoint agora, né?
+
+00:33:57.000 --> 00:33:58.000
+Debora Maciel: Aí.
+
+00:34:01.000 --> 00:34:02.000
+Continuum AI Systems: Está vendo minha tela?
+
+00:34:03.000 --> 00:34:04.000
+Debora Maciel: Tô.
+
+00:34:05.000 --> 00:34:08.000
+Continuum AI Systems: É esse mesmo que eu abri agora aqui.
+
+00:34:08.000 --> 00:34:09.000
+Debora Maciel: Uhum.
+
+00:34:16.000 --> 00:34:19.000
+Debora Maciel: Tem um negócio que eu gostei muito quando eu fiz aquele design.
+
+00:34:20.000 --> 00:34:23.000
+Debora Maciel: Mas não apareceu. Que era.
+
+00:34:23.000 --> 00:34:27.000
+Debora Maciel: Na capa. Getúlia.
+
+00:34:27.000 --> 00:34:28.000
+Debora Maciel: E aí?
+
+00:34:34.000 --> 00:34:36.000
+Debora Maciel: Quando vai para a natureza?
+
+00:34:34.000 --> 00:34:36.000
+Continuum AI Systems: Tem que abrir o meu.
+
+00:34:36.000 --> 00:34:37.000
+Continuum AI Systems: Aham!
+
+00:34:36.000 --> 00:34:37.000
+Debora Maciel: Hã.
+
+00:34:37.000 --> 00:34:42.000
+Debora Maciel: Eu não gosto muito infantil. Não saiu aqui.
+
+00:34:38.000 --> 00:34:39.000
+Continuum AI Systems: Vou ter que.
+
+00:34:41.000 --> 00:34:42.000
+Continuum AI Systems: Uhum, claro.
+
+00:34:43.000 --> 00:34:45.000
+Debora Maciel: Não é? Porque às vezes que eu peço.
+
+00:34:44.000 --> 00:34:45.000
+Continuum AI Systems: Algo mais sóbrio, né.
+
+00:34:45.000 --> 00:34:51.000
+Debora Maciel: Aí. Quando eu peço já a T e Pt o Claudio para fazer com a natureza.
+
+00:34:51.000 --> 00:34:56.000
+Debora Maciel: Eles colocam os negócios meio infantil. Eu não gosto de florzinha. Essas coisas não, eu gosto de elementos.
+
+00:34:51.000 --> 00:34:52.000
+Continuum AI Systems: Uhum.
+
+00:34:53.000 --> 00:34:54.000
+Continuum AI Systems: E aí?
+
+00:34:56.000 --> 00:34:58.000
+Debora Maciel: Clássicos da natureza.
+
+00:34:58.000 --> 00:35:01.000
+Debora Maciel: Não muito. Pegada infantil.
+
+00:34:59.000 --> 00:34:59.000
+Continuum AI Systems: Uhum.
+
+00:35:01.000 --> 00:35:02.000
+Continuum AI Systems: Entendi.
+
+00:35:30.000 --> 00:35:32.000
+Debora Maciel: Eu vou mandar isso aqui. Mas.
+
+00:35:32.000 --> 00:35:36.000
+Debora Maciel: Ele tá desconfigurado. Não sei porquê, mas era o jeito que eu.
+
+00:35:37.000 --> 00:35:38.000
+Debora Maciel: Ai, cocô.
+
+00:35:42.000 --> 00:35:43.000
+Debora Maciel: E aí?
+
+00:35:47.000 --> 00:35:56.000
+Debora Maciel: O que eu mandei. Ele desconfigurou, mas ele era uma arte que tinha o elemento do sólido platônico que eu tinha usado. Estava usando muito ele.
+
+00:35:56.000 --> 00:35:59.000
+Debora Maciel: Ah, já aceitei uma proposta que eu fiz. Também.
+
+00:36:00.000 --> 00:36:03.000
+Debora Maciel: Eu adoro Mandala.
+
+00:36:05.000 --> 00:36:11.000
+Debora Maciel: Achei agora foi um Plg do workshop que eu tinha feito. Descubra o seu jeito de liderar.
+
+00:36:11.000 --> 00:36:15.000
+Debora Maciel: Tem as letras e as cores.
+
+00:36:14.000 --> 00:36:15.000
+Continuum AI Systems: Esse daqui.
+
+00:36:15.000 --> 00:36:20.000
+Debora Maciel: É no Slack. As letras e as cores que eu gosto. E o sólido platônico.
+
+00:36:21.000 --> 00:36:25.000
+Debora Maciel: Mas estava bem simples, porque eu não tinha muito.
+
+00:36:25.000 --> 00:36:30.000
+Debora Maciel: Não tinha Zia que tinha, entendeu? Aí eu tava fazendo do meu jeito.
+
+00:36:36.000 --> 00:36:45.000
+Debora Maciel: Aí tinha uma proposta. Vou mandar uma proposta de desenvolvimento que eu fiz também, que essa proposta também tinha um pouco das cores e caras que eu tava.
+
+00:36:48.000 --> 00:36:51.000
+Debora Maciel: É só para você ter uma noção do que eu gosto.
+
+00:36:52.000 --> 00:37:01.000
+Debora Maciel: E essa digital? Eu coloquei uma digital como símbolo na proposta de capacitação. Esse negócio me veio, sabia.
+
+00:36:53.000 --> 00:36:53.000
+Continuum AI Systems: Show!
+
+00:37:01.000 --> 00:37:05.000
+Debora Maciel: Esse símbolo aí uma vez ele. Eu recebi ele assim mentalmente.
+
+00:37:05.000 --> 00:37:07.000
+Debora Maciel: E aí eu coloquei isso.
+
+00:37:06.000 --> 00:37:07.000
+Continuum AI Systems: Legal.
+
+00:37:07.000 --> 00:37:13.000
+Debora Maciel: Só que na minha cabeça, não era bem essa digital era tipo uma digital, mas.
+
+00:37:08.000 --> 00:37:09.000
+Continuum AI Systems: Muito longo.
+
+00:37:13.000 --> 00:37:16.000
+Debora Maciel: Sabe aquele conceito de labirinto.
+
+00:37:17.000 --> 00:37:19.000
+Continuum AI Systems: Sei. Aham.
+
+00:37:19.000 --> 00:37:27.000
+Debora Maciel: Eu fiz aqui no caderno, mas não ficou muito bom. Não imagina uma digital. Ai não? Dá para ver como se fosse um labirinto.
+
+00:37:28.000 --> 00:37:29.000
+Continuum AI Systems: Uhum.
+
+00:37:28.000 --> 00:37:30.000
+Debora Maciel: Entendeu?
+
+00:37:29.000 --> 00:37:30.000
+Continuum AI Systems: Perfeito.
+
+00:37:30.000 --> 00:37:37.000
+Debora Maciel: O Love dentro de um caminho único. Porque o digital diz assim: você, sua assinatura.
+
+00:37:30.000 --> 00:37:31.000
+Continuum AI Systems: Sim.
+
+00:37:37.000 --> 00:37:41.000
+Debora Maciel: Bem, você e o labirinto significa para mim. Como se a gente.
+
+00:37:42.000 --> 00:37:47.000
+Debora Maciel: Chegar assim no centro, né? Então você vai evoluindo e chega realmente.
+
+00:37:47.000 --> 00:37:55.000
+Debora Maciel: Num novo nível de consciência. Não sei explicar, mas só falando coisas que eu gosto de símbolos que eu não tenho muita coisa de identidade visual.
+
+00:37:55.000 --> 00:38:00.000
+Debora Maciel: Ah, esse símbolo lá embaixo não é meu. Não, ele era do material, tá, esse triângulozinho.
+
+00:38:00.000 --> 00:38:02.000
+Debora Maciel: Para cima. Esse aí.
+
+00:38:01.000 --> 00:38:02.000
+Continuum AI Systems: Esse aqui.
+
+00:38:02.000 --> 00:38:07.000
+Debora Maciel: É isso aí. Tava no material. Já não tirei. Depois eu saí. Tirando.
+
+00:38:09.000 --> 00:38:10.000
+Continuum AI Systems: Fechou.
+
+00:38:10.000 --> 00:38:11.000
+Continuum AI Systems: É a questão do.
+
+00:38:10.000 --> 00:38:11.000
+Debora Maciel: E aí?
+
+00:38:11.000 --> 00:38:14.000
+Continuum AI Systems: Da digital é bem interessante, né? Porque ela.
+
+00:38:16.000 --> 00:38:18.000
+Continuum AI Systems: Ela representa bastante.
+
+00:38:19.000 --> 00:38:21.000
+Continuum AI Systems: Essa questão da identidade.
+
+00:38:22.000 --> 00:38:23.000
+Debora Maciel: Uhum.
+
+00:38:22.000 --> 00:38:25.000
+Continuum AI Systems: E aí, com a questão do labirinto.
+
+00:38:26.000 --> 00:38:28.000
+Continuum AI Systems: É bem uma referência mesmo.
+
+00:38:30.000 --> 00:38:37.000
+Continuum AI Systems: De você percorrer o labirinto para chegar na sua identidade ali, e tudo mais bem interessante.
+
+00:38:32.000 --> 00:38:33.000
+Debora Maciel: E aí?
+
+00:38:41.000 --> 00:38:43.000
+Continuum AI Systems: E aí, beleza?
+
+00:38:41.000 --> 00:38:43.000
+Debora Maciel: Exatamente.
+
+00:38:44.000 --> 00:38:47.000
+Continuum AI Systems: Eu vou partir para a criação. Então.
+
+00:38:47.000 --> 00:38:53.000
+Continuum AI Systems: E aí, na quinta etapa dessa criação, antes, ali dos sete dias, tem a revisão.
+
+00:38:47.000 --> 00:38:49.000
+Debora Maciel: E aí?
+
+00:38:49.000 --> 00:38:50.000
+Debora Maciel: E aí?
+
+00:38:53.000 --> 00:38:54.000
+Continuum AI Systems: Então.
+
+00:38:56.000 --> 00:38:58.000
+Continuum AI Systems: Hoje é dia vinte e cinco.
+
+00:38:58.000 --> 00:38:59.000
+Continuum AI Systems: Quinta feira.
+
+00:39:04.000 --> 00:39:08.000
+Continuum AI Systems: Na terça feira. Ali é interessante para a gente fazer essa revisão.
+
+00:39:08.000 --> 00:39:10.000
+Continuum AI Systems: Acredito que é bem rápido.
+
+00:39:09.000 --> 00:39:10.000
+Debora Maciel: Eu vou para Floripa.
+
+00:39:10.000 --> 00:39:11.000
+Debora Maciel: Amanhã.
+
+00:39:11.000 --> 00:39:11.000
+Continuum AI Systems: É.
+
+00:39:12.000 --> 00:39:13.000
+Continuum AI Systems: Ah, que legal!
+
+00:39:12.000 --> 00:39:13.000
+Debora Maciel: Uhum.
+
+00:39:13.000 --> 00:39:15.000
+Continuum AI Systems: E aí vamos.
+
+00:39:14.000 --> 00:39:15.000
+Debora Maciel: Eu volto.
+
+00:39:15.000 --> 00:39:19.000
+Debora Maciel: Vai, Bora! Eu vou para o treinamento do John.
+
+00:39:19.000 --> 00:39:21.000
+Debora Maciel: Sábado e domingo.
+
+00:39:19.000 --> 00:39:21.000
+Continuum AI Systems: Ah, que legal!
+
+00:39:21.000 --> 00:39:27.000
+Debora Maciel: Ai, mas eu chego amanhã de manhã e volto na segunda. Não sei que horas que meu avô na segunda.
+
+00:39:21.000 --> 00:39:22.000
+Continuum AI Systems: Muito bom.
+
+00:39:27.000 --> 00:39:33.000
+Debora Maciel: Mas aí, Danilo vai ficar com a Mel. Aí ele reservou. Até agora. Nem sei pra onde a gente tá indo.
+
+00:39:33.000 --> 00:39:34.000
+Debora Maciel: Pernambuco.
+
+00:39:33.000 --> 00:39:35.000
+Continuum AI Systems: E aí?
+
+00:39:35.000 --> 00:39:38.000
+Debora Maciel: E aí?
+
+00:39:35.000 --> 00:39:38.000
+Continuum AI Systems: Que legal! Nossa, que bacana! Muito bom. Mesmo.
+
+00:39:38.000 --> 00:39:40.000
+Debora Maciel: E aí?
+
+00:39:39.000 --> 00:39:41.000
+Continuum AI Systems: Ué. A gente pode combinar. Ainda.
+
+00:39:40.000 --> 00:39:41.000
+Debora Maciel: E aí?
+
+00:39:41.000 --> 00:39:43.000
+Continuum AI Systems: De se encontrar aqui também.
+
+00:39:43.000 --> 00:39:49.000
+Debora Maciel: Bora. Aceito sugestões. Só lembro que a gente tinha uma bebê.
+
+00:39:48.000 --> 00:39:49.000
+Continuum AI Systems: Fechou.
+
+00:39:49.000 --> 00:39:52.000
+Debora Maciel: Amanhã a gente vai estar de bobeira aí.
+
+00:39:50.000 --> 00:39:51.000
+Continuum AI Systems: No caso.
+
+00:39:52.000 --> 00:39:55.000
+Continuum AI Systems: É show demais. Eu vou até falar para a Nike aqui pra gente.
+
+00:39:56.000 --> 00:39:58.000
+Continuum AI Systems: Verificar alguma coisa.
+
+00:39:58.000 --> 00:39:59.000
+Continuum AI Systems: Você chega aqui. Que horas? Amanhã?
+
+00:40:00.000 --> 00:40:05.000
+Debora Maciel: Eu acho que o voo é oito. Não sei se é duas ou três horas de voo.
+
+00:40:03.000 --> 00:40:07.000
+Nakielly: Eu tô escutando tudo. Eu vou ver essa mulher. Sim.
+
+00:40:06.000 --> 00:40:08.000
+Debora Maciel: E aí?
+
+00:40:07.000 --> 00:40:09.000
+Continuum AI Systems: Ai, ela aí! Ó.
+
+00:40:08.000 --> 00:40:10.000
+Nakielly: E aí?
+
+00:40:09.000 --> 00:40:18.000
+Debora Maciel: Eu acho que a gente chega meio dia, onze, meio dia. Eu acho que a gente vai ficar lá perto do lugar que vai ser o negócio.
+
+00:40:10.000 --> 00:40:11.000
+Continuum AI Systems: E aí?
+
+00:40:19.000 --> 00:40:20.000
+Debora Maciel: Aruna, que chama.
+
+00:40:21.000 --> 00:40:23.000
+Nakielly: Será que vai ser que não compete.
+
+00:40:21.000 --> 00:40:23.000
+Debora Maciel: Eu não sei.
+
+00:40:23.000 --> 00:40:26.000
+Debora Maciel: Então a gente ia ficar no Campache.
+
+00:40:26.000 --> 00:40:28.000
+Debora Maciel: Mas a gente vai ficar bem perto do campestre.
+
+00:40:26.000 --> 00:40:27.000
+Nakielly: Ok.
+
+00:40:28.000 --> 00:40:30.000
+Nakielly: Aí. Vocês não vão ficar mais.
+
+00:40:29.000 --> 00:40:30.000
+Debora Maciel: Cinco minutos.
+
+00:40:30.000 --> 00:40:35.000
+Debora Maciel: Não vamos. Vamos ficar cinco minutos do Campech, no máximo. Deixa eu ver que.
+
+00:40:34.000 --> 00:40:39.000
+Nakielly: Dá para a gente tomar um café com ela no anômada. Você conhece o anômada débora.
+
+00:40:34.000 --> 00:40:35.000
+Continuum AI Systems: Show! Ué.
+
+00:40:38.000 --> 00:40:38.000
+Continuum AI Systems: Aham!
+
+00:40:39.000 --> 00:40:41.000
+Debora Maciel: Eu conheço nada. Mulher.
+
+00:40:41.000 --> 00:40:43.000
+Nakielly: Nossa. Você vai amar esse lugar.
+
+00:40:41.000 --> 00:40:43.000
+Continuum AI Systems: Então você vai conhecer.
+
+00:40:43.000 --> 00:40:48.000
+Nakielly: É o nosso lugar preferido, né, Victor? Um doze.
+
+00:40:46.000 --> 00:40:48.000
+Continuum AI Systems: É nossa!
+
+00:40:49.000 --> 00:40:53.000
+Debora Maciel: Olha, eu adoro café. Já tomo a gente. Vai.
+
+00:40:51.000 --> 00:40:56.000
+Nakielly: Não, você vai amar. Tem um croissante de amêndoas. Se você gosta de doce, eu sou doceira, né?
+
+00:40:55.000 --> 00:40:56.000
+Debora Maciel: Ai, eu amo.
+
+00:40:56.000 --> 00:40:58.000
+Debora Maciel: Eu amo. Doce.
+
+00:40:57.000 --> 00:40:58.000
+Continuum AI Systems: Hummm.
+
+00:40:57.000 --> 00:40:58.000
+Nakielly: E aí?
+
+00:40:58.000 --> 00:40:59.000
+Nakielly: Mas como não.
+
+00:40:59.000 --> 00:40:59.000
+Continuum AI Systems: E aí?
+
+00:40:59.000 --> 00:41:03.000
+Debora Maciel: Eu sei que a gente vai ficar bem perto da lagoa do Peri. Ali.
+
+00:41:03.000 --> 00:41:06.000
+Debora Maciel: É por ali. Morro das Pedras. Alguma coisa assim.
+
+00:41:07.000 --> 00:41:11.000
+Debora Maciel: Mas eu não sei. Acho que Danilo pegou. Eu vou pegar o nome do hotel e mando pra vocês.
+
+00:41:08.000 --> 00:41:09.000
+Continuum AI Systems: Legal.
+
+00:41:11.000 --> 00:41:14.000
+Debora Maciel: Aí amanhã, quando a gente chegar, a gente pode tomar um café.
+
+00:41:11.000 --> 00:41:13.000
+Nakielly: E se vamos combinar.
+
+00:41:11.000 --> 00:41:13.000
+Continuum AI Systems: Beleza.
+
+00:41:14.000 --> 00:41:19.000
+Nakielly: Isso. Vamos tomar um café assim pra mim já tá combinado. É só questão de horário. Mesmo a gente ver.
+
+00:41:14.000 --> 00:41:15.000
+Debora Maciel: Vamos. Sim.
+
+00:41:15.000 --> 00:41:16.000
+Continuum AI Systems: Bora.
+
+00:41:20.000 --> 00:41:21.000
+Nakielly: E Bora.
+
+00:41:20.000 --> 00:41:21.000
+Debora Maciel: E aí?
+
+00:41:21.000 --> 00:41:23.000
+Debora Maciel: Bora fechou.
+
+00:41:23.000 --> 00:41:29.000
+Debora Maciel: Aí na terça. Eu acho que dá, Vitor. Deixa eu só olhar aqui. Porque.
+
+00:41:23.000 --> 00:41:24.000
+Continuum AI Systems: Fechou.
+
+00:41:30.000 --> 00:41:35.000
+Debora Maciel: Eu não sei que horas que a gente vai chegar. Segunda, na terça. Não sei se eu já marquei alguma coisa.
+
+00:41:36.000 --> 00:41:38.000
+Debora Maciel: Não, não marquei. Não, você pode combinar na terça.
+
+00:41:38.000 --> 00:41:40.000
+Debora Maciel: É.
+
+00:41:40.000 --> 00:41:44.000
+Debora Maciel: A única coisa que está na minha cabeça de tudo é estreindar a oferta.
+
+00:41:45.000 --> 00:41:48.000
+Debora Maciel: Eu sinto que eu preciso fazer alguma coisa em relação à oferta.
+
+00:41:49.000 --> 00:41:51.000
+Continuum AI Systems: Eu acredito que.
+
+00:41:51.000 --> 00:41:53.000
+Continuum AI Systems: Conforme for, criando.
+
+00:41:53.000 --> 00:41:59.000
+Continuum AI Systems: Vai gerar mais clareza para você com relação à oferta também. Não é que eu vou criar a oferta mais.
+
+00:41:59.000 --> 00:42:00.000
+Debora Maciel: Entendi.
+
+00:41:59.000 --> 00:42:03.000
+Continuum AI Systems: A estrutura em si já vai pedindo.
+
+00:42:03.000 --> 00:42:05.000
+Continuum AI Systems: Já vai pedindo informações.
+
+00:42:03.000 --> 00:42:04.000
+Debora Maciel: Entendi.
+
+00:42:05.000 --> 00:42:08.000
+Continuum AI Systems: Para que ela seja vista.
+
+00:42:08.000 --> 00:42:10.000
+Continuum AI Systems: Pelo ponto de vista do comprador.
+
+00:42:11.000 --> 00:42:18.000
+Debora Maciel: Boa. É isso que eu preciso fazer. Então você vai fazer alguma coisa que vai me gerar alguma coisa, e eu vou responder e a gente vai alinhar a oferta. É isso.
+
+00:42:18.000 --> 00:42:20.000
+Continuum AI Systems: É isso exatamente.
+
+00:42:19.000 --> 00:42:22.000
+Debora Maciel: Tá bom.
+
+00:42:20.000 --> 00:42:21.000
+Continuum AI Systems: E aí?
+
+00:42:22.000 --> 00:42:23.000
+Continuum AI Systems: Fechou.
+
+00:42:23.000 --> 00:42:25.000
+Debora Maciel: Fechou. Combinado, então.
+
+00:42:25.000 --> 00:42:26.000
+Debora Maciel: E aí?
+
+00:42:26.000 --> 00:42:29.000
+Continuum AI Systems: Então tá bom. Então, Débora, gratidão.
+
+00:42:26.000 --> 00:42:27.000
+Debora Maciel: E aí?
+
+00:42:27.000 --> 00:42:31.000
+Debora Maciel: Aí. Você vai me mostrar essas coisas? Na terça feira.
+
+00:42:31.000 --> 00:42:32.000
+Continuum AI Systems: Isso terça feira.
+
+00:42:32.000 --> 00:42:35.000
+Debora Maciel: Até terça feira. Não dá sete dias.
+
+00:42:36.000 --> 00:42:37.000
+Debora Maciel: E aí?
+
+00:42:37.000 --> 00:42:40.000
+Continuum AI Systems: É então, exatamente porque sete dias.
+
+00:42:38.000 --> 00:42:39.000
+Debora Maciel: Certo.
+
+00:42:41.000 --> 00:42:47.000
+Continuum AI Systems: É o tempo ali de passar pela revisão e aprovação, ou então revisão e interação.
+
+00:42:44.000 --> 00:42:46.000
+Debora Maciel: Show! Show!
+
+00:42:47.000 --> 00:42:50.000
+Continuum AI Systems: E aí já começar a campanha no sétimo dia.
+
+00:42:50.000 --> 00:42:52.000
+Debora Maciel: Maravilha fechou.
+
+00:42:50.000 --> 00:42:56.000
+Nakielly: Já vou mandar ele no grupo. A datinha aí na terça a gente se vê. Então, para fechar isso, né?
+
+00:42:55.000 --> 00:42:56.000
+Debora Maciel: Tá bom.
+
+00:42:56.000 --> 00:43:00.000
+Debora Maciel: Bom. Aí você vai gerando as coisas aí.
+
+00:42:57.000 --> 00:43:00.000
+Continuum AI Systems: Amanhã a gente se vê. Então olha que interessante.
+
+00:43:00.000 --> 00:43:01.000
+Continuum AI Systems: Fechou.
+
+00:43:01.000 --> 00:43:07.000
+Debora Maciel: Maravilha. Então, tá, gente. Obrigada. Até amanhã.
+
+00:43:03.000 --> 00:43:03.000
+Continuum AI Systems: E aí?
+
+00:43:05.000 --> 00:43:08.000
+Continuum AI Systems: Obrigado, Débora. Até amanhã.
+
+00:43:06.000 --> 00:43:09.000
+Nakielly: Até amanhã. Uma ótima viagem.
+
+00:43:07.000 --> 00:43:09.000
+Debora Maciel: E aí?
+
+00:43:09.000 --> 00:43:11.000
+Debora Maciel: Obrigada.
+
+00:43:09.000 --> 00:43:14.000
+Continuum AI Systems: Ótima viagem aí para vocês. Tragam roupa de frio, pelo amor de Deus.
+
+00:43:11.000 --> 00:43:12.000
+Debora Maciel: Um abraço.
+
+00:43:13.000 --> 00:43:15.000
+Nakielly: É? Tá frio.
+
+00:43:15.000 --> 00:43:20.000
+Debora Maciel: Pois é. A gente não tem muita? Não, mas vou levar o que a gente tem.
+
+00:43:16.000 --> 00:43:17.000
+Continuum AI Systems: E aí?
+
+00:43:17.000 --> 00:43:17.000
+Nakielly: Perdeu.
+
+00:43:19.000 --> 00:43:21.000
+Continuum AI Systems: Fechou.
+
+00:43:20.000 --> 00:43:26.000
+Debora Maciel: Ele falou assim. Não precisa de roupa. Eu falei: Vai comprar lá lindo, não tem? A gente só tem isso.
+
+00:43:26.000 --> 00:43:29.000
+Debora Maciel: Mas tem um básico, tá.
+
+00:43:26.000 --> 00:43:28.000
+Continuum AI Systems: Aqui tem.
+
+00:43:29.000 --> 00:43:33.000
+Continuum AI Systems: Tudo quanto é? Canto aqui tem roupa de frio para comprar. É bem de boa.
+
+00:43:29.000 --> 00:43:30.000
+Debora Maciel: E aí?
+
+00:43:33.000 --> 00:43:34.000
+Debora Maciel: Imagina.
+
+00:43:34.000 --> 00:43:38.000
+Debora Maciel: Tá, jóia, gente. Até amanhã, então, um abração.
+
+00:43:35.000 --> 00:43:36.000
+Nakielly: Obrigado.
+
+00:43:38.000 --> 00:43:39.000
+Nakielly: É.
+
+00:43:38.000 --> 00:43:40.000
+Continuum AI Systems: Até amanhã, Abração. Tchau, Tchau.
+
+00:43:39.000 --> 00:43:40.000
+Nakielly: Beijo.
+
+00:43:40.000 --> 00:43:41.000
+Debora Maciel: Tchau.
+
+00:43:49.000 --> 00:43:51.000
+Nakielly: Terça feira. Vai ser dia trinta, né.
+
+00:43:51.000 --> 00:43:52.000
+Nakielly: É.
+
+00:43:52.000 --> 00:43:57.000
+Continuum AI Systems: Terça, Terça, Terça, Terça, dia trinta.
+
+00:43:54.000 --> 00:43:55.000
+Nakielly: É isso aí.
+
+00:44:04.000 --> 00:44:07.000
+Nakielly: Vai ser a aprovação do que mesmo. Como é que é o nome.
+
+00:44:09.000 --> 00:44:11.000
+Continuum AI Systems: Plano de lançamento.
+
+00:44:10.000 --> 00:44:11.000
+Nakielly: Dá oferta. Não, né.
+
+00:44:12.000 --> 00:44:16.000
+Continuum AI Systems: O plano de lançamento é, no caso, não somente oferta.
+
+00:44:18.000 --> 00:44:18.000
+Continuum AI Systems: Mas.
+
+00:44:19.000 --> 00:44:22.000
+Continuum AI Systems: Toda a estrutura do workshop.
+
+00:44:22.000 --> 00:44:23.000
+Nakielly: Tá.
+
+00:44:22.000 --> 00:44:24.000
+Continuum AI Systems: Você está vendo a tela aí.
+
+00:44:24.000 --> 00:44:28.000
+Nakielly: Eu vi tudo aqui. Eu já até abri o.
+
+00:44:28.000 --> 00:44:30.000
+Nakielly: Que você mandou.
+
+00:44:32.000 --> 00:44:34.000
+Nakielly: Tá muito bonito.
+
+00:44:33.000 --> 00:44:34.000
+Continuum AI Systems: Uhum.
+
+00:44:35.000 --> 00:44:36.000
+Nakielly: Mandei ali!
+
+00:44:36.000 --> 00:44:37.000
+Continuum AI Systems: Curitiba.
+
+00:44:37.000 --> 00:44:39.000
+Continuum AI Systems: E aí, ó.
+
+00:44:39.000 --> 00:44:40.000
+Continuum AI Systems: Fundação Técnica.
+
+00:44:41.000 --> 00:44:43.000
+Continuum AI Systems: É página de vendas.
+
+00:44:43.000 --> 00:44:45.000
+Continuum AI Systems: Top narrativa.
+
+00:44:45.000 --> 00:44:47.000
+Continuum AI Systems: Criativos. Guia para Débora.
+
+00:44:47.000 --> 00:44:48.000
+Continuum AI Systems: Esse guia.
+
+00:44:49.000 --> 00:44:53.000
+Continuum AI Systems: É aquela questão lá. De ter um guia para criação de.
+
+00:44:53.000 --> 00:44:55.000
+Continuum AI Systems: De anúncios e tudo mais, sabe.
+
+00:44:53.000 --> 00:44:56.000
+Nakielly: Nossa. Eu lembro. Aham.
+
+00:44:56.000 --> 00:44:58.000
+Nakielly: Aquele já demonstrativo, né?
+
+00:44:56.000 --> 00:44:57.000
+Continuum AI Systems: E aí?
+
+00:44:58.000 --> 00:45:00.000
+Nakielly: Passo a passo.
+
+00:44:59.000 --> 00:45:00.000
+Continuum AI Systems: Isso.
+
+00:45:00.000 --> 00:45:01.000
+Continuum AI Systems: Uhum.
+
+00:45:01.000 --> 00:45:02.000
+Continuum AI Systems: E aí?
+
+00:45:03.000 --> 00:45:07.000
+Continuum AI Systems: No dia trinta. Vem essa parte aqui de revisão e aprovação.
+
+00:45:09.000 --> 00:45:13.000
+Continuum AI Systems: E aí? Dia sete Gol Live. Campanha no ar.
+
+00:45:13.000 --> 00:45:15.000
+Continuum AI Systems: Início das vendas.
+
+00:45:15.000 --> 00:45:16.000
+Nakielly: E aí?
+
+00:45:19.000 --> 00:45:20.000
+Continuum AI Systems: Fechou.
+
+00:45:20.000 --> 00:45:21.000
+Nakielly: Agora para Simão.
+
+00:45:20.000 --> 00:45:23.000
+Continuum AI Systems: Que da hora, velho. Bora pra cima.
+
+00:45:24.000 --> 00:45:25.000
+Continuum AI Systems: Valeu, Naki!
+
+00:45:27.000 --> 00:45:29.000
+Nakielly: Valeu. Maravilhoso.
+
+00:45:30.000 --> 00:45:31.000
+Continuum AI Systems: Até mais. Beijo.
+

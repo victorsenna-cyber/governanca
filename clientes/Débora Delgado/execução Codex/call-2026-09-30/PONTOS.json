@@ -1,0 +1,546 @@
+[
+  [
+    1,
+    "Canal",
+    "13:32:01",
+    "Débora relata cadência desejada de três posts semanais e um post com 18 mil visualizações.",
+    "Eu estou buscando três vezes por semana no Linkedin.",
+    "D; desempenho relatado, não conferido em analytics. LinkedIn é canal em uso, sem conversão comprovada."
+  ],
+  [
+    2,
+    "Voz",
+    "13:32:32",
+    "O texto precisa nascer dela; IA entra no refinamento.",
+    "Porque eu percebi que o texto tem que sair de mim, entendeu?",
+    "D; preservar autoria e voz no banco de conteúdo. “Claudio” é provável Claude, grafia não corrigida na fonte."
+  ],
+  [
+    3,
+    "Comercial",
+    "13:32:51",
+    "Ela quer melhorar formatos e aprender a vender no LinkedIn.",
+    "E queria muito encontrar um jeito de vender por lá.",
+    "D; frente aberta, sem plano comercial acordado nesta call."
+  ],
+  [
+    4,
+    "Conduta",
+    "13:33:11",
+    "A motivação para gravar passou pela ideia de legado.",
+    "eu estou vendo esse curso mais como um deixar um legado do que como uma expectativa de resultado.",
+    "D; razão pessoal para sustentar produção, não abandono de vendas."
+  ],
+  [
+    5,
+    "Conduta",
+    "13:33:32",
+    "Utilidade para amigos funciona como critério de entusiasmo.",
+    "Eu entregaria isso pros meus amigos.",
+    "D; conectar orientação ao valor real da entrega, sem interpretar como público exclusivo."
+  ],
+  [
+    6,
+    "Canal",
+    "13:34:33",
+    "Postar aumenta uso indesejado do Instagram na rotina.",
+    "quando eu trabalho no Instagram, isso piora na minha vida em geral.",
+    "D; fricção de operação declarada; não houve decisão de encerrar canal ou mídia."
+  ],
+  [
+    7,
+    "Evento",
+    "13:35:12",
+    "Foi citado encontro no dia dez.",
+    "E sobre o encontro do dia dez.",
+    "D, Victor; mês não pronunciado nesse trecho. 10/10/2026 é inferência de calendário, a confirmar."
+  ],
+  [
+    8,
+    "Evento",
+    "13:35:53",
+    "Ela corrigiu o número de convidados para sete.",
+    "Mandei para sete pessoas.",
+    "D; não equivale a sete confirmados. Kaká confirmou; outras respostas e contagem de interessados são hesitantes."
+  ],
+  [
+    9,
+    "Produto",
+    "13:36:50",
+    "Maestria foi entregue artesanalmente em mentoria; formato curto precisa ser testado.",
+    "Eu tive que fazer de forma muito artesanal na mentoria.",
+    "D; encontro é investigação de entrega, não validação já concluída."
+  ],
+  [
+    10,
+    "Promessa",
+    "13:37:04",
+    "Ela quer descobrir qual resultado cabe na experiência curta.",
+    "Prometer coerente olha, nesse curso. Você vai conseguir sair com isso.",
+    "D; pergunta aberta sobre entrega. Não antecipar promessa de Maestria."
+  ],
+  [
+    11,
+    "Produto",
+    "13:38:38",
+    "Curso atual oferece reconhecimento de tipos.",
+    "Entendi, sou esse tipo e existem outros tipos.",
+    "D; descrição da entrega na percepção da autora, não garantia diagnóstica."
+  ],
+  [
+    12,
+    "Produto",
+    "13:38:48",
+    "Ela não vê passagem prática A→B claramente entregue pelo curso isolado.",
+    "Ela ganhou perspectiva.",
+    "D; distingue conhecimento/perspectiva de transformação ampla."
+  ],
+  [
+    13,
+    "Funil",
+    "13:39:49",
+    "Eneagrama isolado não resolve as dores amplas evocadas pelo quiz de liderança.",
+    "Mas o eneagrama não resolve isso sozinho.",
+    "D; revisar alcance da promessa antes de conectar quiz ao curso."
+  ],
+  [
+    14,
+    "Produto",
+    "13:40:07",
+    "Ela considera necessário um módulo complementar nas duas direções examinadas.",
+    "eu teria que construir um módulo extra do curso.",
+    "D; conteúdo exato não fechado; mais tarde debatida introdução narrativa e revisão de aulas."
+  ],
+  [
+    15,
+    "Método",
+    "13:43:24",
+    "Nossa orientação de modelagem declara limite de congruência.",
+    "Não é só modelar uma oferta, uma promessa, sendo que o curso não entrega isso.",
+    "D, Victor; não transferir alegações de benchmark para a entrega dela."
+  ],
+  [
+    16,
+    "Produto",
+    "13:45:22",
+    "Ela relata que parte dos alunos viu somente seu próprio tipo.",
+    "algumas pessoas também só descobriram o seu tipo. Assistiram o seu tipo e acabou.",
+    "R sobre alunos; investigar adoção e adequação do público, não presumir preguiça."
+  ],
+  [
+    17,
+    "Caso",
+    "13:45:50",
+    "Regina é citada como aluna que consumiu o curso por interesse nas outras pessoas.",
+    "A Regina que maratonou. Ela adorou conhecer as personalidades",
+    "R; caso de consumo relatado, sem depoimento direto ou autorização de uso."
+  ],
+  [
+    18,
+    "Mecanismo",
+    "13:47:17",
+    "A analogia do computador compara organizações mentais distintas.",
+    "Cada um organizou de um jeito.",
+    "D; fonte autoral para explicar perspectivas, não descoberta científica."
+  ],
+  [
+    19,
+    "Mecanismo",
+    "13:47:34",
+    "Liderar só pela própria perspectiva é explicado como procurar no computador alheio.",
+    "eu estou pedindo ele para achar um arquivo no meu computador, sem falar para ele, como eu penso.",
+    "D; metáfora central que conecta problema à mudança de perspectiva."
+  ],
+  [
+    20,
+    "Aplicação",
+    "13:48:33",
+    "Ela aponta escuta como habilidade a desenvolver.",
+    "você desenvolve a habilidade de escuta.",
+    "D; especificar aplicação antes de prometer domínio de conversas ou resultados de equipe."
+  ],
+  [
+    21,
+    "Aplicação",
+    "13:48:54",
+    "Direcionamento deve considerar o caminho do liderado.",
+    "eu estou ajudando ele a encontrar os melhores caminhos para ele, não para mim.",
+    "D; sentido pretendido da aplicação à liderança, não resultado medido."
+  ],
+  [
+    22,
+    "Funil",
+    "13:54:23",
+    "Ela propõe testar VSL para vender o curso; nós concordamos.",
+    "só fazer uma Vsl e vender o curso",
+    "D; proposta de teste acolhida em 13:54:30, consolidada ao encerrar."
+  ],
+  [
+    23,
+    "Limite",
+    "13:55:27",
+    "Ela exclui promessa de técnica de conversa na entrada.",
+    "Isso aqui não vai ser uma técnica de como ter conversas",
+    "D; entender como pessoas funcionam é primeiro passo; técnicas podem vir depois."
+  ],
+  [
+    24,
+    "Compromisso",
+    "13:55:38",
+    "Ela pede ajuda com roteiro baseado nas conversas.",
+    "talvez você me ajuda só com o roteiro",
+    "D; nosso compromisso de estrutura confirmado em 14:58:31; gravação depende desse insumo."
+  ],
+  [
+    25,
+    "Revisão",
+    "13:56:35",
+    "Ela quer retirar oferta de entrevista individual de identificação do curso.",
+    "eu fico dando aula, fazendo opção para o pessoal fazer uma entrevista e descobrir o tipo dela comigo.",
+    "D; intenção de retirada por demanda de tempo, estimada em 1h30; aulas ainda não editadas."
+  ],
+  [
+    26,
+    "Revisão",
+    "13:57:18",
+    "Ela revê oposição geral a testes.",
+    "você faz o teste e depois identifica a motivação é um caminho também.",
+    "D; atualizar explicação do curso, sem concluir que qualquer teste identifica corretamente."
+  ],
+  [
+    27,
+    "Instrumento",
+    "13:59:25",
+    "Na demonstração do relatório há linguagem probabilística.",
+    "você provavelmente é tipo dois",
+    "D sobre leitura em tela; preservar probabilidade apesar da afirmação anterior “realmente identifica”."
+  ],
+  [
+    28,
+    "Comercial",
+    "14:01:15",
+    "Teste de Uranio é informado como R$180.",
+    "Não custa cento e oitenta reais.",
+    "D; pontuação de ASR ambígua: contexto pergunta se gratuito e resposta negativa. Valor relatado, não cotação externa."
+  ],
+  [
+    29,
+    "Instrumento",
+    "14:01:32",
+    "Ela aponta complexidade em criar teste similar.",
+    "o nível de complexidade pra fazer é alto",
+    "D; ressalva permanece relevante mesmo após interesse posterior em desenvolver teste próprio."
+  ],
+  [
+    30,
+    "Produto",
+    "14:02:37",
+    "Aplicação na vida importa mais que receber relatório isolado.",
+    "a ferramenta encaixada na sua vida, eu acho que ela tem um poder muito maior do que só a ferramenta.",
+    "D; adoção e orientação são insumo de produto."
+  ],
+  [
+    31,
+    "Funil",
+    "14:05:35",
+    "Nós reafirmamos teste de duas entradas.",
+    "eu vou testar das duas maneiras. Direto ao Vsl.",
+    "D, Victor; complementado por quiz antes da VSL às 14:05:40; sem ativação/verba definida."
+  ],
+  [
+    32,
+    "Funil",
+    "14:06:38",
+    "Quiz de topo pode tratar do problema sem identificar tipo.",
+    "Não necessariamente para a pessoa identificar ali o tipo dela, mas para ela identificar o problema que ela tem.",
+    "D, Victor; distinguir esse quiz do instrumento aprofundado."
+  ],
+  [
+    33,
+    "Experiência",
+    "14:08:48",
+    "Débora esclarece que o quiz que a frustrou era gratuito.",
+    "Então eu não paguei por ele. Era de graça.",
+    "D sobre experiência própria; gratuidade não elimina dever de congruência. Nome da referência incerto no ASR."
+  ],
+  [
+    34,
+    "Limite",
+    "14:09:34",
+    "Ela rejeita determinar posição profissional pelo tipo.",
+    "o Ennahba não te promete um lugar",
+    "D; “Ennahba” [transcrição incerta; provável Eneagrama]. Veto à redução pessoa→cargo."
+  ],
+  [
+    35,
+    "Produto",
+    "14:10:42",
+    "Maestria exige história, interesses e outras ferramentas.",
+    "Ele tem que ter a ver com a história das pessoas, dos interesses.",
+    "D; distinguir método amplo de Maestria do curso de Eneagrama."
+  ],
+  [
+    36,
+    "Limite",
+    "14:12:01",
+    "Ela reafirma insuficiência do Eneagrama isolado para essa entrega ampla.",
+    "Não é só enneagrama.",
+    "D; nossa sugestão posterior de aula de advertência não prova que limite foi resolvido."
+  ],
+  [
+    37,
+    "Instrumento",
+    "14:16:20",
+    "Lógica apresentada para teste começa excluindo tipos.",
+    "Primeiro, você exclui tipos",
+    "D sobre método dela; especificação candidata, não instrumento validado."
+  ],
+  [
+    38,
+    "Instrumento",
+    "14:16:26",
+    "Com tipos prováveis, ela propõe comparar subtipos.",
+    "Você compara os subtipos.",
+    "D; requisito de diferenciação, não equivalência psicométrica demonstrada."
+  ],
+  [
+    39,
+    "Instrumento",
+    "14:18:45",
+    "Ela diferencia comportamento aprendido de padrão anterior.",
+    "Só que ele aprendeu.",
+    "D; perguntas precisariam considerar história e aprendizagem, segundo sua abordagem."
+  ],
+  [
+    40,
+    "Instrumento",
+    "14:21:16",
+    "Ela reconhece complexidade e risco na identificação.",
+    "Ela tem complexidade de como você se vê.",
+    "D; exemplos de Danilo/Bia são relatos privados, não diagnósticos confirmados por nós."
+  ],
+  [
+    41,
+    "ICP",
+    "14:24:57",
+    "Ela reafirma alvo de líderes e tomadores de decisão.",
+    "Porque eu quero que seja líderes. Pode ser Rh: Mas líder tomador de decisão.",
+    "D; possibilidades de colaboradores/aspirantes levantadas por nós não substituem alvo principal."
+  ],
+  [
+    42,
+    "Funil",
+    "14:25:53",
+    "Conclusão desejada para o quiz é reconhecer a própria lente na direção do outro.",
+    "Direcionar a outra pessoa pela sua lente, não pela lente do outro.",
+    "D; direção conceitual aceita, não perguntas ou score aprovados."
+  ],
+  [
+    43,
+    "Ecossistema",
+    "14:26:19",
+    "Sistema de conhecimento é cogitado como upsell.",
+    "Aí a gente pode fazer um Upsell, sei lá, do Sistema de conhecimento",
+    "D; possibilidade, não pacote/preço fechado."
+  ],
+  [
+    44,
+    "Ecossistema",
+    "14:27:09",
+    "Ela ainda não enxerga claramente ponte para empresas.",
+    "Para a empresa. Eu não consigo enxergar ainda nesse caminho.",
+    "D; nossa hipótese de B2B posterior não é canal validado."
+  ],
+  [
+    45,
+    "Acordo",
+    "14:28:25",
+    "Ela sintetiza ação como quiz e VSL.",
+    "Então fazer um quiz e fazer uma Qsl.",
+    "D; “Qsl” [transcrição incerta; contexto VSL]. Acordo de direção, não material pronto."
+  ],
+  [
+    46,
+    "ICP",
+    "14:29:52",
+    "Percentual de ceticismo é metáfora individual, não composição da audiência.",
+    "não cinquenta de pessoas céticas.",
+    "D; não criar segmentação mensurada ou afirmar que metade do público é cético."
+  ],
+  [
+    47,
+    "ICP",
+    "14:32:28",
+    "Ela relata que objeção de participante reduziu uso de Desenho Humano no grupo.",
+    "eu não trouxe muito mais no grupo desenho humano.",
+    "R sobre caso Davi; justifica explicitar metodologia antes da entrada, sem inferir expulsão acordada."
+  ],
+  [
+    48,
+    "Posicionamento",
+    "14:35:00",
+    "Ela se descreve entre ambientes corporativo e espiritual.",
+    "Eu me sinto no meio.",
+    "D; identidade/voz da autora, não fala do ICP."
+  ],
+  [
+    49,
+    "ICP",
+    "14:38:38",
+    "Ela quer atrair corporativo, não o público definido como Zen.",
+    "Eu quero atrair o corporativo",
+    "D; acolher abertura a outras abordagens sem tratar crenças como eficácia comprovada."
+  ],
+  [
+    50,
+    "Compromisso",
+    "14:42:16",
+    "Nós assumimos analisar viabilidade de integrar metodologia a um sistema.",
+    "vou analisar como é que isso pode ser integrado ali, num sistema.",
+    "D, Victor; pesquisa/projeto prometidos, não autorização operacional para baixar obras ou criar software nesta tarefa."
+  ],
+  [
+    51,
+    "Oferta",
+    "14:43:34",
+    "R$50 surge somente como exemplo de custo.",
+    "Se custar, sei lá, cinquenta reais.",
+    "D; não preço do teste ou custo estimado confirmado."
+  ],
+  [
+    52,
+    "Oferta",
+    "14:43:56",
+    "Ela sugere teste opcional e cupom promocional de trinta dias.",
+    "pelo valor promocional dele por trinta dias.",
+    "D; hipótese de upsell e recuperação por e-mail, sem preço/regra implementados."
+  ],
+  [
+    53,
+    "Oferta",
+    "14:44:16",
+    "Ela deseja encontros quinzenais com compradores.",
+    "A cada quinze dias, fazer o encontro.",
+    "D; frequência acolhida. Duração de acesso oscilou entre alguns meses e um mês."
+  ],
+  [
+    54,
+    "Oferta",
+    "14:45:34",
+    "Perguntas podem ser antecipadas e respondidas sem presença do aluno.",
+    "a pessoa pode mandar dúvida dela e não ir.",
+    "D; intenção de atendimento; vídeo, áudio e WhatsApp citados como possibilidades, sem SLA."
+  ],
+  [
+    55,
+    "Reativação",
+    "14:46:28",
+    "Ela propõe convidar alunos antigos por um período inicial.",
+    "aquelas pessoas que compraram lá atrás. Eu posso dar isso por um tempo inicial.",
+    "D; não acesso vitalício, disparo ou convocação já feitos."
+  ],
+  [
+    56,
+    "Comercial",
+    "14:55:16",
+    "Ela localiza cerca de vinte vendas antigas na Hotmart.",
+    "Eu vendia esses vinte que eu vendi. Foi na Hotmart.",
+    "D; não novas vendas nem receita atual. Plataforma posterior tem grafia incerta no ASR."
+  ],
+  [
+    57,
+    "Comercial",
+    "14:54:25",
+    "Ela diferencia conclusão útil do curso de assistir todos os subtipos.",
+    "Se você não fizer o subtipo, entendeu? Porque você já conheceu todas as personalidades.",
+    "D; não transformar 36% de acesso de um aluno em fracasso ou indicador nacional."
+  ],
+  [
+    58,
+    "Compromisso",
+    "14:58:15",
+    "Ela pretende contatar Alexandre.",
+    "Vou mandar mensagem pra ele depois.",
+    "D; intenção sem data; identidade de perfil tem grafias divergentes, confirmar antes de contato."
+  ],
+  [
+    59,
+    "Compromisso",
+    "14:58:31",
+    "Nós entregaremos estrutura da VSL para conferir com ela.",
+    "A estrutura da Vsl.",
+    "D, Victor; base nas fontes existentes e nesta call; nenhum prazo fechado."
+  ],
+  [
+    60,
+    "Compromisso",
+    "14:58:53",
+    "Nós faremos quiz de topo.",
+    "Fazer também o quiz. Esse primeiro quiz ali que vai no topo do funil.",
+    "D, Victor; separado do teste aprofundado."
+  ],
+  [
+    61,
+    "Compromisso",
+    "14:58:58",
+    "Teste aprofundado fica sem data específica.",
+    "Eu não vou dar uma data específica para você",
+    "D, Victor; projeto deve apresentar ferramentas, viabilidade, custos e estrutura."
+  ],
+  [
+    62,
+    "Compromisso",
+    "14:59:10",
+    "Ela também tentará criar o teste de Eneagrama.",
+    "Eu vou tentar fazer o teste também.",
+    "D; esforço paralelo, não entrega garantida ou versão final escolhida."
+  ],
+  [
+    63,
+    "Compromisso",
+    "14:59:51",
+    "Ela oferece reenviar a pasta de conhecimento.",
+    "Eu vou te mandar essa pasta.",
+    "D; Drive cogitado. Recebimento não comprovado pelo transcript."
+  ],
+  [
+    64,
+    "Critério",
+    "15:02:36",
+    "Ela rejeita questões superficiais do teste examinado.",
+    "Isso aqui é exatamente o que eu não gosto.",
+    "D; crítica dela, não auditoria independente do instrumento ou de seu autor."
+  ],
+  [
+    65,
+    "Critério",
+    "15:05:41",
+    "Ela distingue comportamento observado de identificação interna.",
+    "Dá para ver que está muito no comportamento.",
+    "D; perguntas mais profundas ainda precisam ser testadas, não presumidas corretas."
+  ],
+  [
+    66,
+    "Acordo",
+    "15:08:27",
+    "Encerramento prioriza VSL, com confirmação nossa.",
+    "Acho que começar pelo Vsl, né, Victor?",
+    "D; “Sim” 15:08:31 e “Combinado” 15:08:35. Prioridade da estrutura, não data de entrega."
+  ],
+  [
+    67,
+    "Compromisso",
+    "15:08:36",
+    "Ela quer receber estrutura inicial para testar gravação.",
+    "Quando você tiver um cheiro da estrutura, você me manda e eu já vou testando aqui.",
+    "D; entrega incremental aceita; gravação final e envio não concluídos."
+  ],
+  [
+    68,
+    "Agenda",
+    "15:08:57",
+    "Ela viajará sexta e voltará domingo.",
+    "na sexta volta no domingo.",
+    "D; 02–04/10 é conversão relativa à call de 30/09. “Seis. É terça” ao fim não fecha nova reunião."
+  ]
+]

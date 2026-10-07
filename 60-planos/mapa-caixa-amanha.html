@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Continuum · Mapa de Caixa — Próximas 24h</title>
+<style>
+  :root{
+    --bg:#0c0d10; --bg2:#131419; --card:#16181f; --card2:#1b1e27;
+    --line:#262a36; --txt:#e8eaf0; --txt2:#a4a9b8; --txt3:#6e7384;
+    --acc:#5b8cff; --acc2:#7aa2ff; --ok:#3ecf8e; --warn:#f5a623; --bad:#ff5f6d;
+    --okbg:rgba(62,207,142,.10); --warnbg:rgba(245,166,35,.10); --badbg:rgba(255,95,109,.10);
+    --shadow:0 1px 0 rgba(255,255,255,.02),0 8px 30px rgba(0,0,0,.35);
+  }
+  [data-theme="light"]{
+    --bg:#f4f5f8; --bg2:#eceef3; --card:#ffffff; --card2:#f7f8fb;
+    --line:#e2e5ec; --txt:#1a1d26; --txt2:#4a5060; --txt3:#878d9c;
+    --acc:#2f63e6; --acc2:#3f74f0; --ok:#13935f; --warn:#b9760a; --bad:#d83644;
+    --okbg:rgba(19,147,95,.08); --warnbg:rgba(185,118,10,.08); --badbg:rgba(216,54,68,.08);
+    --shadow:0 1px 2px rgba(20,30,60,.04),0 8px 28px rgba(20,30,60,.08);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased;transition:background .3s,color .3s}
+  .wrap{max-width:920px;margin:0 auto;padding:0 24px 96px}
+  header.top{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);padding:14px 0;margin-bottom:8px}
+  .top-in{max-width:920px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:.3px}
+  .dot{width:10px;height:10px;border-radius:50%;background:var(--bad);box-shadow:0 0 0 4px color-mix(in srgb,var(--bad) 22%,transparent)}
+  .brand small{display:block;font-weight:500;color:var(--txt3);font-size:11px;letter-spacing:.5px;text-transform:uppercase}
+  .toggle{cursor:pointer;border:1px solid var(--line);background:var(--card);color:var(--txt2);border-radius:10px;padding:8px 12px;font-size:13px;display:flex;align-items:center;gap:7px;transition:.2s}
+  .toggle:hover{border-color:var(--acc);color:var(--txt)}
+  .hero{padding:44px 0 24px}
+  .kicker{color:var(--bad);font-weight:600;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:14px}
+  h1{font-size:34px;line-height:1.15;letter-spacing:-.5px;margin-bottom:18px;font-weight:760}
+  .lead{font-size:17px;color:var(--txt2);max-width:680px}
+  .meta-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+  .pill{font-size:12.5px;color:var(--txt2);border:1px solid var(--line);background:var(--card);border-radius:999px;padding:6px 13px}
+  .pill b{color:var(--txt)}
+  section{margin-top:42px}
+  .sec-head{display:flex;align-items:baseline;gap:12px;margin-bottom:18px}
+  .sec-num{font-variant-numeric:tabular-nums;color:var(--acc);font-weight:700;font-size:14px;border:1px solid var(--line);border-radius:8px;padding:3px 9px;background:var(--card)}
+  h2{font-size:22px;letter-spacing:-.3px;font-weight:720}
+  h2 + .sub{color:var(--txt3);font-size:14px;margin-top:3px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px 22px;box-shadow:var(--shadow)}
+  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+  @media(max-width:720px){.grid3{grid-template-columns:1fr}h1{font-size:27px}}
+  .stat{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;box-shadow:var(--shadow)}
+  .stat .lbl{font-size:12px;color:var(--txt3);text-transform:uppercase;letter-spacing:.6px;margin-bottom:8px}
+  .stat .val{font-size:26px;font-weight:740;font-variant-numeric:tabular-nums;letter-spacing:-.5px}
+  .stat .note{font-size:12.5px;color:var(--txt2);margin-top:5px}
+  .stat.bad .val{color:var(--bad)} .stat.warn .val{color:var(--warn)} .stat.ok .val{color:var(--ok)}
+  .stat.bad{border-color:color-mix(in srgb,var(--bad) 35%,var(--line))}
+  table{width:100%;border-collapse:collapse;font-size:14.5px}
+  th,td{text-align:left;padding:11px 10px;border-bottom:1px solid var(--line)}
+  th{color:var(--txt3);font-size:11.5px;text-transform:uppercase;letter-spacing:.6px;font-weight:600}
+  td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
+  tr:last-child td{border-bottom:none}
+  .total-row td{font-weight:720;background:var(--card2)}
+  .tag{display:inline-block;font-size:11px;font-weight:600;padding:2px 9px;border-radius:999px;letter-spacing:.3px}
+  .tag.p1{background:var(--badbg);color:var(--bad)} .tag.p2{background:var(--warnbg);color:var(--warn)} .tag.p3{background:rgba(91,140,255,.12);color:var(--acc2)}
+  .fire{display:flex;gap:15px;padding:16px 0;border-bottom:1px solid var(--line)}
+  .fire:last-child{border-bottom:none}
+  .fire .idx{flex:0 0 40px;height:40px;border-radius:11px;background:var(--card2);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;font-weight:740;color:var(--acc)}
+  .fire h3{font-size:15.5px;margin-bottom:4px;display:flex;align-items:center;gap:9px;flex-wrap:wrap}
+  .fire p{color:var(--txt2);font-size:14px}
+  .fire .why{font-size:12.5px;color:var(--txt3);margin-top:5px}
+  .callout{border-left:3px solid var(--acc);background:var(--card2);border-radius:0 12px 12px 0;padding:15px 19px;margin-top:4px}
+  .callout.bad{border-left-color:var(--bad);background:var(--badbg)}
+  .callout.ok{border-left-color:var(--ok);background:var(--okbg)}
+  .callout h3{font-size:15.5px;margin-bottom:6px;color:var(--txt)}
+  .callout p{color:var(--txt2);font-size:14px}
+  .callout p + p{margin-top:8px}
+  .timeline{position:relative;padding-left:26px}
+  .timeline::before{content:"";position:absolute;left:7px;top:6px;bottom:6px;width:2px;background:var(--line)}
+  .tl{position:relative;padding:0 0 18px}
+  .tl::before{content:"";position:absolute;left:-23px;top:5px;width:12px;height:12px;border-radius:50%;background:var(--acc);box-shadow:0 0 0 4px color-mix(in srgb,var(--acc) 20%,transparent)}
+  .tl h4{font-size:14.5px;margin-bottom:3px}
+  .tl p{font-size:13.5px;color:var(--txt2)}
+  .tl .when{font-size:11.5px;color:var(--acc2);font-weight:600;letter-spacing:.5px;text-transform:uppercase;margin-bottom:4px}
+  .msg{background:var(--card2);border:1px solid var(--line);border-radius:12px;padding:14px 16px;font-size:14px;color:var(--txt);margin-top:10px}
+  .msg .lbl{font-size:11px;color:var(--txt3);text-transform:uppercase;letter-spacing:.6px;margin-bottom:7px;font-weight:600}
+  .foot{margin-top:50px;padding-top:22px;border-top:1px solid var(--line);color:var(--txt3);font-size:13px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+  .principle{text-align:center;font-size:18px;font-weight:600;color:var(--txt);padding:28px 0 6px;letter-spacing:-.2px}
+  .principle small{display:block;color:var(--txt3);font-size:13px;font-weight:500;margin-top:6px;letter-spacing:.5px;text-transform:uppercase}
+</style>
+</head>
+<body data-theme="dark">
+<header class="top">
+  <div class="top-in">
+    <div class="brand"><span class="dot"></span><div>CONTINUUM AI SYSTEMS<small>Mapa de Caixa · Próximas 24h</small></div></div>
+    <button class="toggle" id="tg" onclick="tog()"><span id="tgi">◐</span><span id="tgt">Claro</span></button>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <div class="hero">
+    <div class="kicker">Controle de fogo · CFO</div>
+    <h1>R$2.750 vencem amanhã.<br>R$0 confirmado em conta hoje.</h1>
+    <p class="lead">Este mapa não finge que o dinheiro aparece. Ele ataca em duas mãos ao mesmo tempo: <b>levantar o caixa</b> e, em paralelo, <b>proteger a confiança</b> caso o caixa não venha inteiro. Prometer e não pagar custa mais que pedir prazo com plano na mão.</p>
+    <div class="meta-row">
+      <span class="pill">Aluguel restante <b>R$1.750</b></span>
+      <span class="pill">Empréstimo (parcial) <b>R$1.000</b></span>
+      <span class="pill">Confirmado <b>R$0</b></span>
+      <span class="pill">Deal em push <b>talvez</b></span>
+    </div>
+  </div>
+
+  <!-- 1. NUMEROS -->
+  <section>
+    <div class="sec-head"><span class="sec-num">01</span><div><h2>O buraco de amanhã, exato</h2></div></div>
+    <div class="grid3" style="margin-bottom:14px">
+      <div class="stat bad"><div class="lbl">A pagar amanhã</div><div class="val">R$2.750</div><div class="note">1.750 aluguel + 1.000 empréstimo</div></div>
+      <div class="stat bad"><div class="lbl">Caixa confirmado</div><div class="val">R$0</div><div class="note">nada em conta / recebível certo</div></div>
+      <div class="stat warn"><div class="lbl">Gap a levantar</div><div class="val">R$2.750</div><div class="note">em ~24h</div></div>
+    </div>
+    <div class="callout bad">
+      <p><b>A verdade de CFO:</b> levantar R$2.750 limpos em 24h partindo de zero, só com pipeline, é <b>possível mas não provável</b>. Por isso o mapa não aposta tudo numa carta. Trabalha as duas frentes em paralelo — e define, desde já, qual dívida tem prioridade se só uma parte entrar.</p>
+    </div>
+  </section>
+
+  <!-- 2. PRIORIZACAO -->
+  <section>
+    <div class="sec-head"><span class="sec-num">02</span><div><h2>Se só entrar parte — qual fogo apagar primeiro</h2><div class="sub">Priorização por urgência × dano à relação.</div></div></div>
+    <div class="card">
+      <table>
+        <thead><tr><th>Obrigação</th><th>Se atrasar, o dano é…</th><th class="num">Valor</th><th>Prioridade</th></tr></thead>
+        <tbody>
+          <tr><td>Empréstimo — a pessoa que te ajudou</td><td>Confiança pessoal + a pessoa pode estar contando com isso</td><td class="num">R$1.000</td><td><span class="tag p1">1ª</span></td></tr>
+          <tr><td>Aluguel — restante</td><td>Relação com locadora; já está em reconstrução de confiança</td><td class="num">R$1.750</td><td><span class="tag p2">2ª</span></td></tr>
+          <tr class="total-row"><td>Total</td><td></td><td class="num">R$2.750</td><td></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="callout" style="margin-top:14px">
+      <p><b>Regra de fogo:</b> se levantar só R$1.000, <b>o empréstimo vem primeiro</b> — é a pessoa que estendeu a mão, e é o valor exato que você prometeu. O aluguel entra com pedido de +2–3 dias (roteiro na seção 05). Se levantar entre R$1k e R$2,75k, paga o empréstimo integral e o máximo possível do aluguel, renegociando o resto.</p>
+    </div>
+  </section>
+
+  <!-- 3. DE ONDE SAI -->
+  <section>
+    <div class="sec-head"><span class="sec-num">03</span><div><h2>De onde o caixa pode sair — em ordem de esforço</h2><div class="sub">Do mais rápido/certo ao mais incerto. Ataque de cima pra baixo.</div></div></div>
+    <div class="card">
+      <div class="fire">
+        <div class="idx">A</div>
+        <div>
+          <h3>Fechar o deal em push — pedir entrada/sinal hoje <span class="tag p1">maior alavanca</span></h3>
+          <p>O deal que "depende de push" é a fonte mais rápida com maior valor. Não espere fechar o contrato inteiro: proponha <b>entrada/sinal à vista via Pix hoje</b> para travar o início. 30–50% de entrada num deal acima do ticket de site já cobre os R$2.750.</p>
+          <p class="why">Ação: ligar/chamar ainda hoje, com oferta de condição por fechar agora. Roteiro na seção 04.</p>
+        </div>
+      </div>
+      <div class="fire">
+        <div class="idx">B</div>
+        <div>
+          <h3>Venda-relâmpago de 1 site à vista <span class="tag p2">rápido</span></h3>
+          <p>Puxar o lead mais quente do CRM e fechar <b>1 site por R$997 à vista via Pix</b>, com o modelo já pronto. Um único fechamento cobre o empréstimo (R$1k) e sobra troco.</p>
+          <p class="why">Ação: disparar oferta direta pros 3–5 leads mais avançados: "fecho hoje por R$997 à vista, no ar em 48h".</p>
+        </div>
+      </div>
+      <div class="fire">
+        <div class="idx">C</div>
+        <div>
+          <h3>Antecipar qualquer recebível já vendido <span class="tag p3">se existir</span></h3>
+          <p>Se há site já vendido com pagamento parcelado ou a receber, oferecer <b>desconto por antecipação à vista</b>. Troca margem por liquidez — justo neste momento.</p>
+          <p class="why">Ação: revisar CRM por qualquer "vendido, a receber" e ligar oferecendo antecipação.</p>
+        </div>
+      </div>
+      <div class="fire">
+        <div class="idx">D</div>
+        <div>
+          <h3>Renegociar prazo — a rede de segurança <span class="tag p3">em paralelo</span></h3>
+          <p>Roda <b>ao mesmo tempo</b> que A/B/C, não depois. Se o caixa não vier inteiro, ter a conversa de prazo já iniciada evita o pior: silêncio + calote. Seção 05.</p>
+          <p class="why">Ação: preparar as mensagens agora; disparar só se até amanhã de manhã o caixa não fechar.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. ROTEIRO FECHAMENTO -->
+  <section>
+    <div class="sec-head"><span class="sec-num">04</span><div><h2>Roteiro de fechamento acelerado (deal em push)</h2><div class="sub">Sem desespero. Oferta de condição por decidir hoje.</div></div></div>
+    <div class="msg">
+      <div class="lbl">Mensagem — pedir entrada/sinal hoje</div>
+      Oi [nome]! Vou ser direto porque acredito no que a gente conversou. Consigo travar o início do seu projeto ainda esta semana se a gente fechar hoje — reservo a vaga na agenda e já começo. Pra isso funciona com uma entrada de [30–50%] via Pix agora, e o restante [combinar]. Topa? Te mando os dados e a gente arranca.
+    </div>
+    <div class="callout ok" style="margin-top:12px">
+      <p><b>Por que funciona:</b> não é desconto de desespero — é <b>condição por decisão rápida</b> e reserva de agenda. Dá ao cliente um motivo pra agir hoje sem você entregar valor de graça. Se ele pedir desconto, troque por velocidade ("fecho hoje e começo amanhã"), não por preço.</p>
+    </div>
+  </section>
+
+  <!-- 5. RENEGOCIACAO -->
+  <section>
+    <div class="sec-head"><span class="sec-num">05</span><div><h2>Rede de segurança — os pedidos de prazo</h2><div class="sub">Só dispara se o caixa não fechar até amanhã cedo. Antecipar a conversa protege a relação.</div></div></div>
+    <div class="msg">
+      <div class="lbl">Para quem te emprestou (se faltar o R$1k)</div>
+      Oi [nome], falando com transparência: o pagamento que combinei pra amanhã vai atrasar poucos dias. Não sumi e não vou sumir — tenho [deal/venda] fechando e assim que entrar, você é o primeiro. Consigo te confirmar até [dia]. Queria te avisar antes, olhando no olho, porque a sua ajuda significou muito e eu levo isso a sério.
+    </div>
+    <div class="msg">
+      <div class="lbl">Para a locadora (se faltar o aluguel)</div>
+      Oi [nome], sobre o restante do aluguel: consigo quitar até [dia, +2–3 dias]. Estou com recebimentos entrando esta semana e quero manter tudo em dia com você. Pode contar com o valor até lá — te aviso assim que efetuar.
+    </div>
+    <div class="callout" style="margin-top:12px">
+      <p><b>Princípio:</b> um pedido de prazo <b>feito antes do vencimento, com data e motivo concretos</b>, preserva confiança. Um vencimento que passa em silêncio a destrói. Se for atrasar, avise hoje — não amanhã depois da hora.</p>
+    </div>
+  </section>
+
+  <!-- 6. SEQUENCIA HORARIA -->
+  <section>
+    <div class="sec-head"><span class="sec-num">06</span><div><h2>A sequência, por hora</h2><div class="sub">Concreto. Ataque agora.</div></div></div>
+    <div class="card">
+      <div class="timeline">
+        <div class="tl"><div class="when">Agora (próxima 1h)</div><h4>Push no deal — pedir entrada hoje</h4><p>Mandar a mensagem da seção 04 pro deal quente. Maior alavanca, faz primeiro.</p></div>
+        <div class="tl"><div class="when">Hoje à tarde</div><h4>Disparar venda-relâmpago de site</h4><p>3–5 leads mais quentes: R$997 à vista, no ar em 48h. Basta 1 fechar.</p></div>
+        <div class="tl"><div class="when">Hoje</div><h4>Varrer CRM por recebível antecipável</h4><p>Qualquer "vendido a receber" → oferta de antecipação com desconto.</p></div>
+        <div class="tl"><div class="when">Hoje à noite</div><h4>Preparar (não enviar) as mensagens de prazo</h4><p>Deixar prontas as da seção 05. Gatilho de envio: caixa não fechado até amanhã 9h.</p></div>
+        <div class="tl"><div class="when">Amanhã cedo</div><h4>Decisão de fogo</h4><p>Entrou tudo → paga os dois. Entrou parte → empréstimo primeiro + prazo no aluguel. Entrou nada → dispara as duas mensagens de prazo, com data firme.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. VALIDACAO -->
+  <section>
+    <div class="sec-head"><span class="sec-num">07</span><div><h2>Validação financeira</h2></div></div>
+    <div class="callout ok">
+      <p><b>Aumenta ganho?</b> Sim — força fechamento de deal/venda que já estava em mesa. <b>Reduz desperdício?</b> Sim — troca margem por liquidez só onde é vital, sem queimar caixa. <b>Melhora caixa?</b> É o objetivo único deste mapa.</p>
+      <p>Não sobrepõe as Frentes 1 e 2 do plano de saída — <b>é a execução delas comprimida em 24h</b>. Cada venda-relâmpago aqui ainda abre a conversa de recorrência depois (Frente 4).</p>
+    </div>
+  </section>
+
+  <div class="principle">
+    Quem integra o sistema vence com ele.
+    <small>Dominamos o Ritmo: crescemos para gerar ordem</small>
+  </div>
+
+  <div class="foot">
+    <span>Continuum AI Systems · documento interno · CFO</span>
+    <span>Aumenta ganho · reduz desperdício · melhora caixa ✓</span>
+  </div>
+
+</div>
+
+<script>
+  function tog(){
+    const b=document.body, cur=b.getAttribute('data-theme');
+    const nx=cur==='dark'?'light':'dark';
+    b.setAttribute('data-theme',nx);
+    document.getElementById('tgt').textContent = nx==='dark'?'Claro':'Escuro';
+    document.getElementById('tgi').textContent = nx==='dark'?'◐':'◑';
+  }
+</script>
+</body>
+</html>

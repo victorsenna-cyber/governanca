@@ -1,0 +1,97 @@
+{
+  "cards": [
+    {
+      "id": "card-1",
+      "width": 1080,
+      "height": 1350,
+      "mainBodyGap": 89,
+      "bodyFooterGap": 167,
+      "bodyCtaGap": null,
+      "ctaFooterGap": null,
+      "overflow": []
+    },
+    {
+      "id": "card-2",
+      "width": 1080,
+      "height": 1350,
+      "mainBodyGap": 115,
+      "bodyFooterGap": 103,
+      "bodyCtaGap": null,
+      "ctaFooterGap": null,
+      "overflow": []
+    },
+    {
+      "id": "card-3",
+      "width": 1080,
+      "height": 1350,
+      "mainBodyGap": 167,
+      "bodyFooterGap": 38,
+      "bodyCtaGap": null,
+      "ctaFooterGap": null,
+      "overflow": []
+    },
+    {
+      "id": "card-4",
+      "width": 1080,
+      "height": 1350,
+      "mainBodyGap": 231,
+      "bodyFooterGap": 247,
+      "bodyCtaGap": null,
+      "ctaFooterGap": null,
+      "overflow": []
+    },
+    {
+      "id": "card-5",
+      "width": 1080,
+      "height": 1350,
+      "mainBodyGap": 152,
+      "bodyFooterGap": 103,
+      "bodyCtaGap": null,
+      "ctaFooterGap": null,
+      "overflow": []
+    },
+    {
+      "id": "card-6",
+      "width": 1080,
+      "height": 1350,
+      "mainBodyGap": 259,
+      "bodyFooterGap": 103,
+      "bodyCtaGap": null,
+      "ctaFooterGap": null,
+      "overflow": []
+    },
+    {
+      "id": "card-7",
+      "width": 1080,
+      "height": 1350,
+      "mainBodyGap": 204,
+      "bodyFooterGap": 102,
+      "bodyCtaGap": null,
+      "ctaFooterGap": null,
+      "overflow": []
+    },
+    {
+      "id": "card-8",
+      "width": 1080,
+      "height": 1350,
+      "mainBodyGap": 91,
+      "bodyFooterGap": 446,
+      "bodyCtaGap": 86,
+      "ctaFooterGap": 104,
+      "overflow": []
+    }
+  ],
+  "errors": [],
+  "contrast": {
+    "creamOnGreen": 15.73,
+    "goldOnGreen": 8.31,
+    "mutedOnGreen": 9.82,
+    "inkOnCream": 6.88
+  },
+  "fonts": {
+    "manrope": true,
+    "serif": "Garamond, \"Times New Roman\", serif"
+  },
+  "dimensions": "8 PNGs de 1080 x 1350",
+  "origin": "HTTP local; sem serviços externos"
+}

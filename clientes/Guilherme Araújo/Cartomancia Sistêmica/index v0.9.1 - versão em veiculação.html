@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cartomância Sistêmica — Guilherme Araújo</title>
+<meta name="description" content="A estrutura que conecta o que você percebe com o que o cliente consegue receber — e levar para a vida.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','1259363302489132');fbq('track','PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1259363302489132&ev=PageView&noscript=1"/></noscript>
+
+<style>
+:root {
+  --bg-deep:        #070C09;
+  --bg-base:        #0C1410;
+  --bg-card:        #111A14;
+  --gold-primary:   #C9A961;
+  --gold-line:      rgba(201,169,97,0.22);
+  --gold-line-faint:rgba(201,169,97,0.10);
+  --text-primary:   #F2EBDA;
+  --text-secondary: #B9AE94;
+  --text-muted:     #7A7468;
+  --border-subtle:  #1E2E20;
+  --font-display:   'Cormorant Garamond', Georgia, serif;
+  --font-body:      'Manrope', system-ui, sans-serif;
+  --radius:         4px;
+  --ease:           0.3s ease;
+}
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg-deep);color:var(--text-primary);font-family:var(--font-body);line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+
+.container{width:100%;max-width:800px;margin-inline:auto;padding-inline:24px}
+
+.label-tag{display:inline-block;font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--gold-primary);margin-bottom:20px}
+
+/* REVEAL */
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .4s ease,transform .4s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+
+/* NAVBAR */
+.navbar{position:sticky;top:0;z-index:100;padding:18px 0;transition:background var(--ease),border-color var(--ease)}
+.navbar.scrolled{background:rgba(7,12,9,.96);border-bottom:1px solid var(--border-subtle);backdrop-filter:blur(8px)}
+.navbar .container{display:flex;align-items:center;justify-content:space-between}
+.navbar-brand{font-family:var(--font-display);font-size:clamp(15px,2vw,18px);font-weight:400;letter-spacing:.02em}
+.navbar-cta{font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--gold-primary);border:1px solid var(--gold-line);padding:8px 18px;border-radius:var(--radius);transition:background var(--ease),color var(--ease)}
+.navbar-cta:hover{background:var(--gold-primary);color:var(--bg-deep)}
+
+/* HERO */
+.hero{background:var(--bg-deep);padding:clamp(72px,12vw,120px) 0 clamp(64px,10vw,100px);border-bottom:1px solid var(--border-subtle)}
+.hero-headline{font-family:var(--font-display);font-size:clamp(34px,6vw,56px);font-weight:400;line-height:1.18;text-align:center;margin-bottom:28px}
+.hero-headline em{font-style:italic;color:var(--text-secondary)}
+.hero-sub{font-size:clamp(15px,1.8vw,18px);line-height:1.7;color:var(--text-secondary);text-align:center;max-width:580px;margin:0 auto 40px}
+.hero-cta{text-align:center}
+
+/* BUTTONS */
+.btn-primary{display:inline-block;font-size:14px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;background:var(--gold-primary);color:var(--bg-deep);padding:14px 32px;border-radius:var(--radius);transition:opacity var(--ease),transform var(--ease)}
+.btn-primary:hover{opacity:.88;transform:translateY(-1px)}
+.btn-checkout{display:block;width:100%;font-size:14px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;text-align:center;background:var(--gold-primary);color:var(--bg-deep);padding:16px 32px;border-radius:var(--radius);transition:opacity var(--ease),transform var(--ease)}
+.btn-checkout:hover{opacity:.88;transform:translateY(-1px)}
+.btn-ghost{display:inline-block;font-size:13px;font-weight:600;letter-spacing:.06em;color:var(--gold-primary);border:1px solid var(--gold-line);padding:12px 28px;border-radius:var(--radius);transition:background var(--ease),color var(--ease)}
+.btn-ghost:hover{background:var(--gold-primary);color:var(--bg-deep)}
+.microcopy{display:block;font-size:12px;color:var(--text-muted);margin-top:12px;letter-spacing:.04em}
+
+/* SECTION SHARED */
+.section-base{padding:clamp(72px,10vw,100px) 0;border-bottom:1px solid var(--border-subtle)}
+
+/* RECONHECIMENTO */
+.section-reconhecimento{background:var(--bg-base)}
+.reconhecimento-list{margin-top:40px;display:flex;flex-direction:column;gap:28px}
+.reconhecimento-item{border-left:2px solid var(--gold-line);padding-left:24px}
+.reconhecimento-item p{font-size:clamp(15px,1.6vw,17px);line-height:1.75;color:var(--text-secondary)}
+.reconhecimento-closing{margin-top:48px;padding-top:32px;border-top:1px solid var(--border-subtle)}
+.reconhecimento-closing p{font-size:15px;line-height:1.75;color:var(--text-muted)}
+
+/* REFRAME */
+.section-reframe{background:var(--bg-deep)}
+.reframe-headline{font-family:var(--font-display);font-size:clamp(32px,5vw,52px);font-weight:400;color:var(--gold-primary);line-height:1.2;margin-bottom:48px}
+.reframe-body{display:flex;flex-direction:column;gap:28px}
+.reframe-body p{font-size:clamp(15px,1.6vw,17px);line-height:1.8;color:var(--text-secondary)}
+.reframe-anchor{margin-top:56px;padding:40px 0;border-top:1px solid var(--gold-line-faint);border-bottom:1px solid var(--gold-line-faint);text-align:center}
+.reframe-anchor blockquote{font-family:var(--font-display);font-size:clamp(22px,3vw,30px);font-style:italic;font-weight:300;color:var(--text-primary);line-height:1.5}
+
+/* VSL */
+.section-vsl{background:var(--bg-base)}
+.vsl-headline{font-family:var(--font-display);font-size:clamp(28px,4vw,42px);font-weight:400;text-align:center;margin-bottom:40px}
+.vsl-embed{position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:var(--radius);border:1px solid var(--border-subtle);box-shadow:0 12px 40px rgba(0,0,0,.4)}
+.vsl-embed iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:none}
+.vsl-caption{font-size:13px;color:var(--text-muted);text-align:center;margin-top:20px;line-height:1.6}
+
+/* MÉTODO */
+.section-metodo{background:var(--bg-deep)}
+.metodo-headline{font-family:var(--font-display);font-size:clamp(28px,4vw,42px);font-weight:400;margin-bottom:16px}
+.metodo-desc{font-size:clamp(15px,1.6vw,17px);color:var(--text-secondary);line-height:1.7;margin-bottom:48px;max-width:600px}
+.metodo-grid{display:grid;grid-template-columns:1fr;gap:20px}
+@media(min-width:640px){.metodo-grid{grid-template-columns:repeat(3,1fr)}}
+.metodo-card{background:var(--bg-card);border:1px solid var(--border-subtle);border-radius:var(--radius);padding:28px 24px}
+.metodo-card-num{font-size:11px;font-weight:700;letter-spacing:.1em;color:var(--gold-primary);opacity:.5;margin-bottom:16px}
+.metodo-card-title{font-family:var(--font-display);font-size:22px;font-weight:400;color:var(--text-primary);margin-bottom:12px}
+.metodo-card-desc{font-size:14px;line-height:1.7;color:var(--text-muted)}
+
+/* PROVAS */
+.section-provas{background:var(--bg-base)}
+.provas-grid{display:grid;grid-template-columns:1fr;gap:20px;margin-top:40px}
+@media(min-width:640px){.provas-grid{grid-template-columns:repeat(3,1fr)}}
+.depoimento-card{background:var(--bg-card);border:1px solid var(--border-subtle);border-radius:var(--radius);padding:28px 24px}
+.depoimento-card.featured{border-color:var(--gold-line)}
+.depoimento-quote{font-family:var(--font-display);font-size:clamp(16px,1.8vw,18px);font-style:italic;font-weight:300;line-height:1.65;color:var(--text-primary);margin-bottom:24px}
+.depoimento-name{display:block;font-size:14px;font-weight:600;color:var(--text-primary)}
+.depoimento-role{display:block;font-size:12px;color:var(--text-muted);margin-top:4px}
+
+/* AUTORIDADE */
+.section-autoridade{background:var(--bg-deep)}
+.autoridade-inner{display:grid;grid-template-columns:1fr;gap:48px;align-items:start}
+@media(min-width:640px){.autoridade-inner{grid-template-columns:1fr 1.2fr;gap:64px}}
+.authority-photo-wrap{position:relative}
+.authority-photo{width:100%;max-width:400px;aspect-ratio:4/5;object-fit:cover;object-position:center top;border-radius:var(--radius);filter:brightness(.94) contrast(1.04)}
+.authority-badge{position:absolute;bottom:16px;left:16px;background:rgba(7,12,9,.85);border:1px solid var(--gold-line);border-radius:var(--radius);padding:8px 14px;font-size:12px;font-weight:600;color:var(--gold-primary);letter-spacing:.05em;backdrop-filter:blur(4px)}
+.autoridade-name{font-family:var(--font-display);font-size:clamp(28px,4vw,40px);font-weight:400;margin-bottom:6px}
+.autoridade-role{font-size:13px;color:var(--text-muted);margin-bottom:28px}
+.autoridade-bio{display:flex;flex-direction:column;gap:18px;margin-bottom:32px}
+.autoridade-bio p{font-size:clamp(14px,1.5vw,16px);line-height:1.75;color:var(--text-secondary)}
+.credenciais{list-style:none;display:flex;flex-direction:column;gap:10px;border-top:1px solid var(--border-subtle);padding-top:24px}
+.credenciais li{font-size:14px;color:var(--text-muted);line-height:1.6;padding-left:16px;position:relative}
+.credenciais li::before{content:'—';position:absolute;left:0;color:var(--gold-primary);opacity:.5}
+
+/* CURRÍCULO */
+.section-curriculo{background:var(--bg-base)}
+.curriculo-meta{font-size:14px;color:var(--text-muted);margin-bottom:40px}
+.accordion{border-top:1px solid var(--border-subtle)}
+.accordion-item{border-bottom:1px solid var(--border-subtle)}
+.accordion-trigger{width:100%;background:none;border:none;cursor:pointer;display:flex;align-items:center;gap:16px;padding:20px 0;text-align:left}
+.accordion-num{font-size:11px;font-weight:700;letter-spacing:.1em;color:var(--gold-primary);min-width:28px;flex-shrink:0}
+.accordion-title-wrap{flex:1}
+.accordion-title{font-family:var(--font-display);font-size:clamp(17px,2vw,20px);font-weight:400;color:var(--text-primary);line-height:1.3;display:block}
+.accordion-sub{font-size:12px;color:var(--text-muted);margin-top:4px;display:block}
+.acc-icon{width:20px;height:20px;flex-shrink:0;color:var(--text-muted);transition:transform .3s ease}
+.accordion-trigger[aria-expanded="true"] .acc-icon{transform:rotate(45deg)}
+.accordion-content{display:none;padding-bottom:20px;padding-left:44px}
+.accordion-content.open{display:block}
+.accordion-content p{font-size:14px;line-height:1.75;color:var(--text-muted)}
+
+/* OFERTA */
+.section-oferta{background:var(--bg-deep)}
+.oferta-card{background:var(--bg-card);border:1px solid var(--gold-line);border-radius:var(--radius);padding:clamp(32px,5vw,56px);max-width:560px;margin:0 auto}
+.oferta-title{font-family:var(--font-display);font-size:clamp(24px,3vw,32px);font-weight:400;margin-bottom:12px}
+.oferta-tagline{font-size:14px;color:var(--text-muted);margin-bottom:32px}
+.oferta-includes{list-style:none;display:flex;flex-direction:column;gap:12px;margin-bottom:40px}
+.oferta-includes li{font-size:14px;line-height:1.6;color:var(--text-secondary);padding-left:24px;position:relative}
+.oferta-includes li::before{content:'✦';position:absolute;left:0;color:var(--gold-primary);font-size:10px;top:3px}
+.oferta-divider{height:1px;background:var(--border-subtle);margin-bottom:32px}
+.oferta-price{font-family:var(--font-display);font-size:clamp(52px,8vw,72px);font-weight:300;color:var(--gold-primary);line-height:1;margin-bottom:6px}
+.oferta-condition{font-size:13px;color:var(--text-muted);margin-bottom:28px;letter-spacing:.03em}
+
+/* GARANTIA */
+.section-garantia{background:var(--bg-base)}
+.garantia-inner{max-width:560px;margin:0 auto;text-align:center}
+.garantia-icon{width:40px;height:40px;margin:0 auto 24px;color:var(--gold-primary)}
+.garantia-headline{font-family:var(--font-display);font-size:clamp(26px,3.5vw,36px);font-weight:400;margin-bottom:24px}
+.garantia-body{display:flex;flex-direction:column;gap:16px;margin-bottom:32px}
+.garantia-body p{font-size:15px;line-height:1.75;color:var(--text-secondary)}
+.garantia-emphasis{font-family:var(--font-display);font-size:22px!important;font-style:italic;color:var(--text-primary)!important}
+
+/* FAQ */
+.section-faq{background:var(--bg-deep)}
+.faq-list{margin-top:40px;border-top:1px solid var(--border-subtle)}
+.faq-item{border-bottom:1px solid var(--border-subtle)}
+.faq-trigger{width:100%;background:none;border:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:22px 0;text-align:left}
+.faq-question{font-size:clamp(14px,1.5vw,16px);font-weight:500;color:var(--text-primary);line-height:1.4}
+.faq-icon{width:20px;height:20px;flex-shrink:0;color:var(--gold-primary);transition:transform .3s ease}
+.faq-trigger[aria-expanded="true"] .faq-icon{transform:rotate(45deg)}
+.faq-content{display:none;padding-bottom:22px}
+.faq-content.open{display:block}
+.faq-content p{font-size:14px;line-height:1.75;color:var(--text-muted)}
+.faq-content p+p{margin-top:12px}
+
+/* CTA FINAL */
+.section-closing{background:var(--bg-base)}
+.closing-inner{text-align:center;max-width:520px;margin:0 auto}
+.closing-ornament{font-size:20px;color:var(--gold-primary);opacity:.4;margin-bottom:24px}
+.closing-headline{font-family:var(--font-display);font-size:clamp(36px,5vw,52px);font-weight:400;line-height:1.2;margin-bottom:20px}
+.closing-sub{font-size:clamp(14px,1.6vw,17px);color:var(--text-muted);margin-bottom:40px;line-height:1.6}
+
+/* FOOTER */
+footer{background:var(--bg-deep);padding:clamp(48px,8vw,72px) 0 32px}
+.footer-formacao{border-bottom:1px solid var(--border-subtle);padding-bottom:40px;margin-bottom:40px}
+.footer-formacao-label{font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--text-muted);margin-bottom:12px}
+.footer-formacao-text{font-size:14px;line-height:1.7;color:var(--text-muted);margin-bottom:16px;max-width:480px}
+.footer-formacao-link{font-size:14px;color:var(--gold-primary);font-weight:500;transition:opacity var(--ease)}
+.footer-formacao-link:hover{opacity:.7}
+.footer-bottom{display:flex;flex-direction:column;gap:16px}
+@media(min-width:640px){.footer-bottom{flex-direction:row;align-items:center;justify-content:space-between}}
+.footer-brand{font-family:var(--font-display);font-size:18px;font-weight:400}
+.footer-legal{display:flex;gap:20px}
+.footer-legal a{font-size:12px;color:var(--text-muted);transition:color var(--ease)}
+.footer-legal a:hover{color:var(--text-secondary)}
+.footer-copy{font-size:12px;color:var(--text-muted)}
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <span class="navbar-brand">Guilherme Araújo</span>
+    <a href="#oferta" class="navbar-cta">Conhecer o método</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <div class="reveal" style="text-align:center">
+      <span class="label-tag">Para cartomantes, terapeutas e consteladores</span>
+    </div>
+    <h1 class="hero-headline reveal">
+      Você lê cartas com profundidade.<br>
+      <em>Mas ainda não tem um método que sustente isso.</em>
+    </h1>
+    <p class="hero-sub reveal">
+      Cartomância Sistêmica é a estrutura que conecta o que você percebe
+      com o que o cliente consegue receber — e levar para a vida.
+    </p>
+    <div class="hero-cta reveal">
+      <a href="#oferta" class="btn-primary checkout-link">Quero entrar na Introdução</a>
+      <span class="microcopy" style="text-align:center">Acesso imediato · R$97 · Garantia de 7 dias</span>
+    </div>
+  </div>
+</section>
+
+<!-- RECONHECIMENTO -->
+<section class="section-base section-reconhecimento" id="reconhecimento">
+  <div class="container">
+    <span class="label-tag reveal">Reconhecimento</span>
+    <h2 class="reveal" style="font-family:var(--font-display);font-size:clamp(26px,3.5vw,38px);font-weight:400;line-height:1.2">
+      Você já passou por algum desses momentos?
+    </h2>
+    <div class="reconhecimento-list">
+      <div class="reconhecimento-item reveal">
+        <p>— Você termina uma sessão sabendo que foi profunda.
+        Mas o cliente não encontra palavras para descrever o que aconteceu
+        — e provavelmente não vai indicar porque não sabe o que dizer.</p>
+      </div>
+      <div class="reconhecimento-item reveal">
+        <p>— Você lê com precisão. Mas cada atendimento começa do zero,
+        como se o que você construiu na sessão anterior não existisse.</p>
+      </div>
+      <div class="reconhecimento-item reveal">
+        <p>— Você já tentou explicar seu trabalho para alguém de fora
+        e sentiu que as palavras não alcançaram o que você realmente faz.</p>
+      </div>
+      <div class="reconhecimento-item reveal">
+        <p>— Você atende bem nos dias bons. Mas nos dias pesados,
+        a sessão fica ao sabor do seu estado interno.</p>
+      </div>
+      <div class="reconhecimento-item reveal">
+        <p>— Você sabe mais do que cobra. E cobra menos do que entrega.
+        Mas não sabe onde está o gap.</p>
+      </div>
+    </div>
+    <div class="reconhecimento-closing reveal">
+      <p>Nenhum desses momentos é falta de dom.<br>
+      São sinais de que a intuição está funcionando —<br>
+      e falta o sistema que a sustenta.</p>
+    </div>
+  </div>
+</section>
+
+<!-- REFRAME -->
+<section class="section-base section-reframe" id="reframe">
+  <div class="container">
+    <h2 class="reframe-headline reveal">
+      Não é falta de dom.<br>É falta de estrutura sistêmica.
+    </h2>
+    <div class="reframe-body">
+      <p class="reveal">
+        Quem pratica há anos acumula percepção real. Sente o campo.
+        Lê além do que as cartas mostram. Conduz com cuidado.<br><br>
+        Mas percepção sem estrutura não se comunica com clareza.
+        Não se repete de sessão para sessão.
+        Não cria o tipo de confiança que faz um cliente voltar e indicar.
+      </p>
+      <p class="reveal">
+        O teto que você sente não é espiritual.
+        Não é uma questão de merecimento ou de quanto você estudou.<br><br>
+        É a ausência de um método que organiza o que você percebe
+        em algo que o cliente consegue receber, processar e levar para casa.
+      </p>
+      <p class="reveal">
+        Quando o método existe, o atendimento deixa de depender
+        de você estar em dia para funcionar bem.
+        Ele passa a ter uma estrutura que sustenta — e que o cliente reconhece
+        como algo diferente do que já encontrou.
+      </p>
+    </div>
+    <div class="reframe-anchor reveal">
+      <blockquote>
+        "A intuição não precisa de validação.<br>
+        Ela precisa de método."
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- VSL -->
+<section class="section-base section-vsl" id="vsl">
+  <div class="container">
+    <div class="reveal" style="text-align:center">
+      <span class="label-tag">O método em prática</span>
+    </div>
+    <h2 class="vsl-headline reveal">Assista antes de decidir.</h2>
+    <div class="vsl-embed reveal">
+      <iframe
+        src="https://www.youtube.com/embed/eKRW1JwOLL8"
+        title="Cartomância Sistêmica — Guilherme Araújo"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen loading="lazy">
+      </iframe>
+    </div>
+    <p class="vsl-caption reveal">
+      Uma demonstração real de como a Cartomância Sistêmica<br>
+      estrutura o olhar — e o atendimento.
+    </p>
+  </div>
+</section>
+
+<!-- MÉTODO -->
+<section class="section-base section-metodo" id="metodo">
+  <div class="container">
+    <span class="label-tag reveal">O que é a Cartomância Sistêmica</span>
+    <h2 class="metodo-headline reveal">Um método. Não uma técnica isolada.</h2>
+    <p class="metodo-desc reveal">
+      A Cartomância Sistêmica integra leitura simbólica, visão sistêmica
+      e estrutura de atendimento — sem perder a profundidade
+      que torna o trabalho com cartas único.
+    </p>
+    <div class="metodo-grid">
+      <div class="metodo-card reveal">
+        <div class="metodo-card-num">01</div>
+        <div class="metodo-card-title">Leitura com estrutura</div>
+        <p class="metodo-card-desc">O dom permanece. O que muda é como você organiza e
+        entrega o que percebe — de forma que o cliente consegue receber.</p>
+      </div>
+      <div class="metodo-card reveal">
+        <div class="metodo-card-num">02</div>
+        <div class="metodo-card-title">Visão que enxerga padrões</div>
+        <p class="metodo-card-desc">Não apenas o que está presente. O que se repete,
+        o que está ausente e o que está tentando se mover no campo.</p>
+      </div>
+      <div class="metodo-card reveal">
+        <div class="metodo-card-num">03</div>
+        <div class="metodo-card-title">Atendimento que funciona</div>
+        <p class="metodo-card-desc">Uma sessão que depende do seu estado é frágil.
+        Um atendimento com método é estável — e cria confiança real.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROVAS -->
+<section class="section-base section-provas" id="provas">
+  <div class="container">
+    <span class="label-tag reveal">Quem já passou pelo método</span>
+    <h2 class="reveal" style="font-family:var(--font-display);font-size:clamp(26px,3.5vw,38px);font-weight:400;line-height:1.2">
+      Profissionais com trajetória como a sua.
+    </h2>
+    <div class="provas-grid">
+      <div class="depoimento-card featured reveal">
+        <p class="depoimento-quote">
+          "Eu lia cartas há 5 anos. Achava que era boa.
+          Depois do Guilherme, entendi que eu descrevia cartas — não lia situações.
+          A diferença é enorme."
+        </p>
+        <span class="depoimento-name">Ana Carolina</span>
+        <span class="depoimento-role">Cartomante e terapeuta integrativa</span>
+      </div>
+      <div class="depoimento-card reveal">
+        <p class="depoimento-quote">
+          "O método muda como você pensa, não só como você lê.
+          Levei 3 semanas para absorver o que aprendi no primeiro módulo.
+          E foi exatamente isso que eu precisava."
+        </p>
+        <span class="depoimento-name">Renata Melo</span>
+        <span class="depoimento-role">Terapeuta holística — São Paulo</span>
+      </div>
+      <div class="depoimento-card reveal">
+        <p class="depoimento-quote">
+          "Eu atendia, mas ficava insegura.
+          Com o método sistêmico, minha presença no atendimento mudou.
+          Hoje conduzo com calma."
+        </p>
+        <span class="depoimento-name">Fernanda Lins</span>
+        <span class="depoimento-role">Leitora de cartas — Recife</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AUTORIDADE -->
+<section class="section-base section-autoridade" id="autoridade">
+  <div class="container">
+    <div class="autoridade-inner">
+      <div class="authority-photo-wrap reveal">
+        <img
+          src="https://professorguilhermearaujo.com.br/wp-content/uploads/2026/05/Foto-Guilherme-LP.jpeg"
+          alt="Guilherme Araújo — professor de Cartomância Sistêmica"
+          class="authority-photo"
+          width="400" height="500"
+          loading="lazy">
+        <span class="authority-badge">+12 anos</span>
+      </div>
+      <div class="autoridade-content reveal">
+        <span class="label-tag">Quem ensina</span>
+        <h2 class="autoridade-name">Guilherme Araújo</h2>
+        <p class="autoridade-role">Professor e mentor — Cartomância Sistêmica</p>
+        <div class="autoridade-bio">
+          <p>Guilherme Araújo desenvolveu a Cartomância Sistêmica como método próprio —
+          não como adaptação de sistemas existentes, mas como uma abordagem original
+          que integra leitura simbólica, visão sistêmica e ética no atendimento.</p>
+          <p>Seu trabalho parte de uma premissa que desfaz uma crença comum:
+          a leitura de cartas não é sobre prever um destino fixo.
+          É sobre desenvolver um olhar que enxerga padrões, compreende movimentos
+          e auxilia o consultante a navegar com mais clareza e consciência.</p>
+          <p>Nos últimos 12 anos, formou mais de 800 alunos —
+          cartomantes, terapeutas e praticantes espirituais
+          que passaram a conduzir seus atendimentos com mais profundidade,
+          responsabilidade e método.</p>
+        </div>
+        <ul class="credenciais">
+          <li>Mais de 12 anos de prática em Cartomância e Constelação Familiar</li>
+          <li>Mais de 800 alunos formados no método sistêmico</li>
+          <li>Desenvolveu a Cartomância Sistêmica como método original integrado</li>
+          <li>Formações em Constelação Familiar, hermetismo e leitura simbólica</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CURRÍCULO -->
+<section class="section-base section-curriculo" id="curriculo">
+  <div class="container">
+    <span class="label-tag reveal">O que você vai aprender</span>
+    <h2 class="reveal" style="font-family:var(--font-display);font-size:clamp(28px,4vw,42px);font-weight:400;margin-bottom:12px">
+      10 aulas. Um método completo.
+    </h2>
+    <p class="curriculo-meta reveal">Acesso imediato. Estude no seu ritmo.</p>
+
+    <div class="accordion reveal">
+
+      <div class="accordion-item">
+        <button class="accordion-trigger" aria-expanded="false">
+          <span class="accordion-num">00</span>
+          <span class="accordion-title-wrap">
+            <span class="accordion-title">Aula Introdutória</span>
+            <span class="accordion-sub">O ponto de partida — onde o método começa</span>
+          </span>
+          <svg class="acc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </button>
+        <div class="accordion-content">
+          <p>A lógica que conecta as 10 aulas em um sistema coerente. O que o método é, o que ele não é — e como se preparar para absorver com profundidade.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-trigger" aria-expanded="false">
+          <span class="accordion-num">01</span>
+          <span class="accordion-title-wrap">
+            <span class="accordion-title">A Alma Familiar: Onde Tudo Começa</span>
+            <span class="accordion-sub">A raiz sistêmica por trás de toda leitura</span>
+          </span>
+          <svg class="acc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </button>
+        <div class="accordion-content">
+          <p>O conceito de alma familiar e como ela opera nos padrões que uma pessoa repete. Por que leituras sem visão sistêmica ficam na superfície — e como o campo muda isso.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-trigger" aria-expanded="false">
+          <span class="accordion-num">02</span>
+          <span class="accordion-title-wrap">
+            <span class="accordion-title">A Jornada do Herói e a Linguagem dos Arcanos</span>
+            <span class="accordion-sub">Os arquétipos como mapa de movimento</span>
+          </span>
+          <svg class="acc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </button>
+        <div class="accordion-content">
+          <p>Como os Arcanos Maiores se organizam como linguagem — não como lista de significados fixos. Como localizar o consultante dentro da jornada a partir da leitura.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-trigger" aria-expanded="false">
+          <span class="accordion-num">03</span>
+          <span class="accordion-title-wrap">
+            <span class="accordion-title">O Tarô como Campo: As Cartas Revelam o Invisível</span>
+            <span class="accordion-sub">Leitura além do visível — o campo como método</span>
+          </span>
+          <svg class="acc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </button>
+        <div class="accordion-content">
+          <p>O que significa ler o tarô como campo — e não como sequência de cartas independentes. Como o invisível se manifesta no conjunto: tensões, ausências e repetições.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-trigger" aria-expanded="false">
+          <span class="accordion-num">04</span>
+          <span class="accordion-title-wrap">
+            <span class="accordion-title">Amor e Dinheiro: Onde Doem as Feridas Herdadas</span>
+            <span class="accordion-sub">Os dois temas mais comuns — com mais profundidade</span>
+          </span>
+          <svg class="acc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </button>
+        <div class="accordion-content">
+          <p>Por que amor e dinheiro concentram os padrões herdados mais ativos. Como conduzir uma leitura sobre esses temas com responsabilidade — sem criar dependência.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-trigger" aria-expanded="false">
+          <span class="accordion-num">05</span>
+          <span class="accordion-title-wrap">
+            <span class="accordion-title">As 5 Feridas Emocionais e a Dor Transgeracional</span>
+            <span class="accordion-sub">O mapa das feridas que se repetem nas cartas</span>
+          </span>
+          <svg class="acc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </button>
+        <div class="accordion-content">
+          <p>As 5 feridas emocionais fundamentais e como identificá-las nas cartas. A diferença entre apontar uma ferida e abrir um movimento de cura na leitura.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-trigger" aria-expanded="false">
+          <span class="accordion-num">06</span>
+          <span class="accordion-title-wrap">
+            <span class="accordion-title">Leitura como Movimento Sistêmico</span>
+            <span class="accordion-sub">A leitura que move — não que descreve</span>
+          </span>
+          <svg class="acc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </button>
+        <div class="accordion-content">
+          <p>Por que a leitura sistêmica não descreve o que é — ela aponta o que está em movimento. Como perceber as forças em jogo e o que está tentando se mover no campo.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-trigger" aria-expanded="false">
+          <span class="accordion-num">07</span>
+          <span class="accordion-title-wrap">
+            <span class="accordion-title">Espelho Interno: A Carta Revela o que Está Inconsciente</span>
+            <span class="accordion-sub">O leitor como parte do campo</span>
+          </span>
+          <svg class="acc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </button>
+        <div class="accordion-content">
+          <p>Como as cartas funcionam como espelho do que está fora da consciência do consultante. Como não contaminar a leitura com suas próprias projeções.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-trigger" aria-expanded="false">
+          <span class="accordion-num">08</span>
+          <span class="accordion-title-wrap">
+            <span class="accordion-title">Como Constelar com os Arcanos Maiores: Prática Orientada</span>
+            <span class="accordion-sub">A constelação com cartas — prática real</span>
+          </span>
+          <svg class="acc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </button>
+        <div class="accordion-content">
+          <p>Passo a passo da constelação orientada com cartas — método completo e aplicável. Como posicionar as cartas no campo para ler movimentos sistêmicos. Demonstração prática conduzida pelo Guilherme em situação real.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-trigger" aria-expanded="false">
+          <span class="accordion-num">09</span>
+          <span class="accordion-title-wrap">
+            <span class="accordion-title">Códigos Simbólicos, Frases de Solução e Posturas do Terapeuta</span>
+            <span class="accordion-sub">O fechamento que prepara você para atender</span>
+          </span>
+          <svg class="acc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </button>
+        <div class="accordion-content">
+          <p>Os códigos simbólicos que aparecem com mais frequência. Frases de solução sistêmica — como conduzi-las com precisão e responsabilidade. As posturas essenciais do terapeuta-leitor: presença, neutralidade e cuidado.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="reveal" style="margin-top:40px;text-align:center">
+      <a href="https://checkout.pagtrust.com.br/ckd26cd640?funnel=fnedeb4f4d"
+         class="btn-ghost checkout-link">
+        Quero acessar as 10 aulas →
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- OFERTA -->
+<section class="section-base section-oferta" id="oferta">
+  <div class="container">
+    <div class="reveal" style="text-align:center">
+      <span class="label-tag">Acesso imediato</span>
+    </div>
+    <div class="oferta-card reveal">
+      <h2 class="oferta-title">Introdução à Cartomância Sistêmica</h2>
+      <p class="oferta-tagline">O método que estrutura o que você já percebe.</p>
+      <ul class="oferta-includes">
+        <li>10 aulas gravadas — do campo sistêmico à prática de atendimento</li>
+        <li>Acesso imediato após o pagamento</li>
+        <li>Estude no seu ritmo, sem prazo de entrega</li>
+        <li>Material sobre o baralho de sua escolha — o método é independente de sistema</li>
+        <li>Inclui aula prática de constelação com Arcanos Maiores</li>
+      </ul>
+      <div class="oferta-divider"></div>
+      <div class="oferta-price">R$97</div>
+      <p class="oferta-condition">pagamento único · acesso imediato</p>
+      <a href="https://checkout.pagtrust.com.br/ckd26cd640?funnel=fnedeb4f4d"
+         class="btn-checkout checkout-link">
+        Entrar agora por R$97
+      </a>
+      <span class="microcopy" style="text-align:center;margin-top:16px">
+        Pagamento seguro · Garantia incondicional de 7 dias
+      </span>
+    </div>
+  </div>
+</section>
+
+<!-- GARANTIA -->
+<section class="section-base section-garantia" id="garantia">
+  <div class="container">
+    <div class="garantia-inner">
+      <svg class="garantia-icon reveal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <path d="M12 2C12 2 4 5 4 12v5l8 3 8-3v-5C20 5 12 2 12 2z"/>
+        <polyline points="9 12 11 14 15 10"/>
+      </svg>
+      <h2 class="garantia-headline reveal">7 dias de garantia incondicional.</h2>
+      <div class="garantia-body">
+        <p class="reveal">
+          Você tem uma semana para entrar nas aulas, assistir com atenção
+          e avaliar se o método faz sentido para onde você quer chegar.
+        </p>
+        <p class="reveal">
+          Se em qualquer momento desse período você concluir que não é para você,
+          basta pedir o reembolso. Devolvemos o valor integral — sem perguntas, sem burocracia.
+        </p>
+        <p class="garantia-emphasis reveal">O risco é nosso.<br>Você pode entrar com calma.</p>
+      </div>
+      <a href="https://checkout.pagtrust.com.br/ckd26cd640?funnel=fnedeb4f4d"
+         class="btn-ghost checkout-link reveal">
+        Quero entrar com garantia
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section-base section-faq" id="faq">
+  <div class="container">
+    <span class="label-tag reveal">Perguntas</span>
+    <h2 class="reveal" style="font-family:var(--font-display);font-size:clamp(26px,3.5vw,38px);font-weight:400;margin-bottom:0">
+      Dúvidas frequentes
+    </h2>
+    <div class="faq-list reveal">
+
+      <div class="faq-item">
+        <button class="faq-trigger" aria-expanded="false">
+          <span class="faq-question">Preciso ter experiência com cartomancia para fazer a introdução?</span>
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </button>
+        <div class="faq-content">
+          <p>Não é necessária experiência formal. A introdução foi pensada para quem está entrando em contato com a abordagem sistêmica — mas serve igualmente para quem já lê cartas e quer entender o que estava faltando em sua prática.</p>
+          <p>Se você tem curiosidade genuína e disposição para estudar com atenção, é o lugar certo.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-trigger" aria-expanded="false">
+          <span class="faq-question">Qual a diferença entre a introdução e a formação completa?</span>
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </button>
+        <div class="faq-content">
+          <p>A introdução (R$97) tem 10 aulas gravadas com acesso imediato. É uma entrada estruturada no método — você estuda no seu ritmo, com autonomia.</p>
+          <p>A formação completa é oferecida por aplicação. Inclui acompanhamento próximo do Guilherme, turmas selecionadas e profundidade adicional de formação com presença.</p>
+          <p>Os dois caminhos pertencem ao mesmo ecossistema. Muitos alunos começam pela introdução e, depois de absorver o método, aplicam para a formação completa com mais clareza sobre o que buscam.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-trigger" aria-expanded="false">
+          <span class="faq-question">O método funciona com o baralho que eu já uso?</span>
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </button>
+        <div class="faq-content">
+          <p>Sim. A Cartomância Sistêmica é um método de leitura — não um sistema de cartas específico. Você aplica ao baralho que já pratica, seja tarô, baralho cigano ou outro. O que muda é a forma de ler, interpretar e conduzir — não o baralho em si.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-trigger" aria-expanded="false">
+          <span class="faq-question">Por quanto tempo terei acesso ao conteúdo?</span>
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </button>
+        <div class="faq-content">
+          <p>O acesso é por prazo definido na plataforma de entrega. Confirme o prazo exato no checkout antes de finalizar a compra. Durante o período de acesso, você pode revisitar o conteúdo quantas vezes quiser.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-trigger" aria-expanded="false">
+          <span class="faq-question">Posso usar o que aprendo em atendimentos profissionais?</span>
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </button>
+        <div class="faq-content">
+          <p>Sim — e esse é um dos objetivos do método. A aula 09, em especial, é dedicada à condução ética do atendimento: como aplicar a leitura sistêmica em sessões reais com presença, responsabilidade e clareza sobre o escopo do seu trabalho.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-trigger" aria-expanded="false">
+          <span class="faq-question">Como funciona a garantia?</span>
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </button>
+        <div class="faq-content">
+          <p>Você tem 7 dias corridos após a compra para avaliar o curso. Se em qualquer momento desse período você concluir que o conteúdo não é para você, entre em contato e faremos o reembolso integral. Sem perguntas, sem burocracia.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-trigger" aria-expanded="false">
+          <span class="faq-question">Se eu comprar a introdução, posso depois aplicar para a formação completa?</span>
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </button>
+        <div class="faq-content">
+          <p>Sim. Os dois caminhos não são excludentes. O ingresso na formação completa continua sendo via aplicação — independentemente de você já ter a introdução.</p>
+          <p>Ter a introdução costuma ajudar: você chega com mais clareza sobre o que está buscando.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-trigger" aria-expanded="false">
+          <span class="faq-question">A cartomancia sistêmica substitui acompanhamento terapêutico ou médico?</span>
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </button>
+        <div class="faq-content">
+          <p>Não. A Cartomância Sistêmica é uma ferramenta de autoconhecimento, percepção e leitura simbólica. Ela não substitui acompanhamento médico, psicológico, jurídico ou terapêutico.</p>
+          <p>Um dos pilares do método é exatamente essa clareza: saber o que compete à leitura — e o que está fora do seu escopo.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="section-base section-closing" id="closing">
+  <div class="container">
+    <div class="closing-inner">
+      <div class="closing-ornament reveal">✦</div>
+      <h2 class="closing-headline reveal">
+        O método existe.<br>A entrada é agora.
+      </h2>
+      <p class="closing-sub reveal">
+        Introdução à Cartomância Sistêmica<br>
+        10 aulas · R$97 · Acesso imediato.
+      </p>
+      <a href="https://checkout.pagtrust.com.br/ckd26cd640?funnel=fnedeb4f4d"
+         class="btn-primary checkout-link reveal">
+        Entrar agora por R$97
+      </a>
+      <span class="microcopy reveal" style="text-align:center">
+        Acesso imediato após o pagamento · Garantia incondicional de 7 dias
+      </span>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="rodape">
+  <div class="container">
+    <div class="footer-formacao">
+      <p class="footer-formacao-label">Quer o aprofundamento com acompanhamento?</p>
+      <p class="footer-formacao-text">
+        A Formação Completa em Cartomância Sistêmica é oferecida por seleção,
+        com turmas limitadas e presença próxima do Guilherme.
+      </p>
+      <a href="https://forms.gle/E4b74kMgPzkym1TG7"
+         class="footer-formacao-link"
+         target="_blank" rel="noopener">
+        Conhecer a Formação Completa →
+      </a>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-brand">Guilherme Araújo</span>
+      <div class="footer-legal">
+        <a href="#">Política de Privacidade</a>
+        <a href="#">Termos de Uso</a>
+      </div>
+      <span class="footer-copy">© 2026 Guilherme Araújo. Todos os direitos reservados.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Reveal on scroll
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('visible');
+      observer.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+// Navbar scroll
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+  navbar.classList.toggle('scrolled', window.scrollY > 40);
+}, { passive: true });
+
+// Accordion (shared for curriculum and FAQ)
+function initAccordion(selector) {
+  document.querySelectorAll(selector).forEach(trigger => {
+    trigger.addEventListener('click', () => {
+      const isOpen = trigger.getAttribute('aria-expanded') === 'true';
+      const content = trigger.nextElementSibling;
+      const parent = trigger.closest('.accordion, .faq-list');
+      if (parent) {
+        parent.querySelectorAll(selector).forEach(t => {
+          t.setAttribute('aria-expanded', 'false');
+          const c = t.nextElementSibling;
+          if (c) c.classList.remove('open');
+        });
+      }
+      if (!isOpen) {
+        trigger.setAttribute('aria-expanded', 'true');
+        content.classList.add('open');
+      }
+    });
+  });
+}
+initAccordion('.accordion-trigger');
+initAccordion('.faq-trigger');
+
+// Pixel: InitiateCheckout
+document.querySelectorAll('.checkout-link').forEach(link => {
+  link.addEventListener('click', () => {
+    if (typeof fbq !== 'undefined') fbq('track', 'InitiateCheckout');
+  });
+});
+</script>
+
+</body>
+</html>

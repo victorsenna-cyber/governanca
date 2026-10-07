@@ -1,0 +1,2447 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0a08">
+
+  <title>Portal das Felinas | Masterclass 8/8 com Prana Ka</title>
+  <meta
+    name="description"
+    content="Uma masterclass ao vivo para atravessar do feminino inseguro à autoconfiança que nasce no corpo. 8 de agosto, às 9h30, com Prana Ka."
+  >
+  <meta property="og:title" content="Portal das Felinas | Da Princesa à Rainha">
+  <meta
+    property="og:description"
+    content="No 8/8, uma travessia viva pelo corpo e pelo ventre, conduzida por Prana Ka."
+  >
+  <meta property="og:type" content="website">
+  <link
+    rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%230b0a08'/%3E%3Ccircle cx='32' cy='32' r='20' fill='none' stroke='%23f0d487' stroke-width='2'/%3E%3Ccircle cx='32' cy='32' r='8' fill='%23f0d487'/%3E%3C/svg%3E"
+  >
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Italiana&display=swap"
+    rel="stylesheet"
+  >
+  <script>document.documentElement.classList.add("js");</script>
+
+  <style>
+    :root {
+      color-scheme: dark;
+
+      --obsidian: #0b0a08;
+      --obsidian-soft: #15120e;
+      --ink: #17130d;
+      --ivory: #f1eadb;
+      --ivory-soft: #d9cfbc;
+      --sand: #c8b998;
+      --gold: #d4a94f;
+      --gold-bright: #f0d487;
+      --gold-pale: #f7e8b5;
+      --ruby: #5b2024;
+      --line-dark: rgba(23, 19, 13, 0.2);
+      --line-light: rgba(247, 232, 181, 0.22);
+
+      --serif: "Italiana", "Times New Roman", serif;
+      --sans: "DM Sans", Arial, sans-serif;
+
+      --gutter: clamp(1.25rem, 4vw, 5rem);
+      --content: 88rem;
+      --ease: cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      background: var(--obsidian);
+    }
+
+    body {
+      margin: 0;
+      overflow-x: hidden;
+      background: var(--obsidian);
+      color: var(--ivory);
+      font-family: var(--sans);
+      font-size: 1rem;
+      line-height: 1.65;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body::before {
+      position: fixed;
+      z-index: 100;
+      inset: 0;
+      pointer-events: none;
+      content: "";
+      opacity: 0.16;
+      background-image:
+        url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.92' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.5'/%3E%3C/svg%3E");
+      mix-blend-mode: soft-light;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    button,
+    input {
+      font: inherit;
+    }
+
+    button,
+    summary,
+    a {
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    :focus-visible {
+      outline: 2px solid var(--gold-bright);
+      outline-offset: 4px;
+    }
+
+    ::selection {
+      background: var(--gold);
+      color: var(--obsidian);
+    }
+
+    .skip-link {
+      position: fixed;
+      z-index: 200;
+      top: -8rem;
+      left: 1rem;
+      padding: 0.75rem 1rem;
+      background: var(--ivory);
+      color: var(--ink);
+      transition: top 180ms ease;
+    }
+
+    .skip-link:focus {
+      top: 1rem;
+    }
+
+    .shell {
+      width: min(100%, var(--content));
+      margin-inline: auto;
+      padding-inline: var(--gutter);
+    }
+
+    .display {
+      margin: 0;
+      font-family: var(--serif);
+      font-weight: 400;
+      letter-spacing: -0.045em;
+      line-height: 0.94;
+      text-wrap: balance;
+    }
+
+    .eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      margin: 0 0 1.25rem;
+      color: var(--gold-bright);
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      line-height: 1.2;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      width: 2.5rem;
+      height: 1px;
+      background: currentColor;
+      content: "";
+    }
+
+    .section-number {
+      color: currentColor;
+      font-size: 0.67rem;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+
+    .button {
+      --button-bg: var(--gold-bright);
+      --button-color: var(--obsidian);
+
+      position: relative;
+      isolation: isolate;
+      display: inline-flex;
+      min-height: 3.6rem;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: 999px;
+      padding: 0.95rem 1.5rem 1rem;
+      background: var(--button-bg);
+      box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.22);
+      color: var(--button-color);
+      cursor: pointer;
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      line-height: 1.2;
+      text-align: center;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition:
+        transform 350ms var(--ease),
+        box-shadow 350ms var(--ease),
+        background 350ms ease;
+    }
+
+    .button::before {
+      position: absolute;
+      z-index: -1;
+      inset: -120% 55% -120% -20%;
+      background: linear-gradient(
+        95deg,
+        transparent 25%,
+        rgba(255, 255, 255, 0.54) 50%,
+        transparent 75%
+      );
+      content: "";
+      transform: translateX(-120%) rotate(8deg);
+      transition: transform 700ms var(--ease);
+    }
+
+    .button::after {
+      width: 2.2rem;
+      height: 1px;
+      background: currentColor;
+      content: "";
+      transition: width 350ms var(--ease);
+    }
+
+    .button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 1.4rem 4rem rgba(0, 0, 0, 0.32);
+    }
+
+    .button:hover::before {
+      transform: translateX(360%) rotate(8deg);
+    }
+
+    .button:hover::after {
+      width: 3rem;
+    }
+
+    .button--dark {
+      --button-bg: var(--obsidian);
+      --button-color: var(--gold-pale);
+      border-color: rgba(11, 10, 8, 0.2);
+    }
+
+    .button--quiet {
+      --button-bg: transparent;
+      --button-color: var(--gold-pale);
+      border-color: var(--line-light);
+      box-shadow: none;
+    }
+
+    .microcopy {
+      margin: 0.9rem 0 0;
+      color: rgba(241, 234, 219, 0.68);
+      font-size: 0.78rem;
+      line-height: 1.45;
+    }
+
+    .site-header {
+      position: absolute;
+      z-index: 20;
+      top: 0;
+      left: 0;
+      width: 100%;
+      color: var(--ivory);
+    }
+
+    .site-header__inner {
+      display: flex;
+      min-height: 5.75rem;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+    }
+
+    .wordmark {
+      color: var(--gold-pale);
+      font-family: var(--serif);
+      font-size: 1.15rem;
+      letter-spacing: 0.16em;
+      line-height: 1;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+
+    .site-header__action {
+      color: var(--ivory);
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+
+    .site-header__action span {
+      display: inline-block;
+      margin-left: 0.7rem;
+      color: var(--gold-bright);
+      transition: transform 250ms var(--ease);
+    }
+
+    .site-header__action:hover span {
+      transform: translateX(0.35rem);
+    }
+
+    .hero {
+      --hero-shift: 0px;
+
+      position: relative;
+      isolation: isolate;
+      display: grid;
+      min-height: 100svh;
+      overflow: hidden;
+      align-items: end;
+      background: #090806;
+    }
+
+    .hero__media {
+      position: absolute;
+      z-index: -3;
+      inset: 0 0 0 39%;
+      overflow: hidden;
+      background: var(--obsidian-soft);
+    }
+
+    .hero__media img {
+      width: 100%;
+      height: calc(100% + 6rem);
+      object-fit: cover;
+      object-position: 53% center;
+      filter: saturate(0.83) contrast(1.06) brightness(0.87);
+      transform: translate3d(0, var(--hero-shift), 0) scale(1.08);
+      will-change: transform;
+    }
+
+    .hero__veil {
+      position: absolute;
+      z-index: -2;
+      inset: 0;
+      background:
+        linear-gradient(
+          90deg,
+          #090806 0%,
+          #090806 32%,
+          rgba(9, 8, 6, 0.95) 42%,
+          rgba(9, 8, 6, 0.38) 72%,
+          rgba(9, 8, 6, 0.16) 100%
+        ),
+        linear-gradient(
+          0deg,
+          rgba(9, 8, 6, 0.85) 0%,
+          transparent 38%,
+          rgba(9, 8, 6, 0.22) 100%
+        );
+    }
+
+    .hero__sun {
+      position: absolute;
+      z-index: -1;
+      top: 50%;
+      right: clamp(3rem, 8vw, 10rem);
+      width: clamp(15rem, 34vw, 35rem);
+      aspect-ratio: 1;
+      border: 1px solid rgba(255, 230, 156, 0.36);
+      border-radius: 50%;
+      box-shadow:
+        0 0 0 2.25rem rgba(245, 207, 116, 0.035),
+        0 0 0 5.5rem rgba(245, 207, 116, 0.022),
+        0 0 9rem rgba(240, 190, 75, 0.18);
+      opacity: 0.78;
+      transform: translateY(-48%);
+    }
+
+    .hero__sun::before,
+    .hero__sun::after {
+      position: absolute;
+      border: 1px solid rgba(255, 230, 156, 0.2);
+      border-radius: 50%;
+      content: "";
+    }
+
+    .hero__sun::before {
+      inset: 13%;
+    }
+
+    .hero__sun::after {
+      inset: 31%;
+      background: rgba(247, 220, 145, 0.05);
+      box-shadow: 0 0 4rem rgba(247, 220, 145, 0.16);
+    }
+
+    .hero__content {
+      width: min(100%, 82rem);
+      margin-inline: auto;
+      padding: 9rem var(--gutter) clamp(4rem, 8vh, 6.5rem);
+    }
+
+    .hero__copy {
+      width: min(100%, 48rem);
+    }
+
+    .hero__title {
+      margin: 0;
+      max-width: 11ch;
+      color: var(--ivory);
+      font-family: var(--serif);
+      font-size: clamp(4.3rem, 9.8vw, 9.4rem);
+      font-weight: 400;
+      letter-spacing: -0.065em;
+      line-height: 0.76;
+      text-transform: uppercase;
+    }
+
+    .hero__title span {
+      display: block;
+      margin-left: clamp(1.8rem, 6vw, 6rem);
+      color: var(--gold-bright);
+      font-style: italic;
+      letter-spacing: -0.07em;
+      text-transform: none;
+    }
+
+    .hero__promise {
+      max-width: 31rem;
+      margin: clamp(1.5rem, 3vh, 2.5rem) 0 0 clamp(0rem, 6vw, 6rem);
+      color: var(--ivory);
+      font-family: var(--serif);
+      font-size: clamp(1.55rem, 2.6vw, 2.45rem);
+      letter-spacing: -0.035em;
+      line-height: 1.06;
+      text-wrap: balance;
+    }
+
+    .hero__support {
+      max-width: 31rem;
+      margin: 1.15rem 0 0 clamp(0rem, 6vw, 6rem);
+      color: rgba(241, 234, 219, 0.74);
+      font-size: clamp(0.96rem, 1.2vw, 1.08rem);
+      line-height: 1.65;
+    }
+
+    .hero__actions {
+      margin: 1.75rem 0 0 clamp(0rem, 6vw, 6rem);
+    }
+
+    .hero__scroll {
+      position: absolute;
+      right: var(--gutter);
+      bottom: 2rem;
+      display: flex;
+      align-items: center;
+      gap: 0.9rem;
+      color: rgba(241, 234, 219, 0.64);
+      font-size: 0.62rem;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      transform: rotate(90deg) translateX(100%);
+      transform-origin: right bottom;
+    }
+
+    .hero__scroll::before {
+      width: 3rem;
+      height: 1px;
+      background: currentColor;
+      content: "";
+    }
+
+    .mirror {
+      position: relative;
+      background: var(--ivory);
+      color: var(--ink);
+    }
+
+    .mirror__inner {
+      display: grid;
+      min-height: 92svh;
+      grid-template-columns: minmax(8rem, 0.48fr) minmax(0, 1.52fr);
+      gap: clamp(2rem, 8vw, 9rem);
+      align-items: center;
+      padding-block: clamp(6rem, 12vw, 11rem);
+    }
+
+    .mirror__rail {
+      align-self: stretch;
+      border-right: 1px solid var(--line-dark);
+      padding-right: 2rem;
+    }
+
+    .mirror__rail span {
+      position: sticky;
+      top: 3rem;
+      color: rgba(23, 19, 13, 0.52);
+    }
+
+    .mirror__copy {
+      max-width: 56rem;
+    }
+
+    .mirror__copy h2 {
+      max-width: 12ch;
+      font-size: clamp(3.4rem, 7vw, 7rem);
+    }
+
+    .mirror__scene {
+      max-width: 43rem;
+      margin: clamp(2rem, 5vw, 4.5rem) 0 0;
+      color: rgba(23, 19, 13, 0.8);
+      font-size: clamp(1.15rem, 1.8vw, 1.55rem);
+      line-height: 1.65;
+    }
+
+    .mirror__scene strong {
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    .mirror__signals {
+      display: grid;
+      margin-top: clamp(2.5rem, 5vw, 4.5rem);
+      border-top: 1px solid var(--line-dark);
+    }
+
+    .mirror__signal {
+      display: grid;
+      grid-template-columns: 2.7rem 1fr;
+      gap: 1rem;
+      align-items: start;
+      border-bottom: 1px solid var(--line-dark);
+      padding: 1.15rem 0;
+      color: rgba(23, 19, 13, 0.72);
+    }
+
+    .mirror__signal span:first-child {
+      color: var(--ruby);
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+    }
+
+    .mirror__signal p {
+      margin: 0;
+    }
+
+    .cost {
+      position: relative;
+      isolation: isolate;
+      display: grid;
+      min-height: 78svh;
+      overflow: hidden;
+      place-items: center;
+      background: var(--ruby);
+      color: var(--ivory);
+    }
+
+    .cost::before {
+      position: absolute;
+      z-index: -2;
+      inset: 0;
+      background:
+        linear-gradient(90deg, rgba(35, 9, 11, 0.94), rgba(49, 14, 16, 0.65)),
+        url("assets/templo-dourado-optimized.jpg") center 48% / cover;
+      content: "";
+      filter: saturate(0.38) contrast(1.15);
+    }
+
+    .cost::after {
+      position: absolute;
+      z-index: -1;
+      inset: 0;
+      background:
+        radial-gradient(circle at 68% 42%, rgba(231, 176, 66, 0.14), transparent 27%),
+        linear-gradient(180deg, rgba(9, 8, 6, 0.1), rgba(9, 8, 6, 0.62));
+      content: "";
+    }
+
+    .cost__inner {
+      max-width: 70rem;
+      padding-block: clamp(6rem, 12vw, 10rem);
+      text-align: center;
+    }
+
+    .cost__inner .eyebrow {
+      justify-content: center;
+    }
+
+    .cost__inner h2 {
+      margin-inline: auto;
+      max-width: 14ch;
+      font-size: clamp(3rem, 6.8vw, 7.3rem);
+      line-height: 0.98;
+    }
+
+    .cost__body {
+      max-width: 42rem;
+      margin: 2.2rem auto 0;
+      color: rgba(241, 234, 219, 0.76);
+      font-size: clamp(1rem, 1.45vw, 1.22rem);
+    }
+
+    .cost__question {
+      margin: 2.4rem 0 0;
+      color: var(--gold-pale);
+      font-family: var(--serif);
+      font-size: clamp(1.5rem, 2.8vw, 2.55rem);
+      line-height: 1.2;
+      text-wrap: balance;
+    }
+
+    .passage {
+      position: relative;
+      background: var(--obsidian);
+      color: var(--ivory);
+    }
+
+    .passage__inner {
+      display: grid;
+      grid-template-columns: minmax(16rem, 0.82fr) minmax(0, 1.18fr);
+      gap: clamp(3rem, 8vw, 9rem);
+      align-items: start;
+      padding-block: clamp(6rem, 10vw, 10rem);
+    }
+
+    .passage__intro {
+      position: sticky;
+      top: 3rem;
+    }
+
+    .passage__intro h2 {
+      max-width: 8ch;
+      font-size: clamp(3.5rem, 6.5vw, 6.8rem);
+    }
+
+    .passage__intro p {
+      max-width: 27rem;
+      margin: 1.8rem 0 0;
+      color: rgba(241, 234, 219, 0.68);
+    }
+
+    .passage__progress {
+      position: relative;
+      width: min(100%, 25rem);
+      height: 1px;
+      margin-top: 2.5rem;
+      overflow: hidden;
+      background: var(--line-light);
+    }
+
+    .passage__progress span {
+      display: block;
+      width: 25%;
+      height: 100%;
+      background: var(--gold-bright);
+      transform-origin: left;
+      transition: width 500ms var(--ease);
+    }
+
+    .passage__steps {
+      border-top: 1px solid var(--line-light);
+    }
+
+    .passage-step {
+      display: grid;
+      min-height: 42svh;
+      grid-template-columns: clamp(4rem, 8vw, 7rem) 1fr;
+      gap: clamp(1.25rem, 3vw, 3rem);
+      align-content: center;
+      border-bottom: 1px solid var(--line-light);
+      padding-block: clamp(3rem, 6vw, 5.5rem);
+      opacity: 0.46;
+      transition:
+        opacity 550ms var(--ease),
+        transform 550ms var(--ease);
+    }
+
+    .passage-step.is-active {
+      opacity: 1;
+      transform: translateX(-0.75rem);
+    }
+
+    .passage-step__number {
+      color: var(--gold-bright);
+      font-family: var(--serif);
+      font-size: clamp(2.8rem, 5vw, 5rem);
+      line-height: 1;
+    }
+
+    .passage-step h3 {
+      margin: 0;
+      color: var(--ivory);
+      font-family: var(--serif);
+      font-size: clamp(2.1rem, 4vw, 4.2rem);
+      font-weight: 400;
+      letter-spacing: -0.045em;
+      line-height: 1;
+    }
+
+    .passage-step p {
+      max-width: 38rem;
+      margin: 1rem 0 0;
+      color: rgba(241, 234, 219, 0.66);
+    }
+
+    .passage__cta {
+      margin-top: 3rem;
+    }
+
+    .experience {
+      background: var(--ivory);
+      color: var(--ink);
+    }
+
+    .experience__inner {
+      display: grid;
+      grid-template-columns: minmax(16rem, 0.75fr) minmax(0, 1.25fr);
+      gap: clamp(3rem, 9vw, 10rem);
+      padding-block: clamp(6rem, 12vw, 11rem);
+    }
+
+    .experience__heading h2 {
+      max-width: 9ch;
+      font-size: clamp(3.3rem, 6.5vw, 6.7rem);
+    }
+
+    .experience__heading p {
+      max-width: 29rem;
+      margin: 1.6rem 0 0;
+      color: rgba(23, 19, 13, 0.68);
+    }
+
+    .experience__list {
+      border-top: 1px solid var(--line-dark);
+    }
+
+    .experience-item {
+      display: grid;
+      grid-template-columns: 4rem 1fr;
+      gap: 1rem;
+      border-bottom: 1px solid var(--line-dark);
+      padding: 1.7rem 0 1.9rem;
+    }
+
+    .experience-item__index {
+      color: var(--ruby);
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+    }
+
+    .experience-item h3 {
+      margin: 0;
+      font-family: var(--serif);
+      font-size: clamp(1.7rem, 2.7vw, 2.6rem);
+      font-weight: 400;
+      letter-spacing: -0.035em;
+      line-height: 1.1;
+    }
+
+    .experience-item p {
+      margin: 0.7rem 0 0;
+      color: rgba(23, 19, 13, 0.66);
+    }
+
+    .guide {
+      position: relative;
+      background: #16110d;
+      color: var(--ivory);
+    }
+
+    .guide__inner {
+      display: grid;
+      min-height: 100svh;
+      grid-template-columns: minmax(0, 0.9fr) minmax(22rem, 1.1fr);
+      align-items: stretch;
+    }
+
+    .guide__portrait {
+      position: relative;
+      min-height: 46rem;
+      overflow: hidden;
+    }
+
+    .guide__portrait::after {
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(90deg, transparent 55%, #16110d 100%),
+        linear-gradient(0deg, #16110d 0%, transparent 32%);
+      content: "";
+    }
+
+    .guide__portrait img {
+      width: 100%;
+      height: 118%;
+      object-fit: cover;
+      object-position: 50% 16%;
+      filter: saturate(0.75) sepia(0.13) contrast(1.04);
+      transform: translateY(-5%);
+    }
+
+    .guide__copy {
+      display: flex;
+      max-width: 47rem;
+      flex-direction: column;
+      justify-content: center;
+      padding: clamp(5rem, 10vw, 10rem) var(--gutter);
+    }
+
+    .guide__copy h2 {
+      max-width: 9ch;
+      font-size: clamp(3.5rem, 6.2vw, 6.5rem);
+    }
+
+    .guide__quote {
+      max-width: 29rem;
+      margin: 2rem 0 0;
+      color: var(--gold-pale);
+      font-family: var(--serif);
+      font-size: clamp(1.55rem, 2.5vw, 2.35rem);
+      line-height: 1.25;
+      text-wrap: balance;
+    }
+
+    .guide__body {
+      max-width: 35rem;
+      margin: 1.8rem 0 0;
+      color: rgba(241, 234, 219, 0.69);
+    }
+
+    .guide__credentials {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0;
+      margin-top: 2.6rem;
+      border-top: 1px solid var(--line-light);
+    }
+
+    .guide__credential {
+      border-bottom: 1px solid var(--line-light);
+      padding: 1rem 1rem 1rem 0;
+      color: rgba(241, 234, 219, 0.7);
+      font-size: 0.77rem;
+      letter-spacing: 0.05em;
+      line-height: 1.45;
+      text-transform: uppercase;
+    }
+
+    .qualification {
+      background: var(--ivory);
+      color: var(--ink);
+    }
+
+    .qualification__inner {
+      padding-block: clamp(6rem, 11vw, 10rem);
+    }
+
+    .qualification__heading {
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(18rem, 0.8fr);
+      gap: clamp(2rem, 8vw, 8rem);
+      align-items: end;
+    }
+
+    .qualification__heading h2 {
+      max-width: 11ch;
+      font-size: clamp(3.4rem, 6.7vw, 7rem);
+    }
+
+    .qualification__heading p {
+      margin: 0 0 0.6rem;
+      color: rgba(23, 19, 13, 0.66);
+    }
+
+    .qualification__columns {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      margin-top: clamp(3rem, 7vw, 6rem);
+      border-top: 1px solid var(--line-dark);
+    }
+
+    .qualification__column {
+      padding: clamp(2rem, 4vw, 3.6rem) clamp(1.5rem, 5vw, 5rem) 0 0;
+    }
+
+    .qualification__column + .qualification__column {
+      border-left: 1px solid var(--line-dark);
+      padding-right: 0;
+      padding-left: clamp(1.5rem, 5vw, 5rem);
+    }
+
+    .qualification__column h3 {
+      margin: 0 0 2rem;
+      font-family: var(--serif);
+      font-size: clamp(1.8rem, 3vw, 3rem);
+      font-weight: 400;
+      letter-spacing: -0.035em;
+    }
+
+    .qualification__list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .qualification__list li {
+      position: relative;
+      border-top: 1px solid var(--line-dark);
+      padding: 1rem 0 1rem 2rem;
+      color: rgba(23, 19, 13, 0.7);
+    }
+
+    .qualification__list li::before {
+      position: absolute;
+      top: 1.5rem;
+      left: 0;
+      width: 0.45rem;
+      height: 0.45rem;
+      border: 1px solid var(--ruby);
+      border-radius: 50%;
+      content: "";
+    }
+
+    .offer {
+      position: relative;
+      isolation: isolate;
+      overflow: hidden;
+      background: var(--gold);
+      color: var(--obsidian);
+    }
+
+    .offer::before {
+      position: absolute;
+      z-index: -1;
+      top: 50%;
+      right: -8vw;
+      width: min(55vw, 52rem);
+      aspect-ratio: 1;
+      border: 1px solid rgba(11, 10, 8, 0.25);
+      border-radius: 50%;
+      box-shadow:
+        0 0 0 5rem rgba(255, 255, 255, 0.08),
+        0 0 0 10rem rgba(255, 255, 255, 0.045);
+      content: "";
+      transform: translateY(-50%);
+    }
+
+    .offer__inner {
+      display: grid;
+      min-height: 105svh;
+      grid-template-columns: minmax(0, 1.1fr) minmax(20rem, 0.9fr);
+      gap: clamp(3rem, 10vw, 11rem);
+      align-items: center;
+      padding-block: clamp(6rem, 11vw, 10rem);
+    }
+
+    .offer .eyebrow {
+      color: var(--obsidian);
+    }
+
+    .offer__headline {
+      max-width: 10ch;
+      font-size: clamp(3.8rem, 7.6vw, 8rem);
+    }
+
+    .offer__lead {
+      max-width: 33rem;
+      margin: 1.6rem 0 0;
+      color: rgba(11, 10, 8, 0.72);
+      font-size: clamp(1rem, 1.3vw, 1.16rem);
+    }
+
+    .offer__includes {
+      margin: 2.6rem 0 0;
+      padding: 0;
+      border-top: 1px solid rgba(11, 10, 8, 0.24);
+      list-style: none;
+    }
+
+    .offer__includes li {
+      display: grid;
+      grid-template-columns: 2rem 1fr;
+      gap: 0.8rem;
+      border-bottom: 1px solid rgba(11, 10, 8, 0.24);
+      padding: 0.9rem 0;
+      color: rgba(11, 10, 8, 0.78);
+    }
+
+    .offer__includes span {
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+    }
+
+    .offer__decision {
+      position: relative;
+      border-top: 1px solid rgba(11, 10, 8, 0.32);
+      border-bottom: 1px solid rgba(11, 10, 8, 0.32);
+      padding: clamp(2.2rem, 5vw, 4rem) 0;
+    }
+
+    .offer__format {
+      margin: 0;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+    }
+
+    .offer__price {
+      margin: 0.6rem 0 0;
+      font-family: var(--serif);
+      font-size: clamp(5.5rem, 11vw, 10.5rem);
+      letter-spacing: -0.08em;
+      line-height: 0.88;
+    }
+
+    .offer__date {
+      margin: 1.4rem 0 0;
+      color: rgba(11, 10, 8, 0.74);
+      font-size: 0.88rem;
+      font-weight: 500;
+    }
+
+    .offer__action {
+      margin-top: 2rem;
+    }
+
+    .offer__microcopy {
+      max-width: 28rem;
+      margin: 0.9rem 0 0;
+      color: rgba(11, 10, 8, 0.67);
+      font-size: 0.78rem;
+      line-height: 1.5;
+    }
+
+    .faq {
+      background: var(--obsidian);
+      color: var(--ivory);
+    }
+
+    .faq__inner {
+      display: grid;
+      grid-template-columns: minmax(15rem, 0.62fr) minmax(0, 1.38fr);
+      gap: clamp(3rem, 10vw, 11rem);
+      padding-block: clamp(6rem, 11vw, 10rem);
+    }
+
+    .faq__heading {
+      position: sticky;
+      top: 3rem;
+      align-self: start;
+    }
+
+    .faq__heading h2 {
+      max-width: 7ch;
+      font-size: clamp(3.5rem, 6vw, 6.5rem);
+    }
+
+    .faq__heading p {
+      max-width: 24rem;
+      margin: 1.4rem 0 0;
+      color: rgba(241, 234, 219, 0.62);
+    }
+
+    .faq__items {
+      border-top: 1px solid var(--line-light);
+    }
+
+    .faq details {
+      border-bottom: 1px solid var(--line-light);
+    }
+
+    .faq summary {
+      position: relative;
+      padding: 1.6rem 3rem 1.6rem 0;
+      color: var(--ivory);
+      cursor: pointer;
+      font-family: var(--serif);
+      font-size: clamp(1.35rem, 2.2vw, 2rem);
+      letter-spacing: -0.02em;
+      line-height: 1.25;
+      list-style: none;
+    }
+
+    .faq summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .faq summary::before,
+    .faq summary::after {
+      position: absolute;
+      top: 50%;
+      right: 0.4rem;
+      width: 1.2rem;
+      height: 1px;
+      background: var(--gold-bright);
+      content: "";
+      transition: transform 300ms var(--ease);
+    }
+
+    .faq summary::after {
+      transform: rotate(90deg);
+    }
+
+    .faq details[open] summary::after {
+      transform: rotate(0deg);
+    }
+
+    .faq details p {
+      max-width: 46rem;
+      margin: -0.4rem 0 0;
+      padding: 0 3rem 1.8rem 0;
+      color: rgba(241, 234, 219, 0.64);
+    }
+
+    .closing {
+      position: relative;
+      isolation: isolate;
+      display: grid;
+      min-height: 82svh;
+      overflow: hidden;
+      place-items: center;
+      background: #0b0a08;
+      color: var(--ivory);
+      text-align: center;
+    }
+
+    .closing::before {
+      position: absolute;
+      z-index: -2;
+      inset: 0;
+      background:
+        linear-gradient(180deg, rgba(11, 10, 8, 0.84), rgba(11, 10, 8, 0.78)),
+        url("assets/felina-solar.jpg") center 36% / cover;
+      content: "";
+      filter: saturate(0.7) contrast(1.1);
+      transform: scale(1.05);
+    }
+
+    .closing::after {
+      position: absolute;
+      z-index: -1;
+      inset: 0;
+      background: radial-gradient(circle at 50% 43%, rgba(240, 188, 74, 0.2), transparent 31%);
+      content: "";
+    }
+
+    .closing__inner {
+      max-width: 73rem;
+      padding-block: clamp(6rem, 12vw, 10rem);
+    }
+
+    .closing__inner h2 {
+      margin-inline: auto;
+      max-width: 12ch;
+      font-size: clamp(3.5rem, 8vw, 8.7rem);
+    }
+
+    .closing__inner p {
+      max-width: 37rem;
+      margin: 1.8rem auto 0;
+      color: rgba(241, 234, 219, 0.72);
+      font-size: clamp(1rem, 1.45vw, 1.18rem);
+    }
+
+    .closing__action {
+      margin-top: 2.3rem;
+    }
+
+    .closing__seal {
+      margin: 1.5rem 0 0;
+      color: var(--gold-pale);
+      font-family: var(--serif);
+      font-size: 1.4rem;
+      font-style: italic;
+    }
+
+    .site-footer {
+      background: var(--obsidian);
+      color: rgba(241, 234, 219, 0.48);
+    }
+
+    .site-footer__inner {
+      display: flex;
+      min-height: 7rem;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+      border-top: 1px solid var(--line-light);
+      font-size: 0.7rem;
+      line-height: 1.5;
+    }
+
+    .site-footer__inner p {
+      margin: 0;
+    }
+
+    .mobile-cta {
+      position: fixed;
+      z-index: 50;
+      right: 0.8rem;
+      bottom: 0.8rem;
+      left: 0.8rem;
+      display: none;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.8rem;
+      border: 1px solid rgba(247, 232, 181, 0.2);
+      border-radius: 999px;
+      padding: 0.45rem 0.45rem 0.45rem 1rem;
+      background: rgba(11, 10, 8, 0.9);
+      box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.38);
+      backdrop-filter: blur(16px);
+      transform: translateY(150%);
+      transition: transform 450ms var(--ease);
+    }
+
+    .mobile-cta.is-visible {
+      transform: translateY(0);
+    }
+
+    .mobile-cta__meta {
+      color: var(--gold-pale);
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      line-height: 1.35;
+    }
+
+    .mobile-cta .button {
+      min-height: 2.9rem;
+      padding-inline: 1rem;
+      font-size: 0.66rem;
+    }
+
+    .mobile-cta .button::after {
+      display: none;
+    }
+
+    dialog {
+      width: min(calc(100% - 2rem), 38rem);
+      border: 1px solid rgba(247, 232, 181, 0.2);
+      border-radius: 0;
+      padding: 0;
+      background: var(--obsidian-soft);
+      box-shadow: 0 2rem 8rem rgba(0, 0, 0, 0.58);
+      color: var(--ivory);
+    }
+
+    dialog::backdrop {
+      background: rgba(6, 5, 4, 0.78);
+      backdrop-filter: blur(7px);
+    }
+
+    .interest-modal {
+      position: relative;
+      padding: clamp(2rem, 6vw, 4rem);
+    }
+
+    .interest-modal__close {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      display: grid;
+      width: 2.5rem;
+      height: 2.5rem;
+      border: 1px solid var(--line-light);
+      border-radius: 50%;
+      background: transparent;
+      color: var(--ivory);
+      cursor: pointer;
+      place-items: center;
+    }
+
+    .interest-modal h2 {
+      max-width: 9ch;
+      font-size: clamp(2.6rem, 7vw, 4.5rem);
+    }
+
+    .interest-modal__intro {
+      margin: 1.25rem 0 0;
+      color: rgba(241, 234, 219, 0.66);
+    }
+
+    .interest-form {
+      display: grid;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .interest-form label {
+      display: grid;
+      gap: 0.45rem;
+      color: var(--gold-pale);
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .interest-form input {
+      width: 100%;
+      border: 0;
+      border-bottom: 1px solid var(--line-light);
+      border-radius: 0;
+      padding: 0.8rem 0;
+      background: transparent;
+      color: var(--ivory);
+      outline: none;
+    }
+
+    .interest-form input:focus {
+      border-color: var(--gold-bright);
+    }
+
+    .interest-form .button {
+      width: 100%;
+      margin-top: 0.7rem;
+    }
+
+    .interest-form .form-trap {
+      position: absolute;
+      left: -10000px;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+    }
+
+    .interest-form .interest-consent {
+      display: grid;
+      grid-template-columns: 1.05rem 1fr;
+      gap: 0.7rem;
+      align-items: start;
+      color: rgba(241, 234, 219, 0.66);
+      font-size: 0.68rem;
+      font-weight: 400;
+      letter-spacing: 0;
+      line-height: 1.5;
+      text-transform: none;
+    }
+
+    .interest-form .interest-consent input {
+      width: 1rem;
+      height: 1rem;
+      margin-top: 0.15rem;
+      accent-color: var(--gold-bright);
+    }
+
+    .interest-modal__note {
+      margin: 1rem 0 0;
+      color: rgba(241, 234, 219, 0.5);
+      font-size: 0.72rem;
+    }
+
+    .reveal {
+      opacity: 1;
+      transform: none;
+    }
+
+    .js .reveal {
+      opacity: 0;
+      transform: translateY(2rem);
+      transition:
+        opacity 750ms var(--ease),
+        transform 750ms var(--ease);
+    }
+
+    .js .reveal.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (max-width: 900px) {
+      .hero__media {
+        inset: 0;
+      }
+
+      .hero__media img {
+        object-position: 58% center;
+      }
+
+      .hero__veil {
+        background:
+          linear-gradient(
+            90deg,
+            rgba(9, 8, 6, 0.98) 0%,
+            rgba(9, 8, 6, 0.84) 54%,
+            rgba(9, 8, 6, 0.3) 100%
+          ),
+          linear-gradient(0deg, rgba(9, 8, 6, 0.95) 0%, transparent 58%);
+      }
+
+      .hero__sun {
+        right: -6rem;
+        opacity: 0.5;
+      }
+
+      .mirror__inner,
+      .passage__inner,
+      .experience__inner,
+      .qualification__heading,
+      .offer__inner,
+      .faq__inner {
+        grid-template-columns: 1fr;
+      }
+
+      .mirror__inner {
+        gap: 2.4rem;
+      }
+
+      .mirror__rail {
+        align-self: auto;
+        border-right: 0;
+        border-bottom: 1px solid var(--line-dark);
+        padding: 0 0 1rem;
+      }
+
+      .mirror__rail span,
+      .passage__intro,
+      .faq__heading {
+        position: static;
+      }
+
+      .passage__intro h2 {
+        max-width: 12ch;
+      }
+
+      .passage-step {
+        min-height: auto;
+        opacity: 1;
+        transform: none;
+      }
+
+      .guide__inner {
+        grid-template-columns: 1fr;
+      }
+
+      .guide__portrait {
+        min-height: 38rem;
+      }
+
+      .guide__portrait::after {
+        background: linear-gradient(0deg, #16110d 0%, transparent 42%);
+      }
+
+      .qualification__columns {
+        grid-template-columns: 1fr;
+      }
+
+      .qualification__column,
+      .qualification__column + .qualification__column {
+        border-left: 0;
+        padding-right: 0;
+        padding-left: 0;
+      }
+
+      .qualification__column + .qualification__column {
+        margin-top: 3rem;
+      }
+
+      .offer__inner {
+        min-height: auto;
+      }
+
+      .offer__decision {
+        max-width: 35rem;
+      }
+
+      .faq__heading h2 {
+        max-width: 10ch;
+      }
+    }
+
+    @media (max-width: 640px) {
+      :root {
+        --gutter: 1.1rem;
+      }
+
+      body {
+        padding-bottom: 5rem;
+      }
+
+      .site-header__inner {
+        min-height: 4.7rem;
+      }
+
+      .wordmark {
+        font-size: 0.95rem;
+      }
+
+      .site-header__action {
+        font-size: 0.61rem;
+      }
+
+      .hero {
+        min-height: 100svh;
+        align-items: end;
+      }
+
+      .hero__media img {
+        object-position: 64% center;
+        filter: saturate(0.72) brightness(0.68);
+      }
+
+      .hero__veil {
+        background:
+          linear-gradient(90deg, rgba(9, 8, 6, 0.9), rgba(9, 8, 6, 0.2)),
+          linear-gradient(
+            0deg,
+            rgba(9, 8, 6, 1) 0%,
+            rgba(9, 8, 6, 0.93) 31%,
+            rgba(9, 8, 6, 0.18) 78%
+          );
+      }
+
+      .hero__sun {
+        top: 35%;
+        right: -8rem;
+        width: 24rem;
+      }
+
+      .hero__content {
+        padding-top: 6.3rem;
+        padding-bottom: 2.2rem;
+      }
+
+      .hero__copy {
+        width: 100%;
+      }
+
+      .hero .eyebrow {
+        margin-bottom: 0.9rem;
+        font-size: 0.61rem;
+      }
+
+      .hero__title {
+        max-width: 7ch;
+        font-size: clamp(3.7rem, 17vw, 5.2rem);
+        line-height: 0.79;
+      }
+
+      .hero__title span {
+        margin-left: 1.3rem;
+      }
+
+      .hero__promise {
+        max-width: 21rem;
+        margin-top: 1.25rem;
+        margin-left: 0;
+        font-size: clamp(1.4rem, 7.2vw, 1.9rem);
+      }
+
+      .hero__support {
+        display: none;
+      }
+
+      .hero__actions {
+        margin-top: 1.35rem;
+        margin-left: 0;
+      }
+
+      .hero__actions .button {
+        width: 100%;
+      }
+
+      .hero__actions .microcopy {
+        text-align: center;
+      }
+
+      .hero__scroll {
+        display: none;
+      }
+
+      .mirror__copy h2,
+      .cost__inner h2,
+      .passage__intro h2,
+      .experience__heading h2,
+      .guide__copy h2,
+      .qualification__heading h2,
+      .offer__headline,
+      .faq__heading h2,
+      .closing__inner h2 {
+        font-size: clamp(3rem, 14vw, 4.5rem);
+      }
+
+      .mirror__scene {
+        font-size: 1.08rem;
+      }
+
+      .cost {
+        min-height: 88svh;
+      }
+
+      .passage-step {
+        grid-template-columns: 3.2rem 1fr;
+      }
+
+      .experience-item {
+        grid-template-columns: 2.7rem 1fr;
+      }
+
+      .guide__portrait {
+        min-height: 31rem;
+      }
+
+      .guide__portrait img {
+        height: 128%;
+        object-position: 50% 20%;
+      }
+
+      .guide__credentials {
+        grid-template-columns: 1fr;
+      }
+
+      .offer::before {
+        top: 15%;
+        right: -55%;
+        width: 34rem;
+      }
+
+      .offer__price {
+        font-size: clamp(5.6rem, 29vw, 8rem);
+      }
+
+      .faq details p {
+        padding-right: 0;
+      }
+
+      .site-footer__inner {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+      }
+
+      .mobile-cta {
+        display: flex;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+      }
+
+      .hero__media img {
+        transform: scale(1.03);
+      }
+
+      .js .reveal {
+        opacity: 1;
+        transform: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+
+  <header class="site-header" aria-label="Cabeçalho da página">
+    <div class="site-header__inner shell">
+      <a class="wordmark" href="#topo" aria-label="Prana Ka, voltar ao início">Prana Ka</a>
+      <a class="site-header__action" href="#oferta">
+        Masterclass 8/8 <span aria-hidden="true">↗</span>
+      </a>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero" id="topo" data-section="d1" aria-labelledby="hero-title">
+      <div class="hero__media" aria-hidden="true">
+        <img
+          src="assets/felina-agua-dourada.jpg"
+          alt=""
+          width="736"
+          height="1308"
+          fetchpriority="high"
+        >
+      </div>
+      <div class="hero__veil" aria-hidden="true"></div>
+      <div class="hero__sun" aria-hidden="true"></div>
+
+      <div class="hero__content">
+        <div class="hero__copy">
+          <p class="eyebrow">Masterclass ao vivo · 8 de agosto · Portal do Leão</p>
+
+          <p class="hero__title" aria-hidden="true">
+            Portal das
+            <span>Felinas</span>
+          </p>
+
+          <h1 class="hero__promise" id="hero-title">
+            Da mulher que espera ser escolhida à mulher que se escolhe primeiro.
+          </h1>
+
+          <p class="hero__support">
+            No 8/8, Prana Ka conduz uma travessia viva do feminino inseguro à autoconfiança
+            que nasce no corpo. Primeiro você sente. Depois nomeia. Então sela.
+          </p>
+
+          <div class="hero__actions">
+            <a class="button" href="#oferta" data-cta="d1">Quero atravessar o Portal</a>
+            <p class="microcopy">
+              Sábado, 8 de agosto, às 9h30 · Ao vivo · cerca de 2h30 · R$ 88
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <span class="hero__scroll" aria-hidden="true">A travessia começa abaixo</span>
+    </section>
+
+    <section class="mirror" data-section="d2" aria-labelledby="mirror-title">
+      <div class="mirror__inner shell">
+        <div class="mirror__rail">
+          <span class="section-number">01 · O espelho</span>
+        </div>
+
+        <div class="mirror__copy">
+          <p class="eyebrow reveal">Você reconhece no corpo</p>
+          <h2 class="display reveal" id="mirror-title">Antes da voz sair, você já mediu o espaço.</h2>
+
+          <p class="mirror__scene reveal">
+            Você ensaia o limite antes de uma conversa. Sabe o que quer dizer. Mas, quando
+            chega a hora, procura aprovação no rosto do outro, reduz a própria voz e sai de
+            si um pouco menor. <strong>Esse cansaço não é falta de força.</strong> É a força
+            esperando um lugar seguro para aparecer.
+          </p>
+
+          <div class="mirror__signals" role="group" aria-label="Sinais do feminino inseguro">
+            <div class="mirror__signal reveal">
+              <span>01</span>
+              <p>Você sente tudo com uma intensidade que ninguém ao redor parece sentir.</p>
+            </div>
+            <div class="mirror__signal reveal">
+              <span>02</span>
+              <p>Espera ser escolhida no amor, no trabalho ou na decisão que já sabe que precisa tomar.</p>
+            </div>
+            <div class="mirror__signal reveal">
+              <span>03</span>
+              <p>Adia o seu limite e depois sente o aperto de ter entregado o próprio poder.</p>
+            </div>
+            <div class="mirror__signal reveal">
+              <span>04</span>
+              <p>Carrega um chamado vivo por dentro, mas ainda não encontrou como honrá-lo.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cost" data-section="d3" aria-labelledby="cost-title">
+      <div class="cost__inner shell">
+        <p class="eyebrow reveal">02 · O custo de permanecer</p>
+        <h2 class="display reveal" id="cost-title">
+          A Donzela é uma fase. O problema começa quando ela vira morada.
+        </h2>
+        <p class="cost__body reveal">
+          Cada ciclo esperando ser escolhida leva um pouco da sua voz. Mudam os rostos,
+          os lugares, as promessas. A sensação de estar quase continua. E o chamado que
+          pulsa por dentro aprende, outra vez, a esperar.
+        </p>
+        <p class="cost__question reveal">
+          O que você faz com a travessia que já começou?
+        </p>
+      </div>
+    </section>
+
+    <section class="passage" data-section="d4" aria-labelledby="passage-title">
+      <div class="passage__inner shell">
+        <div class="passage__intro">
+          <p class="eyebrow">03 · O mecanismo</p>
+          <h2 class="display" id="passage-title">A Travessia das Felinas.</h2>
+          <p>
+            Autoconfiança que nasce só na cabeça dura até a próxima dúvida. Por isso a
+            experiência segue outra ordem: corpo, reconhecimento, coroação e selamento.
+          </p>
+          <div class="passage__progress" aria-hidden="true">
+            <span data-progress></span>
+          </div>
+        </div>
+
+        <div class="passage__steps">
+          <article class="passage-step" data-step="1">
+            <span class="passage-step__number" aria-hidden="true">01</span>
+            <div>
+              <h3>Descer</h3>
+              <p>
+                A voz e o som da Prana tiram você do excesso de pensamento e conduzem ao
+                ventre. Antes de compreender qualquer conceito, você volta a habitar o corpo.
+              </p>
+            </div>
+          </article>
+
+          <article class="passage-step" data-step="2">
+            <span class="passage-step__number" aria-hidden="true">02</span>
+            <div>
+              <h3>Reconhecer</h3>
+              <p>
+                Você enxerga o mapa da Donzela e os quatro rostos da Rainha: Mãe, Amante,
+                Líder e Rainha. O padrão deixa de ser uma névoa e ganha contorno.
+              </p>
+            </div>
+          </article>
+
+          <article class="passage-step" data-step="3">
+            <span class="passage-step__number" aria-hidden="true">03</span>
+            <div>
+              <h3>Coroar</h3>
+              <p>
+                Uma prática guiada de respiração e presença encontra a Donzela, honra o que
+                ela protegeu e abre espaço para a Soberana ocupar o próprio território.
+              </p>
+            </div>
+          </article>
+
+          <article class="passage-step" data-step="4">
+            <span class="passage-step__number" aria-hidden="true">04</span>
+            <div>
+              <h3>Selar</h3>
+              <p>
+                Escrita e voz respondem a uma pergunta: “O que a minha Rainha veio realizar?”
+                Você termina com a passagem registrada, para não depender só da memória do momento.
+              </p>
+            </div>
+          </article>
+
+          <div class="passage__cta">
+            <a class="button button--quiet" href="#oferta" data-cta="d4">
+              Quero viver essa passagem
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="experience" data-section="d5" aria-labelledby="experience-title">
+      <div class="experience__inner shell">
+        <div class="experience__heading">
+          <p class="eyebrow reveal">04 · O que acontece ao vivo</p>
+          <h2 class="display reveal" id="experience-title">Uma experiência que começa sentindo.</h2>
+          <p class="reveal">
+            A masterclass combina compreensão e vivência. Você recebe um mapa claro, mas
+            passa por ele com o corpo presente.
+          </p>
+        </div>
+
+        <div class="experience__list">
+          <article class="experience-item reveal">
+            <span class="experience-item__index">01</span>
+            <div>
+              <h3>Abertura e aterramento sonoro</h3>
+              <p>A consagração do espaço e a ancoragem da voz criam o chão da experiência.</p>
+            </div>
+          </article>
+
+          <article class="experience-item reveal">
+            <span class="experience-item__index">02</span>
+            <div>
+              <h3>O mapa da Princesa à Rainha</h3>
+              <p>Você reconhece os dois portais e entende por que o ventre participa dessa passagem.</p>
+            </div>
+          </article>
+
+          <article class="experience-item reveal">
+            <span class="experience-item__index">03</span>
+            <div>
+              <h3>Vivência corporificada de coroação</h3>
+              <p>Respiração, presença e condução de ventre para sentir a transição no próprio corpo.</p>
+            </div>
+          </article>
+
+          <article class="experience-item reveal">
+            <span class="experience-item__index">04</span>
+            <div>
+              <h3>Escrita, voz e selamento</h3>
+              <p>Uma resposta pessoal ganha palavras e encerra a experiência com direção.</p>
+            </div>
+          </article>
+
+          <article class="experience-item reveal">
+            <span class="experience-item__index">05</span>
+            <div>
+              <h3>O caminho depois do Portal</h3>
+              <p>Ao fim, Prana apresenta o Templo Dourado a quem sentir que quer seguir mais fundo.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="guide" data-section="d6" aria-labelledby="guide-title">
+      <div class="guide__inner">
+        <div class="guide__portrait" aria-hidden="true">
+          <img
+            src="assets/prana-ka.jpg"
+            alt=""
+            width="1080"
+            height="1080"
+            loading="lazy"
+          >
+        </div>
+
+        <div class="guide__copy">
+          <p class="eyebrow reveal">05 · Quem sustenta o campo</p>
+          <h2 class="display reveal" id="guide-title">Prana Ka</h2>
+          <p class="guide__quote reveal">“Eu guio não porque sei tudo, mas porque vivo tudo.”</p>
+          <p class="guide__body reveal">
+            Prana é psicanalista, psicoterapeuta, sacerdotisa do ventre, artista e
+            compositora. No Método S.E.R., ela reúne corpo, psicologia, campo multidimensional
+            e arte para conduzir mulheres de volta à própria fonte.
+          </p>
+          <p class="guide__body reveal">
+            A jornada que chega agora ao grupo nasce do trabalho vivido no individual desde
+            2021. No Portal das Felinas, você encontra uma amostra concentrada dessa forma
+            de ensinar: primeiro a experiência, depois o nome, por fim a integração.
+          </p>
+
+          <div class="guide__credentials reveal" role="group" aria-label="Campos de atuação da Prana Ka">
+            <span class="guide__credential">Psicanálise e psicoterapia</span>
+            <span class="guide__credential">Método S.E.R.</span>
+            <span class="guide__credential">Música e arte ritual</span>
+            <span class="guide__credential">The Golden Temple</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="qualification" data-section="d7" aria-labelledby="qualification-title">
+      <div class="qualification__inner shell">
+        <div class="qualification__heading">
+          <div>
+            <p class="eyebrow reveal">06 · O filtro é dedicação</p>
+            <h2 class="display reveal" id="qualification-title">
+              A Rosa chama. Você decide se responde.
+            </h2>
+          </div>
+          <p class="reveal">
+            O Portal não pede experiência anterior. Pede presença suficiente para olhar,
+            sentir e participar sem se esconder de si.
+          </p>
+        </div>
+
+        <div class="qualification__columns">
+          <div class="qualification__column reveal">
+            <h3>É para você se</h3>
+            <ul class="qualification__list">
+              <li>você sente que já é hora de se escolher sem esperar autorização;</li>
+              <li>está vivendo uma transição e quer atravessá-la com presença;</li>
+              <li>quer reconhecer a própria força no corpo, não só entender uma ideia;</li>
+              <li>chega disposta a participar da vivência ao vivo.</li>
+            </ul>
+          </div>
+
+          <div class="qualification__column reveal">
+            <h3>Talvez ainda não seja a sua hora se</h3>
+            <ul class="qualification__list">
+              <li>você quer assistir de longe, sem entrar na experiência;</li>
+              <li>procura uma fórmula rápida que outra pessoa faça por você;</li>
+              <li>prefere que a vida continue exatamente como está.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="offer" id="oferta" data-section="d8" aria-labelledby="offer-title">
+      <div class="offer__inner shell">
+        <div>
+          <p class="eyebrow reveal">07 · O Portal está aberto</p>
+          <h2 class="display offer__headline reveal" id="offer-title">
+            Sua presença na travessia.
+          </h2>
+          <p class="offer__lead reveal">
+            Uma manhã ao vivo para reconhecer o que ainda espera, encontrar a força que já
+            pulsa e selar uma escolha que começa em você.
+          </p>
+
+          <ol class="offer__includes reveal">
+            <li><span>01</span> Masterclass ao vivo, com o mapa da Princesa à Rainha</li>
+            <li><span>02</span> Ancoragem sonora conduzida pela Prana</li>
+            <li><span>03</span> Vivência guiada de corpo e ventre</li>
+            <li><span>04</span> Escrita, voz e selamento simbólico da passagem</li>
+          </ol>
+        </div>
+
+        <div class="offer__decision reveal">
+          <p class="offer__format">Portal das Felinas · acesso individual</p>
+          <p class="offer__price">R$ 88</p>
+          <p class="offer__date">
+            <time datetime="2026-08-08T09:30:00-03:00">
+              Sábado, 8 de agosto, às 9h30
+            </time>
+            <br>
+            Ao vivo · cerca de 2h30
+          </p>
+
+          <div class="offer__action">
+            <a class="button button--dark" href="#" data-checkout data-cta="d8">
+              Quero atravessar o Portal
+            </a>
+          </div>
+
+          <p class="offer__microcopy">
+            O pagamento sela a sua vaga. As orientações de acesso chegam por e-mail e
+            WhatsApp. Sem lote e sem contagem regressiva.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq" data-section="d9" aria-labelledby="faq-title">
+      <div class="faq__inner shell">
+        <div class="faq__heading">
+          <p class="eyebrow">08 · Antes de entrar</p>
+          <h2 class="display" id="faq-title">Perguntas honestas.</h2>
+          <p>O que precisa estar claro antes de você escolher a sua vaga.</p>
+        </div>
+
+        <div class="faq__items">
+          <details>
+            <summary>É uma aula ou uma prática?</summary>
+            <p>
+              As duas coisas. Você recebe o mapa da passagem da Princesa à Rainha e vive
+              uma prática guiada de corpo, ventre, escrita e voz. A experiência começa
+              sentindo e ganha clareza ao longo do encontro.
+            </p>
+          </details>
+
+          <details>
+            <summary>Preciso já conhecer o trabalho da Prana?</summary>
+            <p>
+              Não. A masterclass foi desenhada como uma primeira entrada no campo do Templo
+              Dourado. Você só precisa chegar disposta a participar e respeitar o próprio ritmo.
+            </p>
+          </details>
+
+          <details>
+            <summary>E se eu for racional demais ou não sentir nada?</summary>
+            <p>
+              Você não precisa performar nenhuma sensação. A abertura cria aterramento, e
+              cada mulher atravessa a prática no próprio corpo. O compromisso é com presença,
+              não com produzir uma experiência específica.
+            </p>
+          </details>
+
+          <details>
+            <summary>Vai ficar gravado?</summary>
+            <p>
+              A experiência foi concebida para ser vivida ao vivo, sábado, 8 de agosto,
+              às 9h30. A gravação não está sendo oferecida como promessa desta inscrição.
+            </p>
+          </details>
+
+          <details>
+            <summary>Isso substitui terapia ou acompanhamento de saúde?</summary>
+            <p>
+              Não. O Portal das Felinas é uma experiência educativa e vivencial. Ele não
+              substitui psicoterapia, avaliação médica ou qualquer cuidado profissional
+              que você já realiza.
+            </p>
+          </details>
+
+          <details>
+            <summary>O que acontece depois do pagamento?</summary>
+            <p>
+              Sua vaga é confirmada e você recebe as orientações de acesso por e-mail e
+              WhatsApp. Ao fim da masterclass, quem sentir o chamado conhece o caminho
+              completo do Templo Dourado, sem obrigação de seguir.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing" data-section="d10" aria-labelledby="closing-title">
+      <div class="closing__inner shell">
+        <p class="eyebrow reveal">09 · A última porta</p>
+        <h2 class="display reveal" id="closing-title">
+          A mulher que se escolhe não espera a coroa chegar.
+        </h2>
+        <p class="reveal">
+          No 8/8, Prana te convida a reconhecer a Donzela, honrar o que ela protegeu e abrir
+          espaço para a Rainha ocupar o próprio território.
+        </p>
+        <div class="closing__action reveal">
+          <a class="button" href="#" data-checkout data-cta="d10">
+            Quero atravessar o Portal
+          </a>
+        </div>
+        <p class="closing__seal reveal">Selado.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner shell">
+      <p>© 2026 The Golden Temple · Prana Ka</p>
+      <p>Experiência educativa e vivencial · Todos os direitos reservados</p>
+    </div>
+  </footer>
+
+  <div class="mobile-cta" data-mobile-cta role="group" aria-label="Atalho para a oferta">
+    <span class="mobile-cta__meta">8/8 · 9h30 · R$ 88</span>
+    <a class="button" href="#oferta" data-cta="mobile">Ver minha vaga</a>
+  </div>
+
+  <dialog id="interest-dialog" aria-labelledby="interest-title">
+    <div class="interest-modal">
+      <button class="interest-modal__close" type="button" data-close-dialog aria-label="Fechar">
+        ×
+      </button>
+      <p class="eyebrow">Portal das Felinas</p>
+      <h2 class="display" id="interest-title">Quero atravessar.</h2>
+      <p class="interest-modal__intro">
+        Preencha seus dados para seguir ao checkout seguro da Masterclass.
+      </p>
+
+      <form class="interest-form" data-interest-form>
+        <label class="form-trap" aria-hidden="true">
+          Não preencha este campo
+          <input type="text" name="website" tabindex="-1" autocomplete="off">
+        </label>
+        <label>
+          Nome
+          <input type="text" name="nome" autocomplete="name" required>
+        </label>
+        <label>
+          WhatsApp
+          <input type="tel" name="telefone" autocomplete="tel" required>
+        </label>
+        <label>
+          E-mail
+          <input type="email" name="email" autocomplete="email" required>
+        </label>
+        <label class="interest-consent">
+          <input type="checkbox" name="consentimento" value="sim" required>
+          <span>Autorizo o uso destes dados para receber orientações sobre o Portal das Felinas.</span>
+        </label>
+        <button class="button" type="submit">Continuar para o pagamento</button>
+      </form>
+
+      <p class="interest-modal__note" data-form-note>
+        Depois do envio, você será direcionada para a PagTrust.
+      </p>
+    </div>
+  </dialog>
+
+  <script>
+    (function () {
+      "use strict";
+
+      var CHECKOUT_URL = "https://checkout.pagtrust.com.br/ckeacac0be?funnel=fne0502c0a";
+      var LEADS_ENDPOINT = "https://script.google.com/macros/s/AKfycbwEzWjnz6Ky8gE-VV8dsTxrGgSW1G0Q_Za6XSXfqrU2in0EiTW7dReTAZ4K1oTlpwQqtg/exec";
+      var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      var hero = document.querySelector(".hero");
+      var mobileCta = document.querySelector("[data-mobile-cta]");
+      var dialog = document.getElementById("interest-dialog");
+      var interestForm = document.querySelector("[data-interest-form]");
+      var formNote = document.querySelector("[data-form-note]");
+
+      function emitEvent(name, parameters) {
+        var detail = parameters || {};
+
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push(Object.assign({ event: name }, detail));
+
+        if (typeof window.fbq === "function") {
+          if (name.indexOf("cta_click") === 0) {
+            window.fbq("track", "InitiateCheckout", detail);
+          } else if (name.indexOf("view_d") === 0) {
+            window.fbq("trackCustom", name, detail);
+          }
+        }
+      }
+
+      if (!reduceMotion && hero) {
+        var ticking = false;
+
+        window.addEventListener("scroll", function () {
+          if (ticking) return;
+
+          window.requestAnimationFrame(function () {
+            var shift = Math.max(-44, window.scrollY * -0.065);
+            hero.style.setProperty("--hero-shift", shift + "px");
+            ticking = false;
+          });
+
+          ticking = true;
+        }, { passive: true });
+      }
+
+      var revealObserver = new IntersectionObserver(function (entries, observer) {
+        entries.forEach(function (entry) {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        });
+      }, {
+        rootMargin: "0px 0px -10% 0px",
+        threshold: 0.08
+      });
+
+      document.querySelectorAll(".reveal").forEach(function (element) {
+        revealObserver.observe(element);
+      });
+
+      var sectionObserver = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (!entry.isIntersecting) return;
+          emitEvent("view_" + entry.target.dataset.section, {
+            section: entry.target.dataset.section
+          });
+        });
+      }, {
+        threshold: 0.42
+      });
+
+      document.querySelectorAll("[data-section]").forEach(function (section) {
+        sectionObserver.observe(section);
+      });
+
+      var progress = document.querySelector("[data-progress]");
+      var stepObserver = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (!entry.isIntersecting) return;
+
+          document.querySelectorAll("[data-step]").forEach(function (step) {
+            step.classList.remove("is-active");
+          });
+
+          entry.target.classList.add("is-active");
+
+          if (progress) {
+            progress.style.width = (Number(entry.target.dataset.step) * 25) + "%";
+          }
+        });
+      }, {
+        rootMargin: "-35% 0px -35% 0px",
+        threshold: 0
+      });
+
+      document.querySelectorAll("[data-step]").forEach(function (step) {
+        stepObserver.observe(step);
+      });
+
+      var heroObserver = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (!mobileCta) return;
+          mobileCta.classList.toggle("is-visible", !entry.isIntersecting);
+        });
+      }, {
+        threshold: 0.15
+      });
+
+      if (hero) heroObserver.observe(hero);
+
+      document.querySelectorAll("[data-cta]").forEach(function (cta) {
+        cta.addEventListener("click", function () {
+          emitEvent("cta_click_" + cta.dataset.cta, {
+            placement: cta.dataset.cta
+          });
+        });
+      });
+
+      function openInterestDialog() {
+        if (!dialog) return;
+
+        if (typeof dialog.showModal === "function") {
+          dialog.showModal();
+        } else {
+          dialog.setAttribute("open", "");
+        }
+      }
+
+      function collectCampaignParameters() {
+        var source = new URLSearchParams(window.location.search);
+        var campaign = {};
+
+        source.forEach(function (value, key) {
+          if (key === "origem" || key.indexOf("utm_") === 0) {
+            campaign[key] = value;
+          }
+        });
+
+        return campaign;
+      }
+
+      function buildCheckoutUrl(lead) {
+        if (!CHECKOUT_URL) return "";
+
+        try {
+          var target = new URL(CHECKOUT_URL, window.location.href);
+          var campaign = collectCampaignParameters();
+
+          if (lead) {
+            target.searchParams.set("name", lead.nome);
+            target.searchParams.set("email", lead.email);
+          }
+
+          Object.keys(campaign).forEach(function (key) {
+            target.searchParams.set(key, campaign[key]);
+          });
+
+          return target.toString();
+        } catch (error) {
+          return CHECKOUT_URL;
+        }
+      }
+
+      function persistLocalLead(lead) {
+        try {
+          var current = JSON.parse(localStorage.getItem("prana_portal_leads") || "[]");
+          current.push(lead);
+          localStorage.setItem("prana_portal_leads", JSON.stringify(current));
+        } catch (error) {
+          // O backup local nunca deve bloquear o checkout.
+        }
+      }
+
+      function sendLeadToSpreadsheet(lead) {
+        if (!LEADS_ENDPOINT || LEADS_ENDPOINT.indexOf("script.google.com") === -1) {
+          return false;
+        }
+
+        var body = JSON.stringify(lead);
+
+        try {
+          if (navigator.sendBeacon) {
+            var queued = navigator.sendBeacon(
+              LEADS_ENDPOINT,
+              new Blob([body], { type: "text/plain;charset=UTF-8" })
+            );
+
+            if (queued) return true;
+          }
+
+          fetch(LEADS_ENDPOINT, {
+            method: "POST",
+            mode: "no-cors",
+            keepalive: true,
+            headers: { "Content-Type": "text/plain;charset=UTF-8" },
+            body: body
+          }).catch(function () {
+            // O checkout continua mesmo se a captação externa falhar.
+          });
+
+          return true;
+        } catch (error) {
+          return false;
+        }
+      }
+
+      function goToCheckout(lead) {
+        var destination = buildCheckoutUrl(lead);
+        if (destination) window.location.assign(destination);
+      }
+
+      document.querySelectorAll("[data-checkout]").forEach(function (button) {
+        button.addEventListener("click", function (event) {
+          event.preventDefault();
+
+          if (!dialog || !interestForm) {
+            goToCheckout();
+            return;
+          }
+
+          openInterestDialog();
+        });
+      });
+
+      var closeDialog = document.querySelector("[data-close-dialog]");
+
+      if (closeDialog && dialog) {
+        closeDialog.addEventListener("click", function () {
+          dialog.close();
+        });
+      }
+
+      if (dialog) {
+        dialog.addEventListener("click", function (event) {
+          if (event.target === dialog) dialog.close();
+        });
+      }
+
+      if (interestForm) {
+        interestForm.addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          if (!interestForm.checkValidity()) {
+            interestForm.reportValidity();
+            return;
+          }
+
+          var data = new FormData(interestForm);
+          if (data.get("website")) return;
+
+          var campaign = collectCampaignParameters();
+          var lead = {
+            nome: String(data.get("nome") || "").trim(),
+            telefone: String(data.get("telefone") || "").trim(),
+            email: String(data.get("email") || "").trim(),
+            produto: "Portal das Felinas 8/8",
+            criadoEm: new Date().toISOString(),
+            consentimento: data.get("consentimento") === "sim",
+            pagina: window.location.href
+          };
+
+          Object.keys(campaign).forEach(function (key) {
+            lead[key] = campaign[key];
+          });
+
+          persistLocalLead(lead);
+          sendLeadToSpreadsheet(lead);
+          emitEvent("form_submit", { product: lead.produto });
+
+          if (CHECKOUT_URL) {
+            if (formNote) formNote.textContent = "Abrindo o checkout seguro…";
+            goToCheckout(lead);
+            return;
+          }
+
+          if (formNote) {
+            formNote.textContent = "Dados registrados. O checkout ainda precisa ser configurado.";
+          }
+        });
+      }
+    }());
+  </script>
+</body>
+</html>

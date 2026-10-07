@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maestria Natural — Débora Delgado</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#f6f1ea; --card:#fffdf9; --ink:#3d352e; --soft:#6f6459; --line:#e7ddd1;
+    --accent:#3f6b57; --accent-dark:#2f5245; --salvia:#7f9c78; --salvia-dark:#5f7550; --argila:#a86b52; --dir:#4f8278;
+    --shadow:0 8px 30px rgba(60,70,55,.10);
+    --serif:"Fraunces",Georgia,serif; --sans:"Inter",system-ui,sans-serif;
+  }
+  *{box-sizing:border-box}
+  body{margin:0; font-family:var(--sans); background:var(--bg); color:var(--ink); line-height:1.6;}
+  .wrap{max-width:760px; margin:0 auto; padding:26px 20px 90px;}
+  header.hero{text-align:center; padding:32px 24px; background:linear-gradient(160deg,#7f9c78,#5f7550); color:#fff; border-radius:20px; box-shadow:var(--shadow); margin-bottom:16px;}
+  header.hero .kick{color:#eef4e4; font-weight:700; letter-spacing:2px; font-size:.74rem; text-transform:uppercase;}
+  header.hero h1{font-family:var(--serif); font-weight:600; margin:8px 0 6px; font-size:1.85rem;}
+  header.hero p{margin:0; color:#f0f5ec; font-size:.94rem;}
+
+  .card{background:var(--card); border:1px solid var(--line); border-radius:16px; box-shadow:var(--shadow); padding:22px 22px 20px; margin-bottom:14px;}
+  .step-kicker{color:var(--salvia-dark); font-weight:700; font-size:.72rem; letter-spacing:1.5px; text-transform:uppercase; margin-bottom:5px;}
+  .card h2{margin:0 0 6px; font-size:1.4rem; color:var(--accent-dark); font-family:var(--serif); font-weight:600;}
+  .card .lead{color:var(--soft); margin:0 0 14px; font-size:.98rem;}
+
+  label.field{display:block; margin:14px 0 4px; font-weight:600; font-size:.96rem;}
+  .ex{color:var(--soft); font-size:.85rem; margin:2px 0 7px; font-style:italic;}
+  textarea, input[type=text]{width:100%; padding:11px 12px; border:1px solid var(--line); border-radius:10px; font-family:inherit; font-size:1rem; background:#fff; color:var(--ink); resize:vertical;}
+  textarea{min-height:58px;}
+  textarea:focus, input:focus{outline:none; border-color:var(--salvia);}
+
+  .catgrp{margin:14px 0 4px;}
+  .catgrp .cn{font-weight:700; font-size:.9rem; color:var(--salvia-dark); margin-bottom:7px;}
+  .chips{display:flex; flex-wrap:wrap; gap:7px;}
+  .chip{border:1.5px solid var(--line); background:#fff; color:var(--ink); border-radius:20px; padding:7px 13px; font-size:.88rem; cursor:pointer; font-family:inherit; transition:.12s;}
+  .chip:hover{border-color:var(--salvia);}
+  .chip.on{background:var(--salvia); color:#fff; border-color:var(--salvia); font-weight:600;}
+  .chip.ex-chip{border-style:dashed; font-size:.82rem; padding:5px 11px; color:var(--soft);}
+  .chip.ex-chip:hover{color:var(--salvia-dark);}
+  .addrow{display:flex; gap:8px; margin-top:8px;}
+  .addrow input{flex:1;}
+  .addrow button{background:none; border:1px dashed var(--salvia); color:var(--salvia-dark); border-radius:20px; padding:9px 15px; font-weight:600; cursor:pointer; font-family:inherit; white-space:nowrap;}
+
+  .refl{background:linear-gradient(160deg,#7f9c78,#5f7550); color:#fff; border-radius:16px; box-shadow:var(--shadow); padding:18px 20px; margin-top:16px;}
+  .refl .rk{font-size:.66rem; font-weight:800; text-transform:uppercase; letter-spacing:1.5px; color:#eef4e4;}
+  .refl .chama{font-family:var(--serif); font-style:italic; font-size:1.12rem; color:#fff; margin-top:5px;}
+  .refl p{margin:8px 0 0; font-size:.92rem; color:#f2f7ef;}
+  .refl.empty{background:#f0ece3; color:var(--soft);} .refl.empty .rk{color:var(--argila);} .refl.empty .chama{color:var(--soft);}
+
+  .nucleo{display:grid; grid-template-columns:1fr; gap:10px; margin-bottom:14px;}
+  @media(min-width:640px){ .nucleo{grid-template-columns:1fr 1fr 1fr;} }
+  .np{background:var(--card); border:1px solid var(--line); border-radius:14px; box-shadow:var(--shadow); padding:13px 15px; border-top:4px solid var(--salvia);}
+  .np.p2{border-top-color:var(--argila);} .np.p3{border-top-color:var(--dir);}
+  .np .npt{font-family:var(--serif); font-weight:600; font-size:1rem; color:var(--accent-dark);}
+  .np .bar{height:8px; background:#ece4d7; border-radius:5px; overflow:hidden; margin-top:8px;}
+  .np .bar>i{display:block; height:100%; border-radius:5px; background:var(--salvia); width:0; transition:width .3s;}
+  .np.p2 .bar>i{background:var(--argila);} .np.p3 .bar>i{background:var(--dir);}
+  .np .st{font-size:.76rem; color:var(--soft); margin-top:5px;}
+
+  .tool{display:flex; gap:12px; align-items:flex-start; background:var(--card); border:1px solid var(--line); border-radius:13px; box-shadow:var(--shadow); padding:14px 16px; margin-bottom:9px; cursor:pointer; text-align:left; width:100%; font-family:inherit; transition:.15s;}
+  .tool:hover{transform:translateY(-2px);}
+  .tool .ck{width:24px; height:24px; border-radius:50%; border:2px solid var(--line); flex-shrink:0; margin-top:2px; display:flex; align-items:center; justify-content:center; color:#fff; font-size:.8rem; font-weight:800;}
+  .tool.done .ck{background:var(--salvia); border-color:var(--salvia);}
+  .tool .tb{flex:1;}
+  .tool .tn{font-weight:700; font-size:1.02rem; color:var(--accent-dark);}
+  .tool .td{font-size:.86rem; color:var(--soft); margin-top:1px;}
+  .tool .badge{font-size:.6rem; font-weight:800; text-transform:uppercase; letter-spacing:.5px; padding:2px 8px; border-radius:10px; align-self:center; white-space:nowrap;}
+  .b-atalho{background:#f4ece2; color:#a86b52;} .b-ponte{background:#f3efe8; color:#8a6f52;}
+  .hsub{font-size:.72rem; font-weight:800; text-transform:uppercase; letter-spacing:1.2px; color:var(--salvia-dark); margin:20px 4px 9px;}
+
+  .list-item{background:#faf6ef; border:1px solid #e7ddce; border-radius:11px; padding:11px 13px; margin-bottom:8px; position:relative;}
+  .list-item .li-del{position:absolute; top:9px; right:11px; background:none; border:none; color:var(--soft); cursor:pointer; font-size:1.1rem;}
+  .list-item .li-del:hover{color:var(--argila);}
+  .list-item .li-t{font-weight:700; font-size:.95rem; padding-right:24px;}
+  .list-item .li-d{font-size:.85rem; color:var(--soft); margin-top:2px;}
+  .addbtn{background:none; border:1px dashed var(--salvia); color:var(--salvia-dark); padding:10px 16px; border-radius:20px; cursor:pointer; font-size:.9rem; font-weight:600; font-family:inherit; margin-top:4px;}
+  .addbtn:hover{background:#eef1e8;}
+
+  .scale10{display:flex; flex-wrap:wrap; gap:5px; margin:6px 0;}
+  .scale10 button{flex:1; min-width:32px; padding:9px 0; border:1px solid var(--line); background:#fff; border-radius:9px; cursor:pointer; font-weight:700; color:var(--salvia-dark); font-family:inherit;}
+  .scale10 button.on{background:var(--salvia); color:#fff; border-color:var(--salvia);}
+  .scale-ends{display:flex; justify-content:space-between; font-size:.76rem; color:var(--soft); margin-top:2px;}
+
+  .box{background:#eef1e8; border-radius:12px; border-left:4px solid var(--salvia); padding:13px 16px; margin:12px 0; font-size:.94rem;}
+  .box b{color:var(--salvia-dark);}
+  .box.atalho{background:#f4ece2; border-left-color:var(--argila);} .box.atalho b{color:var(--argila);}
+
+  .nav{display:flex; justify-content:space-between; align-items:center; gap:10px; margin:18px 4px 0; flex-wrap:wrap;}
+  .btn{border:none; border-radius:24px; padding:12px 24px; font-size:.98rem; font-weight:700; cursor:pointer; font-family:inherit;}
+  .btn-primary{background:var(--salvia); color:#fff;} .btn-primary:hover{background:var(--salvia-dark);}
+  .btn-ghost{background:none; color:var(--soft);} .btn-ghost:hover{color:var(--accent-dark);}
+  .btn-argila{background:var(--argila); color:#fff;} .btn-argila:hover{background:#8a5334;}
+
+  .raw{background:#faf6ef; border:1px solid #e7ddce; border-radius:12px; padding:13px 16px; margin-bottom:12px;}
+  .raw h3{font-family:var(--serif); font-weight:600; font-size:1.05rem; color:var(--salvia-dark); margin:0 0 6px;}
+  .raw .r{font-size:.9rem; color:var(--ink); margin:3px 0; white-space:pre-wrap;}
+  .raw .r.empty{color:#b8ac9c; font-style:italic;}
+  .beat-lbl{font-weight:700; font-size:.95rem; margin:14px 0 2px;}
+  .beat-hint{font-size:.83rem; color:var(--soft); font-style:italic; margin-bottom:6px;}
+
+  .footer-note{text-align:center; color:var(--soft); font-size:.8rem; margin-top:22px; line-height:1.5;}
+  @media print{ .nav,.footer-note{display:none!important;} body{background:#fff;} .card{box-shadow:none;} }
+</style>
+<style>.lnr-nav{position:sticky;top:0;z-index:9999;display:flex;align-items:center;justify-content:space-between;gap:12px;background:#2f5245;color:#fff;padding:10px 18px;font-family:Inter,system-ui,sans-serif;box-shadow:0 2px 12px rgba(0,0,0,.12);}.lnr-brand{color:#fff;font-weight:700;text-decoration:none;font-size:.98rem;font-family:Fraunces,Georgia,serif;}.lnr-links{display:flex;align-items:center;gap:3px;flex-wrap:wrap;}.lnr-links a{color:#e8f0ec;text-decoration:none;font-size:.82rem;font-weight:600;padding:6px 9px;border-radius:16px;}.lnr-links a:hover{background:rgba(255,255,255,.14);color:#fff;}.lnr-links a.lnr-cta{background:#a86b52;color:#fff;}.lnr-toggle{display:none;background:none;border:none;color:#fff;font-size:1.35rem;cursor:pointer;}@media(max-width:760px){.lnr-nav{flex-wrap:wrap;}.lnr-toggle{display:block;}.lnr-links{display:none;flex-direction:column;width:100%;order:3;gap:2px;padding-top:6px;}.lnr-links.open{display:flex;}}</style>
+<script>(function(){try{if(localStorage.getItem('lnr_membro')!=='ok'&&sessionStorage.getItem('lnr_membro')!=='ok'){location.replace('membros.html');}}catch(e){}})();window.lnrSair=function(){try{localStorage.removeItem('lnr_membro');sessionStorage.removeItem('lnr_membro');}catch(e){}location.href='index.html';};</script></head>
+<body><nav class="lnr-nav"><a class="lnr-brand" href="index.html">Liderança na Raiz</a><button class="lnr-toggle" onclick="this.parentNode.querySelector('.lnr-links').classList.toggle('open')">☰</button><div class="lnr-links">
+    <a href="index.html">Início</a>
+    <a href="membros.html">← Área de membros</a>
+    <a class="lnr-cta" href="#" onclick="lnrSair();return false;">Sair</a>
+  </div></nav>
+<div class="wrap">
+  <header class="hero">
+    <div class="kick">Maestria Natural</div>
+    <h1>O valor que você gera por ser você</h1>
+    <p>Preencha no seu ritmo. O seu progresso fica salvo neste navegador.</p>
+  </header>
+  <div id="app"></div>
+  <p class="footer-note">O seu progresso é salvo automaticamente neste navegador. Este é um espaço de autoconhecimento e desenvolvimento.</p>
+</div>
+
+<script>
+/* ---------- persistência ---------- */
+const KEY='maestria_v2';
+function persist(){ try{ localStorage.setItem(KEY, JSON.stringify(S)); }catch(e){} }
+function loadState(){ try{ const r=localStorage.getItem(KEY); if(r) return JSON.parse(r); }catch(e){} return null; }
+const DEFAULT={
+  talentos:[], entusiasmo:[], espelhoQ:[], espelhoOnde:"",
+  linha:[], con_aprendi:"", con_busco:"",
+  his_crianca:"", his_adolescente:"", his_adulto:"", his_fora:"",
+  ik_ama:"", ik_bem:"", ik_mundo:"", ik_pago:"", ik_facil:null,
+  amb_pessoas:[], amb_cliente:"", legado:"",
+  s1:"",s2:"",s3:"",s4:"",s5:""
+};
+const S=Object.assign({}, DEFAULT, loadState()||{});
+let screen='hub';
+function esc(s){return String(s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
+function setF(f,v){ S[f]=v; persist(); }
+function toggleArr(f,item){ const i=S[f].indexOf(item); if(i>=0) S[f].splice(i,1); else S[f].push(item); persist(); render(); }
+function appendField(f,txt){ S[f]=(S[f]&&S[f].trim())? S[f]+', '+txt : txt; persist(); render(); }
+function val(id){ const e=document.getElementById(id); return e?e.value.trim():''; }
+
+/* ---------- bancos ---------- */
+const TALENTOS=[
+  {cn:'Ideias e análise', frase:'pensar, analisar e estruturar', items:['Organizar o caos','Enxergar padrões','Analisar a fundo','Estruturar processos','Resolver problemas','Pensar estratégico','Simplificar o complexo']},
+  {cn:'Pessoas e relações', frase:'ler e conduzir pessoas', items:['Escutar de verdade','Ler o que o outro sente','Acolher','Mediar conflitos','Inspirar','Dar feedback','Conectar pessoas','Ensinar']},
+  {cn:'Criação', frase:'criar e dar forma', items:['Criar do zero','Escrever','Estética e beleza','Improvisar','Inovar','Dar forma a ideias']},
+  {cn:'Execução', frase:'fazer acontecer', items:['Fazer acontecer','Cuidar dos detalhes','Cumprir prazos','Liderar entregas','Manter o foco','Negociar']},
+  {cn:'Presença', frase:'a sua presença nos ambientes', items:['Trazer calma','Energizar o ambiente','Gerar confiança','Cuidar','Trazer leveza','Sustentar sob pressão']}
+];
+const ENTUSIASMO=[
+  {cn:'Corpo e movimento', frase:'o corpo em movimento e a vida ao ar livre', items:['Caminhar ou fazer trilha','Ir à cachoeira','Nadar no mar ou em água quente','Dançar','Jogar vôlei','Andar de bike','Yoga ou alongamento']},
+  {cn:'Aprender e descobrir', frase:'aprender e desvendar coisas novas', items:['Fazer um curso novo','Aprender uma ferramenta nova','Investigar um problema até a causa raiz','Ler sobre um tema que amo','Estudar por conta própria']},
+  {cn:'Criar e expressar', frase:'criar e dar forma ao que é seu', items:['Escrever','Desenhar ou pintar','Cozinhar algo novo','Fotografar','Música','Criar projetos do zero','Organizar um espaço']},
+  {cn:'Pessoas e conexão', frase:'a conexão profunda e ajudar o outro', items:['Conversas profundas','Ajudar alguém a se enxergar','Encontros de autodesenvolvimento','Mentorar ou ensinar','Facilitar grupos e dinâmicas']},
+  {cn:'Natureza e lugares', frase:'a natureza e o descobrir de lugares', items:['Viajar','Conhecer lugares novos e bonitos','Estar na natureza','Viajar em família']},
+  {cn:'Cuidado e afetos', frase:'o cuidado, o prazer e os afetos', items:['Receber massagem','Momentos com quem amo','Brincar com os filhos','Namorar','Descansar sem culpa']}
+];
+const QUALIDADES=['Coragem de se expor','Leveza','Profundidade','Liberdade','Autenticidade','Disciplina','Criatividade','Serenidade','Generosidade','Determinação','Sensibilidade','Presença','Sabedoria','Alegria','Firmeza','Espontaneidade'];
+const AMBIENTES=['Pessoas curiosas e abertas','Quem valoriza profundidade','Ambientes tranquilos','Onde me sinto reconhecida','Grupos pequenos','Gente comprometida','Espaços com liberdade','Quem topa ir fundo'];
+
+/* ---------- helpers de banco ---------- */
+function bankHtml(field, cats, addPlaceholder){
+  let h='';
+  cats.forEach((c,ci)=>{
+    let chips = c.items.map(it=>`<button class="chip ${S[field].includes(it)?'on':''}" onclick="toggleArr('${field}',${JSON.stringify(it).replace(/"/g,'&quot;')})">${it}${S[field].includes(it)?' ✓':''}</button>`).join('');
+    h+=`<div class="catgrp"><div class="cn">${c.cn}</div><div class="chips">${chips}</div></div>`;
+  });
+  // custom já selecionados que não estão nos bancos
+  const known = cats.flatMap(c=>c.items);
+  const extras = S[field].filter(x=>!known.includes(x));
+  if(extras.length){ h+=`<div class="catgrp"><div class="cn">As suas</div><div class="chips">${extras.map(it=>`<button class="chip on" onclick="toggleArr('${field}',${JSON.stringify(it).replace(/"/g,'&quot;')})">${esc(it)} ✓</button>`).join('')}</div></div>`; }
+  h+=`<div class="addrow"><input type="text" id="add_${field}" placeholder="${addPlaceholder}" onkeydown="if(event.key==='Enter'){addCustomTo('${field}');}"><button onclick="addCustomTo('${field}')">+ Adicionar</button></div>`;
+  return h;
+}
+function addCustomTo(field){ const v=val('add_'+field); if(!v) return; if(!S[field].includes(v)) S[field].push(v); persist(); render(); }
+function topCats(field, cats){
+  const counts={};
+  cats.forEach(c=>{ counts[c.cn]=c.items.filter(it=>S[field].includes(it)).length; });
+  return cats.filter(c=>counts[c.cn]>0).sort((a,b)=>counts[b.cn]-counts[a.cn]).slice(0,3);
+}
+function joinFrases(cats){ const f=cats.map(c=>c.frase); return f.length>1? f.slice(0,-1).join(', ')+' e '+f[f.length-1] : (f[0]||''); }
+function exChips(field, arr){ return '<div class="chips" style="margin-top:6px">'+arr.map(t=>`<button class="chip ex-chip" onclick="appendField('${field}',${JSON.stringify(t).replace(/"/g,'&quot;')})">+ ${t}</button>`).join('')+'</div>'; }
+
+/* ---------- núcleo ---------- */
+const has={ ikigai:()=>!!(S.ik_ama||S.ik_bem||S.ik_mundo||S.ik_pago), talentos:()=>S.talentos.length>0, entusiasmo:()=>S.entusiasmo.length>0,
+  linha:()=>S.linha.length>0, conhecimentos:()=>!!(S.con_aprendi||S.con_busco), historia:()=>!!(S.his_crianca||S.his_adolescente||S.his_adulto||S.his_fora),
+  espelho:()=>S.espelhoQ.length>0, ambiente:()=>!!(S.amb_pessoas.length||S.amb_cliente), legado:()=>!!S.legado };
+const pcTal=()=>has.talentos()||has.linha()||has.conhecimentos()||has.espelho()||!!S.ik_bem;
+const pcEnt=()=>has.entusiasmo()||has.conhecimentos()||!!S.ik_ama||has.historia();
+const pcEss=()=>has.historia()||has.linha()||has.espelho();
+
+const TOOLS=[
+  {key:'ikigai',nome:'Ikigai',badge:'atalho',desc:'O que você ama, faz bem, o mundo precisa e pelo que te pagam.'},
+  {key:'talentos',nome:'Talentos e dons',desc:'Marque o que vem fácil pra você.'},
+  {key:'entusiasmo',nome:'Menu do entusiasmo',desc:'Marque o que te acende.'},
+  {key:'linha',nome:'Linha da vida',desc:'Resultados que você gerou e se sentiu bem gerando.'},
+  {key:'conhecimentos',nome:'Conhecimentos e interesses',desc:'O que você aprendeu e o que busca aprender.'},
+  {key:'historia',nome:'Elementos que tornam você em você',desc:'A sua história e os interesses de cada fase.'},
+  {key:'espelho',nome:'Jogo do espelho',desc:'Quem você admira revela o que já é seu.'},
+  {key:'ambiente',nome:'Ambiente e pessoas certas',badge:'ponte',desc:'Onde o seu dom é recebido. Aponta o cliente ideal.'},
+  {key:'legado',nome:'Legado e propósito',badge:'ponte',desc:'O que você quer deixar. Opcional, mais à frente.'}
+];
+
+/* ---------- HUB ---------- */
+function hub(){
+  let tools='';
+  TOOLS.forEach(t=>{
+    const done=has[t.key]();
+    const badge=t.badge?`<span class="badge ${t.badge==='atalho'?'b-atalho':'b-ponte'}">${t.badge}</span>`:'';
+    tools+=`<button class="tool ${done?'done':''}" onclick="go('${t.key}')"><span class="ck">${done?'✓':''}</span><div class="tb"><div class="tn">${t.nome}</div><div class="td">${t.desc}</div></div>${badge}</button>`;
+  });
+  const b=(fn)=>fn()?100:0;
+  return `
+    <div class="nucleo">
+      <div class="np p1"><div class="npt">Talentos e dons</div><div class="bar"><i style="width:${b(pcTal)}%"></i></div><div class="st">${pcTal()?'peça começada':'ainda vazio'}</div></div>
+      <div class="np p2"><div class="npt">Entusiasmo</div><div class="bar"><i style="width:${b(pcEnt)}%"></i></div><div class="st">${pcEnt()?'peça começada':'ainda vazio'}</div></div>
+      <div class="np p3"><div class="npt">Essência e história</div><div class="bar"><i style="width:${b(pcEss)}%"></i></div><div class="st">${pcEss()?'peça começada':'ainda vazio'}</div></div>
+    </div>
+    <div class="box atalho"><b>Comece pelo Ikigai.</b> Se preencher com facilidade, já tem quase tudo. Se travar, as ferramentas de baixo te ajudam a garimpar, com opções pra você reconhecer, não caixas em branco.</div>
+    <div class="hsub">As ferramentas</div>${tools}
+    <div class="nav"><span></span><button class="btn btn-argila" onclick="go('sintese')">Ver a minha maestria →</button></div>`;
+}
+function shell(kicker,title,lead,inner){
+  return `<div class="card"><div class="step-kicker">${kicker}</div><h2>${title}</h2><p class="lead">${lead}</p>${inner}</div>
+    <div class="nav"><button class="btn btn-ghost" onclick="go('hub')">← Voltar ao painel</button><button class="btn btn-primary" onclick="go('hub')">Salvar e voltar</button></div>`;
+}
+
+/* ---------- telas ---------- */
+function scr_talentos(){
+  let refl='';
+  if(S.talentos.length){ const tc=topCats('talentos',TALENTOS); refl=`<div class="refl"><div class="rk">Os seus dons se concentram em</div><div class="chama">${joinFrases(tc)}.</div><p>Você marcou <b>${S.talentos.length}</b> talentos. Esse é o coração da sua maestria: o que você faz bem quase sem esforço.</p></div>`; }
+  else refl=`<div class="refl empty"><div class="rk">Os seus dons</div><div class="chama">Marque o que vem fácil pra ver aparecer aqui.</div></div>`;
+  return shell('Núcleo · talentos','Talentos e dons','O que vem fácil pra você, o que os outros elogiam sem você se esforçar. Marque tudo que é verdade.',bankHtml('talentos',TALENTOS,'Um talento que faltou...')+refl);
+}
+function scr_entusiasmo(){
+  let refl='';
+  if(S.entusiasmo.length){ const tc=topCats('entusiasmo',ENTUSIASMO); refl=`<div class="refl"><div class="rk">A sua chama aponta pra</div><div class="chama">${joinFrases(tc)}.</div><p>Você marcou <b>${S.entusiasmo.length}</b> coisas. Esses são os territórios onde a sua energia rende. A maestria floresce quando o trabalho toca esses lugares.</p></div>`; }
+  else refl=`<div class="refl empty"><div class="rk">A sua chama</div><div class="chama">Marque o que te acende pra ver aparecer aqui.</div></div>`;
+  return shell('Núcleo · entusiasmo','Menu do entusiasmo','Não existe maestria sem entusiasmo. Toque em tudo que te dá energia de verdade, sem pensar demais.',bankHtml('entusiasmo',ENTUSIASMO,'Uma coisa que te acende...')+refl);
+}
+function scr_espelho(){
+  let refl='';
+  if(S.espelhoQ.length){ refl=`<div class="refl"><div class="rk">O espelho</div><div class="chama">O que você admira já mora em você.</div><p>Essas qualidades que te encantam nos outros são pistas do seu eu que ainda pede passagem. Você não admiraria o que não reconhece por dentro.</p></div>
+    <label class="field">Onde essas qualidades já aparecem em você, mesmo que pouco?</label>
+    <div class="ex">Ex: quando eu me permito, também sou corajosa. Já tive momentos de muita presença.</div>
+    <textarea oninput="setF('espelhoOnde',this.value)">${esc(S.espelhoOnde)}</textarea>`; }
+  else refl=`<div class="refl empty"><div class="rk">O espelho</div><div class="chama">Marque as qualidades que você admira.</div></div>`;
+  return shell('Núcleo · talentos e essência','Jogo do espelho','Marque as qualidades que você admira nos outros. Elas dizem mais de você do que você imagina.',bankHtml('espelhoQ',[{cn:'Qualidades que você admira',items:QUALIDADES}],'Uma qualidade que faltou...')+refl);
+}
+function scr_linha(){
+  let list='';
+  S.linha.forEach((it,i)=>{ list+=`<div class="list-item"><button class="li-del" onclick="delLinha(${i})">✕</button><div class="li-t">${esc(it.titulo)}</div><div class="li-d">${it.habilidades?('Habilidades: '+esc(it.habilidades)):''}${it.sentiu?(' · '+esc(it.sentiu)):''}</div></div>`; });
+  const inner=`
+    <div class="box"><b>Como fazer:</b> lembre de resultados que você conquistou e se sentiu bem conquistando, no trabalho ou na vida. Pra cada um, marque as habilidades que você usou.</div>
+    <label class="field">O resultado que você conquistou</label>
+    <div class="ex">Ex: organizei um evento que emocionou todos. Liderei um projeto travado até a entrega.</div>
+    <input type="text" id="l_tit" placeholder="O que você conquistou...">
+    <label class="field">Como você se sentiu?</label>
+    <div class="ex">Toque nas que combinam:</div>
+    ${exChipsLinha()}
+    <input type="text" id="l_sen" placeholder="Em fluxo, viva, orgulhosa..." style="margin-top:6px">
+    <label class="field">Quais habilidades você usou?</label>
+    <div class="ex">Toque nas que combinam ou escreva:</div>
+    ${exChipsHab()}
+    <input type="text" id="l_hab" placeholder="Ex: escuta, organização, criatividade..." style="margin-top:6px">
+    <button class="addbtn" onclick="addLinha()" style="margin-top:10px">+ Adicionar à minha linha da vida</button>
+    <div style="margin-top:14px">${list||'<p class="ex">Nenhum resultado adicionado ainda.</p>'}</div>`;
+  return shell('Núcleo · talentos e essência','Linha da vida','Os resultados que você gerou e se sentiu bem gerando mostram os seus talentos em ação.',inner);
+}
+function exChipsLinha(){ const arr=['em fluxo','viva','curiosa','orgulhosa','leve','realizada','conectada']; return '<div class="chips">'+arr.map(t=>`<button class="chip ex-chip" onclick="fillInput('l_sen','${t}')">+ ${t}</button>`).join('')+'</div>'; }
+function exChipsHab(){ const arr=['escuta','organização','leitura das pessoas','criatividade','liderança','análise','comunicação','cuidado']; return '<div class="chips">'+arr.map(t=>`<button class="chip ex-chip" onclick="fillInput('l_hab','${t}')">+ ${t}</button>`).join('')+'</div>'; }
+function fillInput(id,txt){ const e=document.getElementById(id); if(!e) return; e.value = e.value.trim()? e.value.trim()+', '+txt : txt; }
+function addLinha(){ const t=val('l_tit'); if(!t) return; S.linha.push({titulo:t,sentiu:val('l_sen'),habilidades:val('l_hab')}); persist(); render(); }
+function delLinha(i){ S.linha.splice(i,1); persist(); render(); }
+
+function scr_conhecimentos(){
+  const inner=`
+    <label class="field">O que você aprendeu de forma mais formal?</label>
+    <div class="ex">Cursos, formações, o que aprendeu no trabalho.</div>
+    ${exChips('con_aprendi',['gestão','design','psicologia','vendas','finanças','tecnologia','comunicação'])}
+    <textarea oninput="setF('con_aprendi',this.value)" style="margin-top:6px">${esc(S.con_aprendi)}</textarea>
+    <label class="field">O que você busca aprender por conta própria, por puro interesse?</label>
+    <div class="ex">O que você pesquisa sem ninguém mandar. É uma das pistas mais fortes da sua chama.</div>
+    ${exChips('con_busco',['Eneagrama','escrita','espiritualidade','cozinha','um instrumento','fotografia','autoconhecimento'])}
+    <textarea oninput="setF('con_busco',this.value)" style="margin-top:6px">${esc(S.con_busco)}</textarea>`;
+  return shell('Núcleo · entusiasmo e talentos','Conhecimentos e interesses','O que você aprendeu e, principalmente, o que persegue por conta própria.',inner);
+}
+function scr_historia(){
+  const inner=`
+    <label class="field">Quando criança, do que você gostava? Do que brincava?</label>
+    ${exChips('his_crianca',['inventar histórias','organizar tudo','ficar na natureza','cuidar dos outros','desenhar','liderar as brincadeiras','ler'])}
+    <textarea oninput="setF('his_crianca',this.value)" style="margin-top:6px">${esc(S.his_crianca)}</textarea>
+    <label class="field">Na adolescência, o que te movia?</label>
+    ${exChips('his_adolescente',['música','esporte','o grupo de amigos','ler','desenhar','causas','criar coisas'])}
+    <textarea oninput="setF('his_adolescente',this.value)" style="margin-top:6px">${esc(S.his_adolescente)}</textarea>
+    <label class="field">Hoje, fora do trabalho, o que te define?</label>
+    <div class="ex">Ex: as viagens, a maternidade, a dança, os amigos, um propósito.</div>
+    <textarea oninput="setF('his_adulto',this.value)">${esc(S.his_adulto)}</textarea>
+    <label class="field">O que as pessoas deixam de ver em você quando só olham o profissional?</label>
+    <div class="ex">Ex: que sou muito sensível, que tenho um lado artístico, que já superei coisas difíceis.</div>
+    <textarea oninput="setF('his_fora',this.value)">${esc(S.his_fora)}</textarea>`;
+  return shell('Núcleo · essência','Elementos que tornam você em você','A sua história é o fio da essência. Muitas vezes o talento estava ali desde cedo.',inner);
+}
+function scr_ikigai(){
+  const inner=`
+    <label class="field">O que você ama fazer?</label>
+    ${exChips('ik_ama',['ajudar pessoas a se enxergar','criar coisas bonitas','investigar a fundo','ensinar','conectar gente'])}
+    <textarea oninput="setF('ik_ama',this.value)" style="margin-top:6px">${esc(S.ik_ama)}</textarea>
+    <label class="field">O que você faz bem, quase sem esforço?</label>
+    ${exChips('ik_bem',['organizar o caos','ler o que o outro sente','simplificar o complexo','criar do zero','sustentar sob pressão'])}
+    <textarea oninput="setF('ik_bem',this.value)" style="margin-top:6px">${esc(S.ik_bem)}</textarea>
+    <label class="field">O que o mundo (ou as pessoas à sua volta) precisa?</label>
+    ${exChips('ik_mundo',['líderes mais conscientes','pessoas se sentindo vistas','ambientes mais leves','clareza','cuidado'])}
+    <textarea oninput="setF('ik_mundo',this.value)" style="margin-top:6px">${esc(S.ik_mundo)}</textarea>
+    <label class="field">Pelo que você pode ser (ou já é) pago?</label>
+    ${exChips('ik_pago',['mentorias','consultorias','projetos','aulas','criação'])}
+    <textarea oninput="setF('ik_pago',this.value)" style="margin-top:6px">${esc(S.ik_pago)}</textarea>
+    <label class="field">De 0 a 10, o quanto foi fácil preencher isso?</label>
+    ${scale10('ik_facil')}
+    <div class="scale-ends"><span>0 · travei bastante</span><span>10 · fluiu fácil</span></div>
+    ${S.ik_facil!==null && S.ik_facil>=7 ? '<div class="box atalho"><b>Que ótimo, fluiu.</b> Você já tem uma boa clareza da sua maestria. Pode ir direto pra tela "A minha maestria". As outras ferramentas ficam aí se quiser aprofundar.</div>' : (S.ik_facil!==null? '<div class="box">Travou em alguma parte? Normal. Use os bancos de talentos, entusiasmo e as outras ferramentas pra garimpar, e volte aqui.</div>':'')}`;
+  return shell('Atalho','Ikigai','O cruzamento dos quatro. Toque nos exemplos pra começar, e ajuste com as suas palavras.',inner);
+}
+function scr_ambiente(){
+  let refl = S.amb_pessoas.length? `<div class="refl"><div class="rk">O seu terreno fértil</div><div class="chama">O seu dom rende mais perto de: ${S.amb_pessoas.slice(0,3).map(esc).join(', ')}.</div><p>O seu dom não é pra qualquer um. Perceber onde ele é recebido é o que faz a sua energia render, e aponta o seu cliente ideal.</p></div>` : '';
+  const inner=`
+    <label class="field">Com quem e onde a sua energia floresce?</label>
+    ${bankHtml('amb_pessoas',[{cn:'Marque o que combina',items:AMBIENTES}],'Outro ambiente ou tipo de pessoa...')}
+    <label class="field" style="margin-top:16px">Como você imagina o seu cliente ideal, quem mais se beneficia do seu dom?</label>
+    <div class="ex">Ex: líderes que venceram muito mas sentem que falta sentido. Pessoas em transição.</div>
+    <textarea oninput="setF('amb_cliente',this.value)">${esc(S.amb_cliente)}</textarea>
+    ${refl}`;
+  return shell('Ponte · direção','Ambiente e pessoas certas','Não é uma lista de valores abstratos. É perceber onde o seu dom é recebido.',inner);
+}
+function scr_legado(){
+  const inner=`
+    <label class="field">O que você gostaria de deixar no mundo e nas pessoas?</label>
+    <div class="ex">Ex: pessoas mais autênticas, ambientes mais saudáveis, sementes do bem.</div>
+    <textarea oninput="setF('legado',this.value)">${esc(S.legado)}</textarea>
+    <div class="box">Camada opcional. Faz mais sentido depois que você já reconheceu a sua maestria. Se ainda não vier, tudo bem.</div>`;
+  return shell('Ponte · opcional','Legado e propósito','O que você quer deixar. Pra quando fizer sentido.',inner);
+}
+const SCREENS={ ikigai:scr_ikigai, talentos:scr_talentos, entusiasmo:scr_entusiasmo, linha:scr_linha, conhecimentos:scr_conhecimentos, historia:scr_historia, espelho:scr_espelho, ambiente:scr_ambiente, legado:scr_legado };
+
+/* ---------- síntese ---------- */
+function raw(val){ const e=!val||!String(val).trim(); return `<div class="r ${e?'empty':''}">${e?'(vazio)':esc(val)}</div>`; }
+function scr_sintese(){
+  const tal = S.talentos.length? S.talentos.join(', ') : '';
+  const ent = S.entusiasmo.length? S.entusiasmo.join(', ') : '';
+  const lin = S.linha.length? S.linha.map(l=>'• '+esc(l.titulo)+(l.habilidades?(' ('+esc(l.habilidades)+')'):'')).join('\n') : '';
+  const esp = S.espelhoQ.length? ('Admira: '+S.espelhoQ.join(', ')+(S.espelhoOnde?('\nEm você: '+esc(S.espelhoOnde)):'')) : '';
+  const inner=`
+    <div class="raw"><h3>Talentos e dons</h3>${raw(tal)}${raw(lin)}${raw(S.con_aprendi)}${raw(esp)}</div>
+    <div class="raw"><h3>Entusiasmo e interesses</h3>${raw(ent)}${raw(S.ik_ama)}${raw(S.con_busco)}</div>
+    <div class="raw"><h3>Essência e história</h3>${raw(S.his_crianca)}${raw(S.his_adolescente)}${raw(S.his_adulto)}${raw(S.his_fora)}</div>
+    ${(S.amb_pessoas.length||S.amb_cliente||S.legado)?`<div class="raw"><h3>Pontes</h3>${raw(S.amb_pessoas.join(', '))}${raw(S.amb_cliente)}${raw(S.legado)}</div>`:''}
+    <div class="box"><b>Agora, a leitura.</b> Olhando tudo acima, escreva a sua maestria em cinco batidas. Se preferir, leve esse material pra uma conversa com a Débora, é aqui que o olhar dela ajuda a fechar.</div>
+    <div class="beat-lbl">1. O dom em essência</div><div class="beat-hint">Em uma frase, quase um verbo: o valor que você gera só por ser você.</div><textarea oninput="setF('s1',this.value)">${esc(S.s1)}</textarea>
+    <div class="beat-lbl">2. Como esse dom opera</div><div class="beat-hint">A mecânica, com cenas do dia a dia.</div><textarea oninput="setF('s2',this.value)">${esc(S.s2)}</textarea>
+    <div class="beat-lbl">3. O que te acende</div><div class="beat-hint">Os interesses e o entusiasmo que dão potência ao dom.</div><textarea oninput="setF('s3',this.value)">${esc(S.s3)}</textarea>
+    <div class="beat-lbl">4. A trava e o cuidado</div><div class="beat-hint">O que às vezes trava, e onde o seu dom é melhor recebido. Sempre num lugar de força.</div><textarea oninput="setF('s4',this.value)">${esc(S.s4)}</textarea>
+    <div class="beat-lbl">5. O espelho e a próxima página</div><div class="beat-hint">O quanto você vive pra si o que entrega pros outros, e pra onde isso caminha.</div><textarea oninput="setF('s5',this.value)">${esc(S.s5)}</textarea>`;
+  return `<div class="card"><div class="step-kicker">A síntese</div><h2>A minha maestria</h2><p class="lead">Tudo que você reconheceu, reunido, e as cinco batidas pra você escrever a sua leitura.</p>${inner}</div>
+    <div class="nav"><button class="btn btn-ghost" onclick="go('hub')">← Voltar ao painel</button><button class="btn btn-argila" onclick="window.print()">Salvar em PDF</button></div>`;
+}
+
+/* ---------- infra ---------- */
+function scale10(field){ let h='<div class="scale10">'; for(let n=0;n<=10;n++){ h+=`<button class="${S[field]===n?'on':''}" onclick="setScale('${field}',${n})">${n}</button>`; } return h+'</div>'; }
+function setScale(f,n){ S[f]=n; persist(); render(); }
+function go(s){ screen=s; render(); }
+function render(){
+  const app=document.getElementById('app');
+  if(screen==='hub') app.innerHTML=hub();
+  else if(screen==='sintese') app.innerHTML=scr_sintese();
+  else app.innerHTML=SCREENS[screen]();
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+render();
+</script>
+<script src="nav.js"></script>
+</body>
+</html>

@@ -1,0 +1,260 @@
+{
+  "date": "2026-09-21T16:27:29.885Z",
+  "version": "13.5.0",
+  "environment": {
+    "networkUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36",
+    "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.0.0 Safari/537.36 Edg/153.0.0.0",
+    "benchmarkIndex": 2168.5,
+    "credits": {
+      "axe-core": "4.13.0"
+    }
+  },
+  "results": [
+    {
+      "key": "home",
+      "lang": 0,
+      "route": "/",
+      "scores": {
+        "performance": 80,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 66
+      },
+      "metrics": {
+        "first-contentful-paint": "1.4 s",
+        "largest-contentful-paint": "5.4 s",
+        "total-blocking-time": "0 ms",
+        "cumulative-layout-shift": "0.001",
+        "speed-index": "1.4 s"
+      },
+      "failures": [
+        {
+          "id": "largest-contentful-paint",
+          "score": 0.2,
+          "title": "Largest Contentful Paint",
+          "displayValue": "5.4 s"
+        },
+        {
+          "id": "interactive",
+          "score": 0.71,
+          "title": "Time to Interactive",
+          "displayValue": "5.5 s"
+        },
+        {
+          "id": "label-content-name-mismatch",
+          "score": 0,
+          "title": "Elements with visible text labels do not have matching accessible names."
+        },
+        {
+          "id": "unused-css-rules",
+          "score": 0,
+          "title": "Reduce unused CSS",
+          "displayValue": "Est savings of 17 KiB"
+        },
+        {
+          "id": "is-crawlable",
+          "score": 0,
+          "title": "Page is blocked from indexing"
+        },
+        {
+          "id": "cache-insight",
+          "score": 0,
+          "title": "Use efficient cache lifetimes",
+          "displayValue": "Est savings of 1,017 KiB"
+        },
+        {
+          "id": "document-latency-insight",
+          "score": 0.5,
+          "title": "Document request latency",
+          "displayValue": "Est savings of 12 KiB"
+        },
+        {
+          "id": "forced-reflow-insight",
+          "score": 0,
+          "title": "Forced reflow"
+        },
+        {
+          "id": "image-delivery-insight",
+          "score": 0,
+          "title": "Improve image delivery",
+          "displayValue": "Est savings of 631 KiB"
+        },
+        {
+          "id": "lcp-discovery-insight",
+          "score": 0,
+          "title": "LCP request discovery"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0,
+          "title": "Network dependency tree"
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0,
+          "title": "Render-blocking requests",
+          "displayValue": "Est savings of 460 ms"
+        }
+      ]
+    },
+    {
+      "key": "visao",
+      "lang": 0,
+      "route": "/visao-uterina/",
+      "scores": {
+        "performance": 83,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 66
+      },
+      "metrics": {
+        "first-contentful-paint": "1.4 s",
+        "largest-contentful-paint": "4.6 s",
+        "total-blocking-time": "0 ms",
+        "cumulative-layout-shift": "0",
+        "speed-index": "1.4 s"
+      },
+      "failures": [
+        {
+          "id": "largest-contentful-paint",
+          "score": 0.35,
+          "title": "Largest Contentful Paint",
+          "displayValue": "4.6 s"
+        },
+        {
+          "id": "interactive",
+          "score": 0.8,
+          "title": "Time to Interactive",
+          "displayValue": "4.7 s"
+        },
+        {
+          "id": "label-content-name-mismatch",
+          "score": 0,
+          "title": "Elements with visible text labels do not have matching accessible names."
+        },
+        {
+          "id": "unused-css-rules",
+          "score": 0,
+          "title": "Reduce unused CSS",
+          "displayValue": "Est savings of 11 KiB"
+        },
+        {
+          "id": "is-crawlable",
+          "score": 0,
+          "title": "Page is blocked from indexing"
+        },
+        {
+          "id": "cache-insight",
+          "score": 0,
+          "title": "Use efficient cache lifetimes",
+          "displayValue": "Est savings of 978 KiB"
+        },
+        {
+          "id": "document-latency-insight",
+          "score": 0.5,
+          "title": "Document request latency",
+          "displayValue": "Est savings of 12 KiB"
+        },
+        {
+          "id": "image-delivery-insight",
+          "score": 0,
+          "title": "Improve image delivery",
+          "displayValue": "Est savings of 616 KiB"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0,
+          "title": "Network dependency tree"
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0,
+          "title": "Render-blocking requests",
+          "displayValue": "Est savings of 480 ms"
+        }
+      ]
+    },
+    {
+      "key": "curso",
+      "lang": 0,
+      "route": "/curso/",
+      "scores": {
+        "performance": 77,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 66
+      },
+      "metrics": {
+        "first-contentful-paint": "1.4 s",
+        "largest-contentful-paint": "6.2 s",
+        "total-blocking-time": "0 ms",
+        "cumulative-layout-shift": "0",
+        "speed-index": "1.4 s"
+      },
+      "failures": [
+        {
+          "id": "largest-contentful-paint",
+          "score": 0.11,
+          "title": "Largest Contentful Paint",
+          "displayValue": "6.2 s"
+        },
+        {
+          "id": "interactive",
+          "score": 0.59,
+          "title": "Time to Interactive",
+          "displayValue": "6.4 s"
+        },
+        {
+          "id": "label-content-name-mismatch",
+          "score": 0,
+          "title": "Elements with visible text labels do not have matching accessible names."
+        },
+        {
+          "id": "unused-css-rules",
+          "score": 0,
+          "title": "Reduce unused CSS",
+          "displayValue": "Est savings of 12 KiB"
+        },
+        {
+          "id": "is-crawlable",
+          "score": 0,
+          "title": "Page is blocked from indexing"
+        },
+        {
+          "id": "cache-insight",
+          "score": 0,
+          "title": "Use efficient cache lifetimes",
+          "displayValue": "Est savings of 1,395 KiB"
+        },
+        {
+          "id": "document-latency-insight",
+          "score": 0.5,
+          "title": "Document request latency",
+          "displayValue": "Est savings of 10 KiB"
+        },
+        {
+          "id": "image-delivery-insight",
+          "score": 0,
+          "title": "Improve image delivery",
+          "displayValue": "Est savings of 1,035 KiB"
+        },
+        {
+          "id": "lcp-discovery-insight",
+          "score": 0,
+          "title": "LCP request discovery"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0,
+          "title": "Network dependency tree"
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0,
+          "title": "Render-blocking requests",
+          "displayValue": "Est savings of 480 ms"
+        }
+      ]
+    }
+  ]
+}

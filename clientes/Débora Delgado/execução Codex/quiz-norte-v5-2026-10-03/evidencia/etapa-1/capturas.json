@@ -1,0 +1,645 @@
+{
+  "capturedAt": "2026-10-03T20:12:47.779Z",
+  "results": [
+    {
+      "viewport": 390,
+      "view": "opening",
+      "fontLoaded": true,
+      "details": {
+        "screen": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 844
+        },
+        "topbar": {
+          "x": 12,
+          "y": 0,
+          "width": 366,
+          "height": 32
+        },
+        "list": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "heading": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      },
+      "screenshot": "evidencia/etapa-1/390/opening.png"
+    },
+    {
+      "viewport": 390,
+      "view": "age",
+      "fontLoaded": true,
+      "details": {
+        "screen": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 844
+        },
+        "topbar": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "list": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "heading": {
+          "x": 12,
+          "y": 116,
+          "width": 366,
+          "height": 36
+        }
+      },
+      "screenshot": "evidencia/etapa-1/390/age.png"
+    },
+    {
+      "viewport": 390,
+      "view": "list",
+      "fontLoaded": true,
+      "details": {
+        "screen": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 844
+        },
+        "topbar": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "list": {
+          "x": 12,
+          "y": 195,
+          "width": 366,
+          "height": 382
+        },
+        "heading": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      },
+      "screenshot": "evidencia/etapa-1/390/list.png"
+    },
+    {
+      "viewport": 390,
+      "view": "insert",
+      "fontLoaded": true,
+      "details": {
+        "screen": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 844
+        },
+        "topbar": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "list": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "heading": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      },
+      "screenshot": "evidencia/etapa-1/390/insert.png"
+    },
+    {
+      "viewport": 390,
+      "view": "insert-mid",
+      "fontLoaded": true,
+      "details": {
+        "screen": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 844
+        },
+        "topbar": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "list": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "heading": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      },
+      "screenshot": "evidencia/etapa-1/390/insert-mid.png"
+    },
+    {
+      "viewport": 390,
+      "view": "desire",
+      "fontLoaded": true,
+      "details": {
+        "screen": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 844
+        },
+        "topbar": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "list": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "heading": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      },
+      "screenshot": "evidencia/etapa-1/390/desire.png"
+    },
+    {
+      "viewport": 390,
+      "view": "loading",
+      "fontLoaded": true,
+      "details": {
+        "screen": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 844
+        },
+        "topbar": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "list": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "heading": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      },
+      "screenshot": "evidencia/etapa-1/390/loading.png"
+    },
+    {
+      "viewport": 390,
+      "view": "result",
+      "fontLoaded": true,
+      "details": {
+        "screen": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 1688
+        },
+        "topbar": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "list": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "heading": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      },
+      "screenshot": "evidencia/etapa-1/390/result.png"
+    },
+    {
+      "viewport": 390,
+      "view": "capture",
+      "fontLoaded": true,
+      "details": {
+        "screen": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 844
+        },
+        "topbar": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "list": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "heading": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      },
+      "screenshot": "evidencia/etapa-1/390/capture.png"
+    },
+    {
+      "viewport": 390,
+      "view": "nextstep",
+      "fontLoaded": true,
+      "details": {
+        "screen": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 1468
+        },
+        "topbar": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "list": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "heading": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      },
+      "screenshot": "evidencia/etapa-1/390/nextstep.png"
+    },
+    {
+      "viewport": 1440,
+      "view": "opening",
+      "fontLoaded": true,
+      "details": {
+        "screen": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 1000
+        },
+        "topbar": {
+          "x": 496,
+          "y": 0,
+          "width": 448,
+          "height": 44
+        },
+        "list": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "heading": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      },
+      "screenshot": "evidencia/etapa-1/1440/opening.png"
+    },
+    {
+      "viewport": 1440,
+      "view": "age",
+      "fontLoaded": true,
+      "details": {
+        "screen": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 1000
+        },
+        "topbar": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "list": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "heading": {
+          "x": 496,
+          "y": 143,
+          "width": 448,
+          "height": 36
+        }
+      },
+      "screenshot": "evidencia/etapa-1/1440/age.png"
+    },
+    {
+      "viewport": 1440,
+      "view": "list",
+      "fontLoaded": true,
+      "details": {
+        "screen": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 1000
+        },
+        "topbar": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "list": {
+          "x": 496,
+          "y": 264,
+          "width": 448,
+          "height": 382
+        },
+        "heading": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      },
+      "screenshot": "evidencia/etapa-1/1440/list.png"
+    },
+    {
+      "viewport": 1440,
+      "view": "insert",
+      "fontLoaded": true,
+      "details": {
+        "screen": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 1000
+        },
+        "topbar": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "list": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "heading": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      },
+      "screenshot": "evidencia/etapa-1/1440/insert.png"
+    },
+    {
+      "viewport": 1440,
+      "view": "insert-mid",
+      "fontLoaded": true,
+      "details": {
+        "screen": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 1000
+        },
+        "topbar": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "list": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "heading": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      },
+      "screenshot": "evidencia/etapa-1/1440/insert-mid.png"
+    },
+    {
+      "viewport": 1440,
+      "view": "desire",
+      "fontLoaded": true,
+      "details": {
+        "screen": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 1000
+        },
+        "topbar": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "list": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "heading": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      },
+      "screenshot": "evidencia/etapa-1/1440/desire.png"
+    },
+    {
+      "viewport": 1440,
+      "view": "loading",
+      "fontLoaded": true,
+      "details": {
+        "screen": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 1000
+        },
+        "topbar": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "list": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "heading": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      },
+      "screenshot": "evidencia/etapa-1/1440/loading.png"
+    },
+    {
+      "viewport": 1440,
+      "view": "result",
+      "fontLoaded": true,
+      "details": {
+        "screen": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 1575
+        },
+        "topbar": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "list": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "heading": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      },
+      "screenshot": "evidencia/etapa-1/1440/result.png"
+    },
+    {
+      "viewport": 1440,
+      "view": "capture",
+      "fontLoaded": true,
+      "details": {
+        "screen": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 1000
+        },
+        "topbar": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "list": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "heading": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      },
+      "screenshot": "evidencia/etapa-1/1440/capture.png"
+    },
+    {
+      "viewport": 1440,
+      "view": "nextstep",
+      "fontLoaded": true,
+      "details": {
+        "screen": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 1400
+        },
+        "topbar": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "list": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "heading": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      },
+      "screenshot": "evidencia/etapa-1/1440/nextstep.png"
+    }
+  ]
+}

@@ -1,0 +1,2035 @@
+{
+  "uniqueSourceUnits": 380,
+  "directOrTranscreated": 332,
+  "preserved": [
+    1,
+    2,
+    4,
+    7,
+    8,
+    9,
+    10,
+    13,
+    17,
+    30,
+    33,
+    43,
+    55,
+    58,
+    64,
+    65,
+    71,
+    75,
+    77,
+    79,
+    81,
+    93,
+    94,
+    102,
+    149,
+    158,
+    168,
+    173,
+    191,
+    201,
+    206,
+    243,
+    265,
+    279,
+    282,
+    285,
+    302,
+    361,
+    370,
+    377,
+    379
+  ],
+  "passageTranslations": {
+    "341": [
+      "Permission to inhabit your body",
+      "Permiso para habitar el cuerpo"
+    ],
+    "342": [
+      "Body as temple, pleasure without guilt",
+      "Cuerpo templo, placer sin culpa"
+    ],
+    "343": [
+      "Permission to feel your inner waters",
+      "Permiso para sentir las aguas internas"
+    ],
+    "344": [
+      "The dance of Shiva-Shakti",
+      "La danza de Shiva-Shakti"
+    ],
+    "345": [
+      "The voice of pleasure",
+      "La voz del placer"
+    ],
+    "346": [
+      "Mirrors of love",
+      "Espejos del amor"
+    ],
+    "347": [
+      "Consecration of the rose",
+      "Consagración de la rosa"
+    ]
+  },
+  "files": [
+    {
+      "key": "home",
+      "locale": "en",
+      "route": "/en/",
+      "translated": 86,
+      "originalQuotes": 4,
+      "preservedNames": 34,
+      "review": [
+        {
+          "tag": "H1",
+          "id": "home-title",
+          "section": "inicio",
+          "text": "The GoldenTemple"
+        },
+        {
+          "tag": "P",
+          "id": "",
+          "section": "inicio",
+          "text": "You are not broken. You have simply forgotten yourself."
+        },
+        {
+          "tag": "P",
+          "id": "",
+          "section": "inicio",
+          "text": "A school for women who are sensitive, creative and too intense for the places they have had to fit into. Here, the body becomes home again, and your strength be"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "section": "inicio",
+          "text": "Find my path ↘"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "section": "inicio",
+          "text": "Scroll down to remember ↓"
+        },
+        {
+          "tag": "H2",
+          "id": "portals-title",
+          "section": "portais",
+          "text": "Where is your body asking you to begin?"
+        },
+        {
+          "tag": "H3",
+          "id": "",
+          "section": "portais",
+          "text": "Despertar do Prazer Sagrado"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "section": "portais",
+          "text": "Begin with the body ↗"
+        },
+        {
+          "tag": "H3",
+          "id": "",
+          "section": "portais",
+          "text": "Mentoria O Templo Dourado"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "section": "portais",
+          "text": "Take the full journey ↗"
+        },
+        {
+          "tag": "H2",
+          "id": "school-title",
+          "section": "escola",
+          "text": "Guiding women from exile within themselves to the living temple of their own sovereignty."
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "section": "escola",
+          "text": "The Temple ↗"
+        },
+        {
+          "tag": "H2",
+          "id": "method-title",
+          "section": "metodo",
+          "text": "Truth is not a thought. It is something you embody."
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "section": "metodo",
+          "text": "Método S.E.R. ↗"
+        },
+        {
+          "tag": "H3",
+          "id": "",
+          "section": "metodo",
+          "text": "Ground"
+        },
+        {
+          "tag": "H3",
+          "id": "",
+          "section": "metodo",
+          "text": "Understand"
+        },
+        {
+          "tag": "H3",
+          "id": "",
+          "section": "metodo",
+          "text": "Alchemize"
+        },
+        {
+          "tag": "H3",
+          "id": "",
+          "section": "metodo",
+          "text": "Resonate"
+        },
+        {
+          "tag": "H3",
+          "id": "",
+          "section": "metodo",
+          "text": "Embody"
+        },
+        {
+          "tag": "H2",
+          "id": "paths-title",
+          "section": "caminhos",
+          "text": "Where is your body asking you to begin?"
+        },
+        {
+          "tag": "H3",
+          "id": "",
+          "section": "caminhos",
+          "text": "O Templo Dourado"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "section": "caminhos",
+          "text": "I want to begin my journey ↗"
+        },
+        {
+          "tag": "H3",
+          "id": "",
+          "section": "caminhos",
+          "text": "Visão Uterina"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "section": "caminhos",
+          "text": "I want my Visão Uterina ↗"
+        },
+        {
+          "tag": "H3",
+          "id": "",
+          "section": "caminhos",
+          "text": "Despertar do Prazer Sagrado"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "section": "caminhos",
+          "text": "I want to reopen the source ↗"
+        },
+        {
+          "tag": "H2",
+          "id": "art-title",
+          "section": "arte",
+          "text": "Art."
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "section": "arte",
+          "text": "Spotify ↗"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "section": "arte",
+          "text": "YouTube ↗"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "section": "arte",
+          "text": "Art ↗"
+        },
+        {
+          "tag": "H2",
+          "id": "prana-title",
+          "section": "prana",
+          "text": "Prana Ka"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "section": "prana",
+          "text": "Prana Ka ↗"
+        },
+        {
+          "tag": "H2",
+          "id": "proof-title",
+          "section": "mulheres",
+          "text": "Almost all of them tell the same story:they found their voice again."
+        },
+        {
+          "tag": "SECTION",
+          "id": "chamado",
+          "section": "chamado",
+          "text": "The portal remains openYou did not come here to be desired. You came to bring worlds into being.From the calling to the coronation, every step is an initiation."
+        },
+        {
+          "tag": "H2",
+          "id": "closing-title",
+          "section": "chamado",
+          "text": "You did not come here to be desired. You came to bring worlds into being."
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "section": "chamado",
+          "text": "Find my path ↗"
+        }
+      ]
+    },
+    {
+      "key": "home",
+      "locale": "es",
+      "route": "/es/",
+      "translated": 86,
+      "originalQuotes": 4,
+      "preservedNames": 34,
+      "review": [
+        {
+          "tag": "H1",
+          "id": "home-title",
+          "section": "inicio",
+          "text": "The GoldenTemple"
+        },
+        {
+          "tag": "P",
+          "id": "",
+          "section": "inicio",
+          "text": "No estás rota. Solo te has olvidado de ti."
+        },
+        {
+          "tag": "P",
+          "id": "",
+          "section": "inicio",
+          "text": "Una escuela para mujeres sensibles, creativas y demasiado intensas para los lugares en los que tuvieron que encajar. Aquí el cuerpo vuelve a ser casa, y la fuer"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "section": "inicio",
+          "text": "Encontrar mi camino ↘"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "section": "inicio",
+          "text": "Bajar para recordar ↓"
+        },
+        {
+          "tag": "H2",
+          "id": "portals-title",
+          "section": "portais",
+          "text": "¿Por dónde te pide tu cuerpo comenzar?"
+        },
+        {
+          "tag": "H3",
+          "id": "",
+          "section": "portais",
+          "text": "Despertar do Prazer Sagrado"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "section": "portais",
+          "text": "Comenzar por el cuerpo ↗"
+        },
+        {
+          "tag": "H3",
+          "id": "",
+          "section": "portais",
+          "text": "Mentoria O Templo Dourado"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "section": "portais",
+          "text": "Recorrer el camino completo ↗"
+        },
+        {
+          "tag": "H2",
+          "id": "school-title",
+          "section": "escola",
+          "text": "Guiar a las mujeres del exilio de sí mismas al templo vivo de su propia soberanía."
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "section": "escola",
+          "text": "El Templo ↗"
+        },
+        {
+          "tag": "H2",
+          "id": "method-title",
+          "section": "metodo",
+          "text": "La verdad no se piensa. Se encarna."
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "section": "metodo",
+          "text": "Método S.E.R. ↗"
+        },
+        {
+          "tag": "H3",
+          "id": "",
+          "section": "metodo",
+          "text": "Enraizar"
+        },
+        {
+          "tag": "H3",
+          "id": "",
+          "section": "metodo",
+          "text": "Comprender"
+        },
+        {
+          "tag": "H3",
+          "id": "",
+          "section": "metodo",
+          "text": "Alquimizar"
+        },
+        {
+          "tag": "H3",
+          "id": "",
+          "section": "metodo",
+          "text": "Resonar"
+        },
+        {
+          "tag": "H3",
+          "id": "",
+          "section": "metodo",
+          "text": "Encarnar"
+        },
+        {
+          "tag": "H2",
+          "id": "paths-title",
+          "section": "caminhos",
+          "text": "¿Por dónde te pide tu cuerpo comenzar?"
+        },
+        {
+          "tag": "H3",
+          "id": "",
+          "section": "caminhos",
+          "text": "O Templo Dourado"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "section": "caminhos",
+          "text": "Quiero sellar mi entrada ↗"
+        },
+        {
+          "tag": "H3",
+          "id": "",
+          "section": "caminhos",
+          "text": "Visão Uterina"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "section": "caminhos",
+          "text": "Quiero mi Visão Uterina ↗"
+        },
+        {
+          "tag": "H3",
+          "id": "",
+          "section": "caminhos",
+          "text": "Despertar do Prazer Sagrado"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "section": "caminhos",
+          "text": "Quiero reabrir la fuente ↗"
+        },
+        {
+          "tag": "H2",
+          "id": "art-title",
+          "section": "arte",
+          "text": "El arte."
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "section": "arte",
+          "text": "Spotify ↗"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "section": "arte",
+          "text": "YouTube ↗"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "section": "arte",
+          "text": "Arte ↗"
+        },
+        {
+          "tag": "H2",
+          "id": "prana-title",
+          "section": "prana",
+          "text": "Prana Ka"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "section": "prana",
+          "text": "Prana Ka ↗"
+        },
+        {
+          "tag": "H2",
+          "id": "proof-title",
+          "section": "mulheres",
+          "text": "Casi todas cuentan lo mismo:volvieron a expresarse."
+        },
+        {
+          "tag": "SECTION",
+          "id": "chamado",
+          "section": "chamado",
+          "text": "El portal permanece abiertoNo viniste para ser deseada. Viniste para gestar mundos.Del llamado a la coronación, cada paso es una iniciación. Y el primero es ele"
+        },
+        {
+          "tag": "H2",
+          "id": "closing-title",
+          "section": "chamado",
+          "text": "No viniste para ser deseada. Viniste para gestar mundos."
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "section": "chamado",
+          "text": "Encontrar mi camino ↗"
+        }
+      ]
+    },
+    {
+      "key": "templo",
+      "locale": "en",
+      "route": "/en/the-temple/",
+      "translated": 43,
+      "originalQuotes": 0,
+      "preservedNames": 18,
+      "review": [
+        {
+          "tag": "H1",
+          "id": "",
+          "section": "inicio",
+          "text": "The Temple"
+        },
+        {
+          "tag": "P",
+          "id": "",
+          "section": "inicio",
+          "text": "Guiding women from exile within themselves to the living temple of their own sovereignty."
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "section": "inicio",
+          "text": "↓"
+        },
+        {
+          "tag": "H2",
+          "id": "",
+          "section": "descobrir",
+          "text": "The Golden Temple"
+        },
+        {
+          "tag": "H2",
+          "id": "",
+          "section": "",
+          "text": "Kashmir Shaivism"
+        },
+        {
+          "tag": "H2",
+          "id": "",
+          "section": "",
+          "text": "Kemet · Ancient Egypt"
+        },
+        {
+          "tag": "H2",
+          "id": "",
+          "section": "",
+          "text": "The Rose · Sumer, Avalon, Magdalene"
+        },
+        {
+          "tag": "H2",
+          "id": "",
+          "section": "",
+          "text": "Truth is not a thought. It is something you embody."
+        },
+        {
+          "tag": "H2",
+          "id": "",
+          "section": "",
+          "text": "The Rose calls those who are ready."
+        },
+        {
+          "tag": "SECTION",
+          "id": "chamado",
+          "section": "chamado",
+          "text": "The portal remains openYou did not come here to be desired. You came to bring worlds into being.From the calling to the coronation, every step is an initiation."
+        },
+        {
+          "tag": "H2",
+          "id": "",
+          "section": "chamado",
+          "text": "You did not come here to be desired. You came to bring worlds into being."
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "section": "chamado",
+          "text": "Find my path ↗"
+        }
+      ]
+    },
+    {
+      "key": "templo",
+      "locale": "es",
+      "route": "/es/el-templo/",
+      "translated": 43,
+      "originalQuotes": 0,
+      "preservedNames": 18,
+      "review": [
+        {
+          "tag": "H1",
+          "id": "",
+          "section": "inicio",
+          "text": "El Templo"
+        },
+        {
+          "tag": "P",
+          "id": "",
+          "section": "inicio",
+          "text": "Guiar a las mujeres del exilio de sí mismas al templo vivo de su propia soberanía."
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "section": "inicio",
+          "text": "↓"
+        },
+        {
+          "tag": "H2",
+          "id": "",
+          "section": "descobrir",
+          "text": "The Golden Temple"
+        },
+        {
+          "tag": "H2",
+          "id": "",
+          "section": "",
+          "text": "Shivaísmo de Cachemira"
+        },
+        {
+          "tag": "H2",
+          "id": "",
+          "section": "",
+          "text": "Kemet · Antiguo Egipto"
+        },
+        {
+          "tag": "H2",
+          "id": "",
+          "section": "",
+          "text": "La Rosa · Sumeria, Avalon, Magdalena"
+        },
+        {
+          "tag": "H2",
+          "id": "",
+          "section": "",
+          "text": "La verdad no se piensa. Se encarna."
+        },
+        {
+          "tag": "H2",
+          "id": "",
+          "section": "",
+          "text": "La Rosa llama a quienes están listas."
+        },
+        {
+          "tag": "SECTION",
+          "id": "chamado",
+          "section": "chamado",
+          "text": "El portal permanece abiertoNo viniste para ser deseada. Viniste para gestar mundos.Del llamado a la coronación, cada paso es una iniciación. Y el primero es ele"
+        },
+        {
+          "tag": "H2",
+          "id": "",
+          "section": "chamado",
+          "text": "No viniste para ser deseada. Viniste para gestar mundos."
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "section": "chamado",
+          "text": "Encontrar mi camino ↗"
+        }
+      ]
+    },
+    {
+      "key": "metodo",
+      "locale": "en",
+      "route": "/en/method/",
+      "translated": 49,
+      "originalQuotes": 0,
+      "preservedNames": 18,
+      "review": [
+        {
+          "tag": "H1",
+          "id": "",
+          "section": "inicio",
+          "text": "Método S.E.R."
+        },
+        {
+          "tag": "P",
+          "id": "",
+          "section": "inicio",
+          "text": "Truth is not a thought. It is something you embody."
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "section": "inicio",
+          "text": "↓"
+        },
+        {
+          "tag": "H2",
+          "id": "",
+          "section": "descobrir",
+          "text": "01 · GROUND"
+        },
+        {
+          "tag": "H2",
+          "id": "",
+          "section": "descobrir",
+          "text": "02 · UNDERSTAND"
+        },
+        {
+          "tag": "H2",
+          "id": "",
+          "section": "descobrir",
+          "text": "03 · ALCHEMIZE"
+        },
+        {
+          "tag": "H2",
+          "id": "",
+          "section": "descobrir",
+          "text": "04 · RESONATE"
+        },
+        {
+          "tag": "H2",
+          "id": "",
+          "section": "descobrir",
+          "text": "05 · EMBODY"
+        },
+        {
+          "tag": "SECTION",
+          "id": "chamado",
+          "section": "chamado",
+          "text": "The portal remains openYou did not come here to be desired. You came to bring worlds into being.From the calling to the coronation, every step is an initiation."
+        },
+        {
+          "tag": "H2",
+          "id": "",
+          "section": "chamado",
+          "text": "You did not come here to be desired. You came to bring worlds into being."
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "section": "chamado",
+          "text": "Find my path ↗"
+        }
+      ]
+    },
+    {
+      "key": "metodo",
+      "locale": "es",
+      "route": "/es/metodo/",
+      "translated": 49,
+      "originalQuotes": 0,
+      "preservedNames": 18,
+      "review": [
+        {
+          "tag": "H1",
+          "id": "",
+          "section": "inicio",
+          "text": "Método S.E.R."
+        },
+        {
+          "tag": "P",
+          "id": "",
+          "section": "inicio",
+          "text": "La verdad no se piensa. Se encarna."
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "section": "inicio",
+          "text": "↓"
+        },
+        {
+          "tag": "H2",
+          "id": "",
+          "section": "descobrir",
+          "text": "01 · ENRAIZAR"
+        },
+        {
+          "tag": "H2",
+          "id": "",
+          "section": "descobrir",
+          "text": "02 · COMPRENDER"
+        },
+        {
+          "tag": "H2",
+          "id": "",
+          "section": "descobrir",
+          "text": "03 · ALQUIMIZAR"
+        },
+        {
+          "tag": "H2",
+          "id": "",
+          "section": "descobrir",
+          "text": "04 · RESONAR"
+        },
+        {
+          "tag": "H2",
+          "id": "",
+          "section": "descobrir",
+          "text": "05 · ENCARNAR"
+        },
+        {
+          "tag": "SECTION",
+          "id": "chamado",
+          "section": "chamado",
+          "text": "El portal permanece abiertoNo viniste para ser deseada. Viniste para gestar mundos.Del llamado a la coronación, cada paso es una iniciación. Y el primero es ele"
+        },
+        {
+          "tag": "H2",
+          "id": "",
+          "section": "chamado",
+          "text": "No viniste para ser deseada. Viniste para gestar mundos."
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "section": "chamado",
+          "text": "Encontrar mi camino ↗"
+        }
+      ]
+    },
+    {
+      "key": "caminhos",
+      "locale": "en",
+      "route": "/en/paths/",
+      "translated": 27,
+      "originalQuotes": 0,
+      "preservedNames": 23,
+      "review": [
+        {
+          "tag": "H1",
+          "id": "",
+          "section": "inicio",
+          "text": "Paths"
+        },
+        {
+          "tag": "P",
+          "id": "",
+          "section": "inicio",
+          "text": "Where is your body asking you to begin?"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "section": "inicio",
+          "text": "↓"
+        },
+        {
+          "tag": "H2",
+          "id": "",
+          "section": "descobrir",
+          "text": "O Templo Dourado · Visão Uterina · Despertar do Prazer Sagrado"
+        },
+        {
+          "tag": "H3",
+          "id": "",
+          "section": "descobrir",
+          "text": "O Templo Dourado"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "section": "descobrir",
+          "text": "I want to begin my journey ↗"
+        },
+        {
+          "tag": "H3",
+          "id": "",
+          "section": "descobrir",
+          "text": "Visão Uterina"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "section": "descobrir",
+          "text": "I want my Visão Uterina ↗"
+        },
+        {
+          "tag": "H3",
+          "id": "",
+          "section": "descobrir",
+          "text": "Despertar do Prazer Sagrado"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "section": "descobrir",
+          "text": "I want to reopen the source ↗"
+        },
+        {
+          "tag": "SECTION",
+          "id": "chamado",
+          "section": "chamado",
+          "text": "The portal remains openYou did not come here to be desired. You came to bring worlds into being.From the calling to the coronation, every step is an initiation."
+        },
+        {
+          "tag": "H2",
+          "id": "",
+          "section": "chamado",
+          "text": "You did not come here to be desired. You came to bring worlds into being."
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "section": "chamado",
+          "text": "Find my path ↗"
+        }
+      ]
+    },
+    {
+      "key": "caminhos",
+      "locale": "es",
+      "route": "/es/caminos/",
+      "translated": 27,
+      "originalQuotes": 0,
+      "preservedNames": 23,
+      "review": [
+        {
+          "tag": "H1",
+          "id": "",
+          "section": "inicio",
+          "text": "Caminos"
+        },
+        {
+          "tag": "P",
+          "id": "",
+          "section": "inicio",
+          "text": "¿Por dónde te pide tu cuerpo comenzar?"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "section": "inicio",
+          "text": "↓"
+        },
+        {
+          "tag": "H2",
+          "id": "",
+          "section": "descobrir",
+          "text": "O Templo Dourado · Visão Uterina · Despertar do Prazer Sagrado"
+        },
+        {
+          "tag": "H3",
+          "id": "",
+          "section": "descobrir",
+          "text": "O Templo Dourado"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "section": "descobrir",
+          "text": "Quiero sellar mi entrada ↗"
+        },
+        {
+          "tag": "H3",
+          "id": "",
+          "section": "descobrir",
+          "text": "Visão Uterina"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "section": "descobrir",
+          "text": "Quiero mi Visão Uterina ↗"
+        },
+        {
+          "tag": "H3",
+          "id": "",
+          "section": "descobrir",
+          "text": "Despertar do Prazer Sagrado"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "section": "descobrir",
+          "text": "Quiero reabrir la fuente ↗"
+        },
+        {
+          "tag": "SECTION",
+          "id": "chamado",
+          "section": "chamado",
+          "text": "El portal permanece abiertoNo viniste para ser deseada. Viniste para gestar mundos.Del llamado a la coronación, cada paso es una iniciación. Y el primero es ele"
+        },
+        {
+          "tag": "H2",
+          "id": "",
+          "section": "chamado",
+          "text": "No viniste para ser deseada. Viniste para gestar mundos."
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "section": "chamado",
+          "text": "Encontrar mi camino ↗"
+        }
+      ]
+    },
+    {
+      "key": "mentoria",
+      "locale": "en",
+      "route": "/en/mentorship/",
+      "translated": 138,
+      "originalQuotes": 0,
+      "preservedNames": 24,
+      "review": [
+        {
+          "tag": "H1",
+          "id": "hero-title",
+          "section": "inicio",
+          "text": "Live from the power that rises within your womb."
+        },
+        {
+          "tag": "P",
+          "id": "",
+          "section": "inicio",
+          "text": "O Templo Dourado is a journey for women moving through change who want to reconnect with their boundaries, express their own voice and sustain life from within."
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "section": "inicio",
+          "text": "I want to begin my journey ↘"
+        },
+        {
+          "tag": "H2",
+          "id": "crossing-title",
+          "section": "travessia",
+          "text": "Perhaps your outer life has already changed."
+        },
+        {
+          "tag": "H2",
+          "id": "recognition-title",
+          "section": "",
+          "text": "You feel deeply. And you have already learned to understand much of what you feel."
+        },
+        {
+          "tag": "H2",
+          "id": "initiation-title",
+          "section": "metodo",
+          "text": "A path back to the power that rises within the womb."
+        },
+        {
+          "tag": "H3",
+          "id": "",
+          "section": "metodo",
+          "text": "Ground"
+        },
+        {
+          "tag": "H3",
+          "id": "",
+          "section": "metodo",
+          "text": "Understand"
+        },
+        {
+          "tag": "H3",
+          "id": "",
+          "section": "metodo",
+          "text": "Alchemize"
+        },
+        {
+          "tag": "H3",
+          "id": "",
+          "section": "metodo",
+          "text": "Resonate"
+        },
+        {
+          "tag": "H3",
+          "id": "",
+          "section": "metodo",
+          "text": "Embody"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "section": "metodo",
+          "text": "I want to begin my journey ↘"
+        },
+        {
+          "tag": "H2",
+          "id": "journey-title",
+          "section": "jornada",
+          "text": "Four phases to turn a portal into a home."
+        },
+        {
+          "tag": "H3",
+          "id": "",
+          "section": "jornada",
+          "text": "Awakening awareness"
+        },
+        {
+          "tag": "H3",
+          "id": "",
+          "section": "jornada",
+          "text": "Transmutation and alchemy"
+        },
+        {
+          "tag": "H3",
+          "id": "",
+          "section": "jornada",
+          "text": "Christic rebirth"
+        },
+        {
+          "tag": "H3",
+          "id": "",
+          "section": "jornada",
+          "text": "Reign and celebrate"
+        },
+        {
+          "tag": "H3",
+          "id": "",
+          "section": "jornada",
+          "text": "Depth, with a structure for integration."
+        },
+        {
+          "tag": "H2",
+          "id": "guide-title",
+          "section": "prana",
+          "text": "Prana Ka, a doula for life's crossings."
+        },
+        {
+          "tag": "H2",
+          "id": "filter-title",
+          "section": "para-quem",
+          "text": "There comes a moment when recognizing the call also means choosing the path."
+        },
+        {
+          "tag": "SECTION",
+          "id": "oferta",
+          "section": "oferta",
+          "text": "O Templo Dourado What you commit to when you begin. A group mentorship of 12 sessions to turn perception into presence, expression and choices you can sustain i"
+        },
+        {
+          "tag": "H2",
+          "id": "offer-title",
+          "section": "oferta",
+          "text": "What you commit to when you begin."
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "section": "oferta",
+          "text": "I'd like to talk about joining ↘"
+        },
+        {
+          "tag": "H2",
+          "id": "faq-title",
+          "section": "perguntas",
+          "text": "Clarity is part of care, too."
+        },
+        {
+          "tag": "H2",
+          "id": "closing-title",
+          "section": "selamento",
+          "text": "The power rising within your womb asks for room to become life."
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "section": "selamento",
+          "text": "I'd like to talk about joining ↘"
+        }
+      ]
+    },
+    {
+      "key": "mentoria",
+      "locale": "es",
+      "route": "/es/mentoria/",
+      "translated": 138,
+      "originalQuotes": 0,
+      "preservedNames": 24,
+      "review": [
+        {
+          "tag": "H1",
+          "id": "hero-title",
+          "section": "inicio",
+          "text": "Vive desde el poder que nace en tu vientre."
+        },
+        {
+          "tag": "P",
+          "id": "",
+          "section": "inicio",
+          "text": "O Templo Dourado es un camino para mujeres que atraviesan un cambio y desean volver a reconocer sus límites, expresar su propia voz y sostener la vida desde den"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "section": "inicio",
+          "text": "Quiero sellar mi entrada ↘"
+        },
+        {
+          "tag": "H2",
+          "id": "crossing-title",
+          "section": "travessia",
+          "text": "Quizá ya hayas cambiado por fuera."
+        },
+        {
+          "tag": "H2",
+          "id": "recognition-title",
+          "section": "",
+          "text": "Sientes mucho. Y ya aprendiste a comprender gran parte de lo que sientes."
+        },
+        {
+          "tag": "H2",
+          "id": "initiation-title",
+          "section": "metodo",
+          "text": "Un camino de regreso al poder que nace en el vientre."
+        },
+        {
+          "tag": "H3",
+          "id": "",
+          "section": "metodo",
+          "text": "Enraizar"
+        },
+        {
+          "tag": "H3",
+          "id": "",
+          "section": "metodo",
+          "text": "Comprender"
+        },
+        {
+          "tag": "H3",
+          "id": "",
+          "section": "metodo",
+          "text": "Alquimizar"
+        },
+        {
+          "tag": "H3",
+          "id": "",
+          "section": "metodo",
+          "text": "Resonar"
+        },
+        {
+          "tag": "H3",
+          "id": "",
+          "section": "metodo",
+          "text": "Encarnar"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "section": "metodo",
+          "text": "Quiero sellar mi entrada ↘"
+        },
+        {
+          "tag": "H2",
+          "id": "journey-title",
+          "section": "jornada",
+          "text": "Cuatro fases para hacer del portal una morada."
+        },
+        {
+          "tag": "H3",
+          "id": "",
+          "section": "jornada",
+          "text": "Toma de conciencia"
+        },
+        {
+          "tag": "H3",
+          "id": "",
+          "section": "jornada",
+          "text": "Transmutación y alquimia"
+        },
+        {
+          "tag": "H3",
+          "id": "",
+          "section": "jornada",
+          "text": "Renacer crístico"
+        },
+        {
+          "tag": "H3",
+          "id": "",
+          "section": "jornada",
+          "text": "Reinar y celebrar"
+        },
+        {
+          "tag": "H3",
+          "id": "",
+          "section": "jornada",
+          "text": "Profundidad con estructura para integrar."
+        },
+        {
+          "tag": "H2",
+          "id": "guide-title",
+          "section": "prana",
+          "text": "Prana Ka, doula de las travesías."
+        },
+        {
+          "tag": "H2",
+          "id": "filter-title",
+          "section": "para-quem",
+          "text": "Llega un momento en que reconocer el llamado también significa elegir el camino."
+        },
+        {
+          "tag": "SECTION",
+          "id": "oferta",
+          "section": "oferta",
+          "text": "O Templo Dourado Lo que sellas al entrar. Una mentoría en grupo de 12 encuentros para transformar percepción en presencia, expresión y decisiones sostenidas en "
+        },
+        {
+          "tag": "H2",
+          "id": "offer-title",
+          "section": "oferta",
+          "text": "Lo que sellas al entrar."
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "section": "oferta",
+          "text": "Quiero conversar sobre mi entrada ↘"
+        },
+        {
+          "tag": "H2",
+          "id": "faq-title",
+          "section": "perguntas",
+          "text": "La claridad también es parte del cuidado."
+        },
+        {
+          "tag": "H2",
+          "id": "closing-title",
+          "section": "selamento",
+          "text": "El poder que nace en tu vientre pide espacio para hacerse vida."
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "section": "selamento",
+          "text": "Quiero conversar sobre mi entrada ↘"
+        }
+      ]
+    },
+    {
+      "key": "visao",
+      "locale": "en",
+      "route": "/en/uterine-vision/",
+      "translated": 77,
+      "originalQuotes": 4,
+      "preservedNames": 25,
+      "review": [
+        {
+          "tag": "H1",
+          "id": "titulo",
+          "section": "inicio",
+          "text": "VisãoUterina"
+        },
+        {
+          "tag": "P",
+          "id": "",
+          "section": "inicio",
+          "text": "What do you desirewhen you let yourself listen?"
+        },
+        {
+          "tag": "P",
+          "id": "",
+          "section": "inicio",
+          "text": "A session to look at where you are now, connect with your desires and find clarity for your choices."
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "section": "inicio",
+          "text": "I want my Visão Uterina ↗"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "section": "inicio",
+          "text": "A space for you ↓"
+        },
+        {
+          "tag": "H2",
+          "id": "escuta-titulo",
+          "section": "escuta",
+          "text": "The conversation ends.But something within youstill wants to speak."
+        },
+        {
+          "tag": "H2",
+          "id": "sessao-titulo",
+          "section": "a-sessao",
+          "text": "Time to feel.Space to notice."
+        },
+        {
+          "tag": "H3",
+          "id": "",
+          "section": "a-sessao",
+          "text": "Look at the present"
+        },
+        {
+          "tag": "H3",
+          "id": "",
+          "section": "a-sessao",
+          "text": "Listen to the womb"
+        },
+        {
+          "tag": "H3",
+          "id": "",
+          "section": "a-sessao",
+          "text": "Recognize what you want"
+        },
+        {
+          "tag": "H2",
+          "id": "convite-titulo",
+          "section": "",
+          "text": "A desire isasking to come through."
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "section": "",
+          "text": "I'd like to talk about the session ↗"
+        },
+        {
+          "tag": "H2",
+          "id": "prana-titulo",
+          "section": "prana",
+          "text": "Prana Ka"
+        },
+        {
+          "tag": "H2",
+          "id": "prova-titulo",
+          "section": "mulheres",
+          "text": "Almost all of them tell the same story:they found their voice again."
+        },
+        {
+          "tag": "SECTION",
+          "id": "investimento",
+          "section": "investimento",
+          "text": "04 /THE INVESTMENT One session.A choice for yourself. R$333 An individual online session, guided by Prana Ka. You set aside time and money for many things that "
+        },
+        {
+          "tag": "H2",
+          "id": "preco-titulo",
+          "section": "investimento",
+          "text": "One session.A choice for yourself."
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "section": "investimento",
+          "text": "I want to book my session ↗"
+        },
+        {
+          "tag": "H2",
+          "id": "duvidas-titulo",
+          "section": "",
+          "text": "A few answers."
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "section": "",
+          "text": "Talk to Prana on WhatsApp ↗"
+        },
+        {
+          "tag": "H2",
+          "id": "final-titulo",
+          "section": "",
+          "text": "Make room for whatpulses within you."
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "section": "",
+          "text": "I want my Visão Uterina ↗"
+        }
+      ]
+    },
+    {
+      "key": "visao",
+      "locale": "es",
+      "route": "/es/vision-uterina/",
+      "translated": 77,
+      "originalQuotes": 4,
+      "preservedNames": 25,
+      "review": [
+        {
+          "tag": "H1",
+          "id": "titulo",
+          "section": "inicio",
+          "text": "VisãoUterina"
+        },
+        {
+          "tag": "P",
+          "id": "",
+          "section": "inicio",
+          "text": "¿Qué deseascuando te permites escuchar?"
+        },
+        {
+          "tag": "P",
+          "id": "",
+          "section": "inicio",
+          "text": "Un encuentro para mirar tu momento, conectar con tus deseos y encontrar claridad para tus decisiones."
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "section": "inicio",
+          "text": "Quiero mi Visão Uterina ↗"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "section": "inicio",
+          "text": "Un espacio para ti ↓"
+        },
+        {
+          "tag": "H2",
+          "id": "escuta-titulo",
+          "section": "escuta",
+          "text": "La conversación termina.Pero algo dentro de titodavía quiere hablar."
+        },
+        {
+          "tag": "H2",
+          "id": "sessao-titulo",
+          "section": "a-sessao",
+          "text": "Un tiempo para sentir.Espacio para percibir."
+        },
+        {
+          "tag": "H3",
+          "id": "",
+          "section": "a-sessao",
+          "text": "Mirar el ahora"
+        },
+        {
+          "tag": "H3",
+          "id": "",
+          "section": "a-sessao",
+          "text": "Escuchar el vientre"
+        },
+        {
+          "tag": "H3",
+          "id": "",
+          "section": "a-sessao",
+          "text": "Reconocer lo que quieres"
+        },
+        {
+          "tag": "H2",
+          "id": "convite-titulo",
+          "section": "",
+          "text": "Hay un deseopidiendo paso."
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "section": "",
+          "text": "Quiero conversar sobre la sesión ↗"
+        },
+        {
+          "tag": "H2",
+          "id": "prana-titulo",
+          "section": "prana",
+          "text": "Prana Ka"
+        },
+        {
+          "tag": "H2",
+          "id": "prova-titulo",
+          "section": "mulheres",
+          "text": "Casi todas cuentan lo mismo:volvieron a expresarse."
+        },
+        {
+          "tag": "SECTION",
+          "id": "investimento",
+          "section": "investimento",
+          "text": "04 /LA INVERSIÓN Una sesión.Una elección por ti. R$333 Sesión individual en línea, guiada por Prana Ka. Reservas tiempo y dinero para muchas cosas que sostienen"
+        },
+        {
+          "tag": "H2",
+          "id": "preco-titulo",
+          "section": "investimento",
+          "text": "Una sesión.Una elección por ti."
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "section": "investimento",
+          "text": "Quiero reservar mi sesión ↗"
+        },
+        {
+          "tag": "H2",
+          "id": "duvidas-titulo",
+          "section": "",
+          "text": "Algunas respuestas."
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "section": "",
+          "text": "Hablar con Prana por WhatsApp ↗"
+        },
+        {
+          "tag": "H2",
+          "id": "final-titulo",
+          "section": "",
+          "text": "Da espacio a lo quepulsa en ti."
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "section": "",
+          "text": "Quiero mi Visão Uterina ↗"
+        }
+      ]
+    },
+    {
+      "key": "curso",
+      "locale": "en",
+      "route": "/en/course/",
+      "translated": 63,
+      "originalQuotes": 0,
+      "preservedNames": 26,
+      "review": [
+        {
+          "tag": "H1",
+          "id": "hero-title",
+          "section": "inicio",
+          "text": "Pleasure did not leave.It was silenced."
+        },
+        {
+          "tag": "P",
+          "id": "",
+          "section": "inicio",
+          "text": "Seven guided meditations to reopen the source you learned to close off. At your own pace, with no audience and no pressure."
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "section": "inicio",
+          "text": "I want to reopen the source"
+        },
+        {
+          "tag": "H2",
+          "id": "mirror-title",
+          "section": "espelho",
+          "text": "You are not broken.You have simply forgotten yourself."
+        },
+        {
+          "tag": "H2",
+          "id": "passages-title",
+          "section": "travessia",
+          "text": "Seven passages,one at a time."
+        },
+        {
+          "tag": "H3",
+          "id": "",
+          "section": "travessia",
+          "text": "The video that grounds you"
+        },
+        {
+          "tag": "H3",
+          "id": "",
+          "section": "travessia",
+          "text": "The video that brings you back"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "section": "travessia",
+          "text": "I want to reopen the source"
+        },
+        {
+          "tag": "H2",
+          "id": "experience-title",
+          "section": "experiencia",
+          "text": "Simple to begin.A deep journey to walk."
+        },
+        {
+          "tag": "SECTION",
+          "id": "oferta",
+          "section": "oferta",
+          "text": "04 · To begin A small decision.A wide-open door. Seven guided meditations. A video to ground you before and another to bring you back afterward. Guidance from t"
+        },
+        {
+          "tag": "H2",
+          "id": "offer-title",
+          "section": "oferta",
+          "text": "A small decision.A wide-open door."
+        },
+        {
+          "tag": "P",
+          "id": "",
+          "section": "oferta",
+          "text": "R$ 97"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "section": "oferta",
+          "text": "I want to reopen the source"
+        },
+        {
+          "tag": "H2",
+          "id": "",
+          "section": "duvidas",
+          "text": "The source never ran dry.It was only covered over."
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "section": "duvidas",
+          "text": "I want to reopen the source"
+        }
+      ]
+    },
+    {
+      "key": "curso",
+      "locale": "es",
+      "route": "/es/curso/",
+      "translated": 63,
+      "originalQuotes": 0,
+      "preservedNames": 26,
+      "review": [
+        {
+          "tag": "H1",
+          "id": "hero-title",
+          "section": "inicio",
+          "text": "El placer no se fue.Fue silenciado."
+        },
+        {
+          "tag": "P",
+          "id": "",
+          "section": "inicio",
+          "text": "Siete meditaciones guiadas para reabrir la fuente que aprendiste a tapar. A tu ritmo, sin público y sin exigencias."
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "section": "inicio",
+          "text": "Quiero reabrir la fuente"
+        },
+        {
+          "tag": "H2",
+          "id": "mirror-title",
+          "section": "espelho",
+          "text": "No estás rota.Solo te has olvidado de ti."
+        },
+        {
+          "tag": "H2",
+          "id": "passages-title",
+          "section": "travessia",
+          "text": "Siete pasos,uno a la vez."
+        },
+        {
+          "tag": "H3",
+          "id": "",
+          "section": "travessia",
+          "text": "El video que te ancla"
+        },
+        {
+          "tag": "H3",
+          "id": "",
+          "section": "travessia",
+          "text": "El video que te devuelve"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "section": "travessia",
+          "text": "Quiero reabrir la fuente"
+        },
+        {
+          "tag": "H2",
+          "id": "experience-title",
+          "section": "experiencia",
+          "text": "Sencillo de comenzar.Profundo de recorrer."
+        },
+        {
+          "tag": "SECTION",
+          "id": "oferta",
+          "section": "oferta",
+          "text": "04 · Para entrar Una decisión pequeñapara una puerta grande. Siete meditaciones guiadas. El video que te ancla antes y el que te devuelve después. La guía de qu"
+        },
+        {
+          "tag": "H2",
+          "id": "offer-title",
+          "section": "oferta",
+          "text": "Una decisión pequeñapara una puerta grande."
+        },
+        {
+          "tag": "P",
+          "id": "",
+          "section": "oferta",
+          "text": "R$ 97"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "section": "oferta",
+          "text": "Quiero reabrir la fuente"
+        },
+        {
+          "tag": "H2",
+          "id": "",
+          "section": "duvidas",
+          "text": "La fuente nunca se secó.Solo quedó tapada."
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "section": "duvidas",
+          "text": "Quiero reabrir la fuente"
+        }
+      ]
+    },
+    {
+      "key": "arte",
+      "locale": "en",
+      "route": "/en/art/",
+      "translated": 18,
+      "originalQuotes": 0,
+      "preservedNames": 24,
+      "review": [
+        {
+          "tag": "H1",
+          "id": "",
+          "section": "inicio",
+          "text": "Art"
+        },
+        {
+          "tag": "P",
+          "id": "",
+          "section": "inicio",
+          "text": "Art is prayer."
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "section": "inicio",
+          "text": "↓"
+        },
+        {
+          "tag": "H2",
+          "id": "",
+          "section": "descobrir",
+          "text": "The voice is a portal."
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "section": "descobrir",
+          "text": "Spotify ↗"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "section": "descobrir",
+          "text": "YouTube ↗"
+        },
+        {
+          "tag": "H2",
+          "id": "",
+          "section": "",
+          "text": "Singles · DJ sets"
+        }
+      ]
+    },
+    {
+      "key": "arte",
+      "locale": "es",
+      "route": "/es/arte/",
+      "translated": 18,
+      "originalQuotes": 0,
+      "preservedNames": 24,
+      "review": [
+        {
+          "tag": "H1",
+          "id": "",
+          "section": "inicio",
+          "text": "Arte"
+        },
+        {
+          "tag": "P",
+          "id": "",
+          "section": "inicio",
+          "text": "El arte es oración."
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "section": "inicio",
+          "text": "↓"
+        },
+        {
+          "tag": "H2",
+          "id": "",
+          "section": "descobrir",
+          "text": "La voz es portal."
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "section": "descobrir",
+          "text": "Spotify ↗"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "section": "descobrir",
+          "text": "YouTube ↗"
+        },
+        {
+          "tag": "H2",
+          "id": "",
+          "section": "",
+          "text": "Singles · DJ sets"
+        }
+      ]
+    },
+    {
+      "key": "prana",
+      "locale": "en",
+      "route": "/en/prana/",
+      "translated": 30,
+      "originalQuotes": 0,
+      "preservedNames": 18,
+      "review": [
+        {
+          "tag": "H1",
+          "id": "",
+          "section": "inicio",
+          "text": "Prana Ka"
+        },
+        {
+          "tag": "P",
+          "id": "",
+          "section": "inicio",
+          "text": "“I guide not because I know everything, but because I live it all.”"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "section": "inicio",
+          "text": "↓"
+        },
+        {
+          "tag": "H2",
+          "id": "guide-title",
+          "section": "descobrir",
+          "text": "Prana Ka, a doula for life's crossings."
+        },
+        {
+          "tag": "SECTION",
+          "id": "chamado",
+          "section": "chamado",
+          "text": "The portal remains openYou did not come here to be desired. You came to bring worlds into being.From the calling to the coronation, every step is an initiation."
+        },
+        {
+          "tag": "H2",
+          "id": "",
+          "section": "chamado",
+          "text": "You did not come here to be desired. You came to bring worlds into being."
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "section": "chamado",
+          "text": "Find my path ↗"
+        }
+      ]
+    },
+    {
+      "key": "prana",
+      "locale": "es",
+      "route": "/es/prana/",
+      "translated": 30,
+      "originalQuotes": 0,
+      "preservedNames": 18,
+      "review": [
+        {
+          "tag": "H1",
+          "id": "",
+          "section": "inicio",
+          "text": "Prana Ka"
+        },
+        {
+          "tag": "P",
+          "id": "",
+          "section": "inicio",
+          "text": "“Guío no porque lo sepa todo, sino porque lo vivo todo.”"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "section": "inicio",
+          "text": "↓"
+        },
+        {
+          "tag": "H2",
+          "id": "guide-title",
+          "section": "descobrir",
+          "text": "Prana Ka, doula de las travesías."
+        },
+        {
+          "tag": "SECTION",
+          "id": "chamado",
+          "section": "chamado",
+          "text": "El portal permanece abiertoNo viniste para ser deseada. Viniste para gestar mundos.Del llamado a la coronación, cada paso es una iniciación. Y el primero es ele"
+        },
+        {
+          "tag": "H2",
+          "id": "",
+          "section": "chamado",
+          "text": "No viniste para ser deseada. Viniste para gestar mundos."
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "section": "chamado",
+          "text": "Encontrar mi camino ↗"
+        }
+      ]
+    }
+  ]
+}

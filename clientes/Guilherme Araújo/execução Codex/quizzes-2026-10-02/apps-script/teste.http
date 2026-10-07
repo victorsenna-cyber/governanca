@@ -1,0 +1,170 @@
+@apps_script_url = PREENCHER_COM_URL_EXEC
+
+### Criar permissao
+POST {{apps_script_url}}
+Content-Type: text/plain;charset=utf-8
+
+{
+  "lead_id": "teste-local-permissao-001",
+  "quiz": "permissao",
+  "quiz_versao": "1.0",
+  "momento": "B",
+  "nome": "Teste",
+  "whatsapp": "11999999999",
+  "email": "teste@example.test",
+  "resultado": "BAIXO",
+  "pontos": 21,
+  "respostas": {
+    "p01_atuacao": "Terapeuta",
+    "p02_tempo_atende": "Menos de 1 ano",
+    "p03_formacoes": "1 ou 2",
+    "p04_faturamento": "Até R$ 2 mil",
+    "p05_recebe_equivalente": "Não. Entrego muito mais do que recebo",
+    "p05_recebe_equivalente_pts": 3,
+    "p06_hora_do_preco": "Travo e acabo falando um valor menor",
+    "p06_hora_do_preco_pts": 3,
+    "p07_desconto": "Com frequência",
+    "p07_desconto_pts": 3,
+    "p08_culpa": "Quase sempre",
+    "p08_culpa_pts": 3,
+    "p09_entrega_a_mais": "Sim, quase sempre",
+    "p09_entrega_a_mais_pts": 3,
+    "p10_teto": "Sim, parece que existe um teto",
+    "p10_teto_pts": 3,
+    "p11_familia_origem": "Desconforto ou culpa",
+    "p11_familia_origem_pts": 3,
+    "p12_ja_tentou": "Cursos de vendas e marketing",
+    "p13_impede": "Medo de perder a cliente",
+    "p14_mudaria": "Cobraria o valor que acho justo",
+    "p15_disposicao": "Quero resolver agora",
+    "p16_acredita": "Sim, estou pronta para isso"
+  },
+  "utm": {
+    "source": "qa-local"
+  },
+  "clicou_checkout": "",
+  "hp": ""
+}
+
+### Atualizar permissao, mesmo lead_id
+POST {{apps_script_url}}
+Content-Type: text/plain;charset=utf-8
+
+{
+  "lead_id": "teste-local-permissao-001",
+  "quiz": "permissao",
+  "clicou_checkout": "sim",
+  "checkout_em": "2026-10-02T12:00:00.000Z"
+}
+
+### Criar teto
+POST {{apps_script_url}}
+Content-Type: text/plain;charset=utf-8
+
+{
+  "lead_id": "teste-local-teto-001",
+  "quiz": "teto",
+  "quiz_versao": "1.0",
+  "momento": "B",
+  "nome": "Teste",
+  "whatsapp": "11999999999",
+  "email": "teste@example.test",
+  "resultado": "BAIXO",
+  "pontos": 21,
+  "respostas": {
+    "p01_atuacao": "Terapeuta",
+    "p02_tempo_atende": "Menos de 1 ano",
+    "p03_formacoes": "1 ou 2",
+    "p04_faturamento": "Até R$ 2 mil",
+    "p05_recebe_equivalente": "Não. Entrego muito mais do que recebo",
+    "p05_recebe_equivalente_pts": 3,
+    "p06_hora_do_preco": "Travo e acabo falando um valor menor",
+    "p06_hora_do_preco_pts": 3,
+    "p07_desconto": "Com frequência",
+    "p07_desconto_pts": 3,
+    "p08_culpa": "Quase sempre",
+    "p08_culpa_pts": 3,
+    "p09_entrega_a_mais": "Sim, quase sempre",
+    "p09_entrega_a_mais_pts": 3,
+    "p10_teto": "Sim, parece que existe um teto",
+    "p10_teto_pts": 3,
+    "p11_familia_origem": "Desconforto ou culpa",
+    "p11_familia_origem_pts": 3,
+    "p12_ja_tentou": "Cursos de vendas e marketing",
+    "p13_impede": "Medo de perder a cliente",
+    "p14_mudaria": "Cobraria o valor que acho justo",
+    "p15_disposicao": "Quero resolver agora",
+    "p16_acredita": "Sim, estou pronta para isso"
+  },
+  "utm": {
+    "source": "qa-local"
+  },
+  "clicou_checkout": "",
+  "hp": ""
+}
+
+### Atualizar teto, mesmo lead_id
+POST {{apps_script_url}}
+Content-Type: text/plain;charset=utf-8
+
+{
+  "lead_id": "teste-local-teto-001",
+  "quiz": "teto",
+  "clicou_checkout": "sim",
+  "checkout_em": "2026-10-02T12:00:00.000Z"
+}
+
+### Criar signos
+POST {{apps_script_url}}
+Content-Type: text/plain;charset=utf-8
+
+{
+  "lead_id": "teste-local-signos-001",
+  "quiz": "signos",
+  "quiz_versao": "1.0",
+  "momento": "B",
+  "nome": "Teste",
+  "whatsapp": "11999999999",
+  "email": "teste@example.test",
+  "resultado": "Fogo",
+  "respostas": {
+    "p01_signo": "Áries",
+    "p02_acompanha": "Toda semana",
+    "p03_area": "Trabalho e dinheiro",
+    "p04_comeca_semana": "Com clareza do que fazer",
+    "p05_decide": "Decido rápido e depois vejo",
+    "p06_repete": "Sim, parece um ciclo",
+    "p07_renda": "Até R$ 2 mil",
+    "p08_ja_fez_leitura": "Sim, faço com frequência",
+    "p09_quer": "Clareza para decidir",
+    "p10_quer_receber": "Sim, quero começar"
+  },
+  "utm": {
+    "source": "qa-local"
+  },
+  "clicou_checkout": "",
+  "hp": ""
+}
+
+### Atualizar signos, mesmo lead_id
+POST {{apps_script_url}}
+Content-Type: text/plain;charset=utf-8
+
+{
+  "lead_id": "teste-local-signos-001",
+  "quiz": "signos",
+  "clicou_checkout": "sim",
+  "checkout_em": "2026-10-02T12:00:00.000Z"
+}
+
+### Neutralizar fórmula
+POST {{apps_script_url}}
+Content-Type: text/plain;charset=utf-8
+
+{"lead_id":"teste-formula-001","quiz":"permissao","nome":"=1+1","respostas":{}}
+
+### Campo-isca: não deve criar linha
+POST {{apps_script_url}}
+Content-Type: text/plain;charset=utf-8
+
+{"lead_id":"teste-robo-001","quiz":"signos","hp":"preenchido"}

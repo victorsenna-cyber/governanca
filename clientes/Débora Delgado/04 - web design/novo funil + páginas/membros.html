@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Área de Membros — Liderança na Raiz</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#f6f1ea; --card:#fffdf9; --ink:#3d352e; --soft:#6f6459; --line:#e7ddd1;
+    --accent:#3f6b57; --accent-dark:#2f5245; --salvia:#7f9c78; --argila:#a86b52; --dir:#4f8278;
+    --shadow:0 8px 30px rgba(60,70,55,.10);
+    --serif:"Fraunces",Georgia,serif; --sans:"Inter",system-ui,sans-serif;
+  }
+  *{box-sizing:border-box}
+  body{margin:0; font-family:var(--sans); background:var(--bg); color:var(--ink); line-height:1.68;}
+  .wrap{max-width:820px; margin:0 auto; padding:26px 22px 80px;}
+  header.hero{text-align:center; padding:44px 28px; background:linear-gradient(160deg,#3f6b57,#2f5245); color:#fff; border-radius:22px; box-shadow:var(--shadow); margin-bottom:24px;}
+  header.hero .kick{color:#cfe0d4; font-weight:700; letter-spacing:2px; font-size:.74rem; text-transform:uppercase;}
+  header.hero h1{font-family:var(--serif); font-weight:600; margin:12px 0 10px; font-size:2.2rem; line-height:1.1;}
+  header.hero p{margin:0 auto; color:#dCe8df; color:#d8e6dc; font-size:1rem; max-width:520px;}
+
+  .lead{background:var(--card); border:1px solid var(--line); border-left:6px solid var(--salvia); border-radius:14px; box-shadow:var(--shadow); padding:16px 20px; margin-bottom:22px; font-size:.98rem; color:var(--soft);}
+  .lead b{color:var(--accent-dark);}
+
+  .grid{display:grid; grid-template-columns:1fr 1fr; gap:14px;}
+  @media(max-width:640px){ .grid{grid-template-columns:1fr;} }
+  a.tool{display:block; text-decoration:none; color:inherit; background:var(--card); border:1px solid var(--line); border-radius:16px; box-shadow:var(--shadow); padding:20px 20px; transition:.16s; border-top:5px solid var(--accent);}
+  a.tool:hover{transform:translateY(-3px);}
+  a.tool.c1{border-top-color:var(--dir);} a.tool.c2{border-top-color:var(--argila);} a.tool.c3{border-top-color:var(--accent);} a.tool.c4{border-top-color:var(--salvia);} a.tool.c5{border-top-color:var(--accent-dark);} a.tool.c6{border-top-color:var(--argila);}
+  a.tool .k{font-size:.66rem; font-weight:800; text-transform:uppercase; letter-spacing:1px; color:var(--soft);}
+  a.tool h3{font-family:var(--serif); font-weight:600; font-size:1.28rem; margin:5px 0 6px; color:var(--accent-dark);}
+  a.tool p{margin:0; color:var(--soft); font-size:.92rem; line-height:1.55;}
+  a.tool .go{margin-top:12px; display:inline-block; font-weight:700; font-size:.86rem; color:var(--accent);}
+
+  .grp-title{font-family:var(--serif); font-weight:600; font-size:1.22rem; color:var(--accent-dark); margin:28px 0 4px; padding-bottom:6px; border-bottom:1px solid var(--line);}
+  .pilar-sub{margin:0 0 12px; color:var(--soft); font-size:.92rem;}
+
+  .foot{text-align:center; color:var(--soft); font-size:.82rem; margin-top:30px; line-height:1.5;}
+  .foot a{color:var(--soft); text-decoration:underline;}
+
+  /* trava de senha */
+  body.gated .lnr-nav, body.gated .wrap{display:none;}
+  .lnr-gate{position:fixed; inset:0; z-index:100000; display:none; align-items:center; justify-content:center; padding:22px; background:linear-gradient(160deg,#3f6b57,#2f5245);}
+  body.gated .lnr-gate{display:flex;}
+  .gate-card{background:var(--card); border-radius:20px; box-shadow:0 18px 50px rgba(0,0,0,.28); padding:38px 30px; max-width:400px; width:100%; text-align:center;}
+  .gate-card .kick{color:var(--argila); font-weight:800; letter-spacing:2px; font-size:.72rem; text-transform:uppercase;}
+  .gate-card h2{font-family:var(--serif); font-weight:600; font-size:1.55rem; color:var(--accent-dark); margin:10px 0 6px;}
+  .gate-card p{color:var(--soft); font-size:.94rem; margin:0 0 18px;}
+  .gate-card input{width:100%; padding:13px 15px; border:1.5px solid var(--line); border-radius:12px; font-size:1.02rem; font-family:inherit; text-align:center; color:var(--ink);}
+  .gate-card input:focus{outline:none; border-color:var(--accent);}
+  .gate-card button{margin-top:14px; width:100%; background:var(--accent); color:#fff; border:none; padding:13px; font-size:1rem; font-weight:700; border-radius:26px; cursor:pointer; font-family:inherit;}
+  .gate-card button:hover{background:var(--accent-dark);}
+  .gate-err{color:var(--argila); font-size:.88rem; margin-top:12px; min-height:18px;}
+  .gate-card .lembrar{display:flex; align-items:center; justify-content:center; gap:7px; margin-top:14px; font-size:.86rem; color:var(--soft);}
+</style>
+
+<style>
+.lnr-nav{position:sticky;top:0;z-index:9999;display:flex;align-items:center;justify-content:space-between;gap:12px;background:#2f5245;color:#fff;padding:10px 18px;font-family:'Inter',system-ui,-apple-system,sans-serif;box-shadow:0 2px 12px rgba(0,0,0,.12);}
+.lnr-brand{color:#fff;font-weight:700;text-decoration:none;font-size:.98rem;letter-spacing:.3px;font-family:'Fraunces',Georgia,serif;}
+.lnr-links{display:flex;align-items:center;gap:4px;flex-wrap:wrap;}
+.lnr-links a{color:#e8f0ec;text-decoration:none;font-size:.85rem;font-weight:600;padding:6px 11px;border-radius:16px;}
+.lnr-links a:hover{background:rgba(255,255,255,.14);color:#fff;}
+.lnr-links a.lnr-cta{background:#a86b52;color:#fff;}
+.lnr-links a.lnr-cta:hover{background:#8a5334;}
+.lnr-toggle{display:none;background:none;border:none;color:#fff;font-size:1.35rem;cursor:pointer;line-height:1;}
+@media(max-width:640px){
+  .lnr-nav{flex-wrap:wrap;}
+  .lnr-toggle{display:block;}
+  .lnr-links{display:none;flex-direction:column;align-items:stretch;width:100%;order:3;gap:2px;padding-top:6px;}
+  .lnr-links.open{display:flex;}
+  .lnr-links a{padding:9px 8px;}
+}
+</style>
+</head>
+<body class="gated">
+
+<div class="lnr-gate">
+  <div class="gate-card">
+    <div class="kick">Liderança na Raiz</div>
+    <h2>Área de membros</h2>
+    <p>Este é um espaço exclusivo. Digite a senha que a Débora te passou para entrar.</p>
+    <input type="password" id="gatePwd" placeholder="Senha de acesso" autocomplete="off" onkeydown="if(event.key==='Enter'){lnrEntrar();}">
+    <button onclick="lnrEntrar()">Entrar</button>
+    <label class="lembrar"><input type="checkbox" id="gateLembrar" checked> Continuar conectada neste aparelho</label>
+    <div class="gate-err" id="gateErr"></div>
+  </div>
+</div>
+
+<nav class="lnr-nav">
+  <a class="lnr-brand" href="index.html">Liderança na Raiz</a>
+  <button class="lnr-toggle" aria-label="Abrir menu" onclick="var l=this.parentNode.querySelector('.lnr-links'); l.classList.toggle('open');">☰</button>
+  <div class="lnr-links">
+    <a href="index.html">Início</a>
+    <a href="comece.html">Comece por aqui</a>
+    <a href="quiz.html">Diagnóstico da liderança</a>
+    <a href="servicos.html">Serviços</a>
+    <a href="membros.html">Entrar</a>
+    <a class="lnr-cta" href="consultoria.html">Conversa gratuita</a>
+  </div>
+</nav>
+<div class="wrap">
+
+  <header class="hero">
+    <div class="kick">Liderança na Raiz</div>
+    <h1>Área de membros</h1>
+    <p>As ferramentas do trabalho reunidas em um só lugar. Use no seu ritmo, quantas vezes quiser, e traga o que surgir pra gente aprofundar juntas.</p>
+  </header>
+
+  <div class="lead">
+    <b>Como usar este espaço:</b> o trabalho está organizado em quatro pilares. Você escolhe o seu tipo uma vez e cada ferramenta já mostra a sua fatia. Vá no seu ritmo, volte quantas vezes quiser, e traga o que surgir pra gente aprofundar juntas. O que você preencher fica salvo no seu navegador, e as devolutivas podem ser salvas em PDF.
+  </div>
+
+  <div class="grp-title">Pilar 1 · Maestria Natural</div>
+  <p class="pilar-sub">Reconhecer os seus dons: o que você faz bem só por ser você.</p>
+  <div class="grid">
+    <a class="tool c4" href="maestria.html">
+      <div class="k">Descobrir a sua força</div>
+      <h3>Maestria Natural</h3>
+      <p>Revela seus talentos, o que te dá entusiasmo, os dons do seu centro de energia e da sua sequência instintiva. Onde a sua força rende sem esforço.</p>
+      <span class="go">Abrir ferramenta →</span>
+    </a>
+  </div>
+
+  <div class="grp-title">Pilar 2 · Método Raiz</div>
+  <p class="pilar-sub">Mudar um padrão pela raiz, e não no controle.</p>
+  <div class="grid">
+    <a class="tool c2" href="metodo-raiz.html">
+      <div class="k">Mudar</div>
+      <h3>Método Raiz</h3>
+      <p>Um passo a passo guiado pra mudar um padrão pela raiz, nas situações difíceis da liderança. Com a aula da EFT integrada.</p>
+      <span class="go">Abrir ferramenta →</span>
+    </a>
+    <a class="tool c3" href="mapa.html">
+      <div class="k">Mapear</div>
+      <h3>Mapa dos Bloqueios</h3>
+      <p>Um mapa gentil das feridas da criança e da vida. Pontue, registre as cenas que vierem e receba sua devolutiva por prioridade.</p>
+      <span class="go">Abrir ferramenta →</span>
+    </a>
+  </div>
+
+  <div class="grp-title">Pilar 3 · Liderança na segunda-feira</div>
+  <p class="pilar-sub">Liderar melhor já, na prática do dia a dia.</p>
+  <div class="grid">
+    <a class="tool c5" href="luzsombra.html">
+      <div class="k">Liderar melhor já</div>
+      <h3>Luz e Sombra da sua Liderança</h3>
+      <p>A força que a sua personalidade traz pra liderança e o ponto cego que ela esconde. Escolha o seu tipo e leia a sua fatia.</p>
+      <span class="go">Abrir ferramenta →</span>
+    </a>
+    <a class="tool c6" href="p-lideranca.html">
+      <div class="k">Aprofundar</div>
+      <h3>A sua liderança por dentro</h3>
+      <p>O material completo de como cada personalidade lidera: o que brilha, onde trava e como crescer. Por tipo.</p>
+      <span class="go">Abrir ferramenta →</span>
+    </a>
+  </div>
+
+  <div class="grp-title">Pilar 4 · Aprofunde no Eneagrama</div>
+  <p class="pilar-sub">Estudar como você e cada pessoa funcionam por dentro.</p>
+  <div class="grid">
+    <a class="tool c1" href="eneagrama.html">
+      <div class="k">Estudar</div>
+      <h3>Eneagrama: sistema de conhecimento</h3>
+      <p>O material completo dos nove tipos: a lente, as questões centrais, os subtipos e o estilo de liderança. Sua cola pra se aprofundar.</p>
+      <span class="go">Abrir ferramenta →</span>
+    </a>
+    <a class="tool c1" href="historias.html">
+      <div class="k">Se reconhecer</div>
+      <h3>Histórias de Líderes</h3>
+      <p>Nove líderes, nove jeitos de ser. Leia, dê uma nota de quanto se reconhece em cada um e descubra o seu tipo.</p>
+      <span class="go">Abrir ferramenta →</span>
+    </a>
+  </div>
+
+  <p class="foot">Liderança na Raiz · Método Raiz · Débora Delgado<br>Este é um espaço de autoconhecimento e desenvolvimento, não substitui acompanhamento psicológico ou terapêutico.<br><a href="#" onclick="lnrSair();return false;">Sair da área de membros</a></p>
+</div>
+
+<script>
+/* ==========================================================================
+   SENHA DA ÁREA DE MEMBROS
+   Para trocar a senha, é só me pedir (Débora) que eu gero o novo código.
+   Senha atual: raiz2026
+   ========================================================================== */
+const LNR_HASH = "1ochuhx";   // código da senha (não é a senha em texto)
+const LNR_KEY = "lnr_membro";
+
+function lnrHash(s){ s=(s||"").trim().toLowerCase(); let x=5381; for(let i=0;i<s.length;i++){ x=((x<<5)+x)+s.charCodeAt(i); x=x>>>0; } return x.toString(36); }
+function lnrGetFlag(){ try{ return localStorage.getItem(LNR_KEY)==="ok" || sessionStorage.getItem(LNR_KEY)==="ok"; }catch(e){ return false; } }
+function lnrDestravar(){ document.body.classList.remove("gated"); }
+function lnrEntrar(){
+  const v = document.getElementById("gatePwd").value;
+  const err = document.getElementById("gateErr");
+  if(lnrHash(v) === LNR_HASH){
+    const lembrar = document.getElementById("gateLembrar").checked;
+    try{ (lembrar?localStorage:sessionStorage).setItem(LNR_KEY,"ok"); }catch(e){}
+    err.textContent = "";
+    lnrDestravar();
+    if(window.lnrRenderNav) window.lnrRenderNav();   // troca o menu pro de membros
+    window.scrollTo({top:0,behavior:"smooth"});
+  } else {
+    err.textContent = "Senha incorreta. Tente de novo ou fale com a Débora.";
+    document.getElementById("gatePwd").value = "";
+    document.getElementById("gatePwd").focus();
+  }
+}
+function lnrSair(){
+  try{ localStorage.removeItem(LNR_KEY); sessionStorage.removeItem(LNR_KEY); }catch(e){}
+  document.body.classList.add("gated");
+  const p=document.getElementById("gatePwd"); if(p){ p.value=""; p.focus(); }
+}
+if(lnrGetFlag()) lnrDestravar();
+</script>
+<script src="nav.js"></script>
+</body>
+</html>

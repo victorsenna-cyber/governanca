@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Design System, Débora Delgado, Carreira Alinhada</title>
+  <link rel="stylesheet" href="design-tokens.css" />
+  <link rel="stylesheet" href="src/styles.css" />
+  <style>
+    /* Estilos só do styleguide (não fazem parte do sistema) */
+    body { margin: 0; }
+    .sg-cabecalho { padding: var(--esp-2xl) var(--esp-md) var(--esp-lg); border-bottom: var(--traco-fino) solid var(--cor-borda); }
+    .sg-secao { padding: var(--esp-2xl) var(--esp-md); border-bottom: var(--traco-fino) solid var(--cor-borda); }
+    .sg-rotulo { font-family: var(--fonte-titulo); font-size: var(--txt-2xs); letter-spacing: var(--track-rotulo); text-transform: uppercase; color: var(--cor-texto-suave); margin: 0 0 var(--esp-md); }
+    .sg-swatches { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: var(--esp-sm); }
+    .sg-swatch { border: var(--traco-fino) solid var(--cor-borda); border-radius: var(--raio-md); overflow: hidden; background: var(--cor-areia); }
+    .sg-swatch__cor { height: 92px; }
+    .sg-swatch__info { padding: var(--esp-sm); }
+    .sg-swatch__nome { font-family: var(--fonte-titulo); font-size: var(--txt-xs); letter-spacing: var(--track-titulo-sm); text-transform: uppercase; margin: 0 0 2px; }
+    .sg-swatch__hex { font-size: var(--txt-2xs); color: var(--cor-texto-suave); margin: 0; font-variant-numeric: tabular-nums; }
+    .sg-tipo-linha { display: flex; align-items: baseline; gap: var(--esp-md); padding: var(--esp-2xs) 0; border-bottom: var(--traco-fino) dashed var(--cor-borda); }
+    .sg-tipo-tag { font-size: var(--txt-2xs); color: var(--cor-texto-suave); width: 96px; flex: 0 0 auto; font-variant-numeric: tabular-nums; }
+    .sg-linha { display: flex; flex-wrap: wrap; gap: var(--esp-md); align-items: center; }
+    .sg-simbolos { display: flex; flex-wrap: wrap; gap: var(--esp-xl); align-items: flex-start; }
+    .sg-simbolo-bloco { text-align: center; }
+    .sg-simbolo-bloco p { margin: var(--esp-sm) 0 0; }
+    .sg-em-musgo { background: var(--cor-superficie); padding: var(--esp-lg); border-radius: var(--raio-lg); }
+    .sg-contraste { font-size: var(--txt-2xs); color: var(--cor-texto-suave); margin: var(--esp-xs) 0 0; }
+  </style>
+</head>
+<body class="dd-root" id="topo">
+
+  <!-- Navegação -->
+  <nav class="dd-nav dd-container" aria-label="Principal">
+    <a class="dd-nav__marca" href="#topo">
+      <span class="dd-simbolo" style="width:28px;height:28px" data-simbolo="fingerprint" data-size="28"></span>
+      <span>Débora Delgado</span>
+    </a>
+    <ul class="dd-nav__links">
+      <li><a class="dd-nav__link" href="#" aria-current="page">O workshop</a></li>
+      <li><a class="dd-nav__link" href="#">Método</a></li>
+      <li><a class="dd-nav__link" href="#">Investimento</a></li>
+      <li><a class="dd-btn dd-btn--primario" href="#">Quero participar</a></li>
+    </ul>
+  </nav>
+
+  <!-- Cabeçalho do styleguide, com halo suave atrás do hero -->
+  <header class="dd-section--orbe" style="border-bottom:var(--traco-fino) solid var(--cor-borda)">
+    <span class="dd-orbe dd-orbe--musgo" style="top:-12%;left:-6%"></span>
+    <span class="dd-orbe dd-orbe--dourado" style="top:20%;right:-8%;width:34vw"></span>
+    <div class="sg-cabecalho dd-container dd-ancora">
+      <span class="dd-glow dd-glow--musgo"></span>
+      <p class="dd-eyebrow">Design System, marca da Débora</p>
+      <h1 class="dd-h1">Carreira Alinhada</h1>
+      <p class="dd-lead">Tokens, tipografia, componentes e símbolos de marca em um só lugar, para a landing e os criativos falarem a mesma língua visual. Sóbrio, premium, terroso, sereno.</p>
+      <div class="sg-linha">
+        <a class="dd-btn dd-btn--primario" href="#">Quero participar</a>
+        <a class="dd-btn dd-btn--secundario" href="#">Conhecer o método</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Paleta -->
+  <section class="sg-secao dd-container">
+    <p class="sg-rotulo">01, Paleta e proporção</p>
+    <div class="sg-swatches">
+      <div class="sg-swatch"><div class="sg-swatch__cor" style="background:#FAF8F3"></div><div class="sg-swatch__info"><p class="sg-swatch__nome">Papel, fundo</p><p class="sg-swatch__hex">#FAF8F3</p></div></div>
+      <div class="sg-swatch"><div class="sg-swatch__cor" style="background:#F1EDE4"></div><div class="sg-swatch__info"><p class="sg-swatch__nome">Areia, superfície</p><p class="sg-swatch__hex">#F1EDE4</p></div></div>
+      <div class="sg-swatch"><div class="sg-swatch__cor" style="background:#7A9E89"></div><div class="sg-swatch__info"><p class="sg-swatch__nome">Musgo, superfície</p><p class="sg-swatch__hex">#7A9E89</p></div></div>
+      <div class="sg-swatch"><div class="sg-swatch__cor" style="background:#3E5A4B"></div><div class="sg-swatch__info"><p class="sg-swatch__nome">Musgo escuro</p><p class="sg-swatch__hex">#3E5A4B</p></div></div>
+      <div class="sg-swatch"><div class="sg-swatch__cor" style="background:#2E3D45"></div><div class="sg-swatch__info"><p class="sg-swatch__nome">Petróleo, texto</p><p class="sg-swatch__hex">#2E3D45</p></div></div>
+      <div class="sg-swatch"><div class="sg-swatch__cor" style="background:#B89B72"></div><div class="sg-swatch__info"><p class="sg-swatch__nome">Dourado, acento</p><p class="sg-swatch__hex">#B89B72</p></div></div>
+      <div class="sg-swatch"><div class="sg-swatch__cor" style="background:#C08552"></div><div class="sg-swatch__info"><p class="sg-swatch__nome">Terracota, acento</p><p class="sg-swatch__hex">#C08552</p></div></div>
+    </div>
+    <p class="sg-contraste">Proporção: papel e areia dominam, musgo estrutura, petróleo é o texto, dourado pontua. Contraste no fundo papel #FAF8F3: petróleo 10.6:1 (AAA), texto suave 5.2:1 (AA). Areia sobre petróleo (CTA) 9.6:1 (AAA). Areia sobre musgo escuro 6.5:1 (AA). Dourado e terracota entram como acento, não como texto de corpo.</p>
+  </section>
+
+  <!-- Tipografia -->
+  <section class="sg-secao dd-container">
+    <p class="sg-rotulo">02, Tipografia, Jost para títulos, Inter para corpo</p>
+    <div class="sg-tipo-linha"><span class="sg-tipo-tag">H1, 68</span><span class="dd-h1" style="margin:0">Discernimento</span></div>
+    <div class="sg-tipo-linha"><span class="sg-tipo-tag">H2, 52</span><span class="dd-h2" style="margin:0">Carreira alinhada</span></div>
+    <div class="sg-tipo-linha"><span class="sg-tipo-tag">H3, 40</span><span class="dd-h3" style="margin:0">Os nove estilos</span></div>
+    <div class="sg-tipo-linha"><span class="sg-tipo-tag">H4, 30</span><span class="dd-h4" style="margin:0">Reconhecer o próprio caminho</span></div>
+    <div class="sg-tipo-linha"><span class="sg-tipo-tag">H5, 24</span><span class="dd-h5" style="margin:0">Coerência ao longo do tempo</span></div>
+    <div class="sg-tipo-linha"><span class="sg-tipo-tag">Lead, 20</span><span class="dd-lead" style="margin:0">Um convite para interpretar a própria trajetória com mais clareza.</span></div>
+    <div class="sg-tipo-linha"><span class="sg-tipo-tag">Corpo, 18</span><span class="dd-body" style="margin:0">Texto de corpo em Inter, com entrelinha generosa para uma leitura calma, sem pressa, que respeita o ritmo de quem lê.</span></div>
+    <div class="sg-tipo-linha"><span class="sg-tipo-tag">Rótulo</span><span class="dd-eyebrow" style="margin:0">Eyebrow em caixa-alta</span></div>
+  </section>
+
+  <!-- Botões, sobre grid blueprint -->
+  <section class="sg-secao dd-container dd-section--grid">
+    <p class="sg-rotulo">03, Botões e CTA, acabamento de vidro, com estados hover e foco</p>
+    <div class="sg-linha">
+      <button class="dd-btn dd-btn--primario">Quero participar</button>
+      <button class="dd-btn dd-btn--secundario">Conhecer o método</button>
+      <button class="dd-btn dd-btn--texto">Ver datas das turmas</button>
+    </div>
+    <p class="sg-contraste">Primário com acabamento de vidro: gradiente petróleo, brilho fino no topo, borda com luz dourada e sombra de profundidade em camadas. O hover intensifica o brilho, sem neon. Texto areia em contraste AAA. Foco visível por teclado: passe o mouse e use Tab para ver os estados. Fundo desta faixa: grid técnico (blueprint).</p>
+  </section>
+
+  <!-- Badges -->
+  <section class="sg-secao dd-container">
+    <p class="sg-rotulo">04, Selos e miniaturas, sóbrios</p>
+    <div class="sg-linha">
+      <span class="dd-badge"><span data-icone="calendario"></span>11, 12 e 13 de agosto</span>
+      <span class="dd-badge dd-badge--vivo"><span class="dd-badge__ponto"></span>Ao vivo</span>
+      <span class="dd-badge"><span data-icone="zoom"></span>No Zoom</span>
+      <span class="dd-badge dd-badge--solido">Turma de até 20</span>
+      <span class="dd-badge">Lote 1, 10 vagas</span>
+    </div>
+  </section>
+
+  <!-- Cards -->
+  <section class="sg-secao dd-container">
+    <p class="sg-rotulo">05, Cards</p>
+    <div class="dd-grid dd-grid--3">
+      <article class="dd-card">
+        <span class="dd-card__icone" data-icone="relogio"></span>
+        <h3 class="dd-card__titulo">Três encontros</h3>
+        <p class="dd-card__texto">Três dias ao vivo para interpretar a própria trajetória e reconhecer o que pede coerência.</p>
+      </article>
+      <article class="dd-card">
+        <span class="dd-card__icone" data-icone="pessoas"></span>
+        <h3 class="dd-card__titulo">Grupo pequeno</h3>
+        <p class="dd-card__texto">Turmas reduzidas, para um acompanhamento próximo e uma conversa que vê cada pessoa.</p>
+      </article>
+      <article class="dd-card">
+        <span class="dd-card__icone" data-icone="video"></span>
+        <h3 class="dd-card__titulo">Onde você estiver</h3>
+        <p class="dd-card__texto">Encontros no Zoom, com material de apoio para sustentar o trabalho entre um dia e outro.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Oferta, sobre atmosfera desfocada, com card-âncora em vidro -->
+  <section class="sg-secao dd-section--orbe">
+    <span class="dd-orbe dd-orbe--areia" style="bottom:-18%;left:6%"></span>
+    <span class="dd-orbe dd-orbe--musgo" style="top:-12%;right:2%;width:30vw"></span>
+    <div class="dd-container">
+    <p class="sg-rotulo">06, Blocos de oferta e lote, conteúdo vem de OFERTA-CANONICA</p>
+    <div class="dd-grid dd-grid--3">
+      <div class="dd-oferta">
+        <p class="dd-oferta__lote">Lote 1</p>
+        <div class="dd-oferta__preco"><span class="dd-oferta__moeda">R$</span><span class="dd-oferta__valor">97</span></div>
+        <p class="dd-oferta__nota">Primeiras vagas, condição inicial.</p>
+        <ul class="dd-oferta__lista">
+          <li class="dd-oferta__item"><span data-icone="check"></span><span>Três encontros ao vivo</span></li>
+          <li class="dd-oferta__item"><span data-icone="check"></span><span>Material de apoio</span></li>
+          <li class="dd-oferta__item"><span data-icone="check"></span><span>Grupo reduzido</span></li>
+        </ul>
+        <a class="dd-btn dd-btn--secundario" href="#">Garantir lote 1</a>
+      </div>
+      <div class="dd-oferta dd-oferta--destaque dd-oferta--glass">
+        <span class="dd-oferta__faixa">Mais escolhido</span>
+        <p class="dd-oferta__lote">Lote 2</p>
+        <div class="dd-oferta__preco"><span class="dd-oferta__moeda">R$</span><span class="dd-oferta__valor">197</span></div>
+        <p class="dd-oferta__nota">Condição intermediária.</p>
+        <ul class="dd-oferta__lista">
+          <li class="dd-oferta__item"><span data-icone="check"></span><span>Tudo do lote 1</span></li>
+          <li class="dd-oferta__item"><span data-icone="check"></span><span>Encontro de aprofundamento</span></li>
+          <li class="dd-oferta__item"><span data-icone="check"></span><span>Acesso à gravação</span></li>
+        </ul>
+        <a class="dd-btn dd-btn--primario" href="#">Garantir lote 2</a>
+      </div>
+      <div class="dd-oferta">
+        <p class="dd-oferta__lote">Lote 3</p>
+        <div class="dd-oferta__preco"><span class="dd-oferta__moeda">R$</span><span class="dd-oferta__valor">257</span></div>
+        <p class="dd-oferta__nota">Últimas vagas.</p>
+        <ul class="dd-oferta__lista">
+          <li class="dd-oferta__item"><span data-icone="check"></span><span>Tudo do lote 2</span></li>
+          <li class="dd-oferta__item"><span data-icone="check"></span><span>Sessão de perguntas</span></li>
+          <li class="dd-oferta__item"><span data-icone="check"></span><span>Bônus de continuidade</span></li>
+        </ul>
+        <a class="dd-btn dd-btn--secundario" href="#">Garantir lote 3</a>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- Depoimento em card de vidro sobre atmosfera -->
+  <section class="sg-secao dd-section--orbe">
+    <span class="dd-orbe dd-orbe--dourado" style="top:-10%;left:12%;width:30vw"></span>
+    <span class="dd-orbe dd-orbe--musgo" style="bottom:-20%;right:8%"></span>
+    <div class="dd-container dd-container--estreito">
+      <p class="sg-rotulo">07, Depoimento, card de vidro discreto</p>
+      <div class="dd-card dd-card--glass">
+        <figure class="dd-depoimento" style="margin:0">
+          <blockquote class="dd-depoimento__texto">Saí com uma clareza que eu vinha adiando há anos. Entendi o que sustentar e o que deixar ir, sem culpa.</blockquote>
+          <figcaption class="dd-depoimento__autor">Participante, turma piloto</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="sg-secao dd-container dd-container--estreito">
+    <p class="sg-rotulo">08, FAQ, acordeão calmo</p>
+    <div class="dd-faq" id="sg-faq">
+      <div class="dd-faq__item" data-aberto="true">
+        <button class="dd-faq__botao" type="button" aria-expanded="true"><span>Preciso conhecer o eneagrama antes</span><span class="dd-faq__sinal" data-icone="mais"></span></button>
+        <div class="dd-faq__resposta"><div class="dd-faq__resposta-interna">Não. O trabalho conduz a leitura passo a passo. O eneagrama entra como mapa de discernimento, não como caixa que classifica ninguém.</div></div>
+      </div>
+      <div class="dd-faq__item" data-aberto="false">
+        <button class="dd-faq__botao" type="button" aria-expanded="false"><span>Os encontros ficam gravados</span><span class="dd-faq__sinal" data-icone="mais"></span></button>
+        <div class="dd-faq__resposta"><div class="dd-faq__resposta-interna">Sim, conforme o lote. A gravação fica disponível para você revisitar no seu tempo.</div></div>
+      </div>
+      <div class="dd-faq__item" data-aberto="false">
+        <button class="dd-faq__botao" type="button" aria-expanded="false"><span>Para quem é este workshop</span><span class="dd-faq__sinal" data-icone="mais"></span></button>
+        <div class="dd-faq__resposta"><div class="dd-faq__resposta-interna">Para quem sente que a carreira pede uma direção mais coerente e quer interpretar a própria trajetória com mais lucidez.</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Símbolos de marca -->
+  <section class="sg-secao dd-container">
+    <p class="sg-rotulo">09, Símbolos de marca, traço fino, recolorível por token</p>
+    <div class="sg-simbolos">
+      <div class="sg-simbolo-bloco">
+        <span style="position:relative;display:inline-flex">
+          <span class="dd-glow dd-glow--dourado"></span>
+          <span class="dd-simbolo" style="position:relative;width:200px;height:200px" data-simbolo="enneagram" data-size="200"></span>
+        </span>
+        <p class="dd-small">Eneagrama, dourado, com halo</p>
+      </div>
+      <div class="sg-simbolo-bloco">
+        <span class="dd-simbolo dd-simbolo--petroleo" style="width:200px;height:200px" data-simbolo="enneagram" data-size="200" data-numeros="true"></span>
+        <p class="dd-small">Eneagrama, petróleo, com numeração</p>
+      </div>
+      <div class="sg-simbolo-bloco">
+        <span class="dd-simbolo" style="width:140px;height:140px" data-simbolo="fingerprint" data-size="140"></span>
+        <p class="dd-small">Digital labirinto, marca primária</p>
+      </div>
+      <div class="sg-simbolo-bloco">
+        <span class="dd-simbolo" style="width:150px;height:150px" data-simbolo="sacred" data-size="150"></span>
+        <p class="dd-small">Geometria de apoio</p>
+      </div>
+      <div class="sg-simbolo-bloco">
+        <span class="dd-simbolo" style="width:140px;height:140px" data-simbolo="organica" data-variante="folha" data-size="140"></span>
+        <p class="dd-small">Orgânico, folha</p>
+      </div>
+      <div class="sg-simbolo-bloco">
+        <span class="dd-simbolo" style="width:140px;height:140px" data-simbolo="organica" data-variante="onda" data-size="140"></span>
+        <p class="dd-small">Orgânico, onda</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Faixa escura de fechamento -->
+  <section class="dd-section dd-section--escura">
+    <div class="dd-container dd-container--estreito" style="text-align:center">
+      <p class="dd-eyebrow">Uma decisão serena</p>
+      <h2 class="dd-h2">Alinhe a sua carreira</h2>
+      <p class="dd-lead" style="margin-left:auto;margin-right:auto">Três encontros para reconhecer a própria direção e sustentar a coerência ao longo do tempo.</p>
+      <a class="dd-btn dd-btn--primario" href="#">Quero participar</a>
+    </div>
+  </section>
+
+  <script>
+    /* ===== SVGs procedurais, espelho fiel dos componentes React ===== */
+    function svgWrap(inner, size, extra) {
+      return '<svg viewBox="0 0 ' + (extra && extra.vb ? extra.vb : '200 200') + '" width="' + size + '" height="' + size + '" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" ' + (extra && extra.attrs ? extra.attrs : '') + '>' + inner + '</svg>';
+    }
+
+    function enneagram(size, numeros, stroke) {
+      stroke = stroke || 1.25;
+      var P = { 1:[184.3,43.4],2:[218.5,102.6],3:[206.6,170.0],4:[154.2,214.0],5:[85.8,214.0],6:[33.4,170.0],7:[21.5,102.6],8:[55.7,43.4],9:[120.0,20.0] };
+      var tri = '206.6,170.0 33.4,170.0 120.0,20.0';
+      var hex = '184.3,43.4 154.2,214.0 218.5,102.6 55.7,43.4 85.8,214.0 21.5,102.6 184.3,43.4';
+      var s = '<circle cx="120" cy="120" r="100"/>';
+      s += '<polygon points="' + tri + '"/>';
+      s += '<polyline points="' + hex + '"/>';
+      Object.keys(P).forEach(function(k){ s += '<circle cx="'+P[k][0]+'" cy="'+P[k][1]+'" r="3.4" fill="currentColor" stroke="none"/>'; });
+      if (numeros) {
+        Object.keys(P).forEach(function(k){
+          var x = 120 + (P[k][0]-120)*1.14, y = 120 + (P[k][1]-120)*1.14;
+          s += '<text x="'+x.toFixed(1)+'" y="'+y.toFixed(1)+'" fill="currentColor" stroke="none" font-size="12" font-family="Inter, sans-serif" text-anchor="middle" dominant-baseline="middle">'+k+'</text>';
+        });
+      }
+      return '<svg viewBox="0 0 240 240" width="'+size+'" height="'+size+'" fill="none" stroke="currentColor" stroke-width="'+stroke+'" stroke-linejoin="round" stroke-linecap="round" role="img" aria-label="Eneagrama">'+s+'</svg>';
+    }
+
+    function fingerprint(size, stroke) {
+      stroke = stroke || 1.5;
+      var cx=100, cy=100, voltas=3.25, rmax=62, passos=240, b=rmax/(voltas*2*Math.PI), a=3, d='';
+      for (var i=0;i<=passos;i++){ var t=(i/passos)*voltas*2*Math.PI, r=a+b*t, x=cx+r*Math.cos(t), y=cy+r*Math.sin(t); d+=(i===0?'M':'L')+x.toFixed(2)+' '+y.toFixed(2)+' '; }
+      function arco(rad, ai, af){ var i0=ai*Math.PI/180, f0=af*Math.PI/180, x1=cx+rad*Math.cos(i0),y1=cy+rad*Math.sin(i0),x2=cx+rad*Math.cos(f0),y2=cy+rad*Math.sin(f0),big=(af-ai)>180?1:0; return 'M'+x1.toFixed(2)+' '+y1.toFixed(2)+' A'+rad+' '+rad+' 0 '+big+' 1 '+x2.toFixed(2)+' '+y2.toFixed(2); }
+      var s = '<path d="'+d.trim()+'"/>';
+      s += '<path d="'+arco(72,35,300)+'" opacity="0.9"/>';
+      s += '<path d="'+arco(82,120,60)+'" opacity="0.78"/>';
+      s += '<path d="'+arco(90,-20,210)+'" opacity="0.66"/>';
+      return '<svg viewBox="0 0 200 200" width="'+size+'" height="'+size+'" fill="none" stroke="currentColor" stroke-width="'+stroke+'" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Marca digital labirinto">'+s+'</svg>';
+    }
+
+    function sacred(size, stroke) {
+      stroke = stroke || 1.25;
+      var V=[[100,18],[156,50],[156,110],[100,142],[44,110],[44,50],[100,58],[128,80],[118,112],[82,112],[72,80],[100,100]];
+      var E=[[0,1],[1,2],[2,3],[3,4],[4,5],[5,0],[0,6],[1,7],[2,8],[3,9],[4,10],[5,6],[6,7],[7,8],[8,9],[9,10],[10,6],[6,11],[7,11],[8,11],[9,11],[10,11]];
+      var s=''; E.forEach(function(e){ s+='<line x1="'+V[e[0]][0]+'" y1="'+V[e[0]][1]+'" x2="'+V[e[1]][0]+'" y2="'+V[e[1]][1]+'"/>'; });
+      return '<svg viewBox="0 0 200 200" width="'+size+'" height="'+size+'" fill="none" stroke="currentColor" stroke-width="'+stroke+'" stroke-linejoin="round" stroke-linecap="round" opacity="0.5" role="img" aria-label="Geometria de apoio">'+s+'</svg>';
+    }
+
+    function organica(variante, size, stroke) {
+      stroke = stroke || 1.25;
+      var inner = variante === 'onda'
+        ? '<path d="M10 110 C40 80 60 80 90 110 S140 140 170 110 S210 80 230 110"/><path d="M10 134 C40 104 60 104 90 134 S140 164 170 134" opacity="0.7"/><path d="M10 86 C40 56 60 56 90 86 S140 116 170 86" opacity="0.7"/>'
+        : '<path d="M40 168 C40 100 84 44 160 36 C156 112 108 160 44 166"/><path d="M52 156 C92 120 128 84 150 52"/><path d="M70 150 C84 132 96 118 110 104" opacity="0.7"/><path d="M96 138 C108 124 118 112 130 96" opacity="0.7"/>';
+      return '<svg viewBox="0 0 200 200" width="'+size+'" height="'+size+'" fill="none" stroke="currentColor" stroke-width="'+stroke+'" stroke-linecap="round" stroke-linejoin="round" opacity="0.6" role="img" aria-label="Detalhe organico">'+inner+'</svg>';
+    }
+
+    var ICONES = {
+      check:'<path d="M5 12.5l4.5 4.5L19 7.5"/>',
+      mais:'<path d="M12 5v14M5 12h14"/>',
+      calendario:'<rect x="4" y="5" width="16" height="16" rx="2"/><path d="M4 9h16M8 3v4M16 3v4"/>',
+      video:'<rect x="3" y="6" width="13" height="12" rx="2"/><path d="M16 10l5-3v10l-5-3"/>',
+      zoom:'<rect x="3" y="6" width="13" height="12" rx="3"/><path d="M16 10l5-3v10l-5-3"/>',
+      relogio:'<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',
+      pessoas:'<circle cx="9" cy="8" r="3.2"/><path d="M3.5 19a5.5 5.5 0 0 1 11 0M16 6.2a3.2 3.2 0 0 1 0 6M17.5 19a5.5 5.5 0 0 0-2.2-4.4"/>'
+    };
+    function icone(nome, size) { size = size || 20; return '<svg viewBox="0 0 24 24" width="'+size+'" height="'+size+'" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+(ICONES[nome]||ICONES.check)+'</svg>'; }
+
+    /* Injeta os SVGs nos data-attributes */
+    document.querySelectorAll('[data-simbolo]').forEach(function(el){
+      var size = parseInt(el.getAttribute('data-size')||'120', 10);
+      var tipo = el.getAttribute('data-simbolo');
+      if (tipo === 'enneagram') el.innerHTML = enneagram(size, el.getAttribute('data-numeros')==='true');
+      else if (tipo === 'fingerprint') el.innerHTML = fingerprint(size);
+      else if (tipo === 'sacred') el.innerHTML = sacred(size);
+      else if (tipo === 'organica') el.innerHTML = organica(el.getAttribute('data-variante')||'folha', size);
+    });
+    document.querySelectorAll('[data-icone]').forEach(function(el){ el.innerHTML = icone(el.getAttribute('data-icone'), el.classList.contains('dd-faq__sinal')?20:18); });
+
+    /* FAQ acordeão (vanilla, acessível) */
+    document.querySelectorAll('#sg-faq .dd-faq__botao').forEach(function(btn){
+      btn.addEventListener('click', function(){
+        var item = btn.closest('.dd-faq__item');
+        var aberto = item.getAttribute('data-aberto') === 'true';
+        item.setAttribute('data-aberto', String(!aberto));
+        btn.setAttribute('aria-expanded', String(!aberto));
+      });
+    });
+  </script>
+</body>
+</html>

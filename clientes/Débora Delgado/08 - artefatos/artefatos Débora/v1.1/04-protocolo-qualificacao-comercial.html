@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Protocolo de Qualificação Comercial | Débora Delgado</title>
+<style>
+.da*,.da *::before,.da *::after{box-sizing:border-box;margin:0;padding:0}
+.da{
+  --bg:#f3f1ec;--bs:#ffffff;--bsub:#ece9e3;--bm:#e3dfd7;
+  --bd:#d5d0c7;--bds:#bdb8ae;
+  --t1:#161410;--t2:#524e47;--tm:#8a857c;
+  --ac:#28573a;--acl:#e4ede8;--act:#152e1e;--acb:#3a7050;
+  --gd:#8a5510;--gdl:#fdf2e0;--gdb:#c07818;
+  --rd:#771818;--rdl:#fdf1f1;--rdb:#c02828;
+  --bl:#183658;--bll:#edf3fb;--blb:#3870c0;
+  --pr:#4a1a6a;--prl:#f5eefb;--prb:#8040b0;
+  --nav:#ffffff;--sh:0 1px 3px rgba(0,0,0,.07),0 1px 2px rgba(0,0,0,.04);--shm:0 4px 16px rgba(0,0,0,.08);
+  --r:8px;--rs:4px;
+  font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;
+  background:var(--bg);color:var(--t1);line-height:1.6;min-height:100vh;
+}
+.da.dark{
+  --bg:#100f0d;--bs:#191714;--bsub:#201e1a;--bm:#282520;
+  --bd:#323028;--bds:#424038;
+  --t1:#eae7e1;--t2:#9c9790;--tm:#666058;
+  --ac:#4ade80;--acl:#0e2018;--act:#86efac;--acb:#22c55e;
+  --gd:#fbbf24;--gdl:#191200;--gdb:#d97706;
+  --rd:#f87171;--rdl:#1a0303;--rdb:#ef4444;
+  --bl:#60a5fa;--bll:#0a1828;--blb:#3b82f6;
+  --pr:#c084fc;--prl:#1a0a2a;--prb:#9333ea;
+  --nav:#191714;
+}
+/* NAV */
+.da .nav{position:sticky;top:0;z-index:100;background:var(--nav);border-bottom:1px solid var(--bd);box-shadow:var(--sh)}
+.da .navi{max-width:1120px;margin:0 auto;padding:0 18px;display:flex;align-items:center;height:50px;gap:10px}
+.da .navl{display:flex;align-items:center;gap:1px;overflow-x:auto;scrollbar-width:none;flex:1}
+.da .navl::-webkit-scrollbar{display:none}
+.da .nb{white-space:nowrap;font-size:10.5px;font-weight:600;letter-spacing:.04em;color:var(--tm);text-transform:uppercase;padding:5px 8px;border-radius:var(--rs);cursor:pointer;border:none;background:none;transition:all .13s}
+.da .nb:hover{color:var(--t1);background:var(--bsub)}
+.da .tb{flex-shrink:0;font-size:10.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--t2);background:var(--bsub);border:1px solid var(--bd);border-radius:var(--rs);padding:5px 11px;cursor:pointer;transition:all .13s}
+.da .tb:hover{background:var(--bm);color:var(--t1)}
+/* LAYOUT */
+.da .wrap{max-width:1120px;margin:0 auto;padding:0 18px 80px}
+/* HEADER */
+.da .hdr{padding:44px 0 36px;border-bottom:1px solid var(--bd)}
+.da .htag{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--ac);background:var(--acl);border:1px solid var(--acb);border-radius:var(--rs);padding:3px 9px;margin-bottom:14px}
+.da .hdr h1{font-size:clamp(22px,3vw,34px);font-weight:700;letter-spacing:-.03em;color:var(--t1);line-height:1.15;margin-bottom:9px;font-family:Georgia,serif}
+.da .hsub{font-size:15px;color:var(--t2);max-width:600px;line-height:1.65}
+.da .hmeta{display:flex;gap:20px;margin-top:20px;flex-wrap:wrap}
+.da .mitem{display:flex;flex-direction:column;gap:3px}
+.da .mlbl{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--tm)}
+.da .mval{font-size:13px;font-weight:600;color:var(--t1)}
+/* SECTION */
+.da .sec{padding:48px 0 0;scroll-margin-top:60px}
+.da .sech{display:flex;align-items:baseline;gap:13px;margin-bottom:22px;padding-bottom:13px;border-bottom:1px solid var(--bd)}
+.da .secn{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--tm);flex-shrink:0}
+.da .sect{font-size:18px;font-weight:700;letter-spacing:-.02em;color:var(--t1);font-family:Georgia,serif}
+/* CARD */
+.da .card{background:var(--bs);border:1px solid var(--bd);border-radius:var(--r);padding:18px 20px;box-shadow:var(--sh)}
+.da .ctitle{font-size:10.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--tm);margin-bottom:9px}
+.da .g2{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:11px}
+.da .g3{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:11px}
+/* DECISION */
+.da .dec{background:var(--acl);border:1.5px solid var(--acb);border-radius:var(--r);padding:20px 24px}
+.da .decl{font-size:10.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--ac);margin-bottom:9px}
+.da .dect{font-size:14px;color:var(--act);line-height:1.65;margin-bottom:13px}
+.da .deco{display:flex;flex-wrap:wrap;gap:7px}
+.da .decopt{font-size:12px;font-weight:600;color:var(--act);background:var(--bs);border:1px solid var(--acb);border-radius:var(--rs);padding:5px 11px}
+/* GOV */
+.da .gov{border:1px solid var(--bd);border-radius:var(--r);overflow:hidden;display:grid;grid-template-columns:1fr 1fr}
+.da .gr{display:contents}
+.da .gr>div{padding:10px 15px;border-bottom:1px solid var(--bd);font-size:13px}
+.da .gr:last-child>div{border-bottom:none}
+.da .gk{background:var(--bsub);font-weight:600;color:var(--t2);font-size:11.5px;border-right:1px solid var(--bd)}
+.da .gv{background:var(--bs);color:var(--t1);line-height:1.5}
+/* PROB */
+.da .pg{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:8px}
+.da .pi{background:var(--gdl);border:1px solid var(--gdb);border-left:3px solid var(--gdb);border-radius:var(--rs);padding:10px 13px;font-size:13px;color:var(--gd);line-height:1.5}
+.da.dark .pi{color:var(--gdb)}
+/* FLOW */
+.da .flow{display:flex;gap:0;flex-wrap:nowrap;overflow-x:auto;border-radius:var(--r);border:1px solid var(--bd)}
+.da .fstep{flex:1;min-width:90px;padding:14px 10px;text-align:center;background:var(--bs);border-right:1px solid var(--bd)}
+.da .fstep:last-child{border-right:none}
+.da .fnum{width:22px;height:22px;border-radius:50%;background:var(--bsub);font-size:11px;font-weight:800;color:var(--t2);display:flex;align-items:center;justify-content:center;margin:0 auto 7px}
+.da .fstep.fact .fnum{background:var(--ac);color:#fff}
+.da .fname{font-size:12px;font-weight:700;color:var(--t1);line-height:1.3}
+/* CHECKLIST */
+.da .cl{display:flex;flex-direction:column;gap:6px}
+.da .cli{display:flex;align-items:flex-start;gap:11px;padding:11px 15px;background:var(--bs);border:1px solid var(--bd);border-radius:var(--r);cursor:pointer;transition:background .12s;user-select:none}
+.da .cli:hover{background:var(--bsub)}
+.da .clb{flex-shrink:0;width:17px;height:17px;border-radius:3px;border:2px solid var(--bds);background:var(--bsub);margin-top:2px;transition:all .13s;display:flex;align-items:center;justify-content:center}
+.da .cli.ck .clb{background:var(--ac);border-color:var(--ac)}
+.da .cli.ck .clb::after{content:'';display:block;width:4px;height:8px;border:2px solid #fff;border-top:none;border-left:none;transform:rotate(45deg) translateY(-1px)}
+.da .clt{font-size:13.5px;color:var(--t1);line-height:1.5}
+.da .cli.ck .clt{color:var(--tm);text-decoration:line-through}
+.da .clprog{font-size:12px;color:var(--tm);font-weight:600;margin-bottom:8px}
+/* SCORE */
+.da .sw{background:var(--bs);border:1px solid var(--bd);border-radius:var(--r);overflow:hidden;box-shadow:var(--sh)}
+.da .sh2{background:var(--bsub);padding:12px 18px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--bd)}
+.da .sh2t{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--tm)}
+.da .stotal{display:flex;align-items:center;gap:8px}
+.da .stv{font-size:22px;font-weight:800;color:var(--act);letter-spacing:-.03em}
+.da .stm{font-size:13px;color:var(--tm)}
+.da .sres{font-size:12.5px;font-weight:700;padding:4px 11px;border-radius:var(--rs);background:var(--bm);color:var(--t2)}
+.da .sres.sh{background:var(--acl);color:var(--act);border:1px solid var(--acb)}
+.da .sres.sm{background:var(--gdl);color:var(--gd)}
+.da .sres.sl{background:var(--bll);color:var(--bl)}
+.da .sres.sn{background:var(--rdl);color:var(--rd)}
+.da .sr{display:flex;align-items:center;padding:11px 18px;border-bottom:1px solid var(--bd);gap:12px}
+.da .sr:last-child{border-bottom:none}
+.da .sr:hover{background:var(--bsub)}
+.da .srn{flex:1;font-size:13.5px;color:var(--t1)}
+.da .srbs{display:flex;gap:4px}
+.da .srb{width:30px;height:27px;border-radius:var(--rs);border:1px solid var(--bd);background:var(--bsub);color:var(--t2);font-size:12px;font-weight:700;cursor:pointer;transition:all .12s;display:flex;align-items:center;justify-content:center}
+.da .srb:hover{border-color:var(--acb);color:var(--act)}
+.da .srb.a0{background:var(--bm);color:var(--tm)}
+.da .srb.a1{background:var(--gdl);border-color:var(--gdb);color:var(--gd)}
+.da .srb.a2{background:var(--acl);border-color:var(--acb);color:var(--act)}
+.da .srb.a3{background:var(--ac);border-color:var(--ac);color:#fff}
+/* SCORE INTERP */
+.da .si{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:9px;margin-top:14px}
+.da .si-item{padding:13px 15px;border-radius:var(--r);border:1px solid var(--bd)}
+.da .si-r{font-size:15px;font-weight:800;letter-spacing:-.02em;margin-bottom:3px}
+.da .si-d{font-size:12.5px;color:var(--t2);line-height:1.45}
+.da .si-item.ih{background:var(--acl);border-color:var(--acb)}
+.da .si-item.ih .si-r{color:var(--act)}
+.da .si-item.im{background:var(--gdl);border-color:var(--gdb)}
+.da .si-item.im .si-r{color:var(--gd)}
+.da .si-item.il{background:var(--bll);border-color:var(--blb)}
+.da .si-item.il .si-r{color:var(--bl)}
+.da .si-item.in{background:var(--rdl);border-color:var(--rdb)}
+.da .si-item.in .si-r{color:var(--rd)}
+/* ABERTURA SCALE */
+.da .ascale{display:flex;gap:0;border-radius:var(--r);overflow:hidden;border:1px solid var(--bd);margin-bottom:14px}
+.da .aseg{flex:1;padding:14px 11px;text-align:center;border-right:1px solid var(--bd)}
+.da .aseg:last-child{border-right:none}
+.da .asr{font-size:18px;font-weight:800;letter-spacing:-.03em;line-height:1;margin-bottom:5px}
+.da .asl{font-size:10.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;margin-bottom:4px}
+.da .asa{font-size:11.5px;color:var(--t2);line-height:1.4}
+.da .aseg.alow{background:var(--rdl)}.da .aseg.alow .asr,.da .aseg.alow .asl{color:var(--rd)}
+.da .aseg.amed{background:var(--gdl)}.da .aseg.amed .asr,.da .aseg.amed .asl{color:var(--gd)}
+.da .aseg.agood{background:var(--acl)}.da .aseg.agood .asr,.da .aseg.agood .asl{color:var(--act)}
+.da .aseg.ahigh{background:var(--acl);border-left:2px solid var(--acb)}.da .aseg.ahigh .asr,.da .aseg.ahigh .asl{color:var(--act)}
+.da.dark .aseg.alow .asr,.da.dark .aseg.alow .asl{color:var(--rdb)}
+.da.dark .aseg.amed .asr,.da.dark .aseg.amed .asl{color:var(--gdb)}
+/* TABLE */
+.da .tw{overflow-x:auto;border-radius:var(--r);border:1px solid var(--bd)}
+.da .dt{width:100%;border-collapse:collapse;font-size:12.5px;min-width:640px}
+.da .dt th{background:var(--bsub);font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--tm);padding:9px 12px;text-align:left;border-bottom:1px solid var(--bd);white-space:nowrap}
+.da .dt td{padding:12px 12px;border-bottom:1px solid var(--bd);vertical-align:top;line-height:1.5;color:var(--t1)}
+.da .dt tr:last-child td{border-bottom:none}
+.da .dt tr:hover td{background:var(--bsub)}
+/* SCRIPTS */
+.da .scard{background:var(--bs);border:1px solid var(--bd);border-radius:var(--r);overflow:hidden;box-shadow:var(--sh);margin-bottom:12px}
+.da .scard-head{padding:14px 18px;border-bottom:1px solid var(--bd);cursor:pointer;display:flex;justify-content:space-between;align-items:center;transition:background .13s;user-select:none}
+.da .scard-head:hover{background:var(--bsub)}
+.da .scard-label{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--tm);margin-bottom:4px}
+.da .scard-title{font-size:14px;font-weight:700;color:var(--t1)}
+.da .scard-toggle{font-size:11px;font-weight:700;color:var(--tm);background:var(--bsub);border:1px solid var(--bd);border-radius:var(--rs);padding:3px 9px;cursor:pointer}
+.da .scard-body{padding:18px;display:none}
+.da .scard-body.open{display:block}
+.da .scard-ctx{font-size:12px;color:var(--tm);font-style:italic;margin-bottom:12px}
+.da .scard-script{background:var(--acl);border:1px solid var(--acb);border-radius:var(--r);padding:16px 18px;font-size:13.5px;color:var(--act);line-height:1.7;font-style:italic}
+/* OBJECOES */
+.da .obj-item{background:var(--bs);border:1px solid var(--bd);border-radius:var(--r);margin-bottom:11px;overflow:hidden;box-shadow:var(--sh)}
+.da .obj-head{padding:14px 18px;border-bottom:1px solid var(--bd);cursor:pointer;display:flex;justify-content:space-between;align-items:center;background:var(--bsub);user-select:none;transition:background .13s}
+.da .obj-head:hover{background:var(--bm)}
+.da .obj-title{font-size:14px;font-weight:700;color:var(--t1)}
+.da .obj-body{padding:16px 18px;display:none}
+.da .obj-body.open{display:block}
+.da .obj-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px}
+.da .obj-item2{padding:12px 14px;border-radius:var(--r);border:1px solid var(--bd)}
+.da .obj-l{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--tm);margin-bottom:5px}
+.da .obj-v{font-size:13px;color:var(--t1);line-height:1.5}
+.da .obj-item2.oque{background:var(--bll);border-color:var(--blb)}
+.da .obj-item2.oque .obj-l{color:var(--bl)}
+.da .obj-item2.oproib{background:var(--rdl);border-color:var(--rdb)}
+.da .obj-item2.oproib .obj-l{color:var(--rd)}
+.da.dark .obj-item2.oproib .obj-l{color:var(--rdb)}
+/* REGISTRO */
+.da .reg{background:var(--bs);border:1px solid var(--bd);border-radius:var(--r);padding:20px;box-shadow:var(--sh)}
+.da .reg-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px}
+.da .rfield{display:flex;flex-direction:column;gap:5px}
+.da .rl{font-size:10.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--tm)}
+.da .ri{background:var(--bsub);border:1px solid var(--bd);border-radius:var(--rs);padding:8px 12px;font-size:13px;color:var(--t1);width:100%;outline:none;transition:border .13s;font-family:inherit}
+.da .ri:focus{border-color:var(--acb)}
+.da .ri-sel{appearance:none;cursor:pointer}
+.da .ri-area{min-height:64px;resize:vertical}
+/* IF-THEN */
+.da .it{display:flex;flex-direction:column;gap:7px}
+.da .iti{display:flex;align-items:stretch;gap:0;border-radius:var(--r);overflow:hidden;border:1px solid var(--bd);box-shadow:var(--sh)}
+.da .itif{background:var(--bsub);padding:12px 14px;font-size:13px;color:var(--t2);flex:1;border-right:1px solid var(--bd);display:flex;align-items:center;gap:8px}
+.da .itib{font-size:9px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--tm);background:var(--bm);border-radius:3px;padding:2px 6px;flex-shrink:0}
+.da .itthen{background:var(--bs);padding:12px 14px;font-size:13px;color:var(--t1);flex:1;font-weight:600;display:flex;align-items:center;gap:8px}
+.da .ittb{font-size:9px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--act);background:var(--acl);border-radius:3px;padding:2px 6px;border:1px solid var(--acb);flex-shrink:0}
+/* ERRORS */
+.da .eg{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:10px}
+.da .ei{background:var(--bs);border:1px solid var(--bd);border-top:3px solid var(--rdb);border-radius:var(--r);padding:13px 16px;box-shadow:var(--sh)}
+.da .et{font-size:13px;font-weight:700;color:var(--rd);margin-bottom:4px}
+.da.dark .et{color:var(--rdb)}
+.da .eb{font-size:12.5px;color:var(--t2);line-height:1.5}
+/* HANDOFF */
+.da .hf{background:var(--bll);border:1px solid var(--blb);border-radius:var(--r);padding:20px;box-shadow:var(--sh)}
+.da .hf-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px}
+/* ACTION */
+.da .al{display:flex;flex-direction:column;gap:6px}
+.da .ai{display:flex;align-items:flex-start;gap:12px;padding:12px 16px;background:var(--bs);border:1px solid var(--bd);border-radius:var(--r);box-shadow:var(--sh)}
+.da .an{flex-shrink:0;width:25px;height:25px;border-radius:50%;background:var(--ac);color:#fff;font-size:12px;font-weight:800;display:flex;align-items:center;justify-content:center}
+.da .at{font-size:13.5px;color:var(--t1);line-height:1.5;padding-top:3px}
+/* KPI */
+.da .kg{display:grid;grid-template-columns:repeat(auto-fill,minmax(185px,1fr));gap:10px}
+.da .ki{background:var(--bs);border:1px solid var(--bd);border-radius:var(--r);padding:13px 15px;box-shadow:var(--sh)}
+.da .kl{font-size:10.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--tm);margin-bottom:4px}
+.da .kv{font-size:13px;color:var(--t1);line-height:1.45}
+.da .kp{border-top:3px solid var(--ac)}
+.da .kp .kl{color:var(--act)}
+/* APPROVAL */
+.da .appr{background:var(--acl);border:1.5px solid var(--acb);border-radius:var(--r);padding:16px 20px;display:flex;align-items:flex-start;gap:12px;margin-top:12px}
+.da .appi{width:23px;height:23px;border-radius:50%;background:var(--ac);color:#fff;font-size:11px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
+.da .appt{font-size:13.5px;color:var(--act);font-weight:600;line-height:1.55}
+/* RISK */
+.da .risk{background:var(--rdl);border:1px solid var(--rdb);border-left:3px solid var(--rdb);border-radius:var(--rs);padding:10px 13px;font-size:13px;color:var(--rd);line-height:1.5;margin-bottom:6px}
+.da.dark .risk{color:var(--rdb)}
+/* QUESTION CATEGORIES */
+.da .qcat{background:var(--bs);border:1px solid var(--bd);border-radius:var(--r);overflow:hidden;margin-bottom:10px;box-shadow:var(--sh)}
+.da .qcat-head{padding:13px 17px;border-bottom:1px solid var(--bd);background:var(--bsub);cursor:pointer;display:flex;justify-content:space-between;align-items:center;user-select:none}
+.da .qcat-head:hover{background:var(--bm)}
+.da .qcat-label{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ac);margin-bottom:3px}
+.da .qcat-title{font-size:14px;font-weight:700;color:var(--t1)}
+.da .qcat-body{padding:16px 17px;display:none}
+.da .qcat-body.open{display:block}
+.da .qitem{padding:9px 0;border-bottom:1px solid var(--bd);font-size:13.5px;color:var(--t1);line-height:1.5;font-style:italic}
+.da .qitem:last-child{border-bottom:none}
+.da .qnote{font-size:12.5px;color:var(--t2);line-height:1.55;margin-top:8px;padding:10px 12px;background:var(--acl);border:1px solid var(--acb);border-radius:var(--rs)}
+/* CONV STEPS */
+.da .cs{display:flex;flex-direction:column;gap:8px}
+.da .csi{background:var(--bs);border:1px solid var(--bd);border-radius:var(--r);overflow:hidden;box-shadow:var(--sh)}
+.da .csi-head{padding:12px 16px;border-bottom:1px solid var(--bd);display:flex;align-items:center;gap:12px;cursor:pointer;background:var(--bsub);user-select:none;transition:background .13s}
+.da .csi-head:hover{background:var(--bm)}
+.da .csi-num{width:26px;height:26px;border-radius:50%;background:var(--ac);color:#fff;font-size:12px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.da .csi-title{font-size:14px;font-weight:700;color:var(--t1)}
+.da .csi-obj{font-size:12px;color:var(--t2);margin-left:auto;display:none}
+.da .csi-body{padding:14px 16px;display:none}
+.da .csi-body.open{display:block}
+.da .csi-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:8px}
+.da .csi-col{padding:11px 13px;border-radius:var(--r);border:1px solid var(--bd);font-size:13px;line-height:1.5}
+.da .csi-cl{font-size:9.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--tm);margin-bottom:4px}
+.da .csi-ct{color:var(--t1)}
+.da .csi-pos{background:var(--acl);border-color:var(--acb)}.da .csi-pos .csi-cl{color:var(--act)}
+.da .csi-neg{background:var(--rdl);border-color:var(--rdb)}.da .csi-neg .csi-cl{color:var(--rd)}
+.da.dark .csi-neg .csi-cl{color:var(--rdb)}
+/* ENC BADGES */
+.da .enc{display:inline-block;font-size:11.5px;font-weight:700;border-radius:var(--rs);padding:3px 10px}
+.da .em{background:var(--acl);color:var(--act);border:1px solid var(--acb)}
+.da .ep{background:var(--bll);color:var(--bl);border:1px solid var(--blb)}
+.da .en{background:var(--gdl);color:var(--gd);border:1px solid var(--gdb)}
+.da .er{background:var(--rdl);color:var(--rd);border:1px solid var(--rdb)}
+/* TAGS */
+.da .tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.da .tg{font-size:11.5px;font-weight:500;color:var(--t2);background:var(--bsub);border:1px solid var(--bd);border-radius:20px;padding:3px 9px}
+/* FOOTER */
+.da .foot{margin-top:70px;padding:20px 0;border-top:1px solid var(--bd);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:9px}
+.da .fb{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--tm)}
+.da .fm{font-size:11px;color:var(--tm);display:flex;gap:14px;flex-wrap:wrap}
+/* RESPONSIVE */
+@media(max-width:768px){
+  .da .gov{grid-template-columns:1fr}
+  .da .gk{border-right:none;border-bottom:1px solid var(--bd)}
+  .da .iti{flex-direction:column}
+  .da .itif{border-right:none;border-bottom:1px solid var(--bd)}
+  .da .ascale{flex-direction:column}
+  .da .aseg{border-right:none;border-bottom:1px solid var(--bd)}
+  .da .aseg:last-child{border-bottom:none}
+  .da .flow{flex-direction:column}
+  .da .fstep{border-right:none;border-bottom:1px solid var(--bd)}
+}
+@media(max-width:480px){
+  .da .wrap{padding:0 13px 60px}
+  .da .foot{flex-direction:column;align-items:flex-start}
+  .da .nb{padding:4px 6px;font-size:10px}
+}
+</style>
+</head>
+<body>
+<div class="da" id="daRoot04">
+
+<nav class="nav">
+  <div class="navi">
+    <div class="navl">
+      <button class="nb" onclick="dsg('s-dec')">Decisão</button>
+      <button class="nb" onclick="dsg('s-gov')">Arquitetura</button>
+      <button class="nb" onclick="dsg('s-prin')">Princípio</button>
+      <button class="nb" onclick="dsg('s-prec')">Pré-Call</button>
+      <button class="nb" onclick="dsg('s-conv')">Conversa</button>
+      <button class="nb" onclick="dsg('s-pergs')">Perguntas</button>
+      <button class="nb" onclick="dsg('s-score')">Score</button>
+      <button class="nb" onclick="dsg('s-aber')">Abertura</button>
+      <button class="nb" onclick="dsg('s-matriz')">Matriz</button>
+      <button class="nb" onclick="dsg('s-scripts')">Scripts</button>
+      <button class="nb" onclick="dsg('s-obj')">Objeções</button>
+      <button class="nb" onclick="dsg('s-reg')">Registro</button>
+      <button class="nb" onclick="dsg('s-posc')">Pós-Call</button>
+      <button class="nb" onclick="dsg('s-hand')">Handoff</button>
+      <button class="nb" onclick="dsg('s-prot')">Protocolo</button>
+      <button class="nb" onclick="dsg('s-erros')">Erros</button>
+      <button class="nb" onclick="dsg('s-acao')">Ação</button>
+      <button class="nb" onclick="dsg('s-kpi')">Sinais</button>
+    </div>
+    <button class="tb" id="tb04" onclick="dt04()">Dark</button>
+  </div>
+</nav>
+
+<div class="wrap">
+
+  <header class="hdr">
+    <div class="htag">Framework Interno</div>
+    <h1>Protocolo de Qualificação Comercial</h1>
+    <p class="hsub">Framework operacional para diagnosticar prontidão, medir abertura, conduzir decisão e encaminhar cada lead para o próximo passo correto.</p>
+    <div class="hmeta">
+      <div class="mitem"><span class="mlbl">Função</span><span class="mval">Framework de Qualificação Comercial</span></div>
+      <div class="mitem"><span class="mlbl">Aplicação</span><span class="mval">Débora Delgado</span></div>
+      <div class="mitem"><span class="mlbl">Aplicar em</span><span class="mval">Toda conversa comercial</span></div>
+      <div class="mitem"><span class="mlbl">Versão</span><span class="mval">1.0</span></div>
+    </div>
+  </header>
+
+  <!-- 01 DECISÃO -->
+  <section class="sec" id="s-dec">
+    <div class="sech"><span class="secn">01</span><h2 class="sect">Tese Central do Framework</h2></div>
+    <div class="dec">
+      <div class="decl">Para que existe este protocolo</div>
+      <p class="dect">Este protocolo existe para que Débora não venda mentoria profunda para qualquer pessoa interessada. A função é identificar, com critério objetivo, o encaminhamento correto para cada lead.</p>
+      <div class="deco">
+        <span class="decopt">Pronto para mentoria</span>
+        <span class="decopt">Amadurecer antes</span>
+        <span class="decopt">Produto inicial</span>
+        <span class="decopt">Nutrição</span>
+        <span class="decopt">Não aderente agora</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 GOVERNANÇA -->
+  <section class="sec" id="s-gov">
+    <div class="sech"><span class="secn">02</span><h2 class="sect">Arquitetura do Framework</h2></div>
+    <div class="gov">
+      <div class="gr"><div class="gk">Framework</div><div class="gv">Protocolo de Qualificação Comercial</div></div>
+      <div class="gr"><div class="gk">Função estratégica</div><div class="gv">Orientar a decisão comercial com critério objetivo</div></div>
+      <div class="gr"><div class="gk">Aplicação</div><div class="gv">Framework interno permanente</div></div>
+      <div class="gr"><div class="gk">Estrutura</div><div class="gv">Score, critérios e encaminhamento comercial</div></div>
+      <div class="gr"><div class="gk">Leitura e aplicação</div><div class="gv">Condução das conversas e validação da leitura humana</div></div>
+      <div class="gr"><div class="gk">Condições de uso</div><div class="gv">Fala do lead, contexto, dor, histórico, desejo, abertura, capacidade financeira e expectativa</div></div>
+      <div class="gr"><div class="gk">Resultado esperado</div><div class="gv">Lead classificado e encaminhamento definido</div></div>
+      <div class="gr"><div class="gk">Decisão que orienta</div><div class="gv">Mentoria, produto inicial, nutrição ou não aderente agora</div></div>
+      <div class="gr"><div class="gk">Quando consultar</div><div class="gv">Toda conversa comercial, indicação, aplicação ou lead interessado</div></div>
+      <div class="gr"><div class="gk">Indicadores de clareza</div><div class="gv">Taxa de conversas qualificadas com aderência ao ICP</div></div>
+      <div class="gr"><div class="gk">Desalinhamentos que este framework evita</div><div class="gv">Venda desalinhada, sobrecarga, baixa retenção e mentorados resistentes</div></div>
+      <div class="gr"><div class="gk">Sinais de clareza</div><div class="gv">A decisão comercial deixa de depender apenas do feeling</div></div>
+    </div>
+  </section>
+
+  <!-- 03 CONTEXTO -->
+  <section class="sec" id="s-ctx">
+    <div class="sech"><span class="secn">03</span><h2 class="sect">Contexto do Problema</h2></div>
+    <div class="card" style="margin-bottom:13px;">
+      <p class="ctitle">O problema central</p>
+      <p style="font-size:15px;font-weight:600;color:var(--t1);margin-bottom:7px;">O problema não é falta de sensibilidade comercial. É ausência de critério operacional.</p>
+      <p style="font-size:13.5px;color:var(--t2);line-height:1.65;">Sem protocolo, a conversa comercial depende de como o lead apresenta a si mesmo. E pessoas boas no convencimento não são necessariamente as mais prontas para o processo.</p>
+    </div>
+    <div class="pg">
+      <div class="pi">Confundir interesse com prontidão para processo profundo</div>
+      <div class="pi">Avançar com pessoas resistentes à revisão de crenças</div>
+      <div class="pi">Vender profundidade para quem quer alívio rápido</div>
+      <div class="pi">Aceitar leads fora do ICP por pressão de caixa</div>
+      <div class="pi">Perder bons leads por falta de encaminhamento intermediário</div>
+      <div class="pi">Carregar mentorados que não querem sustentar mudança</div>
+      <div class="pi">Aumentar carga operacional com entregas desalinhadas</div>
+    </div>
+  </section>
+
+  <!-- 04 PRINCÍPIO -->
+  <section class="sec" id="s-prin">
+    <div class="sech"><span class="secn">04</span><h2 class="sect">Princípio Comercial</h2></div>
+    <div class="g2">
+      <div class="card" style="border-top:2px solid var(--acb);">
+        <p class="ctitle">O que a venda deve fazer</p>
+        <p style="font-size:14px;color:var(--t1);line-height:1.65;font-weight:600;">A venda não deve tentar convencer qualquer pessoa. A venda deve identificar o próximo passo correto.</p>
+        <p style="font-size:13px;color:var(--t2);line-height:1.6;margin-top:8px;">O objetivo não é lotar a mentoria. É formar um ecossistema em que cada lead vai para o encaminhamento certo no momento certo.</p>
+      </div>
+      <div class="card">
+        <p class="ctitle">Ecossistema correto</p>
+        <div style="display:flex;flex-direction:column;gap:7px;margin-top:4px;">
+          <div style="display:flex;align-items:center;gap:10px;padding:8px 12px;background:var(--acl);border:1px solid var(--acb);border-radius:var(--rs);font-size:13px;color:var(--act);font-weight:600;">Leads prontos entram na mentoria principal</div>
+          <div style="display:flex;align-items:center;gap:10px;padding:8px 12px;background:var(--bll);border:1px solid var(--blb);border-radius:var(--rs);font-size:13px;color:var(--bl);font-weight:600;">Leads interessados amadurecem no produto inicial</div>
+          <div style="display:flex;align-items:center;gap:10px;padding:8px 12px;background:var(--gdl);border:1px solid var(--gdb);border-radius:var(--rs);font-size:13px;color:var(--gd);font-weight:600;">Leads curiosos seguem em nutrição</div>
+          <div style="display:flex;align-items:center;gap:10px;padding:8px 12px;background:var(--rdl);border:1px solid var(--rdb);border-radius:var(--rs);font-size:13px;color:var(--rd);font-weight:600;">Leads desalinhados são filtrados com elegância</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 05 CHECKLIST PRÉ-CALL -->
+  <section class="sec" id="s-prec">
+    <div class="sech"><span class="secn">05</span><h2 class="sect">Checklist Pré-Call</h2></div>
+    <p style="font-size:13.5px;color:var(--t2);margin-bottom:12px;line-height:1.6;">Antes de iniciar a conversa, verificar o que já se sabe sobre o lead.</p>
+    <div id="prec-prog" class="clprog">0 de 10 verificados</div>
+    <div class="cl" id="prec-list">
+      <div class="cli" onclick="dck(this,'prec')"><div class="clb"></div><div class="clt">Origem do lead identificada — como chegou até aqui?</div></div>
+      <div class="cli" onclick="dck(this,'prec')"><div class="clb"></div><div class="clt">Conteúdo ou indicação que gerou o interesse mapeado</div></div>
+      <div class="cli" onclick="dck(this,'prec')"><div class="clb"></div><div class="clt">Hipótese de nível de consciência (1 a 5) definida</div></div>
+      <div class="cli" onclick="dck(this,'prec')"><div class="clb"></div><div class="clt">Hipótese de dor principal identificada</div></div>
+      <div class="cli" onclick="dck(this,'prec')"><div class="clb"></div><div class="clt">Hipótese de prontidão definida</div></div>
+      <div class="cli" onclick="dck(this,'prec')"><div class="clb"></div><div class="clt">Possíveis objeções antecipadas</div></div>
+      <div class="cli" onclick="dck(this,'prec')"><div class="clb"></div><div class="clt">Contexto profissional ou projeto atual mapeado</div></div>
+      <div class="cli" onclick="dck(this,'prec')"><div class="clb"></div><div class="clt">Relação com propósito, trabalho, valor ou transição investigada</div></div>
+      <div class="cli" onclick="dck(this,'prec')"><div class="clb"></div><div class="clt">Risco de baixa abertura avaliado</div></div>
+      <div class="cli" onclick="dck(this,'prec')"><div class="clb"></div><div class="clt">Próximo passo provável definido antes da call</div></div>
+    </div>
+  </section>
+
+  <!-- 06 ESTRUTURA DA CONVERSA -->
+  <section class="sec" id="s-conv">
+    <div class="sech"><span class="secn">06</span><h2 class="sect">Estrutura da Conversa</h2></div>
+    <p style="font-size:13.5px;color:var(--t2);margin-bottom:16px;line-height:1.6;">Clique em cada etapa para ver objetivo, pergunta principal, sinais positivos e alertas.</p>
+    <div class="cs">
+      <div class="csi"><div class="csi-head" onclick="toggleCsi(this)"><div class="csi-num">1</div><div class="csi-title">Contexto</div></div><div class="csi-body"><div class="csi-grid"><div class="csi-col"><div class="csi-cl">Objetivo</div><div class="csi-ct">Entender a situação atual: trabalho, carreira, projeto e ponto de partida da pessoa.</div></div><div class="csi-col"><div class="csi-cl">Pergunta principal</div><div class="csi-ct" style="font-style:italic;">"Como está sua relação hoje com trabalho, carreira ou projeto pessoal?"</div></div><div class="csi-col csi-pos"><div class="csi-cl">Sinal positivo</div><div class="csi-ct">Fala com clareza sobre o momento atual e demonstra reflexão sobre si mesma.</div></div><div class="csi-col csi-neg"><div class="csi-cl">Sinal de alerta</div><div class="csi-ct">Foco apenas em metas externas sem nenhuma referência a aspecto interno.</div></div></div></div></div>
+      <div class="csi"><div class="csi-head" onclick="toggleCsi(this)"><div class="csi-num">2</div><div class="csi-title">Dor</div></div><div class="csi-body"><div class="csi-grid"><div class="csi-col"><div class="csi-cl">Objetivo</div><div class="csi-ct">Nomear o que pesa, o que não está bom e o custo de continuar no estado atual.</div></div><div class="csi-col"><div class="csi-cl">Pergunta principal</div><div class="csi-ct" style="font-style:italic;">"O que hoje já não está mais congruente na sua vida, trabalho ou forma de contribuir?"</div></div><div class="csi-col csi-pos"><div class="csi-cl">Sinal positivo</div><div class="csi-ct">Consegue nomear a dor com alguma clareza e reconhece que algo precisa mudar.</div></div><div class="csi-col csi-neg"><div class="csi-cl">Sinal de alerta</div><div class="csi-ct">Diz que tudo está bem, mas quer algo melhor. Dor vaga ou ausente.</div></div></div></div></div>
+      <div class="csi"><div class="csi-head" onclick="toggleCsi(this)"><div class="csi-num">3</div><div class="csi-title">Padrão</div></div><div class="csi-body"><div class="csi-grid"><div class="csi-col"><div class="csi-cl">Objetivo</div><div class="csi-ct">Verificar se a pessoa percebe repetições, automatismos e causas internas.</div></div><div class="csi-col"><div class="csi-cl">Pergunta principal</div><div class="csi-ct" style="font-style:italic;">"O que se repete mesmo quando você muda a estratégia?"</div></div><div class="csi-col csi-pos"><div class="csi-cl">Sinal positivo</div><div class="csi-ct">Reconhece que algo interno participa do problema.</div></div><div class="csi-col csi-neg"><div class="csi-cl">Sinal de alerta</div><div class="csi-ct">Atribui tudo ao externo. Não percebe repetição própria.</div></div></div></div></div>
+      <div class="csi"><div class="csi-head" onclick="toggleCsi(this)"><div class="csi-num">4</div><div class="csi-title">Implicação</div></div><div class="csi-body"><div class="csi-grid"><div class="csi-col"><div class="csi-cl">Objetivo</div><div class="csi-ct">Mostrar o custo de continuar igual. Ativar urgência legítima sem pressão artificial.</div></div><div class="csi-col"><div class="csi-cl">Pergunta principal</div><div class="csi-ct" style="font-style:italic;">"O que acontece se você continuar funcionando desse jeito por mais um ano?"</div></div><div class="csi-col csi-pos"><div class="csi-cl">Sinal positivo</div><div class="csi-ct">Reconhece o custo real com clareza e sente que não quer mais sustentar esse estado.</div></div><div class="csi-col csi-neg"><div class="csi-cl">Sinal de alerta</div><div class="csi-ct">Minimiza o custo. Sente que pode continuar igual sem grande prejuízo.</div></div></div></div></div>
+      <div class="csi"><div class="csi-head" onclick="toggleCsi(this)"><div class="csi-num">5</div><div class="csi-title">Abertura</div></div><div class="csi-body"><div class="csi-grid"><div class="csi-col"><div class="csi-cl">Objetivo</div><div class="csi-ct">Medir disponibilidade para revisar crenças, padrões e perspectivas.</div></div><div class="csi-col"><div class="csi-cl">Pergunta obrigatória</div><div class="csi-ct" style="font-style:italic;">"De 0 a 10, quanto você está aberta a novas perspectivas sobre trabalho, valor, propósito e forma de viver?"</div></div><div class="csi-col csi-pos"><div class="csi-cl">Sinal positivo</div><div class="csi-ct">Pontua 7 ou mais. Demonstra genuína curiosidade para rever o que já sabe.</div></div><div class="csi-col csi-neg"><div class="csi-cl">Sinal de alerta</div><div class="csi-ct">Pontua abaixo de 6 ou hesita na resposta. Respostas prontas para tudo.</div></div></div></div></div>
+      <div class="csi"><div class="csi-head" onclick="toggleCsi(this)"><div class="csi-num">6</div><div class="csi-title">Prontidão</div></div><div class="csi-body"><div class="csi-grid"><div class="csi-col"><div class="csi-cl">Objetivo</div><div class="csi-ct">Verificar se há disposição real para sustentar um processo profundo com compromisso.</div></div><div class="csi-col"><div class="csi-cl">Pergunta principal</div><div class="csi-ct" style="font-style:italic;">"O que você está disposta a sustentar nesse processo?"</div></div><div class="csi-col csi-pos"><div class="csi-cl">Sinal positivo</div><div class="csi-ct">Demonstra responsabilidade pelo processo. Não espera que a mentoria faça tudo.</div></div><div class="csi-col csi-neg"><div class="csi-cl">Sinal de alerta</div><div class="csi-ct">Quer resultado sem processo. Espera que a mentoria a carregue.</div></div></div></div></div>
+      <div class="csi"><div class="csi-head" onclick="toggleCsi(this)"><div class="csi-num">7</div><div class="csi-title">Capacidade</div></div><div class="csi-body"><div class="csi-grid"><div class="csi-col"><div class="csi-cl">Objetivo</div><div class="csi-ct">Verificar viabilidade financeira sem pressão ou julgamento.</div></div><div class="csi-col"><div class="csi-cl">Como abordar</div><div class="csi-ct">Apresentar o investimento com clareza. Observar a reação antes de negociar.</div></div><div class="csi-col csi-pos"><div class="csi-cl">Sinal positivo</div><div class="csi-ct">Reconhece o valor, busca alternativa concreta, não usa preço como desculpa.</div></div><div class="csi-col csi-neg"><div class="csi-cl">Sinal de alerta</div><div class="csi-ct">Usa preço como objeção antes mesmo de entender o que recebe. Negocia antes de se decidir.</div></div></div></div></div>
+      <div class="csi"><div class="csi-head" onclick="toggleCsi(this)"><div class="csi-num">8</div><div class="csi-title">Expectativa</div></div><div class="csi-body"><div class="csi-grid"><div class="csi-col"><div class="csi-cl">Objetivo</div><div class="csi-ct">Verificar se o que a pessoa espera está alinhado com o que a mentoria entrega.</div></div><div class="csi-col"><div class="csi-cl">Pergunta principal</div><div class="csi-ct" style="font-style:italic;">"O que você espera que a mentoria faça por você?"</div></div><div class="csi-col csi-pos"><div class="csi-cl">Sinal positivo</div><div class="csi-ct">Espera processo, clareza e progressão. Não espera resultado instantâneo.</div></div><div class="csi-col csi-neg"><div class="csi-cl">Sinal de alerta</div><div class="csi-ct">Quer cura, resultado garantido, solução rápida ou que Débora resolva por ela.</div></div></div></div></div>
+      <div class="csi"><div class="csi-head" onclick="toggleCsi(this)"><div class="csi-num">9</div><div class="csi-title">Encaminhamento</div></div><div class="csi-body"><div class="csi-grid"><div class="csi-col"><div class="csi-cl">Objetivo</div><div class="csi-ct">Definir, com base no diagnóstico, qual é o próximo passo correto para este lead.</div></div><div class="csi-col"><div class="csi-cl">Como decidir</div><div class="csi-ct">Usar score de prontidão + abertura + expectativa. Não decidir apenas pela intuição.</div></div><div class="csi-col csi-pos"><div class="csi-cl">Sinal positivo</div><div class="csi-ct">Score 18+, abertura 7+, expectativa alinhada. Mentoria.</div></div><div class="csi-col csi-neg"><div class="csi-cl">Sinal de alerta</div><div class="csi-ct">Score baixo, abertura baixa ou expectativa desalinhada. Não avançar para mentoria.</div></div></div></div></div>
+      <div class="csi"><div class="csi-head" onclick="toggleCsi(this)"><div class="csi-num">10</div><div class="csi-title">Decisão</div></div><div class="csi-body"><div class="csi-grid"><div class="csi-col"><div class="csi-cl">Objetivo</div><div class="csi-ct">Comunicar o encaminhamento com clareza, firmeza e elegância.</div></div><div class="csi-col"><div class="csi-cl">Como fazer</div><div class="csi-ct">Usar o script correspondente. Não improvisar nesta etapa. Seja direta.</div></div><div class="csi-col csi-pos"><div class="csi-cl">Sinal positivo</div><div class="csi-ct">Lead aceita o encaminhamento com clareza. Decisão foi tomada com critério, não pressão.</div></div><div class="csi-col csi-neg"><div class="csi-cl">Sinal de alerta</div><div class="csi-ct">Lead sente que foi pressionado ou excluído. Rever linguagem do encaminhamento.</div></div></div></div></div>
+    </div>
+  </section>
+
+  <!-- 07 PERGUNTAS -->
+  <section class="sec" id="s-pergs">
+    <div class="sech"><span class="secn">07</span><h2 class="sect">Perguntas de Diagnóstico</h2></div>
+    <p style="font-size:13.5px;color:var(--t2);margin-bottom:14px;line-height:1.6;">Clique em cada categoria para ver as perguntas. Não é necessário usar todas. Selecione conforme o contexto da conversa.</p>
+    <div class="qcat"><div class="qcat-head" onclick="toggleQcat(this)"><div><div class="qcat-label">A</div><div class="qcat-title">Dor Atual</div></div><span style="font-size:11px;color:var(--tm);font-weight:600;">+ ver perguntas</span></div><div class="qcat-body"><div class="qitem">"O que hoje já não está mais congruente na sua vida, trabalho ou forma de contribuir?"</div><div class="qitem">"O que tem pesado mais neste momento?"</div><div class="qitem">"Qual parte da sua rotina, carreira ou projeto deixou de vibrar?"</div><div class="qitem">"O que você sente que não quer mais sustentar?"</div></div></div>
+    <div class="qcat"><div class="qcat-head" onclick="toggleQcat(this)"><div><div class="qcat-label">B</div><div class="qcat-title">Padrão Percebido</div></div><span style="font-size:11px;color:var(--tm);font-weight:600;">+ ver perguntas</span></div><div class="qcat-body"><div class="qitem">"O que se repete mesmo quando você muda a estratégia?"</div><div class="qitem">"Quando esse incômodo aparece, como você costuma reagir?"</div><div class="qitem">"Que história você conta sobre si quando isso acontece?"</div><div class="qitem">"O que você já percebeu que é padrão seu?"</div></div></div>
+    <div class="qcat"><div class="qcat-head" onclick="toggleQcat(this)"><div><div class="qcat-label">C</div><div class="qcat-title">Causa Reconhecida</div></div><span style="font-size:11px;color:var(--tm);font-weight:600;">+ ver perguntas</span></div><div class="qcat-body"><div class="qitem">"Você sente que isso é só uma questão externa ou existe algo interno participando?"</div><div class="qitem">"O que você acha que esse padrão tenta proteger?"</div><div class="qitem">"O que você já entendeu racionalmente, mas ainda não consegue mudar?"</div><div class="qitem">"O que dentro de você quer avançar e o que quer proteger o conhecido?"</div></div></div>
+    <div class="qcat"><div class="qcat-head" onclick="toggleQcat(this)"><div><div class="qcat-label">D</div><div class="qcat-title">Trabalho, Propósito e Valor</div></div><span style="font-size:11px;color:var(--tm);font-weight:600;">+ ver perguntas</span></div><div class="qcat-body"><div class="qitem">"Que tipo de impacto você quer gerar?"</div><div class="qitem">"Seu trabalho atual expressa quem você é ou apenas o que você aprendeu a fazer?"</div><div class="qitem">"Você quer permanecer, expandir, criar algo paralelo ou transicionar?"</div><div class="qitem">"O que você sente que está latente e ainda não ganhou forma?"</div></div></div>
+    <div class="qcat"><div class="qcat-head" onclick="toggleQcat(this)"><div><div class="qcat-label">E</div><div class="qcat-title">Dinheiro, Recebimento e Prosperidade</div></div><span style="font-size:11px;color:var(--tm);font-weight:600;">+ ver perguntas</span></div><div class="qcat-body"><div class="qitem">"Como é sua relação atual com cobrar, receber e sustentar valor?"</div><div class="qitem">"Você sente culpa ao receber por algo que é natural para você?"</div><div class="qitem">"O que significa prosperidade para você?"</div><div class="qitem">"Você quer apenas ganhar mais ou sustentar valor com mais congruência?"</div></div></div>
+    <div class="qcat"><div class="qcat-head" onclick="toggleQcat(this)"><div><div class="qcat-label">F</div><div class="qcat-title">Abertura para Novas Perspectivas</div></div><span style="font-size:11px;color:var(--tm);font-weight:600;">+ ver perguntas</span></div><div class="qcat-body"><div class="qitem"><strong>"De 0 a 10, quanto você está aberta a novas perspectivas sobre trabalho, valor, propósito e forma de viver?"</strong></div><div class="qnote">Esta pergunta não mede inteligência. Ela mede disponibilidade para revisar crenças, padrões e interpretações. É uma das perguntas mais importantes do diagnóstico. Respostas abaixo de 6 são sinal de atenção.</div></div></div>
+    <div class="qcat"><div class="qcat-head" onclick="toggleQcat(this)"><div><div class="qcat-label">G</div><div class="qcat-title">Expectativa sobre a Mentoria</div></div><span style="font-size:11px;color:var(--tm);font-weight:600;">+ ver perguntas</span></div><div class="qcat-body"><div class="qitem">"O que você espera que a mentoria faça por você?"</div><div class="qitem">"Você busca validação, alívio ou transformação real?"</div><div class="qitem">"O que você está disposta a sustentar no processo?"</div><div class="qitem">"O que faria esse processo valer a pena para você?"</div></div></div>
+  </section>
+
+  <!-- 08 SCORE -->
+  <section class="sec" id="s-score">
+    <div class="sech"><span class="secn">08</span><h2 class="sect">Score de Prontidão Comercial</h2></div>
+    <p style="font-size:13.5px;color:var(--t2);margin-bottom:16px;line-height:1.6;">Pontue cada critério de 0 a 3. O total define o encaminhamento. Use após conduzir o diagnóstico.</p>
+    <div class="sw">
+      <div class="sh2">
+        <span class="sh2t">Critérios de Prontidão</span>
+        <div class="stotal">
+          <span style="font-size:11px;font-weight:600;color:var(--tm);">Total</span>
+          <span class="stv" id="st04">0</span>
+          <span class="stm">/ 30</span>
+          <span class="sres" id="sr04">Preencha o score</span>
+        </div>
+      </div>
+      <div id="srows04"></div>
+    </div>
+    <div class="si">
+      <div class="si-item ih"><div class="si-r">24–30</div><div class="si-d">Alta prontidão. Avançar para oferta da mentoria principal.</div></div>
+      <div class="si-item im"><div class="si-r">18–23</div><div class="si-d">Boa aderência. Aprofundar antes de fechar.</div></div>
+      <div class="si-item il"><div class="si-r">12–17</div><div class="si-d">Produto inicial ou experiência de amadurecimento.</div></div>
+      <div class="si-item in"><div class="si-r">0–11</div><div class="si-d">Não aderente agora. Nutrição ou filtrar com elegância.</div></div>
+    </div>
+  </section>
+
+  <!-- 09 ABERTURA -->
+  <section class="sec" id="s-aber">
+    <div class="sech"><span class="secn">09</span><h2 class="sect">Escala de Abertura</h2></div>
+    <div class="card" style="margin-bottom:16px;">
+      <p class="ctitle">Pergunta obrigatória na call</p>
+      <p style="font-size:15px;font-weight:700;color:var(--t1);font-style:italic;margin-bottom:7px;">"De 0 a 10, quanto você está aberta a novas perspectivas sobre trabalho, valor, propósito e forma de viver?"</p>
+      <p style="font-size:13px;color:var(--t2);">Esta escala não mede inteligência. Mede disponibilidade para revisar crenças, padrões e interpretações.</p>
+    </div>
+    <div class="ascale">
+      <div class="aseg alow"><div class="asr">0–3</div><div class="asl">Baixa abertura</div><div class="asa">Não aderente agora ou nutrição leve</div></div>
+      <div class="aseg amed"><div class="asr">4–6</div><div class="asl">Parcial</div><div class="asa">Produto inicial ou amadurecimento</div></div>
+      <div class="aseg agood"><div class="asr">7–8</div><div class="asl">Boa abertura</div><div class="asa">Qualificação mais profunda</div></div>
+      <div class="aseg ahigh"><div class="asr">9–10</div><div class="asl">Alta prontidão</div><div class="asa">Avaliar mentoria principal</div></div>
+    </div>
+  </section>
+
+  <!-- 10 MATRIZ -->
+  <section class="sec" id="s-matriz">
+    <div class="sech"><span class="secn">10</span><h2 class="sect">Matriz de Decisão Comercial</h2></div>
+    <div class="tw">
+      <table class="dt">
+        <thead><tr><th>Cenário</th><th>Score</th><th>Abertura</th><th>Diagnóstico</th><th>Risco</th><th>Encaminhamento</th><th>Frase de condução</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Alta prontidão</strong></td><td>24–30</td><td>7–10</td><td>Dor clara, padrão reconhecido, abertura alta</td><td>Não alinhar expectativa antes de fechar</td><td><span class="enc em">Mentoria</span></td><td><em>"Você tem o perfil que a mentoria mais beneficia. Quero conversar sobre como funciona."</em></td></tr>
+          <tr><td><strong>Boa aderência com dúvidas</strong></td><td>18–23</td><td>6–8</td><td>Aderência real, mas com pontos a clarificar</td><td>Avançar sem alinhar expectativa ou abertura</td><td><span class="enc ep">Aprofundar</span></td><td><em>"Antes de avançar, quero entender melhor um ponto que ficou aberto na nossa conversa."</em></td></tr>
+          <tr><td><strong>Interesse sem profundidade</strong></td><td>12–17</td><td>5–7</td><td>Interesse genuíno, mas sem consciência de padrão</td><td>Vender mentoria antes do amadurecimento</td><td><span class="enc ep">Produto inicial</span></td><td><em>"O que seria mais útil para você agora é uma experiência que vai preparar o terreno para o processo."</em></td></tr>
+          <tr><td><strong>Consciência sem abertura</strong></td><td>12–18</td><td>3–5</td><td>Sabe o que repete, mas resiste à revisão</td><td>Alto. Resistência vai surgir no processo</td><td><span class="enc en">Produto leve ou nutrição</span></td><td><em>"Você já tem muita clareza sobre o que acontece. Antes de aprofundar, vale explorar algo que abra mais espaço."</em></td></tr>
+          <tr><td><strong>Curiosidade sem dor clara</strong></td><td>0–12</td><td>4–7</td><td>Interesse difuso, sem urgência real</td><td>Leads sem prontidão entram na mentoria</td><td><span class="enc en">Nutrição</span></td><td><em>"Você está num ótimo momento de exploração. Tenho conteúdo que pode ajudar a aprofundar isso."</em></td></tr>
+          <tr><td><strong>Capacidade financeira baixa</strong></td><td>18+</td><td>7+</td><td>Prontidão real, mas sem viabilidade agora</td><td>Inadimplência ou abandono do processo</td><td><span class="enc ep">Produto inicial + reavaliar</span></td><td><em>"Sua abertura é real. Neste momento, o produto inicial é o melhor caminho. Reavaliar em 90 dias."</em></td></tr>
+          <tr><td><strong>Expectativa desalinhada</strong></td><td>15–22</td><td>5–7</td><td>Prontidão parcial, mas espera cura ou resultado rápido</td><td>Frustração e baixa retenção</td><td><span class="enc en">Alinhar antes ou não avançar</span></td><td><em>"Antes de continuar, quero ser muito clara sobre o que a mentoria faz e o que ela não faz."</em></td></tr>
+          <tr><td><strong>Baixa prontidão</strong></td><td>0–11</td><td>0–4</td><td>Baixa abertura, respostas prontas, baixa autorresponsabilidade</td><td>Desgaste, resistência e baixo resultado</td><td><span class="enc er">Não aderente agora</span></td><td><em>"Percebo que o momento ainda não é esse. Quando essa percepção evoluir, estarei aqui."</em></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- 11 SCRIPTS -->
+  <section class="sec" id="s-scripts">
+    <div class="sech"><span class="secn">11</span><h2 class="sect">Scripts de Encaminhamento</h2></div>
+    <p style="font-size:13.5px;color:var(--t2);margin-bottom:14px;line-height:1.6;">Clique em cada script para expandir. Tom firme, humano e elegante. Adaptar linguagem, não a intenção.</p>
+    <div class="scard"><div class="scard-head" onclick="toggleScript(this)"><div><div class="scard-label">Script A</div><div class="scard-title">Aprovado para Mentoria Principal</div></div><button class="scard-toggle">+ ver script</button></div><div class="scard-body"><div class="scard-ctx">Contexto: lead com dor clara, padrão reconhecido, abertura alta e expectativa alinhada. Score 24+.</div><div class="scard-script">"Com base no que você me contou, você tem o perfil que a mentoria mais beneficia. Você reconhece o padrão, tem clareza da dor e está aberta para revisar perspectivas. Isso é raro. Quero te apresentar como a mentoria funciona e ver se faz sentido avançar juntas."</div></div></div>
+    <div class="scard"><div class="scard-head" onclick="toggleScript(this)"><div><div class="scard-label">Script B</div><div class="scard-title">Amadurecer Antes</div></div><button class="scard-toggle">+ ver script</button></div><div class="scard-body"><div class="scard-ctx">Contexto: lead com boa aderência, mas com pontos a clarificar antes de avançar. Score 18–23.</div><div class="scard-script">"Você tem clareza sobre o que pesa e está aberta ao processo. Antes de avançar para a mentoria, quero explorar um ponto que ficou aberto na nossa conversa. Não é uma barreira, é uma clareza que vai fazer o processo funcionar muito melhor para você."</div></div></div>
+    <div class="scard"><div class="scard-head" onclick="toggleScript(this)"><div><div class="scard-label">Script C</div><div class="scard-title">Produto Inicial</div></div><button class="scard-toggle">+ ver script</button></div><div class="scard-body"><div class="scard-ctx">Contexto: lead interessado, mas ainda sem prontidão para profundidade. Score 12–17.</div><div class="scard-script">"Você tem interesse real. O que percebo é que existe um passo antes da mentoria que seria muito mais útil para você agora. Tenho algo que trabalha exatamente o que estamos conversando, num formato mais leve e concentrado. Isso vai preparar o terreno para quando o processo mais profundo fizer sentido."</div></div></div>
+    <div class="scard"><div class="scard-head" onclick="toggleScript(this)"><div><div class="scard-label">Script D</div><div class="scard-title">Nutrição</div></div><button class="scard-toggle">+ ver script</button></div><div class="scard-body"><div class="scard-ctx">Contexto: lead curioso, sem dor clara ou sem urgência real. Score 0–12.</div><div class="scard-script">"Você está num ótimo momento de exploração. Ainda não está claro para mim que esse é o momento de um processo mais profundo. O que faz mais sentido agora é que você tenha acesso a conteúdos que vão aprofundar essa percepção. Quando a clareza chegar, a conversa pode continuar."</div></div></div>
+    <div class="scard"><div class="scard-head" onclick="toggleScript(this)"><div><div class="scard-label">Script E</div><div class="scard-title">Não Aderente Agora</div></div><button class="scard-toggle">+ ver script</button></div><div class="scard-body"><div class="scard-ctx">Contexto: lead com baixa abertura, respostas prontas, expectativa de solução rápida ou baixa autorresponsabilidade.</div><div class="scard-script">"Percebo que o que você está buscando agora não é exatamente o que eu trabalho. O meu processo é profundo e exige disposição para revisar perspectivas que ainda podem estar fixas. Não vejo que este seja o momento certo. Se isso mudar, estarei aqui. Desejo que você encontre o que precisa."</div></div></div>
+    <div class="scard"><div class="scard-head" onclick="toggleScript(this)"><div><div class="scard-label">Script F</div><div class="scard-title">Follow-up Pós-Call</div></div><button class="scard-toggle">+ ver script</button></div><div class="scard-body"><div class="scard-ctx">Contexto: lead qualificado que ficou de pensar ou precisa de mais tempo para decidir.</div><div class="scard-script">"Foi muito bom conversar. Percebo que você tem muita clareza sobre o que está em jogo. Quero deixar espaço para você processar o que ficou. Estarei aqui quando quiser retomar. O que te parece como próximo passo?"</div></div></div>
+    <div class="scard"><div class="scard-head" onclick="toggleScript(this)"><div><div class="scard-label">Script G</div><div class="scard-title">Encerramento Elegante</div></div><button class="scard-toggle">+ ver script</button></div><div class="scard-body"><div class="scard-ctx">Contexto: lead desalinhado, sem momento adequado ou após tentativa de convencer sem sucesso.</div><div class="scard-script">"Agradeço a conversa e a honestidade. Percebo que o que você precisa agora não é o que eu ofereço. Não existe nenhum problema nisso. Espero que você encontre o suporte mais adequado para o seu momento. Se algo mudar no que estamos conversando, pode me chamar."</div></div></div>
+  </section>
+
+  <!-- 12 OBJEÇÕES -->
+  <section class="sec" id="s-obj">
+    <div class="sech"><span class="secn">12</span><h2 class="sect">Objeções e Leitura Correta</h2></div>
+    <p style="font-size:13.5px;color:var(--t2);margin-bottom:13px;line-height:1.6;">Cada objeção tem um significado provável. Diagnosticar antes de responder.</p>
+    <div class="obj-item"><div class="obj-head" onclick="toggleObj(this)"><div class="obj-title">Preço</div><span style="font-size:11px;color:var(--tm);">+ ver diagnóstico</span></div><div class="obj-body"><div class="obj-grid"><div class="obj-item2 oque"><div class="obj-l">Significado provável</div><div class="obj-v">Pode ser falta de clareza sobre o valor, medo do compromisso ou crença de que não merece investir em si.</div></div><div class="obj-item2"><div class="obj-l">Pergunta de diagnóstico</div><div class="obj-v" style="font-style:italic;">"O preço é um impeditivo real agora ou é mais uma questão de não ter certeza se vale a pena?"</div></div><div class="obj-item2"><div class="obj-l">Resposta recomendada</div><div class="obj-v">Investigar se é viabilidade real ou insegurança sobre valor. Não negociar antes de entender a causa.</div></div><div class="obj-item2 oproib"><div class="obj-l">Erro a evitar</div><div class="obj-v">Reduzir preço imediatamente sem investigar o real motivo da objeção.</div></div></div></div></div>
+    <div class="obj-item"><div class="obj-head" onclick="toggleObj(this)"><div class="obj-title">Tempo</div><span style="font-size:11px;color:var(--tm);">+ ver diagnóstico</span></div><div class="obj-body"><div class="obj-grid"><div class="obj-item2 oque"><div class="obj-l">Significado provável</div><div class="obj-v">Pode ser prioridade real, medo de se comprometer com um processo de autoconhecimento ou forma de evitar decisão.</div></div><div class="obj-item2"><div class="obj-l">Pergunta de diagnóstico</div><div class="obj-v" style="font-style:italic;">"O que você estaria disposta a priorizar menos para fazer espaço para isso, se fosse realmente importante?"</div></div><div class="obj-item2"><div class="obj-l">Resposta recomendada</div><div class="obj-v">Investigar o que está por trás. Se for fuga, nomear sem julgar. Se for real, oferecer caminho alternativo.</div></div><div class="obj-item2 oproib"><div class="obj-l">Erro a evitar</div><div class="obj-v">Aceitar "não tenho tempo" sem investigar. Ou tentar convencer que ela tem tempo.</div></div></div></div></div>
+    <div class="obj-item"><div class="obj-head" onclick="toggleObj(this)"><div class="obj-title">Preciso pensar</div><span style="font-size:11px;color:var(--tm);">+ ver diagnóstico</span></div><div class="obj-body"><div class="obj-grid"><div class="obj-item2 oque"><div class="obj-l">Significado provável</div><div class="obj-v">Pode indicar que faltou clareza, que a decisão gerou medo ou que algo não ficou alinhado.</div></div><div class="obj-item2"><div class="obj-l">Pergunta de diagnóstico</div><div class="obj-v" style="font-style:italic;">"O que você precisa pensar com mais calma? Quer dizer que existe uma dúvida específica?"</div></div><div class="obj-item2"><div class="obj-l">Resposta recomendada</div><div class="obj-v">Abrir espaço para a dúvida. Não pressionar. Oferecer prazo claro para retorno.</div></div><div class="obj-item2 oproib"><div class="obj-l">Erro a evitar</div><div class="obj-v">Pressionar para decidir na hora ou ignorar o que ficou sem clareza.</div></div></div></div></div>
+    <div class="obj-item"><div class="obj-head" onclick="toggleObj(this)"><div class="obj-title">Não estou pronta</div><span style="font-size:11px;color:var(--tm);">+ ver diagnóstico</span></div><div class="obj-body"><div class="obj-grid"><div class="obj-item2 oque"><div class="obj-l">Significado provável</div><div class="obj-v">Pode ser autoconsciência genuína, medo ou crença de que precisa "resolver coisas antes" de se investir.</div></div><div class="obj-item2"><div class="obj-l">Pergunta de diagnóstico</div><div class="obj-v" style="font-style:italic;">"O que precisaria mudar para você se sentir pronta? O que te impede de começar agora?"</div></div><div class="obj-item2"><div class="obj-l">Resposta recomendada</div><div class="obj-v">Investigar com curiosidade. Se a prontidão for real, honrar. Se for medo, nomear sem pressionar.</div></div><div class="obj-item2 oproib"><div class="obj-l">Erro a evitar</div><div class="obj-v">Convencer que ela está pronta. A pessoa sabe de si mesma melhor do que qualquer argumento externo.</div></div></div></div></div>
+    <div class="obj-item"><div class="obj-head" onclick="toggleObj(this)"><div class="obj-title">Tenho medo de mexer nisso</div><span style="font-size:11px;color:var(--tm);">+ ver diagnóstico</span></div><div class="obj-body"><div class="obj-grid"><div class="obj-item2 oque"><div class="obj-l">Significado provável</div><div class="obj-v">Sinal de prontidão emocional real. Medo de mexer geralmente indica que a pessoa sabe que existe algo importante lá.</div></div><div class="obj-item2"><div class="obj-l">Pergunta de diagnóstico</div><div class="obj-v" style="font-style:italic;">"O que você imagina que vai encontrar quando mexer nisso?"</div></div><div class="obj-item2"><div class="obj-l">Resposta recomendada</div><div class="obj-v">Acolher o medo sem minimizar. Explicar que o processo tem ritmo e não força nada além do que a pessoa pode sustentar.</div></div><div class="obj-item2 oproib"><div class="obj-l">Erro a evitar</div><div class="obj-v">Dizer "não vai ser tão difícil" ou minimizar o que a pessoa está sentindo.</div></div></div></div></div>
+    <div class="obj-item"><div class="obj-head" onclick="toggleObj(this)"><div class="obj-title">Já fiz muitos processos</div><span style="font-size:11px;color:var(--tm);">+ ver diagnóstico</span></div><div class="obj-body"><div class="obj-grid"><div class="obj-item2 oque"><div class="obj-l">Significado provável</div><div class="obj-v">Pode ser ceticismo legítimo, cansaço de processo sem resultado ou forma de dizer que quer algo diferente.</div></div><div class="obj-item2"><div class="obj-l">Pergunta de diagnóstico</div><div class="obj-v" style="font-style:italic;">"O que funcionou nesses processos? E o que ficou sem resolução mesmo depois deles?"</div></div><div class="obj-item2"><div class="obj-l">Resposta recomendada</div><div class="obj-v">Investigar o que foi trabalhado e o que ainda não foi olhado. Mostrar diferenciação sem atacar outros métodos.</div></div><div class="obj-item2 oproib"><div class="obj-l">Erro a evitar</div><div class="obj-v">Dizer que o método é melhor que os outros ou que os outros processos não funcionam.</div></div></div></div></div>
+    <div class="obj-item"><div class="obj-head" onclick="toggleObj(this)"><div class="obj-title">Não sei se é para mim</div><span style="font-size:11px;color:var(--tm);">+ ver diagnóstico</span></div><div class="obj-body"><div class="obj-grid"><div class="obj-item2 oque"><div class="obj-l">Significado provável</div><div class="obj-v">Falta de identificação com o método, dúvida sobre o próprio ICP ou falta de clareza sobre o que a mentoria faz.</div></div><div class="obj-item2"><div class="obj-l">Pergunta de diagnóstico</div><div class="obj-v" style="font-style:italic;">"O que te faz questionar se é para você? O que você esperava encontrar e não encontrou na nossa conversa?"</div></div><div class="obj-item2"><div class="obj-l">Resposta recomendada</div><div class="obj-v">Clarificar para quem é e para quem não é. Se não for ICP, honrar com elegância.</div></div><div class="obj-item2 oproib"><div class="obj-l">Erro a evitar</div><div class="obj-v">Tentar convencer que é para ela sem investigar o que gerou a dúvida.</div></div></div></div></div>
+  </section>
+
+  <!-- 13 REGISTRO -->
+  <section class="sec" id="s-reg">
+    <div class="sech"><span class="secn">13</span><h2 class="sect">Registro Operacional da Call</h2></div>
+    <p style="font-size:13.5px;color:var(--t2);margin-bottom:14px;line-height:1.6;">Campos locais para registro durante ou após a conversa. Os dados não são enviados a nenhum servidor.</p>
+    <div class="reg">
+      <div class="reg-grid">
+        <div class="rfield"><label class="rl">Nome do lead</label><input class="ri" type="text" placeholder="Nome..."></div>
+        <div class="rfield"><label class="rl">Origem</label><input class="ri" type="text" placeholder="Instagram, indicação, conteúdo..."></div>
+        <div class="rfield"><label class="rl">Nível de consciência</label><select class="ri ri-sel"><option value="">Selecionar...</option><option>1 — Curiosidade</option><option>2 — Incômodo</option><option>3 — Padrão</option><option>4 — Propósito e Congruência</option><option>5 — Prontidão</option></select></div>
+        <div class="rfield"><label class="rl">Abertura (0–10)</label><input class="ri" type="number" min="0" max="10" placeholder="0 a 10..."></div>
+        <div class="rfield"><label class="rl">Score de prontidão</label><input class="ri" type="number" min="0" max="30" placeholder="0 a 30..."></div>
+        <div class="rfield"><label class="rl">Encaminhamento</label><select class="ri ri-sel"><option value="">Selecionar...</option><option>Mentoria principal</option><option>Aprofundar antes</option><option>Produto inicial</option><option>Nutrição</option><option>Não aderente agora</option></select></div>
+        <div class="rfield" style="grid-column:1/-1;"><label class="rl">Dor principal</label><textarea class="ri ri-area" placeholder="O que a pessoa nomeou como dor..."></textarea></div>
+        <div class="rfield" style="grid-column:1/-1;"><label class="rl">Padrão percebido</label><textarea class="ri ri-area" placeholder="O que foi percebido como padrão..."></textarea></div>
+        <div class="rfield" style="grid-column:1/-1;"><label class="rl">Principal objeção</label><textarea class="ri ri-area" placeholder="Qual foi a objeção principal..."></textarea></div>
+        <div class="rfield" style="grid-column:1/-1;"><label class="rl">Risco percebido</label><textarea class="ri ri-area" placeholder="Qual é o principal risco deste lead..."></textarea></div>
+        <div class="rfield"><label class="rl">Caminho de aplicação</label><input class="ri" type="text" placeholder="O que foi combinado..."></div>
+        <div class="rfield"><label class="rl">Data de revisão</label><input class="ri" type="date"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 14 CHECKLIST PÓS-CALL -->
+  <section class="sec" id="s-posc">
+    <div class="sech"><span class="secn">14</span><h2 class="sect">Checklist Pós-Call</h2></div>
+    <div id="pos-prog" class="clprog">0 de 10 concluídos</div>
+    <div class="cl" id="pos-list">
+      <div class="cli" onclick="dck(this,'pos')"><div class="clb"></div><div class="clt">Dor principal registrada no campo de registro</div></div>
+      <div class="cli" onclick="dck(this,'pos')"><div class="clb"></div><div class="clt">Padrão identificado ou ausência de padrão registrada</div></div>
+      <div class="cli" onclick="dck(this,'pos')"><div class="clb"></div><div class="clt">Abertura medida de 0 a 10</div></div>
+      <div class="cli" onclick="dck(this,'pos')"><div class="clb"></div><div class="clt">Score de prontidão aplicado</div></div>
+      <div class="cli" onclick="dck(this,'pos')"><div class="clb"></div><div class="clt">Expectativa alinhada ou desalinhamento registrado</div></div>
+      <div class="cli" onclick="dck(this,'pos')"><div class="clb"></div><div class="clt">Risco principal identificado</div></div>
+      <div class="cli" onclick="dck(this,'pos')"><div class="clb"></div><div class="clt">Encaminhamento definido e comunicado</div></div>
+      <div class="cli" onclick="dck(this,'pos')"><div class="clb"></div><div class="clt">Caminho de aplicação combinado com o lead</div></div>
+      <div class="cli" onclick="dck(this,'pos')"><div class="clb"></div><div class="clt">Follow-up agendado se necessário</div></div>
+      <div class="cli" onclick="dck(this,'pos')"><div class="clb"></div><div class="clt">Handoff para onboarding iniciado, se houver venda</div></div>
+    </div>
+  </section>
+
+  <!-- 15 HANDOFF -->
+  <section class="sec" id="s-hand">
+    <div class="sech"><span class="secn">15</span><h2 class="sect">Handoff para Onboarding</h2></div>
+    <div class="card" style="margin-bottom:16px;border-top:2px solid var(--blb);">
+      <p class="ctitle">Por que o handoff é obrigatório</p>
+      <p style="font-size:14px;font-weight:600;color:var(--t1);margin-bottom:6px;">Sem handoff, a entrega começa no escuro.</p>
+      <p style="font-size:13.5px;color:var(--t2);line-height:1.65;">O que foi levantado na conversa comercial — dor, padrão, objeções, expectativas — é a base para o início do processo. Se essa informação não for transferida, a mentoria começa do zero e perde profundidade desde o primeiro momento.</p>
+    </div>
+    <div class="hf">
+      <p style="font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--bl);margin-bottom:14px;">Informações obrigatórias no handoff</p>
+      <div class="hf-grid">
+        <div class="rfield"><label class="rl">Nome da cliente</label><input class="ri" type="text" placeholder="Nome..."></div>
+        <div class="rfield"><label class="rl">Oferta contratada</label><input class="ri" type="text" placeholder="Mentoria semestral..."></div>
+        <div class="rfield"><label class="rl">Nível de prontidão</label><select class="ri ri-sel"><option value="">Selecionar...</option><option>Alta prontidão</option><option>Boa aderência</option><option>Prontidão moderada</option></select></div>
+        <div class="rfield"><label class="rl">First value esperado</label><input class="ri" type="text" placeholder="O que deve gerar valor imediato..."></div>
+        <div class="rfield" style="grid-column:1/-1;"><label class="rl">Dor principal declarada</label><textarea class="ri ri-area" placeholder="O que a cliente declarou como dor central..."></textarea></div>
+        <div class="rfield" style="grid-column:1/-1;"><label class="rl">Padrões percebidos</label><textarea class="ri ri-area" placeholder="O que foi identificado como padrão..."></textarea></div>
+        <div class="rfield" style="grid-column:1/-1;"><label class="rl">Expectativas alinhadas</label><textarea class="ri ri-area" placeholder="O que foi alinhado sobre o que a mentoria faz e não faz..."></textarea></div>
+        <div class="rfield" style="grid-column:1/-1;"><label class="rl">Possíveis riscos</label><textarea class="ri ri-area" placeholder="Riscos identificados na qualificação..."></textarea></div>
+        <div class="rfield" style="grid-column:1/-1;"><label class="rl">Próximo passo combinado</label><input class="ri" type="text" placeholder="O que foi combinado como próximo passo após o fechamento..."></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 16 PROTOCOLO SE-ENTÃO -->
+  <section class="sec" id="s-prot">
+    <div class="sech"><span class="secn">16</span><h2 class="sect">Protocolo: Se X, Faça Y</h2></div>
+    <div class="it">
+      <div class="iti"><div class="itif"><span class="itib">Se</span>Tem dor clara e abertura alta</div><div class="itthen"><span class="ittb">Então</span>Aplicar score completo e avançar para oferta da mentoria se 18+.</div></div>
+      <div class="iti"><div class="itif"><span class="itib">Se</span>Tem interesse, mas não reconhece padrão</div><div class="itthen"><span class="ittb">Então</span>Direcionar para produto inicial. Não avançar para mentoria ainda.</div></div>
+      <div class="iti"><div class="itif"><span class="itib">Se</span>Tem respostas prontas</div><div class="itthen"><span class="ittb">Então</span>Medir abertura antes de vender. Respostas prontas são sinal de alerta.</div></div>
+      <div class="iti"><div class="itif"><span class="itib">Se</span>Quer solução rápida</div><div class="itthen"><span class="ittb">Então</span>Não vender mentoria profunda. Produto inicial ou não avançar.</div></div>
+      <div class="iti"><div class="itif"><span class="itib">Se</span>Quer transição de carreira</div><div class="itthen"><span class="ittb">Então</span>Investigar segurança, identidade e sustentação. Verificar se quer estratégia ou transformação.</div></div>
+      <div class="iti"><div class="itif"><span class="itib">Se</span>Quer criar projeto paralelo</div><div class="itthen"><span class="ittb">Então</span>Investigar valor autêntico e energia disponível para o novo projeto.</div></div>
+      <div class="iti"><div class="itif"><span class="itib">Se</span>Demonstra culpa por receber</div><div class="itthen"><span class="ittb">Então</span>Investigar relação com valor. Alta aderência potencial para mentoria.</div></div>
+      <div class="iti"><div class="itif"><span class="itib">Se</span>Vem do corporativo</div><div class="itthen"><span class="ittb">Então</span>Não presumir que o ICP é só corporativo. Avaliar por propósito e abertura.</div></div>
+      <div class="iti"><div class="itif"><span class="itib">Se</span>Busca validação</div><div class="itthen"><span class="ittb">Então</span>Não avançar sem diagnóstico real. Validação não é prontidão.</div></div>
+      <div class="iti"><div class="itif"><span class="itib">Se</span>Está pronta para fechar</div><div class="itthen"><span class="ittb">Então</span>Alinhar expectativa antes. Confirmar o que a mentoria faz e não faz antes do fechamento.</div></div>
+    </div>
+  </section>
+
+  <!-- 17 ERROS -->
+  <section class="sec" id="s-erros">
+    <div class="sech"><span class="secn">17</span><h2 class="sect">Erros Comuns na Qualificação</h2></div>
+    <div class="eg">
+      <div class="ei"><div class="et">Vender antes de diagnosticar</div><div class="eb">Apresentar a oferta antes de entender a dor, o padrão e a abertura. Gera venda desalinhada.</div></div>
+      <div class="ei"><div class="et">Confundir interesse com prontidão</div><div class="eb">Pessoa animada na call não é necessariamente pronta para processo profundo.</div></div>
+      <div class="ei"><div class="et">Confundir dor com abertura</div><div class="eb">Ter dor clara não garante disponibilidade para revisar crenças. São variáveis independentes.</div></div>
+      <div class="ei"><div class="et">Tratar baixa prontidão como imaturidade</div><div class="eb">Baixa prontidão é condição operacional, não julgamento pessoal. Comunicar com elegância.</div></div>
+      <div class="ei"><div class="et">Tentar convencer anti-ICP</div><div class="eb">Convencer quem não tem prontidão gera venda, mas não gera resultado. Custo alto para ambas.</div></div>
+      <div class="ei"><div class="et">Oferecer mentoria para quem precisa de produto inicial</div><div class="eb">O produto inicial existe para amadurecer. Pular essa etapa desequilibra a entrega.</div></div>
+      <div class="ei"><div class="et">Ignorar rigidez cognitiva</div><div class="eb">Respostas prontas para tudo é sinal claro. Ignorar isso gera resistência no processo.</div></div>
+      <div class="ei"><div class="et">Reduzir preço antes de entender valor</div><div class="eb">Desconto prematuro sinaliza insegurança e reduz a percepção de valor da oferta.</div></div>
+      <div class="ei"><div class="et">Fazer proposta sem implicação</div><div class="eb">Sem mostrar o custo de continuar igual, o valor do processo não é percebido.</div></div>
+      <div class="ei"><div class="et">Fechar sem handoff</div><div class="eb">Sem transferir o que foi levantado na call, a entrega começa do zero.</div></div>
+      <div class="ei"><div class="et">Aceitar cliente desalinhado por pressão de caixa</div><div class="eb">O custo operacional, emocional e reputacional sempre supera o ganho financeiro imediato.</div></div>
+      <div class="ei"><div class="et">Depender apenas da intuição</div><div class="eb">Intuição pode ser precisa, mas não é auditável. O score existe para sustentar a decisão com critério.</div></div>
+    </div>
+  </section>
+
+  <!-- 18 CAMINHO DE APLICAÇÃO -->
+  <section class="sec" id="s-acao">
+    <div class="sech"><span class="secn">18</span><h2 class="sect">Caminho de Aplicação</h2></div>
+    <div class="al">
+      <div class="ai"><div class="an">1</div><div class="at"><strong>Registrar origem do lead</strong> antes de iniciar qualquer conversa.</div></div>
+      <div class="ai"><div class="an">2</div><div class="at"><strong>Conduzir diagnóstico pelas categorias</strong> A a G conforme o contexto da conversa.</div></div>
+      <div class="ai"><div class="an">3</div><div class="at"><strong>Medir abertura de 0 a 10</strong> usando a pergunta obrigatória.</div></div>
+      <div class="ai"><div class="an">4</div><div class="at"><strong>Aplicar score de prontidão</strong> nos 10 critérios após o diagnóstico.</div></div>
+      <div class="ai"><div class="an">5</div><div class="at"><strong>Classificar encaminhamento</strong> com base no score, abertura e expectativa.</div></div>
+      <div class="ai"><div class="an">6</div><div class="at"><strong>Usar o script correspondente</strong> para comunicar o encaminhamento com clareza e elegância.</div></div>
+      <div class="ai"><div class="an">7</div><div class="at"><strong>Registrar a decisão</strong> nos campos de registro operacional.</div></div>
+      <div class="ai"><div class="an">8</div><div class="at"><strong>Fazer handoff completo</strong> se houver venda fechada.</div></div>
+      <div class="ai"><div class="an">9</div><div class="at"><strong>Revisar resultado após a call</strong> — o encaminhamento foi correto? Ajustar critério se necessário.</div></div>
+    </div>
+  </section>
+
+  <!-- 19 SINAIS DE APLICAÇÃO -->
+  <section class="sec" id="s-kpi">
+    <div class="sech"><span class="secn">19</span><h2 class="sect">Sinais de Aplicação</h2></div>
+    <div class="kg">
+      <div class="ki kp"><div class="kl">Indicador Principal</div><div class="kv">Taxa de conversas qualificadas com aderência ao ICP</div></div>
+      <div class="ki"><div class="kl">Leads qualificados</div><div class="kv">Percentual com score e abertura registrados</div></div>
+      <div class="ki"><div class="kl">Enviados para mentoria</div><div class="kv">Leads com score 18+ e abertura 7+</div></div>
+      <div class="ki"><div class="kl">Enviados para produto inicial</div><div class="kv">Score 12–17</div></div>
+      <div class="ki"><div class="kl">Em nutrição</div><div class="kv">Score abaixo de 12 com abertura parcial</div></div>
+      <div class="ki"><div class="kl">Não aderentes filtrados</div><div class="kv">Leads corretamente não avançados</div></div>
+      <div class="ki"><div class="kl">Taxa de fechamento</div><div class="kv">Leads qualificados que fecharam mentoria</div></div>
+      <div class="ki"><div class="kl">Venda desalinhada evitada</div><div class="kv">Leads com baixa prontidão não avançados</div></div>
+      <div class="ki"><div class="kl">Tempo médio de decisão</div><div class="kv">Tempo entre call e fechamento</div></div>
+      <div class="ki"><div class="kl">Qualidade do handoff</div><div class="kv">Campos preenchidos no handoff para onboarding</div></div>
+    </div>
+    <div class="appr">
+      <div class="appi">&#10003;</div>
+      <div class="appt">Sinal de clareza: a decisão comercial deixa de ser subjetiva e passa a seguir score, abertura, prontidão e expectativa alinhada. Débora consegue explicar por que avançou ou não avançou com cada lead.</div>
+    </div>
+    <div style="margin-top:16px;">
+      <p style="font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--tm);margin-bottom:9px;">Alertas de risco</p>
+      <div class="risk">Taxa de mentorados com resistência no processo: indica que qualificação está deixando passar baixa prontidão. Auditar score das últimas vendas.</div>
+      <div class="risk">Nenhum lead enviado para produto inicial: pode indicar que o produto inicial ainda não está claro. Revisar o framework de Funil de Consciência.</div>
+      <div class="risk">Decisões sem score registrado: protocolo não está sendo aplicado. Retornar ao checklist pré-call e etapas da conversa.</div>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <span class="fb">Débora Delgado</span>
+    <div class="fm"><span>Framework Interno</span><span>Protocolo de Qualificação Comercial</span><span>Estruturado por Continuum AI Systems</span></div>
+  </footer>
+</div>
+</div>
+
+<script>
+/* THEME */
+(function(){
+  var el=document.getElementById('daRoot04'),btn=document.getElementById('tb04'),s;
+  try{s=localStorage.getItem('da4-theme')}catch(e){}
+  if(s==='dark'){el.classList.add('dark');btn.textContent='Light';}
+  window.dt04=function(){
+    var d=el.classList.toggle('dark');
+    btn.textContent=d?'Light':'Dark';
+    try{localStorage.setItem('da4-theme',d?'dark':'light')}catch(e){}
+  };
+})();
+
+/* SCROLL */
+window.dsg=function(id){var e=document.getElementById(id);if(e)e.scrollIntoView({behavior:'smooth',block:'start'});};
+
+/* CHECKLIST */
+window.dck=function(item,prefix){
+  item.classList.toggle('ck');
+  var all=document.querySelectorAll('#'+prefix+'-list .cli');
+  var done=document.querySelectorAll('#'+prefix+'-list .cli.ck').length;
+  document.getElementById(prefix+'-prog').textContent=done+' de '+all.length+' '+(prefix==='prec'?'verificados':'concluídos');
+};
+
+/* SCORE */
+(function(){
+  var crit=['Clareza da dor','Reconhecimento de padrão','Abertura a novas perspectivas','Autorresponsabilidade','Desejo de transformação real','Relação com trabalho e valor','Capacidade financeira','Expectativa alinhada','Respeito pela profundidade','Urgência legítima'];
+  var scores=new Array(crit.length).fill(null);
+  var cont=document.getElementById('srows04'),tv=document.getElementById('st04'),rv=document.getElementById('sr04');
+  function render(){
+    cont.innerHTML='';
+    crit.forEach(function(n,i){
+      var row=document.createElement('div');row.className='sr';
+      var nm=document.createElement('span');nm.className='srn';nm.textContent=n;
+      var bs=document.createElement('div');bs.className='srbs';
+      [0,1,2,3].forEach(function(v){
+        var b=document.createElement('button');
+        b.className='srb'+(scores[i]===v?' a'+v:'');
+        b.textContent=v;
+        b.onclick=function(){scores[i]=v;render();update();};
+        bs.appendChild(b);
+      });
+      row.appendChild(nm);row.appendChild(bs);cont.appendChild(row);
+    });
+  }
+  function update(){
+    var filled=scores.filter(function(s){return s!==null;});
+    var tot=filled.reduce(function(a,b){return a+b;},0);
+    tv.textContent=tot;
+    rv.style.background='';rv.style.color='';rv.style.border='';
+    if(filled.length<crit.length){rv.textContent=filled.length+' de '+crit.length+' preenchidos';rv.className='sres';return;}
+    if(tot>=24){rv.textContent='Alta Prontidão — Mentoria';rv.className='sres sh';}
+    else if(tot>=18){rv.textContent='Boa Aderência — Aprofundar';rv.className='sres sm';}
+    else if(tot>=12){rv.textContent='Produto Inicial';rv.className='sres sl';}
+    else{rv.textContent='Não Aderente Agora';rv.className='sres sn';}
+  }
+  render();
+})();
+
+/* TOGGLE HELPERS */
+window.toggleCsi=function(head){
+  var body=head.parentElement.querySelector('.csi-body');
+  body.classList.toggle('open');
+};
+window.toggleScript=function(head){
+  var body=head.parentElement.querySelector('.scard-body');
+  var btn=head.querySelector('.scard-toggle');
+  var open=body.classList.toggle('open');
+  btn.textContent=open?'- fechar':'+ ver script';
+};
+window.toggleObj=function(head){
+  var body=head.parentElement.querySelector('.obj-body');
+  body.classList.toggle('open');
+};
+window.toggleQcat=function(head){
+  var body=head.parentElement.querySelector('.qcat-body');
+  body.classList.toggle('open');
+};
+</script>
+</body>
+</html>

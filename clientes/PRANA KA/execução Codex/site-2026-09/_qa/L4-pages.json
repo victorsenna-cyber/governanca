@@ -1,0 +1,170 @@
+[
+  {
+    "url": "/",
+    "width": 390,
+    "overflow": false,
+    "h1": 1,
+    "duplicateIds": [],
+    "brokenImages": [],
+    "displayUnder600": [],
+    "folds": [
+      {
+        "id": "inicio",
+        "visual": true
+      },
+      {
+        "id": "credo",
+        "visual": true
+      },
+      {
+        "id": "portais",
+        "visual": true
+      },
+      {
+        "id": "escola",
+        "visual": true
+      },
+      {
+        "id": "metodo",
+        "visual": true
+      },
+      {
+        "id": "caminhos",
+        "visual": true
+      },
+      {
+        "id": "arte",
+        "visual": true
+      },
+      {
+        "id": "prana",
+        "visual": true
+      },
+      {
+        "id": "mulheres",
+        "visual": true
+      },
+      {
+        "id": "chamado",
+        "visual": true
+      }
+    ],
+    "deadAnchors": [],
+    "errors": []
+  },
+  {
+    "url": "/",
+    "width": 768,
+    "overflow": false,
+    "h1": 1,
+    "duplicateIds": [],
+    "brokenImages": [],
+    "displayUnder600": [],
+    "folds": [
+      {
+        "id": "inicio",
+        "visual": true
+      },
+      {
+        "id": "credo",
+        "visual": true
+      },
+      {
+        "id": "portais",
+        "visual": true
+      },
+      {
+        "id": "escola",
+        "visual": true
+      },
+      {
+        "id": "metodo",
+        "visual": true
+      },
+      {
+        "id": "caminhos",
+        "visual": true
+      },
+      {
+        "id": "arte",
+        "visual": true
+      },
+      {
+        "id": "prana",
+        "visual": true
+      },
+      {
+        "id": "mulheres",
+        "visual": true
+      },
+      {
+        "id": "chamado",
+        "visual": true
+      }
+    ],
+    "deadAnchors": [],
+    "errors": []
+  },
+  {
+    "url": "/",
+    "width": 1440,
+    "overflow": false,
+    "h1": 1,
+    "duplicateIds": [],
+    "brokenImages": [],
+    "displayUnder600": [],
+    "folds": [
+      {
+        "id": "inicio",
+        "visual": true
+      },
+      {
+        "id": "credo",
+        "visual": true
+      },
+      {
+        "id": "portais",
+        "visual": true
+      },
+      {
+        "id": "escola",
+        "visual": true
+      },
+      {
+        "id": "metodo",
+        "visual": true
+      },
+      {
+        "id": "caminhos",
+        "visual": true
+      },
+      {
+        "id": "arte",
+        "visual": true
+      },
+      {
+        "id": "prana",
+        "visual": true
+      },
+      {
+        "id": "mulheres",
+        "visual": true
+      },
+      {
+        "id": "chamado",
+        "visual": true
+      }
+    ],
+    "deadAnchors": [],
+    "errors": []
+  },
+  {
+    "url": "/",
+    "noJS": {
+      "text": 4653,
+      "links": 0,
+      "offer": false,
+      "policyVisible": false
+    }
+  }
+]

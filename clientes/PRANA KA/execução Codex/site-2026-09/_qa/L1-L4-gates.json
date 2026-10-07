@@ -1,0 +1,83 @@
+{
+  "mentoria": {
+    "geometries": 4,
+    "visiblePrice": [],
+    "policyHidden": true,
+    "purchaseTargets": [
+      "https://wa.me/5548984248922?text=Oi%20Prana!%20Vim%20pelo%20site%20do%20Templo%20Dourado%20e%20quero%20saber%20mais%20sobre%20a%20mentoria.",
+      "https://wa.me/5548984248922?text=Oi%20Prana!%20Vim%20pelo%20site%20do%20Templo%20Dourado%20e%20quero%20saber%20mais%20sobre%20a%20mentoria."
+    ],
+    "heroSeal": true,
+    "footerSeal": true,
+    "creds": [
+      "Desde 2021",
+      "quartas, 19h"
+    ],
+    "nativeFAQ": true,
+    "equivalentEnglish": "http://127.0.0.1:8794/en/mentorship/"
+  },
+  "visao-uterina": {
+    "geometries": 5,
+    "visiblePrice": [
+      "R$\n333"
+    ],
+    "policyHidden": true,
+    "purchaseTargets": [
+      "https://wa.me/5548984248922?text=Ol%C3%A1%2C%20Prana!%20Vim%20pela%20p%C3%A1gina%20da%20Vis%C3%A3o%20Uterina%20e%20quero%20saber%20o%20valor%20e%20os%20hor%C3%A1rios%20para%20uma%20sess%C3%A3o%20individual.",
+      "https://wa.me/5548984248922?text=Ol%C3%A1%2C%20Prana!%20Vim%20pela%20p%C3%A1gina%20da%20Vis%C3%A3o%20Uterina%20e%20quero%20saber%20o%20valor%20e%20os%20hor%C3%A1rios%20para%20uma%20sess%C3%A3o%20individual.",
+      "https://wa.me/5548984248922?text=Ol%C3%A1%2C%20Prana!%20Vim%20pela%20p%C3%A1gina%20da%20Vis%C3%A3o%20Uterina%20e%20quero%20agendar%20minha%20sess%C3%A3o.",
+      "https://wa.me/5548984248922?text=Ol%C3%A1%2C%20Prana!%20Vim%20pela%20p%C3%A1gina%20da%20Vis%C3%A3o%20Uterina%20e%20quero%20agendar%20minha%20sess%C3%A3o.",
+      "https://wa.me/5548984248922?text=Ol%C3%A1%2C%20Prana!%20Vim%20pela%20p%C3%A1gina%20da%20Vis%C3%A3o%20Uterina%20e%20quero%20saber%20o%20valor%20e%20os%20hor%C3%A1rios%20para%20uma%20sess%C3%A3o%20individual."
+    ],
+    "heroSeal": true,
+    "footerSeal": true,
+    "creds": [],
+    "nativeFAQ": true,
+    "equivalentEnglish": "http://127.0.0.1:8794/en/uterine-vision/"
+  },
+  "curso": {
+    "geometries": 3,
+    "visiblePrice": [
+      "R$ 97",
+      "R$ 97"
+    ],
+    "policyHidden": true,
+    "purchaseTargets": [
+      "https://wa.me/5548984248922?text=Oi%20Prana!%20Quero%20entrar%20no%20Despertar%20do%20Prazer%20Sagrado.%20Como%20fa%C3%A7o%3F",
+      "https://wa.me/5548984248922?text=Oi%20Prana!%20Quero%20entrar%20no%20Despertar%20do%20Prazer%20Sagrado.%20Como%20fa%C3%A7o%3F",
+      "https://wa.me/5548984248922?text=Oi%20Prana!%20Quero%20entrar%20no%20Despertar%20do%20Prazer%20Sagrado.%20Como%20fa%C3%A7o%3F",
+      "https://wa.me/5548984248922?text=Oi%20Prana!%20Quero%20entrar%20no%20Despertar%20do%20Prazer%20Sagrado.%20Como%20fa%C3%A7o%3F"
+    ],
+    "heroSeal": true,
+    "footerSeal": true,
+    "creds": [],
+    "nativeFAQ": true,
+    "equivalentEnglish": "http://127.0.0.1:8794/en/course/"
+  },
+  "home": {
+    "order": [
+      "inicio",
+      "credo",
+      "portais",
+      "escola",
+      "metodo",
+      "caminhos",
+      "arte",
+      "prana",
+      "mulheres",
+      "chamado"
+    ],
+    "credo": "Aqui o corpo é templo. O ventre é altar. A voz é portal. A arte é oração. O prazer é meditação. A sombra é mestra. O amor é lei.",
+    "prices": false,
+    "geometries": 4,
+    "proofCards": 4,
+    "pending": 1
+  },
+  "sound": {
+    "panel": true,
+    "noAutoplay": true,
+    "escapeCloses": true
+  },
+  "cdnFailureContent": true,
+  "pass": true
+}

@@ -1,0 +1,112 @@
+/* Débora Delgado — WordPress Compatibility
+   Previne conflitos com temas e o editor Gutenberg */
+
+/* Reset escopado */
+.debora-artifact,
+.debora-artifact * {
+  box-sizing: border-box;
+}
+
+/* Evita que o tema injete espaçamentos em headings */
+.debora-artifact h1,
+.debora-artifact h2,
+.debora-artifact h3,
+.debora-artifact h4,
+.debora-artifact h5,
+.debora-artifact h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Previne herança de line-height do tema */
+.debora-artifact p,
+.debora-artifact li,
+.debora-artifact div,
+.debora-artifact span {
+  line-height: inherit;
+}
+
+/* Remove sombra de links injetada por alguns temas */
+.debora-artifact a,
+.debora-artifact a:visited,
+.debora-artifact a:hover,
+.debora-artifact a:focus {
+  box-shadow: none;
+  text-decoration: none;
+  outline: none;
+}
+
+/* Reset de tabelas — alguns temas adicionam bordas globais */
+.debora-artifact table,
+.debora-artifact th,
+.debora-artifact td {
+  border: none;
+  border-collapse: collapse;
+}
+
+/* Reset de botões injetados pelo tema */
+.debora-artifact button,
+.debora-artifact [type="button"],
+.debora-artifact [type="reset"],
+.debora-artifact [type="submit"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+/* Garante que imagens não quebrem layout */
+.debora-artifact img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Bloco HTML Gutenberg — remove margem extra */
+.wp-block-html .debora-artifact {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Editor Gutenberg — previne padding de alinhamento */
+.wp-block-html {
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Temas que usam max-width em conteúdo */
+.entry-content .debora-artifact,
+.post-content .debora-artifact,
+.page-content .debora-artifact,
+.site-main .debora-artifact {
+  max-width: none;
+  width: 100%;
+}
+
+/* Evita overflow em mobile */
+@media (max-width: 768px) {
+  .debora-artifact {
+    overflow-x: hidden;
+  }
+}
+
+/* Temas que alteram font-size em strong/em */
+.debora-artifact strong {
+  font-weight: 600;
+}
+
+.debora-artifact em {
+  font-style: italic;
+}
+
+/* Previne que tema aplique padding extra em ul/ol */
+.debora-artifact ul,
+.debora-artifact ol {
+  padding-left: 0;
+  margin-left: 0;
+}

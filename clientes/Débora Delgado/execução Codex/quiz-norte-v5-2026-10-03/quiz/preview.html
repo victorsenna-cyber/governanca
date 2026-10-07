@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Componentes do quiz — Etapa 1</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="preview-host">
+    <section class="preview-screen is-visible" data-view="opening" aria-label="Abertura">
+      <div class="progress-wrap opening-progress"><div class="progress-track"><span style="width:3%"></span></div></div>
+      <div class="opening-content">
+        <p class="eyebrow">TESTE GRATUITO PARA LÍDERES:</p>
+        <h1 class="opening-title">EM QUE <span>NÍVEL</span> ESTÁ A SUA LIDERANÇA DE PESSOAS?</h1>
+        <p class="opening-subtitle">Em 3 minutos, <u>um primeiro norte</u> pela ótica do Eneagrama, sem decorar tipo nenhum e sem rótulo.</p>
+        <p class="start-cue">↓ RESPONDA PARA COMEÇAR ↓</p>
+        <h2 class="opening-question">Você é homem ou mulher?</h2>
+        <div class="gender-grid">
+          <button class="gender-option" type="button"><span class="gender-emoji">👨‍💼</span><span class="gender-label">Homem</span></button>
+          <button class="gender-option" type="button"><span class="gender-emoji">👩‍💼</span><span class="gender-label">Mulher</span></button>
+        </div>
+      </div>
+      <footer class="opening-footer">Débora Delgado · deboradelgado.space</footer>
+    </section>
+
+    <section class="preview-screen" data-view="age" aria-label="Grade de idade">
+      <div class="topline"><button class="back" aria-label="Voltar" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18 9 12l6-6M9 12h12"/></svg></button><div class="progress-wrap"><div class="progress-track"><span style="width:6%"></span></div></div></div>
+      <div class="question-shell age-shell">
+        <h1 class="question-title">Qual é a sua idade?</h1>
+        <div class="age-grid">
+          <button class="age-option" type="button"><span class="age-media"></span><span>18 a 29</span></button>
+          <button class="age-option" type="button"><span class="age-media"></span><span>30 a 39</span></button>
+          <button class="age-option" type="button"><span class="age-media"></span><span>40 a 49</span></button>
+          <button class="age-option" type="button"><span class="age-media"></span><span>50 ou mais</span></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="preview-screen" data-view="list" aria-label="Pergunta em lista">
+      <div class="topline"><button class="back" aria-label="Voltar" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18 9 12l6-6M9 12h12"/></svg></button><div class="progress-wrap"><div class="progress-track"><span style="width:12%"></span></div></div></div>
+      <div class="question-shell list-shell">
+        <h1 class="question-title">Quantas pessoas você lidera hoje?</h1>
+        <div class="answer-list">
+          <button class="answer-option" type="button"><span class="answer-marker" aria-hidden="true"></span><span>1 a 5</span></button>
+          <button class="answer-option" type="button"><span class="answer-marker" aria-hidden="true"></span><span>6 a 15</span></button>
+          <button class="answer-option" type="button"><span class="answer-marker" aria-hidden="true"></span><span>16 a 50</span></button>
+          <button class="answer-option" type="button"><span class="answer-marker" aria-hidden="true"></span><span>Mais de 50</span></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="preview-screen" data-view="insert" aria-label="Inserção">
+      <div class="topline"><button class="back" aria-label="Voltar" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18 9 12l6-6M9 12h12"/></svg></button><div class="progress-wrap"><div class="progress-track"><span style="width:18%"></span></div></div></div>
+      <div class="insert-proof-shell">
+        <h1 class="insert-proof-title"><em>1 a 5</em> pessoas, <em>1 a 5</em> formas de entender o mesmo pedido.</h1>
+        <p class="insert-copy">As próximas 8 situações mostram em que nível você está para lidar com isso. Responda pelo que você faz hoje, não pelo que gostaria de fazer.</p>
+        <div class="proof-image-space" aria-hidden="true"></div>
+      </div>
+      <button class="fixed-cta fixed-cta--black" type="button">Continuar</button>
+    </section>
+
+    <section class="preview-screen" data-view="insert-mid" aria-label="Inserção de meio">
+      <div class="topline"><button class="back" aria-label="Voltar" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18 9 12l6-6M9 12h12"/></svg></button><div class="progress-wrap"><div class="progress-track"><span style="width:58%"></span></div></div></div>
+      <div class="insert-shell">
+        <h1 class="insert-banner">Você está na metade.</h1>
+        <p class="insert-copy">Até aqui, as situações mostram como você pede e como dá feedback. Agora vêm a escuta, os conflitos e o quanto você conhece quem lidera.</p>
+      </div>
+      <button class="fixed-cta fixed-cta--black" type="button">Continuar</button>
+    </section>
+
+    <section class="preview-screen" data-view="desire" aria-label="Desejo">
+      <div class="topline"><button class="back" aria-label="Voltar" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18 9 12l6-6M9 12h12"/></svg></button><div class="progress-wrap"><div class="progress-track"><span style="width:90%"></span></div></div></div>
+      <div class="question-shell list-shell">
+        <h1 class="question-title">Hoje, o que você mais quer na sua liderança?</h1>
+        <div class="answer-list">
+          <button class="answer-option" type="button"><span class="answer-marker">🎯</span><span>Que o combinado aconteça de primeira</span></button>
+          <button class="answer-option" type="button"><span class="answer-marker">💬</span><span>Que o meu feedback chegue na pessoa</span></button>
+          <button class="answer-option" type="button"><span class="answer-marker">🤝</span><span>Relações mais leves no time</span></button>
+          <button class="answer-option" type="button"><span class="answer-marker">🧘</span><span>Parar de puxar tudo para mim</span></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="preview-screen" data-view="loading" aria-label="Carregamento">
+      <div class="topline"><button class="back" aria-label="Voltar" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18 9 12l6-6M9 12h12"/></svg></button><div class="progress-wrap"><div class="progress-track"><span style="width:75%"></span></div></div></div>
+      <div class="loading-shell">
+        <div class="loading-label">Calculando o seu nível…</div>
+        <div class="loading-track"><span></span></div>
+      </div>
+    </section>
+
+    <section class="preview-screen" data-view="result" aria-label="Resultado">
+      <div class="topline"><button class="back" aria-label="Voltar" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18 9 12l6-6M9 12h12"/></svg></button><div class="progress-wrap"><div class="progress-track"><span style="width:75%"></span></div></div></div>
+      <main class="result-shell">
+        <p class="result-intro">Aqui está o seu resultado...</p>
+        <h1 class="result-banner">COM BASE NAS SUAS RESPOSTAS, A SUA LIDERANÇA DE PESSOAS ESTÁ NO NÍVEL {nivel}</h1>
+        <div class="result-pills"><span class="pill pill-before">Hoje</span><span class="pill pill-after">Com o método da Débora</span></div>
+        <div class="metric-list">
+          <div class="metric-row"><span>Pedir e delegar</span><div class="metric-bars"><i style="width:50%"></i><b style="width:82%"></b></div></div>
+          <div class="metric-row"><span>Feedback e cobrança</span><div class="metric-bars"><i style="width:50%"></i><b style="width:82%"></b></div></div>
+          <div class="metric-row"><span>Escuta e comunicação</span><div class="metric-bars"><i style="width:50%"></i><b style="width:82%"></b></div></div>
+          <div class="metric-row"><span>Conflitos e relações</span><div class="metric-bars"><i style="width:50%"></i><b style="width:82%"></b></div></div>
+          <div class="metric-row"><span>Conhecer quem você lidera</span><div class="metric-bars"><i style="width:50%"></i><b style="width:82%"></b></div></div>
+        </div>
+        <h2 class="section-title">Você respondeu que...</h2>
+        <div class="echo-grid">
+          <article class="echo-card"><h3>Você lidera <em>1 a 5</em> pessoas</h3><p>São 1 a 5 formas diferentes de entender o mesmo pedido.</p></article>
+          <article class="echo-card"><h3>Lidera há <em>de 4 a 10 anos</em></h3><p>Você já sabe gerar resultado. O que falta é gastar menos energia para isso.</p></article>
+          <article class="echo-card"><h3><em>Estuda ou aplica</em> o Eneagrama</h3><p>Você já tem a base. Falta levar isso para cada pedido, feedback e conversa difícil.</p></article>
+          <article class="echo-card"><h3>O que você mais quer é <em>que o combinado aconteça de primeira</em></h3><p>E é exatamente isso que fica mais fácil quando você entende como cada pessoa funciona.</p></article>
+        </div>
+        <p class="result-bridge">Por isso...</p>
+        <h2 class="leverage-banner">A SUA MAIOR ALAVANCA É: {ÁREA EM CAIXA ALTA}</h2>
+        <p class="leverage-copy">É onde o combinado se perde: o pedido sai claro para você e chega de outro modo para quem recebe. Clique no botão abaixo para ver o próximo passo.</p>
+      </main>
+      <button class="fixed-cta fixed-cta--green" type="button">Continuar</button>
+    </section>
+
+    <section class="preview-screen" data-view="capture" aria-label="Captura">
+      <div class="topline"><button class="back" aria-label="Voltar" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18 9 12l6-6M9 12h12"/></svg></button><div class="progress-wrap"><div class="progress-track"><span style="width:96%"></span></div></div></div>
+      <div class="capture-shell">
+        <p class="capture-kicker">O seu nível está pronto.</p>
+        <h1 class="question-title">Para onde enviamos o seu resultado?</h1>
+        <form class="capture-form">
+          <label>Nome<input type="text" autocomplete="name"></label>
+          <label>WhatsApp com DDD<input type="tel" autocomplete="tel"></label>
+          <label>E-mail (opcional)<input type="email" autocomplete="email"></label>
+        </form>
+        <p class="consent">Ao continuar, você concorda em receber o seu resultado e conteúdos da Débora Delgado. Seus dados não são compartilhados.</p>
+        <p class="capture-error">Preencha nome e WhatsApp para ver o resultado.</p>
+      </div>
+      <button class="fixed-cta fixed-cta--black" type="button">Ver o meu norte</button>
+    </section>
+
+    <section class="preview-screen" data-view="nextstep" aria-label="Página do próximo passo">
+      <div class="nextstep-shell">
+        <p class="nextstep-tag">FALTA SÓ UM PASSO:</p>
+        <h1 class="nextstep-title">O SEU RESULTADO MOSTRA ONDE VOCÊ ESTÁ. A AULA MOSTRA <em>COMO SAIR DAÍ</em>.</h1>
+        <p class="nextstep-subtitle">Uma aula curta da Débora Delgado, pela ótica do Eneagrama, para líderes que querem que o time entregue mais com menos esforço, o seu e o deles.</p>
+        <div class="before-after" aria-hidden="true"><span></span><span></span></div>
+        <p class="scroll-cue">↓ ROLE A TELA E VEJA O PRÓXIMO PASSO ↓</p>
+        <h2 class="section-title">Na aula, você vai ver:</h2>
+        <div class="lesson-list">
+          <article class="lesson-card"><p><strong>Por que</strong> o pedido que é claro para você chega de outro modo para quem recebe</p></article>
+          <article class="lesson-card"><p><strong>As Nove Línguas:</strong> você lidera em uma língua, o seu time fala nove</p></article>
+          <article class="lesson-card"><p><strong>Como</strong> entender o que move cada pessoa, sem decorar tipo nenhum</p></article>
+          <article class="lesson-card"><p><strong>O que muda</strong> na sua maior alavanca: {área}</p></article>
+        </div>
+        <p class="level-echo">Você está no <strong>Nível {nivel}</strong>. A aula começa exatamente do ponto em que a maioria dos líderes trava.</p>
+        <div class="host-card"><div class="host-photo" aria-hidden="true"></div><div><strong>Débora Delgado</strong><p>[[ FALTA: uma linha de credencial com número ]]</p></div></div>
+        <p class="time-note">Gratuita · cerca de 20 minutos</p>
+        <section class="faq"><details open><summary>A aula é gratuita?</summary><p>Sim.</p></details><details><summary>Preciso conhecer o Eneagrama?</summary><p>Não. Você não precisa decorar tipo nenhum.</p></details><details><summary>Quanto tempo dura?</summary><p>Cerca de 20 minutos.</p></details></section>
+        <footer class="legal-footer"><p>Débora Delgado · deboradelgado.space</p><p>[[ FALTA: CPF/CNPJ ]]</p><p>Ao acessar esta página, você está de acordo com: <a href="#">Termos de Uso</a> | <a href="#">Política de Privacidade</a></p><small>Este quiz é um ponto de partida, não um diagnóstico de personalidade. Ele não indica o seu tipo no Eneagrama.</small></footer>
+      </div>
+      <button class="fixed-cta fixed-cta--green" type="button">Quero assistir à aula</button>
+    </section>
+  </div>
+  <script src="preview.js"></script>
+</body>
+</html>

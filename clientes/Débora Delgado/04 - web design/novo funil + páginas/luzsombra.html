@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Luz e Sombra da sua Liderança — Débora Delgado</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#f6f1ea; --card:#fffdf9; --ink:#3d352e; --soft:#6f6459; --line:#e7ddd1;
+    --accent:#3f6b57; --accent-dark:#2f5245; --salvia:#7f9c78; --argila:#a86b52; --argila-dark:#8a5334; --dir:#4f8278;
+    --shadow:0 8px 30px rgba(60,70,55,.10);
+    --serif:"Fraunces",Georgia,serif; --sans:"Inter",system-ui,sans-serif;
+  }
+  *{box-sizing:border-box}
+  body{margin:0; font-family:var(--sans); background:var(--bg); color:var(--ink); line-height:1.68;}
+  .wrap{max-width:760px; margin:0 auto; padding:26px 22px 80px;}
+  header.hero{text-align:center; padding:44px 28px; background:linear-gradient(160deg,#4f8278,#2f5245); color:#fff; border-radius:22px; box-shadow:var(--shadow); margin-bottom:22px;}
+  header.hero .kick{color:#cfe0d4; font-weight:700; letter-spacing:2px; font-size:.74rem; text-transform:uppercase;}
+  header.hero h1{font-family:var(--serif); font-weight:600; margin:12px 0 10px; font-size:2.05rem; line-height:1.12;}
+  header.hero p{margin:0 auto; color:#dbe8e0; font-size:1rem; max-width:480px;}
+
+  .picker{background:var(--card); border:1px solid var(--line); border-radius:16px; box-shadow:var(--shadow); padding:20px 22px; margin-bottom:16px; text-align:center;}
+  .picker .lbl{font-size:.72rem; font-weight:800; text-transform:uppercase; letter-spacing:1.5px; color:var(--argila); margin-bottom:12px;}
+  .nums{display:flex; flex-wrap:wrap; gap:8px; justify-content:center;}
+  .nums button{width:46px; height:46px; border-radius:50%; border:1.5px solid var(--line); background:#fff; color:var(--soft); font-weight:700; font-size:1.05rem; cursor:pointer; font-family:inherit; transition:.14s;}
+  .nums button:hover{border-color:var(--accent);}
+  .nums button.on{background:var(--accent); color:#fff; border-color:var(--accent); transform:translateY(-2px);}
+  .hint{font-size:.86rem; color:var(--soft); margin-top:12px;}
+  .hint a{color:var(--accent); font-weight:600;}
+
+  #result{display:none;}
+  #result.show{display:block;}
+  .tipo-nome{text-align:center; font-family:var(--serif); font-weight:600; font-size:1.5rem; color:var(--accent-dark); margin:6px 0 16px;}
+  .ls-card{border-radius:18px; box-shadow:var(--shadow); padding:24px 26px; margin-bottom:14px;}
+  .ls-card .tag{font-size:.68rem; font-weight:800; text-transform:uppercase; letter-spacing:1.5px; display:inline-block; margin-bottom:8px;}
+  .ls-card h2{font-family:var(--serif); font-weight:600; font-size:1.4rem; margin:0 0 10px;}
+  .ls-card p{margin:0; font-size:1.04rem;}
+  .luz{background:linear-gradient(160deg,#eef3ec,#e3ede0); border:1px solid #d4e2cc; border-left:6px solid var(--accent);}
+  .luz .tag{color:var(--accent-dark);} .luz h2{color:var(--accent-dark);}
+  .sombra{background:#faf1e9; border:1px solid #ecd9c7; border-left:6px solid var(--argila);}
+  .sombra .tag{color:var(--argila-dark);} .sombra h2{color:var(--argila-dark);}
+  .fecho{background:var(--card); border:1px solid var(--line); border-radius:14px; padding:16px 20px; font-size:.98rem; color:var(--soft); margin-top:4px;}
+  .fecho b{color:var(--accent-dark);}
+  .cta{background:linear-gradient(160deg,#4f8278,#3f6b57); color:#fff; border-radius:18px; box-shadow:var(--shadow); padding:26px; margin-top:16px; text-align:center;}
+  .cta h2{font-family:var(--serif); font-weight:600; font-size:1.4rem; margin:0 0 8px; color:#fff;}
+  .cta p{margin:0 auto 15px; font-size:.95rem; color:#eaf4f1; max-width:440px;}
+  .cta a{display:inline-block; background:#fff; color:var(--accent-dark); font-weight:700; text-decoration:none; padding:12px 26px; border-radius:24px;}
+  .foot{text-align:center; color:var(--soft); font-size:.82rem; margin-top:26px; line-height:1.5;}
+</style>
+
+<style>
+.lnr-nav{position:sticky;top:0;z-index:9999;display:flex;align-items:center;justify-content:space-between;gap:12px;background:#2f5245;color:#fff;padding:10px 18px;font-family:'Inter',system-ui,-apple-system,sans-serif;box-shadow:0 2px 12px rgba(0,0,0,.12);}
+.lnr-brand{color:#fff;font-weight:700;text-decoration:none;font-size:.98rem;letter-spacing:.3px;font-family:'Fraunces',Georgia,serif;}
+.lnr-links{display:flex;align-items:center;gap:3px;flex-wrap:wrap;}
+.lnr-links a{color:#e8f0ec;text-decoration:none;font-size:.82rem;font-weight:600;padding:6px 9px;border-radius:16px;}
+.lnr-links a:hover{background:rgba(255,255,255,.14);color:#fff;}
+.lnr-links a.lnr-cta{background:#a86b52;color:#fff;}
+.lnr-links a.lnr-cta:hover{background:#8a5334;}
+.lnr-toggle{display:none;background:none;border:none;color:#fff;font-size:1.35rem;cursor:pointer;line-height:1;}
+@media(max-width:760px){.lnr-nav{flex-wrap:wrap;}.lnr-toggle{display:block;}.lnr-links{display:none;flex-direction:column;align-items:stretch;width:100%;order:3;gap:2px;padding-top:6px;}.lnr-links.open{display:flex;}.lnr-links a{padding:9px 8px;}}
+</style>
+</head>
+<body>
+<nav class="lnr-nav">
+  <a class="lnr-brand" href="index.html">Liderança na Raiz</a>
+  <button class="lnr-toggle" aria-label="Abrir menu" onclick="var l=this.parentNode.querySelector('.lnr-links'); l.classList.toggle('open');">☰</button>
+  <div class="lnr-links">
+    <a href="index.html">Início</a>
+    <a href="comece.html">Comece por aqui</a>
+    <a href="quiz.html">Diagnóstico da liderança</a>
+    <a href="servicos.html">Serviços</a>
+    <a href="membros.html">Entrar</a>
+    <a class="lnr-cta" href="consultoria.html">Conversa gratuita</a>
+  </div>
+</nav>
+<div class="wrap">
+
+  <header class="hero">
+    <div class="kick">Entrega gratuita</div>
+    <h1>A luz e a sombra da sua liderança</h1>
+    <p>Toda personalidade tem um jeito de liderar que brilha e um ponto cego que cobra caro. Escolha o seu tipo e reconheça os dois em você.</p>
+  </header>
+
+  <div class="picker">
+    <div class="lbl">Escolha o seu tipo no Eneagrama</div>
+    <div class="nums" id="nums"></div>
+    <div class="hint">Ainda não sabe qual é o seu tipo? <a href="historias.html">Descubra pelas Histórias de Líderes</a>.</div>
+  </div>
+
+  <div id="result">
+    <div class="tipo-nome" id="tipoNome"></div>
+    <div class="ls-card luz">
+      <span class="tag">A sua luz</span>
+      <h2>Quando a sua liderança brilha</h2>
+      <p id="luzTxt"></p>
+    </div>
+    <div class="ls-card sombra">
+      <span class="tag">A sua sombra</span>
+      <h2>O ponto cego que cobra caro</h2>
+      <p id="sombraTxt"></p>
+    </div>
+    <div class="fecho">
+      A sombra não é um defeito pra esconder, é a sua luz levada ao automático. <b>Reconhecer já afrouxa o padrão.</b> Trabalhar a raiz dela, com cuidado, é o que liberta a sua liderança pra ficar leve e inteira.
+    </div>
+    <div class="cta">
+      <h2>Quer ir na raiz dessa sombra?</h2>
+      <p>Numa conversa gratuita a gente olha junto o que essa sombra trava na sua liderança hoje e o primeiro passo pra mudar.</p>
+      <a href="consultoria.html">Marcar minha conversa gratuita</a>
+    </div>
+  </div>
+
+  <p class="foot">Luz e Sombra da sua Liderança · Liderança na Raiz · Débora Delgado</p>
+</div>
+
+<script>
+const NOMES = {
+  1:"Tipo 1", 2:"Tipo 2", 3:"Tipo 3",
+  4:"Tipo 4", 5:"Tipo 5", 6:"Tipo 6",
+  7:"Tipo 7", 8:"Tipo 8", 9:"Tipo 9"
+};
+const LUZ = {
+  1:"A liderança do Um brilha em fazer o que é certo. Traz responsabilidade, integridade e um controle de qualidade que garante que as coisas sejam bem feitas. Transforma o complexo em processos claros, enxerga onde falta estrutura e a cria com habilidade, sempre orientada por melhoria e detalhe. Ninguém se esforça mais, e com mais boa intenção, pra que o padrão seja alto e justo.",
+  2:"A liderança do Dois brilha na conexão com as pessoas. Apoia com energia os esforços dos outros, sente de verdade a necessidade de cada um e tem um talento intuitivo pra colocar as pessoas nos lugares certos. Cuida do clima, motiva, celebra e cria vínculo, com uma ética forte de serviço e um olhar que enxerga o melhor de cada um.",
+  3:"A liderança do Três brilha em fazer acontecer. Estabelece e atinge metas, executa com intensidade, sabe vender uma ideia e ler o que cada plateia espera. Adapta-se a qualquer ambiente, escolhe as pessoas certas e inspira o time a buscar resultado, sempre com uma imagem de competência que as pessoas admiram.",
+  4:"A liderança do Quatro brilha na criatividade e na profundidade. Traz sensibilidade estética, intuição emocional e coragem de ser autêntico, puxando soluções diferenciadas e um padrão de excelência. Quando está conectada a uma causa que faz sentido, inspira as pessoas a superarem o próprio desempenho e a mostrarem quem de fato são.",
+  5:"A liderança do Cinco brilha pelo conhecimento e pela clareza de análise. Coleta e avalia informação como ninguém, enxerga como as coisas se conectam e mantém a objetividade e a calma no caos. Planeja, organiza recursos, respeita a autonomia das pessoas e é admirada pela competência e pela isenção.",
+  6:"A liderança do Seis brilha na antecipação e na lealdade. Avalia riscos com precisão, resolve problemas com uma mente analítica afiada e cria planos A e B que evitam desastres. Forma equipes coesas e confiáveis, ouve o time, atribui as conquistas ao grupo e luta por causas justas.",
+  7:"A liderança do Sete brilha no otimismo e na visão de possibilidades. Mantém o ânimo, transforma o negativo em positivo, imagina o que pode dar certo e contagia o time com energia. É criativa e versátil, resolve de formas não convencionais, envolve as pessoas nos talentos delas e comemora as conquistas.",
+  8:"A liderança do Oito brilha na força e na coragem. Vê o panorama, decide rápido, toma medidas ousadas e assume o comando no caos que os outros evitam. Protege ferozmente o time, é bom mentor pra quem tem força, lida de frente com o conflito e dá poder e autonomia a quem confia.",
+  9:"A liderança do Nove brilha na harmonia e na mediação. Apoia sem interesse próprio, enxerga todos os lados de uma questão e comunica com cuidado pra criar consenso e alinhamento. Cria um espaço seguro e igualitário, faz cada um se sentir importante, ouve com paciência e sustenta o time no longo prazo."
+};
+const SOMBRA = {
+  1:"A busca pela perfeição vira rigidez, como se só existisse um jeito certo de fazer. A crítica incessante, mesmo bem intencionada, cria um ambiente onde as pessoas se sentem controladas e com medo de errar, e falta o elogio. O padrão impossível gera estresse em você e nos colegas, e a rotina pode engessar a espontaneidade, a inovação e a criatividade do time.",
+  2:"O foco no outro pode virar dificuldade de dizer não, de impor limites e de cobrar direto. Fazer demais esgota e magoa, e é fácil sentir a dor do outro mais que a própria, esquecendo as próprias necessidades e às vezes bancando o mártir. Ao adoçar a verdade pra agradar, pode faltar o feedback honesto que o time precisa, e a liderança fica nos bastidores quando devia estar na frente.",
+  3:"A busca por resultado e por imagem pode atropelar as pessoas e a qualidade. No automático prioriza a velocidade e a própria evidência, tem dificuldade de delegar e de deixar o outro brilhar, e pode se esgotar tentando fazer tudo. Pode exagerar a verdade pra fechar o negócio, priorizar o estilo sobre a substância e, sob pressão, terceirizar a culpa pro time.",
+  4:"A oscilação emocional deixa o time sem saber o clima do dia e inseguro de quando se aproximar. A busca por uma estética perfeita pode travar a conclusão, e a sensação de não ser reconhecido tira a objetividade e vira crítica. Pode expressar mais emoção do que os outros conseguem acompanhar, julgar quem não faz o mesmo, e faltar constância nas tarefas rotineiras.",
+  5:"A necessidade de saber tudo antes de decidir pode travar o andamento do time. Costuma desvalorizar a emoção e a leitura da sala, decidir sozinho a partir das próprias análises e se fechar, ficando distante e inacessível. Esquece de valorizar, comemorar e estar presente, e a autossuficiência dificulta pedir ajuda e construir junto.",
+  6:"O foco no que pode dar errado pode criar um ambiente negativo, como se o sucesso não fosse possível, e enxergar problema onde não existe. A dúvida e a busca por validação podem travar a ação e o ímpeto de bater metas. Pode ficar preso ao questionamento, desconfiar demais e até boicotar o próprio crescimento pra não ficar em evidência.",
+  7:"O fluxo interminável de ideias pode confundir e dispersar o time. O otimismo em excesso pinta um cenário cor-de-rosa e faz pular a investigação dos problemas, e pode faltar foco, constância e atenção ao detalhe. Deixa o que é menos atraente pra última hora, evita o feedback difícil e, na dificuldade, tende a projetar a culpa em vez de assumir.",
+  8:"A força, quando não é modulada, atropela. O estilo de comando e controle, a decisão impulsiva e o feedback duro podem fazer as pessoas se sentirem menosprezadas ou passadas por cima. Pode achar que é o único capaz de fazer o que precisa, explodir quando contrariado, e ter dificuldade de ouvir crítica, de se mostrar vulnerável e de escolher a diplomacia quando ela resolveria melhor.",
+  9:"A busca por harmonia evita o conflito que às vezes é necessário. Presta mais atenção na agenda dos outros do que na própria, pode adoçar tanto o que diz que não comunica com clareza, e trava diante de decisões rápidas. Ao querer o consenso de todos, compromete o ritmo, evita encarar diferenças de hierarquia e, quando se sente controlado, para de cooperar em silêncio, numa resistência passiva."
+};
+
+const nums = document.getElementById('nums');
+for(let n=1;n<=9;n++){
+  const b=document.createElement('button'); b.textContent=n; b.dataset.n=n;
+  b.addEventListener('click',()=>escolher(n));
+  nums.appendChild(b);
+}
+function escolher(n){
+  try{ localStorage.setItem('lnr_tipo', String(n)); }catch(e){}
+  nums.querySelectorAll('button').forEach(b=> b.classList.toggle('on', b.dataset.n===String(n)));
+  document.getElementById('tipoNome').textContent = NOMES[n];
+  document.getElementById('luzTxt').textContent = LUZ[n];
+  document.getElementById('sombraTxt').textContent = SOMBRA[n];
+  const r=document.getElementById('result'); r.classList.add('show');
+  r.scrollIntoView({behavior:'smooth', block:'start'});
+}
+// se já tiver um tipo salvo, começa nele
+(function(){ let t=''; try{ t=localStorage.getItem('lnr_tipo')||''; }catch(e){} if(t && NOMES[t]) escolher(parseInt(t,10)); })();
+</script>
+<script src="nav.js"></script>
+</body>
+</html>

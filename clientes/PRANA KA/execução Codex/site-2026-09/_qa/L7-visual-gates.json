@@ -1,0 +1,308 @@
+{
+  "rows": [
+    {
+      "key": "home",
+      "lang": 0,
+      "emptyFolds": [],
+      "geometries": 4,
+      "heroSymbol": true,
+      "footerSymbol": true,
+      "rose": true,
+      "font": "Fraunces, \"Iowan Old Style\", Georgia, serif",
+      "markers": 0
+    },
+    {
+      "key": "templo",
+      "lang": 0,
+      "emptyFolds": [],
+      "geometries": 4,
+      "heroSymbol": true,
+      "footerSymbol": true,
+      "rose": true,
+      "font": "Fraunces, \"Iowan Old Style\", Georgia, serif",
+      "markers": 0
+    },
+    {
+      "key": "metodo",
+      "lang": 0,
+      "emptyFolds": [],
+      "geometries": 3,
+      "heroSymbol": true,
+      "footerSymbol": true,
+      "rose": true,
+      "font": "Fraunces, \"Iowan Old Style\", Georgia, serif",
+      "markers": 0
+    },
+    {
+      "key": "caminhos",
+      "lang": 0,
+      "emptyFolds": [],
+      "geometries": 3,
+      "heroSymbol": true,
+      "footerSymbol": true,
+      "rose": true,
+      "font": "Fraunces, \"Iowan Old Style\", Georgia, serif",
+      "markers": 0
+    },
+    {
+      "key": "mentoria",
+      "lang": 0,
+      "emptyFolds": [],
+      "geometries": 4,
+      "heroSymbol": true,
+      "footerSymbol": true,
+      "rose": true,
+      "font": "Fraunces, \"Iowan Old Style\", Georgia, serif",
+      "markers": 0
+    },
+    {
+      "key": "visao",
+      "lang": 0,
+      "emptyFolds": [],
+      "geometries": 5,
+      "heroSymbol": true,
+      "footerSymbol": true,
+      "rose": true,
+      "font": "Fraunces, \"Iowan Old Style\", Georgia, serif",
+      "markers": 0
+    },
+    {
+      "key": "curso",
+      "lang": 0,
+      "emptyFolds": [],
+      "geometries": 3,
+      "heroSymbol": true,
+      "footerSymbol": true,
+      "rose": true,
+      "font": "Fraunces, \"Iowan Old Style\", Georgia, serif",
+      "markers": 0
+    },
+    {
+      "key": "arte",
+      "lang": 0,
+      "emptyFolds": [],
+      "geometries": 3,
+      "heroSymbol": true,
+      "footerSymbol": true,
+      "rose": true,
+      "font": "Fraunces, \"Iowan Old Style\", Georgia, serif",
+      "markers": 0
+    },
+    {
+      "key": "prana",
+      "lang": 0,
+      "emptyFolds": [],
+      "geometries": 3,
+      "heroSymbol": true,
+      "footerSymbol": true,
+      "rose": true,
+      "font": "Fraunces, \"Iowan Old Style\", Georgia, serif",
+      "markers": 0
+    },
+    {
+      "key": "home",
+      "lang": 1,
+      "emptyFolds": [],
+      "geometries": 4,
+      "heroSymbol": true,
+      "footerSymbol": true,
+      "rose": true,
+      "font": "Fraunces, \"Iowan Old Style\", Georgia, serif",
+      "markers": 36
+    },
+    {
+      "key": "templo",
+      "lang": 1,
+      "emptyFolds": [],
+      "geometries": 4,
+      "heroSymbol": true,
+      "footerSymbol": true,
+      "rose": true,
+      "font": "Fraunces, \"Iowan Old Style\", Georgia, serif",
+      "markers": 12
+    },
+    {
+      "key": "metodo",
+      "lang": 1,
+      "emptyFolds": [],
+      "geometries": 3,
+      "heroSymbol": true,
+      "footerSymbol": true,
+      "rose": true,
+      "font": "Fraunces, \"Iowan Old Style\", Georgia, serif",
+      "markers": 11
+    },
+    {
+      "key": "caminhos",
+      "lang": 1,
+      "emptyFolds": [],
+      "geometries": 3,
+      "heroSymbol": true,
+      "footerSymbol": true,
+      "rose": true,
+      "font": "Fraunces, \"Iowan Old Style\", Georgia, serif",
+      "markers": 13
+    },
+    {
+      "key": "mentoria",
+      "lang": 1,
+      "emptyFolds": [],
+      "geometries": 4,
+      "heroSymbol": true,
+      "footerSymbol": true,
+      "rose": true,
+      "font": "Fraunces, \"Iowan Old Style\", Georgia, serif",
+      "markers": 26
+    },
+    {
+      "key": "visao",
+      "lang": 1,
+      "emptyFolds": [],
+      "geometries": 5,
+      "heroSymbol": true,
+      "footerSymbol": true,
+      "rose": true,
+      "font": "Fraunces, \"Iowan Old Style\", Georgia, serif",
+      "markers": 21
+    },
+    {
+      "key": "curso",
+      "lang": 1,
+      "emptyFolds": [],
+      "geometries": 3,
+      "heroSymbol": true,
+      "footerSymbol": true,
+      "rose": true,
+      "font": "Fraunces, \"Iowan Old Style\", Georgia, serif",
+      "markers": 15
+    },
+    {
+      "key": "arte",
+      "lang": 1,
+      "emptyFolds": [],
+      "geometries": 3,
+      "heroSymbol": true,
+      "footerSymbol": true,
+      "rose": true,
+      "font": "Fraunces, \"Iowan Old Style\", Georgia, serif",
+      "markers": 7
+    },
+    {
+      "key": "prana",
+      "lang": 1,
+      "emptyFolds": [],
+      "geometries": 3,
+      "heroSymbol": true,
+      "footerSymbol": true,
+      "rose": true,
+      "font": "Fraunces, \"Iowan Old Style\", Georgia, serif",
+      "markers": 7
+    },
+    {
+      "key": "home",
+      "lang": 2,
+      "emptyFolds": [],
+      "geometries": 4,
+      "heroSymbol": true,
+      "footerSymbol": true,
+      "rose": true,
+      "font": "Fraunces, \"Iowan Old Style\", Georgia, serif",
+      "markers": 36
+    },
+    {
+      "key": "templo",
+      "lang": 2,
+      "emptyFolds": [],
+      "geometries": 4,
+      "heroSymbol": true,
+      "footerSymbol": true,
+      "rose": true,
+      "font": "Fraunces, \"Iowan Old Style\", Georgia, serif",
+      "markers": 12
+    },
+    {
+      "key": "metodo",
+      "lang": 2,
+      "emptyFolds": [],
+      "geometries": 3,
+      "heroSymbol": true,
+      "footerSymbol": true,
+      "rose": true,
+      "font": "Fraunces, \"Iowan Old Style\", Georgia, serif",
+      "markers": 11
+    },
+    {
+      "key": "caminhos",
+      "lang": 2,
+      "emptyFolds": [],
+      "geometries": 3,
+      "heroSymbol": true,
+      "footerSymbol": true,
+      "rose": true,
+      "font": "Fraunces, \"Iowan Old Style\", Georgia, serif",
+      "markers": 13
+    },
+    {
+      "key": "mentoria",
+      "lang": 2,
+      "emptyFolds": [],
+      "geometries": 4,
+      "heroSymbol": true,
+      "footerSymbol": true,
+      "rose": true,
+      "font": "Fraunces, \"Iowan Old Style\", Georgia, serif",
+      "markers": 26
+    },
+    {
+      "key": "visao",
+      "lang": 2,
+      "emptyFolds": [],
+      "geometries": 5,
+      "heroSymbol": true,
+      "footerSymbol": true,
+      "rose": true,
+      "font": "Fraunces, \"Iowan Old Style\", Georgia, serif",
+      "markers": 21
+    },
+    {
+      "key": "curso",
+      "lang": 2,
+      "emptyFolds": [],
+      "geometries": 3,
+      "heroSymbol": true,
+      "footerSymbol": true,
+      "rose": true,
+      "font": "Fraunces, \"Iowan Old Style\", Georgia, serif",
+      "markers": 15
+    },
+    {
+      "key": "arte",
+      "lang": 2,
+      "emptyFolds": [],
+      "geometries": 3,
+      "heroSymbol": true,
+      "footerSymbol": true,
+      "rose": true,
+      "font": "Fraunces, \"Iowan Old Style\", Georgia, serif",
+      "markers": 7
+    },
+    {
+      "key": "prana",
+      "lang": 2,
+      "emptyFolds": [],
+      "geometries": 3,
+      "heroSymbol": true,
+      "footerSymbol": true,
+      "rose": true,
+      "font": "Fraunces, \"Iowan Old Style\", Georgia, serif",
+      "markers": 7
+    }
+  ],
+  "focus": {
+    "focused": true,
+    "visible": true,
+    "outline": "rgb(69, 22, 42) solid 3px",
+    "shadow": "rgb(250, 245, 235) 0px 0px 0px 4px"
+  },
+  "failures": []
+}

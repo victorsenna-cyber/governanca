@@ -1,0 +1,963 @@
+{
+  "quiz_versao": "1.0",
+  "apps_script_url": "",
+  "pixel_id": "1259363302489132",
+  "dados_legais": "© 2026 Guilherme Araújo · Todos os direitos reservados.",
+  "url_termos": "",
+  "url_privacidade": "",
+  "depoimentos_ativos": false,
+  "depoimentos": [],
+  "photo": "assets/guilherme.jpeg",
+  "ui": {
+    "loading": "Carregando…",
+    "faq": "Perguntas frequentes",
+    "back": "Voltar",
+    "progress": "Progresso do teste",
+    "noscript": "Ative o JavaScript para fazer o teste.",
+    "photoAlt": "Guilherme Araújo",
+    "mapAlt": "Exemplo de mapa da Permissão",
+    "footer": "Ao acessar esta página, você está de acordo com:",
+    "terms": "Termos de Uso",
+    "privacy": "Política de Privacidade",
+    "legalPending": "[[COPY PENDENTE: dados legais do rodapé]]",
+    "consent": "Ao continuar, você autoriza o uso do seu nome, e-mail, WhatsApp e das suas respostas neste teste para receber o resultado, para contato do Guilherme Araújo e para acompanhar a sua evolução ao longo do tempo. Você pode pedir a remoção dos seus dados a qualquer momento.",
+    "fields": [
+      {
+        "key": "nome",
+        "label": "Primeiro nome",
+        "placeholder": "Digite seu primeiro nome",
+        "error": "Informe o seu primeiro nome.",
+        "type": "text",
+        "autocomplete": "given-name"
+      },
+      {
+        "key": "whatsapp",
+        "label": "WhatsApp",
+        "placeholder": "(00) 00000-0000",
+        "error": "Informe um WhatsApp válido, com DDD.",
+        "type": "tel",
+        "autocomplete": "tel"
+      },
+      {
+        "key": "email",
+        "label": "E-mail",
+        "placeholder": "Digite seu e-mail",
+        "error": "Informe um e-mail válido.",
+        "type": "email",
+        "autocomplete": "email"
+      }
+    ]
+  },
+  "quiz": "teto",
+  "resultMode": "score",
+  "alwaysIncludeResponseKeys": [
+    "p15_disposicao",
+    "p16_acredita"
+  ],
+  "title": "Teste da Permissão · Guilherme Araújo",
+  "description": "Descubra o seu nível de Permissão para prosperar com o seu trabalho. Teste gratuito para terapeutas e mentoras.",
+  "checkout_diagnostico": "https://checkout.pagtrust.com.br/ck463a9f5e?funnel=fn40e6df87",
+  "resultBands": [
+    {
+      "min": 0,
+      "max": 6,
+      "label": "ALTO",
+      "tone": "success",
+      "text": "Pelas suas respostas, a Permissão não parece ser o que segura o seu financeiro hoje. Se o resultado não acompanha, o ponto pode estar em estratégia, posicionamento ou oferta."
+    },
+    {
+      "min": 7,
+      "max": 13,
+      "label": "MÉDIO",
+      "tone": "warning",
+      "text": "Você já se permite em alguns pontos e trava em outros. É o cenário mais comum de quem vive no quase: quase fecha, quase cobra o justo, quase cresce. Existe um teto, e ele está em lugares específicos."
+    },
+    {
+      "min": 14,
+      "max": 21,
+      "label": "BAIXO",
+      "tone": "danger",
+      "text": "Suas respostas mostram um padrão consistente: você entrega, e na hora de receber alguma coisa segura. Isso não é falta de capacidade nem de técnica. É uma Permissão que ainda não foi dada, e ela costuma ter origem bem mais antiga que o seu consultório."
+    }
+  ],
+  "scoreMax": 21,
+  "steps": [
+    {
+      "id": "T01",
+      "type": "opening",
+      "key": "p01_atuacao",
+      "title": "Qual é a sua atuação hoje?",
+      "options": [
+        {
+          "label": "Terapeuta",
+          "emoji": "🌿",
+          "image": ""
+        },
+        {
+          "label": "Mentora",
+          "emoji": "🧭",
+          "image": ""
+        },
+        {
+          "label": "Cartomante",
+          "emoji": "🃏",
+          "image": ""
+        },
+        {
+          "label": "Estou começando a atender",
+          "emoji": "🌱",
+          "image": ""
+        }
+      ],
+      "layout": "grid",
+      "columns": 2,
+      "variable": "atuacao",
+      "banner": "RESPONDA E DESCUBRA O SEU NÍVEL DE PERMISSÃO:",
+      "headline": "QUAL É O SEU <g>NÍVEL DE PERMISSÃO</g> PARA PROSPERAR COM O SEU TRABALHO?",
+      "subheadline": "<u>TESTE GRATUITO</u> PARA TERAPEUTAS E MENTORAS QUE ESTUDAM, ATENDEM BEM E SENTEM QUE O FINANCEIRO NÃO ACOMPANHA.",
+      "cue": "↓ RESPONDA PARA COMEÇAR ↓"
+    },
+    {
+      "id": "T02",
+      "type": "question",
+      "key": "p02_tempo_atende",
+      "title": "Há quanto tempo você atende?",
+      "options": [
+        {
+          "label": "Menos de 1 ano",
+          "emoji": "🌱",
+          "image": ""
+        },
+        {
+          "label": "De 1 a 3 anos",
+          "emoji": "🌿",
+          "image": ""
+        },
+        {
+          "label": "De 3 a 5 anos",
+          "emoji": "🌳",
+          "image": ""
+        },
+        {
+          "label": "Mais de 5 anos",
+          "emoji": "🌲",
+          "image": ""
+        }
+      ],
+      "layout": "grid",
+      "columns": 2
+    },
+    {
+      "id": "T03",
+      "type": "question",
+      "key": "p03_formacoes",
+      "title": "Quantas formações ou cursos você já fez na sua área?",
+      "options": [
+        {
+          "label": "1 ou 2",
+          "emoji": "📗",
+          "image": ""
+        },
+        {
+          "label": "De 3 a 5",
+          "emoji": "📚",
+          "image": ""
+        },
+        {
+          "label": "Mais de 5",
+          "emoji": "🗂️",
+          "image": ""
+        },
+        {
+          "label": "Já perdi a conta",
+          "emoji": "🤯",
+          "image": ""
+        }
+      ],
+      "variable": "formacoes",
+      "values": [
+        "1 ou 2",
+        "de 3 a 5",
+        "mais de 5",
+        "já perdi a conta"
+      ]
+    },
+    {
+      "id": "T04",
+      "type": "insertion",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Você já fez <g>{{formacoes}}</g> formações. Conhecimento não parece ser o que está faltando.",
+          "style": "h2",
+          "variants": {
+            "key": "p03_formacoes",
+            "cases": {
+              "3": "Você já fez <g>tantas formações que perdeu a conta</g>. Conhecimento não parece ser o que está faltando."
+            }
+          },
+          "emphasis": true
+        },
+        {
+          "type": "text",
+          "text": "As próximas perguntas olham para outro lugar: o que acontece na hora de receber.",
+          "style": "body"
+        },
+        {
+          "type": "testimonials"
+        }
+      ],
+      "button": "Continuar"
+    },
+    {
+      "id": "T05",
+      "type": "question",
+      "key": "p04_faturamento",
+      "title": "Quanto você fatura por mês com os seus atendimentos?",
+      "options": [
+        {
+          "label": "Até R$ 2 mil",
+          "emoji": "🪙",
+          "image": ""
+        },
+        {
+          "label": "De R$ 2 mil a R$ 5 mil",
+          "emoji": "💵",
+          "image": ""
+        },
+        {
+          "label": "De R$ 5 mil a R$ 10 mil",
+          "emoji": "💰",
+          "image": ""
+        },
+        {
+          "label": "Mais de R$ 10 mil",
+          "emoji": "💎",
+          "image": ""
+        }
+      ],
+      "private": true
+    },
+    {
+      "id": "T06",
+      "type": "question",
+      "key": "p05_recebe_equivalente",
+      "title": "Você sente que recebe o equivalente ao que entrega?",
+      "options": [
+        {
+          "label": "Não. Entrego muito mais do que recebo",
+          "emoji": "😮‍💨",
+          "image": ""
+        },
+        {
+          "label": "Poderia ser melhor",
+          "emoji": "🤔",
+          "image": ""
+        },
+        {
+          "label": "Sim, recebo o que acho justo",
+          "emoji": "😊",
+          "image": ""
+        }
+      ],
+      "points": [
+        3,
+        2,
+        0
+      ]
+    },
+    {
+      "id": "T07",
+      "type": "question",
+      "key": "p06_hora_do_preco",
+      "title": "Na hora de dizer o seu preço, o que acontece?",
+      "options": [
+        {
+          "label": "Travo e acabo falando um valor menor",
+          "emoji": "😶",
+          "image": ""
+        },
+        {
+          "label": "Falo, mas fico desconfortável",
+          "emoji": "😬",
+          "image": ""
+        },
+        {
+          "label": "Falo com tranquilidade",
+          "emoji": "😌",
+          "image": ""
+        }
+      ],
+      "points": [
+        3,
+        2,
+        0
+      ],
+      "variable": "reacao_preco",
+      "values": [
+        "trava e fala um valor menor",
+        "fala, mas fica desconfortável",
+        "fala com tranquilidade"
+      ]
+    },
+    {
+      "id": "T08",
+      "type": "question",
+      "key": "p07_desconto",
+      "title": "Você já deu desconto sem a pessoa pedir?",
+      "options": [
+        {
+          "label": "Com frequência",
+          "emoji": "🔁",
+          "image": ""
+        },
+        {
+          "label": "Algumas vezes",
+          "emoji": "↩️",
+          "image": ""
+        },
+        {
+          "label": "Raramente",
+          "emoji": "🤏",
+          "image": ""
+        },
+        {
+          "label": "Nunca",
+          "emoji": "🚫",
+          "image": ""
+        }
+      ],
+      "points": [
+        3,
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "T09",
+      "type": "insertion",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Isso tem nome.",
+          "style": "small"
+        },
+        {
+          "type": "text",
+          "text": "E não é <r>falta de técnica</r>.",
+          "style": "h2",
+          "emphasis": true
+        },
+        {
+          "type": "photo",
+          "ratio": "authority"
+        },
+        {
+          "type": "text",
+          "text": "Em constelação a gente vê de onde isso costuma vir: quem cresce mais do que a mãe conseguiu crescer sente, sem perceber, que está abandonando alguém. Aí cobra menos, entrega mais, e chama isso de vocação.",
+          "style": "body"
+        },
+        {
+          "type": "alert",
+          "text": "É o que eu chamo de Permissão.",
+          "tone": "success",
+          "full": false
+        }
+      ],
+      "button": "Continuar"
+    },
+    {
+      "id": "T10",
+      "type": "question",
+      "key": "p08_culpa",
+      "title": "Depois de cobrar, você sente culpa?",
+      "options": [
+        {
+          "label": "Quase sempre",
+          "emoji": "😔",
+          "image": ""
+        },
+        {
+          "label": "Às vezes",
+          "emoji": "😕",
+          "image": ""
+        },
+        {
+          "label": "Raramente",
+          "emoji": "🙂",
+          "image": ""
+        },
+        {
+          "label": "Nunca",
+          "emoji": "😌",
+          "image": ""
+        }
+      ],
+      "points": [
+        3,
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "T11",
+      "type": "question",
+      "key": "p09_entrega_a_mais",
+      "title": "Você costuma entregar mais do que foi combinado?",
+      "options": [
+        {
+          "label": "Sim, quase sempre",
+          "emoji": "🎁",
+          "image": ""
+        },
+        {
+          "label": "Às vezes",
+          "emoji": "🤲",
+          "image": ""
+        },
+        {
+          "label": "Não",
+          "emoji": "✋",
+          "image": ""
+        }
+      ],
+      "points": [
+        3,
+        2,
+        0
+      ]
+    },
+    {
+      "id": "T12",
+      "type": "question",
+      "key": "p10_teto",
+      "title": "Seu faturamento sobe e depois volta para o mesmo lugar?",
+      "options": [
+        {
+          "label": "Sim, parece que existe um teto",
+          "emoji": "📉",
+          "image": ""
+        },
+        {
+          "label": "Oscila, mas vai crescendo devagar",
+          "emoji": "〰️",
+          "image": ""
+        },
+        {
+          "label": "Não, cresce de forma consistente",
+          "emoji": "📈",
+          "image": ""
+        }
+      ],
+      "points": [
+        3,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "T13",
+      "type": "question",
+      "key": "p11_familia_origem",
+      "title": "Quando você pensa em ganhar bem mais do que a sua família de origem ganhou, o que sente?",
+      "options": [
+        {
+          "label": "Desconforto ou culpa",
+          "emoji": "😣",
+          "image": ""
+        },
+        {
+          "label": "Vontade e medo ao mesmo tempo",
+          "emoji": "😰",
+          "image": ""
+        },
+        {
+          "label": "Tranquilidade",
+          "emoji": "😌",
+          "image": ""
+        }
+      ],
+      "points": [
+        3,
+        2,
+        0
+      ]
+    },
+    {
+      "id": "T14",
+      "type": "question",
+      "key": "p12_ja_tentou",
+      "title": "O que você já tentou para resolver isso?",
+      "options": [
+        {
+          "label": "Cursos de vendas e marketing",
+          "emoji": "📣",
+          "image": ""
+        },
+        {
+          "label": "Mais formações na minha área",
+          "emoji": "📚",
+          "image": ""
+        },
+        {
+          "label": "Terapia ou processos pessoais",
+          "emoji": "🛋️",
+          "image": ""
+        },
+        {
+          "label": "Nunca trabalhei isso diretamente",
+          "emoji": "🫥",
+          "image": ""
+        }
+      ],
+      "variable": "tentou"
+    },
+    {
+      "id": "T15",
+      "type": "question",
+      "key": "p13_impede",
+      "title": "O que mais te impede de cobrar o que acha justo?",
+      "options": [
+        {
+          "label": "Medo de perder a cliente",
+          "emoji": "💔",
+          "image": ""
+        },
+        {
+          "label": "Medo de parecer interesseira",
+          "emoji": "🙈",
+          "image": ""
+        },
+        {
+          "label": "Sentir que ainda não estou pronta",
+          "emoji": "⏳",
+          "image": ""
+        },
+        {
+          "label": "Não sei dizer",
+          "emoji": "❓",
+          "image": ""
+        }
+      ],
+      "variable": "impede",
+      "values": [
+        "o medo de perder a cliente",
+        "o medo de parecer interesseira",
+        "a sensação de ainda não estar pronta",
+        "algo que você ainda não sabe nomear"
+      ]
+    },
+    {
+      "id": "T16",
+      "type": "insertion",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "",
+          "style": "h1",
+          "variants": {
+            "key": "p12_ja_tentou",
+            "cases": {
+              "0": "Técnica de venda ensina <g>o que dizer</g>. Não muda o que você sente na hora de dizer.",
+              "1": "Estudar é confortável. <g>Vender é se colocar em exposição.</g>",
+              "2": "Você já olhou para muita coisa. Talvez ainda não tenha olhado para a <g>Permissão de receber</g>.",
+              "3": "Faz sentido. Quase ninguém olha para isso, porque parece só <g>\"o meu jeito\"</g>."
+            }
+          },
+          "emphasis": true
+        }
+      ],
+      "button": "Continuar"
+    },
+    {
+      "id": "T17",
+      "type": "question",
+      "key": "p14_mudaria",
+      "title": "Se essa trava saísse do caminho, o que mudaria primeiro?",
+      "options": [
+        {
+          "label": "Cobraria o valor que acho justo",
+          "emoji": "💲",
+          "image": ""
+        },
+        {
+          "label": "Teria mais clientes sem me sentir vendendo",
+          "emoji": "🤝",
+          "image": ""
+        },
+        {
+          "label": "Viveria só dos meus atendimentos",
+          "emoji": "🏡",
+          "image": ""
+        },
+        {
+          "label": "Pararia de me sentir em dívida com todo mundo",
+          "emoji": "🕊️",
+          "image": ""
+        }
+      ],
+      "variable": "desejo",
+      "values": [
+        "cobrar o valor que acha justo",
+        "ter mais clientes sem se sentir vendendo",
+        "viver só dos seus atendimentos",
+        "parar de se sentir em dívida com todo mundo"
+      ]
+    },
+    {
+      "id": "T18",
+      "type": "loading",
+      "text": "Calculando o seu nível de Permissão com base nas suas respostas…",
+      "duration": 5000
+    },
+    {
+      "id": "T19",
+      "type": "result",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Aqui está o seu resultado.",
+          "style": "body"
+        },
+        {
+          "type": "resultBanner",
+          "text": "SEU NÍVEL DE PERMISSÃO HOJE: {{NIVEL}}"
+        },
+        {
+          "type": "metric",
+          "text": "Permissão para receber"
+        },
+        {
+          "type": "resultParagraph"
+        },
+        {
+          "type": "text",
+          "text": "Você respondeu que…",
+          "style": "h1"
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "title": "Você já fez {{formacoes}} formações.",
+              "variableVariants": {
+                "formacoes": {
+                  "já perdi a conta": "Você já fez tantas formações que perdeu a conta."
+                }
+              },
+              "text": "Então o que falta não é conhecimento."
+            },
+            {
+              "title": "Na hora do preço, você {{reacao_preco}}.",
+              "text": "É onde a Permissão aparece primeiro.",
+              "variants": {
+                "key": "p06_hora_do_preco",
+                "cases": {
+                  "Travo e acabo falando um valor menor": "É onde a Permissão aparece primeiro.",
+                  "Falo, mas fico desconfortável": "É onde a Permissão aparece primeiro.",
+                  "Falo com tranquilidade": "Aqui a Permissão não aparece como trava."
+                }
+              }
+            },
+            {
+              "title": "O que mais te impede é {{impede}}.",
+              "text": "E isso raramente se resolve com técnica.",
+              "resultVariants": {
+                "ALTO": "Vale olhar se isso é trava ou falta de estratégia."
+              }
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "O teste mostra onde a trava aparece. Ele não mostra de onde ela vem.",
+          "resultVariants": {
+            "ALTO": "O teste não encontrou uma trava forte de Permissão. Ele não mostra o que mais pode estar segurando o seu resultado."
+          },
+          "style": "bold"
+        },
+        {
+          "type": "text",
+          "text": "Este teste é um indicativo com base nas suas respostas. Não é diagnóstico clínico nem substitui acompanhamento profissional.",
+          "style": "small"
+        }
+      ],
+      "button": "Entender o próximo passo",
+      "nextByResult": {
+        "ALTO": {
+          "id": "T23",
+          "clearAnswers": [
+            "p15_disposicao",
+            "p16_acredita"
+          ]
+        }
+      }
+    },
+    {
+      "id": "T20",
+      "type": "question",
+      "key": "p15_disposicao",
+      "title": "Quão disposta você está a olhar para isso?",
+      "options": [
+        {
+          "label": "Quero resolver agora",
+          "emoji": "🔥",
+          "image": ""
+        },
+        {
+          "label": "Quero entender melhor antes",
+          "emoji": "🔎",
+          "image": ""
+        },
+        {
+          "label": "Só estou curiosa",
+          "emoji": "👀",
+          "image": ""
+        }
+      ]
+    },
+    {
+      "id": "T21",
+      "type": "insertion",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "<r>O que o teste mostrou</r> e o que <g>as aulas mostram</g>",
+          "style": "h1",
+          "emphasis": true
+        },
+        {
+          "type": "comparison",
+          "columns": [
+            {
+              "title": "O teste mostrou",
+              "items": [
+                "que existe uma trava",
+                "onde ela aparece",
+                "o seu nível hoje"
+              ]
+            },
+            {
+              "title": "As aulas mostram",
+              "items": [
+                "<strong>o que mantém</strong> o teto no lugar",
+                "<strong>como romper</strong> esse teto",
+                "<strong>o caminho</strong> para sair das dívidas"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "testimonials"
+        }
+      ],
+      "button": "Continuar"
+    },
+    {
+      "id": "T22",
+      "type": "question",
+      "key": "p16_acredita",
+      "title": "Se você entendesse o que mantém o seu teto financeiro no lugar, acredita que conseguiria rompê-lo?",
+      "options": [
+        {
+          "label": "Sim, estou pronta para isso",
+          "emoji": "✅",
+          "image": ""
+        },
+        {
+          "label": "Com certeza, só preciso de direção",
+          "emoji": "🧭",
+          "image": ""
+        },
+        {
+          "label": "Acho que sim, quero tentar",
+          "emoji": "🌱",
+          "image": ""
+        }
+      ]
+    },
+    {
+      "id": "T23",
+      "type": "capture",
+      "title": "Para onde eu envio o seu resultado e o próximo passo?",
+      "button": "Ver o próximo passo"
+    },
+    {
+      "id": "T24",
+      "type": "offer",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "{{nome}}, O TESTE MOSTROU <r>ONDE</r> A SUA TRAVA APARECE. O PRÓXIMO PASSO É ENTENDER <g>O QUE SEGURA O SEU TETO</g>.",
+          "style": "h2",
+          "resultVariants": {
+            "ALTO": "{{nome}}, PELAS SUAS RESPOSTAS A PERMISSÃO <g>NÃO PARECE SER</g> O QUE SEGURA O SEU FINANCEIRO."
+          },
+          "emphasis": true
+        },
+        {
+          "type": "alert",
+          "text": "↓ ROLE PARA BAIXO ↓",
+          "tone": "danger",
+          "full": false
+        },
+        {
+          "type": "photo",
+          "ratio": "expert"
+        },
+        {
+          "type": "text",
+          "text": "{{nome}}, Guilherme aqui.",
+          "style": "body"
+        },
+        {
+          "type": "text",
+          "text": "Sou professor de Cartomancia Sistêmica e mentor de vendas humanizadas. Trabalho com terapeutas e mentoras que sabem atender e travam na hora de receber.",
+          "style": "body"
+        },
+        {
+          "type": "text",
+          "text": "Se o resultado não acompanha, o ponto pode estar em estratégia, posicionamento ou oferta. Se mesmo assim você quiser entender como um teto financeiro se forma, as duas aulas mostram isso.",
+          "style": "body",
+          "onlyResult": "ALTO"
+        },
+        {
+          "type": "text",
+          "text": "Por que estudar mais <r>não resolveu</r>",
+          "style": "h2",
+          "emphasis": true,
+          "exceptResult": "ALTO"
+        },
+        {
+          "type": "text",
+          "text": "Porque a trava não está no que você sabe. Está no que você se permite. Enquanto essa Permissão não é localizada, toda técnica nova bate no mesmo teto.",
+          "style": "body",
+          "exceptResult": "ALTO"
+        },
+        {
+          "type": "alert",
+          "text": "COMO ROMPER O TETO FINANCEIRO E SE LIBERTAR DAS DÍVIDAS",
+          "tone": "success",
+          "full": true
+        },
+        {
+          "type": "text",
+          "text": "Duas aulas gravadas em que eu vou fundo no que mantém o teto financeiro no lugar e no caminho para romper esse teto. Você assiste no seu tempo.",
+          "style": "body"
+        },
+        {
+          "type": "text",
+          "text": "O que você vai ver",
+          "style": "h2",
+          "emphasis": true
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "title": "O teto financeiro",
+              "text": "O que mantém o seu faturamento voltando para o mesmo lugar, e como romper isso."
+            },
+            {
+              "title": "As dívidas",
+              "text": "O que sustenta as dívidas e o caminho para sair delas."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "O que você <g>recebe</g>",
+          "style": "h2",
+          "emphasis": true
+        },
+        {
+          "type": "list",
+          "items": [
+            "Duas aulas gravadas, para assistir no seu tempo.",
+            "O acesso no e-mail que você informar na compra."
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Conforme você respondeu",
+          "style": "h2",
+          "emphasis": true,
+          "exceptResult": "ALTO"
+        },
+        {
+          "type": "echo",
+          "exceptResult": "ALTO",
+          "items": [
+            "✅ Seu nível de Permissão hoje: {{nivel}}",
+            "✅ O que mais te impede: {{impede}}",
+            "✅ O que você quer mudar primeiro: {{desejo}}"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Para quem é",
+          "style": "h2",
+          "emphasis": true
+        },
+        {
+          "type": "list",
+          "items": [
+            "Para quem se reconheceu nas perguntas do teste.",
+            "Para quem sente que o faturamento sobe e volta para o mesmo lugar.",
+            "Para quem prefere começar pelas aulas, no seu tempo."
+          ]
+        },
+        {
+          "type": "testimonials"
+        },
+        {
+          "type": "price",
+          "title": "COMO ROMPER O TETO FINANCEIRO",
+          "value": "R$ 97",
+          "support": "Duas aulas gravadas · à vista ou 12x de R$ 9,70"
+        },
+        {
+          "type": "checkout",
+          "text": "QUERO AS DUAS AULAS"
+        },
+        {
+          "type": "text",
+          "text": "Depois do pagamento, o acesso chega no e-mail informado na compra.",
+          "style": "small"
+        },
+        {
+          "type": "faq",
+          "items": [
+            [
+              "É ao vivo?",
+              "Não. São duas aulas gravadas, para assistir no seu tempo."
+            ],
+            [
+              "Isso é terapia?",
+              "Não. São aulas. Não substituem acompanhamento psicológico, médico ou financeiro."
+            ],
+            [
+              "Preciso já estar atendendo?",
+              "Não. Serve também para quem está começando e já sente a trava."
+            ],
+            [
+              "Como eu recebo o acesso?",
+              "Pelo e-mail informado na compra."
+            ],
+            [
+              "E se eu quiser um olhar individual?",
+              "Existe o Diagnóstico da Permissão, uma sessão individual de 2 horas comigo."
+            ]
+          ]
+        },
+        {
+          "type": "footer",
+          "text": "As aulas são conteúdo de educação e autoconhecimento. Não substituem acompanhamento psicológico, médico ou financeiro e não garantem resultado financeiro. Os resultados dependem da aplicação de cada pessoa."
+        }
+      ],
+      "button": ""
+    }
+  ]
+}

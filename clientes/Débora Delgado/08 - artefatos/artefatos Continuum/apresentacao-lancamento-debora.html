@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carreira Alinhada · Plano de Lançamento</title>
+<style>
+  /* ============ TOKENS ============ */
+  :root {
+    --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --serif: Georgia, "Times New Roman", serif;
+    --maxw: 1120px;
+    --radius: 16px;
+    --radius-sm: 10px;
+    --ease: cubic-bezier(.22,.61,.36,1);
+    --t: .45s var(--ease);
+  }
+  /* DARK (default) */
+  html[data-theme="dark"] {
+    --bg: #0c0e12;
+    --bg-soft: #12151b;
+    --surface: #161a22;
+    --surface-2: #1c212b;
+    --border: #262d3a;
+    --border-soft: #1e2531;
+    --text: #eef1f6;
+    --text-soft: #aab2c0;
+    --text-mute: #6c7587;
+    --accent: #c9a96a;       /* dourado sóbrio */
+    --accent-soft: #e3cfa0;
+    --accent-2: #7d93b8;     /* azul aço */
+    --glow: rgba(201,169,106,.10);
+    --shadow: 0 24px 60px -28px rgba(0,0,0,.7);
+    --hairline: rgba(255,255,255,.06);
+  }
+  /* LIGHT */
+  html[data-theme="light"] {
+    --bg: #f6f4ef;
+    --bg-soft: #efece4;
+    --surface: #ffffff;
+    --surface-2: #f4f1ea;
+    --border: #e2ddd1;
+    --border-soft: #ece8de;
+    --text: #1d2129;
+    --text-soft: #50586a;
+    --text-mute: #646b7b;
+    --accent: #9a7b3c;
+    --accent-soft: #b89a5e;
+    --accent-2: #4f6488;
+    --glow: rgba(154,123,60,.10);
+    --shadow: 0 24px 50px -30px rgba(40,30,10,.25);
+    --hairline: rgba(0,0,0,.05);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; scroll-padding-top: 76px; }
+
+  /* ===== A11Y: foco visível para navegação por teclado ===== */
+  a:focus-visible, button:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+
+  /* ===== A11Y: respeitar redução de movimento ===== */
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after {
+      animation-duration: .001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: .001ms !important;
+    }
+    .reveal { opacity: 1 !important; transform: none !important; }
+  }
+  body {
+    font-family: var(--font);
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    transition: background var(--t), color var(--t);
+    overflow-x: hidden;
+  }
+
+  /* ============ BACKGROUND TEXTURE ============ */
+  body::before {
+    content: "";
+    position: fixed; inset: 0;
+    background:
+      radial-gradient(1200px 600px at 80% -10%, var(--glow), transparent 60%),
+      radial-gradient(900px 500px at -10% 100%, var(--glow), transparent 55%);
+    pointer-events: none; z-index: 0;
+    transition: opacity var(--t);
+  }
+
+  /* ============ NAV ============ */
+  header.nav {
+    position: sticky; top: 0; z-index: 50;
+    backdrop-filter: blur(14px);
+    background: color-mix(in srgb, var(--bg) 78%, transparent);
+    border-bottom: 1px solid var(--border-soft);
+    transition: background var(--t), border-color var(--t);
+  }
+  .nav-inner {
+    max-width: var(--maxw); margin: 0 auto;
+    display: flex; align-items: center; gap: 14px;
+    padding: 12px 22px;
+  }
+  .brand {
+    display: flex; align-items: center; gap: 10px;
+    font-weight: 600; letter-spacing: .2px; font-size: 15px;
+    white-space: nowrap;
+  }
+  .brand .mark { width: 22px; height: 22px; flex: none; }
+  .brand small { color: var(--text-mute); font-weight: 400; font-size: 11px; }
+  .nav-links {
+    display: flex; gap: 4px; margin-left: auto; align-items: center;
+    overflow-x: auto; scrollbar-width: none;
+  }
+  .nav-links::-webkit-scrollbar { display: none; }
+  .nav-links a {
+    color: var(--text-soft); text-decoration: none;
+    font-size: 13px; padding: 7px 12px; border-radius: 8px;
+    white-space: nowrap; transition: color .2s, background .2s;
+  }
+  .nav-links a:hover { color: var(--text); background: var(--surface-2); }
+  .toggle {
+    flex: none; margin-left: 8px;
+    width: 40px; height: 40px; border-radius: 11px;
+    border: 1px solid var(--border); background: var(--surface);
+    color: var(--text-soft); cursor: pointer;
+    display: grid; place-items: center;
+    transition: all .25s var(--ease);
+  }
+  .toggle:hover { color: var(--accent); border-color: var(--accent); transform: translateY(-1px); }
+  .toggle svg { width: 18px; height: 18px; }
+  .toggle .ico-sun { display: none; }
+  html[data-theme="light"] .toggle .ico-sun { display: block; }
+  html[data-theme="light"] .toggle .ico-moon { display: none; }
+
+  /* ============ LAYOUT ============ */
+  main { position: relative; z-index: 1; }
+  section { max-width: var(--maxw); margin: 0 auto; padding: 86px 22px; }
+  @media (max-width: 640px){ section { padding: 60px 20px; } }
+
+  .eyebrow {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-size: 12px; letter-spacing: .18em; text-transform: uppercase;
+    color: var(--accent); font-weight: 600; margin-bottom: 18px;
+  }
+  .eyebrow::before {
+    content: ""; width: 26px; height: 1px; background: var(--accent); opacity: .6;
+  }
+  h1, h2, h3 { line-height: 1.15; font-weight: 600; letter-spacing: -.01em; }
+  .sec-title { font-size: clamp(26px, 4vw, 38px); margin-bottom: 14px; }
+  .sec-lead { color: var(--text-soft); font-size: 17px; max-width: 60ch; margin-bottom: 44px; }
+
+  /* reveal on scroll */
+  .reveal { opacity: 0; transform: translateY(22px); transition: opacity .8s var(--ease), transform .8s var(--ease); }
+  .reveal.in { opacity: 1; transform: none; }
+
+  /* ============ HERO ============ */
+  .hero {
+    min-height: 88vh; display: flex; flex-direction: column; justify-content: center;
+    padding-top: 70px; padding-bottom: 70px;
+  }
+  .seal {
+    display: inline-flex; align-items: center; gap: 9px;
+    border: 1px solid var(--border); background: var(--surface);
+    padding: 7px 14px; border-radius: 999px;
+    font-size: 12px; color: var(--text-soft); margin-bottom: 30px;
+    width: fit-content;
+  }
+  .seal .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 4px var(--glow); }
+  .hero h1 {
+    font-size: clamp(40px, 8vw, 78px); font-weight: 600;
+    letter-spacing: -.025em; line-height: 1.02;
+  }
+  .hero h1 .alt { font-family: var(--serif); font-style: italic; font-weight: 400; color: var(--accent); }
+  .hero .sub {
+    margin-top: 26px; font-size: clamp(17px, 2.4vw, 21px);
+    color: var(--text-soft); max-width: 54ch; line-height: 1.5;
+  }
+  .hero-meta {
+    margin-top: 42px; display: flex; flex-wrap: wrap; gap: 12px;
+  }
+  .chip {
+    border: 1px solid var(--border); background: var(--surface);
+    border-radius: 999px; padding: 9px 16px; font-size: 13px; color: var(--text-soft);
+  }
+  .chip b { color: var(--text); font-weight: 600; }
+  .scroll-hint {
+    margin-top: 56px; display: inline-flex; align-items: center; gap: 10px;
+    color: var(--text-mute); font-size: 12px; letter-spacing: .12em; text-transform: uppercase;
+  }
+  .scroll-hint .line { width: 1px; height: 30px; background: linear-gradient(var(--accent), transparent); animation: drop 2s var(--ease) infinite; }
+  @keyframes drop { 0%,100%{ opacity:.3; transform: scaleY(.6);} 50%{ opacity:1; transform: scaleY(1);} }
+
+  /* ============ CARDS ============ */
+  .grid { display: grid; gap: 18px; }
+  .grid-3 { grid-template-columns: repeat(3, 1fr); }
+  @media (max-width: 860px){ .grid-3 { grid-template-columns: 1fr; } }
+
+  .card {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: var(--radius); padding: 28px 26px;
+    transition: transform .4s var(--ease), border-color .4s var(--ease), box-shadow .4s var(--ease), background var(--t);
+    position: relative; overflow: hidden;
+  }
+  .card:hover { transform: translateY(-4px); border-color: var(--accent); box-shadow: var(--shadow); }
+  .card .ico {
+    width: 44px; height: 44px; border-radius: 12px;
+    display: grid; place-items: center; margin-bottom: 20px;
+    background: var(--surface-2); border: 1px solid var(--border-soft); color: var(--accent);
+  }
+  .card .ico svg { width: 22px; height: 22px; }
+  .card h3 { font-size: 19px; margin-bottom: 10px; }
+  .card p { color: var(--text-soft); font-size: 15px; }
+  .card .num {
+    position: absolute; top: 20px; right: 24px;
+    font-family: var(--serif); font-size: 30px; color: var(--border);
+    font-weight: 600; transition: color .4s;
+  }
+  .card:hover .num { color: var(--accent); opacity: .5; }
+
+  /* Workshop day cards */
+  .day .tag {
+    font-size: 12px; letter-spacing: .14em; text-transform: uppercase;
+    color: var(--accent); font-weight: 600; margin-bottom: 14px; display: block;
+  }
+  .day h3 { font-family: var(--serif); font-weight: 400; font-size: 22px; font-style: italic; }
+  .day ul { list-style: none; margin-top: 18px; display: flex; flex-direction: column; gap: 10px; }
+  .day li { display: flex; gap: 10px; font-size: 14px; color: var(--text-soft); align-items: flex-start; }
+  .day li::before {
+    content: ""; width: 6px; height: 6px; border-radius: 50%; margin-top: 8px;
+    background: var(--accent); flex: none; opacity: .7;
+  }
+
+  /* ============ OFERTA TABLE ============ */
+  .ladder { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; margin-bottom: 26px; }
+  @media (max-width: 760px){ .ladder { grid-template-columns: 1fr; } }
+  .lot {
+    background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+    padding: 26px 24px; position: relative; transition: all .4s var(--ease);
+  }
+  .lot:hover { transform: translateY(-3px); box-shadow: var(--shadow); }
+  .lot.featured { border-color: var(--accent); background: linear-gradient(180deg, var(--surface), var(--bg-soft)); }
+  .lot .badge {
+    position: absolute; top: -11px; left: 24px; font-size: 11px; letter-spacing: .08em;
+    text-transform: uppercase; background: var(--accent); color: #14110a;
+    padding: 4px 11px; border-radius: 999px; font-weight: 700;
+  }
+  .lot .lot-name { font-size: 13px; color: var(--text-mute); letter-spacing: .1em; text-transform: uppercase; }
+  .lot .price { font-size: 38px; font-weight: 600; margin-top: 8px; letter-spacing: -.02em; }
+  .lot .price small { font-size: 17px; color: var(--text-mute); font-weight: 400; }
+  .lot .lot-note { font-size: 13px; color: var(--text-soft); margin-top: 10px; }
+
+  .tier-table {
+    width: 100%; border-collapse: separate; border-spacing: 0;
+    border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden;
+    background: var(--surface);
+  }
+  .tier-table th, .tier-table td { text-align: left; padding: 18px 22px; font-size: 14.5px; border-bottom: 1px solid var(--border-soft); }
+  .tier-table th { color: var(--text-mute); font-weight: 600; font-size: 12px; letter-spacing: .1em; text-transform: uppercase; background: var(--surface-2); }
+  .tier-table tr:last-child td { border-bottom: none; }
+  .tier-table td:first-child { font-weight: 600; color: var(--text); }
+  .tier-table td .t-price { color: var(--accent); font-weight: 600; white-space: nowrap; }
+  .tier-table td:last-child { color: var(--text-soft); }
+  @media (max-width: 680px){
+    .tier-table, .tier-table tbody, .tier-table tr, .tier-table td { display: block; width: 100%; }
+    .tier-table thead { display: none; }
+    .tier-table tr { border-bottom: 1px solid var(--border); padding: 6px 0; }
+    .tier-table td { border: none; padding: 6px 22px; }
+    .tier-table td:first-child { padding-top: 16px; font-size: 16px; }
+    .tier-table td:last-child { padding-bottom: 16px; }
+  }
+
+  /* ============ FUNNEL ============ */
+  .funnel {
+    display: flex; align-items: stretch; gap: 0; flex-wrap: nowrap;
+    overflow-x: auto; padding: 8px 2px 16px; scrollbar-width: none;
+  }
+  .funnel::-webkit-scrollbar { display: none; }
+  .stage {
+    flex: 1 0 150px; min-width: 150px;
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: var(--radius-sm); padding: 20px 18px; position: relative;
+    transition: all .4s var(--ease);
+  }
+  .stage:hover { border-color: var(--accent); transform: translateY(-3px); }
+  .stage .s-ico { color: var(--accent); margin-bottom: 12px; display: block; }
+  .stage .s-ico svg { width: 24px; height: 24px; }
+  .stage .s-n { font-size: 11px; color: var(--text-mute); letter-spacing: .1em; }
+  .stage h4 { font-size: 15px; margin: 6px 0 6px; }
+  .stage p { font-size: 12.5px; color: var(--text-soft); line-height: 1.45; }
+  .arrow { flex: none; display: grid; place-items: center; width: 30px; color: var(--accent); opacity: .6; }
+  .arrow svg { width: 18px; height: 18px; }
+  @media (max-width: 860px){
+    .funnel { flex-direction: column; }
+    .arrow { width: 100%; height: 26px; transform: rotate(90deg); }
+    .stage { flex: none; min-width: 0; }
+  }
+
+  /* ============ TIMELINE ============ */
+  .timeline { position: relative; margin-left: 8px; }
+  .timeline::before {
+    content: ""; position: absolute; left: 11px; top: 6px; bottom: 6px; width: 2px;
+    background: linear-gradient(var(--accent), var(--border)); opacity: .5;
+  }
+  .tl-item { position: relative; padding: 0 0 28px 44px; }
+  .tl-item:last-child { padding-bottom: 0; }
+  .tl-item .dot {
+    position: absolute; left: 4px; top: 3px; width: 16px; height: 16px;
+    border-radius: 50%; background: var(--bg); border: 2px solid var(--accent);
+    display: grid; place-items: center;
+  }
+  .tl-item .dot::after { content: ""; width: 5px; height: 5px; border-radius: 50%; background: var(--accent); }
+  .tl-item .d-label { font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); font-weight: 600; }
+  .tl-item h4 { font-size: 16px; margin: 4px 0 4px; }
+  .tl-item p { font-size: 14px; color: var(--text-soft); }
+
+  /* ============ NEEDS LIST ============ */
+  .needs { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  @media (max-width: 700px){ .needs { grid-template-columns: 1fr; } }
+  .need {
+    display: flex; gap: 16px; align-items: flex-start;
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: var(--radius-sm); padding: 22px 22px;
+    transition: all .4s var(--ease);
+  }
+  .need:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .need .n-ico { flex: none; width: 38px; height: 38px; border-radius: 10px; background: var(--surface-2); border: 1px solid var(--border-soft); display: grid; place-items: center; color: var(--accent); }
+  .need .n-ico svg { width: 19px; height: 19px; }
+  .need h4 { font-size: 16px; margin-bottom: 4px; }
+  .need p { font-size: 13.5px; color: var(--text-soft); }
+
+  /* ============ CLOSING ============ */
+  .closing {
+    text-align: center; border: 1px solid var(--border);
+    background: linear-gradient(180deg, var(--surface), var(--bg-soft));
+    border-radius: 24px; padding: 64px 32px;
+  }
+  .closing .q {
+    font-family: var(--serif); font-style: italic; font-size: clamp(24px, 4vw, 36px);
+    line-height: 1.35; max-width: 22ch; margin: 0 auto 30px; font-weight: 400;
+  }
+  .closing .q .hl { color: var(--accent); }
+  .milestone {
+    display: inline-flex; align-items: center; gap: 12px;
+    border: 1px solid var(--accent); border-radius: 999px;
+    padding: 12px 22px; color: var(--text); font-size: 14.5px; font-weight: 500;
+    background: var(--surface);
+  }
+  .milestone .m-ico { color: var(--accent); display: grid; place-items: center; }
+  .milestone .m-ico svg { width: 18px; height: 18px; }
+
+  /* ============ FOOTER ============ */
+  footer {
+    border-top: 1px solid var(--border-soft);
+    text-align: center; padding: 30px 22px; position: relative; z-index: 1;
+    color: var(--text-mute); font-size: 12.5px; letter-spacing: .04em;
+  }
+  footer .sep { color: var(--accent); margin: 0 8px; opacity: .6; }
+
+  .divider { height: 1px; background: var(--border-soft); max-width: var(--maxw); margin: 0 auto; }
+</style>
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="nav">
+  <div class="nav-inner">
+    <div class="brand">
+      <svg class="mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+        <circle cx="12" cy="12" r="9" stroke="var(--accent)"/>
+        <path d="M12 3v18M3 12h18" stroke="var(--accent)" opacity=".4"/>
+        <circle cx="12" cy="12" r="3.4" fill="var(--accent)" stroke="none"/>
+      </svg>
+      <span>Carreira Alinhada<br><small>Plano de Lançamento</small></span>
+    </div>
+    <nav class="nav-links">
+      <a href="#visao">A visão</a>
+      <a href="#workshop">O Workshop</a>
+      <a href="#oferta">A oferta</a>
+      <a href="#funil">O funil</a>
+      <a href="#campanha">A campanha</a>
+      <a href="#debora">Com a Débora</a>
+    </nav>
+    <button class="toggle" id="themeToggle" aria-label="Alternar tema">
+      <svg class="ico-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
+      <svg class="ico-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2M12 20v2M4 12H2M22 12h-2M5 5l1.5 1.5M17.5 17.5 19 19M19 5l-1.5 1.5M6.5 17.5 5 19"/></svg>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="topo">
+    <div class="seal reveal">
+      <span class="dot"></span> Estruturado por Continuum AI Systems
+    </div>
+    <h1 class="reveal">
+      Carreira <span class="alt">Alinhada</span>
+    </h1>
+    <p class="sub reveal">
+      Antes de crescer, é preciso reconhecer de onde se parte. Um workshop que devolve
+      à pessoa a clareza sobre si — para que cada passo seguinte tenha direção.
+    </p>
+    <div class="hero-meta reveal">
+      <span class="chip"><b>3 dias</b> · ~2h por dia</span>
+      <span class="chip">Turmas de <b>~20 pessoas</b></span>
+      <span class="chip">Porta de entrada de um <b>funil de consciência</b></span>
+    </div>
+    <span class="scroll-hint reveal"><span class="line"></span> Conduza a leitura</span>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ============ VISÃO ============ -->
+  <section id="visao">
+    <span class="eyebrow reveal">A visão</span>
+    <h2 class="sec-title reveal">Um workshop que abre um caminho, não que encerra um tema.</h2>
+    <p class="sec-lead reveal">
+      O encontro de três dias é a primeira interpretação que a pessoa faz de si mesma com método.
+      A partir dele, a relação se aprofunda: do coletivo ao acompanhamento próximo.
+    </p>
+    <div class="grid grid-3">
+      <div class="card reveal">
+        <span class="num">01</span>
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9L12 3Z"/><path d="M12 12l8-4.5M12 12v9M12 12 4 7.5"/></svg></div>
+        <h3>Workshop · a porta</h3>
+        <p>Três dias para reconhecer talentos, nomear o que bloqueia e desenhar uma direção. O primeiro encontro com a própria coerência.</p>
+      </div>
+      <div class="card reveal">
+        <span class="num">02</span>
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="10" r="2.4"/><path d="M3 20c0-3 2.7-5 6-5s6 2 6 5M15.5 19.5c.3-2 1.7-3.2 3.5-3.2 2 0 3 1.4 3 3.2"/></svg></div>
+        <h3>Mentoria em grupo · o aprofundamento</h3>
+        <p>Para quem decide ir além: três meses de orientação coletiva, sustentando a transformação que o workshop iniciou.</p>
+      </div>
+      <div class="card reveal">
+        <span class="num">03</span>
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="3.4"/><path d="M5 20c0-3.5 3-6 7-6s7 2.5 7 6"/><path d="M19 4l1.4 1.4M20.4 4 19 5.4" opacity=".5"/></svg></div>
+        <h3>Acompanhamento individual · a profundidade</h3>
+        <p>Poucas vagas, processo seletivo. A relação mais próxima, para quem está pronto a preservar coerência no longo prazo.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ============ WORKSHOP ============ -->
+  <section id="workshop">
+    <span class="eyebrow reveal">O workshop · três dias</span>
+    <h2 class="sec-title reveal">Um arco que vai de reconhecer-se a orientar-se.</h2>
+    <p class="sec-lead reveal">
+      Cada dia é um movimento de consciência. A NR-1 entra como contexto que dá urgência ao tema —
+      nunca como o centro da experiência.
+    </p>
+    <div class="grid grid-3">
+      <div class="card day reveal">
+        <span class="tag">Dia 1</span>
+        <h3>"Quem sou eu quando estou no meu melhor"</h3>
+        <ul>
+          <li>Eneagrama como leitura de essência</li>
+          <li>Mapeamento de talentos naturais</li>
+          <li>Desenho Humano aplicado à decisão</li>
+          <li>Dupla de reconhecimento mútuo</li>
+        </ul>
+      </div>
+      <div class="card day reveal">
+        <span class="tag">Dia 2</span>
+        <h3>"O que me afasta de mim"</h3>
+        <ul>
+          <li>Ikigai como bússola de sentido</li>
+          <li>Crenças que sustentam o desvio</li>
+          <li>Mapa do Bloqueio</li>
+          <li>EFT conduzido ao vivo</li>
+        </ul>
+      </div>
+      <div class="card day reveal">
+        <span class="tag">Dia 3</span>
+        <h3>"O plano"</h3>
+        <ul>
+          <li>Visualização do horizonte de 6 meses</li>
+          <li>Roadmap reverso, do futuro ao agora</li>
+          <li>Metas ancoradas em neurociência</li>
+          <li>Compromisso que preserva direção</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ============ OFERTA ============ -->
+  <section id="oferta">
+    <span class="eyebrow reveal">A oferta</span>
+    <h2 class="sec-title reveal">Uma escada de profundidade — e de compromisso.</h2>
+    <p class="sec-lead reveal">
+      O preço acompanha o momento da turma. A escassez é real: ~20 pessoas por encontro.
+      Quem chega primeiro encontra a melhor condição.
+    </p>
+
+    <div class="ladder">
+      <div class="lot featured reveal">
+        <span class="badge">10 primeiras vagas</span>
+        <span class="lot-name">Lote 1</span>
+        <div class="price">R$ 97</div>
+        <p class="lot-note">A condição de quem reconhece o valor antes da prova social. Por turma.</p>
+      </div>
+      <div class="lot reveal">
+        <span class="lot-name">Lote 2</span>
+        <div class="price">R$ 197</div>
+        <p class="lot-note">A turma já tomando forma. Por turma.</p>
+      </div>
+      <div class="lot reveal">
+        <span class="lot-name">Lote 3</span>
+        <div class="price">R$ 257</div>
+        <p class="lot-note">As vagas finais antes do fechamento da turma.</p>
+      </div>
+    </div>
+
+    <table class="tier-table reveal">
+      <thead>
+        <tr><th>Etapa</th><th>Investimento</th><th>Como se oferece</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Mentoria em grupo</td>
+          <td><span class="t-price">R$ 4.000 · 3 meses</span></td>
+          <td>Apresentada dentro do workshop, no momento de maior clareza do participante.</td>
+        </tr>
+        <tr>
+          <td>Acompanhamento individual</td>
+          <td><span class="t-price">3–4 vagas</span></td>
+          <td>Processo seletivo, com cashback para quem é escolhido. Profundidade reservada.</td>
+        </tr>
+        <tr>
+          <td>Order bump</td>
+          <td><span class="t-price">Curso de eneagrama</span></td>
+          <td>Complemento no checkout, para quem quer começar a leitura de si já.</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="sec-lead reveal" style="margin-top:26px;margin-bottom:0;font-size:15px;">
+      Formatos a interpretar com a audiência: <b style="color:var(--text)">semana</b>,
+      <b style="color:var(--text)">fim de semana</b> ou <b style="color:var(--text)">noite</b> —
+      o piloto nos dirá qual ritmo a pessoa certa prefere.
+    </p>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ============ FUNIL ============ -->
+  <section id="funil">
+    <span class="eyebrow reveal">O funil</span>
+    <h2 class="sec-title reveal">Do primeiro contato à transformação sustentada.</h2>
+    <p class="sec-lead reveal">
+      Cada etapa preserva a coerência da anterior. Nada de ruptura entre anúncio e experiência —
+      uma só voz conduzindo a pessoa pelo caminho.
+    </p>
+    <div class="funnel reveal">
+      <div class="stage">
+        <span class="s-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 11l18-7-7 18-3-7-8-4Z"/></svg></span>
+        <span class="s-n">01</span><h4>Anúncio</h4>
+        <p>O convite que reconhece a inquietação certa.</p>
+      </div>
+      <div class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+      <div class="stage">
+        <span class="s-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M7 14h7"/></svg></span>
+        <span class="s-n">02</span><h4>Página de vendas</h4>
+        <p>A promessa apresentada com profundidade.</p>
+      </div>
+      <div class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+      <div class="stage">
+        <span class="s-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20M6 15h4"/></svg></span>
+        <span class="s-n">03</span><h4>Checkout</h4>
+        <p>Decisão simples, com order bump opcional.</p>
+      </div>
+      <div class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+      <div class="stage">
+        <span class="s-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 11.5a8.4 8.4 0 0 1-12 7.5L3 21l2-6a8.5 8.5 0 1 1 16-3.5Z"/></svg></span>
+        <span class="s-n">04</span><h4>Grupo WhatsApp</h4>
+        <p>Aquecimento e pertencimento antes do dia 1.</p>
+      </div>
+      <div class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+      <div class="stage">
+        <span class="s-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9L12 3Z"/><circle cx="12" cy="12" r="2.6"/></svg></span>
+        <span class="s-n">05</span><h4>Workshop</h4>
+        <p>A experiência que transforma a consciência.</p>
+      </div>
+      <div class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+      <div class="stage">
+        <span class="s-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="10" r="2.3"/><path d="M3 20c0-3 2.7-5 6-5s6 2 6 5"/></svg></span>
+        <span class="s-n">06</span><h4>Mentoria</h4>
+        <p>A continuidade, para quem decide aprofundar.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ============ CAMPANHA ============ -->
+  <section id="campanha">
+    <span class="eyebrow reveal">A campanha · sete dias</span>
+    <h2 class="sec-title reveal">Da infraestrutura ao ar — em uma semana, com sobriedade.</h2>
+    <p class="sec-lead reveal">
+      A Continuum conduz a construção. A cada dia, uma camada — para que o go-live aconteça
+      sobre base firme, não sobre pressa.
+    </p>
+    <div class="timeline reveal">
+      <div class="tl-item">
+        <span class="dot"></span>
+        <span class="d-label">Dia 1</span>
+        <h4>Fundação técnica</h4>
+        <p>Contas, pixel e medição preparados — para enxergar com precisão desde o primeiro real investido.</p>
+      </div>
+      <div class="tl-item">
+        <span class="dot"></span>
+        <span class="d-label">Dia 2</span>
+        <h4>Página de vendas</h4>
+        <p>A promessa ganha forma em uma página que respeita a inteligência de quem lê.</p>
+      </div>
+      <div class="tl-item">
+        <span class="dot"></span>
+        <span class="d-label">Dia 3</span>
+        <h4>Copy e narrativa</h4>
+        <p>A voz da Débora traduzida em texto: discernimento, não argumento de venda.</p>
+      </div>
+      <div class="tl-item">
+        <span class="dot"></span>
+        <span class="d-label">Dia 4</span>
+        <h4>Criativos</h4>
+        <p>Ângulos que reconhecem a inquietação certa e convidam sem prometer atalho.</p>
+      </div>
+      <div class="tl-item">
+        <span class="dot"></span>
+        <span class="d-label">Dia 5</span>
+        <h4>Guia para a Débora</h4>
+        <p>Um material claro para que você acompanhe, interprete os números e decida com segurança.</p>
+      </div>
+      <div class="tl-item">
+        <span class="dot"></span>
+        <span class="d-label">Dia 6</span>
+        <h4>Revisão e aprovação</h4>
+        <p>Nada vai ao ar sem sua leitura final. A última palavra é sua.</p>
+      </div>
+      <div class="tl-item">
+        <span class="dot"></span>
+        <span class="d-label">Dia 7</span>
+        <h4>Go-live</h4>
+        <p>A campanha entra no ar e começamos a aprender com a audiência real.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ============ DÉBORA ============ -->
+  <section id="debora">
+    <span class="eyebrow reveal">O que conduzimos juntas</span>
+    <h2 class="sec-title reveal">Quatro elementos vêm de você — o resto, a Continuum sustenta.</h2>
+    <p class="sec-lead reveal">
+      São as peças que só você pode dar, porque carregam sua autoridade e sua história.
+      Sem pressa — no seu tempo de discernimento.
+    </p>
+    <div class="needs">
+      <div class="need reveal">
+        <div class="n-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c0-3.5 3-6 7-6s7 2.5 7 6"/></svg></div>
+        <div><h4>Nome e identidade visual</h4><p>Como o workshop se chama e a estética que o representa — para alinharmos toda a comunicação à sua marca.</p></div>
+      </div>
+      <div class="need reveal">
+        <div class="n-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 11l18-7-7 18-3-7-8-4Z"/></svg></div>
+        <div><h4>A promessa final</h4><p>A frase que você reconhece como verdadeira sobre o que a pessoa leva ao fim dos três dias.</p></div>
+      </div>
+      <div class="need reveal">
+        <div class="n-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 9h18M8 3v4M16 3v4"/></svg></div>
+        <div><h4>As datas das turmas</h4><p>Quando você deseja conduzir os primeiros encontros — para ancorarmos a escassez em algo real.</p></div>
+      </div>
+      <div class="need reveal">
+        <div class="n-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 15a2 2 0 0 1-2 2H8l-5 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2Z"/></svg></div>
+        <div><h4>Depoimentos</h4><p>Vozes de quem já viveu seu método. A prova mais honesta de que a transformação acontece.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ============ FECHAMENTO ============ -->
+  <section id="fechamento">
+    <div class="closing reveal">
+      <p class="q">"Antes de acelerar, devolvemos à pessoa a <span class="hl">clareza sobre si</span>. É disso que nasce uma carreira alinhada."</p>
+      <div class="milestone">
+        <span class="m-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg></span>
+        Próximo marco: nos reencontramos <b>na terça</b>, com a base já construída.
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  Débora Delgado <span class="sep">·</span> Carreira Alinhada <span class="sep">·</span> Estruturado por Continuum AI Systems
+</footer>
+
+<script>
+  /* ===== THEME (em memória, sem localStorage) ===== */
+  var currentTheme = 'dark';
+  var root = document.documentElement;
+  var toggle = document.getElementById('themeToggle');
+  toggle.addEventListener('click', function () {
+    currentTheme = (currentTheme === 'dark') ? 'light' : 'dark';
+    root.setAttribute('data-theme', currentTheme);
+  });
+
+  /* ===== REVEAL ON SCROLL ===== */
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (e.isIntersecting) {
+        e.target.classList.add('in');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+  document.querySelectorAll('.reveal').forEach(function (el, i) {
+    // leve escalonamento por proximidade
+    el.style.transitionDelay = (Math.min(i % 4, 3) * 0.07) + 's';
+    io.observe(el);
+  });
+
+  /* ===== ACTIVE NAV LINK ===== */
+  var links = Array.prototype.slice.call(document.querySelectorAll('.nav-links a'));
+  var navIo = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (e.isIntersecting) {
+        var id = e.target.getAttribute('id');
+        links.forEach(function (l) {
+          var on = l.getAttribute('href') === '#' + id;
+          l.style.color = on ? 'var(--accent)' : '';
+          l.style.background = on ? 'var(--surface-2)' : '';
+        });
+      }
+    });
+  }, { threshold: 0.4 });
+  document.querySelectorAll('main section[id]').forEach(function (s) { navIo.observe(s); });
+</script>
+</body>
+</html>

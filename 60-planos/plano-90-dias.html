@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>Continuum · Plano 90 Dias — Trajetória 40k</title>
+<style>
+  :root{
+    --bg:#0c0d10; --bg2:#131419; --card:#16181f; --card2:#1b1e27;
+    --line:#262a36; --txt:#e8eaf0; --txt2:#a4a9b8; --txt3:#6e7384;
+    --acc:#5b8cff; --acc2:#7aa2ff; --ok:#3ecf8e; --warn:#f5a623; --bad:#ff5f6d;
+    --okbg:rgba(62,207,142,.10); --warnbg:rgba(245,166,35,.10); --badbg:rgba(255,95,109,.10);
+    --shadow:0 1px 0 rgba(255,255,255,.02),0 8px 30px rgba(0,0,0,.35);
+  }
+  [data-theme="light"]{
+    --bg:#f4f5f8; --bg2:#eceef3; --card:#ffffff; --card2:#f7f8fb;
+    --line:#e2e5ec; --txt:#1a1d26; --txt2:#4a5060; --txt3:#878d9c;
+    --acc:#2f63e6; --acc2:#3f74f0; --ok:#13935f; --warn:#b9760a; --bad:#d83644;
+    --okbg:rgba(19,147,95,.08); --warnbg:rgba(185,118,10,.08); --badbg:rgba(216,54,68,.08);
+    --shadow:0 1px 2px rgba(20,30,60,.04),0 8px 28px rgba(20,30,60,.08);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased;transition:background .3s,color .3s}
+  .wrap{max-width:920px;margin:0 auto;padding:0 24px 96px}
+  header.top{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);padding:14px 0;margin-bottom:8px}
+  .top-in{max-width:920px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:.3px}
+  .dot{width:10px;height:10px;border-radius:50%;background:var(--acc);box-shadow:0 0 0 4px color-mix(in srgb,var(--acc) 22%,transparent)}
+  .brand small{display:block;font-weight:500;color:var(--txt3);font-size:11px;letter-spacing:.5px;text-transform:uppercase}
+  .toggle{cursor:pointer;border:1px solid var(--line);background:var(--card);color:var(--txt2);border-radius:10px;padding:8px 12px;font-size:13px;display:flex;align-items:center;gap:7px;transition:.2s}
+  .toggle:hover{border-color:var(--acc);color:var(--txt)}
+  .hero{padding:54px 0 30px}
+  .kicker{color:var(--acc2);font-weight:600;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:14px}
+  h1{font-size:38px;line-height:1.15;letter-spacing:-.5px;margin-bottom:18px;font-weight:760}
+  .lead{font-size:18px;color:var(--txt2);max-width:680px}
+  .meta-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+  .pill{font-size:12.5px;color:var(--txt2);border:1px solid var(--line);background:var(--card);border-radius:999px;padding:6px 13px}
+  .pill b{color:var(--txt)}
+  section{margin-top:46px}
+  .sec-head{display:flex;align-items:baseline;gap:12px;margin-bottom:20px}
+  .sec-num{font-variant-numeric:tabular-nums;color:var(--acc);font-weight:700;font-size:14px;border:1px solid var(--line);border-radius:8px;padding:3px 9px;background:var(--card)}
+  h2{font-size:23px;letter-spacing:-.3px;font-weight:720}
+  h2 + .sub{color:var(--txt3);font-size:14px;margin-top:3px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px 24px;box-shadow:var(--shadow)}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+  .grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+  @media(max-width:720px){.grid2,.grid3,.grid4{grid-template-columns:1fr}h1{font-size:30px}.lead{font-size:16px}}
+  .stat{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;box-shadow:var(--shadow)}
+  .stat .lbl{font-size:12px;color:var(--txt3);text-transform:uppercase;letter-spacing:.6px;margin-bottom:8px}
+  .stat .val{font-size:27px;font-weight:740;font-variant-numeric:tabular-nums;letter-spacing:-.5px}
+  .stat .note{font-size:12.5px;color:var(--txt2);margin-top:5px}
+  .stat.bad .val{color:var(--bad)} .stat.warn .val{color:var(--warn)} .stat.ok .val{color:var(--ok)}
+  .stat.bad{border-color:color-mix(in srgb,var(--bad) 35%,var(--line))}
+  table{width:100%;border-collapse:collapse;font-size:14.5px}
+  th,td{text-align:left;padding:12px 10px;border-bottom:1px solid var(--line)}
+  th{color:var(--txt3);font-size:11.5px;text-transform:uppercase;letter-spacing:.6px;font-weight:600}
+  td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
+  tr:last-child td{border-bottom:none}
+  .total-row td{font-weight:720;background:var(--card2)}
+  .tag{display:inline-block;font-size:11px;font-weight:600;padding:2px 9px;border-radius:999px;letter-spacing:.3px}
+  .tag.now{background:var(--badbg);color:var(--bad)} .tag.soon{background:var(--warnbg);color:var(--warn)} .tag.build{background:var(--okbg);color:var(--ok)}
+  .frente{display:flex;gap:16px;padding:18px 0;border-bottom:1px solid var(--line)}
+  .frente:last-child{border-bottom:none}
+  .frente .idx{flex:0 0 42px;height:42px;border-radius:12px;background:var(--card2);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;font-weight:740;color:var(--acc)}
+  .frente h3{font-size:16px;margin-bottom:4px;display:flex;align-items:center;gap:9px;flex-wrap:wrap}
+  .frente p{color:var(--txt2);font-size:14.5px}
+  .frente .why{font-size:13px;color:var(--txt3);margin-top:6px}
+  .callout{border-left:3px solid var(--acc);background:var(--card2);border-radius:0 12px 12px 0;padding:16px 20px;margin-top:4px}
+  .callout.heart{border-left-color:var(--ok);background:var(--okbg)}
+  .callout.alert{border-left-color:var(--warn);background:var(--warnbg)}
+  .callout h3{font-size:16px;margin-bottom:7px;color:var(--txt)}
+  .callout p{color:var(--txt2);font-size:14.5px}
+  .callout p + p{margin-top:9px}
+  .funnel{display:flex;flex-direction:column;gap:9px;margin-top:6px}
+  .step{display:flex;align-items:center;gap:14px;background:var(--card2);border:1px solid var(--line);border-radius:12px;padding:13px 16px}
+  .step .n{flex:0 0 26px;height:26px;border-radius:8px;background:var(--acc);color:#fff;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700}
+  .step .t{font-size:14.5px}.step .t b{color:var(--txt)}
+  .timeline{position:relative;padding-left:26px}
+  .timeline::before{content:"";position:absolute;left:7px;top:6px;bottom:6px;width:2px;background:var(--line)}
+  .tl{position:relative;padding:0 0 20px}
+  .tl::before{content:"";position:absolute;left:-23px;top:5px;width:12px;height:12px;border-radius:50%;background:var(--acc);box-shadow:0 0 0 4px color-mix(in srgb,var(--acc) 20%,transparent)}
+  .tl h4{font-size:15px;margin-bottom:3px}
+  .tl p{font-size:14px;color:var(--txt2)}
+  .tl .when{font-size:11.5px;color:var(--acc2);font-weight:600;letter-spacing:.5px;text-transform:uppercase;margin-bottom:4px}
+  ul.clean{list-style:none;display:flex;flex-direction:column;gap:9px;margin-top:4px}
+  ul.clean li{padding-left:26px;position:relative;color:var(--txt2);font-size:14.5px}
+  ul.clean li::before{content:"";position:absolute;left:4px;top:9px;width:7px;height:7px;border-radius:2px;background:var(--acc);transform:rotate(45deg)}
+  ul.no li::before{background:var(--bad)}
+  .bignum{font-variant-numeric:tabular-nums}
+  .foot{margin-top:54px;padding-top:22px;border-top:1px solid var(--line);color:var(--txt3);font-size:13px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+  .principle{text-align:center;font-size:19px;font-weight:600;color:var(--txt);padding:30px 0 6px;letter-spacing:-.2px}
+  .principle small{display:block;color:var(--txt3);font-size:13px;font-weight:500;margin-top:6px;letter-spacing:.5px;text-transform:uppercase}
+  .okr{border:1px solid var(--line);border-radius:14px;background:var(--card);box-shadow:var(--shadow);padding:20px 22px}
+  .okr .o{font-size:15.5px;font-weight:700;margin-bottom:10px;display:flex;gap:10px;align-items:baseline}
+  .okr .o .k{color:var(--acc);font-variant-numeric:tabular-nums}
+  .okr ul{list-style:none;display:flex;flex-direction:column;gap:7px}
+  .okr li{font-size:13.5px;color:var(--txt2);padding-left:20px;position:relative}
+  .okr li::before{content:"›";position:absolute;left:4px;color:var(--acc);font-weight:700}
+  .board{background:var(--card2);border:1px dashed var(--line);border-radius:14px;padding:18px 20px;font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:12.5px;color:var(--txt2);overflow-x:auto;white-space:pre;line-height:1.9}
+  .persona{border-top:3px solid var(--acc);border-radius:14px;background:var(--card);border-left:1px solid var(--line);border-right:1px solid var(--line);border-bottom:1px solid var(--line);box-shadow:var(--shadow);padding:20px 22px}
+  .persona.nk{border-top-color:var(--ok)}
+  .persona h3{font-size:17px;margin-bottom:2px}
+  .persona .role{font-size:12px;color:var(--txt3);text-transform:uppercase;letter-spacing:.6px;margin-bottom:12px}
+</style>
+</head>
+<body data-theme="dark">
+<header class="top">
+  <div class="top-in">
+    <div class="brand"><span class="dot"></span><div>CONTINUUM AI SYSTEMS<small>Plano 90 Dias · Jul–Set 2026</small></div></div>
+    <button class="toggle" id="tg" onclick="tog()"><span id="tgi">◐</span><span id="tgt">Claro</span></button>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <div class="hero">
+    <div class="kicker">Reunião de sócios · Victor &amp; Nakielly · 02/07/2026</div>
+    <h1>90 dias para construir o primeiro MRR —<br>e a trajetória até os 40k.</h1>
+    <p class="lead">O plano de crise nos deu o diagnóstico. Este é o plano de construção: metas, papéis, cadência e placar. Tudo que está aqui cabe no nosso dia — e cada semana tem uma vitória possível.</p>
+    <div class="meta-row">
+      <span class="pill">Norte: <b>R$ 40k MRR</b> até jun/2027</span>
+      <span class="pill">Trimestre: <b>MRR novo R$ 7,5–10k</b></span>
+      <span class="pill"><b>30 sites</b> em 90 dias</span>
+      <span class="pill"><b>90 conversas</b>/semana (nós dois)</span>
+    </div>
+  </div>
+
+  <!-- 01 ONDE ESTAMOS -->
+  <section>
+    <div class="sec-head"><span class="sec-num">01</span><div><h2>Ponto de partida — sem maquiagem</h2><div class="sub">Calibrado em 02/07. É daqui que saímos.</div></div></div>
+    <div class="grid4" style="margin-bottom:16px">
+      <div class="stat bad"><div class="lbl">Caixa disponível</div><div class="val bignum">R$ 0</div><div class="note">todo caixa vem de venda nova</div></div>
+      <div class="stat bad"><div class="lbl">Burn mensal</div><div class="val bignum">R$ 11k</div><div class="note">+ parcela do cartão ~R$ 1k</div></div>
+      <div class="stat warn"><div class="lbl">Recorrência atual</div><div class="val bignum">R$ 2k</div><div class="note">Débora · com termo até dez/2026</div></div>
+      <div class="stat ok"><div class="lbl">Capacidade</div><div class="val bignum">Alta</div><div class="note">Victor 8–12h/dia · Nakielly no funil</div></div>
+    </div>
+    <div class="callout alert">
+      <h3>O fato que governa julho</h3>
+      <p>A Débora pagou à vista — o dinheiro já entrou e já foi. Ou seja: <b>cada real deste mês nasce de uma venda que ainda não aconteceu.</b> Por isso o bloco de prospecção da manhã é sagrado para nós dois: é literalmente de onde o mês sai.</p>
+    </div>
+  </section>
+
+  <!-- 02 NORTE -->
+  <section>
+    <div class="sec-head"><span class="sec-num">02</span><div><h2>O norte e a escada até ele</h2><div class="sub">R$ 40.000 de MRR até 30/06/2027 — em 4 degraus, cada um com gate de saída.</div></div></div>
+    <div class="timeline">
+      <div class="tl"><div class="when">H1 · Jul–Set 2026 — este plano</div><h4>Caixa + primeiro MRR · sai com R$ 7,5–10k</h4><p>Motor: sites (pagam o mês) + conversão site→Assessoria (paga o futuro). Gate: MRR ≥ 10k → prospecção fria de sites cai a 50% da energia.</p></div>
+      <div class="tl"><div class="when">H2 · Out–Dez 2026</div><h4>Carteira → MRR · sai com R$ 20k</h4><p>Assessoria escala + primeiros CORE vendidos direto. Renovação Débora (~R$ 4,5k no escopo certo). Gate: 20k + 2 segmentos validados → abre venda de sistemas e beta SaaS.</p></div>
+      <div class="tl"><div class="when">H3 · Jan–Mar 2027</div><h4>Sistemas + funil de infoproduto ativo · sai com R$ 30k</h4><p>CORE Avançado/Full como motor principal; a esteira de infoproduto (construída com o que aprendemos entregando) começa a vender.</p></div>
+      <div class="tl"><div class="when">H4 · Abr–Jun 2027</div><h4>R$ 40k — e a decisão de estrutura</h4><p>CORE + Assessoria + SaaS early access + infoproduto. Com 40k: contratação estrutural e productização (Fase 02).</p></div>
+    </div>
+    <div class="card" style="margin-top:14px">
+      <table>
+        <thead><tr><th>Composição-alvo dos 40k</th><th class="num">Preço/mês</th><th class="num">Qtde</th><th class="num">MRR</th></tr></thead>
+        <tbody>
+          <tr><td>Assessoria Base</td><td class="num">R$ 2.500</td><td class="num">6</td><td class="num">R$ 15.000</td></tr>
+          <tr><td>Assessoria Completa</td><td class="num">R$ 4.500</td><td class="num">2</td><td class="num">R$ 9.000</td></tr>
+          <tr><td>CORE Essencial</td><td class="num">R$ 2.500</td><td class="num">2</td><td class="num">R$ 5.000</td></tr>
+          <tr><td>CORE Avançado</td><td class="num">R$ 3.500</td><td class="num">2</td><td class="num">R$ 7.000</td></tr>
+          <tr><td>Infoproduto + SaaS early</td><td class="num">—</td><td class="num">—</td><td class="num">R$ 4.000</td></tr>
+          <tr class="total-row"><td>Total (~12 clientes recorrentes)</td><td></td><td></td><td class="num">R$ 40.000</td></tr>
+        </tbody>
+      </table>
+      <p style="color:var(--txt3);font-size:13px;margin-top:12px">12 clientes recorrentes não cabem em 2 pessoas — por isso as contratações da seção 07 <b style="color:var(--txt)">são parte do plano</b>, não socorro. Os setups ao longo do caminho é que as financiam.</p>
+    </div>
+  </section>
+
+  <!-- 03 FOCO -->
+  <section>
+    <div class="sec-head"><span class="sec-num">03</span><div><h2>Foco — o que fazemos e o que recusamos</h2><div class="sub">Disciplina de 2 frentes. Os funis têm gate, não têm pressa.</div></div></div>
+    <div class="grid2">
+      <div class="card">
+        <h3 style="font-size:15px;margin-bottom:12px;color:var(--ok)">Fazemos neste trimestre</h3>
+        <ul class="clean">
+          <li><b>Máquina de sites</b> — 10/mês, caixa imediato</li>
+          <li><b>Conversão site → Assessoria</b> — 3 contratos novos de R$ 2.500</li>
+          <li><b>Entrega Débora impecável</b> — dentro do anexo, vira caso e esteira</li>
+          <li><b>Fundação dos funis</b> — lead magnet + lista (sem vender) · OS Fase 6</li>
+          <li><b>Sistema de massa</b> — auditar, pilotar, rampar com gates</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3 style="font-size:15px;margin-bottom:12px;color:var(--bad)">Não fazemos (ainda)</h3>
+        <ul class="clean no">
+          <li>Vender infoproduto — gate: MRR ≥ 10k</li>
+          <li>Vender SaaS — gate: MRR ≥ 20k</li>
+          <li>Abrir nicho novo antes de saturar o atual</li>
+          <li>Desconto no MRR (só setup, máx. 10%)</li>
+          <li>Scope creep na Débora — fora do anexo = próxima camada</li>
+          <li>Contratar antes de gatilho objetivo</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04 OKRS -->
+  <section>
+    <div class="sec-head"><span class="sec-num">04</span><div><h2>OKRs do trimestre</h2><div class="sub">4 objetivos. O1 e O2 são existenciais — em conflito, ganham sempre.</div></div></div>
+    <div class="grid2">
+      <div class="okr"><div class="o"><span class="k">O1</span>Sair da operação de guerra</div><ul>
+        <li>Urgências (R$ 3k) quitadas até 15/07</li>
+        <li>Cartão fora do rotativo esta semana + acordo societário escrito</li>
+        <li>Caixa de sites ≥ R$ 12k/mês por 3 meses</li>
+        <li>Zero contas novas em atraso a partir de agosto</li>
+      </ul></div>
+      <div class="okr"><div class="o"><span class="k">O2</span>Construir o primeiro MRR</div><ul>
+        <li>3 contratos novos de Assessoria = R$ 7.500 até 30/09</li>
+        <li>≥ 20% dos sites entregues com conversa de expansão aberta</li>
+        <li>Churn zero no trimestre</li>
+        <li>Site no ar ≤ 72h · primeiro valor da Assessoria ≤ 30 dias</li>
+      </ul></div>
+      <div class="okr"><div class="o"><span class="k">O3</span>Máquina comercial previsível</div><ul>
+        <li>90 conversas novas/semana a partir da S2 (65 Victor + 25 Nakielly)</li>
+        <li>30 sites no trimestre (10/mês)</li>
+        <li>Pipeline coverage ≥ 3× a partir de agosto</li>
+        <li>Sistema de massa auditado e rampado — ou descartado sem dependência</li>
+      </ul></div>
+      <div class="okr"><div class="o"><span class="k">O4</span>Fundação dos funis</div><ul>
+        <li>Esteira de infoproduto documentada (aprendizado Débora) até 31/08</li>
+        <li>Lead magnet + captura no ar · ≥ 300 contatos na lista</li>
+        <li>Continuum OS Fase 6 concluída (sem venda)</li>
+        <li>Playbook de sites escrito — nosso seguro contra imprevistos</li>
+      </ul></div>
+    </div>
+  </section>
+
+  <!-- 05 A MATEMATICA -->
+  <section>
+    <div class="sec-head"><span class="sec-num">05</span><div><h2>A matemática da semana</h2><div class="sub">A meta não é "vender mais". É cumprir o topo do funil — o resto é taxa.</div></div></div>
+    <div class="funnel">
+      <div class="step"><div class="n">1</div><div class="t"><b>90 conversas novas/semana</b> — Victor 13/dia útil + Nakielly ~5/dia (lista Google Maps, empresas sem site)</div></div>
+      <div class="step"><div class="n">2</div><div class="t"><b>~27 respostas</b> (30%) — follow-ups D+2 / D+5 / D+9 sem falha</div></div>
+      <div class="step"><div class="n">3</div><div class="t"><b>~13 qualificados</b> — dor real + WhatsApp ativo + decisor</div></div>
+      <div class="step"><div class="n">4</div><div class="t"><b>2–3 sites fechados</b> — R$ 997 (5 primeiros) → R$ 1.497 · entrada de 50% antes de produzir</div></div>
+      <div class="step"><div class="n">5</div><div class="t"><b>Toda entrega planta a semente da Assessoria</b> — "quer que o site trabalhe pra trazer cliente?"</div></div>
+    </div>
+    <div class="grid3" style="margin-top:18px">
+      <div class="stat ok"><div class="lbl">Julho</div><div class="val bignum">10 sites</div><div class="note">≈ R$ 12,5k de caixa</div></div>
+      <div class="stat"><div class="lbl">Ago–Set (preço padrão)</div><div class="val bignum">R$ 15–18k</div><div class="note">/mês · 10–12 sites a R$ 1.497</div></div>
+      <div class="stat ok"><div class="lbl">Meta que muda o jogo</div><div class="val bignum">3 × 2.500</div><div class="note">Assessorias novas = MRR R$ 7,5k</div></div>
+    </div>
+  </section>
+
+  <!-- 06 PAPEIS -->
+  <section>
+    <div class="sec-head"><span class="sec-num">06</span><div><h2>Quem faz o quê</h2><div class="sub">Divisão calibrada em 02/07 — cada um protege uma parte do funil.</div></div></div>
+    <div class="grid2">
+      <div class="persona">
+        <h3>Victor</h3><div class="role">Prospecção · Fechamento · Produção · Estratégia</div>
+        <ul class="clean">
+          <li><b>Manhã (sagrada):</b> 13 conversas novas + follow-ups do dia</li>
+          <li><b>Tarde:</b> calls de fechamento e Assessoria · produção de sites (só com kit completo)</li>
+          <li>Entrega Débora · sistema de massa · fundação de funis (buffer)</li>
+          <li>Regime de guerra: 8–12h/dia, 7 dias — <b>com meio dia de recuperação no domingo, inegociável</b></li>
+        </ul>
+      </div>
+      <div class="persona nk">
+        <h3>Nakielly</h3><div class="role">Onboarding · Prospecção conjunta · Cobrança</div>
+        <ul class="clean">
+          <li><b>Manhã (junto):</b> ~5 conversas/dia com script próprio + cobrança de entradas e saldos</li>
+          <li><b>Tarde:</b> onboarding de cada site vendido — kit completo (dados, fotos, textos, acessos) <b>antes</b> da produção</li>
+          <li>Rotina de onboarding da Assessoria (Débora e as próximas)</li>
+          <li>Gate de capacidade: nenhum cliente novo entra sem o seu "cabe"</li>
+        </ul>
+      </div>
+    </div>
+    <div class="callout" style="margin-top:14px">
+      <h3>Por que essa divisão funciona</h3>
+      <p>A Nakielly garante duas coisas que derrubam agência por aí: <b>nenhuma produção começa sem insumo completo</b> (o relógio das 72h só liga com o kit pronto) e <b>nenhuma conversa esfria</b>. O Victor nunca para a prospecção para caçar logo de cliente. Cada um no seu ponto de alavanca.</p>
+    </div>
+  </section>
+
+  <!-- 07 JULHO SEMANA A SEMANA -->
+  <section>
+    <div class="sec-head"><span class="sec-num">07</span><div><h2>Julho, semana a semana</h2><div class="sub">Cada semana tem um marco. Nenhum depende de sorte.</div></div></div>
+    <div class="card">
+      <table>
+        <thead><tr><th>Semana</th><th>Prospecção</th><th class="num">Sites</th><th class="num">Caixa acum.</th><th>Marco</th></tr></thead>
+        <tbody>
+          <tr><td>S1 · 02–06/07</td><td>lista 100+ leads · 65 conversas</td><td class="num">1</td><td class="num">R$ 997</td><td><span class="tag now">urgência R$ 1k paga · cartão parcelado</span></td></tr>
+          <tr><td>S2 · 07–13/07</td><td><b>90 conversas</b> (Nakielly entra)</td><td class="num">2</td><td class="num">R$ 2,9k</td><td><span class="tag now">aluguel atrasado pago</span></td></tr>
+          <tr><td>S3 · 14–20/07</td><td>90 conversas · script revisado</td><td class="num">3</td><td class="num">R$ 6,5k</td><td><span class="tag soon">1ª conversa de Assessoria</span></td></tr>
+          <tr><td>S4 · 21–31/07</td><td>90 conversas</td><td class="num">4</td><td class="num">R$ 12,5k</td><td><span class="tag build">1º contrato de Assessoria</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="callout heart" style="margin-top:14px">
+      <h3>Débora: nosso único recorrente — e três colheitas</h3>
+      <p><b>1.</b> Entregar impecável, dentro do anexo (pedido fora = "próxima camada", nunca absorvido). <b>2.</b> Orçamento de 10–15h/semana, medido na revisão quinzenal. <b>3.</b> O processo vira a esteira do infoproduto, o resultado vira depoimento — e a <b>renovação em dezembro (~R$ 4,5k/mês no escopo certo)</b> começa a ser construída agora, com relatório mensal de valor.</p>
+    </div>
+  </section>
+
+  <!-- 08 SISTEMA DE MASSA -->
+  <section>
+    <div class="sec-head"><span class="sec-num">08</span><div><h2>Sistema de prospecção em massa</h2><div class="sub">Acelerador, não premissa. As metas fecham no modo manual — o sistema multiplica.</div></div></div>
+    <div class="card">
+      <div class="frente"><div class="idx">G1</div><div><h3>Gate técnico <span class="tag soon">auditoria</span></h3><p>Anti-ban (45–75s entre mensagens, teto por número, warm-up de chip), logs, opt-out, número principal isolado.</p></div></div>
+      <div class="frente"><div class="idx">G2</div><div><h3>Gate de qualidade <span class="tag soon">piloto 1 semana</span></h3><p>Taxa de resposta ≥ 80% da manual e zero bloqueios. Volume não vale nada se a conversa não converte.</p></div></div>
+      <div class="frente"><div class="idx">G3</div><div><h3>Gate de capacidade <span class="tag build">Nakielly decide</span></h3><p>Se o fechamento dobrar, a entrega mantém as 72h? Sem esse "sim", não liga.</p></div></div>
+    </div>
+    <div class="grid3" style="margin-top:14px">
+      <div class="stat"><div class="lbl">Rampa 1 · sem. 1–2</div><div class="val bignum">20/dia</div><div class="note">resposta ≥ baseline · 0 bans</div></div>
+      <div class="stat"><div class="lbl">Rampa 2 · sem. 3–4</div><div class="val bignum">40/dia</div><div class="note">+ entrega dentro do SLA</div></div>
+      <div class="stat ok"><div class="lbl">Regime</div><div class="val bignum">60–80/dia</div><div class="note">1 ban → volume cai 50% e revisão</div></div>
+    </div>
+  </section>
+
+  <!-- 09 CONTRATACOES -->
+  <section>
+    <div class="sec-head"><span class="sec-num">09</span><div><h2>Contratações por gatilho</h2><div class="sub">Não por data, nem por cansaço — por número. Cada contratação compra horas de R$ 250 por uma fração.</div></div></div>
+    <div class="card">
+      <table>
+        <thead><tr><th>Função</th><th>Dispara quando</th><th class="num">Custo ref.</th><th>Libera</th></tr></thead>
+        <tbody>
+          <tr><td><b>Freelancer web design</b> (por entrega)</td><td>≥ 8 sites/mês por 2 meses · fila &gt; 5 dias · ou horas &gt; 85%</td><td class="num">≤ R$ 300/site</td><td>30–40h/mês do Victor → venda</td></tr>
+          <tr><td><b>Assistente operação/CS</b> (PJ 4h)</td><td>≥ 6 recorrentes · ou MRR ≥ 15k com horas &gt; 80%</td><td class="num">R$ 1,5–2,5k/mês</td><td>Nakielly → gestão de entrega</td></tr>
+          <tr><td><b>SDR</b> (fixo + variável)</td><td>MRR ≥ 20k + coverage 3× + playbook escrito</td><td class="num">R$ 1,5k + comissão</td><td>manhãs do Victor → fechamento</td></tr>
+          <tr><td><b>Editor/designer criativos</b></td><td>2+ Assessorias Completas</td><td class="num">R$ 1–2k/mês</td><td>escopo criativo</td></tr>
+          <tr><td><b>Closer</b></td><td>MRR ≥ 30k + forecast confiável</td><td class="num">PJ + comissão</td><td>Victor → estratégia e produto</td></tr>
+          <tr><td><b>Dev/implementador</b> (OS)</td><td>vendas SaaS/CORE Full &gt; capacidade</td><td class="num">por projeto</td><td>productização Fase 02</td></tr>
+        </tbody>
+      </table>
+      <p style="color:var(--txt3);font-size:13px;margin-top:12px">Regra-mãe: custo de 3 meses em caixa antes de contratar — <b style="color:var(--txt)">exceto o freelancer de sites</b>, que se paga com a própria venda e pode ser antecipado se o ritmo do Victor cair (proteção anti-burnout).</p>
+    </div>
+  </section>
+
+  <!-- 10 CADENCIA -->
+  <section>
+    <div class="sec-head"><span class="sec-num">10</span><div><h2>A cadência — nosso sistema operacional</h2><div class="sub">Ritual sem saída registrada não aconteceu. Ritual perdido reagenda no dia, nunca cancela.</div></div></div>
+    <div class="card">
+      <table>
+        <thead><tr><th>Ritual</th><th>Quando</th><th>Saída obrigatória</th></tr></thead>
+        <tbody>
+          <tr><td><b>Daily</b> · 15 min</td><td>dia útil, 08h50</td><td>3 prioridades cada + bloqueio com dono</td></tr>
+          <tr><td><b>Bloco sagrado de prospecção</b></td><td>09h05–11h30, juntos</td><td>13 + 5 conversas novas · follow-ups do dia</td></tr>
+          <tr><td><b>Check-out</b> · 10 min</td><td>dia útil, 17h00</td><td>placar do dia preenchido</td></tr>
+          <tr><td><b>Pipeline semanal</b> · 60 min</td><td>segunda, 08h30</td><td>funil etapa a etapa · STATUS atualizado · metas pactuadas</td></tr>
+          <tr><td><b>Retro + placar</b> · 45 min</td><td>sexta, 16h30</td><td>verde/vermelho por KPI · vitória nomeada · check-in de energia</td></tr>
+          <tr><td><b>Iteração</b> · 45 min</td><td>quinzenal, quarta</td><td>TTFV, SLA, horas Débora vs. orçamento</td></tr>
+          <tr><td><b>Estratégica</b> · 2h</td><td>1ª segunda do mês</td><td>OKRs, tripwires, gatilhos de contratação, 1 decisão</td></tr>
+          <tr><td><b>Trimestral</b> · 4h</td><td>26/09</td><td>fechamento dos OKRs + próximo plano</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="card" style="margin-top:14px">
+      <h3 style="font-size:15px;margin-bottom:10px">O placar da semana</h3>
+      <div class="board">SEMANA ___                          META    S  T  Q  Q  S   TOTAL  ✓/✗
+Conversas — Victor (13/dia)          65     _  _  _  _  _    __
+Conversas — Nakielly (5/dia)         25     _  _  _  _  _    __
+Follow-ups no prazo                 100%    _  _  _  _  _    __
+Kits de onboarding completos        100%    _  _  _  _  _    __
+Sites vendidos                      2–3     _  _  _  _  _    __
+Caixa recebido (R$)                3.000    _  _  _  _  _    __
+Sementes de Assessoria             100%     _  _  _  _  _    __
+
+VITÓRIA DA SEMANA (Victor → Nakielly): ______________
+VITÓRIA DA SEMANA (Nakielly → Victor): ______________
+SEQUÊNCIA DE SEMANAS VERDES: __</div>
+      <ul class="clean" style="margin-top:14px">
+        <li><b>As 2 primeiras linhas nós controlamos 100%</b> — bater elas é vitória mesmo em semana sem venda. É isso que protege o moral enquanto o funil enche.</li>
+        <li><b>Ritual do sino:</b> todo Pix que cai é anunciado na hora no grupo, com o número do mês atualizado. Venda de MRR comemora em dobro.</li>
+        <li><b>Vitória nomeada pelo outro</b> — o placar é reconhecimento mútuo, não vigilância.</li>
+        <li><b>Sequência de semanas verdes</b> — o jogo é não quebrar a corrente.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 11 RISCOS -->
+  <section>
+    <div class="sec-head"><span class="sec-num">11</span><div><h2>Riscos com resposta pré-combinada</h2><div class="sub">Decidimos agora, com a cabeça fria, o que fazer se o sinal aparecer.</div></div></div>
+    <div class="card">
+      <table>
+        <thead><tr><th>Sinal</th><th>Resposta combinada</th></tr></thead>
+        <tbody>
+          <tr><td>&lt; meta de conversas por 2 semanas</td><td>causa-raiz no ritual de segunda antes de qualquer outra iniciativa</td></tr>
+          <tr><td>10 sites entregues sem 1 Assessoria</td><td>revisar timing e script da ponte · testar diagnóstico pago</td></tr>
+          <tr><td>1 número de WhatsApp banido</td><td>volume do sistema cai 50% + revisão antes de subir</td></tr>
+          <tr><td>Victor &gt; 85% das horas por 2 semanas ou ritmo caindo</td><td>freelancer de sites antecipado + recuperação de domingo intocável</td></tr>
+          <tr><td>MRR novo &lt; 50% da meta por 2 meses</td><td>revisão estratégica extraordinária</td></tr>
+          <tr><td>1 cliente &gt; 40% da receita</td><td>diversificar vira prioridade 1 do pipeline</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <div class="principle">
+    Quem integra o sistema vence com ele.<br>Quem o ignora, é vencido por ele.
+    <small>O site paga o mês. A recorrência paga o futuro. O placar conta a verdade.</small>
+  </div>
+
+  <div class="foot">
+    <span>Continuum AI Systems · Plano 90 Dias · vigência 02/07 → 30/09/2026</span>
+    <span>Fonte de governança: PLANO-90-DIAS.md · STATUS.md · RITUAIS.md</span>
+  </div>
+
+</div>
+
+<script>
+function tog(){
+  var b=document.body,d=b.getAttribute('data-theme')==='dark';
+  b.setAttribute('data-theme',d?'light':'dark');
+  document.getElementById('tgt').textContent=d?'Escuro':'Claro';
+}
+</script>
+</body>
+</html>

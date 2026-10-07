@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<!--
+STATUS: VIGENTE · fonte (build 2026-07-17)
+NOTA DE LOCAL: destino planejado era 04 - web design/curso-eneagrama/index-2026-07-17.html;
+a pasta nova não pôde ser criada pela sessão (drive de rede). Mover este arquivo para lá.
+Página de vendas · Curso de Eneagrama. Build do PLANO-PAGINA-CURSO-ENEAGRAMA.md
+(10 dobras) sobre o design system V2 da página do workshop (re-skin aprovado).
+Decisões aplicadas (Victor 17/07, congruência): preço R$ 297 cheio (sem falsa promo;
+âncora = procedência da mentoria R$ 4.000; o "de 297 por 57" vive só no bump/resgate) ·
+acesso por 12 meses · geometria do hero = ENEAGRAMA (coordenadas do Enneagram.tsx,
+monocromático dourado), no lugar do octaedro do workshop.
+Tracking: pixel base 4060021607461178 direto (fbq, SEM GTM nesta página: PageView único),
+ViewContent no load e InitiateCheckout no CTA da oferta, ambos content_name 'curso-eneagrama'.
+Sem Purchase (fica na PagTrust, decisão 17/07). Mini-SDK funil/engaj com page:'curso'
+para o MESMO endpoint /exec (requer Apps Script v5 publicado ANTES desta página subir).
+Pendências humanas marcadas: foto real + credenciais da Débora (D6) · CNPJ/termos no rodapé.
+-->
+<html lang="pt-BR" class="no-js">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Curso de Eneagrama · Débora Delgado</title>
+<meta name="description" content="Curso online, no seu ritmo: identifique com precisão a sua personalidade e o seu subtipo, e passe a reconhecer o que move as suas escolhas. 10 módulos, mais de 90 aulas." />
+<meta name="robots" content="index,follow" />
+<meta property="og:title" content="Curso de Eneagrama · Débora Delgado" />
+<meta property="og:description" content="Antes de aprender a ler qualquer pessoa, aprenda a ler a que decide por você. 10 módulos, mais de 90 aulas, acesso imediato." />
+<meta property="og:type" content="website" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+<!-- Pixel Meta: base direto (fbq), sem GTM nesta página (PageView único).
+     Purchase NAO dispara aqui (fica na PagTrust). -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','4060021607461178');
+fbq('track','PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" alt=""
+src="https://www.facebook.com/tr?id=4060021607461178&ev=PageView&noscript=1"/></noscript>
+
+<style>
+  /* ================================================================ */
+  /* DIREÇÃO VISUAL V2 · mesmas cores funcionais da página do workshop */
+  /* ================================================================ */
+  :root {
+    --paper:  #faf8f3;
+    --sand:   #f4f0e7;
+    --ink:    #223036;
+    --gold:   #b89b72;
+    --moss:   #3e5a4b;
+    --barro:  #9a4a3a;
+
+    --ink-soft: rgba(34, 48, 54, 0.60);
+    --line:      rgba(34, 48, 54, 0.10);
+    --line-soft: rgba(34, 48, 54, 0.07);
+    --card-shadow: 0 8px 30px rgba(34, 48, 54, 0.06);
+
+    --font-display: 'Fraunces', Georgia, 'Times New Roman', serif;
+    --font-body: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+    --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+    --wrap: 66rem;
+    --read: 40rem;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+
+  body {
+    margin: 0;
+    color: var(--ink);
+    background: var(--paper);
+    font-family: var(--font-body);
+    font-size: 1.0625rem;
+    line-height: 1.65;
+    font-feature-settings: 'liga' 1, 'kern' 1;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  ::selection { background: rgba(184, 155, 114, 0.28); color: var(--ink); }
+  :focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; border-radius: 2px; }
+  a { color: inherit; }
+  img { max-width: 100%; display: block; }
+
+  .grain::before {
+    content: '';
+    position: fixed; inset: 0; z-index: 60;
+    pointer-events: none; opacity: 0.035;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    background-size: 160px 160px;
+  }
+
+  .wrap { width: 100%; max-width: var(--wrap); margin: 0 auto; padding: 0 1.5rem; }
+  .read { max-width: var(--read); }
+  @media (min-width: 768px) { .wrap { padding: 0 2.5rem; } }
+
+  section { position: relative; }
+  .band { padding: clamp(4.5rem, 9vw, 7rem) 0; }
+  .band-tight { padding: clamp(3rem, 6vw, 4.5rem) 0; }
+  .peak { padding: clamp(6.5rem, 13vw, 10rem) 0; }
+
+  .bg-blueprint {
+    background-image:
+      linear-gradient(to right, var(--line-soft) 1px, transparent 1px),
+      linear-gradient(to bottom, var(--line-soft) 1px, transparent 1px);
+    background-size: 76px 76px;
+  }
+
+  .halo {
+    position: absolute; pointer-events: none;
+    background: radial-gradient(closest-side,
+      rgba(255, 253, 247, 0.85) 0%, rgba(244, 240, 231, 0.30) 55%, transparent 100%);
+  }
+
+  .eyebrow {
+    font-family: var(--font-body);
+    font-size: 0.72rem; font-weight: 600;
+    letter-spacing: 0.24em; text-transform: uppercase;
+    color: var(--ink-soft); margin: 0 0 1.5rem;
+  }
+  .eyebrow-moss { color: var(--moss); }
+
+  h1, h2, h3 { font-family: var(--font-display); font-weight: 500; color: var(--ink); margin: 0; }
+
+  .h1 {
+    font-size: clamp(2.6rem, 6.6vw, 5.6rem);
+    font-weight: 400;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+  }
+  .h2 {
+    font-size: clamp(1.9rem, 4vw, 3rem);
+    font-weight: 500;
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+    margin-bottom: 1.5rem;
+  }
+  .lead { font-size: clamp(1.12rem, 1.6vw, 1.32rem); line-height: 1.62; color: var(--ink); }
+  p { margin: 0 0 1.15rem; }
+  p:last-child { margin-bottom: 0; }
+  .muted { color: var(--ink-soft); }
+  .key { font-style: italic; font-family: var(--font-display); }
+
+  .hairline {
+    height: 1px; border: 0; width: 100%;
+    background: linear-gradient(to right, transparent, rgba(184, 155, 114, 0.55) 18%, rgba(184, 155, 114, 0.55) 82%, transparent);
+  }
+
+  /* D3 · Bloco de tensão */
+  .tension-box {
+    border-left: 3px solid var(--barro);
+    padding: 1.6rem 1.8rem;
+    background: rgba(154, 74, 58, 0.045);
+    border-radius: 0 16px 16px 0;
+    margin-bottom: 2rem;
+  }
+  .tension-box ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.85rem; }
+  .tension-box li { position: relative; padding-left: 1.4rem; line-height: 1.6; font-size: 1.08rem; }
+  .tension-box li::before {
+    content: ''; position: absolute; left: 0; top: 0.62em;
+    width: 6px; height: 6px; border-radius: 999px; background: var(--barro); opacity: 0.7;
+  }
+  .tension-question {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-size: 1.35rem;
+    line-height: 1.5;
+    color: var(--barro);
+    margin-top: 2rem;
+  }
+
+  /* Botões */
+  .btn-glass {
+    display: inline-flex; align-items: center; justify-content: center; gap: 0.6rem;
+    min-height: 56px; border-radius: 999px; padding: 1.02rem 2.3rem;
+    font-family: var(--font-body); font-weight: 600; font-size: 1rem; letter-spacing: 0.01em;
+    color: var(--paper); text-decoration: none; cursor: pointer;
+    background: var(--ink); border: 1px solid var(--ink);
+    box-shadow: 0 10px 30px -12px rgba(34, 48, 54, 0.45);
+    transition: transform 200ms var(--ease-out), box-shadow 200ms var(--ease-out);
+  }
+  .btn-glass:hover { transform: translateY(-1px); box-shadow: 0 16px 42px -14px rgba(34, 48, 55, 0.55); }
+  .btn-glass:active { transform: translateY(0); }
+
+  .btn-quiet {
+    display: inline-flex; align-items: center; gap: 0.55rem;
+    font-weight: 500; font-size: 0.9rem; color: var(--ink); text-decoration: none;
+    border-bottom: 1px solid rgba(184, 155, 114, 0.6); padding-bottom: 2px;
+    transition: color 180ms var(--ease-out), border-color 180ms var(--ease-out);
+  }
+  .btn-quiet:hover { color: var(--gold); border-color: var(--gold); }
+
+  [data-reveal] {
+    opacity: 0; transform: translateY(18px);
+    transition: opacity 700ms var(--ease-out), transform 700ms var(--ease-out);
+    transition-delay: var(--reveal-delay, 0ms);
+    will-change: opacity, transform;
+  }
+  [data-reveal].is-visible { opacity: 1; transform: none; }
+  html.no-js [data-reveal] { opacity: 1; transform: none; }
+
+  /* D0 · Barra */
+  .topbar { position: relative; z-index: 20; border-bottom: 1px solid var(--line); }
+  .topbar-inner { display: flex; align-items: center; justify-content: space-between; padding: 1.15rem 0; }
+  .brand-name { font-family: var(--font-display); font-size: 1.15rem; color: var(--ink); }
+
+  /* D1 · Hero (âncora geométrica = ENEAGRAMA) */
+  .hero { position: relative; overflow: hidden; padding: clamp(4rem, 10vw, 8rem) 0 clamp(4rem, 8vw, 6.5rem); }
+  .hero .halo { top: -14rem; left: 42%; width: 44rem; height: 44rem; transform: translateX(-40%); }
+  .hero-grid { position: relative; z-index: 10; }
+  .enne-anchor {
+    position: absolute; z-index: 1; pointer-events: none;
+    top: 50%; right: -3rem; transform: translateY(-50%);
+    width: min(30rem, 42vw); opacity: 0.12; color: var(--gold);
+  }
+  .enne-anchor svg { width: 100%; height: auto; }
+  .hero-cta-row { margin-top: 2.4rem; display: flex; flex-direction: column; align-items: flex-start; gap: 1rem; }
+  .microcopy { font-size: 0.92rem; color: var(--ink-soft); }
+
+  /* D2 · Espelho (a casa de nove quartos) */
+  .house-scene { font-size: clamp(1.15rem, 1.9vw, 1.45rem); line-height: 1.6; }
+  .close-line { margin-top: 2.4rem; font-family: var(--font-display); font-size: clamp(1.3rem, 2.4vw, 1.7rem); line-height: 1.4; color: var(--ink); }
+
+  /* D4 · Mecanismo */
+  .mechanism-name { font-family: var(--font-display); font-size: clamp(1.5rem, 2.8vw, 2.15rem); line-height: 1.28; color: var(--ink); margin: 1.9rem 0 0.5rem; }
+  .mechanism-name b { color: var(--gold); font-weight: 600; }
+  .systems { list-style: none; margin: 2.4rem 0 0; padding: 0; display: grid; gap: 1.1rem; counter-reset: mv; }
+  @media (min-width: 820px) { .systems { grid-template-columns: repeat(3, 1fr); } }
+  .system-card { position: relative; background: var(--sand); border: 1px solid var(--line); border-radius: 16px; padding: 1.7rem 1.6rem; box-shadow: var(--card-shadow); }
+  .system-card .n { font-family: var(--font-display); font-style: italic; font-size: 1.6rem; line-height: 1; color: var(--gold); display: block; margin-bottom: 0.8rem; }
+  .system-card .n::before { counter-increment: mv; content: counter(mv); }
+  .system-card h3 { font-size: 1.22rem; margin-bottom: 0.5rem; }
+  .system-card p { font-size: 0.99rem; line-height: 1.55; }
+
+  /* D5 · Pilha */
+  .stack { list-style: none; margin: 2.6rem 0 0; padding: 0; display: grid; gap: 1rem; counter-reset: it; }
+  @media (min-width: 720px) { .stack { grid-template-columns: 1fr 1fr; gap: 1.1rem 2rem; } }
+  .stack li {
+    position: relative; display: flex; gap: 1.1rem; align-items: flex-start;
+    background: var(--sand); border: 1px solid var(--line);
+    border-radius: 14px; padding: 1.35rem 1.45rem; line-height: 1.55;
+    box-shadow: var(--card-shadow);
+  }
+  .stack li .n { font-family: var(--font-display); font-size: 1.95rem; line-height: 1; color: var(--gold); flex: none; width: 1.6rem; }
+  .stack li .n::before { counter-increment: it; content: counter(it); }
+  .stack-note { margin-top: 1.9rem; font-size: 1rem; color: var(--ink); }
+  .stack-note .chumbo { color: var(--gold); font-style: italic; }
+
+  /* D6 · Quem guia */
+  .guide { display: grid; grid-template-columns: 1fr; gap: 2rem; margin-top: 2rem; align-items: start; }
+  @media (min-width: 820px) { .guide { grid-template-columns: 280px 1fr; gap: 3rem; } }
+  .guide-photo {
+    aspect-ratio: 4 / 5; border-radius: 16px; overflow: hidden;
+    background: var(--sand); border: 1px dashed rgba(184, 155, 114, 0.6);
+    display: flex; align-items: center; justify-content: center; text-align: center;
+    color: var(--ink-soft); font-size: 0.85rem; padding: 1rem;
+  }
+  .guide-name { font-family: var(--font-display); font-size: 1.5rem; margin-bottom: 0.6rem; }
+  .proof { margin-top: 1.8rem; background: var(--paper); border-left: 2px solid var(--gold); border-radius: 0 12px 12px 0; padding: 1.3rem 1.5rem; }
+  .proof .eyebrow { margin-bottom: 0.6rem; }
+
+  /* D7 · Qualificação */
+  .qual { display: grid; grid-template-columns: 1fr; gap: 1.6rem; margin-top: 2rem; }
+  @media (min-width: 820px) { .qual { grid-template-columns: 1fr 1fr; gap: 2.5rem; } }
+  .qual h3 { font-family: var(--font-body); font-weight: 600; font-size: 1rem; letter-spacing: 0.01em; color: var(--ink); margin-bottom: 1rem; }
+  .qual ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.9rem; }
+  .qual li { position: relative; padding-left: 1.9rem; line-height: 1.55; }
+  .qual .yes li::before {
+    content: ''; position: absolute; left: 0; top: 0.28em; width: 14px; height: 14px;
+    border: 1.5px solid var(--gold); border-right: 0; border-top: 0;
+    transform: rotate(-45deg); border-radius: 1px;
+  }
+  .qual .maybe li::before {
+    content: ''; position: absolute; left: 0.1rem; top: 0.42em; width: 11px; height: 11px;
+    border: 1.5px solid rgba(34, 48, 54, 0.4); border-radius: 999px;
+  }
+
+  /* D8 · OFERTA (clímax único: o só bloco escuro da página) */
+  #oferta {
+    background-color: var(--ink);
+    color: var(--paper);
+    position: relative;
+    overflow: hidden;
+  }
+  #oferta::before {
+    content: '';
+    position: absolute; inset: 0; z-index: 1;
+    background: radial-gradient(circle at 50% 50%, rgba(46, 61, 69, 0.6) 0%, transparent 80%);
+    pointer-events: none;
+  }
+  #oferta.bg-blueprint-gold {
+    background-image:
+      linear-gradient(to right, rgba(184, 155, 114, 0.08) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(184, 155, 114, 0.08) 1px, transparent 1px);
+    background-size: 76px 76px;
+  }
+  #oferta .h2 { color: var(--paper); }
+  #oferta .eyebrow { color: rgba(184, 155, 114, 0.92); }
+  #oferta :focus-visible { outline-color: var(--gold); }
+
+  .offer-wrapper {
+    position: relative; z-index: 5;
+    background: #223036;
+    border: 1px solid rgba(184, 155, 114, 0.25);
+    border-radius: 24px; padding: clamp(2rem, 5vw, 3.6rem);
+    box-shadow: 0 32px 80px rgba(0, 0, 0, 0.45);
+  }
+  .offer-recap { font-size: 1.05rem; color: rgba(250, 248, 243, 0.85); max-width: 40rem; }
+  .offer-origin { margin-top: 1.2rem; font-size: 0.95rem; color: rgba(250, 248, 243, 0.62); max-width: 40rem; }
+  .offer-price-block { margin: 2.6rem 0 0.4rem; }
+  .offer-price {
+    font-family: var(--font-display); font-weight: 400; line-height: 1;
+    font-size: clamp(3.2rem, 7vw, 4.6rem); color: var(--paper);
+  }
+  .offer-price-note { margin-top: 0.5rem; font-size: 0.98rem; color: rgba(250, 248, 243, 0.7); }
+  .offer-cta { margin-top: 2.3rem; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 1rem; }
+  .risk { max-width: 34rem; font-size: 0.92rem; color: rgba(250, 248, 243, 0.75); }
+
+  .btn-glass.btn-glass-ondark {
+    background: var(--gold); border-color: var(--gold); color: var(--ink);
+    min-height: 62px; width: 100%; max-width: 30rem;
+    font-size: 1.06rem;
+    box-shadow: 0 16px 40px -12px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.25);
+    position: relative;
+    overflow: hidden;
+  }
+  .btn-glass.btn-glass-ondark:hover { transform: translateY(-1px); filter: brightness(1.05); }
+  .btn-glass.btn-glass-ondark::after {
+    content: '';
+    position: absolute;
+    top: 0; left: -150%; width: 50%; height: 100%;
+    background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.35) 50%, transparent);
+    transform: skewX(-25deg);
+    animation: sheen 4s infinite linear;
+  }
+  @keyframes sheen {
+    0% { left: -150%; }
+    15% { left: 150%; }
+    100% { left: 150%; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .btn-glass.btn-glass-ondark::after { animation: none !important; display: none !important; }
+  }
+
+  /* D9 · FAQ */
+  .faq { margin-top: 2rem; }
+  .faq-item { border-bottom: 1px solid var(--line); }
+  .faq-item summary { list-style: none; cursor: pointer; display: flex; align-items: baseline; justify-content: space-between; gap: 1.5rem; padding: 1.35rem 0.25rem; }
+  .faq-item summary::-webkit-details-marker { display: none; }
+  .faq-item summary h3 { font-family: var(--font-display); font-size: 1.18rem; font-weight: 500; transition: color 200ms var(--ease-out); }
+  .faq-item summary .faq-mark { flex: none; font-family: var(--font-display); font-size: 1.5rem; line-height: 1; color: var(--gold); transition: transform 250ms var(--ease-out); }
+  .faq-item[open] summary .faq-mark { transform: rotate(45deg); }
+  .faq-item summary:hover h3 { color: var(--gold); }
+  .faq-answer { padding: 0 0.25rem 1.4rem; color: var(--ink); max-width: 46rem; line-height: 1.65; }
+
+  /* D10 · Fecho */
+  .close { position: relative; text-align: center; overflow: hidden; }
+  .close .halo { top: -8rem; left: 50%; width: 40rem; height: 40rem; transform: translateX(-50%); opacity: 0.8; }
+  .close .halo-gold { background: radial-gradient(closest-side, rgba(184, 155, 114, 0.16) 0%, rgba(184, 155, 114, 0.05) 45%, transparent 75%); }
+  .close-inner { position: relative; z-index: 2; margin: 0 auto; max-width: 40rem; }
+  .close-mark { width: 84px; height: 84px; margin: 0 auto 1.9rem; color: var(--gold); opacity: 0.75; }
+  .close h2 { font-size: clamp(2.1rem, 4.6vw, 3.4rem); font-weight: 400; line-height: 1.12; letter-spacing: -0.015em; }
+
+  /* Rodapé */
+  footer { border-top: 1px solid var(--line); padding: 2.5rem 0 3rem; }
+  .foot { display: flex; flex-wrap: wrap; gap: 0.4rem 1.5rem; align-items: center; justify-content: space-between; font-size: 0.85rem; color: var(--ink-soft); }
+
+  /* Sticky CTA mobile */
+  .sticky-cta {
+    position: fixed; left: 0; right: 0; bottom: 0; z-index: 55;
+    display: none; align-items: center; justify-content: space-between; gap: 1rem;
+    padding: 0.7rem 1rem calc(0.7rem + env(safe-area-inset-bottom));
+    background: rgba(250, 248, 243, 0.92);
+    -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
+    border-top: 1px solid var(--line);
+    transform: translateY(110%); transition: transform 300ms var(--ease-out);
+  }
+  .sticky-cta.is-shown { transform: translateY(0); }
+  .sticky-cta .s-info { font-size: 0.8rem; line-height: 1.2; color: var(--ink-soft); }
+  .sticky-cta .s-info b { color: var(--ink); font-weight: 600; }
+  .sticky-cta .btn-glass { min-height: 0; padding: 0.8rem 1.4rem; font-size: 0.92rem; flex: none; }
+  @media (max-width: 767px) { .sticky-cta { display: flex; } }
+
+  @media (max-width: 480px) {
+    .brand-name { font-size: 0.95rem; }
+    .btn-quiet { font-size: 0.8rem; }
+    .topbar .wrap { padding: 0 1rem; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    [data-reveal], .btn-glass, .sticky-cta { animation: none !important; transition: none !important; }
+    [data-reveal] { opacity: 1; transform: none; }
+  }
+</style>
+
+<script>document.documentElement.classList.remove('no-js');</script>
+</head>
+
+<body class="grain">
+
+<!-- Símbolo do eneagrama: recriado do zero, monocromático (decisão 29/06),
+     coordenadas portadas de landing-v4/components/ds/Enneagram.tsx
+     (viewBox 240, centro 120, raio 100, ponto 9 no topo). -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="enne" viewBox="0 0 240 240">
+      <g stroke="currentColor" fill="none">
+        <circle cx="120" cy="120" r="100" stroke-width="1.2" />
+        <path d="M 206.6 170.0 L 33.4 170.0 L 120.0 20.0 Z" stroke-width="1.1" stroke-linejoin="round" opacity="0.8" />
+        <path d="M 184.3 43.4 L 154.2 214.0 L 218.5 102.6 L 55.7 43.4 L 85.8 214.0 L 21.5 102.6 L 184.3 43.4" stroke-width="1.1" stroke-linejoin="round" opacity="0.8" />
+      </g>
+      <g fill="currentColor" opacity="0.9">
+        <circle cx="184.3" cy="43.4" r="3.4" />
+        <circle cx="218.5" cy="102.6" r="3.4" />
+        <circle cx="206.6" cy="170.0" r="3.4" />
+        <circle cx="154.2" cy="214.0" r="3.4" />
+        <circle cx="85.8" cy="214.0" r="3.4" />
+        <circle cx="33.4" cy="170.0" r="3.4" />
+        <circle cx="21.5" cy="102.6" r="3.4" />
+        <circle cx="55.7" cy="43.4" r="3.4" />
+        <circle cx="120.0" cy="20.0" r="3.4" />
+      </g>
+    </symbol>
+  </defs>
+</svg>
+
+<!-- ============================ D0 · BARRA ============================ -->
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <div class="brand">
+      <span class="brand-name">Débora Delgado</span>
+    </div>
+    <a href="#oferta" class="btn-quiet">Quero o curso</a>
+  </div>
+</header>
+
+<main>
+<!-- ============================ D1 · HERO ============================ -->
+<section class="hero bg-blueprint" aria-labelledby="h1">
+  <div class="halo" aria-hidden="true"></div>
+  <div class="enne-anchor" aria-hidden="true">
+    <svg viewBox="0 0 240 240"><use href="#enne"/></svg>
+  </div>
+  <div class="wrap hero-grid">
+    <p class="eyebrow">Curso online · No seu ritmo · Acesso imediato</p>
+    <h1 id="h1" class="h1">Antes de aprender a ler qualquer pessoa, aprenda a ler a que decide por <em class="key">você</em>.</h1>
+    <div class="lead read" style="margin-top:1.8rem;">
+      <p>Você já percebeu que reage sempre do mesmo jeito às mesmas situações, e nem sempre do jeito que gostaria. O eneagrama mostra por quê.</p>
+      <p>Neste curso você identifica com precisão a sua personalidade e o seu subtipo, e passa a reconhecer o que move as suas escolhas.</p>
+    </div>
+    <div class="hero-cta-row">
+      <a class="btn-glass" href="#oferta">Quero conhecer minha personalidade</a>
+      <p class="microcopy">10 módulos, mais de 90 aulas. R$ 297, à vista ou parcelado. Acesso imediato.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== D2 · ESPELHO (a casa de nove quartos) ===================== -->
+<section class="band" aria-labelledby="d2">
+  <div class="wrap">
+    <p class="eyebrow" data-reveal>Um jeito de ver</p>
+    <h2 id="d2" class="h2 read" data-reveal>Imagine uma casa redonda, com nove quartos.</h2>
+    <div class="read house-scene" data-reveal>
+      <p>Cada quarto tem uma janela com uma vista diferente do mundo.</p>
+      <p>Você nasceu nessa casa e, em algum momento, escolheu um quarto. Aquele que parecia mais confortável. E passou a vida inteira olhando o mundo por uma janela só.</p>
+      <p>Não é errado. É só parcial. A maior parte das pessoas nunca descobre que os outros oito quartos existem, e vive achando que a sua vista é a única possível.</p>
+    </div>
+    <p class="close-line read" data-reveal>Conhecer o seu quarto é o primeiro passo. Conhecer os outros é o que muda a sua vida.</p>
+  </div>
+</section>
+
+<!-- ===================== D3 · O CUSTO DE NÃO SE CONHECER ===================== -->
+<section class="band-tight" aria-labelledby="d3">
+  <div class="wrap">
+    <h2 id="d3" class="h2 read" data-reveal>Enquanto o seu funcionamento fica invisível, ele decide por você:</h2>
+    <div class="read" data-reveal>
+      <div class="tension-box">
+        <ul>
+          <li>você repete o mesmo tipo de conflito e não entende por quê;</li>
+          <li>reage num tom que nem queria, e depois se cobra por isso;</li>
+          <li>leva para casa o que deveria ter ficado no trabalho.</li>
+        </ul>
+      </div>
+      <p>Não é falta de esforço. É falta de consciência sobre o que te move. E isso não muda sozinho com o tempo. Só muda quando você começa a se ver com clareza.</p>
+      <p class="tension-question">Quanto da sua vida ainda vai ser conduzido por algo que você nunca parou para entender?</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== D4 · A VIRADA: O MAPA ===================== -->
+<section class="band" aria-labelledby="d4">
+  <div class="wrap">
+    <p class="eyebrow eyebrow-moss" data-reveal>O mecanismo</p>
+    <h2 id="d4" class="h2 read" data-reveal>O eneagrama não é um rótulo que te define. É um mapa.</h2>
+    <p class="lead read" data-reveal>Um mapa serve para três coisas: saber ler o desenho, saber onde você está, e escolher para onde ir. Este curso te ensina exatamente isso, em três movimentos:</p>
+    <ol class="systems" data-reveal>
+      <li class="system-card">
+        <span class="n" aria-hidden="true"></span>
+        <h3>Ler o mapa</h3>
+        <p>Os 3 centros de inteligência e como cada um coleta o mundo. Você sai entendendo a lógica por trás das nove personalidades.</p>
+      </li>
+      <li class="system-card">
+        <span class="n" aria-hidden="true"></span>
+        <h3>Se localizar</h3>
+        <p>Identificar a sua personalidade sem cair no erro mais comum (achar que é um tipo quando é outro), com o método de comparação para sair da dúvida.</p>
+      </li>
+      <li class="system-card">
+        <span class="n" aria-hidden="true"></span>
+        <h3>Ir mais fundo</h3>
+        <p>O seu subtipo, a combinação com o instinto dominante que explica por que duas pessoas do mesmo tipo agem de formas tão diferentes.</p>
+      </li>
+    </ol>
+    <p class="mechanism-name" data-reveal>É <b>o mapa da personalidade</b>, lido com método, na sua vida real.</p>
+  </div>
+</section>
+
+<!-- ===================== D5 · O QUE TEM DENTRO ===================== -->
+<section class="band-tight bg-blueprint" aria-labelledby="d5">
+  <div class="wrap">
+    <p class="eyebrow" data-reveal>O que tem dentro</p>
+    <h2 id="d5" class="h2 read" data-reveal>Você leva:</h2>
+    <ul class="stack" data-reveal>
+      <li><span class="n" aria-hidden="true"></span><span>10 módulos, mais de 90 aulas, do símbolo aos subtipos.</span></li>
+      <li><span class="n" aria-hidden="true"></span><span>Uma meditação guiada para cada uma das nove personalidades.</span></li>
+      <li><span class="n" aria-hidden="true"></span><span>O método para identificar o seu tipo sem erro, com as comparações lado a lado.</span></li>
+      <li><span class="n" aria-hidden="true"></span><span>Os 27 subtipos: por que o mesmo tipo se comporta de formas diferentes.</span></li>
+      <li><span class="n" aria-hidden="true"></span><span>O módulo dos arrependimentos: o que quem se conhece tarde gostaria de ter visto antes.</span></li>
+      <li><span class="n" aria-hidden="true"></span><span>O caminho dos próximos passos: asas, flechas e como aplicar o eneagrama à sua vida.</span></li>
+    </ul>
+    <p class="stack-note read" data-reveal>Acesso imediato, no seu ritmo, por 12 meses. <span class="chumbo">O mesmo material que até hoje só quem entrou na mentoria da Débora tinha acesso.</span></p>
+  </div>
+</section>
+
+<!-- ===================== D6 · QUEM GUIA ===================== -->
+<section class="band" aria-labelledby="d6">
+  <div class="wrap">
+    <p class="eyebrow" data-reveal>Quem guia</p>
+    <h2 id="d6" class="h2 read" data-reveal>Quem conduz: Débora Delgado.</h2>
+    <div class="guide" data-reveal>
+      <!-- PENDÊNCIA (Débora/Victor): substituir o placeholder por foto real,
+           olhar apontando para o texto/CTA. Não subir a página sem a foto. -->
+      <div class="guide-photo">[Foto real da Débora: pendente de envio]</div>
+      <div>
+        <!-- PENDÊNCIA (Débora): 2 linhas de credencial concreta (anos de caminho,
+             pessoas acompanhadas, formação) + 1 linha da razão pessoal.
+             Não inventar número: os campos abaixo são placeholders visíveis. -->
+        <p class="lead">[Credencial concreta 1: pendente]</p>
+        <p class="lead">[Credencial concreta 2: pendente]</p>
+        <p class="muted">[Razão pessoal, 1 linha: pendente]</p>
+        <div class="proof">
+          <p class="eyebrow">Procedência</p>
+          <p>Este curso nasceu do material da mentoria de R$ 4.000 da Débora, disponível pela primeira vez fora dela.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== D7 · PARA QUEM É ===================== -->
+<section class="band-tight" aria-labelledby="d7">
+  <div class="wrap">
+    <h2 id="d7" class="h2 read" data-reveal>Para quem é este curso</h2>
+    <div class="qual" data-reveal>
+      <div>
+        <h3>É para você se:</h3>
+        <ul class="yes">
+          <li>você sente que reage sempre do mesmo jeito e quer entender a raiz disso;</li>
+          <li>já fez algum teste de personalidade na internet e ficou com mais dúvida do que resposta;</li>
+          <li>quer se conhecer com profundidade, não com rótulo.</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Talvez ainda não seja a hora se:</h3>
+        <ul class="maybe">
+          <li>você procura um diagnóstico pronto sem querer olhar para dentro;</li>
+          <li>espera que o curso mude você no lugar de você.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== D8 · OFERTA (clímax) ===================== -->
+<section id="oferta" class="peak bg-blueprint-gold" aria-labelledby="d8">
+  <div class="wrap">
+    <div class="offer-wrapper" data-reveal>
+      <p class="eyebrow">Curso de Eneagrama</p>
+      <h2 id="d8" class="h2">O mapa completo de como você funciona.</h2>
+      <p class="offer-recap">10 módulos, os 9 tipos, os 27 subtipos e as meditações de cada personalidade.</p>
+      <p class="offer-origin">O mesmo material que até hoje só existia dentro da mentoria de R$ 4.000.</p>
+      <div class="offer-price-block">
+        <div class="offer-price">R$ 297</div>
+        <p class="offer-price-note">à vista ou parcelado</p>
+      </div>
+      <div class="offer-cta">
+        <a class="btn-glass btn-glass-ondark" data-checkout href="https://checkout.pagtrust.com.br/cka1d66532?funnel=fne2960a13">Quero conhecer minha personalidade</a>
+        <p class="risk">Acesso imediato, por 12 meses. Comece hoje. Garantia de 7 dias: se não for para você, devolvemos o valor, sem burocracia.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== D9 · FAQ ===================== -->
+<section class="band" aria-labelledby="d9">
+  <div class="wrap">
+    <p class="eyebrow" data-reveal>Perguntas diretas</p>
+    <h2 id="d9" class="h2" data-reveal>O que você talvez esteja se perguntando</h2>
+    <div class="faq read" data-reveal>
+      <details class="faq-item">
+        <summary><h3>Preciso já saber alguma coisa de eneagrama?</h3><span class="faq-mark" aria-hidden="true">+</span></summary>
+        <div class="faq-answer"><p>Não. Começa do símbolo.</p></div>
+      </details>
+      <details class="faq-item">
+        <summary><h3>E se eu não descobrir meu tipo?</h3><span class="faq-mark" aria-hidden="true">+</span></summary>
+        <div class="faq-answer"><p>Tem um módulo inteiro de comparação para tirar a dúvida, e as meditações ajudam a sentir, não só entender.</p></div>
+      </details>
+      <details class="faq-item">
+        <summary><h3>Isso é mais um teste de personalidade?</h3><span class="faq-mark" aria-hidden="true">+</span></summary>
+        <div class="faq-answer"><p>Não. Teste te dá um rótulo. Aqui você aprende a se ler, com método, para a vida toda.</p></div>
+      </details>
+      <details class="faq-item">
+        <summary><h3>Quanto tempo leva?</h3><span class="faq-mark" aria-hidden="true">+</span></summary>
+        <div class="faq-answer"><p>O seu. Você tem 12 meses de acesso e assiste no seu ritmo.</p></div>
+      </details>
+      <details class="faq-item">
+        <summary><h3>Já fiz terapia e outros cursos. Isso serve?</h3><span class="faq-mark" aria-hidden="true">+</span></summary>
+        <div class="faq-answer"><p>Serve como um mapa que organiza o que você já sente. Não substitui, complementa.</p></div>
+      </details>
+      <details class="faq-item">
+        <summary><h3>Tem certificado?</h3><span class="faq-mark" aria-hidden="true">+</span></summary>
+        <div class="faq-answer"><p>É um curso de autoconhecimento, não uma formação. O que você leva é clareza sobre si.</p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== D10 · FECHO ===================== -->
+<section class="peak close" aria-labelledby="d10">
+  <div class="halo halo-gold" aria-hidden="true"></div>
+  <div class="wrap close-inner">
+    <div class="close-mark" aria-hidden="true">
+      <svg viewBox="0 0 240 240"><use href="#enne"/></svg>
+    </div>
+    <h2 id="d10" data-reveal>Você pode continuar olhando o mundo pela mesma janela de sempre.</h2>
+    <p class="lead" style="margin-top:1.5rem" data-reveal>Ou pode conhecer os outros oito quartos, e finalmente entender por que você é do jeito que é.</p>
+    <div class="hero-cta-row" style="align-items:center" data-reveal>
+      <a class="btn-glass" data-checkout href="https://checkout.pagtrust.com.br/cka1d66532?funnel=fne2960a13">Quero conhecer minha personalidade</a>
+      <p class="microcopy">R$ 297. Acesso imediato.</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- Rodapé -->
+<footer>
+  <div class="wrap foot">
+    <span>Débora Delgado · Curso de Eneagrama</span>
+    <!-- PENDÊNCIA (Victor): nome/CNPJ, termos e política antes de publicar. -->
+    <span>Dúvidas? Escreva para o e-mail de suporte informado na sua compra.</span>
+  </div>
+</footer>
+
+<!-- Sticky CTA mobile -->
+<div class="sticky-cta" id="stickyCta" aria-hidden="true">
+  <div class="s-info"><b>Curso de Eneagrama</b><br>R$ 297 · acesso imediato</div>
+  <a class="btn-glass" href="#oferta">Quero o curso</a>
+</div>
+
+<script>
+(function () {
+  'use strict';
+
+  /* ===== Constantes ===== */
+  var CHECKOUT_URL = 'https://checkout.pagtrust.com.br/cka1d66532?funnel=fne2960a13';
+  var PIXEL_CONTENT = { content_name: 'curso-eneagrama', value: 297, currency: 'BRL' };
+  /* Endpoint do Google Apps Script (o MESMO Web App /exec do workshop; requer v5 publicado). */
+  var LEADS_ENDPOINT = 'https://script.google.com/macros/s/AKfycbykXCnjSUFUNSUwAEJxS1XIwKxFg-kvFTISRMua8TsMsgre0GWZbcmLtxlVtA6oqx-hJg/exec';
+  var PAGE = 'curso';
+
+  /* ===== Reveal no scroll ===== */
+  var revealEls = document.querySelectorAll('[data-reveal]');
+  if ('IntersectionObserver' in window) {
+    var revObs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('is-visible'); revObs.unobserve(e.target); }
+      });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.05 });
+    revealEls.forEach(function (el) { revObs.observe(el); });
+  } else {
+    revealEls.forEach(function (el) { el.classList.add('is-visible'); });
+  }
+
+  /* ===== Pixel: ViewContent no load (content_name distingue esta página no pixel único) ===== */
+  if (window.fbq) fbq('track', 'ViewContent', PIXEL_CONTENT);
+
+  /* ===== Beacons do funil (Apps Script, page:'curso') ===== */
+  var sid = sessionStorage.getItem('curso_sid');
+  if (!sid) {
+    sid = Date.now().toString(36) + Math.random().toString(36).slice(2, 8);
+    sessionStorage.setItem('curso_sid', sid);
+  }
+
+  function getUTMs() {
+    var p = new URLSearchParams(location.search);
+    var keys = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'];
+    var out = {};
+    keys.forEach(function (k) { if (p.get(k)) out[k] = p.get(k); });
+    return out;
+  }
+
+  function sendAppEvent(payload) {
+    if (!LEADS_ENDPOINT) return;
+    try {
+      payload.sid = payload.sid || sid;
+      payload.ts = payload.ts || new Date().toISOString();
+      payload.page = PAGE;
+      var utms = getUTMs();
+      Object.keys(utms).forEach(function (k) {
+        if (payload[k] === undefined) payload[k] = utms[k];
+      });
+      var body = JSON.stringify(payload);
+      if (navigator.sendBeacon) navigator.sendBeacon(LEADS_ENDPOINT, body);
+      else fetch(LEADS_ENDPOINT, {method:'POST',mode:'no-cors',headers:{'Content-Type':'text/plain;charset=utf-8'},body:body});
+    } catch (err) { /* telemetria nunca bloqueia a página */ }
+  }
+
+  function funnelBeacon(ev, extra) {
+    var payload = {tipo:'funil', ev:ev};
+    if (extra) Object.keys(extra).forEach(function (k) { payload[k] = extra[k]; });
+    sendAppEvent(payload);
+  }
+
+  function sendPageview() { funnelBeacon('pageview'); }
+  if (document.readyState === 'complete') setTimeout(sendPageview, 0);
+  else window.addEventListener('load', sendPageview, {once:true});
+
+  var oferta = document.getElementById('oferta');
+  if (oferta && 'IntersectionObserver' in window) {
+    var vcFired = false;
+    var vcObs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting && !vcFired) {
+          vcFired = true;
+          funnelBeacon('view_offer');
+          vcObs.disconnect();
+        }
+      });
+    }, { threshold: 0.35 });
+    vcObs.observe(oferta);
+  }
+
+  /* ===== CTA da oferta: InitiateCheckout + beacon, depois segue ao checkout com UTMs ===== */
+  document.querySelectorAll('[data-checkout]').forEach(function (btn) {
+    btn.addEventListener('click', function (e) {
+      e.preventDefault();
+      funnelBeacon('cta_click');
+      if (window.fbq) fbq('track', 'InitiateCheckout', PIXEL_CONTENT);
+      var url = CHECKOUT_URL;
+      var utms = getUTMs();
+      Object.keys(utms).forEach(function (k) { url += '&' + k + '=' + encodeURIComponent(utms[k]); });
+      setTimeout(function () { window.location.href = url; }, 200);
+    });
+  });
+
+  /* ===== Engajamento por dobra (nomes idênticos ao ORDEM_DOBRAS_POR_PAGINA.curso do v5) ===== */
+  (function () {
+    if (!LEADS_ENDPOINT || !('IntersectionObserver' in window)) return;
+    var DOBRAS = [
+      {sel:'.hero', nome:'D1 Hero'},
+      {sel:'[aria-labelledby=d2]', nome:'D2 Espelho'},
+      {sel:'[aria-labelledby=d3]', nome:'D3 Custo'},
+      {sel:'[aria-labelledby=d4]', nome:'D4 Virada'},
+      {sel:'[aria-labelledby=d5]', nome:'D5 Pilha'},
+      {sel:'[aria-labelledby=d6]', nome:'D6 Quem guia'},
+      {sel:'[aria-labelledby=d7]', nome:'D7 Qualificacao'},
+      {sel:'#oferta', nome:'D8 Oferta'},
+      {sel:'[aria-labelledby=d9]', nome:'D9 FAQ'},
+      {sel:'[aria-labelledby=d10]', nome:'D10 Fecho'}
+    ];
+    var vistos = {};
+    var entrada = {};
+    var maxIdx = -1;
+
+    function envia(ev, dobra, extra) {
+      var payload = {tipo:'engaj', ev:ev, dobra:dobra};
+      if (extra) Object.keys(extra).forEach(function (k) { payload[k] = extra[k]; });
+      sendAppEvent(payload);
+    }
+
+    var obs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        var nome = e.target.getAttribute('data-dobra');
+        var idx = Number(e.target.getAttribute('data-dobra-idx'));
+        if (e.isIntersecting) {
+          entrada[nome] = Date.now();
+          if (idx > maxIdx) maxIdx = idx;
+          if (!vistos[nome]) {
+            vistos[nome] = true;
+            envia('viu', nome);
+          }
+        } else if (entrada[nome]) {
+          var seg = Math.round((Date.now() - entrada[nome]) / 1000);
+          if (seg > 0) envia('tempo', nome, {seg:seg});
+          entrada[nome] = 0;
+        }
+      });
+    }, {threshold:0.5});
+
+    DOBRAS.forEach(function (d, i) {
+      var el = document.querySelector(d.sel);
+      if (!el) return;
+      el.setAttribute('data-dobra', d.nome);
+      el.setAttribute('data-dobra-idx', String(i));
+      obs.observe(el);
+    });
+
+    window.addEventListener('pagehide', function () {
+      Object.keys(entrada).forEach(function (nome) {
+        if (!entrada[nome]) return;
+        var seg = Math.round((Date.now() - entrada[nome]) / 1000);
+        if (seg > 0) envia('tempo', nome, {seg:seg});
+        entrada[nome] = 0;
+      });
+      if (maxIdx >= 0) envia('saida', DOBRAS[maxIdx].nome, {idx:maxIdx});
+    });
+  })();
+
+  /* ===== Sticky CTA mobile ===== */
+  var sticky = document.getElementById('stickyCta');
+  var hero = document.querySelector('.hero');
+  if (sticky && hero && oferta && 'IntersectionObserver' in window) {
+    var pastHero = false, atOffer = false;
+    function sync() {
+      var show = pastHero && !atOffer;
+      sticky.classList.toggle('is-shown', show);
+      sticky.setAttribute('aria-hidden', show ? 'false' : 'true');
+    }
+    new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) { pastHero = !e.isIntersecting; });
+      sync();
+    }, {threshold: 0.05}).observe(hero);
+    new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) { atOffer = e.isIntersecting; });
+      sync();
+    }, {threshold: 0.1}).observe(oferta);
+  }
+})();
+</script>
+</body>
+</html>

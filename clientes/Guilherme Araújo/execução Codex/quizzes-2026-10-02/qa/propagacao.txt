@@ -1,0 +1,56 @@
+# VERIFICAÇÃO DE PROPAGAÇÃO — 02/10/2026 00:02
+
+## Roteador em árvores (G5)
+
+| Árvore | arquivo | no nível 1 (§6) | 6 lugares do processo |
+|---|---|---|---|
+| NEGOCIO | ok | ok | ok |
+| CONTA | ok | ok | ok |
+| LEITURA | ok | ok | ok |
+| ESCRITA | ok | ok | ok |
+| OPERACAO | ok | ok | ok |
+| CASA | ok | ok | ok |
+| JURIDICO | ok | ok | ok |
+
+## Artefatos de `100-métodos/`
+
+| Arquivo | Classe | `Tipo:` válido | alcance (árvore/§6) | §7 mapa | veto no gate | STATUS |
+|---|---|---|---|---|---|---|
+| `AUDITORIA-CIRCUITO-COPY-2026-09-10` | registro | ok | — | — | — | — |
+| `MATRIZ-LEITURA-CONTEUDO` | conhecimento | ok | ok | ok | ok | ok |
+| `METODO-ABORDAGEM-FRIA` | conhecimento | ok | ok | ok | ok | ok |
+| `METODO-ALCADA-DE-ESTRUTURA` | conhecimento | ok | ok | ok | ok | ok |
+| `METODO-ALICERCE` | conhecimento | ok | ok | ok | ok | ok |
+| `METODO-ANCORAGEM-DE-PROPOSTA` | conhecimento | ok | ok | ok | ok | ok |
+| `METODO-ARQUEOLOGIA-DE-ICP` | conhecimento | ok | ok | ok | ok | ok |
+| `METODO-BENCHMARKING` | conhecimento | ok | ok | ok | ok | ok |
+| `METODO-CAMADA-DE-VER` | conhecimento | ok | ok | ok | ok | ok |
+| `METODO-CONSTRUCAO-DE-CRIATIVOS-DR` | conhecimento | ok | ok | ok | ok | ok |
+| `METODO-DESTILACAO-DE-CALLS` | conhecimento | ok | ok | ok | ok | ok |
+| `METODO-DESTILACAO-DE-VSL` | conhecimento | ok | ok | ok | ok | ok |
+| `METODO-DIAGNOSTICO-DE-OPERACAO` | conhecimento | ok | ok | ok | ok | ok |
+| `METODO-DIRECT-RESPONSE` | conhecimento | ok | ok | ok | ok | ok |
+| `METODO-EMPILHAMENTO-DE-HOOKS` | conhecimento | ok | ok | ok | ok | ok |
+| `METODO-ESTIMATIVA-DE-CARGA` | conhecimento | ok | ok | ok | ok | ok |
+| `METODO-ESTRUTURA-INVISIVEL` | conhecimento | ok | ok | ok | ok | ok |
+| `METODO-FUNIL-DE-VSL` | conhecimento | ok | ok | ok | ok | ok |
+| `METODO-GATE-DE-CONGRUENCIA` | conhecimento | ok | ok | ok | ok | ok |
+| `METODO-GATE-DE-CONTRATACAO` | conhecimento | ok | ok | ok | ok | ok |
+| `METODO-GERACAO-DE-RESULTADOS` | conhecimento | ok | ok | ok | ok | ok |
+| `METODO-LATERALIZACAO-DE-CRIATIVOS` | conhecimento | ok | ok | ok | ok | ok |
+| `METODO-MECANISMO-E-ONE-BELIEF` | conhecimento | ok | ok | ok | ok | ok |
+| `METODO-PAGINA-DE-VENDAS` | ponteiro | ok | — | — | — | — |
+| `METODO-PIVO-DE-CONVERSAO` | conhecimento | ok | ok | ok | ok | ok |
+| `METODO-PONTOS-LOGICOS` | conhecimento | ok | ok | ok | ok | ok |
+| `METODO-SALESFORCE-INBOUND` | conhecimento | ok | ok | ok | ok | ok |
+| `METODO-TESTE-DE-PILARES` | conhecimento | ok | ok | ok | ok | ok |
+| `METODO-TRAFEGO-PAGO` | conhecimento | ok | ok | ok | ok | ok |
+| `METODO-TRILHO-DE-CONTA-NOVA` | conhecimento | ok | ok | ok | ok | ok |
+| `PROMOCAO-TRIO-CRIATIVOS-2026-09-20` | registro | ok | — | — | — | — |
+| `VERIFICACAO-CIRCUITO-COPY-v3.1-2026-09-10` | registro | ok | — | — | — | — |
+
+**AGENTS.md sincronizado com o CLAUDE.md:** ok
+**Sinais repetidos entre árvores (aviso — o desempate resolve; podar se ambíguo):** 0 · nenhum
+**Arquivos .md alterados em 100-métodos/, 00-core/ e 90-templates/ nos últimos 8 dias:** 45
+
+**Resultado:** ✅ nada a propagar

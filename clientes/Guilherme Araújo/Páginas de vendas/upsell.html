@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Formação em Cartomância Sistêmica — Processo Seletivo · Guilherme Araújo</title>
+  <meta name="description" content="A Introdução te deu o método. A Formação com acompanhamento ao vivo é onde ele se torna vivência. Acesso por processo seletivo." />
+
+  <!-- Meta Pixel -->
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1259363302489132');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1259363302489132&ev=PageView&noscript=1"/></noscript>
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-5KFCDH6N');</script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ─── RESET & BASE ─────────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:         #0D0B0A;
+      --bg-soft:    #131110;
+      --bg-card:    #1A1714;
+      --line:       rgba(201,169,110,0.15);
+      --line-soft:  rgba(240,234,216,0.08);
+      --gold:       #C9A96E;
+      --gold-light: #DFC08A;
+      --cream:      #F0EAD8;
+      --cream-dim:  #B8AFA0;
+      --white:      #FAF7F2;
+
+      --serif:  'Cormorant Garamond', Georgia, serif;
+      --sans:   'Jost', system-ui, sans-serif;
+
+      --max:    1100px;
+      --gutter: clamp(1.5rem, 5vw, 4rem);
+
+      --ease:      cubic-bezier(0.22, 1, 0.36, 1);
+      --ease-soft: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--cream);
+      font-family: var(--sans);
+      font-weight: 300;
+      font-size: clamp(0.95rem, 1.1vw, 1.05rem);
+      line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    /* Grain */
+    body::before {
+      content: '';
+      position: fixed; inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='1'/%3E%3C/svg%3E");
+      opacity: 0.025; pointer-events: none; z-index: 9999;
+    }
+    /* Vinheta */
+    body::after {
+      content: ''; position: fixed; inset: 0;
+      background: radial-gradient(ellipse at center, transparent 55%, rgba(0,0,0,0.35) 100%);
+      pointer-events: none; z-index: 9998;
+    }
+
+    .container { max-width: var(--max); margin-inline: auto; padding-inline: var(--gutter); }
+    .container-narrow { max-width: 820px; margin-inline: auto; padding-inline: var(--gutter); }
+    .serif { font-family: var(--serif); }
+    .gold  { color: var(--gold); }
+    .divider { width: 3rem; height: 1px; background: var(--gold); opacity: .5; }
+
+    .section-num { font-family: var(--serif); font-style: italic; color: var(--gold); opacity: 0.7; margin-right: 0.5rem; }
+
+    a:focus-visible, button:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; border-radius: 2px; }
+
+    /* Reveal */
+    .reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.8s var(--ease), transform 0.8s var(--ease); }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    .reveal-delay-3 { transition-delay: 0.35s; }
+
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(32px); } to { opacity: 1; transform: translateY(0); } }
+    .load-1 { animation: fadeUp .9s var(--ease) both; animation-delay: .1s; }
+    .load-2 { animation: fadeUp .9s var(--ease) both; animation-delay: .3s; }
+    .load-3 { animation: fadeUp .9s var(--ease) both; animation-delay: .5s; }
+    .load-4 { animation: fadeUp .9s var(--ease) both; animation-delay: .7s; }
+
+    /* Buttons */
+    .btn {
+      display: inline-block; font-family: var(--sans); font-weight: 400;
+      font-size: 0.85rem; letter-spacing: 0.12em; text-transform: uppercase;
+      text-decoration: none; padding: 1rem 2.5rem; border-radius: 2px;
+      transition: background 0.35s var(--ease-soft), color 0.35s var(--ease-soft), border-color 0.35s var(--ease-soft), transform 0.35s var(--ease);
+      cursor: pointer; border: 1px solid transparent;
+    }
+    .btn-primary { background: var(--gold); color: #0D0B0A; border-color: var(--gold); }
+    .btn-primary:hover { background: var(--gold-light); border-color: var(--gold-light); transform: translateY(-2px); }
+    .btn-ghost { background: transparent; color: var(--cream); border-color: rgba(240,234,216,0.3); }
+    .btn-ghost:hover { border-color: var(--gold); color: var(--gold); transform: translateY(-2px); }
+    .btn .arrow { display: inline-block; transition: transform 0.35s var(--ease); }
+    .btn:hover .arrow { transform: translateX(4px); }
+
+    /* Nav */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      padding: 1.5rem var(--gutter); display: flex; align-items: center; justify-content: space-between;
+      background: linear-gradient(to bottom, rgba(13,11,10,0.95), transparent); backdrop-filter: blur(2px);
+    }
+    .nav-logo { font-family: var(--serif); font-size: 1.1rem; letter-spacing: 0.05em; color: var(--cream); text-decoration: none; opacity: 0.85; }
+    .nav-cta {
+      font-family: var(--sans); font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase;
+      color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,169,110,0.4); padding-bottom: 1px;
+      transition: border-color 0.2s var(--ease-soft);
+    }
+    .nav-cta:hover { border-color: var(--gold); }
+
+    /* Section base */
+    section { padding-block: clamp(4rem, 8vw, 7rem); }
+    .section-label { font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 1rem; }
+    .section-title { font-family: var(--serif); font-size: clamp(2rem, 4vw, 3.2rem); font-weight: 400; line-height: 1.2; color: var(--white); margin-bottom: 1.5rem; }
+    .section-title em { font-style: italic; color: var(--gold-light); }
+
+    /* ─── TOPO / HEADLINE (uma linha, acima da VSL) ────────────── */
+    #topo {
+      text-align: center; padding: 6.5rem var(--gutter) 1.5rem;
+    }
+    .topo-headline { font-family: var(--serif); font-size: clamp(1.7rem, 3.6vw, 2.9rem); font-weight: 400; line-height: 1.15; color: var(--white); max-width: 920px; margin: 0 auto; }
+    .topo-headline em { font-style: italic; color: var(--gold-light); }
+
+    /* ─── VSL (primeira dobra) ─────────────────────────────────── */
+    #vsl { padding-top: 0; padding-bottom: clamp(3rem, 6vw, 5rem); }
+    .vsl-shell { max-width: 940px; margin-inline: auto; }
+    .vsl-frame {
+      position: relative; aspect-ratio: 16 / 9; width: 100%;
+      background: #000; border: 1px solid var(--line); overflow: hidden;
+    }
+    .vsl-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+    .vsl-poster {
+      position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; cursor: pointer;
+    }
+    .vsl-overlay {
+      position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+      background: linear-gradient(to bottom, rgba(13,11,10,0.35), rgba(13,11,10,0.75)); cursor: pointer;
+      transition: background 0.4s var(--ease-soft);
+    }
+    .vsl-overlay:hover { background: linear-gradient(to bottom, rgba(13,11,10,0.25), rgba(13,11,10,0.65)); }
+    .vsl-play {
+      width: 84px; height: 84px; border-radius: 50%; border: 1px solid var(--gold);
+      background: rgba(13,11,10,0.5); backdrop-filter: blur(4px);
+      display: flex; align-items: center; justify-content: center;
+      transition: transform 0.35s var(--ease), background 0.35s var(--ease-soft);
+    }
+    .vsl-overlay:hover .vsl-play { transform: scale(1.06); background: rgba(201,169,110,0.18); }
+    .vsl-play svg { width: 26px; height: 26px; fill: var(--gold-light); margin-left: 4px; }
+    .vsl-cap { text-align: center; color: var(--cream-dim); font-size: 0.9rem; margin-top: 1.5rem; font-style: italic; font-family: var(--serif); }
+
+    .vsl-cta { text-align: center; margin-top: 2.5rem; }
+    .vsl-cta-micro { font-size: 0.82rem; color: var(--cream-dim); margin-top: 1rem; max-width: 460px; margin-inline: auto; line-height: 1.6; }
+
+    /* ─── CONTRASTE INTRO → FORMAÇÃO ───────────────────────────── */
+    #contraste { background: var(--bg-soft); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    .contraste-grid { display: grid; grid-template-columns: 1fr auto 1fr; gap: 2.5rem; align-items: stretch; margin-top: 3rem; }
+    .contraste-col { padding: 2.25rem 2rem; border: 1px solid var(--line); background: var(--bg); }
+    .contraste-col.destaque { background: var(--bg-card); border-color: rgba(201,169,110,0.4); }
+    .contraste-tag { font-size: 0.68rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); margin-bottom: 1rem; }
+    .contraste-nome { font-family: var(--serif); font-size: 1.5rem; color: var(--white); margin-bottom: 1.25rem; line-height: 1.2; }
+    .contraste-col ul { list-style: none; display: flex; flex-direction: column; gap: 0.7rem; }
+    .contraste-col li { font-size: 0.9rem; color: var(--cream-dim); padding-left: 1.25rem; position: relative; line-height: 1.6; }
+    .contraste-col li::before { content: '—'; position: absolute; left: 0; color: var(--gold); opacity: 0.6; }
+    .contraste-arrow { display: flex; align-items: center; justify-content: center; color: var(--gold); font-size: 1.5rem; }
+
+    /* ─── PARA QUEM ────────────────────────────────────────────── */
+    .quem-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; margin-top: 3rem; }
+    .quem-col { background: var(--bg-card); padding: 2.5rem 2rem; }
+    .quem-col h3 { font-family: var(--serif); font-size: 1.35rem; font-weight: 500; color: var(--white); margin-bottom: 1.5rem; }
+    .quem-col ul { list-style: none; display: flex; flex-direction: column; gap: 1.1rem; }
+    .quem-col li { display: flex; gap: 0.85rem; align-items: flex-start; font-size: 0.92rem; line-height: 1.6; color: var(--cream); }
+    .quem-col.nao li { color: var(--cream-dim); }
+    .quem-ic { flex-shrink: 0; width: 18px; height: 18px; margin-top: 0.25rem; }
+    .quem-ic path { stroke: var(--gold); stroke-width: 2; fill: none; }
+    .quem-col.nao .quem-ic path { stroke: var(--cream-dim); opacity: 0.5; }
+
+    .quem-quote { text-align: center; margin-top: 3.5rem; }
+    .quem-quote p { font-family: var(--serif); font-style: italic; font-size: clamp(1.3rem, 2.5vw, 1.7rem); color: var(--white); line-height: 1.5; max-width: 640px; margin-inline: auto; }
+    .quem-quote cite { display: block; margin-top: 1rem; font-style: normal; font-size: 0.78rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold); }
+
+    /* ─── DIFERENCIAL ACOMPANHAMENTO ───────────────────────────── */
+    #acompanhamento { background: var(--bg-soft); border-top: 1px solid var(--line); }
+    .acomp-list { max-width: 780px; margin-inline: auto; margin-top: 3rem; display: flex; flex-direction: column; }
+    .acomp-item { display: flex; gap: 1.5rem; padding: 2rem 0; border-top: 1px solid var(--line); }
+    .acomp-item:last-child { border-bottom: 1px solid var(--line); }
+    .acomp-n { font-family: var(--serif); font-style: italic; font-size: 1.6rem; color: var(--gold); line-height: 1; min-width: 2.5rem; }
+    .acomp-c h3 { font-family: var(--serif); font-size: 1.3rem; font-weight: 500; color: var(--white); margin-bottom: 0.4rem; }
+    .acomp-c p { font-size: 0.92rem; color: var(--cream-dim); line-height: 1.7; }
+    .acomp-fechamento { text-align: center; font-family: var(--serif); font-style: italic; font-size: 1.15rem; color: var(--cream); margin-top: 3rem; max-width: 600px; margin-inline: auto; }
+
+    /* ─── INCLUI / ENTREGA ─────────────────────────────────────── */
+    #inclui { border-top: 1px solid var(--line); }
+    .inclui-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2px; margin-top: 3rem; }
+    .inclui-item { background: var(--bg-card); padding: 2rem 1.75rem; }
+    .inclui-item .k { font-family: var(--serif); font-size: 1.2rem; color: var(--white); margin-bottom: 0.4rem; }
+    .inclui-item .v { font-size: 0.85rem; color: var(--cream-dim); line-height: 1.6; }
+    .inclui-item .badge { display: inline-block; margin-top: 0.6rem; font-size: 0.62rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold); border: 1px solid var(--line); padding: 0.2rem 0.6rem; border-radius: 2px; }
+
+    .base-teorica { margin-top: 3.5rem; text-align: center; }
+    .base-teorica .lbl { font-size: 0.68rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.25rem; }
+    .base-teorica .autores { font-family: var(--serif); font-style: italic; color: var(--cream-dim); font-size: 1rem; line-height: 1.9; max-width: 760px; margin-inline: auto; }
+
+    .inclui-nums { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: clamp(1.5rem,5vw,4rem); margin-top: 3.5rem; padding-top: 3rem; border-top: 1px solid var(--line); }
+    .inclui-num { display: flex; align-items: baseline; gap: 0.6rem; }
+    .inclui-num .n { font-family: var(--serif); font-size: 1.6rem; color: var(--gold-light); }
+    .inclui-num .l { font-size: 0.68rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--cream-dim); }
+
+    /* ─── QUEM CONDUZ ──────────────────────────────────────────── */
+    #autor { background: var(--bg-soft); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    .autor-inner { display: grid; grid-template-columns: 340px 1fr; gap: 5rem; align-items: center; }
+    .autor-foto-wrap { position: relative; }
+    .autor-foto { width: 100%; aspect-ratio: 3/4; object-fit: cover; object-position: top; display: block; filter: grayscale(20%); }
+    .autor-foto-frame { position: absolute; inset: 1rem; border: 1px solid rgba(201,169,110,0.25); pointer-events: none; }
+    .autor-anos { position: absolute; bottom: -1rem; right: -1rem; background: var(--gold); color: #0D0B0A; font-family: var(--serif); font-size: 0.85rem; font-weight: 600; padding: 0.6rem 1rem; letter-spacing: 0.05em; }
+    .autor-bio { color: var(--cream-dim); line-height: 1.85; margin-bottom: 1.5rem; }
+    .autor-bio strong { color: var(--cream); font-weight: 400; }
+
+    /* ─── COMO FUNCIONA A APLICAÇÃO ────────────────────────────── */
+    #aplicacao { text-align: center; }
+    .passos { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2.5rem; margin-top: 3.5rem; }
+    .passo { text-align: left; }
+    .passo-n { font-family: var(--serif); font-style: italic; font-size: 2.5rem; color: var(--gold); line-height: 1; margin-bottom: 1rem; }
+    .passo h3 { font-family: var(--serif); font-size: 1.3rem; color: var(--white); margin-bottom: 0.5rem; }
+    .passo p { font-size: 0.9rem; color: var(--cream-dim); line-height: 1.7; }
+    .aplicacao-nota { margin-top: 3rem; font-family: var(--serif); font-style: italic; color: var(--cream-dim); font-size: 1rem; max-width: 580px; margin-inline: auto; line-height: 1.7; }
+
+    /* ─── CTA FINAL ────────────────────────────────────────────── */
+    #cta-final { text-align: center; background: var(--bg-soft); border-top: 1px solid var(--line); }
+    .cta-final-titulo { font-family: var(--serif); font-size: clamp(1.8rem, 3.5vw, 2.8rem); font-weight: 400; color: var(--white); line-height: 1.25; margin-bottom: 1.25rem; max-width: 640px; margin-inline: auto; }
+    .cta-final-titulo em { font-style: italic; color: var(--gold-light); }
+    .cta-final-escassez { font-size: 0.82rem; letter-spacing: 0.04em; color: var(--cream-dim); margin-bottom: 2.5rem; }
+
+    /* ─── FAQ ──────────────────────────────────────────────────── */
+    #faq { border-top: 1px solid var(--line); }
+    .faq-inner { max-width: 720px; margin-inline: auto; }
+    .faq-item { border-top: 1px solid var(--line); }
+    .faq-item:last-child { border-bottom: 1px solid var(--line); }
+    .faq-trigger { width: 100%; background: none; border: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 1.5rem; padding: 1.4rem 0; text-align: left; }
+    .faq-pergunta { font-family: var(--serif); font-size: 1.05rem; color: var(--cream); line-height: 1.4; transition: color 0.25s var(--ease-soft); }
+    .faq-trigger:hover .faq-pergunta { color: var(--gold-light); }
+    .faq-icon { color: var(--gold); font-size: 1.2rem; opacity: 0.6; transition: transform 0.4s var(--ease), opacity 0.25s var(--ease-soft); flex-shrink: 0; }
+    .faq-item.open .faq-icon { transform: rotate(45deg); opacity: 1; }
+    .faq-body { max-height: 0; overflow: hidden; transition: max-height 0.45s var(--ease); }
+    .faq-body-inner { padding-bottom: 1.5rem; color: var(--cream-dim); font-size: 0.92rem; line-height: 1.8; }
+
+    /* ─── STICKY (discreto) ────────────────────────────────────── */
+    .sticky-apply {
+      position: fixed; z-index: 90; left: 0; right: 0; bottom: 0; padding: 0.85rem var(--gutter);
+      display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+      background: rgba(13,11,10,0.72); backdrop-filter: blur(14px) saturate(120%); -webkit-backdrop-filter: blur(14px) saturate(120%);
+      border-top: 1px solid var(--gold);
+      transform: translateY(110%); opacity: 0; transition: transform 0.5s var(--ease), opacity 0.4s var(--ease-soft); pointer-events: none;
+    }
+    .sticky-apply.show { transform: translateY(0); opacity: 1; pointer-events: auto; }
+    .sticky-apply-info { display: flex; flex-direction: column; line-height: 1.2; min-width: 0; }
+    .sticky-apply-prod { font-family: var(--serif); font-size: 0.95rem; color: var(--cream); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .sticky-apply-sub { font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--cream-dim); }
+    .sticky-apply .btn { padding: 0.75rem 1.75rem; font-size: 0.78rem; white-space: nowrap; flex-shrink: 0; }
+    @media (min-width: 901px) {
+      .sticky-apply { left: auto; right: 2rem; bottom: 2rem; border: 1px solid rgba(201,169,110,0.4); border-radius: 999px; padding: 0.6rem 0.6rem 0.6rem 1.6rem; box-shadow: 0 12px 40px rgba(0,0,0,0.45); max-width: 420px; }
+      .sticky-apply .btn { border-radius: 999px; }
+    }
+
+    /* Footer */
+    footer { border-top: 1px solid var(--line); padding: 2.5rem var(--gutter); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+    .footer-nome { font-family: var(--serif); font-size: 0.95rem; color: var(--cream-dim); opacity: 0.7; }
+    .footer-links { display: flex; gap: 2rem; }
+    .footer-links a { font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--cream-dim); text-decoration: none; opacity: 0.5; transition: opacity 0.25s var(--ease-soft); }
+    .footer-links a:hover { opacity: 0.8; }
+
+    /* ─── RESPONSIVE ───────────────────────────────────────────── */
+    @media (max-width: 900px) {
+      .contraste-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+      .contraste-arrow { transform: rotate(90deg); }
+      .quem-grid { grid-template-columns: 1fr; gap: 1px; }
+      .inclui-grid { grid-template-columns: 1fr; gap: 1px; }
+      .autor-inner { grid-template-columns: 1fr; gap: 3rem; }
+      .autor-foto-wrap { max-width: 280px; margin-inline: auto; }
+      .passos { grid-template-columns: 1fr; gap: 2.5rem; }
+      footer { padding-bottom: 6rem; }
+    }
+    @media (max-width: 600px) {
+      footer { flex-direction: column; text-align: center; }
+      .footer-links { justify-content: center; }
+    }
+
+    /* Reduced motion */
+    @media (prefers-reduced-motion: reduce) {
+      * { animation-duration: 0.001ms !important; animation-delay: 0s !important; transition-duration: 0.001ms !important; }
+      .reveal { opacity: 1; transform: none; }
+      html { scroll-behavior: auto; }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- GTM noscript -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5KFCDH6N" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<!-- ══════════════════════════════════════════════════ NAV -->
+<nav>
+  <a href="#topo" class="nav-logo">Guilherme Araújo</a>
+  <a href="https://forms.gle/E4b74kMgPzkym1TG7" target="_blank" rel="noopener" class="nav-cta js-apply" data-cta="nav">Aplicar</a>
+</nav>
+
+<!-- ══════════════════════════════════════════════════ TOPO + VSL (primeira dobra) -->
+<section id="topo">
+  <h1 class="topo-headline load-1">Você já tem o método. <em>Veja o que vem agora.</em></h1>
+</section>
+
+<section id="vsl">
+  <div class="container">
+    <div class="vsl-shell reveal">
+      <div class="vsl-frame" id="vslFrame">
+        <img class="vsl-poster" id="vslPoster" src="https://i.ytimg.com/vi/eKRW1JwOLL8/maxresdefault.jpg" alt="Guilherme Araújo apresenta a Formação em Cartomância Sistêmica" />
+        <div class="vsl-overlay" id="vslOverlay" role="button" tabindex="0" aria-label="Assistir ao vídeo da Formação">
+          <span class="vsl-play">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+          </span>
+        </div>
+        <div id="vslMount"></div>
+      </div>
+      <p class="vsl-cap">Você concluiu a Introdução. Agora assista: é o Guilherme explicando o que é a Formação completa — e para quem ela é.</p>
+
+      <div class="vsl-cta">
+        <a href="https://forms.gle/E4b74kMgPzkym1TG7" target="_blank" rel="noopener" class="btn btn-primary js-apply" data-cta="topo">
+          Aplicar para a Formação <span class="arrow">→</span>
+        </a>
+        <p class="vsl-cta-micro">
+          É uma conversa para entender o seu momento — não um compromisso de compra.
+          A versão com acompanhamento ao vivo existe apenas por processo seletivo.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════ CONTRASTE -->
+<section id="contraste">
+  <div class="container">
+    <div class="reveal" style="text-align:center; max-width:680px; margin-inline:auto;">
+      <p class="section-label"><span class="section-num">01</span>De onde você está, para onde isso leva</p>
+      <h2 class="section-title">A Introdução foi o método.<br><em>A Formação é a vivência.</em></h2>
+    </div>
+
+    <div class="contraste-grid">
+      <div class="contraste-col reveal">
+        <p class="contraste-tag">Você já tem</p>
+        <p class="contraste-nome">Introdução à<br>Cartomância Sistêmica</p>
+        <ul>
+          <li>9 aulas gravadas — o método, no seu ritmo</li>
+          <li>A base sistêmica da leitura</li>
+          <li>Estudo individual, assíncrono</li>
+          <li>O ponto de partida</li>
+        </ul>
+      </div>
+
+      <div class="contraste-arrow reveal reveal-delay-1" aria-hidden="true">→</div>
+
+      <div class="contraste-col destaque reveal reveal-delay-2">
+        <p class="contraste-tag">O próximo nível</p>
+        <p class="contraste-nome">Formação completa<br>com acompanhamento</p>
+        <ul>
+          <li>Jornada Sistêmica dos 22 Arcanos Maiores</li>
+          <li>Encontros ao vivo, toda semana, com o Guilherme</li>
+          <li>Prática conduzida — um processo vivencial</li>
+          <li>Aprofundamento e certificação</li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="reveal" style="text-align:center; margin-top:2.5rem; font-size:0.88rem; color:var(--cream-dim); font-style:italic; font-family:var(--serif);">
+      É um aprofundamento — não substitui um curso de Constelação Familiar ou de Tarô tradicional.
+    </p>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════ PARA QUEM -->
+<section id="quem">
+  <div class="container">
+    <div class="reveal" style="text-align:center; max-width:640px; margin-inline:auto;">
+      <p class="section-label"><span class="section-num">02</span>Processo seletivo</p>
+      <h2 class="section-title">Não é para todos.<br><em>E está tudo bem.</em></h2>
+      <p style="color:var(--cream-dim); line-height:1.8;">
+        A Formação é vivencial e tem acompanhamento próximo. Por isso, a entrada é por seleção —
+        para garantir que cada pessoa esteja no momento certo para receber.
+      </p>
+    </div>
+
+    <div class="quem-grid">
+      <div class="quem-col reveal">
+        <h3 class="gold">É para você que…</h3>
+        <ul>
+          <li><svg class="quem-ic" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg> Já lê cartas ou atende e quer se destacar com profundidade real</li>
+          <li><svg class="quem-ic" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg> É terapeuta e quer integrar a visão sistêmica às cartas</li>
+          <li><svg class="quem-ic" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg> Busca vivenciar e aprofundar o autoconhecimento, não só acumular teoria</li>
+          <li><svg class="quem-ic" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg> Está pronta para um processo de transformação conduzido de perto</li>
+        </ul>
+      </div>
+      <div class="quem-col nao reveal reveal-delay-1">
+        <h3>Não é para você que…</h3>
+        <ul>
+          <li><svg class="quem-ic" viewBox="0 0 24 24"><path d="M5 12h14"/></svg> Procura apenas mais um certificado para a parede</li>
+          <li><svg class="quem-ic" viewBox="0 0 24 24"><path d="M5 12h14"/></svg> Quer uma fórmula pronta, sem se dedicar à prática</li>
+          <li><svg class="quem-ic" viewBox="0 0 24 24"><path d="M5 12h14"/></svg> Não tem espaço agora para um percurso vivencial</li>
+          <li><svg class="quem-ic" viewBox="0 0 24 24"><path d="M5 12h14"/></svg> Não está em busca de aprofundamento, e sim de algo superficial</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="quem-quote reveal">
+      <p>"Para quem deseja ser a resposta da oração de alguém."</p>
+      <cite>Guilherme Araújo</cite>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════ ACOMPANHAMENTO -->
+<section id="acompanhamento">
+  <div class="container">
+    <div class="reveal" style="text-align:center; max-width:640px; margin-inline:auto;">
+      <p class="section-label"><span class="section-num">03</span>O diferencial</p>
+      <h2 class="section-title">O que não cabe<br><em>em aula gravada.</em></h2>
+    </div>
+
+    <div class="acomp-list">
+      <div class="acomp-item reveal">
+        <span class="acomp-n">I</span>
+        <div class="acomp-c">
+          <h3>Encontros ao vivo, toda semana</h3>
+          <p>Aulas teóricas e práticas conduzidas pessoalmente pelo Guilherme — onde a dúvida vira clareza no mesmo instante, e a leitura se afina com a presença de quem já percorreu o caminho.</p>
+        </div>
+      </div>
+      <div class="acomp-item reveal">
+        <span class="acomp-n">II</span>
+        <div class="acomp-c">
+          <h3>Um processo vivencial</h3>
+          <p>A Formação não é só estudo. É vivência: você atravessa o próprio processo enquanto aprende a conduzir o dos outros. É isso que a versão gravada, sozinha, não tem como entregar.</p>
+        </div>
+      </div>
+      <div class="acomp-item reveal">
+        <span class="acomp-n">III</span>
+        <div class="acomp-c">
+          <h3>Jornada da Expansão Sem Culpa</h3>
+          <p>Bônus exclusivo da versão completa: um programa de desenvolvimento sistêmico avançado, com intervenções de Teto da Culpa e Pré-Salto — para sustentar o próximo nível, não só alcançá-lo.</p>
+        </div>
+      </div>
+    </div>
+
+    <p class="acomp-fechamento reveal">É o acompanhamento de perto que a Introdução, por si só, não tinha como dar.</p>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════ INCLUI -->
+<section id="inclui">
+  <div class="container">
+    <div class="reveal" style="text-align:center; max-width:640px; margin-inline:auto;">
+      <p class="section-label"><span class="section-num">04</span>O que a Formação reúne</p>
+      <h2 class="section-title">Uma estrutura<br><em>completa.</em></h2>
+    </div>
+
+    <div class="inclui-grid">
+      <div class="inclui-item reveal">
+        <p class="k">Jornada Sistêmica dos 22 Arcanos Maiores</p>
+        <p class="v">22 aulas gravadas — o significado de cada carta e seu exercício sistêmico, na plataforma de membros.</p>
+      </div>
+      <div class="inclui-item reveal reveal-delay-1">
+        <p class="k">Encontros ao vivo semanais</p>
+        <p class="v">Teoria e prática conduzidas pelo Guilherme. <span class="badge">Acompanhamento</span></p>
+      </div>
+      <div class="inclui-item reveal">
+        <p class="k">22 Meditações Sistêmicas</p>
+        <p class="v">Áudios gravados das meditações — para a sua prática e a dos seus clientes.</p>
+      </div>
+      <div class="inclui-item reveal reveal-delay-1">
+        <p class="k">Guia e Manual Teórico</p>
+        <p class="v">Material de apoio completo da Cartomância Sistêmica, com os textos das meditações.</p>
+      </div>
+      <div class="inclui-item reveal">
+        <p class="k">Jornada da Expansão Sem Culpa</p>
+        <p class="v">Programa de desenvolvimento sistêmico avançado. <span class="badge">Bônus exclusivo</span></p>
+      </div>
+      <div class="inclui-item reveal reveal-delay-1">
+        <p class="k">Certificado de conclusão</p>
+        <p class="v">Ao concluir a Formação, com base teórica e prática para começar a atender e a constelar.</p>
+      </div>
+    </div>
+
+    <div class="base-teorica reveal">
+      <p class="lbl">Fundamentado em</p>
+      <p class="autores">
+        Bert Hellinger · Joseph Campbell · Lise Bourbeau · Hajo Banzhaf ·
+        José Roberto Marques · Mauro Bueno · William Sanches · Elton Euler
+      </p>
+    </div>
+
+    <div class="inclui-nums reveal">
+      <div class="inclui-num"><span class="n">+800</span><span class="l">alunos formados</span></div>
+      <div class="inclui-num"><span class="n">+12</span><span class="l">anos de prática</span></div>
+      <div class="inclui-num"><span class="n">22</span><span class="l">arcanos · método próprio</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════ QUEM CONDUZ -->
+<section id="autor">
+  <div class="container">
+    <div class="autor-inner">
+      <div class="autor-foto-wrap reveal">
+        <img src="https://professorguilhermearaujo.com.br/wp-content/uploads/2026/05/Foto-Guilherme-LP.jpeg"
+             alt="Guilherme Araújo — criador da Cartomância Sistêmica" class="autor-foto" loading="lazy" />
+        <div class="autor-foto-frame"></div>
+        <div class="autor-anos">+12 anos</div>
+      </div>
+      <div class="reveal reveal-delay-2">
+        <p class="section-label"><span class="section-num">05</span>Quem conduz</p>
+        <h2 class="section-title">Guilherme<br><em>Araújo</em></h2>
+        <p class="autor-bio">
+          Criador da Cartomância Sistêmica — método próprio que integra leitura simbólica,
+          Constelação Familiar e ética no atendimento. <strong>Na Formação, ele conduz pessoalmente
+          os encontros ao vivo</strong>, semana a semana.
+        </p>
+        <p class="autor-bio">
+          Mais de 12 anos de prática, mais de 800 alunos formados no método sistêmico.
+          Um trabalho construído a partir da própria travessia — e da escuta de quem chega
+          buscando mais do que uma leitura: buscando direção.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════ COMO FUNCIONA -->
+<section id="aplicacao">
+  <div class="container">
+    <div class="reveal" style="max-width:640px; margin-inline:auto;">
+      <p class="section-label"><span class="section-num">06</span>Como funciona a aplicação</p>
+      <h2 class="section-title">Aplicar não é comprar.<br><em>É uma conversa.</em></h2>
+    </div>
+
+    <div class="passos">
+      <div class="passo reveal">
+        <p class="passo-n">1</p>
+        <h3>Você aplica</h3>
+        <p>Preenche um formulário curto sobre o seu momento atual na prática e o que busca com o acompanhamento.</p>
+      </div>
+      <div class="passo reveal reveal-delay-1">
+        <p class="passo-n">2</p>
+        <h3>Conversamos</h3>
+        <p>Uma conversa para entender o seu momento e ver, juntos, se há fit para a Formação. Sem obrigação.</p>
+      </div>
+      <div class="passo reveal reveal-delay-2">
+        <p class="passo-n">3</p>
+        <h3>Decidimos juntos</h3>
+        <p>Se fizer sentido para os dois, você entra na turma. Se ainda não for a hora, o Guilherme te orienta para o melhor próximo passo.</p>
+      </div>
+    </div>
+
+    <p class="aplicacao-nota reveal">
+      O investimento é tratado na conversa — ele depende do formato e do seu momento.
+      A Formação com acompanhamento ao vivo não é aberta para todos ao mesmo tempo.
+    </p>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════ CTA FINAL -->
+<section id="cta-final">
+  <div class="container">
+    <div class="reveal">
+      <h2 class="cta-final-titulo">
+        Se o vídeo fez sentido,<br><em>o próximo passo é se candidatar.</em>
+      </h2>
+      <p class="cta-final-escassez">As turmas com acompanhamento ao vivo têm capacidade limitada por ciclo.</p>
+      <a href="https://forms.gle/E4b74kMgPzkym1TG7" target="_blank" rel="noopener" class="btn btn-primary js-apply" data-cta="fechamento">
+        Aplicar agora <span class="arrow">→</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════ FAQ -->
+<section id="faq">
+  <div class="container">
+    <div class="reveal" style="text-align:center; margin-bottom:3rem;">
+      <p class="section-label"><span class="section-num">07</span>Dúvidas</p>
+      <h2 class="section-title">Perguntas<br><em>frequentes</em></h2>
+    </div>
+
+    <div class="faq-inner">
+      <div class="faq-item reveal">
+        <button class="faq-trigger" aria-expanded="false">
+          <span class="faq-pergunta">Quanto custa a Formação?</span>
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-body"><div class="faq-body-inner">
+          O valor é tratado na conversa, depois de entendermos o seu momento. A Formação completa com acompanhamento ao vivo existe apenas por processo seletivo — não trabalhamos com todos ao mesmo tempo, e a conversa existe justamente para ver se faz sentido para os dois antes de falar de investimento.
+        </div></div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-trigger" aria-expanded="false">
+          <span class="faq-pergunta">Por que existe um processo seletivo?</span>
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-body"><div class="faq-body-inner">
+          Porque a Formação é vivencial e tem acompanhamento próximo. Não é sobre ter o dinheiro para investir — é sobre estar no momento certo para atravessar o processo. A seleção existe para que cada pessoa receba no tempo em que está pronta.
+        </div></div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-trigger" aria-expanded="false">
+          <span class="faq-pergunta">Preciso ter concluído a Introdução antes?</span>
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-body"><div class="faq-body-inner">
+          Você já deu esse passo — a Introdução é a base do método. A Formação é o aprofundamento: a Jornada dos 22 Arcanos, os encontros ao vivo e a prática conduzida. Não precisa terminar a Introdução para aplicar; pode aplicar enquanto estuda.
+        </div></div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-trigger" aria-expanded="false">
+          <span class="faq-pergunta">O que acontece na conversa?</span>
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-body"><div class="faq-body-inner">
+          É uma conversa para entender onde você está, o que busca, e se a Formação faz sentido para o seu momento. Sem obrigação de compra. Se não for a hora, você sai com uma direção clara do melhor próximo passo.
+        </div></div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-trigger" aria-expanded="false">
+          <span class="faq-pergunta">E se eu não for selecionado?</span>
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-body"><div class="faq-body-inner">
+          Tudo bem. O Guilherme te direciona para o que for melhor para você naquele momento — seja seguir aprofundando na Introdução, seja um caminho diferente. A aplicação não é um teste de mérito; é um cuidado com o seu tempo e com o da turma.
+        </div></div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-trigger" aria-expanded="false">
+          <span class="faq-pergunta">A Formação substitui um curso de Constelação ou de Tarô?</span>
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-body"><div class="faq-body-inner">
+          Não. A Cartomância Sistêmica é um método de aprofundamento que integra leitura simbólica e visão sistêmica — não substitui uma formação tradicional em Constelação Familiar ou em Tarô. É suficiente para você começar a atender e a constelar com profundidade, dentro do escopo do método.
+        </div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════ FOOTER -->
+<footer>
+  <p class="footer-nome">Guilherme Araújo © 2026</p>
+  <nav class="footer-links" aria-label="Links legais">
+    <a href="#">Política de Privacidade</a>
+    <a href="#">Termos de Uso</a>
+  </nav>
+</footer>
+
+<!-- ══════════════════════════════════════════════════ STICKY -->
+<div class="sticky-apply" id="stickyApply" aria-hidden="true">
+  <div class="sticky-apply-info">
+    <span class="sticky-apply-prod">Formação em Cartomância Sistêmica</span>
+    <span class="sticky-apply-sub">Acompanhamento ao vivo · por seleção</span>
+  </div>
+  <a href="https://forms.gle/E4b74kMgPzkym1TG7" target="_blank" rel="noopener" class="btn btn-ghost js-apply" data-cta="sticky">Candidatar-se</a>
+</div>
+
+<!-- ══════════════════════════════════════════════════ JS -->
+<script>
+  // ── Tracking: aplicação (Lead) + dataLayer, por posição de CTA
+  // Nota: o destino é Google Forms (externo). Este evento mede o CLIQUE para aplicar
+  // (proxy de conversão da página). O envio efetivo do formulário não é rastreável a
+  // partir daqui — para Lead-on-submit, configurar pixel na tela de confirmação do Forms.
+  function fireApply(position) {
+    if (typeof fbq !== 'undefined') {
+      fbq('track', 'Lead', {
+        content_name: 'Formacao Cartomancia Sistemica - Aplicacao',
+        content_category: 'upsell_aplicacao',
+        cta_position: position
+      });
+    }
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({ event: 'application_start', cta_position: position });
+  }
+  document.querySelectorAll('.js-apply').forEach(link => {
+    link.addEventListener('click', () => fireApply(link.dataset.cta || 'desconhecido'));
+  });
+
+  // ── VSL: YouTube controlado (nocookie) + click-to-play + tracking de retenção
+  (function () {
+    const overlay = document.getElementById('vslOverlay');
+    const poster  = document.getElementById('vslPoster');
+    const VIDEO_ID = 'eKRW1JwOLL8';
+    let player, progressTimer, played = false;
+    const milestones = { 25: false, 50: false, 75: false, 95: false };
+
+    function track(event, extra) {
+      if (typeof fbq !== 'undefined') fbq('trackCustom', event, Object.assign({ content_name: 'VSL Formacao CS' }, extra || {}));
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push(Object.assign({ event: event.toLowerCase() }, extra || {}));
+    }
+
+    function startProgress() {
+      stopProgress();
+      progressTimer = setInterval(function () {
+        if (!player || !player.getDuration) return;
+        const d = player.getDuration(); if (!d) return;
+        const p = (player.getCurrentTime() / d) * 100;
+        [25, 50, 75, 95].forEach(function (m) {
+          if (p >= m && !milestones[m]) { milestones[m] = true; track('VSLProgress', { percent: m }); }
+        });
+      }, 1000);
+    }
+    function stopProgress() { if (progressTimer) { clearInterval(progressTimer); progressTimer = null; } }
+
+    function onState(e) {
+      if (e.data === YT.PlayerState.PLAYING) {
+        if (!played) { played = true; track('VSLPlay'); }
+        startProgress();
+      } else { stopProgress(); }
+    }
+    function createPlayer() {
+      player = new YT.Player('vslMount', {
+        host: 'https://www.youtube-nocookie.com',
+        videoId: VIDEO_ID,
+        playerVars: { rel: 0, modestbranding: 1, playsinline: 1, autoplay: 1 },
+        events: { onReady: function (e) { e.target.playVideo(); }, onStateChange: onState }
+      });
+    }
+    function loadAndPlay() {
+      if (poster) poster.style.display = 'none';
+      if (overlay) overlay.style.display = 'none';
+      if (window.YT && window.YT.Player) { createPlayer(); return; }
+      const tag = document.createElement('script');
+      tag.src = 'https://www.youtube.com/iframe_api';
+      document.head.appendChild(tag);
+      window.onYouTubeIframeAPIReady = createPlayer;
+    }
+    if (overlay) {
+      overlay.addEventListener('click', loadAndPlay);
+      overlay.addEventListener('keydown', function (ev) { if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); loadAndPlay(); } });
+    }
+  })();
+
+  // ── FAQ accordion
+  document.querySelectorAll('.faq-trigger').forEach(function (trigger) {
+    trigger.addEventListener('click', function () {
+      const item = trigger.closest('.faq-item');
+      const body = item.querySelector('.faq-body');
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(function (openItem) {
+        openItem.classList.remove('open');
+        openItem.querySelector('.faq-body').style.maxHeight = '0';
+        openItem.querySelector('.faq-trigger').setAttribute('aria-expanded', 'false');
+      });
+      if (!isOpen) {
+        item.classList.add('open');
+        body.style.maxHeight = body.scrollHeight + 'px';
+        trigger.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+
+  // ── Scroll reveal
+  const revealObserver = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) { entry.target.classList.add('visible'); revealObserver.unobserve(entry.target); }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.reveal').forEach(function (el) { revealObserver.observe(el); });
+
+  // ── Sticky discreto: aparece após o topo, some quando um bloco de aplicação está em cena
+  const sticky = document.getElementById('stickyApply');
+  const topo = document.getElementById('topo');
+  const ctaFinal = document.getElementById('cta-final');
+  const aplicacao = document.getElementById('aplicacao');
+  let topoVisible = true, applyZoneVisible = false;
+  function updateSticky() {
+    const show = !topoVisible && !applyZoneVisible;
+    sticky.classList.toggle('show', show);
+    sticky.setAttribute('aria-hidden', show ? 'false' : 'true');
+  }
+  new IntersectionObserver(function (e) { topoVisible = e[0].isIntersecting; updateSticky(); }, { threshold: 0.1 }).observe(topo);
+  const zoneObs = new IntersectionObserver(function (entries) {
+    applyZoneVisible = entries.some(function (en) { return en.isIntersecting; });
+    updateSticky();
+  }, { threshold: 0.2 });
+  zoneObs.observe(ctaFinal); zoneObs.observe(aplicacao);
+
+  // ── ViewContent (upsell visto)
+  if (typeof fbq !== 'undefined') {
+    fbq('track', 'ViewContent', { content_name: 'Upsell Formacao Cartomancia Sistemica', content_category: 'upsell' });
+  }
+</script>
+
+</body>
+</html>

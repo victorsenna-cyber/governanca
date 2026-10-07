@@ -1,0 +1,21 @@
+{
+  "approved": false,
+  "missing": [
+    "permissao.apps_script_url",
+    "permissao.dados_legais",
+    "permissao.url_termos",
+    "permissao.url_privacidade",
+    "signos.apps_script_url",
+    "signos.dados_legais",
+    "signos.url_termos",
+    "signos.url_privacidade",
+    "signos.checkout_fogo",
+    "signos.checkout_terra",
+    "signos.checkout_ar",
+    "signos.checkout_agua",
+    "signos.preco_signos_valor",
+    "signos.preco_signos_apoio",
+    "signos.cancelamento_signos"
+  ],
+  "note": "Local delivery only; this check does not authorize publication or Pixel activation."
+}

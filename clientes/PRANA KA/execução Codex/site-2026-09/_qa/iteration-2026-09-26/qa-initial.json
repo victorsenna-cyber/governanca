@@ -1,0 +1,1455 @@
+{
+  "date": "2026-09-27T01:10:50.120Z",
+  "static": {
+    "html": 27,
+    "unrelatedChanges": [],
+    "canonicalChanges": [],
+    "changedCSS": [
+      "css/pages/home.css",
+      "css/quality.css"
+    ],
+    "apache": "Literal comparison only; redirects/status require Apache after L3",
+    "og": {
+      "format": "jpeg",
+      "width": 1200,
+      "height": 630,
+      "size": 66788
+    }
+  },
+  "pages": [
+    {
+      "route": "/",
+      "width": 390,
+      "status": 200,
+      "forbidden": [],
+      "overflow": 0,
+      "missingImages": 0
+    },
+    {
+      "route": "/",
+      "width": 1440,
+      "status": 200,
+      "forbidden": [],
+      "overflow": 0,
+      "missingImages": 0,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": [
+              [
+                ".home-hero-copy > .eyebrow"
+              ],
+              [
+                "#home-title"
+              ],
+              [
+                ".home-tagline"
+              ],
+              [
+                ".home-statement"
+              ],
+              [
+                ".home-subhead"
+              ],
+              [
+                ".home-hero-copy > .button[href$=\"#caminhos\"]"
+              ],
+              [
+                ".hero-art-caption"
+              ],
+              [
+                ".home-scroll"
+              ],
+              [
+                "#proof-title"
+              ],
+              [
+                "em"
+              ],
+              [
+                ".proof-note"
+              ],
+              [
+                ".proof-video > figcaption"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "route": "/o-templo/",
+      "width": 390,
+      "status": 200,
+      "forbidden": [],
+      "overflow": 0,
+      "missingImages": 0
+    },
+    {
+      "route": "/o-templo/",
+      "width": 1440,
+      "status": 200,
+      "forbidden": [],
+      "overflow": 0,
+      "missingImages": 0
+    },
+    {
+      "route": "/metodo/",
+      "width": 390,
+      "status": 200,
+      "forbidden": [],
+      "overflow": 0,
+      "missingImages": 0
+    },
+    {
+      "route": "/metodo/",
+      "width": 1440,
+      "status": 200,
+      "forbidden": [],
+      "overflow": 0,
+      "missingImages": 0
+    },
+    {
+      "route": "/caminhos/",
+      "width": 390,
+      "status": 200,
+      "forbidden": [],
+      "overflow": 0,
+      "missingImages": 0
+    },
+    {
+      "route": "/caminhos/",
+      "width": 1440,
+      "status": 200,
+      "forbidden": [],
+      "overflow": 0,
+      "missingImages": 0
+    },
+    {
+      "route": "/mentoria/",
+      "width": 390,
+      "status": 200,
+      "forbidden": [
+        "12 encontros"
+      ],
+      "overflow": 0,
+      "missingImages": 0
+    },
+    {
+      "route": "/mentoria/",
+      "width": 1440,
+      "status": 200,
+      "forbidden": [
+        "12 encontros"
+      ],
+      "overflow": 0,
+      "missingImages": 0,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": [
+              [
+                ".eyebrow"
+              ],
+              [
+                ".origin-bridge"
+              ],
+              [
+                "#hero-title"
+              ],
+              [
+                ".hero__lead"
+              ],
+              [
+                "a[data-placement=\"d1\"]"
+              ],
+              [
+                ".hero__actions > p"
+              ],
+              [
+                ".hero__scroll"
+              ],
+              [
+                ".crossing__aside > p:nth-child(1)"
+              ],
+              [
+                ".crossing__aside > p:nth-child(2)"
+              ],
+              [
+                "#recognition-title"
+              ],
+              [
+                ".recognition__content > p:nth-child(3)"
+              ],
+              [
+                ".deliverable.reveal:nth-child(3) > dt"
+              ],
+              [
+                ".deliverable.reveal:nth-child(3) > dd"
+              ],
+              [
+                ".filter__column--quiet > .filter__list > li:nth-child(1)"
+              ],
+              [
+                ".filter__column--quiet > .filter__list > li:nth-child(2)"
+              ],
+              [
+                ".filter__column--quiet > .filter__list > li:nth-child(3)"
+              ],
+              [
+                ".offer__intro > .kicker--gold.kicker"
+              ],
+              [
+                "#offer-title"
+              ],
+              [
+                ".offer__intro > p:nth-child(3)"
+              ],
+              [
+                ".offer__small-title"
+              ],
+              [
+                ".offer__recap > ul > li:nth-child(1)"
+              ],
+              [
+                ".offer__recap > ul > li:nth-child(2)"
+              ],
+              [
+                ".offer__recap > ul > li:nth-child(3)"
+              ],
+              [
+                ".offer__recap > ul > li:nth-child(4)"
+              ],
+              [
+                "ul > li:nth-child(5)"
+              ],
+              [
+                ".offer__confirmed > .offer__status"
+              ],
+              [
+                ".offer__status-note"
+              ],
+              [
+                "div[data-detail=\"cohortStart\"] > dt"
+              ],
+              [
+                "dd[data-cohort-start=\"\"]"
+              ],
+              [
+                "div[data-detail=\"meetingSchedule\"] > dt"
+              ],
+              [
+                "dd[data-meeting-schedule=\"\"]"
+              ],
+              [
+                "div[data-detail=\"capacity\"] > dt"
+              ],
+              [
+                "dd[data-capacity=\"\"]"
+              ],
+              [
+                "div[data-detail=\"enrollmentDeadline\"] > dt"
+              ],
+              [
+                "dd[data-enrollment-deadline=\"\"]"
+              ],
+              [
+                ".button--offer"
+              ],
+              [
+                ".offer__next > p > strong"
+              ],
+              [
+                "span[data-post-purchase=\"\"]"
+              ],
+              [
+                ".closing__content > .kicker"
+              ],
+              [
+                "#closing-title"
+              ],
+              [
+                ".closing__content > p:nth-child(4)"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "route": "/visao-uterina/",
+      "width": 390,
+      "status": 200,
+      "forbidden": [],
+      "overflow": 0,
+      "missingImages": 0
+    },
+    {
+      "route": "/visao-uterina/",
+      "width": 1440,
+      "status": 200,
+      "forbidden": [],
+      "overflow": 0,
+      "missingImages": 0,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": [
+              [
+                ".eyebrow.hero-enter"
+              ],
+              [
+                "#titulo"
+              ],
+              [
+                "#titulo > em"
+              ],
+              [
+                ".hero-statement"
+              ],
+              [
+                ".hero-description"
+              ],
+              [
+                ".hero-action > .button.button-light[data-whatsapp=\"\"]"
+              ],
+              [
+                ".hero-action > .microcopy"
+              ],
+              [
+                ".hero-footer > span"
+              ],
+              [
+                "a[href$=\"#escuta\"]"
+              ],
+              [
+                "a[href$=\"#escuta\"] > span[aria-hidden=\"true\"]"
+              ],
+              [
+                ".session-intro > p"
+              ],
+              [
+                "article:nth-child(1) > p"
+              ],
+              [
+                "article:nth-child(2) > p"
+              ],
+              [
+                "article:nth-child(3) > p"
+              ],
+              [
+                "#mulheres > .section-label > .index"
+              ],
+              [
+                "#mulheres > .section-label > span:nth-child(2)"
+              ],
+              [
+                "#prova-titulo"
+              ],
+              [
+                "#prova-titulo > em"
+              ],
+              [
+                ".proof-note"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "route": "/curso/",
+      "width": 390,
+      "status": 200,
+      "forbidden": [],
+      "overflow": 0,
+      "missingImages": 0
+    },
+    {
+      "route": "/curso/",
+      "width": 1440,
+      "status": 200,
+      "forbidden": [],
+      "overflow": 0,
+      "missingImages": 0,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": [
+              [
+                ".course-mark"
+              ],
+              [
+                ".eyebrow"
+              ],
+              [
+                "#hero-title"
+              ],
+              [
+                ".hero__subhead"
+              ],
+              [
+                ".hero__meta"
+              ],
+              [
+                ".hero__meta > span:nth-child(1)"
+              ],
+              [
+                ".action-group > .button--primary.button.js-checkout"
+              ],
+              [
+                ".action-note"
+              ],
+              [
+                ".hero__scroll"
+              ],
+              [
+                "li:nth-child(2) > strong"
+              ],
+              [
+                "li:nth-child(4) > strong"
+              ],
+              [
+                "li:nth-child(6) > strong"
+              ],
+              [
+                ".offer__label"
+              ],
+              [
+                "#checkout-preview-note"
+              ],
+              [
+                ".closing__mark"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "route": "/arte/",
+      "width": 390,
+      "status": 200,
+      "forbidden": [],
+      "overflow": 0,
+      "missingImages": 0
+    },
+    {
+      "route": "/arte/",
+      "width": 1440,
+      "status": 200,
+      "forbidden": [],
+      "overflow": 0,
+      "missingImages": 0
+    },
+    {
+      "route": "/prana/",
+      "width": 390,
+      "status": 200,
+      "forbidden": [],
+      "overflow": 0,
+      "missingImages": 0
+    },
+    {
+      "route": "/prana/",
+      "width": 1440,
+      "status": 200,
+      "forbidden": [],
+      "overflow": 0,
+      "missingImages": 0
+    },
+    {
+      "route": "/en/",
+      "width": 390,
+      "status": 200,
+      "forbidden": [],
+      "overflow": 0,
+      "missingImages": 0
+    },
+    {
+      "route": "/en/",
+      "width": 1440,
+      "status": 200,
+      "forbidden": [],
+      "overflow": 0,
+      "missingImages": 0,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": [
+              [
+                ".home-hero-copy > .eyebrow"
+              ],
+              [
+                "#home-title"
+              ],
+              [
+                ".home-tagline"
+              ],
+              [
+                ".home-statement"
+              ],
+              [
+                ".home-subhead"
+              ],
+              [
+                ".home-hero-copy > .button[href$=\"#caminhos\"]"
+              ],
+              [
+                ".hero-art-caption"
+              ],
+              [
+                ".home-scroll"
+              ],
+              [
+                "#proof-title"
+              ],
+              [
+                "em"
+              ],
+              [
+                ".proof-note"
+              ],
+              [
+                ".proof-video > figcaption"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "route": "/en/the-temple/",
+      "width": 390,
+      "status": 200,
+      "forbidden": [],
+      "overflow": 0,
+      "missingImages": 0
+    },
+    {
+      "route": "/en/the-temple/",
+      "width": 1440,
+      "status": 200,
+      "forbidden": [],
+      "overflow": 0,
+      "missingImages": 0
+    },
+    {
+      "route": "/en/method/",
+      "width": 390,
+      "status": 200,
+      "forbidden": [],
+      "overflow": 0,
+      "missingImages": 0
+    },
+    {
+      "route": "/en/method/",
+      "width": 1440,
+      "status": 200,
+      "forbidden": [],
+      "overflow": 0,
+      "missingImages": 0
+    },
+    {
+      "route": "/en/paths/",
+      "width": 390,
+      "status": 200,
+      "forbidden": [],
+      "overflow": 0,
+      "missingImages": 0
+    },
+    {
+      "route": "/en/paths/",
+      "width": 1440,
+      "status": 200,
+      "forbidden": [],
+      "overflow": 0,
+      "missingImages": 0
+    },
+    {
+      "route": "/en/mentorship/",
+      "width": 390,
+      "status": 200,
+      "forbidden": [],
+      "overflow": 0,
+      "missingImages": 0
+    },
+    {
+      "route": "/en/mentorship/",
+      "width": 1440,
+      "status": 200,
+      "forbidden": [],
+      "overflow": 0,
+      "missingImages": 0,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": [
+              [
+                ".eyebrow"
+              ],
+              [
+                ".origin-bridge"
+              ],
+              [
+                "#hero-title"
+              ],
+              [
+                ".hero__lead"
+              ],
+              [
+                "a[data-placement=\"d1\"]"
+              ],
+              [
+                ".hero__actions > p"
+              ],
+              [
+                ".hero__scroll"
+              ],
+              [
+                ".crossing__aside > p:nth-child(1)"
+              ],
+              [
+                ".crossing__aside > p:nth-child(2)"
+              ],
+              [
+                "#recognition-title"
+              ],
+              [
+                ".recognition__content > p:nth-child(3)"
+              ],
+              [
+                ".deliverable.reveal:nth-child(3) > dt"
+              ],
+              [
+                ".deliverable.reveal:nth-child(3) > dd"
+              ],
+              [
+                ".filter__column--quiet > .filter__list > li:nth-child(1)"
+              ],
+              [
+                ".filter__column--quiet > .filter__list > li:nth-child(2)"
+              ],
+              [
+                ".filter__column--quiet > .filter__list > li:nth-child(3)"
+              ],
+              [
+                ".offer__intro > .kicker--gold.kicker"
+              ],
+              [
+                "#offer-title"
+              ],
+              [
+                ".offer__intro > p:nth-child(3)"
+              ],
+              [
+                ".offer__small-title"
+              ],
+              [
+                ".offer__recap > ul > li:nth-child(1)"
+              ],
+              [
+                ".offer__recap > ul > li:nth-child(2)"
+              ],
+              [
+                ".offer__recap > ul > li:nth-child(3)"
+              ],
+              [
+                ".offer__recap > ul > li:nth-child(4)"
+              ],
+              [
+                "ul > li:nth-child(5)"
+              ],
+              [
+                ".offer__confirmed > .offer__status"
+              ],
+              [
+                ".offer__status-note"
+              ],
+              [
+                "div[data-detail=\"cohortStart\"] > dt"
+              ],
+              [
+                "dd[data-cohort-start=\"\"]"
+              ],
+              [
+                "div[data-detail=\"meetingSchedule\"] > dt"
+              ],
+              [
+                "dd[data-meeting-schedule=\"\"]"
+              ],
+              [
+                "div[data-detail=\"capacity\"] > dt"
+              ],
+              [
+                "dd[data-capacity=\"\"]"
+              ],
+              [
+                "div[data-detail=\"enrollmentDeadline\"] > dt"
+              ],
+              [
+                "dd[data-enrollment-deadline=\"\"]"
+              ],
+              [
+                ".button--offer"
+              ],
+              [
+                ".offer__next > p"
+              ],
+              [
+                "p > strong"
+              ],
+              [
+                ".closing__content > .kicker"
+              ],
+              [
+                "#closing-title"
+              ],
+              [
+                ".closing__content > p:nth-child(4)"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "route": "/en/uterine-vision/",
+      "width": 390,
+      "status": 200,
+      "forbidden": [],
+      "overflow": 0,
+      "missingImages": 0
+    },
+    {
+      "route": "/en/uterine-vision/",
+      "width": 1440,
+      "status": 200,
+      "forbidden": [],
+      "overflow": 0,
+      "missingImages": 0,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": [
+              [
+                ".eyebrow.hero-enter"
+              ],
+              [
+                "#titulo"
+              ],
+              [
+                "#titulo > em"
+              ],
+              [
+                ".hero-statement"
+              ],
+              [
+                ".hero-description"
+              ],
+              [
+                ".hero-action > .button.button-light[data-whatsapp=\"\"]"
+              ],
+              [
+                ".hero-action > .microcopy"
+              ],
+              [
+                ".hero-footer > span"
+              ],
+              [
+                "a[href$=\"#escuta\"]"
+              ],
+              [
+                ".session-intro > p"
+              ],
+              [
+                "article:nth-child(1) > p"
+              ],
+              [
+                "article:nth-child(2) > p"
+              ],
+              [
+                "article:nth-child(3) > p"
+              ],
+              [
+                "#mulheres > .section-label > .index"
+              ],
+              [
+                "#mulheres > .section-label > span:nth-child(2)"
+              ],
+              [
+                "#prova-titulo"
+              ],
+              [
+                "#prova-titulo > em"
+              ],
+              [
+                ".proof-note"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "route": "/en/course/",
+      "width": 390,
+      "status": 200,
+      "forbidden": [],
+      "overflow": 0,
+      "missingImages": 0
+    },
+    {
+      "route": "/en/course/",
+      "width": 1440,
+      "status": 200,
+      "forbidden": [],
+      "overflow": 0,
+      "missingImages": 0,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": [
+              [
+                ".course-mark"
+              ],
+              [
+                ".eyebrow"
+              ],
+              [
+                "#hero-title"
+              ],
+              [
+                ".hero__subhead"
+              ],
+              [
+                ".hero__meta"
+              ],
+              [
+                ".action-group > .button--primary.button.js-checkout"
+              ],
+              [
+                ".action-note"
+              ],
+              [
+                ".hero__scroll"
+              ],
+              [
+                "li:nth-child(2) > strong"
+              ],
+              [
+                "li:nth-child(2) > strong > .named-translation[lang=\"en\"]"
+              ],
+              [
+                "li:nth-child(4) > strong"
+              ],
+              [
+                "li:nth-child(4) > strong > .named-translation[lang=\"en\"]"
+              ],
+              [
+                "li:nth-child(6) > strong"
+              ],
+              [
+                "li:nth-child(6) > strong > .named-translation[lang=\"en\"]"
+              ],
+              [
+                ".offer__label"
+              ],
+              [
+                "#checkout-preview-note"
+              ],
+              [
+                ".closing__mark"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "route": "/en/art/",
+      "width": 390,
+      "status": 200,
+      "forbidden": [],
+      "overflow": 0,
+      "missingImages": 0
+    },
+    {
+      "route": "/en/art/",
+      "width": 1440,
+      "status": 200,
+      "forbidden": [],
+      "overflow": 0,
+      "missingImages": 0
+    },
+    {
+      "route": "/en/prana/",
+      "width": 390,
+      "status": 200,
+      "forbidden": [],
+      "overflow": 0,
+      "missingImages": 0
+    },
+    {
+      "route": "/en/prana/",
+      "width": 1440,
+      "status": 200,
+      "forbidden": [],
+      "overflow": 0,
+      "missingImages": 0
+    },
+    {
+      "route": "/es/",
+      "width": 390,
+      "status": 200,
+      "forbidden": [],
+      "overflow": 0,
+      "missingImages": 0
+    },
+    {
+      "route": "/es/",
+      "width": 1440,
+      "status": 200,
+      "forbidden": [],
+      "overflow": 0,
+      "missingImages": 0,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": [
+              [
+                ".home-hero-copy > .eyebrow"
+              ],
+              [
+                "#home-title"
+              ],
+              [
+                ".home-tagline"
+              ],
+              [
+                ".home-statement"
+              ],
+              [
+                ".home-subhead"
+              ],
+              [
+                ".home-hero-copy > .button[href$=\"#caminhos\"]"
+              ],
+              [
+                ".hero-art-caption"
+              ],
+              [
+                ".home-scroll"
+              ],
+              [
+                "#proof-title"
+              ],
+              [
+                "em"
+              ],
+              [
+                ".proof-note"
+              ],
+              [
+                ".proof-video > figcaption"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "route": "/es/el-templo/",
+      "width": 390,
+      "status": 200,
+      "forbidden": [],
+      "overflow": 0,
+      "missingImages": 0
+    },
+    {
+      "route": "/es/el-templo/",
+      "width": 1440,
+      "status": 200,
+      "forbidden": [],
+      "overflow": 0,
+      "missingImages": 0
+    },
+    {
+      "route": "/es/metodo/",
+      "width": 390,
+      "status": 200,
+      "forbidden": [],
+      "overflow": 0,
+      "missingImages": 0
+    },
+    {
+      "route": "/es/metodo/",
+      "width": 1440,
+      "status": 200,
+      "forbidden": [],
+      "overflow": 0,
+      "missingImages": 0
+    },
+    {
+      "route": "/es/caminos/",
+      "width": 390,
+      "status": 200,
+      "forbidden": [],
+      "overflow": 0,
+      "missingImages": 0
+    },
+    {
+      "route": "/es/caminos/",
+      "width": 1440,
+      "status": 200,
+      "forbidden": [],
+      "overflow": 0,
+      "missingImages": 0
+    },
+    {
+      "route": "/es/mentoria/",
+      "width": 390,
+      "status": 200,
+      "forbidden": [
+        "12 encuentros"
+      ],
+      "overflow": 0,
+      "missingImages": 0
+    },
+    {
+      "route": "/es/mentoria/",
+      "width": 1440,
+      "status": 200,
+      "forbidden": [
+        "12 encuentros"
+      ],
+      "overflow": 0,
+      "missingImages": 0,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": [
+              [
+                ".eyebrow"
+              ],
+              [
+                ".origin-bridge"
+              ],
+              [
+                "#hero-title"
+              ],
+              [
+                ".hero__lead"
+              ],
+              [
+                "a[data-placement=\"d1\"]"
+              ],
+              [
+                ".hero__actions > p"
+              ],
+              [
+                ".hero__scroll"
+              ],
+              [
+                ".crossing__aside > p:nth-child(1)"
+              ],
+              [
+                ".crossing__aside > p:nth-child(2)"
+              ],
+              [
+                "#recognition-title"
+              ],
+              [
+                ".recognition__content > p:nth-child(3)"
+              ],
+              [
+                ".deliverable.reveal:nth-child(3) > dt"
+              ],
+              [
+                ".deliverable.reveal:nth-child(3) > dd"
+              ],
+              [
+                ".filter__column--quiet > .filter__list > li:nth-child(1)"
+              ],
+              [
+                ".filter__column--quiet > .filter__list > li:nth-child(2)"
+              ],
+              [
+                ".filter__column--quiet > .filter__list > li:nth-child(3)"
+              ],
+              [
+                ".offer__intro > .kicker--gold.kicker"
+              ],
+              [
+                "#offer-title"
+              ],
+              [
+                ".offer__intro > p:nth-child(3)"
+              ],
+              [
+                ".offer__small-title"
+              ],
+              [
+                ".offer__recap > ul > li:nth-child(1)"
+              ],
+              [
+                ".offer__recap > ul > li:nth-child(2)"
+              ],
+              [
+                ".offer__recap > ul > li:nth-child(3)"
+              ],
+              [
+                ".offer__recap > ul > li:nth-child(4)"
+              ],
+              [
+                "ul > li:nth-child(5)"
+              ],
+              [
+                ".offer__confirmed > .offer__status"
+              ],
+              [
+                ".offer__status-note"
+              ],
+              [
+                "div[data-detail=\"cohortStart\"] > dt"
+              ],
+              [
+                "dd[data-cohort-start=\"\"]"
+              ],
+              [
+                "div[data-detail=\"meetingSchedule\"] > dt"
+              ],
+              [
+                "dd[data-meeting-schedule=\"\"]"
+              ],
+              [
+                "div[data-detail=\"capacity\"] > dt"
+              ],
+              [
+                "dd[data-capacity=\"\"]"
+              ],
+              [
+                "div[data-detail=\"enrollmentDeadline\"] > dt"
+              ],
+              [
+                "dd[data-enrollment-deadline=\"\"]"
+              ],
+              [
+                ".button--offer"
+              ],
+              [
+                ".offer__next > p"
+              ],
+              [
+                "p > strong"
+              ],
+              [
+                ".closing__content > .kicker"
+              ],
+              [
+                "#closing-title"
+              ],
+              [
+                ".closing__content > p:nth-child(4)"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "route": "/es/vision-uterina/",
+      "width": 390,
+      "status": 200,
+      "forbidden": [],
+      "overflow": 0,
+      "missingImages": 0
+    },
+    {
+      "route": "/es/vision-uterina/",
+      "width": 1440,
+      "status": 200,
+      "forbidden": [],
+      "overflow": 0,
+      "missingImages": 0,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": [
+              [
+                ".eyebrow.hero-enter"
+              ],
+              [
+                "#titulo"
+              ],
+              [
+                "#titulo > em"
+              ],
+              [
+                ".hero-statement"
+              ],
+              [
+                ".hero-description"
+              ],
+              [
+                ".hero-action > .button.button-light[data-whatsapp=\"\"]"
+              ],
+              [
+                ".hero-action > .microcopy"
+              ],
+              [
+                ".hero-footer > span"
+              ],
+              [
+                "a[href$=\"#escuta\"]"
+              ],
+              [
+                ".session-intro > p"
+              ],
+              [
+                "article:nth-child(1) > p"
+              ],
+              [
+                "article:nth-child(2) > p"
+              ],
+              [
+                "article:nth-child(3) > p"
+              ],
+              [
+                "#mulheres > .section-label > .index"
+              ],
+              [
+                "#mulheres > .section-label > span:nth-child(2)"
+              ],
+              [
+                "#prova-titulo"
+              ],
+              [
+                "#prova-titulo > em"
+              ],
+              [
+                ".proof-note"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "route": "/es/curso/",
+      "width": 390,
+      "status": 200,
+      "forbidden": [],
+      "overflow": 0,
+      "missingImages": 0
+    },
+    {
+      "route": "/es/curso/",
+      "width": 1440,
+      "status": 200,
+      "forbidden": [],
+      "overflow": 0,
+      "missingImages": 0,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": [
+              [
+                ".course-mark"
+              ],
+              [
+                ".eyebrow"
+              ],
+              [
+                "#hero-title"
+              ],
+              [
+                ".hero__subhead"
+              ],
+              [
+                ".hero__meta"
+              ],
+              [
+                ".action-group > .button--primary.button.js-checkout"
+              ],
+              [
+                ".action-note"
+              ],
+              [
+                ".hero__scroll"
+              ],
+              [
+                "li:nth-child(2) > strong"
+              ],
+              [
+                "li:nth-child(2) > strong > .named-translation[lang=\"es\"]"
+              ],
+              [
+                "li:nth-child(4) > strong"
+              ],
+              [
+                "li:nth-child(4) > strong > .named-translation[lang=\"es\"]"
+              ],
+              [
+                "li:nth-child(6) > strong"
+              ],
+              [
+                "li:nth-child(6) > strong > .named-translation[lang=\"es\"]"
+              ],
+              [
+                ".offer__label"
+              ],
+              [
+                "#checkout-preview-note"
+              ],
+              [
+                ".closing__mark"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "route": "/es/arte/",
+      "width": 390,
+      "status": 200,
+      "forbidden": [],
+      "overflow": 0,
+      "missingImages": 0
+    },
+    {
+      "route": "/es/arte/",
+      "width": 1440,
+      "status": 200,
+      "forbidden": [],
+      "overflow": 0,
+      "missingImages": 0
+    },
+    {
+      "route": "/es/prana/",
+      "width": 390,
+      "status": 200,
+      "forbidden": [],
+      "overflow": 0,
+      "missingImages": 0
+    },
+    {
+      "route": "/es/prana/",
+      "width": 1440,
+      "status": 200,
+      "forbidden": [],
+      "overflow": 0,
+      "missingImages": 0
+    }
+  ],
+  "errorPage": [
+    {
+      "width": 390,
+      "robots": "noindex,follow",
+      "lang": "pt-BR",
+      "en": "Page not found. This address is unavailable. Choose a path below to continue.",
+      "es": "Página no encontrada. Esta dirección no está disponible. Elige un camino para continuar.",
+      "links": [
+        "/",
+        "/visao-uterina/",
+        "/mentoria/"
+      ]
+    },
+    {
+      "width": 1440,
+      "robots": "noindex,follow",
+      "lang": "pt-BR",
+      "en": "Page not found. This address is unavailable. Choose a path below to continue.",
+      "es": "Página no encontrada. Esta dirección no está disponible. Elige un camino para continuar.",
+      "links": [
+        "/",
+        "/visao-uterina/",
+        "/mentoria/"
+      ]
+    }
+  ],
+  "failures": [
+    {
+      "label": "Rendered text gate",
+      "detail": {
+        "url": "/mentoria/",
+        "width": 390,
+        "forbidden": [
+          "12 encontros"
+        ]
+      }
+    },
+    {
+      "label": "Rendered text gate",
+      "detail": {
+        "url": "/mentoria/",
+        "width": 1440,
+        "forbidden": [
+          "12 encontros"
+        ]
+      }
+    },
+    {
+      "label": "Rendered text gate",
+      "detail": {
+        "url": "/es/mentoria/",
+        "width": 390,
+        "forbidden": [
+          "12 encuentros"
+        ]
+      }
+    },
+    {
+      "label": "Rendered text gate",
+      "detail": {
+        "url": "/es/mentoria/",
+        "width": 1440,
+        "forbidden": [
+          "12 encuentros"
+        ]
+      }
+    }
+  ],
+  "consoleErrors": [],
+  "pageErrors": [],
+  "networkFailures": [],
+  "noJS": [
+    {
+      "lang": 0,
+      "passed": true
+    },
+    {
+      "lang": 1,
+      "passed": true
+    },
+    {
+      "lang": 2,
+      "passed": true
+    }
+  ]
+}

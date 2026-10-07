@@ -1,0 +1,2 @@
+const fs=require('node:fs'),path=require('node:path'),root=path.resolve(__dirname,'../qa/reference');
+for(const n of ['01','09','13','21','31','32','34','40','41']){const d=JSON.parse(fs.readFileSync(path.join(root,n+'-mobile.json')));console.log(n,'fixed',Array.from(d.html.matchAll(/data-position="([^"]+)/g)).map(x=>x[1]));console.log(d.styles.filter(s=>['H1','H2','H3','STRONG'].includes(s.tag)&&s.text).slice(0,12).map(s=>[s.tag,s.text.slice(0,80),s.css['font-weight'],s.css['font-size'],s.css['line-height'],s.css.color]));if(n==='41')console.log(d.html.slice(-15000));}

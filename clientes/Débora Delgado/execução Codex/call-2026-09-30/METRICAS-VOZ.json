@@ -1,0 +1,67 @@
+{
+  "words_victor": 5336,
+  "turns_victor": 307,
+  "words_all": 14320,
+  "markers": {
+    "entendeu": {
+      "n": 11,
+      "per1000": 2.06
+    },
+    "sabe": {
+      "n": 9,
+      "per1000": 1.69
+    },
+    "ali": {
+      "n": 79,
+      "per1000": 14.81
+    },
+    "tipo assim": {
+      "n": 10,
+      "per1000": 1.87
+    },
+    "digamos assim": {
+      "n": 4,
+      "per1000": 0.75
+    },
+    "eu acredito": {
+      "n": 11,
+      "per1000": 2.06
+    },
+    "creio": {
+      "n": 9,
+      "per1000": 1.69
+    },
+    "basicamente": {
+      "n": 2,
+      "per1000": 0.37
+    },
+    "realmente": {
+      "n": 8,
+      "per1000": 1.5
+    },
+    "extremamente": {
+      "n": 2,
+      "per1000": 0.37
+    },
+    "todo mundo": {
+      "n": 2,
+      "per1000": 0.37
+    },
+    "ninguém": {
+      "n": 2,
+      "per1000": 0.37
+    },
+    "sempre": {
+      "n": 2,
+      "per1000": 0.37
+    },
+    "não tem como": {
+      "n": 3,
+      "per1000": 0.56
+    },
+    "então": {
+      "n": 54,
+      "per1000": 10.12
+    }
+  }
+}

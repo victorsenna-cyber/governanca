@@ -1,0 +1,12 @@
+# --- The Golden Temple · proposta de 25/09/2026 ---
+RewriteEngine On
+
+# www → domínio raiz
+RewriteCond %{HTTP_HOST} ^www\.thegoldentemple\.io$ [NC]
+RewriteRule ^(.*)$ https://thegoldentemple.io/$1 [R=301,L]
+
+# caminhos antigos (DEC-2026-09-02-002: a Masterclass virou Visão Uterina)
+RewriteRule ^masterclass/?$ /visao-uterina/ [R=301,L]
+RewriteRule ^(v2|the-golden-temple|the-golden-temple-v2)(/.*)?$ / [R=301,L]
+
+ErrorDocument 404 /404.html

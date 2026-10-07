@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Carrosséis Guilherme Araújo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --deep: #070c09;
+      --base: #0c1410;
+      --card: #111a14;
+      --gold: #c9a961;
+      --cream: #f2ebda;
+      --muted: #8a9e8e;
+      --border: #1e2e20;
+      /* 888 = 6 x 148; 1152 = 8 x 144. */
+      --grid-left: 96px;
+      --grid-top: 99px;
+      --grid-column: 148px;
+      --grid-row: 144px;
+      --grid-width: 888px;
+      --grid-height: 1152px;
+      --grid-line-dark: rgba(201,169,97,.16);
+      --grid-line-light: rgba(12,20,16,.12);
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      min-height: 100%;
+      background: #1b211d;
+      color: var(--cream);
+      font-family: Manrope, Arial, sans-serif;
+    }
+
+    .deck {
+      display: grid;
+      grid-template-columns: repeat(2, 1080px);
+      gap: 48px;
+      padding: 48px;
+      width: max-content;
+    }
+
+    .card {
+      position: relative;
+      width: 1080px;
+      height: 1350px;
+      overflow: hidden;
+      isolation: isolate;
+      background: var(--deep);
+      color: var(--cream);
+    }
+
+    .card.light {
+      background: var(--cream);
+      color: var(--base);
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      left: var(--grid-left);
+      top: var(--grid-top);
+      width: var(--grid-width);
+      height: var(--grid-height);
+      z-index: 3;
+      pointer-events: none;
+      background:
+        linear-gradient(to right, var(--grid-line-dark) 1px, transparent 1px),
+        linear-gradient(to bottom, var(--grid-line-dark) 1px, transparent 1px);
+      background-size:
+        var(--grid-column) 100%,
+        100% var(--grid-row);
+      border-right: 1px solid var(--grid-line-dark);
+      border-bottom: 1px solid var(--grid-line-dark);
+    }
+
+    .card.light::before {
+      background:
+        linear-gradient(to right, var(--grid-line-light) 1px, transparent 1px),
+        linear-gradient(to bottom, var(--grid-line-light) 1px, transparent 1px);
+      background-size:
+        var(--grid-column) 100%,
+        100% var(--grid-row);
+      border-color: var(--grid-line-light);
+    }
+
+    .set-code {
+      position: absolute;
+      top: 112px;
+      left: var(--grid-left);
+      z-index: 10;
+      font-size: 22px;
+      line-height: 1;
+      font-weight: 600;
+      letter-spacing: .16em;
+      color: var(--muted);
+    }
+
+    .counter {
+      position: absolute;
+      top: 112px;
+      right: var(--grid-left);
+      z-index: 10;
+      font-size: 24px;
+      line-height: 1;
+      font-weight: 500;
+      letter-spacing: .14em;
+      color: var(--gold);
+    }
+
+    .copy-zone {
+      position: absolute;
+      z-index: 5;
+      left: var(--grid-left);
+      top: calc(var(--grid-top) + var(--grid-row) * 2);
+      width: var(--grid-width);
+      height: calc(var(--grid-row) * 3);
+      display: flex;
+      align-items: center;
+    }
+
+    .copy {
+      max-width: calc(var(--grid-column) * 5);
+      margin: 0;
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: 62px;
+      line-height: 1.12;
+      font-weight: 500;
+      letter-spacing: -.025em;
+      text-wrap: balance;
+    }
+
+    .copy.medium { font-size: 56px; line-height: 1.14; }
+    .copy.dense { font-size: 50px; line-height: 1.16; }
+    .t1 .copy { font-size: 88px; line-height: 1.00; max-width: var(--grid-width); }
+    .t1 .copy.medium { font-size: 80px; }
+    .t1 .copy.dense { font-size: 72px; line-height: 1.03; }
+    .t3 .copy { font-size: 78px; line-height: 1.04; max-width: var(--grid-width); }
+    .t3 .copy.medium { font-size: 70px; }
+    .t3 .copy.dense { font-size: 62px; line-height: 1.08; }
+    .t5 .copy { font-size: 72px; line-height: 1.05; }
+    .t5 .copy.dense { font-size: 58px; line-height: 1.10; }
+
+    .accent { color: var(--gold); }
+    .light .accent { color: #8e6d27; }
+
+    .step-number {
+      width: var(--grid-column);
+      align-self: center;
+      font-family: Manrope, Arial, sans-serif;
+      font-size: 144px;
+      line-height: .8;
+      font-weight: 500;
+      color: var(--gold);
+      opacity: .92;
+      letter-spacing: -.08em;
+    }
+
+    .t4.has-step .copy-zone {
+      display: grid;
+      grid-template-columns: var(--grid-column) calc(var(--grid-column) * 5);
+      column-gap: 0;
+    }
+    .t4.has-step .copy { max-width: calc(var(--grid-column) * 4); }
+
+    .brand {
+      position: absolute;
+      left: var(--grid-left);
+      top: calc(var(--grid-top) + var(--grid-row) * 7 + 34px);
+      z-index: 10;
+      font-size: 26px;
+      font-weight: 500;
+      letter-spacing: .08em;
+      color: var(--muted);
+    }
+
+    .progress {
+      position: absolute;
+      z-index: 10;
+      left: var(--grid-left);
+      right: var(--grid-left);
+      bottom: 64px;
+      height: 4px;
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+      gap: 10px;
+    }
+
+    .progress span {
+      display: block;
+      background: rgba(138,158,142,.22);
+    }
+
+    .progress span.active { background: var(--gold); }
+    .light .progress span { background: rgba(12,20,16,.13); }
+    .light .progress span.active { background: #8e6d27; }
+
+    .photo-panel {
+      position: absolute;
+      z-index: 0;
+      left: calc(var(--grid-left) + var(--grid-column) * 3);
+      top: var(--grid-top);
+      width: calc(var(--grid-column) * 3);
+      height: var(--grid-height);
+      overflow: hidden;
+    }
+
+    .photo-panel img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 52% 17%;
+      filter: saturate(.78) contrast(1.04) brightness(.78) sepia(.08);
+    }
+
+    .photo-panel::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(90deg, var(--deep) 0%, rgba(7,12,9,.62) 24%, rgba(7,12,9,.16) 70%, rgba(7,12,9,.30) 100%);
+    }
+
+    .photo .copy-zone {
+      right: auto;
+      width: calc(var(--grid-column) * 3);
+    }
+    .photo .copy { max-width: 410px; font-size: 54px; line-height: 1.08; }
+
+    .cta-word {
+      display: block;
+      font-family: "Cormorant Garamond", Georgia, serif;
+      color: var(--gold);
+      font-size: 168px;
+      line-height: .82;
+      letter-spacing: -.045em;
+      margin: 22px 0 30px;
+    }
+
+    .cta-prefix, .cta-suffix {
+      display: block;
+      font-family: Manrope, Arial, sans-serif;
+      font-size: 46px;
+      line-height: 1.15;
+      font-weight: 600;
+      letter-spacing: -.02em;
+    }
+  </style>
+</head>
+<body>
+  <main id="deck" class="deck" aria-label="Carrosséis da campanha"></main>
+
+  <script>
+    const carousels = [
+      {
+        id: "C01",
+        cards: [
+          { t: "t1", html: "Cuidar dos outros<br>e sustentar a própria vida<br><span class='accent'>não deveriam ser opostos.</span>", v: "dual" },
+          { t: "t2", html: "Mas essa oposição aparece cedo para muita gente do campo terapêutico.", v: "arcs" },
+          { t: "t3", html: "Como se profundidade pertencesse ao cuidado e <span class='accent'>dinheiro pertencesse a outro mundo.</span>", v: "split" },
+          { t: "t2", html: "Então a profissional aprende mais uma técnica.", v: "pages" },
+          { t: "t2", html: "Entrega mais do que combinou.", v: "overflow" },
+          { t: "t2", html: "E continua sem uma forma clara de sustentar o próprio trabalho.", v: "broken" },
+          { t: "t4", html: "Talvez a saída não seja escolher um lado. Seja construir uma prática em que <span class='accent'>valor e cuidado</span> possam coexistir.", v: "merge" },
+          { t: "t5", html: "Sustentar o trabalho também faz parte do cuidado.", v: "close", brand: true }
+        ]
+      },
+      {
+        id: "C02",
+        cards: [
+          { t: "t1", html: "A parte do trabalho terapêutico que <span class='accent'>quase nenhuma formação ensina.</span>", v: "filet" },
+          { t: "t2", html: "Você aprende a atender, ouvir, conduzir e aprofundar.", v: "pages" },
+          { t: "t3", html: "Mas quem ensina o que acontece <span class='accent'>antes, entre e depois</span> das sessões?", v: "three" },
+          { t: "t4", html: "Como a pessoa entende o valor do seu trabalho.", v: "steps", step: "1" },
+          { t: "t4", html: "Como um encontro ganha continuidade.", v: "steps", step: "2" },
+          { t: "t4", html: "Como comunicar o processo sem transformar cuidado em pressão.", v: "steps", step: "3" },
+          { t: "t2", html: "O vazio pode não estar na sua técnica. Pode estar na <span class='accent'>estrutura</span> que deveria sustentá-la.", v: "frame" },
+          { t: "t5", html: "Profundidade também precisa de estrutura.", v: "line", brand: true }
+        ]
+      },
+      {
+        id: "C03",
+        cards: [
+          { t: "t1", html: "A sessão foi profunda.<br><span class='accent'>E depois?</span>", v: "chair" },
+          { t: "t2", html: "A pessoa sai tocada pelo que viveu. Mas o próximo movimento não ficou claro.", v: "open" },
+          { t: "t3", html: "Profundidade <span class='accent'>não cria continuidade sozinha.</span>", v: "broken" },
+          { t: "t4", html: "Continuidade pede um começo que nomeie o processo.", v: "steps", step: "1" },
+          { t: "t4", html: "Pede direção entre um encontro e outro.", v: "steps", step: "2" },
+          { t: "t4", html: "E pede um fechamento que mostre o caminho percorrido.", v: "steps", step: "3" },
+          { t: "t2", html: "Quando essa estrutura não existe, cada sessão corre o risco de <span class='accent'>recomeçar do zero.</span>", v: "loop" },
+          { t: "t5", html: "Uma sessão pode abrir algo.<br><span class='accent'>Uma jornada ajuda a conduzir o que foi aberto.</span>", v: "path", brand: true }
+        ]
+      },
+      {
+        id: "C04",
+        cards: [
+          { t: "t1", html: "Sessão, acompanhamento ou jornada:<br><span class='accent'>o que muda?</span>", v: "threeVertical" },
+          { t: "t4", html: "<span class='accent'>Sessão</span> responde a um encontro e a uma questão daquele momento.", v: "point" },
+          { t: "t4", html: "<span class='accent'>Acompanhamento</span> cria continuidade entre encontros.", v: "two" },
+          { t: "t3", html: "<span class='accent'>Jornada</span> organiza começo, continuidade e fechamento em torno de uma transformação acompanhada.", v: "three" },
+          { t: "t2", html: "A pessoa entende onde está entrando.", v: "person" },
+          { t: "t2", html: "A terapeuta sabe o que precisa sustentar.", v: "therapist" },
+          { t: "t2", html: "Não é colocar um nome mais bonito. É tornar o processo mais claro para os dois lados.", v: "pair" },
+          { t: "t5", html: "Siga o perfil para acompanhar os próximos mapas sobre condução e prática terapêutica.", v: "line", brand: true }
+        ]
+      },
+      {
+        id: "C05",
+        cards: [
+          { t: "t1", html: "Os <span class='accent'>3 movimentos</span> de um processo terapêutico com continuidade.", v: "three" },
+          { t: "t4", html: "Início: a pessoa compreende o arco do trabalho e o que será observado.", v: "steps", step: "1" },
+          { t: "t3", html: "O começo não serve apenas para abrir a sessão. Serve para <span class='accent'>dar direção ao processo.</span>", v: "path" },
+          { t: "t4", html: "Continuidade: o que acontece entre os encontros também faz parte da condução.", v: "steps", step: "2" },
+          { t: "t4", html: "Fechamento: a pessoa reconhece o caminho percorrido e o próximo passo.", v: "steps", step: "3" },
+          { t: "t2", html: "Sem início claro, tudo parece solto. Sem continuidade, cada encontro recomeça. Sem fechamento, o valor vivido se perde.", v: "threeBands" },
+          { t: "t2", html: "Estrutura não diminui a sensibilidade. Ela <span class='accent'>dá sustentação</span> ao que a sensibilidade percebe.", v: "support" },
+          { t: "t5", html: "Siga Guilherme para acompanhar conteúdos sobre jornada, campo e venda humanizada.", v: "three", brand: true }
+        ]
+      },
+      {
+        id: "C06",
+        cards: [
+          { t: "t1", html: "Vender <span class='accent'>não precisa romper</span> o cuidado.", v: "tension" },
+          { t: "t2", html: "A ruptura acontece quando a conversa ignora a pessoa e força uma decisão.", v: "noise" },
+          { t: "t3", html: "Mas apresentar um caminho com <span class='accent'>clareza</span> também pode ser parte do cuidado.", v: "order" },
+          { t: "t4", html: "O que será feito.", v: "steps", step: "1" },
+          { t: "t4", html: "Por que aquele formato faz sentido.", v: "steps", step: "2" },
+          { t: "t4", html: "O que a pessoa pode esperar e o que não pode.", v: "steps", step: "3" },
+          { t: "t2", html: "Venda humanizada não esconde a proposta. Ela <span class='accent'>remove pressão</span> e aumenta clareza.", v: "openFrame" },
+          { t: "t5 photo", html: "Siga o perfil para acompanhar como Guilherme conecta condução, permissão e prática.", brand: true, photo: true }
+        ]
+      }
+    ];
+
+    function sizeClass(html, template) {
+      const words = html.replace(/<[^>]+>/g, " ").trim().split(/\s+/).length;
+      if (template === "t1") return words > 16 ? "dense" : words > 11 ? "medium" : "";
+      if (template === "t3") return words > 19 ? "dense" : words > 13 ? "medium" : "";
+      if (words > 24) return "dense";
+      if (words > 16) return "medium";
+      return "";
+    }
+
+    function renderCard(set, card, index) {
+      const isLight = ["t2", "t4"].includes(card.t.split(" ")[0]);
+      const baseTemplate = card.t.split(" ")[0];
+      const hasStep = card.step ? " has-step" : "";
+      const photo = card.photo ? `<div class="photo-panel"><img src="assets/guilherme-original.jpeg" alt=""></div>` : "";
+      const progress = Array.from({ length: 8 }, (_, i) => `<span class="${i === index ? "active" : ""}"></span>`).join("");
+      const step = card.step ? `<div class="step-number">${card.step}</div>` : "";
+      const brand = card.brand ? `<div class="brand">Guilherme Araújo</div>` : "";
+      return `
+        <section class="card ${baseTemplate} ${isLight ? "light" : "dark"}${hasStep}${card.photo ? " photo" : ""}" data-id="${set.id}-${String(index + 1).padStart(2, "0")}">
+          <div class="set-code">${set.id}</div>
+          <div class="counter">${String(index + 1).padStart(2, "0")}/08</div>
+          ${photo}
+          <div class="copy-zone">
+            ${step}
+            <p class="copy ${sizeClass(card.html, baseTemplate)}">${card.html}</p>
+          </div>
+          ${brand}
+          <div class="progress">${progress}</div>
+        </section>`;
+    }
+
+    document.getElementById("deck").innerHTML = carousels
+      .map(set => set.cards.map((card, index) => renderCard(set, card, index)).join(""))
+      .join("");
+  </script>
+</body>
+</html>

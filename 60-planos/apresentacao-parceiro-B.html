@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Continuum · O que estamos construindo</title>
+<style>
+  :root{
+    --bg:#0c0d10; --bg2:#131419; --card:#16181f; --card2:#1b1e27;
+    --line:#262a36; --txt:#e8eaf0; --txt2:#a4a9b8; --txt3:#6e7384;
+    --acc:#5b8cff; --acc2:#7aa2ff; --ok:#3ecf8e; --warn:#f5a623; --bad:#ff5f6d;
+    --okbg:rgba(62,207,142,.10); --warnbg:rgba(245,166,35,.10); --badbg:rgba(255,95,109,.10);
+    --shadow:0 1px 0 rgba(255,255,255,.02),0 8px 30px rgba(0,0,0,.35);
+  }
+  [data-theme="light"]{
+    --bg:#f4f5f8; --bg2:#eceef3; --card:#ffffff; --card2:#f7f8fb;
+    --line:#e2e5ec; --txt:#1a1d26; --txt2:#4a5060; --txt3:#878d9c;
+    --acc:#2f63e6; --acc2:#3f74f0; --ok:#13935f; --warn:#b9760a; --bad:#d83644;
+    --okbg:rgba(19,147,95,.08); --warnbg:rgba(185,118,10,.08); --badbg:rgba(216,54,68,.08);
+    --shadow:0 1px 2px rgba(20,30,60,.04),0 8px 28px rgba(20,30,60,.08);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased;transition:background .3s,color .3s}
+  .wrap{max-width:920px;margin:0 auto;padding:0 24px 96px}
+  header.top{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);padding:14px 0;margin-bottom:8px}
+  .top-in{max-width:920px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:.3px}
+  .dot{width:10px;height:10px;border-radius:50%;background:var(--acc);box-shadow:0 0 0 4px color-mix(in srgb,var(--acc) 22%,transparent)}
+  .brand small{display:block;font-weight:500;color:var(--txt3);font-size:11px;letter-spacing:.5px;text-transform:uppercase}
+  .toggle{cursor:pointer;border:1px solid var(--line);background:var(--card);color:var(--txt2);border-radius:10px;padding:8px 12px;font-size:13px;display:flex;align-items:center;gap:7px;transition:.2s}
+  .toggle:hover{border-color:var(--acc);color:var(--txt)}
+  .hero{padding:54px 0 30px}
+  .kicker{color:var(--acc2);font-weight:600;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:14px}
+  h1{font-size:38px;line-height:1.15;letter-spacing:-.5px;margin-bottom:18px;font-weight:760}
+  .lead{font-size:18px;color:var(--txt2);max-width:680px}
+  .meta-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+  .pill{font-size:12.5px;color:var(--txt2);border:1px solid var(--line);background:var(--card);border-radius:999px;padding:6px 13px}
+  .pill b{color:var(--txt)}
+  section{margin-top:46px}
+  .sec-head{display:flex;align-items:baseline;gap:12px;margin-bottom:20px}
+  .sec-num{font-variant-numeric:tabular-nums;color:var(--acc);font-weight:700;font-size:14px;border:1px solid var(--line);border-radius:8px;padding:3px 9px;background:var(--card)}
+  h2{font-size:23px;letter-spacing:-.3px;font-weight:720}
+  h2 + .sub{color:var(--txt3);font-size:14px;margin-top:3px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px 24px;box-shadow:var(--shadow)}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+  @media(max-width:720px){.grid2,.grid3{grid-template-columns:1fr}h1{font-size:30px}.lead{font-size:16px}}
+  .stat{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;box-shadow:var(--shadow)}
+  .stat .lbl{font-size:12px;color:var(--txt3);text-transform:uppercase;letter-spacing:.6px;margin-bottom:8px}
+  .stat .val{font-size:27px;font-weight:740;font-variant-numeric:tabular-nums;letter-spacing:-.5px}
+  .stat .note{font-size:12.5px;color:var(--txt2);margin-top:5px}
+  .stat.ok .val{color:var(--ok)} .stat.acc .val{color:var(--acc2)}
+  .stat.ok{border-color:color-mix(in srgb,var(--ok) 32%,var(--line))}
+  .callout{border-left:3px solid var(--acc);background:var(--card2);border-radius:0 12px 12px 0;padding:16px 20px;margin-top:4px}
+  .callout.heart{border-left-color:var(--ok);background:var(--okbg)}
+  .callout h3{font-size:16px;margin-bottom:7px;color:var(--txt)}
+  .callout p{color:var(--txt2);font-size:14.5px}
+  .callout p + p{margin-top:9px}
+  ul.clean{list-style:none;display:flex;flex-direction:column;gap:11px;margin-top:4px}
+  ul.clean li{padding-left:28px;position:relative;color:var(--txt2);font-size:14.5px}
+  ul.clean li::before{content:"";position:absolute;left:5px;top:9px;width:8px;height:8px;border-radius:2px;background:var(--ok);transform:rotate(45deg)}
+  ul.clean li b{color:var(--txt)}
+  .step{display:flex;align-items:flex-start;gap:14px;background:var(--card2);border:1px solid var(--line);border-radius:12px;padding:15px 18px;margin-bottom:10px}
+  .step .n{flex:0 0 28px;height:28px;border-radius:8px;background:var(--acc);color:#fff;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700}
+  .step .t{font-size:14.5px;color:var(--txt2)}.step .t b{color:var(--txt)}
+  .foot{margin-top:54px;padding-top:22px;border-top:1px solid var(--line);color:var(--txt3);font-size:13px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+  .principle{text-align:center;font-size:19px;font-weight:600;color:var(--txt);padding:30px 0 6px;letter-spacing:-.2px}
+  .principle small{display:block;color:var(--txt3);font-size:13px;font-weight:500;margin-top:6px;letter-spacing:.5px;text-transform:uppercase}
+  .sign{font-size:14.5px;color:var(--txt2);margin-top:10px}
+  .sign b{color:var(--txt)}
+</style>
+</head>
+<body data-theme="dark">
+<header class="top">
+  <div class="top-in">
+    <div class="brand"><span class="dot"></span><div>CONTINUUM AI SYSTEMS<small>O que estamos construindo</small></div></div>
+    <button class="toggle" id="tg" onclick="tog()"><span id="tgi">◐</span><span id="tgt">Claro</span></button>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <div class="hero">
+    <div class="kicker">Uma conversa honesta</div>
+    <h1>Você apostou em mim.<br>Quero te mostrar no que.</h1>
+    <p class="lead">Não vim te pedir paciência no escuro. Vim te mostrar a estrutura por trás da Continuum, o que já está em movimento, e por que tenho convicção de que vamos virar este momento — e te colocar do lado de quem colhe.</p>
+    <div class="meta-row">
+      <span class="pill">Tese <b>clara</b></span>
+      <span class="pill">Execução <b>em curso</b></span>
+      <span class="pill">Tração <b>aparecendo</b></span>
+    </div>
+  </div>
+
+  <!-- 1. A TESE -->
+  <section>
+    <div class="sec-head"><span class="sec-num">01</span><div><h2>A tese, em uma frase</h2></div></div>
+    <div class="callout">
+      <p style="font-size:16.5px;color:var(--txt)">A Continuum vende <b>sistemas de receita</b> — não serviços soltos. Começamos resolvendo uma dor de entrada rápida e barata, e a transformamos em <b>relação recorrente</b>. É assim que se constrói uma empresa que cresce sozinha, em vez de uma que recomeça do zero todo mês.</p>
+    </div>
+    <p style="color:var(--txt2);font-size:14.5px;margin-top:14px">O começo de toda operação é o trecho mais íngreme. É exatamente esse trecho que <b style="color:var(--txt)">já está para trás</b>.</p>
+  </section>
+
+  <!-- 2. O QUE JA EXISTE -->
+  <section>
+    <div class="sec-head"><span class="sec-num">02</span><div><h2>O que já está de pé</h2><div class="sub">Concreto, em funcionamento, agora.</div></div></div>
+    <div class="card">
+      <ul class="clean">
+        <li><b>Prospecção ativa</b> — abordagens sendo executadas de forma consistente, alimentando o topo do funil.</li>
+        <li><b>CRM populado</b> — leads reais cadastrados e avançando por um processo comercial estruturado, em fase de rampa.</li>
+        <li><b>Negociações em andamento</b> — deals abertos com tickets que superam a meta inicial que tínhamos traçado.</li>
+        <li><b>Plano escrito e seguido</b> — não improviso: um plano com frentes definidas, ordem de prioridade e metas claras.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 3. COMO VIRA -->
+  <section>
+    <div class="sec-head"><span class="sec-num">03</span><div><h2>Como isto vira o jogo</h2><div class="sub">A sequência que nos leva do esforço diário à operação estável.</div></div></div>
+    <div class="step"><div class="n">1</div><div class="t"><b>Caixa de giro rápido</b> — as vendas de entrada pagam o presente e financiam a construção do resto.</div></div>
+    <div class="step"><div class="n">2</div><div class="t"><b>Fechamento dos deals maiores</b> — cada negociação em andamento que fecha encurta o caminho e reforça o caixa.</div></div>
+    <div class="step"><div class="n">3</div><div class="t"><b>Receita recorrente</b> — converter clientes em contratos mensais até que a recorrência cubra o ponto de equilíbrio.</div></div>
+    <div class="step"><div class="n">4</div><div class="t"><b>Operação no azul</b> — quando a receita se sustenta sozinha, começa a fase de devolver e multiplicar o que foi confiado.</div></div>
+  </section>
+
+  <!-- 4. AS METAS -->
+  <section>
+    <div class="sec-head"><span class="sec-num">04</span><div><h2>As metas que perseguimos</h2><div class="sub">Direção clara, sem maquiagem.</div></div></div>
+    <div class="grid3">
+      <div class="stat acc"><div class="lbl">Curto prazo</div><div class="val">Estabilizar</div><div class="note">caixa de giro cobrindo o mês</div></div>
+      <div class="stat ok"><div class="lbl">Médio prazo</div><div class="val">Recorrência</div><div class="note">receita mensal que se repete sozinha</div></div>
+      <div class="stat ok"><div class="lbl">A virada</div><div class="val">Quitação</div><div class="note">devolver tudo o que foi confiado</div></div>
+    </div>
+  </section>
+
+  <!-- 5. RECONHECIMENTO -->
+  <section>
+    <div class="sec-head"><span class="sec-num">05</span><div><h2>O seu lugar nisto</h2><div class="sub">Quem entra antes da prova merece mais do que um obrigado.</div></div></div>
+    <div class="callout heart">
+      <h3>Para mim, o seu apoio é investimento — e vou tratá-lo assim.</h3>
+      <p>Você acreditou quando ainda não havia resultado para mostrar. Esse é o tipo de aposta que constrói empresas, e é o tipo de aposta que eu faço questão de reconhecer com clareza, não com vaguidão.</p>
+      <p>Minha intenção, a ser formalizada entre nós num acordo simples, é registrar o que você me confiou como <b>investimento na Continuum</b> — com retorno ligado ao desempenho da empresa, mirando até <b>2x sobre o valor</b> em participação no lucro conforme crescermos. Não prometo um número cravado numa data; assumo o compromisso de te colocar na posição de quem investiu cedo e colhe quando a colheita chega.</p>
+    </div>
+    <p class="sign">Obrigado por enxergar a empresa antes de ela ficar óbvia.<br><b>— Victor · Continuum AI Systems</b></p>
+  </section>
+
+  <div class="principle">
+    Quem integra o sistema vence com ele.
+    <small>Dominamos o Ritmo: crescemos para gerar ordem</small>
+  </div>
+
+  <div class="foot">
+    <span>Continuum AI Systems · apresentação pessoal</span>
+    <span>Tese clara · execução em curso · tração aparecendo</span>
+  </div>
+
+</div>
+
+<script>
+  function tog(){
+    const b=document.body, cur=b.getAttribute('data-theme');
+    const nx=cur==='dark'?'light':'dark';
+    b.setAttribute('data-theme',nx);
+    document.getElementById('tgt').textContent = nx==='dark'?'Claro':'Escuro';
+    document.getElementById('tgi').textContent = nx==='dark'?'◐':'◑';
+  }
+</script>
+</body>
+</html>

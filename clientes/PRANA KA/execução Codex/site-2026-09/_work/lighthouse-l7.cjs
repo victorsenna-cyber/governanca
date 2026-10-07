@@ -1,0 +1,12 @@
+const fs=require('fs'),path=require('path');
+const {ROOT,route,routes}=require('./foundation.cjs');
+const temp=path.join(ROOT,'_qa/browser-temp');process.env.TEMP=temp;process.env.TMP=temp;fs.mkdirSync(path.join(temp,'lighthouse-profile'),{recursive:true});
+(async()=>{const {default:lighthouse}=await import('./qa-tools/node_modules/lighthouse/core/index.js');const {launch}=await import('./qa-tools/node_modules/chrome-launcher/dist/index.js');
+ const chrome=await launch({chromePath:'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe',chromeFlags:['--headless=new','--disable-background-networking','--no-first-run'],userDataDir:path.join(temp,'lighthouse-profile')});const results=process.argv.includes('--merge')?JSON.parse(fs.readFileSync(path.join(ROOT,'_qa/L7-lighthouse.json'),'utf8')).results:[];
+ try{const selection=process.argv.find(a=>a.startsWith('--keys='));const selected=selection?selection.slice(7).split(','):process.argv.includes('--all')?Object.keys(routes):['home','visao','curso'];const langs=process.argv.includes('--all')?[0,1,2]:[0];
+ for(const lang of langs)for(const key of selected){const output=await lighthouse('http://127.0.0.1:8794'+route(key,lang),{port:chrome.port,output:'json',logLevel:'error',onlyCategories:['performance','accessibility','best-practices','seo']});
+ const existing=results.findIndex(r=>r.key===key&&r.lang===lang);if(existing!==-1)results.splice(existing,1);
+ const lhr=output.lhr;fs.mkdirSync(path.join(ROOT,'_qa/lighthouse'),{recursive:true});fs.writeFileSync(path.join(ROOT,`_qa/lighthouse/${lang}-${key}.json`),JSON.stringify(lhr));
+ const item={key,lang,route:route(key,lang),scores:Object.fromEntries(Object.entries(lhr.categories).map(([k,v])=>[k,Math.round(v.score*100)])),metrics:Object.fromEntries(['first-contentful-paint','largest-contentful-paint','total-blocking-time','cumulative-layout-shift','speed-index'].map(k=>[k,lhr.audits[k]?.displayValue])),failures:Object.values(lhr.audits).filter(a=>a.score!==null&&a.score<.9).map(a=>({id:a.id,score:a.score,title:a.title,displayValue:a.displayValue}))};results.push(item);console.log(JSON.stringify(item));fs.writeFileSync(path.join(ROOT,'_qa/L7-lighthouse.json'),JSON.stringify({date:new Date().toISOString(),version:lhr.lighthouseVersion,environment:lhr.environment,results},null,2));
+ }}finally{await chrome.kill()}
+})().catch(e=>{console.error(e);process.exitCode=1});

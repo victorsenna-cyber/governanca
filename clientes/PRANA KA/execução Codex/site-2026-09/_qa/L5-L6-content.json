@@ -1,0 +1,308 @@
+{
+  "sourceChecks": [
+    {
+      "file": "C:\\Users\\zioni\\Organizacional\\01 - Continuum\\00 - Local\\01 - Governança\\clientes\\PRANA KA\\04 - web design\\visao-uterina\\index.html",
+      "unchanged": true
+    },
+    {
+      "file": "C:\\Users\\zioni\\Organizacional\\01 - Continuum\\00 - Local\\01 - Governança\\clientes\\PRANA KA\\04 - web design\\mentoria\\index.html",
+      "unchanged": true
+    },
+    {
+      "file": "C:\\Users\\zioni\\Organizacional\\01 - Continuum\\00 - Local\\01 - Governança\\clientes\\PRANA KA\\04 - web design\\curso\\index.html",
+      "unchanged": true
+    }
+  ],
+  "localeChecks": [
+    {
+      "key": "home",
+      "lang": 1,
+      "originalQuotes": true,
+      "bracketed": true,
+      "lostNames": [],
+      "missingMarkers": [],
+      "imageCounts": [
+        18,
+        18
+      ],
+      "policyHidden": true,
+      "sourceQuotes": 4,
+      "translations": 4,
+      "hasOldRoute": false
+    },
+    {
+      "key": "home",
+      "lang": 2,
+      "originalQuotes": true,
+      "bracketed": true,
+      "lostNames": [],
+      "missingMarkers": [],
+      "imageCounts": [
+        18,
+        18
+      ],
+      "policyHidden": true,
+      "sourceQuotes": 4,
+      "translations": 4,
+      "hasOldRoute": false
+    },
+    {
+      "key": "templo",
+      "lang": 1,
+      "originalQuotes": true,
+      "bracketed": true,
+      "lostNames": [],
+      "missingMarkers": [],
+      "imageCounts": [
+        9,
+        9
+      ],
+      "policyHidden": true,
+      "sourceQuotes": 0,
+      "translations": 0,
+      "hasOldRoute": false
+    },
+    {
+      "key": "templo",
+      "lang": 2,
+      "originalQuotes": true,
+      "bracketed": true,
+      "lostNames": [],
+      "missingMarkers": [],
+      "imageCounts": [
+        9,
+        9
+      ],
+      "policyHidden": true,
+      "sourceQuotes": 0,
+      "translations": 0,
+      "hasOldRoute": false
+    },
+    {
+      "key": "metodo",
+      "lang": 1,
+      "originalQuotes": true,
+      "bracketed": true,
+      "lostNames": [],
+      "missingMarkers": [],
+      "imageCounts": [
+        8,
+        8
+      ],
+      "policyHidden": true,
+      "sourceQuotes": 0,
+      "translations": 0,
+      "hasOldRoute": false
+    },
+    {
+      "key": "metodo",
+      "lang": 2,
+      "originalQuotes": true,
+      "bracketed": true,
+      "lostNames": [],
+      "missingMarkers": [],
+      "imageCounts": [
+        8,
+        8
+      ],
+      "policyHidden": true,
+      "sourceQuotes": 0,
+      "translations": 0,
+      "hasOldRoute": false
+    },
+    {
+      "key": "caminhos",
+      "lang": 1,
+      "originalQuotes": true,
+      "bracketed": true,
+      "lostNames": [],
+      "missingMarkers": [],
+      "imageCounts": [
+        6,
+        6
+      ],
+      "policyHidden": true,
+      "sourceQuotes": 0,
+      "translations": 0,
+      "hasOldRoute": false
+    },
+    {
+      "key": "caminhos",
+      "lang": 2,
+      "originalQuotes": true,
+      "bracketed": true,
+      "lostNames": [],
+      "missingMarkers": [],
+      "imageCounts": [
+        6,
+        6
+      ],
+      "policyHidden": true,
+      "sourceQuotes": 0,
+      "translations": 0,
+      "hasOldRoute": false
+    },
+    {
+      "key": "mentoria",
+      "lang": 1,
+      "originalQuotes": true,
+      "bracketed": true,
+      "lostNames": [],
+      "missingMarkers": [],
+      "imageCounts": [
+        12,
+        12
+      ],
+      "policyHidden": true,
+      "sourceQuotes": 0,
+      "translations": 0,
+      "hasOldRoute": false
+    },
+    {
+      "key": "mentoria",
+      "lang": 2,
+      "originalQuotes": true,
+      "bracketed": true,
+      "lostNames": [],
+      "missingMarkers": [],
+      "imageCounts": [
+        12,
+        12
+      ],
+      "policyHidden": true,
+      "sourceQuotes": 0,
+      "translations": 0,
+      "hasOldRoute": false
+    },
+    {
+      "key": "visao",
+      "lang": 1,
+      "originalQuotes": true,
+      "bracketed": true,
+      "lostNames": [],
+      "missingMarkers": [],
+      "imageCounts": [
+        13,
+        13
+      ],
+      "policyHidden": true,
+      "sourceQuotes": 4,
+      "translations": 4,
+      "hasOldRoute": false
+    },
+    {
+      "key": "visao",
+      "lang": 2,
+      "originalQuotes": true,
+      "bracketed": true,
+      "lostNames": [],
+      "missingMarkers": [],
+      "imageCounts": [
+        13,
+        13
+      ],
+      "policyHidden": true,
+      "sourceQuotes": 4,
+      "translations": 4,
+      "hasOldRoute": false
+    },
+    {
+      "key": "curso",
+      "lang": 1,
+      "originalQuotes": true,
+      "bracketed": true,
+      "lostNames": [],
+      "missingMarkers": [],
+      "imageCounts": [
+        14,
+        14
+      ],
+      "policyHidden": true,
+      "sourceQuotes": 0,
+      "translations": 0,
+      "hasOldRoute": false
+    },
+    {
+      "key": "curso",
+      "lang": 2,
+      "originalQuotes": true,
+      "bracketed": true,
+      "lostNames": [],
+      "missingMarkers": [],
+      "imageCounts": [
+        14,
+        14
+      ],
+      "policyHidden": true,
+      "sourceQuotes": 0,
+      "translations": 0,
+      "hasOldRoute": false
+    },
+    {
+      "key": "arte",
+      "lang": 1,
+      "originalQuotes": true,
+      "bracketed": true,
+      "lostNames": [],
+      "missingMarkers": [],
+      "imageCounts": [
+        4,
+        4
+      ],
+      "policyHidden": true,
+      "sourceQuotes": 0,
+      "translations": 0,
+      "hasOldRoute": false
+    },
+    {
+      "key": "arte",
+      "lang": 2,
+      "originalQuotes": true,
+      "bracketed": true,
+      "lostNames": [],
+      "missingMarkers": [],
+      "imageCounts": [
+        4,
+        4
+      ],
+      "policyHidden": true,
+      "sourceQuotes": 0,
+      "translations": 0,
+      "hasOldRoute": false
+    },
+    {
+      "key": "prana",
+      "lang": 1,
+      "originalQuotes": true,
+      "bracketed": true,
+      "lostNames": [],
+      "missingMarkers": [],
+      "imageCounts": [
+        5,
+        5
+      ],
+      "policyHidden": true,
+      "sourceQuotes": 0,
+      "translations": 0,
+      "hasOldRoute": false
+    },
+    {
+      "key": "prana",
+      "lang": 2,
+      "originalQuotes": true,
+      "bracketed": true,
+      "lostNames": [],
+      "missingMarkers": [],
+      "imageCounts": [
+        5,
+        5
+      ],
+      "policyHidden": true,
+      "sourceQuotes": 0,
+      "translations": 0,
+      "hasOldRoute": false
+    }
+  ],
+  "l5Literal": true,
+  "pass": true
+}

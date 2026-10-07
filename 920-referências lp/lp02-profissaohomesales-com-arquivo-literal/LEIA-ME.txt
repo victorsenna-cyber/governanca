@@ -1,0 +1,5 @@
+Arquivo literal local da interface publica de https://lp02.profissaohomesales.com/
+
+Modo: preservacao literal. Os recursos salvos nao sao reescritos. O visualizador intercepta requisicoes e responde exclusivamente a partir do arquivo local, mantendo a URL original no navegador para que os caminhos e o comportamento responsivo permaneçam os do artefato capturado.
+
+Abra com ABRIR-COPIA.cmd. Nao ha envio de formularios nem acesso a rede quando aberto pelo visualizador.

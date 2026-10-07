@@ -1,0 +1,621 @@
+<title>A Conta da Renata</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:ital,wght@0,400;0,600;1,400&display=swap">
+
+<style>
+:root{
+  --paper:#F5F6F2; --surface:#FFFFFF; --raised:#EFF1EB;
+  --ink:#161C18; --body:#333C36; --muted:#65706A;
+  --rule:#DDE2DA; --rule-strong:#B9C2B7;
+  --gain:#1C6B55; --gain-soft:#E3EFE9;
+  --limit:#A2452F; --limit-soft:#F5E5E0;
+  --mark:#8A6A1F;
+  --sans:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --serif:"IBM Plex Serif",Georgia,"Times New Roman",serif;
+  --mono:"IBM Plex Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#11150F; --surface:#191E19; --raised:#212722;
+    --ink:#EDF1EA; --body:#C7CFC6; --muted:#8E998D;
+    --rule:#2C332C; --rule-strong:#465046;
+    --gain:#5FC4A2; --gain-soft:#152A23;
+    --limit:#E28A6E; --limit-soft:#2E1D17;
+    --mark:#D3B05C;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#11150F; --surface:#191E19; --raised:#212722;
+  --ink:#EDF1EA; --body:#C7CFC6; --muted:#8E998D;
+  --rule:#2C332C; --rule-strong:#465046;
+  --gain:#5FC4A2; --gain-soft:#152A23;
+  --limit:#E28A6E; --limit-soft:#2E1D17;
+  --mark:#D3B05C;
+}
+
+*{box-sizing:border-box}
+body{
+  background:var(--paper); color:var(--body);
+  font-family:var(--sans); font-size:16px; line-height:1.62;
+  margin:0; padding:0 20px 96px;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:760px;margin:0 auto}
+p{margin:0 0 1em;max-width:66ch}
+strong{color:var(--ink);font-weight:600}
+em{font-style:italic}
+
+/* ---------- cabeçalho ---------- */
+.masthead{padding:64px 0 34px;border-bottom:2px solid var(--rule-strong)}
+.eyebrow{
+  font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--muted);margin:0 0 20px;display:flex;gap:10px;flex-wrap:wrap;align-items:center;
+}
+.eyebrow span:not(:last-child)::after{content:"·";margin-left:10px;color:var(--rule-strong)}
+h1{
+  font-family:var(--serif);font-weight:600;color:var(--ink);
+  font-size:clamp(38px,7vw,60px);line-height:1.04;letter-spacing:-.02em;
+  margin:0 0 18px;text-wrap:balance;
+}
+.standfirst{font-family:var(--serif);font-size:19px;line-height:1.55;color:var(--body);max-width:60ch;margin:0}
+
+/* ---------- seções ---------- */
+section{padding:52px 0;border-bottom:1px solid var(--rule)}
+h2{
+  font-family:var(--serif);font-weight:600;color:var(--ink);
+  font-size:clamp(25px,4vw,31px);line-height:1.18;letter-spacing:-.015em;
+  margin:0 0 22px;text-wrap:balance;
+}
+h3{
+  font-family:var(--sans);font-weight:600;color:var(--ink);
+  font-size:17px;line-height:1.35;margin:34px 0 12px;text-wrap:balance;
+}
+h3:first-child{margin-top:0}
+.kicker{
+  font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--muted);margin:0 0 12px;
+}
+
+/* ---------- tabelas ---------- */
+.scroll{overflow-x:auto;margin:22px 0;-webkit-overflow-scrolling:touch}
+table{border-collapse:collapse;width:100%;font-size:14.5px;min-width:min(100%,440px)}
+caption{
+  caption-side:bottom;text-align:left;color:var(--muted);font-size:12.5px;
+  line-height:1.5;padding-top:12px;font-style:italic;
+}
+th,td{padding:9px 12px;text-align:left;border-bottom:1px solid var(--rule);vertical-align:baseline}
+thead th{
+  font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--muted);font-weight:500;border-bottom:1px solid var(--rule-strong);
+  padding-bottom:8px;white-space:nowrap;
+}
+td.n,th.n{text-align:right;font-family:var(--mono);font-variant-numeric:tabular-nums;white-space:nowrap}
+tbody tr:last-child td{border-bottom:none}
+tr.total td{
+  border-top:2px solid var(--rule-strong);border-bottom:none;
+  color:var(--ink);font-weight:600;padding-top:11px;
+}
+tr.total td.n{color:var(--gain)}
+td.pos{color:var(--gain)} td.neg{color:var(--limit)}
+th[scope="row"]{font-weight:400;color:var(--body)}
+tr.hi th[scope="row"],tr.hi td:first-child{color:var(--ink);font-weight:600}
+tr.hi td.n{color:var(--ink);font-weight:600}
+
+/* ---------- a barra do teto ---------- */
+.gauge{margin:28px 0 8px;display:flex;flex-direction:column;gap:16px}
+.bar-row{display:grid;grid-template-columns:minmax(96px,auto) 1fr;gap:14px;align-items:center}
+.bar-label{font-family:var(--mono);font-size:11.5px;color:var(--muted);letter-spacing:.04em}
+.bar{height:34px;border-radius:2px;display:flex;align-items:center;padding:0 11px;font-family:var(--mono);
+     font-size:12.5px;font-variant-numeric:tabular-nums;white-space:nowrap;color:#fff}
+.bar.demanda{background:var(--limit);width:100%}
+.bar.capac{background:var(--gain);width:85.5%}
+.gauge-note{
+  font-family:var(--mono);font-size:12px;color:var(--limit);letter-spacing:.03em;
+  padding:12px 14px;background:var(--limit-soft);border-radius:3px;line-height:1.5;
+}
+
+/* ---------- destaques ---------- */
+.pull{
+  font-family:var(--serif);font-size:clamp(20px,3.2vw,25px);line-height:1.34;color:var(--ink);
+  margin:32px 0;padding:0 0 0 22px;border-left:3px solid var(--gain);text-wrap:balance;
+}
+.pull em{font-style:italic;color:var(--muted);display:block;font-size:15px;margin-top:10px;font-family:var(--sans)}
+.note{
+  font-size:13.5px;line-height:1.58;color:var(--muted);
+  padding:14px 16px;background:var(--raised);border-radius:3px;margin:20px 0;
+}
+.note strong{color:var(--ink)}
+.flag{
+  font-size:14.5px;line-height:1.58;color:var(--body);
+  padding:16px 18px;background:var(--gain-soft);border-radius:3px;margin:22px 0;
+  border-left:3px solid var(--gain);
+}
+.flag strong{color:var(--ink)}
+
+/* ---------- números soltos ---------- */
+.figures{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1px;background:var(--rule);
+         margin:26px 0;border-radius:3px;overflow:hidden}
+.fig{background:var(--surface);padding:18px 16px}
+.fig dt{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:7px}
+.fig dd{margin:0;font-family:var(--mono);font-size:26px;font-weight:500;color:var(--ink);
+        font-variant-numeric:tabular-nums;line-height:1.1}
+.fig dd small{display:block;font-family:var(--sans);font-size:12.5px;font-weight:400;color:var(--muted);
+              margin-top:7px;line-height:1.45;font-variant-numeric:normal}
+.fig.accent dd{color:var(--gain)}
+.fig.limit dd{color:var(--limit)}
+
+/* ---------- listas ---------- */
+ul,ol{margin:0 0 1em;padding-left:1.15em;max-width:66ch}
+li{margin-bottom:.5em}
+li::marker{color:var(--muted)}
+
+/* ---------- fases ---------- */
+.phases{display:flex;flex-direction:column;gap:1px;background:var(--rule);border-radius:3px;overflow:hidden;margin:24px 0}
+.phase{background:var(--surface);padding:18px 20px;display:grid;grid-template-columns:auto 1fr;gap:18px}
+.phase-n{font-family:var(--mono);font-size:12px;color:var(--gain);font-weight:600;padding-top:2px;white-space:nowrap}
+.phase h4{margin:0 0 6px;font-size:15.5px;color:var(--ink);font-weight:600;font-family:var(--sans)}
+.phase p{margin:0;font-size:14px;line-height:1.55}
+.phase .gate{
+  font-family:var(--mono);font-size:11.5px;color:var(--muted);margin-top:9px;display:block;line-height:1.5;
+}
+.phase .gate b{color:var(--body);font-weight:500}
+
+/* ---------- fechamento ---------- */
+.close{padding:52px 0 0;border-bottom:none}
+.price{
+  display:flex;flex-wrap:wrap;gap:28px;padding:26px 0;margin:22px 0;
+  border-top:2px solid var(--rule-strong);border-bottom:2px solid var(--rule-strong);
+}
+.price div{flex:1 1 200px}
+.price dt{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+.price dd{margin:0;font-family:var(--mono);font-size:23px;color:var(--ink);font-weight:500;font-variant-numeric:tabular-nums}
+.price dd small{display:block;font-family:var(--sans);font-size:13px;font-weight:400;color:var(--muted);margin-top:6px}
+.doors{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:1px;
+  background:var(--rule);border:1px solid var(--rule);border-radius:3px;margin:24px 0}
+.door{background:var(--surface);padding:20px 19px;display:flex;flex-direction:column}
+.door.pick{background:var(--gain-soft)}
+.door-tag{font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--muted);margin-bottom:10px}
+.door.pick .door-tag{color:var(--gain);font-weight:600}
+.door-n{font-family:var(--mono);font-size:21px;font-weight:500;color:var(--ink);
+  font-variant-numeric:tabular-nums;line-height:1.22}
+.door-n small{display:block;font-family:var(--mono);font-size:15px;font-weight:400;
+  color:var(--body);margin-top:5px}
+.door-sub{font-size:13px;line-height:1.5;color:var(--muted);margin-top:10px}
+.door-foot{font-family:var(--mono);font-size:11px;letter-spacing:.03em;color:var(--muted);
+  margin-top:auto;padding-top:14px}
+.door.pick .door-foot{color:var(--gain)}
+.steps{counter-reset:s;list-style:none;padding:0;margin:22px 0}
+.steps li{counter-increment:s;padding-left:38px;position:relative;margin-bottom:14px;max-width:64ch}
+.steps li::before{
+  content:counter(s);position:absolute;left:0;top:1px;
+  font-family:var(--mono);font-size:12px;color:var(--gain);font-weight:600;
+  width:24px;height:24px;border:1px solid var(--rule-strong);border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+}
+footer{margin-top:54px;padding-top:24px;border-top:1px solid var(--rule);
+        font-family:var(--mono);font-size:11.5px;color:var(--muted);line-height:1.65}
+
+@media (max-width:560px){
+  body{padding:0 16px 64px}
+  .masthead{padding:44px 0 28px}
+  section{padding:40px 0}
+  .phase{grid-template-columns:1fr;gap:8px}
+  th,td{padding:8px 9px;font-size:13.5px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+
+<div class="wrap">
+
+<header class="masthead">
+  <p class="eyebrow"><span>Continuum</span><span>Para Renata Betta</span><span>22 de agosto de 2026</span></p>
+  <h1>A conta da sua operação</h1>
+  <p class="standfirst">Você me deu números que quase ninguém tem na cabeça. Eu montei a conta com eles, e ela diz uma coisa que talvez você não esteja vendo.</p>
+</header>
+
+<section>
+  <p class="kicker">O que a conta mostra</p>
+  <h2>Seu funil já produz mais do que a sua agenda consegue atender</h2>
+
+  <div class="scroll">
+    <table>
+      <caption>Números que você me passou na conversa de 21 de agosto.</caption>
+      <thead><tr><th>O que você me disse</th><th class="n">Valor</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Leads por mês</th><td class="n">~100</td></tr>
+        <tr><th scope="row">Viram consulta</th><td class="n">5 ou 6 de cada 20</td></tr>
+        <tr><th scope="row">Consulta vira tratamento</th><td class="n">50% a 60%</td></tr>
+        <tr><th scope="row">Consulta</th><td class="n">R$ 290</td></tr>
+        <tr><th scope="row">Tratamento</th><td class="n">R$ 2.500 · 4 encontros</td></tr>
+        <tr><th scope="row">Sua agenda</th><td class="n">2 a 3 por dia</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>Cinco ou seis consultas por semana, metade a 60% virando tratamento de quatro encontros. Isso dá <strong>de 65 a 88 sessões por mês</strong>, e o centro da sua própria faixa é <strong>76</strong>. A 1h30 ou 2h cada, como você me disse:</p>
+
+  <div class="gauge" role="img" aria-label="O funil ocupa de 133 a 152 horas por mês. A agenda, no melhor caso que você declarou, de três pessoas por dia, dá 114 a 130 horas.">
+    <div class="bar-row">
+      <span class="bar-label">o funil ocupa</span>
+      <div class="bar demanda">133 a 152 horas por mês</div>
+    </div>
+    <div class="bar-row">
+      <span class="bar-label">a agenda dá</span>
+      <div class="bar capac">114 a 130 horas</div>
+    </div>
+    <p class="gauge-note"><strong>Seis a sete horas por dia, todo dia útil, só atendendo.</strong> E a segunda barra já é o seu melhor caso: três pessoas por dia, cinco dias por semana, sem falta e sem feriado.</p>
+  </div>
+
+  <p><strong>Repare no que essa conta não diz.</strong> Ela não diz que falta demanda nem que sobra demanda. Ela diz que <strong>o teto não está no mercado, está em você</strong> — e isso quem disse foi você, três vezes, com outras palavras: <em>"eu não tenho tempo"</em>, <em>"eu não coloco mais pessoas no presencial porque o desgaste"</em>, e a mais importante de todas: <em>"eu não quero trazer mais demanda para o meu giro."</em></p>
+
+  <p class="pull">Você não bate a meta todo mês porque a demanda dá exatamente para ela. Você bate porque a agenda enche antes.</p>
+
+  <div class="note"><strong>Uma verificação antes de qualquer decisão.</strong> Esses mesmos números dizem que você fatura por volta de <strong>R$ 39.000 por mês</strong> hoje. Se o valor real for esse, a conta fecha e seguimos. <strong>Se for bem menor, então alguma taxa do funil está otimista</strong> — e descobrir qual é a primeira coisa que eu meço com você, antes de gastar um real em anúncio.</div>
+</section>
+
+<section>
+  <p class="kicker">O caminho</p>
+  <h2>Três alavancas, e a ordem é a parte que importa</h2>
+  <p>A ordem não é estética. Começamos pela que devolve dinheiro <strong>sem depender de construir nada</strong>, porque a régua foi você que deu: <em>"dependendo do valor, ele teria que começar a entrar o dinheiro pra se pagar."</em></p>
+
+  <h3>1. O preço. Semana 2. Não depende de mim nem de anúncio.</h3>
+  <p>Você já quer fazer isso: <em>"eu vou dobrar o valor, porque eu quero gerar escassez de tempo no meu tempo."</em> E está esperando o grupo existir para justificar.</p>
+  <p><strong>Não precisa esperar.</strong> A justificativa já existe e é aritmética: sua agenda está cheia, e o volume que você perderia com o preço maior é volume que você não conseguia atender de qualquer jeito. <strong>Perder 20% de uma agenda saturada não custa receita. Custa fila.</strong></p>
+
+  <div class="scroll">
+    <table>
+      <thead><tr><th>Se o tratamento for para</th><th class="n">Perdendo</th><th class="n">Ganho por mês</th><th class="n">Agenda que sobra</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">R$ 3.500</th><td class="n">20% do volume</td><td class="n pos">+ R$ 2.694</td><td class="n">11 sessões</td></tr>
+        <tr><th scope="row">R$ 5.000</th><td class="n">40% do volume</td><td class="n pos">+ R$ 4.490</td><td class="n">22 sessões</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="flag"><strong>E a agenda que sobra é exatamente onde o grupo cabe.</strong> As duas coisas que você quer se resolvem no mesmo movimento.</div>
+
+  <h3>2. A base que você já atendeu</h3>
+  <p>Sua bio diz que você já ajudou mais de 500 pessoas. <strong>Você não citou isso uma vez na nossa conversa.</strong></p>
+  <p>São pessoas que já pagaram, já tiveram resultado e já confiam em você. Para falar com elas, o custo de mídia é zero.</p>
+
+  <div class="scroll">
+    <table>
+      <caption>Alavanca de uma vez só: a base não se renova nesse ritmo. Por isso ela entra no começo, e não no fim.</caption>
+      <thead><tr><th>Se converter em 90 dias</th><th class="n">Vendas</th><th class="n">Receita</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">1%</th><td class="n">5</td><td class="n">R$ 12.500</td></tr>
+        <tr><th scope="row">2%</th><td class="n">10</td><td class="n">R$ 25.000</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>3. A mentoria recebe quem não cabe no presencial</h3>
+  <p>Não é produto novo com risco novo. <strong>É o mesmo lead que já chega e já foi pago, virando outra coisa</strong> — uma que cabe num horário só, com várias pessoas dentro. Você mesma disse: <em>"se fosse pra call, eu teria tempo durante o dia... eu daria meus horários que eu tenho."</em></p>
+
+  <div class="scroll">
+    <table>
+      <caption>É a única das três que depende de coisa nova construída, e por isso é a terceira. A taxa de conversão do seu funil digital de mentoria ainda não existe, porque nunca foi medida. Os primeiros 30 dias servem para produzir esse número.</caption>
+      <thead><tr><th>Se converter</th><th class="n">Vendas por mês</th><th class="n">Receita por mês</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">5%</th><td class="n">1,9</td><td class="n">R$ 4.750</td></tr>
+        <tr><th scope="row">7,5%</th><td class="n">2,8</td><td class="n">R$ 7.000</td></tr>
+        <tr><th scope="row">12,5%</th><td class="n">4,7</td><td class="n">R$ 11.750</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section>
+  <p class="kicker">A conta</p>
+  <h2>Quantas vendas pagam isso</h2>
+
+  <dl class="figures">
+    <div class="fig"><dt>Sem mexer no preço</dt><dd>3,3<small>vendas de mentoria por mês</small></dd></div>
+    <div class="fig accent"><dt>Com o preço ajustado</dt><dd>2,1<small>vendas de mentoria por mês</small></dd></div>
+    <div class="fig"><dt>Você já fechou</dt><dd>16<small>na unha, sem tráfego, sem página e sem oferta escrita</small></dd></div>
+  </dl>
+
+  <h3>Os três cenários</h3>
+  <p>O conservador não é o provável com desconto. <strong>É o cenário em que a aposta principal quase não se confirma</strong> e a mentoria converte a 5%.</p>
+
+  <div class="scroll">
+    <table>
+      <thead><tr><th></th><th class="n">Conservador</th><th class="n">Provável</th><th class="n">Otimista</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Preço do tratamento</th><td class="n">R$ 3.500</td><td class="n">R$ 5.000</td><td class="n">R$ 5.000</td></tr>
+        <tr><th scope="row">Conversão da mentoria</th><td class="n">5%</td><td class="n">7,5%</td><td class="n">12,5%</td></tr>
+        <tr><th scope="row">Conversão da base</th><td class="n">1%</td><td class="n">2%</td><td class="n">4%</td></tr>
+        <tr><th scope="row">Verba de mídia</th><td class="n">R$ 2.000</td><td class="n">R$ 3.000</td><td class="n">R$ 3.000</td></tr>
+        <tr class="hi"><th scope="row">Quando se paga</th><td class="n">mês 2</td><td class="n">mês 1</td><td class="n">mês 1</td></tr>
+        <tr><th scope="row">Saldo em 6 meses</th><td class="n pos">+ 7.399</td><td class="n pos">+ 32.918</td><td class="n pos">+ 101.344</td></tr>
+        <tr><th scope="row">Faturamento no mês 6</th><td class="n">35.144</td><td class="n">38.381</td><td class="n">48.294</td></tr>
+        <tr class="hi"><th scope="row">Sessões ocupadas</th><td class="n">50 de 55</td><td class="n">40 de 55</td><td class="n">49 de 55</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="flag"><strong>Olha a última linha, e ela é honesta nos dois sentidos.</strong> No cenário provável você termina o sexto mês faturando mais e com quinze horários livres. No conservador a agenda ainda fica quase cheia: o alívio de tempo vem depois, quando o preço sobe de novo e o workshop assume a venda. <strong>Faturamento sobe antes de a agenda aliviar.</strong></div>
+
+  <h3>Mês a mês, no cenário conservador</h3>
+  <div class="scroll">
+    <table>
+      <caption>Valores em margem, não em faturamento bruto. É o que sobra depois do custo de cada venda.</caption>
+      <thead><tr><th class="n">Mês</th><th class="n">Sai</th><th class="n">Preço</th><th class="n">Mentoria</th><th class="n">Base</th><th class="n">Entra</th><th class="n">Acumulado</th></tr></thead>
+      <tbody>
+        <tr><td class="n">1</td><td class="n">6.500</td><td class="n">2.694</td><td class="n">0</td><td class="n">2.250</td><td class="n">4.944</td><td class="n neg">− 1.556</td></tr>
+        <tr class="hi"><td class="n">2</td><td class="n">6.500</td><td class="n">2.694</td><td class="n">2.109</td><td class="n">4.500</td><td class="n">9.304</td><td class="n pos">+ 1.248</td></tr>
+        <tr><td class="n">3</td><td class="n">6.500</td><td class="n">2.694</td><td class="n">4.219</td><td class="n">4.500</td><td class="n">11.413</td><td class="n pos">+ 6.161</td></tr>
+        <tr><td class="n">4</td><td class="n">6.500</td><td class="n">2.694</td><td class="n">4.219</td><td class="n">0</td><td class="n">6.913</td><td class="n pos">+ 6.573</td></tr>
+        <tr><td class="n">5</td><td class="n">6.500</td><td class="n">2.694</td><td class="n">4.219</td><td class="n">0</td><td class="n">6.913</td><td class="n pos">+ 6.986</td></tr>
+        <tr class="total"><td class="n">6</td><td class="n">6.500</td><td class="n">2.694</td><td class="n">4.219</td><td class="n">0</td><td class="n">6.913</td><td class="n">+ 7.399</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section>
+  <p class="kicker">O ritmo</p>
+  <h2>Quando faz sentido escalar, e quando não faz</h2>
+  <p>Você disse: <em>"eu não quero sair apertando botão."</em> Este plano é construído em cima disso.</p>
+
+  <div class="scroll">
+    <table>
+      <thead><tr><th>Quando</th><th>O que acontece</th><th>O objetivo</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Semanas 1-2</th><td>preço ajustado, números medidos, conversa com a base</td><td><strong>dinheiro no mês 1</strong>, sem construir nada</td></tr>
+        <tr><th scope="row">Mês 1</th><td>oferta escrita, página no ar, campanha rodando</td><td>produzir <strong>o dado que não existe</strong></td></tr>
+        <tr><th scope="row">Mês 2-3</th><td>oferta corrigida em cima do dado real</td><td><strong>empatar</strong></td></tr>
+        <tr><th scope="row">Mês 4-5</th><td>custo por venda estável dentro da faixa</td><td><strong>liberar escala</strong></td></tr>
+        <tr><th scope="row">Mês 6+</th><td>verba sobe mantendo o custo por venda</td><td><strong>multiplicar</strong></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="flag"><strong>A regra dura, e ela é a sua garantia contra desperdício: a verba só sobe no mês 4.</strong> Antes disso, colocar mais dinheiro na campanha é comprar aprendizado sujo. Enquanto o custo por venda não estiver estável, subir verba faz a conta perder mais rápido, não ganhar.</div>
+
+  <p>O que eu posso dizer com honestidade: <strong>em 30 dias você tem o número que hoje não existe. Em 60, o funil corrigido em cima dele. Em 90, a faixa que permite decidir se vale subir verba.</strong> Não "você vai vender X".</p>
+
+  <h3>O teto de custo que protege a sua conta</h3>
+  <p>Cada venda de mentoria deixa cerca de R$ 2.250. <strong>O máximo que eu aceito pagar por uma venda é R$ 675</strong>, ou 30% disso. Se o custo passar e não voltar, a gente para e corrige a campanha antes de gastar mais. Fica escrito, e é medido todo mês.</p>
+</section>
+
+<section>
+  <p class="kicker">A escada</p>
+  <h2>De onde você está até seis dígitos por mês</h2>
+
+  <div class="note"><strong>Leia isto como mapa, não como promessa.</strong> O contrato cobre os seis primeiros meses, que são as duas primeiras fases. As fases seguintes existem para você saber onde a estrada dá, e cada uma só começa quando a anterior tiver o número dela.</div>
+
+  <p>Uma unidade só, para dar para comparar: <strong>"slot" é um horário seu.</strong> Um atendimento individual ocupa um slot e atende uma pessoa. Um encontro de grupo ocupa um slot e atende dez, quinze, vinte. É essa diferença que faz a escada existir.</p>
+
+  <div class="scroll">
+    <table>
+      <caption>Composição de receita por fase, em reais por mês. A coluna "hoje" é o centro do que os seus próprios números produzem, e a faixa deles vai de R$ 33 mil a R$ 46 mil. <strong>Trocar esse centro pelo seu faturamento real é a primeira coisa que a gente faz</strong>, e a tabela inteira se move junto. A última linha é faixa porque o produto que ocupa esse lugar ainda não foi escolhido: ver abaixo.</caption>
+      <thead><tr><th></th><th class="n">Hoje</th><th class="n">Mês 3</th><th class="n">Mês 6</th><th class="n">Mês 12</th><th class="n">Mês 18</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Presencial individual</th><td class="n">39.652</td><td class="n">43.667</td><td class="n">43.667</td><td class="n">40.712</td><td class="n">31.664</td></tr>
+        <tr><th scope="row">Mentoria em grupo</th><td class="n">0</td><td class="n">7.500</td><td class="n">12.500</td><td class="n">25.000</td><td class="n">45.000</td></tr>
+        <tr><th scope="row">Workshop pago</th><td class="n">0</td><td class="n">0</td><td class="n">0</td><td class="n">9.700</td><td class="n">14.550</td></tr>
+        <tr class="hi"><th scope="row">Novo funil, a definir com você</th><td class="n">0</td><td class="n">0</td><td class="n">0</td><td class="n">0</td><td class="n">8.000 a 20.000</td></tr>
+        <tr class="total"><td>Total por mês</td><td class="n">39.652</td><td class="n">51.167</td><td class="n">56.167</td><td class="n">75.412</td><td class="n">99 a 111 mil</td></tr>
+        <tr><th scope="row">Tratamentos individuais</th><td class="n">9,5</td><td class="n">5,7</td><td class="n">5,7</td><td class="n">4,5</td><td class="n">3,5</td></tr>
+        <tr><th scope="row">Mentorados simultâneos</th><td class="n">0</td><td class="n">9</td><td class="n">15</td><td class="n">30</td><td class="n">54</td></tr>
+        <tr class="hi"><th scope="row">Slots seus ocupados</th><td class="n">55 de 55</td><td class="n">43</td><td class="n">44</td><td class="n">41</td><td class="n">43 de 55</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p class="pull">Você passa dos cem mil por mês trabalhando menos horas do que trabalha hoje.
+  <em>Hoje sua agenda está em 100%. No mês 18 ela está em 78%, com quase três vezes menos atendimentos individuais. O que multiplicou não foi o seu tempo. Foi quantas pessoas cabem dentro de cada hora dele.</em></p>
+
+  <h3>O que "slot" esconde, e é a conta que quase ninguém faz</h3>
+  <p>Um tratamento tem 4 encontros. Mas para <strong>fechar</strong> um tratamento você faz 1,8 consultas, porque só 55% delas viram tratamento. A consulta que não fecha também ocupou um horário.</p>
+  <p><strong>Um tratamento custa 5,8 horários seus, não 4.</strong> Quem conta 4 subestima a própria agenda em quase metade, e é por isso que dá a sensação de não ter braço mesmo quando a conta parece caber.</p>
+  <p>Do outro lado: <strong>um horário de grupo custa o mesmo atendendo 3 pessoas ou 12.</strong> É a única linha da sua operação em que isso acontece, e é a razão de a escada existir.</p>
+  <div class="flag"><strong>A taxa de câmbio:</strong> um tratamento individual a menos libera 5,8 horários, que compram 1,45 encontros de grupo por mês. <strong>Um tratamento atende uma pessoa. 1,45 encontros de grupo atendem até dezessete.</strong></div>
+
+  <h3>A parede seguinte, e ela chega antes do que parece</h3>
+  <p>Vender também consome a sua agenda. Se cada venda de mentoria exige 3 conversas e cada conversa é quase um horário, <strong>a partir de umas 14 vendas por mês vender passa a custar mais tempo do que entregar.</strong></p>
+  <div class="scroll">
+    <table>
+      <caption>Estimativa com 30% de conversão na conversa de venda. É hipótese até as primeiras dez acontecerem.</caption>
+      <thead><tr><th class="n">Vendas/mês</th><th class="n">Conversas</th><th class="n">Horários em venda</th><th class="n">Horários em grupo</th><th class="n">Sobra p/ presencial</th></tr></thead>
+      <tbody>
+        <tr><td class="n">3</td><td class="n">10</td><td class="n">6</td><td class="n">4</td><td class="n">45</td></tr>
+        <tr><td class="n">5</td><td class="n">17</td><td class="n">10</td><td class="n">8</td><td class="n">37</td></tr>
+        <tr><td class="n">10</td><td class="n">33</td><td class="n">20</td><td class="n">12</td><td class="n">23</td></tr>
+        <tr class="hi"><td class="n">18</td><td class="n">60</td><td class="n">36</td><td class="n">20</td><td class="n neg">−1</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="pull">O workshop é a conversa de venda feita em grupo.
+  <em>Ele faz com a venda o que a mentoria fez com a entrega: muitas pessoas no mesmo horário. Para 10 vendas, são 2,5 horários pelo workshop contra 20 pelas conversas uma a uma. E você já fez isso: 48 pessoas pagantes numa sala, sem estrutura nenhuma.</em></p>
+
+  <h3>O que cada fase precisa ter para a seguinte existir</h3>
+  <div class="phases">
+    <div class="phase"><span class="phase-n">Fase 1<br>mês 1-3</span><div>
+      <h4>Destravar</h4>
+      <p>Preço novo, base ativada, mentoria vendável, campanha no ar.</p>
+      <span class="gate"><b>Gate:</b> custo por lead medido e oferta validada em conversa real</span>
+    </div></div>
+    <div class="phase"><span class="phase-n">Fase 2<br>mês 4-6</span><div>
+      <h4>Validar a aquisição, e o workshop entra</h4>
+      <p>A campanha digital passa a trazer venda com custo previsível, e o workshop assume a conversa de venda antes que ela vire o gargalo.</p>
+      <span class="gate"><b>Gate:</b> custo por venda estável dentro da faixa, dois meses seguidos</span>
+    </div></div>
+    <div class="phase"><span class="phase-n">Fase 3<br>mês 7-12</span><div>
+      <h4>Escalar o grupo</h4>
+      <p>Verba escalada, turmas paralelas, workshop mensal já rodando como motor de venda.</p>
+      <span class="gate"><b>Gate:</b> mentoria rodando sem depender de você para vender uma a uma</span>
+    </div></div>
+    <div class="phase"><span class="phase-n">Fase 4<br>mês 13-18</span><div>
+      <h4>Um funil paralelo, escolhido por você</h4>
+      <p>Um produto que entrega sem consumir hora sua e que captura quem hoje chega e não compra.</p>
+      <span class="gate"><b>Gate:</b> os três anteriores em regime, e pelo menos 100 pessoas por mês passando pelo workshop sem comprar a mentoria</span>
+    </div></div>
+  </div>
+
+  <h3>Por que a última linha é uma faixa, e não um número</h3>
+  <p>Porque o produto que ocupa esse lugar <strong>ainda não foi escolhido, e quem escolhe é você.</strong> Eu poderia ter colocado um número redondo ali. Preferi não, porque um número sem mecanismo por trás é só enfeite de tabela.</p>
+  <p>O que já dá para dizer é <strong>qual buraco esse produto preenche</strong>. Olhando a sua operação por dois eixos, preço e tempo seu:</p>
+
+  <div class="scroll">
+    <table>
+      <caption>Cada célula é um jeito diferente de a pessoa entrar. Produto novo só entra se ocupar célula que nenhum outro cobre.</caption>
+      <thead><tr><th></th><th>Não ocupa hora sua</th><th>Ocupa horas fixas</th><th>Ocupa horas por venda</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">R$ 97 a 500</th><td class="pos"><strong>vazio hoje</strong></td><td>workshop</td><td>—</td></tr>
+        <tr><th scope="row">R$ 2.500</th><td>—</td><td>mentoria em grupo</td><td>—</td></tr>
+        <tr><th scope="row">R$ 5.000 e acima</th><td>—</td><td>—</td><td>presencial individual</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p><strong>A célula vazia é a de cima à esquerda</strong>, e ela é a que financia todas as outras. Um produto de entrada que não consome a sua agenda faz duas coisas ao mesmo tempo: captura quem chega hoje e não pode pagar R$ 2.500, e <strong>paga o próprio anúncio</strong>. Quando o anúncio se paga sozinho, cada mentoria vendida a partir dele custa zero para adquirir. É esse o momento em que dá para subir verba sem apostar.</p>
+
+  <div class="flag"><strong>O que isso não é:</strong> criar produto porque seria bom ter mais um. A regra é dura e ela protege você: <strong>produto novo só entra se ocupar uma célula vazia.</strong> Se ele repete o que outro já faz, ele não soma, ele divide a sua atenção e confunde quem compra.</div>
+
+  <p>Qual produto vai nessa célula é conversa da fase 3, e ela é sua: precisa ser algo em que você acredita e que você queira entregar por anos. <strong>Eu entro com a arquitetura, o preço e o funil. O que ele ensina é você quem decide.</strong></p>
+
+  <h3>O que a aquisição precisa entregar em cada fase</h3>
+  <div class="scroll">
+    <table>
+      <caption>Estimativa a partir de um custo por lead de R$ 25, que é hipótese até a campanha rodar. O primeiro mês existe para substituir essa hipótese pelo seu número real.</caption>
+      <thead><tr><th></th><th class="n">Vendas/mês</th><th class="n">Leads</th><th class="n">Verba</th><th class="n">Custo por venda</th><th class="n">Teto</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Mês 3</th><td class="n">3</td><td class="n">40</td><td class="n">1.000</td><td class="n">333</td><td class="n">675</td></tr>
+        <tr><th scope="row">Mês 6</th><td class="n">5</td><td class="n">67</td><td class="n">1.667</td><td class="n">333</td><td class="n">675</td></tr>
+        <tr><th scope="row">Mês 12</th><td class="n">10</td><td class="n">133</td><td class="n">3.333</td><td class="n">333</td><td class="n">675</td></tr>
+        <tr><th scope="row">Mês 18</th><td class="n">18</td><td class="n">240</td><td class="n">6.000</td><td class="n">333</td><td class="n">675</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p><strong>A leitura que importa: a verba cresce, e o custo por venda não.</strong> É isso que separa escalar de simplesmente gastar mais.</p>
+</section>
+
+<section>
+  <p class="kicker">O trabalho</p>
+  <h2>O que eu faço, e o que fica de fora</h2>
+
+  <div class="scroll">
+    <table>
+      <thead><tr><th>Frente</th><th>O que fica pronto</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Alicerce</th><td>quem é o seu cliente, escrito. A oferta da mentoria: formato, preço, promessa. A narrativa central. E o nome fixo do seu mecanismo</td></tr>
+        <tr><th scope="row">Conversão</th><td>o roteiro da sua call de vendas, transformando em processo a ferramenta que já converte. Uma página</td></tr>
+        <tr><th scope="row">Aquisição</th><td>campanha digital nova, fora do seu raio de 50 km. De 6 a 10 criativos. Medição funcionando</td></tr>
+        <tr><th scope="row">Operação</th><td>gestão da campanha, criativos de reposição, call quinzenal com você, relatório mensal</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>O nome do seu mecanismo, e por que ele está na lista</h3>
+  <p>Você me disse: <em>"às vezes chamo de sessão clareza, cada hora eu chamo de um nome."</em></p>
+  <p><strong>A coisa que mais converte no seu negócio não tem nome fixo.</strong> Sem nome ela não pode ser anunciada, não pode ser vendida e não pode ser lembrada. Isso se resolve na primeira semana.</p>
+
+  <h3>O que fica de fora, e nomeado como fora</h3>
+  <p><strong>O seu tráfego local continua com quem faz hoje.</strong> Ele funciona, já está pago, e a conta é deles. Não cobro para gerir o que já funciona. Eu entro na frente digital nova, que é justamente a que eles não fazem.</p>
+  <p>Também não entram, e viram projeto à parte se você quiser: VSL, área de membros, várias páginas, funil de e-mail, produção de conteúdo orgânico e gestão do seu Instagram.</p>
+</section>
+
+<section>
+  <p class="kicker">O combinado</p>
+  <h2>O que depende de você</h2>
+  <p>Cada uma destas carrega o que acontece se falhar. Não é lista de pedidos: <strong>é o que sustenta a projeção de pé.</strong></p>
+
+  <div class="scroll">
+    <table>
+      <thead><tr><th>O que</th><th>Quando</th><th>Se não acontecer</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Seu faturamento real de julho e agosto</th><td>antes de começar</td><td>as contas aqui são estimativa. Com o número certo elas viram projeção de verdade</td></tr>
+        <tr><th scope="row">Decidir o preço novo do presencial</th><td>semana 1</td><td>a alavanca 1 não entra, e o breakeven sobe de 2 para 3,3 vendas por mês</td></tr>
+        <tr><th scope="row">Lista real dos contatos da sua base</th><td>semana 1</td><td>a alavanca 2 some, e o retorno passa do mês 2 para o mês 4</td></tr>
+        <tr><th scope="row">De quem é a conta de anúncios, o pixel e os públicos</th><td>antes do início</td><td>ou disputamos a conta com quem cuida dela hoje, ou construímos em cima de ativo que não é seu</td></tr>
+        <tr><th scope="row">Verba de mídia de no mínimo R$ 2.000/mês</th><td>mês 1</td><td>abaixo disso a campanha valida mensagem e <strong>não escala</strong>. A projeção deixa de valer</td></tr>
+        <tr><th scope="row">Formato e preço da mentoria decididos</th><td>semana 2</td><td>sem produto definido não existe página, texto nem campanha. Tudo desloca</td></tr>
+        <tr><th scope="row">Gravar criativos</th><td>a cada 15 dias</td><td>criativo cansa. A partir da quarta semana sem reposição, o custo por venda sobe</td></tr>
+        <tr><th scope="row">Aprovar textos e página</th><td>48h por peça</td><td>cada 48 horas de atraso empurra a campanha no mesmo tanto</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p><strong>Prazos:</strong> a estrutura fica pronta em <strong>14 dias</strong> e a campanha entra no ar em até <strong>21 dias</strong>, contados a partir do início e condicionados aos itens acima. Se algum atrasar, eu te aviso na hora qual data mudou e por quê.</p>
+
+  <h3>O que eu não prometo</h3>
+  <p>Não prometo faturamento, número de vendas, alcance nem seguidor.</p>
+  <p><strong>Prometo três coisas, e elas são verificáveis:</strong> a estrutura construída e no ar nos prazos combinados, a campanha gerando dado medido em vez de sensação, e a decisão de escalar tomada com número na mesa.</p>
+  <p>Todos os cenários deste documento são projeções sobre premissas, e cada premissa está escrita ao lado do número que ela produz. A execução do que depende de você é sua.</p>
+  <p><strong>Pode ser que a gente descubra que o seu produto principal deveria ser outro, ou que o seu preço está abaixo do que o seu trabalho vale.</strong> Se for isso, é isso que eu vou te dizer.</p>
+</section>
+
+<section class="close">
+  <p class="kicker">Investimento</p>
+  <h2>O que custa, como se paga, e por que seis meses</h2>
+
+  <dl class="price">
+    <div><dt>Assessoria Estratégica</dt><dd>R$ 27.000<small>seis meses, escopo fechado. É este o valor por trás das três portas abaixo</small></dd></div>
+    <div><dt>Verba de mídia</dt><dd>R$ 2.000 a 3.000<small>sua, à parte, direto na plataforma. Não passa por mim</small></dd></div>
+  </dl>
+
+  <h3>Três portas para o mesmo contrato</h3>
+  <p>Você me disse que, dependendo do valor, o dinheiro precisaria começar a entrar para se pagar. <strong>As portas existem por causa dessa frase.</strong> O trabalho é idêntico nas três. O que muda é quando o dinheiro sai do seu caixa.</p>
+
+  <div class="doors">
+    <div class="door">
+      <div class="door-tag">Porta 1 · à vista</div>
+      <div class="door-n">R$ 25.650</div>
+      <div class="door-sub">Pix, pagamento único, cinco por cento abaixo do valor cheio.</div>
+      <div class="door-foot">Menor custo total</div>
+    </div>
+    <div class="door pick">
+      <div class="door-tag">Porta 2 · cartão</div>
+      <div class="door-n">12 × R$ 2.565</div>
+      <div class="door-sub">Total R$ 30.780, com a taxa da operadora já dentro. Seis meses de trabalho pagos ao longo de doze.</div>
+      <div class="door-foot">Menor saída por mês</div>
+    </div>
+    <div class="door">
+      <div class="door-tag">Porta 3 · entrada + mensal</div>
+      <div class="door-n">R$ 6.000<small>+ R$ 3.500 × 6</small></div>
+      <div class="door-sub">Total R$ 27.000. A entrada cobre a construção, a mensalidade cobre a operação.</div>
+      <div class="door-foot">Sem taxa, sem desconto</div>
+    </div>
+  </div>
+
+  <p><strong>A porta 2 é a que responde direto ao que você falou.</strong> Você paga seis meses de trabalho ao longo de doze, e da sétima parcela em diante ela sai de uma operação que já tem preço novo, mentoria vendendo e campanha rodando. A estrutura fica pronta em seis meses e continua trabalhando enquanto você termina de pagar.</p>
+
+  <p><strong>Na porta 3, a entrada não é taxa de adesão. É o mês em que a coisa nasce:</strong> a oferta escrita, o nome do seu mecanismo, a narrativa, a página, o funil e a campanha no ar. Os cinco meses seguintes operam, medem e corrigem o que esse mês construiu. Você paga a construção uma vez e a operação por mês.</p>
+
+  <p class="note">A taxa do cartão está dentro do número da porta 2, visível, e não escondida no preço. <strong>Eu não absorvo taxa de operadora e não finjo que ela não existe</strong>, porque taxa absorvida sai de algum lugar, e o lugar de onde ela sai costuma ser a entrega.</p>
+
+  <h3>Por que seis meses e não três</h3>
+  <p>Não é fidelidade. É a física da coisa.</p>
+  <p><strong>Três meses compram o primeiro estágio e metade do segundo: exatamente as duas fases que, por definição, ainda não devolvem.</strong> O ativo só chega no ponto de escalar com tempo, porque cada ciclo reduz a incerteza do seguinte, e os criativos, as páginas e os públicos não zeram no mês seguinte.</p>
+  <p>Contratar curto compra a parte cara e para antes da parte que paga.</p>
+
+  <h3>A alternativa de doze meses</h3>
+  <p><strong>R$ 4.200 por mês, doze meses.</strong> Cobre as quatro fases inteiras, incluindo o produto de escala e o funil que substitui a call individual. Sai R$ 3.600 mais barato do que contratar seis meses duas vezes.</p>
+  <p>Não é o que eu estou colocando na mesa hoje. <strong>Coloco quando você já tiver visto como eu trabalho</strong>, e a decisão de continuar for sobre resultado em vez de sobre confiança.</p>
+
+  <h3>A garantia</h3>
+  <div class="flag"><strong>Se uma entrega marcada como minha não sair na data marcada, e o atraso for meu, você não paga aquele mês.</strong> Sem discussão de mérito e sem análise de causa. As datas estão na tabela de responsáveis, e elas valem contra mim.</div>
+  <p>Repare no que essa garantia é e no que ela não é. <strong>Ela é sobre execução, que está inteira na minha mão. Não é sobre resultado, que depende de você, do mercado e do tempo.</strong> Eu não vendo garantia de faturamento. Quem vende está garantindo uma coisa que não controla.</p>
+
+  <div class="flag">Os cenários deste documento foram calculados sobre o valor cheio dividido por seis, R$ 4.500 por mês, mais R$ 2.000 de mídia: <strong>R$ 7.399 de saldo positivo no sexto mês no conservador, R$ 32.918 no provável.</strong> Trocar de porta muda quando o dinheiro sai do caixa. Não muda o que o trabalho entrega.</div>
+
+  <h3>O próximo passo</h3>
+  <ol class="steps">
+    <li>Você me manda o faturamento de julho e agosto e a lista real de contatos da base.</li>
+    <li>Eu refaço as contas deste plano com os seus números reais, não com estimativa.</li>
+    <li>Se fechar para você, começamos: preço na semana 1, estrutura em 14 dias, campanha em 21.</li>
+  </ol>
+
+  <p><strong>Se em algum ponto ficar claro que este não é o caminho, eu te falo na hora.</strong> Prefiro te devolver a conversa a te vender a coisa errada.</p>
+
+  <footer>
+    Preparado por Victor Senna · Continuum · 21 de agosto de 2026<br>
+    Todos os números de operação vieram de você, na conversa de 21 de agosto. Os que são estimativa estão marcados como estimativa, com a premissa ao lado.
+  </footer>
+</section>
+
+</div>

@@ -1,0 +1,19 @@
+const fs=require('fs'),path=require('path');
+const {launch,ROOT}=require('./browser.cjs');
+(async()=>{const b=await launch(),report={};try{
+ async function page(options={},init){const c=await b.newContext(options),p=await c.newPage();if(init)await p.addInitScript(init);p.on('pageerror',e=>{(report.errors??=[]).push(e.message)});await p.goto('http://127.0.0.1:8794/');return {c,p};}
+ let {c,p}=await page({viewport:{width:1440,height:900}});
+ await p.waitForFunction(()=>document.querySelector('.depth-stage').dataset.state==='active');
+ report.desktop=await p.evaluate(()=>{const s=document.querySelector('.depth-stage');return {state:s.dataset.state,canvas:s.querySelectorAll('canvas').length,imageDecoded:s.querySelector('img').complete}});
+ const box=await p.locator('.depth-stage').boundingBox();await p.mouse.move(box.x+box.width*.9,box.y+box.height*.2);
+ await p.waitForFunction(()=>{const gl=document.querySelector('.depth-stage canvas').getContext('webgl');const pr=gl.getParameter(gl.CURRENT_PROGRAM);return Math.abs(gl.getUniform(pr,gl.getUniformLocation(pr,'offset'))[0])>.002});
+ report.pointerOffset=await p.evaluate(()=>{const gl=document.querySelector('.depth-stage canvas').getContext('webgl'),pr=gl.getParameter(gl.CURRENT_PROGRAM);return Array.from(gl.getUniform(pr,gl.getUniformLocation(pr,'offset')))});
+ await p.waitForFunction(()=>window.TEMPLE_MOTION?.lenis);await p.mouse.wheel(0,700);await p.waitForFunction(()=>scrollY>300);report.smoothScroll=true;
+ await p.emulateMedia({reducedMotion:'reduce'});await p.waitForFunction(()=>!window.TEMPLE_MOTION.lenis&&document.querySelector('.depth-stage').dataset.state==='static');report.dynamicReduced=true;await c.close();
+ ({c,p}=await page({reducedMotion:'reduce'}));report.reduced=await p.locator('.depth-stage').evaluate(s=>({state:s.dataset.state,canvases:s.querySelectorAll('canvas').length}));await c.close();
+ ({c,p}=await page({},()=>{const original=HTMLCanvasElement.prototype.getContext;HTMLCanvasElement.prototype.getContext=function(kind,...args){return kind==='webgl'?null:original.call(this,kind,...args)}}));await p.waitForFunction(()=>document.querySelector('.depth-stage').dataset.fallback==='unavailable');report.noWebGL=await p.locator('.depth-stage').evaluate(s=>({state:s.dataset.state,imageVisible:getComputedStyle(s.querySelector('img')).opacity==='1'}));await c.close();
+ ({c,p}=await page({viewport:{width:390,height:844},isMobile:true},()=>{DeviceOrientationEvent.requestPermission=async()=>'denied'}));report.mobileBeforePermission=await p.locator('.depth-stage').evaluate(s=>({state:s.dataset.state,canvases:s.querySelectorAll('canvas').length}));await p.locator('.depth-button').click();report.mobileDenied=await p.locator('.depth-button').isDisabled();await c.close();
+ ({c,p}=await page({},()=>{const original=HTMLImageElement.prototype.decode;HTMLImageElement.prototype.decode=function(){if(this.closest('.depth-stage'))return new Promise(resolve=>{window.releaseHero=()=>original.call(this).then(resolve)});return original.call(this)}}));report.decodePending=await p.locator('.depth-stage').evaluate(s=>({state:s.dataset.state,canvases:s.querySelectorAll('canvas').length}));await p.evaluate(()=>window.releaseHero());await p.waitForFunction(()=>document.querySelector('.depth-stage').dataset.state==='active');report.decodeResumed=true;await c.close();
+ const pass=report.desktop.state==='active'&&report.dynamicReduced&&report.reduced.canvases===0&&report.noWebGL.imageVisible&&report.mobileBeforePermission.canvases===0&&report.mobileDenied&&report.decodePending.canvases===0&&!report.errors?.length;
+ report.pass=pass;fs.writeFileSync(path.join(ROOT,'_qa','L4-depth.json'),JSON.stringify(report,null,2));console.log(report);if(!pass)process.exitCode=1;
+}finally{await b.close()}})().catch(e=>{console.error(e);process.exitCode=1});

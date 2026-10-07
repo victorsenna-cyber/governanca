@@ -1,0 +1,56 @@
+PACOTE PARA A HOSTINGER
+
+Suba as duas pastas inteiras para dentro de public_html:
+
+  public_html/permissao/   ->  seudominio.com/permissao/
+  public_html/signos/      ->  seudominio.com/signos/
+
+Cada pasta e independente: tem o proprio index.html, motor, estilos, fonte, foto e configuracao.
+Pode renomear as pastas a vontade; os caminhos internos sao relativos.
+Nao renomeie nem mova nada DENTRO das pastas.
+
+Para alterar depois (URL do Apps Script, links de checkout, preco, depoimentos):
+  permissao/config/permissao.json
+  signos/config/signos.json
+
+Nao subir: qa, tools, apps-script, server.cjs, public. Sao de teste e de construcao.
+
+ATUALIZACAO 2026-10-02 - QUIZ TETO + CORRECAO DO ENGINE
+- Nova pasta de upload: teto/ (index.html, engine.js, styles.css, config/teto.json e assets/).
+- O engine corrigido tambem foi copiado para permissao/ e signos/.
+- Zips desta entrega: teto-v1.zip, permissao-v3.zip e signos-v6.zip.
+- Nenhuma publicacao, ativacao de Pixel ou configuracao de Apps Script foi realizada.
+
+PENDENCIAS DO QUIZ DE SIGNOS (registrado em 2026-10-02)
+1. Links de checkout: Victor vai trazer 12 links (3 por elemento: mensal, trimestral, semestral).
+   Hoje checkout_fogo/terra/ar/agua estao vazios e o botao "Entrar no grupo" nao leva a lugar nenhum.
+2. O motor aceita 1 link por elemento. Com 3 planos por elemento, a tela de oferta precisa de
+   escolha de plano (3 botoes ou seletor) antes de plugar os links. Ajuste de engine + config.
+3. Confirmar com o Gui o trimestral: R$297 e mais caro que 3 x R$97 (R$291).
+4. No ar em 2026-10-02: preco "R$ 97/mes", apoio "Ou R$ 297 no plano trimestral e R$ 497 no
+   semestral.", resposta de "Posso cancelar?" = cancela quando quiser.
+
+ATUALIZACAO 2026-10-02 (tarde) - QUIZ DE SIGNOS
+- Decisao do Gui: a oferta fica so com o plano trimestral. Preco na tela: "R$ 297",
+  apoio "Plano trimestral · tres meses no grupo do seu elemento."
+  Isso substitui o item 4 acima e derruba os itens 2 e 3: volta a ser 1 link por elemento.
+- Pendencia de checkout passa a ser 4 links (fogo, terra, ar, agua), todos do trimestral.
+- "Posso cancelar?" ficou "O plano e trimestral. Voce pode cancelar a renovacao quando quiser."
+  CONFIRMAR com o Gui se o plano renova sozinho; se nao renovar, trocar a frase.
+- Promessa do teste mudou: de "conselho do seu elemento" para "padrao de decisao".
+  Abertura (S01), tela de resultado (S13), carregamento (S12), eco da oferta (S16),
+  titulo e metas do index.html. Quem promete conselho e o grupo, nao o teste.
+- Resultado novo: padrao (impulso / adia / terceiriza / espera um sinal) + onde pesa +
+  como entra na semana + repeticao + elemento. Sai das respostas, sem mexer no engine.
+- Arquivos alterados: signos/config/signos.json e signos/index.html. Zip atual: signos-v4.zip.
+- Achado no engine (vale para os dois quizzes, NAO corrigido): nos cards, a funcao itemValue
+  troca titulo e texto pelo mesmo valor quando ha "variants" ou "variableVariants" no item.
+  Afeta 2 cards da tela T19 do quiz da Permissao (titulo e texto saem iguais).
+
+ATUALIZACAO 2026-10-02 (17h) - LINKS DE CHECKOUT DO SIGNOS
+- Os 4 links do plano trimestral (enviados pelo Gui no WhatsApp as 16:49-16:50) estao em
+  signos/config/signos.json: checkout_fogo, checkout_terra, checkout_ar, checkout_agua.
+  Conferidos na pagina da PagTrust: cada link abre o grupo certo, assinatura trimestral.
+- Zip atual: signos-v5.zip. Pendencia de links ENCERRADA.
+- Para o Gui corrigir na PagTrust: o produto do Grupo Terra esta nomeado
+  "Touro, Virgem e Sagitario" (o certo e Capricornio).

@@ -1,0 +1,377 @@
+<title>Plano de Sucesso · Renata</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:ital,wght@0,400;0,600;1,400&display=swap">
+
+<style>
+:root{
+  --paper:#F4F6F8; --surface:#FFFFFF; --raised:#EAEEF2;
+  --ink:#141A21; --body:#323C47; --muted:#616C78;
+  --rule:#DAE0E6; --rule-strong:#B3BDC8;
+  --gain:#1D5480; --gain-soft:#E3EDF5;
+  --limit:#A2452F; --limit-soft:#F5E5E0;
+  --sans:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --serif:"IBM Plex Serif",Georgia,"Times New Roman",serif;
+  --mono:"IBM Plex Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#0F1318; --surface:#171C22; --raised:#1F252C;
+    --ink:#E9EEF3; --body:#C2CAD3; --muted:#8A949F;
+    --rule:#2A313A; --rule-strong:#444E58;
+    --gain:#78B7E2; --gain-soft:#132330;
+    --limit:#E28A6E; --limit-soft:#2E1D17;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0F1318; --surface:#171C22; --raised:#1F252C;
+  --ink:#E9EEF3; --body:#C2CAD3; --muted:#8A949F;
+  --rule:#2A313A; --rule-strong:#444E58;
+  --gain:#78B7E2; --gain-soft:#132330;
+  --limit:#E28A6E; --limit-soft:#2E1D17;
+}
+
+*{box-sizing:border-box}
+body{
+  background:var(--paper); color:var(--body);
+  font-family:var(--sans); font-size:16px; line-height:1.62;
+  margin:0; padding:0 20px 96px; -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:740px;margin:0 auto}
+p{margin:0 0 1em;max-width:66ch}
+strong{color:var(--ink);font-weight:600}
+
+.masthead{padding:60px 0 30px;border-bottom:2px solid var(--rule-strong)}
+.eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--muted);margin:0 0 18px;display:flex;gap:10px;flex-wrap:wrap}
+.eyebrow span:not(:last-child)::after{content:"·";margin-left:10px;color:var(--rule-strong)}
+h1{font-family:var(--serif);font-weight:600;color:var(--ink);
+  font-size:clamp(36px,6.5vw,54px);line-height:1.05;letter-spacing:-.02em;margin:0 0 16px;text-wrap:balance}
+.standfirst{font-family:var(--serif);font-size:18.5px;line-height:1.55;color:var(--body);max-width:60ch;margin:0}
+
+section{padding:46px 0;border-bottom:1px solid var(--rule)}
+section:last-of-type{border-bottom:none}
+h2{font-family:var(--serif);font-weight:600;color:var(--ink);
+  font-size:clamp(24px,4vw,30px);line-height:1.18;letter-spacing:-.015em;margin:0 0 20px;text-wrap:balance}
+h3{font-family:var(--sans);font-weight:600;color:var(--ink);font-size:16.5px;line-height:1.35;margin:30px 0 11px}
+h3:first-child{margin-top:0}
+.kicker{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0 0 11px}
+
+.scroll{overflow-x:auto;margin:20px 0;-webkit-overflow-scrolling:touch}
+table{border-collapse:collapse;width:100%;font-size:14.5px;min-width:min(100%,440px)}
+caption{caption-side:bottom;text-align:left;color:var(--muted);font-size:12.5px;line-height:1.5;padding-top:11px;font-style:italic}
+th,td{padding:9px 12px;text-align:left;border-bottom:1px solid var(--rule);vertical-align:baseline}
+thead th{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--muted);font-weight:500;border-bottom:1px solid var(--rule-strong);padding-bottom:8px;white-space:nowrap}
+td.n,th.n{text-align:right;font-family:var(--mono);font-variant-numeric:tabular-nums;white-space:nowrap}
+tbody tr:last-child td{border-bottom:none}
+tr.total td{border-top:2px solid var(--rule-strong);border-bottom:none;color:var(--ink);font-weight:600;padding-top:11px}
+tr.total td.n{color:var(--gain)}
+th[scope="row"]{font-weight:400;color:var(--body)}
+tr.hi th[scope="row"],tr.hi td:first-child{color:var(--ink);font-weight:600}
+tr.hi td.n{color:var(--ink);font-weight:600}
+td.you{font-family:var(--mono);font-size:12.5px;color:var(--limit);white-space:nowrap}
+td.me{font-family:var(--mono);font-size:12.5px;color:var(--gain);white-space:nowrap}
+
+/* marco de primeiro valor */
+.milestone{
+  background:var(--gain-soft);border-left:3px solid var(--gain);border-radius:3px;
+  padding:22px 24px;margin:24px 0;
+}
+.milestone .day{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--gain);margin:0 0 10px;font-weight:600}
+.milestone .what{font-family:var(--serif);font-size:clamp(19px,3vw,23px);line-height:1.32;color:var(--ink);margin:0 0 12px;text-wrap:balance}
+.milestone p{font-size:14.5px;margin:0;color:var(--body)}
+
+/* linha do tempo das fases */
+.track{display:flex;flex-direction:column;gap:1px;background:var(--rule);border-radius:3px;overflow:hidden;margin:22px 0}
+.leg{background:var(--surface);padding:20px 22px}
+.leg-head{display:flex;flex-wrap:wrap;gap:12px;align-items:baseline;margin-bottom:10px}
+.leg-when{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--gain);font-weight:600}
+.leg-title{font-size:16px;font-weight:600;color:var(--ink)}
+.leg ul{margin:0 0 12px;padding-left:1.1em;font-size:14.5px}
+.leg li{margin-bottom:.35em}
+.leg .gate{font-family:var(--mono);font-size:11.5px;color:var(--muted);display:block;line-height:1.5;
+  padding-top:11px;border-top:1px dashed var(--rule)}
+.leg .gate b{color:var(--body);font-weight:500}
+.leg .alvo{font-family:var(--mono);font-size:12.5px;color:var(--ink);font-variant-numeric:tabular-nums}
+
+.flag{font-size:14.5px;line-height:1.58;color:var(--body);padding:16px 18px;
+  background:var(--gain-soft);border-radius:3px;margin:20px 0;border-left:3px solid var(--gain)}
+.flag strong{color:var(--ink)}
+.note{font-size:13.5px;line-height:1.58;color:var(--muted);padding:14px 16px;
+  background:var(--raised);border-radius:3px;margin:18px 0}
+.note strong{color:var(--ink)}
+.pull{font-family:var(--serif);font-size:clamp(19px,3vw,23px);line-height:1.34;color:var(--ink);
+  margin:28px 0;padding:0 0 0 20px;border-left:3px solid var(--gain);text-wrap:balance}
+.pull em{font-style:italic;color:var(--muted);display:block;font-size:14.5px;margin-top:9px;font-family:var(--sans)}
+
+.figures{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:1px;background:var(--rule);
+  margin:24px 0;border-radius:3px;overflow:hidden}
+.fig{background:var(--surface);padding:17px 15px}
+.fig dt{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.fig dd{margin:0;font-family:var(--mono);font-size:24px;font-weight:500;color:var(--gain);font-variant-numeric:tabular-nums;line-height:1.1}
+.fig dd small{display:block;font-family:var(--sans);font-size:12.5px;font-weight:400;color:var(--muted);margin-top:6px;line-height:1.45;font-variant-numeric:normal}
+
+.doors{display:grid;grid-template-columns:repeat(auto-fit,minmax(198px,1fr));gap:1px;
+  background:var(--rule);border:1px solid var(--rule);border-radius:3px;margin:22px 0}
+.door{background:var(--surface);padding:18px 17px;display:flex;flex-direction:column}
+.door.pick{background:var(--gain-soft)}
+.door-tag{font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--muted);margin-bottom:9px}
+.door.pick .door-tag{color:var(--gain);font-weight:600}
+.door-n{font-family:var(--mono);font-size:19px;font-weight:500;color:var(--ink);
+  font-variant-numeric:tabular-nums;line-height:1.22}
+.door-n small{display:block;font-family:var(--mono);font-size:14px;font-weight:400;
+  color:var(--body);margin-top:5px}
+.door-sub{font-size:12.5px;line-height:1.5;color:var(--muted);margin-top:9px}
+.door-foot{font-family:var(--mono);font-size:11px;color:var(--muted);margin-top:auto;padding-top:12px}
+.door.pick .door-foot{color:var(--gain)}
+
+ul,ol{margin:0 0 1em;padding-left:1.15em;max-width:66ch}
+li{margin-bottom:.45em}
+li::marker{color:var(--muted)}
+a{color:var(--gain);text-decoration:underline;text-underline-offset:3px}
+a:focus-visible{outline:2px solid var(--gain);outline-offset:3px;border-radius:2px}
+
+footer{margin-top:48px;padding-top:22px;border-top:1px solid var(--rule);
+  font-family:var(--mono);font-size:11.5px;color:var(--muted);line-height:1.65}
+
+@media (max-width:560px){
+  body{padding:0 16px 64px}
+  .masthead{padding:42px 0 26px}
+  section{padding:36px 0}
+  th,td{padding:8px 9px;font-size:13.5px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+
+<div class="wrap">
+
+<header class="masthead">
+  <p class="eyebrow"><span>Continuum</span><span>Renata Betta</span><span>22 de agosto de 2026</span><span>Esboço</span></p>
+  <h1>Plano de sucesso</h1>
+  <p class="standfirst">O caminho, na ordem, com data e com nome ao lado de cada entrega. Este é o esboço: no kickoff ele volta e fica mais preciso com os seus números.</p>
+</header>
+
+<section>
+  <p class="kicker">Como este documento funciona</p>
+  <h2>Ele é feito duas vezes, de propósito</h2>
+  <p><strong>Agora, antes de você decidir:</strong> para você ver exatamente o que vai acontecer, em que ordem, e o que depende de você. Nada aqui é surpresa depois.</p>
+  <p><strong>No kickoff, depois do sim:</strong> ele volta e é refeito com o que só existe do seu lado. Seu faturamento real, a lista da sua base, os materiais da mentoria anterior, os acessos. <strong>As estimativas viram números e as datas viram compromisso.</strong></p>
+  <div class="note">Os cálculos completos que sustentam este plano estão no documento <strong>"A conta da sua operação"</strong>, que eu te mandei junto. Aqui vai só o resumo, para o plano caber numa leitura.</div>
+</section>
+
+<section>
+  <p class="kicker">Primeiro valor</p>
+  <h2>O que acontece primeiro, e quando</h2>
+  <p>A primeira coisa a acontecer não é anúncio nem página. <strong>É preço.</strong> Porque é a única alavanca que devolve dinheiro sem depender de nada ser construído, e você já quer puxá-la.</p>
+
+  <div class="milestone">
+    <p class="day">Dia 14</p>
+    <p class="what">A primeira venda no preço novo, ou a primeira mentoria vendida para a sua base. O que vier antes.</p>
+    <p>É este o marco que diz que o plano começou a funcionar. Se ele não acontecer até o dia 14, a gente para e olha o porquê antes de seguir.</p>
+  </div>
+
+  <p>Nas duas primeiras semanas não existe construção nenhuma. Existe decisão de preço, medição do que já roda, e conversa com quem já te conhece. <strong>Custo zero e resposta em dias.</strong></p>
+</section>
+
+<section>
+  <p class="kicker">O mapa</p>
+  <h2>Onde você está, e onde isto chega</h2>
+
+  <div class="scroll">
+    <table>
+      <caption>Composição de receita por fase, em reais por mês. A coluna "hoje" é o centro do que os seus próprios números produzem, e a faixa deles vai de R$ 33 mil a R$ 46 mil. <strong>Trocar esse centro pelo seu faturamento real é a primeira coisa que a gente faz</strong>, e toda a tabela se move junto. A última coluna é faixa porque o produto que ocupa aquele lugar ainda não foi escolhido, e quem escolhe é você.</caption>
+      <thead><tr><th></th><th class="n">Hoje</th><th class="n">Mês 3</th><th class="n">Mês 6</th><th class="n">Mês 12</th><th class="n">Mês 18</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Presencial individual</th><td class="n">39.652</td><td class="n">43.667</td><td class="n">43.667</td><td class="n">40.712</td><td class="n">31.664</td></tr>
+        <tr><th scope="row">Mentoria em grupo</th><td class="n">0</td><td class="n">7.500</td><td class="n">12.500</td><td class="n">25.000</td><td class="n">45.000</td></tr>
+        <tr><th scope="row">Workshop pago</th><td class="n">0</td><td class="n">0</td><td class="n">0</td><td class="n">9.700</td><td class="n">14.550</td></tr>
+        <tr class="hi"><th scope="row">Novo funil, a definir com você</th><td class="n">0</td><td class="n">0</td><td class="n">0</td><td class="n">0</td><td class="n">8 a 20 mil</td></tr>
+        <tr class="total"><td>Total por mês</td><td class="n">39.652</td><td class="n">51.167</td><td class="n">56.167</td><td class="n">75.412</td><td class="n">99 a 111 mil</td></tr>
+        <tr class="hi"><th scope="row">Horários seus ocupados</th><td class="n">55 de 55</td><td class="n">43</td><td class="n">44</td><td class="n">41</td><td class="n">43 de 55</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p class="pull">Você passa dos cem mil por mês com a agenda mais livre do que hoje.
+  <em>Hoje ela está em 100%. No mês 18, em 78%, com quase três vezes menos atendimentos individuais. O que multiplicou não foi o seu tempo. Foi quantas pessoas cabem dentro de cada hora dele.</em></p>
+
+  <div class="flag"><strong>Leia o mês 18 como mapa, não como promessa.</strong> O contrato cobre os seis primeiros meses. As fases seguintes estão aqui para você saber onde a estrada dá, e cada uma só começa quando a anterior tiver o número dela.</div>
+</section>
+
+<section>
+  <p class="kicker">A sequência</p>
+  <h2>As quatro fases, com o que abre a porta da seguinte</h2>
+
+  <div class="track">
+    <div class="leg">
+      <div class="leg-head"><span class="leg-when">Fase 1 · meses 1 a 3</span><span class="leg-title">Destravar</span></div>
+      <ul>
+        <li>Preço do presencial decidido e aplicado</li>
+        <li>Sua base ativada, com sequência escrita</li>
+        <li>Oferta da mentoria pronta: formato, preço, promessa</li>
+        <li>O nome fixo do seu mecanismo</li>
+        <li>Uma página no ar e a campanha rodando</li>
+      </ul>
+      <span class="alvo">Alvo do mês 3: R$ 39 mil por mês</span>
+      <span class="gate"><b>Abre a fase 2 quando:</b> custo por lead medido e oferta validada em conversa real</span>
+    </div>
+    <div class="leg">
+      <div class="leg-head"><span class="leg-when">Fase 2 · meses 4 a 6</span><span class="leg-title">Validar a aquisição, e o workshop entra</span></div>
+      <ul>
+        <li>Campanha trazendo venda com custo previsível</li>
+        <li>Workshop assumindo a conversa de venda</li>
+        <li>Roteiro da call de venda do grupo, escrito e testado</li>
+      </ul>
+      <span class="alvo">Alvo do mês 6: R$ 44 mil por mês</span>
+      <span class="gate"><b>Abre a fase 3 quando:</b> custo por venda estável dentro da faixa, dois meses seguidos</span>
+    </div>
+    <div class="leg">
+      <div class="leg-head"><span class="leg-when">Fase 3 · meses 7 a 12</span><span class="leg-title">Escalar o grupo</span></div>
+      <ul>
+        <li>Verba escalada, mantendo o custo por venda</li>
+        <li>Turmas paralelas</li>
+        <li>Workshop mensal já rodando como motor</li>
+      </ul>
+      <span class="alvo">Alvo do mês 12: R$ 64 mil por mês</span>
+      <span class="gate"><b>Abre a fase 4 quando:</b> pelo menos 100 pessoas por mês passam pelo workshop sem comprar a mentoria</span>
+    </div>
+    <div class="leg">
+      <div class="leg-head"><span class="leg-when">Fase 4 · meses 13 a 18</span><span class="leg-title">Um funil paralelo, escolhido por você</span></div>
+      <ul>
+        <li>Um produto que entrega sem consumir hora sua</li>
+        <li>Captura quem chega hoje e não pode pagar a mentoria</li>
+        <li>E paga o próprio anúncio, o que libera escalar verba sem apostar</li>
+      </ul>
+      <span class="alvo">Alvo do mês 18: R$ 99 a 111 mil por mês</span>
+      <span class="gate"><b>O que ele ensina é você quem decide.</b> Eu entro com a arquitetura, o preço e o funil</span>
+    </div>
+  </div>
+</section>
+
+<section>
+  <p class="kicker">Responsabilidades</p>
+  <h2>Quem faz o quê</h2>
+  <p>Esta é a parte do plano que eu não deixo em aberto. <strong>Cada entrega tem um nome e uma data</strong>, e as que dependem de você estão marcadas para você saber exatamente onde a coisa trava se parar.</p>
+
+  <div class="scroll">
+    <table>
+      <caption>Prazos contados a partir do início. Se algo atrasar, eu te aviso na hora qual data mudou e por quê.</caption>
+      <thead><tr><th>Entrega</th><th>Quem</th><th class="n">Quando</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Faturamento real e lista da base</th><td class="you">Renata</td><td class="n">dia 1</td></tr>
+        <tr><th scope="row">Números refeitos com os seus dados</th><td class="me">Victor</td><td class="n">dia 3</td></tr>
+        <tr><th scope="row">Decisão do preço novo do presencial</th><td class="you">Renata</td><td class="n">dia 5</td></tr>
+        <tr><th scope="row">Sequência para a base, escrita</th><td class="me">Victor</td><td class="n">dia 5</td></tr>
+        <tr><th scope="row">Envio da sequência, uma a uma</th><td class="you">Renata + assistente</td><td class="n">dias 6 a 12</td></tr>
+        <tr><th scope="row">ICP, oferta e narrativa da mentoria</th><td class="me">Victor</td><td class="n">dia 10</td></tr>
+        <tr><th scope="row">Formato e preço da mentoria decididos</th><td class="you">Renata</td><td class="n">dia 12</td></tr>
+        <tr><th scope="row">Nome do mecanismo</th><td class="me">Victor</td><td class="n">dia 12</td></tr>
+        <tr class="hi"><th scope="row">Primeiro valor: primeira venda no preço novo</th><td class="you">Renata</td><td class="n">dia 14</td></tr>
+        <tr><th scope="row">Página e roteiro da call de venda</th><td class="me">Victor</td><td class="n">dia 14</td></tr>
+        <tr><th scope="row">Acessos: conta de anúncios, pixel, públicos</th><td class="you">Renata</td><td class="n">dia 14</td></tr>
+        <tr><th scope="row">Criativos gravados</th><td class="you">Renata</td><td class="n">dia 16</td></tr>
+        <tr><th scope="row">Campanha no ar</th><td class="me">Victor</td><td class="n">dia 21</td></tr>
+        <tr><th scope="row">Aprovação de textos e página</th><td class="you">Renata</td><td class="n">48h por peça</td></tr>
+        <tr><th scope="row">Reposição de criativos</th><td class="you">Renata</td><td class="n">a cada 15 dias</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="note"><strong>Do meu lado é uma pessoa só, e é o Victor.</strong> Não tem time por trás, e eu prefiro que você saiba disso agora. O que existe é escopo travado e cadência fixa, que é o que faz uma pessoa só entregar sem sumir.</div>
+</section>
+
+<section>
+  <p class="kicker">Acompanhamento</p>
+  <h2>O que a gente mede, e com que frequência</h2>
+
+  <div class="scroll">
+    <table>
+      <thead><tr><th>Fase</th><th>O número que decide</th><th>Meta</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">1</th><td>vendas no preço novo · vendas para a base · custo por lead</td><td>primeira venda no dia 14</td></tr>
+        <tr><th scope="row">2</th><td>custo por venda de mentoria · conversão do workshop</td><td>custo por venda abaixo de R$ 675</td></tr>
+        <tr><th scope="row">3</th><td>custo por venda com a verba maior</td><td>verba cresce, custo não</td></tr>
+        <tr><th scope="row">4</th><td>pessoas que passam e não compram</td><td>volume que sustenta o funil novo</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p><strong>Call quinzenal comigo</strong> e <strong>relatório mensal escrito</strong>, com meta contra realizado, o funil inteiro com custo por etapa, o que aprendemos, e o que eu preciso de você no ciclo seguinte.</p>
+
+  <div class="flag"><strong>A regra que protege o seu dinheiro: a verba só sobe na fase 3.</strong> Enquanto o custo por venda não estiver estável, subir verba faz a conta perder mais rápido, não ganhar. E se o custo passar de R$ 675 e não voltar, a gente para e corrige antes de gastar mais.</div>
+</section>
+
+<section>
+  <p class="kicker">A conta, em resumo</p>
+  <h2>O que isto custa e em quantas vendas se paga</h2>
+
+  <dl class="figures">
+    <div class="fig"><dt>Assessoria</dt><dd>27 mil<small>seis meses, escopo fechado</small></dd></div>
+    <div class="fig"><dt>Verba de mídia</dt><dd>2 a 3 mil<small>sua, à parte, por mês</small></dd></div>
+    <div class="fig"><dt>Se paga com</dt><dd>2,1<small>vendas de mentoria por mês</small></dd></div>
+    <div class="fig"><dt>Retorno</dt><dd>mês 2<small>no cenário conservador</small></dd></div>
+  </dl>
+
+  <p><strong>Duas vendas de mentoria por mês.</strong> Você já fechou dezesseis, na unha, sem tráfego, sem página e sem oferta escrita.</p>
+  <p>No cenário conservador, o saldo em seis meses é de <strong>R$ 7.399 positivos</strong>, com retorno já no mês 2. No provável, R$ 32.918. <strong>Os três cenários, o fluxo mês a mês e as premissas de cada número estão no documento da conta.</strong></p>
+
+  <h2 style="font-size:19px;margin:38px 0 14px">Três portas para o mesmo contrato</h2>
+  <p>O trabalho é idêntico nas três. <strong>O que muda é quando o dinheiro sai do seu caixa.</strong></p>
+
+  <div class="doors">
+    <div class="door">
+      <div class="door-tag">Porta 1 · à vista</div>
+      <div class="door-n">R$ 25.650</div>
+      <div class="door-sub">Pix, pagamento único, cinco por cento abaixo do valor cheio.</div>
+      <div class="door-foot">Menor custo total</div>
+    </div>
+    <div class="door pick">
+      <div class="door-tag">Porta 2 · cartão</div>
+      <div class="door-n">12 × R$ 2.565</div>
+      <div class="door-sub">Total R$ 30.780, com a taxa da operadora dentro. Seis meses de trabalho pagos ao longo de doze.</div>
+      <div class="door-foot">Menor saída por mês</div>
+    </div>
+    <div class="door">
+      <div class="door-tag">Porta 3 · entrada + mensal</div>
+      <div class="door-n">R$ 6.000<small>+ R$ 3.500 × 6</small></div>
+      <div class="door-sub">Total R$ 27.000. A entrada cobre a construção, a mensalidade cobre a operação.</div>
+      <div class="door-foot">Sem taxa, sem desconto</div>
+    </div>
+  </div>
+
+  <p class="note">Existe ainda a alternativa de <strong>doze meses a R$ 4.200 por mês</strong>, que cobre as quatro fases inteiras até o produto de escala. Não é o que está na mesa hoje. Entra quando você já tiver visto como eu trabalho.</p>
+
+  <div class="flag"><strong>A garantia: se uma entrega marcada como minha não sair na data marcada, e o atraso for meu, você não paga aquele mês.</strong> Sem discussão de mérito. As datas são as da tabela acima, e elas valem contra mim. É garantia de execução, que está inteira na minha mão. Não é garantia de faturamento, que ninguém controla.</div>
+</section>
+
+<section>
+  <p class="kicker">Limites</p>
+  <h2>O que eu não prometo</h2>
+  <p>Não prometo faturamento, número de vendas, alcance nem seguidor.</p>
+  <p><strong>Prometo três coisas, e as três são verificáveis:</strong> as entregas da tabela acima nas datas da tabela acima, a campanha gerando dado medido em vez de sensação, e a decisão de escalar tomada com número na mesa.</p>
+  <p>Todos os alvos deste plano são projeções sobre premissas, e cada premissa está escrita ao lado do número que ela produz, no documento da conta. <strong>A execução do que está marcado com o seu nome é sua</strong>, e cada atraso desloca a data seguinte no mesmo tanto.</p>
+  <p>Pode ser que a gente descubra que o seu produto principal deveria ser outro, ou que o seu preço está abaixo do que o seu trabalho vale. <strong>Se for isso, é isso que eu vou te dizer.</strong></p>
+</section>
+
+<section>
+  <p class="kicker">Próximo passo</p>
+  <h2>O que acontece se você disser sim</h2>
+  <ol>
+    <li>Kickoff na mesma semana. Uma call curta, só para travar responsáveis e datas.</li>
+    <li>Você me manda o faturamento real e a lista da base.</li>
+    <li><strong>Este plano volta refeito com os seus números</strong>, e as estimativas viram compromisso.</li>
+    <li>Preço na semana 1, primeiro valor no dia 14, campanha no ar no dia 21.</li>
+  </ol>
+
+  <p><strong>Se em algum ponto ficar claro que este não é o caminho, eu te falo na hora.</strong> Prefiro te devolver a conversa a te vender a coisa errada.</p>
+
+  <footer>
+    Victor Senna · Continuum · 22 de agosto de 2026<br>
+    Esboço do plano de sucesso. Refeito no kickoff com os insumos da cliente.<br>
+    Cálculos completos em "A conta da sua operação".
+  </footer>
+</section>
+
+</div>

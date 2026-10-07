@@ -1,0 +1,16 @@
+{
+  "lot": "L2",
+  "noJSMenu": true,
+  "noJSEquivalent": true,
+  "reduced": {
+    "lenis": false,
+    "cdn": 0
+  },
+  "libraries": {
+    "lenis": true,
+    "gsap": "3.12.5",
+    "scrollTrigger": "3.12.5"
+  },
+  "dynamicReduced": true,
+  "errors": []
+}

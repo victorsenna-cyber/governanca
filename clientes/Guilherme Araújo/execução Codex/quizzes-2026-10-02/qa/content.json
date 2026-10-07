@@ -1,0 +1,71 @@
+{
+  "briefHash": "d3a000b8f4c8991ad94a1b9ddc0086c798d583af23d8aab45492c356a136b050",
+  "counts": [
+    {
+      "quiz": "permissao",
+      "screens": 24,
+      "questions": 16
+    },
+    {
+      "quiz": "signos",
+      "screens": 16,
+      "questions": 10
+    }
+  ],
+  "copyFailures": [],
+  "pending": [
+    {
+      "path": "permissao.ui.legalPending",
+      "text": "[[COPY PENDENTE: dados legais do rodapé]]"
+    },
+    {
+      "path": "signos.ui.legalPending",
+      "text": "[[COPY PENDENTE: dados legais do rodapé]]"
+    },
+    {
+      "path": "signos.S16.valuePending",
+      "text": "[[COPY PENDENTE: preço do grupo de signos]]"
+    },
+    {
+      "path": "signos.S16.supportPending",
+      "text": "[[COPY PENDENTE: apoio do preço do grupo de signos]]"
+    },
+    {
+      "path": "signos.S16.pending",
+      "text": "[[COPY PENDENTE: resposta de Posso cancelar?]]"
+    }
+  ],
+  "empty": [
+    "permissao.apps_script_url",
+    "permissao.pixel_id",
+    "permissao.dados_legais",
+    "permissao.url_termos",
+    "permissao.url_privacidade",
+    "permissao.imagem_mapa",
+    "signos.apps_script_url",
+    "signos.pixel_id",
+    "signos.dados_legais",
+    "signos.url_termos",
+    "signos.url_privacidade",
+    "signos.checkout_fogo",
+    "signos.checkout_terra",
+    "signos.checkout_ar",
+    "signos.checkout_agua",
+    "signos.preco_signos_valor",
+    "signos.preco_signos_apoio",
+    "signos.cancelamento_signos",
+    "signos.descricao_elemento.Fogo",
+    "signos.descricao_elemento.Terra",
+    "signos.descricao_elemento.Ar",
+    "signos.descricao_elemento.Água"
+  ],
+  "prohibitedHits": [],
+  "publicFiles": [
+    "public\\config\\permissao.json",
+    "public\\config\\signos.json",
+    "public\\engine.js",
+    "public\\permissao.html",
+    "public\\signos.html",
+    "public\\styles.css"
+  ]
+}

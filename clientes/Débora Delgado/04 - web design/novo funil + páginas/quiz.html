@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quiz de Liderança Consciente | Débora Delgado</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#f6f1ea; --card:#fffdf9; --ink:#3d352e; --soft:#6f6459; --line:#e7ddd1;
+  --accent:#3f6b57; --accent-dark:#2f5245; --salvia:#7f9c78;
+  --c1:#3f6b57;--c2:#4f8278;--c3:#6f8a5f;--c4:#a86b52;--c5:#6b5a6f;
+  --white:#fff;
+  --radius:14px;--shadow:0 8px 30px rgba(60,70,55,.10);
+  --serif:"Fraunces",Georgia,serif; --sans:"Inter",system-ui,-apple-system,sans-serif;
+}
+body{font-family:var(--sans);background:var(--bg);color:var(--ink);min-height:100vh;line-height:1.55}
+.screen{display:none;animation:fadeIn .4s ease}
+.screen.active{display:block}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+
+/* PROGRESS */
+.progress-wrap{position:fixed;top:0;left:0;right:0;z-index:100;background:var(--card);border-bottom:1px solid var(--line);padding:12px 24px}
+.progress-bar-bg{background:#e7ddd1;border-radius:99px;height:6px;margin-top:6px}
+.progress-bar{height:6px;border-radius:99px;background:var(--accent);transition:width .4s ease}
+.progress-label{font-size:12px;color:var(--soft);text-align:right}
+
+/* HEADER */
+.quiz-header{background:linear-gradient(160deg,#3f6b57 0%,#2f5245 100%);color:var(--white);padding:82px 24px 48px;text-align:center}
+.quiz-header .logo{font-size:12px;letter-spacing:.18em;text-transform:uppercase;opacity:.7;margin-bottom:16px}
+.quiz-header h1{font-family:var(--serif);font-weight:600;font-size:clamp(26px,4vw,42px);line-height:1.15;margin-bottom:16px;letter-spacing:-.5px}
+.quiz-header p{font-size:16px;opacity:.85;max-width:540px;margin:0 auto 32px;line-height:1.6}
+.tag{display:inline-block;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.22);border-radius:99px;padding:5px 14px;font-size:12px;margin:4px}
+
+/* BUTTONS */
+.btn{display:inline-block;padding:14px 32px;border-radius:99px;font-size:15px;font-weight:600;cursor:pointer;border:none;transition:all .2s;font-family:inherit}
+.btn-primary{background:var(--accent);color:var(--white)}
+.btn-primary:hover{background:var(--accent-dark)}
+.btn-outline{background:transparent;border:2px solid var(--accent);color:var(--accent)}
+.btn-outline:hover{background:var(--accent);color:var(--white)}
+.btn-lg{padding:18px 40px;font-size:17px}
+
+/* SECTION */
+.section-header{padding:32px 24px 20px;text-align:center}
+.comp-badge{display:inline-block;color:var(--white);border-radius:99px;padding:6px 18px;font-size:13px;font-weight:600;margin-bottom:12px}
+.section-header h2{font-family:var(--serif);font-weight:600;font-size:22px;margin-bottom:6px}
+.section-desc{max-width:600px;margin:0 auto}
+
+/* QUESTIONS */
+.questions-wrap{max-width:680px;margin:0 auto;padding:0 16px 32px}
+.question-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:24px;margin-bottom:16px}
+.question-num{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--soft);margin-bottom:8px}
+.question-text{font-size:15px;font-weight:600;line-height:1.5;margin-bottom:16px;color:var(--ink)}
+.options{display:flex;flex-direction:column;gap:8px}
+.option{display:flex;align-items:flex-start;gap:12px;padding:12px 16px;border:2px solid var(--line);border-radius:10px;cursor:pointer;transition:all .15s;font-size:14px;line-height:1.5;color:var(--ink);background:var(--card)}
+.option:hover{border-color:#cbbfae;background:#faf5ee}
+.option.selected{border-color:var(--comp-color, var(--accent));background:var(--comp-bg, #eef3ec);color:var(--ink)}
+.option input[type=radio]{display:none}
+.option-dot{width:18px;height:18px;min-width:18px;border-radius:50%;border:2px solid #cbbfae;margin-top:1px;transition:all .15s;display:flex;align-items:center;justify-content:center}
+.option.selected .option-dot{border-color:var(--comp-color, var(--accent));background:var(--comp-color, var(--accent))}
+.option.selected .option-dot::after{content:'';width:6px;height:6px;border-radius:50%;background:white}
+
+/* NAV */
+.nav-wrap{max-width:680px;margin:0 auto;padding:16px;display:flex;gap:12px;justify-content:space-between;align-items:center}
+.nav-wrap .btn{flex:1;text-align:center}
+.error-msg{color:#b0472f;font-size:13px;text-align:center;padding:8px;display:none}
+.error-msg.show{display:block}
+
+/* LEAD */
+.lead-wrap{max-width:500px;margin:0 auto;padding:40px 24px}
+.lead-wrap h2{font-family:var(--serif);font-weight:600;font-size:26px;margin-bottom:8px;text-align:center;color:var(--accent-dark)}
+.lead-wrap p{color:var(--soft);text-align:center;margin-bottom:32px;line-height:1.6}
+.field{margin-bottom:18px}
+.field label{display:block;font-size:13px;font-weight:600;margin-bottom:6px;color:var(--ink)}
+.field input{width:100%;padding:14px 16px;border:2px solid var(--line);border-radius:10px;font-size:15px;outline:none;transition:border .2s;font-family:inherit;background:var(--card)}
+.field input:focus{border-color:var(--accent)}
+.field input::placeholder{color:#b8ac9c}
+.lead-wrap .btn{width:100%;text-align:center;margin-top:8px}
+.lead-wrap .privacy{font-size:12px;color:var(--soft);text-align:center;margin-top:12px}
+
+/* RESULTS */
+.results-header{background:linear-gradient(160deg,#3f6b57 0%,#2f5245 100%);color:var(--white);padding:82px 24px 40px;text-align:center}
+.results-header .logo{font-size:12px;letter-spacing:.18em;text-transform:uppercase;opacity:.7;margin-bottom:14px}
+.results-header h1{font-family:var(--serif);font-weight:600;font-size:30px;margin-bottom:8px}
+.results-header p{opacity:.85;font-size:16px}
+.results-body{max-width:700px;margin:0 auto;padding:32px 16px 64px}
+.chart-wrap{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:24px;margin-bottom:24px;display:flex;justify-content:center}
+.chart-wrap canvas{max-width:420px;max-height:420px}
+
+.comp-result{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:20px 24px;margin-bottom:12px}
+.comp-result-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}
+.comp-result-name{font-weight:700;font-size:15px;display:flex;align-items:center;gap:10px}
+.comp-dot{width:12px;height:12px;border-radius:50%;display:inline-block}
+.comp-score-text{font-size:13px;font-weight:600;color:var(--soft)}
+.score-bar-bg{background:#e7ddd1;border-radius:99px;height:8px;margin-bottom:10px}
+.score-bar{height:8px;border-radius:99px;transition:width .8s ease}
+.comp-insight{font-size:13px;color:var(--ink);line-height:1.6}
+.comp-level{font-size:11px;text-transform:uppercase;letter-spacing:.07em;font-weight:700;padding:3px 10px;border-radius:99px;margin-left:6px}
+
+.cta-box{background:linear-gradient(150deg,#3f6b57,#2f5245);color:var(--white);border-radius:var(--radius);padding:34px;text-align:center;margin-top:32px}
+.cta-box h3{font-family:var(--serif);font-weight:600;font-size:22px;margin-bottom:8px}
+.cta-box p{opacity:.9;margin-bottom:24px;line-height:1.6;font-size:15px}
+.cta-box .btn{background:var(--white);color:var(--accent-dark);margin:6px}
+.cta-box .btn:hover{background:#eef3ec}
+
+/* INTRO */
+.intro-body{max-width:600px;margin:0 auto;padding:40px 24px}
+.info-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:16px;margin:32px 0}
+.info-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:20px;text-align:center;box-shadow:var(--shadow)}
+.info-card .num{font-family:var(--serif);font-size:30px;font-weight:600;color:var(--accent)}
+.info-card .desc{font-size:13px;color:var(--soft);margin-top:4px}
+.intro-body .btn{width:100%;text-align:center;margin-top:16px}
+
+@media(max-width:600px){
+  .quiz-header{padding:72px 16px 32px}
+  .results-header{padding:72px 16px 32px}
+}
+</style>
+
+<style>
+.lnr-nav{position:sticky;top:0;z-index:9999;display:flex;align-items:center;justify-content:space-between;gap:12px;background:#2f5245;color:#fff;padding:10px 18px;font-family:'Inter',system-ui,-apple-system,sans-serif;box-shadow:0 2px 12px rgba(0,0,0,.12);}
+.lnr-brand{color:#fff;font-weight:700;text-decoration:none;font-size:.98rem;letter-spacing:.3px;font-family:'Fraunces',Georgia,serif;}
+.lnr-links{display:flex;align-items:center;gap:4px;flex-wrap:wrap;}
+.lnr-links a{color:#e8f0ec;text-decoration:none;font-size:.85rem;font-weight:600;padding:6px 11px;border-radius:16px;}
+.lnr-links a:hover{background:rgba(255,255,255,.14);color:#fff;}
+.lnr-links a.lnr-cta{background:#a86b52;color:#fff;}
+.lnr-links a.lnr-cta:hover{background:#8a5334;}
+.lnr-toggle{display:none;background:none;border:none;color:#fff;font-size:1.35rem;cursor:pointer;line-height:1;}
+@media(max-width:640px){
+  .lnr-nav{flex-wrap:wrap;}
+  .lnr-toggle{display:block;}
+  .lnr-links{display:none;flex-direction:column;align-items:stretch;width:100%;order:3;gap:2px;padding-top:6px;}
+  .lnr-links.open{display:flex;}
+  .lnr-links a{padding:9px 8px;}
+}
+</style>
+</head>
+<body>
+<nav class="lnr-nav">
+  <a class="lnr-brand" href="index.html">Liderança na Raiz</a>
+  <button class="lnr-toggle" aria-label="Abrir menu" onclick="var l=this.parentNode.querySelector('.lnr-links'); l.classList.toggle('open');">☰</button>
+  <div class="lnr-links">
+    <a href="index.html">Início</a>
+    <a href="comece.html">Comece por aqui</a>
+    <a href="quiz.html">Diagnóstico da liderança</a>
+    <a href="servicos.html">Serviços</a>
+    <a href="membros.html">Entrar</a>
+    <a class="lnr-cta" href="consultoria.html">Conversa gratuita</a>
+  </div>
+</nav>
+
+<!-- INTRO -->
+<div class="screen active" id="screen-intro">
+  <div class="quiz-header">
+    <div class="logo">Débora Delgado</div>
+    <h1>Você já lidera bem.<br>Mas o quanto você se lê?</h1>
+    <p>Você já sabe entregar resultado. Este diagnóstico revela como andam suas habilidades de liderança humana, começando por você mesmo.</p>
+    <span class="tag">5 competências</span>
+    <span class="tag">25 questões</span>
+    <span class="tag">~10 minutos</span>
+  </div>
+  <div class="intro-body">
+    <div class="info-grid">
+      <div class="info-card"><div class="num">5</div><div class="desc">Competências avaliadas</div></div>
+      <div class="info-card"><div class="num">25</div><div class="desc">Situações reais</div></div>
+      <div class="info-card"><div class="num">1</div><div class="desc">Diagnóstico personalizado</div></div>
+    </div>
+    <p style="color:var(--soft);line-height:1.7;font-size:15px">Para cada situação, escolha a opção que mais se parece com você <strong>hoje</strong>, não com quem você quer ser, mas com quem você realmente é. Quanto mais honesto, mais útil o resultado.</p>
+    <button class="btn btn-primary btn-lg" style="margin-top:24px;width:100%" onclick="startQuiz()">Começar o diagnóstico →</button>
+  </div>
+</div>
+
+<!-- SECTION -->
+<div class="screen" id="screen-section">
+  <div class="progress-wrap">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px">
+      <span style="font-size:12px;font-weight:600;color:var(--accent-dark)" id="progress-text"></span>
+      <span class="progress-label" id="progress-label"></span>
+    </div>
+    <div class="progress-bar-bg"><div class="progress-bar" id="progress-bar"></div></div>
+  </div>
+  <div id="section-content"></div>
+  <div class="nav-wrap">
+    <button class="btn btn-outline" id="btn-back" onclick="prevSection()">← Voltar</button>
+    <button class="btn btn-primary" id="btn-next" onclick="nextSection()">Continuar →</button>
+  </div>
+  <div class="error-msg" id="error-msg">Por favor, responda todas as questões antes de continuar.</div>
+</div>
+
+<!-- LEAD -->
+<div class="screen" id="screen-lead">
+  <div class="progress-wrap">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px">
+      <span style="font-size:12px;font-weight:600;color:var(--accent-dark)">Quase lá!</span>
+      <span class="progress-label">6 de 6</span>
+    </div>
+    <div class="progress-bar-bg"><div class="progress-bar" style="width:100%"></div></div>
+  </div>
+  <div style="padding-top:60px">
+    <div class="lead-wrap">
+      <h2>Seu diagnóstico está pronto.</h2>
+      <p>Informe seus dados para receber o resultado e os próximos passos personalizados para a sua liderança.</p>
+      <div class="field">
+        <label for="lead-name">Seu nome</label>
+        <input type="text" id="lead-name" placeholder="Como posso te chamar?">
+      </div>
+      <div class="field">
+        <label for="lead-email">E-mail</label>
+        <input type="email" id="lead-email" placeholder="seu@email.com">
+      </div>
+      <div class="field">
+        <label for="lead-phone">WhatsApp</label>
+        <input type="tel" id="lead-phone" placeholder="(11) 99999-9999">
+      </div>
+      <div class="error-msg" id="lead-error">Por favor, preencha nome e e-mail.</div>
+      <button class="btn btn-primary btn-lg" style="width:100%;margin-top:8px" onclick="showResults()">Ver meu diagnóstico →</button>
+      <p class="privacy">Seus dados são usados apenas para enviar seu resultado.<br>Sem spam.</p>
+    </div>
+  </div>
+</div>
+
+<!-- RESULTS -->
+<div class="screen" id="screen-results">
+  <div class="results-header">
+    <div class="logo">Débora Delgado</div>
+    <h1>Seu diagnóstico de liderança</h1>
+    <p id="results-subtitle"></p>
+  </div>
+  <div class="results-body">
+    <div class="chart-wrap"><canvas id="radar-chart"></canvas></div>
+    <div id="comp-results"></div>
+    <div class="cta-box" id="cta-box"></div>
+  </div>
+</div>
+
+<script>
+const COMPETENCIES = [
+  {
+    id:"leitura-si", name:"Leitura de Si", color:"#3f6b57", bg:"#eef3ec",
+    desc:"Como você lê e compreende o seu próprio funcionamento",
+    questions:[
+      {text:"Sei o que faço com naturalidade e o que custa mais do que deveria",options:[
+        "Faço o que o cargo exige sem questionar se é natural em mim. Não distingo o que flui do que custa.",
+        "Percebo que certas tarefas me energizam e outras me drenam, mas não sei o que faz essa diferença.",
+        "Consigo nomear o que faço com naturalidade e o que exige mais esforço. Uso isso para entender onde gero mais valor.",
+        "Tenho clareza da minha forma singular de gerar valor e uso isso como critério nas minhas escolhas de liderança."]},
+      {text:"Reconheço o que me afasta de liderar do jeito que acredito",options:[
+        "Lidero da forma que aprendi que um líder deve liderar. Não questiono se essa forma é minha ou adaptação ao que esperavam de mim.",
+        "Sinto que em algumas situações não sou bem eu, mas não sei nomear o que é meu e o que é performance.",
+        "Começo a identificar crenças e formas aprendidas que me fazem liderar diferente de quem sou.",
+        "Reconheço com clareza o que me afasta de mim e uso esse mapa para fazer escolhas mais conscientes sob pressão."]},
+      {text:"Percebo quando estou agindo de um lugar que não é meu",options:[
+        "Não percebo a diferença entre quando estou sendo eu mesmo e quando estou performando o que é esperado. Tudo parece normal.",
+        "Às vezes saio de uma reunião com a sensação de que poderia ter agido mais eu. Mas só percebo depois.",
+        "Consigo perceber durante a situação quando estou agindo de um lugar de pressão, e não de mim.",
+        "Percebo rapidamente quando estou saindo do meu eixo e me reposiciono antes de agir."]},
+      {text:"Sei o que me energiza e o que me drena no trabalho",options:[
+        "Não faço distinção. Faço o que precisa ser feito independentemente de como me sinto fazendo.",
+        "Noto que certas semanas me deixam mais esgotado do que outras, mas não sei exatamente o que causa isso.",
+        "Consigo mapear quais atividades e interações me energizam e quais me drenam. Uso isso para entender minha semana.",
+        "Uso o que sei sobre o que me energiza para organizar o trabalho com mais inteligência e clareza."]},
+      {text:"Tenho clareza dos meus valores e do que dá sentido ao que faço",options:[
+        "Não paro para pensar nisso. Sigo em frente, entrego resultado, cumpro metas.",
+        "Em alguns momentos me pego questionando por que faço o que faço, mas não tenho resposta clara ainda.",
+        "Consigo nomear o que importa para mim no trabalho e percebo quando minhas ações estão alinhadas com isso.",
+        "Meus valores são uma bússola real. Quando tomo decisões difíceis, são eles que me orientam."]}
+    ],
+    insights:[
+      "Você ainda não tem um mapa claro de quem você é na liderança. É exatamente aqui que a jornada começa: enxergar seus talentos naturais e o que te afasta deles.",
+      "Você está começando a perceber quem você é, mas ainda há lacunas. Estruturar essa leitura vai mudar a base da sua liderança.",
+      "Você tem boa clareza sobre si mesmo. O próximo passo é aplicar essa leitura com mais consistência nos momentos de pressão.",
+      "Sua leitura de si é uma força real. A próxima fronteira é aplicar esse discernimento aos outros: pessoas e cultura."]
+  },
+  {
+    id:"autorregulacao", name:"Autorregulação", color:"#4f8278", bg:"#e8f0ee",
+    desc:"Como você gerencia seus estados internos no cotidiano",
+    questions:[
+      {text:"Reconheço o que estou sentindo antes de agir",options:[
+        "Só percebo que estava irritado ou esgotado depois que a situação já passou, às vezes pelo feedback de alguém.",
+        "Começo a notar sinais no corpo durante o dia (tensão, agitação, cansaço), mas não sei o que está causando.",
+        "Consigo identificar o que estou sentindo e faço pequenas pausas para me reequilibrar antes de uma conversa importante.",
+        "Percebo rapidamente quando algo me tira do eixo, ainda durante a situação, e me preparo para responder em vez de reagir."]},
+      {text:"Comunico o que sinto e o que preciso com clareza",options:[
+        "Digo que está tudo bem mesmo quando não está. Meu estado interno fica escondido, ou aparece no tom de voz sem que eu perceba.",
+        "Consigo reconhecer que estou cansado ou frustrado, mas ainda não sei dizer isso de forma direta no contexto do trabalho.",
+        "Consigo comunicar o que sinto e o que preciso sem deixar a emoção tomar conta da mensagem.",
+        "Digo o que sinto e o que preciso com clareza e tranquilidade, mesmo sob pressão. As pessoas sabem onde estou."]},
+      {text:"Me regulo em situações de pressão",options:[
+        "Em situações tensas, reajo no impulso: apresso a resposta, elevo o tom ou encerro a conversa antes da hora.",
+        "Em momentos tensos, tento me conter (respiro fundo), mas o corpo ainda mostra a pressão e às vezes a resposta sai antes de eu processar.",
+        "Em situações de conflito, consigo ouvir até o fim antes de responder. Ainda sinto o impacto, mas não deixo que ele dirija.",
+        "Mantenho tom estável e presença mesmo quando a situação é tensa. Às vezes, minha calma ajuda o grupo a se regular."]},
+      {text:"Me recupero bem depois de um evento difícil",options:[
+        "Fico remoendo discussões e decisões difíceis por horas ou dias. Levo o que aconteceu no trabalho para casa.",
+        "Consigo me reorganizar depois de uma pausa maior ou de conversar com alguém, mas o processo é lento.",
+        "Depois de um erro ou conversa difícil, consigo processar o que aconteceu e ajustar com as pessoas envolvidas.",
+        "Uso o que foi difícil como informação, não como peso. Recupero rapidamente e extraio aprendizado."]},
+      {text:"Cuido de mim para não chegar ao esgotamento",options:[
+        "Ignoro os sinais de cansaço e continuo no mesmo ritmo. Parar parece fraqueza ou há sempre algo mais urgente.",
+        "Reconheço os sinais de esgotamento, mas mando o dia igual. O cuidado é adiado para 'depois que essa fase passar'.",
+        "Incluo práticas de cuidado na rotina (pausas, limites de horário). Começa a haver espaço entre o trabalho e o resto.",
+        "Organizo meu ritmo de trabalho de forma sustentável. Chego em casa presente. Não preciso esperar o colapso para me cuidar."]}
+    ],
+    insights:[
+      "Seus estados internos ainda direcionam suas ações de forma automática. Aprender a reconhecer e nomear o que acontece dentro de você é o primeiro passo, e muda tudo.",
+      "Você já percebe o impacto dos seus estados, mas ainda reage antes de processar. Com prática, esse espaço entre o estímulo e a resposta cresce.",
+      "Você já tem boa capacidade de regulação. O próximo nível é usar isso de forma mais intencional, especialmente sob maior pressão.",
+      "Sua autorregulação já é um recurso real. A próxima fronteira é usar isso para co-regular o ambiente e as pessoas ao redor."]
+  },
+  {
+    id:"leitura-outro", name:"Leitura do Outro", color:"#6f8a5f", bg:"#edf1e8",
+    desc:"Como você lê e compreende o funcionamento das pessoas que lidera",
+    questions:[
+      {text:"Reconheço que cada pessoa funciona de forma diferente",options:[
+        "Trato o time com as mesmas expectativas e abordagem. Quando alguém não responde como espero, interpreto como falta de comprometimento.",
+        "Percebo que o que funciona com uma pessoa não funciona com outra, mas não tenho um mapa para entender por quê.",
+        "Reconheço que cada pessoa tem uma história e uma forma de reagir às situações, e começo a considerar isso nas interações.",
+        "Leio as pessoas como sistemas diferentes, não melhores ou piores, só diferentes. Isso muda como me aproximo e desenvolvo cada um."]},
+      {text:"Sei o que energiza e motiva cada pessoa do meu time",options:[
+        "Uso os mesmos incentivos para todos. Não percebo que o que me motiva não motiva todo mundo.",
+        "Percebo que certos reconhecimentos funcionam com algumas pessoas e não com outras, mas não sei o que faz essa diferença.",
+        "Começo a mapear o que energiza cada pessoa e uso isso nas conversas de desenvolvimento e na distribuição de tarefas.",
+        "Sei o que gera engajamento genuíno em cada pessoa do time e crio condições para que isso aconteça."]},
+      {text:"Identifico os talentos naturais de quem lidero",options:[
+        "Avalio o time pelo que entrega versus o que o cargo exige. Não distingo o que é talento natural do que é esforço adaptativo.",
+        "Percebo que certas pessoas têm facilidades que outras não têm, mas não tenho critério para entender o que é natural em cada um.",
+        "Consigo identificar o que cada pessoa faz com naturalidade e onde encontra mais resistência. Uso isso no desenvolvimento.",
+        "Crio condições para o time operar a partir dos próprios talentos. Sei alocar e desenvolver a partir do que é natural em cada pessoa."]},
+      {text:"Leio as reações do outro sem interpretar como ataque pessoal",options:[
+        "Quando alguém reage com resistência ou irritação, interpreto como desrespeito ou ataque direto a mim.",
+        "Percebo que tomo certas reações do time de forma muito pessoal, mas ainda sinto o impacto como se fosse sobre mim.",
+        "Começo a separar o que é reação do outro (com base no estado e contexto da pessoa) do que diz respeito a mim.",
+        "Leio as reações emocionais do time como informação sobre o estado da pessoa. Isso me permite responder com precisão e menos defesa."]},
+      {text:"Adapto minha abordagem ao funcionamento de cada pessoa",options:[
+        "Uso a mesma forma de comunicar, delegar e dar feedback para todos. Quando não funciona, o problema é da pessoa.",
+        "Tento adaptar a abordagem, mas sem critério claro. Às vezes funciona, às vezes não, e não sei o que fiz diferente.",
+        "Ajusto conscientemente o estilo de comunicação, o nível de autonomia e o tipo de suporte conforme a pessoa e o momento.",
+        "Minha liderança é fluida. Cada pessoa recebe o que precisa para crescer, não o que é mais fácil para mim oferecer."]}
+    ],
+    insights:[
+      "Você ainda usa a mesma lente para ler todos. Enxergar que cada pessoa tem um sistema de funcionamento único vai transformar como você lidera e desenvolve pessoas.",
+      "Você percebe as diferenças, mas ainda não tem um mapa sistemático. Ferramentas de leitura de perfil podem dar estrutura a essa leitura.",
+      "Você já tem bom olhar para as pessoas. O próximo passo é aprofundar essa leitura e aplicá-la com mais consistência e precisão.",
+      "Você lê bem as pessoas. Essa competência é rara e poderosa, e pode ser desenvolvida ainda mais com método e prática."]
+  },
+  {
+    id:"relacoes", name:"Relações Construtivas", color:"#a86b52", bg:"#f6ece2",
+    desc:"Como você constrói vínculos e lida com conflitos",
+    questions:[
+      {text:"Escuto com presença genuína nas conversas",options:[
+        "Ouço para responder. Enquanto o outro fala, já estou preparando o que vou dizer, ou pensando na próxima tarefa.",
+        "Percebo que às vezes não escutei de verdade, geralmente depois, quando alguém me diz que não se sentiu ouvido.",
+        "Consigo ouvir até o fim antes de responder e demonstro interesse genuíno pelo que o outro está dizendo.",
+        "Escuto com atenção ao que está sendo dito e ao que não está. A pessoa sente que foi compreendida, não só ouvida."]},
+      {text:"Equilibro empatia e firmeza quando discordo",options:[
+        "Ou evito o conflito sendo condescendente, ou imponho minha posição sem considerar o outro. Não consigo fazer os dois ao mesmo tempo.",
+        "Tento ser mais empático, mas ainda me irrito quando o outro pensa diferente, ou cedo para evitar a tensão.",
+        "Consigo me posicionar com firmeza e respeito mesmo quando discordo. Não preciso escolher entre ser empático ou ser claro.",
+        "Equilibro empatia e objetividade mesmo em temas delicados. O outro se sente respeitado, e eu não me perco no processo."]},
+      {text:"Mantenho limites saudáveis nas relações",options:[
+        "Digo sim para evitar conflito mesmo quando não concordo ou estou sobrecarregado. Assumo responsabilidades que pertencem ao outro.",
+        "Sinto o desconforto de ceder com frequência, mas ainda tenho dificuldade de dizer não sem me justificar demais ou sentir culpa.",
+        "Consigo dizer não com clareza e tranquilidade, explicando o motivo sem me desculpar por ter um limite.",
+        "Meus limites são firmes e respeitosos. O time aprende, pelo exemplo, a distinguir o que é responsabilidade de cada um."]},
+      {text:"Assumo minha responsabilidade nas interações",options:[
+        "Quando algo dá errado numa interação, o problema está no outro: na atitude, na interpretação, na falta de maturidade.",
+        "Percebo quando exagerei ou poderia ter agido diferente, mas ainda tenho dificuldade de me responsabilizar diretamente.",
+        "Admito meus erros e busco ajustar minha parte nas situações, sem me autopunir, mas sem terceirizar o que é meu.",
+        "Assumo responsabilidade sobre meu impacto nas interações. Isso cria um ambiente onde o time também consegue fazer o mesmo."]},
+      {text:"Medio conflitos no time com equilíbrio",options:[
+        "Ignoro as tensões entre pessoas do time ou tomo partido sem ouvir todos os lados. O conflito ou some ou explode.",
+        "Percebo os conflitos no time, mas evito intervir com medo de piorar ou parecer que estou tomando partido.",
+        "Consigo reunir as partes, ouvir cada lado e ajudar a encontrar acordos possíveis, mesmo quando a situação está carregada.",
+        "Facilito conversas de reconciliação com presença e cuidado. O time aprende a resolver conflitos com mais maturidade."]}
+    ],
+    insights:[
+      "Seus relacionamentos ainda são reativos, e isso tem um custo que cresce silenciosamente. Entender o que está na raiz disso muda o tipo de vínculo que você consegue criar.",
+      "Você já tem boa intenção, mas às vezes se perde na execução. A diferença está em ter ferramentas práticas para os momentos de maior pressão.",
+      "Suas relações já são um recurso. O próximo passo é construir vínculos mais profundos, onde as conversas difíceis acontecem antes de virar crise.",
+      "Suas relações já são uma força na sua liderança. Isso tem impacto direto na segurança psicológica e na cultura do time."]
+  },
+  {
+    id:"comunicacao", name:"Comunicação Consciente", color:"#6b5a6f", bg:"#efeaf0",
+    desc:"Como você se expressa e conduz conversas",
+    questions:[
+      {text:"Me comunico com clareza e intenção",options:[
+        "Comunico no impulso: as mensagens saem longas, confusas ou carregadas de emoção. As pessoas saem sem saber o que foi pedido.",
+        "Percebo que algumas comunicações geraram ruído ou confusão e tento me explicar depois. Ainda não me preparo antes.",
+        "Me preparo antes de comunicar algo importante: defino a intenção, o tom e o que quero que a pessoa compreenda.",
+        "Comunico com clareza e precisão. O outro sente coerência entre o que digo e como estou."]},
+      {text:"Mantenho um tom adequado mesmo sob pressão",options:[
+        "Em momentos de tensão, meu tom fica ríspido, defensivo ou irônico, às vezes sem perceber. O clima muda, mas não sei por quê.",
+        "Percebo que meu tom influencia o clima, mas ainda reajo no impulso quando estou irritado ou pressionado.",
+        "Consigo adaptar o tom e a linguagem conforme o contexto emocional da conversa e da equipe.",
+        "Mantenho tom sereno e direto mesmo sob pressão. As pessoas se sentem seguras para falar porque o ambiente não pune a honestidade."]},
+      {text:"Uso feedback como ferramenta de desenvolvimento",options:[
+        "Evito dar feedback difícil, ou dou de forma corretiva, no calor do momento, sem pensar no impacto. O feedback não dado vira distância.",
+        "Percebo o custo do feedback adiado, mas ainda sinto desconforto ou não sei como estruturar para que seja útil, não apenas crítico.",
+        "Dou feedbacks com equilíbrio entre reconhecimento e direcionamento. Uso o feedback como instrumento de desenvolvimento.",
+        "O feedback é frequente, específico e fortalece o vínculo. O time sente segurança para receber, pedir e devolver feedback."]},
+      {text:"Tenho coragem para conduzir conversas difíceis",options:[
+        "Fujo de conversas delicadas: o desalinhamento, o comportamento que precisa mudar. O não dito vai acumulando até virar crise.",
+        "Sinto o custo do que não foi dito e sei que preciso ter a conversa, mas demoro a agir. Quando acontece, já está carregado demais.",
+        "Conduzo conversas difíceis com respeito e escuta ativa. Ainda sinto desconforto, mas não deixo que ele decida por mim.",
+        "Abordo temas sensíveis com coragem e cuidado. A conversa difícil acontece no momento certo. O time sabe que aqui se fala o que precisa ser dito."]},
+      {text:"Escuto e respondo de forma construtiva",options:[
+        "Interrompo para impor minha opinião ou mudo de assunto quando me sinto questionado. A conversa segue na minha direção.",
+        "Consigo ouvir até o fim, mas respondo de forma ansiosa ou me justifico em excesso quando me sinto desafiado.",
+        "Escuto com atenção e reformulo o que ouvi antes de responder. A conversa fica mais equilibrada.",
+        "Crio diálogos em que todos se sentem seguros para falar. Minha forma de responder encoraja o outro a continuar."]}
+    ],
+    insights:[
+      "Sua comunicação ainda é reflexo direto do seu estado interno, sem filtro ou intenção. Entender o que está produzindo isso é o ponto de partida.",
+      "Você já percebe quando não se comunicou bem. O próximo passo é antecipar, preparar antes de acontecer.",
+      "Você já se comunica com clareza na maioria das situações. O próximo nível é manter isso consistente nos momentos de maior pressão.",
+      "Você se comunica com presença e intenção. Isso tem impacto direto na cultura de segurança psicológica do seu time."]
+  }
+];
+
+const LEVEL_NAMES = ["Automático","Começando a Perceber","No Caminho da Consciência","Presença Plena"];
+// Cor pelo NÍVEL (quente = desenvolver, verde = força) para não ser contraintuitivo
+const LEVEL_COLORS = ["#a86b52","#c0876a","#6f8a5f","#3f6b57"];
+const LEVEL_BG = ["#f6ece2","#f7ede4","#edf1e8","#eef3ec"];
+
+let currentSection = 0;
+let answers = {};
+let leadData = {};
+
+function show(id){
+  document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  window.scrollTo(0,0);
+}
+function startQuiz(){ currentSection = 0; renderSection(); show('screen-section'); }
+
+function renderSection(){
+  const comp = COMPETENCIES[currentSection];
+  const totalSections = COMPETENCIES.length;
+  const pct = Math.round((currentSection / totalSections) * 100);
+  document.getElementById('progress-text').textContent = `${comp.name}`;
+  document.getElementById('progress-label').textContent = `${currentSection+1} de ${totalSections}`;
+  document.getElementById('progress-bar').style.width = pct + '%';
+  document.getElementById('btn-back').style.display = currentSection === 0 ? 'none' : '';
+  document.getElementById('error-msg').classList.remove('show');
+
+  let html = `
+    <div class="section-header" style="padding-top:72px">
+      <div class="comp-badge" style="background:${comp.color}">${comp.name}</div>
+      <h2 class="section-desc">${comp.desc}</h2>
+    </div>
+    <div class="questions-wrap">`;
+  comp.questions.forEach((q, qi) => {
+    const key = `${currentSection}_${qi}`;
+    html += `
+      <div class="question-card" style="--comp-color:${comp.color};--comp-bg:${comp.bg}">
+        <div class="question-num">Questão ${qi+1} de 5</div>
+        <div class="question-text">${q.text}</div>
+        <div class="options">`;
+    q.options.forEach((opt, oi) => {
+      const selected = answers[key] === (oi+1) ? 'selected' : '';
+      html += `
+          <label class="option ${selected}" onclick="selectAnswer('${key}', ${oi+1}, this)">
+            <input type="radio" name="${key}" value="${oi+1}" ${selected?'checked':''}>
+            <div class="option-dot">${selected?'<span></span>':''}</div>
+            <span>${opt}</span>
+          </label>`;
+    });
+    html += `</div></div>`;
+  });
+  html += `</div>`;
+  document.getElementById('section-content').innerHTML = html;
+  document.getElementById('btn-next').textContent = currentSection < COMPETENCIES.length-1 ? 'Continuar →' : 'Ver resultado →';
+}
+function selectAnswer(key, score, el){
+  answers[key] = score;
+  const card = el.closest('.question-card');
+  card.querySelectorAll('.option').forEach(o => o.classList.remove('selected'));
+  el.classList.add('selected');
+}
+function allAnswered(){
+  for(let qi=0; qi<COMPETENCIES[currentSection].questions.length; qi++){
+    if(!answers[`${currentSection}_${qi}`]) return false;
+  }
+  return true;
+}
+function nextSection(){
+  if(!allAnswered()){ document.getElementById('error-msg').classList.add('show'); return; }
+  document.getElementById('error-msg').classList.remove('show');
+  if(currentSection < COMPETENCIES.length-1){ currentSection++; renderSection(); window.scrollTo(0,0); }
+  else { show('screen-lead'); }
+}
+function prevSection(){
+  if(currentSection > 0){ currentSection--; renderSection(); window.scrollTo(0,0); }
+  else { show('screen-intro'); }
+}
+
+function showResults(){
+  const name = document.getElementById('lead-name').value.trim();
+  const email = document.getElementById('lead-email').value.trim();
+  const phone = document.getElementById('lead-phone').value.trim();
+  if(!name || !email){ document.getElementById('lead-error').classList.add('show'); return; }
+  document.getElementById('lead-error').classList.remove('show');
+  leadData = {name, email, phone};
+
+  const scores = COMPETENCIES.map((comp, ci) => {
+    let total = 0;
+    comp.questions.forEach((_, qi) => { total += answers[`${ci}_${qi}`] || 1; });
+    return total / comp.questions.length;
+  });
+  const overall = scores.reduce((a,b)=>a+b,0) / scores.length;
+
+  document.getElementById('results-subtitle').textContent =
+    `Olá, ${name}! Veja como estão suas 5 competências de liderança humana.`;
+
+  new Chart(document.getElementById('radar-chart'), {
+    type:'radar',
+    data:{
+      labels: COMPETENCIES.map(c=>c.name),
+      datasets:[{
+        label:'Seu nível', data: scores,
+        backgroundColor:'rgba(63,107,87,0.15)', borderColor:'#3f6b57',
+        pointBackgroundColor: COMPETENCIES.map(c=>c.color), pointRadius:5, borderWidth:2
+      }]
+    },
+    options:{
+      scales:{r:{min:0,max:4,ticks:{stepSize:1,display:false},grid:{color:'#e0d6c8'},angleLines:{color:'#e0d6c8'},
+        pointLabels:{font:{size:11,weight:'600'},color:'#3d352e'}}},
+      plugins:{legend:{display:false}}, responsive:true, maintainAspectRatio:true
+    }
+  });
+
+  let compHtml = '';
+  scores.forEach((score, ci) => {
+    const comp = COMPETENCIES[ci];
+    const pct = ((score-1)/3)*100;
+    const levelIdx = Math.min(3, Math.max(0, Math.round(score)-1));
+    const levelName = LEVEL_NAMES[levelIdx];
+    compHtml += `
+      <div class="comp-result">
+        <div class="comp-result-top">
+          <div class="comp-result-name">
+            <span class="comp-dot" style="background:${comp.color}"></span>
+            ${comp.name}
+            <span class="comp-level" style="background:${LEVEL_BG[levelIdx]};color:${LEVEL_COLORS[levelIdx]}">${levelName}</span>
+          </div>
+          <span class="comp-score-text">${score.toFixed(1)}/4</span>
+        </div>
+        <div class="score-bar-bg"><div class="score-bar" style="width:${pct}%;background:${LEVEL_COLORS[levelIdx]}"></div></div>
+        <p class="comp-insight">${comp.insights[levelIdx]}</p>
+      </div>`;
+  });
+  document.getElementById('comp-results').innerHTML = compHtml;
+
+  document.getElementById('cta-box').innerHTML = `
+    <h3>Seu próximo passo</h3>
+    <p>${name}, esse diagnóstico é só o começo. Numa conversa gratuita comigo, a gente aprofunda o que apareceu aqui e você já sai com clareza do que trabalhar primeiro.</p>
+    <a class="btn" href="consultoria.html" id="cta-consulta">Agendar minha consultoria gratuita</a>`;
+
+  submitLead({name, email, phone, overall:overall.toFixed(2), scores: scores.map((s,i)=>({comp:COMPETENCIES[i].name, score:s.toFixed(2)}))});
+  show('screen-results');
+}
+
+function submitLead(data){
+  // CONECTE SEU SERVIÇO DE FORMULÁRIO AQUI (ex.: Formspree) para receber o resultado no seu e-mail.
+  // fetch('https://formspree.io/f/SEU_ID', {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify(data)});
+  console.log('Lead capturado:', data);
+}
+</script>
+<script src="nav.js"></script>
+</body>
+</html>

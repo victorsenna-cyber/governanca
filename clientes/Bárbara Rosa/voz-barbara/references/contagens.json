@@ -1,0 +1,130 @@
+{
+  "fonte": "01-contexto/transcripts/Reunião Zoom de Continuum AI Systems & Bárbara 2026-09-05 14h40(GMT-3h00).txt",
+  "sha256": "d7326af1a774936c01d7181ab0ef7b05ef860089cee8a450adb267d65aa00d0e",
+  "periodo": [
+    "14:41:14",
+    "15:35:06"
+  ],
+  "blocos_por_falante": {
+    "Bárbara Rosa": 453,
+    "Continuum AI Systems": 409
+  },
+  "palavras_por_falante": {
+    "Bárbara Rosa": 5977,
+    "Continuum AI Systems": 2925
+  },
+  "nota": "Tokens Unicode alfabéticos ou numéricos. Blocos do export não são turnos. Frequência lexical inclui fala relatada e ruídos. VAK possui revisão contextual explícita; metaprogramas são amostra intencional declarada.",
+  "frequencias_literais": {
+    "sabe": 55,
+    "entendeu": 41,
+    "tu": 62,
+    "você": 8,
+    "né": 63,
+    "então": 40,
+    "então assim": 13,
+    "daí": 22,
+    "aí": 32,
+    "porque": 73,
+    "só que": 8,
+    "o que eu vou te dizer": 4,
+    "combinado": 3,
+    "combinadíssimo": 2,
+    "meu amigo": 5,
+    "meu amor": 1,
+    "amor": 3,
+    "vitão": 17,
+    "palavra": 4,
+    "honesta": 5,
+    "honesto": 2,
+    "honestidade": 1,
+    "desonestidade": 2,
+    "desonesto": 1,
+    "caráter": 2,
+    "confiança": 2,
+    "confio": 2,
+    "confiar": 1,
+    "carinho": 3,
+    "coração": 4,
+    "humano": 1,
+    "humanas": 1,
+    "humanizado": 1,
+    "resultados": 1,
+    "assertivo": 2,
+    "assertiva": 1,
+    "ideal": 4
+  },
+  "vak": {
+    "candidatos": 65,
+    "excluidos": 37,
+    "n": 28,
+    "contagem": {
+      "V": 5,
+      "A": 0,
+      "C": 14,
+      "D": 9
+    },
+    "percentuais": {
+      "V": 17.9,
+      "A": 0.0,
+      "C": 50.0,
+      "D": 32.1
+    }
+  },
+  "metaprogramas": {
+    "direcao": {
+      "n": 10,
+      "contagem": {
+        "afastamento": 6,
+        "busca": 4
+      },
+      "percentuais": {
+        "afastamento": 60.0,
+        "busca": 40.0
+      }
+    },
+    "referencia": {
+      "n": 10,
+      "contagem": {
+        "interna": 6,
+        "externa": 4
+      },
+      "percentuais": {
+        "interna": 60.0,
+        "externa": 40.0
+      }
+    },
+    "chunk": {
+      "n": 10,
+      "contagem": {
+        "global": 4,
+        "especifico": 6
+      },
+      "percentuais": {
+        "global": 40.0,
+        "especifico": 60.0
+      }
+    },
+    "opcoes_procedimentos": {
+      "n": 10,
+      "contagem": {
+        "procedimentos": 5,
+        "opcoes": 5
+      },
+      "percentuais": {
+        "procedimentos": 50.0,
+        "opcoes": 50.0
+      }
+    },
+    "match_mismatch": {
+      "n": 10,
+      "contagem": {
+        "mismatch": 6,
+        "match": 4
+      },
+      "percentuais": {
+        "mismatch": 60.0,
+        "match": 40.0
+      }
+    }
+  }
+}

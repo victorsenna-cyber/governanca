@@ -1,0 +1,780 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="description" content="Apresentação executiva do sistema de lançamento Seu Eixo, construído pela Continuum com Débora Delgado.">
+  <title>Seu Eixo | O sistema ganhou forma visível</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script>document.documentElement.classList.add("js");</script>
+  <style>
+    :root {
+      --primary: #315ccc;
+      --primary-main: #5d87ff;
+      --primary-light: #ecf2ff;
+      --secondary: #49beff;
+      --success: #087663;
+      --success-light: #e6fffa;
+      --warning: #c47a00;
+      --warning-light: #fef5e5;
+      --error: #c8563e;
+      --error-light: #fdede8;
+      --page: #f2f6fa;
+      --card: #ffffff;
+      --ink: #2a3547;
+      --soft: #5a6a85;
+      --muted: #5f718d;
+      --line: #e5eaef;
+      --hover: #f6f9fc;
+      --shadow: rgba(145, 158, 171, .24) 0 0 2px, rgba(145, 158, 171, .1) 0 12px 24px -4px;
+      --radius: 14px;
+      --wrap: 1180px;
+
+      --eixo-paper: #faf8f3;
+      --eixo-sand: #f4f0e7;
+      --eixo-ink: #223036;
+      --eixo-gold: #b89b72;
+      --eixo-moss: #3e5a4b;
+      --eixo-barro: #9a4a3a;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--page);
+      color: var(--ink);
+      font-family: "Plus Jakarta Sans", Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.65;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    a { color: inherit; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    button { font: inherit; }
+    :focus-visible { outline: 3px solid rgba(49, 92, 204, .32); outline-offset: 3px; }
+    ::selection { color: var(--ink); background: #dce7ff; }
+
+    .progress {
+      position: fixed;
+      inset: 0 auto auto 0;
+      z-index: 100;
+      width: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--primary), var(--secondary));
+      box-shadow: 0 0 12px rgba(93, 135, 255, .38);
+    }
+
+    .wrap { width: min(calc(100% - 40px), var(--wrap)); margin-inline: auto; }
+    .section { padding: clamp(76px, 10vw, 132px) 0; scroll-margin-top: 86px; }
+    .section-tight { padding: clamp(58px, 8vw, 92px) 0; }
+    .section-head { max-width: 760px; margin-bottom: clamp(38px, 6vw, 64px); }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      margin: 0 0 14px;
+      color: var(--primary);
+      font-size: .72rem;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .eyebrow::before { content: ""; width: 20px; height: 2px; background: currentColor; }
+    h1, h2, h3, p { margin-top: 0; }
+    h1, h2, h3 { color: var(--ink); line-height: 1.12; letter-spacing: -.035em; }
+    h1 { font-size: clamp(3.1rem, 8vw, 7.4rem); }
+    h2 { margin-bottom: 20px; font-size: clamp(2rem, 4.6vw, 4.25rem); }
+    h3 { margin-bottom: 10px; font-size: 1.1rem; }
+    .lead { max-width: 700px; color: var(--soft); font-size: clamp(1.05rem, 1.7vw, 1.28rem); }
+    .muted { color: var(--soft); }
+    .small { color: var(--muted); font-size: .78rem; }
+    .screen-reader { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0, 0, 0, 0); }
+
+    .topbar {
+      position: absolute;
+      inset: 0 0 auto;
+      z-index: 20;
+      color: #fff;
+    }
+    .topbar-inner {
+      min-height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      border-bottom: 1px solid rgba(255,255,255,.16);
+    }
+    .brand { display: flex; align-items: center; gap: 12px; font-weight: 700; }
+    .brand-mark {
+      width: 36px;
+      height: 36px;
+      display: grid;
+      place-items: center;
+      border: 1px solid rgba(255,255,255,.34);
+      border-radius: 50%;
+      font-size: .72rem;
+      letter-spacing: -.02em;
+    }
+    .nav { display: flex; gap: 22px; }
+    .nav a { color: rgba(255,255,255,.72); font-size: .76rem; font-weight: 600; text-decoration: none; }
+    .nav a:hover { color: #fff; }
+
+    .hero {
+      min-height: 100svh;
+      position: relative;
+      display: grid;
+      align-items: end;
+      color: #fff;
+      background:
+        radial-gradient(circle at 74% 30%, rgba(73,190,255,.22), transparent 24%),
+        radial-gradient(circle at 20% 80%, rgba(93,135,255,.28), transparent 26%),
+        linear-gradient(145deg, #172136 0%, #253656 55%, #1b2b48 100%);
+      overflow: hidden;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      opacity: .22;
+      background-image:
+        linear-gradient(rgba(255,255,255,.08) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.08) 1px, transparent 1px);
+      background-size: 72px 72px;
+      mask-image: linear-gradient(to bottom, #000, transparent 86%);
+    }
+    .hero-orbit {
+      position: absolute;
+      right: max(-90px, 2vw);
+      top: 12%;
+      width: min(55vw, 760px);
+      opacity: .9;
+      filter: drop-shadow(0 36px 70px rgba(0,0,0,.18));
+    }
+    .hero-orbit .orbit-soft { transform-origin: center; animation: orbit 20s linear infinite; }
+    .hero-content { position: relative; z-index: 2; padding: 152px 0 clamp(68px, 10vh, 110px); }
+    .hero-kicker {
+      margin-bottom: 18px;
+      color: #9fc0ff;
+      font-size: .76rem;
+      font-weight: 700;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+    }
+    .hero h1 { max-width: 920px; margin-bottom: 28px; color: #fff; }
+    .hero h1 span { color: #9fc0ff; }
+    .hero-copy { max-width: 690px; margin-bottom: 34px; color: rgba(255,255,255,.72); font-size: clamp(1.05rem, 2vw, 1.34rem); }
+    .hero-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 16px; }
+    .btn {
+      min-height: 46px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      padding: 12px 18px;
+      border: 0;
+      border-radius: 9px;
+      background: var(--primary);
+      color: #fff;
+      font-size: .84rem;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+      transition: transform .18s ease, background .18s ease, box-shadow .18s ease;
+    }
+    .btn:hover { transform: translateY(-2px); background: #234bac; box-shadow: 0 10px 24px rgba(26, 56, 130, .25); }
+    .btn-light { color: var(--ink); background: #fff; }
+    .btn-light:hover { color: var(--ink); background: #f7f9fd; }
+    .btn-ghost { border: 1px solid rgba(255,255,255,.25); background: transparent; }
+    .btn-ghost:hover { background: rgba(255,255,255,.08); }
+    .hero-status {
+      position: absolute;
+      right: max(20px, calc((100vw - var(--wrap)) / 2));
+      bottom: 34px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: rgba(255,255,255,.56);
+      font-size: .72rem;
+    }
+    .pulse { width: 8px; height: 8px; border-radius: 50%; background: #13deb9; box-shadow: 0 0 0 5px rgba(19,222,185,.12); }
+
+    .status-strip { position: relative; z-index: 4; margin-top: -1px; background: #fff; border-bottom: 1px solid var(--line); }
+    .status-grid { display: grid; grid-template-columns: repeat(3, 1fr); }
+    .status-item { padding: 24px 26px; border-right: 1px solid var(--line); }
+    .status-item:last-child { border-right: 0; }
+    .status-label { display: block; margin-bottom: 6px; color: var(--muted); font-size: .68rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+    .status-value { display: flex; align-items: center; gap: 9px; font-size: .9rem; font-weight: 600; }
+    .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--success); }
+    .dot.review { background: var(--warning); }
+
+    .timeline { position: relative; display: grid; grid-template-columns: repeat(5, 1fr); gap: 0; }
+    .timeline::before { content: ""; position: absolute; top: 16px; left: 8%; right: 8%; height: 2px; background: var(--line); }
+    .milestone { position: relative; padding: 0 24px 0 0; }
+    .milestone-dot { position: relative; z-index: 2; width: 34px; height: 34px; display: grid; place-items: center; margin-bottom: 22px; border: 6px solid var(--page); border-radius: 50%; background: var(--primary-main); color: #fff; font-size: .6rem; font-weight: 700; }
+    .milestone h3 { font-size: .98rem; }
+    .milestone p { margin-bottom: 0; color: var(--soft); font-size: .78rem; line-height: 1.55; }
+
+    .system-section { position: relative; overflow: hidden; background: #233049; color: #fff; }
+    .system-section::before { content: ""; position: absolute; width: 520px; height: 520px; right: -140px; top: -150px; border: 1px solid rgba(255,255,255,.08); border-radius: 50%; box-shadow: 0 0 0 80px rgba(255,255,255,.025), 0 0 0 160px rgba(255,255,255,.018); }
+    .system-section h2, .system-section h3 { color: #fff; }
+    .system-section .eyebrow { color: #9fc0ff; }
+    .system-section .lead { color: rgba(255,255,255,.64); }
+    .system-flow { position: relative; display: grid; grid-template-columns: repeat(6, 1fr); align-items: center; gap: 10px; }
+    .flow-node { min-height: 154px; display: flex; flex-direction: column; justify-content: space-between; padding: 20px; border: 1px solid rgba(255,255,255,.12); border-radius: 12px; background: rgba(255,255,255,.045); }
+    .flow-node .n { color: #9fc0ff; font-size: .65rem; font-weight: 700; }
+    .flow-node h3 { margin: 16px 0 8px; font-size: .93rem; letter-spacing: -.02em; }
+    .flow-node p { margin: 0; color: rgba(255,255,255,.5); font-size: .7rem; line-height: 1.45; }
+    .flow-node.active { border-color: rgba(159,192,255,.48); background: rgba(93,135,255,.12); }
+    .loop-line { margin-top: 24px; padding-top: 22px; border-top: 1px solid rgba(255,255,255,.1); color: rgba(255,255,255,.62); font-size: .78rem; text-align: center; }
+
+    .sales-layout { display: grid; grid-template-columns: minmax(0, 1.18fr) minmax(340px, .82fr); gap: clamp(28px, 5vw, 66px); align-items: start; }
+    .browser-frame { overflow: hidden; border: 1px solid #d8dfe8; border-radius: 18px; background: #fff; box-shadow: var(--shadow); }
+    .browser-bar { height: 45px; display: flex; align-items: center; gap: 7px; padding: 0 15px; border-bottom: 1px solid var(--line); background: #f8fafc; }
+    .browser-bar i { width: 8px; height: 8px; display: block; border-radius: 50%; background: #d5dde8; }
+    .browser-url { width: 52%; height: 22px; margin-left: 8px; border-radius: 7px; background: #edf1f6; }
+    .sales-preview { min-height: 580px; position: relative; padding: 52px 48px; background-color: var(--eixo-paper); color: var(--eixo-ink); background-image: linear-gradient(rgba(34,48,54,.05) 1px, transparent 1px), linear-gradient(90deg, rgba(34,48,54,.05) 1px, transparent 1px); background-size: 46px 46px; }
+    .sales-brand { display: flex; align-items: center; gap: 10px; margin-bottom: 86px; font-size: .7rem; font-weight: 600; }
+    .fingerprint { width: 28px; height: 28px; border: 1px solid var(--eixo-gold); border-radius: 44% 56% 52% 48%; position: relative; }
+    .fingerprint::before, .fingerprint::after { content: ""; position: absolute; inset: 5px; border: 1px solid var(--eixo-gold); border-radius: 50%; }
+    .fingerprint::after { inset: 10px; }
+    .sales-eyebrow { margin-bottom: 13px; color: #765c3b; font-size: .62rem; font-weight: 700; letter-spacing: .11em; text-transform: uppercase; }
+    .sales-title { max-width: 530px; margin-bottom: 20px; font-family: Georgia, "Times New Roman", serif; font-size: clamp(2.5rem, 5vw, 4.6rem); font-weight: 400; line-height: .98; letter-spacing: -.055em; }
+    .sales-title em { color: var(--eixo-moss); }
+    .sales-copy { max-width: 480px; margin-bottom: 24px; color: rgba(34,48,54,.68); font-size: .86rem; }
+    .sales-button { display: inline-flex; padding: 11px 16px; border-radius: 8px; background: var(--eixo-ink); color: #fff; font-size: .7rem; font-weight: 600; }
+    .sales-orbit { position: absolute; right: 30px; top: 116px; width: 190px; height: 190px; border: 1px solid rgba(184,155,114,.24); transform: rotate(45deg); }
+    .sales-orbit::before, .sales-orbit::after { content: ""; position: absolute; inset: 24px; border: 1px solid rgba(62,90,75,.18); border-radius: 50%; }
+    .sales-orbit::after { inset: 56px; }
+    .sales-fold { position: absolute; left: 0; right: 0; bottom: 0; display: grid; grid-template-columns: 1.2fr .8fr; min-height: 118px; background: var(--eixo-sand); }
+    .sales-fold > div { padding: 24px 30px; border-right: 1px solid rgba(34,48,54,.08); }
+    .sales-fold b { display: block; margin-bottom: 4px; font-family: Georgia, serif; font-weight: 400; }
+    .sales-fold span { color: rgba(34,48,54,.55); font-size: .64rem; }
+
+    .act-tabs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+    .act-tab { min-height: 40px; padding: 9px 12px; border: 1px solid var(--line); border-radius: 8px; background: #fff; color: var(--soft); font-size: .72rem; font-weight: 600; cursor: pointer; }
+    .act-tab[aria-selected="true"] { border-color: var(--primary-main); background: var(--primary-light); color: var(--primary); }
+    .act-panel { min-height: 312px; padding: 28px; border: 1px solid var(--line); border-radius: var(--radius); background: #fff; box-shadow: var(--shadow); }
+    .act-panel .count { display: inline-flex; align-items: center; gap: 7px; margin-bottom: 18px; color: var(--primary); font-size: .68rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; }
+    .act-panel h3 { font-size: 1.45rem; }
+    .act-row { padding: 15px 0; border-top: 1px solid var(--line); }
+    .act-row b { display: block; margin-bottom: 4px; color: var(--ink); font-size: .73rem; }
+    .act-row span { color: var(--soft); font-size: .76rem; }
+    .quote { margin-top: 22px; padding-left: 18px; border-left: 3px solid var(--primary-main); color: var(--ink); font-size: .85rem; font-weight: 500; }
+
+    .dashboard-section { background: #eaf0f7; }
+    .dash-layout { display: grid; grid-template-columns: .74fr 1.26fr; gap: clamp(28px, 5vw, 62px); align-items: center; }
+    .decision-list { margin: 30px 0 0; padding: 0; list-style: none; }
+    .decision-list li { display: grid; grid-template-columns: 40px 1fr; gap: 14px; padding: 16px 0; border-top: 1px solid #d9e1eb; }
+    .decision-list .icon { width: 32px; height: 32px; display: grid; place-items: center; border-radius: 9px; background: var(--primary-light); color: var(--primary); font-size: .7rem; font-weight: 700; }
+    .decision-list b { display: block; margin-bottom: 2px; font-size: .84rem; }
+    .decision-list span { color: var(--soft); font-size: .73rem; }
+    .dash-preview { padding: 22px; border: 1px solid #dfe6ef; border-radius: 18px; background: #f2f6fa; box-shadow: var(--shadow); }
+    .dash-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+    .dash-brand { display: flex; align-items: center; gap: 10px; }
+    .dash-logo { width: 34px; height: 34px; display: grid; place-items: center; border-radius: 10px; background: var(--primary); color: #fff; font-size: .62rem; font-weight: 700; }
+    .dash-brand b { display: block; font-size: .76rem; }
+    .dash-brand span { color: var(--muted); font-size: .6rem; }
+    .sync { display: flex; align-items: center; gap: 7px; color: var(--success); font-size: .6rem; font-weight: 700; }
+    .kpi-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-bottom: 12px; }
+    .kpi { min-height: 92px; padding: 13px; border-radius: 11px; background: #fff; box-shadow: 0 6px 16px rgba(145,158,171,.08); }
+    .kpi span { display: block; margin-bottom: 15px; color: var(--muted); font-size: .54rem; font-weight: 700; text-transform: uppercase; }
+    .kpi strong { display: block; overflow-wrap: anywhere; font-size: clamp(.68rem, 1.1vw, .9rem); }
+    .kpi small { display: block; margin-top: 3px; color: var(--soft); font-size: .5rem; }
+    .dash-lower { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .mini-card { min-height: 190px; padding: 15px; border-radius: 11px; background: #fff; box-shadow: 0 6px 16px rgba(145,158,171,.08); }
+    .mini-card h3 { margin-bottom: 16px; font-size: .72rem; }
+    .funnel-bar { display: grid; grid-template-columns: 54px 1fr; gap: 8px; align-items: center; margin: 8px 0; }
+    .funnel-bar span { color: var(--muted); font-size: .5rem; }
+    .funnel-bar i { height: 7px; display: block; border-radius: 5px; background: linear-gradient(90deg, var(--primary-main), var(--secondary)); }
+    .chart-svg { width: 100%; height: 130px; overflow: visible; }
+
+    .governance-layout { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: clamp(32px, 6vw, 82px); align-items: start; }
+    .source-stack { position: relative; }
+    .source { position: relative; display: grid; grid-template-columns: 48px 1fr auto; gap: 16px; align-items: center; padding: 20px; margin-bottom: 12px; border: 1px solid var(--line); border-radius: 12px; background: #fff; box-shadow: 0 5px 14px rgba(145,158,171,.05); }
+    .source::after { content: ""; position: absolute; left: 43px; bottom: -13px; width: 2px; height: 13px; background: var(--line); }
+    .source:last-child::after { display: none; }
+    .source-index { width: 36px; height: 36px; display: grid; place-items: center; border-radius: 10px; background: var(--primary-light); color: var(--primary); font-size: .68rem; font-weight: 700; }
+    .source b { display: block; font-size: .82rem; }
+    .source span { color: var(--soft); font-size: .67rem; }
+    .source-status { color: var(--success); font-size: .62rem; font-weight: 700; }
+    .governance-note { padding: 26px; border-radius: var(--radius); background: var(--ink); color: #fff; }
+    .governance-note b { display: block; margin-bottom: 8px; font-size: 1.12rem; }
+    .governance-note p { margin: 0; color: rgba(255,255,255,.62); font-size: .8rem; }
+
+    .executive-section { background: #fff; }
+    .executive-grid { display: grid; grid-template-columns: 230px 1fr; gap: clamp(28px, 5vw, 70px); }
+    .executive-tabs { display: flex; flex-direction: column; gap: 8px; }
+    .executive-tab { min-height: 54px; display: flex; align-items: center; justify-content: space-between; padding: 12px 14px; border: 1px solid var(--line); border-radius: 10px; background: #fff; color: var(--soft); font-size: .78rem; font-weight: 700; cursor: pointer; }
+    .executive-tab::after { content: "\2192"; color: var(--muted); }
+    .executive-tab[aria-selected="true"] { border-color: var(--primary-main); background: var(--primary-light); color: var(--primary); }
+    .executive-panel { min-height: 358px; display: grid; grid-template-columns: 1fr 1fr; gap: 34px; padding: 38px; border: 1px solid var(--line); border-radius: 16px; background: #fff; box-shadow: var(--shadow); }
+    .executive-panel .role { margin-bottom: 8px; color: var(--primary); font-size: .68rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+    .executive-panel h3 { font-size: clamp(1.65rem, 3vw, 2.5rem); }
+    .executive-panel p { color: var(--soft); font-size: .86rem; }
+    .executive-checks { margin: 0; padding: 0; list-style: none; }
+    .executive-checks li { position: relative; padding: 13px 0 13px 26px; border-top: 1px solid var(--line); color: var(--soft); font-size: .77rem; }
+    .executive-checks li::before { content: ""; position: absolute; left: 0; top: 19px; width: 8px; height: 8px; border-radius: 50%; background: var(--success); }
+
+    .approval { position: relative; overflow: hidden; color: #fff; background: linear-gradient(140deg, #21304d, #172136); }
+    .approval::after { content: "SE"; position: absolute; right: -25px; bottom: -150px; color: rgba(255,255,255,.035); font-size: 25rem; font-weight: 700; line-height: 1; letter-spacing: -.14em; }
+    .approval h2 { max-width: 860px; color: #fff; }
+    .approval .eyebrow { color: #9fc0ff; }
+    .approval .lead { color: rgba(255,255,255,.64); }
+    .approval-grid { position: relative; z-index: 2; display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin: 48px 0 34px; }
+    .approval-item { min-height: 160px; padding: 24px; border: 1px solid rgba(255,255,255,.12); border-radius: 12px; background: rgba(255,255,255,.045); }
+    .approval-item .step { color: #9fc0ff; font-size: .65rem; font-weight: 700; }
+    .approval-item h3 { margin: 28px 0 8px; color: #fff; }
+    .approval-item p { margin-bottom: 0; color: rgba(255,255,255,.5); font-size: .74rem; }
+    .approval-actions { position: relative; z-index: 2; display: flex; flex-wrap: wrap; gap: 12px; }
+    .approval-note { position: relative; z-index: 2; max-width: 720px; margin: 28px 0 0; color: rgba(255,255,255,.46); font-size: .72rem; }
+
+    .footer { padding: 30px 0; border-top: 1px solid var(--line); background: #fff; }
+    .footer-inner { display: flex; justify-content: space-between; align-items: center; gap: 22px; color: var(--muted); font-size: .68rem; }
+    .footer b { color: var(--ink); }
+
+    [data-reveal] { opacity: 1; transform: none; }
+    .js [data-reveal] { opacity: 0; transform: translateY(18px); transition: opacity .65s ease, transform .65s cubic-bezier(.22,1,.36,1); }
+    .js [data-reveal].visible { opacity: 1; transform: none; }
+    .hero [data-enter] { opacity: 0; transform: translateY(22px); animation: enter .72s cubic-bezier(.22,1,.36,1) forwards; }
+    .hero [data-enter="2"] { animation-delay: .12s; }
+    .hero [data-enter="3"] { animation-delay: .24s; }
+    .hero [data-enter="4"] { animation-delay: .36s; }
+
+    @keyframes enter { to { opacity: 1; transform: none; } }
+    @keyframes orbit { to { transform: rotate(360deg); } }
+
+    @media (max-width: 1000px) {
+      .nav { display: none; }
+      .hero-orbit { width: 620px; right: -260px; opacity: .48; }
+      .timeline { grid-template-columns: 1fr; gap: 26px; }
+      .timeline::before { top: 10px; bottom: 10px; left: 16px; right: auto; width: 2px; height: auto; }
+      .milestone { display: grid; grid-template-columns: 46px 1fr; gap: 8px; padding: 0; }
+      .milestone-dot { grid-row: 1 / 3; margin: 0; border-color: var(--page); }
+      .system-flow { grid-template-columns: repeat(3, 1fr); }
+      .sales-layout, .dash-layout, .governance-layout { grid-template-columns: 1fr; }
+      .sales-layout { gap: 38px; }
+      .dash-layout { gap: 42px; }
+      .dashboard-copy { max-width: 740px; }
+    }
+
+    @media (max-width: 760px) {
+      .wrap { width: min(calc(100% - 28px), var(--wrap)); }
+      .section { padding: 72px 0; }
+      h1 { font-size: clamp(2.8rem, 15vw, 4.7rem); }
+      .hero { min-height: 760px; }
+      .topbar-inner { min-height: 66px; }
+      .brand > span { font-size: .8rem; }
+      .hero-content { padding: 124px 0 88px; }
+      .hero-status { display: none; }
+      .status-grid { grid-template-columns: 1fr; }
+      .status-item { padding: 17px 4px; border-right: 0; border-bottom: 1px solid var(--line); }
+      .status-item:last-child { border-bottom: 0; }
+      .system-flow { grid-template-columns: 1fr 1fr; }
+      .flow-node { min-height: 140px; }
+      .sales-preview { min-height: 540px; padding: 40px 25px; }
+      .sales-brand { margin-bottom: 64px; }
+      .sales-orbit { width: 135px; height: 135px; right: -30px; top: 98px; opacity: .6; }
+      .sales-fold { grid-template-columns: 1fr; }
+      .sales-fold > div:last-child { display: none; }
+      .kpi-grid { grid-template-columns: 1fr 1fr; }
+      .dash-lower { grid-template-columns: 1fr; }
+      .executive-grid { grid-template-columns: 1fr; }
+      .executive-tabs { display: grid; grid-template-columns: repeat(5, minmax(92px, 1fr)); overflow-x: auto; padding-bottom: 8px; }
+      .executive-tab { min-width: 92px; justify-content: center; }
+      .executive-tab::after { display: none; }
+      .executive-panel { grid-template-columns: 1fr; padding: 26px; }
+      .approval-grid { grid-template-columns: 1fr; }
+      .footer-inner { align-items: flex-start; flex-direction: column; }
+    }
+
+    @media (max-width: 480px) {
+      .system-flow { grid-template-columns: 1fr; }
+      .hero-actions, .approval-actions { align-items: stretch; flex-direction: column; }
+      .btn { width: 100%; }
+      .sales-preview { min-height: 500px; }
+      .sales-title { font-size: 2.8rem; }
+      .act-panel { padding: 22px; }
+      .dash-preview { padding: 12px; }
+      .kpi strong { font-size: 1rem; }
+      .source { grid-template-columns: 42px 1fr; }
+      .source-status { grid-column: 2; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+      [data-reveal] { opacity: 1; transform: none; }
+    }
+
+    @media print {
+      .progress, .topbar, .hero-orbit, .hero-actions, .approval-actions { display: none !important; }
+      body { color: #111; background: #fff; font-size: 11pt; }
+      .hero, .system-section, .approval { min-height: auto; color: #111; background: #fff; }
+      .hero::before, .system-section::before, .approval::after { display: none; }
+      .hero h1, .system-section h2, .system-section h3, .approval h2, .approval-item h3 { color: #111; }
+      .hero-copy, .system-section .lead, .flow-node p, .loop-line, .approval .lead, .approval-item p, .approval-note { color: #444; }
+      .hero-content, .section { padding: 34px 0; }
+      .status-strip, .dashboard-section, .executive-section, .footer { background: #fff; }
+      .flow-node, .approval-item { border-color: #bbb; background: #fff; break-inside: avoid; }
+      .browser-frame, .act-panel, .dash-preview, .executive-panel { box-shadow: none; }
+      [data-reveal] { opacity: 1; transform: none; }
+      section { break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <div class="brand"><span class="brand-mark">C</span><span>Continuum × Débora Delgado</span></div>
+      <nav class="nav" aria-label="Navegação da apresentação">
+        <a href="#trajetoria">Trajetória</a>
+        <a href="#sistema">Sistema</a>
+        <a href="#pagina">Página</a>
+        <a href="#painel">Painel</a>
+        <a href="#governanca">Governança</a>
+        <a href="#aprovacao">Próximos passos</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <svg class="hero-orbit" viewBox="0 0 800 800" aria-hidden="true">
+        <g fill="none" stroke="rgba(255,255,255,.16)">
+          <circle cx="400" cy="400" r="280"/>
+          <circle cx="400" cy="400" r="194"/>
+          <path d="M400 120 642 540 158 540Z"/>
+          <path d="M400 680 158 260 642 260Z"/>
+        </g>
+        <g class="orbit-soft" fill="none" stroke="#8fb5ff" stroke-width="2">
+          <ellipse cx="400" cy="400" rx="350" ry="142" transform="rotate(28 400 400)"/>
+          <ellipse cx="400" cy="400" rx="350" ry="142" transform="rotate(-28 400 400)"/>
+        </g>
+        <g fill="#9fc0ff">
+          <circle cx="400" cy="120" r="7"/><circle cx="642" cy="540" r="7"/><circle cx="158" cy="540" r="7"/>
+        </g>
+        <circle cx="400" cy="400" r="68" fill="rgba(93,135,255,.12)" stroke="rgba(159,192,255,.42)"/>
+        <text x="400" y="395" fill="#fff" font-size="18" font-weight="700" text-anchor="middle">SEU EIXO</text>
+        <text x="400" y="423" fill="rgba(255,255,255,.5)" font-size="11" text-anchor="middle">estratégia · execução · dados</text>
+      </svg>
+      <div class="wrap hero-content">
+        <p class="hero-kicker" data-enter="1">Um marco do projeto Seu Eixo</p>
+        <h1 id="hero-title" data-enter="2">O sistema ganhou <span>forma visível.</span></h1>
+        <p class="hero-copy" data-enter="3">Depois de mais de dois meses construindo fundamentos, refinando decisões e conectando cada frente, hoje conseguimos enxergar o todo. A página comunica. O painel mede. A governança mantém as duas coisas apontadas para a mesma direção.</p>
+        <div class="hero-actions" data-enter="4">
+          <a class="btn btn-light" href="#trajetoria">Ver o que construímos <span aria-hidden="true">↓</span></a>
+          <a class="btn btn-ghost" href="#aprovacao">Ver os próximos passos</a>
+        </div>
+      </div>
+      <div class="hero-status"><span class="pulse"></span>Apresentação executiva · julho de 2026</div>
+    </section>
+
+    <div class="status-strip" aria-label="Estado das entregas">
+      <div class="wrap status-grid">
+        <div class="status-item"><span class="status-label">Página de vendas</span><span class="status-value"><i class="dot review"></i>Versão V2 para aprovação</span></div>
+        <div class="status-item"><span class="status-label">Dashboard executivo</span><span class="status-value"><i class="dot"></i>Tema claro pronto para validação</span></div>
+        <div class="status-item"><span class="status-label">Governança</span><span class="status-value"><i class="dot"></i>Decisões e fontes organizadas</span></div>
+      </div>
+    </div>
+
+    <section class="section" id="trajetoria" aria-labelledby="trajetoria-title">
+      <div class="wrap">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">Antes de aparecer na tela</p>
+          <h2 id="trajetoria-title">O que ficou de pé por baixo das entregas.</h2>
+          <p class="lead">A parte visível chegou agora. A coerência que sustenta essa parte veio de uma sequência de escolhas, revisões e aprendizados feitos em conjunto. Cada entrega carrega o rastro da decisão que a sustenta.</p>
+        </div>
+        <div class="timeline" aria-label="Linha do tempo do projeto">
+          <article class="milestone" data-reveal><span class="milestone-dot">01</span><div><h3>Diagnóstico</h3><p>Acervo, contexto, contrato, produto e realidade operacional colocados na mesma mesa.</p></div></article>
+          <article class="milestone" data-reveal><span class="milestone-dot">02</span><div><h3>Posicionamento</h3><p>O público foi estreitado para o líder que já entrega. A comunicação passou a completar, não consertar.</p></div></article>
+          <article class="milestone" data-reveal><span class="milestone-dot">03</span><div><h3>Arquitetura do workshop</h3><p>Nome, formato, turmas, lotes, escada de produtos e limites foram registrados numa fonte canônica.</p></div></article>
+          <article class="milestone" data-reveal><span class="milestone-dot">04</span><div><h3>Experiência</h3><p>Copy, design, checkout e feedback da Débora foram transformados numa jornada de decisão inteira.</p></div></article>
+          <article class="milestone" data-reveal><span class="milestone-dot">05</span><div><h3>Inteligência</h3><p>Tracking, funil, receita, origem e ciclo de vida foram conectados para orientar a próxima decisão.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section system-section" id="sistema" aria-labelledby="sistema-title">
+      <div class="wrap">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">Uma ideia, conectada de ponta a ponta</p>
+          <h2 id="sistema-title">Não construímos duas telas. Construímos um circuito.</h2>
+          <p class="lead">Cada parte recebe algo da anterior, cumpre uma função clara e devolve informação para o sistema aprender.</p>
+        </div>
+        <div class="system-flow" aria-label="Fluxo do sistema de lançamento">
+          <article class="flow-node" data-reveal><span class="n">01</span><div><h3>Posicionamento</h3><p>Quem é o líder, o que ele reconhece e o que o workshop pode prometer.</p></div></article>
+          <article class="flow-node" data-reveal><span class="n">02</span><div><h3>Mensagem</h3><p>Cenas, tensão, linguagem e convite coerentes do criativo até a página.</p></div></article>
+          <article class="flow-node active" data-reveal><span class="n">03</span><div><h3>Página</h3><p>Conduz reconhecimento, entendimento, valor e decisão.</p></div></article>
+          <article class="flow-node" data-reveal><span class="n">04</span><div><h3>Checkout</h3><p>Captura, turma, lote, pagamento e entrada no grupo certo.</p></div></article>
+          <article class="flow-node active" data-reveal><span class="n">05</span><div><h3>Dados</h3><p>Leads, vendas, receita, origem, recuperação e ciclo de vida.</p></div></article>
+          <article class="flow-node" data-reveal><span class="n">06</span><div><h3>Decisão</h3><p>O painel mostra o que manter, corrigir ou aprofundar na próxima iteração.</p></div></article>
+        </div>
+        <p class="loop-line" data-reveal>O último ponto volta ao primeiro. Aprender com o que aconteceu melhora a mensagem, a página, o workshop e a próxima turma.</p>
+      </div>
+    </section>
+
+    <section class="section" id="pagina" aria-labelledby="pagina-title">
+      <div class="wrap">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">Entrega 01 · página de vendas</p>
+          <h2 id="pagina-title">A página responde na ordem em que o leitor pergunta.</h2>
+          <p class="lead">Ela não apresenta o workshop de uma vez. Conduz uma pessoa que já lidera bem do reconhecimento até uma decisão segura, sem exagerar o que o produto entrega.</p>
+        </div>
+        <div class="sales-layout">
+          <div class="browser-frame" data-reveal aria-label="Representação da página Seu Eixo">
+            <div class="browser-bar"><i></i><i></i><i></i><span class="browser-url"></span></div>
+            <div class="sales-preview">
+              <div class="sales-brand"><span class="fingerprint" aria-hidden="true"></span>Débora Delgado</div>
+              <div class="sales-orbit" aria-hidden="true"></div>
+              <p class="sales-eyebrow">Para quem lidera · Workshop ao vivo · 3 dias online</p>
+              <div class="sales-title">Lidere com <em>tudo</em> o que você é.</div>
+              <p class="sales-copy">Você aprendeu tudo sobre liderar. Menos sobre você.</p>
+              <span class="sales-button">Quero minha vaga</span>
+              <div class="sales-fold"><div><b>Reconhecimento antes de explicação.</b><span>A próxima dobra mostra a cena que esse líder vive, antes de nomear a causa.</span></div><div><b>Um único clímax.</b><span>A decisão de inscrição concentra o maior contraste visual da página.</span></div></div>
+            </div>
+          </div>
+          <div data-reveal>
+            <div class="act-tabs" role="tablist" aria-label="Atos da página">
+              <button class="act-tab" role="tab" aria-selected="true" data-act="0">Pertencimento</button>
+              <button class="act-tab" role="tab" aria-selected="false" data-act="1">Reconhecimento</button>
+              <button class="act-tab" role="tab" aria-selected="false" data-act="2">Caminho</button>
+              <button class="act-tab" role="tab" aria-selected="false" data-act="3">Decisão</button>
+              <button class="act-tab" role="tab" aria-selected="false" data-act="4">Confirmação</button>
+            </div>
+            <div class="act-panel" id="actPanel" role="tabpanel" aria-live="polite"></div>
+            <p class="quote">Leia a página inteira uma vez, sem anotar. Na segunda leitura, marque o bloco e diga: não entendi, faltou algo, ou eu não falaria assim.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dashboard-section" id="painel" aria-labelledby="painel-title">
+      <div class="wrap dash-layout">
+        <div class="dashboard-copy" data-reveal>
+          <p class="eyebrow">Entrega 02 · dashboard executivo</p>
+          <h2 id="painel-title">O que a página inicia, o painel torna legível.</h2>
+          <p class="lead">O painel não existe para acumular gráficos. Ele existe para transformar movimento comercial em decisão.</p>
+          <ul class="decision-list">
+            <li><span class="icon">F</span><div><b>Onde o funil perde força?</b><span>Leads, Pix gerado e vendas aprovadas mostram a passagem entre etapas.</span></div></li>
+            <li><span class="icon">$</span><div><b>O crescimento preserva caixa?</b><span>Receita, ticket, reembolsos, CAC e ROAS colocam volume e qualidade lado a lado.</span></div></li>
+            <li><span class="icon">U</span><div><b>De onde vem a conversão?</b><span>UTMs ligam origem, leads, vendas e receita sem depender de impressão.</span></div></li>
+            <li><span class="icon">R</span><div><b>O que ainda pode ser recuperado?</b><span>Leads cadastrados sem compra viram uma fila operacional, não um número perdido.</span></div></li>
+          </ul>
+        </div>
+        <div class="dash-preview" data-reveal aria-label="Representação do painel executivo">
+          <div class="dash-head"><div class="dash-brand"><span class="dash-logo">SE</span><div><b>Painel do Funil · Seu Eixo</b><span>Desempenho comercial</span></div></div><span class="sync"><i class="dot"></i>Atualização automática</span></div>
+          <div class="kpi-grid">
+            <div class="kpi"><span>Leads</span><strong>Aguardando</strong><small>Entrada no funil</small></div>
+            <div class="kpi"><span>Vendas</span><strong>Aguardando</strong><small>Aprovadas</small></div>
+            <div class="kpi"><span>Receita</span><strong>Aguardando</strong><small>Valor consolidado</small></div>
+            <div class="kpi"><span>ROAS</span><strong>Aguardando</strong><small>Quando a mídia conectar</small></div>
+          </div>
+          <div class="dash-lower">
+            <div class="mini-card"><h3>Funil</h3><div class="funnel-bar"><span>Leads</span><i style="width:100%"></i></div><div class="funnel-bar"><span>Pix</span><i style="width:67%"></i></div><div class="funnel-bar"><span>Vendas</span><i style="width:42%"></i></div><p class="small">A proporção é ilustrativa. Os dados reais entram no painel.</p></div>
+            <div class="mini-card"><h3>Receita por produto</h3><svg class="chart-svg" viewBox="0 0 260 130" aria-hidden="true"><defs><linearGradient id="area" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5d87ff" stop-opacity=".34"/><stop offset="1" stop-color="#5d87ff" stop-opacity="0"/></linearGradient></defs><path d="M10 112 C45 98 56 104 82 77 S133 89 158 57 S207 69 250 25 L250 124 L10 124Z" fill="url(#area)"/><path d="M10 112 C45 98 56 104 82 77 S133 89 158 57 S207 69 250 25" fill="none" stroke="#5d87ff" stroke-width="3" stroke-linecap="round"/><g fill="#fff" stroke="#5d87ff" stroke-width="2"><circle cx="10" cy="112" r="4"/><circle cx="82" cy="77" r="4"/><circle cx="158" cy="57" r="4"/><circle cx="250" cy="25" r="4"/></g></svg></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="governanca" aria-labelledby="governanca-title">
+      <div class="wrap governance-layout">
+        <div data-reveal>
+          <p class="eyebrow">A camada que mantém tudo coerente</p>
+          <h2 id="governanca-title">Governança não é burocracia. É memória de decisão.</h2>
+          <p class="lead">Quando o workshop evolui, a página, os criativos, o checkout e o painel precisam evoluir juntos. Por isso o projeto tem uma ordem clara de verdade.</p>
+          <div class="governance-note"><b>Fonte → evidência → decisão → execução.</b><p>O sistema reduz retrabalho, impede que uma versão antiga volte ao ar e registra por que cada mudança foi feita.</p></div>
+        </div>
+        <div class="source-stack" data-reveal aria-label="Hierarquia de fontes do projeto">
+          <div class="source"><span class="source-index">01</span><div><b>DECISOES.md</b><span>A decisão mais recente prevalece e registra o que foi substituído.</span></div><span class="source-status">fonte principal</span></div>
+          <div class="source"><span class="source-index">02</span><div><b>Definição canônica do workshop</b><span>Nome, ICP, formato, lotes, escada e limites que toda comunicação respeita.</span></div><span class="source-status">negócio</span></div>
+          <div class="source"><span class="source-index">03</span><div><b>Métodos de Governança</b><span>Definem como copy, página, tráfego, dados e aprovação devem ser executados.</span></div><span class="source-status">processo</span></div>
+          <div class="source"><span class="source-index">04</span><div><b>Diário e logs de operação</b><span>Registram execuções, testes, bloqueios, aprendizados e próximo passo exato.</span></div><span class="source-status">rastreabilidade</span></div>
+          <div class="source"><span class="source-index">05</span><div><b>Artefatos vivos</b><span>Página, painel, criativos e materiais refletem as fontes acima, nunca o contrário.</span></div><span class="source-status">entrega</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section executive-section" id="executivo" aria-labelledby="executivo-title">
+      <div class="wrap">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">Leitura de alta gestão</p>
+          <h2 id="executivo-title">O mesmo sistema, visto por cinco responsabilidades.</h2>
+          <p class="lead">Uma entrega só está pronta quando faz sentido para a estratégia, a receita, o caixa, a operação e a tecnologia.</p>
+        </div>
+        <div class="executive-grid" data-reveal>
+          <div class="executive-tabs" role="tablist" aria-label="Lentes executivas">
+            <button class="executive-tab" role="tab" aria-selected="true" data-role="CEO">CEO</button>
+            <button class="executive-tab" role="tab" aria-selected="false" data-role="CRO">CRO</button>
+            <button class="executive-tab" role="tab" aria-selected="false" data-role="CFO">CFO</button>
+            <button class="executive-tab" role="tab" aria-selected="false" data-role="COO">COO</button>
+            <button class="executive-tab" role="tab" aria-selected="false" data-role="CTO">CTO</button>
+          </div>
+          <div class="executive-panel" id="executivePanel" role="tabpanel" aria-live="polite"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section approval" id="aprovacao" aria-labelledby="aprovacao-title">
+      <div class="wrap">
+        <p class="eyebrow" data-reveal>Da construção para a continuidade</p>
+        <h2 id="aprovacao-title" data-reveal>O que construímos agora pode ser visto, cuidado e aprimorado como um sistema inteiro.</h2>
+        <p class="lead" data-reveal>O próximo passo é simples: uma leitura completa, ressalvas objetivas onde forem necessárias e o alinhamento das duas entregas para a fase seguinte.</p>
+        <div class="approval-grid">
+          <article class="approval-item" data-reveal><span class="step">01</span><h3>Página</h3><p>Confirmar a narrativa, a voz e o que cada bloco comunica ao líder.</p></article>
+          <article class="approval-item" data-reveal><span class="step">02</span><h3>Painel</h3><p>Validar a leitura executiva e a forma como os dados orientarão decisões.</p></article>
+          <article class="approval-item" data-reveal><span class="step">03</span><h3>Continuidade</h3><p>Levar as duas entregas alinhadas para publicação, campanha e aprendizado.</p></article>
+        </div>
+        <div class="approval-actions" data-reveal>
+          <a class="btn btn-light" href="https://deboradelgado.space" target="_blank" rel="noopener">Abrir a página de vendas <span aria-hidden="true">↗</span></a>
+          <a class="btn btn-ghost" href="https://deboradelgado.space/dashboard" target="_blank" rel="noopener">Abrir o dashboard <span aria-hidden="true">↗</span></a>
+        </div>
+        <p class="approval-note" data-reveal>Esses botões abrem os artefatos vivos do projeto. A aprovação continua sendo humana e registrada no fluxo do projeto, não nesta apresentação.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner"><span><b>Continuum AI Systems × Débora Delgado</b></span><span>Seu Eixo · apresentação executiva do sistema de lançamento</span></div>
+  </footer>
+
+  <script>
+    (function () {
+      var acts = [
+        {
+          count: "Dobra 01",
+          title: "Pertencimento",
+          answer: "Isto é para mim? O que é? O que eu ganho?",
+          open: "O que existe em mim que ainda não estou enxergando?",
+          close: "O Espelho mostra a cena e a Virada dá nome ao caminho."
+        },
+        {
+          count: "Dobras 02 e 03",
+          title: "Reconhecimento e custo",
+          answer: "Vocês entendem o que eu vivo? Por que isso importa agora?",
+          open: "Se técnica não resolveu, onde está a causa?",
+          close: "A seção TRES reposiciona o problema sem acusar o líder."
+        },
+        {
+          count: "Dobras 04 a 07",
+          title: "Caminho e valor",
+          answer: "Como funciona? O que eu recebo? Isto serve para mim?",
+          open: "Quanto custa e qual é o risco de avançar?",
+          close: "A inscrição organiza lote, turma, valor e redução de risco."
+        },
+        {
+          count: "Dobra 08",
+          title: "Decisão",
+          answer: "Quanto custa, por que vale e o que acontece se a turma não fechar?",
+          open: "Quem conduz este caminho?",
+          close: "A autoridade vem depois da decisão principal para confirmar, não para compensar uma promessa fraca."
+        },
+        {
+          count: "Dobras 09 e 10",
+          title: "Confirmação",
+          answer: "Quem é a Débora? E as minhas últimas dúvidas?",
+          open: "O que eu faço agora?",
+          close: "O fecho ecoa o hero e repete o mesmo convite, uma oitava acima."
+        }
+      ];
+
+      var roles = {
+        CEO: {
+          name: "Coerência antes de escala.",
+          body: "O projeto ganhou uma proposta de valor mais precisa: falar com o líder que já entrega e quer liderar sem deixar partes de si do lado de fora. A página, o workshop e o painel agora apontam para esse mesmo centro.",
+          checks: ["ICP e promessa falam com a mesma pessoa.", "O workshop abre a escada sem prometer a mentoria inteira.", "LinkedIn, B2B e expansões ficam fora do foco imediato."]
+        },
+        CRO: {
+          name: "Demanda que encontra conversão.",
+          body: "A mensagem do criativo encontra a mesma promessa no hero. A página conduz até uma decisão principal. O popup escolhe turma, preserva o lead e leva ao checkout correto. O painel devolve conversão por origem.",
+          checks: ["Correspondência entre mensagem, página e checkout.", "Uma ação dominante em toda a jornada.", "Recuperação de leads sem compra incorporada ao fluxo."]
+        },
+        CFO: {
+          name: "Aprender sem perder o controle econômico.",
+          body: "Os lotes mudam por data e preservam o mesmo produto. Receita, reembolso, ticket, CAC e ROAS entram no mesmo campo de visão quando os dados existirem. Nenhuma projeção é apresentada como resultado.",
+          checks: ["Preço e escassez têm motivo real.", "Receita e eventos de risco aparecem juntos.", "Decisão de mídia depende de dados, não de entusiasmo."]
+        },
+        COO: {
+          name: "Entregar com consistência o que foi comunicado.",
+          body: "Turmas, capacidade, aprovações, checkout, grupo e próximo passo estão definidos. O diário registra bloqueios e handoffs para que a execução não dependa da memória de uma pessoa.",
+          checks: ["Capacidade de cerca de 20 pessoas por turma.", "Aprovação humana antes de publicação e verba.", "Próximo passo exato registrado ao fim de cada execução."]
+        },
+        CTO: {
+          name: "Rastreabilidade com limites claros.",
+          body: "A página e o painel são arquivos estáticos, com fluxo de dados documentado. Tracking, checkout e Apps Script têm funções separadas. A senha no navegador é uma barreira simples, não autenticação forte.",
+          checks: ["Uma camada de tracking evita eventos duplicados.", "Nenhum token ou segredo aparece nesta apresentação.", "Meta Ads e autenticação forte permanecem fases próprias."]
+        }
+      };
+
+      var actPanel = document.getElementById("actPanel");
+      var executivePanel = document.getElementById("executivePanel");
+
+      function renderAct(index) {
+        var item = acts[index];
+        actPanel.innerHTML = '<span class="count">' + item.count + '</span>' +
+          '<h3>' + item.title + '</h3>' +
+          '<div class="act-row"><b>Pergunta que responde</b><span>' + item.answer + '</span></div>' +
+          '<div class="act-row"><b>Pergunta que abre</b><span>' + item.open + '</span></div>' +
+          '<div class="act-row"><b>Onde fecha</b><span>' + item.close + '</span></div>';
+      }
+
+      function renderRole(role) {
+        var item = roles[role];
+        executivePanel.innerHTML = '<div><span class="role">Lente ' + role + '</span><h3>' + item.name + '</h3><p>' + item.body + '</p></div>' +
+          '<ul class="executive-checks">' + item.checks.map(function (check) { return '<li>' + check + '</li>'; }).join('') + '</ul>';
+      }
+
+      document.querySelectorAll(".act-tab").forEach(function (button) {
+        button.addEventListener("click", function () {
+          document.querySelectorAll(".act-tab").forEach(function (tab) { tab.setAttribute("aria-selected", "false"); });
+          button.setAttribute("aria-selected", "true");
+          renderAct(Number(button.getAttribute("data-act")));
+        });
+      });
+
+      document.querySelectorAll(".executive-tab").forEach(function (button) {
+        button.addEventListener("click", function () {
+          document.querySelectorAll(".executive-tab").forEach(function (tab) { tab.setAttribute("aria-selected", "false"); });
+          button.setAttribute("aria-selected", "true");
+          renderRole(button.getAttribute("data-role"));
+        });
+      });
+
+      renderAct(0);
+      renderRole("CEO");
+
+      var progress = document.getElementById("progress");
+      function updateProgress() {
+        var height = document.documentElement.scrollHeight - window.innerHeight;
+        var ratio = height > 0 ? window.scrollY / height : 0;
+        progress.style.width = Math.min(100, Math.max(0, ratio * 100)) + "%";
+      }
+      updateProgress();
+      window.addEventListener("scroll", updateProgress, { passive: true });
+
+      if ("IntersectionObserver" in window) {
+        var observer = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: .12 });
+        document.querySelectorAll("[data-reveal]").forEach(function (element) { observer.observe(element); });
+      } else {
+        document.querySelectorAll("[data-reveal]").forEach(function (element) { element.classList.add("visible"); });
+      }
+    })();
+  </script>
+</body>
+</html>

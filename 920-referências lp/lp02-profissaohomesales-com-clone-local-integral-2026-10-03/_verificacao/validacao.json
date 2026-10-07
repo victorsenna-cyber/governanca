@@ -1,0 +1,184 @@
+{
+  "validatedAt": "2026-10-03T17:50:08.479Z",
+  "mode": "offline request interception",
+  "results": [
+    {
+      "viewport": "desktop",
+      "initial": {
+        "title": "PROFISSÃO \"HOME SALES\" - A nova onda do Digital",
+        "text": "PREENCHA O QUIZ LIBERE ESSA OPORTUNIDADE:\n\nFAÇA R$5.000 EM CASA APENAS COM O SEU CELULAR\nNOVA PROFISSÃO QUE ESTÁ DANDO A OPORTUNIDADE DE QUALQUER PESSOA COM CELULAR E ACESSO A INTERNET DE FAZER +R$5.000 DENTRO DE CASA, EM ATÉ 33 DIAS.\n\n↓ RESPONDA PARA COMEÇAR ↓\n\nVocê é homem ou mulher?\n\nHomem\n\nMulher\n\nMarcal Lancamento Digital LtdaCNPJ: 50.395.702/0001-90 Alameda Tocantins, 956, Sala 12 — Alphaville Centro Industrial e Empresarial — Barueri/SP — CEP 06.455-020 Contato:suporte@pablomarcal.com.br| WhatsApp: +55 (11) 99726-9378\n\nAo acessar esta página, você está de acordo com:Termos de Uso|Política de Privacidade",
+        "height": 1148,
+        "width": 1440,
+        "images": [
+          {
+            "ok": true,
+            "src": "https://media.inlead.cloud/uploads/40205/2025-10-24/md-8t2dC-xivsc-2.png"
+          },
+          {
+            "ok": true,
+            "src": "https://media.inlead.cloud/uploads/40205/2025-10-24/md-8ngdA-8s1jn-1.png"
+          }
+        ],
+        "buttons": [
+          "Homem",
+          "Mulher"
+        ]
+      },
+      "final": {
+        "text": "Qual a sua idade?\n\n18-29\n\n29-39\n\n39-49\n\n+50",
+        "height": 1000,
+        "images": [
+          {
+            "ok": true
+          },
+          {
+            "ok": true
+          },
+          {
+            "ok": true
+          },
+          {
+            "ok": true
+          }
+        ]
+      },
+      "visited": 45,
+      "visitedSamples": [
+        "PREENCHA O QUIZ LIBERE ESSA OPORTUNIDADE: FAÇA R$5.000 EM CASA APENAS COM O SEU CELULAR NOVA PROFISSÃO QUE ESTÁ DANDO A OPORTUNIDADE DE QUALQUER PESSOA COM CELULAR E ACESSO A INTER",
+        "Qual a sua idade? 18-29 29-39 39-49 +50",
+        "PREENCHA O QUIZ LIBERE ESSA OPORTUNIDADE: FAÇA R$5.000 EM CASA APENAS COM O SEU CELULAR NOVA PROFISSÃO QUE ESTÁ DANDO A OPORTUNIDADE DE QUALQUER PESSOA COM CELULAR E ACESSO A INTER",
+        "Qual a sua idade? 18-29 29-39 39-49 +50",
+        "PREENCHA O QUIZ LIBERE ESSA OPORTUNIDADE: FAÇA R$5.000 EM CASA APENAS COM O SEU CELULAR NOVA PROFISSÃO QUE ESTÁ DANDO A OPORTUNIDADE DE QUALQUER PESSOA COM CELULAR E ACESSO A INTER",
+        "Qual a sua idade? 18-29 29-39 39-49 +50",
+        "PREENCHA O QUIZ LIBERE ESSA OPORTUNIDADE: FAÇA R$5.000 EM CASA APENAS COM O SEU CELULAR NOVA PROFISSÃO QUE ESTÁ DANDO A OPORTUNIDADE DE QUALQUER PESSOA COM CELULAR E ACESSO A INTER",
+        "Qual a sua idade? 18-29 29-39 39-49 +50",
+        "PREENCHA O QUIZ LIBERE ESSA OPORTUNIDADE: FAÇA R$5.000 EM CASA APENAS COM O SEU CELULAR NOVA PROFISSÃO QUE ESTÁ DANDO A OPORTUNIDADE DE QUALQUER PESSOA COM CELULAR E ACESSO A INTER"
+      ],
+      "missing": [],
+      "blocked": [
+        "https://cf.vkdigital.com.br/sales_pixel.js?v=56",
+        "https://cf.vkdigital.com.br/event_pageview.js",
+        "https://connect.facebook.net/en_US/fbevents.js",
+        "https://tracker.assiny.com.br/tracker.min.js",
+        "https://www.googletagmanager.com/gtm.js?id=GTM-TR5L6QG5",
+        "https://api.analysis.inlead.tech/records/register/?type=pageview",
+        "https://api.analysis.inlead.tech/leads/register",
+        "https://api.analysis.inlead.tech/records/register/?type=stepview",
+        "https://api.analysis.inlead.tech/leads/register",
+        "https://api.analysis.inlead.tech/leads/register",
+        "https://api.analysis.inlead.tech/leads/register",
+        "https://api.analysis.inlead.tech/leads/register",
+        "https://api.analysis.inlead.tech/leads/register",
+        "https://api.analysis.inlead.tech/leads/register",
+        "https://api.analysis.inlead.tech/leads/register",
+        "https://api.analysis.inlead.tech/leads/register",
+        "https://api.analysis.inlead.tech/leads/register",
+        "https://api.analysis.inlead.tech/leads/register",
+        "https://api.analysis.inlead.tech/leads/register",
+        "https://api.analysis.inlead.tech/leads/register",
+        "https://api.analysis.inlead.tech/leads/register",
+        "https://api.analysis.inlead.tech/leads/register",
+        "https://api.analysis.inlead.tech/leads/register",
+        "https://api.analysis.inlead.tech/leads/register",
+        "https://api.analysis.inlead.tech/leads/register",
+        "https://api.analysis.inlead.tech/leads/register",
+        "https://api.analysis.inlead.tech/leads/register",
+        "https://api.analysis.inlead.tech/leads/register",
+        "https://api.analysis.inlead.tech/leads/register",
+        "https://api.analysis.inlead.tech/leads/register"
+      ],
+      "errors": [
+        "Uncaught (in promise) Error: Invariant: attempted to hard navigate to the same URL / https://lp02.profissaohomesales.com/"
+      ]
+    },
+    {
+      "viewport": "mobile",
+      "initial": {
+        "title": "PROFISSÃO \"HOME SALES\" - A nova onda do Digital",
+        "text": "PREENCHA O QUIZ LIBERE ESSA OPORTUNIDADE:\n\nFAÇA R$5.000 EM CASA APENAS COM O SEU CELULAR\nNOVA PROFISSÃO QUE ESTÁ DANDO A OPORTUNIDADE DE QUALQUER PESSOA COM CELULAR E ACESSO A INTERNET DE FAZER +R$5.000 DENTRO DE CASA, EM ATÉ 33 DIAS.\n\n↓ RESPONDA PARA COMEÇAR ↓\n\nVocê é homem ou mulher?\n\nHomem\n\nMulher\n\nMarcal Lancamento Digital LtdaCNPJ: 50.395.702/0001-90 Alameda Tocantins, 956, Sala 12 — Alphaville Centro Industrial e Empresarial — Barueri/SP — CEP 06.455-020 Contato:suporte@pablomarcal.com.br| WhatsApp: +55 (11) 99726-9378\n\nAo acessar esta página, você está de acordo com:Termos de Uso|Política de Privacidade",
+        "height": 1097,
+        "width": 390,
+        "images": [
+          {
+            "ok": true,
+            "src": "https://media.inlead.cloud/uploads/40205/2025-10-24/md-8t2dC-xivsc-2.png"
+          },
+          {
+            "ok": true,
+            "src": "https://media.inlead.cloud/uploads/40205/2025-10-24/md-8ngdA-8s1jn-1.png"
+          }
+        ],
+        "buttons": [
+          "Homem",
+          "Mulher"
+        ]
+      },
+      "final": {
+        "text": "Qual a sua idade?\n\n18-29\n\n29-39\n\n39-49\n\n+50",
+        "height": 844,
+        "images": [
+          {
+            "ok": true
+          },
+          {
+            "ok": true
+          },
+          {
+            "ok": true
+          },
+          {
+            "ok": true
+          }
+        ]
+      },
+      "visited": 45,
+      "visitedSamples": [
+        "PREENCHA O QUIZ LIBERE ESSA OPORTUNIDADE: FAÇA R$5.000 EM CASA APENAS COM O SEU CELULAR NOVA PROFISSÃO QUE ESTÁ DANDO A OPORTUNIDADE DE QUALQUER PESSOA COM CELULAR E ACESSO A INTER",
+        "Qual a sua idade? 18-29 29-39 39-49 +50",
+        "PREENCHA O QUIZ LIBERE ESSA OPORTUNIDADE: FAÇA R$5.000 EM CASA APENAS COM O SEU CELULAR NOVA PROFISSÃO QUE ESTÁ DANDO A OPORTUNIDADE DE QUALQUER PESSOA COM CELULAR E ACESSO A INTER",
+        "Qual a sua idade? 18-29 29-39 39-49 +50",
+        "PREENCHA O QUIZ LIBERE ESSA OPORTUNIDADE: FAÇA R$5.000 EM CASA APENAS COM O SEU CELULAR NOVA PROFISSÃO QUE ESTÁ DANDO A OPORTUNIDADE DE QUALQUER PESSOA COM CELULAR E ACESSO A INTER",
+        "Qual a sua idade? 18-29 29-39 39-49 +50",
+        "PREENCHA O QUIZ LIBERE ESSA OPORTUNIDADE: FAÇA R$5.000 EM CASA APENAS COM O SEU CELULAR NOVA PROFISSÃO QUE ESTÁ DANDO A OPORTUNIDADE DE QUALQUER PESSOA COM CELULAR E ACESSO A INTER",
+        "Qual a sua idade? 18-29 29-39 39-49 +50",
+        "PREENCHA O QUIZ LIBERE ESSA OPORTUNIDADE: FAÇA R$5.000 EM CASA APENAS COM O SEU CELULAR NOVA PROFISSÃO QUE ESTÁ DANDO A OPORTUNIDADE DE QUALQUER PESSOA COM CELULAR E ACESSO A INTER"
+      ],
+      "missing": [],
+      "blocked": [
+        "https://cf.vkdigital.com.br/sales_pixel.js?v=56",
+        "https://cf.vkdigital.com.br/event_pageview.js",
+        "https://connect.facebook.net/en_US/fbevents.js",
+        "https://tracker.assiny.com.br/tracker.min.js",
+        "https://www.googletagmanager.com/gtm.js?id=GTM-TR5L6QG5",
+        "https://api.analysis.inlead.tech/records/register/?type=pageview",
+        "https://api.analysis.inlead.tech/leads/register",
+        "https://api.analysis.inlead.tech/records/register/?type=stepview",
+        "https://api.analysis.inlead.tech/leads/register",
+        "https://api.analysis.inlead.tech/leads/register",
+        "https://api.analysis.inlead.tech/leads/register",
+        "https://api.analysis.inlead.tech/leads/register",
+        "https://api.analysis.inlead.tech/leads/register",
+        "https://api.analysis.inlead.tech/leads/register",
+        "https://api.analysis.inlead.tech/leads/register",
+        "https://api.analysis.inlead.tech/leads/register",
+        "https://api.analysis.inlead.tech/leads/register",
+        "https://api.analysis.inlead.tech/leads/register",
+        "https://api.analysis.inlead.tech/leads/register",
+        "https://api.analysis.inlead.tech/leads/register",
+        "https://api.analysis.inlead.tech/leads/register",
+        "https://api.analysis.inlead.tech/leads/register",
+        "https://api.analysis.inlead.tech/leads/register",
+        "https://api.analysis.inlead.tech/leads/register",
+        "https://api.analysis.inlead.tech/leads/register",
+        "https://api.analysis.inlead.tech/leads/register",
+        "https://api.analysis.inlead.tech/leads/register",
+        "https://api.analysis.inlead.tech/leads/register",
+        "https://api.analysis.inlead.tech/leads/register",
+        "https://api.analysis.inlead.tech/leads/register"
+      ],
+      "errors": [
+        "Uncaught (in promise) Error: Invariant: attempted to hard navigate to the same URL / https://lp02.profissaohomesales.com/"
+      ]
+    }
+  ]
+}

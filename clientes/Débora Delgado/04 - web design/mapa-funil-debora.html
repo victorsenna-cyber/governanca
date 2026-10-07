@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mapa do Funil — Liderança na Raiz</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --papel:#FAF7F2; --tinta:#2E2A26; --musgo:#52604A; --terra:#A8754F;
+  --vinho:#7A3B4A; --cinza:#8A8378; --linha:#E3DCD1; --card:#FFFFFF;
+  --ok:#52604A; --meio:#C08A3E; --falta:#9B3B3B;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--papel);color:var(--tinta);font-family:Inter,system-ui,sans-serif;font-size:15px;line-height:1.6;padding:32px 20px 80px}
+.wrap{max-width:1180px;margin:0 auto}
+h1{font-family:Fraunces,Georgia,serif;font-size:40px;font-weight:600;line-height:1.1;margin-bottom:8px}
+h2{font-family:Fraunces,Georgia,serif;font-size:27px;font-weight:600;margin:56px 0 6px;padding-bottom:10px;border-bottom:2px solid var(--linha)}
+h3{font-family:Fraunces,Georgia,serif;font-size:20px;font-weight:600;margin:32px 0 12px;color:var(--vinho)}
+.sub{color:var(--cinza);font-size:15px;margin-bottom:6px}
+.lead{font-size:16px;max-width:78ch;margin:14px 0 4px}
+.tag{display:inline-block;font-size:11px;letter-spacing:.09em;text-transform:uppercase;font-weight:600;padding:3px 9px;border-radius:3px;vertical-align:middle}
+.t-ok{background:#E8EDE4;color:var(--ok)} .t-meio{background:#FBF0DC;color:#8A5F16} .t-falta{background:#F7E4E4;color:var(--falta)}
+.t-vic{background:#E4EAF2;color:#2C4A75} .t-deb{background:#F3E7EE;color:var(--vinho)}
+
+/* funil */
+.funil{margin:24px 0}
+.etapa{background:var(--card);border:1px solid var(--linha);border-left:5px solid var(--musgo);border-radius:6px;padding:18px 20px;margin-bottom:6px;position:relative}
+.etapa.b2b{border-left-color:var(--terra)}
+.etapa-top{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:10px}
+.num{font-family:Fraunces,serif;font-size:24px;font-weight:600;color:var(--musgo);min-width:34px}
+.etapa.b2b .num{color:var(--terra)}
+.nome{font-family:Fraunces,serif;font-size:19px;font-weight:600;flex:1;min-width:180px}
+.grid4{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:14px;margin-top:12px}
+.campo{border-top:1px solid var(--linha);padding-top:9px}
+.campo .rot{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--cinza);font-weight:600;display:block;margin-bottom:4px}
+.campo .val{font-size:14px;line-height:1.5}
+.seta{text-align:center;color:var(--linha);font-size:22px;line-height:1;margin:2px 0}
+
+/* tabelas */
+table{width:100%;border-collapse:collapse;margin:16px 0;font-size:14px;background:var(--card)}
+th{background:#F2EDE5;text-align:left;padding:10px 12px;font-size:11px;letter-spacing:.07em;text-transform:uppercase;color:var(--cinza);font-weight:600;border-bottom:2px solid var(--linha)}
+td{padding:10px 12px;border-bottom:1px solid var(--linha);vertical-align:top}
+tr:last-child td{border-bottom:none}
+
+/* caixas */
+.box{background:var(--card);border:1px solid var(--linha);border-radius:6px;padding:18px 20px;margin:16px 0}
+.box.alerta{border-left:5px solid var(--falta);background:#FDF8F8}
+.box.chave{border-left:5px solid var(--terra);background:#FDFAF6}
+.box .tit{font-family:Fraunces,serif;font-size:17px;font-weight:600;margin-bottom:8px}
+ul{margin:8px 0 4px 20px} li{margin-bottom:6px}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px;margin:18px 0}
+.rodape{margin-top:64px;padding-top:18px;border-top:2px solid var(--linha);color:var(--cinza);font-size:13px}
+strong{font-weight:600}
+@media(max-width:640px){body{padding:20px 14px 60px}h1{font-size:30px}h2{font-size:23px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<h1>Mapa do Funil</h1>
+<p class="sub">Liderança na Raiz · Débora Delgado &nbsp;·&nbsp; agosto de 2026</p>
+<p class="lead">Este documento existe para responder quatro perguntas em cada etapa: <strong>o que é, como se faz, por que existe e qual resultado traz.</strong> Onde faltar uma dessas quatro, a etapa está incompleta e está marcada assim.</p>
+
+<div class="box chave">
+  <div class="tit">A descoberta que organiza tudo: são dois funis, não um</div>
+  <p>Hoje existe um site tentando servir dois públicos que compram de formas diferentes. <strong>É por isso que ele parece entregar demais:</strong> ele está certo para um e confuso para o outro.</p>
+  <ul>
+    <li><strong>Funil A · pessoa (B2C).</strong> O líder chega sozinho, se reconhece num conteúdo, quer entender a si mesmo. Compra com o próprio dinheiro, decide em dias, e o gatilho é reconhecimento.</li>
+    <li><strong>Funil B · empresa (B2B).</strong> Chega por indicação, pede material antes de conversar, decide em comitê, fala de rotatividade e PDI. <strong>Não se interessa por resultado individual: quer saber o que muda para a empresa.</strong></li>
+  </ul>
+  <p style="margin-top:10px">Separar os dois não é criar trabalho novo. <strong>É parar de pedir que uma peça só faça dois trabalhos opostos.</strong></p>
+</div>
+
+<h2>Funil A · pessoa</h2>
+<p class="lead">Da primeira vez que alguém te vê até a mentoria. Sete etapas.</p>
+
+<div class="funil">
+
+  <div class="etapa">
+    <div class="etapa-top"><span class="num">0</span><span class="nome">Narrativa</span><span class="tag t-meio">a definir</span><span class="tag t-deb">Débora</span></div>
+    <div class="grid4">
+      <div class="campo"><span class="rot">o que é</span><span class="val">A ideia que se repete em tudo que você publica. Hoje: <em>muda a pessoa, a sensação é a mesma</em>.</span></div>
+      <div class="campo"><span class="rot">como se faz</span><span class="val">Uma frase-âncora, seis ângulos e uma promessa que você sustenta.</span></div>
+      <div class="campo"><span class="rot">por que existe</span><span class="val">Sem ela, cada post recomeça do zero e ninguém guarda quem você é.</span></div>
+      <div class="campo"><span class="rot">resultado</span><span class="val">A pessoa reconhece você antes de conhecer você.</span></div>
+    </div>
+  </div>
+  <div class="seta">↓</div>
+
+  <div class="etapa">
+    <div class="etapa-top"><span class="num">1</span><span class="nome">Conteúdo</span><span class="tag t-falta">parado</span><span class="tag t-deb">Débora</span></div>
+    <div class="grid4">
+      <div class="campo"><span class="rot">o que é</span><span class="val">Vídeo, carrossel e story no Instagram. Um por dia útil.</span></div>
+      <div class="campo"><span class="rot">como se faz</span><span class="val">Conflito na primeira frase, cena no meio, um passo só no fim: comentar uma palavra.</span></div>
+      <div class="campo"><span class="rot">por que existe</span><span class="val">É a única entrada que não custa verba. E o algoritmo mudou: consistência passou a valer mais que viralizar.</span></div>
+      <div class="campo"><span class="rot">resultado</span><span class="val">Comentários com intenção declarada, que viram conversa.</span></div>
+    </div>
+  </div>
+  <div class="seta">↓</div>
+
+  <div class="etapa">
+    <div class="etapa-top"><span class="num">2</span><span class="nome">Tráfego pago</span><span class="tag t-falta">bloqueado</span><span class="tag t-vic">Victor</span></div>
+    <div class="grid4">
+      <div class="campo"><span class="rot">o que é</span><span class="val">Campanha contínua levando gente nova ao perfil. R$ 12/dia.</span></div>
+      <div class="campo"><span class="rot">como se faz</span><span class="val">Três camadas: alcance amplo, seguidores, e conversão só para quem já engajou.</span></div>
+      <div class="campo"><span class="rot">por que existe</span><span class="val">Conteúdo orgânico cresce devagar. A verba acelera o topo sem trocar a qualidade.</span></div>
+      <div class="campo"><span class="rot">resultado</span><span class="val">Custo por seguidor novo, medido. Nada de venda nesta camada.</span></div>
+    </div>
+  </div>
+  <div class="seta">↓</div>
+
+  <div class="etapa">
+    <div class="etapa-top"><span class="num">3</span><span class="nome">Isca</span><span class="tag t-ok">pronto</span></div>
+    <div class="grid4">
+      <div class="campo"><span class="rot">o que é</span><span class="val">Quatro portas: <strong>Quiz de liderança</strong>, <strong>Histórias de líderes</strong>, <strong>Luz e sombra</strong> e a <strong>VSL</strong> (a única que falta).</span></div>
+      <div class="campo"><span class="rot">como se faz</span><span class="val">A pessoa comenta uma palavra e recebe o link na mensagem. Um link por porta, nunca quatro na bio.</span></div>
+      <div class="campo"><span class="rot">por que existe</span><span class="val">Ninguém agenda conversa com quem acabou de conhecer. A isca entrega valor antes de pedir algo.</span></div>
+      <div class="campo"><span class="rot">resultado</span><span class="val">A pessoa se vê descrita e passa a querer saber mais.</span></div>
+    </div>
+  </div>
+  <div class="seta">↓</div>
+
+  <div class="etapa">
+    <div class="etapa-top"><span class="num">4</span><span class="nome">Aplicação</span><span class="tag t-meio">ajustar</span></div>
+    <div class="grid4">
+      <div class="campo"><span class="rot">o que é</span><span class="val">O formulário da consultoria. Hoje com 22 perguntas.</span></div>
+      <div class="campo"><span class="rot">como se faz</span><span class="val">Cada pergunta ou <strong>qualifica</strong> (decide se é seu público) ou <strong>municia</strong> (te dá o que conduzir). O resto sai.</span></div>
+      <div class="campo"><span class="rot">por que existe</span><span class="val">Como a conversa é gratuita, <strong>o formulário é o preço</strong>. Quem escreve doze respostas já pagou em atenção.</span></div>
+      <div class="campo"><span class="rot">resultado</span><span class="val">Você chega na conversa já sabendo a história da pessoa.</span></div>
+    </div>
+  </div>
+  <div class="seta">↓</div>
+
+  <div class="etapa">
+    <div class="etapa-top"><span class="num">5</span><span class="nome">Consultoria</span><span class="tag t-falta">decidir</span><span class="tag t-deb">Débora</span></div>
+    <div class="grid4">
+      <div class="campo"><span class="rot">o que é</span><span class="val">Conversa de 60 a 90 min. <strong>Gratuita para indicação e rede quente; paga para quem vem de anúncio.</strong></span></div>
+      <div class="campo"><span class="rot">como se faz</span><span class="val">Situação, devolução com as palavras dela, reenquadre, dois movimentos que ela faz sozinha, e só então a ponte.</span></div>
+      <div class="campo"><span class="rot">por que existe</span><span class="val">É onde você é insubstituível. E é onde nasce a linguagem que alimenta todo o resto.</span></div>
+      <div class="campo"><span class="rot">resultado</span><span class="val">Ela sai com uma leitura que não tinha. E você sai com as palavras exatas do seu público.</span></div>
+    </div>
+  </div>
+  <div class="seta">↓</div>
+
+  <div class="etapa">
+    <div class="etapa-top"><span class="num">6</span><span class="nome">Oferta</span><span class="tag t-ok">preço fechado</span></div>
+    <div class="grid4">
+      <div class="campo"><span class="rot">o que é</span><span class="val">Grupo <strong>R$ 6.000</strong> (pré-venda R$ 4.000) · individual <strong>R$ 6.000</strong> · quem já fez um ciclo <strong>R$ 2.500</strong>.</span></div>
+      <div class="campo"><span class="rot">como se faz</span><span class="val">Só depois de a pessoa descrever a situação com detalhe. Nunca antes.</span></div>
+      <div class="campo"><span class="rot">por que existe</span><span class="val">A hierarquia protege o grupo: o individual custa mais por mês e entrega menos horas suas.</span></div>
+      <div class="campo"><span class="rot">resultado</span><span class="val">Meta declarada: <strong>R$ 18.000/mês</strong> com 15 no grupo e 2 individuais.</span></div>
+    </div>
+  </div>
+  <div class="seta">↓</div>
+
+  <div class="etapa">
+    <div class="etapa-top"><span class="num">7</span><span class="nome">Entrega e recompra</span><span class="tag t-meio">quase</span></div>
+    <div class="grid4">
+      <div class="campo"><span class="rot">o que é</span><span class="val">Área de membros: Método Raiz, sistema de eneagrama, maestria e liderança.</span></div>
+      <div class="campo"><span class="rot">como se faz</span><span class="val">Encontros em grupo, individuais, e os artefatos que a pessoa usa sozinha entre um e outro.</span></div>
+      <div class="campo"><span class="rot">por que existe</span><span class="val">É o que reduz sua hora por aluno e o que faz o ciclo seguinte ser mais fácil de vender.</span></div>
+      <div class="campo"><span class="rot">resultado</span><span class="val">Depoimento, recompra e indicação, colhidos no encerramento e não depois dele.</span></div>
+    </div>
+  </div>
+
+</div>
+
+<h2>Funil B · empresa</h2>
+<p class="lead">Mais curto, mais caro, e quase todo por indicação. <strong>Já existe um pedido esperando resposta.</strong></p>
+
+<div class="funil">
+  <div class="etapa b2b">
+    <div class="etapa-top"><span class="num">1</span><span class="nome">Indicação</span><span class="tag t-ok">acontecendo</span></div>
+    <div class="grid4">
+      <div class="campo"><span class="rot">o que é</span><span class="val">Alguém da sua rede fala seu nome dentro de uma empresa.</span></div>
+      <div class="campo"><span class="rot">como se faz</span><span class="val">Pedido explícito a cada entrega concluída, com o nome da pessoa e a apresentação pronta.</span></div>
+      <div class="campo"><span class="rot">por que existe</span><span class="val">É o canal que funciona: cinco de cinco oportunidades reais vieram daqui.</span></div>
+      <div class="campo"><span class="rot">resultado</span><span class="val">Conversa com quem decide, sem custo de aquisição.</span></div>
+    </div>
+  </div>
+  <div class="seta">↓</div>
+
+  <div class="etapa b2b">
+    <div class="etapa-top"><span class="num">2</span><span class="nome">Material que responde</span><span class="tag t-falta">não existe</span><span class="tag t-vic">Victor</span></div>
+    <div class="grid4">
+      <div class="campo"><span class="rot">o que é</span><span class="val">Uma página ou PDF de duas a três telas, na língua da empresa.</span></div>
+      <div class="campo"><span class="rot">como se faz</span><span class="val">Fala de rotatividade, turnover, PDI e métricas. <strong>Nunca de resultado individual.</strong></span></div>
+      <div class="campo"><span class="rot">por que existe</span><span class="val">Empresa pede material antes de marcar. Sem ele, a indicação esfria.</span></div>
+      <div class="campo"><span class="rot">resultado</span><span class="val">A conversa acontece. É literalmente o que falta hoje.</span></div>
+    </div>
+  </div>
+  <div class="seta">↓</div>
+
+  <div class="etapa b2b">
+    <div class="etapa-top"><span class="num">3</span><span class="nome">Diagnóstico</span><span class="tag t-ok">você já faz</span></div>
+    <div class="grid4">
+      <div class="campo"><span class="rot">o que é</span><span class="val">Conversa com o RH ou com quem lidera, para entender o problema real.</span></div>
+      <div class="campo"><span class="rot">como se faz</span><span class="val">O mesmo método da consultoria, traduzido para a dor da organização.</span></div>
+      <div class="campo"><span class="rot">por que existe</span><span class="val">Empresa não compra programa: compra solução para um problema que ela sabe nomear.</span></div>
+      <div class="campo"><span class="rot">resultado</span><span class="val">Escopo e número de líderes definidos.</span></div>
+    </div>
+  </div>
+  <div class="seta">↓</div>
+
+  <div class="etapa b2b">
+    <div class="etapa-top"><span class="num">4</span><span class="nome">Proposta</span><span class="tag t-meio">âncora existe</span></div>
+    <div class="grid4">
+      <div class="campo"><span class="rot">o que é</span><span class="val">Programa para N líderes, em grupo, com individuais pontuais.</span></div>
+      <div class="campo"><span class="rot">como se faz</span><span class="val">Preço por líder, medição antes e depois, e um formato que não consome sua agenda inteira.</span></div>
+      <div class="campo"><span class="rot">por que existe</span><span class="val">Foi exatamente a falta de formato que fez você recusar um projeto aprovado.</span></div>
+      <div class="campo"><span class="rot">resultado</span><span class="val">Referência real: <strong>R$ 70.000 por 14 líderes ≈ R$ 5.000 por líder</strong>.</span></div>
+    </div>
+  </div>
+</div>
+
+<div class="box alerta">
+  <div class="tit">O ponto que muda a leitura do B2B</div>
+  <p>Você já teve um projeto de <strong>R$ 70.000 aprovado</strong> por uma empresa, para mentorar 14 líderes. <strong>Ele não caiu por preço</strong>: o valor tinha sido aceito. Caiu porque não havia um formato de entrega que coubesse na sua agenda.</p>
+  <p style="margin-top:8px"><strong>Esse formato agora existe:</strong> grupo semanal, individuais espaçados e uma área de membros que carrega parte do conteúdo. <strong>A objeção que matou aquele negócio está resolvida.</strong></p>
+</div>
+
+<h2>O que já existe</h2>
+<p class="lead">Inventário do que foi construído, e em que estado está.</p>
+
+<div class="cols">
+<div>
+<h3>Páginas públicas</h3>
+<table>
+<tr><th>Peça</th><th>Papel</th><th>Estado</th></tr>
+<tr><td>index</td><td>porta de entrada</td><td><span class="tag t-ok">ok</span></td></tr>
+<tr><td>comece</td><td>orientação em 4 passos</td><td><span class="tag t-ok">ok</span></td></tr>
+<tr><td>sobre</td><td>quem conduz</td><td><span class="tag t-ok">ok</span></td></tr>
+<tr><td>quiz</td><td>isca</td><td><span class="tag t-ok">ok</span></td></tr>
+<tr><td>histórias</td><td>isca</td><td><span class="tag t-ok">ok</span></td></tr>
+<tr><td>luz e sombra</td><td>isca</td><td><span class="tag t-ok">ok</span></td></tr>
+<tr><td>consultoria</td><td><strong>destino de tudo</strong></td><td><span class="tag t-meio">22 perguntas</span></td></tr>
+<tr><td>serviços</td><td>oferta</td><td><span class="tag t-falta">sem preço</span></td></tr>
+</table>
+</div>
+
+<div>
+<h3>Área de membros</h3>
+<table>
+<tr><th>Peça</th><th>Papel</th><th>Estado</th></tr>
+<tr><td>membros</td><td>painel</td><td><span class="tag t-meio">acesso frágil</span></td></tr>
+<tr><td>Método Raiz</td><td>o método, passo a passo</td><td><span class="tag t-ok">no ar</span></td></tr>
+<tr><td>eneagrama</td><td>sistema de consulta</td><td><span class="tag t-falta">pesado</span></td></tr>
+<tr><td>maestria</td><td>pilar</td><td><span class="tag t-ok">ok</span></td></tr>
+<tr><td>liderança</td><td>pilar</td><td><span class="tag t-ok">ok</span></td></tr>
+<tr><td>mapa</td><td>linkado no painel</td><td><span class="tag t-falta">não existe</span></td></tr>
+</table>
+</div>
+</div>
+
+<h3>Prova social: quatro fontes, nenhuma publicada</h3>
+<table>
+<tr><th>Ativo</th><th>Origem</th><th>Onde deveria estar</th></tr>
+<tr><td>Vídeo de depoimentos, 1min51</td><td>alunos do primeiro curso</td><td>home, serviços e Instagram</td></tr>
+<tr><td>Depoimento da Gabi</td><td>workshop em empresa</td><td><strong>material B2B</strong></td></tr>
+<tr><td>3 vídeos de maestria</td><td>mentorados atuais</td><td>entrega e conteúdo</td></tr>
+<tr><td>Evolução medida de uma mentorada</td><td>notas 1 e 2 → 4 e 5 em 2 meses</td><td>proposta e página</td></tr>
+</table>
+
+<h2>O que falta</h2>
+
+<h3>1 · Decidir</h3>
+<table>
+<tr><th>Decisão</th><th>Por que trava</th><th>Quem decide</th></tr>
+<tr><td><strong>Data e hora do encerramento</strong> da mentoria atual</td><td>quatro pessoas prontas para decidir seguem esperando</td><td><span class="tag t-deb">Débora</span></td></tr>
+<tr><td><strong>Vagas, início e prazo</strong> da turma de outubro</td><td>sem isso a pré-venda não tem urgência real</td><td><span class="tag t-deb">Débora</span></td></tr>
+<tr><td><strong>Consultoria gratuita ou paga</strong>, por canal</td><td>preço diferente por canal precisa de regra, ou vira inconsistência</td><td><span class="tag t-deb">Débora</span></td></tr>
+<tr><td><strong>Preço do programa para empresa</strong></td><td>há um pedido esperando e a âncora já existe</td><td><span class="tag t-deb">Débora</span></td></tr>
+<tr><td><strong>O site fica inteiro ou vira páginas soltas</strong> para o tráfego</td><td>define o que se anuncia e como se mede</td><td>os dois</td></tr>
+</table>
+
+<h3>2 · Coletar</h3>
+<table>
+<tr><th>Informação</th><th>Para que serve</th><th>Quem tem</th></tr>
+<tr><td>Seguidores, alcance médio e resposta em mensagem</td><td>calcular quanto conteúdo vira conversa</td><td><span class="tag t-deb">Débora</span></td></tr>
+<tr><td>Quantas consultorias cabem na sua semana</td><td>saber quando o funil satura</td><td><span class="tag t-deb">Débora</span></td></tr>
+<tr><td>O que a gerente pediu, na íntegra</td><td>escrever o material certo, e não um genérico</td><td><span class="tag t-deb">Débora</span></td></tr>
+<tr><td>Contato do indicado que ficou de vir</td><td>é um lead que já disse sim</td><td><span class="tag t-deb">Débora</span></td></tr>
+<tr><td>Os quatro ativos de prova, num lugar só</td><td>alimentar página, proposta e conteúdo</td><td>os dois</td></tr>
+</table>
+
+<h3>3 · Entender</h3>
+<table>
+<tr><th>Pergunta em aberto</th><th>Por que importa</th></tr>
+<tr><td>O que acontece hoje entre o formulário preenchido e a conversa agendada</td><td>se for manual, é aqui que o lead esfria</td></tr>
+<tr><td>Por que um conteúdo teve dez vezes mais salvamentos que os outros</td><td>salvamento é o sinal de intenção mais forte hoje; esse tema merece ser repetido</td></tr>
+<tr><td>Quem tem acesso à área de membros hoje, e como se dá acesso a quem compra</td><td>define o gate e a revogação</td></tr>
+<tr><td>Onde o Funnelytics entra na medição</td><td>é a ferramenta que você já usa para enxergar funil</td></tr>
+</table>
+
+<h3>4 · Fazer</h3>
+<div class="cols">
+<div>
+<table>
+<tr><th colspan="2">Victor</th></tr>
+<tr><td><strong>Medição no site</strong></td><td>pixel em todas as páginas e evento no envio do formulário. <strong>Sem isso não se anuncia.</strong></td></tr>
+<tr><td><strong>Página do eneagrama</strong></td><td>corrigir exibição no celular e reduzir peso</td></tr>
+<tr><td><strong>Acesso da área de membros</strong></td><td>gate com revogação individual</td></tr>
+<tr><td><strong>Formulário</strong></td><td>enxugar de 22 para 12 perguntas</td></tr>
+<tr><td><strong>Material B2B</strong></td><td>duas ou três telas, na língua da empresa</td></tr>
+<tr><td><strong>VSL</strong></td><td>roteiro e copy</td></tr>
+<tr><td><strong>Campanha</strong></td><td>três camadas, R$ 12/dia, medindo só custo por seguidor</td></tr>
+</table>
+</div>
+<div>
+<table>
+<tr><th colspan="2">Débora</th></tr>
+<tr><td><strong>Encerramento</strong></td><td>conduzir e colher depoimento, recompra e indicação</td></tr>
+<tr><td><strong>Quatro conversas</strong></td><td>uma por mentorado, na mesma semana</td></tr>
+<tr><td><strong>Responder a gerente</strong></td><td>assim que o material existir</td></tr>
+<tr><td><strong>Conteúdo</strong></td><td>um por dia útil, apontando para uma das portas</td></tr>
+<tr><td><strong>Gravar</strong></td><td>os roteiros que já estão prontos</td></tr>
+<tr><td><strong>Depoimentos</strong></td><td>juntar os quatro ativos num lugar só</td></tr>
+</table>
+</div>
+</div>
+
+<div class="box">
+  <div class="tit">A ordem, se for para escolher uma só</div>
+  <p><strong>Primeiro o que já tem gente dentro:</strong> encerrar a mentoria, falar com os quatro, fechar data e vagas da turma. É receita que existe e está esperando.</p>
+  <p style="margin-top:8px"><strong>Depois o que destrava dinheiro parado:</strong> o material para a empresa que pediu, e a medição no site.</p>
+  <p style="margin-top:8px"><strong>Só então o topo:</strong> VSL, campanha e conteúdo diário. <strong>Topo de funil sem medição é gasto, não investimento.</strong></p>
+</div>
+
+<div class="rodape">
+Mapa construído sobre o que já existe. Nenhuma peça foi alterada, nenhuma campanha ativada.<br>
+Continuum AI Systems · agosto de 2026
+</div>
+
+</div>
+</body>
+</html>

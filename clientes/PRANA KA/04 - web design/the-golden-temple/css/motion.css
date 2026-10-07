@@ -1,0 +1,252 @@
+@media (prefers-reduced-motion: no-preference) {
+  [data-hero-line] {
+    opacity: 1;
+    transform: translateY(22px);
+    animation: hero-line-in 1s var(--ease-out) forwards;
+  }
+
+  [data-hero-line]:nth-child(1) {
+    animation-delay: 180ms;
+  }
+
+  [data-hero-line]:nth-child(2) {
+    animation-delay: 300ms;
+  }
+
+  [data-hero-line]:nth-child(3) {
+    animation-delay: 480ms;
+  }
+
+  [data-hero-line]:nth-child(4) {
+    animation-delay: 620ms;
+  }
+
+  [data-hero-line]:nth-child(5) {
+    animation-delay: 760ms;
+  }
+
+  .motion-awake .hero-orb__aura {
+    animation: aura-breathe 7s ease-in-out infinite;
+  }
+
+  .motion-awake .hero-halo--outer {
+    animation: halo-shimmer 9s ease-in-out infinite;
+  }
+
+  .motion-awake .hero-halo--inner {
+    animation: inner-halo-shimmer 7s ease-in-out infinite;
+  }
+
+  .hero-scroll-cue i::after {
+    animation: scroll-line 2.5s ease-in-out infinite;
+  }
+
+  .page-axis span {
+    animation: axis-glide 3.2s ease-in-out infinite;
+  }
+
+  .motion-ready [data-reveal] {
+    opacity: 0;
+    transform: translateY(34px);
+    transition:
+      opacity 820ms var(--ease-out),
+      transform 820ms var(--ease-out);
+  }
+
+  .motion-ready [data-reveal].is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .method.is-scene-visible .method-core {
+    animation: core-breathe 8s ease-in-out infinite;
+  }
+
+  .art-field.is-scene-visible .sound-weave path {
+    stroke-dasharray: 12 8;
+    animation: sound-flow 18s linear infinite;
+  }
+
+  .art-field.is-scene-visible .sound-weave path:nth-child(2) {
+    animation-duration: 24s;
+    animation-direction: reverse;
+  }
+
+  .art-field.is-scene-visible .sound-weave path:nth-child(3) {
+    animation-duration: 31s;
+  }
+
+  .art-field.is-scene-visible .art-words span:nth-child(1),
+  .art-field.is-scene-visible .art-words span:nth-child(3) {
+    animation: word-float 7s ease-in-out infinite;
+  }
+
+  .art-field.is-scene-visible .art-words span:nth-child(2),
+  .art-field.is-scene-visible .art-words span:nth-child(4) {
+    animation: word-float 9s ease-in-out -3s infinite reverse;
+  }
+
+  .prana-section.is-scene-visible .prana-geometry {
+    animation: geometry-turn 90s linear infinite;
+  }
+
+  .closing.is-scene-visible .closing-radiance {
+    animation: closing-radiance 12s ease-in-out infinite;
+  }
+
+  .closing.is-scene-visible .closing-geometry {
+    animation: closing-geometry 15s ease-in-out infinite;
+  }
+}
+
+@keyframes hero-line-in {
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes aura-breathe {
+  0%,
+  100% {
+    opacity: 0.48;
+  }
+  50% {
+    opacity: 0.84;
+  }
+}
+
+@keyframes halo-shimmer {
+  0%,
+  100% {
+    opacity: 0.38;
+  }
+  50% {
+    opacity: 0.72;
+  }
+}
+
+@keyframes inner-halo-shimmer {
+  0%,
+  100% {
+    opacity: 0.42;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+@keyframes scroll-line {
+  0% {
+    transform: translateX(-100%);
+  }
+  48%,
+  60% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes axis-glide {
+  0%,
+  100% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.9;
+  }
+}
+
+@keyframes core-breathe {
+  0%,
+  100% {
+    box-shadow:
+      0 0 0 12px rgba(184, 138, 67, 0.04),
+      0 20px 70px rgba(89, 53, 23, 0.1);
+  }
+  50% {
+    box-shadow:
+      0 0 0 20px rgba(184, 138, 67, 0.05),
+      0 20px 92px rgba(140, 87, 29, 0.19);
+  }
+}
+
+@keyframes sound-flow {
+  to {
+    stroke-dashoffset: -220;
+  }
+}
+
+@keyframes word-float {
+  0%,
+  100% {
+    transform: translateY(-4px);
+    opacity: 0.35;
+  }
+  50% {
+    transform: translateY(8px);
+    opacity: 0.62;
+  }
+}
+
+@keyframes geometry-turn {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes closing-radiance {
+  0%,
+  100% {
+    transform: translate(-50%, -50%) rotate(-0.5deg) scale(0.96);
+    opacity: 0.62;
+  }
+  50% {
+    transform: translate(-50%, -50%) rotate(0.5deg) scale(1.05);
+    opacity: 0.95;
+  }
+}
+
+@keyframes closing-geometry {
+  0%,
+  100% {
+    transform: translate(-50%, -50%) rotate(-1.5deg) scale(0.98);
+    opacity: 0.08;
+  }
+  50% {
+    transform: translate(-50%, -50%) rotate(1.5deg) scale(1.03);
+    opacity: 0.16;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+
+  [data-hero-line],
+  [data-reveal] {
+    opacity: 1 !important;
+    transform: none !important;
+    filter: none !important;
+  }
+
+  .method-step {
+    transform: none !important;
+    opacity: 1;
+  }
+
+  .hero-camera {
+    transform: none;
+  }
+
+  .hero-orb {
+    transform: translate(-50%, -50%);
+  }
+}

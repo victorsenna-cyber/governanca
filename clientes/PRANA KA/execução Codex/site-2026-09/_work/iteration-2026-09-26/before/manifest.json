@@ -1,0 +1,1035 @@
+{
+  "date": "2026-09-27T01:03:13.677Z",
+  "files": [
+    {
+      "file": "index.html",
+      "sha256": "cc39fc3ab44b6d228ffc73dcce9c8f6817cd84248c1201f56955c5efff6ac346"
+    },
+    {
+      "file": "en/index.html",
+      "sha256": "2c9718a1b14f19bfc787aac39299cd2e992171053adcf588c7a63dcff16f1707"
+    },
+    {
+      "file": "es/index.html",
+      "sha256": "71c3103dd0e16a0c978a8f4488f2461358808114ff30bf217053ef629289701f"
+    },
+    {
+      "file": "o-templo/index.html",
+      "sha256": "6616320a52cc39ceb62f491b1a6b0cf7bf3f7cbc0c9151fe05e02423da54ec71"
+    },
+    {
+      "file": "en/the-temple/index.html",
+      "sha256": "69193ba8fed7a8b9daac40f136bd3537ec6345a07552ce75177717eb2d03f0eb"
+    },
+    {
+      "file": "es/el-templo/index.html",
+      "sha256": "552611c94e157fcfc17d91eb206808ef08f49b3ac09494c31551608f13323610"
+    },
+    {
+      "file": "metodo/index.html",
+      "sha256": "22ee48ef32a5ab0bdd90ea96b5f83cf46df477f268cafb4362482c0feb74a319"
+    },
+    {
+      "file": "en/method/index.html",
+      "sha256": "7b893332b3ae45bda8ae4af5e54f614adf685066eeb079a786bd33a86d532888"
+    },
+    {
+      "file": "es/metodo/index.html",
+      "sha256": "425ddd61e8b89c2102d11f6e3f76f52cfe6ffdd9eb7356365d117b85b4d64af4"
+    },
+    {
+      "file": "caminhos/index.html",
+      "sha256": "3d26208f4137b540fc0cd9c9249ff04f7f32efe88ba78ad86e7ea8fd7d9a6e40"
+    },
+    {
+      "file": "en/paths/index.html",
+      "sha256": "44ac53e41a6aaf249641988b2d3eccb928a7a52041ec40c0cb79cb04a25db958"
+    },
+    {
+      "file": "es/caminos/index.html",
+      "sha256": "ef64181a0bee5421eb08a2345ce52e4febd6720afdf1e63918c835bf4e65fa48"
+    },
+    {
+      "file": "mentoria/index.html",
+      "sha256": "9f016224887e16908e096e7aabc3cbb5378b91ba713fa45084260ba88564a930"
+    },
+    {
+      "file": "en/mentorship/index.html",
+      "sha256": "140caac43d75a38d70129c28054dc841109912824df8ad1da295621bb3a62028"
+    },
+    {
+      "file": "es/mentoria/index.html",
+      "sha256": "de4a0ae0996e751f7a21b842ee35526ccc90cec5c1a16083331c660c0fe55aae"
+    },
+    {
+      "file": "visao-uterina/index.html",
+      "sha256": "2f29ad99000a215ecdb4a8cdc4912a9cd9073b75b7e459a75f1373b076ac7f40"
+    },
+    {
+      "file": "en/uterine-vision/index.html",
+      "sha256": "033f365a3b48f89fa689452f1d1cfac8d52372e0996fb1e8241b282e221efb76"
+    },
+    {
+      "file": "es/vision-uterina/index.html",
+      "sha256": "5ecdc3a0358595a5c98bcd25616254edd392bf3f49698589f86771598fafb7bd"
+    },
+    {
+      "file": "curso/index.html",
+      "sha256": "8c9b2e2d669e520a59afae44b1e01a9ae660064967b69a1e6bb159147ae9a588"
+    },
+    {
+      "file": "en/course/index.html",
+      "sha256": "b9646f1c6b9c7562ef28af214bfcc3eb27d15869f97b32fba99fcb158839b89a"
+    },
+    {
+      "file": "es/curso/index.html",
+      "sha256": "ed6b0b2be8b1f2a320031e0b2ff80a0936c2ed2610335b579087fd9981b52638"
+    },
+    {
+      "file": "arte/index.html",
+      "sha256": "a0192a1a79eff9e8fcd875a85e7391d7d060db130ab21f93d2660410e7490aba"
+    },
+    {
+      "file": "en/art/index.html",
+      "sha256": "143c1c66ca96902cee45794654ebfd3c2a353125c4ab4d894b702bd757faa0bf"
+    },
+    {
+      "file": "es/arte/index.html",
+      "sha256": "a4578aff144b9d1c3e1b969e697409c83834c1509cdbb119466f10745c967ba1"
+    },
+    {
+      "file": "prana/index.html",
+      "sha256": "bbd9a2538d1771597861dbb706f5d8ae59d817ba45ee5e17a7c8bafc8619df6f"
+    },
+    {
+      "file": "en/prana/index.html",
+      "sha256": "7d21d751cf4fc1597b5c3478dad212ecbd5a996aca4935514672bdc2ffe11668"
+    },
+    {
+      "file": "es/prana/index.html",
+      "sha256": "8a3e1dedc253d20c881e7630dca6fa660bfe57bec1f69538f9c9e3812c7f35e2"
+    },
+    {
+      "file": "robots.txt",
+      "sha256": "83a8b8232293217177469533b6679cf0a9e1bbd22270b178d64785f8303204a5"
+    },
+    {
+      "file": "sitemap.xml",
+      "sha256": "fa1a84632aaf03972a88f145dfec19368af1fc36f14b9c861d114b74c3c721c2"
+    },
+    {
+      "file": "css/base.css",
+      "sha256": "4a86f3fa091a9cd0a78f400e26937e842cf5d7ca302594d47a39438e456b7fde"
+    },
+    {
+      "file": "css/components.css",
+      "sha256": "b4a32312b7101f4b5ff469ff85188800b6aa31cb1960f429fced49b0e2cfd7c8"
+    },
+    {
+      "file": "css/motion.css",
+      "sha256": "305104e9d94dc48d5708ad3f9fef0eb9a0fb1eb1d85e642f42ab945418615b4d"
+    },
+    {
+      "file": "css/quality.css",
+      "sha256": "2171bbfce9e2d57a33865c27ca877360eaac8fb101584d83f7a8ede63d6e10fb"
+    },
+    {
+      "file": "css/tokens.css",
+      "sha256": "3ab2d65123a9b105152b325fde9051f9c5e5e793c643aaf507ef42de28413d64"
+    },
+    {
+      "file": "css/pages/home.css",
+      "sha256": "7aac9eb18392f751cce36cbc33826927b80a85307ae2c07e5fbeb6d6438c09b2"
+    },
+    {
+      "file": "css/pages/institutional.css",
+      "sha256": "69d2f1c1ccbdb896b7b27245ccb0d90bf6248d41402bb848b68408562304abb1"
+    },
+    {
+      "file": "css/pages/oferta.css",
+      "sha256": "22a0ba5f33967fa5ebf2c0cdc3a199b17f520afdd31e5d2d2753fff8596e9429"
+    },
+    {
+      "file": "js/config.js",
+      "sha256": "f1125a54791e2964cc87c8ae24dbc648fb1c9f884561d332df8df30517b57407"
+    },
+    {
+      "file": "js/hero-25d.js",
+      "sha256": "b506570ab7fb0b142fe0b381617080566622b828aa265544ba54b63a2113b8dd"
+    },
+    {
+      "file": "js/i18n-switch.js",
+      "sha256": "02b103d6eb2b461ecd2f5288b8b379cfad03707d174a82134efa3b4855f67b17"
+    },
+    {
+      "file": "js/main.js",
+      "sha256": "2d52ca18c16633c49dc998216f66adcae930849d2ed4e838ec52fe4d2fc12822"
+    },
+    {
+      "file": "js/nav.js",
+      "sha256": "32e4cdbc5b679b02ca4071426cb71a4b9c3901d7101cb1af8861879e428d2f63"
+    },
+    {
+      "file": "js/reveal.js",
+      "sha256": "948bac1a5287c8c4551d527e74aebb6af84f5fab2de10598d62e6ed703e7e200"
+    },
+    {
+      "file": "js/scroll.js",
+      "sha256": "240f502ee30b7bbed5763077aed7b43377177ee507ade0f3f519aeecf54f141e"
+    },
+    {
+      "file": "assets/biblioteca/circulo-fogo-mulheres.webp",
+      "sha256": "662ef93f8b95be0ec6ae9b97e61971c370e92f7740ad384c5a548708206b60f1"
+    },
+    {
+      "file": "assets/biblioteca/disco-solar.webp",
+      "sha256": "d9aeecc04594f9f73228ceaa55156576623029a13da20721bdc24f3167a029e3"
+    },
+    {
+      "file": "assets/biblioteca/espiral-nautilo-papel.webp",
+      "sha256": "738aa7fea3c0cf423f8f4fe44097b2fcf44d8b7f8c4629a25cbfddac62a58b3b"
+    },
+    {
+      "file": "assets/biblioteca/estatua-ankh.webp",
+      "sha256": "6b8d332c4965fb55cfdbee6ad758627218ed4143f33154d49965ecb00fce3aef"
+    },
+    {
+      "file": "assets/biblioteca/explosao-luz.webp",
+      "sha256": "4e94dfe1d656e65d6111de300a71cfa32b51648e5b1f2e5cffdcfe28a94122d1"
+    },
+    {
+      "file": "assets/biblioteca/geometria-flor-da-vida.webp",
+      "sha256": "70084cc9d3a0aba9c693230d3de9e92e3b935c2acdd83ef6726d8a07c8519171"
+    },
+    {
+      "file": "assets/biblioteca/logo-templo-circular.webp",
+      "sha256": "bac3e5cdab2786925ba30e98f66901bc04ae6fa7b5963979bee2367dbc8b3075"
+    },
+    {
+      "file": "assets/biblioteca/mar-aereo.webp",
+      "sha256": "fefa2b636980edd5de3422ed77f595f45c690abc5770f63509a6bd3a4584f685"
+    },
+    {
+      "file": "assets/biblioteca/mulher-panteras.webp",
+      "sha256": "6908be2e745632e82f83f9c98bd00f4fddc27075d85a1e1d18a10ee6a012fd86"
+    },
+    {
+      "file": "assets/biblioteca/nautilo-dourado.webp",
+      "sha256": "5b33e6eafae9d6d57c8708d1081107aee016b4433c6f33a586e59920e8a4a95d"
+    },
+    {
+      "file": "assets/biblioteca/ornamento-divisor.webp",
+      "sha256": "b254d8546fe7359b18b0ea2174f4984c79b95048ebef3af6baebb86cb33df9e1"
+    },
+    {
+      "file": "assets/biblioteca/ouroboros.webp",
+      "sha256": "f4b02bf1b9a8824ffc58e94820f60587f544f5063186528f29540f7a8f5df16b"
+    },
+    {
+      "file": "assets/biblioteca/pantera-halo.webp",
+      "sha256": "eb3fe882ac3e148c3809f85eb02ab0e701a3dc779378aef2fb11f12daad7d796"
+    },
+    {
+      "file": "assets/biblioteca/portal-arco-rosa.webp",
+      "sha256": "54af7c5412b16a9fff702384d30f795fa5aa5f8df8570ae5cac3fe595cf09b67"
+    },
+    {
+      "file": "assets/biblioteca/prana-golden-temple.webp",
+      "sha256": "552689853c1c5c7e495ff38ab006629b1ecb520316d06f4d0eaa27f29c65fc0c"
+    },
+    {
+      "file": "assets/biblioteca/retrato-monica.webp",
+      "sha256": "d4d80ac9003ef4b591f035f547a990c9288930226f7bfb3e7ce237dddde3e951"
+    },
+    {
+      "file": "assets/biblioteca/retrato-natalia.webp",
+      "sha256": "37e234f96109b40cabca66c21f0fd196dbced3d0a83987d772cef7d4836ac35e"
+    },
+    {
+      "file": "assets/biblioteca/retrato-sami.webp",
+      "sha256": "9b4735173a71c683043af0a3480515b8601de90df813ab31051fa28d37a4d732"
+    },
+    {
+      "file": "assets/biblioteca/retrato-taynah.webp",
+      "sha256": "c108a13ca9659b82db002d8316cf46d002459526475589dc2715fbb7b2962ffe"
+    },
+    {
+      "file": "assets/biblioteca/rosa-dourada-agua.webp",
+      "sha256": "c6e8b37974d4d55b0077a66ca81e28b79c0af14b16ed6a91dd8d24af55b3827f"
+    },
+    {
+      "file": "assets/biblioteca/rosa-dourada.webp",
+      "sha256": "b7c9e10156678a0a2158c4eac114308b94aadaa63c449bbde4e8c9d1315ece10"
+    },
+    {
+      "file": "assets/biblioteca/rosa-vermelha-orvalho.webp",
+      "sha256": "83121b16042d5a6d59dbb546636f8b365f0816e73c28a53bee3ecd4e35a3596f"
+    },
+    {
+      "file": "assets/biblioteca/selo-templo.webp",
+      "sha256": "7f7853198369592eba8e3443ecc73c68cb88bea6892029c8e281c479686c23fb"
+    },
+    {
+      "file": "assets/biblioteca/sri-yantra-cobre.webp",
+      "sha256": "45ee6241a65f370efbcd2598749696c24f59eadc4f635a87c1a0377eb91dd3fa"
+    },
+    {
+      "file": "assets/biblioteca/templo-egipcio.webp",
+      "sha256": "b94af488ecd5eb1d225a14b1e236616b52db275f1fccd12dc76e97ba2d4c1316"
+    },
+    {
+      "file": "assets/biblioteca/templo-flutuante-rosas.webp",
+      "sha256": "ade1f5078a256f9dca15e5cd3373f2b7d477ce99dde7a9dc39df713f79bd6242"
+    },
+    {
+      "file": "assets/biblioteca/templo-sri-yantra.webp",
+      "sha256": "154aac23b0851a5b6102d3b4bb1b040b963dea0ced2db59723b085e60fe43b3f"
+    },
+    {
+      "file": "assets/biblioteca/textura-ouro-folha.webp",
+      "sha256": "60f5f5f1c6e80b49672303641abab059df938b80cd4134fa375a0d351818d016"
+    },
+    {
+      "file": "assets/fonts/fraunces-latin.woff2",
+      "sha256": "7234ed860a9cc83045413c4faee63c960a8f2d1917adcf728119307d56e0d783"
+    },
+    {
+      "file": "assets/fonts/manrope-latin.woff2",
+      "sha256": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972"
+    },
+    {
+      "file": "assets/images/capa-despertar.webp",
+      "sha256": "01aed9edb5e0c26b78d1a3611ba32090d3919404d228a2ac1b6ce4d08368b29d"
+    },
+    {
+      "file": "assets/images/espiral-dourada.webp",
+      "sha256": "1d994addd687a55e5e22fa7a974a7b086efe951ac5ef7bcc35c89e4c8ea300dd"
+    },
+    {
+      "file": "assets/images/prana-ka-templo.webp",
+      "sha256": "291a86d6ea4772d110f85c033acc1982bb3164612b1e0754aa49532491a95af9"
+    },
+    {
+      "file": "assets/images/prana-ka.jpg",
+      "sha256": "35e87bf130e5296c74483aaa89661599e2f88e4395cc0977396aedc24485f417"
+    },
+    {
+      "file": "assets/images/rosa-fonte.jpg",
+      "sha256": "95a5c7b541d368c77efbc3b705f9a70781fef321f356a11b5215c4951719b649"
+    },
+    {
+      "file": "assets/images/rosa-rubi.webp",
+      "sha256": "4df5a729e1a2ebaaa0fffe0b19d99ee7e8bbd402b389b9f14b74792160834c40"
+    },
+    {
+      "file": "assets/logos/favicon.svg",
+      "sha256": "929fd04f4ad6f52b57940834d768d21fd9e4fe39708403d3016a8eaf949ac65f"
+    },
+    {
+      "file": "assets/responsive/01-habitar-o-corpo-72b8c0-160.webp",
+      "sha256": "5b556956b07fd6799155ce742af9fd993260896aa662379f6a32a5e25e87c622"
+    },
+    {
+      "file": "assets/responsive/01-habitar-o-corpo-72b8c0-240.webp",
+      "sha256": "18469b921fd1b18bb99e0b302af51902f6872647a4c8c8aab97486ae85680152"
+    },
+    {
+      "file": "assets/responsive/01-habitar-o-corpo-72b8c0-480.webp",
+      "sha256": "3922a2129ce4ef40535a844bb0c0a90677d9d82d618e85255d7d1d7f28833bd7"
+    },
+    {
+      "file": "assets/responsive/01-habitar-o-corpo-72b8c0-640.webp",
+      "sha256": "bca01e31f08a78f769e1c5c71720e5abcefcc1c47e83113a78b777fbcf353ba2"
+    },
+    {
+      "file": "assets/responsive/01-habitar-o-corpo-72b8c0-760.webp",
+      "sha256": "b3f6ef40fe4852d02ff1f89a574cea6c73585e8a7abbdd523faef787064d7e0f"
+    },
+    {
+      "file": "assets/responsive/02-corpo-templo-6c54a2-160.webp",
+      "sha256": "7ef1104d53aeaa8a883084c135ec8aab0d0d69e85ae85f1485bdf92894fbced9"
+    },
+    {
+      "file": "assets/responsive/02-corpo-templo-6c54a2-240.webp",
+      "sha256": "a2151beb20ac1d50d68dcd353fff8f17fa68b4b44062b6298594c911003f22ab"
+    },
+    {
+      "file": "assets/responsive/02-corpo-templo-6c54a2-480.webp",
+      "sha256": "8c85d6fc5a3db7b4ad78cbbd0a192ac57eef1d9ce4d4a9ce4d40804e07f735d3"
+    },
+    {
+      "file": "assets/responsive/02-corpo-templo-6c54a2-640.webp",
+      "sha256": "62a4756772f8e4409e648d67a2e8ec9a430b577bc9bb28cdef8b162a3379139c"
+    },
+    {
+      "file": "assets/responsive/02-corpo-templo-6c54a2-760.webp",
+      "sha256": "a31a87a86e0fb0c3a5b84145319b2903bc0ec632c581ea700715ecb6c6a85b80"
+    },
+    {
+      "file": "assets/responsive/03-aguas-internas-a6096c-160.webp",
+      "sha256": "3a0c9f53c32ae7117753bab03b6574e09d2c0ae14d1b4bece6fa207b8d56b36a"
+    },
+    {
+      "file": "assets/responsive/03-aguas-internas-a6096c-240.webp",
+      "sha256": "4321d02a74298382d4638a2f85c5a54b342984d72cfc3553cddf5109533ce445"
+    },
+    {
+      "file": "assets/responsive/03-aguas-internas-a6096c-480.webp",
+      "sha256": "4be9aeaedae74c4b00eae4d05490297e7354fcc6a2ae3323ea107f24381c7931"
+    },
+    {
+      "file": "assets/responsive/03-aguas-internas-a6096c-640.webp",
+      "sha256": "3513f97fa944777a75b6ce3b55fc1634ce0ccc2cc10727fe9424260baee8f569"
+    },
+    {
+      "file": "assets/responsive/03-aguas-internas-a6096c-760.webp",
+      "sha256": "a485ed907efa4d46e70f24035b97e048f0af8ebcf5acfd2f01ea71c51fb8a110"
+    },
+    {
+      "file": "assets/responsive/04-shiva-shakti-53fab7-160.webp",
+      "sha256": "13180f08aaae412f44ab478b2e1b299b707098a04f9ce64ab9fbcf3918d91f1f"
+    },
+    {
+      "file": "assets/responsive/04-shiva-shakti-53fab7-240.webp",
+      "sha256": "7e3bd812b1dda0276560e0e74c3bdfadcde569e5c27227b4696ed9deb662bbb9"
+    },
+    {
+      "file": "assets/responsive/04-shiva-shakti-53fab7-480.webp",
+      "sha256": "d44c4a07adb20876b68986026047298e94fecd165c20a2f344be50ad705c527c"
+    },
+    {
+      "file": "assets/responsive/04-shiva-shakti-53fab7-640.webp",
+      "sha256": "f49bc0545bc018dc7fe248636685b2bf7ac80961a86418dcab8279890d6ef6c1"
+    },
+    {
+      "file": "assets/responsive/04-shiva-shakti-53fab7-760.webp",
+      "sha256": "76a0a541e121fad98a58a87702aa18843bb3d24d3415f2cda8023837f1a47e50"
+    },
+    {
+      "file": "assets/responsive/05-a-voz-do-prazer-5a3645-160.webp",
+      "sha256": "ef9a48f6c82030a9a958272244438c60a3af8077651c827cd8e3447fc73f7104"
+    },
+    {
+      "file": "assets/responsive/05-a-voz-do-prazer-5a3645-240.webp",
+      "sha256": "b5ee03de6d36442c83f449c29395c9fe9127e79265c84097b7e1b4fdfa00a1e1"
+    },
+    {
+      "file": "assets/responsive/05-a-voz-do-prazer-5a3645-480.webp",
+      "sha256": "618624041edd3fd95d4cb37e65219cdf3896f39b3d0dab7d57629a54a4126e69"
+    },
+    {
+      "file": "assets/responsive/05-a-voz-do-prazer-5a3645-640.webp",
+      "sha256": "bf0ee3bc6ac5004d1d5c2b01703565a0652188f5b6d15bf31d48b8e3d8ce717f"
+    },
+    {
+      "file": "assets/responsive/05-a-voz-do-prazer-5a3645-760.webp",
+      "sha256": "30f9bc50979b29e6ff07224d610592e5636db245603d589a0ad023312903699d"
+    },
+    {
+      "file": "assets/responsive/06-espelhos-do-amor-2a04f3-160.webp",
+      "sha256": "d0d85fa7b297a4f3ebd3f7f4965853f4e1935c078faf5c96e50690de3339302c"
+    },
+    {
+      "file": "assets/responsive/06-espelhos-do-amor-2a04f3-240.webp",
+      "sha256": "42769e8761e0c675b545e05ada8843e15705447f71c1675114842a1189e4de3c"
+    },
+    {
+      "file": "assets/responsive/06-espelhos-do-amor-2a04f3-480.webp",
+      "sha256": "3af00fe586a7048e97ee6c4d14332e20a8f4212528e25490379c93fc790c8565"
+    },
+    {
+      "file": "assets/responsive/06-espelhos-do-amor-2a04f3-640.webp",
+      "sha256": "c7df36c027dc81c5faa1e3b5c3335478af35490ee6f669d4b1c8532589bfe33e"
+    },
+    {
+      "file": "assets/responsive/06-espelhos-do-amor-2a04f3-760.webp",
+      "sha256": "8d41a0dd39fad5c8a158716d0cc4c1dd4d22fcb7f765b84a7a6813ac5c921c3f"
+    },
+    {
+      "file": "assets/responsive/07-consagracao-da-rosa-f45f20-160.webp",
+      "sha256": "ddf0c87ccbfda4cc04003fc64422935750ac08f6e631aa103d3483f1c01b02e1"
+    },
+    {
+      "file": "assets/responsive/07-consagracao-da-rosa-f45f20-240.webp",
+      "sha256": "85af2ce4c8c2e1a514ee3e32158c85f4bac951737b2ac30f72700e191d3bcb7e"
+    },
+    {
+      "file": "assets/responsive/07-consagracao-da-rosa-f45f20-480.webp",
+      "sha256": "23e2802aed55303578597a76644d455a17cebdaf80c87054273f253f43c3045d"
+    },
+    {
+      "file": "assets/responsive/07-consagracao-da-rosa-f45f20-640.webp",
+      "sha256": "d2be822e9f77556ea925113268bfd268533d6d8753bb95179714134456a3f251"
+    },
+    {
+      "file": "assets/responsive/07-consagracao-da-rosa-f45f20-760.webp",
+      "sha256": "14a4c112636fc06286e22e89c4cd1a944a0e9e0c9f6140f8fcfbb6cad23ae359"
+    },
+    {
+      "file": "assets/responsive/capa-despertar-d433de-160.webp",
+      "sha256": "884a19a9588d2dc7a230aa3669154f50a73b2ce7c99f3b4cd6f034bd72dae6d1"
+    },
+    {
+      "file": "assets/responsive/capa-despertar-d433de-240.webp",
+      "sha256": "4b65ec17f6ed464b1d86e28fd51050670a4e85373f4191b36060a75261712974"
+    },
+    {
+      "file": "assets/responsive/capa-despertar-d433de-480.webp",
+      "sha256": "3ce7663c66005ccf7e505fc7435ede7b636e50a3144cd9339004e3017cf0ecad"
+    },
+    {
+      "file": "assets/responsive/capa-despertar-d433de-640.webp",
+      "sha256": "72395e848c11eec7538869e4538fe95003525106f390e8cbd323075ac22e0977"
+    },
+    {
+      "file": "assets/responsive/capa-despertar-d433de-960.webp",
+      "sha256": "1fc31cbb4330f00cad0d4cdaee7cdf2df60d3583f084c45ac520ce3bcf3b4991"
+    },
+    {
+      "file": "assets/responsive/course-hero.webp",
+      "sha256": "28b4d181d541f7abe26ce936162490ead64c214d0b0030558e4676034ca9a269"
+    },
+    {
+      "file": "assets/responsive/disco-solar-6d5544-160.webp",
+      "sha256": "d4fcfba5d7c365030717c708f14c2c9eeb7186310aa8d1110360d28661841fa5"
+    },
+    {
+      "file": "assets/responsive/disco-solar-6d5544-240.webp",
+      "sha256": "9db13f62ad00849538191933e980cc171fdef39b45baeec63bb352ac5bb1a1cc"
+    },
+    {
+      "file": "assets/responsive/disco-solar-6d5544-480.webp",
+      "sha256": "48e783b8942f4a9fefe81e5db3d56a3922f3109fa2766bd909f160aa3803e67f"
+    },
+    {
+      "file": "assets/responsive/disco-solar-6d5544-640.webp",
+      "sha256": "e66e9e01748a9f2093204340cf24e14ab1c00d40760cb4c29ec5ca1beb1bdb0c"
+    },
+    {
+      "file": "assets/responsive/disco-solar-6d5544-736.webp",
+      "sha256": "ee84c3596e94b724900af9d7e3d8628b7ff2f73ec966c83653876769e39107a9"
+    },
+    {
+      "file": "assets/responsive/espiral-dourada-ba82da-160.webp",
+      "sha256": "66ba935014b4291725145d3013d88e52387b58fad9e2127b39389a2c9846cb3e"
+    },
+    {
+      "file": "assets/responsive/espiral-dourada-ba82da-240.webp",
+      "sha256": "896181258aa82ce7dce6a92d98d23d1f21caca1320fdd4a9a18af2d9606398d3"
+    },
+    {
+      "file": "assets/responsive/espiral-dourada-ba82da-480.webp",
+      "sha256": "c0a2493e0a59bd7d31fd989ab12cc835383d331eea7bdf3d19ac449f74d0964c"
+    },
+    {
+      "file": "assets/responsive/espiral-dourada-ba82da-640.webp",
+      "sha256": "eee501a8f2c9b65abeb2a9649ed60acecb9eefebc9fe5333be9b8a60ab898510"
+    },
+    {
+      "file": "assets/responsive/espiral-dourada-ba82da-900.webp",
+      "sha256": "2a8e7fb0537084b29785ea10b0b4d5702cc7b1c91e770b0065cfb3ee6e5ce9c6"
+    },
+    {
+      "file": "assets/responsive/estatua-ankh-88d20e-160.webp",
+      "sha256": "6f4675b3ec34a0cd7040fa39dd487c164e4ebe473a768bb7fc81a0283e090683"
+    },
+    {
+      "file": "assets/responsive/estatua-ankh-88d20e-240.webp",
+      "sha256": "66808d5773d5727b6af5758484cb5b3e05b6131a7dbc1b7e62f7b7bdd7a9d4c0"
+    },
+    {
+      "file": "assets/responsive/estatua-ankh-88d20e-457.webp",
+      "sha256": "7228fc8512efc2a01ecb366fda0f2b523b9a90bbb3f9e579d2bd2c3e286e6caa"
+    },
+    {
+      "file": "assets/responsive/geometria-flor-da-vida-f8509e-1024.webp",
+      "sha256": "0d33a868863076729c00b58d5eb450221ba2850b5550a15c7c9893deaae4432d"
+    },
+    {
+      "file": "assets/responsive/geometria-flor-da-vida-f8509e-160.webp",
+      "sha256": "fd7364241fe57b9fb41e342a63153f8b12073f5803983747aa70f5400f40a59b"
+    },
+    {
+      "file": "assets/responsive/geometria-flor-da-vida-f8509e-240.webp",
+      "sha256": "34dee9e1f0ead726332953cc32e2d43b499f32079dbeb344bc679e2c69bd4899"
+    },
+    {
+      "file": "assets/responsive/geometria-flor-da-vida-f8509e-480.webp",
+      "sha256": "b129bc5f943e56b9da7829519fc178f4475958024d7baf320ba9cd41811e44fb"
+    },
+    {
+      "file": "assets/responsive/geometria-flor-da-vida-f8509e-640.webp",
+      "sha256": "9ca9e78aad8f17db8ab8512acebe9d483cdcd2c542642152577d631a20c8fd79"
+    },
+    {
+      "file": "assets/responsive/geometria-flor-da-vida-f8509e-960.webp",
+      "sha256": "a039ee62aa9f6ba8ca1f2d260563fe6af7c3633f4ce953810b4bfaa6627619d8"
+    },
+    {
+      "file": "assets/responsive/mar-aereo-0abddc-160.webp",
+      "sha256": "4926f44cb0c038f7bd4754b7d1e18a691f5aa7fa0a5d66d802cedf0850878199"
+    },
+    {
+      "file": "assets/responsive/mar-aereo-0abddc-240.webp",
+      "sha256": "ad22a896f8c9d1e2dd67e357a8c8b4c419c51f9571fecd40df9d4bdb89adf415"
+    },
+    {
+      "file": "assets/responsive/mar-aereo-0abddc-480.webp",
+      "sha256": "600cd807fe4ef45eeea84aedc6878b92205d4d1dd9d7e8e5ef3863cd0980075e"
+    },
+    {
+      "file": "assets/responsive/mar-aereo-0abddc-640.webp",
+      "sha256": "1ce51f2b0251799b9959f76fc36ecceb2c630383a4298fc6812d5e72a95b212b"
+    },
+    {
+      "file": "assets/responsive/mar-aereo-0abddc-720.webp",
+      "sha256": "b33f34936574a08c7e9f44bf384964a1ddc09fe860037dcb853bfae224eb0a27"
+    },
+    {
+      "file": "assets/responsive/mulher-panteras-d2e746-1170.webp",
+      "sha256": "6e46d85a1241d30c60de150acc4d22bf4a4daaa0cc668db023ef2cfc9ec002ce"
+    },
+    {
+      "file": "assets/responsive/mulher-panteras-d2e746-160.webp",
+      "sha256": "d2e45c8ba4dd5f78690d0f9303f0f1395b87ff641c4ffe78a26efa340dcda3a1"
+    },
+    {
+      "file": "assets/responsive/mulher-panteras-d2e746-240.webp",
+      "sha256": "4a7fa16028f9d0ea83c15120749acb8f2e93788aa57295d1d1e87f44444c1c5d"
+    },
+    {
+      "file": "assets/responsive/mulher-panteras-d2e746-480.webp",
+      "sha256": "ed49ca4bad82fb809e5c3626cada11364314a98c105b06a3f490c0fc6668be14"
+    },
+    {
+      "file": "assets/responsive/mulher-panteras-d2e746-640.webp",
+      "sha256": "8ea9714edbcf6f6541ed5e4296838d176cc0c4ef917ecce877319ab75144c4c6"
+    },
+    {
+      "file": "assets/responsive/mulher-panteras-d2e746-960.webp",
+      "sha256": "8b99e9b9d79917c20487562362b7e3b01afaf4ad260204db840ee3300797c007"
+    },
+    {
+      "file": "assets/responsive/nautilo-dourado-a1e46d-1131.webp",
+      "sha256": "0ff70a0d6cbf85236dd04b628d2d24699702154019cd98174adbfcd7a261a8b6"
+    },
+    {
+      "file": "assets/responsive/nautilo-dourado-a1e46d-160.webp",
+      "sha256": "2a406c751a5d78de753a62318bb1776bb88e9df0d6cdc83ae0f3c66d756006bd"
+    },
+    {
+      "file": "assets/responsive/nautilo-dourado-a1e46d-240.webp",
+      "sha256": "6c0d71a587636055ca02cf7a6a1588ab5e6e893a8d327ac33f7c98d877e63e77"
+    },
+    {
+      "file": "assets/responsive/nautilo-dourado-a1e46d-480.webp",
+      "sha256": "6725392f71f2020ba7e1379bc198cf2eda64efb97703706d0da5feb306db98b1"
+    },
+    {
+      "file": "assets/responsive/nautilo-dourado-a1e46d-640.webp",
+      "sha256": "0c1634c2ba807d476e6e8668945a4ea8e125173c91321f8700a8ab26efc43c64"
+    },
+    {
+      "file": "assets/responsive/nautilo-dourado-a1e46d-960.webp",
+      "sha256": "a6b879958076acb7c2db9172dd14b6c75bf8bea6a4c2a0ab56dc70f6cabf85b6"
+    },
+    {
+      "file": "assets/responsive/ornamento-divisor-65565b-160.webp",
+      "sha256": "f11eb5e8ebfc36a5bd52d1540800802f42690640bcd917df540343ffb836a89b"
+    },
+    {
+      "file": "assets/responsive/ornamento-divisor-65565b-180.webp",
+      "sha256": "3a789a99ca1cd12dd314830d65e29e8e0b0009f51244fcc5f792b197e3c4ed76"
+    },
+    {
+      "file": "assets/responsive/ouroboros-cbf870-160.webp",
+      "sha256": "96e6bf9492465a3609490ebf129f7ada729d6245358012f0f2c0273eba968985"
+    },
+    {
+      "file": "assets/responsive/ouroboros-cbf870-240.webp",
+      "sha256": "ed522f4a365eae48dc1912d466831acf132c639db1d0a5e85dd78f3d23a6c933"
+    },
+    {
+      "file": "assets/responsive/ouroboros-cbf870-480.webp",
+      "sha256": "a5c029e8ac521f546ec541f77081733f2fe3fb74d0ee1a0cb3633531d4abdb4d"
+    },
+    {
+      "file": "assets/responsive/ouroboros-cbf870-640.webp",
+      "sha256": "d5f81431343372cbb3f7906c19ab6fe767e10c9c5c81a16788b672e96d430494"
+    },
+    {
+      "file": "assets/responsive/ouroboros-cbf870-736.webp",
+      "sha256": "7a32182dc22e10faebf805623b9e2bdbd33e53a0075bb833538db01e74b07983"
+    },
+    {
+      "file": "assets/responsive/portal-arco-rosa-871419-1125.webp",
+      "sha256": "d00165d6249a5eca0100ff426b64c2020dff260352740cd4737c65f588929e4d"
+    },
+    {
+      "file": "assets/responsive/portal-arco-rosa-871419-160.webp",
+      "sha256": "0d308c8ff33cd14ae7092de28d6a6fafd77a3ff357f5f447337d0fc86e850623"
+    },
+    {
+      "file": "assets/responsive/portal-arco-rosa-871419-240.webp",
+      "sha256": "c13146f2d708b24a52fed107e1f4cda3c7048d2a837ebde5d0a9c4ff0f46f33a"
+    },
+    {
+      "file": "assets/responsive/portal-arco-rosa-871419-480.webp",
+      "sha256": "c6fa2145e96f1f91665d0b4d03dc5fd27c35e45f3835690440b3ac348c93ac5f"
+    },
+    {
+      "file": "assets/responsive/portal-arco-rosa-871419-640.webp",
+      "sha256": "be46eb2c28d748e3c7213bed46c653f27d455c39952d9dd54c8ea2e9ab9182ab"
+    },
+    {
+      "file": "assets/responsive/portal-arco-rosa-871419-960.webp",
+      "sha256": "6e620dd6504fde06f7067070eafce26bdeef0f24722af7c01b5906fc2ef93b51"
+    },
+    {
+      "file": "assets/responsive/prana-golden-temple-0e2be8-1080.webp",
+      "sha256": "6a4eaab27e783a2d79f48ad56c39a5dae1230eb5664a1b43140f4f4d8cd64329"
+    },
+    {
+      "file": "assets/responsive/prana-golden-temple-0e2be8-160.webp",
+      "sha256": "2f50bd545555624516c8d74cc7a0b8f1c9de7a8110a621249c8ed5764258e4e1"
+    },
+    {
+      "file": "assets/responsive/prana-golden-temple-0e2be8-240.webp",
+      "sha256": "f18313cfb211252d867e5c6b257507caf0db4c2980a2a6ed6b9a74a00508ab0f"
+    },
+    {
+      "file": "assets/responsive/prana-golden-temple-0e2be8-480.webp",
+      "sha256": "68f3ccc6bc5c4ed22cf00d77e8df75b0cbbdd550aa40f35d720eb12cf76994ec"
+    },
+    {
+      "file": "assets/responsive/prana-golden-temple-0e2be8-640.webp",
+      "sha256": "5a7f0565f9c4e368ae8975ff74da286c588ab858fb28de708a042f4166bcf6fc"
+    },
+    {
+      "file": "assets/responsive/prana-golden-temple-0e2be8-960.webp",
+      "sha256": "db7f02e52bb1633337b31ac9d903dc2cbca61bcc6480b598644bd4309c9bb72d"
+    },
+    {
+      "file": "assets/responsive/prana-ka-7d2a6a-1080.webp",
+      "sha256": "de68c0bb90bc2d3534f24f0121284682b6309113242472e4c8af09b1bc37ef05"
+    },
+    {
+      "file": "assets/responsive/prana-ka-7d2a6a-160.webp",
+      "sha256": "96bec0efec425b668437491f849be9edd03f9c548a51414609cb338e1b971bbf"
+    },
+    {
+      "file": "assets/responsive/prana-ka-7d2a6a-240.webp",
+      "sha256": "fc323e7d206f44a8e4359d96890d34f1d9fa763b085bcebdd371ab49c34f9ae6"
+    },
+    {
+      "file": "assets/responsive/prana-ka-7d2a6a-480.webp",
+      "sha256": "addac46c6789d68ec611281a28848d9a8421ad0ff0600e7e637cfc35fd223f5d"
+    },
+    {
+      "file": "assets/responsive/prana-ka-7d2a6a-640.webp",
+      "sha256": "511883c488cafd7a072ab3293cdd5ec5e28800849c6841c3239d4c4782a2f4db"
+    },
+    {
+      "file": "assets/responsive/prana-ka-7d2a6a-960.webp",
+      "sha256": "6209a3233566f2cc5ff8ab99c08e219310d53dbc0823d9fb832f83a1fc6ec84d"
+    },
+    {
+      "file": "assets/responsive/prana-ka-templo-b75812-160.webp",
+      "sha256": "0b0eedd46cd05c879441cf86930cff71b629f453f7cc3dc9982ad2aff0ae9817"
+    },
+    {
+      "file": "assets/responsive/prana-ka-templo-b75812-240.webp",
+      "sha256": "d77f8c873b5a2f8d247d3f44a7474a0b94c87b2bfbbc512df380cc980a3e8b02"
+    },
+    {
+      "file": "assets/responsive/prana-ka-templo-b75812-480.webp",
+      "sha256": "e918c2f63e4fb03d6980aab7d6fc51ae659126509a3fb456eebb3b3d5d0840ea"
+    },
+    {
+      "file": "assets/responsive/prana-ka-templo-b75812-640.webp",
+      "sha256": "402fb37a55019d0d5bc6f853d82a815c4db902db168fe7e98d24364cde0a9bc1"
+    },
+    {
+      "file": "assets/responsive/prana-ka-templo-b75812-900.webp",
+      "sha256": "fc1d11aedb6e0805415a94f777d955612b4a7aba4b0353a56dcec21d713cd922"
+    },
+    {
+      "file": "assets/responsive/retrato-monica-d19f78-160.webp",
+      "sha256": "65e12a7a45d93e594489642096501611e628c44dddeac3e201ed0d09284207c9"
+    },
+    {
+      "file": "assets/responsive/retrato-monica-d19f78-240.webp",
+      "sha256": "c90a5bee320f21907cc0ba0f8d71ffc5362ed36349723c439ffe95454e637b64"
+    },
+    {
+      "file": "assets/responsive/retrato-monica-d19f78-320.webp",
+      "sha256": "2b29c2cbbb17f0f972285b63f3352e45fc231ed7c29fa29765f311d9af6186b5"
+    },
+    {
+      "file": "assets/responsive/retrato-natalia-47f22c-160.webp",
+      "sha256": "e550f8edfc5c121129d03a75acba844ba9ed16de686762273484b3f4aa3e90c3"
+    },
+    {
+      "file": "assets/responsive/retrato-natalia-47f22c-240.webp",
+      "sha256": "28e35c3b573266cd73996598e309acc0b26306f3fca25f0d6ebeabc1d4a06af2"
+    },
+    {
+      "file": "assets/responsive/retrato-natalia-47f22c-320.webp",
+      "sha256": "a64036c7be19f8412dc033315c3cec35c3276d96dd9dc272b75c574435f4309f"
+    },
+    {
+      "file": "assets/responsive/retrato-sami-207db1-160.webp",
+      "sha256": "432bc2d5fa5ed95a7bb4a66607cbcc82ac2ed858b8a268d327bf5bb4871de880"
+    },
+    {
+      "file": "assets/responsive/retrato-sami-207db1-240.webp",
+      "sha256": "ab745d457c1f3a1c86ce80fcac0a06fc91cc1f7f980e2773e3a28e59ddce1b83"
+    },
+    {
+      "file": "assets/responsive/retrato-sami-207db1-320.webp",
+      "sha256": "268073855287c6cee60022b6dee521b4d622e01834ffda72682246930ea07925"
+    },
+    {
+      "file": "assets/responsive/retrato-taynah-b2bfad-160.webp",
+      "sha256": "a7167d4b9f1446061ba5c327c2aaf15ebd6df8928a30ff8e5d13cc7b0a07fc07"
+    },
+    {
+      "file": "assets/responsive/retrato-taynah-b2bfad-240.webp",
+      "sha256": "dfbbd92113f63d6c846f7ee6b74c1053cfa3148c6f4ea15e3d57576151bda4de"
+    },
+    {
+      "file": "assets/responsive/retrato-taynah-b2bfad-320.webp",
+      "sha256": "5405d013f69f5f75a83341b874e1b30ccf8d1097b0394b73c3c3a61d1cbeb63f"
+    },
+    {
+      "file": "assets/responsive/rosa-dourada-d564df-160.webp",
+      "sha256": "c2718a552fd1a22b0ee189604ae1ea4f25e55391a5845ba37d549f2b98b93b0c"
+    },
+    {
+      "file": "assets/responsive/rosa-dourada-d564df-240.webp",
+      "sha256": "772e92719e85cad0fac2d490c949affe446c3f72b3e0d7ef445ae37eaf0b1094"
+    },
+    {
+      "file": "assets/responsive/rosa-dourada-d564df-480.webp",
+      "sha256": "c4cfd4e54d57e260b2db77cde43553ee3838361a51580d99a3fa13888de56dc5"
+    },
+    {
+      "file": "assets/responsive/rosa-dourada-d564df-640.webp",
+      "sha256": "d326e63949f238a6c5f68a27273cd36196bf57df0de8e6754f1e7a0273cd3a5d"
+    },
+    {
+      "file": "assets/responsive/rosa-dourada-d564df-736.webp",
+      "sha256": "64392f64572384f4fd01d004830c9caa2330b83ee396627ce327e9c9c8ad9213"
+    },
+    {
+      "file": "assets/responsive/rosa-rubi-b5c2c4-1440.webp",
+      "sha256": "7534baa68485e1e0f8dde7f904b8e2750746c74990af87e9ff1a7456ddc2a626"
+    },
+    {
+      "file": "assets/responsive/rosa-rubi-b5c2c4-160.webp",
+      "sha256": "e0291c6ab1aa2c9696d1dc92fa2b3643696b88d9b0e3801dde3c6b0807ba9bcb"
+    },
+    {
+      "file": "assets/responsive/rosa-rubi-b5c2c4-240.webp",
+      "sha256": "361387157cf95cd207ccdbc010bcd5bb81171bc3dc81843bfca82d45bd951979"
+    },
+    {
+      "file": "assets/responsive/rosa-rubi-b5c2c4-480.webp",
+      "sha256": "5b41391a57029cb75d21a95e90cc579fa494ecfea109ccfb5783abdb114f2d6d"
+    },
+    {
+      "file": "assets/responsive/rosa-rubi-b5c2c4-640.webp",
+      "sha256": "04923c99fe2a1df9ba73706dc1118d666d19dc8d635d0c56f4f2205721a52fbe"
+    },
+    {
+      "file": "assets/responsive/rosa-rubi-b5c2c4-960.webp",
+      "sha256": "4fca4a92d161a7ceb0a0ee27c732cc3ecc67d034bb2df85bd8327b70d8daa684"
+    },
+    {
+      "file": "assets/responsive/rosa-vermelha-orvalho-be1755-160.webp",
+      "sha256": "c1c85828d875ff2a3904a1048dd516286026742efffde807b97fbb7e1e0b5ee8"
+    },
+    {
+      "file": "assets/responsive/rosa-vermelha-orvalho-be1755-240.webp",
+      "sha256": "4abfc45d6a58427a9e3b8182939149ba7a4482d7a84af59956588104fdc1687e"
+    },
+    {
+      "file": "assets/responsive/rosa-vermelha-orvalho-be1755-480.webp",
+      "sha256": "947037899df97eaa64e708ba5845141d73d4a47afa6497a6c0af8956b335902d"
+    },
+    {
+      "file": "assets/responsive/rosa-vermelha-orvalho-be1755-640.webp",
+      "sha256": "538326afa936455f0b22e642487083f910045eea5766c1cca8291c21f683ac1a"
+    },
+    {
+      "file": "assets/responsive/rosa-vermelha-orvalho-be1755-900.webp",
+      "sha256": "428a4a82257d2ef153bef1671ea2f33a39f1d40470d2d19e45cf5f13ff065670"
+    },
+    {
+      "file": "assets/responsive/selo-templo-480f21-160.webp",
+      "sha256": "4e33a0a977fea0bbd6e1d8279d406a62f2a9af559a439c301628a53483a22ce5"
+    },
+    {
+      "file": "assets/responsive/selo-templo-480f21-240.webp",
+      "sha256": "52bab309298d4c9fbbf98674a7d13097cc118f1d4a905ff48989fc4dcb4b6ec6"
+    },
+    {
+      "file": "assets/responsive/selo-templo-480f21-480.webp",
+      "sha256": "15ff905ff9540d872ee7bdda11061dcb75d8b6df1b21302d7f23d2c9810d0deb"
+    },
+    {
+      "file": "assets/responsive/selo-templo-480f21-640.webp",
+      "sha256": "41b6621165d9273a367a41182b4f78bb2f78c5b835314176bfdbccf8675ae45f"
+    },
+    {
+      "file": "assets/responsive/selo-templo-480f21-900.webp",
+      "sha256": "d578e69b5fe755de04a5aa63d22ea10dee2b1789518bf77c4f06c35ea4ea5990"
+    },
+    {
+      "file": "assets/responsive/sri-yantra-cobre-aa8fe9-1174.webp",
+      "sha256": "0c610ea6209b0f70cce0489c427d4fcd176c26a9a26b802773815d37d5fa5746"
+    },
+    {
+      "file": "assets/responsive/sri-yantra-cobre-aa8fe9-160.webp",
+      "sha256": "1794266ca113415b3ea3e3f734f59af116c102df8ee8e574f073e1ed2a593281"
+    },
+    {
+      "file": "assets/responsive/sri-yantra-cobre-aa8fe9-240.webp",
+      "sha256": "d63ac8ff1fe5df03be7f19712d449444fcf88aa1ac2cfbc6b3b00b7d366e8a9b"
+    },
+    {
+      "file": "assets/responsive/sri-yantra-cobre-aa8fe9-480.webp",
+      "sha256": "a285c01ec72bc9bf338be1c94fc2ee280bba8240f7ec79042b51aefa290cb2e9"
+    },
+    {
+      "file": "assets/responsive/sri-yantra-cobre-aa8fe9-640.webp",
+      "sha256": "445f7e21ab9a1eb94667ac3343d43b8f4be217d467e218e7a1520e05cfe4d91b"
+    },
+    {
+      "file": "assets/responsive/sri-yantra-cobre-aa8fe9-960.webp",
+      "sha256": "3fb31b2140df04e653a518bda964f4f4cb94e94dbebcf088a74dd1436204f16c"
+    },
+    {
+      "file": "assets/responsive/templo-egipcio-394881-1024.webp",
+      "sha256": "266b5dfac838b3362bf740d1af26c37ab0ea98b5d664f6ee97cc804e3d453e08"
+    },
+    {
+      "file": "assets/responsive/templo-egipcio-394881-160.webp",
+      "sha256": "f2e13217803a3e001bb21d6e8f24cef470ddeaa78720a85fd1bc2412e6d22fae"
+    },
+    {
+      "file": "assets/responsive/templo-egipcio-394881-240.webp",
+      "sha256": "bcda87c953f9f45a1e689269995dcf9ad3a8deb290c9d8a2ac5be39a61af3756"
+    },
+    {
+      "file": "assets/responsive/templo-egipcio-394881-480.webp",
+      "sha256": "fb6a864d563b949a7f7be42b070b8e05cf1e011242e177d0c4c762ac33878b86"
+    },
+    {
+      "file": "assets/responsive/templo-egipcio-394881-640.webp",
+      "sha256": "8f78999841a86910f8cc3039004c5b41ea96c871af86795820089da8113131bb"
+    },
+    {
+      "file": "assets/responsive/templo-egipcio-394881-960.webp",
+      "sha256": "9bb4860d3e85168a879764649f4dc9a661a9d0673ef12a84a683f56feb9679c6"
+    },
+    {
+      "file": "assets/responsive/templo-flutuante-rosas-fe286a-1024.webp",
+      "sha256": "5f66d36cc519026ef495d3119b3dcbe23579c26dccdb9866ab7e45ae5f68d232"
+    },
+    {
+      "file": "assets/responsive/templo-flutuante-rosas-fe286a-160.webp",
+      "sha256": "eac1a7a5157a386c0a1d9fd591da60c1651bc49cb1209e05710573cf15fbdaa3"
+    },
+    {
+      "file": "assets/responsive/templo-flutuante-rosas-fe286a-240.webp",
+      "sha256": "3b589b6fa8932797e924c363fad0f2ab96f0e1db74838285970b98c895b086d1"
+    },
+    {
+      "file": "assets/responsive/templo-flutuante-rosas-fe286a-480.webp",
+      "sha256": "93a8dd30ad9e28108174d76a29310c379ca0842a7ece6a4df3237336b42c9e97"
+    },
+    {
+      "file": "assets/responsive/templo-flutuante-rosas-fe286a-640.webp",
+      "sha256": "cb312ea758cd8a79b44174d541c6b408d319a53882219b204cc9fa807eccb7d7"
+    },
+    {
+      "file": "assets/responsive/templo-flutuante-rosas-fe286a-960.webp",
+      "sha256": "65596c08b9ed906a397198f52118522bd2be4570cb0c90cb6aedf1f0a9157133"
+    },
+    {
+      "file": "assets/responsive/templo-sri-yantra-776a5a-1024.webp",
+      "sha256": "88ed2927cd784f3e491d59949cfa37b748923482a5600fb892b50ad427072d25"
+    },
+    {
+      "file": "assets/responsive/templo-sri-yantra-776a5a-160.webp",
+      "sha256": "129bc22df625d44ee85abb3c7022d18b67cbba47c8a84a74cac36a4c57b85145"
+    },
+    {
+      "file": "assets/responsive/templo-sri-yantra-776a5a-240.webp",
+      "sha256": "883614b493c69f2a436a2850742717421c003ec92f432bb4277f0e087f18a817"
+    },
+    {
+      "file": "assets/responsive/templo-sri-yantra-776a5a-480.webp",
+      "sha256": "8939f151cdb968686f0ec72ff7260bfb2e6dd8a05a85eb33f1d8cbc1b8a5f6a4"
+    },
+    {
+      "file": "assets/responsive/templo-sri-yantra-776a5a-640.webp",
+      "sha256": "e7df5f70000316162f8da70139b9f2b7c7764b0727f3dac4154ae6bd2be7ebe7"
+    },
+    {
+      "file": "assets/responsive/templo-sri-yantra-776a5a-960.webp",
+      "sha256": "259138621048f9b66868fa967887d1e34c9bbbbedf7b9c829b08a9f64757a6e0"
+    },
+    {
+      "file": "assets/responsive/texture-gold-640.webp",
+      "sha256": "e05baa09d10ddc052a0eaa483cc1414be30bc6a134693d2862d32cedee1d735b"
+    },
+    {
+      "file": "assets/images/hero/seal-depth.svg",
+      "sha256": "01c1cf0c5bdaccb3325ed90ba353ee982f9dcadbc33a2ac80fcfcdf29afce48f"
+    },
+    {
+      "file": "assets/images/passagens/01-habitar-o-corpo.webp",
+      "sha256": "5a3a8d8cf392c4b245b3cdb137182bd8b3b64534725048797e539284f322405b"
+    },
+    {
+      "file": "assets/images/passagens/02-corpo-templo.webp",
+      "sha256": "800350d3df0fc579471978575c9675d31601fe9d3a04d2b0d106c5626ea18825"
+    },
+    {
+      "file": "assets/images/passagens/03-aguas-internas.webp",
+      "sha256": "b11198da9928e23e4a2867da2271ac4fa84c205c0147649e8ae59b4d3274b516"
+    },
+    {
+      "file": "assets/images/passagens/04-shiva-shakti.webp",
+      "sha256": "ff6b6f65cb60854cc189c04d457e772d4da942adbe6ad52e23da75b6d7f91aa3"
+    },
+    {
+      "file": "assets/images/passagens/05-a-voz-do-prazer.webp",
+      "sha256": "3f58efe38b812bf842f7eed19f2aeadc3d71a96c73eee9f283369e23e8ebd3b1"
+    },
+    {
+      "file": "assets/images/passagens/06-espelhos-do-amor.webp",
+      "sha256": "b385b84690ab5d8c3e035d30910f1e924db09744fff1c955648722aef78f8b27"
+    },
+    {
+      "file": "assets/images/passagens/07-consagracao-da-rosa.webp",
+      "sha256": "55aa5da1102d3a10e8a0bd13562055be9fbd4f6a844eb7d50beeb4114291f758"
+    }
+  ],
+  "sources": [
+    {
+      "file": "ITERACAO-SITE-2026-09-25.md",
+      "sha256": "5a707d12234e682a479d0bb37a03963ec1739faff70031e4ccfe3fb8a7b2dc16"
+    },
+    {
+      "file": "DECISOES.md",
+      "sha256": "fa4136ac369c07efee4a8e21806b6df03fcd6421946cbb859e54511e05dcd580"
+    },
+    {
+      "file": "STATUS.md",
+      "sha256": "adcfd99ce6019e30ad68bb58d0cf9216732368be2d44865b0bcbe3e56f657daa"
+    }
+  ]
+}

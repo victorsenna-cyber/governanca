@@ -1,0 +1,1222 @@
+[
+  {
+    "url": "https://lp02.profissaohomesales.com/",
+    "path": "arquivos/lp02.profissaohomesales.com/df1d516d6a881817-index.html",
+    "status": 200,
+    "content_type": "text/html; charset=utf-8",
+    "bytes": 213416,
+    "sha256": "b963a81c211955c8e796a147295f79daa321a3c2a03546aca2cdbd73fdee58c5",
+    "resource_type": "document",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://inlead.digital/_next/static/css/dd39038178352821.css",
+    "path": "arquivos/inlead.digital/23b145e01be26055-dd39038178352821.css",
+    "status": 200,
+    "content_type": "text/css; charset=utf-8",
+    "bytes": 10416,
+    "sha256": "78530675bc663475ec73ad9861c44a42012ff2316794388a1cc6d031832e75d1",
+    "resource_type": "stylesheet",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://inlead.digital/_next/static/css/ebe6b94430efb53c.css",
+    "path": "arquivos/inlead.digital/d8d5bb7abdf0c95a-ebe6b94430efb53c.css",
+    "status": 200,
+    "content_type": "text/css; charset=utf-8",
+    "bytes": 168924,
+    "sha256": "a42cc53c35a2b0301d587022693a18e8c9d4c523b65194617e58de16072d82ad",
+    "resource_type": "stylesheet",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://inlead.digital/_next/static/chunks/webpack-cd8748fe511eb9b2.js",
+    "path": "arquivos/inlead.digital/85e417fd80a77394-webpack-cd8748fe511eb9b2.js",
+    "status": 200,
+    "content_type": "application/javascript; charset=utf-8",
+    "bytes": 51759,
+    "sha256": "babd8d292ceb8da8608ac1195d625231586390d0b8841cd141d05aedb17784b5",
+    "resource_type": "script",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://inlead.digital/_next/static/media/e4af272ccee01ff0-s.p.woff2",
+    "path": "arquivos/inlead.digital/4a5d2653dcdb3715-e4af272ccee01ff0-s.p.woff2",
+    "status": 200,
+    "content_type": "font/woff2",
+    "bytes": 48432,
+    "sha256": "c940764593d0fe5d596be327ca7558855e018039fb78509aa21921fd3644c3e4",
+    "resource_type": "font",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://inlead.digital/_next/static/chunks/main-419237a43b4cdaed.js",
+    "path": "arquivos/inlead.digital/8ead0ddbb2888bbe-main-419237a43b4cdaed.js",
+    "status": 200,
+    "content_type": "application/javascript; charset=utf-8",
+    "bytes": 136106,
+    "sha256": "587b3a2924c0fb7a45e6036ab4a47515ca6c82a1d4b49bcedcc4ef64b4cc24a7",
+    "resource_type": "script",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://inlead.digital/_next/static/chunks/framework-b21a9a9d949ebca4.js",
+    "path": "arquivos/inlead.digital/6ef966ff9d5ed99f-framework-b21a9a9d949ebca4.js",
+    "status": 200,
+    "content_type": "application/javascript; charset=utf-8",
+    "bytes": 139851,
+    "sha256": "155a1933b1b0d6c3b708424b9bfc9c3d955ce361c32ef871414c945574161410",
+    "resource_type": "script",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://inlead.digital/_next/static/chunks/6192-7fe6f14368d860b7.js",
+    "path": "arquivos/inlead.digital/9babba38d35b93ce-6192-7fe6f14368d860b7.js",
+    "status": 200,
+    "content_type": "application/javascript; charset=utf-8",
+    "bytes": 10468,
+    "sha256": "20dbf9714fb76d7d908c1dd7f91e7a125709262ee7ebfad6332f3ef0a7cbd1e2",
+    "resource_type": "script",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://inlead.digital/_next/static/chunks/99293-883964bb9899fa3f.js",
+    "path": "arquivos/inlead.digital/7cc0f80e366692c5-99293-883964bb9899fa3f.js",
+    "status": 200,
+    "content_type": "application/javascript; charset=utf-8",
+    "bytes": 28715,
+    "sha256": "39d72a3fb11dd3f10f63302577ed6586730033256a092997aef2fff31b222e9b",
+    "resource_type": "script",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://inlead.digital/_next/static/chunks/7904-6cfe04f50c80fe48.js",
+    "path": "arquivos/inlead.digital/7cbf2b1a82640886-7904-6cfe04f50c80fe48.js",
+    "status": 200,
+    "content_type": "application/javascript; charset=utf-8",
+    "bytes": 12035,
+    "sha256": "bb66e10d450bddff86547f0bbab9ad92840849bc166f2e9f82fe0d9718d50979",
+    "resource_type": "script",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://inlead.digital/_next/static/chunks/pages/_app-403598883bc628dc.js",
+    "path": "arquivos/inlead.digital/dd55459f78c27ac6-_app-403598883bc628dc.js",
+    "status": 200,
+    "content_type": "application/javascript; charset=utf-8",
+    "bytes": 72642,
+    "sha256": "dfcd4badf8c06e238236fbaafbb34353c18a3c3a5e688f783516c9b9d12233a5",
+    "resource_type": "script",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://inlead.digital/_next/static/chunks/14128-dc19b21dff6dfbdb.js",
+    "path": "arquivos/inlead.digital/e04619613e5f9d88-14128-dc19b21dff6dfbdb.js",
+    "status": 200,
+    "content_type": "application/javascript; charset=utf-8",
+    "bytes": 56060,
+    "sha256": "0cdf79e421cd330846097c151f329d7c9bbabd028c26815272a68adddf1570bc",
+    "resource_type": "script",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://inlead.digital/_next/static/chunks/98830-b3b44ea8eb84b034.js",
+    "path": "arquivos/inlead.digital/f3d6f51d79762f1f-98830-b3b44ea8eb84b034.js",
+    "status": 200,
+    "content_type": "application/javascript; charset=utf-8",
+    "bytes": 131987,
+    "sha256": "3e0f2b437c718836d5dfa641327b6aad0566a8efd4b47279cb7515a781ff4952",
+    "resource_type": "script",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://inlead.digital/_next/static/chunks/4770-8ef21101128792c1.js",
+    "path": "arquivos/inlead.digital/71f14c16c595fac2-4770-8ef21101128792c1.js",
+    "status": 200,
+    "content_type": "application/javascript; charset=utf-8",
+    "bytes": 98363,
+    "sha256": "4c16a007cb3471c215ce9c8b964ea1f6570e6cf0a77c97139f5108d291bc74f8",
+    "resource_type": "script",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://fonts.googleapis.com/css?family=Inter:400,500,700&display=swap",
+    "path": "arquivos/fonts.googleapis.com/cdd9f91f78260d29-css.css",
+    "status": 200,
+    "content_type": "text/css; charset=utf-8",
+    "bytes": 7413,
+    "sha256": "6c1c0a2f27b61de936fe93f51109127b498e8f0e640dc927cc6edfb9b333159f",
+    "resource_type": "stylesheet",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap",
+    "path": "arquivos/fonts.googleapis.com/60499deb3a9ce380-css2.css",
+    "status": 200,
+    "content_type": "text/css; charset=utf-8",
+    "bytes": 17297,
+    "sha256": "5a1e4e2125ee061a97fa81cf618425b969fd3c9e8f6bc69e55275963eaeda69d",
+    "resource_type": "stylesheet",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://inlead.digital/_next/static/chunks/84052-bcb8aec93d790b72.js",
+    "path": "arquivos/inlead.digital/db69181538cdc2ae-84052-bcb8aec93d790b72.js",
+    "status": 200,
+    "content_type": "application/javascript; charset=utf-8",
+    "bytes": 20411,
+    "sha256": "35459e183e831eb6098fcfe47be3c1136645af4a8b3b765934d0ddde16218bc8",
+    "resource_type": "script",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://inlead.digital/_next/static/chunks/32413-41115eb3b5470f9d.js",
+    "path": "arquivos/inlead.digital/16f0c1cb40d4ac79-32413-41115eb3b5470f9d.js",
+    "status": 200,
+    "content_type": "application/javascript; charset=utf-8",
+    "bytes": 82321,
+    "sha256": "fb65034386bf2ec586019e8c252b0dd2a271f7087520fea430d954ad514e5a83",
+    "resource_type": "script",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://inlead.digital/_next/static/chunks/92949-08937654f32b27aa.js",
+    "path": "arquivos/inlead.digital/f9a97f639c976623-92949-08937654f32b27aa.js",
+    "status": 200,
+    "content_type": "application/javascript; charset=utf-8",
+    "bytes": 21207,
+    "sha256": "a6d1142c30dc11225aa69b70b144b4296b0f4af4d11e56bb5de25e5dc1be4424",
+    "resource_type": "script",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://inlead.digital/_next/static/chunks/30896-cdb87922febd3139.js",
+    "path": "arquivos/inlead.digital/82e6603cba5c1eb2-30896-cdb87922febd3139.js",
+    "status": 200,
+    "content_type": "application/javascript; charset=utf-8",
+    "bytes": 64433,
+    "sha256": "d028c887f7311d1f9f28edc08a73b9c722f36439e55b0b311f5898f5945fa97f",
+    "resource_type": "script",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://inlead.digital/_next/static/chunks/66689-f77d03dc6c76cd5a.js",
+    "path": "arquivos/inlead.digital/0fe47b7b9452a291-66689-f77d03dc6c76cd5a.js",
+    "status": 200,
+    "content_type": "application/javascript; charset=utf-8",
+    "bytes": 8097,
+    "sha256": "659f9c98e55ad693bd4860eb72306407dda73ac3849ba661352636413f732b71",
+    "resource_type": "script",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://inlead.digital/_next/static/chunks/47951-86c5879aa26bc672.js",
+    "path": "arquivos/inlead.digital/233ff874a6cb4d30-47951-86c5879aa26bc672.js",
+    "status": 200,
+    "content_type": "application/javascript; charset=utf-8",
+    "bytes": 16529,
+    "sha256": "21a3ab4f76af27a23c8c1da3d29acc3d3ef2af5a77f62abdeb07dc9695d22074",
+    "resource_type": "script",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://inlead.digital/_next/static/chunks/96383-9992fba86a7ee296.js",
+    "path": "arquivos/inlead.digital/4218019d9aaa59ca-96383-9992fba86a7ee296.js",
+    "status": 200,
+    "content_type": "application/javascript; charset=utf-8",
+    "bytes": 31729,
+    "sha256": "e48fbf3cd33b8b030aaa3ccadd0cc5bbb5d6a1e533898bae921d15150b4fe208",
+    "resource_type": "script",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://inlead.digital/_next/static/JvAUqO_HkkRb1BhHHk-Qe/_ssgManifest.js",
+    "path": "arquivos/inlead.digital/5f66d4d9d49e1ae1-_ssgManifest.js",
+    "status": 200,
+    "content_type": "application/javascript; charset=utf-8",
+    "bytes": 340,
+    "sha256": "ebb8f3b0cf339c055084b5f8a74cdfcc19885d1190ae2dbee88242fd77ec1672",
+    "resource_type": "script",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://inlead.digital/_next/static/JvAUqO_HkkRb1BhHHk-Qe/_buildManifest.js",
+    "path": "arquivos/inlead.digital/ccccfa8526995f6a-_buildManifest.js",
+    "status": 200,
+    "content_type": "application/javascript; charset=utf-8",
+    "bytes": 6040,
+    "sha256": "4bcaa4a72740aaa3045b2d9e64d3331876c695f9334c0eac0b3e8e446cfcc34a",
+    "resource_type": "script",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://inlead.digital/_next/static/chunks/pages/%5B...all%5D-eba7f8e81040b596.js",
+    "path": "arquivos/inlead.digital/39e3d10972b91f43-_5B...all_5D-eba7f8e81040b596.js",
+    "status": 200,
+    "content_type": "application/javascript; charset=utf-8",
+    "bytes": 12004,
+    "sha256": "28df2ba02af90c68f32c55921e76a70771a04be03b80e83f7ec821d3df9a76ae",
+    "resource_type": "script",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://inlead.digital/_next/static/chunks/70165-638b2fc0347f57d4.js",
+    "path": "arquivos/inlead.digital/fcb73041460d81e1-70165-638b2fc0347f57d4.js",
+    "status": 200,
+    "content_type": "application/javascript; charset=utf-8",
+    "bytes": 119110,
+    "sha256": "c4a9852813414941a913247b40291b246614715b83bb1fc9e9238d8d30dccf13",
+    "resource_type": "script",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://inlead.digital/_next/static/chunks/45387.e6a5e0ff5b3c0b2f.js",
+    "path": "arquivos/inlead.digital/5bea6fa176bd37de-45387.e6a5e0ff5b3c0b2f.js",
+    "status": 200,
+    "content_type": "application/javascript; charset=utf-8",
+    "bytes": 254,
+    "sha256": "3144b9e810d780d02707187cba9f4e0962e965bd7d72e72637a88c2475f57604",
+    "resource_type": "script",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://inlead.digital/_next/static/chunks/10194.ef93e00f72c5efb6.js",
+    "path": "arquivos/inlead.digital/fbc797ed2087577b-10194.ef93e00f72c5efb6.js",
+    "status": 200,
+    "content_type": "application/javascript; charset=utf-8",
+    "bytes": 617,
+    "sha256": "d94955e83df0ffc6bc4a1b2344073f43d0699a80713c43d586deebd232c8ef2c",
+    "resource_type": "script",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://inlead.digital/_next/static/chunks/67786.239436862c01b938.js",
+    "path": "arquivos/inlead.digital/4e0b0e6142807a45-67786.239436862c01b938.js",
+    "status": 200,
+    "content_type": "application/javascript; charset=utf-8",
+    "bytes": 3205,
+    "sha256": "a4b6f968055e6b6647983bd5b955c387eb8beea4af1d105353266ea96bcd3aeb",
+    "resource_type": "script",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2",
+    "path": "arquivos/fonts.gstatic.com/e3237528af752eed-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2",
+    "status": 200,
+    "content_type": "font/woff2",
+    "bytes": 48256,
+    "sha256": "3100e775e8616cd2611beecfa23a4263d7037586789b43f035236a2e6fbd4c62",
+    "resource_type": "font",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://cf.vkdigital.com.br/event_pageview.js",
+    "path": "arquivos/cf.vkdigital.com.br/65b91cedb239d6f7-event_pageview.js",
+    "status": 200,
+    "content_type": "application/javascript",
+    "bytes": 7474,
+    "sha256": "07547b45384929fdd8ab161772c6e95699bb67b8fd231638e3a7ef9a7bd64c5f",
+    "resource_type": "script",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://cf.vkdigital.com.br/sales_pixel.js?v=56",
+    "path": "arquivos/cf.vkdigital.com.br/6e040dc1961fc48b-sales_pixel.js",
+    "status": 200,
+    "content_type": "application/javascript",
+    "bytes": 55904,
+    "sha256": "397ca94547a2c7d6586ea74b77e73e7c0156f290df06949f09f9acd2a9dd62ff",
+    "resource_type": "script",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://connect.facebook.net/en_US/fbevents.js",
+    "path": "arquivos/connect.facebook.net/c5acbaebd7a0b381-fbevents.js",
+    "status": 200,
+    "content_type": "application/x-javascript; charset=utf-8",
+    "bytes": 428544,
+    "sha256": "89a2a82574d35ba44820a985fff208cb50bbe810307f7ee069f97fd391c9a131",
+    "resource_type": "script",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://tracker.assiny.com.br/tracker.min.js",
+    "path": "arquivos/tracker.assiny.com.br/2b1f8dbdda72c57b-tracker.min.js",
+    "status": 200,
+    "content_type": "text/javascript",
+    "bytes": 483,
+    "sha256": "e277ae4094b9a501e807186445d06a3369dfd79bcd9470cb9e82da729580cb1f",
+    "resource_type": "script",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://media.inlead.cloud/uploads/40205/2025-10-27/pfqv2-.png",
+    "path": "arquivos/media.inlead.cloud/a7a31263213fb020-pfqv2-.png",
+    "status": 200,
+    "content_type": "image/png",
+    "bytes": 134241,
+    "sha256": "2d94f70b097893e351e87fa008a3f87b07f4dab057034d37cdc8d2d281bbeb8e",
+    "resource_type": "other",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://media.inlead.cloud/uploads/40205/2025-10-24/md-8t2dC-xivsc-2.png",
+    "path": "arquivos/media.inlead.cloud/be5cd9cc51c4ddbf-md-8t2dC-xivsc-2.png",
+    "status": 200,
+    "content_type": "image/png",
+    "bytes": 144724,
+    "sha256": "b5edbb2073e95d1b78ebd18390144c7711a0182463c1dfd57d61a9bd7d5d425b",
+    "resource_type": "image",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://media.inlead.cloud/uploads/40205/2025-10-24/md-8ngdA-8s1jn-1.png",
+    "path": "arquivos/media.inlead.cloud/e30b4cf63f4b6a73-md-8ngdA-8s1jn-1.png",
+    "status": 200,
+    "content_type": "image/png",
+    "bytes": 170528,
+    "sha256": "ff80eea82a612950847afb9fe70bfbaddba517fbefeb82376237c8e50c48b43e",
+    "resource_type": "image",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TR5L6QG5",
+    "path": "arquivos/www.googletagmanager.com/ddc4e504227ace90-gtm.js",
+    "status": 200,
+    "content_type": "application/javascript; charset=UTF-8",
+    "bytes": 348868,
+    "sha256": "a590cbf31d9903615d8bff9a7c33b4826bd49feb050ab898ce10f0a131b62a4d",
+    "resource_type": "script",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://api.analysis.inlead.tech/records/register/?type=pageview",
+    "path": "arquivos/api.analysis.inlead.tech/600c7470d817d36a-register.json",
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "bytes": 32,
+    "sha256": "a19643692736fc76b08dfa9188b8849fa7f7cb4352505b18ad49595698d53da5",
+    "resource_type": "xhr",
+    "request_method": "POST"
+  },
+  {
+    "url": "https://connect.facebook.net/signals/config/4105991202996119?v=2.9.414&r=stable&domain=lp02.profissaohomesales.com&hme=a4c28c8787325ac3f8f9eac68364f47df2a8c4266e43177443e5d7f6289c9774&ex_m=117%2C240%2C170%2C27%2C81%2C82%2C161%2C77%2C76%2C11%2C180%2C101%2C20%2C152%2C140%2C46%2C84%2C89%2C148%2C175%2C182%2C8%2C4%2C5%2C7%2C6%2C3%2C102%2C114%2C32%2C17%2C31%2C18%2C33%2C34%2C35%2C37%2C55%2C162%2C86%2C125%2C22%2C24%2C51%2C47%2C49%2C48%2C94%2C103%2C107%2C123%2C159%2C163%2C53%2C124%2C29%2C26%2C132%2C78%2C43%2C165%2C164%2C166%2C156%2C154%2C30%2C42%2C66%2C122%2C177%2C79%2C21%2C127%2C92%2C75%2C23%2C96%2C97%2C129%2C95%2C150%2C149%2C153%2C108%2C176%2C179%2C41%2C56%2C126%2C54%2C160%2C71%2C184%2C109%2C183%2C209%2C254%2C83%2C273%2C272%2C271%2C14%2C25%2C28%2C40%2C62%2C116%2C68%2C10%2C72%2C110%2C111%2C112%2C118%2C143%2C38%2C36%2C145%2C146%2C147%2C142%2C141%2C171%2C85%2C174%2C172%2C173%2C57%2C67%2C136%2C19%2C178%2C52%2C322%2C323%2C324%2C321%2C337%2C359%2C247%2C236%2C69%2C237%2C235%2C362%2C353%2C59%2C248%2C120%2C144%2C91%2C134%2C61%2C133%2C139%2C138%2C65%2C73%2C167%2C87%2C88%2C128%2C44%2C39%2C60%2C63%2C113%2C181%2C1%2C137%2C16%2C135%2C12%2C2%2C64%2C104%2C15%2C74%2C70%2C131%2C100%2C99%2C186%2C187%2C105%2C106%2C9%2C115%2C185%2C58%2C157%2C98%2C90%2C80%2C130%2C119%2C168%2C50%2C158%2C0%2C93%2C151%2C155%2C169%2C45%2C121%2C13%2C188",
+    "path": "arquivos/connect.facebook.net/ae80e9792880ec63-4105991202996119.bin",
+    "status": 200,
+    "content_type": "application/x-javascript; charset=utf-8",
+    "bytes": 539631,
+    "sha256": "504b0d1d13e7233f93247f81586fadeb69b04b615c90afbd57324462bf13ffb3",
+    "resource_type": "script",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://dashquiz.kairosgrowth.com.br/api/webhooks/inlead/home-sales/hs-assiny?token=Ya2B7YkJKCAqxYXMScwXgHX6XclLZtCJ",
+    "path": "arquivos/dashquiz.kairosgrowth.com.br/9ad937b4840949f1-hs-assiny.json",
+    "status": 200,
+    "content_type": "application/json",
+    "bytes": 11,
+    "sha256": "4062edaf750fb8074e7e83e0c9028c94e32468a8b6f1614774328ef045150f93",
+    "resource_type": "fetch",
+    "request_method": "POST"
+  },
+  {
+    "url": "https://dashquiz.kairosgrowth.com.br/api/webhooks/scroll/home-sales/hs-assiny?token=Ya2B7YkJKCAqxYXMScwXgHX6XclLZtCJ",
+    "path": "arquivos/dashquiz.kairosgrowth.com.br/24b20b1d31848882-hs-assiny.json",
+    "status": 200,
+    "content_type": "application/json",
+    "bytes": 11,
+    "sha256": "4062edaf750fb8074e7e83e0c9028c94e32468a8b6f1614774328ef045150f93",
+    "resource_type": "fetch",
+    "request_method": "POST"
+  },
+  {
+    "url": "https://fyads.fypro.com.br/px.js",
+    "path": "arquivos/fyads.fypro.com.br/025d832aaec74d5f-px.js",
+    "status": 200,
+    "content_type": "application/javascript; charset=utf-8",
+    "bytes": 11864,
+    "sha256": "4fd82de8ddf564a0ed4f5b8959617dcf07bd69cb991c32930f82b76244fac1f2",
+    "resource_type": "script",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://fyads.fypro.com.br/e/px-config?s=2f6ce02b-57aa-41b5-83d8-cbaa174fbf4d",
+    "path": "arquivos/fyads.fypro.com.br/0e2994082fee53c2-px-config.json",
+    "status": 200,
+    "content_type": "application/json",
+    "bytes": 11,
+    "sha256": "389c3d6bb041593328fae94d9bc325a928d477e32cdb05570e8369553adf70cf",
+    "resource_type": "fetch",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://inlead.digital/_next/static/chunks/54198.9d3043d57aa86ded.js",
+    "path": "arquivos/inlead.digital/e815fd0cfbec121d-54198.9d3043d57aa86ded.js",
+    "status": 200,
+    "content_type": "application/javascript; charset=utf-8",
+    "bytes": 723,
+    "sha256": "582d2e6fc74be3f3370cca80da2297aafbac3051d280ff5d21ef20f59ce14b6b",
+    "resource_type": "script",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://media.inlead.cloud/uploads/40205/2025-11-04/md-58p0Q-homem-18-29.png",
+    "path": "arquivos/media.inlead.cloud/004ef2b9d0060f1a-md-58p0Q-homem-18-29.png",
+    "status": 200,
+    "content_type": "image/png",
+    "bytes": 66616,
+    "sha256": "fa84e2adb525b2682265695e4b6677e6ffa2efbcd524d556f54d4823e747af54",
+    "resource_type": "image",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://media.inlead.cloud/uploads/40205/2025-11-04/md-0AOGB-homem-39-49.png",
+    "path": "arquivos/media.inlead.cloud/896964877a470d67-md-0AOGB-homem-39-49.png",
+    "status": 200,
+    "content_type": "image/png",
+    "bytes": 52960,
+    "sha256": "aaf87d597a3ec692e75db7c5b107722c1f880eeb07542e2227d2527e299329b7",
+    "resource_type": "image",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://media.inlead.cloud/uploads/40205/2025-11-04/md-QzdQR-homem-2939.png",
+    "path": "arquivos/media.inlead.cloud/d539b4c2630f80bb-md-QzdQR-homem-2939.png",
+    "status": 200,
+    "content_type": "image/png",
+    "bytes": 53124,
+    "sha256": "3d7391b9fb463e15283f838b05e70439861f05cc1383a7f09cc873dabb13523f",
+    "resource_type": "image",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://media.inlead.cloud/uploads/40205/2025-11-04/md-FvivC-homem-50.png",
+    "path": "arquivos/media.inlead.cloud/b38d1ecfd3456daa-md-FvivC-homem-50.png",
+    "status": 200,
+    "content_type": "image/png",
+    "bytes": 58031,
+    "sha256": "9802b8881da20eba8ef65fcb65e840e50632e89e0f4cd69533de2b89e105a4e5",
+    "resource_type": "image",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://api.analysis.inlead.tech/records/register/?type=stepview",
+    "path": "arquivos/api.analysis.inlead.tech/7dfe25b91fff05d7-register.json",
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "bytes": 32,
+    "sha256": "a19643692736fc76b08dfa9188b8849fa7f7cb4352505b18ad49595698d53da5",
+    "resource_type": "xhr",
+    "request_method": "POST"
+  },
+  {
+    "url": "https://api.analysis.inlead.tech/leads/register",
+    "path": "arquivos/api.analysis.inlead.tech/ade48cd5862999e2-register.json",
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "bytes": 17,
+    "sha256": "ab140244cd2fd2892fec183c503c0f9522f9935f5e6c5ace01e92924a7e2e90e",
+    "resource_type": "xhr",
+    "request_method": "POST"
+  },
+  {
+    "url": "https://media.inlead.cloud/uploads/40205/2025-11-04/md-gSzGu-88.png",
+    "path": "arquivos/media.inlead.cloud/f5bc336270578585-md-gSzGu-88.png",
+    "status": 200,
+    "content_type": "image/png",
+    "bytes": 24999,
+    "sha256": "aa87e101b9ae33c92ce315272f00f60305a0505b5b112e4090a9f4184114b8c0",
+    "resource_type": "image",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://media.inlead.cloud/uploads/40205/2025-11-04/md-qdQnM-108.png",
+    "path": "arquivos/media.inlead.cloud/ae94f2c8d7ca685b-md-qdQnM-108.png",
+    "status": 200,
+    "content_type": "image/png",
+    "bytes": 26933,
+    "sha256": "30c2394542e4089b30ccb268c2b10cf8d19cd571459e4b7af3663158304703d5",
+    "resource_type": "image",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://pixel.vkdigital.com.br/evento",
+    "path": "arquivos/pixel.vkdigital.com.br/0606fb1d40cfa16a-evento.json",
+    "status": 200,
+    "content_type": "application/json",
+    "bytes": 106,
+    "sha256": "cd6695076df83553dc9587a4ad27c531e4235a25ef53a0a28669cefd9b8fa9b3",
+    "resource_type": "fetch",
+    "request_method": "POST"
+  },
+  {
+    "url": "https://media.inlead.cloud/uploads/40205/2025-11-04/md-YgoeQ-redessociais.png",
+    "path": "arquivos/media.inlead.cloud/0040575c5687b42b-md-YgoeQ-redessociais.png",
+    "status": 200,
+    "content_type": "image/png",
+    "bytes": 21664,
+    "sha256": "fb1ae3dd79fa0278c29367ee2a79cab79eee154478ad40191f7aa7f2c1c368d3",
+    "resource_type": "image",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://media.inlead.cloud/uploads/40205/2025-11-04/md-8Lg2p-redessociais-2.png",
+    "path": "arquivos/media.inlead.cloud/fb6bea866e741b2f-md-8Lg2p-redessociais-2.png",
+    "status": 200,
+    "content_type": "image/png",
+    "bytes": 11783,
+    "sha256": "b15c136ed8e8ee573a04854b55827b8857c023a8534ac57cb3f8027abefd6e91",
+    "resource_type": "image",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://media.inlead.cloud/uploads/40205/2025-11-04/md-b93EW-redessociais-3.png",
+    "path": "arquivos/media.inlead.cloud/d2a2f70fa40a5652-md-b93EW-redessociais-3.png",
+    "status": 200,
+    "content_type": "image/png",
+    "bytes": 8827,
+    "sha256": "a767e71f688185c3cef6074aa89b4fe61bce1a847ccb7d52f9cb9c5d7d1b4517",
+    "resource_type": "image",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://media.inlead.cloud/uploads/40205/2025-11-04/md-GkygH-redessociais-1.png",
+    "path": "arquivos/media.inlead.cloud/79dc3d53051f27e5-md-GkygH-redessociais-1.png",
+    "status": 200,
+    "content_type": "image/png",
+    "bytes": 55668,
+    "sha256": "d058061819e9934051756980973f6196ede8e46586aaa9904a9c45ba56ae22c0",
+    "resource_type": "image",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://media.inlead.cloud/uploads/40205/2025-11-05/lg-0JEqs-subcabecalho-1.png",
+    "path": "arquivos/media.inlead.cloud/e2357403788f1715-lg-0JEqs-subcabecalho-1.png",
+    "status": 200,
+    "content_type": "image/png",
+    "bytes": 107191,
+    "sha256": "4ec5472b18f594171379cd0e3d598dfb926bff7210b540db966e59aa84bf4113",
+    "resource_type": "image",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://inlead.digital/_next/static/chunks/53774.8cbb58989a02ebbc.js",
+    "path": "arquivos/inlead.digital/72c99fc476367122-53774.8cbb58989a02ebbc.js",
+    "status": 200,
+    "content_type": "application/javascript; charset=utf-8",
+    "bytes": 1432,
+    "sha256": "baf9206c9dcbbec1e75a1fca509c5d9003408cf710f96b4cdb3aa59c87bfd66f",
+    "resource_type": "script",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://inlead.digital/_next/static/chunks/57531.7e3ae879d2eb683c.js",
+    "path": "arquivos/inlead.digital/ec97f3a85596b384-57531.7e3ae879d2eb683c.js",
+    "status": 200,
+    "content_type": "application/javascript; charset=utf-8",
+    "bytes": 25542,
+    "sha256": "8569f57074ae6e284bc261d08bdf7e9ac48d8c84d69bd1d4fb2e6bc7f2fd22ea",
+    "resource_type": "script",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://player-vz-4994ca4c-7dd.tv.pandavideo.com.br/embed/?v=75538160-44b5-4112-b52c-4e59c1e9e86c",
+    "path": "arquivos/player-vz-4994ca4c-7dd.tv.pandavideo.com.br/03f0b51099ed97d7-embed.html",
+    "status": 200,
+    "content_type": "text/html",
+    "bytes": 2851,
+    "sha256": "d1a1392c14ca0cfd651dc21deb2e209474cbd385358f1fcb2614e8b28807e971",
+    "resource_type": "document",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://player-vz-4994ca4c-7dd.tv.pandavideo.com.br/embed/css/plyr.css",
+    "path": "arquivos/player-vz-4994ca4c-7dd.tv.pandavideo.com.br/07d303bbe88f8f3f-plyr.css",
+    "status": 200,
+    "content_type": "text/css",
+    "bytes": 37632,
+    "sha256": "bb2500eab21dd2510766575435d1b1da3cda38483c0fcfaeba04ed4067acdc69",
+    "resource_type": "stylesheet",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://player-vz-4994ca4c-7dd.tv.pandavideo.com.br/embed/css/pb.css",
+    "path": "arquivos/player-vz-4994ca4c-7dd.tv.pandavideo.com.br/2c0c48aae4c2309b-pb.css",
+    "status": 200,
+    "content_type": "text/css",
+    "bytes": 5980,
+    "sha256": "6a561f2263bddd2e4e51a09802e98240a900f5c5cb81cb247449d12e254c7abb",
+    "resource_type": "stylesheet",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://player-vz-4994ca4c-7dd.tv.pandavideo.com.br/embed/css/styles.css",
+    "path": "arquivos/player-vz-4994ca4c-7dd.tv.pandavideo.com.br/7caba1bbebf1e3da-styles.css",
+    "status": 200,
+    "content_type": "text/css",
+    "bytes": 116416,
+    "sha256": "29ddf971fe5df1e5eacb6c226ecbe96d7a46cc8fcf8fd7c5c8672cc151b0091d",
+    "resource_type": "stylesheet",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://player-vz-4994ca4c-7dd.tv.pandavideo.com.br/embed/vendors.1044.bundle.js",
+    "path": "arquivos/player-vz-4994ca4c-7dd.tv.pandavideo.com.br/cb346440cff43bac-vendors.1044.bundle.js",
+    "status": 200,
+    "content_type": "application/javascript",
+    "bytes": 966884,
+    "sha256": "abc7fe9bcd69271532591a20fec46066c5d4dc19c13f65e106d93212d3548502",
+    "resource_type": "script",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://player-vz-4994ca4c-7dd.tv.pandavideo.com.br/embed/main.1044.bundle.js",
+    "path": "arquivos/player-vz-4994ca4c-7dd.tv.pandavideo.com.br/e64a080e054bfef0-main.1044.bundle.js",
+    "status": 200,
+    "content_type": "application/javascript",
+    "bytes": 665752,
+    "sha256": "0d578b08372f00798adc0e2e2f9fce93ce80a8027c7817b1123daa48eb5d3632",
+    "resource_type": "script",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap",
+    "path": "arquivos/fonts.googleapis.com/fa0b0fd1f5e96ba0-css2.css",
+    "status": 200,
+    "content_type": "text/css; charset=utf-8",
+    "bytes": 5016,
+    "sha256": "3450190c7b0c364f6c391801d10fa3c537c6a87bd69bef4c998b661e7987977a",
+    "resource_type": "stylesheet",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://fonts.googleapis.com/css?family=Poppins:100,300,400,500,700,900",
+    "path": "arquivos/fonts.googleapis.com/d12a5d2061b4bc7d-css.css",
+    "status": 200,
+    "content_type": "text/css; charset=utf-8",
+    "bytes": 6794,
+    "sha256": "6bc370a7fbffc1407e361c7c0827f2adf3146e9585e3f57a89e1db34a69f9ed1",
+    "resource_type": "stylesheet",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://www.gstatic.com/cv/js/sender/v1/cast_sender.js?loadCastFramework=1",
+    "path": "arquivos/www.gstatic.com/33d0de687961ddf5-cast_sender.js",
+    "status": 200,
+    "content_type": "text/javascript",
+    "bytes": 4272,
+    "sha256": "ee147e859ad0f09aa50367974e38ab53e7c7054c4a51d400a7f45b0eb251454f",
+    "resource_type": "script",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://media.inlead.cloud/uploads/40205/2025-11-04/md-Rk0jS-101.png",
+    "path": "arquivos/media.inlead.cloud/6c6487193b085d8d-md-Rk0jS-101.png",
+    "status": 200,
+    "content_type": "image/png",
+    "bytes": 49623,
+    "sha256": "2ac964c943d22fe715f1566fc27e1b139b139789c7d0b75d254cd4181b8a7b42",
+    "resource_type": "image",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://media.inlead.cloud/uploads/40205/2025-11-04/md-BJtSf-102.png",
+    "path": "arquivos/media.inlead.cloud/3cb97c5d5a663f67-md-BJtSf-102.png",
+    "status": 200,
+    "content_type": "image/png",
+    "bytes": 55460,
+    "sha256": "d61f46f9e7aadfa9b66e3f71876059601ea769451a0c5c97d3eeefa104d6f34a",
+    "resource_type": "image",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://media.inlead.cloud/uploads/40205/2025-11-04/md-RovdD-83.png",
+    "path": "arquivos/media.inlead.cloud/a76a6587e8d98341-md-RovdD-83.png",
+    "status": 200,
+    "content_type": "image/png",
+    "bytes": 60378,
+    "sha256": "fe51989a84654d6ceaf7fee64f324eac0a22dc19c7bf7d46a8cbcabfd29f20c2",
+    "resource_type": "image",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://media.inlead.cloud/uploads/40205/2025-11-04/md-I2E2B-90.png",
+    "path": "arquivos/media.inlead.cloud/0e0a6704e85f1784-md-I2E2B-90.png",
+    "status": 200,
+    "content_type": "image/png",
+    "bytes": 46053,
+    "sha256": "0d8cbf5345d2238382181c282afa42c29e12ed00d3062c95cbe867a48e680eb9",
+    "resource_type": "image",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://media.inlead.cloud/uploads/40205/2025-11-04/md-bLCS6-100.png",
+    "path": "arquivos/media.inlead.cloud/d24203ea4f6d833c-md-bLCS6-100.png",
+    "status": 200,
+    "content_type": "image/png",
+    "bytes": 67092,
+    "sha256": "9ebe40c2b2c95d8eb439443a8da4ce333632ca3ae410a1badce58957bab315f9",
+    "resource_type": "image",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://media.inlead.cloud/uploads/40205/2025-11-04/md-tGaG5-67.png",
+    "path": "arquivos/media.inlead.cloud/751c5ba0cb7c87e9-md-tGaG5-67.png",
+    "status": 200,
+    "content_type": "image/png",
+    "bytes": 60894,
+    "sha256": "c16c607b25f04989a1b8dab70cb1dfd18ca8bf6929b04a623ca0219a3cde1872",
+    "resource_type": "image",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://media.inlead.cloud/uploads/40205/2025-11-04/md-reEjx-68.png",
+    "path": "arquivos/media.inlead.cloud/bc3878eb3724497c-md-reEjx-68.png",
+    "status": 200,
+    "content_type": "image/png",
+    "bytes": 61398,
+    "sha256": "85fb64d9e53e475e60424ad40da0ff4cd5c0bef7edd28a85bd9defd660e392e3",
+    "resource_type": "image",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://media.inlead.cloud/uploads/40205/2025-10-27/lg-TEGap-pablo.jpg",
+    "path": "arquivos/media.inlead.cloud/51f6a7934663d9e5-lg-TEGap-pablo.jpg",
+    "status": 200,
+    "content_type": "image/jpeg",
+    "bytes": 383313,
+    "sha256": "6c2cc9c6f348c5b3dc4964a8dc7447405795ae226160f917f81429a39b905f59",
+    "resource_type": "image",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://media.inlead.cloud/uploads/40205/2025-11-05/sm-AIaXr-stanford-logo.png",
+    "path": "arquivos/media.inlead.cloud/be8ae31d63bcc942-sm-AIaXr-stanford-logo.png",
+    "status": 200,
+    "content_type": "image/png",
+    "bytes": 37171,
+    "sha256": "ba7e75f90dc6bb79ca96e0d73ac0239c643f394bf7bdad5bb1579a1231e696ee",
+    "resource_type": "image",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://media.inlead.cloud/uploads/40205/2025-11-04/md-I92xP-97.png",
+    "path": "arquivos/media.inlead.cloud/4af730f0a823c72d-md-I92xP-97.png",
+    "status": 200,
+    "content_type": "image/png",
+    "bytes": 55493,
+    "sha256": "0e0549e07edf27d8ce07c130f8aafd81fc4690370c5409b08b4874e80d79ea0e",
+    "resource_type": "image",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://media.inlead.cloud/uploads/40205/2025-11-04/md-cclH5-63.png",
+    "path": "arquivos/media.inlead.cloud/863b5d8efda76720-md-cclH5-63.png",
+    "status": 200,
+    "content_type": "image/png",
+    "bytes": 55880,
+    "sha256": "408efd90dccef6022fce9a0fd94ff0ab221d46791abbf7162ec2a2cd0d9ba295",
+    "resource_type": "image",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://media.inlead.cloud/uploads/40205/2025-11-04/md-3l9nd-70.png",
+    "path": "arquivos/media.inlead.cloud/6083100c0d917138-md-3l9nd-70.png",
+    "status": 200,
+    "content_type": "image/png",
+    "bytes": 56820,
+    "sha256": "8ff55e302c7bb9cb1e2a957dbc5bf73879ac8d8ce0c1a13815f0653182a58883",
+    "resource_type": "image",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://media.inlead.cloud/uploads/40205/2025-11-04/md-2qTfu-64.png",
+    "path": "arquivos/media.inlead.cloud/63aeee8125c4abff-md-2qTfu-64.png",
+    "status": 200,
+    "content_type": "image/png",
+    "bytes": 62917,
+    "sha256": "dc0eaa6300dd820d4b1fcc41ba1118d023543b126b5799ad8f66d435f5db24d9",
+    "resource_type": "image",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://media.inlead.cloud/uploads/40205/2025-11-04/md-86iza-65.png",
+    "path": "arquivos/media.inlead.cloud/2ba863c23a145fb7-md-86iza-65.png",
+    "status": 200,
+    "content_type": "image/png",
+    "bytes": 62471,
+    "sha256": "f97a8fecf718f013840792b8c5b89fdb51ec82b5860ddb20aeb61c7303446da7",
+    "resource_type": "image",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://media.inlead.cloud/uploads/40205/2025-11-04/md-II7KC-38.png",
+    "path": "arquivos/media.inlead.cloud/219d370e57f6b5a3-md-II7KC-38.png",
+    "status": 200,
+    "content_type": "image/png",
+    "bytes": 70253,
+    "sha256": "18b280bd8bb6a38f39e7198516d2566e8d2769dde8275e30ff628eb45e326234",
+    "resource_type": "image",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://media.inlead.cloud/uploads/40205/2025-11-04/md-dI4ua-103.png",
+    "path": "arquivos/media.inlead.cloud/20033173c61df670-md-dI4ua-103.png",
+    "status": 200,
+    "content_type": "image/png",
+    "bytes": 80287,
+    "sha256": "4a73c0936da28cd896550c22453395c7d19e935c3189c56ebb42b904b36cd155",
+    "resource_type": "image",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://media.inlead.cloud/uploads/40205/2025-11-04/md-GFaul-35.png",
+    "path": "arquivos/media.inlead.cloud/0cd9a76bc10c4505-md-GFaul-35.png",
+    "status": 200,
+    "content_type": "image/png",
+    "bytes": 60442,
+    "sha256": "decbc6e03ef2afcfb8d29779c64b2f351919f759b766906d229e7a5e42859293",
+    "resource_type": "image",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://media.inlead.cloud/uploads/40205/2025-11-04/md-7rxoC-75.png",
+    "path": "arquivos/media.inlead.cloud/c7b7e9ad3f067c8a-md-7rxoC-75.png",
+    "status": 200,
+    "content_type": "image/png",
+    "bytes": 63296,
+    "sha256": "cc95de53e11b0dc347459a1f9174db4d95558e952068378ecef70ccb54324d01",
+    "resource_type": "image",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://media.inlead.cloud/uploads/40205/2025-11-04/md-y9TM6-77.png",
+    "path": "arquivos/media.inlead.cloud/817dff45281c50b7-md-y9TM6-77.png",
+    "status": 200,
+    "content_type": "image/png",
+    "bytes": 48725,
+    "sha256": "e9b0535eea4dd81080f70d18e893b96ccca015b24930508e142194bf3f9739d5",
+    "resource_type": "image",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://media.inlead.cloud/uploads/40205/2025-11-04/md-5yw4f-57.png",
+    "path": "arquivos/media.inlead.cloud/4f687fae99355cba-md-5yw4f-57.png",
+    "status": 200,
+    "content_type": "image/png",
+    "bytes": 72622,
+    "sha256": "7d500e77972e9e895b17a305b5c92b458a1cd75e92250f074440cb34792b9e0a",
+    "resource_type": "image",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://media.inlead.cloud/uploads/40205/2025-11-04/md-nXhbN-55.png",
+    "path": "arquivos/media.inlead.cloud/f47553436d416957-md-nXhbN-55.png",
+    "status": 200,
+    "content_type": "image/png",
+    "bytes": 64979,
+    "sha256": "859202b66c027075caad2443300af03d57d08a5bb3b4c938052afb3a85a17085",
+    "resource_type": "image",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://media.inlead.cloud/uploads/40205/2025-11-04/md-KW9In-104.png",
+    "path": "arquivos/media.inlead.cloud/88b8faa61a3cd7d0-md-KW9In-104.png",
+    "status": 200,
+    "content_type": "image/png",
+    "bytes": 70650,
+    "sha256": "c1346845e9b947a228f3c1ec4afa3b893104ddeb643365cc308d37770eea5a38",
+    "resource_type": "image",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://media.inlead.cloud/uploads/40205/2025-11-04/md-GYTzh-89.png",
+    "path": "arquivos/media.inlead.cloud/fc0b3609d8d830bf-md-GYTzh-89.png",
+    "status": 200,
+    "content_type": "image/png",
+    "bytes": 59318,
+    "sha256": "f1fc2ca3acc17ee67bbb4ce9822f6ab6a7e18744a138c22170d2642da41bd01a",
+    "resource_type": "image",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://media.inlead.cloud/uploads/40205/2025-11-04/md-f6jLc-51.png",
+    "path": "arquivos/media.inlead.cloud/f09d9240c7f91cd7-md-f6jLc-51.png",
+    "status": 200,
+    "content_type": "image/png",
+    "bytes": 54144,
+    "sha256": "7b923173b6e74a6aad3e593a38117821c985a3026de0df097d8cf72bb87d719e",
+    "resource_type": "image",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://player-vz-4994ca4c-7dd.tv.pandavideo.com.br/embed/?v=3c9322a3-cc82-46b9-966b-b39c03c71341",
+    "path": "arquivos/player-vz-4994ca4c-7dd.tv.pandavideo.com.br/fb57dc2bbdc5715b-embed.html",
+    "status": 200,
+    "content_type": "text/html",
+    "bytes": 2851,
+    "sha256": "d1a1392c14ca0cfd651dc21deb2e209474cbd385358f1fcb2614e8b28807e971",
+    "resource_type": "document",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://www.gstatic.com/eureka/clank/154/cast_sender.js",
+    "path": "arquivos/www.gstatic.com/5a31d3f992e74662-cast_sender.js",
+    "status": 200,
+    "content_type": "text/javascript",
+    "bytes": 47370,
+    "sha256": "216f58b5f91d5bf5c25b194684e3799988121780c8d67658f5be3ad666846516",
+    "resource_type": "script",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://b-vz-4994ca4c-7dd.tv.pandavideo.com.br/3c9322a3-cc82-46b9-966b-b39c03c71341/playlist.m3u8",
+    "path": "arquivos/b-vz-4994ca4c-7dd.tv.pandavideo.com.br/35ce57026fa7910b-playlist.m3u8",
+    "status": 206,
+    "content_type": "application/vnd.apple.mpegurl",
+    "bytes": 363,
+    "sha256": "de847c597787c6df31f19a40d852c8b0308400a36bbf03fcff04e3c5beb18dab",
+    "resource_type": "media",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://www.gstatic.com/cast/sdk/libs/sender/1.0/cast_framework.js",
+    "path": "arquivos/www.gstatic.com/2243a314b809fec0-cast_framework.js",
+    "status": 304,
+    "content_type": "application/octet-stream",
+    "bytes": 35946,
+    "sha256": "a2bdd8cb01353d4ed2a9ab4c7d7c263225f6908aa875614d015a2f39956d9d73",
+    "resource_type": "script",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://b-vz-4994ca4c-7dd.tv.pandavideo.com.br/3c9322a3-cc82-46b9-966b-b39c03c71341/240p/video.m3u8",
+    "path": "arquivos/b-vz-4994ca4c-7dd.tv.pandavideo.com.br/aab10fb761a35d54-video.m3u8",
+    "status": 206,
+    "content_type": "application/vnd.apple.mpegurl",
+    "bytes": 1357,
+    "sha256": "b53d148d07a52da50dbf7953ec2eefdbef70bd34ab81c6e5b27e30c971563659",
+    "resource_type": "media",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://config.tv.pandavideo.com.br/vz-4994ca4c-7dd/config.json",
+    "path": "arquivos/config.tv.pandavideo.com.br/6eade35f2e1d6413-config.json",
+    "status": 200,
+    "content_type": "application/json",
+    "bytes": 358,
+    "sha256": "90cd2401fa55e2061f990368beaf4064089cd9e3279135b15691c028617477b6",
+    "resource_type": "fetch",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://b-vz-4994ca4c-7dd.tv.pandavideo.com.br/3c9322a3-cc82-46b9-966b-b39c03c71341/playlist.m3u8?get_qualities=1",
+    "path": "arquivos/b-vz-4994ca4c-7dd.tv.pandavideo.com.br/335e4918df0c0719-playlist.m3u8",
+    "status": 200,
+    "content_type": "application/vnd.apple.mpegurl",
+    "bytes": 892,
+    "sha256": "43fd93f173e2286e9eedee8a402fdcb89cded024e848e7af9a455a52236d89c6",
+    "resource_type": "fetch",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://cdn.pandavideo.com/vz-4994ca4c-7dd/3c9322a3-cc82-46b9-966b-b39c03c71341/240p/video0.ts",
+    "path": "arquivos/cdn.pandavideo.com/18c78a2c134b9a00-video0.ts",
+    "status": 206,
+    "content_type": "video/MP2T",
+    "bytes": 69748,
+    "sha256": "83281df0b5be44e841a522ff03612791c37c7cb03adc8c679a48752cfe18fa12",
+    "resource_type": "media",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://config.tv.pandavideo.com.br/vz-4994ca4c-7dd/3c9322a3-cc82-46b9-966b-b39c03c71341.json?date=1791049126882",
+    "path": "arquivos/config.tv.pandavideo.com.br/819019c177f50de6-3c9322a3-cc82-46b9-966b-b39c03c71341.json",
+    "status": 200,
+    "content_type": "application/json",
+    "bytes": 2,
+    "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "resource_type": "fetch",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://cdn.pandavideo.com/vz-4994ca4c-7dd/3c9322a3-cc82-46b9-966b-b39c03c71341/240p/video1.ts",
+    "path": "arquivos/cdn.pandavideo.com/28bfbe23fc8cc0bd-video1.ts",
+    "status": 206,
+    "content_type": "video/MP2T",
+    "bytes": 72568,
+    "sha256": "e26572a44d4723f7fadfc6e0a1dfc8de7fc12fe9c54a7326c10e00eb234dbd99",
+    "resource_type": "media",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://player-vz-4994ca4c-7dd.tv.pandavideo.com.br/embed/icons/plyr.svg",
+    "path": "arquivos/player-vz-4994ca4c-7dd.tv.pandavideo.com.br/dcb23f6276b5c5f8-plyr.svg",
+    "status": 200,
+    "content_type": "image/svg+xml",
+    "bytes": 16534,
+    "sha256": "5423795030a7c82dee65055c80804bfad66b0d53a7ffb0b74a163b333bab1aa1",
+    "resource_type": "other",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://cdn.pandavideo.com/vz-4994ca4c-7dd/3c9322a3-cc82-46b9-966b-b39c03c71341/thumbnail.jpg",
+    "path": "arquivos/cdn.pandavideo.com/3097f5ddf5cb3475-thumbnail.jpg",
+    "status": 200,
+    "content_type": "application/octet-stream",
+    "bytes": 18918,
+    "sha256": "39ae8c519e80e75a271d1378fb0f922ae750928efc60b4f672ca583923a425a3",
+    "resource_type": "image",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko20yw.woff2",
+    "path": "arquivos/fonts.gstatic.com/d8c30647abfeffe6-LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko20yw.woff2",
+    "status": 200,
+    "content_type": "font/woff2",
+    "bytes": 27348,
+    "sha256": "153fc85b70298beeb1d61a5f723331649e7f23bb77302a66e61cb3e2fbdb5e79",
+    "resource_type": "font",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://media.inlead.cloud/uploads/40205/2025-11-05/lg-tX6yl-10h-da-manha-com-600-a-mais-no-bolso.jpg",
+    "path": "arquivos/media.inlead.cloud/f959563e399d6838-lg-tX6yl-10h-da-manha-com-600-a-mais-no-bolso.jpg",
+    "status": 200,
+    "content_type": "image/jpeg",
+    "bytes": 124224,
+    "sha256": "17e450309de1c7fadf3420f79fafeed70ca18d9f52f690912ae108f4ebfd8824",
+    "resource_type": "image",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://media.inlead.cloud/uploads/40205/2025-11-04/md-I8Pf6-93.png",
+    "path": "arquivos/media.inlead.cloud/fecf477a7a8fce61-md-I8Pf6-93.png",
+    "status": 200,
+    "content_type": "image/png",
+    "bytes": 49846,
+    "sha256": "effefbca8f13d46565470239d5e41f54a599b101c8a4d1b6af962f9bc1100d12",
+    "resource_type": "image",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://media.inlead.cloud/uploads/40205/2025-11-04/md-Jm4up-emojis-1.png",
+    "path": "arquivos/media.inlead.cloud/e94559d64a1a8ff5-md-Jm4up-emojis-1.png",
+    "status": 200,
+    "content_type": "image/png",
+    "bytes": 56535,
+    "sha256": "10633ab81e0279165e01675262fdf7cf17df48f722074a0c47130d6c05ed14af",
+    "resource_type": "image",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://media.inlead.cloud/uploads/40205/2025-11-04/md-3gTsB-123.png",
+    "path": "arquivos/media.inlead.cloud/1466332dd5319179-md-3gTsB-123.png",
+    "status": 200,
+    "content_type": "image/png",
+    "bytes": 175192,
+    "sha256": "d8b6ba7b2455c4bfc1af7aa49e3343cc9e9fc66842d71df723bce9a0fbfdc07f",
+    "resource_type": "image",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://media.inlead.cloud/uploads/40205/2025-11-04/md-IACi3-87.png",
+    "path": "arquivos/media.inlead.cloud/c37ab6ed42d1c7f0-md-IACi3-87.png",
+    "status": 200,
+    "content_type": "image/png",
+    "bytes": 68089,
+    "sha256": "aebee1a2b7f77f2082fe993f659c95f3904458bda04212bcbdce050e02201868",
+    "resource_type": "image",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://media.inlead.cloud/uploads/40205/2025-11-04/md-KOCUh-96.png",
+    "path": "arquivos/media.inlead.cloud/4056f0256b396f1d-md-KOCUh-96.png",
+    "status": 200,
+    "content_type": "image/png",
+    "bytes": 50765,
+    "sha256": "44a75e91d07addbeab40c837fbefdd0c8c799856bafb7c81ff637e07d33bb75e",
+    "resource_type": "image",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://media.inlead.cloud/uploads/40205/2025-11-04/md-JwrZY-114.png",
+    "path": "arquivos/media.inlead.cloud/5ab1e3606b47c58c-md-JwrZY-114.png",
+    "status": 200,
+    "content_type": "image/png",
+    "bytes": 47576,
+    "sha256": "aecd29ef27dc632d5e055c49be31350129299c9c0f131c2a691ced6e0325c418",
+    "resource_type": "image",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://inlead.digital/_next/static/chunks/31602.f37984469c13c09c.js",
+    "path": "arquivos/inlead.digital/de62df21fa5d49a3-31602.f37984469c13c09c.js",
+    "status": 200,
+    "content_type": "application/javascript; charset=utf-8",
+    "bytes": 7372,
+    "sha256": "23e5b4b5cdbf92d36a47e9e7e6241e2a00a490402ac936cfabc85032b6784bab",
+    "resource_type": "script",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://media.inlead.cloud/uploads/40205/2025-11-04/sm-XiwMV-homem-feliz-com-dinheiro.png",
+    "path": "arquivos/media.inlead.cloud/26fc451a30ffcccf-sm-XiwMV-homem-feliz-com-dinheiro.png",
+    "status": 200,
+    "content_type": "image/png",
+    "bytes": 71781,
+    "sha256": "b1bc7a69f5a8240086d36381229fc9f5a5f165474f5905170180422c85eec05c",
+    "resource_type": "image",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://media.inlead.cloud/uploads/40205/2025-11-04/sm-woadP-homem-triste-sem-dinheiro.png",
+    "path": "arquivos/media.inlead.cloud/7e2dd04c9ceae118-sm-woadP-homem-triste-sem-dinheiro.png",
+    "status": 200,
+    "content_type": "image/png",
+    "bytes": 57522,
+    "sha256": "21542b70938f3c59d017fca4f9f089dc00632cb0ec043ca6c16f2aee757261f3",
+    "resource_type": "image",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://media.inlead.cloud/uploads/40205/2025-11-04/sm-lYqIw-mulher-triste-sem-dinheiro.png",
+    "path": "arquivos/media.inlead.cloud/ccfedfddd39c6e96-sm-lYqIw-mulher-triste-sem-dinheiro.png",
+    "status": 200,
+    "content_type": "image/png",
+    "bytes": 64166,
+    "sha256": "3ce35a159043c0228908cf37d036811e4eeb46033172f0c284ed8e739b0306c3",
+    "resource_type": "image",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://media.inlead.cloud/uploads/40205/2025-11-04/sm-b34Bv-mulher-feliz-com-dinheiro.png",
+    "path": "arquivos/media.inlead.cloud/c63ebb99f993ae6f-sm-b34Bv-mulher-feliz-com-dinheiro.png",
+    "status": 200,
+    "content_type": "image/png",
+    "bytes": 68493,
+    "sha256": "9e24faaf152357903efb7831130831f1b334fc7852f714b3704c8fbbf9d3e250",
+    "resource_type": "image",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://media.inlead.cloud/uploads/40205/2025-11-04/q6jfF-gif-seta.gif",
+    "path": "arquivos/media.inlead.cloud/a25e93d1090a8d92-q6jfF-gif-seta.gif",
+    "status": 200,
+    "content_type": "image/gif",
+    "bytes": 564891,
+    "sha256": "e9be1daa859e2ababeaa614dd344270a8fcebff64d73c16f4acaf5d8c8e75371",
+    "resource_type": "image",
+    "request_method": "GET"
+  },
+  {
+    "url": "https://lp02.profissaohomesales.com/_next/data/JvAUqO_HkkRb1BhHHk-Qe/index.json?all=lp02%7Cprofissaohomesales%7Ccom",
+    "path": "arquivos/lp02.profissaohomesales.com/_next/data/JvAUqO_HkkRb1BhHHk-Qe/index.json",
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "bytes": 195803,
+    "sha256": "e7e935dcadd91d81f6ecb3da46535e1336f1b1d537d4e3b2bebf49cc83f5119a",
+    "resource_type": "fetch",
+    "request_method": "GET"
+  }
+]

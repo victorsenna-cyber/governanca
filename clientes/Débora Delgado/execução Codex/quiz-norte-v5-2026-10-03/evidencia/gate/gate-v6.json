@@ -1,0 +1,166 @@
+{
+  "viewports": [
+    {
+      "width": 390,
+      "titlePositions": [
+        183,
+        183,
+        183,
+        183
+      ],
+      "result": {
+        "body": "Aqui está o seu resultado...\n\nCOM BASE NAS SUAS RESPOSTAS, A SUA LIDERANÇA DE PESSOAS ESTÁ NO NÍVEL 2\nHoje\nEntendendo a língua de cada pessoa\nPedir e delegar\nNível 2 · 58%\nFeedback e cobrança\nNível 1 · 36%\nEscuta e comunicação\nNível 2 · 58%\nConflitos e relações\nNível 2 · 67%\nConhecer quem você lidera\nNível 2 · 50%\nVocê respondeu que...\nVocê lidera 1 a 5 pessoas\n\nSão 1 a 5 formas diferentes de entender o mesmo pedido.\n\nLidera há menos de 1 ano\n\nQuanto antes você aprende a entender o seu time, menos o retrabalho vira hábito.\n\nNunca ouviu falar o Eneagrama\n\nMelhor assim: você não precisa decorar tipo nenhum para começar.\n\nO que você mais quer é que o combinado aconteça de primeira\n\nE é exatamente isso que fica mais fácil quando você entende como cada pessoa funciona.\n\nPor isso...\n\nA SUA MAIOR ALAVANCA É: FEEDBACK E COBRANÇA\n\nÉ onde mais esforço se perde: o feedback sai como você gostaria de ouvir, e não como a pessoa consegue ouvir. Clique no botão abaixo para ver o próximo passo.\n\nContinuar",
+        "rows": [
+          {
+            "text": "Pedir e delegar\nNível 2 · 58%",
+            "rect": {
+              "y": 348,
+              "height": 60
+            }
+          },
+          {
+            "text": "Feedback e cobrança\nNível 1 · 36%",
+            "rect": {
+              "y": 425,
+              "height": 60
+            }
+          },
+          {
+            "text": "Escuta e comunicação\nNível 2 · 58%",
+            "rect": {
+              "y": 501,
+              "height": 60
+            }
+          },
+          {
+            "text": "Conflitos e relações\nNível 2 · 67%",
+            "rect": {
+              "y": 578,
+              "height": 60
+            }
+          },
+          {
+            "text": "Conhecer quem você lidera\nNível 2 · 50%",
+            "rect": {
+              "y": 654,
+              "height": 60
+            }
+          }
+        ],
+        "titleY": 0
+      },
+      "scrollWidth": 390
+    },
+    {
+      "width": 1440,
+      "titlePositions": [
+        251,
+        251,
+        251,
+        251
+      ],
+      "result": {
+        "body": "Aqui está o seu resultado...\n\nCOM BASE NAS SUAS RESPOSTAS, A SUA LIDERANÇA DE PESSOAS ESTÁ NO NÍVEL 2\nHoje\nEntendendo a língua de cada pessoa\nPedir e delegar\nNível 2 · 64%\nFeedback e cobrança\nNível 3 · 70%\nEscuta e comunicação\nNível 3 · 81%\nConflitos e relações\nNível 1 · 33%\nConhecer quem você lidera\nNível 3 · 78%\nVocê respondeu que...\nVocê lidera 1 a 5 pessoas\n\nSão 1 a 5 formas diferentes de entender o mesmo pedido.\n\nLidera há menos de 1 ano\n\nQuanto antes você aprende a entender o seu time, menos o retrabalho vira hábito.\n\nNunca ouviu falar o Eneagrama\n\nMelhor assim: você não precisa decorar tipo nenhum para começar.\n\nO que você mais quer é que o combinado aconteça de primeira\n\nE é exatamente isso que fica mais fácil quando você entende como cada pessoa funciona.\n\nPor isso...\n\nA SUA MAIOR ALAVANCA É: CONFLITOS E RELAÇÕES\n\nÉ onde está o maior desgaste: o comportamento que incomoda costuma ser proteção, e enquanto isso não fica claro, a relação pesa. Clique no botão abaixo para ver o próximo passo.\n\nContinuar",
+        "rows": [
+          {
+            "text": "Pedir e delegar\nNível 2 · 64%",
+            "rect": {
+              "y": 330,
+              "height": 60
+            }
+          },
+          {
+            "text": "Feedback e cobrança\nNível 3 · 70%",
+            "rect": {
+              "y": 406,
+              "height": 60
+            }
+          },
+          {
+            "text": "Escuta e comunicação\nNível 3 · 81%",
+            "rect": {
+              "y": 483,
+              "height": 60
+            }
+          },
+          {
+            "text": "Conflitos e relações\nNível 1 · 33%",
+            "rect": {
+              "y": 559,
+              "height": 60
+            }
+          },
+          {
+            "text": "Conhecer quem você lidera\nNível 3 · 78%",
+            "rect": {
+              "y": 635,
+              "height": 60
+            }
+          }
+        ],
+        "titleY": 0
+      },
+      "scrollWidth": 1440
+    }
+  ],
+  "errors": [],
+  "external": [],
+  "payload": {
+    "ts": "2026-10-03T22:53:52.565Z",
+    "nome": "Teste Local",
+    "whatsapp": "11999999999",
+    "email": "",
+    "genero": "homem",
+    "idade": "18-29",
+    "time": "1-5",
+    "tempo": "<1",
+    "eneagrama": "nunca",
+    "s1": 3,
+    "s2": 3,
+    "s3": 2,
+    "s4": 1.5,
+    "s5": 0,
+    "s6": 2,
+    "s7": 3,
+    "s8": 1,
+    "s9": 1.5,
+    "s10": 3,
+    "s11": 2,
+    "s12": 3,
+    "s13": 3,
+    "s14": 1.5,
+    "s15": 3,
+    "s16": 0,
+    "s17": 3,
+    "s18": 1,
+    "s19": 0,
+    "s20": 0,
+    "s21": 1,
+    "s22": 3,
+    "s23": 2,
+    "s24": 3,
+    "s25": 3,
+    "d1": 9.5,
+    "d2": 10.5,
+    "d3": 12.5,
+    "d4": 4,
+    "d5": 12,
+    "soma": 48.5,
+    "nivel": 2,
+    "pct": 65,
+    "forte": "d3",
+    "alavanca": "d4",
+    "desejo": "combinado",
+    "utm_source": "",
+    "utm_medium": "",
+    "utm_campaign": "",
+    "utm_content": "",
+    "utm_term": "",
+    "url": "http://127.0.0.1:51724/quiz/index.html",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36"
+  },
+  "payloadKeys": 52,
+  "decimalInPayload": true,
+  "noSituationCounter": true,
+  "status": "PASS"
+}

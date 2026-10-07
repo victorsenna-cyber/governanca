@@ -1,0 +1,54 @@
+# =============================================================
+# .gitignore — repositório Governança (Continuum AI Systems)
+# Decisão 27/07/2026: sobe governança + clientes, sem os livros.
+# =============================================================
+
+# --- Livros de terceiros (copyright) -------------------------
+# Material de referência com direito autoral. Fica local, nunca
+# versionado. Fonte primária também em ..\LIVROS\ (fora do repo).
+70-metodologias-chave/*.pdf
+70-metodologias-chave/*.epub
+70-metodologias-chave/*.mobi
+
+# Cópia do mesmo livro dentro de pasta de cliente
+**/Onboarding Orquestrado - Donna Weber.pdf
+
+# --- Artefatos de build / dependências -----------------------
+# Nota: `build/` e `dist/` NÃO são ignorados de forma ampla — este é um
+# repo de documentos, e pastas com esse nome em projeto de cliente
+# podem ser a única cópia de um entregável.
+node_modules/
+.venv/
+venv/
+__pycache__/
+*.pyc
+.next/
+.cache/
+.parcel-cache/
+
+# --- Lixo de sistema operacional -----------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+$RECYCLE.BIN/
+
+# --- Temporários de Office / editores ------------------------
+~$*
+*.tmp
+*.swp
+*.bak
+
+# --- Segredos (nunca versionar) ------------------------------
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.p12
+credentials*.json
+service-account*.json
+
+*.zip
+*.mp4
+.fuse_hidden*

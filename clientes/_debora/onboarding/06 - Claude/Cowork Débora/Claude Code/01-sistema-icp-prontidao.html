@@ -1,0 +1,2064 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sistema de ICP e Prontidão | Débora Delgado</title>
+<style>
+/* ============================================================
+   RESET & BASE
+   ============================================================ */
+.debora-artifact *, .debora-artifact *::before, .debora-artifact *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ============================================================
+   DESIGN TOKENS — LIGHT
+   ============================================================ */
+.debora-artifact {
+  --bg: #f7f6f3;
+  --bg-surface: #ffffff;
+  --bg-subtle: #f0ede8;
+  --bg-muted: #e8e4de;
+  --border: #ddd9d2;
+  --border-strong: #c8c3bb;
+  --text-primary: #1a1916;
+  --text-secondary: #5a5750;
+  --text-muted: #8a8680;
+  --accent: #2d6a4f;
+  --accent-light: #e8f4ef;
+  --accent-text: #1a4a35;
+  --warn: #92400e;
+  --warn-light: #fef3c7;
+  --warn-border: #d97706;
+  --danger: #7f1d1d;
+  --danger-light: #fef2f2;
+  --danger-border: #dc2626;
+  --info: #1e3a5f;
+  --info-light: #eff6ff;
+  --info-border: #3b82f6;
+  --score-0: #e5e7eb;
+  --score-1: #fde68a;
+  --score-2: #6ee7b7;
+  --score-3: #34d399;
+  --nav-bg: #ffffff;
+  --shadow: 0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.04);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
+  --radius: 8px;
+  --radius-sm: 4px;
+  --font-sans: 'Georgia', 'Times New Roman', serif;
+  --font-mono: 'Courier New', monospace;
+
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text-primary);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* ============================================================
+   DESIGN TOKENS — DARK
+   ============================================================ */
+.debora-artifact.dark {
+  --bg: #141412;
+  --bg-surface: #1e1d1b;
+  --bg-subtle: #252420;
+  --bg-muted: #2e2c28;
+  --border: #3a3830;
+  --border-strong: #4a4840;
+  --text-primary: #f0ede8;
+  --text-secondary: #a8a49e;
+  --text-muted: #6e6a64;
+  --accent: #4ade80;
+  --accent-light: #14261e;
+  --accent-text: #86efac;
+  --warn: #fbbf24;
+  --warn-light: #1c1508;
+  --warn-border: #d97706;
+  --danger: #f87171;
+  --danger-light: #1c0a0a;
+  --danger-border: #ef4444;
+  --info: #60a5fa;
+  --info-light: #0c1829;
+  --info-border: #3b82f6;
+  --nav-bg: #1e1d1b;
+  --shadow: 0 1px 3px rgba(0,0,0,0.3);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+/* ============================================================
+   LAYOUT
+   ============================================================ */
+.debora-artifact .da-wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px 80px;
+}
+
+/* ============================================================
+   STICKY NAV
+   ============================================================ */
+.debora-artifact .da-nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--nav-bg);
+  border-bottom: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+.debora-artifact .da-nav-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 52px;
+  gap: 12px;
+}
+.debora-artifact .da-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  flex: 1;
+}
+.debora-artifact .da-nav-links::-webkit-scrollbar { display: none; }
+.debora-artifact .da-nav-link {
+  white-space: nowrap;
+  font-size: 11.5px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--text-muted);
+  text-decoration: none;
+  padding: 6px 10px;
+  border-radius: var(--radius-sm);
+  transition: all 0.15s;
+  cursor: pointer;
+  border: none;
+  background: none;
+  text-transform: uppercase;
+}
+.debora-artifact .da-nav-link:hover {
+  color: var(--text-primary);
+  background: var(--bg-subtle);
+}
+.debora-artifact .da-theme-btn {
+  flex-shrink: 0;
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  background: var(--bg-subtle);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 5px 12px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.debora-artifact .da-theme-btn:hover {
+  background: var(--bg-muted);
+  color: var(--text-primary);
+}
+
+/* ============================================================
+   HEADER
+   ============================================================ */
+.debora-artifact .da-header {
+  padding: 52px 0 40px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 0;
+}
+.debora-artifact .da-header-tag {
+  display: inline-block;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  background: var(--accent-light);
+  border: 1px solid var(--accent);
+  border-radius: var(--radius-sm);
+  padding: 3px 10px;
+  margin-bottom: 20px;
+}
+.debora-artifact .da-header h1 {
+  font-size: clamp(26px, 4vw, 38px);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  color: var(--text-primary);
+  line-height: 1.15;
+  margin-bottom: 14px;
+  font-family: var(--font-sans);
+}
+.debora-artifact .da-header-sub {
+  font-size: 16px;
+  color: var(--text-secondary);
+  max-width: 640px;
+  line-height: 1.6;
+}
+.debora-artifact .da-header-meta {
+  display: flex;
+  gap: 24px;
+  margin-top: 28px;
+  flex-wrap: wrap;
+}
+.debora-artifact .da-meta-item {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.debora-artifact .da-meta-label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+.debora-artifact .da-meta-val {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+/* ============================================================
+   SECTIONS
+   ============================================================ */
+.debora-artifact .da-section {
+  padding: 56px 0 0;
+  scroll-margin-top: 70px;
+}
+.debora-artifact .da-section-header {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  margin-bottom: 28px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border);
+}
+.debora-artifact .da-section-num {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  flex-shrink: 0;
+}
+.debora-artifact .da-section-title {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+}
+
+/* ============================================================
+   CARDS
+   ============================================================ */
+.debora-artifact .da-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+  box-shadow: var(--shadow);
+}
+.debora-artifact .da-card-title {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 14px;
+}
+.debora-artifact .da-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 14px;
+}
+.debora-artifact .da-card-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 14px;
+}
+
+/* ============================================================
+   DECISION BOX
+   ============================================================ */
+.debora-artifact .da-decision {
+  background: var(--accent-light);
+  border: 1.5px solid var(--accent);
+  border-radius: var(--radius);
+  padding: 24px 28px;
+  margin-bottom: 0;
+}
+.debora-artifact .da-decision-label {
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 12px;
+}
+.debora-artifact .da-decision-text {
+  font-size: 15px;
+  color: var(--accent-text);
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+.debora-artifact .da-decision-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.debora-artifact .da-decision-opt {
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--accent-text);
+  background: var(--bg-surface);
+  border: 1px solid var(--accent);
+  border-radius: var(--radius-sm);
+  padding: 6px 14px;
+}
+
+/* ============================================================
+   GOVERNANCE TABLE
+   ============================================================ */
+.debora-artifact .da-gov-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.debora-artifact .da-gov-row {
+  display: contents;
+}
+.debora-artifact .da-gov-row > div {
+  padding: 12px 18px;
+  border-bottom: 1px solid var(--border);
+  font-size: 13.5px;
+}
+.debora-artifact .da-gov-row:last-child > div {
+  border-bottom: none;
+}
+.debora-artifact .da-gov-k {
+  background: var(--bg-subtle);
+  font-weight: 600;
+  color: var(--text-secondary);
+  font-size: 12px;
+  letter-spacing: 0.02em;
+  border-right: 1px solid var(--border);
+  display: flex;
+  align-items: flex-start;
+}
+.debora-artifact .da-gov-v {
+  background: var(--bg-surface);
+  color: var(--text-primary);
+  line-height: 1.55;
+}
+
+/* ============================================================
+   PROBLEM BLOCKS
+   ============================================================ */
+.debora-artifact .da-problem-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 10px;
+}
+.debora-artifact .da-problem-item {
+  background: var(--warn-light);
+  border: 1px solid var(--warn-border);
+  border-left: 3px solid var(--warn-border);
+  border-radius: var(--radius-sm);
+  padding: 12px 16px;
+  font-size: 13.5px;
+  color: var(--warn);
+  line-height: 1.5;
+}
+.debora-artifact.dark .da-problem-item {
+  color: var(--warn-border);
+}
+
+/* ============================================================
+   ICP DEFINITION CARD
+   ============================================================ */
+.debora-artifact .da-def-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 14px;
+}
+.debora-artifact .da-def-item {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px 20px;
+  box-shadow: var(--shadow);
+}
+.debora-artifact .da-def-label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+}
+.debora-artifact .da-def-content {
+  font-size: 13.5px;
+  color: var(--text-primary);
+  line-height: 1.55;
+}
+.debora-artifact .da-quote {
+  font-style: italic;
+  color: var(--text-secondary);
+  border-left: 2px solid var(--border-strong);
+  padding-left: 12px;
+  font-size: 13px;
+}
+
+/* ============================================================
+   TAGS
+   ============================================================ */
+.debora-artifact .da-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 8px;
+}
+.debora-artifact .da-tag {
+  font-size: 11.5px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  background: var(--bg-subtle);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 3px 10px;
+}
+.debora-artifact .da-tag-green {
+  color: var(--accent-text);
+  background: var(--accent-light);
+  border-color: var(--accent);
+}
+.debora-artifact .da-tag-red {
+  color: var(--danger);
+  background: var(--danger-light);
+  border-color: var(--danger-border);
+}
+
+/* ============================================================
+   ICP PROFILES TABLE
+   ============================================================ */
+.debora-artifact .da-profile-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+.debora-artifact .da-profile-table th {
+  background: var(--bg-subtle);
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  padding: 10px 14px;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+}
+.debora-artifact .da-profile-table td {
+  padding: 14px;
+  border-bottom: 1px solid var(--border);
+  color: var(--text-primary);
+  vertical-align: top;
+  line-height: 1.5;
+}
+.debora-artifact .da-profile-table tr:last-child td { border-bottom: none; }
+.debora-artifact .da-profile-table tr:hover td { background: var(--bg-subtle); }
+.debora-artifact .da-profile-id {
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent-text);
+  white-space: nowrap;
+}
+
+/* ============================================================
+   ABERTURA SCALE
+   ============================================================ */
+.debora-artifact .da-scale {
+  display: flex;
+  gap: 0;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  margin-bottom: 20px;
+}
+.debora-artifact .da-scale-seg {
+  flex: 1;
+  padding: 16px 12px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.15s;
+  border-right: 1px solid var(--border);
+  position: relative;
+}
+.debora-artifact .da-scale-seg:last-child { border-right: none; }
+.debora-artifact .da-scale-seg.seg-low { background: var(--danger-light); }
+.debora-artifact .da-scale-seg.seg-partial { background: var(--warn-light); }
+.debora-artifact .da-scale-seg.seg-good { background: var(--accent-light); }
+.debora-artifact .da-scale-seg.seg-high {
+  background: linear-gradient(135deg, var(--accent-light), var(--accent-light));
+  border-left: 2px solid var(--accent);
+}
+.debora-artifact .da-scale-range {
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  margin-bottom: 6px;
+}
+.debora-artifact .da-scale-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+.debora-artifact .da-scale-action {
+  font-size: 11.5px;
+  line-height: 1.4;
+}
+.debora-artifact .da-scale-seg.seg-low .da-scale-range { color: var(--danger); }
+.debora-artifact .da-scale-seg.seg-partial .da-scale-range { color: var(--warn); }
+.debora-artifact .da-scale-seg.seg-good .da-scale-range { color: var(--accent-text); }
+.debora-artifact .da-scale-seg.seg-high .da-scale-range { color: var(--accent-text); }
+.debora-artifact .da-scale-seg.seg-low .da-scale-label { color: var(--danger); }
+.debora-artifact .da-scale-seg.seg-partial .da-scale-label { color: var(--warn); }
+.debora-artifact .da-scale-seg.seg-good .da-scale-label { color: var(--accent-text); }
+.debora-artifact .da-scale-seg.seg-high .da-scale-label { color: var(--accent-text); }
+.debora-artifact .da-scale-action { color: var(--text-secondary); }
+
+/* ============================================================
+   CONSCIÊNCIA RULER
+   ============================================================ */
+.debora-artifact .da-ruler {
+  display: flex;
+  gap: 0;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+.debora-artifact .da-ruler-seg {
+  flex: 1;
+  padding: 18px 14px;
+  border-right: 1px solid var(--border);
+  background: var(--bg-surface);
+  transition: background 0.15s;
+  cursor: default;
+}
+.debora-artifact .da-ruler-seg:last-child { border-right: none; }
+.debora-artifact .da-ruler-seg:hover { background: var(--bg-subtle); }
+.debora-artifact .da-ruler-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--bg-muted);
+  font-size: 11px;
+  font-weight: 800;
+  color: var(--text-secondary);
+  margin-bottom: 10px;
+}
+.debora-artifact .da-ruler-seg.active .da-ruler-num {
+  background: var(--accent);
+  color: #fff;
+}
+.debora-artifact .da-ruler-seg.r5 .da-ruler-num {
+  background: var(--accent);
+  color: #fff;
+}
+.debora-artifact .da-ruler-title {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+  letter-spacing: 0.01em;
+}
+.debora-artifact .da-ruler-body {
+  font-size: 12px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+.debora-artifact .da-ruler-micro {
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-top: 10px;
+  margin-bottom: 3px;
+}
+
+/* ============================================================
+   SCORECARD
+   ============================================================ */
+.debora-artifact .da-score-wrap {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+.debora-artifact .da-score-header {
+  background: var(--bg-subtle);
+  padding: 14px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border);
+}
+.debora-artifact .da-score-header-title {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+.debora-artifact .da-score-total-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.debora-artifact .da-score-total-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+.debora-artifact .da-score-total-val {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--accent-text);
+  letter-spacing: -0.03em;
+}
+.debora-artifact .da-score-total-max {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+.debora-artifact .da-score-result {
+  font-size: 13px;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: var(--radius-sm);
+  background: var(--bg-muted);
+  color: var(--text-secondary);
+}
+.debora-artifact .da-score-result.r-high {
+  background: var(--accent-light);
+  color: var(--accent-text);
+  border: 1px solid var(--accent);
+}
+.debora-artifact .da-score-result.r-med { background: var(--warn-light); color: var(--warn); }
+.debora-artifact .da-score-result.r-low { background: var(--danger-light); color: var(--danger); }
+.debora-artifact .da-score-row {
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+  border-bottom: 1px solid var(--border);
+  gap: 14px;
+}
+.debora-artifact .da-score-row:last-child { border-bottom: none; }
+.debora-artifact .da-score-row:hover { background: var(--bg-subtle); }
+.debora-artifact .da-score-name {
+  flex: 1;
+  font-size: 13.5px;
+  color: var(--text-primary);
+}
+.debora-artifact .da-score-btns {
+  display: flex;
+  gap: 4px;
+}
+.debora-artifact .da-score-btn {
+  width: 32px;
+  height: 28px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  background: var(--bg-subtle);
+  color: var(--text-secondary);
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.12s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.debora-artifact .da-score-btn:hover { border-color: var(--accent); color: var(--accent-text); }
+.debora-artifact .da-score-btn.active-0 { background: var(--bg-muted); color: var(--text-muted); }
+.debora-artifact .da-score-btn.active-1 { background: var(--warn-light); border-color: var(--warn-border); color: var(--warn); }
+.debora-artifact .da-score-btn.active-2 { background: var(--accent-light); border-color: var(--accent); color: var(--accent-text); }
+.debora-artifact .da-score-btn.active-3 { background: var(--accent); border-color: var(--accent); color: #fff; }
+.debora-artifact .da-score-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--border);
+  flex-shrink: 0;
+  transition: background 0.15s;
+}
+
+/* Score interpretation */
+.debora-artifact .da-score-interp {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 10px;
+  margin-top: 16px;
+}
+.debora-artifact .da-interp-item {
+  padding: 14px 16px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+}
+.debora-artifact .da-interp-range {
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin-bottom: 4px;
+}
+.debora-artifact .da-interp-desc {
+  font-size: 12.5px;
+  color: var(--text-secondary);
+  line-height: 1.45;
+}
+.debora-artifact .da-interp-item.i-high {
+  background: var(--accent-light);
+  border-color: var(--accent);
+}
+.debora-artifact .da-interp-item.i-high .da-interp-range { color: var(--accent-text); }
+.debora-artifact .da-interp-item.i-med {
+  background: var(--warn-light);
+  border-color: var(--warn-border);
+}
+.debora-artifact .da-interp-item.i-med .da-interp-range { color: var(--warn); }
+.debora-artifact .da-interp-item.i-low {
+  background: var(--danger-light);
+  border-color: var(--danger-border);
+}
+.debora-artifact .da-interp-item.i-low .da-interp-range { color: var(--danger); }
+.debora-artifact .da-interp-item.i-none { background: var(--bg-subtle); }
+.debora-artifact .da-interp-item.i-none .da-interp-range { color: var(--text-secondary); }
+
+/* ============================================================
+   MATRIX TABLE
+   ============================================================ */
+.debora-artifact .da-matrix-wrap {
+  overflow-x: auto;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+}
+.debora-artifact .da-matrix {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12.5px;
+  min-width: 700px;
+}
+.debora-artifact .da-matrix th {
+  background: var(--bg-subtle);
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  padding: 10px 14px;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+}
+.debora-artifact .da-matrix td {
+  padding: 14px;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+  line-height: 1.5;
+  color: var(--text-primary);
+}
+.debora-artifact .da-matrix tr:last-child td { border-bottom: none; }
+.debora-artifact .da-matrix tr:hover td { background: var(--bg-subtle); }
+.debora-artifact .da-matrix .m-scenario {
+  font-weight: 700;
+  font-size: 12.5px;
+}
+.debora-artifact .m-enc {
+  font-weight: 700;
+  font-size: 12px;
+  padding: 3px 8px;
+  border-radius: var(--radius-sm);
+  display: inline-block;
+}
+.debora-artifact .enc-mentoria { background: var(--accent-light); color: var(--accent-text); border: 1px solid var(--accent); }
+.debora-artifact .enc-produto { background: var(--info-light); color: var(--info); border: 1px solid var(--info-border); }
+.debora-artifact .enc-nutricao { background: var(--warn-light); color: var(--warn); border: 1px solid var(--warn-border); }
+.debora-artifact .enc-nao { background: var(--danger-light); color: var(--danger); border: 1px solid var(--danger-border); }
+
+/* ============================================================
+   FALAS / SPEECH EXAMPLES
+   ============================================================ */
+.debora-artifact .da-fala-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.debora-artifact .da-fala {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px 20px;
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  box-shadow: var(--shadow);
+}
+.debora-artifact .da-fala-quote {
+  font-size: 13.5px;
+  color: var(--text-primary);
+  flex: 1;
+  font-style: italic;
+  line-height: 1.55;
+}
+.debora-artifact .da-fala-class {
+  flex-shrink: 0;
+  font-size: 11.5px;
+  color: var(--text-secondary);
+  background: var(--bg-subtle);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 6px 10px;
+  max-width: 200px;
+  line-height: 1.45;
+}
+.debora-artifact .da-fala-enc {
+  flex-shrink: 0;
+}
+
+/* ============================================================
+   IF-THEN BLOCKS
+   ============================================================ */
+.debora-artifact .da-ifthen-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.debora-artifact .da-ifthen {
+  display: flex;
+  align-items: stretch;
+  gap: 0;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+.debora-artifact .da-if {
+  background: var(--bg-subtle);
+  padding: 14px 18px;
+  font-size: 13px;
+  color: var(--text-secondary);
+  flex: 1;
+  border-right: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.debora-artifact .da-if-badge {
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  background: var(--bg-muted);
+  border-radius: 3px;
+  padding: 2px 6px;
+  flex-shrink: 0;
+}
+.debora-artifact .da-then {
+  background: var(--bg-surface);
+  padding: 14px 18px;
+  font-size: 13px;
+  color: var(--text-primary);
+  flex: 1;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.debora-artifact .da-then-badge {
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent-text);
+  background: var(--accent-light);
+  border-radius: 3px;
+  padding: 2px 6px;
+  border: 1px solid var(--accent);
+  flex-shrink: 0;
+}
+
+/* ============================================================
+   ERROR CARDS
+   ============================================================ */
+.debora-artifact .da-error-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 12px;
+}
+.debora-artifact .da-error-item {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--danger-border);
+  border-radius: var(--radius);
+  padding: 16px 18px;
+  box-shadow: var(--shadow);
+}
+.debora-artifact .da-error-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--danger);
+  margin-bottom: 6px;
+}
+.debora-artifact .da-error-body {
+  font-size: 12.5px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+/* ============================================================
+   NEXT ACTION
+   ============================================================ */
+.debora-artifact .da-action-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.debora-artifact .da-action-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 14px 18px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+.debora-artifact .da-step-num {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.debora-artifact .da-step-text {
+  font-size: 14px;
+  color: var(--text-primary);
+  line-height: 1.5;
+  padding-top: 4px;
+}
+
+/* ============================================================
+   KPI GRID
+   ============================================================ */
+.debora-artifact .da-kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 12px;
+}
+.debora-artifact .da-kpi-item {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px 18px;
+  box-shadow: var(--shadow);
+}
+.debora-artifact .da-kpi-label {
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 6px;
+}
+.debora-artifact .da-kpi-val {
+  font-size: 13.5px;
+  color: var(--text-primary);
+  line-height: 1.5;
+}
+.debora-artifact .da-kpi-primary {
+  border-top: 3px solid var(--accent);
+}
+.debora-artifact .da-kpi-primary .da-kpi-label { color: var(--accent-text); }
+
+/* ============================================================
+   APPROVAL BLOCK
+   ============================================================ */
+.debora-artifact .da-approval {
+  background: var(--accent-light);
+  border: 1.5px solid var(--accent);
+  border-radius: var(--radius);
+  padding: 20px 24px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 16px;
+}
+.debora-artifact .da-approval-icon {
+  font-size: 20px;
+  flex-shrink: 0;
+}
+.debora-artifact .da-approval-text {
+  font-size: 14px;
+  color: var(--accent-text);
+  font-weight: 600;
+  line-height: 1.55;
+}
+
+/* ============================================================
+   RISK ALERT
+   ============================================================ */
+.debora-artifact .da-risk {
+  background: var(--danger-light);
+  border: 1px solid var(--danger-border);
+  border-left: 3px solid var(--danger-border);
+  border-radius: var(--radius-sm);
+  padding: 12px 16px;
+  font-size: 13.5px;
+  color: var(--danger);
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+.debora-artifact.dark .da-risk { color: var(--danger-border); }
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+.debora-artifact .da-footer {
+  margin-top: 80px;
+  padding: 28px 0;
+  border-top: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.debora-artifact .da-footer-brand {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+.debora-artifact .da-footer-meta {
+  font-size: 11.5px;
+  color: var(--text-muted);
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.debora-artifact .da-footer-meta span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.debora-artifact .da-footer-dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--border-strong);
+  display: inline-block;
+}
+
+/* ============================================================
+   DIVIDER
+   ============================================================ */
+.debora-artifact .da-divider {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 32px 0;
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 768px) {
+  .debora-artifact .da-gov-grid { grid-template-columns: 1fr; }
+  .debora-artifact .da-gov-k { border-right: none; border-bottom: 1px solid var(--border); }
+  .debora-artifact .da-scale { flex-direction: column; }
+  .debora-artifact .da-scale-seg { border-right: none; border-bottom: 1px solid var(--border); }
+  .debora-artifact .da-scale-seg:last-child { border-bottom: none; }
+  .debora-artifact .da-ruler { flex-direction: column; }
+  .debora-artifact .da-ruler-seg { border-right: none; border-bottom: 1px solid var(--border); }
+  .debora-artifact .da-ruler-seg:last-child { border-bottom: none; }
+  .debora-artifact .da-ifthen { flex-direction: column; }
+  .debora-artifact .da-if { border-right: none; border-bottom: 1px solid var(--border); }
+  .debora-artifact .da-fala { flex-direction: column; }
+  .debora-artifact .da-fala-class { max-width: none; }
+  .debora-artifact .da-nav-links { gap: 0; }
+  .debora-artifact .da-nav-link { padding: 5px 7px; font-size: 10.5px; }
+}
+@media (max-width: 480px) {
+  .debora-artifact .da-wrap { padding: 0 14px 60px; }
+  .debora-artifact .da-footer { flex-direction: column; align-items: flex-start; }
+  .debora-artifact .da-score-row { flex-wrap: wrap; }
+  .debora-artifact .da-score-name { flex-basis: 100%; }
+}
+</style>
+</head>
+<body>
+<div class="debora-artifact" id="deborArtifact">
+
+<!-- NAV -->
+<nav class="da-nav">
+  <div class="da-nav-inner">
+    <div class="da-nav-links">
+      <button class="da-nav-link" onclick="scrollTo('sec-decisao')">Decisão</button>
+      <button class="da-nav-link" onclick="scrollTo('sec-gov')">Arquitetura</button>
+      <button class="da-nav-link" onclick="scrollTo('sec-icp')">ICP</button>
+      <button class="da-nav-link" onclick="scrollTo('sec-perfis')">Perfis</button>
+      <button class="da-nav-link" onclick="scrollTo('sec-antiicp')">Anti-ICP</button>
+      <button class="da-nav-link" onclick="scrollTo('sec-abertura')">Abertura</button>
+      <button class="da-nav-link" onclick="scrollTo('sec-regua')">Consciência</button>
+      <button class="da-nav-link" onclick="scrollTo('sec-score')">Score</button>
+      <button class="da-nav-link" onclick="scrollTo('sec-matriz')">Matriz</button>
+      <button class="da-nav-link" onclick="scrollTo('sec-falas')">Falas</button>
+      <button class="da-nav-link" onclick="scrollTo('sec-protocolo')">Protocolo</button>
+      <button class="da-nav-link" onclick="scrollTo('sec-erros')">Erros</button>
+      <button class="da-nav-link" onclick="scrollTo('sec-acao')">Ação</button>
+      <button class="da-nav-link" onclick="scrollTo('sec-kpi')">Sinais</button>
+    </div>
+    <button class="da-theme-btn" id="themeBtn" onclick="toggleTheme()">Dark</button>
+  </div>
+</nav>
+
+<div class="da-wrap">
+
+  <!-- HEADER -->
+  <header class="da-header">
+    <div class="da-header-tag">Framework Interno</div>
+    <h1>Sistema de ICP e Prontidão</h1>
+    <p class="da-header-sub">Framework operacional para classificar leads, medir abertura, definir prontidão e decidir o próximo encaminhamento com critério e sem depender apenas do feeling.</p>
+    <div class="da-header-meta">
+      <div class="da-meta-item">
+        <span class="da-meta-label">Natureza</span>
+        <span class="da-meta-val">Framework interno permanente</span>
+      </div>
+      <div class="da-meta-item">
+        <span class="da-meta-label">Uso</span>
+        <span class="da-meta-val">Todo lead, conversa ou indicação</span>
+      </div>
+      <div class="da-meta-item">
+        <span class="da-meta-label">Tempo estimado</span>
+        <span class="da-meta-val">Menos de 10 min por lead</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- SEÇÃO 1: DECISÃO EXECUTIVA -->
+  <section class="da-section" id="sec-decisao">
+    <div class="da-section-header">
+      <span class="da-section-num">01</span>
+      <h2 class="da-section-title">Tese Central do Framework</h2>
+    </div>
+    <div class="da-decision">
+      <div class="da-decision-label">Para que existe este sistema</div>
+      <p class="da-decision-text">
+        Este sistema existe para que Débora decida, com critério objetivo, para onde cada pessoa deve ser encaminhada, sem depender apenas da percepção imediata da conversa.
+      </p>
+      <div class="da-decision-options">
+        <span class="da-decision-opt">Mentoria principal</span>
+        <span class="da-decision-opt">Produto inicial</span>
+        <span class="da-decision-opt">Nutrição</span>
+        <span class="da-decision-opt">Não aderente agora</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 2: GOVERNANÇA -->
+  <section class="da-section" id="sec-gov">
+    <div class="da-section-header">
+      <span class="da-section-num">02</span>
+      <h2 class="da-section-title">Arquitetura do Framework</h2>
+    </div>
+    <div class="da-gov-grid">
+      <div class="da-gov-row">
+        <div class="da-gov-k">Framework</div>
+        <div class="da-gov-v">Sistema de ICP e Prontidão</div>
+      </div>
+      <div class="da-gov-row">
+        <div class="da-gov-k">Função do framework</div>
+        <div class="da-gov-v">Interpretar quem tem aderência, quem precisa amadurecer e quem não deve avançar para a mentoria neste momento</div>
+      </div>
+      <div class="da-gov-row">
+        <div class="da-gov-k">Condições de uso</div>
+        <div class="da-gov-v">Fala do lead, histórico, contexto, desejo, objeções, abertura</div>
+      </div>
+      <div class="da-gov-row">
+        <div class="da-gov-k">Resultado esperado</div>
+        <div class="da-gov-v">Classificação do lead e próximo encaminhamento</div>
+      </div>
+      <div class="da-gov-row">
+        <div class="da-gov-k">Decisão que orienta</div>
+        <div class="da-gov-v">Quem avança para mentoria, quem amadurece, quem vai para produto inicial, quem não é aderente agora</div>
+      </div>
+      <div class="da-gov-row">
+        <div class="da-gov-k">Quando consultar</div>
+        <div class="da-gov-v">Sempre que houver lead, conversa, indicação ou interesse</div>
+      </div>
+      <div class="da-gov-row">
+        <div class="da-gov-k">Indicador de uso</div>
+        <div class="da-gov-v">Taxa de leads corretamente classificados</div>
+      </div>
+      <div class="da-gov-row">
+        <div class="da-gov-k">Desalinhamentos que este framework evita</div>
+        <div class="da-gov-v">Venda desalinhada, sobrecarga, clientes resistentes, baixa retenção</div>
+      </div>
+      <div class="da-gov-row">
+        <div class="da-gov-k">Sinais de clareza</div>
+        <div class="da-gov-v">Débora consegue classificar um lead sem depender apenas do feeling</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 3: CONTEXTO -->
+  <section class="da-section" id="sec-contexto">
+    <div class="da-section-header">
+      <span class="da-section-num">03</span>
+      <h2 class="da-section-title">Contexto do Problema</h2>
+    </div>
+    <div class="da-card" style="margin-bottom:16px;">
+      <p class="da-card-title">O problema central</p>
+      <p style="font-size:15px; font-weight:600; color:var(--text-primary); margin-bottom:10px;">O problema não é falta de interesse. O problema é falta de critério.</p>
+      <p style="font-size:13.5px; color:var(--text-secondary); line-height:1.6;">Sem critério objetivo, é impossível separar curiosidade de compromisso, interesse de abertura real, desejo de prontidão. O feeling funciona em parte, mas não escala. Quando o critério falta, o risco não é apenas comercial. É operacional, energético e de qualidade de entrega.</p>
+    </div>
+    <div class="da-problem-grid">
+      <div class="da-problem-item">Vender mentoria profunda para pessoas sem prontidão</div>
+      <div class="da-problem-item">Recusar bons leads por falta de clareza nos critérios</div>
+      <div class="da-problem-item">Carregar pessoas resistentes ao longo do processo</div>
+      <div class="da-problem-item">Transformar profundidade em sobrecarga operacional</div>
+      <div class="da-problem-item">Confundir curiosidade intelectual com compromisso real</div>
+      <div class="da-problem-item">Confundir desejo de mudança com abertura genuína</div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 4: ICP -->
+  <section class="da-section" id="sec-icp">
+    <div class="da-section-header">
+      <span class="da-section-num">04</span>
+      <h2 class="da-section-title">Definição de ICP</h2>
+    </div>
+    <div class="da-card" style="margin-bottom:20px; border-top:3px solid var(--accent);">
+      <p class="da-card-title">Tese central</p>
+      <p style="font-size:14px; color:var(--text-primary); line-height:1.65; margin-bottom:12px;">O ICP da Débora <strong>não se limita ao corporativo</strong>. O eixo correto é propósito, impacto, valor para a sociedade, prontidão para transformação, abertura para novas perspectivas e desejo de integrar vida, trabalho, carreira e contribuição.</p>
+      <div class="da-tags">
+        <span class="da-tag da-tag-green">Líderes</span>
+        <span class="da-tag da-tag-green">Executivos</span>
+        <span class="da-tag da-tag-green">Especialistas</span>
+        <span class="da-tag da-tag-green">Empreendedores</span>
+        <span class="da-tag da-tag-green">Profissionais liberais</span>
+        <span class="da-tag da-tag-green">Consultores</span>
+        <span class="da-tag da-tag-green">Educadores</span>
+        <span class="da-tag da-tag-green">Pessoas em transição de carreira</span>
+        <span class="da-tag da-tag-green">Pessoas criando projeto paralelo</span>
+        <span class="da-tag da-tag-green">Pessoas com desejo de impacto social</span>
+      </div>
+    </div>
+    <div class="da-def-grid">
+      <div class="da-def-item">
+        <p class="da-def-label">O que é ICP</p>
+        <p class="da-def-content">O perfil com maior aderência entre dor, desejo, capacidade, prontidão e alinhamento com o método. Não é apenas uma descrição demográfica.</p>
+      </div>
+      <div class="da-def-item">
+        <p class="da-def-label">Por que importa</p>
+        <p class="da-def-content">Define quem tem maior probabilidade de resultado, menor custo de entrega e maior sustentação do processo. Determina previsibilidade e qualidade da entrega.</p>
+      </div>
+      <div class="da-def-item">
+        <p class="da-def-label">Como identificar</p>
+        <p class="da-def-content">Observar fala dominante, relação com propósito, capacidade de olhar padrões, abertura para novas perspectivas e urgência legítima de transformação.</p>
+      </div>
+      <div class="da-def-item">
+        <p class="da-def-label">Sinais positivos</p>
+        <p class="da-def-content">Reconhece padrões. Tem incômodo com o estado atual. Não terceiriza responsabilidade. Quer transformação real, não alívio imediato.</p>
+      </div>
+      <div class="da-def-item">
+        <p class="da-def-label">Sinais de alerta</p>
+        <p class="da-def-content">Foca só em resultado externo. Quer validação. Tem muitas respostas prontas. Já sabe tudo. Resistência velada ao processo.</p>
+      </div>
+      <div class="da-def-item">
+        <p class="da-def-label">Exemplo de fala</p>
+        <div class="da-quote">"Tenho alcançado o que planejei, mas algo não encaixa. Sinto que estou vivendo uma versão menor do que poderia contribuir."</div>
+      </div>
+      <div class="da-def-item">
+        <p class="da-def-label">Decisão operacional</p>
+        <p class="da-def-content">Se é ICP, avançar para score de prontidão. Score alto vai para mentoria. Score médio vai para produto inicial ou aprofundamento.</p>
+      </div>
+      <div class="da-def-item">
+        <p class="da-def-label">O que não fazer</p>
+        <p class="da-def-content">Limitar ICP ao corporativo. Presumir aderência por cargo ou renda. Confundir interesse intelectual com prontidão para processo profundo.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 5: PERFIS AMPLIADOS -->
+  <section class="da-section" id="sec-perfis">
+    <div class="da-section-header">
+      <span class="da-section-num">05</span>
+      <h2 class="da-section-title">ICP Ampliado — Perfis Operacionais</h2>
+    </div>
+    <div class="da-matrix-wrap">
+      <table class="da-profile-table">
+        <thead>
+          <tr>
+            <th>Perfil</th>
+            <th>Definição</th>
+            <th>Sinais observáveis</th>
+            <th>Fala típica</th>
+            <th>Risco se mal classificado</th>
+            <th>Próximo passo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="da-profile-id">A. Propósito</span></td>
+            <td>Pessoa que orienta escolhas por senso de missão, contribuição ou legado. Propósito é motor, não decoração.</td>
+            <td>Fala sobre impacto, incômodo com superficialidade, sensação de potencial não utilizado.</td>
+            <td><em>"Quero que meu trabalho tenha mais significado além do resultado financeiro."</em></td>
+            <td>Se for encaminhada para produto inicial sem avaliação de prontidão, pode se frustrar com superficialidade.</td>
+            <td>Avaliar nível de consciência e score. Se prontidão alta, mentoria. Se parcial, workshop.</td>
+          </tr>
+          <tr>
+            <td><span class="da-profile-id">B. Alta Responsabilidade</span></td>
+            <td>Líderes, executivos, especialistas com alta carga de responsabilidade e incômodo crescente com o custo pessoal disso.</td>
+            <td>Cansaço com adaptação, desejo de trabalhar com mais inteireza, padrões de entrega que consomem energia vital.</td>
+            <td><em>"Cheguei onde queria, mas estou esgotada. Não sei mais se isso é o que quero."</em></td>
+            <td>Se entrar na mentoria sem clareza de propósito, pode usar o processo só para otimizar performance, não para transformação.</td>
+            <td>Investigar relação com valor, padrões de funcionamento. Score de prontidão.</td>
+          </tr>
+          <tr>
+            <td><span class="da-profile-id">C. Transição</span></td>
+            <td>Pessoa em processo de mudança de carreira, saindo do corporativo, criando projeto paralelo ou redefinindo identidade profissional.</td>
+            <td>Incerteza sobre próximo passo, sensação de não caber mais no molde atual, desejo de mais congruência.</td>
+            <td><em>"Estou saindo de um cargo sólido para criar algo meu, mas não sei bem por onde começar."</em></td>
+            <td>Pode entrar na mentoria buscando estratégia de negócio, não transformação. Checar expectativa.</td>
+            <td>Investigar motivação da transição. Verificar se busca autoconhecimento ou apenas estratégia.</td>
+          </tr>
+          <tr>
+            <td><span class="da-profile-id">D. Projeto Latente</span></td>
+            <td>Pessoa com projeto, ideia ou contribuição que não ganhou forma. Sensação de que tem algo a oferecer, mas não sabe como.</td>
+            <td>Fala sobre algo latente, reconhece valor em si mas não sabe nomear, insegurança sobre direção.</td>
+            <td><em>"Sinto que tenho algo importante a compartilhar, mas não sei como transformar isso em realidade."</em></td>
+            <td>Pode querer apenas validação de ideia, não processo de transformação. Investigar abertura.</td>
+            <td>Mapa de Valor Autêntico antes da mentoria principal. Verificar prontidão para o processo.</td>
+          </tr>
+          <tr>
+            <td><span class="da-profile-id">E. Impacto com Incongruência</span></td>
+            <td>Já gera impacto real, mas sente que algo na forma de operar não está alinhado com quem está se tornando.</td>
+            <td>Reconhece conquistas, mas sente custo interno. Quer integrar resultado e bem-estar. Padrões repetidos que reconhece mas não sabe mudar.</td>
+            <td><em>"Tenho resultado, mas me sinto me adaptando demais. Parece que entrego o que esperaram de mim, não o que sou."</em></td>
+            <td>Alta prontidão potencial. Risco de tentar otimizar o processo atual ao invés de revisitar padrões.</td>
+            <td>Score de prontidão. Se alto, mentoria principal. Explorar relação com padrão e valor autêntico.</td>
+          </tr>
+          <tr>
+            <td><span class="da-profile-id">F. Valor Social</span></td>
+            <td>Pessoa cuja motivação central é gerar valor para a sociedade, comunidade ou grupo específico. Pode vir de qualquer área.</td>
+            <td>Fala sobre impacto coletivo, incômodo com trabalho que não contribui, desejo de alinhar trabalho e missão.</td>
+            <td><em>"Quero que meu trabalho sirva para algo maior. Não consigo mais me contentar apenas com resultado individual."</em></td>
+            <td>Risco de confundir militância com autoconhecimento. Verificar disposição para olhar padrões internos.</td>
+            <td>Investigar relação com valor autêntico. Verificar abertura para revisão de crenças.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 6: ANTI-ICP -->
+  <section class="da-section" id="sec-antiicp">
+    <div class="da-section-header">
+      <span class="da-section-num">06</span>
+      <h2 class="da-section-title">Anti-ICP</h2>
+    </div>
+    <div class="da-card" style="margin-bottom:20px; border-top:3px solid var(--danger-border);">
+      <p class="da-card-title">Definição operacional</p>
+      <p style="font-size:14px; color:var(--text-primary); line-height:1.65;">Anti-ICP são pessoas que até podem ter interesse, mas não têm abertura, responsabilidade ou disposição para sustentar um processo profundo <strong>neste momento</strong>. A baixa prontidão não é julgamento moral. É delimitação operacional.</p>
+    </div>
+    <div class="da-def-grid">
+      <div class="da-def-item">
+        <p class="da-def-label">O que é</p>
+        <p class="da-def-content">Perfil com baixa probabilidade de resultado ou alto custo operacional. Pode ter curiosidade ou interesse, mas não tem as condições internas para o processo neste momento.</p>
+      </div>
+      <div class="da-def-item">
+        <p class="da-def-label">Por que importa</p>
+        <p class="da-def-content">Aceitar anti-ICP por necessidade de caixa ou pressão comercial gera desgaste, baixa entrega, risco reputacional e consome energia que deveria ir para quem tem prontidão.</p>
+      </div>
+      <div class="da-def-item">
+        <p class="da-def-label">Como identificar</p>
+        <p class="da-def-content">Respostas prontas para tudo. Resistência velada a novas perspectivas. Quer validação do que já pensa. Expectativa de solução rápida ou de ser carregada pelo processo.</p>
+      </div>
+      <div class="da-def-item">
+        <p class="da-def-label">Sinais de possível evolução</p>
+        <p class="da-def-content">Demonstra dúvida sobre suas certezas. Pergunta com genuína curiosidade. Aceita questionamentos sem se defender imediatamente. Pode amadurecer com conteúdo ou produto inicial.</p>
+      </div>
+      <div class="da-def-item">
+        <p class="da-def-label">Sinais de alerta</p>
+        <p class="da-def-content">Já sabe o que precisa e quer confirmação. Resiste a qualquer perspectiva que questione o modelo mental atual. Terceiriza responsabilidade sistematicamente.</p>
+      </div>
+      <div class="da-def-item">
+        <p class="da-def-label">Exemplo de fala</p>
+        <div class="da-quote">"Já fiz muita coisa de autoconhecimento, sei meu tipo no Eneagrama e fiz coaching. O problema é externo. Preciso de uma estratégia."</div>
+      </div>
+      <div class="da-def-item">
+        <p class="da-def-label">Decisão operacional</p>
+        <p class="da-def-content">Não avançar para mentoria. Se houver abertura parcial, oferecer conteúdo ou produto inicial. Se rigidez for total, não avançar agora.</p>
+      </div>
+      <div class="da-def-item">
+        <p class="da-def-label">O que não fazer</p>
+        <p class="da-def-content">Chamar de pessoa imatura. Tentar convencer quem não tem abertura. Aceitar por necessidade financeira. Tratar resistência como objeção comercial comum.</p>
+      </div>
+    </div>
+    <div style="margin-top:16px;">
+      <p style="font-size:12px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:var(--text-muted); margin-bottom:10px;">Sinais de anti-ICP</p>
+      <div style="display:flex; flex-wrap:wrap; gap:7px;">
+        <span class="da-tag da-tag-red">Respostas prontas demais</span>
+        <span class="da-tag da-tag-red">Baixa abertura a novas perspectivas</span>
+        <span class="da-tag da-tag-red">Resistência à revisão de crenças</span>
+        <span class="da-tag da-tag-red">Apego ao próprio sistema mental</span>
+        <span class="da-tag da-tag-red">Expectativa de solução rápida</span>
+        <span class="da-tag da-tag-red">Baixa autorresponsabilidade</span>
+        <span class="da-tag da-tag-red">Busca por validação</span>
+        <span class="da-tag da-tag-red">Desejo de ser carregada</span>
+        <span class="da-tag da-tag-red">Rigidez cognitiva</span>
+        <span class="da-tag da-tag-red">Pouca disposição para observar padrões</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 7: ESCALA DE ABERTURA -->
+  <section class="da-section" id="sec-abertura">
+    <div class="da-section-header">
+      <span class="da-section-num">07</span>
+      <h2 class="da-section-title">Escala de Abertura a Novas Perspectivas</h2>
+    </div>
+    <div class="da-card" style="margin-bottom:20px;">
+      <p class="da-card-title">Pergunta obrigatória</p>
+      <p style="font-size:16px; font-weight:700; color:var(--text-primary); font-style:italic; margin-bottom:8px;">"De 0 a 10, quanto essa pessoa está aberta a novas perspectivas?"</p>
+      <p style="font-size:13px; color:var(--text-secondary);">Esta escala não mede inteligência. Mede disponibilidade para revisar crenças, padrões e interpretações. Pode ser perguntada diretamente ou avaliada pela observação da conversa.</p>
+    </div>
+    <div class="da-scale">
+      <div class="da-scale-seg seg-low">
+        <div class="da-scale-range">0–3</div>
+        <div class="da-scale-label">Baixa abertura</div>
+        <div class="da-scale-action">Não aderente agora ou nutrição leve</div>
+      </div>
+      <div class="da-scale-seg seg-partial">
+        <div class="da-scale-range">4–6</div>
+        <div class="da-scale-label">Abertura parcial</div>
+        <div class="da-scale-action">Produto inicial ou conteúdo de amadurecimento</div>
+      </div>
+      <div class="da-scale-seg seg-good">
+        <div class="da-scale-range">7–8</div>
+        <div class="da-scale-label">Boa abertura</div>
+        <div class="da-scale-action">Qualificação mais profunda</div>
+      </div>
+      <div class="da-scale-seg seg-high">
+        <div class="da-scale-range">9–10</div>
+        <div class="da-scale-label">Alta prontidão</div>
+        <div class="da-scale-action">Avaliar mentoria principal</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 8: RÉGUA DE CONSCIÊNCIA -->
+  <section class="da-section" id="sec-regua">
+    <div class="da-section-header">
+      <span class="da-section-num">08</span>
+      <h2 class="da-section-title">Régua de Consciência</h2>
+    </div>
+    <p style="font-size:13.5px; color:var(--text-secondary); margin-bottom:20px; line-height:1.6;">Classifique em qual nível a pessoa se encontra para definir conteúdo, encaminhamento e urgência da abordagem.</p>
+    <div class="da-ruler">
+      <div class="da-ruler-seg">
+        <div class="da-ruler-num">1</div>
+        <div class="da-ruler-title">Curiosidade</div>
+        <div class="da-ruler-body">
+          <p class="da-ruler-micro">Como pensa</p>
+          <p>Interesse em autoconhecimento, mas sem dor profunda reconhecida.</p>
+          <p class="da-ruler-micro">Como fala</p>
+          <p>"Acho legal esse assunto, quero entender mais sobre mim."</p>
+          <p class="da-ruler-micro">Conteúdo indicado</p>
+          <p>Abertura de percepção, personalidade, padrões.</p>
+          <p class="da-ruler-micro">Próximo passo</p>
+          <p>Nutrição leve, conteúdo educativo.</p>
+        </div>
+      </div>
+      <div class="da-ruler-seg">
+        <div class="da-ruler-num">2</div>
+        <div class="da-ruler-title">Incômodo</div>
+        <div class="da-ruler-body">
+          <p class="da-ruler-micro">Como pensa</p>
+          <p>Sente que algo não está certo, mas ainda não nomeou.</p>
+          <p class="da-ruler-micro">Como fala</p>
+          <p>"Tenho uma vida boa, mas algo não encaixa."</p>
+          <p class="da-ruler-micro">Conteúdo indicado</p>
+          <p>Diagnóstico de desalinhamento, valor autêntico.</p>
+          <p class="da-ruler-micro">Próximo passo</p>
+          <p>Conteúdo de diagnóstico, possível produto inicial.</p>
+        </div>
+      </div>
+      <div class="da-ruler-seg">
+        <div class="da-ruler-num">3</div>
+        <div class="da-ruler-title">Padrão</div>
+        <div class="da-ruler-body">
+          <p class="da-ruler-micro">Como pensa</p>
+          <p>Percebe repetições, crenças e reações automáticas.</p>
+          <p class="da-ruler-micro">Como fala</p>
+          <p>"Percebo que repito isso em várias situações."</p>
+          <p class="da-ruler-micro">Conteúdo indicado</p>
+          <p>Diferença entre sintoma e padrão, automaestria.</p>
+          <p class="da-ruler-micro">Próximo passo</p>
+          <p>Produto inicial ou qualificação para mentoria.</p>
+        </div>
+      </div>
+      <div class="da-ruler-seg">
+        <div class="da-ruler-num">4</div>
+        <div class="da-ruler-title">Propósito e Congruência</div>
+        <div class="da-ruler-body">
+          <p class="da-ruler-micro">Como pensa</p>
+          <p>Quer integrar vida, trabalho, valor, propósito e impacto.</p>
+          <p class="da-ruler-micro">Como fala</p>
+          <p>"Quero que o que faço esteja alinhado com quem sou."</p>
+          <p class="da-ruler-micro">Conteúdo indicado</p>
+          <p>Mapa de Valor Autêntico, mentoria, congruência.</p>
+          <p class="da-ruler-micro">Próximo passo</p>
+          <p>Score de prontidão. Avaliar mentoria.</p>
+        </div>
+      </div>
+      <div class="da-ruler-seg r5">
+        <div class="da-ruler-num">5</div>
+        <div class="da-ruler-title">Prontidão</div>
+        <div class="da-ruler-body">
+          <p class="da-ruler-micro">Como pensa</p>
+          <p>Reconhece dor, padrão, custo e desejo real de transformação.</p>
+          <p class="da-ruler-micro">Como fala</p>
+          <p>"Sei que preciso mudar algo estrutural. Já tentei sozinha e não resolvi."</p>
+          <p class="da-ruler-micro">Conteúdo indicado</p>
+          <p>Conversa de qualificação, oferta de mentoria.</p>
+          <p class="da-ruler-micro">Próximo passo</p>
+          <p>Score de prontidão. Se alto, mentoria principal.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 9: SCORECARD -->
+  <section class="da-section" id="sec-score">
+    <div class="da-section-header">
+      <span class="da-section-num">09</span>
+      <h2 class="da-section-title">Score de Prontidão</h2>
+    </div>
+    <p style="font-size:13.5px; color:var(--text-secondary); margin-bottom:18px; line-height:1.6;">Pontue cada critério de 0 a 3. O total indica o encaminhamento correto. Clique nos botões para registrar a pontuação de cada critério.</p>
+    <div class="da-score-wrap">
+      <div class="da-score-header">
+        <span class="da-score-header-title">Critérios de Prontidão</span>
+        <div class="da-score-total-box">
+          <span class="da-score-total-label">Total</span>
+          <span class="da-score-total-val" id="scoreTotal">0</span>
+          <span class="da-score-total-max">/ 30</span>
+          <span class="da-score-result" id="scoreResult">Preencha o score</span>
+        </div>
+      </div>
+      <div id="scoreRows">
+        <!-- JS rendered -->
+      </div>
+    </div>
+    <div class="da-score-interp">
+      <div class="da-interp-item i-high">
+        <div class="da-interp-range">24–30</div>
+        <div class="da-interp-desc">Alta prontidão para mentoria principal. Avançar para conversa de oferta.</div>
+      </div>
+      <div class="da-interp-item i-med">
+        <div class="da-interp-range">18–23</div>
+        <div class="da-interp-desc">Boa aderência, mas precisa de aprofundamento antes da decisão final.</div>
+      </div>
+      <div class="da-interp-item" style="background:var(--info-light); border-color:var(--info-border);">
+        <div class="da-interp-range" style="color:var(--info);">12–17</div>
+        <div class="da-interp-desc">Produto inicial ou experiência de amadurecimento antes da mentoria.</div>
+      </div>
+      <div class="da-interp-item i-none">
+        <div class="da-interp-range">0–11</div>
+        <div class="da-interp-desc">Não aderente agora. Nutrição ou descarte temporário.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 10: MATRIZ -->
+  <section class="da-section" id="sec-matriz">
+    <div class="da-section-header">
+      <span class="da-section-num">10</span>
+      <h2 class="da-section-title">Matriz ICP + Consciência + Prontidão</h2>
+    </div>
+    <div class="da-matrix-wrap">
+      <table class="da-matrix">
+        <thead>
+          <tr>
+            <th>Cenário</th>
+            <th>Diagnóstico</th>
+            <th>Risco</th>
+            <th>Decisão</th>
+            <th>Encaminhamento</th>
+            <th>Exemplo de fala</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="m-scenario">É ICP e tem alta prontidão</td>
+            <td>Aderência total: perfil, consciência e abertura alinhadas.</td>
+            <td>Baixo. Risco de procrastinar encaminhamento.</td>
+            <td>Avançar para conversa de oferta da mentoria principal.</td>
+            <td><span class="m-enc enc-mentoria">Mentoria Principal</span></td>
+            <td><em>"Reconheço meus padrões, sinto o custo disso e quero transformar de verdade."</em></td>
+          </tr>
+          <tr>
+            <td class="m-scenario">É ICP, mas ainda precisa amadurecer</td>
+            <td>Perfil aderente, mas nível de consciência ainda baixo ou prontidão parcial.</td>
+            <td>Entrar na mentoria antes de estar pronta pode gerar resistência.</td>
+            <td>Oferecer produto inicial ou experiência de consciência antes.</td>
+            <td><span class="m-enc enc-produto">Produto Inicial</span></td>
+            <td><em>"Tenho interesse em me conhecer melhor, mas ainda estou entendendo o que realmente preciso."</em></td>
+          </tr>
+          <tr>
+            <td class="m-scenario">Tem interesse, mas baixa consciência</td>
+            <td>Atração pelo assunto, mas sem dor reconhecida ou padrão observado.</td>
+            <td>Entrar na mentoria esperando entretenimento ou validação.</td>
+            <td>Nutrir com conteúdo de abertura de percepção.</td>
+            <td><span class="m-enc enc-nutricao">Nutrição</span></td>
+            <td><em>"Achei interessante o que você fala. Quero entender mais."</em></td>
+          </tr>
+          <tr>
+            <td class="m-scenario">Tem consciência, mas baixa abertura</td>
+            <td>Entende padrões intelectualmente, mas resiste a revisá-los de verdade.</td>
+            <td>Alto. Pode engajar na mentoria e resistir ao processo.</td>
+            <td>Não avançar para mentoria. Conteúdo ou produto leve.</td>
+            <td><span class="m-enc enc-produto">Produto Inicial</span></td>
+            <td><em>"Sei meu tipo, sei meus padrões. O problema está fora de mim mesmo assim."</em></td>
+          </tr>
+          <tr>
+            <td class="m-scenario">Tem boa abertura, mas baixa capacidade financeira</td>
+            <td>Prontidão real, mas sem condições de investir agora.</td>
+            <td>Avançar sem condição financeira gera inadimplência ou abandono.</td>
+            <td>Produto inicial. Manter em nutrição. Reavaliar em 90 dias.</td>
+            <td><span class="m-enc enc-produto">Produto Inicial</span></td>
+            <td><em>"Quero muito, mas não tenho como investir o valor agora."</em></td>
+          </tr>
+          <tr>
+            <td class="m-scenario">Não é aderente agora</td>
+            <td>Baixa abertura, baixa consciência, expectativa desalinhada ou rigidez cognitiva.</td>
+            <td>Alto. Aceitar gera sobrecarga, resistência e baixo resultado.</td>
+            <td>Não avançar. Sem nutrição forçada. Porta aberta se houver evolução futura.</td>
+            <td><span class="m-enc enc-nao">Não aderente agora</span></td>
+            <td><em>"Preciso que você me diga o que fazer. Quero um plano de ação prático."</em></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 11: FALAS -->
+  <section class="da-section" id="sec-falas">
+    <div class="da-section-header">
+      <span class="da-section-num">11</span>
+      <h2 class="da-section-title">Exemplos Práticos de Falas</h2>
+    </div>
+    <p style="font-size:13.5px; color:var(--text-secondary); margin-bottom:18px;">Classifique a fala observada para definir nível de consciência, perfil ICP e encaminhamento.</p>
+    <div class="da-fala-list">
+      <div class="da-fala">
+        <div class="da-fala-quote">"Sinto que tenho uma vida boa, mas algo não encaixa."</div>
+        <div class="da-fala-class">ICP possível. Nível: Incômodo. Investigar padrão e abertura.</div>
+        <div class="da-fala-enc"><span class="m-enc enc-produto">Produto Inicial</span></div>
+      </div>
+      <div class="da-fala">
+        <div class="da-fala-quote">"Já fiz terapia, coaching, cursos. Nada resolveu de fato."</div>
+        <div class="da-fala-class">ICP potencial alto. Nível: Frustrado com soluções. Investigar abertura ao método.</div>
+        <div class="da-fala-enc"><span class="m-enc enc-mentoria">Avaliar Mentoria</span></div>
+      </div>
+      <div class="da-fala">
+        <div class="da-fala-quote">"Quero ganhar mais. Me diz o que fazer para aumentar meu faturamento."</div>
+        <div class="da-fala-class">Anti-ICP sinalizador. Foco externo. Baixa abertura provável. Verificar antes de avançar.</div>
+        <div class="da-fala-enc"><span class="m-enc enc-nao">Verificar</span></div>
+      </div>
+      <div class="da-fala">
+        <div class="da-fala-quote">"Percebo que sempre repito o mesmo padrão nas minhas relações profissionais."</div>
+        <div class="da-fala-class">ICP forte. Nível: Padrão. Alta aderência. Aplicar score de prontidão.</div>
+        <div class="da-fala-enc"><span class="m-enc enc-mentoria">Score</span></div>
+      </div>
+      <div class="da-fala">
+        <div class="da-fala-quote">"Estou saindo do corporativo e quero criar meu negócio. Mas não sei por onde começar."</div>
+        <div class="da-fala-class">Perfil C (Transição). Investigar motivação. Pode querer estratégia, não transformação.</div>
+        <div class="da-fala-enc"><span class="m-enc enc-produto">Investigar</span></div>
+      </div>
+      <div class="da-fala">
+        <div class="da-fala-quote">"Tenho muito sucesso externo, mas me sinto vazia por dentro."</div>
+        <div class="da-fala-class">Perfil E (Impacto com Incongruência). Nível: Propósito. Alta aderência potencial.</div>
+        <div class="da-fala-enc"><span class="m-enc enc-mentoria">Avaliar Mentoria</span></div>
+      </div>
+      <div class="da-fala">
+        <div class="da-fala-quote">"Acho interessante autoconhecimento, mas não sei se preciso disso agora."</div>
+        <div class="da-fala-class">Nível: Curiosidade. Sem dor reconhecida. Nutrição com conteúdo de abertura.</div>
+        <div class="da-fala-enc"><span class="m-enc enc-nutricao">Nutrição</span></div>
+      </div>
+      <div class="da-fala">
+        <div class="da-fala-quote">"Sei meu tipo no Eneagrama há anos, mas ainda não mudei nada."</div>
+        <div class="da-fala-class">Sinal ambíguo. Pode ser abertura para aprofundar ou consumo de autoconhecimento sem prática. Investigar.</div>
+        <div class="da-fala-enc"><span class="m-enc enc-produto">Investigar</span></div>
+      </div>
+      <div class="da-fala">
+        <div class="da-fala-quote">"Me sinto culpada quando ganho bem. Parece que não mereço."</div>
+        <div class="da-fala-class">ICP forte. Relação com valor. Crença de merecimento. Investigar Mapa de Valor Autêntico.</div>
+        <div class="da-fala-enc"><span class="m-enc enc-mentoria">Alta aderência</span></div>
+      </div>
+      <div class="da-fala">
+        <div class="da-fala-quote">"Não quero mudar quem sou. Só quero melhorar minha estratégia."</div>
+        <div class="da-fala-class">Sinal de resistência à revisão. Verificar abertura antes de avançar. Anti-ICP potencial.</div>
+        <div class="da-fala-enc"><span class="m-enc enc-nao">Verificar</span></div>
+      </div>
+      <div class="da-fala">
+        <div class="da-fala-quote">"Tenho um projeto que ficou na gaveta há dois anos. Sinto que é hora."</div>
+        <div class="da-fala-class">Perfil D (Projeto Latente). Investigar valor autêntico e prontidão para processo.</div>
+        <div class="da-fala-enc"><span class="m-enc enc-produto">Produto Inicial</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 12: PROTOCOLO SE-ENTÃO -->
+  <section class="da-section" id="sec-protocolo">
+    <div class="da-section-header">
+      <span class="da-section-num">12</span>
+      <h2 class="da-section-title">Protocolo: Se Acontecer X, Faça Y</h2>
+    </div>
+    <div class="da-ifthen-list">
+      <div class="da-ifthen">
+        <div class="da-if"><span class="da-if-badge">Se</span>Quer propósito, mas não reconhece padrões internos</div>
+        <div class="da-then"><span class="da-then-badge">Então</span>Enviar conteúdo de abertura de consciência. Não avançar para mentoria ainda.</div>
+      </div>
+      <div class="da-ifthen">
+        <div class="da-if"><span class="da-if-badge">Se</span>Reconhece padrões, mas quer resposta rápida</div>
+        <div class="da-then"><span class="da-then-badge">Então</span>Direcionar para produto inicial. Investigar expectativa antes de avançar.</div>
+      </div>
+      <div class="da-ifthen">
+        <div class="da-if"><span class="da-if-badge">Se</span>Tem abertura alta e dor clara</div>
+        <div class="da-then"><span class="da-then-badge">Então</span>Aplicar score de prontidão. Se 18+, avaliar oferta da mentoria principal.</div>
+      </div>
+      <div class="da-ifthen">
+        <div class="da-if"><span class="da-if-badge">Se</span>Tem respostas prontas para tudo e baixa abertura</div>
+        <div class="da-then"><span class="da-then-badge">Então</span>Não avançar. Registrar como não aderente agora. Porta aberta no futuro.</div>
+      </div>
+      <div class="da-ifthen">
+        <div class="da-if"><span class="da-if-badge">Se</span>Quer fazer transição de carreira</div>
+        <div class="da-then"><span class="da-then-badge">Então</span>Investigar sustentação financeira e motivação real. Verificar se quer estratégia ou transformação.</div>
+      </div>
+      <div class="da-ifthen">
+        <div class="da-if"><span class="da-if-badge">Se</span>Quer criar projeto paralelo</div>
+        <div class="da-then"><span class="da-then-badge">Então</span>Investigar Mapa de Valor Autêntico. Verificar se há clareza de contribuição ou apenas ansiedade de criação.</div>
+      </div>
+      <div class="da-ifthen">
+        <div class="da-if"><span class="da-if-badge">Se</span>Vem do corporativo</div>
+        <div class="da-then"><span class="da-then-badge">Então</span>Não presumir que esse é o ICP inteiro. Avaliar por propósito e abertura, não por cargo.</div>
+      </div>
+      <div class="da-ifthen">
+        <div class="da-if"><span class="da-if-badge">Se</span>Demonstra culpa por receber bem ou ganhar dinheiro</div>
+        <div class="da-then"><span class="da-then-badge">Então</span>Investigar relação com valor autêntico. Alta aderência potencial para mentoria.</div>
+      </div>
+      <div class="da-ifthen">
+        <div class="da-if"><span class="da-if-badge">Se</span>Está em crise aguda (pessoal, profissional ou financeira)</div>
+        <div class="da-then"><span class="da-then-badge">Então</span>Avaliar se a crise é gatilho de prontidão ou urgência artificial. Investigar antes de oferecer mentoria.</div>
+      </div>
+      <div class="da-ifthen">
+        <div class="da-if"><span class="da-if-badge">Se</span>Já fez terapia, coaching e cursos sem resultado duradouro</div>
+        <div class="da-then"><span class="da-then-badge">Então</span>Investigar o que foi trabalhado e o que ainda não foi olhado. Verificar abertura para o método da Débora.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 13: ERROS COMUNS -->
+  <section class="da-section" id="sec-erros">
+    <div class="da-section-header">
+      <span class="da-section-num">13</span>
+      <h2 class="da-section-title">Erros Comuns</h2>
+    </div>
+    <div class="da-error-grid">
+      <div class="da-error-item">
+        <div class="da-error-title">Limitar ICP ao corporativo</div>
+        <div class="da-error-body">O ICP é definido por propósito, abertura e prontidão, não por cargo ou setor. Restringir ao corporativo exclui ICP real e inclui anti-ICP corporativo.</div>
+      </div>
+      <div class="da-error-item">
+        <div class="da-error-title">Confundir interesse com prontidão</div>
+        <div class="da-error-body">Pessoa interessada no assunto não é pessoa pronta para o processo. Interesse é nível 1. Prontidão é nível 5. São estágios muito distintos.</div>
+      </div>
+      <div class="da-error-item">
+        <div class="da-error-title">Confundir dor com abertura</div>
+        <div class="da-error-body">Ter dor real não garante abertura para revisão de crenças. Muitas pessoas têm dor profunda e alta rigidez cognitiva ao mesmo tempo.</div>
+      </div>
+      <div class="da-error-item">
+        <div class="da-error-title">Vender mentoria para quem precisa de produto inicial</div>
+        <div class="da-error-body">Gera frustração, resistência, baixa entrega e risco reputacional. O produto inicial existe para amadurecer, não para ser substituído por mentoria prematura.</div>
+      </div>
+      <div class="da-error-item">
+        <div class="da-error-title">Tratar resistência como objeção comercial comum</div>
+        <div class="da-error-body">Resistência a revisar crenças não é objeção de preço ou tempo. É sinal de prontidão baixa. Tentar contornar gera venda desalinhada.</div>
+      </div>
+      <div class="da-error-item">
+        <div class="da-error-title">Aceitar cliente desalinhado por necessidade de caixa</div>
+        <div class="da-error-body">Custo a médio prazo é sempre maior que o benefício financeiro imediato. Sobrecarga, resistência, baixo resultado e risco reputacional são os resultados.</div>
+      </div>
+      <div class="da-error-item">
+        <div class="da-error-title">Chamar baixa prontidão de imaturidade</div>
+        <div class="da-error-body">Baixa prontidão é uma condição operacional, não um julgamento moral. Usar termos corretos protege posicionamento e comunica com precisão.</div>
+      </div>
+      <div class="da-error-item">
+        <div class="da-error-title">Criar comunicação ampla demais</div>
+        <div class="da-error-body">Sem ICP claro, a comunicação atrai todos os níveis e filtra poucos. Resulta em volume sem qualidade e conversas que não convertem.</div>
+      </div>
+      <div class="da-error-item">
+        <div class="da-error-title">Ignorar rigidez cognitiva</div>
+        <div class="da-error-body">Rigidez cognitiva é o principal preditor de baixo resultado no processo. Ignorar esse sinal e avançar para mentoria é o erro mais custoso.</div>
+      </div>
+      <div class="da-error-item">
+        <div class="da-error-title">Depender apenas do feeling</div>
+        <div class="da-error-body">Feeling pode ser preciso, mas não é replicável, ensinável ou auditável. O sistema existe para transformar intuição em critério verificável.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 14: PRÓXIMA AÇÃO -->
+  <section class="da-section" id="sec-acao">
+    <div class="da-section-header">
+      <span class="da-section-num">14</span>
+      <h2 class="da-section-title">Caminho de Aplicação</h2>
+    </div>
+    <p style="font-size:13.5px; color:var(--text-secondary); margin-bottom:18px;">Ao receber um lead, Débora aplica esta sequência em ordem.</p>
+    <div class="da-action-steps">
+      <div class="da-action-step">
+        <div class="da-step-num">1</div>
+        <div class="da-step-text"><strong>Identificar origem e contexto.</strong> De onde vem o lead? Como chegou? Qual o histórico inicial?</div>
+      </div>
+      <div class="da-action-step">
+        <div class="da-step-num">2</div>
+        <div class="da-step-text"><strong>Observar a fala dominante.</strong> O que a pessoa fala sobre si, seu trabalho, sua dor e seus desejos? Qual palavra aparece mais?</div>
+      </div>
+      <div class="da-action-step">
+        <div class="da-step-num">3</div>
+        <div class="da-step-text"><strong>Medir nível de consciência.</strong> Em qual dos 5 níveis da régua esta pessoa se encontra? Curiosidade, incômodo, padrão, propósito ou prontidão?</div>
+      </div>
+      <div class="da-action-step">
+        <div class="da-step-num">4</div>
+        <div class="da-step-text"><strong>Medir abertura a novas perspectivas.</strong> Aplicar a pergunta-chave: de 0 a 10, quanto esta pessoa está aberta a novas perspectivas?</div>
+      </div>
+      <div class="da-action-step">
+        <div class="da-step-num">5</div>
+        <div class="da-step-text"><strong>Aplicar score de prontidão.</strong> Pontuar os 10 critérios de 0 a 3. Calcular o total e identificar a faixa.</div>
+      </div>
+      <div class="da-action-step">
+        <div class="da-step-num">6</div>
+        <div class="da-step-text"><strong>Classificar encaminhamento.</strong> Mentoria principal, produto inicial, nutrição ou não aderente agora.</div>
+      </div>
+      <div class="da-action-step">
+        <div class="da-step-num">7</div>
+        <div class="da-step-text"><strong>Registrar decisão.</strong> Anotar a classificação, o raciocínio e o próximo passo para este lead.</div>
+      </div>
+      <div class="da-action-step">
+        <div class="da-step-num">8</div>
+        <div class="da-step-text"><strong>Revisar após interação real.</strong> O encaminhamento foi correto? A pessoa respondeu como esperado? Ajustar critério se necessário.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 15: KPI -->
+  <section class="da-section" id="sec-kpi">
+    <div class="da-section-header">
+      <span class="da-section-num">15</span>
+      <h2 class="da-section-title">Sinais de Aplicação</h2>
+    </div>
+    <div class="da-kpi-grid">
+      <div class="da-kpi-item da-kpi-primary">
+        <div class="da-kpi-label">Indicador Principal</div>
+        <div class="da-kpi-val">Taxa de leads corretamente classificados</div>
+      </div>
+      <div class="da-kpi-item">
+        <div class="da-kpi-label">Leads por nível de consciência</div>
+        <div class="da-kpi-val">Distribuição por nível 1 a 5</div>
+      </div>
+      <div class="da-kpi-item">
+        <div class="da-kpi-label">Leads enviados para mentoria</div>
+        <div class="da-kpi-val">Volume com score 18+</div>
+      </div>
+      <div class="da-kpi-item">
+        <div class="da-kpi-label">Leads para produto inicial</div>
+        <div class="da-kpi-val">Score entre 12 e 17</div>
+      </div>
+      <div class="da-kpi-item">
+        <div class="da-kpi-label">Leads em nutrição</div>
+        <div class="da-kpi-val">Score abaixo de 12 com abertura parcial</div>
+      </div>
+      <div class="da-kpi-item">
+        <div class="da-kpi-label">Leads não aderentes</div>
+        <div class="da-kpi-val">Registrados e descartados temporariamente</div>
+      </div>
+      <div class="da-kpi-item">
+        <div class="da-kpi-label">Taxa de conversas qualificadas</div>
+        <div class="da-kpi-val">Conversas com classificação registrada</div>
+      </div>
+      <div class="da-kpi-item">
+        <div class="da-kpi-label">Venda desalinhada evitada</div>
+        <div class="da-kpi-val">Leads corretamente não avançados para mentoria</div>
+      </div>
+    </div>
+    <div class="da-approval">
+      <div class="da-approval-icon">&#10003;</div>
+      <div class="da-approval-text">Sinais de clareza: Débora consegue usar este framework para tomar uma decisão prática de encaminhamento em menos de 10 minutos por lead, sem depender apenas do feeling.</div>
+    </div>
+    <div style="margin-top:20px;">
+      <p style="font-size:12px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:var(--text-muted); margin-bottom:12px;">Alertas de risco operacional</p>
+      <div class="da-risk">Sistema não aplicado em conversa real nos últimos 14 dias: risco de retornar ao modo feeling e perder rastreabilidade das decisões.</div>
+      <div class="da-risk">Mais de 30% dos leads indo para mentoria sem score calculado: critério provavelmente sendo pulado. Revisar uso do sistema.</div>
+      <div class="da-risk">Clientes com resistência na mentoria: pode indicar classificação incorreta de prontidão. Auditar encaminhamentos anteriores.</div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="da-footer">
+    <span class="da-footer-brand">Débora Delgado</span>
+    <div class="da-footer-meta">
+      <span>Framework Interno<span class="da-footer-dot"></span></span>
+      <span>Sistema de ICP e Prontidão<span class="da-footer-dot"></span></span>
+      <span>Estruturado por Continuum AI Systems</span>
+    </div>
+  </footer>
+
+</div><!-- /da-wrap -->
+</div><!-- /debora-artifact -->
+
+<script>
+/* ============================================================
+   THEME TOGGLE
+   ============================================================ */
+(function() {
+  var el = document.getElementById('deborArtifact');
+  var btn = document.getElementById('themeBtn');
+  var stored;
+  try { stored = localStorage.getItem('da-theme'); } catch(e) {}
+  if (stored === 'dark') {
+    el.classList.add('dark');
+    btn.textContent = 'Light';
+  }
+  window.toggleTheme = function() {
+    var isDark = el.classList.toggle('dark');
+    btn.textContent = isDark ? 'Light' : 'Dark';
+    try { localStorage.setItem('da-theme', isDark ? 'dark' : 'light'); } catch(e) {}
+  };
+})();
+
+/* ============================================================
+   SMOOTH SCROLL
+   ============================================================ */
+window.scrollTo = function(id) {
+  var el = document.getElementById(id);
+  if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+};
+
+/* ============================================================
+   SCORECARD
+   ============================================================ */
+(function() {
+  var criteria = [
+    'Clareza da dor',
+    'Reconhecimento de padrão',
+    'Abertura a novas perspectivas',
+    'Autorresponsabilidade',
+    'Desejo de transformação real',
+    'Relação com trabalho e valor',
+    'Capacidade financeira',
+    'Expectativa alinhada',
+    'Respeito pela profundidade',
+    'Urgência legítima'
+  ];
+  var scores = new Array(criteria.length).fill(null);
+  var container = document.getElementById('scoreRows');
+  var totalEl = document.getElementById('scoreTotal');
+  var resultEl = document.getElementById('scoreResult');
+
+  function renderRows() {
+    container.innerHTML = '';
+    criteria.forEach(function(name, i) {
+      var row = document.createElement('div');
+      row.className = 'da-score-row';
+      var nameEl = document.createElement('span');
+      nameEl.className = 'da-score-name';
+      nameEl.textContent = name;
+      var btns = document.createElement('div');
+      btns.className = 'da-score-btns';
+      [0,1,2,3].forEach(function(v) {
+        var b = document.createElement('button');
+        b.className = 'da-score-btn' + (scores[i] === v ? ' active-' + v : '');
+        b.textContent = v;
+        b.setAttribute('aria-label', name + ' pontuação ' + v);
+        b.onclick = function() {
+          scores[i] = v;
+          renderRows();
+          updateTotal();
+        };
+        btns.appendChild(b);
+      });
+      row.appendChild(nameEl);
+      row.appendChild(btns);
+      container.appendChild(row);
+    });
+  }
+
+  function updateTotal() {
+    var filled = scores.filter(function(s){ return s !== null; });
+    var total = filled.reduce(function(a,b){ return a+b; }, 0);
+    totalEl.textContent = total;
+    if (filled.length < criteria.length) {
+      resultEl.textContent = filled.length + ' de ' + criteria.length + ' preenchidos';
+      resultEl.className = 'da-score-result';
+      return;
+    }
+    if (total >= 24) {
+      resultEl.textContent = 'Alta Prontidão — Mentoria';
+      resultEl.className = 'da-score-result r-high';
+    } else if (total >= 18) {
+      resultEl.textContent = 'Boa Aderência — Aprofundar';
+      resultEl.className = 'da-score-result r-med';
+    } else if (total >= 12) {
+      resultEl.textContent = 'Produto Inicial';
+      resultEl.className = 'da-score-result';
+      resultEl.style.background = 'var(--info-light)';
+      resultEl.style.color = 'var(--info)';
+    } else {
+      resultEl.textContent = 'Não Aderente Agora';
+      resultEl.className = 'da-score-result r-low';
+    }
+  }
+
+  renderRows();
+})();
+</script>
+
+</body>
+</html>

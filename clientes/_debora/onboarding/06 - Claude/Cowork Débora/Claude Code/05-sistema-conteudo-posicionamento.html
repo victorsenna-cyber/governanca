@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sistema de Conteúdo e Posicionamento — Débora Delgado</title>
+<style>
+.da5*,.da5 *::before,.da5 *::after{box-sizing:border-box;margin:0;padding:0}
+.da5{
+  --bg:#f2f0eb;--bs:#ffffff;--bsub:#eae7e1;--bm:#e1ddd6;
+  --bd:#d3cec5;--bds:#b8b3a8;
+  --t1:#151310;--t2:#504c46;--tm:#88837b;
+  --ac:#265238;--acl:#e3ede8;--act:#13301f;--acb:#387555;
+  --gd:#865010;--gdl:#fdf1dd;--gdb:#be7318;
+  --rd:#721515;--rdl:#fdf0f0;--rdb:#be2828;
+  --bl:#183058;--bll:#edf2fb;--blb:#3068b8;
+  --pr:#421868;--prl:#f3ecfb;--prb:#7830a8;
+  --or:#7a3a08;--orl:#fef3e8;--orb:#c05818;
+  --lv1c:#3058a0;--lv2c:#c07010;--lv3c:#8035a8;--lv4c:#28784a;--lv5c:#153088;
+  --nav:#ffffff;--sh:0 1px 3px rgba(0,0,0,.06),0 1px 2px rgba(0,0,0,.04);--shm:0 4px 14px rgba(0,0,0,.08);
+  --r:8px;--rs:4px;
+  font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;
+  background:var(--bg);color:var(--t1);line-height:1.6;min-height:100vh;
+}
+.da5.dark{
+  --bg:#0f0e0c;--bs:#181614;--bsub:#1e1c18;--bm:#272420;
+  --bd:#302e28;--bds:#403e38;
+  --t1:#e8e5df;--t2:#9a958d;--tm:#64605a;
+  --ac:#4ade80;--acl:#0e2018;--act:#86efac;--acb:#22c55e;
+  --gd:#fbbf24;--gdl:#171200;--gdb:#d97706;
+  --rd:#f87171;--rdl:#180303;--rdb:#ef4444;
+  --bl:#60a5fa;--bll:#0a1628;--blb:#3b82f6;
+  --pr:#c084fc;--prl:#180a28;--prb:#9333ea;
+  --or:#fb923c;--orl:#180c00;--orb:#ea580c;
+  --lv1c:#93b8f5;--lv2c:#fbbf24;--lv3c:#d8a9f5;--lv4c:#6ee7b7;--lv5c:#93c5fd;
+  --nav:#181614;
+}
+/* NAV */
+.da5 .nav{position:sticky;top:0;z-index:100;background:var(--nav);border-bottom:1px solid var(--bd);box-shadow:var(--sh)}
+.da5 .navi{max-width:1120px;margin:0 auto;padding:0 18px;display:flex;align-items:center;height:50px;gap:10px}
+.da5 .navl{display:flex;align-items:center;gap:1px;overflow-x:auto;scrollbar-width:none;flex:1}
+.da5 .navl::-webkit-scrollbar{display:none}
+.da5 .nb{white-space:nowrap;font-size:10.5px;font-weight:600;letter-spacing:.04em;color:var(--tm);text-transform:uppercase;padding:5px 8px;border-radius:var(--rs);cursor:pointer;border:none;background:none;transition:all .13s}
+.da5 .nb:hover{color:var(--t1);background:var(--bsub)}
+.da5 .tb{flex-shrink:0;font-size:10.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--t2);background:var(--bsub);border:1px solid var(--bd);border-radius:var(--rs);padding:5px 11px;cursor:pointer;transition:all .13s}
+.da5 .tb:hover{background:var(--bm);color:var(--t1)}
+/* LAYOUT */
+.da5 .wrap{max-width:1120px;margin:0 auto;padding:0 18px 80px}
+/* HEADER */
+.da5 .hdr{padding:44px 0 36px;border-bottom:1px solid var(--bd)}
+.da5 .htag{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--ac);background:var(--acl);border:1px solid var(--acb);border-radius:var(--rs);padding:3px 9px;margin-bottom:14px}
+.da5 .hdr h1{font-size:clamp(22px,3vw,34px);font-weight:700;letter-spacing:-.03em;color:var(--t1);line-height:1.15;margin-bottom:9px;font-family:Georgia,serif}
+.da5 .hsub{font-size:15px;color:var(--t2);max-width:580px;line-height:1.65}
+.da5 .hmeta{display:flex;gap:20px;margin-top:20px;flex-wrap:wrap}
+.da5 .mi{display:flex;flex-direction:column;gap:3px}
+.da5 .ml{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--tm)}
+.da5 .mv{font-size:13px;font-weight:600;color:var(--t1)}
+/* SECTION */
+.da5 .sec{padding:48px 0 0;scroll-margin-top:60px}
+.da5 .sh{display:flex;align-items:baseline;gap:13px;margin-bottom:22px;padding-bottom:13px;border-bottom:1px solid var(--bd)}
+.da5 .sn{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--tm);flex-shrink:0}
+.da5 .st{font-size:18px;font-weight:700;letter-spacing:-.02em;color:var(--t1);font-family:Georgia,serif}
+/* CARD */
+.da5 .card{background:var(--bs);border:1px solid var(--bd);border-radius:var(--r);padding:18px 20px;box-shadow:var(--sh)}
+.da5 .ct{font-size:10.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--tm);margin-bottom:9px}
+.da5 .g2{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:11px}
+.da5 .g3{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:11px}
+/* DECISION */
+.da5 .dec{background:var(--acl);border:1.5px solid var(--acb);border-radius:var(--r);padding:20px 24px}
+.da5 .decl{font-size:10.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--ac);margin-bottom:9px}
+.da5 .dect{font-size:14px;color:var(--act);line-height:1.65;margin-bottom:12px}
+.da5 .deco{display:flex;flex-wrap:wrap;gap:7px}
+.da5 .dopt{font-size:12px;font-weight:600;color:var(--act);background:var(--bs);border:1px solid var(--acb);border-radius:var(--rs);padding:5px 11px}
+/* GOV */
+.da5 .gov{border:1px solid var(--bd);border-radius:var(--r);overflow:hidden;display:grid;grid-template-columns:1fr 1fr}
+.da5 .gr{display:contents}
+.da5 .gr>div{padding:10px 15px;border-bottom:1px solid var(--bd);font-size:13px}
+.da5 .gr:last-child>div{border-bottom:none}
+.da5 .gk{background:var(--bsub);font-weight:600;color:var(--t2);font-size:11.5px;border-right:1px solid var(--bd)}
+.da5 .gv{background:var(--bs);color:var(--t1);line-height:1.5}
+/* PROB */
+.da5 .pg{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:8px}
+.da5 .pi{background:var(--gdl);border:1px solid var(--gdb);border-left:3px solid var(--gdb);border-radius:var(--rs);padding:10px 13px;font-size:13px;color:var(--gd);line-height:1.5}
+.da5.dark .pi{color:var(--gdb)}
+/* TABLE */
+.da5 .tw{overflow-x:auto;border-radius:var(--r);border:1px solid var(--bd)}
+.da5 .dt{width:100%;border-collapse:collapse;font-size:12.5px;min-width:600px}
+.da5 .dt th{background:var(--bsub);font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--tm);padding:9px 12px;text-align:left;border-bottom:1px solid var(--bd);white-space:nowrap}
+.da5 .dt td{padding:12px 12px;border-bottom:1px solid var(--bd);vertical-align:top;line-height:1.5;color:var(--t1)}
+.da5 .dt tr:last-child td{border-bottom:none}
+.da5 .dt tr:hover td{background:var(--bsub)}
+/* EIXO CARDS */
+.da5 .eixo-card{background:var(--bs);border:1px solid var(--bd);border-radius:var(--r);overflow:hidden;box-shadow:var(--sh);margin-bottom:10px}
+.da5 .eixo-head{padding:13px 17px;border-bottom:1px solid var(--bd);cursor:pointer;display:flex;justify-content:space-between;align-items:center;background:var(--bsub);user-select:none;transition:background .13s}
+.da5 .eixo-head:hover{background:var(--bm)}
+.da5 .eixo-num{font-size:10px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--tm);margin-bottom:3px}
+.da5 .eixo-title{font-size:14px;font-weight:700;color:var(--t1)}
+.da5 .eixo-body{padding:16px 17px;display:none}
+.da5 .eixo-body.open{display:block}
+.da5 .eixo-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:8px}
+.da5 .eixo-col{padding:11px 13px;border-radius:var(--r);border:1px solid var(--bd)}
+.da5 .ecl{font-size:9.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--tm);margin-bottom:4px}
+.da5 .ect{font-size:13px;color:var(--t1);line-height:1.5}
+.da5 .eixo-col.ec-tese{background:var(--acl);border-color:var(--acb)}
+.da5 .eixo-col.ec-tese .ecl{color:var(--act)}
+.da5 .eixo-col.ec-dor{background:var(--gdl);border-color:var(--gdb)}
+.da5 .eixo-col.ec-dor .ecl{color:var(--gd)}
+.da5.dark .eixo-col.ec-dor .ecl{color:var(--gdb)}
+.da5 .eixo-col.ec-cren{background:var(--prl);border-color:var(--prb)}
+.da5 .eixo-col.ec-cren .ecl{color:var(--pr)}
+.da5.dark .eixo-col.ec-cren .ecl{color:var(--prb)}
+/* BIO CARDS */
+.da5 .bio-card{background:var(--bs);border:1px solid var(--bd);border-radius:var(--r);padding:18px 20px;box-shadow:var(--sh);margin-bottom:10px}
+.da5 .bio-tag{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ac);background:var(--acl);border:1px solid var(--acb);border-radius:var(--rs);padding:2px 8px;margin-bottom:8px}
+.da5 .bio-text{font-size:14px;color:var(--t1);line-height:1.7;font-style:italic}
+/* LEVEL BADGE */
+.da5 .lbadge{display:inline-block;font-size:11px;font-weight:700;border-radius:20px;padding:3px 10px}
+.da5 .l1{background:#e8f0fe;color:var(--lv1c);border:1px solid var(--lv1c)}
+.da5 .l2{background:#fff3e0;color:var(--lv2c);border:1px solid var(--lv2c)}
+.da5 .l3{background:#f3e5f5;color:var(--lv3c);border:1px solid var(--lv3c)}
+.da5 .l4{background:#e8f5e9;color:var(--lv4c);border:1px solid var(--lv4c)}
+.da5 .l5{background:#e3f2fd;color:var(--lv5c);border:1px solid var(--lv5c)}
+.da5.dark .l1{background:#0d1a35;color:var(--lv1c)}
+.da5.dark .l2{background:#1a1200;color:var(--lv2c)}
+.da5.dark .l3{background:#1a0d2e;color:var(--lv3c)}
+.da5.dark .l4{background:#0a2018;color:var(--lv4c)}
+.da5.dark .l5{background:#0a1828;color:var(--lv5c)}
+/* FRAMEWORK POST */
+.da5 .fw-steps{display:flex;flex-direction:column;gap:7px}
+.da5 .fw-step{display:flex;align-items:flex-start;gap:13px;padding:13px 17px;background:var(--bs);border:1px solid var(--bd);border-radius:var(--r);box-shadow:var(--sh)}
+.da5 .fw-num{flex-shrink:0;width:26px;height:26px;border-radius:50%;background:var(--ac);color:#fff;font-size:12px;font-weight:800;display:flex;align-items:center;justify-content:center}
+.da5 .fw-text{font-size:13.5px;color:var(--t1);line-height:1.5;padding-top:3px}
+.da5 .fw-sub{font-size:12px;color:var(--t2);margin-top:3px}
+/* IDEAS TABLE */
+.da5 .ideas-grid{display:flex;flex-direction:column;gap:0;border:1px solid var(--bd);border-radius:var(--r);overflow:hidden}
+.da5 .idea-row{display:grid;grid-template-columns:2fr 1fr 1fr 1.5fr 1.5fr;border-bottom:1px solid var(--bd);transition:background .12s}
+.da5 .idea-row:last-child{border-bottom:none}
+.da5 .idea-row.ihead{background:var(--bsub)}
+.da5 .idea-row:not(.ihead):hover{background:var(--bsub)}
+.da5 .idea-col{padding:10px 13px;font-size:12.5px;color:var(--t1);border-right:1px solid var(--bd);line-height:1.45}
+.da5 .idea-col:last-child{border-right:none}
+.da5 .idea-col.ih{font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--tm)}
+/* CHECKLIST */
+.da5 .cl{display:flex;flex-direction:column;gap:6px}
+.da5 .cli{display:flex;align-items:flex-start;gap:11px;padding:11px 15px;background:var(--bs);border:1px solid var(--bd);border-radius:var(--r);cursor:pointer;transition:background .12s;user-select:none}
+.da5 .cli:hover{background:var(--bsub)}
+.da5 .clb{flex-shrink:0;width:17px;height:17px;border-radius:3px;border:2px solid var(--bds);background:var(--bsub);margin-top:2px;transition:all .13s;display:flex;align-items:center;justify-content:center}
+.da5 .cli.ck .clb{background:var(--ac);border-color:var(--ac)}
+.da5 .cli.ck .clb::after{content:'';display:block;width:4px;height:8px;border:2px solid #fff;border-top:none;border-left:none;transform:rotate(45deg) translateY(-1px)}
+.da5 .clt{font-size:13.5px;color:var(--t1);line-height:1.5}
+.da5 .cli.ck .clt{color:var(--tm);text-decoration:line-through}
+.da5 .clprog{font-size:12px;color:var(--tm);font-weight:600;margin-bottom:8px}
+/* IF-THEN */
+.da5 .it{display:flex;flex-direction:column;gap:7px}
+.da5 .iti{display:flex;align-items:stretch;gap:0;border-radius:var(--r);overflow:hidden;border:1px solid var(--bd);box-shadow:var(--sh)}
+.da5 .itif{background:var(--bsub);padding:12px 14px;font-size:13px;color:var(--t2);flex:1;border-right:1px solid var(--bd);display:flex;align-items:center;gap:8px}
+.da5 .itib{font-size:9px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--tm);background:var(--bm);border-radius:3px;padding:2px 6px;flex-shrink:0}
+.da5 .itthen{background:var(--bs);padding:12px 14px;font-size:13px;color:var(--t1);flex:1;font-weight:600;display:flex;align-items:center;gap:8px}
+.da5 .ittb{font-size:9px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--act);background:var(--acl);border-radius:3px;padding:2px 6px;border:1px solid var(--acb);flex-shrink:0}
+/* ERRORS */
+.da5 .eg{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:10px}
+.da5 .ei{background:var(--bs);border:1px solid var(--bd);border-top:3px solid var(--rdb);border-radius:var(--r);padding:13px 16px;box-shadow:var(--sh)}
+.da5 .etit{font-size:13px;font-weight:700;color:var(--rd);margin-bottom:4px}
+.da5.dark .etit{color:var(--rdb)}
+.da5 .ebody{font-size:12.5px;color:var(--t2);line-height:1.5}
+/* ACTION */
+.da5 .al{display:flex;flex-direction:column;gap:6px}
+.da5 .ai{display:flex;align-items:flex-start;gap:12px;padding:12px 16px;background:var(--bs);border:1px solid var(--bd);border-radius:var(--r);box-shadow:var(--sh)}
+.da5 .an{flex-shrink:0;width:25px;height:25px;border-radius:50%;background:var(--ac);color:#fff;font-size:12px;font-weight:800;display:flex;align-items:center;justify-content:center}
+.da5 .at{font-size:13.5px;color:var(--t1);line-height:1.5;padding-top:3px}
+/* KPI */
+.da5 .kg{display:grid;grid-template-columns:repeat(auto-fill,minmax(185px,1fr));gap:10px}
+.da5 .ki{background:var(--bs);border:1px solid var(--bd);border-radius:var(--r);padding:13px 15px;box-shadow:var(--sh)}
+.da5 .kl{font-size:10.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--tm);margin-bottom:4px}
+.da5 .kv{font-size:13px;color:var(--t1);line-height:1.45}
+.da5 .kp{border-top:3px solid var(--ac)}
+.da5 .kp .kl{color:var(--act)}
+/* APPROVAL */
+.da5 .appr{background:var(--acl);border:1.5px solid var(--acb);border-radius:var(--r);padding:16px 20px;display:flex;align-items:flex-start;gap:12px;margin-top:12px}
+.da5 .appi{width:23px;height:23px;border-radius:50%;background:var(--ac);color:#fff;font-size:11px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
+.da5 .appt{font-size:13.5px;color:var(--act);font-weight:600;line-height:1.55}
+/* RISK */
+.da5 .risk{background:var(--rdl);border:1px solid var(--rdb);border-left:3px solid var(--rdb);border-radius:var(--rs);padding:10px 13px;font-size:13px;color:var(--rd);line-height:1.5;margin-bottom:6px}
+.da5.dark .risk{color:var(--rdb)}
+/* FRASE CARDS */
+.da5 .frase{padding:12px 17px;background:var(--bs);border:1px solid var(--bd);border-left:3px solid var(--acb);border-radius:var(--rs);font-size:14px;color:var(--t1);font-style:italic;line-height:1.6;margin-bottom:7px;box-shadow:var(--sh)}
+/* FILTER TABS */
+.da5 .ftabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:14px}
+.da5 .ftab{font-size:11.5px;font-weight:600;padding:5px 12px;border-radius:20px;border:1.5px solid var(--bd);background:var(--bsub);color:var(--t2);cursor:pointer;transition:all .14s}
+.da5 .ftab:hover{background:var(--bm);color:var(--t1)}
+.da5 .ftab.active{background:var(--ac);border-color:var(--ac);color:#fff}
+/* IDEA FILTER */
+.da5 .idea-item{background:var(--bs);border:1px solid var(--bd);border-radius:var(--r);padding:14px 17px;box-shadow:var(--sh);transition:all .15s}
+.da5 .idea-item.hidden{display:none}
+.da5 .idea-grid{display:flex;flex-direction:column;gap:9px}
+.da5 .idea-lv{margin-bottom:5px}
+.da5 .idea-title{font-size:14px;font-weight:700;color:var(--t1);margin-bottom:6px}
+.da5 .idea-meta{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:6px}
+.da5 .imeta-tag{font-size:11px;font-weight:600;padding:2px 9px;border-radius:20px;background:var(--bsub);border:1px solid var(--bd);color:var(--t2)}
+.da5 .idea-int{font-size:12.5px;color:var(--t2);line-height:1.45}
+.da5 .idea-cta{font-size:12px;font-weight:700;color:var(--act);background:var(--acl);border:1px solid var(--acb);border-radius:var(--rs);padding:4px 10px;display:inline-block;margin-top:6px}
+/* TAGS */
+.da5 .tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.da5 .tg{font-size:11.5px;font-weight:500;color:var(--t2);background:var(--bsub);border:1px solid var(--bd);border-radius:20px;padding:3px 9px}
+.da5 .tgg{color:var(--act);background:var(--acl);border-color:var(--acb)}
+.da5 .tgr{color:var(--rd);background:var(--rdl);border-color:var(--rdb)}
+.da5.dark .tgr{color:var(--rdb)}
+/* FOOTER */
+.da5 .foot{margin-top:70px;padding:20px 0;border-top:1px solid var(--bd);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:9px}
+.da5 .fb{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--tm)}
+.da5 .fm{font-size:11px;color:var(--tm);display:flex;gap:14px;flex-wrap:wrap}
+/* RESPONSIVE */
+@media(max-width:768px){
+  .da5 .gov{grid-template-columns:1fr}
+  .da5 .gk{border-right:none;border-bottom:1px solid var(--bd)}
+  .da5 .iti{flex-direction:column}
+  .da5 .itif{border-right:none;border-bottom:1px solid var(--bd)}
+  .da5 .idea-row{grid-template-columns:1fr;display:flex;flex-direction:column}
+  .da5 .idea-col{border-right:none;border-bottom:1px solid var(--bd)}
+  .da5 .idea-col:last-child{border-bottom:none}
+}
+@media(max-width:480px){
+  .da5 .wrap{padding:0 13px 60px}
+  .da5 .foot{flex-direction:column;align-items:flex-start}
+  .da5 .nb{padding:4px 6px;font-size:10px}
+}
+</style>
+</head>
+<body>
+<div class="da5" id="daRoot05">
+
+<nav class="nav">
+  <div class="navi">
+    <div class="navl">
+      <button class="nb" onclick="ds5('s-dec')">Decisão</button>
+      <button class="nb" onclick="ds5('s-gov')">Arquitetura</button>
+      <button class="nb" onclick="ds5('s-pos')">Posicionamento</button>
+      <button class="nb" onclick="ds5('s-bio')">Bio</button>
+      <button class="nb" onclick="ds5('s-aut')">Autoridade</button>
+      <button class="nb" onclick="ds5('s-desc')">Mentoria</button>
+      <button class="nb" onclick="ds5('s-eixos')">Eixos</button>
+      <button class="nb" onclick="ds5('s-niveis')">Por Nível</button>
+      <button class="nb" onclick="ds5('s-matriz')">Matriz</button>
+      <button class="nb" onclick="ds5('s-filtra')">Filtra Curiosos</button>
+      <button class="nb" onclick="ds5('s-atrai')">Atrai Prontos</button>
+      <button class="nb" onclick="ds5('s-cta')">CTA</button>
+      <button class="nb" onclick="ds5('s-fw')">Framework</button>
+      <button class="nb" onclick="ds5('s-check')">Checklist</button>
+      <button class="nb" onclick="ds5('s-ideias')">Ideias</button>
+      <button class="nb" onclick="ds5('s-prot')">Protocolo</button>
+      <button class="nb" onclick="ds5('s-erros')">Erros</button>
+      <button class="nb" onclick="ds5('s-acao')">Aplicação</button>
+      <button class="nb" onclick="ds5('s-kpi')">Sinais</button>
+    </div>
+    <button class="tb" id="tb05" onclick="dt05()">Dark</button>
+  </div>
+</nav>
+
+<div class="wrap">
+  <header class="hdr">
+    <div class="htag">Framework Interno</div>
+    <h1>Sistema de Conteúdo e Posicionamento</h1>
+    <p class="hsub">Framework interno para criar comunicação com intenção, coerência e função no funil de consciência — conduzindo percepção, qualificando prontidão e preservando a profundidade da Débora.</p>
+    <div class="hmeta">
+      <div class="mi"><span class="ml">Aplicação</span><span class="mv">Framework permanente</span></div>
+      <div class="mi"><span class="ml">Owner</span><span class="mv">Débora Delgado</span></div>
+      <div class="mi"><span class="ml">Eixos narrativos</span><span class="mv">12 eixos mapeados</span></div>
+      <div class="mi"><span class="ml">Versão</span><span class="mv">1.0</span></div>
+    </div>
+  </header>
+
+  <!-- 01 DECISÃO -->
+  <section class="sec" id="s-dec">
+    <div class="sh"><span class="sn">01</span><h2 class="st">Tese Central do Framework</h2></div>
+    <div class="dec">
+      <div class="decl">Para que existe este sistema</div>
+      <p class="dect">Este sistema existe para Débora decidir o que comunicar, para quem comunicar, com qual intenção e qual próximo passo ativar. O objetivo do conteúdo não é apenas engajar. É conduzir consciência, atrair ICP, filtrar baixa prontidão e gerar conversas qualificadas.</p>
+      <div class="deco">
+        <span class="dopt">O que comunicar?</span>
+        <span class="dopt">Para qual nível?</span>
+        <span class="dopt">Com qual intenção?</span>
+        <span class="dopt">Qual próximo passo?</span>
+        <span class="dopt">Filtra ou atrai?</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 GOVERNANÇA -->
+  <section class="sec" id="s-gov">
+    <div class="sh"><span class="sn">02</span><h2 class="st">Arquitetura do Framework</h2></div>
+    <div class="gov">
+      <div class="gr"><div class="gk">Framework</div><div class="gv">Sistema de Conteúdo e Posicionamento</div></div>
+      <div class="gr"><div class="gk">Função do framework</div><div class="gv">Criar comunicação com intenção, coerência e função no funil de consciência</div></div>
+      <div class="gr"><div class="gk">Quando consultar</div><div class="gv">Ao planejar conteúdo, definir narrativa, criar post, campanha ou comunicação comercial</div></div>
+      <div class="gr"><div class="gk">Condições de uso</div><div class="gv">Temas da mentoria, dores do ICP, falas reais, conteúdos existentes, dúvidas e objeções</div></div>
+      <div class="gr"><div class="gk">Resultado esperado</div><div class="gv">Temas, narrativas, CTAs e matriz de conteúdo por intenção</div></div>
+      <div class="gr"><div class="gk">Decisão que orienta</div><div class="gv">Que conteúdo criar, para quem, com qual função e qual próximo passo</div></div>
+      <div class="gr"><div class="gk">Frequência de uso</div><div class="gv">Planejamento, criação, campanhas, workshops e comunicação comercial</div></div>
+      <div class="gr"><div class="gk">Indicador de clareza</div><div class="gv">Conversas iniciadas com aderência ao ICP</div></div>
+      <div class="gr"><div class="gk">Desalinhamentos que este framework evita</div><div class="gv">Conteúdo bonito sem conversão, atração de curiosos, comunicação ampla e baixa prontidão</div></div>
+      <div class="gr"><div class="gk">Sinais de clareza</div><div class="gv">Cada conteúdo tem função clara dentro do funil de consciência</div></div>
+    </div>
+  </section>
+
+  <!-- 03 CONTEXTO -->
+  <section class="sec" id="s-ctx">
+    <div class="sh"><span class="sn">03</span><h2 class="st">Contexto do Problema</h2></div>
+    <div class="card" style="margin-bottom:13px;">
+      <p class="ct">O problema central</p>
+      <p style="font-size:15px;font-weight:600;color:var(--t1);margin-bottom:7px;">O problema não é falta de conteúdo. É conteúdo sem função operacional.</p>
+      <p style="font-size:13.5px;color:var(--t2);line-height:1.65;">Sem sistema, o conteúdo gera presença, mas não necessariamente conversas qualificadas. A diferença entre admiração e prontidão está na intenção do conteúdo.</p>
+    </div>
+    <div class="pg">
+      <div class="pi">Atrair curiosos sem prontidão</div>
+      <div class="pi">Comunicar profundidade de forma ampla demais</div>
+      <div class="pi">Gerar admiração sem conversa</div>
+      <div class="pi">Gerar identificação sem encaminhamento</div>
+      <div class="pi">Educar sem conduzir para próximo passo</div>
+      <div class="pi">Confundir conteúdo de consciência com conteúdo de venda</div>
+      <div class="pi">Perder a ponte entre conteúdo, produto inicial e mentoria</div>
+      <div class="pi">Criar posts sem CTA coerente com o nível do lead</div>
+    </div>
+  </section>
+
+  <!-- 04 FUNÇÃO DO CONTEÚDO -->
+  <section class="sec" id="s-func">
+    <div class="sh"><span class="sn">04</span><h2 class="st">Função do Conteúdo no Ecossistema</h2></div>
+    <div class="g2">
+      <div class="card" style="border-top:2px solid var(--acb);">
+        <p class="ct">Todo conteúdo deve cumprir ao menos uma função</p>
+        <div style="display:flex;flex-direction:column;gap:6px;margin-top:4px;">
+          <div class="tg">Abrir percepção</div>
+          <div class="tg">Nomear dor</div>
+          <div class="tg">Revelar padrão</div>
+          <div class="tg">Deslocar crença</div>
+          <div class="tg">Mostrar possibilidade</div>
+          <div class="tg">Qualificar prontidão</div>
+          <div class="tg">Filtrar anti-ICP</div>
+          <div class="tg">Conduzir para workshop ou produto inicial</div>
+          <div class="tg">Conduzir para qualificação da mentoria</div>
+        </div>
+      </div>
+      <div class="card">
+        <p class="ct">O conteúdo não deve apenas informar</p>
+        <p style="font-size:13.5px;color:var(--t1);line-height:1.65;margin-bottom:10px;">Conteúdo bom move o lead de um estado mental para outro. Não apenas entretém ou informa. Ele acorda algo, nomeia algo, desloca algo, conduz algo.</p>
+        <p style="font-size:13px;color:var(--t2);line-height:1.6;">A pergunta antes de publicar: <strong>que mudança de estado este conteúdo ativa no lead?</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 05 POSICIONAMENTO -->
+  <section class="sec" id="s-pos">
+    <div class="sh"><span class="sn">05</span><h2 class="st">Posicionamento Base</h2></div>
+    <div class="card" style="margin-bottom:14px;border-top:2px solid var(--acb);">
+      <p class="ct">Declaração de posicionamento</p>
+      <p style="font-size:15px;font-weight:700;color:var(--t1);line-height:1.65;margin-bottom:8px;">Débora ajuda pessoas que já geram ou desejam gerar impacto real a integrarem propósito, trabalho, valor e vida com mais congruência.</p>
+      <p style="font-size:13.5px;color:var(--t2);line-height:1.65;">A mentoria não é sobre abandonar tudo. É sobre reorganizar a forma de viver, trabalhar, liderar, criar e contribuir sem se trair.</p>
+    </div>
+    <div class="g2">
+      <div class="card">
+        <p class="ct">O que não limitar</p>
+        <p style="font-size:13.5px;color:var(--t1);line-height:1.65;">O ICP não é corporativo. O corporativo pode ser contexto. Mas o eixo é propósito, abertura e prontidão. A comunicação deve falar com pessoas por quem elas são e o que buscam, não por onde trabalham.</p>
+      </div>
+      <div class="card">
+        <p class="ct">O que preservar</p>
+        <p style="font-size:13.5px;color:var(--t1);line-height:1.65;">Profundidade sem complexidade. Clareza sem simplificação. Elegância sem frieza. Critério sem exclusão. O posicionamento deve ser preciso, mas acolhedor para quem tem prontidão real.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 06 BIOS -->
+  <section class="sec" id="s-bio">
+    <div class="sh"><span class="sn">06</span><h2 class="st">Bio Curta e Bio Média</h2></div>
+    <p style="font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--tm);margin-bottom:10px;">Bio Curta — 3 variações</p>
+    <div class="bio-card"><div class="bio-tag">Variação A</div><div class="bio-text">"Conduzindo pessoas a gerarem impacto com congruência — integrando propósito, trabalho, valor e vida sem se trair no processo."</div></div>
+    <div class="bio-card"><div class="bio-tag">Variação B</div><div class="bio-text">"Mentoria de automaestria, valor autêntico e congruência para quem já tem impacto e quer que ele expresse quem realmente é."</div></div>
+    <div class="bio-card"><div class="bio-tag">Variação C</div><div class="bio-text">"Propósito não precisa viver separado do trabalho. Ajudo pessoas a integrarem o que fazem com quem são."</div></div>
+    <p style="font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--tm);margin:18px 0 10px;">Bio Média — 3 variações</p>
+    <div class="bio-card"><div class="bio-tag">Variação A</div><div class="bio-text">"Débora Delgado conduz pessoas que já geram ou desejam gerar impacto real por um processo de automaestria, clareza de valor e reorganização de contribuição — para integrar propósito, trabalho, relações, energia vital e vida com mais congruência e menos autotraição."</div></div>
+    <div class="bio-card"><div class="bio-tag">Variação B</div><div class="bio-text">"Mentora de impacto e congruência. Débora acompanha líderes, especialistas, empreendedores e pessoas em transição num processo profundo de reconhecimento de padrões, valor autêntico e reorganização da forma de viver, trabalhar e contribuir — sem sacrificar quem são no caminho."</div></div>
+    <div class="bio-card"><div class="bio-tag">Variação C</div><div class="bio-text">"Trabalhando com automaestria e impacto com congruência há mais de uma década. Débora acompanha pessoas que sentem que o modo atual de trabalhar, liderar ou contribuir já não representa quem estão se tornando — e que querem construir algo mais verdadeiro, sustentável e alinhado com sua essência."</div></div>
+  </section>
+
+  <!-- 07 AUTORIDADE -->
+  <section class="sec" id="s-aut">
+    <div class="sh"><span class="sn">07</span><h2 class="st">Frases de Autoridade</h2></div>
+    <p style="font-size:13.5px;color:var(--t2);margin-bottom:14px;line-height:1.6;">Frases que podem ser usadas em comunicação, bio, apresentações e materiais.</p>
+    <div class="frase">Impacto com congruência: viver, trabalhar, liderar, criar, contribuir e receber sem se trair.</div>
+    <div class="frase">Ajudo pessoas a realinharem o impacto que já geram, sem pagar o preço da incongruência.</div>
+    <div class="frase">Trabalho, propósito e valor não precisam viver separados.</div>
+    <div class="frase">Impacto real começa quando contribuição e congruência caminham juntas.</div>
+    <div class="frase">Não é sobre fazer mais. É sobre fazer com mais inteireza.</div>
+    <div class="frase">Automaestria não é mudar quem você é. É parar de ser governada pelo que ainda não percebe.</div>
+    <div class="frase">O que você chama de jeito pode ser uma estratégia de proteção que não serve mais.</div>
+    <div class="frase">Você não precisa jogar fora tudo que construiu para viver com mais congruência.</div>
+  </section>
+
+  <!-- 08 DESCRIÇÃO MENTORIA -->
+  <section class="sec" id="s-desc">
+    <div class="sh"><span class="sn">08</span><h2 class="st">Descrição da Mentoria</h2></div>
+    <div class="g2">
+      <div class="card">
+        <p class="ct">Para quem é</p>
+        <p style="font-size:13.5px;color:var(--t1);line-height:1.65;">Pessoas que já geram ou desejam gerar impacto real, mas percebem que a forma atual de viver, trabalhar, liderar, criar ou contribuir não está congruente com quem estão se tornando.</p>
+      </div>
+      <div class="card">
+        <p class="ct">Que problema resolve</p>
+        <p style="font-size:13.5px;color:var(--t1);line-height:1.65;">O desalinhamento entre quem se é e como se opera. Padrões inconscientes que moldam escolhas, relações, trabalho e formas de receber — e que, não reconhecidos, geram custo interno crescente.</p>
+      </div>
+      <div class="card">
+        <p class="ct">Que transformação busca</p>
+        <p style="font-size:13.5px;color:var(--t1);line-height:1.65;">Da adaptação constante à expressão congruente. Do esforço como identidade à entrega com sentido. Da autotraição silenciosa ao posicionamento com inteireza.</p>
+      </div>
+      <div class="card">
+        <p class="ct">Como acontece</p>
+        <p style="font-size:13.5px;color:var(--t1);line-height:1.65;">Por um processo de automaestria, clareza de valor e reorganização da forma de viver e contribuir — com profundidade, ritmo próprio e compromisso real das duas partes.</p>
+      </div>
+      <div class="card" style="border-top:2px solid var(--rdb);">
+        <p class="ct" style="color:var(--rd);">O que não promete</p>
+        <p style="font-size:13.5px;color:var(--t1);line-height:1.65;">Não é cura. Não é resultado garantido. Não é transformação instantânea. Não é substituto de terapia. Não é fórmula de enriquecimento.</p>
+      </div>
+      <div class="card" style="border-top:2px solid var(--acb);">
+        <p class="ct">Próximo passo recomendado</p>
+        <p style="font-size:13.5px;color:var(--t1);line-height:1.65;">Aplicar para a mentoria ou iniciar uma conversa de clareza para verificar aderência e prontidão antes de avançar.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 09 EIXOS NARRATIVOS -->
+  <section class="sec" id="s-eixos">
+    <div class="sh"><span class="sn">09</span><h2 class="st">Eixos Narrativos</h2></div>
+    <p style="font-size:13.5px;color:var(--t2);margin-bottom:14px;line-height:1.6;">Clique em cada eixo para ver tese, dor, crença, público e conteúdo recomendado.</p>
+
+    <div class="eixo-card"><div class="eixo-head" onclick="te(this)"><div><div class="eixo-num">Eixo 1</div><div class="eixo-title">Impacto com Congruência</div></div><span style="font-size:11px;color:var(--tm);">+ ver</span></div><div class="eixo-body"><div class="eixo-grid"><div class="eixo-col ec-tese"><div class="ecl">Tese central</div><div class="ect">Gerar impacto sem estar alinhada com quem se é cobra um preço que aparece no corpo, nas relações e na energia vital.</div></div><div class="eixo-col ec-dor"><div class="ecl">Dor que ativa</div><div class="ect">Entrega resultado, mas sente que não está expressando quem de fato é.</div></div><div class="eixo-col ec-cren"><div class="ecl">Crença que desloca</div><div class="ect">Que é preciso se adaptar para ter valor ou ser aceita.</div></div><div class="eixo-col"><div class="ecl">Público mais aderente</div><div class="ect">Líderes, especialistas, pessoas de alta responsabilidade.</div></div><div class="eixo-col"><div class="ecl">CTA possível</div><div class="ect">Aprofundar percepção / Iniciar conversa de clareza.</div></div></div></div></div>
+
+    <div class="eixo-card"><div class="eixo-head" onclick="te(this)"><div><div class="eixo-num">Eixo 2</div><div class="eixo-title">Trabalho sem Sofrimento</div></div><span style="font-size:11px;color:var(--tm);">+ ver</span></div><div class="eixo-body"><div class="eixo-grid"><div class="eixo-col ec-tese"><div class="ecl">Tese central</div><div class="ect">Trabalho não precisa ser sofrimento para ser legítimo. Esforço não é o único critério de valor.</div></div><div class="eixo-col ec-dor"><div class="ecl">Dor que ativa</div><div class="ect">Cansaço crônico com entrega, sensação de que trabalho sempre pesa.</div></div><div class="eixo-col ec-cren"><div class="ecl">Crença que desloca</div><div class="ect">Que sofrer pelo trabalho é prova de comprometimento.</div></div><div class="eixo-col"><div class="ecl">Público mais aderente</div><div class="ect">Alta responsabilidade, líderes em esgotamento silencioso.</div></div><div class="eixo-col"><div class="ecl">CTA possível</div><div class="ect">Identificar o padrão por trás do incômodo / Workshop.</div></div></div></div></div>
+
+    <div class="eixo-card"><div class="eixo-head" onclick="te(this)"><div><div class="eixo-num">Eixo 3</div><div class="eixo-title">Valor Autêntico</div></div><span style="font-size:11px;color:var(--tm);">+ ver</span></div><div class="eixo-body"><div class="eixo-grid"><div class="eixo-col ec-tese"><div class="ecl">Tese central</div><div class="ect">O que é natural para você pode ser valioso para outra pessoa. Valor não precisa ser inventado, precisa ser reconhecido.</div></div><div class="eixo-col ec-dor"><div class="ecl">Dor que ativa</div><div class="ect">Dificuldade em reconhecer e sustentar próprio valor. Culpa ao receber.</div></div><div class="eixo-col ec-cren"><div class="ecl">Crença que desloca</div><div class="ect">Que valor só tem base se vier do esforço ou da validação externa.</div></div><div class="eixo-col"><div class="ecl">Público mais aderente</div><div class="ect">Pessoas com projeto latente, consultores, especialistas em transição.</div></div><div class="eixo-col"><div class="ecl">CTA possível</div><div class="ect">Avaliar direção e prontidão / Mapa de Valor.</div></div></div></div></div>
+
+    <div class="eixo-card"><div class="eixo-head" onclick="te(this)"><div><div class="eixo-num">Eixo 4</div><div class="eixo-title">Padrões que Moldam Realidade</div></div><span style="font-size:11px;color:var(--tm);">+ ver</span></div><div class="eixo-body"><div class="eixo-grid"><div class="eixo-col ec-tese"><div class="ecl">Tese central</div><div class="ect">O que se repete não está te punindo. Está mostrando um padrão que um dia fez sentido e ainda opera no automático.</div></div><div class="eixo-col ec-dor"><div class="ecl">Dor que ativa</div><div class="ect">Repetição de situações. Saber racionalmente e não conseguir mudar.</div></div><div class="eixo-col ec-cren"><div class="ecl">Crença que desloca</div><div class="ect">Que o problema é sempre externo ou que "é assim mesmo".</div></div><div class="eixo-col"><div class="ecl">Público mais aderente</div><div class="ect">Pessoas no nível 3 de consciência. Alto grau de autoconhecimento.</div></div><div class="eixo-col"><div class="ecl">CTA possível</div><div class="ect">Participar do workshop / Aplicar para mentoria.</div></div></div></div></div>
+
+    <div class="eixo-card"><div class="eixo-head" onclick="te(this)"><div><div class="eixo-num">Eixo 5</div><div class="eixo-title">Inconsciente e Sonhos Travados</div></div><span style="font-size:11px;color:var(--tm);">+ ver</span></div><div class="eixo-body"><div class="eixo-grid"><div class="eixo-col ec-tese"><div class="ecl">Tese central</div><div class="ect">O inconsciente não sabota. Ele protege. Quando o sonho está travado, tem algo tentando manter segurança.</div></div><div class="eixo-col ec-dor"><div class="ecl">Dor que ativa</div><div class="ect">Sensação de bloqueio, de que avança e retrocede sem saber por quê.</div></div><div class="eixo-col ec-cren"><div class="ecl">Crença que desloca</div><div class="ect">Que autossabotagem é fraqueza ou preguiça.</div></div><div class="eixo-col"><div class="ecl">Público mais aderente</div><div class="ect">Pessoas no nível 3 a 5. Com repertório de autoconhecimento.</div></div><div class="eixo-col"><div class="ecl">CTA possível</div><div class="ect">Avaliar prontidão / Conversa de clareza.</div></div></div></div></div>
+
+    <div class="eixo-card"><div class="eixo-head" onclick="te(this)"><div><div class="eixo-num">Eixo 6</div><div class="eixo-title">Metas com Prosperidade</div></div><span style="font-size:11px;color:var(--tm);">+ ver</span></div><div class="eixo-body"><div class="eixo-grid"><div class="eixo-col ec-tese"><div class="ecl">Tese central</div><div class="ect">Meta sem identidade vira esforço sem raiz. Próspero não é quem corre mais, é quem sustenta valor com coerência.</div></div><div class="eixo-col ec-dor"><div class="ecl">Dor que ativa</div><div class="ect">Metas alcançadas sem satisfação. Metas não sustentadas sem saber por quê.</div></div><div class="eixo-col ec-cren"><div class="ecl">Crença que desloca</div><div class="ect">Que meta é sobre performance, não sobre identidade.</div></div><div class="eixo-col"><div class="ecl">Público mais aderente</div><div class="ect">Pessoas em nível 3 a 5. Alta performance com baixa satisfação.</div></div><div class="eixo-col"><div class="ecl">CTA possível</div><div class="ect">Workshop / Avaliar prontidão para mentoria.</div></div></div></div></div>
+
+    <div class="eixo-card"><div class="eixo-head" onclick="te(this)"><div><div class="eixo-num">Eixo 7</div><div class="eixo-title">Personalidade e Automaestria</div></div><span style="font-size:11px;color:var(--tm);">+ ver</span></div><div class="eixo-body"><div class="eixo-grid"><div class="eixo-col ec-tese"><div class="ecl">Tese central</div><div class="ect">Personalidade não é prisão. É padrão. E padrão pode ser percebido antes de ser obedecido.</div></div><div class="eixo-col ec-dor"><div class="ecl">Dor que ativa</div><div class="ect">Sensação de que "é jeito" e que não pode mudar. Repetição em diferentes contextos.</div></div><div class="eixo-col ec-cren"><div class="ecl">Crença que desloca</div><div class="ect">Que personalidade é identidade fixa e não estratégia de adaptação.</div></div><div class="eixo-col"><div class="ecl">Público mais aderente</div><div class="ect">Pessoas com interesse em autoconhecimento. Nível 2 a 5.</div></div><div class="eixo-col"><div class="ecl">CTA possível</div><div class="ect">Aprofundar percepção / Workshop de padrões.</div></div></div></div></div>
+
+    <div class="eixo-card"><div class="eixo-head" onclick="te(this)"><div><div class="eixo-num">Eixo 8</div><div class="eixo-title">Relações como Espelho</div></div><span style="font-size:11px;color:var(--tm);">+ ver</span></div><div class="eixo-body"><div class="eixo-grid"><div class="eixo-col ec-tese"><div class="ecl">Tese central</div><div class="ect">As relações revelam padrões. Como você se posiciona, se cala ou se adapta nas relações mostra muito sobre sua estrutura interna.</div></div><div class="eixo-col ec-dor"><div class="ecl">Dor que ativa</div><div class="ect">Adaptação excessiva nas relações. Dificuldade em sustentar limites. Sensação de se perder.</div></div><div class="eixo-col ec-cren"><div class="ecl">Crença que desloca</div><div class="ect">Que dificuldades nas relações são problemas do outro, não espelhos próprios.</div></div><div class="eixo-col"><div class="ecl">Público mais aderente</div><div class="ect">Pessoas que sentem que as relações as drenam. Nível 3 a 5.</div></div><div class="eixo-col"><div class="ecl">CTA possível</div><div class="ect">Conversa de clareza / Avaliar prontidão.</div></div></div></div></div>
+
+    <div class="eixo-card"><div class="eixo-head" onclick="te(this)"><div><div class="eixo-num">Eixo 9</div><div class="eixo-title">Química do Entusiasmo</div></div><span style="font-size:11px;color:var(--tm);">+ ver</span></div><div class="eixo-body"><div class="eixo-grid"><div class="eixo-col ec-tese"><div class="ecl">Tese central</div><div class="ect">Entusiasmo é dado estratégico. O que você faz com leveza não é fácil. É natural. E natural tem valor.</div></div><div class="eixo-col ec-dor"><div class="ecl">Dor que ativa</div><div class="ect">Perda de contato com o que energiza. Sensação de que tudo dá trabalho.</div></div><div class="eixo-col ec-cren"><div class="ecl">Crença que desloca</div><div class="ect">Que se é fácil para mim, não pode ser valioso para outros.</div></div><div class="eixo-col"><div class="ecl">Público mais aderente</div><div class="ect">Pessoas em transição, projeto latente, nível 3 a 5.</div></div><div class="eixo-col"><div class="ecl">CTA possível</div><div class="ect">Workshop Mapa de Valor / Avaliar prontidão.</div></div></div></div></div>
+
+    <div class="eixo-card"><div class="eixo-head" onclick="te(this)"><div><div class="eixo-num">Eixo 10</div><div class="eixo-title">Propósito Aplicado à Vida Real</div></div><span style="font-size:11px;color:var(--tm);">+ ver</span></div><div class="eixo-body"><div class="eixo-grid"><div class="eixo-col ec-tese"><div class="ecl">Tese central</div><div class="ect">Propósito não é um destino que se descobre. É uma forma de operar que se organiza ao longo do caminho.</div></div><div class="eixo-col ec-dor"><div class="ecl">Dor que ativa</div><div class="ect">Sensação de que propósito está distante ou ainda não chegou.</div></div><div class="eixo-col ec-cren"><div class="ecl">Crença que desloca</div><div class="ect">Que propósito é uma revelação única e definitiva.</div></div><div class="eixo-col"><div class="ecl">Público mais aderente</div><div class="ect">Pessoas orientadas por propósito. Nível 3 a 5.</div></div><div class="eixo-col"><div class="ecl">CTA possível</div><div class="ect">Avaliar direção / Workshop Mapa de Valor.</div></div></div></div></div>
+
+    <div class="eixo-card"><div class="eixo-head" onclick="te(this)"><div><div class="eixo-num">Eixo 11</div><div class="eixo-title">Projeto Paralelo e Transição Consciente</div></div><span style="font-size:11px;color:var(--tm);">+ ver</span></div><div class="eixo-body"><div class="eixo-grid"><div class="eixo-col ec-tese"><div class="ecl">Tese central</div><div class="ect">Você não precisa jogar fora tudo que construiu. Transição ou projeto paralelo pode nascer da sua história, não do zero.</div></div><div class="eixo-col ec-dor"><div class="ecl">Dor que ativa</div><div class="ect">Medo de perder segurança. Incerteza sobre identidade após mudança.</div></div><div class="eixo-col ec-cren"><div class="ecl">Crença que desloca</div><div class="ect">Que mudar exige destruir o que foi construído.</div></div><div class="eixo-col"><div class="ecl">Público mais aderente</div><div class="ect">Pessoas em transição ou criando projeto paralelo. Nível 3 a 5.</div></div><div class="eixo-col"><div class="ecl">CTA possível</div><div class="ect">Avaliar direção e prontidão / Conversa de clareza.</div></div></div></div></div>
+
+    <div class="eixo-card"><div class="eixo-head" onclick="te(this)"><div><div class="eixo-num">Eixo 12</div><div class="eixo-title">Dinheiro como Troca de Valor</div></div><span style="font-size:11px;color:var(--tm);">+ ver</span></div><div class="eixo-body"><div class="eixo-grid"><div class="eixo-col ec-tese"><div class="ecl">Tese central</div><div class="ect">Receber bem pelo que se entrega é congruência, não ganância. Dinheiro é um espelho da relação com valor.</div></div><div class="eixo-col ec-dor"><div class="ecl">Dor que ativa</div><div class="ect">Culpa por receber, dificuldade em cobrar, merecimento em questão.</div></div><div class="eixo-col ec-cren"><div class="ecl">Crença que desloca</div><div class="ect">Que prosperidade e propósito não convivem.</div></div><div class="eixo-col"><div class="ecl">Público mais aderente</div><div class="ect">Especialistas, consultores, educadores, profissionais liberais.</div></div><div class="eixo-col"><div class="ecl">CTA possível</div><div class="ect">Avaliar prontidão / Workshop Valor Autêntico e Prosperidade.</div></div></div></div></div>
+  </section>
+
+  <!-- 10 POR NÍVEL -->
+  <section class="sec" id="s-niveis">
+    <div class="sh"><span class="sn">10</span><h2 class="st">Conteúdo por Nível de Consciência</h2></div>
+    <div class="tw">
+      <table class="dt">
+        <thead><tr><th>Nível</th><th>Estado mental</th><th>Conteúdo indicado</th><th>Linguagem</th><th>CTA recomendado</th><th>Risco</th><th>Próximo passo</th></tr></thead>
+        <tbody>
+          <tr><td><span class="lbadge l1">1 — Curiosidade</span></td><td>Interesse difuso, sem dor nomeada</td><td>Personalidade, entusiasmo, valor autêntico</td><td>Leve, instigante, abre percepção</td><td>"Aprofundar percepção"</td><td>Vender mentoria antes da dor estar clara</td><td>Conteúdo de diagnóstico</td></tr>
+          <tr><td><span class="lbadge l2">2 — Incômodo</span></td><td>Sente que algo não está bom, não sabe a causa</td><td>Impacto sem congruência, adaptação excessiva</td><td>Nomeadora, empática, diagnóstica</td><td>"Identificar o padrão por trás do incômodo"</td><td>Confundir incômodo com prontidão</td><td>Workshop de entrada</td></tr>
+          <tr><td><span class="lbadge l3">3 — Padrão</span></td><td>Percebe repetições, quer profundidade</td><td>Padrões, inconsciente, automaestria</td><td>Cirúrgica, nomeadora de padrão</td><td>"Participar do workshop"</td><td>Quer profundidade, mas ainda busca resposta rápida</td><td>Produto inicial ou qualificação</td></tr>
+          <tr><td><span class="lbadge l4">4 — Propósito</span></td><td>Quer integrar vida, trabalho, propósito</td><td>Mapa de valor, propósito, metas com prosperidade</td><td>Integradora, conecta interno e externo</td><td>"Avaliar direção e prontidão"</td><td>Pular para mentoria sem medir abertura</td><td>Diagnóstico ou conversa de clareza</td></tr>
+          <tr><td><span class="lbadge l5">5 — Prontidão</span></td><td>Reconhece dor, padrão e custo</td><td>Limites da mentoria, prontidão, casos</td><td>Direta, com critério e convite claro</td><td>"Aplicar para a mentoria"</td><td>Não alinhar expectativa antes de fechar</td><td>Protocolo de qualificação</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- 11 MATRIZ CONTEÚDO -->
+  <section class="sec" id="s-matriz">
+    <div class="sh"><span class="sn">11</span><h2 class="st">Matriz Conteúdo > Intenção > Próximo Passo</h2></div>
+    <div class="tw">
+      <table class="dt">
+        <thead><tr><th>Tema</th><th>Nível</th><th>Intenção</th><th>Dor ativada</th><th>Crença deslocada</th><th>CTA</th><th>Próximo passo</th><th>Métrica</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Trabalho sem sofrimento</strong></td><td><span class="lbadge l2">2</span></td><td>Abrir percepção sobre custo de esforço como identidade</td><td>Cansaço crônico com entrega</td><td>Sofrimento é prova de comprometimento</td><td>Aprofundar percepção</td><td>Conteúdo de padrão</td><td>Salvamentos, comentários identificatórios</td></tr>
+          <tr><td><strong>Impacto sem congruência</strong></td><td><span class="lbadge l2">2</span></td><td>Nomear o custo de operar desalinhada</td><td>Resultado com esvaziamento interno</td><td>Que adaptação é necessária para ter valor</td><td>Identificar padrão</td><td>Workshop ou produto inicial</td><td>Comentários "me identifiquei"</td></tr>
+          <tr><td><strong>Valor autêntico</strong></td><td><span class="lbadge l3">3</span></td><td>Revelar que o valor já existe e está sendo ignorado</td><td>Dificuldade em reconhecer e sustentar valor</td><td>Valor precisa de validação externa</td><td>Avaliar prontidão</td><td>Workshop Mapa de Valor</td><td>Conversas sobre valor e cobrança</td></tr>
+          <tr><td><strong>Padrões que moldam realidade</strong></td><td><span class="lbadge l3">3</span></td><td>Mostrar diferença entre sintoma e padrão</td><td>Repetição sem mudança</td><td>O problema é sempre externo</td><td>Participar do workshop</td><td>Produto de automaestria</td><td>DMs sobre padrão e repetição</td></tr>
+          <tr><td><strong>Inconsciente e sonhos travados</strong></td><td><span class="lbadge l3">3</span></td><td>Reframing de autossabotagem como proteção</td><td>Bloqueio recorrente antes de avançar</td><td>Autossabotagem é fraqueza</td><td>Avaliar prontidão</td><td>Conversa de clareza</td><td>Mensagens sobre "me trava"</td></tr>
+          <tr><td><strong>Metas com prosperidade</strong></td><td><span class="lbadge l3">3</span></td><td>Conectar meta a identidade, não apenas resultado</td><td>Metas alcançadas sem satisfação</td><td>Meta é sobre performance</td><td>Workshop</td><td>Produto inicial ou qualificação</td><td>Comentários sobre metas e vazio</td></tr>
+          <tr><td><strong>Personalidade não é prisão</strong></td><td><span class="lbadge l2">2</span></td><td>Abrir espaço entre padrão e essência</td><td>Sensação de que "é jeito"</td><td>Personalidade é identidade fixa</td><td>Aprofundar percepção</td><td>Conteúdo de automaestria</td><td>Salvamentos e compartilhamentos</td></tr>
+          <tr><td><strong>Entusiasmo como dado estratégico</strong></td><td><span class="lbadge l3">3</span></td><td>Mostrar que o que é natural também tem valor</td><td>Perda de contato com o que energiza</td><td>Se é fácil, não é valioso</td><td>Avaliar direção</td><td>Workshop Mapa de Valor</td><td>DMs sobre projetos e dúvidas</td></tr>
+          <tr><td><strong>Dinheiro como troca de valor</strong></td><td><span class="lbadge l4">4</span></td><td>Reorganizar relação com recebimento e cobrança</td><td>Culpa ao receber ou cobrar</td><td>Prosperidade e propósito não convivem</td><td>Avaliar prontidão</td><td>Conversa de clareza</td><td>Conversas sobre cobrar e merecimento</td></tr>
+          <tr><td><strong>Projeto paralelo</strong></td><td><span class="lbadge l4">4</span></td><td>Validar que projeto paralelo pode nascer da história</td><td>Algo latente sem forma</td><td>Precisa começar do zero</td><td>Avaliar direção</td><td>Workshop ou conversa</td><td>DMs sobre "tenho uma ideia"</td></tr>
+          <tr><td><strong>Transição consciente</strong></td><td><span class="lbadge l4">4</span></td><td>Mostrar que transição não exige destruição</td><td>Medo de perder segurança</td><td>Mudar é abandonar o que foi construído</td><td>Avaliar prontidão</td><td>Conversa de clareza</td><td>Conversas sobre "penso em sair"</td></tr>
+          <tr><td><strong>Avaliar prontidão para mentoria</strong></td><td><span class="lbadge l5">5</span></td><td>Filtrar e convidar quem tem abertura real</td><td>Sentir que chegou o momento</td><td>Que qualquer interessado está pronto</td><td>Aplicar para mentoria</td><td>Protocolo de qualificação</td><td>Aplicações de qualidade</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- 12 FILTRA CURIOSOS -->
+  <section class="sec" id="s-filtra">
+    <div class="sh"><span class="sn">12</span><h2 class="st">Conteúdos que Filtram Curiosos</h2></div>
+    <div class="g2">
+      <div class="card" style="border-left:3px solid var(--rdb);">
+        <p class="ct">Mentoria profunda não é resposta pronta</p>
+        <p style="font-size:13.5px;color:var(--t1);margin-bottom:7px;font-weight:600;">"Se você busca uma fórmula ou um plano de ação pronto, este não é o processo."</p>
+        <p style="font-size:12.5px;color:var(--t2);line-height:1.5;margin-bottom:6px;"><strong>Função:</strong> filtrar quem quer receita. <strong>Filtra:</strong> baixa prontidão e expectativa de resultado rápido.</p>
+        <p style="font-size:12px;color:var(--rd);"><strong>Risco se não comunicar:</strong> leads que querem atalho entram na mentoria e resistem ao processo.</p>
+      </div>
+      <div class="card" style="border-left:3px solid var(--rdb);">
+        <p class="ct">Autoconhecimento sem prática vira consumo</p>
+        <p style="font-size:13.5px;color:var(--t1);margin-bottom:7px;font-weight:600;">"Saber seu tipo no Eneagrama não muda sua vida se você não observa o padrão no cotidiano."</p>
+        <p style="font-size:12.5px;color:var(--t2);line-height:1.5;margin-bottom:6px;"><strong>Função:</strong> distinguir autoconhecimento de automaestria. <strong>Filtra:</strong> quem coleciona processos sem aplicar.</p>
+        <p style="font-size:12px;color:var(--rd);"><strong>Risco se não comunicar:</strong> leads que já fizeram muita coisa entram esperando mais do mesmo.</p>
+      </div>
+      <div class="card" style="border-left:3px solid var(--rdb);">
+        <p class="ct">Propósito exige sustentação, não só inspiração</p>
+        <p style="font-size:13.5px;color:var(--t1);margin-bottom:7px;font-weight:600;">"Propósito sem processo vira discurso. A diferença está em quem está disposta a sustentar o movimento."</p>
+        <p style="font-size:12.5px;color:var(--t2);line-height:1.5;margin-bottom:6px;"><strong>Função:</strong> filtrar quem quer inspiração. <strong>Filtra:</strong> baixa responsabilidade, expectativa de motivação externa.</p>
+        <p style="font-size:12px;color:var(--rd);"><strong>Risco se não comunicar:</strong> leads que querem energia entram esperando ser carregadas.</p>
+      </div>
+      <div class="card" style="border-left:3px solid var(--rdb);">
+        <p class="ct">Respostas prontas bloqueiam transformação</p>
+        <p style="font-size:13.5px;color:var(--t1);margin-bottom:7px;font-weight:600;">"Quem já tem todas as respostas raramente tem abertura para o que ainda não conhece."</p>
+        <p style="font-size:12.5px;color:var(--t2);line-height:1.5;margin-bottom:6px;"><strong>Função:</strong> nomear rigidez cognitiva sem julgar. <strong>Filtra:</strong> baixa abertura para novas perspectivas.</p>
+        <p style="font-size:12px;color:var(--rd);"><strong>Risco se não comunicar:</strong> leads com alto grau de certeza entram e resistem a qualquer perspectiva diferente.</p>
+      </div>
+      <div class="card" style="border-left:3px solid var(--rdb);">
+        <p class="ct">Nem todo interesse é prontidão</p>
+        <p style="font-size:13.5px;color:var(--t1);margin-bottom:7px;font-weight:600;">"Gostar do tema não é o mesmo que estar pronta para o processo. Prontidão tem outra textura."</p>
+        <p style="font-size:12.5px;color:var(--t2);line-height:1.5;margin-bottom:6px;"><strong>Função:</strong> educar sobre o critério de entrada. <strong>Filtra:</strong> curiosos de nível 1 e 2.</p>
+        <p style="font-size:12px;color:var(--rd);"><strong>Risco se não comunicar:</strong> audiência curiosa avança para conversa comercial sem condições de prosseguir.</p>
+      </div>
+      <div class="card" style="border-left:3px solid var(--rdb);">
+        <p class="ct">Transformação real exige abertura para revisar crenças</p>
+        <p style="font-size:13.5px;color:var(--t1);margin-bottom:7px;font-weight:600;">"A mudança mais difícil não é mudar de emprego. É revisar uma crença que até aqui definia quem você é."</p>
+        <p style="font-size:12.5px;color:var(--t2);line-height:1.5;margin-bottom:6px;"><strong>Função:</strong> calibrar expectativa. <strong>Filtra:</strong> quem quer mudança sem revisão interna.</p>
+        <p style="font-size:12px;color:var(--rd);"><strong>Risco se não comunicar:</strong> leads que querem mudança externa entram resistindo ao processo interno.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 13 ATRAI PRONTOS -->
+  <section class="sec" id="s-atrai">
+    <div class="sh"><span class="sn">13</span><h2 class="st">Conteúdos que Atraem Leads Prontos</h2></div>
+    <div class="g2">
+      <div class="card" style="border-left:3px solid var(--acb);">
+        <p class="ct">Sinto que tenho uma vida boa, mas algo não encaixa</p>
+        <p style="font-size:13.5px;color:var(--t1);font-weight:600;margin-bottom:6px;">"Isso não é ingratidão. É a percepção de que há algo mais possível do que o que está sendo vivido."</p>
+        <p style="font-size:12.5px;color:var(--t2);margin-bottom:5px;"><strong>Função:</strong> nomear incômodo difuso com elegância. <strong>Sinal de prontidão:</strong> pessoa reconhece a frase como própria.</p>
+        <p style="font-size:12px;color:var(--act);"><strong>CTA:</strong> Identificar o padrão por trás do incômodo</p>
+      </div>
+      <div class="card" style="border-left:3px solid var(--acb);">
+        <p class="ct">O que deu certo até aqui pode estar limitando o próximo ciclo</p>
+        <p style="font-size:13.5px;color:var(--t1);font-weight:600;margin-bottom:6px;">"Estratégias que construíram o que você tem podem ser o obstáculo para o que você quer construir."</p>
+        <p style="font-size:12.5px;color:var(--t2);margin-bottom:5px;"><strong>Função:</strong> ativar percepção de que o padrão de sucesso pode virar limite. <strong>Sinal:</strong> pessoa sente tensão entre resultado e esvaziamento.</p>
+        <p style="font-size:12px;color:var(--act);"><strong>CTA:</strong> Avaliar direção e prontidão</p>
+      </div>
+      <div class="card" style="border-left:3px solid var(--acb);">
+        <p class="ct">Gerar impacto sem se abandonar</p>
+        <p style="font-size:13.5px;color:var(--t1);font-weight:600;margin-bottom:6px;">"Existe um ponto em que o impacto que você gera e a pessoa que você está sendo podem caminhar juntos."</p>
+        <p style="font-size:12.5px;color:var(--t2);margin-bottom:5px;"><strong>Função:</strong> apontar para o estado B com clareza. <strong>Sinal:</strong> pessoa quer impacto real, não apenas resultado.</p>
+        <p style="font-size:12px;color:var(--act);"><strong>CTA:</strong> Avaliar prontidão para mentoria</p>
+      </div>
+      <div class="card" style="border-left:3px solid var(--acb);">
+        <p class="ct">Sustentar prosperidade sem culpa</p>
+        <p style="font-size:13.5px;color:var(--t1);font-weight:600;margin-bottom:6px;">"Receber bem pelo que você entrega não é excesso. É congruência entre valor e retorno."</p>
+        <p style="font-size:12.5px;color:var(--t2);margin-bottom:5px;"><strong>Função:</strong> nomear a relação com merecimento e valor. <strong>Sinal:</strong> pessoa sente culpa ao receber ou dificuldade em cobrar.</p>
+        <p style="font-size:12px;color:var(--act);"><strong>CTA:</strong> Avaliar prontidão / Workshop Valor e Prosperidade</p>
+      </div>
+      <div class="card" style="border-left:3px solid var(--acb);">
+        <p class="ct">Reconhecer padrões antes de reagir</p>
+        <p style="font-size:13.5px;color:var(--t1);font-weight:600;margin-bottom:6px;">"Automaestria começa quando você percebe o automático antes de obedecê-lo."</p>
+        <p style="font-size:12.5px;color:var(--t2);margin-bottom:5px;"><strong>Função:</strong> atrair quem já reconhece padrão. <strong>Sinal:</strong> pessoa diz "isso sou eu" ao reconhecer a própria repetição.</p>
+        <p style="font-size:12px;color:var(--act);"><strong>CTA:</strong> Participar do workshop / Aplicar para mentoria</p>
+      </div>
+      <div class="card" style="border-left:3px solid var(--acb);">
+        <p class="ct">Transformar história em contribuição</p>
+        <p style="font-size:13.5px;color:var(--t1);font-weight:600;margin-bottom:6px;">"Sua história não é apenas passado. É a matéria-prima do valor que você pode gerar."</p>
+        <p style="font-size:12.5px;color:var(--t2);margin-bottom:5px;"><strong>Função:</strong> ativar valor latente. <strong>Sinal:</strong> pessoa sente que tem algo a oferecer, mas não sabe como.</p>
+        <p style="font-size:12px;color:var(--act);"><strong>CTA:</strong> Avaliar direção / Workshop Mapa de Valor</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 14 CTA -->
+  <section class="sec" id="s-cta">
+    <div class="sh"><span class="sn">14</span><h2 class="st">CTAs Qualificados por Estágio</h2></div>
+    <div class="g2" style="margin-bottom:14px;">
+      <div class="card"><div class="ct">CTAs recomendados por nível</div>
+        <div style="display:flex;flex-direction:column;gap:8px;margin-top:4px;">
+          <div style="display:flex;align-items:center;gap:10px;padding:8px 12px;background:var(--acl);border:1px solid var(--acb);border-radius:var(--rs);font-size:13px;font-weight:600;color:var(--act);">Nível 1–2: "Aprofundar percepção"</div>
+          <div style="display:flex;align-items:center;gap:10px;padding:8px 12px;background:var(--acl);border:1px solid var(--acb);border-radius:var(--rs);font-size:13px;font-weight:600;color:var(--act);">Nível 2–3: "Identificar o padrão por trás do incômodo"</div>
+          <div style="display:flex;align-items:center;gap:10px;padding:8px 12px;background:var(--acl);border:1px solid var(--acb);border-radius:var(--rs);font-size:13px;font-weight:600;color:var(--act);">Nível 3: "Participar do próximo workshop"</div>
+          <div style="display:flex;align-items:center;gap:10px;padding:8px 12px;background:var(--acl);border:1px solid var(--acb);border-radius:var(--rs);font-size:13px;font-weight:600;color:var(--act);">Nível 4: "Avaliar direção e prontidão"</div>
+          <div style="display:flex;align-items:center;gap:10px;padding:8px 12px;background:var(--ac);border-radius:var(--rs);font-size:13px;font-weight:600;color:#fff;">Nível 5: "Aplicar para a mentoria"</div>
+          <div style="display:flex;align-items:center;gap:10px;padding:8px 12px;background:var(--bll);border:1px solid var(--blb);border-radius:var(--rs);font-size:13px;font-weight:600;color:var(--bl);">Geral: "Iniciar conversa de clareza" / "Entrar na lista de interesse"</div>
+        </div>
+      </div>
+      <div class="card" style="border-top:2px solid var(--rdb);">
+        <div class="ct" style="color:var(--rd);">CTAs a evitar</div>
+        <div style="display:flex;flex-direction:column;gap:6px;margin-top:4px;">
+          <div class="tgr" style="border-radius:var(--rs);padding:6px 12px;font-size:13px;">Saiba mais</div>
+          <div class="tgr" style="border-radius:var(--rs);padding:6px 12px;font-size:13px;">Clique aqui</div>
+          <div class="tgr" style="border-radius:var(--rs);padding:6px 12px;font-size:13px;">Me chama no direct</div>
+          <div class="tgr" style="border-radius:var(--rs);padding:6px 12px;font-size:13px;">Confira</div>
+          <div class="tgr" style="border-radius:var(--rs);padding:6px 12px;font-size:13px;">Venha conhecer</div>
+        </div>
+        <p style="font-size:12px;color:var(--tm);margin-top:10px;">CTAs genéricos não qualificam. Não dizem ao lead qual estado mental ele precisa ter para dar o próximo passo.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 15 FRAMEWORK POST -->
+  <section class="sec" id="s-fw">
+    <div class="sh"><span class="sn">15</span><h2 class="st">Framework de Post</h2></div>
+    <p style="font-size:13.5px;color:var(--t2);margin-bottom:16px;line-height:1.6;">Estrutura para qualquer formato de conteúdo. Todo conteúdo deve mover o lead de um estado mental para outro.</p>
+    <div class="fw-steps">
+      <div class="fw-step"><div class="fw-num">1</div><div><div class="fw-text"><strong>Hook</strong></div><div class="fw-sub">A primeira frase deve ativar tensão, reconhecimento ou curiosidade. Quem lê deve sentir "isso é sobre mim".</div></div></div>
+      <div class="fw-step"><div class="fw-num">2</div><div><div class="fw-text"><strong>Dor ou Tensão</strong></div><div class="fw-sub">Nomear o incômodo, o padrão ou o custo que a pessoa sente. Ser precisa, não genérica.</div></div></div>
+      <div class="fw-step"><div class="fw-num">3</div><div><div class="fw-text"><strong>Leitura do Padrão</strong></div><div class="fw-sub">Mostrar a causa provável do estado. Ir além do sintoma. O lead deve perceber algo que ainda não havia nomeado.</div></div></div>
+      <div class="fw-step"><div class="fw-num">4</div><div><div class="fw-text"><strong>Nova Perspectiva</strong></div><div class="fw-sub">Deslocar a crença que sustenta o padrão. Não dar a resposta pronta. Abrir espaço para uma interpretação diferente.</div></div></div>
+      <div class="fw-step"><div class="fw-num">5</div><div><div class="fw-text"><strong>Aplicação Prática</strong></div><div class="fw-sub">Uma pergunta, observação ou pequena ação que o lead pode fazer sozinha. Conectar com o cotidiano.</div></div></div>
+      <div class="fw-step"><div class="fw-num">6</div><div><div class="fw-text"><strong>Próximo Passo</strong></div><div class="fw-sub">CTA claro e coerente com o nível de consciência do conteúdo. Não vender mentoria em conteúdo de nível 1 ou 2.</div></div></div>
+    </div>
+  </section>
+
+  <!-- 16 CHECKLIST -->
+  <section class="sec" id="s-check">
+    <div class="sh"><span class="sn">16</span><h2 class="st">Checklist de Coerência de Conteúdo</h2></div>
+    <p style="font-size:13.5px;color:var(--t2);margin-bottom:12px;line-height:1.6;">Validar cada conteúdo antes de publicar. Clique para marcar.</p>
+    <div id="ck05-prog" class="clprog">0 de 12 verificados</div>
+    <div class="cl" id="ck05-list">
+      <div class="cli" onclick="dck5(this)"><div class="clb"></div><div class="clt">Este conteúdo fala com qual nível de consciência? Está definido.</div></div>
+      <div class="cli" onclick="dck5(this)"><div class="clb"></div><div class="clt">Ele ativa uma dor real do ICP?</div></div>
+      <div class="cli" onclick="dck5(this)"><div class="clb"></div><div class="clt">Ele desloca uma crença específica?</div></div>
+      <div class="cli" onclick="dck5(this)"><div class="clb"></div><div class="clt">Ele preserva a profundidade da Débora sem virar complexidade?</div></div>
+      <div class="cli" onclick="dck5(this)"><div class="clb"></div><div class="clt">Ele evita promessa terapêutica ou garantia de resultado?</div></div>
+      <div class="cli" onclick="dck5(this)"><div class="clb"></div><div class="clt">Ele não limita o ICP ao corporativo?</div></div>
+      <div class="cli" onclick="dck5(this)"><div class="clb"></div><div class="clt">Ele tem algum elemento que filtra baixa prontidão?</div></div>
+      <div class="cli" onclick="dck5(this)"><div class="clb"></div><div class="clt">Ele conduz para um próximo passo claro?</div></div>
+      <div class="cli" onclick="dck5(this)"><div class="clb"></div><div class="clt">O CTA está adequado ao nível de consciência do conteúdo?</div></div>
+      <div class="cli" onclick="dck5(this)"><div class="clb"></div><div class="clt">O conteúdo reduz ambiguidade em vez de aumentar?</div></div>
+      <div class="cli" onclick="dck5(this)"><div class="clb"></div><div class="clt">Ele atrai ICP com pelo menos nível 2 de consciência?</div></div>
+      <div class="cli" onclick="dck5(this)"><div class="clb"></div><div class="clt">Ele conecta com produto inicial ou mentoria de forma natural?</div></div>
+    </div>
+  </section>
+
+  <!-- 17 IDEIAS -->
+  <section class="sec" id="s-ideias">
+    <div class="sh"><span class="sn">17</span><h2 class="st">Sistema de Ideias de Conteúdo</h2></div>
+    <p style="font-size:13.5px;color:var(--t2);margin-bottom:12px;line-height:1.6;">20 ideias distribuídas por eixo e nível. Filtrar por nível de consciência.</p>
+    <div class="ftabs" id="ideaTabs">
+      <button class="ftab active" onclick="filterIdeas('all', this)">Todos</button>
+      <button class="ftab" onclick="filterIdeas('1', this)">Nível 1</button>
+      <button class="ftab" onclick="filterIdeas('2', this)">Nível 2</button>
+      <button class="ftab" onclick="filterIdeas('3', this)">Nível 3</button>
+      <button class="ftab" onclick="filterIdeas('4', this)">Nível 4</button>
+      <button class="ftab" onclick="filterIdeas('5', this)">Nível 5</button>
+    </div>
+    <div class="idea-grid" id="ideaGrid"></div>
+  </section>
+
+  <!-- 18 PROTOCOLO SE-ENTÃO -->
+  <section class="sec" id="s-prot">
+    <div class="sh"><span class="sn">18</span><h2 class="st">Protocolo: Se X, Faça Y</h2></div>
+    <div class="it">
+      <div class="iti"><div class="itif"><span class="itib">Se</span>Conteúdo gera admiração, mas não conversa</div><div class="itthen"><span class="ittb">Então</span>Ajustar CTA. Adicionar próximo passo mais claro e específico.</div></div>
+      <div class="iti"><div class="itif"><span class="itib">Se</span>Atrai curiosos sem prontidão</div><div class="itthen"><span class="ittb">Então</span>Aumentar filtro. Criar conteúdo que nomeia prontidão como critério.</div></div>
+      <div class="iti"><div class="itif"><span class="itib">Se</span>Gera dúvidas básicas sobre o que a mentoria faz</div><div class="itthen"><span class="ittb">Então</span>Criar conteúdo de consciência mais claro sobre a proposta e seus limites.</div></div>
+      <div class="iti"><div class="itif"><span class="itib">Se</span>Atrai pessoas resistentes com respostas prontas</div><div class="itthen"><span class="ittb">Então</span>Revisar a promessa. Verificar se o conteúdo parece validar quem já sabe tudo.</div></div>
+      <div class="iti"><div class="itif"><span class="itib">Se</span>Fala só com público corporativo</div><div class="itthen"><span class="ittb">Então</span>Ampliar linguagem. Incluir contextos de empreendedores, projetos paralelos, transição.</div></div>
+      <div class="iti"><div class="itif"><span class="itib">Se</span>Fica abstrato demais</div><div class="itthen"><span class="ittb">Então</span>Trazer exemplo concreto ou fala real de como o padrão aparece na vida.</div></div>
+      <div class="iti"><div class="itif"><span class="itib">Se</span>Parece terapia ou cura</div><div class="itthen"><span class="ittb">Então</span>Ajustar limites da promessa. Trocar "cure" por "perceba" ou "reorganize".</div></div>
+      <div class="iti"><div class="itif"><span class="itib">Se</span>Parece autoajuda genérica</div><div class="itthen"><span class="ittb">Então</span>Reforçar método, critério e profundidade. Usar linguagem específica do método da Débora.</div></div>
+      <div class="iti"><div class="itif"><span class="itib">Se</span>Não conduz próximo passo</div><div class="itthen"><span class="ittb">Então</span>Revisar intenção do conteúdo. Definir função antes de revisar o texto.</div></div>
+      <div class="iti"><div class="itif"><span class="itib">Se</span>Exige muita explicação para ser entendido</div><div class="itthen"><span class="ittb">Então</span>Simplificar. Profundidade não precisa de complexidade. Uma ideia por post.</div></div>
+    </div>
+  </section>
+
+  <!-- 19 ERROS -->
+  <section class="sec" id="s-erros">
+    <div class="sh"><span class="sn">19</span><h2 class="st">Erros Comuns</h2></div>
+    <div class="eg">
+      <div class="ei"><div class="etit">Criar conteúdo sem função no funil</div><div class="ebody">Conteúdo bom na forma, mas vazio de intenção. Gera métricas de vaidade, não conversas qualificadas.</div></div>
+      <div class="ei"><div class="etit">Tentar falar com todos</div><div class="ebody">Comunicação que tenta agradar todo mundo acaba não falando com ninguém de forma profunda.</div></div>
+      <div class="ei"><div class="etit">Limitar ICP ao corporativo</div><div class="ebody">Excluir especialistas, empreendedores e pessoas em transição que podem ser ICP excelente.</div></div>
+      <div class="ei"><div class="etit">Confundir engajamento com demanda</div><div class="ebody">Post com muitos salvamentos pode ser de curiosos. O que importa é qual conversa ele gerou.</div></div>
+      <div class="ei"><div class="etit">Educar demais sem CTA</div><div class="ebody">Conteúdo que dá tudo sem pedir nada não conduz o lead para lugar nenhum.</div></div>
+      <div class="ei"><div class="etit">Vender cedo demais para curiosos</div><div class="ebody">Mentoria para quem está no nível 1 gera rejeição e confusão sobre o que a oferta é.</div></div>
+      <div class="ei"><div class="etit">Usar linguagem terapêutica</div><div class="ebody">Prometer cura, desbloqueio ou reprogramação gera expectativa que a mentoria não pode cumprir.</div></div>
+      <div class="ei"><div class="etit">Criar conteúdo bonito sem decisão</div><div class="ebody">Visual elegante sem função operacional é desperdício de autoridade.</div></div>
+      <div class="ei"><div class="etit">Atrair pessoas com baixa prontidão</div><div class="ebody">Conteúdo muito inspirador sem filtro atrai quem quer motivação, não transformação.</div></div>
+      <div class="ei"><div class="etit">Não diferenciar produto inicial e mentoria</div><div class="ebody">Falar dos dois como se fossem a mesma coisa confunde o lead sobre o que está acessando.</div></div>
+      <div class="ei"><div class="etit">Comunicar profundidade com excesso de complexidade</div><div class="ebody">Profundidade real é simples na forma. Complexidade afasta quem mais precisaria do conteúdo.</div></div>
+      <div class="ei"><div class="etit">Ignorar a função de filtro do conteúdo</div><div class="ebody">Conteúdo que não filtra ninguém não está fazendo o trabalho completo. Filtrar é cuidar da entrega.</div></div>
+    </div>
+  </section>
+
+  <!-- 20 CAMINHO DE APLICAÇÃO -->
+  <section class="sec" id="s-acao">
+    <div class="sh"><span class="sn">20</span><h2 class="st">Caminho de Aplicação</h2></div>
+    <div class="al">
+      <div class="ai"><div class="an">1</div><div class="at"><strong>Escolher o nível de consciência do lead</strong> para quem o conteúdo será direcionado.</div></div>
+      <div class="ai"><div class="an">2</div><div class="at"><strong>Escolher o eixo narrativo</strong> mais relevante para este momento do ecossistema.</div></div>
+      <div class="ai"><div class="an">3</div><div class="at"><strong>Definir a intenção do conteúdo</strong> — qual função ele cumpre no funil?</div></div>
+      <div class="ai"><div class="an">4</div><div class="at"><strong>Escrever a partir de uma dor real</strong> — não de um conceito abstrato.</div></div>
+      <div class="ai"><div class="an">5</div><div class="at"><strong>Deslocar uma crença</strong> — o conteúdo deve abrir uma perspectiva diferente.</div></div>
+      <div class="ai"><div class="an">6</div><div class="at"><strong>Incluir próximo passo</strong> — CTA coerente com o nível de consciência do conteúdo.</div></div>
+      <div class="ai"><div class="an">7</div><div class="at"><strong>Observar a resposta da audiência</strong> — que tipo de comentário e conversa gerou?</div></div>
+      <div class="ai"><div class="an">8</div><div class="at"><strong>Registrar quais temas geram conversas qualificadas</strong> — o que atrai ICP com prontidão real?</div></div>
+    </div>
+  </section>
+
+  <!-- 21 KPI -->
+  <section class="sec" id="s-kpi">
+    <div class="sh"><span class="sn">21</span><h2 class="st">Sinais de Aplicação</h2></div>
+    <div class="kg">
+      <div class="ki kp"><div class="kl">Indicador Principal</div><div class="kv">Conversas iniciadas com aderência ao ICP</div></div>
+      <div class="ki"><div class="kl">Conteúdos por eixo</div><div class="kv">Distribuição de publicações pelos 12 eixos</div></div>
+      <div class="ki"><div class="kl">Conversas por tema</div><div class="kv">Quais temas geram mais conversas qualificadas</div></div>
+      <div class="ki"><div class="kl">Leads por nível</div><div class="kv">Distribuição de leads nos 5 níveis de consciência</div></div>
+      <div class="ki"><div class="kl">Taxa de resposta a CTA</div><div class="kv">Percentual de leads que tomam o próximo passo</div></div>
+      <div class="ki"><div class="kl">Leads para workshop</div><div class="kv">Conversões de conteúdo para produto inicial</div></div>
+      <div class="ki"><div class="kl">Leads para qualificação</div><div class="kv">Leads que chegam ao protocolo de qualificação</div></div>
+      <div class="ki"><div class="kl">Conteúdos que mais filtram</div><div class="kv">Conteúdos que atraem ICP e afastam curiosos</div></div>
+    </div>
+    <div class="appr">
+      <div class="appi">&#10003;</div>
+      <div class="appt">Sinal de clareza: cada conteúdo tem função clara no funil e gera próximo passo coerente com o nível de consciência do lead.</div>
+    </div>
+    <div style="margin-top:16px;">
+      <p style="font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--tm);margin-bottom:9px;">Alertas de risco</p>
+      <div class="risk">Conteúdo gerando apenas comentários de curiosidade sem conversas: adicionar filtro e CTA mais específico.</div>
+      <div class="risk">Audiência crescendo sem crescimento de conversas qualificadas: revisar linguagem e nível dos conteúdos publicados.</div>
+      <div class="risk">Mesmos eixos repetidos sem variação: diversificar para atingir diferentes níveis de consciência da audiência.</div>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <span class="fb">Débora Delgado</span>
+    <div class="fm"><span>Framework Interno</span><span>Sistema de Conteúdo e Posicionamento</span><span>Estruturado por Continuum AI Systems</span></div>
+  </footer>
+</div>
+</div>
+
+<script>
+/* THEME */
+(function(){
+  var el=document.getElementById('daRoot05'),btn=document.getElementById('tb05'),s;
+  try{s=localStorage.getItem('da5-theme')}catch(e){}
+  if(s==='dark'){el.classList.add('dark');btn.textContent='Light';}
+  window.dt05=function(){
+    var d=el.classList.toggle('dark');
+    btn.textContent=d?'Light':'Dark';
+    try{localStorage.setItem('da5-theme',d?'dark':'light')}catch(e){}
+  };
+})();
+
+/* SCROLL */
+window.ds5=function(id){var e=document.getElementById(id);if(e)e.scrollIntoView({behavior:'smooth',block:'start'});};
+
+/* EIXO TOGGLE */
+window.te=function(head){
+  var body=head.parentElement.querySelector('.eixo-body');
+  var span=head.querySelector('span');
+  var open=body.classList.toggle('open');
+  span.textContent=open?'- fechar':'+ ver';
+};
+
+/* CHECKLIST */
+window.dck5=function(item){
+  item.classList.toggle('ck');
+  var all=document.querySelectorAll('#ck05-list .cli');
+  var done=document.querySelectorAll('#ck05-list .cli.ck').length;
+  document.getElementById('ck05-prog').textContent=done+' de '+all.length+' verificados';
+};
+
+/* IDEAS DATA */
+var ideas=[
+  {title:'Seu trabalho não precisa custar quem você é',eixo:'Trabalho sem Sofrimento',nivel:'2',int:'Nomear custo invisível de trabalhar desalinhada',cta:'Aprofundar percepção'},
+  {title:'O que é natural para você pode ser raro para outra pessoa',eixo:'Valor Autêntico',nivel:'2',int:'Abrir percepção sobre valor não reconhecido',cta:'Identificar padrão por trás do incômodo'},
+  {title:'Quando você muda de estratégia e o resultado é o mesmo, é padrão',eixo:'Padrões que Moldam Realidade',nivel:'3',int:'Mostrar diferença entre sintoma e padrão',cta:'Participar do workshop'},
+  {title:'O que você chama de jeito pode ser uma estratégia de proteção',eixo:'Personalidade e Automaestria',nivel:'2',int:'Reframing de personalidade como adaptação',cta:'Aprofundar percepção'},
+  {title:'Automaestria não é mudar quem você é — é perceber o automático',eixo:'Personalidade e Automaestria',nivel:'3',int:'Definir automaestria com precisão',cta:'Participar do workshop'},
+  {title:'A relação mais reveladora é aquela em que você mais se adapta',eixo:'Relações como Espelho',nivel:'3',int:'Mostrar como relações revelam padrão interno',cta:'Avaliar prontidão'},
+  {title:'Entusiasmo não é euforia — é um dado sobre o que você veio fazer',eixo:'Química do Entusiasmo',nivel:'3',int:'Reposicionar entusiasmo como dado estratégico',cta:'Avaliar direção e prontidão'},
+  {title:'Propósito não está esperando você descobrir. Está sendo construído agora.',eixo:'Propósito Aplicado à Vida Real',nivel:'4',int:'Reframing de propósito como construção progressiva',cta:'Avaliar prontidão para mentoria'},
+  {title:'Você pode criar um projeto que nasce da sua história, não do zero',eixo:'Projeto Paralelo e Transição',nivel:'4',int:'Mostrar que projeto latente tem base real',cta:'Avaliar direção'},
+  {title:'Sustentar prosperidade sem culpa começa com reorganizar a relação com valor',eixo:'Dinheiro como Troca de Valor',nivel:'4',int:'Nomear crença de merecimento',cta:'Avaliar prontidão'},
+  {title:'Quando a meta é alcançada mas nada muda por dentro, é sinal de algo',eixo:'Metas com Prosperidade',nivel:'3',int:'Ativar dor de metas sem satisfação',cta:'Participar do workshop'},
+  {title:'O inconsciente não sabota — ele protege o que ainda acredita estar em risco',eixo:'Inconsciente e Sonhos Travados',nivel:'3',int:'Reframing de autossabotagem',cta:'Conversa de clareza'},
+  {title:'Impacto com congruência é quando o que você entrega e quem você é caminham juntos',eixo:'Impacto com Congruência',nivel:'4',int:'Definir estado B com precisão',cta:'Aplicar para mentoria'},
+  {title:'Gosto de autoconhecimento não é o mesmo que prontidão para processo profundo',eixo:'Filtro de Prontidão',nivel:'1',int:'Filtrar curiosos e educar sobre critério de entrada',cta:'Aprofundar percepção'},
+  {title:'Não é ingratidão sentir que algo mais é possível — é percepção de potencial',eixo:'Impacto com Congruência',nivel:'2',int:'Nomear incômodo difuso sem julgamento',cta:'Identificar padrão por trás do incômodo'},
+  {title:'O que você já construiu pode ser a base, não o obstáculo',eixo:'Projeto Paralelo e Transição',nivel:'4',int:'Desfazer crença de que mudar exige destruir',cta:'Avaliar prontidão'},
+  {title:'Quem tem muitas respostas prontas raramente tem espaço para o que não conhece ainda',eixo:'Filtro de Prontidão',nivel:'1',int:'Filtrar rigidez cognitiva com elegância',cta:'Aprofundar percepção'},
+  {title:'A forma como você se cala nas reuniões diz tanto quanto o que você fala',eixo:'Relações como Espelho',nivel:'3',int:'Nomear padrão relacional de forma precisa',cta:'Participar do workshop'},
+  {title:'Antes de decidir o próximo passo, vale entender o que te parou no anterior',eixo:'Inconsciente e Sonhos Travados',nivel:'4',int:'Conectar travamento com padrão',cta:'Avaliar prontidão para mentoria'},
+  {title:'Trabalho que você sustenta com alegria tende a gerar mais impacto que o que você sustenta com esforço',eixo:'Trabalho sem Sofrimento',nivel:'4',int:'Conectar energia vital e contribuição',cta:'Aplicar para mentoria'}
+];
+
+function renderIdeas(filter){
+  var grid=document.getElementById('ideaGrid');
+  grid.innerHTML='';
+  ideas.forEach(function(d){
+    if(filter!=='all' && d.nivel!==filter) return;
+    var badges={'1':'l1','2':'l2','3':'l3','4':'l4','5':'l5'};
+    var div=document.createElement('div');
+    div.className='idea-item';
+    div.setAttribute('data-nivel',d.nivel);
+    div.innerHTML='<div class="idea-lv"><span class="lbadge '+badges[d.nivel]+'">Nível '+d.nivel+'</span></div>'
+      +'<div class="idea-title">'+d.title+'</div>'
+      +'<div class="idea-meta"><span class="imeta-tag">'+d.eixo+'</span></div>'
+      +'<div class="idea-int">'+d.int+'</div>'
+      +'<div class="idea-cta">'+d.cta+'</div>';
+    grid.appendChild(div);
+  });
+}
+
+window.filterIdeas=function(nivel,btn){
+  document.querySelectorAll('#ideaTabs .ftab').forEach(function(b){b.classList.remove('active')});
+  btn.classList.add('active');
+  renderIdeas(nivel);
+};
+
+renderIdeas('all');
+</script>
+</body>
+</html>

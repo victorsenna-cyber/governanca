@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Histórias de Líderes — Débora Delgado</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#f6f1ea; --card:#fffdf9; --ink:#3d352e; --soft:#6f6459; --line:#e7ddd1;
+    --accent:#3f6b57; --accent-dark:#2f5245; --salvia:#7f9c78; --argila:#a86b52; --dir:#4f8278;
+    --shadow:0 8px 30px rgba(60,70,55,.10);
+    --serif:"Fraunces",Georgia,serif; --sans:"Inter",system-ui,sans-serif;
+  }
+  *{box-sizing:border-box}
+  body{margin:0; font-family:var(--sans); background:var(--bg); color:var(--ink); line-height:1.72;}
+  .wrap{max-width:760px; margin:0 auto; padding:30px 22px 90px;}
+  header.hero{text-align:center; padding:40px 26px; background:linear-gradient(160deg,#3f6b57,#2f5245); color:#fff; border-radius:22px; box-shadow:var(--shadow); margin-bottom:18px;}
+  header.hero .kick{color:#cfe0d4; font-weight:700; letter-spacing:2px; font-size:.74rem; text-transform:uppercase;}
+  header.hero h1{font-family:var(--serif); font-weight:600; margin:10px 0 10px; font-size:2.2rem; line-height:1.1;}
+  header.hero p{margin:0 auto; color:#eaf2ec; font-size:.98rem; max-width:440px; font-style:italic;}
+
+  .intro{background:var(--card); border:1px solid var(--line); border-left:6px solid var(--accent); border-radius:14px; box-shadow:var(--shadow); padding:13px 20px; margin-bottom:16px; font-size:.9rem; color:var(--soft);}
+  .intro b{color:var(--accent-dark);}
+
+  .nav-bubbles{display:flex; flex-wrap:wrap; gap:9px; justify-content:center; margin-bottom:18px;}
+  .bub{width:44px; height:44px; border-radius:50%; border:2px solid var(--line); background:#fff; font-weight:800; color:var(--soft); cursor:pointer; font-size:1.02rem; display:flex; align-items:center; justify-content:center; position:relative; transition:.15s; font-family:inherit;}
+  .bub:hover{border-color:var(--accent);}
+  .bub.current{border-color:var(--accent-dark); box-shadow:0 0 0 3px rgba(63,107,87,.16);}
+  .bub.done{color:#fff;}
+  .bub.done.corpo{background:var(--argila); border-color:var(--argila);}
+  .bub.done.coracao{background:var(--salvia); border-color:var(--salvia);}
+  .bub.done.cabeca{background:var(--dir); border-color:var(--dir);}
+  .bub .sc{position:absolute; bottom:-8px; right:-6px; background:var(--accent-dark); color:#fff; font-size:.6rem; font-weight:800; border-radius:9px; padding:1px 5px; border:1.5px solid var(--card);}
+
+  .story{background:var(--card); border:1px solid var(--line); border-radius:18px; box-shadow:var(--shadow); padding:26px 28px 24px;}
+  .tipo{display:inline-flex; align-items:center; gap:7px; font-size:.64rem; font-weight:800; text-transform:uppercase; letter-spacing:1px; padding:4px 11px; border-radius:20px; color:#fff;}
+  .t-corpo{background:var(--argila);} .t-coracao{background:var(--salvia);} .t-cabeca{background:var(--dir);}
+  .story h2{font-family:var(--serif); font-weight:600; font-size:1.85rem; margin:12px 0 8px;}
+  .story p{margin:0 0 13px; font-size:1.02rem;}
+  .gap{height:14px;}
+  .espelho{background:#eef3ec; border:1px solid #d8e4d5; border-radius:13px; padding:15px 20px; margin-top:8px; font-family:var(--serif); font-weight:500; font-size:1.12rem; color:var(--accent-dark); font-style:italic; line-height:1.5;}
+
+  .rate{margin-top:16px; background:#faf6ef; border:1px solid #e7ddce; border-radius:13px; padding:15px 17px;}
+  .rate .rq{font-weight:700; font-size:.98rem; margin-bottom:9px;}
+  .scale{display:flex; flex-wrap:wrap; gap:6px;}
+  .scale button{flex:1; min-width:34px; padding:10px 0; border:1px solid var(--line); background:#fff; border-radius:9px; cursor:pointer; font-weight:700; color:var(--accent-dark); font-family:inherit; font-size:.96rem; transition:.12s;}
+  .scale button:hover{border-color:var(--accent);}
+  .scale button.on{background:var(--accent); color:#fff; border-color:var(--accent);}
+  .scale-ends{display:flex; justify-content:space-between; font-size:.76rem; color:var(--soft); margin-top:4px;}
+
+  .nav{display:flex; justify-content:space-between; align-items:center; gap:10px; margin:18px 4px 0; flex-wrap:wrap;}
+  .btn{border:none; border-radius:26px; padding:12px 24px; font-size:.98rem; font-weight:700; cursor:pointer; font-family:inherit;}
+  .btn-primary{background:var(--accent); color:#fff;} .btn-primary:hover{background:var(--accent-dark);}
+  .btn-ghost{background:none; color:var(--soft); padding:12px 10px;} .btn-ghost:hover{color:var(--accent-dark);}
+  .btn-result{background:var(--argila); color:#fff;} .btn-result:hover{background:#8a5334;}
+
+  /* resultado */
+  .res-head{background:linear-gradient(160deg,#3f6b57,#2f5245); color:#fff; border-radius:18px; box-shadow:var(--shadow); padding:28px 26px; text-align:center; margin-bottom:16px;}
+  .res-head h2{font-family:var(--serif); font-weight:600; font-size:1.7rem; margin:0 0 8px;}
+  .res-head p{margin:0 auto; font-size:.94rem; color:#eaf2ec; max-width:440px;}
+  .res-card{background:var(--card); border:1px solid var(--line); border-radius:16px; box-shadow:var(--shadow); padding:20px 22px;}
+  .res-item{display:flex; align-items:center; gap:12px; margin:10px 0; padding:6px 8px; border-radius:10px;}
+  .res-item.top{background:#eef3ec;}
+  .res-item .rn{width:32px; height:32px; border-radius:50%; color:#fff; font-weight:800; display:flex; align-items:center; justify-content:center; flex-shrink:0; font-size:.92rem;}
+  .rn.corpo{background:var(--argila);} .rn.coracao{background:var(--salvia);} .rn.cabeca{background:var(--dir);}
+  .res-item .rbody{flex:1; min-width:0;}
+  .res-item .rname{font-weight:700; font-size:.96rem;}
+  .res-item .rbar{height:9px; background:#ece4d7; border-radius:6px; overflow:hidden; margin-top:5px;}
+  .res-item .rbar > i{display:block; height:100%; border-radius:6px; background:var(--accent);}
+  .res-item .rscore{font-weight:800; color:var(--accent-dark); width:38px; text-align:right; font-size:1rem;}
+  .res-note{background:#f4ece2; border-left:4px solid var(--argila); border-radius:12px; padding:13px 17px; margin-top:16px; font-size:.92rem; color:var(--ink);}
+  .res-cta{background:linear-gradient(160deg,#4f8278,#3f6b57); color:#fff; border-radius:16px; padding:22px 24px; margin-top:16px; text-align:center;}
+  .res-cta h3{font-family:var(--serif); font-weight:600; font-size:1.3rem; margin:0 0 6px;}
+  .res-cta p{margin:0 auto 14px; font-size:.92rem; color:#eaf4f1; max-width:420px;}
+  .res-cta a{display:inline-block; background:#fff; color:var(--accent-dark); font-weight:700; text-decoration:none; padding:12px 26px; border-radius:24px;}
+
+  .foot{text-align:center; color:var(--soft); font-size:.8rem; margin-top:24px;}
+</style>
+
+<style>
+.lnr-nav{position:sticky;top:0;z-index:9999;display:flex;align-items:center;justify-content:space-between;gap:12px;background:#2f5245;color:#fff;padding:10px 18px;font-family:'Inter',system-ui,-apple-system,sans-serif;box-shadow:0 2px 12px rgba(0,0,0,.12);}
+.lnr-brand{color:#fff;font-weight:700;text-decoration:none;font-size:.98rem;letter-spacing:.3px;font-family:'Fraunces',Georgia,serif;}
+.lnr-links{display:flex;align-items:center;gap:4px;flex-wrap:wrap;}
+.lnr-links a{color:#e8f0ec;text-decoration:none;font-size:.85rem;font-weight:600;padding:6px 11px;border-radius:16px;}
+.lnr-links a:hover{background:rgba(255,255,255,.14);color:#fff;}
+.lnr-links a.lnr-cta{background:#a86b52;color:#fff;}
+.lnr-links a.lnr-cta:hover{background:#8a5334;}
+.lnr-toggle{display:none;background:none;border:none;color:#fff;font-size:1.35rem;cursor:pointer;line-height:1;}
+@media(max-width:640px){
+  .lnr-nav{flex-wrap:wrap;}
+  .lnr-toggle{display:block;}
+  .lnr-links{display:none;flex-direction:column;align-items:stretch;width:100%;order:3;gap:2px;padding-top:6px;}
+  .lnr-links.open{display:flex;}
+  .lnr-links a{padding:9px 8px;}
+}
+</style>
+</head>
+<body>
+<nav class="lnr-nav">
+  <a class="lnr-brand" href="index.html">Liderança na Raiz</a>
+  <button class="lnr-toggle" aria-label="Abrir menu" onclick="var l=this.parentNode.querySelector('.lnr-links'); l.classList.toggle('open');">☰</button>
+  <div class="lnr-links">
+    <a href="index.html">Início</a>
+    <a href="comece.html">Comece por aqui</a>
+    <a href="quiz.html">Diagnóstico da liderança</a>
+    <a href="servicos.html">Serviços</a>
+    <a href="membros.html">Entrar</a>
+    <a class="lnr-cta" href="consultoria.html">Conversa gratuita</a>
+  </div>
+</nav>
+<div class="wrap">
+
+  <header class="hero">
+    <div class="kick">Histórias baseadas no Eneagrama</div>
+    <h1>Histórias de Líderes</h1>
+    <p>Cada história é um espelho. Parte de você se revela em uma delas. Qual é a sua?</p>
+  </header>
+
+  <div id="app"></div>
+
+  <p class="foot">Histórias de Líderes · baseadas no Eneagrama · cada história é um espelho, não um veredito · Débora Delgado</p>
+</div>
+
+<script>
+const CONSULTORIA_URL = "consultoria.html";
+
+const STORIES = [
+  { n:1, nome:"Marina", centro:"corpo",
+    cena:[
+      "Marina sempre chega cedo ao trabalho. Antes mesmo do time entrar na sala, ela já está revisando o relatório que vai enviar ao diretor. Olha cada detalhe: um número desalinhado, uma vírgula fora do lugar. Só de encontrar já sente um desconforto e pensa que não revisou tudo como deveria.",
+      "Esse olhar atento vem junto com um orgulho por ser comprometida. Ao mesmo tempo, existe uma pressão constante de uma voz interna que não dá trégua. É como se dissesse o tempo todo: \"Você pode fazer melhor. Você deve fazer melhor.\"",
+      "Essa mesma voz aparece nas reuniões. Quando alguém do time apresenta um trabalho, Marina reconhece o esforço, mas sua atenção vai direto para os pontos de melhoria. Então ela diz: \"Ficou bom, mas dá para ajustar isso aqui.\" Os colegas sabem que a intenção é boa, mas, ainda assim, saem da sala com a sensação de nunca serem bons o suficiente.",
+      "Marina valoriza ética e responsabilidade acima de tudo. É o que sustenta sua forma de liderar. Por isso, quando vê alguém do time relaxado ou entregando algo de qualquer jeito, o incômodo é imediato. No íntimo, ela pensa: \"Isso é irresponsabilidade. Como é que conseguem não ligar?\"",
+      "No fundo, ela queria que todos seguissem o mesmo padrão que ela, um padrão de excelência elevado. Mas sabe que esse padrão a sobrecarrega. Muitas vezes prefere refazer um trabalho do zero a deixar passar algo que considera errado.",
+      "Nas reuniões, quando tem certeza de algo, Marina pode soar rígida, dizendo como deve ou não deve ser feito. Alguns a veem como inflexível. Para ela, no entanto, é apenas compromisso com o que acredita ser o melhor caminho para a empresa.",
+      "E, apesar de toda essa cobrança, existem momentos em que consegue relaxar. Quando vê um projeto pronto, alinhado, sem falhas, sente uma paz rara. É como se, por alguns minutos, o mundo finalmente estivesse em ordem. Marina pensa: \"Ah, é tão bom quando está tudo certo.\""
+    ],
+    dentro:[
+      "Na vida pessoal, também é uma pessoa super correta. Ela compreende que a harmonia vem com observar as regras, daquela ideia de que combinado não sai caro, sabe? Ela não apenas segue as normas, mas também consegue estabelecê-las.",
+      "Marina tem um forte senso de conduta, sabendo bem o que é certo, o que é errado, o que é bom ou ruim. Tem esse sensor interno que avalia constantemente o mundo ao seu redor, seja para ela mesma ou para os outros. Geralmente recebe muitos elogios pelos seus trabalhos excelentes, pela clareza, pela didática, pelo detalhamento e pela profundidade.",
+      "No dia a dia, tem uma lista interminável de tarefas e costuma até mesmo trabalhar até tarde. Recusa ceder a qualquer desejo interno, aquela vontade de tomar um sorvete ou ir ao cinema antes de terminar o trabalho, não.",
+      "Depois do dia exaustivo de trabalho, com muitos itens riscados da sua lista, volta para casa e se depara com uma pia cheia de louça suja. Já falou tantas vezes pra não deixarem a pia assim, dá uma raiva. E quando pensa que não, já descontou a frustração do dia em cima de quem estava por perto. Ela percebe que tem essa irritação interna que a acompanha no dia a dia, uma insatisfação que às vezes incomoda.",
+      "Às vezes Marina imagina como seria a vida sem essa vozinha interna tão crítica, que constantemente a avalia e faz com que ela se sinta mal consigo mesma. No fundo, ela anseia às vezes por ser mais leve, relaxada, capaz de aproveitar a vida, tanto no trabalho quanto fora dele."
+    ],
+    pergunta:"E você? Também busca essa leveza interna e flexibilidade?" },
+
+  { n:2, nome:"Juliana", centro:"coracao",
+    cena:[
+      "Juliana entra na empresa todos os dias com um pensamento claro: \"Como eu posso ajudar meu time hoje?\" Para ela, a base do trabalho são as relações humanas. Não basta que as tarefas sejam feitas; é essencial que as pessoas se sintam bem nesse processo.",
+      "Logo no início da manhã, Juliana passa em cada mesa perguntando: \"Ei, como você está? Precisa de alguma coisa para conseguir entregar sua demanda?\" Seu time se sente visto e acolhido. Muitos dizem que ela tem uma habilidade quase natural de perceber quando alguém não está bem, mesmo sem a pessoa falar nada.",
+      "No fundo, Juliana adora sentir que é indispensável na rotina do seu time. Cada sorriso e cada palavra de gratidão funcionam como um combustível invisível para seguir dando o melhor de si.",
+      "Para aliviar a carga de alguém, muitas vezes ela assume mais tarefas do que deveria. E assim, se pega à noite fazendo relatórios, revisando apresentações, resolvendo conflitos silenciosamente. O resultado disso tudo? Cansaço. Mas, no fundo, a sensação de ver o outro bem parece compensar.",
+      "Porém, em alguns momentos, algumas pessoas dizem não precisar de ajuda e pedem por mais espaço. Quando isso acontece, Juliana sente algo estranho, como se aquela pessoa não gostasse dela. Logo vem o pensamento: \"Será que eu fiz algo de errado com ele?\"",
+      "Em reuniões, evita confrontos diretos. Tem receio de magoar as pessoas e, por isso, demora a dar feedbacks críticos. Quando precisa apontar algo, gasta muito tempo escolhendo as palavras certas. Primeiro elogia com entusiasmo: \"Nossa, seu trabalho está maravilhoso, adorei a parte A, B, C, ficou muito bem feito mesmo!\" E depois de muitos elogios, só então acrescenta, quase de passagem: \"...tem só um detalhezinho que a gente pode ajustar.\" No íntimo, teme que até uma crítica pequena afaste alguém dela.",
+      "Por outro lado, Juliana tem um dom raro: despertar confiança. As pessoas se abrem com ela, compartilham dificuldades, pedem conselhos. Assim, consegue unir o time em um propósito comum, porque faz cada um se sentir único e especial.",
+      "Quando um projeto grande termina e ela vê a equipe comemorando, sente uma emoção bem conhecida, como se o coração não coubesse no peito de tão expandido que está. Então pensa: \"Cada esforço valeu a pena.\""
+    ],
+    dentro:[
+      "Por baixo dessa generosidade, Juliana é uma pessoa incrivelmente generosa e empática, daquelas que a gente olha e fala, ai que alma bondosa. Parece estar sempre disponível para as outras pessoas, com uma habilidade incrível de intuir o que elas precisam. É quase um dom: ela olha para alguém e percebe que a pessoa está com sede antes mesmo dela perceber. E faz isso com tanta frequência que nem repara que faz.",
+      "Ela se esforça para ser assim, não porque é difícil, mas porque é assim que ela gosta de ser. No entanto, quando os seus esforços não são reconhecidos ou valorizados, ou quando alguém não quer a sua ajuda, dói. Ouvir uma crítica ou uma desaprovação a afeta muito, porque ela se esforça tanto para ajudar, tanto para ser boa.",
+      "Nos relacionamentos, tem dificuldade de ser assertiva, de ser direta mesmo para dizer que a pessoa não está fazendo um bom trabalho ou não está agindo da melhor maneira. Acaba sendo muito indireta para tentar apaziguar, para preservar o relacionamento. E muitas vezes passa dos próprios limites.",
+      "Às vezes ela até percebe que não se dedica tanto a si mesma. Está sempre cuidando do outro. É como se cuidasse do jardim do outro constantemente, esquecendo do seu próprio jardim. Muitas vezes acha que nem precisa da ajuda dos outros, porque já consegue dar conta de si mesma. Mas os outros precisam dela. Até que esse comportamento começa a pesar. Principalmente na hora em que ela vai regar o jardim do outro e a porta está fechada, e o outro nem queria que ela entrasse. Ela se percebe então em um relacionamento não tão equilibrado assim."
+    ],
+    pergunta:"E você? Já percebeu que às vezes cuida tanto do jardim do outro que esquece de regar o seu próprio?" },
+
+  { n:3, nome:"Marcos", centro:"coracao",
+    cena:[
+      "Marcos costuma chegar cedo ao escritório, já com a agenda organizada e a lista de metas na cabeça. Para ele, liderança é sinônimo de resultado. O que mais lhe dá energia é ver os projetos concluídos, de preferência antes do prazo, com aquele brilho de eficiência que faz todos notarem o seu sucesso.",
+      "Ele se move rápido. Se há um problema no caminho, logo busca a solução mais direta. O pensamento que o guia é claro: \"Não temos tempo a perder, precisamos entregar.\" Esse foco inspira o time, que sente que, com Marcos, as coisas realmente acontecem.",
+      "Dá para imaginar que tirar férias não é nada fácil para ele, né? Afinal, se Marcos sai de férias, parece que as coisas deixam de acontecer.",
+      "Ele também tem habilidade em adaptar o discurso conforme a plateia. Consegue conversar com o diretor mostrando números e resultados; e com a equipe, trazer entusiasmo e clareza. Marcos fala a língua de cada setor, a língua de cada nível hierárquico. Sabe ler o ambiente e se ajustar ao que é valorizado ali.",
+      "No fundo, porém, carrega uma pressão gigante: precisa ser visto como competente. Quando recebe elogios pelo desempenho, se sente validado. Mas quando algo dá errado, quando o resultado não vem ou quando alguém supera sua marca, surge uma angústia quase silenciosa: \"Não posso fracassar. Preciso reverter esse quadro.\"",
+      "Às vezes, a busca incessante por produtividade o afasta das próprias emoções. Mesmo cansado, não para. Respira, toma um café e continua entregando. Se sente insegurança, não demonstra. Afinal, mostrar fragilidade para o time pode comprometer sua imagem de líder forte.",
+      "Ainda assim, o impacto de Marcos é inegável. Sua energia e capacidade de execução transformam qualquer meta em conquista concreta. E, no final do trimestre, quando olha para os gráficos em alta, respira fundo e pensa: \"Que orgulho! Bom, conseguimos bater todas as metas... e aí, bora para a próxima?\""
+    ],
+    dentro:[
+      "Marcos sempre foi admirado pelo seu sucesso. É mestre em atingir objetivos ambiciosos, deixando todo mundo ao seu redor boquiaberto com suas conquistas. Encara os desafios com ousadia e otimismo. Também tem uma incrível capacidade de se adaptar. Não só lê os ambientes, como percebe com facilidade o que as pessoas ali esperam dele. Consegue adaptar a comunicação para diferentes públicos, como se tivesse uma roupa adequada para cada lugar. E o melhor, faz isso com muita naturalidade. É muito fácil para ele se transformar no que é melhor para o outro.",
+      "Essa busca incessante pelo sucesso faz com que ele concentre toda a sua energia no trabalho, esquecendo às vezes de outros aspectos da vida. Às vezes falta tempo para a família, para os amigos e até mesmo para o lazer. O que ele não contava é que, com o tempo, esse comportamento começou a pesar. Percebeu a dificuldade de apreciar o momento sem um notebook do trabalho do lado. Passar um dia no parque à toa com a família? Ah, perda de tempo, né? Mas não era isso que a família dele achava. Eles pediam por mais proximidade e tempo de qualidade, e às vezes os pedidos vinham até mesmo carregados de emoção.",
+      "Marcos começou então a sentir uma vontade de mudar, de ter uma vida um pouco mais autêntica, sem se doar tanto aos seus objetivos e desafios profissionais. Sem se moldar tanto para atender as expectativas dos outros. Começou a se questionar sobre o que ele realmente gostava, o que realmente lhe fazia bem, o que ele sentia."
+    ],
+    pergunta:"E você? É fácil ou difícil se moldar para atender o que o outro espera de você?" },
+
+  { n:4, nome:"Carolina", centro:"coracao",
+    cena:[
+      "Carolina sempre diz que trabalho não é só o que se faz, mas por que se faz. Para ela, é essencial que as atividades tenham sentido, tenham valor. Por isso, liderar não é apenas guiar pessoas para cumprir tarefas, mas também ajudar o time a encontrar significado no dia a dia do trabalho.",
+      "Nas reuniões, costuma trazer perguntas que vão além dos números: \"O que isso representa para a gente como equipe? O que o cliente realmente precisa e espera desse projeto? Como estamos impactando as pessoas com o que estamos entregando?\" Seu olhar profundo muitas vezes surpreende os colegas, acostumados com líderes que falam apenas de prazos e métricas.",
+      "Carolina valoriza intensidade. Quando percebe alguém falando mais do mesmo, sente desconforto e pensa: \"Não quero conversas superficiais. Isso não gera resultados excepcionais.\" Isso a leva a criar vínculos fortes com algumas pessoas. Mas, por outro lado, também pode se sentir isolada quando não encontra quem compartilhe da mesma profundidade.",
+      "No íntimo, carrega uma sensibilidade intensa. Às vezes, se compara com outros líderes: \"Nossa, eles parecem tão confiantes, tão completos... O que será que falta em mim para ser esse líder todo como eles?\" Em outros momentos, porém, a comparação se inverte. Carolina consegue entregar algo diferente: um projeto com alma, que surpreende pela qualidade, pela profundidade e inovação. Os clientes amam, os líderes reconhecem. Nessas horas, ela olha para o colega que apenas cumpriu o prazo e pensa: \"Ele nunca faria isso que eu fiz.\" Essa oscilação entre inferioridade e superioridade a acompanha em silêncio.",
+      "Mas, quando fala com autenticidade, seu impacto é único. Sua equipe se sente inspirada e passa a mostrar quem realmente é, sem máscaras. Carolina tem o dom de criar um espaço onde a vulnerabilidade é força e não fraqueza.",
+      "No final de um projeto, ao ver a entrega do time, não celebra apenas o resultado. Para ela, o mais importante é perceber o impacto: sentir que o trabalho transforma a vida das pessoas e que cada membro da equipe sai dali mais forte e mais orgulhoso de si mesmo."
+    ],
+    dentro:[
+      "Carolina é uma pessoa muito original, daquele tipo que você sabe que é diferente, que é único. Ela vive um mundo interno intenso, cheio de emoções. Não gosta de superficialidade e dificilmente se satisfaz com respostas prontas. E por isso mesmo não curte muito quando seus projetos são tratados como mais do mesmo. Possui uma imensa empatia emocional, o que faz com que compreenda dores e alegrias de forma muito vívida.",
+      "Ela parece estar sempre em busca de algo. É como se o que ela faz ainda não fosse suficiente, parece que tem sempre algo faltando. E assim segue idealizando projetos futuros, oportunidades de carreira e, quem sabe, até relacionamentos. Às vezes, viver muito nesse futuro idealizado gera uma dificuldade de ficar presente, de valorizar o aqui e agora.",
+      "Carolina também tem dificuldade em receber elogios. Apesar de desejar reconhecimento, muitas vezes questiona internamente se o que ouviu é verdadeiro. Por isso, se compara com os outros, e às vezes se sente inferior, e outras superior.",
+      "Em momentos de tristeza, vive suas emoções com intensidade. Mas também é capaz de transformar essa dor em algo belo, seja uma reflexão, uma criação artística ou uma conexão genuína com alguém. No fundo, sabe que seu mundo emocional é diferente do da maioria, e é justamente essa diferença que a torna especial. Recentemente, percebeu uma vontade de encontrar mais leveza em meio à profundidade, mais confiança em meio à vulnerabilidade, e mais paz dentro da riqueza emocional que carrega."
+    ],
+    pergunta:"E você? Também consegue ficar em contato com a própria tristeza até que ela passe?" },
+
+  { n:5, nome:"Carlos", centro:"cabeca",
+    cena:[
+      "Carlos chegava cedo ao escritório, antes mesmo do movimento começar. Gostava daquele tempo de silêncio, onde podia abrir seus relatórios e mergulhar nos dados com calma. Para ele, a liderança se fazia primeiro entendendo profundamente o cenário, antes de falar qualquer palavra.",
+      "Seus colegas notavam: Carlos não era o líder que falava o tempo todo, nem aquele que aparecia em todas as rodas. Mas, quando abria a boca, o que dizia vinha com tanto embasamento que era difícil alguém contestar. Ele tinha o dom de organizar as informações, enxergar padrões que ninguém percebia e transformar um mar de dados em clareza para o time.",
+      "Em uma reunião, por exemplo, enquanto todos discutiam animadamente sobre uma nova estratégia comercial, Carlos permanecia em silêncio, anotando, observando cada detalhe. Quando parecia que o grupo não chegaria a um consenso, ele levantava a cabeça e, de forma calma e direta, mostrava os números que sustentavam uma decisão clara. O ambiente se aquietava, não pelo tom de voz, mas pela precisão da análise.",
+      "Seu time sabia que podia confiar nele para oferecer direção quando as emoções se exaltavam demais. Mas também percebiam que Carlos mantinha certa distância: não se envolvia muito em conversas pessoais ou trocas emocionais. Alguns sentiam falta dessa proximidade, mas entendiam que seu jeito de cuidar era outro, oferecendo segurança pelo conhecimento.",
+      "O que mais o motivava era ver a equipe crescer em autonomia. Preferia delegar com clareza, dar espaço para que cada um desenvolvesse seu próprio caminho. No fundo, sua liderança era como um farol: discreta, às vezes até invisível, mas iluminando o suficiente para que todos soubessem para onde ir."
+    ],
+    dentro:[
+      "Desde jovem, Carlos mostrou um interesse incomum por aprender e entender o mundo ao seu redor. Para ele, o conhecimento era a chave para lidar com o mundo e suas incertezas. Sempre foi um observador atento e crítico. Tinha uma vontade genuína de compreender as coisas em sua essência e muitas vezes se afastava de festas e encontros para se aprofundar em estudos. E com essa mente analítica e cheia de conhecimento, se tornou referência nas suas áreas de interesse. E olha, às vezes ele achava que ainda não sabia o suficiente, mesmo quando o que sabia era mais do que 99% da população.",
+      "Outra qualidade dele era a calma em meio ao caos. Era o cabeça para resolver qualquer problema quando todo mundo estava sem chão, perdido em suas emoções. Não é que ele não sentisse emoções. Ele sentia, mas preferia sentir sozinho, na sua casa ou até mesmo no quarto.",
+      "Mas de tanto preferir ter o seu espaço e ficar no seu canto, começou a ouvir das pessoas queridas o quanto elas gostariam de saber mais do que ele pensava e sentia. As pessoas pediam por mais conexão, muitas vezes se sentiam distantes por ele não compartilhar muito do seu mundo interior e pelo desejo constante de privacidade. Ele gostaria de compartilhar suas emoções, era de fato uma dificuldade que sentia, parece que na hora simplesmente trava. Desejava ser mais espontâneo e capaz de se revelar de forma autêntica, quem sabe até ir para a ação mais rápido sem precisar ter certeza."
+    ],
+    pergunta:"E você? Tem a sua privacidade como algo inegociável?" },
+
+  { n:6, nome:"José", centro:"cabeca",
+    cena:[
+      "José conhece todas as regras da empresa. Sabe explicar como funcionam as férias, quais são os processos de aprovação, o que pode e o que não pode em cada situação. Se alguém do time tem dúvida, logo pergunta: \"José, como é que faz isso aqui?\" e ele sabe a resposta.",
+      "Ele tem facilidade em orientar seus liderados, porque entende a cultura e as normas como poucos. E não é só conhecimento: José é muito responsável. Tem um senso de equipe forte e se coloca como parceiro o tempo todo. O que mais gosta é de garantir que as pessoas estejam seguras para trabalhar.",
+      "Quando surge um projeto novo, especialmente de um cliente grande e desafiador, o time se anima com as ideias, já imaginando o sucesso. José observa em silêncio e começa a testar mentalmente cada detalhe: \"Esse prazo da gráfica está muito apertado. E se atrasar? Vamos colocar uma margem.\" ou \"Precisamos de 100 litros de água... mas temos essa capacidade aqui dentro? O fornecedor vai dar conta dessa demanda? Talvez seja melhor já prever um segundo fornecedor.\"",
+      "Alguns podem achar que José joga um balde de água fria no entusiasmo do grupo. Mas, na prática, ele evita que a equipe seja surpreendida por problemas que poderiam ter sido previstos. Sua mente funciona como um radar de riscos, ajustando o plano para que ele seja mais realista e seguro.",
+      "Quando algo inesperado acontece, José consegue acessar os caminhos que já tinha antecipado. É rápido em propor alternativas viáveis e escolher a rota de menor risco. Essa capacidade dá confiança ao time, que sabe que ele tem sempre um plano B na manga.",
+      "Sua lealdade é um de seus maiores valores. Quando sente que pode confiar nas pessoas, se torna um parceiro comprometido, alguém que veste a camisa de verdade. Mas até chegar lá, observa e mede cada passo. O desafio é quando José exagera na busca por prever todos os cenários. Nesses momentos, o time pode sentir que a energia fica presa nos riscos em vez de avançar. O equilíbrio aparece quando ele se permite dar passos confiantes mesmo sem ter todas as respostas, assumindo riscos calculados e focando em como fazer o projeto dar certo."
+    ],
+    dentro:[
+      "José é uma pessoa precavida, prevenida. É muito fácil para ele perceber os riscos e ver todos os lados de uma decisão, planejando cuidadosamente cada passo. Tem muito respeito pelas autoridades, não gosta de infringir as leis ou regras dos lugares. Mas no fundo desconfia delas. Espera que, para alguém ser autoridade, essa pessoa precise ser fora da curva e saber tomar excelentes decisões. As autoridades próximas, por sua vez, às vezes se sentem injustiçadas por ele e se incomodam, porque José é uma pessoa muito questionadora. De fato, sabe fazer muitas boas perguntas, daquelas que as pessoas ficam sem resposta.",
+      "José é extremamente leal e tem uma capacidade de prevenir problemas antes que aconteçam. Ajuda o grupo a enxergar os riscos, por isso é fundamental para trazer realismo e segurança. Mas, de tanto observar o que pode dar errado, acaba tendo que lidar com o medo e a ansiedade, embora nem sempre esteja consciente disso. Também tem uma tendência de procurar por certezas na vida, mesmo que raramente as encontre. E, quando encontra, logo duvida de si mesmo. E em seguida duvida das próprias dúvidas.",
+      "No fundo, morre de medo de ser punido se não agir da forma esperada, mesmo que sem intenção, por isso busca entender como as coisas funcionam. Viver em risco não é mesmo a sua praia. Hoje, já se cansou de viver nesse ciclo de insegurança. Deseja confiar mais em si mesmo e tomar decisões com mais facilidade."
+    ],
+    pergunta:"E você? Também vive calculando os riscos da vida?" },
+
+  { n:7, nome:"Ricardo", centro:"cabeca",
+    cena:[
+      "Quando Ricardo assumiu a liderança do time de inovação, a sala ganhou outra energia. Ele chegava sempre com ideias novas, histórias inspiradoras e aquela sensação de que \"tudo é possível\". Nas reuniões, é comum ouvi-lo dizer: \"Gente, e se a gente tentasse de um jeito totalmente diferente?\"",
+      "Sua mente parece uma fábrica de possibilidades. Enquanto alguns colegas ficam presos ao problema, ele já está dez passos à frente, imaginando soluções criativas. O time se contagia com esse entusiasmo: é como se, ao lado dele, se abrissem portas para enxergar caminhos que antes ninguém percebia.",
+      "Ricardo também tem uma habilidade impressionante de improvisar. Quando um projeto trava porque o fornecedor desiste em cima da hora, ele simplesmente respira fundo e diz: \"Vamos encontrar uma solução.\" Sua confiança de que tudo vai dar certo transmite leveza ao time, mesmo em momentos de pressão.",
+      "Mas há um lado que nem sempre é fácil. Seu desejo de manter o ambiente sempre animado faz com que evite conversas difíceis. Quando alguém não entrega bem, prefere contornar a situação com humor ou motivação extra, em vez de dar um feedback direto. Às vezes, isso gera confusão sobre expectativas.",
+      "Ele também se entusiasma com muitas iniciativas ao mesmo tempo. Se deixar, começa três projetos novos antes de terminar o primeiro. O time, embora inspirado, às vezes se sente sobrecarregado tentando acompanhar tantas frentes abertas.",
+      "Apesar disso, todos reconhecem que Ricardo tem um talento especial: mostrar que o futuro pode ser mais leve, criativo e cheio de oportunidades. Sua liderança não é sobre controlar cada detalhe, mas sobre abrir horizontes. O maior desafio é manter os pés no chão sem perder essa energia que faz o time acreditar que sempre há um caminho possível."
+    ],
+    dentro:[
+      "Quando a gente pensa em Ricardo, é pura alegria. Um curioso e energético. Ele tem um espírito aventureiro e uma sede insaciável por novas experiências. Quer aproveitar tudo o que a vida tem a oferecer. É conhecido pela habilidade de transformar qualquer situação em algo divertido. Essa alegria contagiante atrai as pessoas para perto, e ele tem muitos amigos e conhecidos.",
+      "Em busca de novas aventuras, adora participar de novos projetos e iniciativas, e tem dificuldade de dizer não para qualquer coisa que pareça legal. Nesse movimento constante, mal dá tempo de perceber qualquer silêncio ou vazio dentro de si mesmo. No entanto, ele sabe que não gosta muito de desconforto e tristeza. Talvez por isso tenha aversão a situações entediantes.",
+      "Ricardo se assusta quando tem muita coisa para fazer. Participar de muitas iniciativas ao mesmo tempo, né? Nesses momentos pensa: \"Ai, será que vai dar tempo da atividade física, do encontro com os amigos, do vinho?\" E aí vem o medo de ficar preso em atividades não prazerosas ou difíceis. Quando isso acontece, parece que o foco some. E, sem foco, o desempenho no trabalho pode não ser o mesmo. Dá para contornar com o líder, mas no fundo incomoda. Bate até uma dúvida se ele é mesmo tão capaz quanto parece ser.",
+      "Foi aí que decidiu que era hora de fazer algumas mudanças na vida. Queria aprender a se concentrar em atividades específicas, ganhar mais profundidade em alguns assuntos e manter um compromisso mais sólido com suas responsabilidades."
+    ],
+    pergunta:"E você? Também tem medo de não viver uma vida cheia de alegria e prazeres?" },
+
+  { n:8, nome:"Helena", centro:"corpo",
+    cena:[
+      "Quando um problema sério surgiu na empresa, todos hesitaram. O cliente mais importante estava prestes a cancelar um contrato porque o time não conseguia entregar no prazo. Enquanto uns discutiam desculpas, outros se calaram, com medo de assumir responsabilidade.",
+      "Foi nesse momento que Helena entrou em cena. Sem rodeios, assumiu a liderança da situação. Reuniu o time e, em tom firme, disse: \"Não temos tempo para lamentações. O que precisa ser feito agora para virar o jogo?\" Sua energia direta trouxe clareza imediata. Alguns sentiram a pressão, mas também o alívio: alguém estava no comando, disposto a enfrentar a crise.",
+      "Enquanto outros evitavam conflitos, Helena não hesitou em confrontar o cliente, olho no olho, mostrando segurança. Não prometeu o impossível, mas garantiu o essencial: \"Pode confiar. Vamos resolver e, se for preciso, eu assumo as consequências.\" Essa postura firme gerou respeito. O cliente, que estava prestes a desistir, deu mais prazo.",
+      "Nos bastidores, ela se irritou com a lentidão de alguns colegas e chegou a pensar em fazer tudo sozinha. Mas respirou fundo e decidiu delegar, cobrando resultados de forma clara. Ao final, mesmo com tensão e cansaço, o time conseguiu entregar.",
+      "Alguns comentaram que Helena havia sido dura. Outros disseram que se sentiram protegidos. No fundo, ela sabia: seu papel foi garantir que ninguém fosse esmagado pelo peso da situação, e, se fosse preciso, estaria lá para segurar o impacto. Essa é a marca de Helena como líder: intensidade, coragem e disposição de lutar pelo que acredita. Às vezes, pode ser demais. Mas, para quem está ao seu lado, ela é a presença que garante que, mesmo nas tempestades, a equipe não vai naufragar."
+    ],
+    dentro:[
+      "Helena é uma pessoa forte. Não se amedronta diante de desafios; simplesmente faz as coisas acontecerem. Atua com força e vigor nos seus projetos, mesmo que isso signifique trabalhar longas horas e com intensidade. Ao chegar em casa, ainda é aquela que resolve e dá conta dos problemas dos seus familiares. Não hesita em proteger aqueles que acredita que foram tratados de forma desigual ou injusta. Cuida das pessoas que ama restaurando qualquer injustiça que tenha acontecido com elas. Isso faz com que entre em conflitos por elas, e às vezes sinta até mesmo que precisa manter um controle de perto para garantir que essas pessoas deem conta.",
+      "E assim, a cada confronto ganho e a cada problema resolvido, reforça ainda mais a sua força. No entanto, esse jeito de ser começou a gerar alguns efeitos indesejados. Recebeu comentários de pessoas queridas dizendo que sentiam medo dela, que nem sempre tinham coragem de dizer o que pensavam ou como se sentiam. Para Helena aquilo não fazia muito sentido, afinal sempre protegeu e resolveu o problema dos outros. Mas ouvir isso incomodou, e foi nesse incômodo que algo novo apareceu.",
+      "Com o tempo percebeu que se conectar com a própria vulnerabilidade é difícil, parece arriscado demais. Talvez por isso as pessoas também não se aproximem tanto para ajudá-la. Lembrou da última vez que adoeceu, e de como ninguém fez por ela o que ela sempre fez pelos outros."
+    ],
+    pergunta:"E você? Já sentiu que a sua força é a sua luz, mas também pode ser a sua sombra?" },
+
+  { n:9, nome:"Renato", centro:"corpo",
+    cena:[
+      "Quando Renato foi convidado a liderar o time, pensou: \"Por que eu?\" Ele sempre gostou de fazer um trabalho bem feito, mas nunca buscou a liderança. Achava mais confortável não ser o centro das atenções. Mas o time gostava da calma dele, da forma como conseguia lidar com problemas e tensões sem perder a serenidade, e isso acabou pesando na escolha.",
+      "Nos primeiros meses, Renato percebeu que seu maior desafio não era organizar processos ou cobrar prazos, mas lidar com os conflitos que surgiam. Quando duas pessoas discutiam, ele rapidamente encontrava uma forma de apaziguar a situação. Intervinha com alguma frase ali que fazia cada um ser ouvido, sem alimentar o conflito. Assim, evitava que a chama virasse incêndio, e o time o admirava por isso.",
+      "Por dentro, no entanto, carregava uma angústia silenciosa. Muitas vezes aceitava decisões da diretoria sem questionar, mesmo quando discordava. Sentia um peso no estômago, como se dissesse \"sim\" por fora e \"não\" por dentro. Preferia engolir a insatisfação a enfrentar um conflito direto.",
+      "Em algumas reuniões, escutava muito antes de se posicionar, às vezes até demais. Sabia o que pensava, mas demorava a pedir a palavra e, em seguida, alguém já tinha se posicionado sobre o tema. E o pior, a pessoa dizia exatamente o que ele ia dizer e ganhava vários créditos por isso.",
+      "Ao mesmo tempo, Renato tinha uma habilidade rara: seu time confiava nele porque sentia que ele não tinha interesses ocultos. Ele queria, de verdade, o bem de todos. E, quando precisava tomar decisões difíceis, buscava o consenso, mesmo que isso levasse mais tempo. Para ele, mais importante do que estar certo era manter o grupo unido.",
+      "No fundo, Renato desejava que todos se sentissem bem, mas às vezes se esquecia de si nesse processo. Seu maior aprendizado como líder foi perceber que harmonia não significa ausência de conflito, e que a sua voz também precisava ocupar espaço para que a paz fosse verdadeira."
+    ],
+    dentro:[
+      "Renato é uma pessoa que emana paz. Raramente se envolve em conflitos e tem a habilidade de manter a harmonia à sua volta. Mesmo que esteja ocupado, as pessoas se sentem à vontade de ir até ele e pedir ajuda. Ele gosta de ajudar as pessoas, mas é comum que, ao final do dia, sinta uma ansiedade por não ter realizado as tarefas que se comprometeu a fazer, especialmente aquelas que eram para e por ele mesmo.",
+      "Sente-se procrastinador e logo se distrai para fugir desse incômodo. Tem dificuldade de colocar limites, como se os problemas dos outros fossem sempre maiores do que os seus. Mas tem uma habilidade especial: simplificar o que pode ser simplificado. É prático e muito bom em ir para a ação, desde que não tenha um conflito envolvido. Também é ótimo em gerar harmonia nas relações e nos grupos.",
+      "É humilde, não espera reconhecimento. Mas não gosta quando deixa de falar algo na reunião e logo em seguida alguém diz a mesma coisa e revoluciona a forma de todos pensarem. Nessas horas pensa: \"Por que eu não expus a minha ideia mesmo?\" Também gostaria de aprender a dizer não quando necessário e a se posicionar com facilidade."
+    ],
+    pergunta:"E você? Já percebeu que, ao evitar o conflito para manter a paz, pode acabar deixando de ocupar o seu próprio lugar?" }
+];
+
+const CENTRO_LABEL = {corpo:"corpo", coracao:"coração", cabeca:"cabeça"};
+const scores = {}; STORIES.forEach(s=> scores[s.n]=null);
+let cur = 0;        // índice da história atual
+let screen = 'read';
+
+function esc(s){return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
+
+function bubblesHtml(){
+  let h='<div class="nav-bubbles">';
+  STORIES.forEach((s,i)=>{
+    const done = scores[s.n]!==null;
+    const cls = ['bub', done?('done '+s.centro):'', i===cur&&screen==='read'?'current':''].join(' ');
+    const badge = done ? `<span class="sc">${scores[s.n]}</span>` : '';
+    h += `<button class="${cls}" onclick="goStory(${i})">${s.n}${badge}</button>`;
+  });
+  h += '</div>';
+  return h;
+}
+
+function scaleHtml(typeN){
+  const val = scores[typeN];
+  let h='<div class="scale">';
+  for(let n=0;n<=10;n++){ h += `<button class="${val===n?'on':''}" onclick="setScore(${typeN},${n})">${n}</button>`; }
+  h += '</div>';
+  return h;
+}
+
+function readHtml(){
+  const s = STORIES[cur];
+  const cena = s.cena.map(p=>`<p>${esc(p)}</p>`).join('');
+  const dentro = s.dentro.map(p=>`<p>${esc(p)}</p>`).join('');
+  const rated = Object.values(scores).filter(v=>v!==null).length;
+  return `
+    <div class="intro">Leia sem pressa e, ao final de cada história, dê uma nota de <b>0 a 10</b> para o quanto você se reconhece nela. No fim, você vê onde mais se identificou. É um espelho, não um veredito.</div>
+    ${bubblesHtml()}
+    <div class="story">
+      <span class="tipo t-${s.centro}">Tipo ${s.n} · ${CENTRO_LABEL[s.centro]}</span>
+      <h2>${esc(s.nome)}</h2>
+      ${cena}
+      <div class="gap"></div>
+      ${dentro}
+      <div class="espelho">${esc(s.pergunta)}</div>
+      <div class="rate">
+        <div class="rq">De 0 a 10, o quanto você se reconhece nesta história?</div>
+        ${scaleHtml(s.n)}
+        <div class="scale-ends"><span>0 · nada a ver comigo</span><span>10 · sou exatamente assim</span></div>
+      </div>
+    </div>
+    <div class="nav">
+      <button class="btn btn-ghost" onclick="goStory(${cur-1})" ${cur===0?'style="visibility:hidden"':''}>← Anterior</button>
+      <button class="btn btn-result" onclick="showResult()">Ver meu resultado (${rated}/9)</button>
+      <button class="btn btn-primary" onclick="goStory(${cur+1})" ${cur===STORIES.length-1?'style="visibility:hidden"':''}>Próxima →</button>
+    </div>`;
+}
+
+function resultHtml(){
+  const ranked = STORIES.map(s=>({s, v: scores[s.n]}))
+    .sort((a,b)=> (b.v===null?-1:b.v) - (a.v===null?-1:a.v));
+  const maxV = Math.max(...STORIES.map(s=> scores[s.n]===null?0:scores[s.n]));
+  const rated = Object.values(scores).filter(v=>v!==null).length;
+  let items='';
+  ranked.forEach(({s,v})=>{
+    const isTop = v!==null && v===maxV && maxV>0;
+    const w = v===null?0:(v*10);
+    items += `<div class="res-item ${isTop?'top':''}">
+      <div class="rn ${s.centro}">${s.n}</div>
+      <div class="rbody"><div class="rname">${esc(s.nome)} <span style="color:var(--soft);font-weight:600;font-size:.82rem">· tipo ${s.n}</span></div>
+      <div class="rbar"><i style="width:${w}%"></i></div></div>
+      <div class="rscore">${v===null?'–':v}</div>
+    </div>`;
+  });
+  const topNames = ranked.filter(r=> r.v!==null && r.v===maxV && maxV>0).map(r=>r.s.nome);
+  const topLine = (maxV>0 && topNames.length)
+    ? `Você mais se reconheceu ${topNames.length>1?'nas histórias de':'na história de'} <b>${topNames.join(', ')}</b>. ${topNames.length>1?'Elas podem apontar':'Ela pode apontar'} lentes do seu tipo, e vale olhar com mais profundidade.`
+    : `Avalie as histórias para ver onde você mais se reconhece.`;
+  return `
+    ${bubblesHtml()}
+    <div class="res-head">
+      <h2>Onde você mais se reconheceu</h2>
+      <p>Você avaliou ${rated} de 9 histórias. Quanto maior a nota, mais aquela lente parece sua.</p>
+    </div>
+    <div class="res-card">
+      ${items}
+      <div class="res-note">${topLine} O Eneagrama aqui é um espelho para você se enxergar, não um rótulo que te define. O que fizer mais sentido é o que importa.</div>
+    </div>
+    <div class="res-cta">
+      <h3>Quer entender isso com profundidade?</h3>
+      <p>Numa conversa gratuita, a gente olha junto o que essas histórias revelam do seu jeito de liderar e de ser.</p>
+      <a href="${CONSULTORIA_URL}">Marcar minha conversa gratuita</a>
+    </div>
+    <div class="nav">
+      <button class="btn btn-ghost" onclick="backToStories()">← Voltar às histórias</button>
+    </div>`;
+}
+
+function render(){
+  document.getElementById('app').innerHTML = screen==='read' ? readHtml() : resultHtml();
+  window.scrollTo({top:0, behavior:'smooth'});
+}
+function goStory(i){ if(i<0||i>=STORIES.length) return; cur=i; screen='read'; render(); }
+function setScore(typeN, val){ scores[typeN]=val; render(); }
+function showResult(){ screen='result'; render(); }
+function backToStories(){ screen='read'; render(); }
+
+render();
+</script>
+<script src="nav.js"></script>
+</body>
+</html>

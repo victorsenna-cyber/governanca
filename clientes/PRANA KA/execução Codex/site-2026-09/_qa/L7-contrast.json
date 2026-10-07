@@ -1,0 +1,131 @@
+{
+  "method": "PT templates; 390/1440; text-transparent screenshot, 4px grid inside text range rects; default states only",
+  "results": [
+    {
+      "key": "home",
+      "width": 390,
+      "checked": 111,
+      "failures": [],
+      "minimum": 4.88
+    },
+    {
+      "key": "home",
+      "width": 1440,
+      "checked": 115,
+      "failures": [],
+      "minimum": 4.96
+    },
+    {
+      "key": "templo",
+      "width": 390,
+      "checked": 44,
+      "failures": [],
+      "minimum": 6.21
+    },
+    {
+      "key": "templo",
+      "width": 1440,
+      "checked": 48,
+      "failures": [],
+      "minimum": 6.03
+    },
+    {
+      "key": "metodo",
+      "width": 390,
+      "checked": 50,
+      "failures": [],
+      "minimum": 6.21
+    },
+    {
+      "key": "metodo",
+      "width": 1440,
+      "checked": 54,
+      "failures": [],
+      "minimum": 6.03
+    },
+    {
+      "key": "caminhos",
+      "width": 390,
+      "checked": 33,
+      "failures": [],
+      "minimum": 6.21
+    },
+    {
+      "key": "caminhos",
+      "width": 1440,
+      "checked": 37,
+      "failures": [],
+      "minimum": 6.07
+    },
+    {
+      "key": "mentoria",
+      "width": 390,
+      "checked": 140,
+      "failures": [],
+      "minimum": 5.15
+    },
+    {
+      "key": "mentoria",
+      "width": 1440,
+      "checked": 144,
+      "failures": [],
+      "minimum": 5.15
+    },
+    {
+      "key": "visao",
+      "width": 390,
+      "checked": 109,
+      "failures": [],
+      "minimum": 5.15
+    },
+    {
+      "key": "visao",
+      "width": 1440,
+      "checked": 113,
+      "failures": [],
+      "minimum": 4.7
+    },
+    {
+      "key": "curso",
+      "width": 390,
+      "checked": 82,
+      "failures": [],
+      "minimum": 4.62
+    },
+    {
+      "key": "curso",
+      "width": 1440,
+      "checked": 86,
+      "failures": [],
+      "minimum": 4.62
+    },
+    {
+      "key": "arte",
+      "width": 390,
+      "checked": 24,
+      "failures": [],
+      "minimum": 8.16
+    },
+    {
+      "key": "arte",
+      "width": 1440,
+      "checked": 28,
+      "failures": [],
+      "minimum": 8.16
+    },
+    {
+      "key": "prana",
+      "width": 390,
+      "checked": 34,
+      "failures": [],
+      "minimum": 6.08
+    },
+    {
+      "key": "prana",
+      "width": 1440,
+      "checked": 38,
+      "failures": [],
+      "minimum": 6.03
+    }
+  ]
+}

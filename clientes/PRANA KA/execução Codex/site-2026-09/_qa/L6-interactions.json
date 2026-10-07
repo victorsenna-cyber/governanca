@@ -1,0 +1,41 @@
+{
+  "pass": true,
+  "rows": [
+    {
+      "lang": "en",
+      "menuClosed": true,
+      "soundVisible": true,
+      "depthError": "Depth unavailable",
+      "passageGloss": {
+        "size": "13px",
+        "weight": "400",
+        "lang": "en"
+      },
+      "links": [
+        "https://wa.me/5548984248922?text=Oi%20Prana!%20Quero%20entrar%20no%20Despertar%20do%20Prazer%20Sagrado.%20Como%20fa%C3%A7o%3F",
+        "https://wa.me/5548984248922?text=Oi%20Prana!%20Quero%20entrar%20no%20Despertar%20do%20Prazer%20Sagrado.%20Como%20fa%C3%A7o%3F",
+        "https://wa.me/5548984248922?text=Oi%20Prana!%20Quero%20entrar%20no%20Despertar%20do%20Prazer%20Sagrado.%20Como%20fa%C3%A7o%3F",
+        "https://wa.me/5548984248922?text=Oi%20Prana!%20Quero%20entrar%20no%20Despertar%20do%20Prazer%20Sagrado.%20Como%20fa%C3%A7o%3F"
+      ],
+      "errors": []
+    },
+    {
+      "lang": "es",
+      "menuClosed": true,
+      "soundVisible": true,
+      "depthError": "Profundidad no disponible",
+      "passageGloss": {
+        "size": "13px",
+        "weight": "400",
+        "lang": "es"
+      },
+      "links": [
+        "https://wa.me/5548984248922?text=Oi%20Prana!%20Quero%20entrar%20no%20Despertar%20do%20Prazer%20Sagrado.%20Como%20fa%C3%A7o%3F",
+        "https://wa.me/5548984248922?text=Oi%20Prana!%20Quero%20entrar%20no%20Despertar%20do%20Prazer%20Sagrado.%20Como%20fa%C3%A7o%3F",
+        "https://wa.me/5548984248922?text=Oi%20Prana!%20Quero%20entrar%20no%20Despertar%20do%20Prazer%20Sagrado.%20Como%20fa%C3%A7o%3F",
+        "https://wa.me/5548984248922?text=Oi%20Prana!%20Quero%20entrar%20no%20Despertar%20do%20Prazer%20Sagrado.%20Como%20fa%C3%A7o%3F"
+      ],
+      "errors": []
+    }
+  ]
+}

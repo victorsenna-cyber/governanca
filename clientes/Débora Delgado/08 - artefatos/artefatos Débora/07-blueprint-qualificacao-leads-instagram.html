@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blueprint · Qualificação de Leads · Instagram</title>
+<style>
+
+/* ==============================
+   1. TOKENS
+   ============================== */
+:root {
+  --bg:          #F7F6F2;
+  --surface:     #FFFFFF;
+  --surface-2:   #F2F0EB;
+  --border:      #E5E2D9;
+  --border-soft: #EDEBE5;
+
+  --text:        #1A1917;
+  --muted:       #6B6760;
+  --soft:        #9C9891;
+
+  --accent:      #3D5247;
+  --accent-bg:   #E8EDE9;
+  --accent-lt:   #F0F4F1;
+
+  --hot:         #C4613A;
+  --hot-bg:      #FBF0EC;
+  --nurture:     #8A7555;
+  --nurture-bg:  #F7F2E9;
+  --entry:       #546E7A;
+  --entry-bg:    #ECF1F4;
+  --anti:        #888480;
+  --anti-bg:     #F2F0EE;
+
+  --font: -apple-system, "SF Pro Display", "Inter", "Segoe UI", system-ui, sans-serif;
+  --r-sm: 8px; --r-md: 12px; --r-lg: 16px; --r-full: 9999px;
+  --sh-xs: 0 1px 3px rgba(26,25,23,.05);
+  --sh-sm: 0 3px 12px rgba(26,25,23,.07);
+  --sh-md: 0 6px 20px rgba(26,25,23,.09);
+  --ease: cubic-bezier(.4,0,.2,1);
+  --nav-h: 56px;
+  --accent-border: rgba(61,82,71,.14);
+}
+
+/* ==============================
+   2. RESET
+   ============================== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+body { font-family: var(--font); font-size: 15px; line-height: 1.6; color: var(--text); background: var(--bg); overflow-x: hidden; }
+h1,h2,h3,h4 { font-weight: 600; line-height: 1.2; letter-spacing: -.02em; }
+ul,ol { list-style: none; }
+a { text-decoration: none; color: inherit; }
+button { cursor: pointer; border: none; background: none; font: inherit; }
+img,svg { display: block; }
+::selection { background: var(--accent-bg); color: var(--accent); }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
+
+/* ==============================
+   3. BASE
+   ============================== */
+.label {
+  display: inline-block;
+  font-size: 11px; font-weight: 600;
+  text-transform: uppercase; letter-spacing: .1em;
+  color: var(--accent); margin-bottom: 10px;
+}
+.section-title { font-size: clamp(1.3rem,2.5vw,1.6rem); margin-bottom: 8px; }
+.section-desc  { font-size: 14px; color: var(--muted); max-width: 500px; line-height: 1.65; margin-bottom: 32px; }
+.divider { height: 1px; background: var(--border); }
+
+/* ==============================
+   4. LAYOUT
+   ============================== */
+.wrap    { max-width: 1060px; margin: 0 auto; padding: 0 32px; }
+.section { padding: 64px 0; }
+main { padding-top: var(--nav-h); }
+
+/* NAV */
+.nav {
+  position: fixed; top: 0; left: 0; right: 0;
+  height: var(--nav-h);
+  background: rgba(247,246,242,.93);
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--border-soft);
+  z-index: 100;
+  transition: box-shadow .25s var(--ease);
+}
+.nav.scrolled { box-shadow: var(--sh-sm); }
+.nav .wrap { height: 100%; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.nav-brand { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: .07em; color: var(--accent); }
+.nav-links { display: flex; gap: 2px; overflow-x: auto; scrollbar-width: none; }
+.nav-links::-webkit-scrollbar { display: none; }
+.nav-link {
+  font-size: 13px; font-weight: 500; color: var(--muted);
+  padding: 6px 12px; border-radius: var(--r-sm);
+  transition: color .15s, background .15s;
+  white-space: nowrap;
+}
+.nav-link:hover { color: var(--text); background: var(--surface-2); }
+.nav-link.active { color: var(--accent); background: var(--accent-lt); }
+
+/* HERO */
+.hero { padding: 80px 0 64px; }
+.hero-badge {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-size: 12px; font-weight: 500; color: var(--accent);
+  background: var(--accent-bg);
+  border: 1px solid var(--accent-border);
+  border-radius: var(--r-full);
+  padding: 5px 14px; margin-bottom: 28px;
+}
+.hero-dot {
+  width: 6px; height: 6px; border-radius: 50%;
+  background: var(--accent);
+  animation: blink 2s ease infinite;
+}
+@keyframes blink { 0%,100% { opacity:1; } 50% { opacity:.4; } }
+.hero-title {
+  font-size: clamp(2.2rem,5vw,3.2rem);
+  letter-spacing: -.03em; line-height: 1.08;
+  margin-bottom: 22px;
+}
+.hero-title em { font-style: normal; color: var(--accent); }
+.hero-sub {
+  font-size: clamp(1rem,1.5vw,1.1rem);
+  color: var(--muted); line-height: 1.7;
+  letter-spacing: -.01em;
+  max-width: 520px; margin-bottom: 36px;
+}
+.hero-meta { display: flex; align-items: center; gap: 28px; flex-wrap: wrap; }
+.hero-cta {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 13px; font-weight: 500; color: var(--accent);
+  border-bottom: 1px solid currentColor; padding-bottom: 2px;
+  transition: gap .15s, opacity .15s;
+}
+.hero-cta:hover { gap: 10px; opacity: .7; }
+.hero-stat { font-size: 13px; color: var(--soft); }
+.hero-stat strong { color: var(--muted); font-weight: 500; }
+
+/* FLOW */
+.flow-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+.flow-content { flex: 1; min-width: 0; }
+.flow-item {
+  display: flex; flex-direction: column; align-items: center;
+  text-align: center; padding: 20px 14px; position: relative;
+}
+.flow-item:not(:last-child)::after {
+  content: '';
+  position: absolute; top: 42px; right: -6px;
+  width: 12px; height: 1px;
+  background: linear-gradient(90deg, var(--border), transparent);
+}
+.flow-icon {
+  width: 44px; height: 44px;
+  display: flex; align-items: center; justify-content: center;
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--r-md); margin-bottom: 14px;
+  transition: border-color .2s;
+}
+.flow-icon svg { color: var(--accent); }
+.flow-item:hover .flow-icon { border-color: var(--accent); }
+.flow-num  { font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: .08em; color: var(--soft); margin-bottom: 4px; }
+.flow-name { font-size: 13px; font-weight: 500; color: var(--text); line-height: 1.3; }
+.flow-hint { font-size: 11px; color: var(--soft); margin-top: 4px; line-height: 1.4; }
+
+/* STATUS */
+.status-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; }
+.status-group {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--r-lg); padding: 20px;
+}
+.status-group-label { font-size: 10px; font-weight: 500; text-transform: uppercase; letter-spacing: .09em; color: var(--soft); margin-bottom: 14px; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip {
+  display: inline-flex; align-items: center;
+  font-size: 12px; font-weight: 500;
+  padding: 4px 11px; border-radius: var(--r-full);
+}
+.chip-dot { display: none; }
+.c-new  { background: #E4EFED; color: #4A7C6F; }
+.c-eng  { background: #EDEBF5; color: #7A6B9B; }
+.c-prog { background: #E8EEF6; color: #5B7BA8; }
+.c-hot  { background: var(--hot-bg);    color: var(--hot); }
+.c-nur  { background: var(--nurture-bg); color: var(--nurture); }
+.c-ent  { background: var(--entry-bg);  color: var(--entry); }
+.c-anti { background: var(--anti-bg);   color: var(--anti); }
+.c-off  { background: var(--surface-2); color: var(--muted); }
+
+/* CAMPOS */
+.campos-note {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 13px; color: var(--soft);
+  margin-bottom: 24px;
+}
+.campos-note svg { color: var(--soft); flex-shrink: 0; }
+.campos-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px,1fr)); gap: 14px; }
+.campo-card {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--r-md); padding: 18px 20px;
+  transition: border-color .25s;
+}
+.campo-card.sel { border-color: var(--accent); }
+.campo-label { font-size: 13px; font-weight: 500; color: var(--text); margin-bottom: 12px; }
+.campo-opts { display: flex; flex-wrap: wrap; gap: 6px; }
+.opt {
+  font-size: 12px; font-weight: 500; color: var(--muted);
+  background: transparent; border: 1px solid var(--border-soft);
+  border-radius: var(--r-full); padding: 3px 11px;
+  cursor: pointer; user-select: none;
+  transition: color .15s, background .15s, border-color .15s;
+}
+.opt:hover { border-color: var(--accent); color: var(--accent); background: var(--accent-lt); }
+.opt.on    { background: var(--accent-bg); border-color: var(--accent); color: var(--accent); }
+.campos-reset {
+  margin-top: 24px;
+  font-size: 13px; color: var(--soft);
+  cursor: pointer;
+  display: inline-flex; align-items: center; gap: 6px;
+  transition: color .15s;
+}
+.campos-reset:hover { color: var(--muted); }
+
+/* SCRIPTS */
+.tabs {
+  display: flex;
+  overflow-x: auto; scrollbar-width: none;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 24px;
+}
+.tabs::-webkit-scrollbar { display: none; }
+.tab {
+  flex-shrink: 0;
+  font-size: 13px; font-weight: 500; color: var(--muted);
+  padding: 10px 16px;
+  border-bottom: 2px solid transparent; margin-bottom: -1px;
+  transition: color .15s, border-color .15s;
+}
+.tab:hover { color: var(--text); }
+.tab.on { color: var(--accent); border-bottom-color: var(--accent); }
+.scripts-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px,1fr)); gap: 14px; }
+.script-card {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--r-md); padding: 20px;
+  transition: border-color .2s;
+}
+.script-card:hover { border-color: var(--accent); }
+.script-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; margin-bottom: 12px; }
+.script-tone { font-size: 11px; font-weight: 500; text-transform: uppercase; letter-spacing: .07em; color: var(--soft); }
+.copy-btn {
+  display: inline-flex; align-items: center; gap: 5px;
+  font-size: 11px; font-weight: 500; color: var(--muted);
+  background: var(--surface-2); border: 1px solid var(--border);
+  border-radius: var(--r-sm); padding: 4px 10px;
+  white-space: nowrap; flex-shrink: 0;
+  transition: color .15s, background .15s, border-color .15s;
+}
+.copy-btn:hover { color: var(--accent); background: var(--accent-lt); border-color: var(--accent); }
+.copy-btn.done { color: var(--accent); background: var(--accent-bg); border-color: var(--accent); }
+.script-text { font-size: 14px; color: var(--text); line-height: 1.65; }
+.script-note { margin-top: 10px; font-size: 12px; color: var(--muted); }
+
+/* DECISÃO */
+.decision-table {
+  width: 100%; border-collapse: separate; border-spacing: 0;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg); overflow: hidden;
+}
+.decision-table thead tr { background: var(--surface-2); }
+.decision-table th {
+  font-size: 11px; font-weight: 600; text-transform: uppercase;
+  letter-spacing: .08em; color: var(--soft);
+  padding: 14px 20px; text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+.decision-table td { padding: 16px 20px; border-bottom: 1px solid var(--border-soft); font-size: 14px; vertical-align: middle; }
+.decision-table tbody tr:last-child td { border-bottom: none; }
+.decision-table tbody tr { transition: background .15s; }
+.decision-table tbody tr:hover { background: var(--surface-2); }
+.situation { color: var(--muted); line-height: 1.55; }
+.badge {
+  display: inline-flex; align-items: center; gap: 5px;
+  font-size: 12px; font-weight: 500;
+  padding: 4px 12px; border-radius: var(--r-full);
+}
+.b-hot  { background: var(--hot-bg);    color: var(--hot); }
+.b-nur  { background: var(--nurture-bg); color: var(--nurture); }
+.b-ent  { background: var(--entry-bg);  color: var(--entry); }
+.b-anti { background: var(--anti-bg);   color: var(--anti); }
+.action { font-size: 14px; font-weight: 500; color: var(--text); }
+.decision-cards { display: none; }
+.dec-card {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--r-md); padding: 18px 20px;
+}
+.dec-card + .dec-card { margin-top: 12px; }
+.dec-sit { font-size: 13px; color: var(--muted); margin-bottom: 12px; line-height: 1.6; }
+.dec-foot {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 12px; flex-wrap: wrap;
+  padding-top: 12px; border-top: 1px solid var(--border-soft);
+}
+.dec-act { font-size: 13px; font-weight: 500; color: var(--text); }
+
+/* ROTINA */
+.rotina-header {
+  display: flex; align-items: flex-start;
+  justify-content: space-between; gap: 20px;
+  flex-wrap: wrap; margin-bottom: 20px;
+}
+.rotina-header .section-desc { margin-bottom: 0; }
+.rotina-badge {
+  display: inline-flex; align-items: center; gap: 7px;
+  font-size: 12px; font-weight: 500; color: var(--accent);
+  background: var(--accent-bg);
+  border: 1px solid var(--accent-border);
+  border-radius: var(--r-full); padding: 7px 16px;
+  white-space: nowrap;
+}
+.rotina-list { display: grid; gap: 10px; }
+.rotina-step {
+  display: grid; grid-template-columns: 36px 1fr auto;
+  align-items: start; gap: 16px;
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--r-md); padding: 16px 20px;
+}
+.step-num {
+  width: 36px; height: 36px;
+  display: flex; align-items: center; justify-content: center;
+  background: var(--accent-bg); color: var(--accent);
+  font-size: 13px; font-weight: 600;
+  border-radius: var(--r-sm);
+}
+.step-title { font-size: 14px; font-weight: 500; color: var(--text); margin-bottom: 4px; }
+.step-desc  { font-size: 13px; color: var(--muted); line-height: 1.6; }
+.step-time  {
+  font-size: 12px; font-weight: 400; color: var(--soft);
+  white-space: nowrap; margin-top: 4px;
+}
+
+/* RESUMO */
+.resumo { padding: 80px 0; text-align: center; }
+.resumo-inner { max-width: 600px; margin: 0 auto; }
+.resumo-eye { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: .1em; color: var(--accent); display: block; margin-bottom: 28px; }
+.resumo-quote {
+  font-size: clamp(1.3rem,2.5vw,1.75rem);
+  font-weight: 600; letter-spacing: -.025em;
+  line-height: 1.4; color: var(--text); margin-bottom: 22px;
+}
+.resumo-sub { font-size: 14px; color: var(--muted); line-height: 1.7; margin-bottom: 36px; }
+.pillars { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; }
+.pillar {
+  display: inline-flex; align-items: center; gap: 7px;
+  font-size: 13px; font-weight: 500; color: var(--accent);
+  background: var(--accent-lt);
+  border: 1px solid var(--accent-bg);
+  border-radius: var(--r-full); padding: 8px 18px;
+}
+
+/* FOOTER */
+.footer {
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+  padding: 24px 0;
+}
+.footer .wrap {
+  display: flex; align-items: center;
+  justify-content: space-between; gap: 12px; flex-wrap: wrap;
+}
+.footer-brand { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: .07em; color: var(--accent); }
+.footer-meta  { font-size: 12px; color: var(--soft); }
+
+/* TOAST */
+.toast {
+  position: fixed; bottom: 28px; left: 50%;
+  transform: translateX(-50%) translateY(calc(100% + 28px));
+  background: var(--text); color: #fff;
+  font-size: 13px; font-weight: 500;
+  padding: 10px 22px; border-radius: var(--r-full);
+  box-shadow: var(--sh-md);
+  opacity: 0; pointer-events: none; z-index: 999;
+  transition: transform .25s var(--ease), opacity .25s;
+  white-space: nowrap;
+}
+.toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+/* ==============================
+   5. RESPONSIVE
+   ============================== */
+@media (max-width: 900px) {
+  .flow-grid { grid-template-columns: repeat(3,1fr); gap: 10px; }
+  .flow-item:not(:last-child)::after { display: none; }
+  .status-grid { grid-template-columns: repeat(2,1fr); gap: 14px; }
+}
+@media (max-width: 640px) {
+  .status-grid { grid-template-columns: 1fr; gap: 12px; }
+  .wrap { padding: 0 20px; }
+  .section { padding: 60px 0; }
+  .hero { padding: 72px 0 56px; }
+  .resumo { padding: 72px 0; }
+  .flow-grid { grid-template-columns: 1fr; gap: 8px; }
+  .flow-item {
+    flex-direction: row; text-align: left;
+    padding: 14px 16px; align-items: flex-start; gap: 14px;
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: var(--r-md);
+  }
+  .flow-icon { margin-bottom: 0; flex-shrink: 0; }
+  .campos-grid { grid-template-columns: 1fr; }
+  .scripts-grid { grid-template-columns: 1fr; }
+  .decision-table { display: none; }
+  .decision-cards { display: block; }
+  .rotina-step { grid-template-columns: 36px 1fr; }
+  .step-time { grid-column: 2; margin-top: 8px; }
+  .hero-meta { flex-direction: column; gap: 14px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration:.01ms !important; transition-duration:.01ms !important; }
+  html { scroll-behavior: auto; }
+}
+
+@media print {
+  .nav, .toast, .copy-btn, .campos-reset { display: none !important; }
+  main { padding-top: 0; }
+  body { background: #fff; font-size: 12pt; }
+  .section, .resumo { padding: 24pt 0; break-inside: avoid; }
+  * { box-shadow: none !important; }
+}
+
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<header class="nav" id="nav">
+  <div class="wrap">
+    <span class="nav-brand">Blueprint · Qualificação</span>
+    <nav class="nav-links" aria-label="Navegação">
+      <a href="#fluxo"   class="nav-link" data-s="fluxo">Fluxo</a>
+      <a href="#status"  class="nav-link" data-s="status">Status</a>
+      <a href="#campos"  class="nav-link" data-s="campos">Campos</a>
+      <a href="#scripts" class="nav-link" data-s="scripts">Scripts</a>
+      <a href="#decisao" class="nav-link" data-s="decisao">Decisão</a>
+      <a href="#rotina"  class="nav-link" data-s="rotina">Rotina</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section id="hero" class="hero">
+  <div class="wrap">
+    <div class="hero-badge">
+      <span class="hero-dot"></span>
+      Para Débora · Instagram · Uso diário
+    </div>
+    <h1 class="hero-title">Blueprint de<br><em>Qualificação</em><br>Manual de Leads</h1>
+    <p class="hero-sub">Guia operacional para separar quem tem dor, prontidão e aderência — sem automação, sem CRM, sem complexidade.</p>
+    <div class="hero-meta">
+      <a href="#fluxo" class="hero-cta">
+        Ver fluxo
+        <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg>
+      </a>
+      <span class="hero-stat"><strong>≈ 2 min</strong> para entender</span>
+      <span class="hero-stat"><strong>15–20 min</strong> por dia</span>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- FLUXO -->
+<section id="fluxo" class="section">
+  <div class="wrap">
+    <span class="label">Passo a passo</span>
+    <h2 class="section-title">O fluxo em 6 etapas</h2>
+    <p class="section-desc">Do novo seguidor à próxima ação. Linear e repetível.</p>
+    <div class="flow-grid" id="flow"></div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- STATUS -->
+<section id="status" class="section">
+  <div class="wrap">
+    <span class="label">Cockpit</span>
+    <h2 class="section-title">Status possíveis de um lead</h2>
+    <p class="section-desc">Sugestões editáveis — use o que fizer sentido para o seu processo.</p>
+    <div class="status-grid" id="status-grid"></div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- CAMPOS -->
+<section id="campos" class="section">
+  <div class="wrap">
+    <span class="label">Qualificação</span>
+    <h2 class="section-title">Campos opcionais de avaliação</h2>
+    <p class="section-desc">Clique para ativar ou desativar. Use como guia mental ao avaliar um lead.</p>
+    <div class="campos-note">
+      <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+      Guias mentais, nunca obrigatórios.
+    </div>
+    <div class="campos-grid" id="campos-grid"></div>
+    <button class="campos-reset" id="campos-reset" aria-label="Limpar seleções">
+      <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
+      Limpar seleções
+    </button>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- SCRIPTS -->
+<section id="scripts" class="section">
+  <div class="wrap">
+    <span class="label">Scripts de DM</span>
+    <h2 class="section-title">Mensagens prontas para copiar</h2>
+    <p class="section-desc">Curtas, humanas e adaptáveis. Copie e ajuste o tom.</p>
+    <div class="tabs" id="tabs" role="tablist"></div>
+    <div class="scripts-grid" id="scripts-grid" role="tabpanel"></div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- DECISÃO -->
+<section id="decisao" class="section">
+  <div class="wrap">
+    <span class="label">Tabela de decisão</span>
+    <h2 class="section-title">Situação → Classificação → Ação</h2>
+    <p class="section-desc">Identifique o cenário e saiba o que fazer. Sem hesitação.</p>
+    <table class="decision-table" aria-label="Tabela de decisão">
+      <thead>
+        <tr>
+          <th scope="col">Situação</th>
+          <th scope="col">Classificação</th>
+          <th scope="col">Próxima ação</th>
+        </tr>
+      </thead>
+      <tbody id="decision-tbody"></tbody>
+    </table>
+    <div class="decision-cards" id="decision-cards"></div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ROTINA -->
+<section id="rotina" class="section">
+  <div class="wrap">
+    <span class="label">Operação diária</span>
+    <div class="rotina-header">
+      <div>
+        <h2 class="section-title">Rotina de 15–20 minutos</h2>
+        <p class="section-desc">Consistência antes de perfeição.</p>
+      </div>
+      <div class="rotina-badge">
+        <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        15–20 min/dia
+      </div>
+    </div>
+    <ol class="rotina-list" id="rotina-list"></ol>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- RESUMO -->
+<section id="resumo" class="resumo">
+  <div class="wrap">
+    <div class="resumo-inner">
+      <span class="resumo-eye">Princípio central</span>
+      <blockquote class="resumo-quote">
+        "O objetivo não é conversar com todo mundo.<br>
+        É identificar quem tem dor, prontidão e aderência."
+      </blockquote>
+      <p class="resumo-sub">Qualificação não é sobre volume — é sobre clareza. Lead certo antes de lead a mais.</p>
+      <div class="pillars">
+        <span class="pillar">
+          <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          Dor real
+        </span>
+        <span class="pillar">
+          <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          Prontidão
+        </span>
+        <span class="pillar">
+          <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          Aderência
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <span class="footer-brand">Blueprint Operacional</span>
+    <span class="footer-meta">Qualificação de Leads · Instagram · 2026</span>
+  </div>
+</footer>
+
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+<script>
+(function () {
+  'use strict';
+
+  /* ==============================
+     1. DADOS
+     ============================== */
+
+  const FLOW = [
+    { n:1, name:'Novo seguidor',  hint:'Alguém chegou até você',
+      icon:'<svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>' },
+    { n:2, name:'Análise rápida', hint:'Perfil, bio, conteúdo salvo',
+      icon:'<svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>' },
+    { n:3, name:'Abordagem',      hint:'Primeira mensagem no DM',
+      icon:'<svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>' },
+    { n:4, name:'Qualificação',   hint:'Dor, prontidão e aderência',
+      icon:'<svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>' },
+    { n:5, name:'Classificação',  hint:'Quente, nutrição, entrada ou anti-ICP',
+      icon:'<svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>' },
+    { n:6, name:'Próxima ação',   hint:'Convidar, nutrir, oferecer ou encerrar',
+      icon:'<svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>' }
+  ];
+
+  const STATUS_GROUPS = [
+    { label: 'Início', items: [
+      { text:'Novo seguidor', cls:'c-new' },
+      { text:'Interagiu',     cls:'c-eng' },
+      { text:'Respondeu DM', cls:'c-prog' }
+    ]},
+    { label: 'Em andamento', items: [
+      { text:'Em qualificação', cls:'c-prog' },
+      { text:'Call convidada',  cls:'c-hot' },
+      { text:'Call agendada',   cls:'c-hot' }
+    ]},
+    { label: 'Desfecho', items: [
+      { text:'Lead quente',       cls:'c-hot' },
+      { text:'Nutrição',          cls:'c-nur' },
+      { text:'Produto de entrada',cls:'c-ent' },
+      { text:'Anti-ICP',          cls:'c-anti' },
+      { text:'Sem resposta',      cls:'c-off' }
+    ]}
+  ];
+
+  const CAMPOS = [
+    { id:'interesse',  label:'Interesse principal',
+      opts:['Crescimento pessoal','Posicionamento','Aumentar vendas','Clareza de direção'] },
+    { id:'dor',        label:'Nível de dor',
+      opts:['Alta — sente muito','Média — incomoda','Baixa — leve','Não identificada'] },
+    { id:'consciencia',label:'Consciência',
+      opts:['Ciente do problema','Em descoberta','Inconsciente'] },
+    { id:'prontidao',  label:'Prontidão',
+      opts:['Pronta agora','Em breve','Sem urgência'] },
+    { id:'capacidade', label:'Capacidade',
+      opts:['Tem condição','Limitada','Sem condição'] },
+    { id:'aderencia',  label:'Aderência',
+      opts:['Alta','Média','Baixa'] },
+    { id:'direcao',    label:'Direcionamento',
+      opts:['Busca condução','Explorando','Apenas curiosa'] }
+  ];
+
+  const SCRIPTS = {
+    abertura:     { label:'Abertura',        items:[
+      { tone:'Curiosa',  text:'Oi [nome]! Obrigada por me seguir 🙏 Fiquei curiosa — o que te trouxe até aqui?',
+        note:'Simples e direta. Abre espaço sem pressão.' },
+      { tone:'Leve',     text:'Oi [nome]! Que bom ter você por aqui. Tem algo específico que você está buscando nesse momento?',
+        note:'Para perfis que parecem estar em busca ativa.' },
+      { tone:'Direta',   text:'Oi [nome]! Vi que você chegou até mim e fiquei curiosa com seu perfil. Me conta — o que está movendo você agora?',
+        note:'Para quem engajou no conteúdo antes de seguir.' }
+    ]},
+    diagnostica:  { label:'Diagnóstica',     items:[
+      { tone:'Aberta',      text:'Me conta um pouco do seu momento: o que está mais pesando pra você agora?',
+        note:'Ótima quando ela já respondeu a abertura.' },
+      { tone:'Reflexiva',   text:'O que você sente que está faltando pra você chegar onde quer estar?',
+        note:'Direciona para a lacuna sem forçar.' },
+      { tone:'Orgânica',    text:'Com o que você mais se identifica no meu conteúdo? Fico curiosa pra entender o que chegou até você.',
+        note:'Suave, baseada em conexão.' }
+    ]},
+    aprofundamento:{ label:'Aprofundamento', items:[
+      { tone:'Temporal',    text:'E esse [tema que ela citou] — há quanto tempo você sente isso?',
+        note:'Mede o nível de dor através do tempo.' },
+      { tone:'Histórico',   text:'O que você já tentou pra resolver isso até agora?',
+        note:'Revela se ela já agiu antes e o que espera de diferente.' },
+      { tone:'Impacto',     text:'Se você ficasse mais um ano nessa situação, o que isso te custaria?',
+        note:'Ativa a consciência do custo da inação. Use com cuidado.' }
+    ]},
+    prontidao:    { label:'Prontidão',       items:[
+      { tone:'Suave',       text:'Hoje você se sentiria pronta pra dar um passo diferente nessa direção?',
+        note:'Não força — apenas verifica o estado emocional.' },
+      { tone:'Exploratória',text:'O que precisaria acontecer pra você agir em relação a isso agora?',
+        note:'Revela objeções antes mesmo do convite.' },
+      { tone:'Direta',      text:'Qual seria o melhor momento pra você avançar nisso — agora ou em quanto tempo?',
+        note:'Para quando a dor está clara e falta só alinhar o timing.' }
+    ]},
+    convite:      { label:'Convite',         items:[
+      { tone:'Leve',        text:'Acho que faz sentido a gente conversar com mais calma. Você topa uma troca de 20 minutos?',
+        note:'Framing de troca, não de venda.' },
+      { tone:'Evidência',   text:'Pelo que você me contou, acho que tenho algo relevante pra te mostrar. Quer explorar?',
+        note:'Ancora o convite no que ela disse antes.' },
+      { tone:'Generoso',    text:'Sem compromisso nenhum — só pra entender melhor o seu cenário e ver se faz sentido ir mais fundo.',
+        note:'Reduz a pressão do convite.' }
+    ]},
+    nutricao:     { label:'Nutrição',        items:[
+      { tone:'Cuidadoso',   text:'Separei um conteúdo que acho que fala direto com o que você me contou. Quer que eu mande?',
+        note:'Pede permissão antes de enviar — gera mais engajamento.' },
+      { tone:'Natural',     text:'Pensei em você quando vi isso. Pode ser útil exatamente onde você está agora.',
+        note:'Tom de conexão genuína, não de prospecção.' },
+      { tone:'Pontual',     text:'Oi [nome]! Postei algo essa semana que acho que tem a ver com o que a gente conversou. Vale dar uma olhada.',
+        note:'Para acompanhamento periódico de leads em nutrição.' }
+    ]},
+    entrada:      { label:'Produto de entrada', items:[
+      { tone:'Sugestivo',   text:'Tenho algo leve que pode ser um bom começo pro que você está buscando. Quer saber mais?',
+        note:'Não revela o produto antes do interesse.' },
+      { tone:'Gentil',      text:'Não sei se faz sentido agora, mas tenho um recurso acessível que ajuda bastante nesse ponto. Se quiser, posso te explicar.',
+        note:'Minimiza a pressão com "não sei se faz sentido".' },
+      { tone:'Contextual',  text:'Com base no que você me contou, tenho um material que pode te ajudar a dar o primeiro passo. Posso te mostrar?',
+        note:'Para quem não está pronta para o produto principal.' }
+    ]},
+    encerramento: { label:'Encerramento',    items:[
+      { tone:'Respeitoso',  text:'Entendo! Sem pressão nenhuma. Se surgir algo ou o momento mudar, estou por aqui.',
+        note:'Fecha com leveza, deixa a porta aberta.' },
+      { tone:'Generoso',    text:'Tudo bem. Qualquer coisa, pode me acionar. Cuida-se!',
+        note:'Curto, humano e sem arrependimento.' },
+      { tone:'Estratégico', text:'Entendo que não é o momento. Vou continuar por aqui — qualquer coisa, sabe onde me encontrar.',
+        note:'Encerra sem cortar o relacionamento.' }
+    ]}
+  };
+
+  const DECISIONS = [
+    { sit:'Dor clara, busca condução e tem prontidão',              type:'hot',    badge:'Lead quente',        act:'Convidar para conversa de diagnóstico' },
+    { sit:'Interesse real, mas baixa urgência ou timing não ideal', type:'nurture',badge:'Nutrição',            act:'Manter relacionamento com conteúdo relevante' },
+    { sit:'Curiosidade e engajamento, mas prontidão ou dor difusa', type:'entry',  badge:'Produto de entrada', act:'Oferecer recurso acessível como ponto de partida' },
+    { sit:'Sem dor identificada, sem aderência ou perfil incompatível',type:'anti',badge:'Anti-ICP',           act:'Não avançar — encerrar com leveza' },
+    { sit:'Abriu DM mas não respondeu às perguntas',                type:'nurture',badge:'Nutrição',            act:'Um follow-up sutil após 5–7 dias, depois encerrar' },
+    { sit:'Alta dor, mas capacidade ou timing são limitantes reais', type:'entry', badge:'Produto de entrada', act:'Oferecer o menor passo possível — sem forçar' }
+  ];
+
+  const ROTINA = [
+    { title:'Revisar novos seguidores', time:'3 min',
+      desc:'Olhe os perfis que chegaram. Analise bio, posts e o que salvaram do seu conteúdo.' },
+    { title:'Selecionar perfis com sinais positivos', time:'3 min',
+      desc:'Escolha 2 a 4 perfis que mostram sinal de dor, interesse ou aderência.' },
+    { title:'Enviar algumas abordagens', time:'4 min',
+      desc:'Use os scripts de abertura. Personalize quando fizer sentido. Qualidade antes de volume.' },
+    { title:'Responder DMs em aberto', time:'5 min',
+      desc:'Responda as conversas ativas com presença e atenção. Escuta qualificada é qualificação.' },
+    { title:'Classificar leads da semana', time:'3 min',
+      desc:'Para cada conversa, decida: quente, nutrição, produto de entrada ou anti-ICP.' },
+    { title:'Definir próxima ação', time:'2 min',
+      desc:'Para cada lead, escolha UM próximo passo claro. Convidar, nutrir, oferecer ou encerrar.' }
+  ];
+
+  /* ==============================
+     2. UTILITÁRIOS
+     ============================== */
+
+  const $ = (s, ctx) => (ctx||document).querySelector(s);
+  const $$ = (s, ctx) => [...(ctx||document).querySelectorAll(s)];
+
+  function mkEl(tag, cls, html) {
+    const e = document.createElement(tag);
+    if (cls) e.className = cls;
+    if (html !== undefined) e.innerHTML = html;
+    return e;
+  }
+
+  let toastTimer;
+  function toast(msg) {
+    const t = $('#toast');
+    t.textContent = msg;
+    t.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => t.classList.remove('show'), 2200);
+  }
+
+  function copyText(text, btn) {
+    const doCopy = () => {
+      btn.classList.add('done');
+      btn.textContent = 'Copiado ✓';
+      toast('Script copiado!');
+      setTimeout(() => { btn.classList.remove('done'); btn.innerHTML = COPY_ICON + ' Copiar'; }, 2000);
+    };
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText(text).then(doCopy).catch(() => fallback());
+    } else { fallback(); }
+    function fallback() {
+      const ta = document.createElement('textarea');
+      ta.value = text; ta.style.cssText = 'position:fixed;left:-9999px';
+      document.body.appendChild(ta); ta.select();
+      try { document.execCommand('copy'); doCopy(); } catch(e){}
+      document.body.removeChild(ta);
+    }
+  }
+
+  /* ==============================
+     3. RENDERIZAÇÃO
+     ============================== */
+
+  function renderFlow() {
+    const c = $('#flow');
+    FLOW.forEach(s => {
+      const item = mkEl('div', 'flow-item');
+      const icon = mkEl('div', 'flow-icon', s.icon);
+      const cnt  = mkEl('div', 'flow-content');
+      cnt.appendChild(mkEl('div', 'flow-num',  String(s.n)));
+      cnt.appendChild(mkEl('div', 'flow-name', s.name));
+      cnt.appendChild(mkEl('div', 'flow-hint', s.hint));
+      item.appendChild(icon); item.appendChild(cnt);
+      c.appendChild(item);
+    });
+  }
+
+  function renderStatus() {
+    const c = $('#status-grid');
+    STATUS_GROUPS.forEach(g => {
+      const grp = mkEl('div', 'status-group');
+      grp.appendChild(mkEl('div', 'status-group-label', g.label));
+      const chips = mkEl('div', 'chips');
+      g.items.forEach(i => {
+        const ch = mkEl('span', 'chip ' + i.cls);
+        ch.innerHTML = '<span class="chip-dot"></span>' + i.text;
+        chips.appendChild(ch);
+      });
+      grp.appendChild(chips);
+      c.appendChild(grp);
+    });
+  }
+
+  function renderCampos() {
+    const c = $('#campos-grid');
+    CAMPOS.forEach(f => {
+      const card = mkEl('div', 'campo-card');
+      card.dataset.id = f.id;
+      card.appendChild(mkEl('div', 'campo-label', f.label));
+      const opts = mkEl('div', 'campo-opts');
+      f.opts.forEach(o => {
+        const btn = mkEl('button', 'opt');
+        btn.type = 'button'; btn.textContent = o;
+        btn.setAttribute('aria-pressed','false');
+        btn.addEventListener('click', () => toggleOpt(btn, card));
+        opts.appendChild(btn);
+      });
+      card.appendChild(opts);
+      c.appendChild(card);
+    });
+  }
+
+  const COPY_ICON = '<svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>';
+
+  function renderTabs(activeKey) {
+    const tabsEl = $('#tabs');
+    tabsEl.innerHTML = '';
+    Object.keys(SCRIPTS).forEach(k => {
+      const tab = mkEl('button', 'tab' + (k===activeKey?' on':''));
+      tab.type = 'button'; tab.textContent = SCRIPTS[k].label;
+      tab.setAttribute('role','tab');
+      tab.setAttribute('aria-selected', k===activeKey ? 'true' : 'false');
+      tab.addEventListener('click', () => {
+        $$('.tab').forEach(t => { t.classList.remove('on'); t.setAttribute('aria-selected','false'); });
+        tab.classList.add('on'); tab.setAttribute('aria-selected','true');
+        renderScriptCards(k);
+      });
+      tabsEl.appendChild(tab);
+    });
+  }
+
+  function renderScripts(key) {
+    renderTabs(key);
+    renderScriptCards(key);
+  }
+
+  function renderScriptCards(key) {
+    const gridEl = $('#scripts-grid');
+
+    // Cards
+    gridEl.innerHTML = '';
+    SCRIPTS[key].items.forEach((s, i) => {
+      const card = mkEl('div', 'script-card');
+      const head = mkEl('div', 'script-head');
+      head.appendChild(mkEl('span', 'script-tone', s.tone));
+      const cpBtn = mkEl('button', 'copy-btn');
+      cpBtn.type = 'button';
+      cpBtn.setAttribute('aria-label', `Copiar variação ${i+1} — ${SCRIPTS[key].label}`);
+      cpBtn.innerHTML = COPY_ICON + ' Copiar';
+      cpBtn.addEventListener('click', () => copyText(s.text, cpBtn));
+      head.appendChild(cpBtn);
+      card.appendChild(head);
+      card.appendChild(mkEl('p', 'script-text', s.text));
+      if (s.note) card.appendChild(mkEl('p', 'script-note', s.note));
+      gridEl.appendChild(card);
+    });
+  }
+
+  const BADGE_CLS = { hot:'b-hot', nurture:'b-nur', entry:'b-ent', anti:'b-anti' };
+
+  function renderDecision() {
+    const tbody = $('#decision-tbody');
+    const cards = $('#decision-cards');
+    DECISIONS.forEach(d => {
+      // Table row
+      const tr = mkEl('tr','');
+      const tdSit = mkEl('td','situation', d.sit); tr.appendChild(tdSit);
+      const tdBadge = mkEl('td','');
+      tdBadge.appendChild(mkEl('span','badge ' + BADGE_CLS[d.type], d.badge));
+      tr.appendChild(tdBadge);
+      tr.appendChild(mkEl('td','action', d.act));
+      tbody.appendChild(tr);
+      // Card
+      const card = mkEl('div','dec-card');
+      card.appendChild(mkEl('p','dec-sit', d.sit));
+      const foot = mkEl('div','dec-foot');
+      foot.appendChild(mkEl('span','badge ' + BADGE_CLS[d.type], d.badge));
+      foot.appendChild(mkEl('span','dec-act', d.act));
+      card.appendChild(foot);
+      cards.appendChild(card);
+    });
+  }
+
+  function renderRotina() {
+    const c = $('#rotina-list');
+    ROTINA.forEach((s, i) => {
+      const li = mkEl('li','rotina-step');
+      li.appendChild(mkEl('div','step-num', String(i+1)));
+      const cnt = mkEl('div','');
+      cnt.appendChild(mkEl('div','step-title', s.title));
+      cnt.appendChild(mkEl('div','step-desc',  s.desc));
+      li.appendChild(cnt);
+      li.appendChild(mkEl('div','step-time', s.time));
+      c.appendChild(li);
+    });
+  }
+
+  /* ==============================
+     4. EVENTOS
+     ============================== */
+
+  function toggleOpt(btn, card) {
+    const on = btn.classList.toggle('on');
+    btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+    card.classList.toggle('sel', $$('.opt.on', card).length > 0);
+  }
+
+  function setupScrollspy() {
+    const sections = $$('section[id]');
+    const links    = $$('.nav-link[data-s]');
+    const nav      = $('#nav');
+
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          links.forEach(l => l.classList.toggle('active', l.dataset.s === e.target.id));
+        }
+      });
+    }, { rootMargin:'-50% 0px -50% 0px' });
+
+    sections.forEach(s => io.observe(s));
+    window.addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 8), { passive:true });
+  }
+
+  /* ==============================
+     5. INIT
+     ============================== */
+
+  document.addEventListener('DOMContentLoaded', () => {
+    renderFlow();
+    renderStatus();
+    renderCampos();
+    renderScripts('abertura');
+    renderDecision();
+    renderRotina();
+    setupScrollspy();
+
+    $('#campos-reset').addEventListener('click', () => {
+      $$('.opt.on').forEach(b => { b.classList.remove('on'); b.setAttribute('aria-pressed','false'); });
+      $$('.campo-card.sel').forEach(c => c.classList.remove('sel'));
+    });
+  });
+
+})();
+</script>
+</body>
+</html>

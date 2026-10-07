@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Consultoria de Clareza &amp; Direção — Débora</title>
+<meta name="description" content="Um breve diagnóstico do seu momento. Menos de 5 minutos para começar a sair do automático e retomar clareza e direção." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --sage:#5e6b5f;
+    --sage-deep:#454f47;
+    --sage-soft:#8a9788;
+    --cream:#f5f1e8;
+    --cream-2:#efe9dc;
+    --sand:#c9a86a;
+    --sand-deep:#b3894a;
+    --ink:#3a3a34;
+    --ink-soft:#6a6a60;
+    --white:#fbf9f4;
+    --error:#a8564b;
+    --radius:16px;
+    --shadow:0 18px 50px -20px rgba(69,79,71,.35);
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html,body{height:100%;}
+  body{
+    font-family:'Nunito Sans',-apple-system,system-ui,sans-serif;
+    color:var(--ink);
+    background:
+      radial-gradient(1200px 700px at 80% -10%, rgba(201,168,106,.16), transparent 60%),
+      radial-gradient(1000px 600px at 0% 110%, rgba(94,107,95,.20), transparent 55%),
+      var(--cream);
+    min-height:100dvh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:24px 18px;
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+  .card{
+    width:100%;
+    max-width:620px;
+    background:var(--white);
+    border-radius:var(--radius);
+    box-shadow:var(--shadow);
+    border:1px solid rgba(94,107,95,.12);
+    overflow:hidden;
+    position:relative;
+  }
+  /* progress */
+  .progress-wrap{height:5px;background:var(--cream-2);}
+  .progress-bar{height:100%;width:0;background:linear-gradient(90deg,var(--sage-soft),var(--sage));transition:width .5s cubic-bezier(.4,0,.2,1);}
+  .inner{padding:44px 42px 38px;}
+  @media(max-width:520px){.inner{padding:32px 24px 28px;}}
+
+  /* brand */
+  .brand{display:flex;align-items:center;gap:10px;margin-bottom:26px;}
+  .brand svg{width:30px;height:30px;flex:none;}
+  .brand-name{font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:600;color:var(--sage-deep);letter-spacing:.3px;}
+  .brand-sub{font-size:.7rem;text-transform:uppercase;letter-spacing:2px;color:var(--sand-deep);}
+
+  .step{display:none;animation:fade .5s ease;}
+  .step.active{display:block;}
+  @keyframes fade{from{opacity:0;transform:translateY(14px);}to{opacity:1;transform:translateY(0);}}
+
+  .eyebrow{font-size:.72rem;text-transform:uppercase;letter-spacing:2.5px;color:var(--sand-deep);font-weight:700;margin-bottom:14px;}
+  h1{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:2.4rem;line-height:1.12;color:var(--sage-deep);margin-bottom:8px;}
+  .q-title{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:1.72rem;line-height:1.22;color:var(--ink);margin-bottom:20px;}
+  @media(max-width:520px){h1{font-size:2rem;}.q-title{font-size:1.45rem;}}
+  .intro-text{color:var(--ink-soft);font-size:1rem;margin-bottom:10px;}
+  .intro-text strong{color:var(--sage-deep);font-weight:700;}
+  .intro-list{margin:16px 0 6px;padding-left:2px;list-style:none;}
+  .intro-list li{position:relative;padding-left:26px;margin-bottom:10px;color:var(--ink-soft);}
+  .intro-list li::before{content:"";position:absolute;left:0;top:9px;width:8px;height:8px;border-radius:50%;background:var(--sand);}
+  .note{color:var(--ink-soft);font-size:.92rem;margin-top:14px;font-style:italic;}
+  .help{color:var(--ink-soft);font-size:.86rem;margin:-10px 0 18px;}
+
+  /* inputs */
+  .field input[type=text],.field input[type=email],.field input[type=tel],.field textarea{
+    width:100%;font-family:inherit;font-size:1.05rem;color:var(--ink);
+    background:var(--cream);border:1.5px solid transparent;border-bottom:1.5px solid rgba(94,107,95,.35);
+    border-radius:10px;padding:14px 16px;transition:.25s;
+  }
+  .field textarea{min-height:120px;resize:vertical;line-height:1.5;}
+  .field input:focus,.field textarea:focus{outline:none;border-color:var(--sage);background:var(--white);box-shadow:0 4px 18px -10px rgba(94,107,95,.6);}
+  .field input::placeholder,.field textarea::placeholder{color:#a9a798;}
+
+  /* options */
+  .options{display:flex;flex-direction:column;gap:11px;}
+  .opt{
+    display:flex;align-items:center;gap:14px;cursor:pointer;
+    padding:15px 18px;border:1.5px solid rgba(94,107,95,.28);border-radius:12px;
+    background:var(--white);transition:.2s;font-size:1.02rem;color:var(--ink);
+  }
+  .opt:hover{border-color:var(--sage);background:var(--cream);transform:translateY(-1px);}
+  .opt .marker{width:22px;height:22px;flex:none;border:1.6px solid var(--sage-soft);border-radius:50%;position:relative;transition:.2s;}
+  .opt.checkbox .marker{border-radius:6px;}
+  .opt.selected{border-color:var(--sage);background:var(--sage);color:var(--white);box-shadow:0 8px 22px -12px rgba(94,107,95,.9);}
+  .opt.selected .marker{border-color:var(--white);background:var(--white);}
+  .opt.selected .marker::after{content:"";position:absolute;inset:5px;border-radius:inherit;background:var(--sage);}
+  .opt input{position:absolute;opacity:0;pointer-events:none;}
+  .other-wrap{margin-top:4px;}
+  .other-wrap input{margin-top:6px;}
+
+  /* scale */
+  .scale{display:flex;gap:8px;flex-wrap:wrap;}
+  .scale .sopt{flex:1;min-width:44px;text-align:center;padding:14px 0;border:1.5px solid rgba(94,107,95,.28);border-radius:12px;cursor:pointer;font-weight:700;font-size:1.05rem;color:var(--sage-deep);background:var(--white);transition:.18s;}
+  .scale .sopt:hover{border-color:var(--sage);background:var(--cream);}
+  .scale .sopt.selected{background:var(--sage);color:var(--white);border-color:var(--sage);}
+  .scale-labels{display:flex;justify-content:space-between;font-size:.82rem;color:var(--ink-soft);margin-top:10px;}
+
+  .err{color:var(--error);font-size:.86rem;margin-top:10px;display:none;}
+  .err.show{display:block;}
+
+  /* nav */
+  .nav{display:flex;align-items:center;justify-content:space-between;margin-top:30px;gap:14px;}
+  .btn{font-family:inherit;font-size:1rem;font-weight:700;border:none;border-radius:40px;cursor:pointer;transition:.22s;letter-spacing:.3px;}
+  .btn-primary{background:var(--sage);color:var(--white);padding:14px 34px;box-shadow:0 10px 24px -12px rgba(94,107,95,.9);}
+  .btn-primary:hover{background:var(--sage-deep);transform:translateY(-2px);}
+  .btn-ghost{background:transparent;color:var(--ink-soft);padding:12px 4px;}
+  .btn-ghost:hover{color:var(--sage-deep);}
+  .btn-skip{background:transparent;color:var(--ink-soft);text-decoration:underline;font-weight:400;padding:8px;font-size:.9rem;}
+  .btn-skip:hover{color:var(--sage);}
+  .stepcount{font-size:.8rem;color:var(--ink-soft);letter-spacing:1px;}
+
+  /* closing */
+  .closing{text-align:center;padding:14px 0;}
+  .closing .leaf{width:56px;height:56px;margin:0 auto 18px;display:block;}
+  .closing p{color:var(--ink-soft);margin-bottom:12px;}
+  .closing .sig{font-family:'Cormorant Garamond',serif;font-size:1.5rem;color:var(--sage-deep);margin-top:8px;}
+  .spinner{width:26px;height:26px;border:3px solid var(--cream-2);border-top-color:var(--sage);border-radius:50%;animation:spin .8s linear infinite;margin:20px auto;}
+  @keyframes spin{to{transform:rotate(360deg);}}
+  .hide{display:none!important;}
+</style>
+</head>
+<body>
+  <main class="card">
+    <div class="progress-wrap"><div class="progress-bar" id="progress"></div></div>
+    <div class="inner">
+      <div class="brand" id="brand">
+        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="24" cy="24" r="22" stroke="#c9a86a" stroke-width="1.4"/>
+          <path d="M24 8c-6 8-6 16 0 24 6-8 6-16 0-24Z" fill="#8a9788"/>
+          <path d="M24 12c8 4 12 10 12 20-9-2-14-8-12-20Z" fill="#5e6b5f"/>
+          <circle cx="24" cy="24" r="2.4" fill="#c9a86a"/>
+        </svg>
+        <div>
+          <div class="brand-name">Clareza &amp; Direção</div>
+          <div class="brand-sub">com Débora</div>
+        </div>
+      </div>
+
+      <form id="quiz" novalidate>
+        <div id="steps"></div>
+      </form>
+    </div>
+  </main>
+
+  <!-- hidden iframe target for Google Forms submission -->
+  <iframe name="gf_target" id="gf_target" style="display:none" title="hidden"></iframe>
+
+<script>
+/* =====================================================================
+   CONFIGURAÇÃO  —  edite só o que estiver marcado com  >>> AJUSTE <<<
+   ===================================================================== */
+
+// >>> AJUSTE (E-MAIL) <<<
+// 1. Crie uma conta gratuita em https://formspree.io  (use deboradmeq@gmail.com)
+// 2. Crie um formulário, copie o ID que aparece na URL do endpoint
+//    (ex: https://formspree.io/f/xdorzabc  ->  o ID é "xdorzabc")
+// 3. Cole o ID abaixo. Enquanto estiver "SEU_ID_AQUI", o e-mail não é enviado
+//    (mas a resposta continua indo para a sua planilha do Google Forms).
+const FORMSPREE_ID = "SEU_ID_AQUI";
+
+// Google Forms (planilha) — já configurado, não precisa mexer.
+const GOOGLE_FORM_ACTION = "https://docs.google.com/forms/d/e/1FAIpQLSfw4bEtH2eDdaGRUTrMLE4hBuJcwWtdtkzabiiDyFkBV-_bDA/formResponse";
+
+/* Perguntas na mesma ordem do seu Google Forms.
+   Todas obrigatórias (sem "Pular"). */
+const QUESTIONS = [
+  // ---------- DADOS BÁSICOS ----------
+  { section:"Dados básicos", entry:"1434597182", type:"text", required:true,
+    title:"Nome completo:" },
+
+  { section:"Dados básicos", entry:"1426044181", type:"email", required:true,
+    title:"E-mail:",
+    help:"É por aqui que eu envio o retorno e o link de agendamento." },
+
+  { section:"Dados básicos", entry:"1126168288", type:"tel", required:true,
+    title:"WhatsApp (com DDD):",
+    help:"Ex: (11) 91234-5678" },
+
+  { section:"Dados básicos", entry:"1325573157", type:"text", required:true,
+    title:"Nome da empresa que está atualmente:" },
+
+  { section:"Dados básicos", entry:"1353673778", type:"textarea", required:true,
+    title:"Me conte em poucas palavras quais são as suas principais responsabilidades no seu trabalho:" },
+
+  { section:"Dados básicos", entry:"236781585", type:"radio", other:true, required:true,
+    title:"Há quanto tempo você exerce função de liderança?",
+    options:["Ainda não sou líder formal, mas assumo responsabilidades de liderança","Menos de 2 anos","Entre 2 e 5 anos","Mais de 5 anos","Já fui líder, mas não estou nesse cargo mais"] },
+
+  { section:"Dados básicos", entry:"1119758969", type:"radio", required:true,
+    title:"Faixa de faturamento ou renda familiar mensal",
+    help:"Ajuda a entender seu momento e sugerir o melhor caminho.",
+    options:["Menos de R$5 mil","Entre R$5 e R$10 mil","Entre R$10 e R$30 mil","Acima de R$30 mil"] },
+
+  { section:"Dados básicos", entry:"1609300118", type:"text", required:true,
+    title:"Se alguém te recomendou esta conversa, compartilha comigo o nome dessa pessoa?" },
+
+  // ---------- SEU MOMENTO ATUAL ----------
+  { section:"Seu momento atual", entry:"1013004216", type:"radio", required:true,
+    title:"Como você definiria sua relação com o trabalho hoje?",
+    options:["Produtiva, porém pesada","Boa, mas sem entusiasmo","Em dúvida sobre próximos passos","Algo não encaixa, mas não sei explicar"] },
+
+  { section:"Seu momento atual", entry:"165281346", type:"radio", other:true, required:true,
+    title:"Quais sinais você reconhece em si nos últimos meses?",
+    options:["Cansaço que não passa","Energia drenada ao final do dia","Dificuldade em desconectar do trabalho","Perda de entusiasmo ou direção","Sensação de estar sempre “resolvendo”","Não vejo mais sentido no que eu faço","Irritação ou frustração recorrente","Vontade de mudar, mas sem clareza"] },
+
+  { section:"Seu momento atual", entry:"33987803", type:"textarea", required:true,
+    title:"O que você já tentou fazer pra resolver os problemas que citou acima?" },
+
+  { section:"Seu momento atual", entry:"1317933376", type:"radio", required:true,
+    title:"Você sente que o trabalho tem afetado sua vida pessoal?",
+    options:["Sim, muito","Às vezes","Pouco","Não"] },
+
+  { section:"Seu momento atual", entry:"864878989", type:"radio", required:true,
+    title:"Você acredita que mudanças internas (emoções, crenças, autoconsciência) influenciam a forma como trabalha e se sente?",
+    options:["Sim, completamente","Acho que sim, mas não sei como","Tenho dúvidas sobre isso","Não acredito"] },
+
+  { section:"Seu momento atual", entry:"503565801", type:"scale", min:1, max:5,
+    labelMin:"Pouco", labelMax:"Muito", required:true,
+    title:"Se você continuar decidindo do mesmo jeito pelos próximos 2 anos, o quanto isso te aproxima da vida que você quer viver?" },
+
+  { section:"Seu momento atual", entry:"1218487285", type:"text", required:true,
+    title:"O que você sente que perdeu nos últimos anos?" },
+
+  // ---------- O QUE VOCÊ BUSCA ----------
+  { section:"O que você busca", entry:"1760575467", type:"textarea", required:true,
+    title:"Se você tivesse um poder mágico e pudesse mudar uma coisa na sua vida profissional agora, o que mudaria?" },
+
+  { section:"O que você busca", entry:"2141876161", type:"checkbox", other:true, required:true,
+    title:"Quais resultados você gostaria de alcançar nos próximos meses?",
+    help:"Pode escolher mais de uma.",
+    options:["Mais clareza para tomar decisões","Recuperar energia e prazer","Cuidar melhor de mim sem perder resultados","Melhorar meus relacionamentos no trabalho","Ter mais autoconfiança","Me posicionar melhor / estabelecer limites"] },
+
+  { section:"O que você busca", entry:"1381222095", type:"textarea", required:true,
+    title:"Há algo mais que você gostaria de compartilhar antes do nosso encontro?" },
+
+  { section:"O que você busca", entry:"1258068842", type:"textarea", required:true,
+    title:"O que te motiva a buscar essa conversa agora?" },
+
+  // ---------- COMPROMISSO ----------
+  { section:"Compromisso", entry:"1576045930", type:"scale", min:1, max:10,
+    labelMin:"Nada disposto(a)", labelMax:"Totalmente", required:true,
+    title:"De 0 a 10, qual é o seu nível de disposição para fazer mudanças reais nos próximos meses?" },
+
+  { section:"Compromisso", entry:"1955584408", type:"radio", required:true,
+    title:"Se você sentir que esse processo é para você, está disposto(a) a investir tempo e energia em você nos próximos meses?",
+    options:["Sim","Preciso pensar","Não no momento"] }
+];
+
+/* =====================================================================
+   MOTOR DA PÁGINA
+   ===================================================================== */
+const answers = {};   // entry -> value (string) | array (checkbox)
+const otherText = {}; // entry -> texto do "Outro"
+let current = 0;      // 0 = boas-vindas
+const TOTAL = QUESTIONS.length;
+const stepsEl = document.getElementById('steps');
+const progressEl = document.getElementById('progress');
+const brandEl = document.getElementById('brand');
+
+/* ---- Boas-vindas ---- */
+function welcomeHTML(){
+  return `
+    <div class="step active" data-idx="welcome">
+      <div class="eyebrow">Consultoria de Clareza &amp; Direção</div>
+      <h1>Seja bem-vindo(a).</h1>
+      <p class="intro-text">Essa consultoria é para você, líder, que sente que está entregando, decidindo e sustentando muito — mas percebe que algo não está mais fazendo sentido como antes.</p>
+      <ul class="intro-list">
+        <li>Clarear o que você realmente quer viver daqui pra frente;</li>
+        <li>Entender para onde sua energia está indo — e onde ela está sendo drenada;</li>
+        <li>Mapear os padrões que te mantêm nos mesmos ciclos e construir um direcionamento claro.</li>
+      </ul>
+      <p class="intro-text" style="margin-top:14px;">Não é uma conversa motivacional. É um diagnóstico do seu momento atual e clareza para decidir com mais coerência.</p>
+      <p class="note">Leva menos de 5 minutos. Pode ser o primeiro passo para sair do automático.</p>
+      <div class="nav">
+        <span></span>
+        <button type="button" class="btn btn-primary" onclick="start()">Começar &nbsp;→</button>
+      </div>
+    </div>`;
+}
+
+/* ---- Render de uma pergunta ---- */
+function questionHTML(q, idx){
+  let body = '';
+  if(q.type === 'text' || q.type === 'email' || q.type === 'tel'){
+    const t = q.type === 'email' ? 'email' : (q.type === 'tel' ? 'tel' : 'text');
+    body = `<div class="field"><input type="${t}" id="in_${idx}" placeholder="Digite aqui..." value="${escapeAttr(answers[q.entry]||'')}" autocomplete="off"></div>`;
+  } else if(q.type === 'textarea'){
+    body = `<div class="field"><textarea id="in_${idx}" placeholder="Escreva com liberdade...">${escapeHtml(answers[q.entry]||'')}</textarea></div>`;
+  } else if(q.type === 'radio' || q.type === 'checkbox'){
+    const cls = q.type === 'checkbox' ? 'opt checkbox' : 'opt';
+    body = '<div class="options">';
+    q.options.forEach((opt,i)=>{
+      body += `<label class="${cls}" data-val="${escapeAttr(opt)}" onclick="pick(${idx},this)"><span class="marker"></span><span>${escapeHtml(opt)}</span></label>`;
+    });
+    if(q.other){
+      body += `<div class="other-wrap"><label class="${cls}" data-val="__other__" onclick="pick(${idx},this)"><span class="marker"></span><span>Outro</span></label>
+        <input type="text" id="other_${idx}" class="hide" placeholder="Conte em suas palavras..." oninput="otherText['${q.entry}']=this.value" value="${escapeAttr(otherText[q.entry]||'')}"></div>`;
+    }
+    body += '</div>';
+  } else if(q.type === 'scale'){
+    body = '<div class="scale">';
+    for(let n=q.min;n<=q.max;n++){
+      body += `<div class="sopt" data-val="${n}" onclick="pickScale(${idx},this)">${n}</div>`;
+    }
+    body += `</div><div class="scale-labels"><span>${q.labelMin||''}</span><span>${q.labelMax||''}</span></div>`;
+  }
+
+  const helpHtml = q.help ? `<p class="help">${escapeHtml(q.help)}</p>` : '';
+  const req = q.required ? ' <span style="color:var(--sand-deep)">*</span>' : '';
+  const canSkip = !q.required;
+
+  return `
+    <div class="step" data-idx="${idx}">
+      <div class="eyebrow">${escapeHtml(q.section)}</div>
+      <div class="q-title">${escapeHtml(q.title)}${req}</div>
+      ${helpHtml}
+      ${body}
+      <div class="err" id="err_${idx}">Por favor, preencha para continuar.</div>
+      <div class="nav">
+        <button type="button" class="btn btn-ghost" onclick="prev()">←&nbsp; Voltar</button>
+        <span class="stepcount">${idx+1} de ${TOTAL}</span>
+        ${ q.type==='radio'||q.type==='scale'
+            ? (canSkip?`<button type="button" class="btn-skip" onclick="next(true)">Pular</button>`:`<span></span>`)
+            : `<button type="button" class="btn btn-primary" onclick="next()">${idx===TOTAL-1?'Enviar':'Continuar'} &nbsp;→</button>` }
+      </div>
+    </div>`;
+}
+
+/* ---- Encerramento ---- */
+function closingHTML(){
+  return `
+    <div class="step" data-idx="done">
+      <div class="closing">
+        <svg class="leaf" viewBox="0 0 48 48" fill="none"><path d="M24 6c-8 10-8 22 0 34 8-12 8-24 0-34Z" fill="#8a9788"/><path d="M24 40V14" stroke="#fbf9f4" stroke-width="1.5"/></svg>
+        <h1>Recebido com carinho. 🌿</h1>
+        <p>Obrigada por compartilhar seu momento com sinceridade.</p>
+        <p>Vou ler tudo com atenção e, se sentir que essa conversa pode realmente te ajudar, te envio o link de agendamento da consultoria gratuita.</p>
+        <p>Caso o momento ainda não seja o ideal, te aviso — e posso te enviar outros conteúdos que contribuam com sua clareza.</p>
+        <p class="sig">Com carinho,<br>Débora</p>
+      </div>
+    </div>`;
+}
+
+function sendingHTML(){
+  return `<div class="step active" data-idx="sending"><div class="closing"><div class="spinner"></div><p>Enviando suas respostas...</p></div></div>`;
+}
+
+/* ---- Build ---- */
+stepsEl.innerHTML = welcomeHTML() + QUESTIONS.map((q,i)=>questionHTML(q,i)).join('') + closingHTML();
+
+function show(idx){
+  document.querySelectorAll('.step').forEach(s=>s.classList.remove('active'));
+  let sel;
+  if(idx==='welcome') sel='[data-idx="welcome"]';
+  else if(idx==='done') sel='[data-idx="done"]';
+  else sel='[data-idx="'+idx+'"]';
+  const el = stepsEl.querySelector(sel);
+  if(el) el.classList.add('active');
+  // progress
+  if(typeof idx === 'number'){ progressEl.style.width = ((idx)/TOTAL*100)+'%'; brandEl.style.display='flex'; }
+  else if(idx==='done'){ progressEl.style.width='100%'; }
+  else { progressEl.style.width='0%'; }
+  window.scrollTo({top:0,behavior:'smooth'});
+  const inp = el && el.querySelector('input[type=text],input[type=email],input[type=tel],textarea');
+  if(inp) setTimeout(()=>inp.focus(),300);
+}
+
+function start(){ current=0; show(0); }
+function prev(){ if(current>0){ current--; show(current);} else { show('welcome'); } }
+
+function pick(idx, label){
+  const q = QUESTIONS[idx];
+  const val = label.getAttribute('data-val');
+  const container = label.closest('.step');
+  if(q.type==='radio'){
+    container.querySelectorAll('.opt').forEach(o=>o.classList.remove('selected'));
+    label.classList.add('selected');
+    const otherInp = container.querySelector('#other_'+idx);
+    if(val==='__other__'){
+      answers[q.entry]='__other__';
+      if(otherInp){ otherInp.classList.remove('hide'); otherInp.focus(); }
+    } else {
+      answers[q.entry]=val;
+      if(otherInp) otherInp.classList.add('hide');
+      setTimeout(()=>next(),260); // avança sozinho ao escolher
+    }
+  } else { // checkbox
+    label.classList.toggle('selected');
+    if(!Array.isArray(answers[q.entry])) answers[q.entry]=[];
+    if(val==='__other__'){
+      const otherInp = container.querySelector('#other_'+idx);
+      if(label.classList.contains('selected')){ answers[q.entry].push('__other__'); if(otherInp){otherInp.classList.remove('hide');otherInp.focus();} }
+      else { answers[q.entry]=answers[q.entry].filter(v=>v!=='__other__'); if(otherInp) otherInp.classList.add('hide'); }
+    } else {
+      if(label.classList.contains('selected')) answers[q.entry].push(val);
+      else answers[q.entry]=answers[q.entry].filter(v=>v!==val);
+    }
+  }
+  hideErr(idx);
+}
+
+function pickScale(idx, el){
+  const q = QUESTIONS[idx];
+  el.closest('.scale').querySelectorAll('.sopt').forEach(o=>o.classList.remove('selected'));
+  el.classList.add('selected');
+  answers[q.entry]=el.getAttribute('data-val');
+  hideErr(idx);
+  setTimeout(()=>next(),260);
+}
+
+function collectText(idx){
+  const q=QUESTIONS[idx];
+  const inp=document.getElementById('in_'+idx);
+  if(inp){ answers[q.entry]=inp.value.trim(); }
+}
+
+function validate(idx){
+  const q=QUESTIONS[idx];
+  if(q.type==='text'||q.type==='email'||q.type==='tel'||q.type==='textarea') collectText(idx);
+  if(q.required){
+    const a=answers[q.entry];
+    const empty = a===undefined||a===null||(typeof a==='string'&&!a.trim().length)||(Array.isArray(a)&&a.length===0);
+    if(empty) return 'Este campo é obrigatório.';
+  }
+  if(q.type==='email' && answers[q.entry] && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(answers[q.entry])) return 'Confira o e-mail, parece estar incompleto.';
+  return null;
+}
+
+function next(skip){
+  const q=QUESTIONS[current];
+  if(!skip){
+    const msg=validate(current);
+    if(msg){ showErr(current,msg); return; }
+  }
+  hideErr(current);
+  if(current < TOTAL-1){ current++; show(current); }
+  else { submitAll(); }
+}
+
+function showErr(idx,msg){ const e=document.getElementById('err_'+idx); if(e){e.textContent=msg;e.classList.add('show');} }
+function hideErr(idx){ const e=document.getElementById('err_'+idx); if(e) e.classList.remove('show'); }
+
+/* Enter avança em campos de linha única */
+document.addEventListener('keydown',function(ev){
+  if(ev.key==='Enter'){
+    const active=stepsEl.querySelector('.step.active');
+    if(!active) return;
+    const tag=ev.target.tagName.toLowerCase();
+    if(tag==='textarea') return; // enter = nova linha
+    if(active.getAttribute('data-idx')==='welcome'){ ev.preventDefault(); start(); return; }
+    if(!isNaN(parseInt(active.getAttribute('data-idx')))){ ev.preventDefault(); next(); }
+  }
+});
+
+/* =====================================================================
+   ENVIO — Google Forms (planilha) + Formspree (e-mail)
+   ===================================================================== */
+function buildReadable(){
+  const out={};
+  QUESTIONS.forEach(q=>{
+    let v=answers[q.entry];
+    if(v===undefined||v===''||(Array.isArray(v)&&!v.length)) return;
+    if(Array.isArray(v)){
+      v=v.map(x=>x==='__other__'?(otherText[q.entry]||'Outro'):x).join(', ');
+    } else if(v==='__other__'){ v=otherText[q.entry]||'Outro'; }
+    out[q.title]=v;
+  });
+  return out;
+}
+
+function submitToGoogle(){
+  const f=document.createElement('form');
+  f.action=GOOGLE_FORM_ACTION; f.method='POST'; f.target='gf_target'; f.style.display='none';
+  function add(name,value){ const i=document.createElement('input'); i.type='hidden'; i.name=name; i.value=value; f.appendChild(i); }
+  QUESTIONS.forEach(q=>{
+    let v=answers[q.entry];
+    if(v===undefined||v===''||(Array.isArray(v)&&!v.length)) return;
+    const key='entry.'+q.entry;
+    if(Array.isArray(v)){
+      v.forEach(item=>{
+        if(item==='__other__'){ add(key,'__other_option__'); add(key+'.other_option_response', otherText[q.entry]||''); }
+        else add(key,item);
+      });
+    } else if(v==='__other__'){
+      add(key,'__other_option__'); add(key+'.other_option_response', otherText[q.entry]||'');
+    } else { add(key,v); }
+  });
+  document.body.appendChild(f);
+  f.submit();
+  setTimeout(()=>f.remove(),1500);
+}
+
+async function submitToFormspree(){
+  if(!FORMSPREE_ID || FORMSPREE_ID==='SEU_ID_AQUI') return;
+  const data=buildReadable();
+  data._subject='Nova resposta — Consultoria de Clareza & Direção';
+  try{
+    await fetch('https://formspree.io/f/'+FORMSPREE_ID,{
+      method:'POST',
+      headers:{'Content-Type':'application/json','Accept':'application/json'},
+      body:JSON.stringify(data)
+    });
+  }catch(e){ /* silencioso — Google Forms já garante o registro */ }
+}
+
+async function submitAll(){
+  stepsEl.querySelectorAll('.step').forEach(s=>s.classList.remove('active'));
+  const s=document.createElement('div'); s.innerHTML=sendingHTML(); stepsEl.appendChild(s.firstElementChild);
+  progressEl.style.width='100%';
+  try{ submitToGoogle(); }catch(e){}
+  await submitToFormspree();
+  setTimeout(()=>{
+    const sending=stepsEl.querySelector('[data-idx="sending"]'); if(sending) sending.remove();
+    show('done'); brandEl.style.display='flex';
+  },1400);
+}
+
+/* utils */
+function escapeHtml(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+function escapeAttr(s){return String(s).replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;');}
+
+/* init */
+show('welcome');
+</script>
+</body>
+</html>

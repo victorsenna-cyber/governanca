@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Continuum · Plano de Estabilização — Mês 6</title>
+<style>
+  :root{
+    --bg:#0c0d10; --bg2:#131419; --card:#16181f; --card2:#1b1e27;
+    --line:#262a36; --txt:#e8eaf0; --txt2:#a4a9b8; --txt3:#6e7384;
+    --acc:#5b8cff; --acc2:#7aa2ff; --ok:#3ecf8e; --warn:#f5a623; --bad:#ff5f6d;
+    --okbg:rgba(62,207,142,.10); --warnbg:rgba(245,166,35,.10); --badbg:rgba(255,95,109,.10);
+    --shadow:0 1px 0 rgba(255,255,255,.02),0 8px 30px rgba(0,0,0,.35);
+  }
+  [data-theme="light"]{
+    --bg:#f4f5f8; --bg2:#eceef3; --card:#ffffff; --card2:#f7f8fb;
+    --line:#e2e5ec; --txt:#1a1d26; --txt2:#4a5060; --txt3:#878d9c;
+    --acc:#2f63e6; --acc2:#3f74f0; --ok:#13935f; --warn:#b9760a; --bad:#d83644;
+    --okbg:rgba(19,147,95,.08); --warnbg:rgba(185,118,10,.08); --badbg:rgba(216,54,68,.08);
+    --shadow:0 1px 2px rgba(20,30,60,.04),0 8px 28px rgba(20,30,60,.08);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased;transition:background .3s,color .3s}
+  .wrap{max-width:920px;margin:0 auto;padding:0 24px 96px}
+  header.top{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);padding:14px 0;margin-bottom:8px}
+  .top-in{max-width:920px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:.3px}
+  .dot{width:10px;height:10px;border-radius:50%;background:var(--acc);box-shadow:0 0 0 4px color-mix(in srgb,var(--acc) 22%,transparent)}
+  .brand small{display:block;font-weight:500;color:var(--txt3);font-size:11px;letter-spacing:.5px;text-transform:uppercase}
+  .toggle{cursor:pointer;border:1px solid var(--line);background:var(--card);color:var(--txt2);border-radius:10px;padding:8px 12px;font-size:13px;display:flex;align-items:center;gap:7px;transition:.2s}
+  .toggle:hover{border-color:var(--acc);color:var(--txt)}
+  .hero{padding:54px 0 30px}
+  .kicker{color:var(--acc2);font-weight:600;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:14px}
+  h1{font-size:38px;line-height:1.15;letter-spacing:-.5px;margin-bottom:18px;font-weight:760}
+  .lead{font-size:18px;color:var(--txt2);max-width:680px}
+  .meta-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+  .pill{font-size:12.5px;color:var(--txt2);border:1px solid var(--line);background:var(--card);border-radius:999px;padding:6px 13px}
+  .pill b{color:var(--txt)}
+  section{margin-top:46px}
+  .sec-head{display:flex;align-items:baseline;gap:12px;margin-bottom:20px}
+  .sec-num{font-variant-numeric:tabular-nums;color:var(--acc);font-weight:700;font-size:14px;border:1px solid var(--line);border-radius:8px;padding:3px 9px;background:var(--card)}
+  h2{font-size:23px;letter-spacing:-.3px;font-weight:720}
+  h2 + .sub{color:var(--txt3);font-size:14px;margin-top:3px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px 24px;box-shadow:var(--shadow)}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+  .grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+  @media(max-width:720px){.grid2,.grid3,.grid4{grid-template-columns:1fr}h1{font-size:30px}.lead{font-size:16px}}
+  .stat{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;box-shadow:var(--shadow)}
+  .stat .lbl{font-size:12px;color:var(--txt3);text-transform:uppercase;letter-spacing:.6px;margin-bottom:8px}
+  .stat .val{font-size:27px;font-weight:740;font-variant-numeric:tabular-nums;letter-spacing:-.5px}
+  .stat .note{font-size:12.5px;color:var(--txt2);margin-top:5px}
+  .stat.bad .val{color:var(--bad)} .stat.warn .val{color:var(--warn)} .stat.ok .val{color:var(--ok)}
+  .stat.bad{border-color:color-mix(in srgb,var(--bad) 35%,var(--line))}
+  table{width:100%;border-collapse:collapse;font-size:14.5px}
+  th,td{text-align:left;padding:12px 10px;border-bottom:1px solid var(--line)}
+  th{color:var(--txt3);font-size:11.5px;text-transform:uppercase;letter-spacing:.6px;font-weight:600}
+  td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
+  tr:last-child td{border-bottom:none}
+  .total-row td{font-weight:720;background:var(--card2)}
+  .tag{display:inline-block;font-size:11px;font-weight:600;padding:2px 9px;border-radius:999px;letter-spacing:.3px}
+  .tag.now{background:var(--badbg);color:var(--bad)} .tag.soon{background:var(--warnbg);color:var(--warn)} .tag.build{background:var(--okbg);color:var(--ok)}
+  .frente{display:flex;gap:16px;padding:18px 0;border-bottom:1px solid var(--line)}
+  .frente:last-child{border-bottom:none}
+  .frente .idx{flex:0 0 42px;height:42px;border-radius:12px;background:var(--card2);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;font-weight:740;color:var(--acc)}
+  .frente h3{font-size:16px;margin-bottom:4px;display:flex;align-items:center;gap:9px;flex-wrap:wrap}
+  .frente p{color:var(--txt2);font-size:14.5px}
+  .frente .why{font-size:13px;color:var(--txt3);margin-top:6px}
+  .callout{border-left:3px solid var(--acc);background:var(--card2);border-radius:0 12px 12px 0;padding:16px 20px;margin-top:4px}
+  .callout.heart{border-left-color:var(--ok);background:var(--okbg)}
+  .callout h3{font-size:16px;margin-bottom:7px;color:var(--txt)}
+  .callout p{color:var(--txt2);font-size:14.5px}
+  .callout p + p{margin-top:9px}
+  .funnel{display:flex;flex-direction:column;gap:9px;margin-top:6px}
+  .step{display:flex;align-items:center;gap:14px;background:var(--card2);border:1px solid var(--line);border-radius:12px;padding:13px 16px}
+  .step .n{flex:0 0 26px;height:26px;border-radius:8px;background:var(--acc);color:#fff;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700}
+  [data-theme="light"] .step .n{color:#fff}
+  .step .t{font-size:14.5px}.step .t b{color:var(--txt)}
+  .timeline{position:relative;padding-left:26px}
+  .timeline::before{content:"";position:absolute;left:7px;top:6px;bottom:6px;width:2px;background:var(--line)}
+  .tl{position:relative;padding:0 0 20px}
+  .tl::before{content:"";position:absolute;left:-23px;top:5px;width:12px;height:12px;border-radius:50%;background:var(--acc);box-shadow:0 0 0 4px color-mix(in srgb,var(--acc) 20%,transparent)}
+  .tl h4{font-size:15px;margin-bottom:3px}
+  .tl p{font-size:14px;color:var(--txt2)}
+  .tl .when{font-size:11.5px;color:var(--acc2);font-weight:600;letter-spacing:.5px;text-transform:uppercase;margin-bottom:4px}
+  ul.clean{list-style:none;display:flex;flex-direction:column;gap:9px;margin-top:4px}
+  ul.clean li{padding-left:26px;position:relative;color:var(--txt2);font-size:14.5px}
+  ul.clean li::before{content:"";position:absolute;left:4px;top:9px;width:7px;height:7px;border-radius:2px;background:var(--acc);transform:rotate(45deg)}
+  ul.no li::before{background:var(--bad)}
+  .bignum{font-variant-numeric:tabular-nums}
+  .foot{margin-top:54px;padding-top:22px;border-top:1px solid var(--line);color:var(--txt3);font-size:13px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+  .principle{text-align:center;font-size:19px;font-weight:600;color:var(--txt);padding:30px 0 6px;letter-spacing:-.2px}
+  .principle small{display:block;color:var(--txt3);font-size:13px;font-weight:500;margin-top:6px;letter-spacing:.5px;text-transform:uppercase}
+  .ribbon{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;background:var(--warnbg);color:var(--warn);border-radius:999px;padding:6px 14px;font-weight:600;margin-bottom:18px}
+</style>
+</head>
+<body data-theme="dark">
+<header class="top">
+  <div class="top-in">
+    <div class="brand"><span class="dot"></span><div>CONTINUUM AI SYSTEMS<small>Plano de Estabilização · Mês 6</small></div></div>
+    <button class="toggle" id="tg" onclick="tog()"><span id="tgi">◐</span><span id="tgt">Claro</span></button>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <div class="hero">
+    <div class="kicker">Reunião de sócios · Victor &amp; Nakielly</div>
+    <h1>Onde estamos, por que dá pra resolver,<br>e o que cada um faz a partir de hoje.</h1>
+    <p class="lead">Este não é um documento para assustar. É para tirar o problema da cabeça e colocar no papel — com números reais, sem maquiagem — para sairmos da reação e voltarmos a operar com clareza.</p>
+    <div class="meta-row">
+      <span class="pill"><b>4 meses</b> de operação</span>
+      <span class="pill"><b>R$14k</b> vendidos</span>
+      <span class="pill"><b>R$11k/mês</b> de burn</span>
+      <span class="pill">MRR <b>R$0</b> → começa agora</span>
+    </div>
+  </div>
+
+  <!-- 1. VERDADE -->
+  <section>
+    <div class="sec-head"><span class="sec-num">01</span><div><h2>A verdade dos números</h2><div class="sub">Tudo na mesa. O que vendemos, o que gastamos, o que devemos.</div></div></div>
+    <div class="grid4" style="margin-bottom:16px">
+      <div class="stat"><div class="lbl">Vendas · 4 meses</div><div class="val bignum">R$14k</div><div class="note">R$2k mês 4 · R$12k mês 5</div></div>
+      <div class="stat bad"><div class="lbl">Burn mensal</div><div class="val bignum">R$11k</div><div class="note">R$6k aluguel + R$5k vida/ferramentas</div></div>
+      <div class="stat warn"><div class="lbl">Urgente · 30 dias</div><div class="val bignum">R$9k</div><div class="note">alimentação + aluguel</div></div>
+      <div class="stat bad"><div class="lbl">Passivo total</div><div class="val bignum">R$27k</div><div class="note">inclui cartão da Nakielly</div></div>
+    </div>
+    <div class="card">
+      <table>
+        <thead><tr><th>Obrigação</th><th>Situação</th><th class="num">Valor</th><th>Janela</th></tr></thead>
+        <tbody>
+          <tr><td>Empréstimo pessoal (alimentação)</td><td>Vencido</td><td class="num">R$1.000</td><td><span class="tag now">esta semana</span></td></tr>
+          <tr><td>Aluguel — restante mês 3+4</td><td>Em atraso</td><td class="num">R$2.000</td><td><span class="tag now">0–15 dias</span></td></tr>
+          <tr><td>Aluguel — próximo</td><td>A vencer</td><td class="num">R$6.000</td><td><span class="tag soon">~15 dias</span></td></tr>
+          <tr><td>Cartão Nakielly (2+ meses, rotativo)</td><td>Acumulando juros</td><td class="num">R$18.000</td><td><span class="tag soon">parcelar já</span></td></tr>
+          <tr class="total-row"><td>Passivo total conhecido</td><td></td><td class="num">R$27.000</td><td></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="color:var(--txt2);font-size:14.5px;margin-top:14px">Em 4 meses, <b style="color:var(--txt)">gastamos em um mês mais do que vendemos em quatro.</b> Esse é o fato que precisa nos guiar — não com culpa, mas com lucidez. O erro não foi de esforço; foi assumir um custo fixo sem o lastro de receita que o sustentasse. Agora corrigimos.</p>
+  </section>
+
+  <!-- 2. RECONHECIMENTO -->
+  <section>
+    <div class="sec-head"><span class="sec-num">02</span><div><h2>O peso no CPF da Nakielly</h2><div class="sub">Antes de qualquer plano, isto precisa ser dito com clareza.</div></div></div>
+    <div class="callout heart">
+      <h3>Isto é dívida da operação. Não é dívida sua.</h3>
+      <p>Os mais de <b>R$18.000</b> no cartão nasceram de uma decisão coletiva — manter a casa e a operação de pé enquanto a receita não vinha. O fato de estarem no seu nome é uma circunstância, não uma responsabilidade individual. Reconheço isso publicamente e por escrito.</p>
+      <p>Como CEO, assumo: <b>este passivo entra na contabilidade da Continuum como dívida da empresa</b>, com plano de quitação definido neste documento. Você não carrega isso sozinha — e não vai carregar caladamente. Vamos formalizar um acordo simples entre nós que registre isso. A confiança entre os dois sócios é o ativo mais caro que temos; ela vem antes do caixa.</p>
+    </div>
+  </section>
+
+  <!-- 3. GARGALO -->
+  <section>
+    <div class="sec-head"><span class="sec-num">03</span><div><h2>O diagnóstico, em uma frase</h2></div></div>
+    <div class="callout">
+      <p style="font-size:16.5px;color:var(--txt)"><b>O burn de R$11k é incompatível com R$0 de recorrência.</b> Enquanto cada real de custo depender de uma venda nova feita do zero, todo mês recomeça no vermelho. A saída não é só vender mais rápido — é <b>reduzir a dependência de prospecção a frio construindo receita recorrente</b>, usando vendas rápidas como ponte de caixa até lá.</p>
+    </div>
+    <p style="color:var(--txt2);font-size:14.5px;margin-top:14px">Por isso o plano tem <b style="color:var(--txt)">duas velocidades</b>: o que tapa o buraco agora (sites) e o que nos tira do buraco de vez (recorrência). As duas rodam juntas.</p>
+  </section>
+
+  <!-- 4. PLANO -->
+  <section>
+    <div class="sec-head"><span class="sec-num">04</span><div><h2>O plano — 4 frentes</h2><div class="sub">Em ordem de prioridade. Cada uma com dono e prazo.</div></div></div>
+    <div class="card">
+      <div class="frente">
+        <div class="idx">1</div>
+        <div>
+          <h3>Triagem de caixa imediato <span class="tag now">72 horas</span></h3>
+          <p>Quitar o que gera pressão pessoal e relacional direta: <b>R$1.000</b> (alimentação) + <b>R$2.000</b> (aluguel atrasado) = <b>R$3.000</b>. Vêm das primeiras vendas de site e de qualquer recebível que consigamos antecipar.</p>
+          <p class="why">Por quê primeiro: são as dívidas pequenas que estão tirando nossa paz e travando a cabeça. Resolvê-las destrava a operação.</p>
+        </div>
+      </div>
+      <div class="frente">
+        <div class="idx">2</div>
+        <div>
+          <h3>Parar os juros do cartão <span class="tag soon">esta semana</span></h3>
+          <p>Ligar ao banco e <b>parcelar os R$18k</b> (sai do rotativo, que é o juro mais caro do país). Em <b>18×</b> ≈ <b>R$1.000/mês</b> — uma parcela previsível em vez de uma bola de neve. Em paralelo, acordo escrito entre nós de que é dívida da operação.</p>
+          <p class="why">Por quê: é a ação de maior retorno sobre o passivo mais caro. Hoje a dívida cresce sozinha; parcelar congela o tamanho dela.</p>
+        </div>
+      </div>
+      <div class="frente">
+        <div class="idx">3</div>
+        <div>
+          <h3>Máquina de sites — motor de caixa <span class="tag now">começa hoje</span></h3>
+          <p>Prospecção ativa Google Maps → WhatsApp de empresas sem site. <b>R$997 nos 5 primeiros</b> (prova social + depoimento), <b>R$1.497 do 6º em diante</b>. Entrega rápida via template (48–72h), baixa fricção operacional.</p>
+          <p class="why">Meta do mês 1: <b>10 sites ≈ R$12,5k</b>. Isso estabiliza o mês. Cada entrega termina abrindo a conversa de Assessoria.</p>
+        </div>
+      </div>
+      <div class="frente">
+        <div class="idx">4</div>
+        <div>
+          <h3>Construir o primeiro MRR <span class="tag build">o que muda o jogo</span></h3>
+          <p>Converter <b>2–3 dos primeiros sites em Assessoria recorrente</b>. Mesmo R$2k/mês × 3 = <b>R$6k de MRR</b> — e o ponto de equilíbrio deixa de depender de prospecção a frio toda manhã.</p>
+          <p class="why">Por quê é a frente mais importante: o site paga o mês; a recorrência paga o futuro. É ela que nos tira da operação de guerra.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. SITES FUNIL -->
+  <section>
+    <div class="sec-head"><span class="sec-num">05</span><div><h2>Como a máquina de sites funciona</h2><div class="sub">Da lista fria ao contrato recorrente.</div></div></div>
+    <div class="funnel">
+      <div class="step"><div class="n">1</div><div class="t"><b>Lista (Google Maps)</b> — empresas sem site no nicho-alvo, raspadas e organizadas.</div></div>
+      <div class="step"><div class="n">2</div><div class="t"><b>Abordagem WhatsApp</b> — script curto: "vi que [empresa] não tem site, montei um modelo pra vocês verem". Baixa fricção.</div></div>
+      <div class="step"><div class="n">3</div><div class="t"><b>Oferta</b> — site pronto por R$997 (primeiros 5) / R$1.497. Pagamento à vista ou entrada.</div></div>
+      <div class="step"><div class="n">4</div><div class="t"><b>Entrega orquestrada curta</b> — template + dados do cliente, no ar em 48–72h.</div></div>
+      <div class="step"><div class="n">5</div><div class="t"><b>Expansão → Assessoria</b> — "agora que tem site, vamos trazer cliente pra ele?" Vira recorrência.</div></div>
+    </div>
+    <div class="grid3" style="margin-top:18px">
+      <div class="stat ok"><div class="lbl">Meta mês 1</div><div class="val bignum">10 sites</div><div class="note">≈ 2,5 por semana</div></div>
+      <div class="stat"><div class="lbl">Caixa gerado</div><div class="val bignum">R$12,5k</div><div class="note">5×997 + 5×1.497</div></div>
+      <div class="stat"><div class="lbl">Ritmo de prospecção</div><div class="val bignum">~13/dia</div><div class="note">conversas iniciadas (3% fecham)</div></div>
+    </div>
+  </section>
+
+  <!-- 6. CAIXA 4 SEMANAS -->
+  <section>
+    <div class="sec-head"><span class="sec-num">06</span><div><h2>Fluxo de caixa — mês 1, honesto</h2><div class="sub">Sem falsa esperança: o mês 1 estabiliza. A saída vem com o MRR.</div></div></div>
+    <div class="card">
+      <table>
+        <thead><tr><th>Semana</th><th class="num">Sites</th><th class="num">Caixa da semana</th><th class="num">Acumulado</th></tr></thead>
+        <tbody>
+          <tr><td>Semana 1 — rampa</td><td class="num">1</td><td class="num">R$997</td><td class="num">R$997</td></tr>
+          <tr><td>Semana 2</td><td class="num">2</td><td class="num">R$1.994</td><td class="num">R$2.991</td></tr>
+          <tr><td>Semana 3</td><td class="num">3</td><td class="num">R$3.491</td><td class="num">R$6.482</td></tr>
+          <tr><td>Semana 4</td><td class="num">4</td><td class="num">R$5.988</td><td class="num">R$12.470</td></tr>
+          <tr class="total-row"><td>Total mês 1</td><td class="num">10</td><td class="num"></td><td class="num">R$12.470</td></tr>
+        </tbody>
+      </table>
+      <table style="margin-top:8px">
+        <thead><tr><th>Aplicação do caixa (ordem)</th><th class="num">Valor</th><th class="num">Resta</th></tr></thead>
+        <tbody>
+          <tr><td>Triagem (alimentação + aluguel atraso)</td><td class="num">−R$3.000</td><td class="num">R$9.470</td></tr>
+          <tr><td>Aluguel do mês (em dia)</td><td class="num">−R$6.000</td><td class="num">R$3.470</td></tr>
+          <tr><td>Vida + ferramentas</td><td class="num">−R$5.000</td><td class="num" style="color:var(--bad)">−R$1.530</td></tr>
+          <tr><td>1ª parcela do cartão</td><td class="num">−R$1.000</td><td class="num" style="color:var(--bad)">−R$2.530</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="callout" style="margin-top:16px">
+      <p><b>O que esta tabela diz, com honestidade:</b> com 10 sites, o mês 1 ainda fecha cerca de <b style="color:var(--bad)">R$2,5k negativo</b> depois de tudo. Isso <b>não</b> é fracasso — é a prova de que o burn atual exige a Frente 4 (recorrência) para virar o jogo. O mês 1 nos <b>estabiliza e para a sangria</b>; o mês 2, com os primeiros R$6k de MRR + sites, é o que nos coloca no azul.</p>
+      <p>Se vendermos <b>acima de 10</b> sites, ou fecharmos a 1ª Assessoria já no mês 1, fechamos positivo antes. A meta é piso, não teto.</p>
+    </div>
+  </section>
+
+  <!-- 7. SEQUENCIA -->
+  <section>
+    <div class="sec-head"><span class="sec-num">07</span><div><h2>Os próximos 7 dias</h2><div class="sub">Concreto. Com dono.</div></div></div>
+    <div class="card">
+      <div class="timeline">
+        <div class="tl"><div class="when">Hoje</div><h4>Victor — ligar ao banco do cartão</h4><p>Negociar parcelamento dos R$18k em até 18×. Tirar do rotativo é a prioridade nº1 do passivo.</p></div>
+        <div class="tl"><div class="when">Hoje</div><h4>Victor &amp; Nakielly — disparar a 1ª lista de prospecção</h4><p>Raspar Google Maps do nicho-alvo, montar 1 modelo de site, começar as abordagens no WhatsApp.</p></div>
+        <div class="tl"><div class="when">48–72h</div><h4>Levantar os R$3k de triagem</h4><p>Primeiras vendas + qualquer recebível antecipável. Quitar alimentação e aluguel atrasado.</p></div>
+        <div class="tl"><div class="when">Esta semana</div><h4>Acordo escrito sobre o cartão</h4><p>Registrar entre os sócios que a dívida é da operação. Simples, mas formal.</p></div>
+        <div class="tl"><div class="when">Este mês</div><h4>Quitar aluguel em dia + ritmo de 10 sites</h4><p>Reconstruir a confiança com a locatária pagando em dia. Renegociação de valor fica para depois deste mês.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. NAO FAREMOS -->
+  <section>
+    <div class="sec-head"><span class="sec-num">08</span><div><h2>O que NÃO faremos agora</h2><div class="sub">Decidir o que cortar é tão estratégico quanto decidir o que fazer.</div></div></div>
+    <div class="grid2">
+      <div class="card"><ul class="clean no">
+        <li><b>Não sair da casa</b> — custo de saída (mudança + caução + 1º aluguel) é maior que a economia agora.</li>
+        <li><b>Não renegociar o aluguel este mês</b> — relação sensível; primeiro pagamos em dia, depois reabrimos a conversa.</li>
+        <li><b>Não quitar o cartão de uma vez</b> — parcelar para parar os juros.</li>
+      </ul></div>
+      <div class="card"><ul class="clean no">
+        <li><b>Não abrir novos nichos ou produtos</b> — foco absoluto em sites + conversão para Assessoria.</li>
+        <li><b>Não construir nada sofisticado</b> (módulo, automação nova) antes do caixa estabilizar.</li>
+        <li><b>Não trazer o desentendimento de volta à mesa</b> sob pressão — caixa primeiro, conversas difíceis com a cabeça fria.</li>
+      </ul></div>
+    </div>
+  </section>
+
+  <div class="principle">
+    Quem integra o sistema vence com ele.
+    <small>Dominamos o Ritmo: crescemos para gerar ordem</small>
+  </div>
+
+  <div class="foot">
+    <span>Continuum AI Systems · documento interno de sócios</span>
+    <span>Validação financeira: aumenta ganho · reduz desperdício · melhora caixa ✓</span>
+  </div>
+
+</div>
+
+<script>
+  function tog(){
+    const b=document.body, cur=b.getAttribute('data-theme');
+    const nx=cur==='dark'?'light':'dark';
+    b.setAttribute('data-theme',nx);
+    document.getElementById('tgt').textContent = nx==='dark'?'Claro':'Escuro';
+    document.getElementById('tgi').textContent = nx==='dark'?'◐':'◑';
+  }
+</script>
+</body>
+</html>

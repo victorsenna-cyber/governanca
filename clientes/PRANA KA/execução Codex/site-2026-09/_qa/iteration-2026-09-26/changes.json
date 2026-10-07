@@ -1,0 +1,893 @@
+{
+  "date": "2026-09-27T01:13:57.165Z",
+  "source": "ITERACAO-SITE-2026-09-25.md",
+  "pages": 27,
+  "outsideAllowlist": 0,
+  "rows": [
+    {
+      "file": "index.html",
+      "before": "cc39fc3ab44b6d228ffc73dcce9c8f6817cd84248c1201f56955c5efff6ac346",
+      "after": "20891c212a11639e19794a784077b3bfca2ba74747b86156497fb4a9811c4248",
+      "changes": [
+        {
+          "item": 1,
+          "start": 21237,
+          "before": "<p class=\"video-pending\">[COPY PENDENTE]</p><!-- A inclusão do vídeo da Carol é citada em §8, mas §12 restringe a prova às quatro autoras. Aguardar revisão do contrato. -->",
+          "after": "<figure class=\"proof-video\"><iframe src=\"https://www.youtube-nocookie.com/embed/3NbO7HBGbkU\" width=\"960\" height=\"540\" loading=\"lazy\" title=\"Depoimento de Carol\" referrerpolicy=\"strict-origin-when-cross-origin\" allow=\"accelerometer; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe><figcaption>Carol</figcaption></figure>"
+        },
+        {
+          "item": 6,
+          "start": 18629,
+          "before": "<img src=\"/assets/biblioteca/retrato-monica.webp\" width=\"320\" height=\"320\" alt=\"\" loading=\"lazy\" srcset=\"/assets/responsive/retrato-monica-d19f78-160.webp 160w, /assets/responsive/retrato-monica-d19f78-240.webp 240w, /assets/responsive/retrato-monica-d19f78-320.webp 320w\" sizes=\"52px\" decoding=\"async\">",
+          "after": ""
+        },
+        {
+          "item": 6,
+          "start": 19415,
+          "before": "<img src=\"/assets/biblioteca/retrato-natalia.webp\" width=\"320\" height=\"320\" alt=\"\" loading=\"lazy\" srcset=\"/assets/responsive/retrato-natalia-47f22c-160.webp 160w, /assets/responsive/retrato-natalia-47f22c-240.webp 240w, /assets/responsive/retrato-natalia-47f22c-320.webp 320w\" sizes=\"52px\" decoding=\"async\">",
+          "after": ""
+        },
+        {
+          "item": 6,
+          "start": 20132,
+          "before": "<img src=\"/assets/biblioteca/retrato-taynah.webp\" width=\"320\" height=\"320\" alt=\"\" loading=\"lazy\" srcset=\"/assets/responsive/retrato-taynah-b2bfad-160.webp 160w, /assets/responsive/retrato-taynah-b2bfad-240.webp 240w, /assets/responsive/retrato-taynah-b2bfad-320.webp 320w\" sizes=\"52px\" decoding=\"async\">",
+          "after": ""
+        },
+        {
+          "item": 6,
+          "start": 20886,
+          "before": "<img src=\"/assets/biblioteca/retrato-sami.webp\" width=\"320\" height=\"320\" alt=\"\" loading=\"lazy\" srcset=\"/assets/responsive/retrato-sami-207db1-160.webp 160w, /assets/responsive/retrato-sami-207db1-240.webp 240w, /assets/responsive/retrato-sami-207db1-320.webp 320w\" sizes=\"52px\" decoding=\"async\">",
+          "after": ""
+        },
+        {
+          "item": 11,
+          "start": 2244,
+          "before": "<meta property=\"og:image\" content=\"https://thegoldentemple.io/assets/biblioteca/selo-templo.webp\">",
+          "after": "<meta property=\"og:image\" content=\"https://thegoldentemple.io/assets/og/og-default.jpg\"><meta property=\"og:image:width\" content=\"1200\"><meta property=\"og:image:height\" content=\"630\">"
+        }
+      ]
+    },
+    {
+      "file": "en/index.html",
+      "before": "2c9718a1b14f19bfc787aac39299cd2e992171053adcf588c7a63dcff16f1707",
+      "after": "6071eaa403a09745f7d0be3ec930c90d48fc1bb958383134838f54e852534c42",
+      "changes": [
+        {
+          "item": 1,
+          "start": 23855,
+          "before": "<p class=\"video-pending\">[COPY PENDING]</p><!-- A inclusão do vídeo da Carol é citada em §8, mas §12 restringe a prova às quatro autoras. Aguardar revisão do contrato. -->",
+          "after": "<figure class=\"proof-video\"><iframe src=\"https://www.youtube-nocookie.com/embed/3NbO7HBGbkU\" width=\"960\" height=\"540\" loading=\"lazy\" title=\"Carol testimonial\" referrerpolicy=\"strict-origin-when-cross-origin\" allow=\"accelerometer; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe><figcaption>Carol</figcaption></figure>"
+        },
+        {
+          "item": 6,
+          "start": 20300,
+          "before": "<img src=\"/assets/biblioteca/retrato-monica.webp\" width=\"320\" height=\"320\" alt=\"\" loading=\"lazy\" srcset=\"/assets/responsive/retrato-monica-d19f78-160.webp 160w, /assets/responsive/retrato-monica-d19f78-240.webp 240w, /assets/responsive/retrato-monica-d19f78-320.webp 320w\" sizes=\"52px\" decoding=\"async\">",
+          "after": ""
+        },
+        {
+          "item": 6,
+          "start": 21420,
+          "before": "<img src=\"/assets/biblioteca/retrato-natalia.webp\" width=\"320\" height=\"320\" alt=\"\" loading=\"lazy\" srcset=\"/assets/responsive/retrato-natalia-47f22c-160.webp 160w, /assets/responsive/retrato-natalia-47f22c-240.webp 240w, /assets/responsive/retrato-natalia-47f22c-320.webp 320w\" sizes=\"52px\" decoding=\"async\">",
+          "after": ""
+        },
+        {
+          "item": 6,
+          "start": 22405,
+          "before": "<img src=\"/assets/biblioteca/retrato-taynah.webp\" width=\"320\" height=\"320\" alt=\"\" loading=\"lazy\" srcset=\"/assets/responsive/retrato-taynah-b2bfad-160.webp 160w, /assets/responsive/retrato-taynah-b2bfad-240.webp 240w, /assets/responsive/retrato-taynah-b2bfad-320.webp 320w\" sizes=\"52px\" decoding=\"async\">",
+          "after": ""
+        },
+        {
+          "item": 6,
+          "start": 23504,
+          "before": "<img src=\"/assets/biblioteca/retrato-sami.webp\" width=\"320\" height=\"320\" alt=\"\" loading=\"lazy\" srcset=\"/assets/responsive/retrato-sami-207db1-160.webp 160w, /assets/responsive/retrato-sami-207db1-240.webp 240w, /assets/responsive/retrato-sami-207db1-320.webp 320w\" sizes=\"52px\" decoding=\"async\">",
+          "after": ""
+        },
+        {
+          "item": 11,
+          "start": 2317,
+          "before": "<meta property=\"og:image\" content=\"https://thegoldentemple.io/assets/biblioteca/selo-templo.webp\">",
+          "after": "<meta property=\"og:image\" content=\"https://thegoldentemple.io/assets/og/og-default.jpg\"><meta property=\"og:image:width\" content=\"1200\"><meta property=\"og:image:height\" content=\"630\">"
+        }
+      ]
+    },
+    {
+      "file": "es/index.html",
+      "before": "71c3103dd0e16a0c978a8f4488f2461358808114ff30bf217053ef629289701f",
+      "after": "c2d08f0970385cb80b263d935731f1440e0361263b41d04767d33958dba13ecf",
+      "changes": [
+        {
+          "item": 1,
+          "start": 23817,
+          "before": "<p class=\"video-pending\">[TEXTO PENDIENTE]</p><!-- A inclusão do vídeo da Carol é citada em §8, mas §12 restringe a prova às quatro autoras. Aguardar revisão do contrato. -->",
+          "after": "<figure class=\"proof-video\"><iframe src=\"https://www.youtube-nocookie.com/embed/3NbO7HBGbkU\" width=\"960\" height=\"540\" loading=\"lazy\" title=\"Testimonio de Carol\" referrerpolicy=\"strict-origin-when-cross-origin\" allow=\"accelerometer; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe><figcaption>Carol</figcaption></figure>"
+        },
+        {
+          "item": 6,
+          "start": 20265,
+          "before": "<img src=\"/assets/biblioteca/retrato-monica.webp\" width=\"320\" height=\"320\" alt=\"\" loading=\"lazy\" srcset=\"/assets/responsive/retrato-monica-d19f78-160.webp 160w, /assets/responsive/retrato-monica-d19f78-240.webp 240w, /assets/responsive/retrato-monica-d19f78-320.webp 320w\" sizes=\"52px\" decoding=\"async\">",
+          "after": ""
+        },
+        {
+          "item": 6,
+          "start": 21407,
+          "before": "<img src=\"/assets/biblioteca/retrato-natalia.webp\" width=\"320\" height=\"320\" alt=\"\" loading=\"lazy\" srcset=\"/assets/responsive/retrato-natalia-47f22c-160.webp 160w, /assets/responsive/retrato-natalia-47f22c-240.webp 240w, /assets/responsive/retrato-natalia-47f22c-320.webp 320w\" sizes=\"52px\" decoding=\"async\">",
+          "after": ""
+        },
+        {
+          "item": 6,
+          "start": 22399,
+          "before": "<img src=\"/assets/biblioteca/retrato-taynah.webp\" width=\"320\" height=\"320\" alt=\"\" loading=\"lazy\" srcset=\"/assets/responsive/retrato-taynah-b2bfad-160.webp 160w, /assets/responsive/retrato-taynah-b2bfad-240.webp 240w, /assets/responsive/retrato-taynah-b2bfad-320.webp 320w\" sizes=\"52px\" decoding=\"async\">",
+          "after": ""
+        },
+        {
+          "item": 6,
+          "start": 23466,
+          "before": "<img src=\"/assets/biblioteca/retrato-sami.webp\" width=\"320\" height=\"320\" alt=\"\" loading=\"lazy\" srcset=\"/assets/responsive/retrato-sami-207db1-160.webp 160w, /assets/responsive/retrato-sami-207db1-240.webp 240w, /assets/responsive/retrato-sami-207db1-320.webp 320w\" sizes=\"52px\" decoding=\"async\">",
+          "after": ""
+        },
+        {
+          "item": 11,
+          "start": 2319,
+          "before": "<meta property=\"og:image\" content=\"https://thegoldentemple.io/assets/biblioteca/selo-templo.webp\">",
+          "after": "<meta property=\"og:image\" content=\"https://thegoldentemple.io/assets/og/og-default.jpg\"><meta property=\"og:image:width\" content=\"1200\"><meta property=\"og:image:height\" content=\"630\">"
+        }
+      ]
+    },
+    {
+      "file": "o-templo/index.html",
+      "before": "6616320a52cc39ceb62f491b1a6b0cf7bf3f7cbc0c9151fe05e02423da54ec71",
+      "after": "9371d2d466e2fb6903a956527dc947f400fc2db902d7535013b5ec5088d5ada6",
+      "changes": [
+        {
+          "item": 11,
+          "start": 1907,
+          "before": "<meta property=\"og:image\" content=\"https://thegoldentemple.io/assets/biblioteca/selo-templo.webp\">",
+          "after": "<meta property=\"og:image\" content=\"https://thegoldentemple.io/assets/og/og-default.jpg\"><meta property=\"og:image:width\" content=\"1200\"><meta property=\"og:image:height\" content=\"630\">"
+        }
+      ]
+    },
+    {
+      "file": "en/the-temple/index.html",
+      "before": "69193ba8fed7a8b9daac40f136bd3537ec6345a07552ce75177717eb2d03f0eb",
+      "after": "e4e982d4bf718355671cd9bd6f642f664ffd9243ac97c052c33199e955bad2e1",
+      "changes": [
+        {
+          "item": 11,
+          "start": 1985,
+          "before": "<meta property=\"og:image\" content=\"https://thegoldentemple.io/assets/biblioteca/selo-templo.webp\">",
+          "after": "<meta property=\"og:image\" content=\"https://thegoldentemple.io/assets/og/og-default.jpg\"><meta property=\"og:image:width\" content=\"1200\"><meta property=\"og:image:height\" content=\"630\">"
+        }
+      ]
+    },
+    {
+      "file": "es/el-templo/index.html",
+      "before": "552611c94e157fcfc17d91eb206808ef08f49b3ac09494c31551608f13323610",
+      "after": "6a5305b490e17fba605a07d439d85809db12ec296343f71bc521c7d782bc7e1a",
+      "changes": [
+        {
+          "item": 11,
+          "start": 1967,
+          "before": "<meta property=\"og:image\" content=\"https://thegoldentemple.io/assets/biblioteca/selo-templo.webp\">",
+          "after": "<meta property=\"og:image\" content=\"https://thegoldentemple.io/assets/og/og-default.jpg\"><meta property=\"og:image:width\" content=\"1200\"><meta property=\"og:image:height\" content=\"630\">"
+        }
+      ]
+    },
+    {
+      "file": "metodo/index.html",
+      "before": "22ee48ef32a5ab0bdd90ea96b5f83cf46df477f268cafb4362482c0feb74a319",
+      "after": "057c4edd0a1608c5c890a90295f199e5138915b208a8539277ee8a32889a29cc",
+      "changes": [
+        {
+          "item": 11,
+          "start": 1846,
+          "before": "<meta property=\"og:image\" content=\"https://thegoldentemple.io/assets/biblioteca/selo-templo.webp\">",
+          "after": "<meta property=\"og:image\" content=\"https://thegoldentemple.io/assets/og/og-default.jpg\"><meta property=\"og:image:width\" content=\"1200\"><meta property=\"og:image:height\" content=\"630\">"
+        }
+      ]
+    },
+    {
+      "file": "en/method/index.html",
+      "before": "7b893332b3ae45bda8ae4af5e54f614adf685066eeb079a786bd33a86d532888",
+      "after": "b83c2a414f51560550ea29fb9088872c10ece5193107a18ad1f9dadf9367a2bd",
+      "changes": [
+        {
+          "item": 11,
+          "start": 1896,
+          "before": "<meta property=\"og:image\" content=\"https://thegoldentemple.io/assets/biblioteca/selo-templo.webp\">",
+          "after": "<meta property=\"og:image\" content=\"https://thegoldentemple.io/assets/og/og-default.jpg\"><meta property=\"og:image:width\" content=\"1200\"><meta property=\"og:image:height\" content=\"630\">"
+        }
+      ]
+    },
+    {
+      "file": "es/metodo/index.html",
+      "before": "425ddd61e8b89c2102d11f6e3f76f52cfe6ffdd9eb7356365d117b85b4d64af4",
+      "after": "23b7e408795bc873779aeb5ea88d1c6f8e9f7c190dfa470ed63843c6cf7e1f2d",
+      "changes": [
+        {
+          "item": 11,
+          "start": 1864,
+          "before": "<meta property=\"og:image\" content=\"https://thegoldentemple.io/assets/biblioteca/selo-templo.webp\">",
+          "after": "<meta property=\"og:image\" content=\"https://thegoldentemple.io/assets/og/og-default.jpg\"><meta property=\"og:image:width\" content=\"1200\"><meta property=\"og:image:height\" content=\"630\">"
+        }
+      ]
+    },
+    {
+      "file": "caminhos/index.html",
+      "before": "3d26208f4137b540fc0cd9c9249ff04f7f32efe88ba78ad86e7ea8fd7d9a6e40",
+      "after": "fca7a4085c712a57fe3bbe91c6d85af1303c4c1e0941e9d6d00b7f744b4bff3a",
+      "changes": [
+        {
+          "item": 11,
+          "start": 1992,
+          "before": "<meta property=\"og:image\" content=\"https://thegoldentemple.io/assets/biblioteca/selo-templo.webp\">",
+          "after": "<meta property=\"og:image\" content=\"https://thegoldentemple.io/assets/og/og-default.jpg\"><meta property=\"og:image:width\" content=\"1200\"><meta property=\"og:image:height\" content=\"630\">"
+        }
+      ]
+    },
+    {
+      "file": "en/paths/index.html",
+      "before": "44ac53e41a6aaf249641988b2d3eccb928a7a52041ec40c0cb79cb04a25db958",
+      "after": "7fcf79dce2da51b58b8618d41a9ec66f758f903b171177e3226779cbbe3dc253",
+      "changes": [
+        {
+          "item": 11,
+          "start": 2006,
+          "before": "<meta property=\"og:image\" content=\"https://thegoldentemple.io/assets/biblioteca/selo-templo.webp\">",
+          "after": "<meta property=\"og:image\" content=\"https://thegoldentemple.io/assets/og/og-default.jpg\"><meta property=\"og:image:width\" content=\"1200\"><meta property=\"og:image:height\" content=\"630\">"
+        }
+      ]
+    },
+    {
+      "file": "es/caminos/index.html",
+      "before": "ef64181a0bee5421eb08a2345ce52e4febd6720afdf1e63918c835bf4e65fa48",
+      "after": "2bd0aa0d3f7818b9e35356c28a475a632777c8834c6d03d9efb77c2e9fda4002",
+      "changes": [
+        {
+          "item": 11,
+          "start": 2014,
+          "before": "<meta property=\"og:image\" content=\"https://thegoldentemple.io/assets/biblioteca/selo-templo.webp\">",
+          "after": "<meta property=\"og:image\" content=\"https://thegoldentemple.io/assets/og/og-default.jpg\"><meta property=\"og:image:width\" content=\"1200\"><meta property=\"og:image:height\" content=\"630\">"
+        }
+      ]
+    },
+    {
+      "file": "mentoria/index.html",
+      "before": "9f016224887e16908e096e7aabc3cbb5378b91ba713fa45084260ba88564a930",
+      "after": "ef0100dbfecaa4032cb2984267269ce238f3a07cb2014662b261d6f279e8b0c6",
+      "changes": [
+        {
+          "item": 2,
+          "start": 16109,
+          "before": "<dt>12</dt>\n              <dd>encontros em grupo para transmissão, prática e integração</dd>",
+          "after": "<dt>encontros</dt>\n              <dd>a cada 14 dias, em grupo, para transmissão, prática e integração</dd>"
+        },
+        {
+          "item": 2,
+          "start": 275,
+          "before": "mentoria em grupo de 12 encontros",
+          "after": "mentoria em grupo com encontros a cada 14 dias"
+        },
+        {
+          "item": 2,
+          "start": 1876,
+          "before": "mentoria em grupo de 12 encontros",
+          "after": "mentoria em grupo com encontros a cada 14 dias"
+        },
+        {
+          "item": 2,
+          "start": 22783,
+          "before": "mentoria em grupo de 12 encontros",
+          "after": "mentoria em grupo com encontros a cada 14 dias"
+        },
+        {
+          "item": 2,
+          "start": 4192,
+          "before": "•</span> 12 encontros",
+          "after": "•</span> encontros a cada 14 dias"
+        },
+        {
+          "item": 2,
+          "start": 28796,
+          "before": "Como funcionam os 12 encontros?",
+          "after": "Como funcionam os encontros a cada 14 dias?"
+        },
+        {
+          "item": 2,
+          "start": 29007,
+          "before": "São 12 encontros em grupo",
+          "after": "São encontros em grupo a cada 14 dias"
+        },
+        {
+          "item": 2,
+          "start": 5915,
+          "before": "<div class=\"hero__seal\">\n            <span>12</span>\n            <small>encontros<br>em grupo</small>\n          </div>",
+          "after": "<div class=\"hero__seal\"><small>a cada</small><span>14</span><small>dias</small></div>"
+        },
+        {
+          "item": 3,
+          "start": 29060,
+          "before": "O calendário e a\n                cadência completos serão apresentados antes da abertura do checkout.",
+          "after": "A entrada começa numa conversa com a Prana. Depois dela, você recebe o acesso à plataforma e o caminho dos oito Portais do Ventre."
+        },
+        {
+          "item": 3,
+          "start": 30670,
+          "before": "Quando as inscrições estiverem abertas, sua entrada será confirmada após a aprovação do pagamento\n                no checkout. O próximo passo chegará pelo canal informado na própria oferta.",
+          "after": "A entrada começa numa conversa com a Prana. Depois dela, você recebe o acesso à plataforma e o caminho dos oito Portais do Ventre."
+        },
+        {
+          "item": 11,
+          "start": 2097,
+          "before": "<meta property=\"og:image\" content=\"https://thegoldentemple.io/assets/biblioteca/selo-templo.webp\">",
+          "after": "<meta property=\"og:image\" content=\"https://thegoldentemple.io/assets/og/og-default.jpg\"><meta property=\"og:image:width\" content=\"1200\"><meta property=\"og:image:height\" content=\"630\">"
+        }
+      ]
+    },
+    {
+      "file": "en/mentorship/index.html",
+      "before": "140caac43d75a38d70129c28054dc841109912824df8ad1da295621bb3a62028",
+      "after": "3adf076b8736cafcd69cc40ddf6a100a6bd98df2a9ba7214e4af321e9b264b79",
+      "changes": [
+        {
+          "item": 2,
+          "start": 16237,
+          "before": "<dt>12</dt>\n              <dd>group sessions for transmission, practice and integration</dd>",
+          "after": "<!-- REVISAR: transcriação --><dt>sessions</dt>\n              <dd>every 14 days, in a group, for transmission, practice and integration</dd>"
+        },
+        {
+          "item": 2,
+          "start": 270,
+          "before": "group mentorship of 12 sessions",
+          "after": "group mentorship with sessions every 14 days"
+        },
+        {
+          "item": 2,
+          "start": 1902,
+          "before": "group mentorship of 12 sessions",
+          "after": "group mentorship with sessions every 14 days"
+        },
+        {
+          "item": 2,
+          "start": 22993,
+          "before": "group mentorship of 12 sessions",
+          "after": "group mentorship with sessions every 14 days"
+        },
+        {
+          "item": 2,
+          "start": 4222,
+          "before": "Group mentorship • 12 sessions",
+          "after": "Group mentorship • sessions every 14 days"
+        },
+        {
+          "item": 2,
+          "start": 28347,
+          "before": "How do the 12 sessions work?",
+          "after": "How do the sessions every 14 days work?"
+        },
+        {
+          "item": 2,
+          "start": 28452,
+          "before": "There are 12 group sessions",
+          "after": "There are group sessions every 14 days"
+        },
+        {
+          "item": 2,
+          "start": 5857,
+          "before": "<div class=\"hero__seal\">\n            <span>12</span>\n            <small>group<br>sessions</small>\n          </div>",
+          "after": "<div class=\"hero__seal\"><small>every</small><span>14</span><small>days</small></div>"
+        },
+        {
+          "item": 3,
+          "start": 28511,
+          "before": "The full schedule and frequency will be presented before checkout opens.",
+          "after": "Your journey begins with a conversation with Prana. After that, you receive access to the platform and the path through the eight Portais do Ventre (Womb Portals)."
+        },
+        {
+          "item": 3,
+          "start": 29669,
+          "before": "When enrollment is open, your place will be confirmed after payment is approved at checkout. The next step will reach you through the channel stated in the offer itself.",
+          "after": "Your journey begins with a conversation with Prana. After that, you receive access to the platform and the path through the eight Portais do Ventre (Womb Portals)."
+        },
+        {
+          "item": "2–3 review",
+          "start": 214,
+          "before": "<meta name=\"description\" content=\"O Templo Dourado is a group mentorship with sessions every 14 days for women who want to inhabit their bodies, recognize boundaries and sustain their own voice.\">",
+          "after": "<!-- REVISAR: transcriação --><meta name=\"description\" content=\"O Templo Dourado is a group mentorship with sessions every 14 days for women who want to inhabit their bodies, recognize boundaries and sustain their own voice.\">"
+        },
+        {
+          "item": "2–3 review",
+          "start": 1852,
+          "before": "<meta property=\"og:description\" content=\"O Templo Dourado is a group mentorship with sessions every 14 days for women who want to inhabit their bodies, recognize boundaries and sustain their own voice.\">",
+          "after": "<!-- REVISAR: transcriação --><meta property=\"og:description\" content=\"O Templo Dourado is a group mentorship with sessions every 14 days for women who want to inhabit their bodies, recognize boundaries and sustain their own voice.\">"
+        },
+        {
+          "item": "2–3 review",
+          "start": 4203,
+          "before": "<p class=\"eyebrow\">Group mentorship • sessions every 14 days</p>",
+          "after": "<!-- REVISAR: transcriação --><p class=\"eyebrow\">Group mentorship • sessions every 14 days</p>"
+        },
+        {
+          "item": "2–3 review",
+          "start": 5857,
+          "before": "<div class=\"hero__seal\"><small>every</small><span>14</span><small>days</small></div>",
+          "after": "<!-- REVISAR: transcriação --><div class=\"hero__seal\"><small>every</small><span>14</span><small>days</small></div>"
+        },
+        {
+          "item": "2–3 review",
+          "start": 22995,
+          "before": "<p>A group mentorship with sessions every 14 days to turn perception into presence, expression and choices you can sustain in life.</p>",
+          "after": "<!-- REVISAR: transcriação --><p>A group mentorship with sessions every 14 days to turn perception into presence, expression and choices you can sustain in life.</p>"
+        },
+        {
+          "item": "2–3 review",
+          "start": 28308,
+          "before": "<summary>How do the sessions every 14 days work?</summary>",
+          "after": "<!-- REVISAR: transcriação --><summary>How do the sessions every 14 days work?</summary>"
+        },
+        {
+          "item": "2–3 review",
+          "start": 28419,
+          "before": "<p>There are group sessions every 14 days combining transmission, practice and integration. Your journey begins with a conversation with Prana. After that, you receive access to the platform and the path through the eight Portais do Ventre (Womb Portals).</p>",
+          "after": "<!-- REVISAR: transcriação --><p>There are group sessions every 14 days combining transmission, practice and integration. Your journey begins with a conversation with Prana. After that, you receive access to the platform and the path through the eight Portais do Ventre (Womb Portals).</p>"
+        },
+        {
+          "item": "2–3 review",
+          "start": 29666,
+          "before": "<p>Your journey begins with a conversation with Prana. After that, you receive access to the platform and the path through the eight Portais do Ventre (Womb Portals).</p>",
+          "after": "<!-- REVISAR: transcriação --><p>Your journey begins with a conversation with Prana. After that, you receive access to the platform and the path through the eight Portais do Ventre (Womb Portals).</p>"
+        },
+        {
+          "item": 11,
+          "start": 2191,
+          "before": "<meta property=\"og:image\" content=\"https://thegoldentemple.io/assets/biblioteca/selo-templo.webp\">",
+          "after": "<meta property=\"og:image\" content=\"https://thegoldentemple.io/assets/og/og-default.jpg\"><meta property=\"og:image:width\" content=\"1200\"><meta property=\"og:image:height\" content=\"630\">"
+        }
+      ]
+    },
+    {
+      "file": "es/mentoria/index.html",
+      "before": "de4a0ae0996e751f7a21b842ee35526ccc90cec5c1a16083331c660c0fe55aae",
+      "after": "6f65321f4063a37d07be64c8f7bbb19854ea6df5a56ca52f2f501c47c90a062d",
+      "changes": [
+        {
+          "item": 2,
+          "start": 16181,
+          "before": "<dt>12</dt>\n              <dd>encuentros en grupo para transmisión, práctica e integración</dd>",
+          "after": "<!-- REVISAR: transcriação --><dt>encuentros</dt>\n              <dd>cada 14 días, en grupo, para transmisión, práctica e integración</dd>"
+        },
+        {
+          "item": 2,
+          "start": 272,
+          "before": "mentoría en grupo de 12 encuentros",
+          "after": "mentoría en grupo con encuentros cada 14 días"
+        },
+        {
+          "item": 2,
+          "start": 1900,
+          "before": "mentoría en grupo de 12 encuentros",
+          "after": "mentoría en grupo con encuentros cada 14 días"
+        },
+        {
+          "item": 2,
+          "start": 22873,
+          "before": "mentoría en grupo de 12 encuentros",
+          "after": "mentoría en grupo con encuentros cada 14 días"
+        },
+        {
+          "item": 2,
+          "start": 4225,
+          "before": "Mentoría en grupo • 12 encuentros",
+          "after": "Mentoría en grupo • encuentros cada 14 días"
+        },
+        {
+          "item": 2,
+          "start": 28319,
+          "before": "¿Cómo funcionan los 12 encuentros?",
+          "after": "¿Cómo funcionan los encuentros cada 14 días?"
+        },
+        {
+          "item": 2,
+          "start": 28429,
+          "before": "Son 12 encuentros en grupo",
+          "after": "Son encuentros en grupo cada 14 días"
+        },
+        {
+          "item": 2,
+          "start": 5872,
+          "before": "<div class=\"hero__seal\">\n            <span>12</span>\n            <small>encuentros<br>en grupo</small>\n          </div>",
+          "after": "<div class=\"hero__seal\"><small>cada</small><span>14</span><small>días</small></div>"
+        },
+        {
+          "item": 3,
+          "start": 28480,
+          "before": "El calendario y la frecuencia completos se presentarán antes de abrir el pago en línea.",
+          "after": "La entrada comienza con una conversación con Prana. Después, recibes acceso a la plataforma y al camino de los ocho Portais do Ventre (Portales del Vientre)."
+        },
+        {
+          "item": 3,
+          "start": 29660,
+          "before": "Cuando las inscripciones estén abiertas, tu entrada se confirmará tras la aprobación del pago en línea. El siguiente paso llegará por el canal indicado en la propia oferta.",
+          "after": "La entrada comienza con una conversación con Prana. Después, recibes acceso a la plataforma y al camino de los ocho Portais do Ventre (Portales del Vientre)."
+        },
+        {
+          "item": "2–3 review",
+          "start": 214,
+          "before": "<meta name=\"description\" content=\"O Templo Dourado es una mentoría en grupo con encuentros cada 14 días para mujeres que desean habitar el cuerpo, reconocer límites y sostener su propia voz.\">",
+          "after": "<!-- REVISAR: transcriação --><meta name=\"description\" content=\"O Templo Dourado es una mentoría en grupo con encuentros cada 14 días para mujeres que desean habitar el cuerpo, reconocer límites y sostener su propia voz.\">"
+        },
+        {
+          "item": "2–3 review",
+          "start": 1846,
+          "before": "<meta property=\"og:description\" content=\"O Templo Dourado es una mentoría en grupo con encuentros cada 14 días para mujeres que desean habitar el cuerpo, reconocer límites y sostener su propia voz.\">",
+          "after": "<!-- REVISAR: transcriação --><meta property=\"og:description\" content=\"O Templo Dourado es una mentoría en grupo con encuentros cada 14 días para mujeres que desean habitar el cuerpo, reconocer límites y sostener su propia voz.\">"
+        },
+        {
+          "item": "2–3 review",
+          "start": 4206,
+          "before": "<p class=\"eyebrow\">Mentoría en grupo • encuentros cada 14 días</p>",
+          "after": "<!-- REVISAR: transcriação --><p class=\"eyebrow\">Mentoría en grupo • encuentros cada 14 días</p>"
+        },
+        {
+          "item": "2–3 review",
+          "start": 5872,
+          "before": "<div class=\"hero__seal\"><small>cada</small><span>14</span><small>días</small></div>",
+          "after": "<!-- REVISAR: transcriação --><div class=\"hero__seal\"><small>cada</small><span>14</span><small>días</small></div>"
+        },
+        {
+          "item": "2–3 review",
+          "start": 22862,
+          "before": "<p>Una mentoría en grupo con encuentros cada 14 días para transformar percepción en presencia, expresión y decisiones sostenidas en la vida.</p>",
+          "after": "<!-- REVISAR: transcriação --><p>Una mentoría en grupo con encuentros cada 14 días para transformar percepción en presencia, expresión y decisiones sostenidas en la vida.</p>"
+        },
+        {
+          "item": "2–3 review",
+          "start": 23958,
+          "before": "<p class=\"offer__status\">La entrada comienza con una conversación</p>",
+          "after": "<p class=\"offer__status\">La entrada comienza con una conversación</p>"
+        },
+        {
+          "item": "2–3 review",
+          "start": 28274,
+          "before": "<summary>¿Cómo funcionan los encuentros cada 14 días?</summary>",
+          "after": "<!-- REVISAR: transcriação --><summary>¿Cómo funcionan los encuentros cada 14 días?</summary>"
+        },
+        {
+          "item": "2–3 review",
+          "start": 28390,
+          "before": "<p>Son encuentros en grupo cada 14 días que combinan transmisión, práctica e integración. La entrada comienza con una conversación con Prana. Después, recibes acceso a la plataforma y al camino de los ocho Portais do Ventre (Portales del Vientre).</p>",
+          "after": "<!-- REVISAR: transcriação --><p>Son encuentros en grupo cada 14 días que combinan transmisión, práctica e integración. La entrada comienza con una conversación con Prana. Después, recibes acceso a la plataforma y al camino de los ocho Portais do Ventre (Portales del Vientre).</p>"
+        },
+        {
+          "item": "2–3 review",
+          "start": 29657,
+          "before": "<p>La entrada comienza con una conversación con Prana. Después, recibes acceso a la plataforma y al camino de los ocho Portais do Ventre (Portales del Vientre).</p>",
+          "after": "<!-- REVISAR: transcriação --><p>La entrada comienza con una conversación con Prana. Después, recibes acceso a la plataforma y al camino de los ocho Portais do Ventre (Portales del Vientre).</p>"
+        },
+        {
+          "item": 11,
+          "start": 2179,
+          "before": "<meta property=\"og:image\" content=\"https://thegoldentemple.io/assets/biblioteca/selo-templo.webp\">",
+          "after": "<meta property=\"og:image\" content=\"https://thegoldentemple.io/assets/og/og-default.jpg\"><meta property=\"og:image:width\" content=\"1200\"><meta property=\"og:image:height\" content=\"630\">"
+        }
+      ]
+    },
+    {
+      "file": "visao-uterina/index.html",
+      "before": "2f29ad99000a215ecdb4a8cdc4912a9cd9073b75b7e459a75f1373b076ac7f40",
+      "after": "1741c41b4530bb0921c43cfe4cba6f87fb9a52ce0d0b719217547dac3b10c9fc",
+      "changes": [
+        {
+          "item": 6,
+          "start": 14177,
+          "before": "<img src=\"/assets/biblioteca/retrato-monica.webp\" width=\"320\" height=\"320\" alt=\"\" loading=\"lazy\" srcset=\"/assets/responsive/retrato-monica-d19f78-160.webp 160w, /assets/responsive/retrato-monica-d19f78-240.webp 240w, /assets/responsive/retrato-monica-d19f78-320.webp 320w\" sizes=\"52px\" decoding=\"async\">",
+          "after": ""
+        },
+        {
+          "item": 6,
+          "start": 14963,
+          "before": "<img src=\"/assets/biblioteca/retrato-natalia.webp\" width=\"320\" height=\"320\" alt=\"\" loading=\"lazy\" srcset=\"/assets/responsive/retrato-natalia-47f22c-160.webp 160w, /assets/responsive/retrato-natalia-47f22c-240.webp 240w, /assets/responsive/retrato-natalia-47f22c-320.webp 320w\" sizes=\"52px\" decoding=\"async\">",
+          "after": ""
+        },
+        {
+          "item": 6,
+          "start": 15680,
+          "before": "<img src=\"/assets/biblioteca/retrato-taynah.webp\" width=\"320\" height=\"320\" alt=\"\" loading=\"lazy\" srcset=\"/assets/responsive/retrato-taynah-b2bfad-160.webp 160w, /assets/responsive/retrato-taynah-b2bfad-240.webp 240w, /assets/responsive/retrato-taynah-b2bfad-320.webp 320w\" sizes=\"52px\" decoding=\"async\">",
+          "after": ""
+        },
+        {
+          "item": 6,
+          "start": 16434,
+          "before": "<img src=\"/assets/biblioteca/retrato-sami.webp\" width=\"320\" height=\"320\" alt=\"\" loading=\"lazy\" srcset=\"/assets/responsive/retrato-sami-207db1-160.webp 160w, /assets/responsive/retrato-sami-207db1-240.webp 240w, /assets/responsive/retrato-sami-207db1-320.webp 320w\" sizes=\"52px\" decoding=\"async\">",
+          "after": ""
+        },
+        {
+          "item": 4,
+          "start": 16623,
+          "before": "<p class=\"price-detail\">Sessão individual e online, conduzida por Prana Ka.</p>",
+          "after": "<p class=\"price-detail\">Sessão individual de 1h30, online ou presencial, conduzida por Prana Ka.</p>"
+        },
+        {
+          "item": 7,
+          "start": 5161,
+          "before": "Ol%C3%A1%2C%20Prana!%20Vim%20pela%20p%C3%A1gina%20da%20Vis%C3%A3o%20Uterina%20e%20quero%20saber%20o%20valor%20e%20os%20hor%C3%A1rios%20para%20uma%20sess%C3%A3o%20individual.",
+          "after": "Ol%C3%A1%2C%20Prana!%20Vim%20pela%20p%C3%A1gina%20da%20Vis%C3%A3o%20Uterina%20e%20quero%20agendar%20minha%20sess%C3%A3o."
+        },
+        {
+          "item": 8,
+          "start": 16482,
+          "before": "<span class=\"price-currency\">R$</span><span class=\"price-number\">333</span>",
+          "after": "<span class=\"price-currency\">R$</span> <span class=\"price-number\">333</span>"
+        },
+        {
+          "item": 11,
+          "start": 2135,
+          "before": "<meta property=\"og:image\" content=\"https://thegoldentemple.io/assets/biblioteca/selo-templo.webp\">",
+          "after": "<meta property=\"og:image\" content=\"https://thegoldentemple.io/assets/og/og-default.jpg\"><meta property=\"og:image:width\" content=\"1200\"><meta property=\"og:image:height\" content=\"630\">"
+        }
+      ]
+    },
+    {
+      "file": "en/uterine-vision/index.html",
+      "before": "033f365a3b48f89fa689452f1d1cfac8d52372e0996fb1e8241b282e221efb76",
+      "after": "78ddf74221dcaac24d6d9abf0c462a4633eb5c3579c509902ceb2db69fbc4ee7",
+      "changes": [
+        {
+          "item": 6,
+          "start": 14999,
+          "before": "<img src=\"/assets/biblioteca/retrato-monica.webp\" width=\"320\" height=\"320\" alt=\"\" loading=\"lazy\" srcset=\"/assets/responsive/retrato-monica-d19f78-160.webp 160w, /assets/responsive/retrato-monica-d19f78-240.webp 240w, /assets/responsive/retrato-monica-d19f78-320.webp 320w\" sizes=\"52px\" decoding=\"async\">",
+          "after": ""
+        },
+        {
+          "item": 6,
+          "start": 16119,
+          "before": "<img src=\"/assets/biblioteca/retrato-natalia.webp\" width=\"320\" height=\"320\" alt=\"\" loading=\"lazy\" srcset=\"/assets/responsive/retrato-natalia-47f22c-160.webp 160w, /assets/responsive/retrato-natalia-47f22c-240.webp 240w, /assets/responsive/retrato-natalia-47f22c-320.webp 320w\" sizes=\"52px\" decoding=\"async\">",
+          "after": ""
+        },
+        {
+          "item": 6,
+          "start": 17104,
+          "before": "<img src=\"/assets/biblioteca/retrato-taynah.webp\" width=\"320\" height=\"320\" alt=\"\" loading=\"lazy\" srcset=\"/assets/responsive/retrato-taynah-b2bfad-160.webp 160w, /assets/responsive/retrato-taynah-b2bfad-240.webp 240w, /assets/responsive/retrato-taynah-b2bfad-320.webp 320w\" sizes=\"52px\" decoding=\"async\">",
+          "after": ""
+        },
+        {
+          "item": 6,
+          "start": 18203,
+          "before": "<img src=\"/assets/biblioteca/retrato-sami.webp\" width=\"320\" height=\"320\" alt=\"\" loading=\"lazy\" srcset=\"/assets/responsive/retrato-sami-207db1-160.webp 160w, /assets/responsive/retrato-sami-207db1-240.webp 240w, /assets/responsive/retrato-sami-207db1-320.webp 320w\" sizes=\"52px\" decoding=\"async\">",
+          "after": ""
+        },
+        {
+          "item": 4,
+          "start": 18454,
+          "before": "<p class=\"price-detail\">An individual online session, guided by Prana Ka.</p>",
+          "after": "<!-- REVISAR: transcriação --><p class=\"price-detail\">An individual 90-minute session, online or in person, guided by Prana Ka.</p>"
+        },
+        {
+          "item": 7,
+          "start": 5331,
+          "before": "Ol%C3%A1%2C%20Prana!%20Vim%20pela%20p%C3%A1gina%20da%20Vis%C3%A3o%20Uterina%20e%20quero%20saber%20o%20valor%20e%20os%20hor%C3%A1rios%20para%20uma%20sess%C3%A3o%20individual.",
+          "after": "Ol%C3%A1%2C%20Prana!%20Vim%20pela%20p%C3%A1gina%20da%20Vis%C3%A3o%20Uterina%20e%20quero%20agendar%20minha%20sess%C3%A3o."
+        },
+        {
+          "item": 8,
+          "start": 18313,
+          "before": "<span class=\"price-currency\">R$</span><span class=\"price-number\">333</span>",
+          "after": "<span class=\"price-currency\">R$</span> <span class=\"price-number\">333</span>"
+        },
+        {
+          "item": 11,
+          "start": 2145,
+          "before": "<meta property=\"og:image\" content=\"https://thegoldentemple.io/assets/biblioteca/selo-templo.webp\">",
+          "after": "<meta property=\"og:image\" content=\"https://thegoldentemple.io/assets/og/og-default.jpg\"><meta property=\"og:image:width\" content=\"1200\"><meta property=\"og:image:height\" content=\"630\">"
+        }
+      ]
+    },
+    {
+      "file": "es/vision-uterina/index.html",
+      "before": "5ecdc3a0358595a5c98bcd25616254edd392bf3f49698589f86771598fafb7bd",
+      "after": "27c97659628467c082300de5ef05ccd2545f6eb5e1a50520fa23efd98cde9845",
+      "changes": [
+        {
+          "item": 6,
+          "start": 14934,
+          "before": "<img src=\"/assets/biblioteca/retrato-monica.webp\" width=\"320\" height=\"320\" alt=\"\" loading=\"lazy\" srcset=\"/assets/responsive/retrato-monica-d19f78-160.webp 160w, /assets/responsive/retrato-monica-d19f78-240.webp 240w, /assets/responsive/retrato-monica-d19f78-320.webp 320w\" sizes=\"52px\" decoding=\"async\">",
+          "after": ""
+        },
+        {
+          "item": 6,
+          "start": 16076,
+          "before": "<img src=\"/assets/biblioteca/retrato-natalia.webp\" width=\"320\" height=\"320\" alt=\"\" loading=\"lazy\" srcset=\"/assets/responsive/retrato-natalia-47f22c-160.webp 160w, /assets/responsive/retrato-natalia-47f22c-240.webp 240w, /assets/responsive/retrato-natalia-47f22c-320.webp 320w\" sizes=\"52px\" decoding=\"async\">",
+          "after": ""
+        },
+        {
+          "item": 6,
+          "start": 17068,
+          "before": "<img src=\"/assets/biblioteca/retrato-taynah.webp\" width=\"320\" height=\"320\" alt=\"\" loading=\"lazy\" srcset=\"/assets/responsive/retrato-taynah-b2bfad-160.webp 160w, /assets/responsive/retrato-taynah-b2bfad-240.webp 240w, /assets/responsive/retrato-taynah-b2bfad-320.webp 320w\" sizes=\"52px\" decoding=\"async\">",
+          "after": ""
+        },
+        {
+          "item": 6,
+          "start": 18135,
+          "before": "<img src=\"/assets/biblioteca/retrato-sami.webp\" width=\"320\" height=\"320\" alt=\"\" loading=\"lazy\" srcset=\"/assets/responsive/retrato-sami-207db1-160.webp 160w, /assets/responsive/retrato-sami-207db1-240.webp 240w, /assets/responsive/retrato-sami-207db1-320.webp 320w\" sizes=\"52px\" decoding=\"async\">",
+          "after": ""
+        },
+        {
+          "item": 4,
+          "start": 18381,
+          "before": "<p class=\"price-detail\">Sesión individual en línea, guiada por Prana Ka.</p>",
+          "after": "<!-- REVISAR: transcriação --><p class=\"price-detail\">Sesión individual de 1 h 30 min, en línea o presencial, guiada por Prana Ka.</p>"
+        },
+        {
+          "item": 7,
+          "start": 5340,
+          "before": "Ol%C3%A1%2C%20Prana!%20Vim%20pela%20p%C3%A1gina%20da%20Vis%C3%A3o%20Uterina%20e%20quero%20saber%20o%20valor%20e%20os%20hor%C3%A1rios%20para%20uma%20sess%C3%A3o%20individual.",
+          "after": "Ol%C3%A1%2C%20Prana!%20Vim%20pela%20p%C3%A1gina%20da%20Vis%C3%A3o%20Uterina%20e%20quero%20agendar%20minha%20sess%C3%A3o."
+        },
+        {
+          "item": 8,
+          "start": 18240,
+          "before": "<span class=\"price-currency\">R$</span><span class=\"price-number\">333</span>",
+          "after": "<span class=\"price-currency\">R$</span> <span class=\"price-number\">333</span>"
+        },
+        {
+          "item": 11,
+          "start": 2147,
+          "before": "<meta property=\"og:image\" content=\"https://thegoldentemple.io/assets/biblioteca/selo-templo.webp\">",
+          "after": "<meta property=\"og:image\" content=\"https://thegoldentemple.io/assets/og/og-default.jpg\"><meta property=\"og:image:width\" content=\"1200\"><meta property=\"og:image:height\" content=\"630\">"
+        }
+      ]
+    },
+    {
+      "file": "curso/index.html",
+      "before": "8c9b2e2d669e520a59afae44b1e01a9ae660064967b69a1e6bb159147ae9a588",
+      "after": "b93ab7853c0cff6ddcb8ef6a92930b1f91f0ba9c2155ed42ab35212a03cc6469",
+      "changes": [
+        {
+          "item": 5,
+          "start": 4672,
+          "before": "<strong>R$ 97</strong> <span aria-hidden=\"true\">·</span>",
+          "after": "<span hidden><strong>R$ 97</strong> <span aria-hidden=\"true\">·</span></span>"
+        },
+        {
+          "item": 5,
+          "start": 17345,
+          "before": "<p class=\"price\">",
+          "after": "<p class=\"price\" hidden>"
+        },
+        {
+          "item": 11,
+          "start": 2095,
+          "before": "<meta property=\"og:image\" content=\"https://thegoldentemple.io/assets/biblioteca/selo-templo.webp\">",
+          "after": "<meta property=\"og:image\" content=\"https://thegoldentemple.io/assets/og/og-default.jpg\"><meta property=\"og:image:width\" content=\"1200\"><meta property=\"og:image:height\" content=\"630\">"
+        }
+      ]
+    },
+    {
+      "file": "en/course/index.html",
+      "before": "b9646f1c6b9c7562ef28af214bfcc3eb27d15869f97b32fba99fcb158839b89a",
+      "after": "a905097f70ddeb0e4f4f9333457894a161628375901ce56ef34513825da51ce8",
+      "changes": [
+        {
+          "item": 5,
+          "start": 4779,
+          "before": "R$ 97 ·",
+          "after": "<span hidden>R$ 97 ·</span>"
+        },
+        {
+          "item": 5,
+          "start": 18484,
+          "before": "<p class=\"price\">",
+          "after": "<p class=\"price\" hidden>"
+        },
+        {
+          "item": 11,
+          "start": 2123,
+          "before": "<meta property=\"og:image\" content=\"https://thegoldentemple.io/assets/biblioteca/selo-templo.webp\">",
+          "after": "<meta property=\"og:image\" content=\"https://thegoldentemple.io/assets/og/og-default.jpg\"><meta property=\"og:image:width\" content=\"1200\"><meta property=\"og:image:height\" content=\"630\">"
+        }
+      ]
+    },
+    {
+      "file": "es/curso/index.html",
+      "before": "ed6b0b2be8b1f2a320031e0b2ff80a0936c2ed2610335b579087fd9981b52638",
+      "after": "f739942afba1d67edf7d6fc5f84dfb889809677e8f0ff37b949093fe251ab575",
+      "changes": [
+        {
+          "item": 5,
+          "start": 4794,
+          "before": "R$ 97 ·",
+          "after": "<span hidden>R$ 97 ·</span>"
+        },
+        {
+          "item": 5,
+          "start": 18380,
+          "before": "<p class=\"price\">",
+          "after": "<p class=\"price\" hidden>"
+        },
+        {
+          "item": 11,
+          "start": 2137,
+          "before": "<meta property=\"og:image\" content=\"https://thegoldentemple.io/assets/biblioteca/selo-templo.webp\">",
+          "after": "<meta property=\"og:image\" content=\"https://thegoldentemple.io/assets/og/og-default.jpg\"><meta property=\"og:image:width\" content=\"1200\"><meta property=\"og:image:height\" content=\"630\">"
+        }
+      ]
+    },
+    {
+      "file": "arte/index.html",
+      "before": "a0192a1a79eff9e8fcd875a85e7391d7d060db130ab21f93d2660410e7490aba",
+      "after": "08c728b4d7dddb532fa47c8da7c7d6df70e942c1773fc6374921f3a67edeec78",
+      "changes": [
+        {
+          "item": 11,
+          "start": 1895,
+          "before": "<meta property=\"og:image\" content=\"https://thegoldentemple.io/assets/biblioteca/selo-templo.webp\">",
+          "after": "<meta property=\"og:image\" content=\"https://thegoldentemple.io/assets/og/og-default.jpg\"><meta property=\"og:image:width\" content=\"1200\"><meta property=\"og:image:height\" content=\"630\">"
+        }
+      ]
+    },
+    {
+      "file": "en/art/index.html",
+      "before": "143c1c66ca96902cee45794654ebfd3c2a353125c4ab4d894b702bd757faa0bf",
+      "after": "771b2b607ef17d9dcd937475f0eca01d72d56f78cd6949b45552a08a4bef608c",
+      "changes": [
+        {
+          "item": 11,
+          "start": 1917,
+          "before": "<meta property=\"og:image\" content=\"https://thegoldentemple.io/assets/biblioteca/selo-templo.webp\">",
+          "after": "<meta property=\"og:image\" content=\"https://thegoldentemple.io/assets/og/og-default.jpg\"><meta property=\"og:image:width\" content=\"1200\"><meta property=\"og:image:height\" content=\"630\">"
+        }
+      ]
+    },
+    {
+      "file": "es/arte/index.html",
+      "before": "a4578aff144b9d1c3e1b969e697409c83834c1509cdbb119466f10745c967ba1",
+      "after": "9d3d4bc19e4c17cd63a6d8bd2654ecae0a77631e16fa0319c0aab08ad9393979",
+      "changes": [
+        {
+          "item": 11,
+          "start": 1921,
+          "before": "<meta property=\"og:image\" content=\"https://thegoldentemple.io/assets/biblioteca/selo-templo.webp\">",
+          "after": "<meta property=\"og:image\" content=\"https://thegoldentemple.io/assets/og/og-default.jpg\"><meta property=\"og:image:width\" content=\"1200\"><meta property=\"og:image:height\" content=\"630\">"
+        }
+      ]
+    },
+    {
+      "file": "prana/index.html",
+      "before": "bbd9a2538d1771597861dbb706f5d8ae59d817ba45ee5e17a7c8bafc8619df6f",
+      "after": "e995480de2316860aef7839967c819897de046c44f4e4d74d029c318ed4769a4",
+      "changes": [
+        {
+          "item": 11,
+          "start": 1956,
+          "before": "<meta property=\"og:image\" content=\"https://thegoldentemple.io/assets/biblioteca/selo-templo.webp\">",
+          "after": "<meta property=\"og:image\" content=\"https://thegoldentemple.io/assets/og/og-default.jpg\"><meta property=\"og:image:width\" content=\"1200\"><meta property=\"og:image:height\" content=\"630\">"
+        }
+      ]
+    },
+    {
+      "file": "en/prana/index.html",
+      "before": "7d21d751cf4fc1597b5c3478dad212ecbd5a996aca4935514672bdc2ffe11668",
+      "after": "6005a802b3b30d92b0eabbe6826df4c777e543498618853e05d04cfe74a34c4c",
+      "changes": [
+        {
+          "item": 11,
+          "start": 1964,
+          "before": "<meta property=\"og:image\" content=\"https://thegoldentemple.io/assets/biblioteca/selo-templo.webp\">",
+          "after": "<meta property=\"og:image\" content=\"https://thegoldentemple.io/assets/og/og-default.jpg\"><meta property=\"og:image:width\" content=\"1200\"><meta property=\"og:image:height\" content=\"630\">"
+        }
+      ]
+    },
+    {
+      "file": "es/prana/index.html",
+      "before": "8a3e1dedc253d20c881e7630dca6fa660bfe57bec1f69538f9c9e3812c7f35e2",
+      "after": "c9d26fadcd4620b9f815bb13839ff257a002926aead9dfffbeb0a356607ad7f1",
+      "changes": [
+        {
+          "item": 11,
+          "start": 1942,
+          "before": "<meta property=\"og:image\" content=\"https://thegoldentemple.io/assets/biblioteca/selo-templo.webp\">",
+          "after": "<meta property=\"og:image\" content=\"https://thegoldentemple.io/assets/og/og-default.jpg\"><meta property=\"og:image:width\" content=\"1200\"><meta property=\"og:image:height\" content=\"630\">"
+        }
+      ]
+    }
+  ]
+}

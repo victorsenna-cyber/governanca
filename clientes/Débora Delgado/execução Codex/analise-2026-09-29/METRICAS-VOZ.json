@@ -1,0 +1,38 @@
+{
+  "words": 1041,
+  "markers": {
+    "entendeu": {
+      "count": 3,
+      "per1000": 2.88
+    },
+    "digamos assim": {
+      "count": 1,
+      "per1000": 0.96
+    },
+    "tipo assim": {
+      "count": 3,
+      "per1000": 2.88
+    },
+    "ali": {
+      "count": 13,
+      "per1000": 12.49
+    },
+    "eu acredito": {
+      "count": 2,
+      "per1000": 1.92
+    },
+    "basicamente": {
+      "count": 2,
+      "per1000": 1.92
+    },
+    "extremamente": {
+      "count": 1,
+      "per1000": 0.96
+    },
+    "então": {
+      "count": 16,
+      "per1000": 15.37
+    }
+  },
+  "note": "ASR, sem revisão auditiva; 5 áudios nossos lidos integralmente"
+}

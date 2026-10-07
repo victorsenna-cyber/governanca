@@ -1,0 +1,523 @@
+{
+  "validated_at": "2026-10-01T18:38:50.436Z",
+  "source": "https://lp02.profissaohomesales.com/",
+  "viewport": {
+    "width": 390,
+    "height": 844,
+    "isMobile": true,
+    "hasTouch": true
+  },
+  "original": {
+    "title": "PROFISSÃO \"HOME SALES\" - A nova onda do Digital",
+    "text": "PREENCHA O QUIZ LIBERE ESSA OPORTUNIDADE:\n\nFAÇA R$5.000 EM CASA APENAS COM O SEU CELULAR\nNOVA PROFISSÃO QUE ESTÁ DANDO A OPORTUNIDADE DE QUALQUER PESSOA COM CELULAR E ACESSO A INTERNET DE FAZER +R$5.000 DENTRO DE CASA, EM ATÉ 33 DIAS.\n\n↓ RESPONDA PARA COMEÇAR ↓\n\nVocê é homem ou mulher?\n\nHomem\n\nMulher\n\nMarcal Lancamento Digital LtdaCNPJ: 50.395.702/0001-90 Alameda Tocantins, 956, Sala 12 — Alphaville Centro Industrial e Empresarial — Barueri/SP — CEP 06.455-020 Contato:suporte@pablomarcal.com.br| WhatsApp: +55 (11) 99726-9378\n\nAo acessar esta página, você está de acordo com:Termos de Uso|Política de Privacidade",
+    "height": 1097,
+    "width": 390,
+    "images": [
+      {
+        "src": "https://media.inlead.cloud/uploads/40205/2025-10-24/md-8t2dC-xivsc-2.png",
+        "loaded": true
+      },
+      {
+        "src": "https://media.inlead.cloud/uploads/40205/2025-10-24/md-8ngdA-8s1jn-1.png",
+        "loaded": true
+      }
+    ]
+  },
+  "local": {
+    "title": "PROFISSÃO \"HOME SALES\" - A nova onda do Digital",
+    "text": "PREENCHA O QUIZ LIBERE ESSA OPORTUNIDADE:\n\nFAÇA R$5.000 EM CASA APENAS COM O SEU CELULAR\nNOVA PROFISSÃO QUE ESTÁ DANDO A OPORTUNIDADE DE QUALQUER PESSOA COM CELULAR E ACESSO A INTERNET DE FAZER +R$5.000 DENTRO DE CASA, EM ATÉ 33 DIAS.\n\n↓ RESPONDA PARA COMEÇAR ↓\n\nVocê é homem ou mulher?\n\nHomem\n\nMulher\n\nMarcal Lancamento Digital LtdaCNPJ: 50.395.702/0001-90 Alameda Tocantins, 956, Sala 12 — Alphaville Centro Industrial e Empresarial — Barueri/SP — CEP 06.455-020 Contato:suporte@pablomarcal.com.br| WhatsApp: +55 (11) 99726-9378\n\nAo acessar esta página, você está de acordo com:Termos de Uso|Política de Privacidade",
+    "height": 1097,
+    "width": 390,
+    "images": [
+      {
+        "src": "https://media.inlead.cloud/uploads/40205/2025-10-24/md-8t2dC-xivsc-2.png",
+        "loaded": true
+      },
+      {
+        "src": "https://media.inlead.cloud/uploads/40205/2025-10-24/md-8ngdA-8s1jn-1.png",
+        "loaded": true
+      }
+    ]
+  },
+  "textIdentical": true,
+  "dimensionsIdentical": true,
+  "missing": [],
+  "neutralized": [
+    {
+      "url": "https://lp02.profissaohomesales.com/_next/data/6r_6Rytv2dtJrziTaTQZS/index.json?all=lp02%7Cprofissaohomesales%7Ccom",
+      "type": "fetch",
+      "method": "HEAD"
+    },
+    {
+      "url": "https://fyads.fypro.com.br/e/px",
+      "type": "fetch",
+      "method": "POST"
+    }
+  ],
+  "sha256Checks": [
+    {
+      "path": "arquivos/lp02.profissaohomesales.com/df1d516d6a881817-index.html",
+      "ok": true
+    },
+    {
+      "path": "arquivos/inlead.digital/999b41e1c14fea7d-main-2ac0f99086868634.js",
+      "ok": true
+    },
+    {
+      "path": "arquivos/inlead.digital/4a5d2653dcdb3715-e4af272ccee01ff0-s.p.woff2",
+      "ok": true
+    },
+    {
+      "path": "arquivos/inlead.digital/cfcd7eb959d991d8-925ca1824c51373e.css",
+      "ok": true
+    },
+    {
+      "path": "arquivos/inlead.digital/8922cf8d37efd637-83d54731525ad5cf.css",
+      "ok": true
+    },
+    {
+      "path": "arquivos/inlead.digital/6ef966ff9d5ed99f-framework-b21a9a9d949ebca4.js",
+      "ok": true
+    },
+    {
+      "path": "arquivos/inlead.digital/0fc6b83c38ce2a16-webpack-a69b184f9337072c.js",
+      "ok": true
+    },
+    {
+      "path": "arquivos/inlead.digital/9babba38d35b93ce-6192-7fe6f14368d860b7.js",
+      "ok": true
+    },
+    {
+      "path": "arquivos/inlead.digital/dd40647e9fdbee12-71614-73bf1c5712153708.js",
+      "ok": true
+    },
+    {
+      "path": "arquivos/inlead.digital/1510909164181e51-99293-fe8e51e54b96d48a.js",
+      "ok": true
+    },
+    {
+      "path": "arquivos/inlead.digital/1c945f57028a8144-_app-e8cbba1027769f90.js",
+      "ok": true
+    },
+    {
+      "path": "arquivos/inlead.digital/a8b22d58db7942ff-4770-7e6f429eaeea9604.js",
+      "ok": true
+    },
+    {
+      "path": "arquivos/inlead.digital/f9a97f639c976623-92949-08937654f32b27aa.js",
+      "ok": true
+    },
+    {
+      "path": "arquivos/inlead.digital/fee452e2d0e0ac40-50307-09b1145b5a32928d.js",
+      "ok": true
+    },
+    {
+      "path": "arquivos/inlead.digital/f47b8a4e1374b0ed-32413-a455ec39e1a2920b.js",
+      "ok": true
+    },
+    {
+      "path": "arquivos/inlead.digital/fca362278288b2af-7539-9fa93799090190c7.js",
+      "ok": true
+    },
+    {
+      "path": "arquivos/inlead.digital/0fe47b7b9452a291-66689-f77d03dc6c76cd5a.js",
+      "ok": true
+    },
+    {
+      "path": "arquivos/inlead.digital/eed553c9abb1c49c-_ssgManifest.js",
+      "ok": true
+    },
+    {
+      "path": "arquivos/fonts.googleapis.com/60499deb3a9ce380-css2.css",
+      "ok": true
+    },
+    {
+      "path": "arquivos/fonts.googleapis.com/cdd9f91f78260d29-css.css",
+      "ok": true
+    },
+    {
+      "path": "arquivos/inlead.digital/4218019d9aaa59ca-96383-9992fba86a7ee296.js",
+      "ok": true
+    },
+    {
+      "path": "arquivos/inlead.digital/82e6603cba5c1eb2-30896-cdb87922febd3139.js",
+      "ok": true
+    },
+    {
+      "path": "arquivos/inlead.digital/233ff874a6cb4d30-47951-86c5879aa26bc672.js",
+      "ok": true
+    },
+    {
+      "path": "arquivos/inlead.digital/76e8a72767e7700c-_buildManifest.js",
+      "ok": true
+    },
+    {
+      "path": "arquivos/inlead.digital/a840d63e274072f0-70165-8dc27604b3c1f061.js",
+      "ok": true
+    },
+    {
+      "path": "arquivos/inlead.digital/05d00f1788702d41-_5B...all_5D-a11fdbef98f3a224.js",
+      "ok": true
+    },
+    {
+      "path": "arquivos/inlead.digital/4e0b0e6142807a45-67786.239436862c01b938.js",
+      "ok": true
+    },
+    {
+      "path": "arquivos/inlead.digital/5bea6fa176bd37de-45387.e6a5e0ff5b3c0b2f.js",
+      "ok": true
+    },
+    {
+      "path": "arquivos/inlead.digital/fbc797ed2087577b-10194.ef93e00f72c5efb6.js",
+      "ok": true
+    },
+    {
+      "path": "arquivos/fonts.gstatic.com/e3237528af752eed-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2",
+      "ok": true
+    },
+    {
+      "path": "arquivos/cf.vkdigital.com.br/6e040dc1961fc48b-sales_pixel.js",
+      "ok": true
+    },
+    {
+      "path": "arquivos/connect.facebook.net/c5acbaebd7a0b381-fbevents.js",
+      "ok": true
+    },
+    {
+      "path": "arquivos/tracker.assiny.com.br/2b1f8dbdda72c57b-tracker.min.js",
+      "ok": true
+    },
+    {
+      "path": "arquivos/media.inlead.cloud/be5cd9cc51c4ddbf-md-8t2dC-xivsc-2.png",
+      "ok": true
+    },
+    {
+      "path": "arquivos/media.inlead.cloud/a7a31263213fb020-pfqv2-.png",
+      "ok": true
+    },
+    {
+      "path": "arquivos/media.inlead.cloud/e30b4cf63f4b6a73-md-8ngdA-8s1jn-1.png",
+      "ok": true
+    },
+    {
+      "path": "arquivos/www.googletagmanager.com/ddc4e504227ace90-gtm.js",
+      "ok": true
+    },
+    {
+      "path": "arquivos/api.analysis.inlead.tech/600c7470d817d36a-register.json",
+      "ok": true
+    },
+    {
+      "path": "arquivos/cf.vkdigital.com.br/65b91cedb239d6f7-event_pageview.js",
+      "ok": true
+    },
+    {
+      "path": "arquivos/connect.facebook.net/b09a77a63781eef1-4105991202996119.bin",
+      "ok": true
+    },
+    {
+      "path": "arquivos/dashquiz.kairosgrowth.com.br/9ad937b4840949f1-hs-assiny.json",
+      "ok": true
+    },
+    {
+      "path": "arquivos/dashquiz.kairosgrowth.com.br/24b20b1d31848882-hs-assiny.json",
+      "ok": true
+    },
+    {
+      "path": "arquivos/fyads.fypro.com.br/025d832aaec74d5f-px.js",
+      "ok": true
+    },
+    {
+      "path": "arquivos/fyads.fypro.com.br/0e2994082fee53c2-px-config.json",
+      "ok": true
+    },
+    {
+      "path": "arquivos/inlead.digital/e815fd0cfbec121d-54198.9d3043d57aa86ded.js",
+      "ok": true
+    },
+    {
+      "path": "arquivos/media.inlead.cloud/004ef2b9d0060f1a-md-58p0Q-homem-18-29.png",
+      "ok": true
+    },
+    {
+      "path": "arquivos/media.inlead.cloud/d539b4c2630f80bb-md-QzdQR-homem-2939.png",
+      "ok": true
+    },
+    {
+      "path": "arquivos/media.inlead.cloud/896964877a470d67-md-0AOGB-homem-39-49.png",
+      "ok": true
+    },
+    {
+      "path": "arquivos/media.inlead.cloud/b38d1ecfd3456daa-md-FvivC-homem-50.png",
+      "ok": true
+    },
+    {
+      "path": "arquivos/api.analysis.inlead.tech/ade48cd5862999e2-register.json",
+      "ok": true
+    },
+    {
+      "path": "arquivos/api.analysis.inlead.tech/7dfe25b91fff05d7-register.json",
+      "ok": true
+    },
+    {
+      "path": "arquivos/media.inlead.cloud/f5bc336270578585-md-gSzGu-88.png",
+      "ok": true
+    },
+    {
+      "path": "arquivos/media.inlead.cloud/ae94f2c8d7ca685b-md-qdQnM-108.png",
+      "ok": true
+    },
+    {
+      "path": "arquivos/pixel.vkdigital.com.br/0606fb1d40cfa16a-evento.json",
+      "ok": true
+    },
+    {
+      "path": "arquivos/media.inlead.cloud/0040575c5687b42b-md-YgoeQ-redessociais.png",
+      "ok": true
+    },
+    {
+      "path": "arquivos/media.inlead.cloud/d2a2f70fa40a5652-md-b93EW-redessociais-3.png",
+      "ok": true
+    },
+    {
+      "path": "arquivos/media.inlead.cloud/79dc3d53051f27e5-md-GkygH-redessociais-1.png",
+      "ok": true
+    },
+    {
+      "path": "arquivos/media.inlead.cloud/fb6bea866e741b2f-md-8Lg2p-redessociais-2.png",
+      "ok": true
+    },
+    {
+      "path": "arquivos/media.inlead.cloud/e2357403788f1715-lg-0JEqs-subcabecalho-1.png",
+      "ok": true
+    },
+    {
+      "path": "arquivos/inlead.digital/72c99fc476367122-53774.8cbb58989a02ebbc.js",
+      "ok": true
+    },
+    {
+      "path": "arquivos/inlead.digital/72e12576d8f49bda-57531-ee89e234f2386123.js",
+      "ok": true
+    },
+    {
+      "path": "arquivos/player-vz-4994ca4c-7dd.tv.pandavideo.com.br/03f0b51099ed97d7-embed.html",
+      "ok": true
+    },
+    {
+      "path": "arquivos/player-vz-4994ca4c-7dd.tv.pandavideo.com.br/2c0c48aae4c2309b-pb.css",
+      "ok": true
+    },
+    {
+      "path": "arquivos/player-vz-4994ca4c-7dd.tv.pandavideo.com.br/07d303bbe88f8f3f-plyr.css",
+      "ok": true
+    },
+    {
+      "path": "arquivos/player-vz-4994ca4c-7dd.tv.pandavideo.com.br/7caba1bbebf1e3da-styles.css",
+      "ok": true
+    },
+    {
+      "path": "arquivos/player-vz-4994ca4c-7dd.tv.pandavideo.com.br/2c505640b04e23cb-main.1042.bundle.js",
+      "ok": true
+    },
+    {
+      "path": "arquivos/player-vz-4994ca4c-7dd.tv.pandavideo.com.br/0f679e0b93c658c5-vendors.1042.bundle.js",
+      "ok": true
+    },
+    {
+      "path": "arquivos/www.gstatic.com/33d0de687961ddf5-cast_sender.js",
+      "ok": true
+    },
+    {
+      "path": "arquivos/fonts.googleapis.com/d12a5d2061b4bc7d-css.css",
+      "ok": true
+    },
+    {
+      "path": "arquivos/fonts.googleapis.com/fa0b0fd1f5e96ba0-css2.css",
+      "ok": true
+    },
+    {
+      "path": "arquivos/media.inlead.cloud/a76a6587e8d98341-md-RovdD-83.png",
+      "ok": true
+    },
+    {
+      "path": "arquivos/media.inlead.cloud/3cb97c5d5a663f67-md-BJtSf-102.png",
+      "ok": true
+    },
+    {
+      "path": "arquivos/media.inlead.cloud/d24203ea4f6d833c-md-bLCS6-100.png",
+      "ok": true
+    },
+    {
+      "path": "arquivos/media.inlead.cloud/0e0a6704e85f1784-md-I2E2B-90.png",
+      "ok": true
+    },
+    {
+      "path": "arquivos/media.inlead.cloud/6c6487193b085d8d-md-Rk0jS-101.png",
+      "ok": true
+    },
+    {
+      "path": "arquivos/media.inlead.cloud/751c5ba0cb7c87e9-md-tGaG5-67.png",
+      "ok": true
+    },
+    {
+      "path": "arquivos/media.inlead.cloud/bc3878eb3724497c-md-reEjx-68.png",
+      "ok": true
+    },
+    {
+      "path": "arquivos/media.inlead.cloud/be8ae31d63bcc942-sm-AIaXr-stanford-logo.png",
+      "ok": true
+    },
+    {
+      "path": "arquivos/media.inlead.cloud/4af730f0a823c72d-md-I92xP-97.png",
+      "ok": true
+    },
+    {
+      "path": "arquivos/media.inlead.cloud/51f6a7934663d9e5-lg-TEGap-pablo.jpg",
+      "ok": true
+    },
+    {
+      "path": "arquivos/media.inlead.cloud/863b5d8efda76720-md-cclH5-63.png",
+      "ok": true
+    },
+    {
+      "path": "arquivos/media.inlead.cloud/6083100c0d917138-md-3l9nd-70.png",
+      "ok": true
+    },
+    {
+      "path": "arquivos/media.inlead.cloud/63aeee8125c4abff-md-2qTfu-64.png",
+      "ok": true
+    },
+    {
+      "path": "arquivos/media.inlead.cloud/2ba863c23a145fb7-md-86iza-65.png",
+      "ok": true
+    },
+    {
+      "path": "arquivos/media.inlead.cloud/219d370e57f6b5a3-md-II7KC-38.png",
+      "ok": true
+    },
+    {
+      "path": "arquivos/media.inlead.cloud/20033173c61df670-md-dI4ua-103.png",
+      "ok": true
+    },
+    {
+      "path": "arquivos/media.inlead.cloud/0cd9a76bc10c4505-md-GFaul-35.png",
+      "ok": true
+    },
+    {
+      "path": "arquivos/media.inlead.cloud/c7b7e9ad3f067c8a-md-7rxoC-75.png",
+      "ok": true
+    },
+    {
+      "path": "arquivos/media.inlead.cloud/817dff45281c50b7-md-y9TM6-77.png",
+      "ok": true
+    },
+    {
+      "path": "arquivos/media.inlead.cloud/4f687fae99355cba-md-5yw4f-57.png",
+      "ok": true
+    },
+    {
+      "path": "arquivos/media.inlead.cloud/f47553436d416957-md-nXhbN-55.png",
+      "ok": true
+    },
+    {
+      "path": "arquivos/media.inlead.cloud/88b8faa61a3cd7d0-md-KW9In-104.png",
+      "ok": true
+    },
+    {
+      "path": "arquivos/media.inlead.cloud/fc0b3609d8d830bf-md-GYTzh-89.png",
+      "ok": true
+    },
+    {
+      "path": "arquivos/media.inlead.cloud/f09d9240c7f91cd7-md-f6jLc-51.png",
+      "ok": true
+    },
+    {
+      "path": "arquivos/www.gstatic.com/5a31d3f992e74662-cast_sender.js",
+      "ok": true
+    },
+    {
+      "path": "arquivos/player-vz-4994ca4c-7dd.tv.pandavideo.com.br/fb57dc2bbdc5715b-embed.html",
+      "ok": true
+    },
+    {
+      "path": "arquivos/www.gstatic.com/2243a314b809fec0-cast_framework.js",
+      "ok": true
+    },
+    {
+      "path": "arquivos/config.tv.pandavideo.com.br/6eade35f2e1d6413-config.json",
+      "ok": true
+    },
+    {
+      "path": "arquivos/config.tv.pandavideo.com.br/deed8c79327ba1b0-3c9322a3-cc82-46b9-966b-b39c03c71341.json",
+      "ok": true
+    },
+    {
+      "path": "arquivos/b-vz-4994ca4c-7dd.tv.pandavideo.com.br/35ce57026fa7910b-playlist.m3u8",
+      "ok": true
+    },
+    {
+      "path": "arquivos/b-vz-4994ca4c-7dd.tv.pandavideo.com.br/335e4918df0c0719-playlist.m3u8",
+      "ok": true
+    },
+    {
+      "path": "arquivos/player-vz-4994ca4c-7dd.tv.pandavideo.com.br/dcb23f6276b5c5f8-plyr.svg",
+      "ok": true
+    },
+    {
+      "path": "arquivos/fonts.gstatic.com/d8c30647abfeffe6-LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko20yw.woff2",
+      "ok": true
+    },
+    {
+      "path": "arquivos/media.inlead.cloud/f959563e399d6838-lg-tX6yl-10h-da-manha-com-600-a-mais-no-bolso.jpg",
+      "ok": true
+    },
+    {
+      "path": "arquivos/media.inlead.cloud/fecf477a7a8fce61-md-I8Pf6-93.png",
+      "ok": true
+    },
+    {
+      "path": "arquivos/media.inlead.cloud/e94559d64a1a8ff5-md-Jm4up-emojis-1.png",
+      "ok": true
+    },
+    {
+      "path": "arquivos/media.inlead.cloud/1466332dd5319179-md-3gTsB-123.png",
+      "ok": true
+    },
+    {
+      "path": "arquivos/media.inlead.cloud/c37ab6ed42d1c7f0-md-IACi3-87.png",
+      "ok": true
+    },
+    {
+      "path": "arquivos/media.inlead.cloud/4056f0256b396f1d-md-KOCUh-96.png",
+      "ok": true
+    },
+    {
+      "path": "arquivos/media.inlead.cloud/5ab1e3606b47c58c-md-JwrZY-114.png",
+      "ok": true
+    },
+    {
+      "path": "arquivos/inlead.digital/de62df21fa5d49a3-31602.f37984469c13c09c.js",
+      "ok": true
+    },
+    {
+      "path": "arquivos/media.inlead.cloud/ccfedfddd39c6e96-sm-lYqIw-mulher-triste-sem-dinheiro.png",
+      "ok": true
+    },
+    {
+      "path": "arquivos/media.inlead.cloud/7e2dd04c9ceae118-sm-woadP-homem-triste-sem-dinheiro.png",
+      "ok": true
+    },
+    {
+      "path": "arquivos/media.inlead.cloud/26fc451a30ffcccf-sm-XiwMV-homem-feliz-com-dinheiro.png",
+      "ok": true
+    },
+    {
+      "path": "arquivos/media.inlead.cloud/c63ebb99f993ae6f-sm-b34Bv-mulher-feliz-com-dinheiro.png",
+      "ok": true
+    },
+    {
+      "path": "arquivos/media.inlead.cloud/a25e93d1090a8d92-q6jfF-gif-seta.gif",
+      "ok": true
+    }
+  ]
+}

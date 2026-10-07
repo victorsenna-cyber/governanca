@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Preços e quando apresentar cada um</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--papel:#FAF7F2;--tinta:#2E2A26;--musgo:#52604A;--terra:#A8754F;--vinho:#7A3B4A;--cinza:#8A8378;--linha:#E6DFD4;--card:#fff}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--papel);color:var(--tinta);font-family:Inter,system-ui,sans-serif;font-size:16px;line-height:1.55;padding:44px 20px 70px}
+.wrap{max-width:820px;margin:0 auto}
+h1{font-family:Fraunces,Georgia,serif;font-size:34px;font-weight:600;line-height:1.15}
+.sub{color:var(--cinza);margin:6px 0 34px;font-size:15px}
+
+.card{background:var(--card);border:1px solid var(--linha);border-radius:8px;padding:24px 26px;margin-bottom:16px;border-top:4px solid var(--musgo)}
+.card.b{border-top-color:var(--terra)}
+.card.c{border-top-color:var(--vinho)}
+
+.topo{display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap}
+.nome{font-family:Fraunces,serif;font-size:23px;font-weight:600}
+.preco{font-family:Fraunces,serif;font-size:29px;font-weight:600;color:var(--musgo);white-space:nowrap}
+.card.b .preco{color:var(--terra)} .card.c .preco{color:var(--vinho)}
+.inclui{color:var(--cinza);font-size:14.5px;margin-top:4px}
+
+.variacoes{margin-top:14px;padding-top:12px;border-top:1px solid var(--linha);font-size:14.5px}
+.variacoes div{display:flex;justify-content:space-between;gap:14px;padding:3px 0}
+.variacoes span:last-child{font-weight:600;white-space:nowrap}
+
+.quando{margin-top:16px;background:#F5F1EA;border-radius:6px;padding:13px 16px}
+.quando .rot{font-size:10.5px;letter-spacing:.11em;text-transform:uppercase;color:var(--cinza);font-weight:600;display:block;margin-bottom:5px}
+.quando .txt{font-size:15px;line-height:1.5}
+
+.regra{background:var(--card);border:1px solid var(--linha);border-left:5px solid var(--terra);border-radius:6px;padding:20px 24px;margin-top:34px}
+.regra .t{font-family:Fraunces,serif;font-size:18px;font-weight:600;margin-bottom:7px}
+.rodape{margin-top:34px;color:var(--cinza);font-size:13.5px}
+@media(max-width:560px){body{padding:28px 15px 50px}h1{font-size:27px}.preco{font-size:25px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<h1>Preços, e quando apresentar cada um</h1>
+<p class="sub">Liderança na Raiz · Débora Delgado</p>
+
+<div class="card">
+  <div class="topo">
+    <div>
+      <div class="nome">Mentoria em grupo</div>
+      <div class="inclui">4 meses · 16 encontros de grupo + 4 individuais</div>
+    </div>
+    <div class="preco">R$ 6.000</div>
+  </div>
+  <div class="variacoes">
+    <div><span>Pré-venda, primeira turma</span><span>R$ 4.000</span></div>
+    <div><span>Quem já fez um ciclo com você</span><span>R$ 3.000</span></div>
+  </div>
+  <div class="quando">
+    <span class="rot">quando apresentar</span>
+    <span class="txt"><strong>É a oferta padrão.</strong> Apresente para todo mundo que lidera gente ou trabalha influenciando líderes. Só saia dela se a pessoa não couber.</span>
+  </div>
+</div>
+
+<div class="card b">
+  <div class="topo">
+    <div>
+      <div class="nome">Individual</div>
+      <div class="inclui">4 meses · 12 encontros só seus com ela</div>
+    </div>
+    <div class="preco">R$ 6.000</div>
+  </div>
+  <div class="variacoes">
+    <div><span>Quem já fez um ciclo (3 meses, 6 encontros)</span><span>R$ 2.500</span></div>
+    <div><span>A partir da segunda turma</span><span>R$ 8.000</span></div>
+  </div>
+  <div class="quando">
+    <span class="rot">quando apresentar</span>
+    <span class="txt"><strong>Só quando a pessoa não cabe no grupo</strong>, porque não lidera ou porque o tema dela é pessoal demais para a sala. Ou quando ela mesma pede um a um.</span>
+  </div>
+</div>
+
+<div class="card c">
+  <div class="topo">
+    <div>
+      <div class="nome">Encontro avulso</div>
+      <div class="inclui">uma sessão, sem sequência</div>
+    </div>
+    <div class="preco">R$ 550</div>
+  </div>
+  <div class="variacoes">
+    <div><span>Exclusivo de quem já concluiu um ciclo</span><span>não é preço de tabela</span></div>
+  </div>
+  <div class="quando">
+    <span class="rot">quando apresentar</span>
+    <span class="txt"><strong>Por último, e só para quem já terminou um processo com você e não quer pacote agora.</strong> Nunca como primeira opção, nunca para quem está chegando.</span>
+  </div>
+</div>
+
+<div class="regra">
+  <div class="t">A regra que segura os três</div>
+  <p>Quanto maior o compromisso, menor o preço por encontro. O avulso custa mais caro por sessão do que qualquer pacote, e é isso que faz o pacote continuar valendo a pena.</p>
+</div>
+
+<p class="rodape">Se alguém perguntar por que o avulso é mais caro: porque nele você segura a agenda aberta sem saber se a pessoa volta.</p>
+
+</div>
+</body>
+</html>

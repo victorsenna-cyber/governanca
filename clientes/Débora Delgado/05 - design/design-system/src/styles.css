@@ -1,0 +1,356 @@
+/* ==========================================================================
+   ESTILOS DE COMPONENTE, Marca Débora Delgado
+   Todos dirigidos por tokens (design-tokens.css). Sem valores crus, sem
+   dependências. As mesmas classes servem ao React e ao styleguide vanilla,
+   o que mantém fidelidade 1:1 e facilita o embed no Wix.
+   ========================================================================== */
+
+/* ---- Base ---------------------------------------------------------------- */
+.dd-root {
+  font-family: var(--fonte-corpo);
+  color: var(--cor-texto);
+  background-color: var(--cor-fundo);
+  background-image: var(--grad-fundo);
+  background-attachment: fixed;
+  font-size: var(--txt-md);
+  line-height: var(--lh-corpo);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+.dd-root *,
+.dd-root *::before,
+.dd-root *::after { box-sizing: border-box; }
+
+/* ---- Tipografia ---------------------------------------------------------- */
+.dd-eyebrow {
+  font-family: var(--fonte-titulo);
+  font-weight: var(--peso-medio);
+  font-size: var(--txt-2xs);
+  letter-spacing: var(--track-rotulo);
+  text-transform: uppercase;
+  color: var(--cor-acento);
+  margin: 0 0 var(--esp-sm);
+}
+.dd-h1, .dd-h2, .dd-h3, .dd-h4, .dd-h5 {
+  font-family: var(--fonte-titulo);
+  font-variation-settings: var(--fonte-titulo-opsz);
+  color: var(--cor-texto);
+  font-weight: var(--peso-semi);
+  line-height: var(--lh-titulo);
+  margin: 0 0 var(--esp-md);
+  text-wrap: balance;
+}
+.dd-h1 { font-size: clamp(2.75rem, 6vw, var(--txt-h1)); letter-spacing: var(--track-titulo); font-weight: 500; }
+.dd-h2 { font-size: clamp(2.25rem, 4.5vw, var(--txt-h2)); letter-spacing: var(--track-titulo); font-weight: 500; }
+.dd-h3 { font-size: clamp(1.875rem, 3.5vw, var(--txt-h3)); letter-spacing: var(--track-titulo-sm); }
+.dd-h4 { font-size: var(--txt-h4); letter-spacing: var(--track-titulo-sm); font-weight: var(--peso-medio); }
+.dd-h5 { font-size: var(--txt-h5); letter-spacing: var(--track-titulo-sm); font-weight: var(--peso-medio); }
+.dd-lead {
+  font-size: var(--txt-lg);
+  line-height: var(--lh-corpo-solto);
+  color: var(--cor-texto-suave);
+  max-width: var(--largura-conteudo);
+  margin: 0 0 var(--esp-md);
+}
+.dd-body { font-size: var(--txt-md); line-height: var(--lh-corpo); max-width: var(--largura-conteudo); margin: 0 0 var(--esp-sm); }
+.dd-small { font-size: var(--txt-xs); color: var(--cor-texto-suave); }
+
+/* ---- Seção e container --------------------------------------------------- */
+.dd-section { padding: var(--esp-3xl) var(--esp-md); background: var(--cor-fundo); }
+.dd-section--alt { background: var(--cor-fundo-alt); }
+.dd-section--musgo { background: var(--cor-superficie); }
+.dd-section--musgo .dd-h1,
+.dd-section--musgo .dd-h2,
+.dd-section--musgo .dd-h3 { color: var(--cor-petroleo); }
+.dd-section--escura { background: var(--cor-superficie-forte); color: var(--cor-texto-claro); }
+.dd-section--escura .dd-h1,
+.dd-section--escura .dd-h2,
+.dd-section--escura .dd-h3,
+.dd-section--escura .dd-h4,
+.dd-section--escura .dd-h5 { color: var(--cor-texto-claro); }
+.dd-section--escura .dd-lead,
+.dd-section--escura .dd-body { color: rgba(241, 237, 228, 0.86); }
+.dd-section--escura .dd-eyebrow { color: var(--cor-dourado-claro); }
+
+.dd-container { max-width: var(--largura-container); margin: 0 auto; width: 100%; }
+.dd-container--estreito { max-width: var(--largura-container-estreito); }
+
+/* ---- Botão / CTA --------------------------------------------------------- */
+.dd-btn {
+  font-family: var(--fonte-titulo);
+  font-weight: var(--peso-medio);
+  font-size: var(--txt-xs);
+  letter-spacing: var(--track-rotulo);
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--esp-2xs);
+  min-height: 52px;
+  padding: 0 var(--esp-lg);
+  border-radius: var(--raio-pill);
+  border: var(--traco-fino) solid transparent;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background var(--dur-media) var(--ease-saida),
+              border-color var(--dur-media) var(--ease-saida),
+              box-shadow var(--dur-media) var(--ease-saida),
+              transform var(--dur-rapida) var(--ease-saida);
+}
+.dd-btn:focus-visible { outline: none; box-shadow: var(--foco-anel); }
+.dd-btn:active { transform: translateY(1px); }
+
+/* CTA primário com acabamento de vidro: gradiente petróleo, highlight fino no
+   topo (::before), borda com luz dourada e sombra de profundidade em camadas.
+   Reflexo elegante, sem neon. O contraste do texto areia segue AAA.            */
+.dd-btn--primario {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background-image: var(--cta-grad);
+  background-color: var(--cor-cta-fundo);
+  color: var(--cor-cta-texto);
+  border-color: var(--cor-cta-borda);
+  box-shadow: var(--cta-highlight), var(--cta-luz-dourada), var(--cta-sombra);
+}
+/* Sheen de topo atrás do texto (z-index negativo dentro do botão isolado),
+   nunca reduz o contraste do rótulo. */
+.dd-btn--primario::before {
+  content: '';
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 52%;
+  z-index: -1;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.16), rgba(255, 255, 255, 0) 100%);
+  pointer-events: none;
+}
+.dd-btn--primario:hover {
+  background-image: var(--cta-grad-hover);
+  border-color: var(--cor-cta-borda-hover);
+  box-shadow: var(--cta-highlight), var(--cta-luz-dourada), var(--cta-sombra-hover);
+}
+
+.dd-btn--secundario {
+  background: var(--cor-cta2-fundo);
+  color: var(--cor-cta2-texto);
+  border-color: var(--cor-cta2-borda);
+}
+.dd-btn--secundario:hover { background: var(--cor-cta2-fundo-hover); }
+
+.dd-btn--texto {
+  min-height: auto;
+  padding: var(--esp-2xs) 0;
+  border-radius: 0;
+  border: none;
+  background: none;
+  color: var(--cor-texto);
+  border-bottom: var(--traco-fino) solid var(--cor-acento);
+}
+.dd-btn--texto:hover { color: var(--cor-dourado-escuro); }
+
+/* Sobre superfície escura, o botão secundário ganha contorno claro */
+.dd-section--escura .dd-btn--secundario {
+  color: var(--cor-texto-claro);
+  border-color: rgba(241, 237, 228, 0.55);
+}
+.dd-section--escura .dd-btn--secundario:hover { background: rgba(241, 237, 228, 0.10); }
+
+/* ---- Card ---------------------------------------------------------------- */
+.dd-card {
+  background: var(--cor-areia);
+  border: var(--traco-fino) solid var(--cor-borda);
+  border-radius: var(--raio-lg);
+  padding: var(--esp-lg);
+  box-shadow: var(--sombra-sm);
+  transition: box-shadow var(--dur-media) var(--ease-saida),
+              border-color var(--dur-media) var(--ease-saida);
+}
+.dd-card:hover { box-shadow: var(--sombra-md); border-color: var(--cor-borda-forte); }
+.dd-card__titulo { font-family: var(--fonte-titulo); font-size: var(--txt-h5); font-weight: var(--peso-semi); letter-spacing: var(--track-titulo-sm); margin: 0 0 var(--esp-2xs); color: var(--cor-texto); }
+.dd-card__texto { font-size: var(--txt-sm); line-height: var(--lh-corpo); color: var(--cor-texto-suave); margin: 0; }
+.dd-card__icone { color: var(--cor-acento); margin-bottom: var(--esp-sm); display: inline-flex; }
+
+/* ---- Bloco de oferta / lote ---------------------------------------------- */
+.dd-oferta {
+  background: var(--cor-areia);
+  border: var(--traco-fino) solid var(--cor-borda);
+  border-radius: var(--raio-lg);
+  padding: var(--esp-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--esp-sm);
+  position: relative;
+  box-shadow: var(--sombra-sm);
+}
+.dd-oferta--destaque {
+  border-color: var(--cor-acento);
+  border-width: var(--traco-medio);
+  box-shadow: var(--sombra-md);
+}
+.dd-oferta__faixa {
+  position: absolute;
+  top: calc(var(--traco-medio) * -1);
+  right: var(--esp-md);
+  transform: translateY(-50%);
+  background: var(--cor-petroleo);
+  color: var(--cor-areia);
+  font-family: var(--fonte-titulo);
+  font-size: var(--txt-2xs);
+  letter-spacing: var(--track-rotulo);
+  text-transform: uppercase;
+  padding: var(--esp-3xs) var(--esp-sm);
+  border-radius: var(--raio-pill);
+  border: var(--traco-fino) solid var(--cor-acento);
+}
+.dd-oferta__lote { font-family: var(--fonte-titulo); font-size: var(--txt-2xs); letter-spacing: var(--track-rotulo); text-transform: uppercase; color: var(--cor-acento); margin: 0; }
+.dd-oferta__preco { display: flex; align-items: baseline; gap: var(--esp-2xs); }
+.dd-oferta__moeda { font-family: var(--fonte-titulo); font-size: var(--txt-lg); color: var(--cor-texto-suave); }
+.dd-oferta__valor { font-family: var(--fonte-titulo); font-weight: var(--peso-semi); font-size: var(--txt-h2); line-height: 1; color: var(--cor-texto); font-variant-numeric: tabular-nums; }
+.dd-oferta__nota { font-size: var(--txt-xs); color: var(--cor-texto-suave); margin: 0; }
+.dd-oferta__lista { list-style: none; padding: 0; margin: var(--esp-2xs) 0; display: flex; flex-direction: column; gap: var(--esp-2xs); }
+.dd-oferta__item { display: flex; gap: var(--esp-2xs); align-items: flex-start; font-size: var(--txt-sm); line-height: var(--lh-corpo); }
+.dd-oferta__item svg { flex: 0 0 auto; margin-top: 3px; color: var(--cor-acento); }
+
+/* ---- Badge / selo -------------------------------------------------------- */
+.dd-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--esp-3xs);
+  font-family: var(--fonte-titulo);
+  font-size: var(--txt-2xs);
+  letter-spacing: var(--track-rotulo);
+  text-transform: uppercase;
+  padding: var(--esp-3xs) var(--esp-xs);
+  border-radius: var(--raio-pill);
+  border: var(--traco-fino) solid var(--cor-borda-forte);
+  color: var(--cor-texto);
+  background: transparent;
+}
+.dd-badge svg { color: var(--cor-acento); }
+.dd-badge--solido { background: var(--cor-musgo); border-color: transparent; color: var(--cor-petroleo); }
+.dd-badge--vivo { border-color: var(--cor-acento); }
+.dd-badge--vivo .dd-badge__ponto { width: 7px; height: 7px; border-radius: var(--raio-pill); background: var(--cor-terracota); display: inline-block; }
+
+/* ---- FAQ (acordeão calmo) ------------------------------------------------ */
+.dd-faq { border-top: var(--traco-fino) solid var(--cor-borda); }
+.dd-faq__item { border-bottom: var(--traco-fino) solid var(--cor-borda); }
+.dd-faq__botao {
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: var(--esp-md) 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--esp-md);
+  font-family: var(--fonte-titulo);
+  font-size: var(--txt-lg);
+  font-weight: var(--peso-medio);
+  letter-spacing: var(--track-titulo-sm);
+  color: var(--cor-texto);
+}
+.dd-faq__botao:focus-visible { outline: none; box-shadow: var(--foco-anel); border-radius: var(--raio-sm); }
+.dd-faq__sinal { flex: 0 0 auto; color: var(--cor-acento); transition: transform var(--dur-media) var(--ease-saida); }
+.dd-faq__item[data-aberto="true"] .dd-faq__sinal { transform: rotate(45deg); }
+.dd-faq__resposta { overflow: hidden; max-height: 0; transition: max-height var(--dur-lenta) var(--ease-saida); }
+.dd-faq__item[data-aberto="true"] .dd-faq__resposta { max-height: 480px; }
+.dd-faq__resposta-interna { padding: 0 0 var(--esp-md); font-size: var(--txt-sm); line-height: var(--lh-corpo); color: var(--cor-texto-suave); max-width: var(--largura-conteudo); }
+
+/* ---- Depoimento ---------------------------------------------------------- */
+.dd-depoimento {
+  border-left: var(--traco-medio) solid var(--cor-acento);
+  padding: var(--esp-2xs) 0 var(--esp-2xs) var(--esp-md);
+}
+.dd-depoimento__texto { font-family: var(--fonte-corpo); font-size: var(--txt-lg); line-height: var(--lh-corpo-solto); color: var(--cor-texto); margin: 0 0 var(--esp-sm); font-weight: var(--peso-regular); }
+.dd-depoimento__autor { font-family: var(--fonte-titulo); font-size: var(--txt-2xs); letter-spacing: var(--track-rotulo); text-transform: uppercase; color: var(--cor-texto-suave); margin: 0; }
+
+/* ---- Navegação simples --------------------------------------------------- */
+.dd-nav { display: flex; align-items: center; justify-content: space-between; gap: var(--esp-md); padding: var(--esp-sm) var(--esp-md); }
+.dd-nav__marca { display: inline-flex; align-items: center; gap: var(--esp-2xs); font-family: var(--fonte-titulo); font-weight: var(--peso-semi); letter-spacing: var(--track-titulo-sm); font-size: var(--txt-lg); color: var(--cor-texto); text-decoration: none; }
+.dd-nav__links { display: flex; align-items: center; gap: var(--esp-md); list-style: none; margin: 0; padding: 0; }
+.dd-nav__link { font-family: var(--fonte-titulo); font-size: var(--txt-2xs); letter-spacing: var(--track-rotulo); text-transform: uppercase; color: var(--cor-texto); text-decoration: none; padding: var(--esp-3xs) 0; border-bottom: var(--traco-fino) solid transparent; transition: border-color var(--dur-media) var(--ease-saida); }
+.dd-nav__link:hover { border-color: var(--cor-acento); }
+.dd-nav__link[aria-current="page"] { border-color: var(--cor-acento); }
+@media (max-width: 640px) { .dd-nav__links { display: none; } }
+
+/* ---- Utilitários de grade ------------------------------------------------ */
+.dd-grid { display: grid; gap: var(--esp-md); }
+.dd-grid--2 { grid-template-columns: repeat(2, 1fr); }
+.dd-grid--3 { grid-template-columns: repeat(3, 1fr); }
+@media (max-width: 880px) { .dd-grid--2, .dd-grid--3 { grid-template-columns: 1fr; } }
+
+/* ---- Símbolos de marca (traço fino) -------------------------------------- */
+.dd-simbolo { display: inline-block; color: var(--cor-acento); }
+.dd-simbolo--petroleo { color: var(--cor-petroleo); }
+.dd-simbolo svg { display: block; width: 100%; height: 100%; }
+
+/* ==========================================================================
+   CAMADA PREMIUM / ATMOSFERA (blueprint claro)
+   Sutileza é a régua: luz natural e papel fino, nunca efeito chamativo.
+   ========================================================================== */
+
+/* Tratamentos de fundo por seção (ritmo entre blocos) ---------------------- */
+/* Lisa, deixa o gradiente de página aparecer */
+.dd-section--limpa { background: transparent; }
+
+/* Com grid técnico (papel de arquitetura) sobre o fundo claro */
+.dd-section--grid {
+  background-color: transparent;
+  background-image: var(--grid-blueprint);
+  background-position: center top;
+}
+
+/* Com orbes desfocados de atmosfera */
+.dd-section--orbe { position: relative; overflow: hidden; background: transparent; }
+.dd-section--orbe > * { position: relative; z-index: var(--z-conteudo); }
+
+/* Orbe de cor desfocado (mancha suave de profundidade) --------------------- */
+.dd-orbe {
+  position: absolute;
+  width: 42vw;
+  max-width: 560px;
+  aspect-ratio: 1;
+  border-radius: var(--raio-pill);
+  filter: blur(var(--orbe-blur));
+  opacity: var(--orbe-opacidade);
+  pointer-events: none;
+  z-index: var(--z-base);
+}
+.dd-orbe--musgo { background: var(--orbe-musgo); }
+.dd-orbe--areia { background: var(--orbe-areia); }
+.dd-orbe--dourado { background: var(--orbe-dourado); }
+
+/* Halo radial atrás de elementos âncora (hero, eneagrama) ------------------ */
+.dd-glow {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 120%;
+  aspect-ratio: 1;
+  pointer-events: none;
+  z-index: var(--z-base);
+}
+.dd-glow--musgo { background: var(--glow-musgo); }
+.dd-glow--dourado { background: var(--glow-dourado); }
+.dd-ancora { position: relative; }
+.dd-ancora > * { position: relative; z-index: var(--z-conteudo); }
+
+/* Glassmorphism discreto (só cards-âncora: oferta, depoimento) ------------- */
+.dd-card--glass,
+.dd-oferta--glass {
+  background: var(--vidro-fundo);
+  -webkit-backdrop-filter: blur(var(--vidro-blur));
+  backdrop-filter: blur(var(--vidro-blur));
+  border: 1px solid var(--vidro-borda);
+  box-shadow: var(--vidro-luz-topo), var(--sombra-md);
+}
+.dd-card--glass:hover,
+.dd-oferta--glass:hover { box-shadow: var(--vidro-luz-topo), var(--sombra-lg); }
+
+/* Fallback quando o navegador não suporta backdrop-filter: opaco e legível */
+@supports not ((-webkit-backdrop-filter: blur(1px)) or (backdrop-filter: blur(1px))) {
+  .dd-card--glass,
+  .dd-oferta--glass { background: var(--cor-areia); }
+}

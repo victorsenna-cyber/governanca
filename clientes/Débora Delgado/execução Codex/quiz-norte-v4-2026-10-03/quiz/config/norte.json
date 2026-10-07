@@ -1,0 +1,52 @@
+{
+  "quiz_versao": "2.0",
+  "quiz": "norte",
+  "title": "Um primeiro norte",
+  "description": "Em 3 minutos, um primeiro norte sobre como você está liderando.",
+  "persistence": false,
+  "apps_script_url": "",
+  "vsl_url": "[[ FALTA: URL da VSL ]]",
+  "resultMode": "north",
+  "payloadMode": "north",
+  "frictionKey": "p01_atrito",
+  "scoreMax": 24,
+  "events": {"QuizStart":"quiz_start","QuizAnswer":"quiz_answer","Lead":"lead_submit","QuizResult":"quiz_result"},
+  "dados_legais": "<strong>Débora Delgado · deboradelgado.space</strong><br>[[ FALTA: CNPJ ou CPF de quem vende ]]",
+  "url_termos": "",
+  "url_privacidade": "",
+  "ui": {
+    "loading": "Carregando…",
+    "faq": "Perguntas frequentes",
+    "back": "Voltar",
+    "progress": "Progresso do teste",
+    "noscript": "Ative o JavaScript para fazer o teste.",
+    "footer": "Ao acessar esta página, você está de acordo com:",
+    "terms": "Termos de Uso",
+    "privacy": "Política de Privacidade",
+    "consent": "Ao continuar, você concorda em receber o seu resultado e conteúdos da Débora Delgado. Seus dados não são compartilhados.",
+    "formError": "Preencha nome e WhatsApp para ver o resultado.",
+    "fields": [
+      {"key":"nome","label":"Nome","placeholder":"","error":"Preencha nome e WhatsApp para ver o resultado.","type":"text","autocomplete":"name"},
+      {"key":"whatsapp","label":"WhatsApp com DDD","placeholder":"","error":"Preencha nome e WhatsApp para ver o resultado.","type":"tel","autocomplete":"tel"},
+      {"key":"email","label":"E-mail","placeholder":"","error":"","type":"email","autocomplete":"email","required":false}
+    ]
+  },
+  "resultBands": [
+    {"min":0,"max":9,"label":"f1","tone":"success","text":"Isso não é falta de competência. É a forma mais comum de liderar, e é por isso que você explica, cobra e, mesmo assim, precisa pedir de novo. Quem lidera pela própria lente espera que o outro entenda o pedido como o líder entenderia."},
+    {"min":10,"max":17,"label":"f2","tone":"success","text":"Você ajusta o tom, pergunta, dá espaço, mas no intuitivo. Por isso funciona com algumas pessoas e trava com outras. O próximo passo é sair da percepção e ir para o entendimento: como cada pessoa recebe um pedido, um feedback, uma cobrança."},
+    {"min":18,"max":24,"label":"f3","tone":"success","text":"Você já faz boa parte do caminho. O que costuma faltar aqui é linguagem: saber por que cada pessoa reage como reage, para não depender só da sensibilidade, principalmente com quem é mais diferente de você."}
+  ],
+  "steps": [
+    {"id":"N01","type":"opening","key":"p01_atrito","title":"O que mais tem pesado na sua liderança hoje?","layout":"line","openingList":true,"uppercaseHeadline":true,"banner":"RESPONDA E RECEBA O SEU PRIMEIRO NORTE:","headline":"Em 3 minutos, um primeiro norte sobre como você está liderando.","subheadline":"Pela ótica do <u>Eneagrama</u>. Sem decorar tipo nenhum e sem rótulo.","cue":"↓ RESPONDA PARA COMEÇAR ↓","options":[{"value":"combinado","label":"Eu explico, combino, e o combinado não acontece.","emoji":"🔁"},{"value":"feedback","label":"Dou feedback e parece que não chega na pessoa.","emoji":"📭"},{"value":"relacoes","label":"Algumas relações do time são pesadas, e eu não entendo por quê.","emoji":"😬"},{"value":"sobrecarga","label":"Acabo puxando tudo, porque é mais rápido fazer do que pedir de novo.","emoji":"😩"}]},
+    {"id":"N02","type":"question","key":"p02","title":"Você pede uma entrega e ela volta diferente do que você imaginou. O que você pensa primeiro?","points":[0,1,2,3],"options":[{"label":"Que a pessoa não prestou atenção.","hideMedia":true},{"label":"Que eu deveria ter detalhado mais.","hideMedia":true},{"label":"Que talvez ela tenha entendido o pedido de outra forma.","hideMedia":true},{"label":"Que eu preciso entender como essa pessoa recebe um pedido antes de fazer o próximo.","hideMedia":true}]},
+    {"id":"N03","type":"question","key":"p03","title":"Um liderado traz um problema com muitos detalhes e deixa o principal para o final. Você…","points":[0,1,2,3],"options":[{"label":"Interrompe e pede para ir direto ao ponto.","hideMedia":true},{"label":"Escuta, mas já impaciente, pensando na resposta.","hideMedia":true},{"label":"Pergunta qual decisão ele precisa de você.","hideMedia":true},{"label":"Entende que é assim que ele organiza o raciocínio, e ajusta como escuta.","hideMedia":true}]},
+    {"id":"N04","type":"question","key":"p04","title":"Uma pessoa do time vê risco em tudo o que é novo. Para você, isso é…","points":[0,1,2,3],"options":[{"label":"Resistência, que atrasa o time.","hideMedia":true},{"label":"Pessimismo, que eu preciso contornar.","hideMedia":true},{"label":"Cuidado, que às vezes exagera.","hideMedia":true},{"label":"A forma como ela protege o time — e uma informação útil, se eu souber usar.","hideMedia":true}]},
+    {"id":"N05","type":"question","key":"p05","title":"Alguém do time é direto demais e às vezes soa agressivo. Você…","points":[0,1,2,3],"options":[{"label":"Chama a atenção para a postura.","hideMedia":true},{"label":"Evita conversas difíceis com essa pessoa.","hideMedia":true},{"label":"Tenta entender o que está por trás dessa reação.","hideMedia":true},{"label":"Sabe que muitas vezes isso é proteção, e conversa a partir daí.","hideMedia":true}]},
+    {"id":"N06","type":"question","key":"p06","title":"Quando você dá um feedback, você…","points":[0,1,2,3],"options":[{"label":"Fala como você gostaria de ouvir.","hideMedia":true},{"label":"Usa o mesmo roteiro com todo mundo.","hideMedia":true},{"label":"Ajusta o tom conforme a pessoa.","hideMedia":true},{"label":"Pensa antes no que essa pessoa precisa ouvir para conseguir agir.","hideMedia":true}]},
+    {"id":"N07","type":"question","key":"p07","title":"Uma pessoa precisa de mais silêncio e privacidade do que o resto do time. Você…","points":[0,1,2,3],"options":[{"label":"Acha que ela precisa se integrar mais.","hideMedia":true},{"label":"Respeita, mas acha estranho.","hideMedia":true},{"label":"Dá espaço quando percebe.","hideMedia":true},{"label":"Combina com ela como prefere receber demandas e retornos.","hideMedia":true}]},
+    {"id":"N08","type":"question","key":"p08","title":"Quando alguém não entrega, a primeira coisa que você faz é…","points":[0,1,2,3],"options":[{"label":"Cobrar de novo, mais firme.","hideMedia":true},{"label":"Explicar de novo, com mais detalhe.","hideMedia":true},{"label":"Perguntar o que travou.","hideMedia":true},{"label":"Rever como pediu, e se aquela pessoa entende pedidos assim.","hideMedia":true}]},
+    {"id":"N09","type":"question","key":"p09","title":"Pensando no seu time hoje, você diria que…","points":[0,1,2,3],"options":[{"label":"Se todos trabalhassem como eu, as coisas andariam.","hideMedia":true},{"label":"As pessoas são diferentes, mas o pedido tem que ser o mesmo para todos.","hideMedia":true},{"label":"Sei que as pessoas funcionam diferente, mas não sei bem como.","hideMedia":true},{"label":"Conheço como cada pessoa funciona e uso isso para direcionar.","hideMedia":true}]},
+    {"id":"N10","type":"capture","title":"O seu norte está pronto.","button":"Ver o meu norte"},
+    {"id":"N11","type":"result","blocks":[{"type":"text","style":"h1","resultVariants":{"f1":"Você está liderando em uma língua só: a sua.","f2":"Você já percebe que as pessoas funcionam diferente. Falta saber como.","f3":"Você já lidera olhando para o outro. Agora dá para fazer isso com método."}},{"type":"resultParagraph"},{"type":"text","style":"body","variants":{"key":"p01_atrito","cases":{"0":"E o que mais pesa para você hoje, o combinado que não acontece, costuma ser exatamente isso: o pedido foi claro na sua língua, não na de quem recebeu.","1":"E o que mais pesa para você hoje, o feedback que não chega, costuma ser exatamente isso: ele foi dito como você gostaria de ouvir, não como aquela pessoa consegue ouvir.","2":"E o que mais pesa para você hoje, as relações pesadas, tem uma explicação que quase ninguém vê: muitas vezes o comportamento que incomoda é proteção. Quando você entende o que a pessoa protege, sai uma camada de julgamento, e a relação fica mais leve.","3":"E o que mais pesa para você hoje, puxar tudo para você, é o custo de pedir sempre na mesma língua: pedir de novo cansa, e fazer sozinho parece mais rápido. Até não ser."}}},{"type":"text","style":"h1","text":"Você lidera em uma língua. O seu time fala nove."},{"type":"text","style":"body","text":"A Débora preparou uma aula curta mostrando como entender a língua de cada pessoa e direcionar cada uma para entregar o que você precisa, com menos esforço."},{"type":"text","style":"small","text":"Este quiz é um ponto de partida, não um diagnóstico de personalidade. Ele não indica o seu tipo no Eneagrama."},{"type":"footer"}],"button":"Assistir à aula","vslCTA":true}
+  ]
+}

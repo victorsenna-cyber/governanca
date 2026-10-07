@@ -1,0 +1,23 @@
+O ZIP ENTREGUE ESTA ERRADO — é da branch "main", sem o trabalho do Claude Code.
+O trabalho está na branch: claude/eager-bell-x9zhss
+
+=== OPCAO A — pelo navegador (mais simples) ===
+1. Abrir  https://github.com/victorsenna-cyber/governan-a/tree/claude/eager-bell-x9zhss
+2. Conferir que a pasta 70-metodologias-chave/ONBOARDING-ORQUESTRADO/ aparece
+3. Botao verde "Code" -> "Download ZIP"
+4. Salvar em 900-criação-implementação-victor\ e avisar no chat
+
+=== OPCAO B — so a pasta que interessa (leve, ~1.350 linhas em vez de 330 MB) ===
+No terminal, dentro de "01 - Governança":
+
+  git fetch origin
+  git archive origin/claude/eager-bell-x9zhss 70-metodologias-chave/ONBOARDING-ORQUESTRADO | tar -x -C 90-staging-remoto
+
+E, para ver o que ele mudou nos outros 7 arquivos sem aplicar nada:
+
+  git diff origin/main origin/claude/eager-bell-x9zhss > 90-staging-remoto\DIFF.txt
+
+=== OPCAO C — merge da branch no main pelo GitHub ===
+Abrir o Pull Request da branch claude/eager-bell-x9zhss e fazer merge.
+Depois baixar o ZIP do main de novo.
+ATENCAO: isso mexe no remoto. Nao afeta o repo offline, mas é decisão sua.

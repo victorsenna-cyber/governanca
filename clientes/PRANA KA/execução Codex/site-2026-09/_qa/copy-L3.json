@@ -1,0 +1,29 @@
+[
+  {
+    "page": "/visao-uterina/",
+    "source": "C:\\Users\\zioni\\Organizacional\\01 - Continuum\\00 - Local\\01 - Governança\\clientes\\PRANA KA\\04 - web design\\visao-uterina\\index.html",
+    "sha256": "ea630d5a888767710514563e6b336ec7842ca2f38caac827c322b62f466fb081",
+    "copyEqual": true,
+    "bindings": []
+  },
+  {
+    "page": "/mentoria/",
+    "source": "C:\\Users\\zioni\\Organizacional\\01 - Continuum\\00 - Local\\01 - Governança\\clientes\\PRANA KA\\04 - web design\\mentoria\\index.html",
+    "sha256": "97602b9e2645be9b527fe28c4312a15b6e9660c3351ae255df2a7777a8f9ae25",
+    "copyEqual": true,
+    "bindings": [
+      "Entrada a qualquer momento — o ciclo é contínuo",
+      "Encontros a cada 14 dias, às quartas, 19h",
+      "Sem limite de vagas — cada mulher percorre no próprio ritmo",
+      "Sem prazo de inscrição — a entrada é perene",
+      "Depois da conversa, você recebe o acesso à plataforma e o caminho dos oito Portais do Ventre, para percorrer no seu tempo."
+    ]
+  },
+  {
+    "page": "/curso/",
+    "source": "C:\\Users\\zioni\\Organizacional\\01 - Continuum\\00 - Local\\01 - Governança\\clientes\\PRANA KA\\04 - web design\\curso\\index.html",
+    "sha256": "03eb01189f6fba3b537449761ee4a64f43a7c593cf37676ef096cd22c6997a8f",
+    "copyEqual": true,
+    "bindings": []
+  }
+]

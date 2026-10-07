@@ -1,0 +1,237 @@
+{
+  "main": {
+    "id": "37cfd626d44dc87b",
+    "type": "split",
+    "children": [
+      {
+        "id": "d0215b4119274598",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cd3e7ef85ccade68",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "clientes/Débora Delgado/12 - Direct Response/vsl/2026-10-02/A1-BLOCO-3-CICLO-2.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "A1-BLOCO-3-CICLO-2"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "9d073a8f6b0a6600",
+    "type": "split",
+    "children": [
+      {
+        "id": "4c47d893f9d07248",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6bf4bc13df7f69db",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorador de arquivos"
+            }
+          },
+          {
+            "id": "fbdc89df27268ff3",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Procurar"
+            }
+          },
+          {
+            "id": "b1b261447e94b9a5",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Marcadores"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "53e03ba8ac22d178",
+    "type": "split",
+    "children": [
+      {
+        "id": "705de36dd47537a0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e412fef94847ef6f",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "clientes/Débora Delgado/execução Codex/DESTILACAO-2026-09-16/DESTILACAO-CALL-2026-09-16.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Links inversos para DESTILACAO-CALL-2026-09-16"
+            }
+          },
+          {
+            "id": "88befc4295adbb5a",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "clientes/Débora Delgado/execução Codex/DESTILACAO-2026-09-16/DESTILACAO-CALL-2026-09-16.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Links de saída para DESTILACAO-CALL-2026-09-16"
+            }
+          },
+          {
+            "id": "d0cc482a4e60b15f",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Etiquetas"
+            }
+          },
+          {
+            "id": "f7ec850a42d3dcb8",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "Todas as propriedades"
+            }
+          },
+          {
+            "id": "ac65c9d018970a16",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "clientes/Débora Delgado/execução Codex/DESTILACAO-2026-09-16/DESTILACAO-CALL-2026-09-16.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Sumário de DESTILACAO-CALL-2026-09-16"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Abrir a troca rápida": false,
+      "graph:Abrir visualização em gráfico": false,
+      "canvas:Criar novo canvas": false,
+      "daily-notes:Abrir a nota de hoje": false,
+      "templates:Inserir modelo": false,
+      "command-palette:Abrir paleta de comandos": false,
+      "bases:Criar nova base": false
+    }
+  },
+  "active": "cd3e7ef85ccade68",
+  "lastOpenFiles": [
+    "clientes/Guilherme Araújo/05 - design e criativos/ROTEIROS-CRIATIVOS-GUI-QUIZZES-E-VENDA-2026-10-04.md",
+    "clientes/Guilherme Araújo/execução Codex/transcricoes-signos-recorrencia-2026-10-04/WhatsApp Video 2026-09-23 at 01.00.43.transcricao.md",
+    "clientes/Guilherme Araújo/execução Codex/transcricoes-signos-recorrencia-2026-10-04/WhatsApp Video 2026-09-23 at 01.00.43 (1).transcricao.md",
+    "clientes/Guilherme Araújo/execução Codex/transcricoes-signos-recorrencia-2026-10-04/WhatsApp Video 2026-09-23 at 01.00.24.transcricao.md",
+    "clientes/Guilherme Araújo/execução Codex/transcricoes-signos-recorrencia-2026-10-04/WhatsApp Video 2026-09-23 at 00.59.55.transcricao.md",
+    "clientes/Guilherme Araújo/execução Codex/transcricoes-signos-recorrencia-2026-10-04/WhatsApp Video 2026-09-23 at 00.59.41.transcricao.md",
+    "clientes/Guilherme Araújo/execução Codex/transcricoes-signos-recorrencia-2026-10-04",
+    "clientes/Guilherme Araújo/01 - contexto/WhatsApp/execução Codex/transcricoes-2026-10-04/WhatsApp Ptt 2026-10-03 at 23.23.24.md",
+    "clientes/Guilherme Araújo/01 - contexto/WhatsApp/execução Codex/transcricoes-2026-10-04",
+    "clientes/Guilherme Araújo/01 - contexto/WhatsApp/WhatsApp Ptt 2026-10-03 at 23.23.24 (1).ogg",
+    "clientes/Guilherme Araújo/01 - contexto/WhatsApp/WhatsApp Ptt 2026-10-03 at 23.23.24.ogg",
+    "clientes/Guilherme Araújo/01 - Criativos/Signos recorrência/Análise de design detalhada/export/S5.png",
+    "clientes/Guilherme Araújo/01 - Criativos/Signos recorrência/Análise de design detalhada/export/S4.png",
+    "clientes/Guilherme Araújo/01 - Criativos/Signos recorrência/Análise de design detalhada/export/S3.png",
+    "clientes/Guilherme Araújo/01 - Criativos/Signos recorrência/Análise de design detalhada/export/S2.png",
+    "clientes/Guilherme Araújo/01 - Criativos/Signos recorrência/Análise de design detalhada/export/S1.png",
+    "clientes/Guilherme Araújo/01 - Criativos/Signos recorrência/Análise de design detalhada/export/R2.png",
+    "clientes/Guilherme Araújo/01 - Criativos/Signos recorrência/Análise de design detalhada/export",
+    "clientes/Guilherme Araújo/01 - Criativos/Signos recorrência/Análise de design detalhada",
+    "clientes/Guilherme Araújo/01 - Criativos/Diagnóstico da Permissão/WhatsApp Image 2026-10-04 at 00.44.32 (2).jpeg",
+    "clientes/Guilherme Araújo/01 - Criativos/Diagnóstico da Permissão/WhatsApp Image 2026-10-04 at 00.44.32 (1).jpeg",
+    "clientes/Guilherme Araújo/01 - Criativos/Diagnóstico da Permissão/WhatsApp Image 2026-10-04 at 00.44.32.jpeg",
+    "clientes/Guilherme Araújo/01 - Criativos/Diagnóstico da Permissão/WhatsApp Image 2026-10-04 at 00.44.31.jpeg",
+    "clientes/Débora Delgado/execução Codex/quiz-norte-v5-2026-10-03/evidencia/gate/gate-v6.json",
+    "clientes/Débora Delgado/execução Codex/quiz-norte-v5-2026-10-03/_ferramentas/gate-v6.cjs",
+    "clientes/Débora Delgado/12 - Direct Response/quiz/CONTRATO-QUIZ-NORTE-v6-2026-10-03.md",
+    "clientes/Débora Delgado/execução Codex/quiz-norte-v5-2026-10-03/quiz/sedqldFEP",
+    "clientes/Débora Delgado/execução Codex/quiz-norte-v5-2026-10-03/quiz/sedNmxz3f",
+    "clientes/Débora Delgado/execução Codex/quiz-norte-v5-2026-10-03/MAPA-REFERENCIA.md",
+    "clientes/Débora Delgado/12 - Direct Response/quiz/CONTRATO-QUIZ-NORTE-v5-2026-10-03.md",
+    "920-referências lp/lp02-profissaohomesales-com-clone-local-integral-2026-10-03/LEIA-ME.md",
+    "clientes/Débora Delgado/12 - Direct Response/vsl/2026-10-02/_transcript/README.md",
+    "clientes/Débora Delgado/12 - Direct Response/vsl/2026-10-02/A2-BLOCO-3.md",
+    "clientes/Débora Delgado/12 - Direct Response/vsl/2026-10-02/A1-BLOCO-3.md",
+    "clientes/Débora Delgado/execução Codex/call-2026-09-30/DESTILACAO-CALL-2026-09-30.md",
+    "clientes/Débora Delgado/12 - Direct Response/vsl/BRIEFING-VSL.md",
+    "100-métodos/METODO-PRODUCAO-VSL-POR-AGENTES.md",
+    "900-criação-implementação-victor/agentes-vsl/vsl-juiz.md",
+    "900-criação-implementação-victor/agentes-vsl/vsl-g6-roteirista-fala.md",
+    "900-criação-implementação-victor/agentes-vsl/vsl-g5-abertura.md",
+    "900-criação-implementação-victor/agentes-vsl/vsl-g4-oferta.md",
+    "900-criação-implementação-victor/agentes-vsl/vsl-g3-historia.md",
+    "900-criação-implementação-victor/agentes-vsl/vsl-g2-tese.md",
+    "900-criação-implementação-victor/agentes-vsl/vsl-g1-mecanismo.md",
+    "900-criação-implementação-victor/agentes-vsl/vsl-auditor-voz.md",
+    "900-criação-implementação-victor/agentes-vsl/vsl-auditor-procedencia.md"
+  ]
+}
