@@ -61,31 +61,57 @@ Toda peça de pilar obedece a três regras. Peça que falha em uma volta.
 
 ## 4. LEVA 1 · UMA PEÇA POR PILAR
 
-### P-ICP-01 · "Quem chegava comprava o produto de antes"
+### P-ICP-01 · "Quem chegava comprava o produto de antes" · ✅ PRONTO PARA GRAVAR (07/10/2026)
 
-**Pivô:** você acha que vende pouco por falta de alcance **E** a audiência já é grande. **MAS** a audiência foi formada pelo produto antigo, de outro preço. **POR ISSO** tráfego traria mais gente que não compra o produto novo.
+| Campo | Valor |
+|---|---|
+| **Sentimento (módulo 06 §11.1-bis)** | **aprendizado**, com **surpresa** de entrada: a tarja contradiz a crença de que audiência grande vende |
+| **Conflito que entrega o sentimento** | quase vinte mil seguidores e prova social farta, e vendia pouco |
+| **Pivô** | você acha que vende pouco por falta de alcance **E** a audiência já é grande. **MAS** ela foi formada pelo produto antigo, de outro preço. **POR ISSO** tráfego traria mais gente que não compra o produto novo |
+| **Procedência** | cena: `METODO-QUATRO-PILARES-2026-09-12.md` §Pilar 1, "A cena de campo" · faixa de preço: `NARRATIVA-CENTRAL-CONTINUUM-2026-09-07.md` §4, camada 1 · critério de fechado: `METODO-QUATRO-PILARES` §0-quater, pergunta 1 |
+| **Léxico do ICP** | 🟡 não existe arquivo de léxico do nosso ICP em `30-comercial/`. Não bloqueia esta peça (sentimento não é identificação), mas bloqueia qualquer peça de identificação até existir |
+| **Ação única** | ORDEM na direct. A entrega da DM já está escrita em `PECA-DR-01-TRES-CLIENTES-2026-09-20.md` §5-bis |
 
-**Vídeo:** a mão escreve "R$ 200" e, ao lado, "R$ 2.000", e liga os dois com uma seta.
+**Gravação (7 segundos, vertical 9:16)**
 
-**Tela**
-> **[tarja] Quase vinte mil seguidores. E vendia pouco.**
-> Ela achou que faltava tráfego. Faltava outra coisa.
-> o teste tá na legenda ↓
+| Tempo | Plano | O que a mão faz |
+|---|---|---|
+| 0–2s | câmera de cima, folha branca em mesa clara, luz natural | escreve **R$ 200** no lado esquerdo da folha |
+| 2–4s | mesmo plano | escreve **R$ 2.000** no lado direito |
+| 4–6s | mesmo plano | traça uma seta do primeiro para o segundo |
+| 6–7s | mesmo plano | circula o **R$ 200** e para a caneta em cima dele |
+
+Uma tomada só, sem corte. Caneta preta grossa, para o número ler no celular. O rosto não aparece.
+
+**Texto na tela** (fonte nativa Classic, centralizado no terço superior, para não cobrir a folha)
+
+| Entra em | Texto |
+|---|---|
+| 0s | **[tarja preta] Quase vinte mil seguidores. E vendia pouco.** |
+| 2s | Ela achou que faltava tráfego. Faltava outra coisa. |
+| 5s | o teste tá na legenda ↓ |
+
+**Capa (frame do grid):** o frame final, com o R$ 200 circulado, e a tarja *"Quase vinte mil seguidores. E vendia pouco."*
+
+**Música:** instrumental em alta na aba de áudios, sem letra, volume baixo.
 
 **Legenda**
 ```
-quase vinte mil seguidores. dois destaques inteiros de resultado, depoimento com nome e autorização. e vendia pouco.
+quase vinte mil seguidores, prova social farta, e vendia pouco.
 
-a leitura dela: falta tráfego.
+dois destaques inteiros de resultado, três posts fixados, depoimento com nome e autorização. a leitura dela: falta tráfego.
 
 a conta real: anos vendendo produtos de 80 a 200 reais pra essa audiência. depois, um produto de 2 mil pra mesma gente.
 
 quem chegava não era cliente do que ela vendia agora. era cliente do que ela vendia antes. tráfego ali ia trazer mais gente da mesma audiência que já não comprava.
 
 o teste, em dois minutos:
-1. anota quanto o teu último cliente pagou
+
+1. anota quanto pagou o teu último cliente
 2. anota o preço do produto que você quer vender agora
-3. se o segundo número é cinco, dez vezes o primeiro, quem te segue hoje foi formado pelo primeiro
+3. divide o segundo pelo primeiro
+
+no caso dela, deu dez. quando a conta dá alto assim, quem te segue hoje foi formado pelo primeiro número, e o problema não é alcance.
 
 aí a pergunta deixa de ser como atrair mais gente. passa a ser quem compra o segundo número, e o que essa pessoa já tentou antes de chegar em você.
 
@@ -93,6 +119,8 @@ aí a pergunta deixa de ser como atrair mais gente. passa a ser quem compra o se
 
 quer saber qual pilar está aberto na tua operação? me manda ORDEM na direct que eu te mando as perguntas em sim ou não.
 ```
+
+**O que mudou do rascunho:** a primeira linha da legenda passou a carregar a cena inteira, porque é a única que aparece antes do "mais". O passo 3 deixou de usar um limiar inventado ("cinco, dez vezes") e passou a ser uma divisão, ancorada no único número real da cena (dez).
 
 ### P-PRO-01 · "Uma frase obrigou a reescrever a página inteira"
 
