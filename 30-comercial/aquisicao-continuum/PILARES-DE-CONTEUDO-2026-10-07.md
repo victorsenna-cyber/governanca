@@ -70,9 +70,33 @@ Toda peça de pilar obedece a três regras. Peça que falha em uma volta.
 
 ---
 
+## 3-bis. ⭐ FORMATOS DE ABERTURA (decisão do Victor, 07/10/2026)
+
+Toda peça de pilar abre num destes dois formatos. O formato é a moldura; o conteúdo dentro dele continua obedecendo à régua "zero genérico" (§2).
+
+| Formato | Molde | Regra que impede de virar genérico |
+|---|---|---|
+| **F1 · LISTA** | *"N sinais / formas / perguntas de…"* | **N é o número de itens registrados no repo, nunca um número redondo escolhido antes.** Cada item tem fonte apontável (sintoma de call, critério de método, fato de conta). Item sem fonte sai, e o N cai junto |
+| **F2 · CRENÇA INVERTIDA** | *"Todo mundo pensa que X é Y. Na prática, é Z."* | **Z precisa de um caso nosso que o prove**, contado na própria peça, de preferência do dia a dia da Continuum. Z sem caso é opinião, e opinião contra o senso comum sem prova é o contraste batido que o gate anti-slop reprova |
+
+**Rodízio:** cada pilar alterna F1 e F2. Duas peças seguidas no mesmo formato só se o pilar mudar.
+
+**Banco de títulos por pilar e formato** (todos com fonte; título sem peça escrita ainda está marcado 🟡):
+
+| Pilar | F1 · lista | F2 · crença invertida |
+|---|---|---|
+| **ICP** | ✅ *5 sinais de que o teu problema é cliente, não tráfego* (P-ICP-02) · fonte: `METODO-QUATRO-PILARES` §Pilar 1, sintomas | ✅ *Todo mundo pensa que vender mais é falar com mais gente* (P-ICP-01) · fonte: `ICP.md` §2.1 |
+| **Promessa** | 🟡 *5 sinais de que a tua promessa ainda não está fechada* · fonte: §Pilar 2, sintomas (são exatamente cinco) | 🟡 *Todo mundo pensa que promessa é uma frase bonita. Na prática, é ela que decide o que entra na tua oferta* · fonte: §0-bis |
+| **Mecanismo** | 🟡 *6 coisas que só passam a funcionar quando o teu método tem nome* · fonte: §Pilar 4, "o que um mecanismo nomeado passa a permitir" (são seis) | 🟡 *Todo mundo pensa que diferencial é o que você faz melhor. Na prática, é o que tem nome e o teu cliente repete* · caso nosso a escolher |
+| **Oferta** | 🟡 *5 sinais de que a tua oferta está aberta* · fonte: §Pilar 3, sintomas (sete registrados, escolher cinco) | 🟡 *Todo mundo pensa que produto de entrada tem que ser barato. A gente subiu o nosso de R$ 697 pra R$ 1.997* · fonte: `ARQUITETURA-DOIS-ICPS-2026-09-12.md` §3.1 (caso nosso) |
+
+---
+
 ## 4. LEVA 1 · UMA PEÇA POR PILAR
 
-### P-ICP-01 · "175 mensagens, zero vendas" · ✅ PRONTO PARA GRAVAR (v2, 07/10/2026)
+### P-ICP-01 · F2 CRENÇA INVERTIDA · "Todo mundo pensa que vender mais é falar com mais gente" · ✅ PRONTO PARA GRAVAR (v3, 07/10/2026)
+
+> **v3:** mesma cena e mesmo teste da v2, com a abertura no formato F2 (§3-bis).
 
 > **v1 descartada pelo Victor em 07/10/2026** (caso da audiência de quase vinte mil, "não gostei"), com a direção: **puxar para o que acontece no dia a dia da Continuum.** A v2 conta um caso nosso, com número nosso, e o que ele mudou na nossa rotina. O caso da v1 continua no banco de cenas (§2) para outro uso.
 
@@ -100,21 +124,23 @@ Uma tomada só, sem corte. Caneta preta grossa. O rosto não aparece.
 
 | Entra em | Texto |
 |---|---|
-| 0s | **[tarja preta] 175 mensagens pra desconhecidos. Zero vendas.** |
-| 2s | E as cinco oportunidades reais vieram de um lugar só. |
+| 0s | **[tarja preta] Todo mundo pensa que vender mais é falar com mais gente.** |
+| 2s | A gente mandou 175 mensagens pra desconhecidos. Zero vendas. |
 | 5s | faz o teste da legenda e me manda o resultado na direct |
 
-**Capa (frame do grid):** o frame final, com o **5 de 5** circulado, e a tarja *"175 mensagens pra desconhecidos. Zero vendas."*
+**Capa (frame do grid):** o frame final, com o **5 de 5** circulado, e a tarja *"Todo mundo pensa que vender mais é falar com mais gente."*
 
 **Música:** instrumental em alta na aba de áudios, sem letra, volume baixo.
 
 **Legenda**
 ```
-175 mensagens pra gente que não conhecia a gente. zero vendas.
+todo mundo pensa que vender mais é falar com mais gente.
 
-foi em julho. no mesmo mês, apareceram cinco oportunidades reais de venda. as cinco vieram de indicação ou de gente que já conhecia a gente.
+a gente testou isso em julho: 175 mensagens pra quem não conhecia a gente. zero vendas.
 
-o público das mensagens era o mesmo das indicações. o que mudava era o caminho até nós.
+no mesmo mês, apareceram cinco oportunidades reais de venda. as cinco vieram de indicação ou de gente que já conhecia a gente.
+
+o público das mensagens era o mesmo das indicações. o que mudava era o caminho até nós. na prática, vender mais é saber por onde chega quem já compra.
 
 e isso entra no icp. quem compra de você não é só um perfil: é um perfil que chega por um caminho. a mesma pessoa, vinda pelo caminho errado, não compra.
 
@@ -142,6 +168,56 @@ recebi. dos que vieram do mesmo lugar, qual pagou mais? me conta o que essa pess
 *A resposta não julga a lista: puxa o "pra quem" com o melhor cliente real da pessoa. Daí a conversa segue pelo diagnóstico.*
 
 **Fronteira de fato:** "175" e "cinco de cinco" são de julho/2026, e a peça diz "foi em julho". Não atualizar para "hoje" sem dado novo. Não citar nome de quem indicou.
+
+### P-ICP-02 · F1 LISTA · "5 sinais de que o teu problema é cliente, não tráfego" · ✅ PRONTO PARA GRAVAR (07/10/2026)
+
+| Campo | Valor |
+|---|---|
+| **Formato** | F1 · lista (§3-bis). N = 5, escolhidos entre os seis sintomas registrados |
+| **Sentimento** | **aprendizado**: a pessoa sai com uma checagem de cinco itens para fazer na hora |
+| **Pivô** | você acha que o que falta é anúncio **E** está chegando gente. **MAS** se uma destas frases aparece na tua rotina, o anúncio vai trazer mais gente parecida com quem já não compra. **POR ISSO** o pra quem fecha antes |
+| **Procedência** | os cinco sinais: `METODO-QUATRO-PILARES-2026-09-12.md` §Pilar 1, "Os sintomas que denunciam ICP aberto" (que o próprio método descreve como frases escutadas em call) · efeito do anúncio sem ICP: idem, "O efeito mais caro" · pergunta de call: idem, "A frase para a call" |
+| **Ação única** | mandar na direct o número do sinal que apareceu (§1-bis) |
+
+**Gravação (7 segundos, vertical 9:16):** câmera de cima, folha branca. A mão escreve **1, 2, 3, 4, 5** em coluna, um número por segundo, e no fim circula um deles. Uma tomada só, rosto fora.
+
+**Texto na tela**
+
+| Entra em | Texto |
+|---|---|
+| 0s | **[tarja preta] 5 sinais de que o teu problema é cliente, não tráfego.** |
+| 2s | São frases que aparecem nas nossas calls de diagnóstico. |
+| 5s | qual apareceu aí? me manda o número na direct |
+
+**Legenda**
+```
+5 sinais de que o teu problema é cliente, não tráfego.
+
+são frases que aparecem nas nossas calls de diagnóstico. quando uma delas aparece, a conversa sobre anúncio fica pra depois.
+
+1. "chega gente, mas não é o meu cliente."
+
+2. "eles acham caro." quando a maior parte de quem chega acha caro, o problema costuma ser encaixe, não preço.
+
+3. "eu atendo qualquer um que aparece."
+
+4. todo contato novo passa por você pra decidir se vale a pena.
+
+5. o último cliente pagou muito menos do que custa o produto que você quer vender agora.
+
+um sinal já basta pro pra quem estar aberto. e com ele aberto, cada real de anúncio ensina a plataforma a trazer mais gente parecida com quem já não comprou. o erro não fica parado, ele cresce.
+
+é por isso que, antes de falar de anúncio, a pergunta que eu faço é: quanto pagou o último cliente que você fechou? e quanto custa o produto que você quer vender agora?
+
+qual dos cinco apareceu aí? me manda o número na direct. eu te devolvo a pergunta que vem depois.
+```
+
+**Resposta na direct, para quem mandar o número**
+```
+recebi. me conta a última vez que isso aconteceu: quem era a pessoa, e o que ela tinha tentado antes de chegar em você?
+```
+
+**Fronteira:** o sexto sintoma registrado ("o conteúdo fala com dois públicos ao mesmo tempo") ficou de fora por ser o único que a pessoa não reconhece sozinha. Fica de reserva para a próxima lista.
 
 ### P-PRO-01 · "Uma frase obrigou a reescrever a página inteira"
 
