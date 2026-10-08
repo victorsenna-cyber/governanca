@@ -58,3 +58,13 @@
 **Substitui:** a ordem de DEC-VS-07 (que começava pelo "por que o efeito passa") e o mecanismo "fragmentação e intermitência" do curso.
 **Descartado:** escolher o apelido agora. Não existe apelido sem mecanismo escrito; candidatos guardados, ⭐ "Crença-Mãe" recomendado.
 **Pendente (fato, Victor):** F8, confirmar, corrigir e completar o esboço.
+
+### DEC-VS-12 · 08/10/2026 · Crença central registrada: o sistema ancora comandos mentais
+**Fato do Victor:** *"toda efetividade do sistema depende da pessoa acreditar que ele funciona.. eu dou fé e isso já basta, mas o cerne da questão é a pessoa compreender que esse sistema simplesmente ancora comandos mentais… o trabalho do curso ou mentoria é o da pessoa entender isso."*
+**Decidido:** é a crença central do mecanismo e o conteúdo da camada 1. No Campo (B), a fé de quem opera basta, e por isso o mecanismo não entra na venda do Campo. Hélio Couto entra como referência de escola **dentro do curso**, nunca em anúncio ou página (endosso implícito de terceiro).
+**Formato:** fica o curso em turma ao vivo; mentoria individual segue fora até duas turmas (`PROJETO-MARCA-PESSOAL.md` §5.3, capacidade).
+
+### DEC-VS-13 · 🔴 PENDENTE (alçada Victor) · Colapso da função de onda: fato ou interpretação adotada
+**O conflito:** o Victor afirma como fato científico que a consciência colapsa a função de onda; a régua escrita da conta (`PROJETO-MARCA-PESSOAL.md` §6.2) proíbe dizer isso como fato.
+**Recomendação nossa:** dizer como **interpretação adotada** (von Neumann e Wigner), declarando que a maioria dos físicos não a aceita. É verdadeiro por inteiro, coerente com "a efetividade depende de acreditar", e desarma o cético que o ICP A precisa converter. Argumento completo: `AuraFlow/MECANISMO-SISTEMA-DE-CRENCAS.md` §1-ter.
+**Até a decisão:** vale a régua escrita.

@@ -22,7 +22,7 @@
 
 | # | Camada | A crença que sustenta *(esboço, F8)* | Ao final, o aluno… (critério de pronto) | Origem na Tela-Mãe | Conteúdo |
 |---:|---|---|---|---|---|
-| **1** | ⭐ **O sistema de crenças** | todas, e a central primeiro | explica, com as próprias palavras, **por que a mecânica funciona** e por que ela sozinha falha | os textos dos comandos, lidos como crença | 🔴 **Victor (F8)** |
+| **1** | ⭐ **O sistema de crenças** | **a central: o sistema ancora comandos mentais, e funciona na medida da crença de quem opera** | explica, com as próprias palavras, **que a mecânica é âncora e não causa**, e por que ela sozinha falha | os textos dos comandos, lidos como crença · referência de escola: Hélio Couto (bibliografia, nunca venda) | 🟡 central ✅ · resto Victor (F8) · fundamento F9 |
 | **2** | **Campo Contínuo e a arquitetura das telas** | C4 · o campo regido pelo Todo não para quando a sessão para | desenha a Tela-Mãe e a tela de consulentes e diz o que acontece quando um nome é incluído | as listas do quadro e a ligação entre as telas | 🟡 Victor |
 | **3** | **Os comandos** | C6 · comando é declaração, não pedido | escreve um comando próprio com as cinco partes: invocação, escopo, parâmetros (intensidade, tempo, ganho), condição de parada e selo | "Regra das Telas de Tratamentos": orquestrador, ganho gradual, reajuste automático, ad infinitum, pulso de conversão, uso integrado | 🟡 Victor |
 | **4** | **Os gráficos** | C2 · o instrumento é forma, não causa | diz a função de cada gráfico e quando escolhê-lo, **e por que trocar de gráfico não resolve um trabalho sem crença** | "Gráficos Radiônicos": Centelha Divina, Escudo, Tetragrammaton, Anti Magia, Cruz Ansata, Alta Vitalidade, Cubo de Metatron, Ioshua | 🟡 Victor · 🔴 F6 |

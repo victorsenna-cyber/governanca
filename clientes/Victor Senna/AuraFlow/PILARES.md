@@ -68,7 +68,7 @@ Existia: a Tela-Mãe no Trello (comandos, gráficos, mesas, sistemas de ancorage
 ## A3 · Narrativa
 **Diagnóstico:** a mecânica você já aprendeu. O que nenhum curso te ensinou é o sistema de crenças que faz ela funcionar.
 
-**Mecanismo: o sistema de crenças por trás da mecânica.** Esboço extraído dos comandos do Victor, a confirmar (F8): *a mecânica não produz o efeito, ela dá forma à intenção; quem rege o campo é o Todo, e o operador consagra, declara e entrega.* Arquivo próprio: `MECANISMO-SISTEMA-DE-CRENCAS.md`.
+**Mecanismo: o sistema de crenças por trás da mecânica.** **Crença central, confirmada pelo Victor em 08/10: o sistema ancora comandos mentais, e a efetividade depende da crença de quem opera.** Gráfico, mesa, tela e comando são âncoras, não causas. O fundamento que o Victor adota é a participação da consciência no colapso da função de onda; **como isso se diz fora da casa está em decisão (F9).** Arquivo próprio: `MECANISMO-SISTEMA-DE-CRENCAS.md`.
 
 **Por que é diferenciação real:** o mercado vende ferramenta (mesa X, gráfico Y), ou seja, vende o **método** sem o **mecanismo**. Quem aprende a ferramenta sem a crença troca de ferramenta quando ela falha. **O AuraFlow não compete com os cursos que a pessoa já fez; ele explica por que eles funcionam às vezes.**
 
@@ -138,7 +138,8 @@ Campo AuraFlow: a Tela-Mãe do Victor + a tela de consulentes.
 
 | # | Fato | Trava | Proposta |
 |---:|---|---|---|
-| **F8** | 🔴 ⭐ **O sistema de crenças: quais crenças do esboço estão certas, quais faltam, e qual é a central** | **é o mecanismo do curso.** Sem ele não há camada 1, nem aula aberta, nem apelido | esboço de seis crenças em `MECANISMO-SISTEMA-DE-CRENCAS.md` §2 |
+| **F8** | ⭐ **O sistema de crenças.** ✅ crença central respondida (ancorar comandos mentais) · 🟡 faltam C1, C4, C5 e o erro de quem aprendeu sem a crença | **é o mecanismo do curso** | `MECANISMO-SISTEMA-DE-CRENCAS.md` §5 |
+| **F9** | 🔴 **Colapso da função de onda: dizer como fato científico ou como interpretação adotada?** | conflita com a régua escrita da conta (`../PROJETO-MARCA-PESSOAL.md` §6.2). Até a decisão, vale a régua | **interpretação adotada** (`MECANISMO-SISTEMA-DE-CRENCAS.md` §1-ter) |
 | **F1** | **Quantos consulentes estão na tela hoje, e quantos pagam?** | trilho do produto B | — |
 | **F2** | Horas por semana que a tela consome hoje | teto de 4h/semana | medir uma semana |
 | **F3** | Preço do curso | A4 | **R$ 1.497**, `n=0` (racional em `ARQUITETURA-DO-CURSO.md` §5) |
