@@ -68,3 +68,6 @@
 **O conflito:** o Victor afirma como fato científico que a consciência colapsa a função de onda; a régua escrita da conta (`PROJETO-MARCA-PESSOAL.md` §6.2) proíbe dizer isso como fato.
 **Recomendação nossa:** dizer como **interpretação adotada** (von Neumann e Wigner), declarando que a maioria dos físicos não a aceita. É verdadeiro por inteiro, coerente com "a efetividade depende de acreditar", e desarma o cético que o ICP A precisa converter. Argumento completo: `AuraFlow/MECANISMO-SISTEMA-DE-CRENCAS.md` §1-ter.
 **Até a decisão:** vale a régua escrita.
+**Objeção do Victor (08/10, literal):** *"sua objeção parte de documentações criadas por humanos., por físicos. quem disse que eles exercem com honestidade científica? minha experiência pessoal mostra. experimentos também mostram."*
+**O que a pesquisa trouxe:** o experimento mais citado (dupla fenda de Dean Radin) foi testado às cegas em 2019 pelo mesmo investigador dos dados originais, num estudo financiado por fundo pró-pesquisa de consciência, e o efeito apareceu igual na condição sem ninguém prestando atenção (artefato). A lógica de Hélio Couto, registrada em `AuraFlow/MECANISMO-SISTEMA-DE-CRENCAS.md` §1-ter, diz que a dúvida reduz a efetividade, o que é argumento interno a favor de ensinar como crença adotada.
+**Segue pendente.** A decisão é do Victor; registramos qualquer das duas.
