@@ -102,6 +102,8 @@ O produto precisa de **um nome fixo** (pilar 4). Sem ele, não se anuncia, não 
 
 ### 5.2 MID TICKET — a imersão
 
+> ⏸️ **Pausada em 08/10/2026 (DEC-VS-06):** o lugar do mid ticket passou ao **curso AuraFlow** (`AuraFlow/PILARES.md`). Esta seção fica íntegra para revisão depois da turma 1.
+
 | | |
 |---|---|
 | **O que é** | imersão de **6 semanas**, ao vivo, turma pequena — a síntese aplicada à travessia de um nível |
