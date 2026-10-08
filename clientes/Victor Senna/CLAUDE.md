@@ -92,6 +92,7 @@ Aquela skill foi mapeada em call comercial e governa a voz do Victor **vendendo 
 | `AuraFlow/ARQUITETURA-DO-CURSO.md` | as oito camadas do curso, oferta, rito de venda, breakeven e benchmark · 🟡 hipótese desde 08/10/2026 |
 | `AuraFlow/MECANISMO-SISTEMA-DE-CRENCAS.md` | o mecanismo do curso: o sistema de crenças por trás da mecânica, One Belief e apelido · 🟡 esboço aguardando o Victor |
 | `AuraFlow/OBJECOES-E-RESPOSTAS.md` | banco de objeções ao AuraFlow com as respostas literais do Victor e a leitura de tom · ✅ vivo, alimentar a cada objeção nova |
+| `AuraFlow/BIBLIOTECA-DE-COMANDOS.md` | os comandos da Tela-Mãe e da tela de consulentes, na versão iterada · ✅ vivo |
 | `STATUS.md` | estado vivo *(a criar quando houver o que registrar)* |
 | `01-contexto/` | material falado dele sobre o tema, para extração de voz e de linguagem |
 
