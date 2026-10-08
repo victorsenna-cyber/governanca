@@ -71,3 +71,9 @@
 **Objeção do Victor (08/10, literal):** *"sua objeção parte de documentações criadas por humanos., por físicos. quem disse que eles exercem com honestidade científica? minha experiência pessoal mostra. experimentos também mostram."*
 **O que a pesquisa trouxe:** o experimento mais citado (dupla fenda de Dean Radin) foi testado às cegas em 2019 pelo mesmo investigador dos dados originais, num estudo financiado por fundo pró-pesquisa de consciência, e o efeito apareceu igual na condição sem ninguém prestando atenção (artefato). A lógica de Hélio Couto, registrada em `AuraFlow/MECANISMO-SISTEMA-DE-CRENCAS.md` §1-ter, diz que a dúvida reduz a efetividade, o que é argumento interno a favor de ensinar como crença adotada.
 **Segue pendente.** A decisão é do Victor; registramos qualquer das duas.
+**Proposta de fechamento pelo paradoxo (08/10):** pela lógica do próprio Victor (*"a própria crença faz com que seja como ele acredita, pra sim ou pra não"*), experimento de terceiro não confirma nem nega o AuraFlow. A formulação coerente com isso é **"crença que se verifica por dentro"**, e não "fato científico" (verificação por terceiros). Ver `AuraFlow/MECANISMO-SISTEMA-DE-CRENCAS.md` §1-bis.
+
+### DEC-VS-14 · 08/10/2026 · O paradoxo explica, nunca culpa
+**Fato do Victor:** a crença decide o resultado, para sim ou para não; por isso o AuraFlow precisa ser explicado.
+**Decidido:** o paradoxo é a justificativa do curso e conteúdo da camada 1. **Nunca se diz a consulente ou aluno que o resultado não veio porque ele não acreditou**, nem se usa isso para negar devolução. No Campo, a fé do operador basta (fato do Victor, DEC-VS-12), então a crença do consulente não é condição do serviço.
+**Por quê:** a mesma lógica que explica permite responsabilizar quem pagou pelo que não recebeu. Isso quebra a confiança que o tema exige e é o tipo de conduta que gera reclamação de consumidor.
