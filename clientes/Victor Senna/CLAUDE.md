@@ -87,7 +87,8 @@ Aquela skill foi mapeada em call comercial e governa a voz do Victor **vendendo 
 |---|---|
 | `CLAUDE.md` | este kernel |
 | `PROJETO-MARCA-PESSOAL.md` | tese, ICP, mecanismo, escada low/mid, riscos e réguas de linguagem |
-| `DECISOES.md` | log de decisões, com o descartado e o porquê *(a criar)* |
+| `DECISOES.md` | log de decisões, com o descartado e o porquê |
+| `AuraFlow/PILARES.md` | os cinco pilares do AuraFlow (emissão energética via Tela-Mãe) · 🟡 hipótese desde 08/10/2026 |
 | `STATUS.md` | estado vivo *(a criar quando houver o que registrar)* |
 | `01-contexto/` | material falado dele sobre o tema, para extração de voz e de linguagem |
 
