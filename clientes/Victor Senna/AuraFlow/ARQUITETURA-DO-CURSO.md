@@ -14,22 +14,26 @@
 
 **A ordem segue o mesmo princípio dos pilares da casa: do porquê ao como, do sistema às peças, das peças à operação.** Quem vê o sistema antes das peças sabe onde cada peça entra. Quem vê as peças primeiro acumula ferramenta de novo, que é a dor que o curso existe para resolver.
 
+⭐ **Segundo fato do Victor (08/10):** *"o principal para quem quer o método pra si, é o sistema de crenças por trás da mecânica… esse é o fator disruptivo."* **Consequência (DEC-VS-11): as camadas de entendimento são camadas de crença.** O curso abre pelo sistema de crenças inteiro, e cada camada seguinte ensina **a mecânica junto com a crença que a sustenta.** Ensinar a mecânica sem a crença é o que os outros cursos já fazem. Mecanismo: `MECANISMO-SISTEMA-DE-CRENCAS.md`.
+
 ---
 
 ## 2. AS OITO CAMADAS
 
-| # | Camada | Ao final, o aluno… (critério de pronto) | Origem na Tela-Mãe | Conteúdo |
-|---:|---|---|---|---|
-| **1** | **O princípio: por que o efeito passa** | explica, com as próprias palavras, fragmentação e intermitência, e por que mais uma técnica não resolve nenhuma das duas | o conceito do Campo Contínuo | 🟡 Victor |
-| **2** | **A arquitetura: Tela-Mãe e tela de consulentes** | desenha as duas telas e diz o que acontece quando um nome é incluído | as listas do quadro e a ligação entre as telas | 🟡 Victor |
-| **3** | **Os comandos** | escreve um comando próprio com as cinco partes: invocação, escopo, parâmetros (intensidade, tempo, ganho), condição de parada e selo | "Regra das Telas de Tratamentos": orquestrador, ganho gradual, reajuste automático, ad infinitum, pulso de conversão, uso integrado | 🟡 Victor |
-| **4** | **Os gráficos** | diz a função de cada gráfico da tela e quando escolhê-lo | "Gráficos Radiônicos": Centelha Divina, Escudo, Tetragrammaton, Anti Magia, Cruz Ansata, Alta Vitalidade, Cubo de Metatron, Ioshua | 🟡 Victor · 🔴 F6 |
-| **5** | **Combos e empilhamento** | monta um combo, decide entre gradual e exponencial e diz qual prevalece | Coquetel (empilhar) · Sistemas de Ancoragem 1, 2 e 3 · etiquetas EMPILHAMENTO e EXPONENCIAL | 🟡 Victor · 🔴 F7 |
-| **6** | **Integração: mesas, arquétipos e tratamentos** | encaixa na própria tela uma técnica que já usava (mesa, apometria, cromo, cristais) como camada do mesmo campo | "Mesas Radiônicas" · "Eliciar os arquétipos" · lista de tratamentos · "Ajuste Vibratório" · "Moduladores" | 🟡 Victor |
-| **7** | **Ética e fronteira** | diz o que não promete, quem não inclui no campo, quando encaminhar, e escreve a frase-fronteira do próprio atendimento | `../PROJETO-MARCA-PESSOAL.md` §6 · exclusões de `PILARES.md` B1 | ✅ pronto (nosso) |
-| **8** | **Operação: a própria Tela-Mãe no ar** | **monta a própria Tela-Mãe e inclui o primeiro consulente.** É o critério de pronto do curso inteiro | o quadro inteiro, como modelo | 🟡 Victor |
+| # | Camada | A crença que sustenta *(esboço, F8)* | Ao final, o aluno… (critério de pronto) | Origem na Tela-Mãe | Conteúdo |
+|---:|---|---|---|---|---|
+| **1** | ⭐ **O sistema de crenças** | todas, e a central primeiro | explica, com as próprias palavras, **por que a mecânica funciona** e por que ela sozinha falha | os textos dos comandos, lidos como crença | 🔴 **Victor (F8)** |
+| **2** | **Campo Contínuo e a arquitetura das telas** | C4 · o campo regido pelo Todo não para quando a sessão para | desenha a Tela-Mãe e a tela de consulentes e diz o que acontece quando um nome é incluído | as listas do quadro e a ligação entre as telas | 🟡 Victor |
+| **3** | **Os comandos** | C6 · comando é declaração, não pedido | escreve um comando próprio com as cinco partes: invocação, escopo, parâmetros (intensidade, tempo, ganho), condição de parada e selo | "Regra das Telas de Tratamentos": orquestrador, ganho gradual, reajuste automático, ad infinitum, pulso de conversão, uso integrado | 🟡 Victor |
+| **4** | **Os gráficos** | C2 · o instrumento é forma, não causa | diz a função de cada gráfico e quando escolhê-lo, **e por que trocar de gráfico não resolve um trabalho sem crença** | "Gráficos Radiônicos": Centelha Divina, Escudo, Tetragrammaton, Anti Magia, Cruz Ansata, Alta Vitalidade, Cubo de Metatron, Ioshua | 🟡 Victor · 🔴 F6 |
+| **5** | **Combos e empilhamento** | C4 · o campo se regula pela capacidade de quem recebe | monta um combo, decide entre gradual e exponencial e diz qual prevalece | Coquetel (empilhar) · Sistemas de Ancoragem 1, 2 e 3 · etiquetas EMPILHAMENTO e EXPONENCIAL | 🟡 Victor · 🔴 F7 |
+| **6** | **Integração: mesas, arquétipos e tratamentos** | C5 · o campo escolhe o necessário | encaixa na própria tela uma técnica que já usava (mesa, apometria, cromo, cristais) como camada do mesmo campo | "Mesas Radiônicas" · "Eliciar os arquétipos" · lista de tratamentos · "Ajuste Vibratório" · "Moduladores" | 🟡 Victor |
+| **7** | **Ética e fronteira** | C1 · o resultado pertence ao Divino, então não se promete | diz o que não promete, quem não inclui no campo, quando encaminhar, e escreve a frase-fronteira do próprio atendimento | `../PROJETO-MARCA-PESSOAL.md` §6 · exclusões de `PILARES.md` B1 | ✅ estrutura pronta (nossa) |
+| **8** | **Operação: a própria Tela-Mãe no ar** | C1 + C3 · consagrar, sentir, entregar | **monta a própria Tela-Mãe e a põe em operação, em si ou num consulente.** É o critério de pronto do curso inteiro | o quadro inteiro, como modelo | 🟡 Victor |
 
-**Por que ética vem antes de operação, e não no fim:** a camada 8 é quando o aluno passa a trabalhar em outra pessoa. A fronteira tem que estar na mão dele antes disso, não depois.
+**Por que a crença vem antes de tudo:** é o fator disruptivo, e a única coisa que o aluno não aprendeu nos cursos de ferramenta. Começar pela mecânica seria repetir o que ele já tem e guardar o diferencial para o fim, quando metade da turma já decidiu se valeu a pena.
+
+**Por que ética vem antes de operação, e não no fim:** a camada 8 é quando o aluno pode passar a trabalhar em outra pessoa. A fronteira tem que estar na mão dele antes disso. **E com C1 ela deixa de ser regra imposta:** se o resultado pertence ao Divino, prometer resultado contradiz a própria crença.
 
 **Por que integração (6) vem depois de gráficos e combos:** o aluno só sabe onde encaixar a mesa ou a apometria que já usa depois de entender como a tela compõe recursos. Ensinar integração antes seria ensinar a pendurar peça sem estrutura.
 
@@ -53,12 +57,13 @@
 
 ## 4. COMO SE VENDE UM MÉTODO QUE PRECISA SER EXPLICADO
 
-**A camada 1 é a peça de venda.** Ela é a única que se entende sem as outras, e é exatamente o que gera o desejo pelas demais: quem entende por que o efeito passa quer saber como manter o campo.
+**A aula aberta é um recorte da camada 1: a crença central, e por que a mecânica sozinha falha.** Não o sistema inteiro. A aula abre o porquê e o curso entrega o sistema; quem entende que a mecânica sem a crença é forma vazia quer a crença inteira, e a crença inteira é o curso.
 
 | Etapa | O que é | Gate |
 |---:|---|---|
-| **1** | **10 conversas** com terapeutas do ICP A, da rede do Victor. Roteiro: elas reconhecem fragmentação e intermitência no próprio atendimento? | 10 registradas (gate do Alicerce) |
-| **2** | **Aula aberta = camada 1**, ao vivo, para quem conversou e para a rede | — |
+| **0** | **F8 respondido:** o sistema de crenças escrito pelo Victor | sem ele não há aula aberta |
+| **1** | **10 conversas** com pessoas do ICP A, da rede do Victor (praticantes em si e terapeutas). Roteiro: elas reconhecem o "às vezes funciona e às vezes não"? O que dizem querer? **As respostas viram o Desejo do One Belief** | 10 registradas (gate do Alicerce) |
+| **2** | **Aula aberta**, ao vivo, para quem conversou e para a rede | — |
 | **3** | **Pré-venda** da turma, 21 dias, link direto | **8 pagantes** |
 | **4** | **Turma 1**, uma camada por semana | aluno com Tela-Mãe no ar = curso entregue |
 | **5** | Gravações viram o **curso gravado v2** | turma 1 concluída |
@@ -100,7 +105,7 @@
 
 **Leitura:** há demanda recorrente e muitos anunciantes, **mas nenhuma referência escalada pelos critérios da casa.** Limitação declarada: a busca devolve no máximo 30 anúncios e mostra os mais recentes; anúncios antigos ativos podem existir fora da amostra. **Próximo passo de benchmark, se houver mídia no futuro:** repetir com os nomes dos anunciantes e buscar internacional (ordem 2).
 
-**O que se modela do que existe:** curso **ao vivo + gravado** com acesso por tempo definido (padrão de "Mesa Radiônica dos Tronos 2.0") · material de apoio (manual, tabelas) · certificado de conclusão. **O que se diferencia:** o mercado vende ferramenta; o AuraFlow vende o sistema que integra ferramentas.
+**O que se modela do que existe:** curso **ao vivo + gravado** com acesso por tempo definido (padrão de "Mesa Radiônica dos Tronos 2.0") · material de apoio (manual, tabelas) · certificado de conclusão. **O que se diferencia:** o mercado vende ferramenta, a mecânica sem o porquê; o AuraFlow vende o sistema de crenças que faz a mecânica funcionar (`MECANISMO-SISTEMA-DE-CRENCAS.md`).
 
 Fontes externas: [Mesa Radiônica dos Tronos 2.0 — Hotmart](https://hotmart.com/pt-br/marketplace/produtos/mesa-radionica-dos-tronos-2-0-online-ao-vivo-e-gravado/P88250366X) · [Curso Mesa Radiônica Ascensão Quântica](https://www.viralagenda.com/pt/events/1454060/curso-mesa-radionica-ascensao-quantica-online) · [Curso Mesa Radionica Golden](https://www.viralagenda.com/pt/events/971388/curso-mesa-radionica-golden) · [Curso Apometria e Chakras](https://www.asaas.com/c/qu71raw9l48c6wp7) · [Curso Magia e Apometria](https://www.asaas.com/c/c8ez51ptvvmun4ah) · [Formação Xamânica](https://www.asaas.com/c/6jzpesd7yebng5as)
 
@@ -108,4 +113,6 @@ Fontes externas: [Mesa Radiônica dos Tronos 2.0 — Hotmart](https://hotmart.co
 
 ## 7. O QUE FALTA DO VICTOR PARA A CAMADA SAIR DO 🟡
 
-Uma única entrega por camada, em áudio ou texto livre: **"o que eu explicaria nesta camada, e qual é o erro que vejo quem não entendeu cometer."** O segundo pedaço é o que vira o critério de pronto real e o exercício da aula. Começar pela camada 1, que é também a aula aberta.
+**Primeiro, e antes de tudo: F8** — a resposta sobre o esboço do sistema de crenças (`MECANISMO-SISTEMA-DE-CRENCAS.md` §5). É a camada 1 e a aula aberta.
+
+Depois, uma entrega por camada, em áudio ou texto livre: **"o que eu explicaria nesta camada, qual crença sustenta isso, e qual é o erro que vejo quem não entendeu cometer."** O erro é o que vira o critério de pronto real e o exercício da aula.

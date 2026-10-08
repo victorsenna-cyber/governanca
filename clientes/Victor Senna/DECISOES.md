@@ -46,3 +46,15 @@
 **Decidido:** o curso ensina a operar o campo, **nunca a vender o serviço**. Listas, checkouts e grupos separados; aluno do curso não recebe oferta da Continuum e vice-versa.
 **Por quê:** o ICP do curso (terapeutas holísticos) é o ICP primário da Continuum (`30-comercial/ICP.md` §2), e o kernel §3 proíbe cruzar as marcas.
 **Pendente (fato, Victor):** autoria dos gráficos (F6), preço do curso (F3, proposta R$ 1.497 `n=0`), demais fatos em `AuraFlow/PILARES.md` Parte 6.
+
+### DEC-VS-10 · 08/10/2026 · ICP do curso: de profissão para o que a pessoa já tentou
+**Fato do Victor:** o curso é para *"quem quer o método pra si"*.
+**Decidido:** ICP A = *"quem já aprendeu a mecânica (gráfico, mesa, comando) e não sabe por que às vezes funciona e às vezes não."* Terapeuta passa a ser segmento. Critério de pronto do curso: Tela-Mãe em operação, em si ou num consulente.
+**Substitui:** o ICP A de DEC-VS-05 ("terapeuta que trabalha uma técnica por vez").
+
+### DEC-VS-11 · 08/10/2026 · O sistema de crenças é o mecanismo, e abre o curso
+**Fato do Victor:** *"o principal… é o sistema de crenças por trás da mecânica do AuraFlow. esse é o fator disruptivo."*
+**Decidido:** o sistema de crenças é o **mecanismo** do produto A (na nomenclatura de `METODO-MECANISMO-E-ONE-BELIEF.md`, a mecânica é o método). Camada 1 = o sistema de crenças; cada camada seguinte ensina a mecânica com a crença que a sustenta; a aula aberta é a crença central. Campo Contínuo passa a ser consequência da crença, não o mecanismo do curso. Esboço de seis crenças extraído dos comandos do Victor, **marcado como leitura**, em `AuraFlow/MECANISMO-SISTEMA-DE-CRENCAS.md`.
+**Substitui:** a ordem de DEC-VS-07 (que começava pelo "por que o efeito passa") e o mecanismo "fragmentação e intermitência" do curso.
+**Descartado:** escolher o apelido agora. Não existe apelido sem mecanismo escrito; candidatos guardados, ⭐ "Crença-Mãe" recomendado.
+**Pendente (fato, Victor):** F8, confirmar, corrigir e completar o esboço.

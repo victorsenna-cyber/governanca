@@ -14,13 +14,15 @@
 
 | Pilar | **A · Curso AuraFlow** (quem opera) | **B · Campo AuraFlow** (quem é tratado) |
 |---|---|---|
-| **ICP** | Terapeuta que já usa gráficos, mesa ou apometria, mas trabalha uma técnica por vez e uma sessão por vez. | Quem já é do meio holístico, já recebeu atendimento energético avulso e sente que o efeito passa antes do próximo. |
-| **Promessa** | Você sai com a sua própria Tela-Mãe montada, integrando as ferramentas que já tem, e com o primeiro consulente em campo. | Você entra no campo e passa a ser trabalhado todos os dias, sem precisar agendar nada. |
-| **Narrativa** | Você não precisa de mais uma ferramenta. Precisa do sistema que faz as que você já tem trabalharem juntas, e sem parar. | Uma sessão harmoniza um dia. O que te desalinha age todos os dias. |
+| **ICP** | Quem já aprendeu a mecânica (gráfico, mesa, comando) e não sabe por que às vezes funciona e às vezes não. | Quem já é do meio holístico, já recebeu atendimento energético avulso e sente que o efeito passa antes do próximo. |
+| **Promessa** | Você entende a crença que move a mecânica e sai com a sua Tela-Mãe operando a partir dela. | Você entra no campo e passa a ser trabalhado todos os dias, sem precisar agendar nada. |
+| **Narrativa** | A mecânica você já aprendeu. O que nenhum curso te ensinou é o sistema de crenças que faz ela funcionar. | Uma sessão harmoniza um dia. O que te desalinha age todos os dias. |
 | **Oferta** | Turma ao vivo de 8 encontros, gravada, com o modelo da Tela-Mãe incluso. *Preço proposto: R$ 1.497 (F3).* | Assinatura mensal de permanência no campo, com um relato escrito por mês. *Preço proposto: R$ 147/mês (F4).* |
 | **Produto** | Curso AuraFlow, que ensina o Campo Contínuo pela Tela-Mãe. | Campo AuraFlow. |
 
-**O vocabulário, e ele é o mesmo nos dois produtos:** **AuraFlow** é o método · **Campo Contínuo** é o princípio (o trabalho não para) · **Tela-Mãe** é o instrumento que mantém o campo.
+**O vocabulário, e ele é o mesmo nos dois produtos:** **AuraFlow** é o método · **o sistema de crenças** é o mecanismo, o porquê da mecânica (`MECANISMO-SISTEMA-DE-CRENCAS.md`) · **Campo Contínuo** é o princípio que decorre dele (o trabalho não para) · **Tela-Mãe** é o instrumento que mantém o campo.
+
+⭐ **Fato do Victor (08/10): o fator disruptivo do AuraFlow é o sistema de crenças por trás da mecânica.** Ele é o mecanismo do produto A e não aparece no produto B.
 
 ---
 
@@ -46,7 +48,9 @@ Existia: a Tela-Mãe no Trello (comandos, gráficos, mesas, sistemas de ancorage
 **Fato do Victor (08/10):** o método precisa ser explicado, em camadas, antes de ser compreendido. **Consequência estrutural:** quem compra o método compra o entendimento, e entendimento em camadas tem forma de curso. A venda do curso também precisa explicar, por isso **a primeira camada é a própria peça de venda** (aula aberta, ver `ARQUITETURA-DO-CURSO.md` §4).
 
 ## A1 · ICP
-**Terapeuta que já usa gráficos, mesa ou apometria, mas trabalha uma técnica por vez e uma sessão por vez.**
+**Quem já aprendeu a mecânica (gráfico, mesa, comando) e não sabe por que às vezes funciona e às vezes não.**
+
+**Corrigido no mesmo dia (DEC-VS-10):** a primeira versão dizia "terapeuta que trabalha uma técnica por vez". O Victor apontou que o curso é **para quem quer o método para si**, e que o que essa pessoa compra é o sistema de crenças. **O recorte deixou de ser profissão e passou a ser o que a pessoa já tentou.** Quem pratica em si e quem atende outros cabem na mesma frase; o terapeuta virou segmento, não ICP.
 
 **O que ela já tentou:** cursos de uma ferramenta cada. **O mercado confirma o padrão:** na Biblioteca de Anúncios (Brasil, 08/10/2026), os cursos ativos são quase todos de **uma ferramenta** — mesa radiônica de um tipo, mesa arcturiana, 7 raios, reiki com certificado (registro em `ARQUITETURA-DO-CURSO.md` §6). Quem compra esses cursos acumula ferramenta sem ganhar sistema. **É a mesma dor da tese da marca pessoal, "acúmulo sem integração"** (`../PROJETO-MARCA-PESSOAL.md` §4), aplicada a quem pratica.
 
@@ -57,16 +61,18 @@ Existia: a Tela-Mãe no Trello (comandos, gráficos, mesas, sistemas de ancorage
 | quem quer fórmula de renda | **fronteira com a Continuum** (Parte 5). O curso ensina a operar o campo, não a vender o serviço |
 
 ## A2 · Promessa
-**Você sai com a sua própria Tela-Mãe montada, integrando as ferramentas que já tem, e com o primeiro consulente em campo.**
+**Você entende a crença que move a mecânica e sai com a sua Tela-Mãe operando a partir dela.**
 
-É verificável no fim da turma: a tela existe ou não existe, o consulente está incluído ou não está. **Não promete efeito no consulente, renda nem prazo de resultado.**
+É verificável no fim da turma: o aluno explica o sistema de crenças com as próprias palavras, e a tela existe e está ativa (em si ou em um consulente). **Não promete efeito, renda nem prazo de resultado.**
 
 ## A3 · Narrativa
-**Diagnóstico:** você não precisa de mais uma ferramenta. Precisa do sistema que faz as que você já tem trabalharem juntas, e sem parar.
+**Diagnóstico:** a mecânica você já aprendeu. O que nenhum curso te ensinou é o sistema de crenças que faz ela funcionar.
 
-**Mecanismo:** Campo Contínuo, construído pela Tela-Mãe. Duas falhas nomeadas, as duas reconhecíveis por quem já atende: **fragmentação** (uma técnica por vez) e **intermitência** (uma sessão por vez). A Tela-Mãe resolve as duas no mesmo instrumento.
+**Mecanismo: o sistema de crenças por trás da mecânica.** Esboço extraído dos comandos do Victor, a confirmar (F8): *a mecânica não produz o efeito, ela dá forma à intenção; quem rege o campo é o Todo, e o operador consagra, declara e entrega.* Arquivo próprio: `MECANISMO-SISTEMA-DE-CRENCAS.md`.
 
-**Por que é diferenciação real:** o mercado anuncia ferramenta (mesa X, gráfico Y). Nós anunciamos o sistema que integra qualquer ferramenta. **Não compete com os cursos que ela já fez; ele dá uso a eles.**
+**Por que é diferenciação real:** o mercado vende ferramenta (mesa X, gráfico Y), ou seja, vende o **método** sem o **mecanismo**. Quem aprende a ferramenta sem a crença troca de ferramenta quando ela falha. **O AuraFlow não compete com os cursos que a pessoa já fez; ele explica por que eles funcionam às vezes.**
+
+**Campo Contínuo e integração continuam, agora como consequência:** se o campo é regido pelo Todo e não pela sessão, ele não para quando a sessão para; e se o instrumento é forma, qualquer ferramenta que a pessoa já tem entra na mesma tela.
 
 ## A4 · Oferta
 **v1: turma ao vivo, 8 encontros semanais de 90 min, uma camada por encontro, gravada.** Inventário canônico em `ARQUITETURA-DO-CURSO.md` §3. Abre com **8 pagantes**, não menos.
@@ -119,7 +125,7 @@ Campo AuraFlow: a Tela-Mãe do Victor + a tela de consulentes.
 | Ordem | primeiro, porque já opera | depois de 10 conversas e 8 pagantes |
 | Ponte | consulente que também é terapeuta conhece o método por dentro e é o lead mais quente do curso | aluno **não** vira lead do Campo: ele passa a operar o próprio |
 
-🔴 **A fronteira mais sensível desta conta: o ICP do curso (terapeutas holísticos) é o ICP primário da Continuum** (`30-comercial/ICP.md` §2). O kernel (`../CLAUDE.md` §3) proíbe cruzar as marcas. Portanto:
+🔴 **A fronteira mais sensível desta conta: o segmento de terapeutas do curso é o ICP primário da Continuum** (`30-comercial/ICP.md` §2). O ICP do curso deixou de ser só terapeuta (DEC-VS-10), mas o segmento continua dentro dele. O kernel (`../CLAUDE.md` §3) proíbe cruzar as marcas. Portanto:
 - **o curso ensina a operar o campo, nunca a vender o serviço** (preço, assinatura, captação são assunto da Continuum);
 - **listas, checkouts e grupos separados**;
 - **aluno do curso não recebe oferta da Continuum, e cliente da Continuum não recebe oferta do curso.** Indicação espontânea, quando parte da pessoa, é permitida.
@@ -132,6 +138,7 @@ Campo AuraFlow: a Tela-Mãe do Victor + a tela de consulentes.
 
 | # | Fato | Trava | Proposta |
 |---:|---|---|---|
+| **F8** | 🔴 ⭐ **O sistema de crenças: quais crenças do esboço estão certas, quais faltam, e qual é a central** | **é o mecanismo do curso.** Sem ele não há camada 1, nem aula aberta, nem apelido | esboço de seis crenças em `MECANISMO-SISTEMA-DE-CRENCAS.md` §2 |
 | **F1** | **Quantos consulentes estão na tela hoje, e quantos pagam?** | trilho do produto B | — |
 | **F2** | Horas por semana que a tela consome hoje | teto de 4h/semana | medir uma semana |
 | **F3** | Preço do curso | A4 | **R$ 1.497**, `n=0` (racional em `ARQUITETURA-DO-CURSO.md` §5) |
