@@ -118,7 +118,7 @@ O produto precisa de **um nome fixo** (pilar 4). Sem ele, não se anuncia, não 
 
 | Fora | Por quê |
 |---|---|
-| Atendimento individual | consome a hora que a Continuum precisa. **Entra só depois de duas turmas** |
+| Atendimento individual | consome a hora que a Continuum precisa. ~~**Entra só depois de duas turmas**~~ → **13/10/2026: aberto em piloto, teto de 1 mentorado (DEC-VS-15)** |
 | Área de membros / plataforma | ferramenta antes de processo é antipadrão. E-mail e grupo bastam na v1 |
 | Certificação / formação | produto de outra ordem, exige método estabilizado |
 | Qualquer coisa de saúde | ver §6 |

@@ -77,3 +77,10 @@
 **Fato do Victor:** a crença decide o resultado, para sim ou para não; por isso o AuraFlow precisa ser explicado.
 **Decidido:** o paradoxo é a justificativa do curso e conteúdo da camada 1. **Nunca se diz a consulente ou aluno que o resultado não veio porque ele não acreditou**, nem se usa isso para negar devolução. No Campo, a fé do operador basta (fato do Victor, DEC-VS-12), então a crença do consulente não é condição do serviço.
 **Por quê:** a mesma lógica que explica permite responsabilizar quem pagou pelo que não recebeu. Isso quebra a confiança que o tema exige e é o tipo de conduta que gera reclamação de consumidor.
+
+### DEC-VS-15 · 13/10/2026 · Mentoria individual AuraFlow aberta em piloto, com o Rick
+**Fato do Victor:** conversa presencial com o Rick em 13/10 para mostrar a operação e fechar uma mentoria; *"a mentoria é um desenvolvimento continuado e acompanhamento de evolução para destravar com maior velocidade… para passar pelo processo que eu passei."*
+**Decidido:** a mentoria vira o **produto C** (`AuraFlow/MENTORIA-AURAFLOW.md`): 12 semanas, 3 fases com gate, Onboarding Orquestrado, R$ 7.500 (ou Fundamento R$ 3.500 abatível). **Teto de 1 mentorado por vez** até a primeira terminar; não roda no mesmo mês que a pré-venda do curso.
+**Substitui:** a linha de DEC-VS-12 e de `PROJETO-MARCA-PESSOAL.md` §5.3 que deixava atendimento individual para depois de duas turmas.
+**Por quê:** a regra protegia hora da Continuum contra um produto sem comprador. **Agora há um comprador real, quente, que já viveu o efeito do mecanismo.** Uma mentoria paga é caixa na mão, o primeiro `n=1` do AuraFlow e a primeira prova para o curso. A hora cabe no teto (~2,3h/semana).
+**Descartado:** esperar o curso para atender o Rick (perde o comprador quente e adia a prova) e vender ao Rick a turma do curso (ele já passou da camada 1; o que ele precisa é travessia, não entendimento).

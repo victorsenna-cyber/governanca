@@ -20,7 +20,9 @@
 | **Oferta** | Turma ao vivo de 8 encontros, gravada, com o modelo da Tela-Mãe incluso. *Preço proposto: R$ 1.497 (F3).* | Assinatura mensal de permanência no campo, com um relato escrito por mês. *Preço proposto: R$ 147/mês (F4).* |
 | **Produto** | Curso AuraFlow, que ensina o Campo Contínuo pela Tela-Mãe. | Campo AuraFlow. |
 
-**O vocabulário, e ele é o mesmo nos dois produtos:** **AuraFlow** é o método · **o sistema de crenças** é o mecanismo, o porquê da mecânica (`MECANISMO-SISTEMA-DE-CRENCAS.md`) · **Campo Contínuo** é o princípio que decorre dele (o trabalho não para) · **Tela-Mãe** é o instrumento que mantém o campo.
+**Produto C (13/10/2026): Mentoria AuraFlow**, individual, para quem já viveu a visão AuraFlow e quer a travessia acompanhada. Pilares próprios em `MENTORIA-AURAFLOW.md` §2.
+
+**O vocabulário, e ele é o mesmo nos três produtos:** **AuraFlow** é o método · **o sistema de crenças** é o mecanismo, o porquê da mecânica (`MECANISMO-SISTEMA-DE-CRENCAS.md`) · **Campo Contínuo** é o princípio que decorre dele (o trabalho não para) · **Tela-Mãe** é o instrumento que mantém o campo.
 
 ⭐ **Fato do Victor (08/10): o fator disruptivo do AuraFlow é o sistema de crenças por trás da mecânica.** Ele é o mecanismo do produto A e não aparece no produto B.
 
