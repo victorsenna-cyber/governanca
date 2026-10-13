@@ -84,3 +84,9 @@
 **Substitui:** a linha de DEC-VS-12 e de `PROJETO-MARCA-PESSOAL.md` §5.3 que deixava atendimento individual para depois de duas turmas.
 **Por quê:** a regra protegia hora da Continuum contra um produto sem comprador. **Agora há um comprador real, quente, que já viveu o efeito do mecanismo.** Uma mentoria paga é caixa na mão, o primeiro `n=1` do AuraFlow e a primeira prova para o curso. A hora cabe no teto (~2,3h/semana).
 **Descartado:** esperar o curso para atender o Rick (perde o comprador quente e adia a prova) e vender ao Rick a turma do curso (ele já passou da camada 1; o que ele precisa é travessia, não entendimento).
+
+### DEC-VS-16 · 13/10/2026 · Mentoria de 6 meses pelo mesmo valor, com intensidade decrescente
+**Fato do Victor:** *"acompanhamento da mentoria é de 6 meses, mesmo valor"* · os templates do AuraFlow já foram compartilhados com o Rick, e a operação na tela dele é ensinada no próprio café.
+**Decidido:** 6 meses, R$ 7.500, **11 encontros em curva decrescente** (4 semanais · 4 quinzenais · 3 mensais de 60 min) e mensagens limitadas a 3 trocas/semana nos meses 1–3 e 1/semana nos meses 4–6. A Tela-Mãe vai ao ar no encontro de venda (fase 0): **TTFV = zero**.
+**Por quê:** com a intensidade das 12 semanas esticada para 6 meses, a conta daria ~45h → R$ 167/h, **abaixo do piso de R$ 250/h** (`POLITICAS-DE-DECISAO.md` §5). A curva decrescente fecha em ~29h → R$ 255/h, e é coerente com a promessa: a mentoria leva à autonomia, e encontro semanal no mês 6 criaria dependência.
+**Descartado:** manter encontros quinzenais nos 6 meses (fura o piso) e subir o preço (o Victor decidiu o valor).
