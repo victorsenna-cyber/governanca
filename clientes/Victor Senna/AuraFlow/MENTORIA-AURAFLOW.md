@@ -20,10 +20,21 @@
 
 ---
 
-## 2. OS CINCO PILARES DA MENTORIA
+## 2. OS CINCO PILARES DA MENTORIA → `PILARES-MENTORIA.md`
 
-| Pilar | A frase | Estado |
-|---|---|---|
+**Movidos e desenvolvidos em 13/10/2026** (teste, razão de cada pilar, quem não é, mecanismo, ligação com os outros produtos). As cinco frases, para consulta rápida:
+
+| Pilar | A frase |
+|---|---|
+| **ICP** | Quem já domina a radiestesia e já teve a virada de entender o AuraFlow, mas ainda vive o dia a dia no modo antigo de pensar. |
+| **Promessa** | Seis meses de caminho acompanhado por quem já o fez, com a sua Tela-Mãe no ar desde o primeiro dia e o novo modo de pensar trabalhado no seu cotidiano. |
+| **Narrativa** | Entender o AuraFlow muda a sua cabeça num dia. O cotidiano não muda no mesmo dia, porque o modo antigo de pensar continua ancorando comandos sem você perceber, e é daí que vem o sofrimento desnecessário. |
+| **Oferta** | Seis meses, 11 encontros individuais com intensidade decrescente, mensagens e a sua Tela-Mãe no ar desde o primeiro dia. R$ 7.500. |
+| **Produto** | Mentoria AuraFlow. |
+
+**O ativo que sustenta a promessa é o tempo:** o Victor fez o caminho sozinho, e a mentoria encurta o de quem vem depois. 🔴 **O tempo que o Victor levou é a âncora central da oferta, e ainda não está registrado (F10).** A velocidade entra como razão, nunca como prazo prometido.
+
+---|---|---|
 | **ICP** | Quem já domina a radiestesia, teve contato com a visão AuraFlow e quer viver a partir dela no cotidiano, sem levar anos para isso. | 🟡 hipótese, `n=1` (Rick) |
 | **Promessa** | Fazer o caminho que eu fiz, em meses e não em anos, com a sua Tela-Mãe no ar desde o primeiro dia e o novo modo de pensar aplicado no seu dia a dia. | 🟡 |
 | **Narrativa** | O sofrimento desnecessário vem do modo antigo de pensar. A mecânica você já tem; o que falta é trocar o modo de pensar no lugar onde ele age, o cotidiano. E esse caminho eu já sei, porque já o fiz. | 🟡 |

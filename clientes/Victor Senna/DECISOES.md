@@ -90,3 +90,9 @@
 **Decidido:** 6 meses, R$ 7.500, **11 encontros em curva decrescente** (4 semanais · 4 quinzenais · 3 mensais de 60 min) e mensagens limitadas a 3 trocas/semana nos meses 1–3 e 1/semana nos meses 4–6. A Tela-Mãe vai ao ar no encontro de venda (fase 0): **TTFV = zero**.
 **Por quê:** com a intensidade das 12 semanas esticada para 6 meses, a conta daria ~45h → R$ 167/h, **abaixo do piso de R$ 250/h** (`POLITICAS-DE-DECISAO.md` §5). A curva decrescente fecha em ~29h → R$ 255/h, e é coerente com a promessa: a mentoria leva à autonomia, e encontro semanal no mês 6 criaria dependência.
 **Descartado:** manter encontros quinzenais nos 6 meses (fura o piso) e subir o preço (o Victor decidiu o valor).
+
+### DEC-VS-17 · 13/10/2026 · Pilares da mentoria
+**Decidido:** pilares próprios em `AuraFlow/PILARES-MENTORIA.md`. ICP = quem já domina a radiestesia e **já teve a virada** de entender o AuraFlow, mas vive o dia a dia no modo antigo. Consequência: **a mentoria não se vende a frio**; aula aberta e curso são os alimentadores dela.
+**Corrigido:** a promessa *"em meses e não em anos"* saiu (prazo de transformação, `PROJETO-MARCA-PESSOAL.md` §6.1); a velocidade fica na narrativa como razão. O plano do Rick dizia "8 encontros" contra 11 da oferta; corrigido.
+**Mecanismo proposto (leitura nossa, aguarda F11):** o modo antigo de pensar é um conjunto de comandos antigos ancorados sem intenção; a mentoria os encontra no cotidiano e os troca. Sai da crença central (DEC-VS-12) e do paradoxo (DEC-VS-14).
+**Resultado do teste:** 3 de 5 (P3 e P5 abertos). Não trava a venda um a um; trava peça pública da mentoria até o P3 fechar.

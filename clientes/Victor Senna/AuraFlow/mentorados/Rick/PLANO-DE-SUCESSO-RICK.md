@@ -32,7 +32,7 @@
 
 | Victor | Rick |
 |---|---|
-| os 8 encontros, nas datas | presença |
+| os 11 encontros, nas datas | presença |
 | a sua Tela-Mãe no ar hoje, junto com você | uma linha por dia no registro da semana |
 | respostas em até 48h úteis | a tarefa de cada encontro |
 
