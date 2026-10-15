@@ -87,7 +87,15 @@ Aquela skill foi mapeada em call comercial e governa a voz do Victor **vendendo 
 |---|---|
 | `CLAUDE.md` | este kernel |
 | `PROJETO-MARCA-PESSOAL.md` | tese, ICP, mecanismo, escada low/mid, riscos e réguas de linguagem |
-| `DECISOES.md` | log de decisões, com o descartado e o porquê *(a criar)* |
+| `DECISOES.md` | log de decisões, com o descartado e o porquê |
+| `AuraFlow/PILARES.md` | os pilares do AuraFlow, em dois produtos: curso (quem opera) e Campo (consulentes) · 🟡 hipótese desde 08/10/2026 |
+| `AuraFlow/ARQUITETURA-DO-CURSO.md` | as oito camadas do curso, oferta, rito de venda, breakeven e benchmark · 🟡 hipótese desde 08/10/2026 |
+| `AuraFlow/MECANISMO-SISTEMA-DE-CRENCAS.md` | o mecanismo do curso: o sistema de crenças por trás da mecânica, One Belief e apelido · 🟡 esboço aguardando o Victor |
+| `AuraFlow/OBJECOES-E-RESPOSTAS.md` | banco de objeções ao AuraFlow com as respostas literais do Victor e a leitura de tom · ✅ vivo, alimentar a cada objeção nova |
+| `AuraFlow/BIBLIOTECA-DE-COMANDOS.md` | os comandos da Tela-Mãe e da tela de consulentes, na versão iterada · ✅ vivo |
+| `AuraFlow/MENTORIA-AURAFLOW.md` | produto C: mentoria individual, 3 fases, Onboarding Orquestrado, oferta · 🟡 piloto desde 13/10/2026 |
+| `AuraFlow/PILARES-MENTORIA.md` | os cinco pilares da mentoria, com teste (3 de 5) e mecanismo proposto · 🟡 desde 13/10/2026 |
+| `AuraFlow/mentorados/<nome>/` | plano de sucesso e registros de cada mentorado · primeiro: Rick |
 | `STATUS.md` | estado vivo *(a criar quando houver o que registrar)* |
 | `01-contexto/` | material falado dele sobre o tema, para extração de voz e de linguagem |
 
