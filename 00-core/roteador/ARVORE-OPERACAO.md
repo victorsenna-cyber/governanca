@@ -16,7 +16,7 @@ Nenhuma de entrada. ⚠️ **PDF de proposta** carrega a proposta pronta (ESCRIT
 |---|---|
 | **framework** | `100-métodos/METODO-CAMADA-DE-VER.md` · `100-métodos/METODO-ESTIMATIVA-DE-CARGA.md` |
 | **trilho** | as fases do `100-métodos/METODO-TRAFEGO-PAGO.md` (gate → projeto → objetivo → página → criativo → campanha → tracking → gestão → relatório) |
-| **método** | `100-métodos/METODO-TRAFEGO-PAGO.md` |
+| **método** | `100-métodos/METODO-TRAFEGO-PAGO.md` · `100-métodos/METODO-EDICAO-DE-VIDEO-CURTO.md` 🟡 |
 | **blueprint** | `90-templates/pdf-noturno/` · `90-templates/pdf-continuum/` · `30-comercial/trafego-clientes/<cliente>/` |
 | **política** | as três classes de PDF (`90-templates/pdf-noturno/README.md` §3-bis) · pisos e tetos de mídia do tráfego §2.2 |
 | **gate** | `00-core/COMPLIANCE-DE-OUTPUT.md` (camada de ver) · gate do método em uso |
@@ -31,6 +31,7 @@ Nenhuma de entrada. ⚠️ **PDF de proposta** carrega a proposta pronta (ESCRIT
 | gerar PDF de qualquer artefato, "manda em PDF", material diagramado para fora | 🔴 **CLASSE antes do gerador** (`90-templates/pdf-noturno/README.md` §3-bis): *"como funciona?"* → ESTRUTURA · *"por que eu faria?"* → DECISÃO · *"eu assino?"* → FORMAL — **escolhida pelo ESTADO DO LEITOR** → **classe ESTRUTURA: + `100-métodos/METODO-CAMADA-DE-VER.md`** (o diagrama é o eixo e abre o documento) **+ o exemplar da mesma classe, se existir, antes de gerar do zero** *(replay G4, 26/09: sem isto o roteador novo carregava menos que o antigo)* → gerador: entender = `pdf-noturno/` (HTML) · assinar = `pdf-continuum/` (Markdown, ⚠️ marcado para revisão) | emoji em PDF · diagrama que não seja SVG inline · CSS novo por documento · **PDF de material que não sai da casa** · classe usada para tirar as âncoras da proposta |
 | "não estou conseguindo ver", fluxograma, diagrama, BPMN, mapa de processo, cliente que não visualiza, proposta que não entra | `100-métodos/METODO-CAMADA-DE-VER.md` *(framework)* + gate em `00-core/COMPLIANCE-DE-OUTPUT.md` | artefato de decisão **sem diagrama que abre o documento** · matriz no lugar de grafo · sem losango ou sem loop · falha no teste dos 5 segundos |
 | "quanto tempo isso leva?", estimar prazo, cronograma, "cabe na semana?", dimensionar entrega | `100-métodos/METODO-ESTIMATIVA-DE-CARGA.md` *(framework — camadas A/B/C)* | **hora nossa em documento que sai da casa** · multiplicador de produção aplicado a colheita ou latência · número em proposta com calibragem `n=1` |
+| editar vídeo gravado, edição de vídeo, cortar o bruto, legenda animada, motion no vídeo, tratar áudio do vídeo, "edita esse vídeo" | `100-métodos/METODO-EDICAO-DE-VIDEO-CURTO.md` *(método — 🟡 provisório até o 1º vídeo real)* + `40-operacao-rotinas/ferramentas/edicao-video/README.md` + `30-comercial/conteudo-perfil/` | render final **sem roteiro de corte aprovado** · legenda sem conferência de nome próprio · fonte do WhatsApp como original · áudio fora de −14 LUFS ±1 · trecho que fere a régua de tom |
 | arquitetura, automação, IA, dados, segurança | `10-skills/c-level/CTO.skill.md` | — |
 | processo, entrega, SLA | `10-skills/c-level/COO.skill.md` · **"capacidade estourada" → NEGÓCIO (contratação)** | — |
 | cobrança, conciliação, rotina financeira | `10-skills/heads/head-financeiro.skill.md` | — |
@@ -41,6 +42,7 @@ Nenhuma de entrada. ⚠️ **PDF de proposta** carrega a proposta pronta (ESCRIT
 ## 4. Desempate interno
 
 - **Anúncio:** mídia (campanha, verba, CPA) → aqui · texto do anúncio → ESCRITA.
+- **Vídeo:** o que dizer e o gancho de fala → ESCRITA (módulo 06) · editar o que já foi gravado → aqui.
 - **Diagrama de proposta:** a proposta é ESCRITA; o diagrama que a abre é daqui — carregar os dois, **ESCRITA primeiro.**
 
 ---

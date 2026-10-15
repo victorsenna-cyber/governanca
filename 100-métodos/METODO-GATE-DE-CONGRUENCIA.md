@@ -67,6 +67,7 @@ Desvio declarado: nenhum  /  __
 | **`CLAUDE.md` §8 · REGRA Nº 1** | método, skill ou módulo criado **sem roteamento na mesma tarefa** |
 | **`CLAUDE.md` §10** | saída que é só análise — **sem decisão, direção, ação e impacto** |
 | **`CLAUDE.md` §11.3** | conversa externa relevante encerrada **sem registro no repo** |
+| **`CLAUDE.md` §11.6** *(15/10)* | tarefa encerrada com trabalho **fora da `main` do GitHub** · conflito resolvido **descartando uma versão** sem registro · rebase ou force-push na `main` |
 | **`CLAUDE.md` §11.5** | peça que bateu gatilho de performance e **não entrou no swipe file na mesma tarefa** |
 | 🔴 **`CLAUDE.md` §8 · REGRA Nº 2 — ESCALA** *(22/09)* | **promessa, oferta, lead ou arquitetura de funil/VSL sem referência ESCALADA registrada** (estado + sinal **+ fonte da evidência** — biblioteca, fonte de confiança da casa ou número público; ausência na biblioteca sozinha não reprova, desde 25/09) · **espaço vazio usado como estrutura principal** · peça de teste apresentada como estrutura principal da conta |
 | `METODO-ARQUEOLOGIA-DE-ICP` | cena, dor ou fala de grau **`I` em bloco de espelho** · fonte não apontável em dez segundos |
@@ -85,6 +86,7 @@ Desvio declarado: nenhum  /  __
 | `METODO-DIRECT-RESPONSE` | promessa **sem prova** que a pague · DFY **refeito por cliente** vendido a preço de produto |
 | `METODO-GERACAO-DE-RESULTADOS` | resultado no **negativo**, sem evidência, ou não específico |
 | `METODO-ESTIMATIVA-DE-CARGA` | **hora nossa em documento que sai da casa** · multiplicador de produção aplicado a **colheita ou latência** |
+| `METODO-EDICAO-DE-VIDEO-CURTO` *(15/10 · 🟡)* | render final **sem roteiro de corte aprovado pelo Victor** · legenda publicada **sem conferência de nome próprio** · fonte do WhatsApp usada como original · áudio fora de **−14 LUFS ±1** · trecho que fere a **régua de tom** (§3 do método) |
 | `METODO-TRAFEGO-PAGO` | criativo **sem hipótese escrita** · linha de matriz sem os campos obrigatórios · *(14/10)* **conjunto Meta com posicionamento automático ou fora de Instagram Stories + Reels** · **anúncio sem as duas artes** (4:5 na mídia principal, 9:16 em Stories e Reels) |
 | `METODO-TRILHO-DE-CONTA-NOVA` | etapa com **duas entradas** · pendência **sem "o que destrava"** · pedido ao cliente contendo lacuna de estrutura |
 | `copywriter-senior-continuum` | os **11 passes**; piso que vale sempre: **1 (diagnóstico) · 3 (pivô) · 10 (proibições) · 11 (procedência do espelho)** · *(12/10)* no passe 7, **informação cortada junto com o enchimento** reprova (módulo 04) |

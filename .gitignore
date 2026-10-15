@@ -52,3 +52,14 @@ service-account*.json
 *.zip
 *.mp4
 .fuse_hidden*
+
+# --- Mídia de vídeo (15/10/2026, METODO-EDICAO-DE-VIDEO-CURTO) ---
+# O bruto e o render ficam na máquina; versiona-se transcrição e roteiro.
+30-comercial/conteudo-perfil/**/*.mp4
+30-comercial/conteudo-perfil/**/*.mov
+30-comercial/conteudo-perfil/**/*.mkv
+30-comercial/conteudo-perfil/**/*.m4a
+30-comercial/conteudo-perfil/**/*.wav
+30-comercial/conteudo-perfil/**/*.png
+40-operacao-rotinas/ferramentas/edicao-video/fontes/*.ttf
+40-operacao-rotinas/ferramentas/edicao-video/fontes/*.otf
