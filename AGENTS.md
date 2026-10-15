@@ -371,7 +371,7 @@ Estrutura, formato de entrada e regra de revisão: `30-comercial/swipe-file/READ
 
 **Conflito:** `AGENTS.md` se regenera sozinho · **qualquer outro arquivo: a mescla é desfeita, nada se perde, e o conflito se resolve na hora — mantendo as duas versões quando ambas forem válidas; em arquivo de registro (`STATUS.md`, diários), acrescentando as entradas da outra ponta no fim, em ordem de data.** ~~`merge=union` nos arquivos de registro~~ *(retirado no 1º uso: duplicou o `STATUS.md` inteiro quando as pontas divergiam em fim de linha, CRLF × LF)*. Em dúvida sobre qual vale, vale a mais recente e a divergência é sinalizada (§3).
 
-**Mecanização:** hooks `SessionStart` e `Stop` do Claude Code chamando o script (`.claude/settings.json`) — **🟡 pendente de instalação pelo Victor** (a sessão na nuvem não pode instalar hook de push em si mesma). Enquanto não estiver instalado, o script roda como último ato de toda tarefa.
+**Mecanização:** hooks `SessionStart` e `Stop` do Claude Code chamando o script (`.claude/settings.json`) — **✅ instalado em 15/10/2026** (a sessão na nuvem não pode instalar hook de push em si mesma). Enquanto não estiver instalado, o script roda como último ato de toda tarefa.
 
 ### 11.4 Teste de suficiência
 
