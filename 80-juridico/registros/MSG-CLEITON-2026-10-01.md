@@ -163,7 +163,7 @@ na terça, dia 13, te dou posição de novo, antes do dia 15..
 **Fato (conferido no print do WhatsApp, 15/10 20h39):** a mensagem de 09/10 saiu às **08h53** e prometeu posição na terça 13/10. **Nada foi enviado em 13/10, e o Cleiton não responde desde 01/10 18h29**: a mensagem de 09/10 está sem resposta há 6 dias. Também confirmado: a atualização prometida para 18/09 (mensagem de 16/09) não saiu; a seguinte é de 30/09. Hoje vence a 2ª parcela (R$ 812,14); com a 1ª (R$ 1.525,86 + encargos), são dois atrasos. Recurso com data: nenhum. Prazo lido da outra parte: **31/10** ("se virar o mês").
 
 **Decisões:**
-- Reconhecer a terça perdida em uma linha, sem motivo (Regra nº 2, §4-bis.4).
+- ~~Reconhecer a terça perdida em uma linha~~ **corrigido pelo Victor, 15/10:** *"ele não me perguntou nada, sou eu quem estou abrindo conversa."* A mensagem abre como atualização espontânea (fórmula dele de 30/09, *"passando para te atualizar sobre o distrato"*), não como resposta nem como dívida de posição. **Régua:** quando a outra parte está em silêncio, a mensagem nossa abre conversa; não se desculpa por um prazo que ela não cobrou.
 - Nenhuma data de pagamento. Mantido o compromisso cumprível de 09/10 (§8): comprovante no mesmo dia, mesmo parcial.
 - Próxima posição: **terça 20/10**, "com ou sem pagamento" — cadência curta antes de 31/10, e a frase tira o incentivo de sumir quando não há dinheiro.
 - ❌ Descartado repetir "é direito dela": já dito em 09/10; repetir soa como resignação.
@@ -174,17 +174,17 @@ na terça, dia 13, te dou posição de novo, antes do dia 15..
 **Rascunho (🟡 não enviado):**
 
 ```
-Cleiton, boa noite! tudo certo por aqui.
+Cleiton, boa noite! tudo certo por aí?
 
-fiquei de te dar posição na terça e não dei.
+passando pra te atualizar sobre o distrato.
 
-hoje vence a segunda e eu sigo sem data pra regularizar as duas. não vou inventar uma.
+hoje vence a segunda parcela e sigo sem data pra regularizar as duas. não vou inventar uma.
 
 quando eu tiver como pagar, mesmo que parte, te mando o comprovante no mesmo dia.
 
-na terça, dia 20, te dou posição de novo, com ou sem pagamento..
+na terça, dia 20, te atualizo de novo, com ou sem pagamento..
 ```
 
-**Contagem (§4-bis.5):** marcadores 3 (vocativo + `!` · `tudo certo por aqui` · `..`) · omissões 2 (`sigo sem data`, `quando eu tiver como pagar`, sem motivo nem origem) · zero justificativa.
+**Contagem (§4-bis.5):** marcadores 3 (vocativo + `!` · `tudo certo por aí?` · `..`) · omissões 2 (`sigo sem data`, `quando eu tiver como pagar`, sem motivo nem origem) · zero justificativa.
 
 **Próximo passo, dono Victor:** enviar hoje · criar lembrete para 20/10 · colar aqui a resposta literal do Cleiton, com hora · pendentes de 01/10 seguem abertos (aditivo no repo, vencimento antecipado, Viviane).
