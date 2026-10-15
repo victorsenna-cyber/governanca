@@ -67,6 +67,7 @@ Desvio declarado: nenhum  /  __
 | **`CLAUDE.md` §8 · REGRA Nº 1** | método, skill ou módulo criado **sem roteamento na mesma tarefa** |
 | **`CLAUDE.md` §10** | saída que é só análise — **sem decisão, direção, ação e impacto** |
 | **`CLAUDE.md` §11.3** | conversa externa relevante encerrada **sem registro no repo** |
+| **`CLAUDE.md` §11.6** *(15/10)* | tarefa encerrada com trabalho **fora da `main` do GitHub** · conflito resolvido **descartando uma versão** sem registro · rebase ou force-push na `main` |
 | **`CLAUDE.md` §11.5** | peça que bateu gatilho de performance e **não entrou no swipe file na mesma tarefa** |
 | 🔴 **`CLAUDE.md` §8 · REGRA Nº 2 — ESCALA** *(22/09)* | **promessa, oferta, lead ou arquitetura de funil/VSL sem referência ESCALADA registrada** (estado + sinal **+ fonte da evidência** — biblioteca, fonte de confiança da casa ou número público; ausência na biblioteca sozinha não reprova, desde 25/09) · **espaço vazio usado como estrutura principal** · peça de teste apresentada como estrutura principal da conta |
 | `METODO-ARQUEOLOGIA-DE-ICP` | cena, dor ou fala de grau **`I` em bloco de espelho** · fonte não apontável em dez segundos |

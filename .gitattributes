@@ -1,0 +1,8 @@
+# .gitattributes — CLAUDE.md §11.6 (sincronia git, 15/10/2026)
+# Arquivos de registro que crescem por acréscimo: em conflito de mescla, o git junta
+# as duas pontas (merge=union) em vez de parar. Nunca perde linha; pode repetir
+# uma linha editada dos dois lados — conferir depois de mescla grande.
+STATUS.md                     merge=union
+**/DIARIO-DE-BORDO.md         merge=union
+**/REGISTRO.md                merge=union
+**/STATUS-CODEX.md            merge=union
