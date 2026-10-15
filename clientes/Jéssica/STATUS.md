@@ -1,8 +1,9 @@
 # STATUS.md — Jéssica Oliveira · Ladies Fluency
 
 > STATUS: VIGENTE · fonte única do estado operacional desta conta
-> Estado verificado em: **12/08/2026**, pós-call de 11/08 e janela de WhatsApp de 12/08 · America/Sao_Paulo
-> Próxima revisão obrigatória: **18/08/2026**, na entrega da página do evento
+> Estado verificado em: **13/10/2026**, com as três URLs conferidas no ar · America/Sao_Paulo
+> Próxima revisão obrigatória: **no dia em que as páginas forem publicadas**, e de novo no anúncio da data do evento (novembro)
+> 🔴 **Leia o §13 primeiro.** Os §0 a §12 são histórico, e parte do que afirmam sobre as páginas estava errada (CORR-030).
 > Regra: fato desconhecido permanece `A CONFIRMAR`. Data sem ano não entra neste arquivo.
 
 ---
@@ -266,3 +267,105 @@ O número **funcionava com 12 dígitos** — o Victor abriu a conversa e caiu ce
 | **English Therapy** | nome confirmado · turma 1 vendida na sala, início em fevereiro · perfil troca de nome em fevereiro |
 | **Pendências dela** | preço e início da turma · data e local em novembro · capacidade · **houve compra para 17/10?** |
 | **Pendências nossas** | posts do evento (EV-01, EV-12, anúncio e espaço) ajustados à pré-venda · pacote do Codex: fatos promovidos em DEC-024 e DEC-025, eixo 13 aguarda audição |
+
+---
+
+## 13. ⭐ ESTADO EM 13/10/2026 — o que vale hoje
+
+### 13.1 O P0: nada do que construímos está no ar como o repositório diz
+
+| Página | No repositório | 🔴 Em produção (conferido na URL, 13/10 17h04) |
+|---|---|---|
+| **P1 · inglês** `jessica-emotional-speaking.vercel.app` | corrigida em 19/08: popup, número com nono dígito, planilha | **deploy de 11/08.** `isPreview: true`, número de 12 dígitos, **zero gatilhos de popup** |
+| **P2 · português** `jessica-portugues-brasileiro.vercel.app` | corrigida em 19/08 | **deploy de 11/08.** 7 ocorrências de *"preview"* no HTML, sem botão para o WhatsApp |
+| **P3 · evento** | atualizada em 27/09 para janeiro e pré-venda | **nunca publicada.** Não existe projeto na Vercel |
+
+**Consequência:** nenhuma das três páginas registrou um lead desde 06/08, e a pré-venda está aberta desde 22/09 **sem página para mandar ninguém**. Detalhe e régua em `DECISOES.md`, CORR-2026-10-13-030.
+
+🔴 **Decisão do Victor, 13/10, noite: as três páginas vão para o domínio dela, na Hostinger, sem Vercel** (DEC-032). O login na Vercel foi feito, e o caminho mudou mesmo assim.
+
+**O que destrava:** subir os três zips de `hostinger/` para a `public_html` do domínio dela e extrair. Passo a passo e gate em `DEPLOY-HOSTINGER.md`. As páginas ficam em `/ingles/`, `/portuguese/` e `/experience/`; **nada entra na raiz do domínio**.
+
+~~`npx vercel login` e `bash publicar-paginas.sh`~~ *(caminho de 13/10 à tarde, substituído; o script fica na conta, sem uso)*
+
+**O domínio dela não está registrado em nenhum arquivo desta conta.** Entra em `DEPLOY-HOSTINGER.md` quando for usado.
+
+Conferido antes, e de novo no pacote (as três pastas servidas localmente, todos os arquivos respondendo): as três páginas renderizam em 1440 e 390 px sem estouro · nenhuma ocorrência de 17/10, outubro, Casa Viva ou "15 vagas" na página do evento · os dois links do InfinitePay respondem · o endpoint da planilha grava (`?teste=1` devolveu `ok`).
+
+**Depois de publicar:** preencher o popup uma vez em cada página e ver a linha cair na aba certa (item 2b do §10, aberto desde 19/08) · mandar a mensagem 2 com o link.
+
+### 13.2 O que a call de 22/09 pediu, e onde está
+
+| Combinado na call | Fonte | Estado em 13/10 |
+|---|---|---|
+| plano integrado com os novos rumos | [15:34:01], [15:39:51] *"semana que vem"* | ✅ plano rev. 4 em PDF (27/09) · ✅ **plano de divulgação de 16 semanas** em PDF (13/10) · 🔴 **nenhum dos dois tem registro de envio** |
+| página: só a cidade, sem local, sem limite de vagas | [15:35:27] a [15:36:27] | ✅ feito no repositório (27/09) · 🔴 **não publicado** |
+| ela começa a divulgação quando receber o planejamento | [15:39:34] | ⬜ espera o envio |
+| três posts por semana | [15:35:03] | ✅ calendário versão 2 (DEC-026) |
+| trazer mais sobre o funil de resposta direta, e a proposta | [15:36:33], [15:38:27] | ✅ explicação em PDF · 🟡 **proposta: veredito é não propor agora** (DEC-029, aguarda o Victor) |
+| Victor verifica o espaço com a geodésica | [15:32:27] | ✅ **visto: está "abandonada"** (Victor, 13/10). Descartado como opção. Falta dizer a ela |
+| Victor descobre o local do último evento do Jon | [15:33:08] | ⬜ **ainda não visto** (Victor, 13/10: *"vou ver e integro"*) |
+
+### 13.3 Evento
+
+| Campo | Estado |
+|---|---|
+| Data | janeiro de 2027 · preferência dela: 20/01, quarta · **fecha em novembro** |
+| Local | em aberto: Casa Viva (cerca de 10 com conforto) ou o espaço alternativo com deck, ainda não visitado inteiro |
+| Preço | **R$ 147 até domingo, 29/11 · R$ 197 a partir de 30/11** (DEC-025) |
+| Vagas | sem número até o local existir (DEC-024) |
+| Vendas da pré-venda | **A CONFIRMAR.** Ninguém perguntou desde 22/09 |
+| Compra para a data antiga (17/10) | **A CONFIRMAR.** Aberto desde 22/09 |
+| O que se vende na sala | **English Therapy, turma 1** (DEC-028) · preço e início: 🟡 proposta de R$ 4.997 e semana de 22/02, a confirmar com ela |
+
+### 13.4 Gate da conta (primeira vez que roda)
+
+| Artefato | Estado |
+|---|---|
+| `PILARES.md` | **4 de 5 para o evento** (reprova só o P5) · 🔴 **a turma reprova no P4** |
+| `lexico-icp/` | 34 frases grau `D` (15 depoimentos originais) · 86 grau `R` · **zero fala de quem ainda não comprou** |
+| `benchmark-dr/` | 19 referências de inglês; nenhuma escalada na classe de promessa dela |
+
+**Efeito prático:** peça pública do evento está liberada. Peça que venda a turma, não.
+
+### 13.5 Pendências, por dono
+
+**Do Victor**
+1. 🔴 Subir os três zips de `hostinger/` no Gerenciador de Arquivos do domínio dela e rodar o gate do `DEPLOY-HOSTINGER.md`. Depois, dizer o domínio, para redirecionarmos os dois endereços antigos da Vercel.
+2. Editar e enviar as quatro mensagens (`MENSAGENS-JESSICA-2026-10-13.md`) com os dois PDFs de `entregas-cliente/`.
+3. Decidir a DEC-029 (funil: não propor agora, ou a alternativa do diagnóstico pago).
+4. Ver o local do último evento do Jon e integrar aqui. A geodésica já foi vista e descartada.
+5. ~~Dizer se os 32 posts de agosto e o PDF rev. 4 chegaram a ser enviados a ela.~~ ✅ **Respondido em 13/10:** *"não enviei nada a ela ainda."* **Leitura nossa:** nem os posts nem o PDF rev. 4 chegaram a ela; o plano de divulgação de 13/10 é o primeiro material que ela recebe desde a call. O rev. 4 não segue junto: ainda cita *Lapidação* e não tem a revisão 7.
+
+**Dela**
+1. As cinco respostas da mensagem 3: compras (data antiga e pré-venda) · preço e início da turma · capacidade do espaço · autorização de nome nos depoimentos · receita mensal.
+2. Data e local, em novembro.
+3. Conferir quatro aberturas de post (EV-06, EV-07, EV-16, EV-C3) e toda frase em inglês.
+4. Encaminhar os prints das respostas ao EV-06.
+
+**Nossas, com data**
+| Quando | O quê |
+|---|---|
+| no anúncio da data | atualizar o `CONFIG` da página · entregar as semanas 8 a 16 do calendário · levar a ela a frase *"boa parte empreende"* da página (DEC-027) · comunicar o limite de escopo (PROP-031) |
+| **seg. 30/11** | `loteVigente: 1` na página do evento |
+| 14 dias antes do evento | primeiro ensaio do pitch |
+| 7 dias depois | leitura de resultado |
+| semana de 01/02/2027 | conversa de proposta do funil, se a DEC-029 for confirmada |
+
+### 13.6 O que foi feito em 13/10, em uma tabela
+
+| Entrega | Onde |
+|---|---|
+| Teste de pilares | `PILARES.md` |
+| Léxico do ICP, com procedência | `lexico-icp/` (BANCO, FONTES, LACUNAS, `_bruto/`) |
+| Levantamento de ofertas de inglês | `benchmark-dr/LEVANTAMENTO-OFERTAS-INGLES-2026-10-13.md` |
+| Calendário e posts do evento, versão 2 | `conteudo-instagram/` |
+| Plano de divulgação para ela, 19 páginas | `entregas-cliente/Plano-de-Divulgacao-Ladies-Fluency-Experience.pdf` |
+| Explicação do funil para ela, 4 páginas | `entregas-cliente/Funil-de-Resposta-Direta-Jessica.pdf` |
+| Folha interna da proposta | `dr/FOLHA-INTERNA-DR-2026-10-13.md` |
+| Mensagens para o grupo | `MENSAGENS-JESSICA-2026-10-13.md` |
+| Pacote de upload para a Hostinger (3 zips + manifesto) | `hostinger/` · `montar-hostinger.py` · `DEPLOY-HOSTINGER.md` |
+| ~~Script de publicação na Vercel~~ | `publicar-paginas.sh` (substituído no mesmo dia, DEC-032) |
+| Pacote do Codex de 22/09 | 🟢 promovido e fechado (`execução Codex/call-2026-09-22/`) |
+
+**Fontes:** `DECISOES.md` DEC-026 a PROP-031 · `DIARIO-DE-BORDO.md` · call de 22/09/2026

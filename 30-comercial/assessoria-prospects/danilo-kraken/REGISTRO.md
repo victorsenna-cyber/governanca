@@ -2121,6 +2121,117 @@ Ele perguntou: ✅ *"Talvez exista alguma plataforma de venda que ajude com isso
 
 ---
 
+## 8-vicies-sexies. 09/10 · PDF de apresentação do escopo gerado (NÃO ENVIADO)
+
+> **Origem:** `BRIEF-PDF-ESCOPO-2026-10-09.md` (decisões do Victor em chat, 09/10/2026), executado no Claude Code CLI.
+> 🔴 **Status: 🟡 pronto, não enviado.** Envio só com OK do Victor.
+
+### CAMADA 1 · Fatos
+
+| | |
+|---|---|
+| **Arquivos** | `PDF-ESCOPO-KRAKEN-2026-10-09.pdf` (6 páginas) · fonte `PDF-ESCOPO-KRAKEN-2026-10-09.html`, nesta pasta |
+| **Classe e gerador** | ESTRUTURA · `90-templates/pdf-noturno/` · o HTML liga direto em `../../../90-templates/pdf-noturno/noturno.css`, **sem cópia e sem CSS novo** (só o `<style>` interno de cada SVG, que é a exceção do README §4) |
+| **Escopo e preço** | o da mensagem de 24/09 · **R$ 6.500, que aparece duas vezes (capa e página 4) e é o único número em reais** · parcelamento **não aparece** |
+| **Páginas** | 1 capa (*"A casa arrumada para quando as vendas baterem na porta"*) · 2 o mapa inteiro (duas trilhas que se encontram na abertura das vendas) · 3 o dia da abertura (as seis tarefas, sem × com a casa arrumada) · 4 o que entra (cinco acesas dentro do repositório, duas apagadas *"quando tiver tração"*, uma linha por item) · 5 a lista de espera (post e grupos → página → formulário → mapa por região → tamanho do lote) · 6 nosso × de vocês × o que não promete |
+| **Render** | conferido página a página em PNG (PyMuPDF): seis páginas, nenhuma caixa preta no SVG, nenhuma síntese órfã, nada estourando |
+
+### CAMADA 2 · Decisões e o porquê
+
+**Gates da seção 2 do brief, contados por script sobre o texto do PDF** (o rodapé *"Continuum AI Systems"* da folha canônica foi excluído da contagem):
+
+| Gate | Resultado |
+|---|---|
+| travessão · aspas curvas · emoji | 0 · 0 · 0 |
+| frase iniciada em *"Eu"* | 0 |
+| `%`, margem, retorno, breakeven, lucro | 0 |
+| CBA, CBM, regulamento | 0 |
+| negociação (proposta, versão, ontem, terceira, anterior, correção) | 0 |
+| 12x, vezes, parcela | 0 *(*"parcelado"* aparece só como meio de pagamento da loja, que é requisito dele)* |
+| datas | nenhuma para o produto. A trilha termina em *"quando a Kraken liberar"* / *"quando vocês liberarem"* |
+| Kraken × nós | **17 : 2** (8,5 : 1), contando *Kraken* e *vocês* contra *nós*, *nosso* e *Continuum*. As duas menções a nós são *"nosso"* na página 6 |
+
+**Escolhas de construção que o brief não fixava (conferir antes de enviar):**
+
+| Escolha | Por quê |
+|---|---|
+| a capa leva três números: **R$ 6.500 · 5 peças · 1 lista curta** | o *"1 lista curta"* responde na capa à restrição dele (espaço mental), antes do primeiro parágrafo |
+| o brief pedia *"a lista dele, 18/09 16h05"* como fonte do gráfico 2. **A frase literal não entrou**; a legenda diz *"as seis tarefas são as que a Kraken apontou como necessárias para o lançamento"* | citar áudio de 18/09 puxa a negociação para dentro do documento (Régua 4). A procedência fica neste registro |
+| a nota fiscal entra como **"emitida pelo sistema, já testada"**, e a página 3 tem uma nota: *é a ponta mais delicada, testada primeiro, de ponta a ponta* | §8-vicies: a NF-e é a ponta frágil. Prometer automação total sem o teste é prometer o que ainda não foi pilotado |
+| acerto com parceiro, lado *"com"*: **"parceiro marcado em cada pedido"**, e não link de afiliado | mapa de corte de 23/09: o link automático saiu; a primeira versão identifica o parceiro no pedido. As regras dos parceiros em documento ficam apagadas, *"quando tiver tração"* |
+| direção do book: **"de conteúdo: cor e forma ficam com quem faz o book"** | inventário §1: direção visual não temos e não é nossa |
+| a lista curta tem **seis itens**, sem *"quem está fazendo o book"* | segue o brief §5, que é posterior à mensagem de 24/09 (que tinha sete) |
+| escala na página 6: *"o público do Logger é nichado, e a estrutura foi desenhada para esse tamanho"*, **sem a citação de 15/09** | mesma razão da Régua 4 |
+| página 5, nenhuma fala de competidor | léxico do público tem uma fala `D` só. O medo do lote às cegas entra como legenda (*"produzir sabendo quantos querem, e onde"*), sem citar |
+
+**Descartado:** citar o Tony Granjo ou a Mitsubishi como prova na página do Logger (o PDF descreve a estrutura e não é a página); mencionar a ideia do ranking (guardada para reabertura, §8-vicies-quater).
+
+**Ambiente (para quem regenerar):** o WeasyPrint não está instalado no Windows. Roda no WSL Ubuntu: `~/.local/bin/uvx --from weasyprint weasyprint <html> <pdf>`, com Lato e TeX Gyre Pagella instaladas em `~/.local/share/fonts/continuum/` nesta tarefa. Raster para conferência: PyMuPDF no Python do Windows.
+
+### CAMADA 3 · Tom e conduta
+
+- O documento é **para o próprio cliente** (árvore ESCRITA, não trava em pilares) e fala em voz da casa, com a Kraken no centro. **Metáfora de preparo abre e fecha** (`voz-victor` §10.1); o fecho é *"Quando as vendas baterem na porta, a casa já está arrumada."*, **sem pedido e sem prazo.**
+- 🔴 **Continua valendo a conduta do §8-vicies-quinquies:** depois do 5º toque, só ele reabre. **Não há resposta dele registrada depois de 23/09, 21h14.** Se o PDF sair sem ele ter voltado, sai acompanhado de algo útil e nunca como lembrete (`CULTURA.md` §8). Decisão do momento: Victor.
+
+### CAMADA 4 · Mensagens
+
+Nenhuma enviada nesta tarefa. Nenhum texto de envio foi redigido.
+
+### 🎯 Próximo passo e dono
+
+| | |
+|---|---|
+| ler o PDF e dar OK, ou apontar o ajuste | **Victor** |
+| decidir **quando** e **com o quê** o PDF sai (ele voltou? sinal no Instagram? material útil junto?) | **Victor** |
+| 🟡 pendente herdado: divergência `STATUS` §6.7 A1 (23/09 × 24/09). **O PDF assume a de 24/09**, como o brief | **Victor** |
+
+### 🔁 Revisão 1 · 09/10, pedido do Victor
+
+> *"ao invés de 'cai no colo de quem produz o sistema', fazer algo que não soe chantagem. quero que altere a headline.. nada que soe o que está soando. remova o preço da primeira página"*
+
+| Antes | Depois |
+|---|---|
+| headline *"A casa arrumada para quando as vendas baterem na porta"* | **"A estrutura de venda do Logger, pronta antes da abertura"** |
+| capa com três números, R$ 6.500 incluído | capa com dois: **5 peças · 1 lista curta**. **O preço aparece só na página 4** |
+| gráfico 2: *"sem / com a casa arrumada"* · *"tudo no colo de quem fez o produto, na semana do lançamento"* (caixa em destaque laranja) | **"feito na semana da abertura / montado antes da abertura"** · *"seis tarefas feitas à mão, ao mesmo tempo que o produto sai"* (caixa neutra) · do outro lado, *"tudo no sistema, desde a primeira venda"* |
+| destaque da página 3: *"Nenhuma dessas tarefas some. Elas mudam de lugar"* + *"chegam para a mesma pessoa que acabou de desenvolver o produto"* | **"As seis tarefas existem de qualquer jeito. O que muda é quando são resolvidas."** Sem a pessoa como alvo |
+| página 2: *"a de baixo já chegou à porta"* | *"a de baixo já está funcionando"* |
+| fecho: *"Quando as vendas baterem na porta, a casa já está arrumada."* | **"Quando a Kraken liberar o Logger, a venda já está pronta para acontecer."** |
+
+⭐ **Régua que sai daqui:** a metáfora de preparo (`voz-victor` §10.1), **impressa num documento que o cliente lê sozinho, soa como cobrança.** Na mensagem, a voz e o contexto amaciam a imagem. No papel, *"casa arrumada"* implica casa desarrumada, e *"no colo de quem fez o produto"* aponta para a pessoa. **Em PDF para o cliente, o custo de não fazer se descreve pelo momento em que a tarefa é resolvida, nunca pelo peso que ela põe em alguém.** 🟡 Ainda não propagada para o `voz-victor` nem para o README do pdf-noturno. **Decisão: Victor.**
+
+Gates recontados depois da revisão: travessão, aspas curvas e emoji continuam em 0 · *casa*, *colo* e *porta* em 0 · R$ só na página 4.
+
+---
+
+## 8-vicies-septies. 09/10 · 6º toque planejado: o ranking na frente, o PDF junto (NÃO ENVIADO)
+
+### CAMADA 1 · Fatos
+- **Victor, 09/10:** *"Danilo não me enviou nada desde a minha última mensagem.. planeje bem e faça a mensagem para enviar para ele.. quero mandar áudio ou texto mesmo"*
+- Última mensagem nossa: áudio de 27/09 (§8-vicies-quinquies). Última fala dele: 23/09, 21h14. **Doze dias de silêncio depois do 5º toque.**
+
+### CAMADA 2 · Decisões e o porquê
+- 🔴 **O §8-vicies-quinquies dizia "depois deste, só ele reabre".** O Victor decidiu reabrir. A régua que sobra é a do §8-vicies-quater: **reabrir só com material novo e útil.** Dos três candidatos, o 1 (loja isolada, 24/09) e o 2 (custo da inação em tempo, 27/09) já foram usados. **Sobra o 3, o ranking** (§8-vicies-ter), que nunca foi entregue.
+- **O ranking abre, o PDF vem em segundo.** Sozinho, o PDF seria a oferta de 24/09 em outra forma, e isso é lembrete. É a condição do brief do PDF, §7.
+- **Âncora:** a fala dele de 23/09, 19h17, *"quer ver o amigo usando"*. O ranking responde ao mecanismo de compra que ele mesmo descreveu.
+- **Da ideia, entrega-se o quê e o cuidado com os organizadores. O como fica com o trabalho.**
+- **Áudio recomendado** e texto como plano B. Abertura direta na ideia, porque não há fato novo dele para pressupor o momento (REGRA Nº 8 exige motivo específico e verdadeiro). Antes de gravar, olhar o Instagram: se houver lote ou pré-venda, **esta mensagem não serve**.
+- **Descartado:** perguntar qualquer coisa · repetir preço · *"casa arrumada"* · CBA/CBM · *"sem compromisso"* · a hipótese do Kraken Admin.
+
+### CAMADA 3 · Tom e conduta
+Entusiasmo pela ideia, não pela venda. Uma ideia, um cuidado, o PDF com uma linha e mais nada. **Fecho sem pergunta.**
+
+### CAMADA 4 · Mensagem
+Roteiro do áudio, versão em texto, troca de abertura e o que fazer depois: `MSG-DANILO-2026-10-09-RANKING-PDF.md`. 🟡 **Não enviado.** Confirmar envio, formato e horário.
+
+### 🎯 Próximo passo e dono
+| | |
+|---|---|
+| olhar o Instagram, escolher áudio ou texto e enviar | **Victor** |
+| se ele não responder, **não existe 7º toque.** Só ele reabre, ou o Instagram mostrando lote | **Victor** |
+
+---
+
 ## 9. Próximo passo
 
 > 🔴 **SUPERADO pelo §8-terdecies (15/09/2026).** O próximo passo não é mais "retomar pela guerra narrativa": a conversa está aberta, quente e com escopo declarado. **O próximo passo é nomear, precificar e iniciar o Mapa da Ordem · Núcleo.**
@@ -2143,3 +2254,25 @@ A call foi proposta para **segunda, 03/08/2026, 14h**, e **não há registro de 
 ---
 *Aberto 30/07/2026. Diagnóstico do site é leitura direta da fonte (krakenrally.com.br, lido 30/07). Diagnóstico narrativo é análise nossa a partir do relato do Victor sobre a conversa de café. §8-quinquies é leitura de quatro capturas do feed público em 09/08/2026, com fato e interpretação separados. Nada validado com o Danilo.*
 *Atualizado 09/08/2026 — integração da leitura do Instagram (Chronus, Kraken Admin, comentário parado, prova social) e marcação do próximo passo como aberto.*
+
+---
+
+### §8-vicies-octies · 10/10/2026 — ele voltou, e a conversa reabriu leve
+
+**Fatos e mensagens literais (print do WhatsApp, 10/10):**
+- 12h12–12h13 · Victor: três áudios (0:03, 0:20, 0:11). Conteúdo não transcrito.
+- 17h10 · Danilo: *"Fala aí!"* · *"Foi massa demais, nunca tinha andado de utv"* (Victor reagiu com ❤️)
+- 17h11 · Danilo: *"Está indo bem. Desenvolvimento de hardware é mais lento, dependemos da logística de fabricacao e entrega de cada parte"*
+- 17h26 · Victor: *"nossa hahaha, imagino! eu já tive um fusca meio baja.. curto demais todo esse role"* · *"sim.. cada iteração é como conversar com IA por correio hahahah"*
+
+**Leitura (não fato):** primeira resposta desde 23/09. O tom é pessoal e leve, e ele mesmo trouxe o estado do produto: está lento, preso na fabricação. **A regra do "não existe 7º toque" deixou de valer: foi ele quem reabriu.**
+
+**Decisão (CEO, 10/10):** a ideia do ranking vai **agora, sozinha**, ancorada na frase dele sobre o hardware. **O PDF fica para a resposta dele à ideia.** Dois motivos: (1) mandar o escopo com preço logo depois de ele dizer que o produto atrasou soa como "já que está parado, compra"; (2) **A1 continua sem decisão do Victor** (loja enxuta × R$ 6.500 com repositório), e o PDF carrega uma das duas direções. Se o PDF for, vai o `novo.pdf` (revisado em 09/10, sem "casa arrumada"), renomeado para `Kraken - Estrutura de venda do Logger.pdf`.
+
+**Descartado:** a abertura *"montei aqui um ponto pra você ver, que pode ser que não tenha pensado ainda"* — "montei um ponto" anuncia documento e "que não tenha pensado" presume falta dele. Trocada por âncora na fala dele.
+
+**Próximo passo, dono Victor:** enviar a ideia; se ele responder à ideia, conversar sobre ela e só depois o PDF; decidir A1 antes do PDF.
+
+**🔴 Correção, mesmo dia (10/10):** ~~"a ideia do ranking vai agora, sozinha"~~ — **o ranking já foi enviado em 23/09, 19h14** (print do Victor: *"Tive uma ideia e queria saber se vocês já fazem algo assim. Uma competição à parte…"*), seguido de áudio dele (19h17, 1:42), da oferta simplificada (20h09–20h11) e de áudio dele (20h23). O `MSG-DANILO-2026-10-09-RANKING-PDF.md` §1 dizia *"é o único material de reabertura ainda não usado"* e **estava errado**; eu repeti o erro sem conferir a conversa. **Régua:** antes de propor material de reabertura, conferir no print/conversa o que já foi dito, não só no registro.
+
+**Decisão corrigida:** todo o material comercial já foi dito (oferta, simplificação, ranking); o PDF é a oferta de 23–24/09 em visual, e mandá-lo agora é lembrete. **Não enviar o rascunho nem o PDF.** A conversa de hoje é pessoal e ele reabriu: deixar respirar. PDF só se ele falar em lote, pré-venda ou loja. Energia comercial de outubro vai para Renata e Cauê.

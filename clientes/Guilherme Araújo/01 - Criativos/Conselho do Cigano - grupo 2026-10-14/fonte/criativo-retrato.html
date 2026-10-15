@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Conselho do Cigano · linha retrato · v1</title>
+<!-- Uso: criativo-retrato.html?f=feed|story  ·  feed = 1080x1350, story = 1080x1920
+     Modelo de estrutura: 960-referências criativos / "WhatsApp Image 2026-10-12 at 16.21.43 (6).jpeg" (R19)
+     (retrato em tela cheia, etiqueta inclinada em degradê, cartão branco com título e assinatura,
+     cartão escuro com borda em degradê e o valor em destaque, pílula com a nota).
+     Foto: 05 - design e criativos/fotos Guilherme/WhatsApp Image 2026-09-07 at 03.17.26.jpeg (copiada como foto-gui-cartas.jpg).
+     Degradê girado do magenta/laranja da referência para o dourado/vermelho do Guilherme. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Lexend:wght@600;800&display=block" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 100%; height: 100%; overflow: hidden; }
+  body { background: #120A0A; font-family: "Plus Jakarta Sans", sans-serif; -webkit-font-smoothing: antialiased; text-align: center; color: #fff; }
+  .foto { position: absolute; left: 0; width: 1080px; height: 1620px; background: url("foto-gui-cartas.jpg") center top / cover no-repeat; }
+  .story .foto { top: -44px; }
+  .feed .foto { top: -170px; }
+  .sombra { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(18,10,10,0) 0%, rgba(18,10,10,0) 42%, rgba(18,10,10,.55) 60%, rgba(18,10,10,.92) 76%, #120A0A 88%); }
+  .feed .sombra { background: linear-gradient(180deg, rgba(18,10,10,0) 0%, rgba(18,10,10,0) 38%, rgba(18,10,10,.6) 58%, rgba(18,10,10,.94) 72%, #120A0A 84%); }
+
+  .pilha { position: absolute; left: 0; right: 0; display: flex; flex-direction: column; align-items: center; }
+  .story .pilha { top: 890px; }
+  .feed .pilha { top: 760px; }
+
+  .etiqueta {
+    transform: rotate(-3deg); padding: 10px 34px 14px;
+    background: linear-gradient(90deg, #E3122A 0%, #F07A1E 60%, #F6B73C 100%);
+    font-family: "Lexend", sans-serif; font-weight: 800; font-size: 60px; letter-spacing: -.01em; line-height: 1.1;
+    box-shadow: 0 8px 30px rgba(0,0,0,.35);
+  }
+  .cartao {
+    margin-top: 30px; width: 800px; padding: 26px 30px 24px; border-radius: 18px; background: #FFFFFF; color: #111;
+  }
+  .cartao h2 { font-weight: 700; font-size: 44px; letter-spacing: -.02em; line-height: 1.1; }
+  .cartao p { margin-top: 8px; font-weight: 500; font-size: 32px; color: #A3122A; }
+  .valor {
+    margin-top: 30px; width: 620px; padding: 22px 30px 26px; border-radius: 18px; background: #0E0909;
+    border: 3px solid transparent;
+    background-image: linear-gradient(#0E0909, #0E0909), linear-gradient(90deg, #E3122A, #F6B73C);
+    background-origin: border-box; background-clip: padding-box, border-box;
+    box-shadow: 0 0 34px rgba(240,100,40,.45);
+  }
+  .valor small { display: block; font-weight: 500; font-size: 30px; color: rgba(255,255,255,.88); }
+  .valor strong {
+    display: block; margin-top: 4px; font-family: "Lexend", sans-serif; font-weight: 800; font-size: 92px; line-height: 1; letter-spacing: -.02em;
+    background: linear-gradient(90deg, #E3122A 0%, #F07A1E 55%, #F6B73C 100%); -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
+  .nota {
+    margin-top: 28px; padding: 14px 40px 16px; border-radius: 40px;
+    background: linear-gradient(90deg, #7A0F22 0%, #C2271E 100%);
+    font-weight: 700; font-size: 25px; line-height: 1.3;
+  }
+  .cta { margin-top: 30px; font-weight: 800; font-size: 34px; letter-spacing: -.01em; }
+  .cta span { color: #F6B73C; }
+
+  .feed .etiqueta { font-size: 50px; }
+  .feed .cartao { margin-top: 22px; width: 760px; padding: 20px 26px 18px; }
+  .feed .cartao h2 { font-size: 40px; }
+  .feed .cartao p { font-size: 29px; }
+  .feed .valor { margin-top: 22px; padding: 16px 26px 20px; }
+  .feed .valor small { font-size: 27px; }
+  .feed .valor strong { font-size: 76px; }
+  .feed .nota { margin-top: 20px; font-size: 23px; padding: 12px 34px 14px; }
+  .feed .cta { margin-top: 22px; font-size: 30px; }
+</style>
+</head>
+<body>
+<div class="foto"></div>
+<div class="sombra"></div>
+<div class="pilha">
+  <div class="etiqueta">SÓ EM OUTUBRO:</div>
+  <div class="cartao"><h2>Conselho do Cigano</h2><p>Com Guilherme Araújo</p></div>
+  <div class="valor"><small>Entrada no grupo:</small><strong>GRATUITA</strong></div>
+  <div class="nota">Um vídeo para o seu signo, com o que fazer<br>na semana em vendas, clientes e dinheiro.</div>
+  <div class="cta">Responda o quiz e entre no grupo <span>&rarr;</span></div>
+</div>
+<script>
+  const q = new URLSearchParams(location.search);
+  document.body.classList.add(q.get("f") === "story" ? "story" : "feed");
+</script>
+</body>
+</html>

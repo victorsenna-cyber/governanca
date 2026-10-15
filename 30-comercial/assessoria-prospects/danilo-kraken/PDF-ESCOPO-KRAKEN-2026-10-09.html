@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<!--
+  PDF de escopo · Kraken · 09/10/2026 · classe ESTRUTURA (pdf-noturno README §3-bis)
+  Brief: BRIEF-PDF-ESCOPO-2026-10-09.md · gerador: 90-templates/pdf-noturno/noturno.css (sem CSS novo)
+  Render: python3 -m weasyprint PDF-ESCOPO-KRAKEN-2026-10-09.html PDF-ESCOPO-KRAKEN-2026-10-09.pdf
+-->
+<html lang="pt-BR">
+<head><meta charset="utf-8"><title>Kraken · Estrutura de venda do Logger</title>
+<link rel="stylesheet" href="../../../90-templates/pdf-noturno/noturno.css">
+</head>
+<body>
+
+<!-- ========== 1 · CAPA ========== -->
+<div class="capa">
+  <div class="kicker">KRAKEN · ESTRUTURA DE VENDA DO LOGGER</div>
+  <h1>A estrutura de venda do Logger, pronta antes da abertura</h1>
+  <p class="lead">O que a Kraken recebe para vender o Logger: a loja, a página, a lista de espera e a marca, montadas enquanto o produto termina de ficar pronto.</p>
+
+  <div class="numeros">
+    <div class="col"><span class="n">5</span><span class="lbl">peças montadas antes da abertura das vendas</span></div>
+    <div class="col"><span class="n">1</span><span class="lbl">lista curta de informações pedida à Kraken</span></div>
+  </div>
+
+  <div class="rodape">Documento de estrutura · outubro de 2026</div>
+</div>
+
+<!-- ========== 2 · O MAPA INTEIRO ========== -->
+<h1>O mapa inteiro</h1>
+<p class="sub">Duas trilhas. A de cima é da Kraken e anda no ritmo do produto. A de baixo é a estrutura de venda, e cada página seguinte detalha uma parte dela.</p>
+
+<svg class="fluxo" viewBox="0 0 700 278" xmlns="http://www.w3.org/2000/svg">
+<style>
+  .bx  { fill:#2b2b30; stroke:#44444b; stroke-width:1; }
+  .bxo { fill:#3a2f2b; stroke:#96684f; stroke-width:1.3; }
+  .bxg { fill:#26302b; stroke:#4f7358; stroke-width:1.2; }
+  .bxd { fill:#242429; stroke:#3c3c43; stroke-width:1; stroke-dasharray:3 3; }
+  .tx  { font-family:Lato; font-size:12.5px; fill:#e2dfdb; text-anchor:middle; }
+  .txb { font-family:Lato; font-size:12px; font-weight:bold; fill:#f2efec; text-anchor:middle; }
+  .txs { font-family:Lato; font-size:9.5px; fill:#98948f; text-anchor:middle; }
+  .txh { font-family:Lato; font-size:9px; font-weight:bold; letter-spacing:1.6px; fill:#e9a183; }
+  .ln  { stroke:#6b6864; stroke-width:1.3; fill:none; }
+</style>
+  <defs><marker id="ar1" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto">
+    <path d="M0,0 L7,3 L0,6 z" fill="#6b6864"/></marker></defs>
+
+  <!-- trilha de cima: Kraken -->
+  <text class="txh" x="14" y="20">KRAKEN · O PRODUTO</text>
+  <rect class="bx" x="14" y="32" width="130" height="44" rx="5"/>
+  <text class="tx" x="79" y="59">Testes</text>
+  <rect class="bx" x="174" y="32" width="130" height="44" rx="5"/>
+  <text class="tx" x="239" y="59">Validação</text>
+  <rect class="bx" x="334" y="32" width="130" height="44" rx="5"/>
+  <text class="tx" x="399" y="59">Lote</text>
+  <path class="ln" marker-end="url(#ar1)" d="M144,54 L170,54"/>
+  <path class="ln" marker-end="url(#ar1)" d="M304,54 L330,54"/>
+  <path class="ln" marker-end="url(#ar1)" d="M464,54 L612,54 L612,118"/>
+
+  <!-- faixa do meio -->
+  <rect class="bxd" x="14" y="120" width="490" height="40" rx="5"/>
+  <text class="txs" x="259" y="144">as duas trilhas andam ao mesmo tempo, e uma não espera a outra</text>
+
+  <!-- o nó de encontro -->
+  <rect class="bxo" x="532" y="122" width="160" height="58" rx="5"/>
+  <text class="txb" x="612" y="146">ABERTURA</text>
+  <text class="txb" x="612" y="161">DAS VENDAS</text>
+  <text class="txs" x="612" y="175">quando a Kraken liberar</text>
+
+  <!-- trilha de baixo: estrutura de venda -->
+  <text class="txh" x="14" y="202">A ESTRUTURA DE VENDA</text>
+  <rect class="bxg" x="14" y="214" width="112" height="56" rx="5"/>
+  <text class="txb" x="70" y="238">Loja</text>
+  <text class="txs" x="70" y="254">montada e testada</text>
+  <rect class="bxg" x="140" y="214" width="112" height="56" rx="5"/>
+  <text class="txb" x="196" y="238">Página</text>
+  <text class="txs" x="196" y="254">do Logger</text>
+  <rect class="bxg" x="266" y="214" width="112" height="56" rx="5"/>
+  <text class="txb" x="322" y="238">Lista de espera</text>
+  <text class="txs" x="322" y="254">captando</text>
+  <rect class="bxg" x="392" y="214" width="112" height="56" rx="5"/>
+  <text class="txb" x="448" y="238">Marca</text>
+  <text class="txs" x="448" y="254">no repositório</text>
+  <path class="ln" marker-end="url(#ar1)" d="M126,242 L136,242"/>
+  <path class="ln" marker-end="url(#ar1)" d="M252,242 L262,242"/>
+  <path class="ln" marker-end="url(#ar1)" d="M378,242 L388,242"/>
+  <path class="ln" marker-end="url(#ar1)" d="M504,242 L612,242 L612,184"/>
+</svg>
+<p class="legenda-fluxo">A estrutura anda junto e não espera o produto.</p>
+
+<p>Nada na trilha de baixo pede que o Logger esteja pronto. Pede que ele exista numa página, com preço, frete e nota resolvidos, e com gente esperando por ele. <strong>Quando a trilha de cima chegar ao lote, a de baixo já está funcionando.</strong></p>
+
+<div class="destaque">
+  <span class="lead">O mapa não tem datas, e é de propósito.</span>
+  <p>A data é da trilha de cima. A abertura das vendas acontece quando a Kraken liberar, e a estrutura fica pronta antes disso, sem ocupar a cabeça de quem está terminando o produto.</p>
+</div>
+
+<!-- ========== 3 · O DIA DA ABERTURA ========== -->
+<div class="page-break"></div>
+<h1>O dia da abertura</h1>
+<p class="sub">As mesmas seis tarefas nas duas colunas. O que muda é onde cada uma cai.</p>
+
+<svg class="fluxo" viewBox="0 0 700 372" xmlns="http://www.w3.org/2000/svg">
+<style>
+  .bx  { fill:#2b2b30; stroke:#44444b; stroke-width:1; }
+  .bxo { fill:#3a2f2b; stroke:#96684f; stroke-width:1.3; }
+  .bxg { fill:#26302b; stroke:#4f7358; stroke-width:1.2; }
+  .bxd { fill:#242429; stroke:#3c3c43; stroke-width:1; stroke-dasharray:3 3; }
+  .tx  { font-family:Lato; font-size:11.5px; fill:#e2dfdb; text-anchor:middle; }
+  .txt { font-family:Lato; font-size:11.5px; font-weight:bold; fill:#f2efec; }
+  .txs { font-family:Lato; font-size:9.5px; fill:#98948f; text-anchor:middle; }
+  .txh { font-family:Lato; font-size:9px; font-weight:bold; letter-spacing:1.6px; fill:#e9a183; text-anchor:middle; }
+</style>
+  <!-- cabeçalhos -->
+  <text class="txh" x="320" y="18">FEITO NA SEMANA DA ABERTURA</text>
+  <text class="txh" x="571" y="18">MONTADO ANTES DA ABERTURA</text>
+
+  <!-- linha 1 -->
+  <text class="txt" x="14" y="56">Link de pagamento</text>
+  <rect class="bxd" x="200" y="32" width="240" height="38" rx="5"/>
+  <text class="tx" x="320" y="56">gerado um a um, pedido a pedido</text>
+  <rect class="bxg" x="456" y="32" width="230" height="38" rx="5"/>
+  <text class="tx" x="571" y="56">PIX e parcelado no checkout</text>
+
+  <!-- linha 2 -->
+  <text class="txt" x="14" y="102">Nota fiscal</text>
+  <rect class="bxd" x="200" y="78" width="240" height="38" rx="5"/>
+  <text class="tx" x="320" y="102">emitida à mão, venda por venda</text>
+  <rect class="bxg" x="456" y="78" width="230" height="38" rx="5"/>
+  <text class="tx" x="571" y="102">emitida pelo sistema, já testada</text>
+
+  <!-- linha 3 -->
+  <text class="txt" x="14" y="148">Frete</text>
+  <rect class="bxd" x="200" y="124" width="240" height="38" rx="5"/>
+  <text class="tx" x="320" y="148">calculado e respondido na conversa</text>
+  <rect class="bxg" x="456" y="124" width="230" height="38" rx="5"/>
+  <text class="tx" x="571" y="148">calculado no carrinho</text>
+
+  <!-- linha 4 -->
+  <text class="txt" x="14" y="194">Etiqueta</text>
+  <rect class="bxd" x="200" y="170" width="240" height="38" rx="5"/>
+  <text class="tx" x="320" y="194">montada à mão para cada envio</text>
+  <rect class="bxg" x="456" y="170" width="230" height="38" rx="5"/>
+  <text class="tx" x="571" y="194">gerada junto com o pedido</text>
+
+  <!-- linha 5 -->
+  <text class="txt" x="14" y="240">Acerto com parceiro</text>
+  <rect class="bxd" x="200" y="216" width="240" height="38" rx="5"/>
+  <text class="tx" x="320" y="240">levantado à mão no fim do mês</text>
+  <rect class="bxg" x="456" y="216" width="230" height="38" rx="5"/>
+  <text class="tx" x="571" y="240">parceiro marcado em cada pedido</text>
+
+  <!-- linha 6 -->
+  <text class="txt" x="14" y="286">Tamanho do lote</text>
+  <rect class="bxd" x="200" y="262" width="240" height="38" rx="5"/>
+  <text class="tx" x="320" y="286">decidido sem saber a demanda</text>
+  <rect class="bxg" x="456" y="262" width="230" height="38" rx="5"/>
+  <text class="tx" x="571" y="286">lido na lista de espera</text>
+
+  <!-- onde tudo cai -->
+  <rect class="bx" x="200" y="316" width="240" height="46" rx="5"/>
+  <text class="tx" x="320" y="336">seis tarefas feitas à mão,</text>
+  <text class="txs" x="320" y="352">ao mesmo tempo que o produto sai</text>
+  <rect class="bxg" x="456" y="316" width="230" height="46" rx="5"/>
+  <text class="tx" x="571" y="336">tudo no sistema,</text>
+  <text class="txs" x="571" y="352">desde a primeira venda</text>
+</svg>
+<p class="legenda-fluxo">As seis tarefas são as que a Kraken apontou como necessárias para o lançamento.</p>
+
+<div class="destaque">
+  <span class="lead">As seis tarefas existem de qualquer jeito. O que muda é quando são resolvidas.</span>
+  <p>Toda venda passa por elas, com ou sem estrutura. <strong>Montadas antes, já estão no sistema quando a primeira venda acontece</strong>, em plataforma pronta, sem código sob medida, e testadas antes de entrar no ar.</p>
+</div>
+
+<div class="nota"><strong>A ponta mais delicada é a nota fiscal.</strong> Por isso ela é a primeira a ser testada, de ponta a ponta, do pagamento à nota emitida, antes de qualquer acabamento da loja.</div>
+
+<!-- ========== 4 · O QUE ENTRA ========== -->
+<div class="page-break"></div>
+<h1>O que entra</h1>
+<p class="sub">Cinco peças acesas, montadas agora. Duas apagadas, que esperam tração.</p>
+
+<svg class="fluxo" viewBox="0 0 700 292" xmlns="http://www.w3.org/2000/svg">
+<style>
+  .ct  { fill:#232327; stroke:#96684f; stroke-width:1.3; }
+  .bxg { fill:#26302b; stroke:#4f7358; stroke-width:1.2; }
+  .bxd { fill:#222226; stroke:#3c3c43; stroke-width:1; stroke-dasharray:3 3; }
+  .txb { font-family:Lato; font-size:12px; font-weight:bold; fill:#f2efec; text-anchor:middle; letter-spacing:0.6px; }
+  .txs { font-family:Lato; font-size:9.8px; fill:#a8a49f; text-anchor:middle; }
+  .txh { font-family:Lato; font-size:9px; font-weight:bold; letter-spacing:1.6px; fill:#e9a183; }
+  .txf { font-family:Lato; font-size:11px; fill:#6e6b68; text-anchor:middle; }
+  .txfh { font-family:Lato; font-size:9px; font-weight:bold; letter-spacing:1.6px; fill:#6e6b68; }
+</style>
+  <!-- o repositório envolve as cinco -->
+  <rect class="ct" x="8" y="8" width="684" height="196" rx="7"/>
+  <text class="txh" x="24" y="30">REPOSITÓRIO EXCLUSIVO DA KRAKEN</text>
+
+  <rect class="bxg" x="24" y="42" width="206" height="68" rx="5"/>
+  <text class="txb" x="127" y="64">LOJA</text>
+  <text class="txs" x="127" y="82">PIX, parcelado, nota,</text>
+  <text class="txs" x="127" y="96">frete e etiqueta</text>
+
+  <rect class="bxg" x="247" y="42" width="206" height="68" rx="5"/>
+  <text class="txb" x="350" y="64">PÁGINA DO LOGGER</text>
+  <text class="txs" x="350" y="82">para o competidor</text>
+  <text class="txs" x="350" y="96">que fica no esporte</text>
+
+  <rect class="bxg" x="470" y="42" width="206" height="68" rx="5"/>
+  <text class="txb" x="573" y="64">LISTA DE ESPERA</text>
+  <text class="txs" x="573" y="82">captando antes</text>
+  <text class="txs" x="573" y="96">do lote sair</text>
+
+  <rect class="bxg" x="24" y="122" width="652" height="68" rx="5"/>
+  <text class="txb" x="350" y="144">MARCA</text>
+  <text class="txs" x="350" y="162">posicionamento · direção para o book · para quem o Logger é</text>
+  <text class="txs" x="350" y="176">a promessa · por que ele mede melhor que o celular · a história da Kraken</text>
+
+  <!-- apagadas -->
+  <text class="txfh" x="24" y="232">QUANDO TIVER TRAÇÃO</text>
+  <rect class="bxd" x="24" y="242" width="318" height="40" rx="5"/>
+  <text class="txf" x="183" y="266">Regras dos parceiros em documento</text>
+  <rect class="bxd" x="358" y="242" width="318" height="40" rx="5"/>
+  <text class="txf" x="517" y="266">Plano de receita</text>
+</svg>
+
+<table>
+  <tr><th style="width:24%">Peça</th><th>O que é</th></tr>
+  <tr><td><strong>Loja</strong></td><td>montada e testada em plataforma pronta, só com integrações: <strong>PIX no valor base, parcelado, nota fiscal, frete calculado e etiqueta.</strong></td></tr>
+  <tr><td><strong>Página do Logger</strong></td><td>escrita para o competidor que fica no esporte, sobre o que o Logger faz e o que ele já mostrou em competição.</td></tr>
+  <tr><td><strong>Lista de espera</strong></td><td>página e formulário captando interessados antes do lote sair. O caminho inteiro está na próxima página.</td></tr>
+  <tr><td><strong>Marca</strong></td><td>posicionamento, direção para quem faz o book, para quem o Logger é, a promessa, por que ele mede melhor que o celular e a história da Kraken. <strong>A direção do book é de conteúdo:</strong> cor e forma ficam com quem faz o book.</td></tr>
+  <tr><td><strong>Repositório exclusivo</strong></td><td>tudo isso num lugar só, da Kraken. Quem usar IA para trabalhar aponta para ele e mantém o mesmo padrão quando entrar o cabo, outro equipamento ou uma página nova.</td></tr>
+  <tr><td class="muted">Quando tiver tração</td><td class="muted">regras dos parceiros em documento e plano de receita. Entram depois sem refazer nada do que está aceso.</td></tr>
+</table>
+
+<p class="ancora">Tudo o que está aceso: <span>R$ 6.500</span></p>
+
+<!-- ========== 5 · A LISTA DE ESPERA ========== -->
+<div class="page-break"></div>
+<h1>A lista de espera</h1>
+<p class="sub">O caminho de quem vê o Logger pela primeira vez até virar parte do tamanho do lote.</p>
+
+<svg class="fluxo" viewBox="0 0 700 180" xmlns="http://www.w3.org/2000/svg">
+<style>
+  .bx  { fill:#2b2b30; stroke:#44444b; stroke-width:1; }
+  .bxo { fill:#3a2f2b; stroke:#96684f; stroke-width:1.3; }
+  .bxg { fill:#26302b; stroke:#4f7358; stroke-width:1.2; }
+  .bxd { fill:#242429; stroke:#3c3c43; stroke-width:1; stroke-dasharray:3 3; }
+  .tx  { font-family:Lato; font-size:12px; fill:#e2dfdb; text-anchor:middle; }
+  .txb { font-family:Lato; font-size:12px; font-weight:bold; fill:#f2efec; text-anchor:middle; }
+  .txs { font-family:Lato; font-size:9.5px; fill:#98948f; text-anchor:middle; }
+  .ln  { stroke:#6b6864; stroke-width:1.3; fill:none; }
+  .lnd { stroke:#57544f; stroke-width:1.1; fill:none; stroke-dasharray:4 3; }
+</style>
+  <defs><marker id="ar4" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto">
+    <path d="M0,0 L7,3 L0,6 z" fill="#6b6864"/></marker></defs>
+
+  <rect class="bx" x="2" y="14" width="120" height="70" rx="5"/>
+  <text class="tx" x="62" y="45">Post e grupos</text>
+  <text class="tx" x="62" y="61">de WhatsApp</text>
+
+  <rect class="bx" x="146" y="14" width="120" height="70" rx="5"/>
+  <text class="tx" x="206" y="45">Página</text>
+  <text class="tx" x="206" y="61">da lista</text>
+
+  <rect class="bxo" x="290" y="14" width="120" height="70" rx="5"/>
+  <text class="txb" x="350" y="53">Formulário</text>
+
+  <rect class="bx" x="434" y="14" width="120" height="70" rx="5"/>
+  <text class="tx" x="494" y="45">Mapa de demanda</text>
+  <text class="tx" x="494" y="61">por região</text>
+
+  <rect class="bxg" x="578" y="14" width="120" height="70" rx="5"/>
+  <text class="txb" x="638" y="45">Tamanho</text>
+  <text class="txb" x="638" y="61">do lote</text>
+
+  <path class="ln" marker-end="url(#ar4)" d="M122,49 L142,49"/>
+  <path class="ln" marker-end="url(#ar4)" d="M266,49 L286,49"/>
+  <path class="ln" marker-end="url(#ar4)" d="M410,49 L430,49"/>
+  <path class="ln" marker-end="url(#ar4)" d="M554,49 L574,49"/>
+
+  <!-- as duas perguntas -->
+  <path class="lnd" d="M350,86 L350,112"/>
+  <rect class="bxd" x="150" y="114" width="400" height="58" rx="5"/>
+  <text class="txs" x="350" y="134">DUAS PERGUNTAS, E SÓ DUAS</text>
+  <text class="tx" x="350" y="152">qual equipamento usa hoje</text>
+  <text class="tx" x="350" y="166">em que campeonato e região corre</text>
+
+</svg>
+<p class="legenda-fluxo">Produzir sabendo quantos querem, e onde.</p>
+
+<table>
+  <tr><th style="width:30%">Pergunta</th><th>O que ela mostra</th></tr>
+  <tr><td><strong>Qual equipamento usa hoje</strong></td><td>de onde a pessoa vem, e o que o Logger precisa fazer melhor do que aquilo que ela já tem na mão.</td></tr>
+  <tr><td><strong>Em que campeonato e região corre</strong></td><td>onde a demanda está. Somadas, as respostas viram um mapa por região, e o mapa vira o tamanho do lote.</td></tr>
+</table>
+
+<div class="destaque">
+  <span class="lead">A lista começa a trabalhar antes do produto.</span>
+  <p>Ela capta sem depender do Logger estar pronto, e não promete data a quem entra. O que ela garante a quem se inscreve é <strong>saber primeiro quando o lote abrir.</strong> O que ela garante à Kraken é chegar ao lote com um número na mão, e não com uma estimativa.</p>
+</div>
+
+<!-- ========== 6 · NOSSO × DE VOCÊS × O QUE NÃO PROMETE ========== -->
+<div class="page-break"></div>
+<h1>O que é nosso, o que é de vocês, e o que este documento não promete</h1>
+<p class="sub">Do lado da Kraken, o que se pede cabe em duas coisas: uma lista e uma revisão.</p>
+
+<table>
+  <tr><th style="width:68%">O que</th><th>De quem</th></tr>
+  <tr><td>loja, página do Logger, lista de espera, marca e repositório, montados e testados</td><td>nosso</td></tr>
+  <tr><td><strong>a lista curta de informações, logo abaixo</strong></td><td><strong>de vocês</strong></td></tr>
+  <tr><td><strong>uma revisão de congruência:</strong> conferir se a página diz o que o Logger de fato faz e entrega</td><td><strong>de vocês</strong></td></tr>
+</table>
+
+<h3>A lista curta</h3>
+<ul>
+  <li>garantia e prazo de entrega</li>
+  <li>unidades por lote e condição da pré-venda</li>
+  <li>fotos, peso e medidas do Logger embalado</li>
+  <li>conta de recebimento e quem emite a nota</li>
+  <li>origem do envio e quem despacha</li>
+  <li><strong>quem do lado de vocês usaria o repositório, e com que ferramenta</strong></li>
+</ul>
+
+<h2>O que este documento não promete</h2>
+<p><strong>Data de lançamento.</strong> A trilha do produto é da Kraken e termina quando vocês liberarem.</p>
+<p><strong>Volume de venda.</strong> Quanto se vende só se sabe com o produto na loja e gente na lista.</p>
+<p><strong>Escala.</strong> O público do Logger é nichado, e a estrutura foi desenhada para esse tamanho.</p>
+<p>O que ele mostra é como a venda fica montada, peça por peça, para que nada disso precise ser resolvido na semana da abertura.</p>
+
+<p class="ancora">Quando a Kraken liberar o Logger, <span>a venda já está pronta para acontecer.</span></p>
+
+</body></html>

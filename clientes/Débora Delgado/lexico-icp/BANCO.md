@@ -20,7 +20,9 @@
 
 > ⭐ **Achado ao abrir este banco: esta conta já tinha grau `D` e ninguém tinha classificado assim.** As entrevistas que a Débora conduziu com sete líderes em 24/07/2026 são o ICP falando diretamente, com transcrição na íntegra. **O ativo existia havia sete semanas, parado.**
 >
-> ⚠️ **Ressalva de verificação:** o arquivo de extração lista *"Victor"* entre os sete entrevistados. **Confirmar se é o Victor da Continuum** — se for, as falas continuam valendo como `D` (ele lidera gente de fato), mas precisam de marcação, porque ICP que é sócio da agência não é evidência independente.
+> ~~⚠️ **Ressalva de verificação:** o arquivo de extração lista *"Victor"* entre os sete entrevistados. **Confirmar se é o Victor da Continuum** — se for, as falas continuam valendo como `D` (ele lidera gente de fato), mas precisam de marcação, porque ICP que é sócio da agência não é evidência independente.~~
+>
+> ✅ **Resolvido em 12/10/2026 (Victor, Parada 1 da rodada `vsl/2026-10-11/`):** *"líder Victor registrado não sou eu."* **O entrevistado de 24/07 é um terceiro, homônimo.** As falas `DD-LEX-01` a `-06` e `-22` são grau `D` de evidência independente, sem ressalva.
 
 ---
 
@@ -30,7 +32,7 @@
 
 | ID | Frase literal | Grau | Fonte |
 |---|---|---|---|
-| `DD-LEX-01` | *"quando você não consegue confiar na pessoa... **você se sente traído**"* | `D` | entrevista, líder Victor ⚠️, 24/07 |
+| `DD-LEX-01` | *"quando você não consegue confiar na pessoa... **você se sente traído**"* | `D` | entrevista, líder Victor (homônimo, não é o da Continuum — ✅ 12/10), 24/07 |
 | `DD-LEX-02` | *"**você confiou e perdeu**"* | `D` | idem |
 | `DD-LEX-03` | *"pequenas atitudes vão criando um monstro... **um montinho de areia que vira um montão**"* | `D` | idem |
 | `DD-LEX-04` | *"**chegou no dia de entregar e não entregou**... mostra que ela não liga pro que você tá falando"* | `D` | idem |
@@ -61,7 +63,7 @@
 
 | ID | Frase literal | Grau | Fonte |
 |---|---|---|---|
-| `DD-LEX-22` | *"**transparência é difícil de exercer, na teoria é bonito**"* | `D` | líder Victor ⚠️, 24/07 |
+| `DD-LEX-22` | *"**transparência é difícil de exercer, na teoria é bonito**"* | `D` | líder Victor (homônimo, não é o da Continuum — ✅ 12/10), 24/07 |
 | ⚠️ | **lacuna real.** Não há objeção de compra colhida em grau `D`. O que existe é dificuldade declarada, que é outra coisa | — | ver `LACUNAS.md` |
 
 ### Balde `cena e rotina` — 🔴 **o balde onde a invenção mora**

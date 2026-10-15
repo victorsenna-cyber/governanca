@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Conselho do Cigano · linha lisa · v2</title>
+<!-- Uso: criativo-liso.html?f=feed|story  ·  feed = 1080x1350, story = 1080x1920
+     Modelo de estrutura: 960-referências criativos / "WhatsApp Image 2026-10-07 at 18.46.08 (1).jpeg" e "(2).jpeg" (R03/R04)
+     (tela clara lisa, etiqueta preta no topo como o texto com fundo do Instagram, parágrafos em negrito centralizados).
+     Template-base: clientes/Paola Lopes Rosa/03 - criativos/2026-10-12-teste-01/fonte/criativo-liso.html -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@700;800&family=Noto+Color+Emoji&display=block" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 100%; height: 100%; overflow: hidden; }
+  body {
+    position: relative; color: #0B0B0B;
+    font-family: "Figtree", "Segoe UI", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    background: linear-gradient(180deg, #E4E4E4 0%, #F6F6F6 7%, #FFFFFF 17%, #FFFFFF 66%, #F2F2F2 80%, #DADADA 100%);
+  }
+  .quadro {
+    position: absolute; inset: 0;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    text-align: center;
+  }
+  .feed  .quadro { padding: 0 80px; }
+  .story .quadro { padding: 0 80px 250px; }
+
+  /* etiqueta: texto com fundo, uma caixa por linha, cantos unidos */
+  .etiqueta { position: relative; font-weight: 800; font-size: 53px; line-height: 1.26; letter-spacing: -.005em; }
+  .etiqueta .fundo { position: absolute; inset: 0; filter: url(#une); }
+  .etiqueta span {
+    padding: 7px 20px 9px; border-radius: 14px;
+    -webkit-box-decoration-break: clone; box-decoration-break: clone;
+  }
+  .etiqueta .fundo span { background: #000; color: transparent; }
+  .etiqueta .texto { position: relative; }
+  .etiqueta .texto span { color: #fff; }
+
+  .corpo { margin-top: 80px; font-weight: 800; font-size: 47px; line-height: 1.19; letter-spacing: -.004em; max-width: 920px; text-wrap: pretty; }
+  .corpo p + p { margin-top: 46px; }
+  .feed .etiqueta { font-size: 47px; }
+  .feed .corpo { margin-top: 52px; font-size: 40px; max-width: 900px; }
+  .feed .corpo p + p { margin-top: 34px; }
+  .mao { margin-top: 10px; font-family: "Noto Color Emoji", "Segoe UI Emoji", sans-serif; font-size: 44px; line-height: 1; }
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <filter id="une"><feGaussianBlur in="SourceGraphic" stdDeviation="5"/><feColorMatrix values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 22 -10"/></filter>
+</svg>
+
+<div class="quadro">
+  <div class="etiqueta">
+    <div class="fundo"><span id="e1"></span></div>
+    <div class="texto"><span id="e2"></span></div>
+  </div>
+  <div class="corpo" id="corpo"></div>
+  <div class="mao">👇🏽</div>
+</div>
+
+<script>
+  const ETIQUETA = "E se outubro fosse o mês de<br>romper o seu teto financeiro?";
+  const CORPO = [
+    "Abri um grupo para quem trabalha com terapias, mentorias ou cartomancia e sente que o faturamento ainda não acompanha o tamanho do trabalho.",
+    "Durante outubro, eu mando um conselho em vídeo para o seu signo, no Tarô e no Baralho Cigano. Cada elemento recebe o que fazer e que ações pôr em prática naquela semana.",
+    "(Não é previsão. É direção para vendas, clientes, dinheiro, posicionamento e decisões.)",
+    "O grupo é gratuito durante outubro. Responda o quiz e entre no grupo."
+  ];
+  const q = new URLSearchParams(location.search);
+  document.body.classList.add(q.get("f") === "story" ? "story" : "feed");
+  document.getElementById("e1").innerHTML = ETIQUETA;
+  document.getElementById("e2").innerHTML = ETIQUETA;
+  document.getElementById("corpo").innerHTML = CORPO.map(t => "<p>" + t + "</p>").join("");
+</script>
+</body>
+</html>

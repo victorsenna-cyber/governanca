@@ -10,7 +10,6 @@ Uma operação, igual no local (Windows) e na nuvem (sessão web, branch claude/
   4. publica: HEAD → main  (e HEAD → a própria branch, se não for a main)
 
 Conflitos:
-  STATUS.md e diários → resolvidos sozinhos (.gitattributes: merge=union, junta as duas pontas)
   AGENTS.md           → resolvido sozinho (é gerado: regenera do CLAUDE.md mesclado)
   qualquer outro      → a mescla é desfeita, nada se perde, e o conflito é reportado
 
@@ -68,7 +67,7 @@ def mesclar_main():
     r = git("merge", "--no-edit", "-q", "origin/main", ok=True)
     if r.returncode == 0:
         return []
-    conflitos = [l for l in git("diff", "--name-only", "--diff-filter=U").stdout.splitlines() if l]
+    conflitos = [l for l in git("-c", "core.quotepath=false", "diff", "--name-only", "--diff-filter=U").stdout.splitlines() if l]
     duros = [f for f in conflitos if f not in AUTO]
     if duros:
         git("merge", "--abort", ok=True)

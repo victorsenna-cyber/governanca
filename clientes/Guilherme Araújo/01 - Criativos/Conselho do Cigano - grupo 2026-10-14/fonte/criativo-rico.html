@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Conselho do Cigano · linha rica · v2</title>
+<!-- Uso: criativo-rico.html?f=feed|story  ·  feed = 1080x1350, story = 1080x1920
+     Modelo de estrutura: 960-referências criativos / "WhatsApp Image 2026-10-12 at 16.21.43 (1).jpeg" (R14)
+     (fundo escuro com brilho, título em duas vozes, grade 2x2 com ícone, assinatura e rodapé).
+     Template-base: clientes/Paola Lopes Rosa/03 - criativos/2026-10-12-teste-01/fonte/criativo-rico.html
+     Paleta girada para a do Guilherme: base #030712, dourado âmbar (#FFBF00), brilho vinho (#EC1129). -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&family=Inter+Tight:wght@400;500;700&family=Cormorant+Garamond:wght@500;600&display=block" rel="stylesheet">
+<style>
+  :root {
+    --base: #07060B;
+    --ouro-escuro: #B07A1E;
+    --ouro: #E2B254;
+    --ouro-claro: #FBE7B5;
+    --branco: #F8F5EE;
+    --traco: #E2B254;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 100%; height: 100%; overflow: hidden; }
+  body {
+    position: relative;
+    color: var(--branco);
+    font-family: "Inter Tight", "Segoe UI", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    background:
+      radial-gradient(120% 60% at 108% 86%, rgba(150, 18, 40, .70) 0%, rgba(96, 14, 34, .36) 34%, rgba(7, 6, 11, 0) 66%),
+      radial-gradient(70% 46% at 104% 100%, rgba(196, 120, 30, .42) 0%, rgba(7, 6, 11, 0) 70%),
+      radial-gradient(90% 52% at -12% 36%, rgba(92, 20, 46, .62) 0%, rgba(7, 6, 11, 0) 68%),
+      linear-gradient(180deg, #09070C 0%, #07060B 46%, #12070C 100%);
+  }
+  .grao { position: absolute; inset: 0; opacity: .05; mix-blend-mode: overlay; pointer-events: none; }
+
+  .quadro { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; }
+  .feed  .quadro { padding: 70px 78px 64px; }
+  .story .quadro { padding: 250px 78px 340px; }
+
+  .topo, .rodape {
+    width: 100%; display: flex; justify-content: space-between; align-items: center;
+    font-family: "Montserrat", sans-serif; font-weight: 500;
+    font-size: 19px; letter-spacing: .14em; text-transform: uppercase; color: rgba(248, 245, 238, .82);
+  }
+  .topo svg { width: 46px; height: 46px; }
+  .rodape .seta { font-size: 30px; letter-spacing: 0; color: var(--branco); }
+  .rodape b { font-weight: 700; color: var(--ouro-claro); }
+
+  h1 {
+    margin-top: 50px; text-align: center;
+    font-family: "Montserrat", sans-serif; text-transform: uppercase;
+    font-size: 59px; line-height: 1.07;
+  }
+  .feed h1 { margin-top: 40px; font-size: 56px; }
+  h1 .a {
+    display: block; font-weight: 800; letter-spacing: -.012em;
+    background: linear-gradient(100deg, var(--ouro-escuro) 0%, var(--ouro-claro) 34%, var(--ouro) 58%, var(--ouro-claro) 82%, var(--ouro-escuro) 100%);
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
+  h1 .b { display: block; font-weight: 400; letter-spacing: -.005em; color: var(--branco); margin-top: 6px; }
+
+  .ponte {
+    margin-top: 34px; max-width: 860px; text-align: center;
+    font-size: 29px; line-height: 1.3; font-weight: 400; color: rgba(248, 245, 238, .9); text-wrap: balance;
+  }
+  .ponte b { font-weight: 700; color: var(--ouro-claro); }
+  .feed .ponte { margin-top: 26px; font-size: 28px; }
+
+  .grade {
+    position: relative; margin-top: 56px; width: 880px;
+    display: grid; grid-template-columns: 1fr 1fr; column-gap: 0; row-gap: 0;
+  }
+  .feed .grade { margin-top: 40px; }
+  .grade::before, .grade::after { content: ""; position: absolute; }
+  .grade::before {
+    left: 50%; top: 6px; bottom: 6px; width: 2px; transform: translateX(-1px);
+    background: linear-gradient(180deg, #F2C66B 0%, #E2B254 48%, #D2455C 100%); opacity: .8;
+  }
+  .grade::after {
+    top: 50%; left: 8%; right: 8%; height: 2px; transform: translateY(-1px);
+    background: linear-gradient(90deg, #D2455C 0%, #E2B254 50%, #F2C66B 100%); opacity: .8;
+  }
+  .q { display: flex; flex-direction: column; align-items: center; text-align: center; padding: 0 30px; }
+  .q:nth-child(-n+2) { padding-bottom: 40px; }
+  .q:nth-child(n+3)  { padding-top: 40px; }
+  .feed .q:nth-child(-n+2) { padding-bottom: 34px; }
+  .feed .q:nth-child(n+3)  { padding-top: 34px; }
+  .q svg { width: 88px; height: 88px; }
+  .q h2 {
+    margin-top: 20px;
+    font-family: "Inter Tight", sans-serif; font-weight: 700; text-transform: uppercase;
+    font-size: 36px; line-height: 1; letter-spacing: -.02em;
+    background: linear-gradient(100deg, var(--ouro-escuro) 0%, var(--ouro-claro) 45%, var(--ouro) 100%);
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
+  .q i { display: block; width: 184px; height: 2px; margin: 18px 0 20px; background: rgba(248, 245, 238, .75); }
+  .q p { font-size: 28px; line-height: 1.17; font-weight: 500; letter-spacing: -.005em; color: var(--branco); max-width: 370px; }
+  .feed .q svg { width: 78px; height: 78px; }
+  .feed .q h2 { margin-top: 16px; font-size: 32px; }
+  .feed .q i { margin: 14px 0 16px; }
+  .feed .q p { font-size: 27px; }
+
+  .marca {
+    margin-top: auto; padding: 9px 4px 7px;
+    border-top: 2px solid rgba(248, 245, 238, .85); border-bottom: 2px solid rgba(248, 245, 238, .85);
+    font-family: "Cormorant Garamond", Georgia, serif; font-weight: 600;
+    font-size: 40px; line-height: 1; letter-spacing: .06em; font-variant: small-caps; color: var(--branco);
+  }
+  .grade { margin-bottom: 44px; }
+  .feed .grade { margin-bottom: 30px; }
+  .rodape { margin-top: 36px; }
+  .feed .rodape { margin-top: 30px; }
+  /* story: conteúdo cabe entre 13% e 82% da altura (zona livre da Meta) */
+  .story h1 { margin-top: 34px; }
+  .story .ponte { margin-top: 24px; }
+  .story .grade { margin-top: 36px; margin-bottom: 30px; }
+  .story .q:nth-child(-n+2) { padding-bottom: 30px; }
+  .story .q:nth-child(n+3)  { padding-top: 30px; }
+  .story .rodape { margin-top: 26px; }
+</style>
+</head>
+<body>
+<svg class="grao" aria-hidden="true"><filter id="n"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" stitchTiles="stitch"/></filter><rect width="100%" height="100%" filter="url(#n)"/></svg>
+
+<div class="quadro">
+  <div class="topo">
+    <span>Guilherme Araújo · Tarô e Baralho Cigano</span>
+    <!-- estrela de oito pontas -->
+    <svg viewBox="0 0 46 46" fill="none" stroke="#F8F5EE" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true">
+      <path d="M23 2l4.6 11.9L39.3 8.7l-5.2 11.7L46 23l-11.9 4.6 5.2 11.7-11.7-5.2L23 44l-4.6-11.9-11.7 5.2 5.2-11.7L0 23l11.9-4.6L6.7 8.7l11.7 5.2z" transform="translate(1.5 1.5) scale(.935)"/>
+      <circle cx="23" cy="23" r="4.2"/>
+    </svg>
+  </div>
+
+  <h1><span class="a">E se outubro<br>fosse o mês…</span><span class="b">de romper o seu<br>teto financeiro?</span></h1>
+  <p class="ponte">Para quem trabalha com <b>terapias, mentorias ou cartomancia</b> e sente que o faturamento ainda não acompanha o tamanho do trabalho.<br><b>Não é previsão. É direcionamento profissional:</b></p>
+
+  <div class="grade">
+    <div class="q">
+      <!-- duas cartas -->
+      <svg viewBox="0 0 88 88" fill="none" stroke="#E2B254" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <circle cx="44" cy="44" r="41"/>
+        <rect x="24" y="27" width="22" height="34" rx="3" transform="rotate(-12 35 44)"/>
+        <rect x="42" y="25" width="22" height="34" rx="3" transform="rotate(9 53 42)"/>
+        <path d="M53 36l2.2 4.4 4.8.7-3.5 3.4.8 4.8-4.3-2.3-4.3 2.3.8-4.8-3.5-3.4 4.8-.7z" transform="rotate(9 53 42)"/>
+      </svg>
+      <h2>O conselho</h2><i></i>
+      <p>Um vídeo para o<br>seu signo, no Tarô e<br>no Baralho Cigano.</p>
+    </div>
+    <div class="q">
+      <!-- bússola -->
+      <svg viewBox="0 0 88 88" fill="none" stroke="#E2B254" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <circle cx="44" cy="44" r="41"/>
+        <circle cx="44" cy="44" r="21"/>
+        <path d="M44 19v5M44 64v5M19 44h5M64 44h5"/>
+        <path d="M52 36l-5 11-11 5 5-11z"/>
+      </svg>
+      <h2>A direção</h2><i></i>
+      <p>Para cada elemento:<br>o que fazer e que ações<br>pôr em prática na semana.</p>
+    </div>
+    <div class="q">
+      <!-- gráfico subindo -->
+      <svg viewBox="0 0 88 88" fill="none" stroke="#E2B254" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <circle cx="44" cy="44" r="41"/>
+        <path d="M25 62h38"/>
+        <path d="M30 62V52M40 62V45M50 62V40M60 62V31" stroke-width="5"/>
+        <path d="M27 42l11-9 8 5 14-12"/><path d="M53 26h7v7"/>
+      </svg>
+      <h2>O foco</h2><i></i>
+      <p>Vendas, clientes, dinheiro,<br>posicionamento, decisões<br>e crescimento.</p>
+    </div>
+    <div class="q">
+      <!-- presente -->
+      <svg viewBox="0 0 88 88" fill="none" stroke="#E2B254" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <circle cx="44" cy="44" r="41"/>
+        <rect x="25" y="39" width="38" height="24" rx="2"/>
+        <rect x="22" y="32" width="44" height="8" rx="2"/>
+        <path d="M44 32v31"/>
+        <path d="M44 32c-3-7-12-9-12-3 0 3 5 3 12 3zM44 32c3-7 12-9 12-3 0 3-5 3-12 3z"/>
+      </svg>
+      <h2>A entrada</h2><i></i>
+      <p>Responda o quiz<br>e entre no grupo do<br>WhatsApp, gratuito.</p>
+    </div>
+  </div>
+
+  <div class="marca">Conselho do Cigano</div>
+  <div class="rodape"><span>Responda o quiz</span><span class="seta">&#10230;</span><span>Entre no grupo <b>gratuito</b></span></div>
+</div>
+
+<script>
+  const p = new URLSearchParams(location.search);
+  document.body.classList.add(p.get("f") === "story" ? "story" : "feed");
+</script>
+</body>
+</html>

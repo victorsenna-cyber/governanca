@@ -36,7 +36,7 @@
 | A3 | `vsl-auditor-procedencia` | origem de toda fala, cena, número e depoimento | — |
 | A4 | `vsl-auditor-voz` | voz do expert, léxico da conta, gravabilidade | — |
 | A5 | `vsl-auditor-antislop` | gate anti-slop da skill de copy | — |
-| A6 | `vsl-auditor-cetico` | o público desconfiado — relata, não veta | — |
+| A6 | `vsl-auditor-cetico` | o público desconfiado — relata, não veta · 🟡 **+ leitura de retenção linha a linha** (08/10/2026, em teste na Débora, blocos 2 e 4) | — |
 | J | `vsl-juiz` | consolida, devolve, decide · passada global no fim | — |
 
 ---

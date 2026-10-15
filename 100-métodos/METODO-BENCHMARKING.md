@@ -51,7 +51,10 @@
 | **Ferramentas de espionagem** | achar oferta escalando | conferir sempre contra a biblioteca |
 | **Busca direta no nicho** | achar player conhecido | ⚠️ conhecido ≠ vendendo |
 | **Conteúdo viral** | secundária, quando não há peça do formato | views reais, não seguidores |
+| ⭐ **Orgânico em alta no nicho** *(08/10/2026)* — vídeos mais vistos do YouTube, Reels/TikTok viralizados, **Google Trends 30–90 dias**, Ubersuggest, **top 10 da Amazon na categoria** | **hipótese de ângulo, gancho, tema de lead e formato** — não referência de peça | views sem mídia; termo subindo na janela; livro do mecanismo no top 10 |
 | **Página com tráfego** | secundária | SimilarWeb / SEMrush |
+
+> ⚠️ **A régua da linha do orgânico** *(08/10/2026, fonte: `900-criação-implementação-victor/criativos/DESTILACAO-CRIATIVOS-FILEMON-2026-10-08.md` §2 e §6.7)*: **viral prova atenção, não prova que paga mídia.** Tema que viralizou entra como **exploração** — nos 30% do portfólio (`METODO-TRAFEGO-PAGO.md` §4.2), declarado como teste — e **nunca como base de promessa** (`METODO-DIRECT-RESPONSE.md` §2-bis). Os dois casos da fonte só viraram evidência quando uma VSL **escalou** com o tema. **Dois usos válidos:** construir o mecanismo em torno do tema, ou usá-lo como gancho e **transicionar** para o mecanismo real ("X funciona? sim, mas existe algo mais forte"). 🔴 **E comentário viral não é fala do nosso público:** do orgânico sai tema e formato, **nunca léxico de grau `D`.**
 
 ### 3.2 🔴 O gate de evidência
 

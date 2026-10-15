@@ -1,6 +1,7 @@
 # PLANO DE CRIATIVOS v2 — mês completo · Seu Eixo · 18/07
 
-> STATUS: VIGENTE · fonte (inventário e matriz de criativos do lançamento) · v1 (08/07, promessa antiga) em `_arquivo/PLANO-CRIATIVOS-v1-0807-SUPERADO.md`
+
+> STATUS: HISTÓRICO · **workshop encerrado** (Victor, 08/10/2026 — `../DECISOES.md`) · não usar como fonte · ~~VIGENTE · fonte (inventário e matriz de criativos do lançamento) · v1 (08/07, promessa antiga) em `_arquivo/PLANO-CRIATIVOS-v1-0807-SUPERADO.md`~~
 > Deriva de: `criativos/COPY-CRIATIVOS-ESTATICOS.md` (copy, fonte) · `PLANO-FUNIL-LANCAMENTO.md` (cronograma/verba) · `05 - design/DIRECAO-DESIGN-CODEX.md` + `criativos/BRIEFING-VISUAL-CRIATIVOS.md` (arte) · voz `07 - skills/debora-voice`.
 > **Narrativa vigente (14/07):** promessa = eficiência + paz ("Lidere com eficiência pelo domínio das relações. Sem perder a própria vida."). Cadeia causal: resultado que ele mede → falta de paz que ele sente → causa nomeável (conflitos/relações). TRES = mapa dos 3 sistemas, um dia por sistema. Frente de riscos psicossociais: fora (16/07).
 > Compliance Meta (mantido da v1): sem atributo pessoal direto ("você está esgotado"), sem linguagem terapêutica, sem promessa absoluta — a cena espelha, nunca diagnostica. Urgência SÓ com data real de lote; sem "última chance", sem contagem falsa.

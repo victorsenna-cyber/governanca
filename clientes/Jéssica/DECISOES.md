@@ -381,7 +381,109 @@ Criar decisão sinaliza propagação; não autoriza publicar fora da tarefa vige
 
 ---
 
+### DEC-2026-10-13-026 — Três publicações por semana, no total
+
+| Campo | Registro |
+|---|---|
+| fato dela | *"Três postos por semana. É o equilíbrio para mim."* (call 22/09, 15:35:03; "postos" é erro da transcrição) |
+| decisão nossa (estrutura) | o calendário de 13/10/2026 a 31/01/2027 tem **três publicações por semana no total**: duas peças escritas e um reel dela. Fatia do evento: 1 de 3 até o anúncio, 2 de 3 até o fim de dezembro, 3 de 3 a partir de 04/01 |
+| substitui | o calendário de 17/08, que programava 2 peças nossas **mais** 3 reels dela (5 por semana) e passava da capacidade que ela declarou |
+| aplicado | `conteudo-instagram/00-LINHA-EDITORIAL-E-CALENDARIO.md` (versão 2) · `01-COMBO-EVENTO.md` (versão 2) · `entregas-cliente/Plano-de-Divulgacao-Ladies-Fluency-Experience.pdf` |
+| preservado | versões de 17/08 em `conteudo-instagram/_substituido/` |
+| estado | ✅ vigente · PDF e mensagem **não enviados** |
+
+---
+
+### DEC-2026-10-13-027 — Procedência nos posts: o que saiu e o que ela confere
+
+| Campo | Registro |
+|---|---|
+| gatilho | primeira passagem da conta pelo gate (`PILARES.md` + `lexico-icp/`), que não existia quando os 32 posts foram escritos em 17/08 |
+| 🔴 retirado | **EV-11:** *"Eu vim pelo inglês. Saí com duas clientes."* estava entre aspas, na arte, como depoimento. **Ninguém disse isso.** · **ES-C1:** *"acho que eu sou burra para línguas"*, atribuído ao público, sem fonte |
+| reescrito | **EV-07:** *"Boa parte das mulheres que se inscreveram até agora empreende"*; o dado de inscritas não existe · **ES-02:** o bordão voltou à forma da fonte (*"eu pensei primeiro na outra"*, call 11/08) |
+| fora do banco | **ES-07 · Do básico ao avançado**: contradiz o recorte de intermediário em diante · **EV-12**: lote por quantidade deixou de existir |
+| conferência dela | quatro aberturas afirmam algo que só ela sabe se acontece: EV-06, EV-07, EV-16, EV-C3. Marcadas no combo |
+| ⚠️ **a mesma frase existe na página do evento** | *"Boa parte das mulheres que vêm empreende"* (FAQ) e *"Boa parte empreende"* (bloco do que se leva). É primeira edição: ninguém veio ainda. Ela leu e aprovou a página em 19/08. **Não alterado.** Fica como objeção de congruência nossa, a levar a ela na atualização do anúncio |
+| régua que fica | fala de aluna entra como coisa que **a Jéssica ouviu**. Aspas soltas atribuídas a ninguém não entram |
+| estado | ✅ vigente |
+
+---
+
+### DEC-2026-10-13-028 — O que se vende na sala se chama English Therapy, turma 1
+
+| Campo | Registro |
+|---|---|
+| decisão nossa (estrutura, REGRA Nº 0) | o nome *Lapidação* sai de todo lugar. A oferta da sala é **English Therapy, turma 1**. A comunidade (*Ladies Fluency Circle*) fica **fora do pitch** até ter nome que sirva a homens e mulheres: a turma é mista e o nome é só feminino |
+| razão | o teste de pilares achou dois nomes para a mesma oferta (`PILARES.md` §4). Nome variado desancora |
+| fato que só ela fecha, com número proposto | preço: **R$ 4.997 em até 12 vezes** · início: **semana de 22/02/2027** |
+| prazo | primeiro ensaio do pitch, 14 dias antes do evento |
+| consequência | enquanto os dois fatos não fecham, **o P4 da turma reprova** e nenhuma peça que venda a turma é escrita (pitch, EV-19, página de English Therapy, funil) |
+| aplicado | `PILARES.md` · `PLANO-ESTRATEGICO-90D.md` Fase 3 e §17 |
+| estado | ✅ estrutura vigente até objeção de congruência dela · 🟡 fatos pendentes |
+
+---
+
+### DEC-2026-10-13-029 — Funil de resposta direta: não se propõe agora
+
+| Campo | Registro |
+|---|---|
+| origem | call 22/09: Victor apresentou o funil e disse ter proposta para implementar e gerir [15:38:27]. Ela: *"É interessante para mim. Sim."* [15:38:47] |
+| veredito da folha interna | **não propor implementação agora.** Entregar a explicação prometida, pedir cinco fatos, conversar sobre proposta na semana de 01/02/2027 |
+| razões | (1) a frente **não tem preço** em `30-comercial/oferta.md` §3 · (2) três condições de recusa do `METODO-FUNIL-DE-VSL.md` §10 ativas: P4, capital de teste não confirmado, prova sem resultado medido · (3) **nenhuma referência escalada na classe de promessa dela** (`benchmark-dr/`) · (4) as três páginas já vendidas ainda não geraram um lead medido |
+| o evento como G1 | fecha três das cinco condições de validade e entrega a prova que o vídeo precisaria |
+| descartado | cotar agora por analogia com o catálogo (setup R$ 6 a 10 mil + R$ 4.500/mês). Exposição dela no primeiro trimestre: **R$ 25,5 a 32,5 mil**, com cerca de um terço de chance de três tentativas sem acerto `[benchmark]` |
+| descartado | repetir a ela *"inglês é um dos top um do mercado"* e *"uma VSL aquece mais do que seis meses de conteúdo"*: o levantamento não sustenta |
+| fronteira de caixa | pilares, léxico e benchmark fase A foram feitos em 13/10 sem cobrança, dentro da entrega do plano. **Daqui em diante, trabalho de funil é pago** |
+| alternativa | fase B do benchmark + desenho do produto de entrada, como diagnóstico pago. Preço e nome: alçada Victor |
+| autoridade | 🟡 **proposta do Claude. Aceitar, recusar e precificar cliente é alçada do Victor** |
+| aplicado | `dr/FOLHA-INTERNA-DR-2026-10-13.md` · `entregas-cliente/Funil-de-Resposta-Direta-Jessica.pdf` |
+| estado | 🟡 aguarda confirmação do Victor |
+
+---
+
+### CORR-2026-10-13-030 — As páginas 1 e 2 nunca receberam as correções de 19/08, e a do evento nunca foi publicada
+
+| Campo | Registro |
+|---|---|
+| natureza | **correção de fato**, encontrada conferindo a URL em vez do arquivo |
+| fato | em 13/10/2026 às 17h04, `jessica-emotional-speaking.vercel.app` e `jessica-portugues-brasileiro.vercel.app` serviam **o deploy de 11/08**: `isPreview: true`, número de 12 dígitos (`553183015499`), zero gatilhos de popup, 7 ocorrências de *"preview"* no HTML da página 2. Os hashes dos três arquivos da página 1 no ar são os registrados em `pagina-1-ingles-para-brasileiros/06-DEPLOY-VERCEL-PRODUCAO.md` |
+| fato | **a página do evento não existe em produção.** Não há projeto dela na Vercel nem URL registrada em arquivo nenhum |
+| 🔴 erro de registro preservado | `STATUS.md` §0, §8 e §9 dizem *"corrigidas em 19/08"*, *"aplicado nas páginas 1 e 2"*, *"saíram do modo prévia"*, e o §12 diz *"atualizada, falta subir"* só para a do evento. **As correções foram feitas no repositório e nunca publicadas.** Durante 55 dias o estado da conta descreveu o arquivo, não o site |
+| o que custou | o formulário da página 1 segue morto para quem entra hoje, e a página 2 segue mostrando *"local preview"* a estrangeiro. **Nenhum lead foi registrado em nenhuma das três páginas desde 06/08.** A pré-venda está aberta há 21 dias sem página |
+| por que não foi resolvido em 13/10 | o CLI da Vercel está **deslogado** nesta máquina, e login é interativo |
+| o que ficou pronto | `publicar-paginas.sh` na raiz da conta (as três, com conferência de hash no fim) · as três páginas conferidas em 1440 e 390 px · links do InfinitePay respondendo · endpoint da planilha gravando (`?teste=1` devolveu `ok`, linha 4 da aba `_teste`) |
+| ⭐ régua que fica | **corrigido no repositório não é corrigido em produção. Estado de página se confere na URL.** É a mesma lição do nono dígito (§10 do `STATUS.md`), do outro lado: lá uma hipótese não testada virou bloqueio; aqui uma correção não publicada virou *"feito"* |
+| estado | 🔴 **aberto.** ~~Depende de `npx vercel login`~~ → o caminho passou a ser o upload na Hostinger (DEC-032) |
+
+---
+
+### DEC-2026-10-13-032 — As páginas saem da Vercel e vão para o domínio dela, na Hostinger
+
+| Campo | Registro |
+|---|---|
+| decisão | **Victor**, 13/10/2026: *"fiz o login na Vercel, mesmo assim, vamos passar todos os arquivos para o gerenciador de arquivos do domínio dela na Hostinger.. sem Vercel"* |
+| razão | não declarada nesta mensagem. Precedente da casa, na conta Débora (11/07): Vercel Hobby não permite uso comercial, e hospedagem no domínio do cliente tira o ativo de uma conta nossa |
+| decisão nossa (estrutura do endereço) | três pastas em `public_html`: **`/ingles/`**, **`/portuguese/`**, **`/experience/`**. **Nada na raiz**, para não encostar no que já existir no domínio |
+| descartado | pôr a página de inglês na raiz. O domínio e o que há nele não estão registrados na conta; subir na raiz sem saber poderia sobrescrever um site |
+| aplicado | `montar-hostinger.py` · `hostinger/` (3 zips, `public_html/`, `MANIFESTO.txt` com SHA-256 de 31 arquivos) · `DEPLOY-HOSTINGER.md` |
+| conferido | as três pastas servidas localmente por HTTP: páginas e todos os arquivos referenciados respondem 200. As páginas só usam caminho relativo |
+| substitui | `publicar-paginas.sh` (escrito à tarde, nunca executado) |
+| pendente | upload (Victor) · o domínio dela, que não está em nenhum arquivo · redirecionar as duas URLs da Vercel entregues em 06/08 · imagem de compartilhamento com endereço absoluto |
+| estado | ✅ decisão vigente · 🟡 **upload não feito** |
+
+---
+
 ## Propostas — não vigentes
+
+### PROP-2026-10-13-031 — O limite das "modificações inclusas por um ano"
+
+| Campo | Registro |
+|---|---|
+| origem | a página de eventos foi vendida em 11/08 com modificações inclusas por um ano (DEC-004). O limite nunca foi escrito; a pendência está no `STATUS.md` §6 desde 12/08 |
+| o que já aconteceu | a atualização de 27/09 trocou data, local, lotes por quantidade para lotes por data, título e o texto de quatro blocos. **Passou de alteração de campo** e foi feita sem cobrança |
+| proposta | **incluso:** tudo o que se muda no bloco `CONFIG` (data, horário, local, lote, preço, link, estado) e a troca de fotos · **não incluso:** copy nova, dobra nova, mecânica nova de inscrição, redesenho, página de outra oferta |
+| como dizer a ela | na atualização do anúncio da data, em uma frase, junto da entrega: o que continua incluso e o que passa a ser orçado. **Nunca como cobrança retroativa da de 27/09** |
+| estado | 🟡 proposta, a comunicar pelo Victor |
 
 ### DEC-2026-08-19-012 — Política de reembolso, com teto de 7 dias
 

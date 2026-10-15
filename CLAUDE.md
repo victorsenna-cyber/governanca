@@ -30,7 +30,15 @@ Sempre **nós · nosso sistema · nossa operação**. Nunca falar da Continuum e
 | **Política** | `00-core/POLITICAS-DE-DECISAO.md` · `30-comercial/` | por decisão registrada | números, alçadas, pisos e tetos que decidem |
 | **Estado** | `STATUS.md` · `60-planos/PLANO-90-DIAS.md` · `40-operacao-rotinas/` | toda semana | metas, pipeline, capacidade, pendências |
 
-> ### ⭐ Fronteira `CLAUDE.md` × `AGENTS.md` (instituída 12/09/2026)
+> ### 🔴 ⭐ DECISÃO 11/10/2026 — CODEX DESATIVADO. SÓ O CLAUDE OPERA ESTE REPOSITÓRIO (alçada Victor)
+>
+> **A partir de 11/10/2026 não há executor separado: o Claude decide e executa.** Nenhuma tarefa nova vai para o Codex, nenhum pacote novo entra em `execução Codex/`.
+>
+> **O que muda na prática:** (1) o `AGENTS.md` deixou de ser clone e virou ponteiro de bloqueio — o clone de 03/10 está íntegro em `00-core/_legado/AGENTS-clone-2026-10-11.md`; (2) `STATUS-CODEX.md` sai da carga obrigatória; (3) o ato 4 da REGRA Nº 1 perde a regeneração do `AGENTS.md`, e o `verificar-propagacao.py` deixa de conferir a sincronia; (4) **a antessala fica congelada, não apagada:** os pacotes pendentes continuam sendo *proposta* e só viram canônico pelo `RITO-INTEGRACAO-CODEX.md`, executado pelo Claude, até a fila zerar. Ao ler a conta de um cliente, a antessala dela ainda é lida enquanto tiver pacote pendente.
+>
+> **O bloco abaixo, até o próximo título, é histórico** — explica por que a fronteira existia. Não gera obrigação.
+
+> ### ⭐ Fronteira `CLAUDE.md` × `AGENTS.md` (instituída 12/09/2026) — *histórica desde 11/10/2026*
 >
 > **Este arquivo governa quem DECIDE. `AGENTS.md` governa quem EXECUTA.** Não são duas versões da mesma coisa e não se leem juntos.
 >
@@ -55,11 +63,11 @@ Sempre **nós · nosso sistema · nossa operação**. Nunca falar da Continuum e
 >
 > **Integração do trabalho isolado do Codex: `40-operacao-rotinas/RITO-INTEGRACAO-CODEX.md`.**
 
-**Carregar sempre:** este `CLAUDE.md` + `00-core/*` *(exceto `00-core/roteador/`, que se carrega por árvore, e `00-core/_legado/`, que nunca se carrega)* + `STATUS.md` + **`execução Codex/STATUS-CODEX.md`** + **o arquivo da árvore do pedido (§6)** ~~+ 1 skill dominante (§6)~~ *(26/09: a árvore diz o que carregar, na ordem)*.
+**Carregar sempre:** este `CLAUDE.md` + `00-core/*` *(exceto `00-core/roteador/`, que se carrega por árvore, e `00-core/_legado/`, que nunca se carrega)* + `STATUS.md` ~~+ `execução Codex/STATUS-CODEX.md`~~ *(11/10: Codex desativado — a fila legada é lida só ao processá-la pelo rito)* + **o arquivo da árvore do pedido (§6)** ~~+ 1 skill dominante (§6)~~ *(26/09: a árvore diz o que carregar, na ordem)*.
 
 > 🔴 ⭐ **Por que o `STATUS-CODEX.md` entra na carga obrigatória (17/09/2026):** o Codex escreve em isolamento e **não pode tocar o `STATUS.md`**. Carregar só o canônico dá um retrato **incompleto e sem aviso** — o trabalho existe, está pronto, e o estado não o menciona. **Foi o que aconteceu em 16/09: destilação entregue às 12h16, estado da conta parado no dia anterior.**
 >
-> **Regra: estado = `STATUS.md` (o que é) + `STATUS-CODEX.md` (o que está na antessala).** Ler um sem o outro é decidir sobre metade.
+> ~~**Regra: estado = `STATUS.md` (o que é) + `STATUS-CODEX.md` (o que está na antessala).**~~ *(vigente de 17/09 a 11/10/2026; com o Codex desativado, estado = `STATUS.md`. A fila legada é passivo a zerar, não segunda metade do estado.)*
 **Precedência em conflito:** CLAUDE.md > `00-core/POLITICAS-DE-DECISAO.md` > skill dominante > artefato de área. Fato comercial: `30-comercial/ICP.md` prevalece. Estado/fato atual: `STATUS.md` prevalece. 🔴 **Pacote em `execução Codex/` NUNCA prevalece sobre canônico** — por mais recente que seja. **Ele é proposta até ser promovido**, e divergência entre os dois é sinal de promoção pendente, não de canônico desatualizado. Se dois arquivos divergem, vale o de data mais recente e a divergência é sinalizada ao usuário.
 
 ---
@@ -157,7 +165,7 @@ Ao entrar em `clientes/<cliente>/`, este kernel continua governando políticas, 
 - `100-métodos/` — os artefatos de conhecimento, **por tipo** (a fonte do tipo é o campo `Tipo:` de cada cabeçalho; a rota, a árvore): **framework:** `MATRIZ-LEITURA-CONTEUDO`, `METODO-CAMADA-DE-VER`, `METODO-DIRECT-RESPONSE`, `METODO-ESTIMATIVA-DE-CARGA`, `METODO-ESTRUTURA-INVISIVEL`, `METODO-GERACAO-DE-RESULTADOS`, `METODO-PIVO-DE-CONVERSAO`, `METODO-PONTOS-LOGICOS`, `METODO-SALESFORCE-INBOUND` · **trilho:** `METODO-TRILHO-DE-CONTA-NOVA` · **método:** `METODO-ABORDAGEM-FRIA`, `METODO-ALICERCE`, `METODO-ANCORAGEM-DE-PROPOSTA`, `METODO-ARQUEOLOGIA-DE-ICP`, `METODO-BENCHMARKING`, `METODO-CONSTRUCAO-DE-CRIATIVOS-DR`, `METODO-DESTILACAO-DE-CALLS`, `METODO-DESTILACAO-DE-VSL`, `METODO-DIAGNOSTICO-DE-OPERACAO`, `METODO-EDICAO-DE-VIDEO-CURTO` (🟡 provisório desde 15/10 · ferramenta em `40-operacao-rotinas/ferramentas/edicao-video/`), `METODO-EMPILHAMENTO-DE-HOOKS`, `METODO-FUNIL-DE-VSL`, `METODO-LATERALIZACAO-DE-CRIATIVOS`, `METODO-MECANISMO-E-ONE-BELIEF`, `METODO-PRODUCAO-VSL-POR-AGENTES` (✅ vigente desde 02/10 · roda no Claude Code CLI · agentes em `.claude/agents/vsl-*`, oficina em `900-criação-implementação-victor/agentes-vsl/`), `METODO-TRAFEGO-PAGO` · **política:** `METODO-ALCADA-DE-ESTRUTURA`, `METODO-GATE-DE-CONTRATACAO` · **gate:** `METODO-GATE-DE-CONGRUENCIA`, `METODO-TESTE-DE-PILARES` · **ponteiro:** `METODO-PAGINA-DE-VENDAS` · **registro:** `AUDITORIA-CIRCUITO-COPY-2026-09-10`, `PROMOCAO-TRIO-CRIATIVOS-2026-09-20`, `VERIFICACAO-CIRCUITO-COPY-v3.1-2026-09-10` · subpasta `Método de extração de linguagem/` — fonte completa do MEL.
 - `80-juridico/` — `POLITICAS-JURIDICAS.md` · `registros/` · `contratos/`. **Nada sem instrumento escrito.**
 - `90-templates/` — blueprints: `repo-cliente/` · `conta-nova/` · `benchmark-vsl/` · `lexico-icp/` · `diagnostico-operacao/` · `pdf-noturno/` e `pdf-continuum/` (**só se gera PDF de material que sai da casa**; as restrições de SVG e emoji estão no README do noturno) · `CONTRATO-EXECUTOR.md`.
-- `execução Codex/` — a antessala: **única escrita do Codex**, indexada em `STATUS-CODEX.md`; por conta, em `clientes/<cliente>/execução Codex/`; `910 - execução Codex/` é histórico, read-only. 🔴 **Nada aqui é canônico antes do rito de integração.**
+- `execução Codex/` — a antessala: **única escrita do Codex**, indexada em `STATUS-CODEX.md`; por conta, em `clientes/<cliente>/execução Codex/`; `910 - execução Codex/` é histórico, read-only. 🔴 **Nada aqui é canônico antes do rito de integração.** 🔴 **Congelada desde 11/10/2026: Codex desativado, nada novo entra; a fila restante é zerada pelo Claude via rito.**
 - `clientes/` — raiz canônica por cliente (a lista viva é a própria pasta). **Cópia homônima fora desta raiz é legado: nunca fonte, nunca destino** · workspaces de tráfego ficam em `30-comercial/trafego-clientes/`.
 - `Padrão Linguístico - Victor Senna/` — fonte da voz do Victor; corpus falado via eixo 13 da destilação de calls.
 
@@ -215,10 +223,10 @@ Ao entrar em `clientes/<cliente>/`, este kernel continua governando políticas, 
 > | **1** | **Arquivo no caminho canônico** — método em `100-métodos/`, skill publicada em `10-skills/` a partir da oficina em `900-…/` | fica em oficina, e oficina não é produção |
 > | **2** | 🔴 **Linha na árvore certa** (`00-core/roteador/ARVORE-<X>.md`) — sinais, carga na ordem do processo, veto. **O nível 1 do §6 só muda se nascer família nova de pedido.** ~~Linha no roteador `§6`… peça de escrita também em `§6.1`; página e VSL em `§6.3`~~ *(26/09: o roteador virou árvore)* | o método existe e nunca é chamado |
 > | **3** | **Linha no mapa `§7`** — para quem navega em vez de rotear | some do índice e vira arqueologia |
-> | **4** | **`AGENTS.md` regenerado + registro no `STATUS.md`** | o executor opera sem a regra, e a memória da casa não recebe (`§11.3`) |
+> | **4** | ~~**`AGENTS.md` regenerado +**~~ **registro no `STATUS.md`** *(11/10: sem executor, sem regeneração)* | a memória da casa não recebe (`§11.3`) |
 > | **5** | 🔴 ⭐ **Régua de veto declarada e na tabela** (`METODO-GATE-DE-CONGRUENCIA.md` §3) — **a linha que reprova sozinho** | **régua que não está na tabela não é checada, e método com gate que ninguém roda é método sem gate** |
 >
-> ⭐ **Fechamento mecanizado (26/09/2026): os atos 2 a 5 e a sincronia do `AGENTS.md` se conferem rodando `40-operacao-rotinas/ferramentas/verificar-propagacao.py`. Resultado diferente de ✅ = tarefa não fechada.** O script existe porque este agente pulou o ato 5 duas vezes em três dias.
+> ⭐ **Fechamento mecanizado (26/09/2026): os atos 2 a 5 ~~e a sincronia do `AGENTS.md`~~ *(11/10)* se conferem rodando `40-operacao-rotinas/ferramentas/verificar-propagacao.py`. Resultado diferente de ✅ = tarefa não fechada.** O script existe porque este agente pulou o ato 5 duas vezes em três dias.
 >
 > **A evidência de que isto precisava virar regra é desta mesma auditoria, e são dois casos:**
 >
@@ -244,6 +252,7 @@ Ao entrar em `clientes/<cliente>/`, este kernel continua governando políticas, 
 - 🔴 **Reescrita 28/08/2026:** ~~Não vender sem capacidade de entrega~~ → **Não vender sem saber quem entrega.** Falta de hora **aciona contratação**, nunca recusa (`POLITICAS-DE-DECISAO.md` §4-bis · `100-métodos/METODO-GATE-DE-CONTRATACAO.md`). **O que vendemos é a forma de pensar estratégia — hora é insumo comprável, ela não.** A única recusa por capacidade que sobrevive: a entrega exigir estratégia delegada antes do piso de D4.
 - Não tratar sintoma como causa. · Não separar venda de entrega. · Não separar decisão de métrica.
 - Não confundir atividade com progresso. · Não propor sofisticação sem operação estável.
+- 🔴 **Delegação por custo (instituída 14/10/2026, alçada Victor): trabalho que não exige Opus vai para subagente barato, sempre e sem pedir.** Varredura de pastas, leitura e resumo de transcrição, busca e contagem, conferência de consistência entre arquivos, edição mecânica e repetitiva, transcrição, formatação, rodar `verificar-propagacao.py` e relatar → **subagente `haiku`** (ou `sonnet`, se pedir julgamento leve). **Fica no Opus:** decisão, estrutura de peça, copy, diagnóstico, auditoria de peça-mestra e o registro de decisão (§11). O subagente devolve achado com caminho e linha; quem decide é o Opus. *Motivo: as tarefas mecânicas consumiam a janela do modelo caro sem ganho de qualidade.* Detalhe de roteamento: `00-core/PROTOCOLO-MULTI-MODELO.md`.
 
 ---
 
@@ -326,7 +335,7 @@ Vale para negociação, caso jurídico, conversa com cliente, prospect, parceiro
 
 Onde vive: `80-juridico/registros/` (jurídico) · `30-comercial/assessoria-prospects/<nome>/` (prospect) · `clientes/<cliente>/` (cliente ativo).
 
-> 🔴 **Trabalho produzido pelo Codex é exceção de FORMA, não de gate (17/09/2026).** A §0 do `AGENTS.md` o proíbe de escrever nos canônicos, então o registro dele **nasce como proposta** dentro de `execução Codex/` — e **a proposta não cumpre este gate.** O gate só se cumpre na promoção.
+> *(Histórico desde 11/10/2026 — Codex desativado. Vale só para os pacotes legados ainda na fila.)* 🔴 **Trabalho produzido pelo Codex é exceção de FORMA, não de gate (17/09/2026).** A §0 do `AGENTS.md` o proíbe de escrever nos canônicos, então o registro dele **nasce como proposta** dentro de `execução Codex/` — e **a proposta não cumpre este gate.** O gate só se cumpre na promoção.
 >
 > **Sem rito de promoção, as duas regras se anulam:** o trabalho é feito, fica na antessala, e a memória não recebe. **Aconteceu em 16/09** — destilação entregue às 12h16, canônicos parados no dia anterior. **Rito, gate de 5 itens e fila: `40-operacao-rotinas/RITO-INTEGRACAO-CODEX.md`.**
 
@@ -354,7 +363,7 @@ Estrutura, formato de entrada e regra de revisão: `30-comercial/swipe-file/READ
 
 **Uma operação, igual nos dois lados: `40-operacao-rotinas/ferramentas/sincronizar.py`** — commita tudo, mescla a `main` do GitHub no ponto atual (merge, nunca rebase), regenera o `AGENTS.md` e publica `HEAD → main` (na nuvem, também na branch `claude/...`). **Quando roda:** ao abrir a sessão e ao fechar toda tarefa, depois do `verificar-propagacao.py`. **Esta regra é a autorização permanente do Victor para que sessões na nuvem publiquem na `main`.**
 
-**Conflito:** `STATUS.md`, diários, `REGISTRO.md` e `STATUS-CODEX.md` se resolvem sozinhos (`.gitattributes`, `merge=union` — junta as duas pontas, nunca perde linha) · `AGENTS.md` se regenera · **qualquer outro arquivo: a mescla é desfeita, nada se perde, e o conflito se resolve na hora — mantendo as duas versões quando ambas forem válidas.** Em dúvida sobre qual vale, vale a mais recente e a divergência é sinalizada (§3).
+**Conflito:** `AGENTS.md` se regenera sozinho · **qualquer outro arquivo: a mescla é desfeita, nada se perde, e o conflito se resolve na hora — mantendo as duas versões quando ambas forem válidas; em arquivo de registro (`STATUS.md`, diários), acrescentando as entradas da outra ponta no fim, em ordem de data.** ~~`merge=union` nos arquivos de registro~~ *(retirado no 1º uso: duplicou o `STATUS.md` inteiro quando as pontas divergiam em fim de linha, CRLF × LF)*. Em dúvida sobre qual vale, vale a mais recente e a divergência é sinalizada (§3).
 
 **Mecanização:** hooks `SessionStart` e `Stop` do Claude Code chamando o script (`.claude/settings.json`) — **🟡 pendente de instalação pelo Victor** (a sessão na nuvem não pode instalar hook de push em si mesma). Enquanto não estiver instalado, o script roda como último ato de toda tarefa.
 

@@ -54,3 +54,40 @@ ATUALIZACAO 2026-10-02 (17h) - LINKS DE CHECKOUT DO SIGNOS
 - Zip atual: signos-v5.zip. Pendencia de links ENCERRADA.
 - Para o Gui corrigir na PagTrust: o produto do Grupo Terra esta nomeado
   "Touro, Virgem e Sagitario" (o certo e Capricornio).
+
+CÓPIAS PARA MENTORAS (2026-10-10)
+- permissao-mentoras/ e teto-mentoras/ são cópias de permissao/ e teto/. Os originais não foram tocados.
+- Diferença: quem marca "Mentora" na primeira pergunta faz o teste inteiro e o cadastro e,
+  no fim, recebe o botão do grupo gratuito "Outubro - Conselho do Cigano" (link_grupo_mentoras),
+  sem passar pelas telas de oferta T20 a T22. Os demais seguem para a oferta original.
+- O engine.js das cópias tem dois acréscimos: desvio por resposta (nextByAnswer) e o bloco de botão
+  de link. O engine dos originais é o de antes.
+- Planilha: abas novas permissao_mentoras e teto_mentoras (Code.gs). Clique no grupo fica em
+  clicou_checkout = grupo_mentoras.
+- Zips: permissao-mentoras-v1.zip e teto-mentoras-v1.zip. Na Hostinger, cada um vira uma pasta própria.
+
+PLANILHA LIGADA (2026-10-10)
+- apps_script_url preenchido nos 5 configs (permissao, signos, teto, permissao-mentoras, teto-mentoras)
+  e nos 3 de public/config. Na Hostinger, trocar só o config/*.json de cada pasta.
+- Teste daqui não foi possível (rede da sessão bloqueia script.google.com). Conferir com um envio
+  real pelo quiz no ar e olhar a planilha.
+
+ATUALIZACAO 2026-10-14 (noite) - PERMISSAO-MENTORAS V2: AS QUATRO OPCOES VAO AO GRUPO
+- Pedido do Victor: "corrija o quiz para as quatro opcoes irem ao grupo".
+- config/permissao_mentoras.json: nos dois roteamentos por p01_atuacao (tela de resultado e tela de cadastro),
+  os casos 0 (Terapeuta), 2 (Cartomante) e 3 (Estou comecando a atender) passam a ter o mesmo destino do caso 1 (Mentora).
+- Tela final T24M: "Como voce e mentora, tenho um convite diferente para voce..." virou
+  "Tenho um convite para voce: o grupo Conselho do Cigano, para quem trabalha com terapias, mentorias ou cartomancia. Gratuito durante outubro."
+- Nada mais mudou (engine, estilos e fotos identicos ao v1).
+- Testado em navegador local (14/10), um caminho por opcao, com planilha e Pixel bloqueados: as quatro chegam a tela do grupo;
+  o botao abre o convite "Outubro- Conselho do Cigano".
+- SUBIR: permissao-mentoras-v2.zip -> substituir public_html/permissao-mentoras/ (basta o config/permissao_mentoras.json).
+- Rollback: permissao-mentoras-v1.zip.
+
+ATUALIZACAO 2026-10-14 (noite, mais tarde) - PERMISSAO-MENTORAS V3: LEAD COMO EVENTO PADRAO DO PIXEL
+- engine.js: os eventos padrao da Meta (Lead, InitiateCheckout, CompleteRegistration, ViewContent, Purchase)
+  passam a sair com fbq('track', ...); os do quiz (QuizStart, QuizResult, JoinGroup, quiz_step) seguem como trackCustom.
+  O PageView repetido pelo motor foi removido (o init ja dispara um).
+- Motivo: a campanha GA|HG|TOFU|LEADS|QUIZ-GRUPO-CONSELHO|20261015 otimiza o Lead PADRAO; antes o cadastro saia como personalizado.
+- Testado em navegador local: Terapeuta -> trackCustom:QuizStart, trackCustom:QuizResult, track:Lead -> tela do grupo.
+- SUBIR: permissao-mentoras-v3.zip -> basta trocar public_html/permissao-mentoras/engine.js. Rollback: v2.

@@ -54,7 +54,7 @@
 
 ## 3. Tom e conduta
 
-Ficha do escrito (§4-bis): `tudo certo por aqui` · `te falo direto` · `..` de fecho. Omissão só no que é dele (*"não entrou"* sem motivo). Exato no que promete: **mesmo dia, parcial, comprovante, sexta 09/10**. Zero justificativa, zero custo de mudança, zero menção a clientes.
+Ficha do escrito (§4-bis): `tudo certo por aqui` · `..` de fecho. Omissão só no que é dele (*"não entrou"* sem motivo). Exato no que promete: **mesmo dia, parcial, comprovante, sexta 09/10**. Zero justificativa, zero custo de mudança, zero menção a clientes.
 
 **⚠️ Erro registrado desta fase:** a cadência de sexta instituída em 21/08 não foi cumprida entre 04/09 e 30/09 de forma registrada, e **ele voltou a perguntar primeiro em 16/09**. Cadência prometida e furada custa mais que cadência nunca prometida.
 
@@ -67,7 +67,7 @@ Cleiton, boa noite! tudo certo por aqui.
 
 obrigado por segurar isso com ela.
 
-te falo direto: hoje eu não tenho data, e não vou inventar uma pra
+hoje eu não tenho data, e não vou inventar uma pra
 ganhar uns dias. se ela decidir pela execução, é direito dela e eu
 entendo.
 
@@ -78,7 +78,7 @@ não espero juntar a parcela inteira.
 te atualizo na sexta, dia 09, ou antes se entrar..
 ```
 
-**Contagem (§16.4):** marcadores 3 (`tudo certo por aqui` · `te falo direto` · `..`) · omissões 2 (`não tenho data`, `se entrar`, sem motivo nem origem) · falha de superfície 1 (fragmento final) · ritmo variado ✅
+**Contagem (§16.4):** marcadores 3 (`tudo certo por aqui` · `..`) · omissões 2 (`não tenho data`, `se entrar`, sem motivo nem origem) · falha de superfície 1 (fragmento final) · ritmo variado ✅
 
 ---
 
@@ -109,3 +109,49 @@ te atualizo na sexta, dia 09, ou antes se entrar..
 
 ---
 *Padrão de 4 camadas conforme `CLAUDE.md` §11.*
+
+---
+
+## 7. Atualização 09/10/2026 — a mensagem da §4 não foi enviada
+
+A versão da §4 ficou parada e **o Cleiton está sem resposta desde 01/10 18h29**, oito dias depois de nomear a execução judicial. A §4 prometia atualização na sexta 09/10, que é hoje: perdeu a validade. Substituída pela versão abaixo, enviada em 09/10.
+
+```
+Cleiton, bom dia! tudo certo por aqui.
+
+te devia resposta desde a semana passada, e obrigado por segurar isso com ela.
+
+ainda não tenho data, e não vou inventar uma pra ganhar uns dias. se ela decidir pela execução, é direito dela e eu entendo.
+
+o que eu consigo te garantir é a regra: o primeiro valor que entrar vai pra ela no mesmo dia, mesmo que seja parcial, com comprovante. não espero juntar a parcela inteira.
+
+na terça, dia 13, te dou posição de novo, antes do dia 15. ou antes, se entrar..
+```
+
+**Mudanças:** reconhece o silêncio em uma linha, sem justificar · próxima atualização antes de 15/10 (2ª parcela) · resto mantido.
+**Régua reforçada:** mensagem pronta e não enviada custa o mesmo que mensagem não escrita. Depois que a outra parte nomeia execução, silêncio de oito dias é lido como resposta.
+
+
+---
+
+## 8. Correção 09/10/2026 — o compromisso de "primeiro valor vai pra ela" foi retirado
+
+O Victor, 09/10: *"não posso garantir que o primeiro que entrar vai pra ela porque eu preciso comer e morar."* **A regra era falsa como promessa** e saiu da mensagem. Os repasses de junho e julho seguiam essa lógica, mas o custo de vida mínimo vem antes, e prometer o contrário seria criar um quarto descumprimento.
+
+**Régua:** compromisso escrito para a contraparte só inclui o que é cumprível **depois** das despesas de subsistência. Nenhuma mensagem deste caso promete prioridade absoluta de pagamento.
+
+**Versão enviada em 09/10:**
+
+```
+Cleiton, bom dia! tudo certo por aqui.
+
+te devia resposta desde a semana passada, e obrigado por segurar isso com ela.
+
+ainda não tenho data, e não vou inventar uma pra ganhar uns dias. se ela decidir pela execução, é direito dela e eu entendo.
+
+quando eu tiver como pagar, mesmo que parte, te mando o comprovante no mesmo dia.
+
+na terça, dia 13, te dou posição de novo, antes do dia 15..
+```
+
+**✅ ENVIADA em 09/10/2026** (versão da §8). Próximo compromisso: **posição ao Cleiton na terça 13/10**, antes do vencimento da 2ª parcela em 15/10. Registrar aqui a resposta literal dele, com hora.

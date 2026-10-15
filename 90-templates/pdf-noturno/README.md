@@ -42,8 +42,25 @@ python3 -m weasyprint documento.html documento.pdf
 | `.numeros` | três colunas com `.n` (número grande) e `.lbl` |
 | `.fluxo` | SVG de diagrama, largura total · `.legenda-fluxo` abaixo |
 | `.page-break` | quebra de página |
+| `.copiar` + `.copiar-rotulo` *(12/10/2026)* | **bloco de texto que o leitor vai copiar**: roteiro, mensagem pronta, legenda. O rótulo acima diz onde o texto entra. Um bloco por coisa a copiar |
 
 ---
+
+### Variante celular *(12/10/2026)*
+
+`noturno-celular.css`, carregado **depois** do `noturno.css`. Troca a página A4 por **90 × 160 mm** e ajusta capa e corpo para leitura em tela de telefone. **Usar quando quem recebe só tem o celular**, que é o caso de boa parte das contas. Não muda cor, fonte nem classe.
+
+**Primeira aplicação:** `clientes/Paola Lopes Rosa/05 - instagram/ROTEIROS-REELS-LOTE-01.pdf` (classe ESTRUTURA, 17 páginas), fonte em `05 - instagram/pdf/roteiros-lote-01.html`.
+
+### Gerar no Windows, sem WeasyPrint *(12/10/2026)*
+
+Nesta máquina o WeasyPrint não está instalado. O Chrome sem interface gera o mesmo resultado, incluindo o fundo da página e o rodapé numerado:
+
+```bash
+chrome --headless=new --no-pdf-header-footer --print-to-pdf=saida.pdf arquivo.html
+```
+
+A fonte Lato entra por `<link>` do Google Fonts no `<head>`; os títulos caem para Georgia. ⚠️ **Texto copiado de PDF leva as quebras de linha da página.** Se o leitor vai colar o texto em outro aplicativo, mandar também o texto puro pela conversa.
 
 ## 3. 🔴 QUAL DOS DOIS USAR
 

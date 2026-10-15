@@ -1,6 +1,6 @@
 # COPY DOS ANÚNCIOS — campos Meta prontos · Workshop "Seu Eixo" · v2 (18/07)
 
-> STATUS: VIGENTE · derivado de `criativos/COPY-CRIATIVOS-ESTATICOS.md` (fonte) · sync 18/07
+> STATUS: HISTÓRICO · **workshop encerrado** (Victor, 08/10/2026 — `../DECISOES.md`) · não usar como fonte · ~~VIGENTE · derivado de `criativos/COPY-CRIATIVOS-ESTATICOS.md` (fonte) · sync 18/07~~
 > **Escopo:** esta é a folha de MONTAGEM — os campos que entram no gerenciador (primary text · headline · botão · URL/UTM · arte), peça a peça, alinhados à narrativa da página v3 no ar (H1 eficiência+paz; frente de riscos psicossociais removida por decisão de 16/07). Fundamentação, texto sobre imagem e auditoria das artes: COPY v4. **Divergência → v4 prevalece e este arquivo sincroniza.**
 > v1 (29/06, narrativa antiga) arquivada em `_arquivo/copy-anuncios-v1-2906-SUPERADO.md`.
 > Regra: copy 1:1 — executor não adapta. Aprovação Débora (pacote v3+criativos) + Victor antes de ativar.

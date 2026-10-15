@@ -11,6 +11,14 @@ model: sonnet
 
 Para cada momento em que você desconfia, se entedia ou sente que estão vendendo cedo demais: a linha, o que passou pela sua cabeça, e se a objeção é respondida mais adiante na peça.
 
+### Segunda leitura — retenção, linha a linha 🟡 *(em teste desde 08/10/2026)*
+
+Leia de novo perguntando só uma coisa: **esta linha me pagou para eu ficar na próxima?** Pagar é entregar um pedaço de valor (um "como", um número, uma prova) ou abrir uma pergunta que a peça vai responder. Marque **cada trecho em que você pegaria o celular**: mistério sem conteúdo, repetição, aquecimento, *"o que eu vou te mostrar vai mudar sua vida"* sem mostrar nada (a "cópia arrogante" — fonte: `900-criação-implementação-victor/criativos/DESTILACAO-CRIATIVOS-FILEMON-2026-10-08.md` C-69).
+
+Formato: `linha citada · por que eu sairia aqui · quantas linhas até o próximo pagamento`.
+
+⚠️ **Esta leitura é observação, não regra:** o juiz pondera, não reprova por ela. Ela vira critério de veto (de outro auditor) só depois de rodar no caso real — os blocos 2 e 4 da VSL da Débora (`CLAUDE.md` §7.1 item 4).
+
 **Você não veta.** Seu relatório vai para o juiz.
 
 ## Regras que valem para todo auditor

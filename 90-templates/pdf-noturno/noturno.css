@@ -142,3 +142,18 @@ li::marker { color: #e9a183; }
 .legenda-fluxo { font-size: 8.2pt; color: #7d7a76; text-align: center; margin-top: 1mm; }
 
 .page-break { break-before: page; }
+
+/* ---------- bloco para copiar (roteiro, mensagem pronta, legenda) · 12/10/2026 ----------
+   Texto que o leitor vai selecionar e colar em outro lugar. Um bloco por coisa a copiar,
+   com o rótulo acima dizendo onde ele entra. */
+.copiar-rotulo {
+  font-size: 7.6pt; letter-spacing: 1.4pt; text-transform: uppercase;
+  color: #e9a183; font-weight: 700; margin: 5mm 0 1.5mm 0; break-after: avoid;
+}
+.copiar {
+  background: #151517; border: 1px solid #3b3b41; border-radius: 2mm;
+  padding: 4mm 4.5mm; margin: 0 0 4mm 0;
+  font-size: 10.5pt; line-height: 1.6; color: #f0eeeb;
+}
+.copiar p { margin: 0 0 3mm 0; }
+.copiar p:last-child { margin-bottom: 0; }

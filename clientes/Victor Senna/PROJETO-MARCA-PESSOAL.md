@@ -102,6 +102,8 @@ O produto precisa de **um nome fixo** (pilar 4). Sem ele, não se anuncia, não 
 
 ### 5.2 MID TICKET — a imersão
 
+> ⏸️ **Pausada em 08/10/2026 (DEC-VS-06):** o lugar do mid ticket passou ao **curso AuraFlow** (`AuraFlow/PILARES.md`). Esta seção fica íntegra para revisão depois da turma 1.
+
 | | |
 |---|---|
 | **O que é** | imersão de **6 semanas**, ao vivo, turma pequena — a síntese aplicada à travessia de um nível |
@@ -116,7 +118,7 @@ O produto precisa de **um nome fixo** (pilar 4). Sem ele, não se anuncia, não 
 
 | Fora | Por quê |
 |---|---|
-| Atendimento individual | consome a hora que a Continuum precisa. **Entra só depois de duas turmas** |
+| Atendimento individual | consome a hora que a Continuum precisa. ~~**Entra só depois de duas turmas**~~ → **13/10/2026: aberto em piloto, teto de 1 mentorado (DEC-VS-15)** |
 | Área de membros / plataforma | ferramenta antes de processo é antipadrão. E-mail e grupo bastam na v1 |
 | Certificação / formação | produto de outra ordem, exige método estabilizado |
 | Qualquer coisa de saúde | ver §6 |

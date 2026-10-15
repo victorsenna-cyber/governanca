@@ -1,0 +1,43 @@
+<svg class="fluxo" viewBox="0 0 700 250" xmlns="http://www.w3.org/2000/svg">
+<style>
+ .bx{fill:#2b2b30;stroke:#44444b;stroke-width:1}
+ .bxo{fill:#3a2f2b;stroke:#96684f;stroke-width:1.3}
+ .bxg{fill:#26302b;stroke:#4f7358;stroke-width:1.2}
+ .bxd{fill:#242429;stroke:#3c3c43;stroke-width:1;stroke-dasharray:3 3}
+ .tx{font-family:Lato,sans-serif;font-size:12px;fill:#e2dfdb;text-anchor:middle}
+ .txb{font-family:Lato,sans-serif;font-size:12px;font-weight:bold;fill:#f2efec;text-anchor:middle}
+ .txs{font-family:Lato,sans-serif;font-size:9.5px;fill:#98948f;text-anchor:middle}
+ .ln{stroke:#6b6864;stroke-width:1.3;fill:none}
+</style>
+<defs><marker id="ar" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#6b6864"/></marker></defs>
+<rect class="bxo" x="6" y="20" width="150" height="56" rx="5"/>
+<text class="txb" x="81" y="42">Pré-venda</text>
+<text class="txs" x="81" y="58">R$ 147 · até dom. 29/11</text>
+<text class="txs" x="81" y="70">1 de 3 posts no evento</text>
+<path class="ln" marker-end="url(#ar)" d="M158,48 L184,48"/>
+<rect class="bx" x="188" y="20" width="150" height="56" rx="5"/>
+<text class="tx" x="263" y="42">Anúncio do dia e do local</text>
+<text class="txs" x="263" y="58">novembro</text>
+<text class="txs" x="263" y="70">2 de 3 posts no evento</text>
+<path class="ln" marker-end="url(#ar)" d="M340,48 L366,48"/>
+<rect class="bx" x="370" y="20" width="150" height="56" rx="5"/>
+<text class="tx" x="445" y="42">Primeiro lote</text>
+<text class="txs" x="445" y="58">R$ 197 · a partir de 30/11</text>
+<text class="txs" x="445" y="70">dezembro, 2 de 3</text>
+<path class="ln" marker-end="url(#ar)" d="M522,48 L548,48"/>
+<rect class="bx" x="552" y="20" width="142" height="56" rx="5"/>
+<text class="tx" x="623" y="42">Reta final</text>
+<text class="txs" x="623" y="58">4 de janeiro até o dia</text>
+<text class="txs" x="623" y="70">3 de 3 posts no evento</text>
+<path class="ln" marker-end="url(#ar)" d="M623,78 L623,112"/>
+<rect class="bxg" x="430" y="116" width="264" height="52" rx="5"/>
+<text class="txb" x="562" y="138">Ladies Fluency Experience</text>
+<text class="txs" x="562" y="155">janeiro de 2027 · Florianópolis · só mulheres</text>
+<path class="ln" marker-end="url(#ar)" d="M428,142 L340,142"/>
+<rect class="bx" x="188" y="116" width="150" height="52" rx="5"/>
+<text class="tx" x="263" y="138">Depois do dia</text>
+<text class="txs" x="263" y="155">fotos, falas e a turma nova</text>
+<rect class="bxd" x="6" y="190" width="688" height="48" rx="5"/>
+<text class="tx" x="350" y="210">Toda semana: três publicações. Duas com arte e legenda prontas, um reel seu.</text>
+<text class="txs" x="350" y="227">O que não é do evento é do método, e é o que faz a pessoa confiar antes de comprar.</text>
+</svg>

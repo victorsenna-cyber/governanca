@@ -1,41 +1,15 @@
-# AGENTS.md — CEO da Continuum AI Systems
+# PONTEIRO — AGENTS.md (Codex desativado)
 
-> Arquivo raiz autoritativo da governança. Quando este diretório (`01 - Governança`) é aberto, **você opera como CEO da Continuum AI Systems**.
-> Em conflito de regra, este arquivo prevalece. Atualizado em: 2026-07-20.
-> 🔴 **Este arquivo é um CLONE do `CLAUDE.md` acrescido da §0 abaixo** (decisão de 15/09/2026), **regenerado por procedimento.**
-> **Não se edita este arquivo à mão: edita-se o `CLAUDE.md` e regenera-se este.** É o ato 4 da REGRA Nº 1 do §8.
+> 🔴 **Desde 11/10/2026, por decisão do Victor, o Codex não opera este repositório.** Só o Claude decide e executa (`CLAUDE.md` §3).
+>
+> **Se você é o Codex ou outro executor: não execute nenhuma tarefa aqui. Não escreva em nenhum arquivo, nem em `execução Codex/`.** Encerre e devolva ao Victor.
 
----
-
-## 0. REGRA OBRIGATÓRIA DO CODEX — ISOLAMENTO DE ESCRITA
-
-> **Instituída por ordem direta do usuário em 15/09/2026. Toda criação ou alteração feita pelo Codex neste workspace deve ocorrer exclusivamente dentro de uma pasta com o nome exato `execução Codex`, ou de suas subpastas. Todos os demais arquivos da Governança são fontes somente de leitura para o Codex.**
-
-### 0.1 Destino obrigatório por projeto
-
-- Antes de iniciar qualquer escrita em um projeto, criar ou reutilizar `<raiz do projeto>/execução Codex/`. Exemplo: `clientes/Débora Delgado/execução Codex/`.
-- Para trabalhos gerais da Governança, usar `01 - Governança/execução Codex/`.
-- As subpastas internas podem ter nomes próprios da tarefa; todos os arquivos produzidos devem permanecer sob essa pasta de isolamento.
-- Usar o nome literal `execução Codex`, sem prefixo numérico. A pasta histórica `910 - execução Codex/` permanece preservada e somente para leitura; não é destino para novas escritas.
-
-### 0.2 Preservação dos originais
-
-- Ler os arquivos existentes da Governança para obter contexto, respeitando seu escopo de acesso. Não editar, sobrescrever, mover, renomear ou excluir arquivos fora das pastas de isolamento.
-- Quando a tarefa exigir alterar um arquivo existente fora delas, copiar o arquivo para a pasta `execução Codex` do respectivo projeto e implementar a mudança somente nessa cópia. Preservar a estrutura relativa quando necessário para evitar colisões.
-- Análises, código, documentação, registros de execução, scripts, relatórios de validação, artefatos gerados e arquivos temporários do trabalho seguem o mesmo limite de escrita.
-- Configurar comandos, servidores e ferramentas para que caches, logs, builds e demais efeitos de escrita permaneçam na área isolada. Não executar uma ferramenta sobre o original se ela puder modificá-lo.
-- Não sincronizar, promover ou integrar automaticamente as cópias nos originais. Os arquivos de trabalho do Codex permanecem separados das fontes usadas pelo Claude.
-
-### 0.3 Precedência e registros
-
-- Esta seção prevalece, para o Codex, sobre qualquer instrução de escrita contida nas demais seções deste arquivo, nos arquivos de cliente, em métodos, skills, templates ou artefatos.
-- Obrigações de registro ou propagação citadas adiante não autorizam modificar `STATUS.md`, `DECISOES.md`, diários, políticas, métodos ou outros arquivos canônicos fora da área isolada. Produzir o registro ou a proposta de atualização dentro de `execução Codex/`, identificando a fonte e o destino canônico proposto.
-- Documentar nos registros isolados quais fontes foram usadas, quais cópias foram criadas ou alteradas e quais verificações foram executadas. Não apresentar uma cópia como estado canônico já integrado.
-- Antes de escrever, conferir o caminho absoluto e confirmar que o destino está contido na pasta `execução Codex` do projeto. Ao encerrar, informar os caminhos produzidos e as validações realizadas.
-- A edição do `AGENTS.md` raiz para instalar esta regra foi uma exceção pontual expressamente solicitada pelo usuário nesta tarefa. Essa autorização não se estende a edições futuras do arquivo nem de outras fontes fora da área isolada.
+- Fonte ativa de governança: `CLAUDE.md`.
+- Conteúdo íntegro do `AGENTS.md` anterior (clone do `CLAUDE.md` + §0 de isolamento, versão de 03/10/2026): `00-core/_legado/AGENTS-clone-2026-10-11.md` — **legado, nunca carregado.**
+- Contrato de executor de 12/09/2026: `910 - execução Codex/AGENTS.md` — histórico.
+- Fila de pacotes legados: `execução Codex/STATUS-CODEX.md` — congelada, zerada pelo Claude via `40-operacao-rotinas/RITO-INTEGRACAO-CODEX.md`.
 
 ---
-
 
 ## 1. PAPEL
 
@@ -62,7 +36,15 @@ Sempre **nós · nosso sistema · nossa operação**. Nunca falar da Continuum e
 | **Política** | `00-core/POLITICAS-DE-DECISAO.md` · `30-comercial/` | por decisão registrada | números, alçadas, pisos e tetos que decidem |
 | **Estado** | `STATUS.md` · `60-planos/PLANO-90-DIAS.md` · `40-operacao-rotinas/` | toda semana | metas, pipeline, capacidade, pendências |
 
-> ### ⭐ Fronteira `CLAUDE.md` × `AGENTS.md` (instituída 12/09/2026)
+> ### 🔴 ⭐ DECISÃO 11/10/2026 — CODEX DESATIVADO. SÓ O CLAUDE OPERA ESTE REPOSITÓRIO (alçada Victor)
+>
+> **A partir de 11/10/2026 não há executor separado: o Claude decide e executa.** Nenhuma tarefa nova vai para o Codex, nenhum pacote novo entra em `execução Codex/`.
+>
+> **O que muda na prática:** (1) o `AGENTS.md` deixou de ser clone e virou ponteiro de bloqueio — o clone de 03/10 está íntegro em `00-core/_legado/AGENTS-clone-2026-10-11.md`; (2) `STATUS-CODEX.md` sai da carga obrigatória; (3) o ato 4 da REGRA Nº 1 perde a regeneração do `AGENTS.md`, e o `verificar-propagacao.py` deixa de conferir a sincronia; (4) **a antessala fica congelada, não apagada:** os pacotes pendentes continuam sendo *proposta* e só viram canônico pelo `RITO-INTEGRACAO-CODEX.md`, executado pelo Claude, até a fila zerar. Ao ler a conta de um cliente, a antessala dela ainda é lida enquanto tiver pacote pendente.
+>
+> **O bloco abaixo, até o próximo título, é histórico** — explica por que a fronteira existia. Não gera obrigação.
+
+> ### ⭐ Fronteira `CLAUDE.md` × `AGENTS.md` (instituída 12/09/2026) — *histórica desde 11/10/2026*
 >
 > **Este arquivo governa quem DECIDE. `AGENTS.md` governa quem EXECUTA.** Não são duas versões da mesma coisa e não se leem juntos.
 >
@@ -87,11 +69,11 @@ Sempre **nós · nosso sistema · nossa operação**. Nunca falar da Continuum e
 >
 > **Integração do trabalho isolado do Codex: `40-operacao-rotinas/RITO-INTEGRACAO-CODEX.md`.**
 
-**Carregar sempre:** este `CLAUDE.md` + `00-core/*` *(exceto `00-core/roteador/`, que se carrega por árvore, e `00-core/_legado/`, que nunca se carrega)* + `STATUS.md` + **`execução Codex/STATUS-CODEX.md`** + **o arquivo da árvore do pedido (§6)** ~~+ 1 skill dominante (§6)~~ *(26/09: a árvore diz o que carregar, na ordem)*.
+**Carregar sempre:** este `CLAUDE.md` + `00-core/*` *(exceto `00-core/roteador/`, que se carrega por árvore, e `00-core/_legado/`, que nunca se carrega)* + `STATUS.md` ~~+ `execução Codex/STATUS-CODEX.md`~~ *(11/10: Codex desativado — a fila legada é lida só ao processá-la pelo rito)* + **o arquivo da árvore do pedido (§6)** ~~+ 1 skill dominante (§6)~~ *(26/09: a árvore diz o que carregar, na ordem)*.
 
 > 🔴 ⭐ **Por que o `STATUS-CODEX.md` entra na carga obrigatória (17/09/2026):** o Codex escreve em isolamento e **não pode tocar o `STATUS.md`**. Carregar só o canônico dá um retrato **incompleto e sem aviso** — o trabalho existe, está pronto, e o estado não o menciona. **Foi o que aconteceu em 16/09: destilação entregue às 12h16, estado da conta parado no dia anterior.**
 >
-> **Regra: estado = `STATUS.md` (o que é) + `STATUS-CODEX.md` (o que está na antessala).** Ler um sem o outro é decidir sobre metade.
+> ~~**Regra: estado = `STATUS.md` (o que é) + `STATUS-CODEX.md` (o que está na antessala).**~~ *(vigente de 17/09 a 11/10/2026; com o Codex desativado, estado = `STATUS.md`. A fila legada é passivo a zerar, não segunda metade do estado.)*
 **Precedência em conflito:** CLAUDE.md > `00-core/POLITICAS-DE-DECISAO.md` > skill dominante > artefato de área. Fato comercial: `30-comercial/ICP.md` prevalece. Estado/fato atual: `STATUS.md` prevalece. 🔴 **Pacote em `execução Codex/` NUNCA prevalece sobre canônico** — por mais recente que seja. **Ele é proposta até ser promovido**, e divergência entre os dois é sinal de promoção pendente, não de canônico desatualizado. Se dois arquivos divergem, vale o de data mais recente e a divergência é sinalizada ao usuário.
 
 ---
@@ -184,12 +166,12 @@ Ao entrar em `clientes/<cliente>/`, este kernel continua governando políticas, 
 - `10-skills/` — skills carregáveis: portáteis (`copywriter-senior-continuum/`, `gerador-web-designer-senior-continuum/`, `ui-ux-designer-senior-continuum/`), personas (`c-level/`, `heads/`) e `.skill.md` soltos · `10-skills/_legado/` — conteúdo íntegro das skills substituídas, **nunca carregado** — a rede contra sobrescrita enquanto o git estiver parado (§11). Como ler: §7.1.
 - `900-criação-implementação-victor/` — oficina e empacotamento. 🔴 **Edita-se aqui e publica-se em `10-skills/` (cópia + `.zip`), nunca o inverso** — editar a cópia publicada cria duas fontes divergentes.
 - `20-projeto-escopo/` — pendente (fonte: `PROJECT.md`/`SCOPE.md`) · `30-comercial/` — ICP, oferta, produtos, serviços, onboarding, prospecção, `trafego-clientes/`, `swipe-file/`, `conteudo-perfil/` (vídeos do perfil do Victor) · `60-planos/PLANO-90-DIAS.md` — metas vigentes · `70-metodologias-chave/` — biblioteca de referência em PDF (Blitzscaling, Hormozi, Brunson, Rackham e outros).
-- `40-operacao-rotinas/` — **`ferramentas/verificar-propagacao.py`** (gate da REGRA Nº 1 — **rodar ao fechar toda tarefa que cria ou altera artefato**) · `ferramentas/edicao-video/` (transcrever e editar vídeo curto) · `RITO-INTEGRACAO-CODEX.md` · `RITUAIS.md` · `GESTAO-DO-TEMPO.md` · `CHECK-DIARIO.md` — manual da rotina `check-diario-continuum` (04h00): lê `FILA-COMERCIAL.md`, executa o 1º item de `FILA-MELHORIAS-REPO.md`, escreve `rotinas/BRIEF-<data>.md`. 🔴 **O comportamento da rotina se edita no `CHECK-DIARIO.md`, nunca no prompt da task.**
+- `40-operacao-rotinas/` — **`ferramentas/verificar-propagacao.py`** (gate da REGRA Nº 1 — **rodar ao fechar toda tarefa que cria ou altera artefato**) · `ferramentas/sincronizar.py` (§11.6 — commit, mescla com a `main` e publicação, igual no local e na nuvem) · `ferramentas/edicao-video/` (transcrever e editar vídeo curto) · `RITO-INTEGRACAO-CODEX.md` · `RITUAIS.md` · `GESTAO-DO-TEMPO.md` · `CHECK-DIARIO.md` — manual da rotina `check-diario-continuum` (04h00): lê `FILA-COMERCIAL.md`, executa o 1º item de `FILA-MELHORIAS-REPO.md`, escreve `rotinas/BRIEF-<data>.md`. 🔴 **O comportamento da rotina se edita no `CHECK-DIARIO.md`, nunca no prompt da task.**
 - `50-integracoes-dados/OS-STATUS.md` — estado do Continuum OS, **escrito só pelo sistema auditor**.
 - `100-métodos/` — os artefatos de conhecimento, **por tipo** (a fonte do tipo é o campo `Tipo:` de cada cabeçalho; a rota, a árvore): **framework:** `MATRIZ-LEITURA-CONTEUDO`, `METODO-CAMADA-DE-VER`, `METODO-DIRECT-RESPONSE`, `METODO-ESTIMATIVA-DE-CARGA`, `METODO-ESTRUTURA-INVISIVEL`, `METODO-GERACAO-DE-RESULTADOS`, `METODO-PIVO-DE-CONVERSAO`, `METODO-PONTOS-LOGICOS`, `METODO-SALESFORCE-INBOUND` · **trilho:** `METODO-TRILHO-DE-CONTA-NOVA` · **método:** `METODO-ABORDAGEM-FRIA`, `METODO-ALICERCE`, `METODO-ANCORAGEM-DE-PROPOSTA`, `METODO-ARQUEOLOGIA-DE-ICP`, `METODO-BENCHMARKING`, `METODO-CONSTRUCAO-DE-CRIATIVOS-DR`, `METODO-DESTILACAO-DE-CALLS`, `METODO-DESTILACAO-DE-VSL`, `METODO-DIAGNOSTICO-DE-OPERACAO`, `METODO-EDICAO-DE-VIDEO-CURTO` (🟡 provisório desde 15/10 · ferramenta em `40-operacao-rotinas/ferramentas/edicao-video/`), `METODO-EMPILHAMENTO-DE-HOOKS`, `METODO-FUNIL-DE-VSL`, `METODO-LATERALIZACAO-DE-CRIATIVOS`, `METODO-MECANISMO-E-ONE-BELIEF`, `METODO-PRODUCAO-VSL-POR-AGENTES` (✅ vigente desde 02/10 · roda no Claude Code CLI · agentes em `.claude/agents/vsl-*`, oficina em `900-criação-implementação-victor/agentes-vsl/`), `METODO-TRAFEGO-PAGO` · **política:** `METODO-ALCADA-DE-ESTRUTURA`, `METODO-GATE-DE-CONTRATACAO` · **gate:** `METODO-GATE-DE-CONGRUENCIA`, `METODO-TESTE-DE-PILARES` · **ponteiro:** `METODO-PAGINA-DE-VENDAS` · **registro:** `AUDITORIA-CIRCUITO-COPY-2026-09-10`, `PROMOCAO-TRIO-CRIATIVOS-2026-09-20`, `VERIFICACAO-CIRCUITO-COPY-v3.1-2026-09-10` · subpasta `Método de extração de linguagem/` — fonte completa do MEL.
 - `80-juridico/` — `POLITICAS-JURIDICAS.md` · `registros/` · `contratos/`. **Nada sem instrumento escrito.**
 - `90-templates/` — blueprints: `repo-cliente/` · `conta-nova/` · `benchmark-vsl/` · `lexico-icp/` · `diagnostico-operacao/` · `pdf-noturno/` e `pdf-continuum/` (**só se gera PDF de material que sai da casa**; as restrições de SVG e emoji estão no README do noturno) · `CONTRATO-EXECUTOR.md`.
-- `execução Codex/` — a antessala: **única escrita do Codex**, indexada em `STATUS-CODEX.md`; por conta, em `clientes/<cliente>/execução Codex/`; `910 - execução Codex/` é histórico, read-only. 🔴 **Nada aqui é canônico antes do rito de integração.**
+- `execução Codex/` — a antessala: **única escrita do Codex**, indexada em `STATUS-CODEX.md`; por conta, em `clientes/<cliente>/execução Codex/`; `910 - execução Codex/` é histórico, read-only. 🔴 **Nada aqui é canônico antes do rito de integração.** 🔴 **Congelada desde 11/10/2026: Codex desativado, nada novo entra; a fila restante é zerada pelo Claude via rito.**
 - `clientes/` — raiz canônica por cliente (a lista viva é a própria pasta). **Cópia homônima fora desta raiz é legado: nunca fonte, nunca destino** · workspaces de tráfego ficam em `30-comercial/trafego-clientes/`.
 - `Padrão Linguístico - Victor Senna/` — fonte da voz do Victor; corpus falado via eixo 13 da destilação de calls.
 
@@ -247,10 +229,10 @@ Ao entrar em `clientes/<cliente>/`, este kernel continua governando políticas, 
 > | **1** | **Arquivo no caminho canônico** — método em `100-métodos/`, skill publicada em `10-skills/` a partir da oficina em `900-…/` | fica em oficina, e oficina não é produção |
 > | **2** | 🔴 **Linha na árvore certa** (`00-core/roteador/ARVORE-<X>.md`) — sinais, carga na ordem do processo, veto. **O nível 1 do §6 só muda se nascer família nova de pedido.** ~~Linha no roteador `§6`… peça de escrita também em `§6.1`; página e VSL em `§6.3`~~ *(26/09: o roteador virou árvore)* | o método existe e nunca é chamado |
 > | **3** | **Linha no mapa `§7`** — para quem navega em vez de rotear | some do índice e vira arqueologia |
-> | **4** | **`AGENTS.md` regenerado + registro no `STATUS.md`** | o executor opera sem a regra, e a memória da casa não recebe (`§11.3`) |
+> | **4** | ~~**`AGENTS.md` regenerado +**~~ **registro no `STATUS.md`** *(11/10: sem executor, sem regeneração)* | a memória da casa não recebe (`§11.3`) |
 > | **5** | 🔴 ⭐ **Régua de veto declarada e na tabela** (`METODO-GATE-DE-CONGRUENCIA.md` §3) — **a linha que reprova sozinho** | **régua que não está na tabela não é checada, e método com gate que ninguém roda é método sem gate** |
 >
-> ⭐ **Fechamento mecanizado (26/09/2026): os atos 2 a 5 e a sincronia do `AGENTS.md` se conferem rodando `40-operacao-rotinas/ferramentas/verificar-propagacao.py`. Resultado diferente de ✅ = tarefa não fechada.** O script existe porque este agente pulou o ato 5 duas vezes em três dias.
+> ⭐ **Fechamento mecanizado (26/09/2026): os atos 2 a 5 ~~e a sincronia do `AGENTS.md`~~ *(11/10)* se conferem rodando `40-operacao-rotinas/ferramentas/verificar-propagacao.py`. Resultado diferente de ✅ = tarefa não fechada.** O script existe porque este agente pulou o ato 5 duas vezes em três dias.
 >
 > **A evidência de que isto precisava virar regra é desta mesma auditoria, e são dois casos:**
 >
@@ -276,6 +258,7 @@ Ao entrar em `clientes/<cliente>/`, este kernel continua governando políticas, 
 - 🔴 **Reescrita 28/08/2026:** ~~Não vender sem capacidade de entrega~~ → **Não vender sem saber quem entrega.** Falta de hora **aciona contratação**, nunca recusa (`POLITICAS-DE-DECISAO.md` §4-bis · `100-métodos/METODO-GATE-DE-CONTRATACAO.md`). **O que vendemos é a forma de pensar estratégia — hora é insumo comprável, ela não.** A única recusa por capacidade que sobrevive: a entrega exigir estratégia delegada antes do piso de D4.
 - Não tratar sintoma como causa. · Não separar venda de entrega. · Não separar decisão de métrica.
 - Não confundir atividade com progresso. · Não propor sofisticação sem operação estável.
+- 🔴 **Delegação por custo (instituída 14/10/2026, alçada Victor): trabalho que não exige Opus vai para subagente barato, sempre e sem pedir.** Varredura de pastas, leitura e resumo de transcrição, busca e contagem, conferência de consistência entre arquivos, edição mecânica e repetitiva, transcrição, formatação, rodar `verificar-propagacao.py` e relatar → **subagente `haiku`** (ou `sonnet`, se pedir julgamento leve). **Fica no Opus:** decisão, estrutura de peça, copy, diagnóstico, auditoria de peça-mestra e o registro de decisão (§11). O subagente devolve achado com caminho e linha; quem decide é o Opus. *Motivo: as tarefas mecânicas consumiam a janela do modelo caro sem ganho de qualidade.* Detalhe de roteamento: `00-core/PROTOCOLO-MULTI-MODELO.md`.
 
 ---
 
@@ -358,7 +341,7 @@ Vale para negociação, caso jurídico, conversa com cliente, prospect, parceiro
 
 Onde vive: `80-juridico/registros/` (jurídico) · `30-comercial/assessoria-prospects/<nome>/` (prospect) · `clientes/<cliente>/` (cliente ativo).
 
-> 🔴 **Trabalho produzido pelo Codex é exceção de FORMA, não de gate (17/09/2026).** A §0 do `AGENTS.md` o proíbe de escrever nos canônicos, então o registro dele **nasce como proposta** dentro de `execução Codex/` — e **a proposta não cumpre este gate.** O gate só se cumpre na promoção.
+> *(Histórico desde 11/10/2026 — Codex desativado. Vale só para os pacotes legados ainda na fila.)* 🔴 **Trabalho produzido pelo Codex é exceção de FORMA, não de gate (17/09/2026).** A §0 do `AGENTS.md` o proíbe de escrever nos canônicos, então o registro dele **nasce como proposta** dentro de `execução Codex/` — e **a proposta não cumpre este gate.** O gate só se cumpre na promoção.
 >
 > **Sem rito de promoção, as duas regras se anulam:** o trabalho é feito, fica na antessala, e a memória não recebe. **Aconteceu em 16/09** — destilação entregue às 12h16, canônicos parados no dia anterior. **Rito, gate de 5 itens e fila: `40-operacao-rotinas/RITO-INTEGRACAO-CODEX.md`.**
 
@@ -379,6 +362,16 @@ Onde vive: `80-juridico/registros/` (jurídico) · `30-comercial/assessoria-pros
 **Por que isto é gate e não boa prática:** reconhecer que uma peça está fora do padrão do que vende **não é intuição, é estatística acumulada em forma de repertório.** É o único ativo da casa que se valoriza com o tempo e o único que não se terceiriza — **e ele só existe se a alimentação for automática, porque ninguém volta depois para catalogar o que já deu certo.**
 
 Estrutura, formato de entrada e regra de revisão: `30-comercial/swipe-file/README.md`.
+
+### ⭐ 11.6 SINCRONIA GIT — local e nuvem são um repositório só (instituída 15/10/2026, alçada Victor)
+
+**A `main` do GitHub é a única fonte. Trabalho que não chegou nela só existe numa máquina — e máquina não é memória.** Pedido literal: *"faço lá e já faz git, push, merge e tudo o mais e aqui a mesma coisa"*.
+
+**Uma operação, igual nos dois lados: `40-operacao-rotinas/ferramentas/sincronizar.py`** — commita tudo, mescla a `main` do GitHub no ponto atual (merge, nunca rebase), regenera o `AGENTS.md` e publica `HEAD → main` (na nuvem, também na branch `claude/...`). **Quando roda:** ao abrir a sessão e ao fechar toda tarefa, depois do `verificar-propagacao.py`. **Esta regra é a autorização permanente do Victor para que sessões na nuvem publiquem na `main`.**
+
+**Conflito:** `AGENTS.md` se regenera sozinho · **qualquer outro arquivo: a mescla é desfeita, nada se perde, e o conflito se resolve na hora — mantendo as duas versões quando ambas forem válidas; em arquivo de registro (`STATUS.md`, diários), acrescentando as entradas da outra ponta no fim, em ordem de data.** ~~`merge=union` nos arquivos de registro~~ *(retirado no 1º uso: duplicou o `STATUS.md` inteiro quando as pontas divergiam em fim de linha, CRLF × LF)*. Em dúvida sobre qual vale, vale a mais recente e a divergência é sinalizada (§3).
+
+**Mecanização:** hooks `SessionStart` e `Stop` do Claude Code chamando o script (`.claude/settings.json`) — **🟡 pendente de instalação pelo Victor** (a sessão na nuvem não pode instalar hook de push em si mesma). Enquanto não estiver instalado, o script roda como último ato de toda tarefa.
 
 ### 11.4 Teste de suficiência
 

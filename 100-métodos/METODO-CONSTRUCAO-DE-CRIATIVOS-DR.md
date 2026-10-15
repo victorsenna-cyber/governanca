@@ -9,6 +9,7 @@
 > **Não decide:** verba, limiar de CPA, janela, volume e critério de vencedor. Isso é do `100-métodos/METODO-TRAFEGO-PAGO.md` e do plano da conta.
 > 🔴 ⭐ **REGRA DA ESCALA (22/09/2026, `CLAUDE.md` §8 REGRA Nº 2):** antes da primeira linha, **o anúncio tem uma referência ESCALADA registrada** — a promessa que ele carrega e o tipo de abertura vêm de anúncio que sustenta volume no mesmo nicho ou em nicho adjacente (`METODO-DIRECT-RESPONSE.md` §2-bis). **O que este método constrói por cima é a diferenciação: mecanismo, prova, voz e cena.** Anúncio sem referência escalada é exploração, e se declara assim.
 > **Oficina:** `900-criação-implementação-victor/criativos/execução Codex/METODO-CONSTRUCAO-DE-CRIATIVOS-DR.md` (cópia de elaboração, não carregar).
+> **Atualizado em 12/10/2026 (alçada Victor):** §4.2-bis, o corpo desenvolvido em texto (cadeia de seis elos, lógica no lugar de resultado, régua de deleção), e três itens no gate do §7. Origem: conta Paola Lopes Rosa. 🟡 Aprovado por alçada, `n=0` de mídia.
 
 ---
 ## 1. Função e limites
@@ -28,6 +29,7 @@ Fontes primárias locais, relativas à raiz da Governança:
 
 - **F1:** `900-criação-implementação-victor/criativos/Video by felipenonino (1).txt`. Transcrição automática identificada pelo arquivo como vídeo de Felipe Nonino. Âncoras de localização: “Primeiro o hook”; “Agora você precisa de um corpo”; “Depois, você vai colocar um depoimento”.
 - **F2:** `900-criação-implementação-victor/criativos/Video by felipenonino.txt`. Complemento sobre recombinação de ganchos.
+- **F3 (08/10/2026):** `900-criação-implementação-victor/criativos/DESTILACAO-CRIATIVOS-FILEMON-2026-10-08.md` — podcast *Segredos da Escala* #046, Tiago Filemon e João Campos, transcript íntegro ao lado. **Fonte independente de F1/F2.** Converge com F1 em: anúncio vende a próxima etapa (C-09), CTA com valor (C-13), prova antes do CTA e segundo CTA (C-27, C-29). **Onde convergem, a confiança na hipótese sobe; continua sendo relato de terceiro, não resultado nosso.** Entrou aqui só o §3.1 (escolha de ângulo); o que toca o gate (§7) aguarda o caso real, conforme `CLAUDE.md` §7.1 item 4 — fila na destilação, §7.
 
 | Conteúdo | Procedência | Tratamento |
 |---|---|---|
@@ -56,6 +58,26 @@ Preencher antes do roteiro:
 Público e oferta precisam ser coerentes com o diagnóstico e os pilares aplicáveis. Falhas de P1/P4 não são resolvidas na redação do anúncio. Lacuna de fato é perguntada; promessa, narrativa, ordem e mecanismo como estrutura são decisões nossas, limitadas pela evidência disponível.
 
 Aplicar o passe de procedência da skill: cena de grau I não entra em bloco de espelho; banco com menos de três falas D mantém a peça como rascunho, conforme a regra vigente. Não deduzir a experiência do público a partir da transcrição de um vendedor.
+
+### 3.1 Escolha do ângulo — classes e ordem de ataque *(F3, 08/10/2026)*
+
+**Ângulo é o tema central do anúncio — sobre o que ele fala. O gancho é a expansão desse ângulo nos primeiros segundos, não uma busca separada por algo curioso** (F3, C-19). Ângulo fraco não se salva com gancho forte.
+
+⚠️ **Vocabulário:** o que F3 chama de ângulo é uma **classe de argumento**. Quando a casa fala em **ângulo/pivô** (`E → Mas → Por isso`), fala da contradição específica dentro da classe. Uma classe comporta vários pivôs.
+
+| Classe de ângulo | O que o anúncio faz | Onde F3 relata uso |
+|---|---|---|
+| **Mecanismo do problema (causa raiz)** | nomeia a causa que ninguém contou | saúde e beleza — "há anos é basicamente só isso" (C-23) |
+| **Mecanismo da solução** | detalha como a coisa exata resolve | qualquer nicho com mecanismo nomeado |
+| **Solução** | abre pela solução em etapas, sem a causa | saúde, como variação da causa raiz (C-23) |
+| **Problema** | abre pela dor ou pela situação | nichos de dor forte, com segmentação pela dor (C-42) |
+| **Contrário** | contraria uma crença que o público tem sem ter prova dela | geral — "sabia que X faz mal?" |
+| **Pergunta paradoxal** | faz uma pergunta que abre uma brecha de curiosidade | beleza ("qual a idade dela?") (C-24, C-57) |
+| **Descoberta científica** | ancora num estudo ou instituição | saúde |
+
+**Ordem de ataque** (C-22): primeiro as classes que **saem da própria peça de destino** — a da lead, a da história, a do mecanismo do problema, a do mecanismo da solução. Só depois as exploratórias. **É a ordem mais segura porque o anúncio já nasce congruente com o que o destino diz no começo** (C-10).
+
+🔴 **Fronteiras que não mudam:** classe de ângulo escolhida em referência de mercado segue a REGRA Nº 2 (classe escalada, mecanismo nosso); tema viral do orgânico entra **só como exploração** (`METODO-DIRECT-RESPONSE.md` §2-bis); e a lista acima **é ponto de partida, não catálogo fechado** — a lista completa da fonte (~20 classes) não está no transcript.
 
 ## 4. Arquitetura de recepção
 
@@ -87,6 +109,43 @@ Um gancho de conteúdo pode ser simples ou composto. Empilhamento não é obriga
 Explicitar: problema observado → causa sustentada → atuação da solução → efeito esperado dentro dos limites da prova. Usar o teste de encadeamento de Pontos Lógicos no argumento: o próximo elo responde ao anterior? Uma lista de benefícios não resolve uma lacuna causal.
 
 Não aplicar esse teste causal ao roteiro inteiro como se um CTA tivesse de provar o depoimento seguinte. Há funções persuasivas diferentes na sequência. Também não impor ao anúncio a quantidade de elos usada em uma VSL.
+
+### 4.2-bis Corpo desenvolvido em texto: a cadeia entre a cena e a oferta *(12/10/2026)*
+
+> **Origem:** conta Paola Lopes Rosa, criativos do teste 01. Três versões no mesmo dia; a terceira foi aprovada pelo Victor (*"nossa, agora você acertou na copy"*) e ele determinou: *"sobre o padrão de copy: isso precisa ser propagado para o repo"*. Peças e o caminho até elas: `clientes/Paola Lopes Rosa/03 - criativos/2026-10-12-teste-01/` (`V3-MODELO-RELACIONAMENTO.md`, `V3-AREA.md`).
+> 🟡 **Grau de evidência: aprovação de alçada, `n=0` de mídia.** As peças ainda não rodaram. O padrão vale para escrever; só vira padrão que vende com dado, e só então entra no swipe file (`CLAUDE.md` §11.5).
+
+**Quando se aplica:** anúncio estático ou de texto longo em que o texto principal carrega a venda, com destino em conversa. O modelo do §4 nasceu em vídeo; esta é a forma dele em texto, para oferta que ainda não tem depoimento.
+
+**A sequência**, que é o padrão C (causa raiz) do `METODO-PONTOS-LOGICOS.md`:
+
+| Elo | Função | O que entra | Pergunta que deixa aberta |
+|---:|---|---|---|
+| 1 | a cena | o que a pessoa **faz**, em verbo de ação, e o que a vida devolve | *"é comigo?"* |
+| 2 | a explicação que ela já tem | o motivo que ela dá hoje, ou a falta de um | *"e não é isso?"* |
+| 3 | **o pivô** | a causa muda de lugar: sai do que ela vê e vai para o que a oferta trata | *"por que o que eu faço não resolveu?"* |
+| 4 | a invalidação | por que o que ela tenta não alcança essa causa | *"então por onde se chega?"* |
+| 5 | a transição | o caminho que alcança, em uma frase, e o recorte da oferta | *"como?"* |
+| 6 | a solução, passo a passo | o que a pessoa faz, o que é feito, o que é medido, o que ela recebe, em que formato, em quanto tempo | fica com quem lê |
+
+Depois do elo 6 vêm as condições (formato do atendimento, capacidade) e o convite, com a mesma ação do botão.
+
+**As quatro réguas que este formato exige:**
+
+1. **Lógica no lugar de resultado.** Sem prova documentada, a peça não diz o que muda na vida de quem compra. Mostra por que tratar aquela causa faz sentido e para no que o serviço faz. A conclusão não se escreve (`METODO-PONTOS-LOGICOS.md`).
+2. **A cena abre pelo que a pessoa faz.** Sentimento sem ação antes não gera imagem. O padrão veio da leitura de três anunciantes do nicho da conta; a referência que o sustenta está declarada no registro da origem.
+3. 🔴 **Sem deleção na tese, no mecanismo e na oferta.** Cada substantivo e cada verbo desses blocos responde o quê, quem, quando e como. Com fonte, a informação entra. Sem fonte, o trecho vai entre colchetes e vira pergunta de fato ao cliente. **Peça com colchete aberto não vai à mídia.** O passe anti-slop corta enchimento, nunca informação (skill de copy, módulo 04).
+4. **Uma cadeia por oferta; o que muda de uma peça para outra é a cena de entrada.** Ângulo novo troca os elos 1 e 2 e a frase do pivô. Os elos 4 a 6 se repetem.
+
+**Os dois erros que geraram esta seção**, para não repetir:
+
+| Versão | Como estava | O que o Victor apontou |
+|---|---|---|
+| 1 | ~150 palavras; um parágrafo de mecanismo entre a cena e a oferta | *"headlines meio fracas porque não prometem algo palpável"* · *"copy muito curta.. não está desenvolvendo nem tendo pivô entre o gancho […] com a oferta"* |
+| 2 | cadeia e pivô certos, 282 palavras, frases curtas com substantivo sem dono | *"muito padrão de metamodelo de deleção e isso tira a especificidade.. precisamos trazer um equilíbrio entre o anti-slop e a ausência de informações"* |
+| 3 | a mesma cadeia com a informação de volta; 452 e 464 palavras; pivô antes de 20%; a solução ocupa a metade final | aprovada |
+
+Os números da versão 3 são a medida de um caso. Não são meta de tamanho.
 
 ### 4.3 CTA com valor
 
@@ -147,6 +206,9 @@ No roteiro, usar a tabela: `elemento | texto | intenção visual | fonte/ID | du
 - [ ] Uma ação principal, com valor real no próximo passo.
 - [ ] Prova pertinente, rastreável e sem atribuição exagerada.
 - [ ] Pivô, voz e gate anti-slop aprovados pelos critérios da skill.
+- [ ] Texto longo que carrega a venda: os seis elos do §4.2-bis estão na peça e o pivô chega antes de 60%.
+- [ ] 🔴 Tese, mecanismo e oferta sem deleção: cada substantivo e verbo responde o quê, quem, quando e como. Trecho sem fonte está entre colchetes, e peça com colchete não vai à mídia.
+- [ ] Sem prova documentada, nenhuma frase promete resultado.
 - [ ] Adaptações e lacunas explicitadas; condição de rascunho preservada quando aplicável.
 - [ ] Destino verificado para liberação à mídia; se ainda não existir, roteiro permanece condicionado.
 - [ ] Hipótese e critérios de teste registrados antes de veicular.

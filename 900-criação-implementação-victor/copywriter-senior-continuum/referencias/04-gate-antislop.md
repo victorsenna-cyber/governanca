@@ -38,6 +38,7 @@ Não é blocklist cega. É julgamento: cortar o que é tell, preservar o que é 
 - Opinião que a gente consegue defender.
 - Aside, parêntese genuíno, autocorreção.
 - Uma frase curta isolada para dar ênfase. Só vira tell quando vêm várias seguidas, forçando drama.
+- 🔴 **Informação. O gate corta enchimento, nunca informação.** Frase curta com substantivo sem dono ("uma situação", "com número") ou verbo sem como ("trabalho isso", "te devolvo o que apareceu") é deleção, e deleção tira a especificidade da peça. **Na tese, no mecanismo e na oferta, cada substantivo e cada verbo responde o quê, quem, quando e como.** Se a resposta existe na fonte, entra. Se não existe, vira pergunta de fato a quem tem o dado, e o trecho fica marcado até a resposta chegar; cortar a frase não resolve. A omissão segue valendo onde o módulo 07 a autoriza: na cena que o leitor completa com a própria vida e na conclusão que a cadeia deixa sem escrever.
 
 > **Regra de ouro do falso-positivo:** um tell isolado não é nada. É o cluster que denuncia (travessão + regra de três + "vibrante" + conclusão genérica = confissão).
 
@@ -74,5 +75,6 @@ Direta, sem rodeio, sem bajulação. Confiante sem arrogância. Linguagem em "n�
 1. Rascunho.
 2. Auditar com a pergunta: "o que ainda soa como IA aqui?" Listar os tells restantes.
 3. Reescrever. Antes de entregar, varrer por travessão, por regra de três e pela ausência de pivô. Qualquer hit significa que não terminou.
+4. **Conferir o que o corte levou junto.** Reler tese, mecanismo e oferta perguntando o quê, quem, quando e como. Texto que ficou mais limpo e menos informativo perdeu na revisão: devolver a informação.
 
 ---

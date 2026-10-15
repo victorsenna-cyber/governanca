@@ -381,6 +381,8 @@ Analisar uma VSL que vende entrega os dois numa passada — **mas com graus de p
 1. **Mínimo 3 leads no lançamento**, de **ângulos diferentes** — não três variações do mesmo ângulo.
 2. **Com a oferta rodando: 2–3 leads novas por semana.**
 3. ⭐ **Toda alteração de funil começa pelo topo**, o ponto mais distante da oferta. Mexer no meio ou no fim da VSL é quase irrelevante enquanto a boca do funil não estiver otimizada.
+4. **Fonte de lead nova: o tema em alta no orgânico do nicho** *(08/10/2026 — `900-criação-implementação-victor/criativos/DESTILACAO-CRIATIVOS-FILEMON-2026-10-08.md` C-68)*. Dois usos válidos: **(a)** a lead inteira construída em torno do tema, quando ele encaixa no mecanismo; **(b)** o tema como gancho e uma **transição explícita** para o mecanismo real (*"X funciona? funciona — mas existe algo mais forte, e ninguém está falando disso"*). 🔴 **Sempre como lead de teste, nunca como a lead de base:** viral prova atenção, não escala (`METODO-BENCHMARKING.md` §3.1 · `METODO-DIRECT-RESPONSE.md` §2-bis). A transição é onde isso quebra: tema que não desemboca no mecanismo traz curioso e desperdiça a lead.
+5. **"Oferta morreu" é diagnóstico que se faz por último** *(08/10/2026 — C-72)*. Antes de declarar uma oferta morta, conferir se a regra 2 estava rodando: **oferta sem lead nova e sem criativo novo há semanas não morreu, parou de ser testada.** A esteira de leads é a mesma lógica da esteira de criativos (`30-comercial/trafego-clientes/_template/matriz-criativos.md`).
 
 > ⭐ **A aposta de maior densidade, se fosse escolher um único formato de lead: nos primeiros 30 segundos, mecanismo + promessa + elemento de prova.** Nomeia a oportunidade, prova que é real, e promete o resultado — antes de qualquer contexto.
 
@@ -596,6 +598,10 @@ Para quem está montando o primeiro mecanismo, provar **duas coisas**, metade do
 | **Naturalidade vence produção** | estúdio bem montado não é a melhor alternativa. Ambiente real do expert costuma converter mais |
 | **Contexto visual com significado** | gravar onde o assunto acontece ajuda retenção |
 | **Não perseguir o bonito** | caso registrado na fonte: versão simples vendia; versões mais bem produzidas do mesmo conteúdo não |
+| ⭐ **Slide + voz é o piso que quase não converte mais** *(08/10/2026)* | *"é muito raro uma VSL só com slide e voz funcionar hoje"* — a melhor decisão costuma ser **gravar com o expert** (`900-criação-implementação-victor/criativos/DESTILACAO-CRIATIVOS-FILEMON-2026-10-08.md` C-70). O público compara com o que vê o dia inteiro em vídeo curto |
+| **Webinar tolera menos produção que VSL** | o formato é menos sofisticado e o público, menos acostumado; produção a mais converte mais, mas pode não pagar o esforço (C-70, João Campos) |
+
+> ⚠️ **As duas fontes não se contradizem, e a leitura que concilia é esta:** o que perde é a **ausência de pessoa** (slide e voz) e o **estúdio sem contexto**; o que ganha é o **expert real, no ambiente onde o assunto acontece, com edição que segura atenção.** #161: *"naturalidade vence produção"*. #046: *"o erro era o jeito de produzir, não a produção"* (C-56). **Produzir é investir em contexto e ritmo, não em polimento.**
 
 ---
 

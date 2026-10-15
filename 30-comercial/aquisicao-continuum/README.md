@@ -43,6 +43,7 @@
 | `METODO-QUATRO-PILARES-2026-09-12.md` | ICP · promessa · oferta · narrativa destrinchados: sintomas, o que resolve por área, critério de pronto, pergunta de call | **antes de call de diagnóstico**; base do que se fala no presencial |
 | `ARQUITETURA-DOIS-ICPS-2026-09-12.md` | os dois trilhos, contas de viabilidade, nome dos produtos, escada completa, os 3 riscos do ICP B | antes de precificar ou de abrir conta nova |
 | `LINHA-EDITORIAL-30-DIAS-2026-09-07.md` | grade de 30 dias, uma camada por semana, régua de escrita, fluxo de DM | antes de planejar o mês |
+| `PILARES-DE-CONTEUDO-2026-10-07.md` | **⭐ vigente desde 07/10/2026:** conteúdo em quatro pilares (ICP · promessa · mecanismo · oferta), régua "zero genérico", banco de cenas e a leva 1 com uma peça por pilar | **antes de qualquer peça nova** |
 | `ROTEIROS-LOTE-1-2026-09-07.md` | 6 roteiros prontos, com direção de câmera e gate rodado | antes de gravar |
 | `PECA-TRES-CLIENTES-E-BIO-2026-09-12.md` | a peça de abertura em 3 formatos + a bio e o parecer de credencial | antes de gravar a peça âncora |
 | `PECA-DR-02-ANOTA-A-ORDEM-2026-09-20.md` | roteiro "anota isso": as cinco perguntas nomeadas, a inversão do pra quê × o quê, e o tráfego por último. **Fixa o vocabulário público dos pilares** | antes de gravar, e antes de qualquer peça que cite os pilares |

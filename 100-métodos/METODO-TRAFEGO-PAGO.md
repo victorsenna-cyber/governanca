@@ -89,6 +89,8 @@ Expectativa contratada com o cliente **por estágio** — protege a relação e 
 
 > ⭐ **Quando o destino é uma VSL (instituído 13/09/2026):** o par a casar **não é anúncio ↔ primeira dobra da página, é anúncio ↔ LEAD da VSL** — a página é só a moldura do player. **A lead é o segundo contato do funil e o ponto de maior variância** (`METODO-FUNIL-DE-VSL.md` §5.1): mesma copy, trocando só a lead, uma versão dá prejuízo e a outra dá lucro.
 >
+> ⚠️ **O que se casa é a MENSAGEM, não o rosto** *(08/10/2026)*: o fim do anúncio tem que encaixar no que a lead diz no começo; **quem aparece no anúncio não precisa ser o expert da VSL.** Relato de fonte: criativos narrados por outra pessoa que não o expert foram os melhores de ofertas que escalaram (`900-criação-implementação-victor/criativos/DESTILACAO-CRIATIVOS-FILEMON-2026-10-08.md` C-47). Trocar quem fala é teste de execução legítimo.
+>
 > **Consequência para a matriz abaixo:** cada ângulo de criativo precisa ter **uma lead correspondente**, e o teste é do par, nunca do criativo isolado. **E a ordem de otimização inverte a intuição: mexe-se no topo — anúncio e lead — antes de qualquer ajuste no meio ou no fim da VSL.**
 
 Preencher `matriz-criativos.md` cruzando:
@@ -96,6 +98,7 @@ Preencher `matriz-criativos.md` cruzando:
 - **Ângulos** (mín. 4 por oferta): dor · desejo/aspiração · prova/case · objeção invertida · urgência legítima · custo de não agir · comparação com alternativa.
 - **Formatos** (mín. 3): imagem estática · vídeo curto (talking head/UGC-like) · carrossel · vídeo demonstração.
 - **Hooks** (mín. 3 por ângulo): a primeira linha e os primeiros 3s decidem a **captura**; o **gancho completo** sustenta até o corpo e pode passar disso. Medir captura não é fixar duração. Testar hooks é mais barato que testar conceitos. **Abertura composta:** `100-métodos/METODO-EMPILHAMENTO-DE-HOOKS.md` (vale para peça nova, não exige vencedor).
+- ⭐ **Abertura segmentada — a técnica que executa o princípio 1 ("o criativo é a segmentação")** *(08/10/2026)*: o mesmo corpo com aberturas que chamam subpúblicos diferentes (*"se você é X…"* / *"se você é Y…"* — por profissão, momento, região, dor). Com targeting broad, **é o criativo que separa os públicos, e a variação revela o subpúblico de CPA mais barato.** Fonte: `900-criação-implementação-victor/criativos/DESTILACAO-CRIATIVOS-FILEMON-2026-10-08.md` C-33/C-34 (relato `[G]`). Conta como **teste de componente** (abertura), não conceito novo.
 
 **Volume mínimo de lançamento: 8-12 criativos genuinamente distintos** (ângulo diferente ≠ cor diferente — o sistema fingerprinta o criativo; variação superficial é lida como duplicata e compete consigo mesma).
 
@@ -134,7 +137,12 @@ Sinal de fadiga: frequência > 3,5-4,0 **e** CTR caindo ≥ 20% vs. média próp
 
 ### 5.2 Meta Ads (canal padrão do nosso ICP)
 
-- **Estrutura:** 1 campanha por objetivo · 1-3 conjuntos no máximo · **6-20 criativos ativos por conjunto** · targeting broad ou Advantage+ (restrições mínimas: idade/região quando o negócio exige, ex.: local).
+- **Estrutura:** 1 campanha por objetivo · 1-3 conjuntos no máximo · **6-20 criativos ativos por conjunto** · targeting broad ou Advantage+ **de público** (restrições mínimas: idade/região quando o negócio exige, ex.: local). Advantage+ de **posicionamento** é proibido (linha abaixo).
+- 🔴 ⭐ **Posicionamento: personalizado, só Instagram Stories e Reels, sempre** *(regra da casa, 14/10/2026, alçada Victor)*. Todo conjunto de anúncios na Meta sobe com **posicionamento manual** e só duas caixas marcadas: **Instagram Stories** e **Instagram Reels**. Sai todo o resto: Facebook, Messenger, WhatsApp, Threads, Audience Network e, dentro do Instagram, feed, perfil, Explorar e pesquisa. **Posicionamento Advantage+ (automático) é proibido.**
+  - **Em cada anúncio vão as duas artes:** a 4:5 na mídia principal (o grupo "Feeds" da personalização por posicionamento) e a 9:16 no grupo **Stories e Reels**. Só a 9:16 é veiculada; a 4:5 é a mídia-base que o anúncio carrega, e nunca é a 9:16 esticada nem cortada.
+  - **Conferência antes de publicar:** no conjunto, a lista de posicionamentos mostra só os dois; no anúncio, a prévia de Stories e a de Reels mostram a arte 9:16 inteira, sem corte de texto na zona livre do topo e da base (§4.3).
+  - **Conjunto já no ar fora da regra:** corrigir reinicia o aprendizado, então é decisão do Victor, registrada no `LOG-DECISOES.md` do cliente. Conjunto novo não tem exceção.
+  - *Por quê:* decisão do Victor. Leitura nossa, a confirmar: concentra a verba onde o nosso ICP consome e onde a arte 9:16 foi feita para caber, e tira a leitura de resultado da média com posicionamentos que não testamos.
 - **Não fazer:** empilhar lookalikes/interesses em conjuntos paralelos · duplicar criativos entre conjuntos concorrentes · mais de 3 conjuntos com verba < R$ 300/dia.
 - **Teste → escala:** teste em estrutura própria com cap de verba (~50% do normal) e regras de kill (§7.3); vencedores migram/escalam na campanha principal (CBO). Exclusão mútua entre teste e principal quando possível.
 - **Local/serviço:** raio geográfico + broad; formulário nativo ou WhatsApp como conversão; Customer Match/lista de clientes como sinal, não como jaula.
@@ -155,6 +163,8 @@ Sinal de fadiga: frequência > 3,5-4,0 **e** CTR caindo ≥ 20% vs. média próp
 ### 5.5 Nomenclatura de campanha (obrigatória)
 
 `[cliente]-[canal]-[objetivo]-[funil]-[data]` · conjuntos: `[público/estrutura]` · anúncios: nomenclatura §4.3. Registrada em `estrutura-campanhas.md` do cliente.
+
+**Campos da conta (14/10/2026):** uma conta pode acrescentar campos à convenção (`[produto]` na campanha quando há mais de uma oferta; `[linha]` de arte no anúncio, depois do hook, quando a peça sai em duas linhas visuais), desde que **sempre na mesma posição, sempre preenchidos e declarados no `estrutura-campanhas.md` dela**. Campo opcional quebra a leitura por posição. Valores fixos da casa: funil `topo · meio · fundo`, data `aaaammdd` do início da veiculação, sem hífen dentro de campo. **Nome não muda depois de o anúncio rodar:** mudança de peça é anúncio novo, com versão nova. Exemplo completo: `30-comercial/trafego-clientes/paola/estrutura-campanhas.md`.
 
 ---
 

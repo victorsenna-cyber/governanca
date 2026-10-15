@@ -1,0 +1,8 @@
+# WhatsApp Ptt 2026-10-08 at 18.06.26
+
+**Arquivo:** `WhatsApp Ptt 2026-10-08 at 18.06.26.ogg`  
+**Idioma:** pt · **Duração:** 129s
+
+---
+
+E meu irmão, que eu entendi de depender esse equímico como consumidor, o que eu pude traduzir esse conhecimento de consumidor para um terapeuta familiar e conciliador familiar, meu irmão. É batata cara, quando chega um lead, antigamente assim, cada 10 leads que eu trabalhava com um grupo aqui, né, é um grupo anjo da vida. Ali em cima, filha. Aí, cada 10 leads que chegava, 10 leads bons, né, medianos assim. Eu tinha uma conversão ali, quando eu comecei, eu convertei dois. Antes desse projeto acabar, deu sair dele, na verdade, cada 10 leads bons que chegava ali, eu conseguia converter cinco na hora, só na chamada. Ou levava um, dois dias de chamada, assim, para conseguir converter. E de 10 convertia cinco. E outros dois ou três, pelo menos, eu consegui agendar a visita. E meu irmão, quando eu conseguia agendar a visita, era melhor do que o lead que eu fechava por ligação. Porque por ligação, às vezes, enrolava dois, três dias, né, a família primeiro procura, ela quer saber se o lugar realmente existe, por causa de notícias de internet, né. Que ninguém é morto, que é humilhado, que apanha, sem terapêutica, etc. Aí, depois, você tem que gerar aquela confiança, mostrar credibilidade, para depois você começar a apresentar o material, né. Então, eu preferia muito mais, quando eu conseguia agendar uma visita, que às vezes a gente agendava, demorava mais, né. A família entrava em contato hoje, agendava uma visita para daqui cinco dias, por exemplo. Só que quando a visita está dentro da unidade, meu irmão, já era. É impossível sair de lá sem fechar contrato. É impossível.

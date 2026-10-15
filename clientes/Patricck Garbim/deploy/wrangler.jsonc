@@ -1,0 +1,20 @@
+// Publicação das páginas do Patricck no Worker "organico" (conta Cloudflare do Patricck).
+// Rodar a partir desta pasta: npx wrangler deploy
+{
+  "name": "organico",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "../site",
+    "html_handling": "drop-trailing-slash",
+    "not_found_handling": "404-page"
+  },
+  "workers_dev": false,
+  "routes": [
+    { "pattern": "orientaacolhimento.com.br/orienta-familia", "zone_name": "orientaacolhimento.com.br" },
+    { "pattern": "orientaacolhimento.com.br/orienta-familia/*", "zone_name": "orientaacolhimento.com.br" },
+    { "pattern": "orientaacolhimento.com.br/orienta-familia-1", "zone_name": "orientaacolhimento.com.br" },
+    { "pattern": "orientaacolhimento.com.br/orienta-familia-1/*", "zone_name": "orientaacolhimento.com.br" },
+    { "pattern": "orientaacolhimento.com.br/privacidade", "zone_name": "orientaacolhimento.com.br" },
+    { "pattern": "orientaacolhimento.com.br/privacidade/*", "zone_name": "orientaacolhimento.com.br" }
+  ]
+}

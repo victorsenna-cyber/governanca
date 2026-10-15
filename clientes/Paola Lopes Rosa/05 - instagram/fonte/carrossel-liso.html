@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Carrossel 3 · linha lisa · Paola Rosa</title>
+<!-- Uso: carrossel-liso.html?s=1..7  ·  1080x1350
+     Mesma linha das artes lisas dos anúncios (03 - criativos/2026-10-12-teste-01/fonte/criativo-liso.html):
+     tela clara, etiqueta preta como o texto com fundo do Instagram, corpo em negrito centralizado. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&family=Noto+Color+Emoji&display=block" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 100%; height: 100%; overflow: hidden; }
+  body {
+    position: relative; color: #0B0B0B;
+    font-family: "Figtree", "Segoe UI", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    background: linear-gradient(180deg, #E4E4E4 0%, #F6F6F6 7%, #FFFFFF 17%, #FFFFFF 66%, #F2F2F2 80%, #DADADA 100%);
+  }
+  .quadro {
+    position: absolute; inset: 0; padding: 0 84px 40px;
+    display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;
+  }
+  .etiqueta { position: relative; font-weight: 800; font-size: 56px; line-height: 1.26; letter-spacing: -.005em; }
+  .etiqueta .fundo { position: absolute; inset: 0; filter: url(#une); }
+  .etiqueta span { padding: 7px 22px 9px; border-radius: 14px; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+  .etiqueta .fundo span { background: #000; color: transparent; }
+  .etiqueta .texto { position: relative; }
+  .etiqueta .texto span { color: #fff; }
+  .capa .etiqueta { font-size: 68px; }
+
+  .corpo { margin-top: 74px; font-weight: 800; font-size: 50px; line-height: 1.2; letter-spacing: -.004em; max-width: 880px; text-wrap: pretty; }
+  .corpo p + p { margin-top: 44px; }
+  .mao { margin-top: 14px; font-family: "Noto Color Emoji", "Segoe UI Emoji", sans-serif; font-size: 46px; line-height: 1; }
+  .pe {
+    position: absolute; left: 0; right: 0; bottom: 64px; text-align: center;
+    font-weight: 600; font-size: 24px; letter-spacing: .16em; text-transform: uppercase; color: #6B6B6B;
+  }
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <filter id="une"><feGaussianBlur in="SourceGraphic" stdDeviation="5"/><feColorMatrix values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 22 -10"/></filter>
+</svg>
+
+<div class="quadro">
+  <div class="etiqueta">
+    <div class="fundo"><span id="e1"></span></div>
+    <div class="texto"><span id="e2"></span></div>
+  </div>
+  <div class="corpo" id="corpo"></div>
+  <div class="mao" id="mao"></div>
+</div>
+<div class="pe" id="pe"></div>
+
+<script>
+  const SLIDES = [
+    { etiqueta: "O que eu meço<br>antes de qualquer mesa",
+      corpo: ["Eu sou espiritualista e cética. Desconfio de tudo.", "Por isso, antes de tratar, eu meço."],
+      pe: "Arrasta para o lado", capa: true },
+    { etiqueta: "1. O quanto a sua aura<br>está aberta",
+      corpo: ["A aura é a sua película de proteção. Aura aberta é aura desprotegida.", "É por ali que a sua energia vai embora. Eu meço em número."] },
+    { etiqueta: "2. O tamanho dela",
+      corpo: ["Eu meço o tamanho da sua aura e a proteção dela.", "Na devolutiva eu te digo, por exemplo: \"a sua aura estava 30% encolhida, sem proteção energética\"."] },
+    { etiqueta: "3. A cor",
+      corpo: ["Cada pessoa tem uma cor de base, e ela muda com o momento.", "O certo é a aura ter todas as cores. Eu vejo qual está em excesso e qual está em falta."] },
+    { etiqueta: "4. Os seus 7 chakras",
+      corpo: ["Um por um.", "Eu vejo quais estão em desequilíbrio: trabalhando demais ou de menos."] },
+    { etiqueta: "Depois de medir, eu trato",
+      corpo: ["Equilibro a aura e os chakras com as geometrias arcturianas, e só então vou para as questões que você trouxe.", "Tudo o que eu medi você recebe em áudio."] },
+    { etiqueta: "Quer saber<br>como está a sua?",
+      corpo: ["A medida faz parte da Mesa Arcturiana.", "Me chama no link da bio e me conta as suas questões."],
+      mao: "👇🏽" }
+  ];
+  const n = Math.min(SLIDES.length, Math.max(1, parseInt(new URLSearchParams(location.search).get("s") || "1", 10)));
+  const s = SLIDES[n - 1];
+  if (s.capa) document.body.classList.add("capa");
+  document.getElementById("e1").innerHTML = s.etiqueta;
+  document.getElementById("e2").innerHTML = s.etiqueta;
+  document.getElementById("corpo").innerHTML = s.corpo.map(t => "<p>" + t + "</p>").join("");
+  document.getElementById("mao").textContent = s.mao || "";
+  document.getElementById("pe").textContent = s.pe || (n + " de " + SLIDES.length);
+</script>
+</body>
+</html>

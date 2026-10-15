@@ -526,3 +526,70 @@ Victor reprovou o uso de desenhos abstratos, linhas e geometrias usadas como pre
 **Pendências:** somente para publicação, confirmar formato vigente, Direct e seleção operante. Próximo passo: Victor/Guilherme revisar o pacote; a tarefa de produção está concluída.
 
 **Rollback:** retirar somente a pasta nova se solicitado; preservar o histórico e registrar correções por nova nota. Originais e carrosséis anteriores intactos.
+## 2026-10-08 — Kernel v4.1: conta subordinada à Governança-pai, réplica aposentada
+
+**Pedido literal de Victor:** "itere CLAUDE.md de Guilherme". Executor: Claude (Cowork, papel CEO), sessão aberta na Governança-pai.
+
+**Contrato:** governança/estrutura, produção local. Mesmo defeito corrigido na conta Débora no mesmo dia: o kernel mandava carregar método e skill da réplica `00 - governança continuum/` (19/07, nunca ressincronizada) e copy por `copywriting-fable5` + `stop-slop` (legado desde 20/09).
+
+**Entrega:** `CLAUDE.md` v4.1 — §1 reconhece o `../../CLAUDE.md` como kernel acima (fronteira §6.2 de lá) e institui a regra de carga pela árvore da Governança; §4.1 ganha a Governança-pai na precedência de política e método; §5 aponta copy, peça-mestra, página, criativo e Meta Ads para a Governança; §6.1 aposenta a réplica. `AGENTS.md` item 4 atualizado. Réplica movida íntegra (com o manifesto de hashes) para `00 - governança continuum/_legado-2026-07/`; caminhos antigos viraram ponteiros. v4.0 íntegra em `10 - registros e arquivo/CLAUDE-v4.0-transicao-2026-10-08.md`.
+
+**Decisões e conduta:** preservados o §8 (alçadas e a exceção `DEC-2026-08-26-001` de execução dirigida), o §6.2 (generalização), o §12 (Governança e Débora somente leitura a partir daqui). O objetivo original da réplica — não importar políticas internas — continua atendido: ponteiro carrega caminho, não conteúdo.
+
+**Writeback:** este diário · `STATUS.md` da Governança. Nenhuma oferta, campanha, orçamento, página, copy ou ativo externo alterado.
+
+**Pendências:** nenhuma de conta. A conta continua sem `PILARES.md` e sem `lexico-icp/` — o portão da árvore ESCRITA segue fechado para peça ao público dele, agora por um roteador que sabe disso.
+
+**Rollback:** restaurar `10 - registros e arquivo/CLAUDE-v4.0-transicao-2026-10-08.md` como `CLAUDE.md` e devolver o conteúdo de `_legado-2026-07/` à raiz da réplica.
+## 2026-10-10 — Registro do WhatsApp de 05 a 08/10 (direção nova do Guilherme)
+
+**Pedido de Victor:** prints do grupo e das 17 transcrições de 05 a 08/10, para análise e registro. Executor: Claude (Cowork).
+
+**Entrega:** destilação §11 (cronologia, direção nova, texto literal do convite do grupo gratuito, pedido do quiz-filtro, conflitos, pendências); seção nova no `STATUS.md`; `DEC-2026-10-08-001` em `DECISOES.md` como decisão declarada e não formalizada.
+
+**Achados:** Gui foca na linha do terapeuta; escada nova (28 dias / 4 encontros / R$ 1.500 → grupo Venda com Permissão R$ 1.500 por trimestre); grupo do Conselho gratuito em outubro, em conflito com o quiz de Signos pago no ar; pedido de quiz-filtro que libera o grupo só para profissionais do autoconhecimento; quatro áudios de 05/10 não exportados.
+
+**Writeback:** destilação, `STATUS.md`, `DECISOES.md`, este diário. Nenhuma página, campanha, orçamento ou ativo externo alterado.
+
+**Pendências:** decisão do Gui sobre o quiz de Signos; quiz-filtro (Victor); Pixel e Apps Script; transcrever os quatro áudios faltantes.
+## 2026-10-14 — WhatsApp de 10 a 14/10 e criativo do grupo do Conselho
+
+**Pedido de Victor:** prints + "áudios no repo"; depois *"faz o criativo do grupo, exceção declarada. use as referências"*. Executor: Claude Code CLI.
+
+**Entrega:** 4 transcrições (`01 - contexto/WhatsApp/*.md`, faster-whisper local); destilação §12; `STATUS.md` (atualização de 14/10, com a decisão de destino link direto × quiz-filtro); criativo em `01 - Criativos/Conselho do Cigano - grupo 2026-10-14/` (4 PNGs, templates, render, comparação com as referências, `CRIATIVO.md` com texto do anúncio e procedência linha a linha).
+
+**Achados:** o link mandado ao Gui em 10/10 (`/permissao/`) é o quiz sem filtro; o filtro está em `/permissao-mentoras/`. Pixel e Apps Script já configurados nas duas páginas.
+
+**Exceção de portão:** declarada pelo Victor para esta peça só; texto 100% do convite do Gui; vence em 31/10.
+
+**Writeback:** destilação, `STATUS.md`, este diário. Nada criado na conta de anúncios; nenhuma página alterada.
+
+**Pendências:** mandar ao Gui o link certo do quiz; pegar o número atual de membros do grupo e o OK dele para o link ir em anúncio; definir orçamento e conjunto e subir.
+
+**Rollback:** apagar a pasta do criativo; os registros são aditivos.
+
+**Adendo 14/10 (variação R12):** Victor pediu variação com a referência `WhatsApp Image 2026-10-12 at 16.01.24` (R12). Feita a linha "moldura" com abertura segmentada em três vocativos (Terapeuta, Mentora, Cartomante), 6 PNGs, registrada em `CRIATIVO.md` §3.1. Mesma exceção de portão, mesmo vencimento (31/10). Nada subido.
+
+**Adendo 14/10, noite (lote de 7):** Victor escolheu destino = quiz (`/permissao-mentoras/`) e CTA "responda o quiz e entre no grupo gratuito". Feitas 4 linhas novas (N04 spoiler, R19 retrato, N09 WhatsApp, N08 roda) e trocado o CTA das 3 anteriores (v2). Registro em `CRIATIVO.md` §0. Achado: o quiz no ar só manda "Mentora" ao grupo. Nada subido.
+
+**Adendo 14/10, noite (quiz):** a pedido do Victor, a cópia `permissao-mentoras/` passou a mandar as quatro opções da primeira pergunta ao grupo do Conselho, e a frase "Como você é mentora…" da tela final ficou neutra. Testado em navegador local, um caminho por opção, com planilha e Pixel bloqueados: os quatro chegam ao grupo. Pacote `permissao-mentoras-v2.zip`; rollback `v1`. **Não publicado:** subir na Hostinger é do Victor.
+
+**Adendo 14/10, noite (conta):** quiz v2 conferido no ar. Pausada a campanha de vendas do quiz antigo. Criadas em rascunho a campanha `120255723458970210` e o conjunto `120255723461560210` (IG Stories + Reels, evento `Lead`). Anúncios não criados: as artes que o Victor subiu não aparecem na biblioteca de imagens da conta pelo conector. Nada publicado.
+
+**Adendo 14/10, ~21h (conta):** a pedido do Victor, pausada a campanha de engajamento e criada/ativada a de tráfego para o perfil com o reel `DZu9VpARUsE` (campanha `120255723560990210`, conjunto `120255723563140210`, anúncio `120255723579960210` em análise). Campanha do quiz publicada; o conjunto dela ficou em rascunho até ter anúncios. Quatro rascunhos de anúncio com erro ficaram para descartar no Gerenciador.
+
+**Adendo 14/10, ~22h (conta):** 7 criativos criados na `CA 01` com a 4:5 principal e a 9:16 em Stories e Reels; 7 anúncios publicados no conjunto do quiz (em análise). Evento do conjunto trocado para `LEAD` padrão, porque o personalizado não publicava; quiz v3 (engine.js com `track:Lead`) pronto para o Victor subir antes de 15/10.
+
+**Adendo 14/10 (quiz v3):** Victor subiu a v3; conferido no site publicado: arquivos idênticos aos locais e, respondendo como Terapeuta, o cadastro sai como `track:Lead` e o caminho termina no grupo.
+
+**Adendo 14/10 (rascunhos):** pedido de descarte. O conector não apaga rascunho; os cinco rascunhos de anúncio sobrando (quatro do reel de tráfego + um de engajamento de 08/10) ficaram pausados e com erro de validação, sem risco de publicar. Remoção visual só pelo Gerenciador.
+
+**Adendo 14/10 (fecho):** Victor descartou os rascunhos no Gerenciador; conferido: zero rascunhos. Os 7 anúncios do quiz foram **aprovados** (ACTIVE; entregam a partir de 15/10 0h) e o de tráfego do reel segue ACTIVE.
+
+**Adendo 15/10 (planilha):** Victor testou e a planilha não recebeu lead. Diagnóstico: o endereço do Apps Script (`…AKfycbycie…/exec`) redireciona para o login do Google, ou seja, a implantação não está com acesso "Qualquer pessoa". O quiz envia sem ver resposta (`no-cors`), então a falha é silenciosa. Correção: editar a implantação existente → Quem pode acessar: Qualquer pessoa · Executar como: Eu (mantém a URL). Pendente: Victor.
+
+## 2026-10-15 — PILARES.md e lexico-icp/
+
+**Pedido do Victor:** criar os pré-requisitos de peça ao público. **Entrega:** `PILARES.md` (3/5; P4 reprova por inventário divergente; cinco perguntas de fato ao Gui), `lexico-icp/` (BANCO com 6 frases `D?`, FONTES, LACUNAS com 5 colheitas), `DEC-2026-10-15-001`. Script da planilha conferido: responde sem pedir login. **Pendências:** Gui responder P4 e confirmar a origem dos prints.
+
+**Adendo 15/10 (planilha, 02h50):** teste do Victor gravou só o clique no grupo, sem nome/telefone/email. Script ajustado (`apps-script/Code.gs`): colunas na ordem nome, telefone, email, quiz…; `whatsapp` vira `telefone`; campo-armadilha preenchido passa a gravar com `suspeito_robo` em vez de descartar. Quiz v4 (`permissao-mentoras-v4.zip`): cadastro enviado por beacon, resistente a sair da página. Teste real "TESTE CLAUDE" enviado ao vivo para diagnóstico. Pendente: Victor limpar a aba, colar o Code.gs, nova versão, subir v4.

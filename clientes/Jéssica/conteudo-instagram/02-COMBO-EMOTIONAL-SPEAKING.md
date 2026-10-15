@@ -2,6 +2,7 @@
 
 > **12 posts de feed + 4 carrosséis, com copy final.** Bônus, fora do escopo contratado.
 > **Linha editorial e calendário:** `00-LINHA-EDITORIAL-E-CALENDARIO.md`
+> **Revisão de procedência em 13/10/2026:** ES-C1 tinha uma fala entre aspas atribuída ao público sem fonte (*"acho que eu sou burra para línguas"*); virou descrição na voz dela, e ela confere antes de publicar. ES-05 dizia *"semana passada"*; virou *"outro dia"*. **ES-07 sai do banco** (contradiz o recorte de intermediário em diante).
 > **Diferença para o combo do evento:** aqui **não há prazo**. É conteúdo perene, republicável, e continua servindo depois de outubro.
 > **CTA padrão:** conversa no WhatsApp, nunca compra direta. A venda dela acontece na call de 30 minutos.
 > **Voz:** Jéssica. Toda frase em inglês precisa da revisão dela antes de publicar.
@@ -53,9 +54,9 @@ Se você se reconheceu nisso, me manda uma mensagem. Eu trabalho exatamente essa
 
 Descobri isso observando os meus alunos, não estudando teoria.
 
-Acontece assim: eu faço uma pergunta, a pessoa vai começar a responder, e a primeira palavra que aparece na cabeça dela está certa. Aí vem um segundo pensamento — *"não, essa não"* — e ela troca. Fala a errada.
+Acontece assim: eu faço uma pergunta, a pessoa vai começar a responder, e a primeira palavra que aparece na cabeça dela está certa. Aí vem um segundo pensamento, *"não, essa não"*, e ela troca. Fala a errada.
 
-Eu corrijo. E ela responde, toda vez: *"tá, eu tinha pensado na outra primeiro."*
+Eu corrijo. E ela responde, toda vez: *"eu pensei primeiro na outra."*
 
 Toda vez.
 
@@ -130,7 +131,7 @@ A segunda só treina de um jeito: falando. Com alguém. Errando na frente da pes
 
 Tenho um aluno que chegou comigo há dois anos, no nível básico, da área de tecnologia. Muito travado. Do tipo que responde por monossílabo.
 
-Hoje as nossas aulas são outra coisa. Semana passada a gente passou a aula inteira imaginando dispositivos que ele criaria se pudesse resolver alguma coisa que o incomoda na humanidade. Saiu máquina do tempo, saiu um aparelho para transmutar emoção negativa.
+Hoje as nossas aulas são outra coisa. Outro dia a gente passou a aula inteira imaginando dispositivos que ele criaria se pudesse resolver alguma coisa que o incomoda na humanidade. Saiu máquina do tempo, saiu um aparelho para transmutar emoção negativa.
 
 Tudo em inglês, sem preparar antes, sem eu puxar.
 
@@ -323,7 +324,7 @@ Por isso eu comecei a criar encontros presenciais. É o movimento que eu venho f
 
 **Legenda:**
 
-Essa é a frustração que mais chega no meu direct, e quase sempre vem acompanhada de *"acho que eu sou burra para línguas"*.
+Essa é uma frustração que chega muito até mim, e quase sempre vem com a pessoa achando que não leva jeito para línguas.
 
 Você não é. Você treinou a metade do problema, e treinou bem.
 

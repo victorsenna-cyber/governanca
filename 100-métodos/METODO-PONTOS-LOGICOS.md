@@ -129,6 +129,8 @@ o último elo NÃO o enuncia — o leitor chega nele sozinho
 
 > ⭐ **O elo 4 é o que faz este padrão funcionar, e é o que quase todo mundo pula.** Sem ele a pessoa aceita a causa nova **e continua achando que o problema é ela** — que é a objeção que nenhuma promessa alcança (`METODO-DIRECT-RESPONSE.md` §4).
 
+> ⭐ **Qual crença o elo 3 pode contrariar** *(08/10/2026 — `900-criação-implementação-victor/criativos/DESTILACAO-CRIATIVOS-FILEMON-2026-10-08.md` C-67, de João Campos)*: **a que a pessoa tem como certa e não sabe provar** — *"todo mundo fala bem de cúrcuma"* vira *"sabia que cúrcuma pode fazer mal?"*, e a reação é investigar, não sair. **Crença enraizada, de identidade ou de valor, não se contraria no elo 3: ela expulsa.** E o que sustenta a contrariedade é **prova logo atrás de cada afirmação** — o modelo citado é uma carta de vendas inteira feita de *"sabia que X? aqui está a prova"* em sequência. **Contrariar sem prova no mesmo elo é a "cópia arrogante": exige crédito que a peça ainda não ganhou.**
+
 ### 3.2-ter Qual padrão usar — a escolha é do mecanismo, não do gosto
 
 | Se o mecanismo é… | Padrão | Elos |

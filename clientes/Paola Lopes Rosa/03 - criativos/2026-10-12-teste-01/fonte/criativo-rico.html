@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Criativos Paola · linha rica · v3</title>
+<!-- Uso: criativo-rico.html?c=rel|area&f=feed|story  ·  feed = 1080x1350, story = 1080x1920
+     Modelo de estrutura: 960-referências criativos / "WhatsApp Image 2026-10-12 at 16.21.43 (1).jpeg"
+     (fundo escuro com brilho, título em duas vozes, grade 2x2 com ícone, assinatura e rodapé). -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&family=Inter+Tight:wght@400;500;700&family=Cormorant+Garamond:wght@500;600&display=block" rel="stylesheet">
+<style>
+  :root {
+    --base: #0E0D15;
+    --ouro-escuro: #A19889;
+    --ouro: #C6BBAE;
+    --ouro-claro: #EFE9DC;
+    --branco: #F7F6F2;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 100%; height: 100%; overflow: hidden; }
+  body {
+    position: relative;
+    color: var(--branco);
+    font-family: "Inter Tight", "Segoe UI", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    background:
+      radial-gradient(120% 60% at 108% 86%, rgba(98, 66, 212, .74) 0%, rgba(60, 44, 150, .38) 34%, rgba(14, 13, 21, 0) 66%),
+      radial-gradient(70% 46% at 104% 100%, rgba(40, 118, 150, .50) 0%, rgba(14, 13, 21, 0) 70%),
+      radial-gradient(90% 52% at -12% 36%, rgba(34, 44, 120, .66) 0%, rgba(14, 13, 21, 0) 68%),
+      linear-gradient(180deg, #0F0E16 0%, #0E0D15 46%, #0D1024 100%);
+  }
+  .grao { position: absolute; inset: 0; opacity: .05; mix-blend-mode: overlay; pointer-events: none; }
+
+  .quadro { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; }
+  .feed  .quadro { padding: 70px 78px 64px; }
+  .story .quadro { padding: 250px 78px 350px; }
+
+  .topo, .rodape {
+    width: 100%; display: flex; justify-content: space-between; align-items: center;
+    font-family: "Montserrat", sans-serif; font-weight: 500;
+    font-size: 19px; letter-spacing: .14em; text-transform: uppercase; color: rgba(247, 246, 242, .82);
+  }
+  .topo svg { width: 46px; height: 46px; }
+  .rodape .seta { font-size: 30px; letter-spacing: 0; color: var(--branco); }
+
+  h1 {
+    margin-top: 50px; text-align: center;
+    font-family: "Montserrat", sans-serif; text-transform: uppercase;
+    font-size: 59px; line-height: 1.07;
+  }
+  .feed h1 { margin-top: 40px; font-size: 56px; }
+  h1 .a {
+    display: block; font-weight: 800; letter-spacing: -.012em;
+    background: linear-gradient(100deg, var(--ouro-escuro) 0%, var(--ouro-claro) 34%, var(--ouro) 58%, var(--ouro-claro) 82%, var(--ouro-escuro) 100%);
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
+  h1 .b { display: block; font-weight: 400; letter-spacing: -.005em; color: var(--branco); margin-top: 6px; }
+
+  .ponte {
+    margin-top: 34px; max-width: 840px; text-align: center;
+    font-size: 29px; line-height: 1.3; font-weight: 400; color: rgba(247, 246, 242, .9); text-wrap: balance;
+  }
+  .ponte b { font-weight: 700; color: var(--ouro-claro); }
+  .feed .ponte { margin-top: 26px; font-size: 28px; }
+
+  .grade {
+    position: relative; margin-top: 56px; width: 880px;
+    display: grid; grid-template-columns: 1fr 1fr; column-gap: 0; row-gap: 0;
+  }
+  .feed .grade { margin-top: 40px; }
+  .grade::before, .grade::after { content: ""; position: absolute; }
+  .grade::before {
+    left: 50%; top: 6px; bottom: 6px; width: 2px; transform: translateX(-1px);
+    background: linear-gradient(180deg, #9FD6C0 0%, #C6BBAE 48%, #C98AA6 100%); opacity: .8;
+  }
+  .grade::after {
+    top: 50%; left: 8%; right: 8%; height: 2px; transform: translateY(-1px);
+    background: linear-gradient(90deg, #D9B88A 0%, #C6BBAE 50%, #8FA9DA 100%); opacity: .8;
+  }
+  .q { display: flex; flex-direction: column; align-items: center; text-align: center; padding: 0 34px; }
+  .q:nth-child(-n+2) { padding-bottom: 40px; }
+  .q:nth-child(n+3)  { padding-top: 40px; }
+  .feed .q:nth-child(-n+2) { padding-bottom: 34px; }
+  .feed .q:nth-child(n+3)  { padding-top: 34px; }
+  .q svg { width: 88px; height: 88px; }
+  .q h2 {
+    margin-top: 20px;
+    font-family: "Inter Tight", sans-serif; font-weight: 700; text-transform: uppercase;
+    font-size: 36px; line-height: 1; letter-spacing: -.02em;
+    background: linear-gradient(100deg, var(--ouro-escuro) 0%, var(--ouro-claro) 45%, var(--ouro) 100%);
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
+  .q i { display: block; width: 184px; height: 2px; margin: 18px 0 20px; background: rgba(247, 246, 242, .75); }
+  .q p { font-size: 28px; line-height: 1.17; font-weight: 500; letter-spacing: -.005em; color: var(--branco); max-width: 350px; text-wrap: balance; }
+  .feed .q svg { width: 78px; height: 78px; }
+  .feed .q h2 { margin-top: 16px; font-size: 32px; }
+  .feed .q i { margin: 14px 0 16px; }
+  .feed .q p { font-size: 27px; }
+
+  .marca {
+    margin-top: auto; padding: 9px 4px 7px;
+    position: relative; top: 0;
+    border-top: 2px solid rgba(247, 246, 242, .85); border-bottom: 2px solid rgba(247, 246, 242, .85);
+    font-family: "Cormorant Garamond", Georgia, serif; font-weight: 600;
+    font-size: 40px; line-height: 1; letter-spacing: .06em; font-variant: small-caps; color: var(--branco);
+  }
+  .grade { margin-bottom: 44px; }
+  .feed .grade { margin-bottom: 30px; }
+  .rodape { margin-top: 36px; }
+  .feed .rodape { margin-top: 30px; }
+</style>
+</head>
+<body>
+<svg class="grao" aria-hidden="true"><filter id="n"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" stitchTiles="stitch"/></filter><rect width="100%" height="100%" filter="url(#n)"/></svg>
+
+<div class="quadro">
+  <div class="topo">
+    <span>Paola Rosa · Conexão Estelar</span>
+    <svg viewBox="0 0 46 46" fill="none" stroke="#F7F6F2" stroke-width="1.6" aria-hidden="true">
+      <circle cx="23" cy="23" r="20"/><circle cx="23" cy="23" r="12"/><circle cx="23" cy="23" r="3.2" fill="#F7F6F2" stroke="none"/>
+      <path d="M23 3v6M23 37v6M3 23h6M37 23h6M8.9 8.9l4.2 4.2M32.9 32.9l4.2 4.2M37.1 8.9l-4.2 4.2M13.1 32.9l-4.2 4.2"/>
+    </svg>
+  </div>
+
+  <h1><span class="a" id="a"></span><span class="b" id="b"></span></h1>
+  <p class="ponte" id="ponte"></p>
+
+  <div class="grade">
+    <div class="q">
+      <svg viewBox="0 0 88 88" fill="none" stroke="#C6BBAE" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <circle cx="44" cy="44" r="41"/>
+        <path d="M27 31h34a4 4 0 0 1 4 4v18a4 4 0 0 1-4 4H45l-9 8v-8h-9a4 4 0 0 1-4-4V35a4 4 0 0 1 4-4z"/>
+        <path d="M32 42h24M32 49h13"/>
+      </svg>
+      <h2>As questões</h2><i></i>
+      <p id="q1"></p>
+    </div>
+    <div class="q">
+      <svg viewBox="0 0 88 88" fill="none" stroke="#C6BBAE" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <circle cx="44" cy="44" r="41"/>
+        <path d="M22 54a22 22 0 0 1 44 0"/>
+        <path d="M44 54l11-15"/><circle cx="44" cy="54" r="2.6" fill="#C6BBAE" stroke="none"/>
+        <path d="M22 54h4M62 54h4M44 32v4M28.4 38.4l2.9 2.9M59.6 38.4l-2.9 2.9"/>
+        <path d="M34 62h20"/>
+      </svg>
+      <h2>A medida</h2><i></i>
+      <p>Sua aura em número.<br>Seus 7 chakras: quais<br>estão em desequilíbrio.</p>
+    </div>
+    <div class="q">
+      <svg viewBox="0 0 88 88" fill="none" stroke="#C6BBAE" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <circle cx="44" cy="44" r="41"/>
+        <path d="M44 23l18.2 10.5v21L44 65 25.8 54.5v-21z"/>
+        <path d="M44 23v42M25.8 33.5l36.4 21M62.2 33.5l-36.4 21"/>
+        <circle cx="44" cy="44" r="6.5"/>
+      </svg>
+      <h2>O tratamento</h2><i></i>
+      <p>Geometrias e códigos<br>arcturianos na raiz<br>de cada questão.</p>
+    </div>
+    <div class="q">
+      <svg viewBox="0 0 88 88" fill="none" stroke="#C6BBAE" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <circle cx="44" cy="44" r="41"/>
+        <rect x="25" y="29" width="38" height="33" rx="4"/>
+        <path d="M25 39h38M34 25v8M54 25v8"/>
+        <path d="M36 51l6 6 11-12"/>
+      </svg>
+      <h2>A devolutiva</h2><i></i>
+      <p>Em áudio, com os números.<br>Na semana seguinte,<br>jogo de baralho ao vivo.</p>
+    </div>
+  </div>
+
+  <div class="marca">Mesa Arcturiana</div>
+  <div class="rodape"><span>À distância</span><span class="seta">&#10230;</span><span>Me chama no WhatsApp</span></div>
+</div>
+
+<script>
+  const PECAS = {
+    rel: {
+      a: "Seu relacionamento<br>começa bem…",
+      b: "mas desanda quando<br>ia avançar?",
+      ponte: "Se muda a pessoa e trava na mesma fase,<br>a causa está numa <b>situação antiga que ficou sem equalizar</b>.<br>Na mesa eu trato a energia dela:",
+      q1: "Você me traz as questões,<br>como o relacionamento<br>que não avança."
+    },
+    area: {
+      a: "Você faz<br>a sua parte…",
+      b: "mas uma área da sua<br>vida não anda?",
+      ponte: "Quando a lógica não explica, a causa está numa <b>situação antiga que ficou sem equalizar</b>.<br>Na mesa eu trato a energia dela:",
+      q1: "Você me traz as questões,<br>como a área da sua vida<br>que não anda."
+    }
+  };
+  const p = new URLSearchParams(location.search);
+  const peca = PECAS[p.get("c")] || PECAS.rel;
+  document.body.classList.add(p.get("f") === "story" ? "story" : "feed");
+  for (const k of ["a", "b", "ponte", "q1"]) document.getElementById(k).innerHTML = peca[k];
+</script>
+</body>
+</html>

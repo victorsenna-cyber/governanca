@@ -110,7 +110,7 @@ for nome in sorted(os.listdir(pasta)):
 # --- AGENTS ---
 corpo_c = claude[claude.find("## 1. PAPEL"):]
 corpo_a = agents[agents.find("## 1. PAPEL"):]
-agents_ok = corpo_c.strip() == corpo_a.strip()
+agents_ok = True  # 11/10/2026: Codex desativado; AGENTS.md virou ponteiro e não se sincroniza mais
 falhas += 0 if agents_ok else 1
 
 limite = time.time() - 8 * 86400
@@ -127,7 +127,7 @@ print("\n## Artefatos de `100-métodos/`\n")
 print("| Arquivo | Classe | `Tipo:` válido | alcance (árvore/§6) | §7 mapa | veto no gate | STATUS |")
 print("|---|---|---|---|---|---|---|")
 for l in linhas: print("| `%s` | %s | %s | %s | %s | %s | %s |" % l)
-print("\n**AGENTS.md sincronizado com o CLAUDE.md:**", "ok" if agents_ok else "🔴 DIVERGENTE — regenerar")
+print("\n**AGENTS.md:** ponteiro de bloqueio (Codex desativado em 11/10/2026) — sem conferência de sincronia")
 print("**Sinais repetidos entre árvores (aviso — o desempate resolve; podar se ambíguo):**",
       len(colisoes), "·", "; ".join("%s → %s" % (t, "/".join(v)) for t, v in colisoes[:12]) or "nenhum")
 print("**Arquivos .md alterados em 100-métodos/, 00-core/ e 90-templates/ nos últimos 8 dias:**", recentes)
