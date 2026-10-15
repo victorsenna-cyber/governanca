@@ -178,13 +178,15 @@ Cleiton, boa noite! tudo certo por aí?
 
 passando pra te atualizar sobre o distrato.
 
-hoje vence a segunda parcela e sigo sem data pra regularizar as duas. não vou inventar uma.
+hoje vence a segunda parcela, e ainda não consigo te passar uma data pra regularizar as duas.
 
-quando eu tiver como pagar, mesmo que parte, te mando o comprovante no mesmo dia.
+se eu conseguir pagar uma parte antes, o comprovante vai direto pra ti.
 
-na terça, dia 20, te atualizo de novo, com ou sem pagamento..
+terça, dia 20, volto a falar contigo, com ou sem pagamento..
 ```
 
-**Contagem (§4-bis.5):** marcadores 3 (vocativo + `!` · `tudo certo por aí?` · `..`) · omissões 2 (`sigo sem data`, `quando eu tiver como pagar`, sem motivo nem origem) · zero justificativa.
+**Correção do Victor, 15/10:** não repetir as fórmulas da mensagem de 09/10 (*"mesmo que parte"*, *"te dou posição / te atualizo"*, *"não vou inventar uma"*). **Régua:** mensagem seguida ao mesmo interlocutor diz o mesmo compromisso com outras palavras; fórmula repetida lê como modelo pronto.
+
+**Contagem (§4-bis.5):** marcadores 3 (vocativo + `!` · `tudo certo por aí?` · `..`) · omissões 2 (`não consigo te passar uma data`, `se eu conseguir pagar`, sem motivo nem origem) · zero justificativa.
 
 **Próximo passo, dono Victor:** enviar hoje · criar lembrete para 20/10 · colar aqui a resposta literal do Cleiton, com hora · pendentes de 01/10 seguem abertos (aditivo no repo, vencimento antecipado, Viviane).
