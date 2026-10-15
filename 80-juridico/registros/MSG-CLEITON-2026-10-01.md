@@ -140,7 +140,7 @@ O Victor, 09/10: *"não posso garantir que o primeiro que entrar vai pra ela por
 
 **Régua:** compromisso escrito para a contraparte só inclui o que é cumprível **depois** das despesas de subsistência. Nenhuma mensagem deste caso promete prioridade absoluta de pagamento.
 
-**Versão enviada em 09/10:**
+**Versão enviada em 09/10** *(literal conferido no print de 15/10: saiu às 08h53, com abertura "Cleiton, muito bom dia! tudo certo por aqui, e por aí?"; o resto igual ao bloco abaixo)*:
 
 ```
 Cleiton, bom dia! tudo certo por aqui.
@@ -160,7 +160,7 @@ na terça, dia 13, te dou posição de novo, antes do dia 15..
 
 ## 9. Atualização 15/10/2026 — posição de 13/10 sem registro · 2ª parcela vence hoje
 
-**Fato:** a mensagem de 09/10 prometeu posição na terça 13/10. **Não há registro de envio nem de resposta do Cleiton desde 01/10 18h29.** Hoje vence a 2ª parcela (R$ 812,14); com a 1ª (R$ 1.525,86 + encargos), são dois atrasos. Recurso com data: nenhum. Prazo lido da outra parte: **31/10** ("se virar o mês").
+**Fato (conferido no print do WhatsApp, 15/10 20h39):** a mensagem de 09/10 saiu às **08h53** e prometeu posição na terça 13/10. **Nada foi enviado em 13/10, e o Cleiton não responde desde 01/10 18h29**: a mensagem de 09/10 está sem resposta há 6 dias. Também confirmado: a atualização prometida para 18/09 (mensagem de 16/09) não saiu; a seguinte é de 30/09. Hoje vence a 2ª parcela (R$ 812,14); com a 1ª (R$ 1.525,86 + encargos), são dois atrasos. Recurso com data: nenhum. Prazo lido da outra parte: **31/10** ("se virar o mês").
 
 **Decisões:**
 - Reconhecer a terça perdida em uma linha, sem motivo (Regra nº 2, §4-bis.4).
@@ -169,12 +169,12 @@ na terça, dia 13, te dou posição de novo, antes do dia 15..
 - ❌ Descartado repetir "é direito dela": já dito em 09/10; repetir soa como resignação.
 - ❌ Descartado mencionar os encargos que ele lembrou em 16/09: só entram no dia do pagamento.
 
-**Erro registrado:** é a segunda cadência prometida e não cumprida neste caso (18/09 sem registro, 13/10 sem envio). **Régua: a data de posição só se promete com lembrete criado na mesma hora.**
+**Erro registrado:** é a segunda cadência prometida e não cumprida neste caso (18/09 e 13/10, as duas confirmadas no print). **Régua: a data de posição só se promete com lembrete criado na mesma hora.**
 
 **Rascunho (🟡 não enviado):**
 
 ```
-Cleiton, boa tarde! tudo certo por aqui.
+Cleiton, boa noite! tudo certo por aqui.
 
 fiquei de te dar posição na terça e não dei.
 
