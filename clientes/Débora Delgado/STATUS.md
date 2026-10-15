@@ -24,6 +24,7 @@
 | **Carga real** | **< 8h/mês** de operação (o repo dizia ~40h — corrigido 03/09) | `STATUS.md` (Governança), 03/09 |
 | **Frente ativa** | ⭐ **funil de resposta direta do curso de Eneagrama para líderes** — onda 1 liderança; onda 2 carreira (curso *Reconhecer a sua Maestria*) | `ESTRUTURA-ESCALADA-2026-09-22.md` |
 | **Funis** | testar os dois: **A** anúncio → quiz → VSL · **B** anúncio → VSL — mesma VSL, abertura muda | `DECISOES.md` 25/09 |
+| 🔴 **Anúncio dela (07/10)** | **subiu sozinha** um post impulsionado → consultoria gratuita · 318 visitas a R$ 0,13 · **0 conversão** · decisão: **pausar**; tráfego frio vai para **sessão paga** (regra de 25/08); próximo anúncio em formato story-texto, fase 1 bloqueada por preço, horários, checkout e agenda | `REGISTRO-WHATSAPP-2026-10-07.md` · `03 - tráfego pago/criativos/story-texto-2026-10-07/` |
 | **Mídia** | ⚠️ **capital para 2–3 tentativas não reservado** — bloqueia o primeiro real de mídia, não a escrita | `METODO-FUNIL-DE-VSL.md` §2.2 |
 
 ---
@@ -102,4 +103,5 @@ Não interromper o fluxo dela, direcionar (princípio 7) · nenhuma promessa aci
 | com as respostas dela: nova rodada curta — D19, D18, D23, D31, D12 e a ordem no tempo de D10 (`JUIZ-GLOBAL.md` §9) | CEO (orquestrador) |
 | correção do quiz (os dois defeitos do G5) — destrava o funil A | CEO → próxima tarefa |
 | reservar capital para 2 a 3 tentativas antes do primeiro real de mídia | **Victor** |
+| ⭐ **enviar a mensagem do `REGISTRO-WHATSAPP-2026-10-07.md` §ANEXO-4 (pausar o anúncio dela + 3 fatos) e decidir verba** — passo de 07/10 vindo da sessão web, mesclado em 15/10; conferir se ainda vale diante da rodada de 13/10 | **Victor** |
 | dizer o número da renovação | Victor |
