@@ -85,6 +85,7 @@ Desvio declarado: nenhum  /  __
 | `METODO-DIRECT-RESPONSE` | promessa **sem prova** que a pague · DFY **refeito por cliente** vendido a preço de produto |
 | `METODO-GERACAO-DE-RESULTADOS` | resultado no **negativo**, sem evidência, ou não específico |
 | `METODO-ESTIMATIVA-DE-CARGA` | **hora nossa em documento que sai da casa** · multiplicador de produção aplicado a **colheita ou latência** |
+| `METODO-EDICAO-DE-VIDEO-CURTO` *(15/10 · 🟡)* | render final **sem roteiro de corte aprovado pelo Victor** · legenda publicada **sem conferência de nome próprio** · fonte do WhatsApp usada como original · áudio fora de **−14 LUFS ±1** · trecho que fere a **régua de tom** (§3 do método) |
 | `METODO-TRAFEGO-PAGO` | criativo **sem hipótese escrita** · linha de matriz sem os campos obrigatórios |
 | `METODO-TRILHO-DE-CONTA-NOVA` | etapa com **duas entradas** · pendência **sem "o que destrava"** · pedido ao cliente contendo lacuna de estrutura |
 | `copywriter-senior-continuum` | os **11 passes**; piso que vale sempre: **1 (diagnóstico) · 3 (pivô) · 10 (proibições) · 11 (procedência do espelho)** |
