@@ -155,3 +155,36 @@ na terça, dia 13, te dou posição de novo, antes do dia 15..
 ```
 
 **✅ ENVIADA em 09/10/2026** (versão da §8). Próximo compromisso: **posição ao Cleiton na terça 13/10**, antes do vencimento da 2ª parcela em 15/10. Registrar aqui a resposta literal dele, com hora.
+
+---
+
+## 9. Atualização 15/10/2026 — posição de 13/10 sem registro · 2ª parcela vence hoje
+
+**Fato:** a mensagem de 09/10 prometeu posição na terça 13/10. **Não há registro de envio nem de resposta do Cleiton desde 01/10 18h29.** Hoje vence a 2ª parcela (R$ 812,14); com a 1ª (R$ 1.525,86 + encargos), são dois atrasos. Recurso com data: nenhum. Prazo lido da outra parte: **31/10** ("se virar o mês").
+
+**Decisões:**
+- Reconhecer a terça perdida em uma linha, sem motivo (Regra nº 2, §4-bis.4).
+- Nenhuma data de pagamento. Mantido o compromisso cumprível de 09/10 (§8): comprovante no mesmo dia, mesmo parcial.
+- Próxima posição: **terça 20/10**, "com ou sem pagamento" — cadência curta antes de 31/10, e a frase tira o incentivo de sumir quando não há dinheiro.
+- ❌ Descartado repetir "é direito dela": já dito em 09/10; repetir soa como resignação.
+- ❌ Descartado mencionar os encargos que ele lembrou em 16/09: só entram no dia do pagamento.
+
+**Erro registrado:** é a segunda cadência prometida e não cumprida neste caso (18/09 sem registro, 13/10 sem envio). **Régua: a data de posição só se promete com lembrete criado na mesma hora.**
+
+**Rascunho (🟡 não enviado):**
+
+```
+Cleiton, boa tarde! tudo certo por aqui.
+
+fiquei de te dar posição na terça e não dei.
+
+hoje vence a segunda e eu sigo sem data pra regularizar as duas. não vou inventar uma.
+
+quando eu tiver como pagar, mesmo que parte, te mando o comprovante no mesmo dia.
+
+na terça, dia 20, te dou posição de novo, com ou sem pagamento..
+```
+
+**Contagem (§4-bis.5):** marcadores 3 (vocativo + `!` · `tudo certo por aqui` · `..`) · omissões 2 (`sigo sem data`, `quando eu tiver como pagar`, sem motivo nem origem) · zero justificativa.
+
+**Próximo passo, dono Victor:** enviar hoje · criar lembrete para 20/10 · colar aqui a resposta literal do Cleiton, com hora · pendentes de 01/10 seguem abertos (aditivo no repo, vencimento antecipado, Viviane).
