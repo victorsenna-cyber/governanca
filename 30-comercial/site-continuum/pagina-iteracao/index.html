@@ -1,0 +1,1397 @@
+﻿<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-KC7B45P');</script>
+  <!-- End Google Tag Manager -->
+  <link rel="stylesheet" href="/assets/styles-7pl-t798.css" data-precedence="default">
+  <title>Continuum AI Systems | Sistema de Receita e Operação com IA</title>
+  <meta name="description" content="Aplique para um diagnóstico estratégico da Continuum. Avaliamos compatibilidade, diagnosticamos onde a receita escapa e apresentamos um plano prático de ação.">
+  <meta name="theme-color" content="#020506">
+  <meta property="og:title" content="Continuum AI Systems | Sistema de Receita e Operação com IA">
+  <meta property="og:description" content="Para empresas de serviço que já vendem e perdem receita entre marketing, comercial, entrega, dados e IA.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Continuum AI Systems | Sistema de Receita e Operação com IA">
+  <meta name="twitter:description" content="Aplique para um diagnóstico estratégico. Primeiro avaliamos compatibilidade.">
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #020506;
+      --bg-soft: #071012;
+      --panel: rgba(255, 255, 255, 0.035);
+      --panel-strong: rgba(255, 255, 255, 0.07);
+      --line: rgba(255, 255, 255, 0.11);
+      --line-strong: rgba(255, 255, 255, 0.2);
+      --text: #f6fbff;
+      --muted: rgba(236, 246, 255, 0.72);
+      --dim: rgba(236, 246, 255, 0.54);
+      --cyan: #67e8f9;
+      --cyan-strong: #22d3ee;
+      --green: #34d399;
+      --dark-text: #061318;
+      --dark-muted: #24424d;
+      --radius: 18px;
+      --shadow: 0 34px 90px rgba(0, 0, 0, 0.48);
+      --max: 1180px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      background: var(--bg);
+    }
+
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at 50% 0%, rgba(34, 211, 238, 0.12), transparent 34rem),
+        linear-gradient(180deg, #020506 0%, #030708 48%, #020506 100%);
+      color: var(--text);
+      min-width: 320px;
+      overflow-x: hidden;
+    }
+
+    body::selection {
+      background: rgba(103, 232, 249, 0.32);
+      color: white;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button,
+    summary,
+    a {
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    a:focus-visible,
+    summary:focus-visible {
+      outline: 2px solid rgba(103, 232, 249, 0.95);
+      outline-offset: 4px;
+    }
+
+    .site {
+      min-height: 100vh;
+      background-image:
+        linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+      background-size: 60px 60px;
+      background-attachment: fixed;
+    }
+
+    .container {
+      width: min(100% - 32px, var(--max));
+      margin: 0 auto;
+    }
+
+    .nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 50;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      background: rgba(2, 5, 6, 0.62);
+      backdrop-filter: blur(18px);
+    }
+
+    .nav-inner {
+      height: 68px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      min-width: 0;
+      font-weight: 700;
+      letter-spacing: 0;
+      white-space: nowrap;
+    }
+
+    .brand-mark {
+      position: relative;
+      width: 30px;
+      height: 30px;
+      border-radius: 9px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.02));
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.18);
+    }
+
+    .brand-mark::before {
+      content: "";
+      position: absolute;
+      inset: 7px;
+      border-radius: 6px;
+      background: linear-gradient(135deg, rgba(103, 232, 249, 0.85), rgba(52, 211, 153, 0.55));
+      filter: blur(0.5px);
+    }
+
+    .brand-mark::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 7px;
+      height: 7px;
+      transform: translate(-50%, -50%);
+      border-radius: 999px;
+      background: white;
+      box-shadow: 0 0 14px rgba(255, 255, 255, 0.85);
+    }
+
+    .brand span:last-child {
+      color: rgba(255, 255, 255, 0.55);
+      font-weight: 600;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      color: var(--dim);
+      font-size: 14px;
+    }
+
+    .nav-links a:hover {
+      color: var(--text);
+    }
+
+    .cta-small,
+    .cta-primary,
+    .cta-secondary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      border-radius: 999px;
+      font-weight: 700;
+      line-height: 1;
+      transition: transform 180ms ease, border-color 180ms ease, background 180ms ease, color 180ms ease;
+    }
+
+    .cta-small {
+      height: 38px;
+      padding: 0 16px;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      background: rgba(255, 255, 255, 0.05);
+      color: var(--text);
+      font-size: 14px;
+      backdrop-filter: blur(12px);
+    }
+
+    .cta-primary {
+      min-height: 56px;
+      padding: 18px 28px;
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      color: white;
+      background:
+        radial-gradient(circle at 30% 0%, rgba(103, 232, 249, 0.28), transparent 55%),
+        linear-gradient(180deg, rgba(255, 255, 255, 0.13), rgba(255, 255, 255, 0.035));
+      box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.28),
+        0 18px 42px rgba(34, 211, 238, 0.16);
+      backdrop-filter: blur(14px);
+      font-size: 16px;
+    }
+
+    .cta-primary:hover,
+    .cta-small:hover,
+    .cta-secondary:hover {
+      transform: translateY(-1px);
+      border-color: rgba(103, 232, 249, 0.5);
+    }
+
+    .cta-secondary {
+      min-height: 52px;
+      padding: 16px 20px;
+      color: rgba(255, 255, 255, 0.76);
+      font-size: 15px;
+    }
+
+    .arrow {
+      width: 17px;
+      height: 17px;
+      transition: transform 180ms ease;
+    }
+
+    a:hover .arrow {
+      transform: translateX(2px);
+    }
+
+    .hero {
+      position: relative;
+      min-height: 100svh;
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+      padding: 116px 0 72px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    #continuum-canvas {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      opacity: 0.9;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(65% 55% at 50% 42%, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.58) 70%, rgba(0, 0, 0, 0.94) 100%),
+        linear-gradient(180deg, transparent 0%, rgba(2, 5, 6, 0.38) 68%, #020506 100%);
+      pointer-events: none;
+    }
+
+    .hero-card {
+      position: relative;
+      z-index: 2;
+      max-width: 850px;
+      margin: 0 auto;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 26px;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.058), rgba(255, 255, 255, 0.018));
+      box-shadow: var(--shadow), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(18px);
+      padding: clamp(28px, 6vw, 56px);
+      text-align: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.045);
+      color: rgba(255, 255, 255, 0.72);
+      padding: 7px 12px;
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      backdrop-filter: blur(12px);
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 6px;
+      height: 6px;
+      border-radius: 999px;
+      background: var(--cyan);
+      box-shadow: 0 0 14px rgba(103, 232, 249, 0.75);
+      flex: 0 0 auto;
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin: 0;
+    }
+
+    h1 {
+      margin-top: 24px;
+      color: white;
+      font-size: clamp(40px, 7vw, 72px);
+      line-height: 1.02;
+      letter-spacing: 0;
+      font-weight: 760;
+    }
+
+    .gradient-text {
+      display: inline;
+      background: linear-gradient(180deg, #ffffff 0%, rgba(228, 252, 255, 0.58) 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .hero-copy {
+      max-width: 720px;
+      margin: 22px auto 0;
+      color: var(--muted);
+      font-size: clamp(16px, 1.6vw, 18px);
+      line-height: 1.72;
+    }
+
+    .hero-actions {
+      margin-top: 32px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .microcopy {
+      margin-top: 14px;
+      color: var(--dim);
+      font-size: 13px;
+      line-height: 1.55;
+    }
+
+    .signal {
+      margin: 22px auto 0;
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      color: rgba(255, 255, 255, 0.68);
+      font-size: 13px;
+    }
+
+    .signal-dot {
+      position: relative;
+      width: 9px;
+      height: 9px;
+      border-radius: 999px;
+      background: var(--green);
+      box-shadow: 0 0 14px rgba(52, 211, 153, 0.75);
+    }
+
+    .signal-dot::before {
+      content: "";
+      position: absolute;
+      inset: -5px;
+      border-radius: inherit;
+      background: rgba(52, 211, 153, 0.22);
+      animation: ping 1.8s ease-out infinite;
+    }
+
+    .hero-metrics {
+      position: relative;
+      z-index: 2;
+      margin-top: 18px;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .mini-card,
+    .glass-card,
+    .step-card,
+    .faq details {
+      border: 1px solid var(--line);
+      background: var(--panel);
+      border-radius: var(--radius);
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.045);
+      backdrop-filter: blur(14px);
+    }
+
+    .mini-card {
+      padding: 18px;
+      min-height: 132px;
+    }
+
+    .icon {
+      width: 31px;
+      height: 31px;
+      display: inline-grid;
+      place-items: center;
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.11);
+      background: rgba(0, 0, 0, 0.28);
+      color: var(--cyan);
+      font-weight: 800;
+      font-size: 13px;
+    }
+
+    .mini-card h3 {
+      margin-top: 13px;
+      font-size: 15px;
+      color: white;
+    }
+
+    .mini-card p {
+      margin-top: 8px;
+      color: var(--dim);
+      font-size: 13px;
+      line-height: 1.55;
+    }
+
+    section {
+      position: relative;
+      padding: clamp(76px, 10vw, 132px) 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    #top {
+      padding: 0;
+      border-bottom: 0;
+    }
+
+    .section-head {
+      max-width: 780px;
+    }
+
+    .anchor-target {
+      position: absolute;
+      top: -80px;
+      width: 1px;
+      height: 1px;
+      pointer-events: none;
+    }
+
+    .section-head.center {
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    h2 {
+      margin-top: 20px;
+      color: white;
+      font-size: clamp(32px, 5vw, 56px);
+      line-height: 1.08;
+      font-weight: 735;
+      letter-spacing: 0;
+    }
+
+    .section-lead {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: clamp(16px, 1.6vw, 18px);
+      line-height: 1.75;
+    }
+
+    .scene {
+      margin-top: 38px;
+      border-left: 1px solid rgba(103, 232, 249, 0.55);
+      padding: 6px 0 6px 24px;
+      color: rgba(245, 251, 255, 0.86);
+      font-size: clamp(18px, 2vw, 23px);
+      line-height: 1.65;
+      max-width: 930px;
+    }
+
+    .grid {
+      margin-top: 42px;
+      display: grid;
+      gap: 14px;
+    }
+
+    .grid.cols-2 {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .grid.cols-3 {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .grid.cols-4 {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .glass-card {
+      padding: clamp(20px, 3vw, 28px);
+    }
+
+    .glass-card h3,
+    .step-card h3 {
+      color: white;
+      font-size: 18px;
+      line-height: 1.22;
+    }
+
+    .glass-card p,
+    .step-card p {
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.68;
+    }
+
+    .number {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 34px;
+      height: 34px;
+      border-radius: 11px;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      background: rgba(0, 0, 0, 0.3);
+      color: rgba(255, 255, 255, 0.58);
+      font-size: 12px;
+      margin-bottom: 18px;
+    }
+
+    .cost-band {
+      overflow: hidden;
+    }
+
+    .cost-band::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at 18% 20%, rgba(103, 232, 249, 0.12), transparent 28rem),
+        radial-gradient(circle at 82% 60%, rgba(52, 211, 153, 0.08), transparent 26rem);
+      pointer-events: none;
+    }
+
+    .mechanism-wrap {
+      margin-top: 46px;
+      display: grid;
+      grid-template-columns: 0.75fr 1.25fr;
+      gap: 18px;
+      align-items: stretch;
+    }
+
+    .mechanism-intro {
+      border: 1px solid rgba(103, 232, 249, 0.18);
+      background:
+        radial-gradient(circle at 20% 20%, rgba(103, 232, 249, 0.12), transparent 20rem),
+        rgba(255, 255, 255, 0.035);
+      border-radius: 24px;
+      padding: clamp(24px, 4vw, 36px);
+      min-height: 100%;
+    }
+
+    .mechanism-intro h3 {
+      font-size: clamp(26px, 3vw, 34px);
+      line-height: 1.12;
+    }
+
+    .mechanism-intro p {
+      margin-top: 16px;
+      color: var(--muted);
+      line-height: 1.72;
+    }
+
+    .steps {
+      display: grid;
+      gap: 12px;
+    }
+
+    .step-card {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 18px;
+      align-items: start;
+      padding: 22px;
+    }
+
+    .value-list {
+      list-style: none;
+      padding: 0;
+      margin: 18px 0 0;
+      display: grid;
+      gap: 10px;
+    }
+
+    .value-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.55;
+    }
+
+    .check {
+      color: var(--cyan);
+      font-weight: 900;
+      flex: 0 0 auto;
+    }
+
+    .process-line {
+      margin-top: 46px;
+      display: grid;
+      grid-template-columns: repeat(6, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .process-item {
+      position: relative;
+      min-height: 170px;
+      padding: 18px;
+      border: 1px solid rgba(255, 255, 255, 0.11);
+      border-radius: 18px;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+    }
+
+    .process-item strong {
+      display: block;
+      margin-top: 16px;
+      color: white;
+      font-size: 15px;
+    }
+
+    .process-item p {
+      margin-top: 8px;
+      color: var(--dim);
+      font-size: 13px;
+      line-height: 1.55;
+    }
+
+    .fit-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 44px;
+    }
+
+    .fit-card {
+      border-radius: 24px;
+      padding: clamp(24px, 4vw, 34px);
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.035);
+      backdrop-filter: blur(14px);
+    }
+
+    .fit-card.no {
+      background: rgba(255, 255, 255, 0.018);
+    }
+
+    .fit-card h3 {
+      font-size: 24px;
+    }
+
+    .offer {
+      overflow: hidden;
+    }
+
+    .offer::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at 50% 35%, rgba(103, 232, 249, 0.2), transparent 34rem),
+        radial-gradient(circle at 50% 88%, rgba(52, 211, 153, 0.13), transparent 30rem);
+      pointer-events: none;
+    }
+
+    .offer-panel {
+      position: relative;
+      z-index: 2;
+      overflow: hidden;
+      border-radius: 30px;
+      border: 1px solid rgba(255, 255, 255, 0.34);
+      background:
+        linear-gradient(135deg, rgba(255, 255, 255, 0.095), rgba(103, 232, 249, 0.035)),
+        rgba(255, 255, 255, 0.04);
+      box-shadow:
+        0 36px 100px rgba(0, 0, 0, 0.5),
+        inset 0 1px 0 rgba(255, 255, 255, 0.42);
+      color: var(--text);
+      backdrop-filter: blur(26px) saturate(135%);
+      padding: clamp(28px, 5vw, 54px);
+    }
+
+    .offer-panel::before {
+      content: "";
+      position: absolute;
+      inset: -20%;
+      background:
+        radial-gradient(circle at 20% 10%, rgba(255, 255, 255, 0.065), transparent 22rem),
+        radial-gradient(circle at 90% 80%, rgba(103, 232, 249, 0.06), transparent 26rem);
+      pointer-events: none;
+    }
+
+    .offer-content {
+      position: relative;
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: clamp(24px, 5vw, 50px);
+      align-items: start;
+    }
+
+    .offer .eyebrow {
+      background: rgba(255, 255, 255, 0.12);
+      color: rgba(255, 255, 255, 0.78);
+      border-color: rgba(255, 255, 255, 0.22);
+    }
+
+    .offer h2,
+    .offer h3 {
+      color: var(--text);
+    }
+
+    .offer p,
+    .offer li {
+      color: rgba(242, 250, 255, 0.78);
+    }
+
+    .offer h2 {
+      font-size: clamp(34px, 5vw, 58px);
+    }
+
+    .offer-actions {
+      margin-top: 28px;
+    }
+
+    .cta-dark {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      min-height: 58px;
+      padding: 18px 26px;
+      border-radius: 999px;
+      background: rgba(2, 8, 10, 0.82);
+      color: white;
+      font-weight: 800;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      box-shadow: 0 18px 36px rgba(0, 0, 0, 0.26);
+      backdrop-filter: blur(12px);
+    }
+
+    .offer-micro {
+      margin-top: 12px;
+      color: rgba(242, 250, 255, 0.66);
+      font-size: 13px;
+      line-height: 1.55;
+    }
+
+    .offer-steps {
+      display: grid;
+      gap: 12px;
+    }
+
+    .offer-step {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 12px;
+      align-items: start;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.065);
+      backdrop-filter: blur(14px);
+      padding: 16px;
+    }
+
+    .offer-step .number {
+      margin: 0;
+      border-color: rgba(255, 255, 255, 0.18);
+      background: rgba(0, 0, 0, 0.22);
+      color: rgba(255, 255, 255, 0.62);
+    }
+
+    .entry-flow {
+      margin-top: 44px;
+      border: 1px solid rgba(255, 255, 255, 0.11);
+      border-radius: 26px;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+      padding: clamp(24px, 4vw, 36px);
+    }
+
+    .faq {
+      max-width: 920px;
+      margin: 44px auto 0;
+      display: grid;
+      gap: 12px;
+    }
+
+    .faq details {
+      padding: 0;
+    }
+
+    .faq summary {
+      cursor: pointer;
+      list-style: none;
+      padding: 20px 22px;
+      color: white;
+      font-weight: 700;
+      line-height: 1.45;
+    }
+
+    .faq summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .faq details p {
+      padding: 0 22px 22px;
+      color: var(--muted);
+      line-height: 1.68;
+      font-size: 15px;
+    }
+
+    .final {
+      min-height: 72vh;
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+    }
+
+    .final::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at 50% 44%, rgba(34, 211, 238, 0.15), transparent 34rem),
+        radial-gradient(circle at 50% 76%, rgba(52, 211, 153, 0.1), transparent 28rem);
+      pointer-events: none;
+    }
+
+    .final-card {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      max-width: 840px;
+      margin: 0 auto;
+    }
+
+    .footer {
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      padding: 34px 0;
+      color: rgba(255, 255, 255, 0.48);
+      font-size: 13px;
+    }
+
+    .footer-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .sticky-cta {
+      position: fixed;
+      right: 22px;
+      bottom: 22px;
+      z-index: 60;
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      height: 50px;
+      padding: 0 18px;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.075);
+      color: white;
+      font-size: 14px;
+      font-weight: 800;
+      backdrop-filter: blur(18px);
+      box-shadow: 0 16px 44px rgba(0, 0, 0, 0.28);
+    }
+
+    .sticky-cta.is-hidden {
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(12px);
+    }
+
+    @keyframes ping {
+      0% {
+        transform: scale(0.8);
+        opacity: 0.85;
+      }
+      70%,
+      100% {
+        transform: scale(1.9);
+        opacity: 0;
+      }
+    }
+
+    @media (max-width: 980px) {
+      .nav-links {
+        display: none;
+      }
+
+      .hero-metrics,
+      .grid.cols-3,
+      .grid.cols-4,
+      .process-line,
+      .mechanism-wrap,
+      .offer-content {
+        grid-template-columns: 1fr;
+      }
+
+      .process-item {
+        min-height: auto;
+      }
+    }
+
+    @media (max-width: 760px) {
+      .container {
+        width: min(100% - 24px, var(--max));
+      }
+
+      .brand span {
+        font-size: 14px;
+      }
+
+      .cta-small {
+        height: 36px;
+        padding: 0 13px;
+      }
+
+      .hero {
+        padding-top: 96px;
+      }
+
+      .hero-card {
+        border-radius: 22px;
+      }
+
+      .hero-actions {
+        align-items: stretch;
+      }
+
+      .cta-primary,
+      .cta-secondary,
+      .cta-dark {
+        width: 100%;
+      }
+
+      .grid.cols-2,
+      .fit-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .step-card,
+      .offer-step {
+        grid-template-columns: 1fr;
+      }
+
+      .sticky-cta {
+        left: 12px;
+        right: 12px;
+        bottom: 12px;
+        justify-content: center;
+      }
+
+      .footer {
+        padding-bottom: 86px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.001ms !important;
+      }
+
+      #continuum-canvas {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KC7B45P"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <div class="site">
+    <header data-section="d0" class="fixed inset-x-0 top-0 z-40 transition-colors duration-300 bg-transparent"><div class="mx-auto flex h-16 max-w-7xl items-center justify-between px-5 lg:px-8"><a href="#top" class="flex items-center gap-2.5"><span class="relative inline-flex h-7 w-7 items-center justify-center rounded-md border border-white/15 bg-gradient-to-b from-white/10 to-transparent"><span class="absolute inset-1 rounded-[5px] bg-gradient-to-br from-cyan-300/70 via-sky-400/40 to-emerald-300/40 blur-[1px]"></span><span class="relative h-1.5 w-1.5 rounded-full bg-white shadow-[0_0_8px_2px_rgba(255,255,255,0.6)]"></span></span><span class="text-[15px] font-semibold tracking-tight text-white">Continuum<span class="text-white/50"> AI Systems</span></span></a><nav aria-label="Principal" class="hidden items-center gap-7 text-sm text-white/65 md:flex"><a href="#crescimento" class="transition hover:text-white">Crescimento</a><a href="#oferta" class="transition hover:text-white">O que fazemos</a><a href="#sistema" class="transition hover:text-white">Sistema</a><a href="#aplicacao" class="transition hover:text-white">Aplicação</a></nav><a href="https://form.typeform.com/to/mggPWs1W" target="_blank" rel="noopener noreferrer" aria-label="Aplicar para diagnóstico estratégico" class="group inline-flex h-9 items-center gap-2 rounded-full border border-white/15 bg-white/[0.04] px-4 text-sm font-medium text-white backdrop-blur transition hover:border-cyan-300/40 hover:bg-white/[0.07]">Aplicar<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a></div></header>
+
+    <main>
+<section id="top" class="relative isolate flex min-h-[100svh] w-full items-center justify-center overflow-hidden bg-black"><div class="absolute inset-0"><canvas aria-hidden="true" class="pointer-events-none absolute inset-0 h-full w-full"></canvas><div aria-hidden="true" class="absolute inset-0" style="background:radial-gradient(80% 60% at 50% 45%, rgba(0,0,0,0) 0%, rgba(0,0,0,0.55) 70%, rgba(0,0,0,0.9) 100%)"></div><div aria-hidden="true" class="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-b from-transparent to-black"></div></div><div class="relative z-10 mx-auto w-full max-w-6xl px-5 pt-28 pb-16 lg:px-8 lg:pt-32"><div class="mx-auto max-w-3xl"><div class="relative rounded-2xl border border-white/10 bg-gradient-to-b from-white/[0.04] to-white/[0.01] p-6 backdrop-blur-md shadow-[inset_0_1px_0_rgba(255,255,255,0.06),0_30px_60px_-30px_rgba(0,0,0,0.8)] text-center lg:p-10"><div class="flex justify-center"><div class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.03] px-3 py-1 text-[11px] font-medium uppercase tracking-[0.18em] text-white/60 backdrop-blur"><span class="h-1 w-1 rounded-full bg-cyan-300 shadow-[0_0_8px_2px_rgba(103,232,249,0.7)]"></span>Para empresas de serviço que já vendem e perdem receita entre áreas</div></div><h1 class="mt-6 text-balance text-4xl font-semibold leading-[1.05] tracking-tight text-white sm:text-5xl lg:text-[58px]">Sua empresa não precisa só de mais leads.<!-- --> <span class="bg-gradient-to-b from-white to-white/60 bg-clip-text text-transparent">Precisa de um sistema para crescer sem aumentar o caos.</span></h1><p class="mx-auto mt-5 max-w-2xl text-pretty text-[15px] leading-relaxed text-white/65 sm:text-base">A Continuum conecta demanda, atendimento, follow-up, onboarding e dados em uma lógica de receita e operação. O objetivo é parar de deixar oportunidade escapar entre áreas que hoje funcionam separadas.</p><div class="mt-7 inline-flex items-center gap-2 text-xs text-white/60"><span class="relative inline-flex h-2 w-2"><span class="absolute inset-0 animate-ping rounded-full bg-emerald-400/60"></span><span class="relative inline-flex h-2 w-2 rounded-full bg-emerald-400 shadow-[0_0_8px_2px_rgba(52,211,153,0.6)]"></span></span>Primeiro avaliamos compatibilidade. Depois chamamos para a consultoria.</div><div class="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row"><svg class="hidden"><defs><filter id="continuum-glass" x="0%" y="0%" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.008 0.008" numOctaves="2" seed="92" result="noise"></feTurbulence><feGaussianBlur in="noise" stdDeviation="2" result="blurred"></feGaussianBlur><feDisplacementMap in="SourceGraphic" in2="blurred" scale="60" xChannelSelector="R" yChannelSelector="G"></feDisplacementMap></filter></defs></svg><a as="a" href="https://form.typeform.com/to/mggPWs1W" target="_blank" rel="noopener noreferrer" aria-label="Aplicar para diagnóstico estratégico" class="group relative isolate inline-flex items-center justify-center gap-2 overflow-hidden rounded-full font-medium tracking-tight text-white transition-[transform,filter] duration-300 hover:scale-[1.02] active:scale-[0.99] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-300/60 focus-visible:ring-offset-2 focus-visible:ring-offset-black h-14 px-10 text-base"><span aria-hidden="true" class="absolute inset-0 rounded-full" style="backdrop-filter:url(#continuum-glass) blur(6px);-webkit-backdrop-filter:blur(6px);background:linear-gradient(180deg, rgba(255,255,255,0.10) 0%, rgba(255,255,255,0.02) 100%);box-shadow:inset 0 1px 0 rgba(255,255,255,0.25), inset 0 -1px 0 rgba(0,0,0,0.35), 0 10px 30px -10px rgba(56,189,248,0.35)"></span><span aria-hidden="true" class="pointer-events-none absolute inset-0 rounded-full opacity-0 transition-opacity duration-500 group-hover:opacity-100" style="background:radial-gradient(120% 80% at 30% 0%, rgba(56,189,248,0.35) 0%, rgba(56,189,248,0) 60%)"></span><span aria-hidden="true" class="absolute inset-0 rounded-full border border-white/15"></span><span class="relative z-10 inline-flex items-center gap-2">Aplicar para diagnóstico estratégico<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right h-4 w-4" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span></a><a href="#sistema" class="inline-flex h-12 items-center gap-2 rounded-full px-5 text-sm text-white/75 transition hover:text-white">Ver o Sistema Continuum<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right h-3.5 w-3.5" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a></div></div><div class="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-3"><div class="rounded-xl border border-white/10 bg-white/[0.03] p-4 backdrop-blur"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-target h-4 w-4 text-cyan-300" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg><div class="mt-2 text-sm font-medium text-white">Demanda com direção</div><p class="mt-1 text-xs leading-relaxed text-white/55">Tráfego, página e mensagem alinhados ao ICP.</p></div><div class="rounded-xl border border-white/10 bg-white/[0.03] p-4 backdrop-blur"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-activity h-4 w-4 text-cyan-300" aria-hidden="true"><path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2"></path></svg><div class="mt-2 text-sm font-medium text-white">Conversão com cadência</div><p class="mt-1 text-xs leading-relaxed text-white/55">Atendimento, follow-up e SDR AI operando com critério.</p></div><div class="rounded-xl border border-white/10 bg-white/[0.03] p-4 backdrop-blur"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-gauge h-4 w-4 text-cyan-300" aria-hidden="true"><path d="m12 14 4-4"></path><path d="M3.34 19a10 10 0 1 1 17.32 0"></path></svg><div class="mt-2 text-sm font-medium text-white">Operação com controle</div><p class="mt-1 text-xs leading-relaxed text-white/55">Onboarding, BI e decisões conectadas.</p></div></div></div></div></section>
+
+      <section id="crescimento" data-section="d2">
+        <div class="container">
+          <div class="section-head">
+            <div class="eyebrow">Diagnóstico</div>
+            <h2>O crescimento trava antes de parecer problema de crescimento.</h2>
+            <p class="section-lead">A empresa continua trabalhando, mas parte da receita não chega ao caixa porque o sistema ainda depende de memória, improviso e esforço isolado.</p>
+          </div>
+          <p class="scene">O lead chega pelo WhatsApp. Alguém responde quando consegue. O follow-up fica na memória do vendedor. A entrega corre para absorver o que foi vendido. No fim da semana existem conversas, planilhas e dashboards, mas ainda falta uma decisão clara sobre onde a receita está escapando.</p>
+          <div class="grid cols-3">
+            <article class="glass-card"><span class="number">01</span><h3>Demanda sem qualificação</h3><p>Oportunidades chegam, mas nem sempre viram conversas comerciais com critério e prioridade.</p></article>
+            <article class="glass-card"><span class="number">02</span><h3>Atendimento sem timing</h3><p>A resposta atrasa, o lead esfria e a próxima ação depende de quem lembrou de fazer.</p></article>
+            <article class="glass-card"><span class="number">03</span><h3>Entrega sem passagem</h3><p>O cliente entra sem first value claro, aumentando retrabalho, suporte e risco de churn.</p></article>
+            <article class="glass-card"><span class="number">04</span><h3>Dados sem decisão</h3><p>Os números existem, mas ainda não comandam foco, prioridade e próxima ação da operação.</p></article>
+            <article class="glass-card"><span class="number">05</span><h3>IA sem processo</h3><p>Automação isolada só acelera a desordem quando não há fluxo, responsável e critério.</p></article>
+            <article class="glass-card"><span class="number">06</span><h3>Fundador no centro</h3><p>A previsibilidade continua dependendo demais do dono, mesmo com equipe e ferramentas.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="cost-band" data-section="d3">
+        <div class="container">
+          <div class="section-head">
+            <div class="eyebrow">O custo invisível</div>
+            <h2>Quando cada área opera sozinha, o crescimento cobra juros.</h2>
+            <p class="section-lead">O mesmo lead perdido volta como custo de aquisição maior. O mesmo follow-up esquecido volta como pipeline fraco. O mesmo onboarding tardio volta como retrabalho. A empresa parece ocupada, mas parte do ganho vaza antes de virar caixa previsível.</p>
+          </div>
+          <div class="grid cols-3">
+            <article class="glass-card"><h3>Perda comercial</h3><p>Oportunidades não somem de uma vez. Elas escorrem em pequenas falhas de resposta, qualificação, priorização e passagem.</p></article>
+            <article class="glass-card"><h3>Sobrecarga operacional</h3><p>Quando venda e entrega não conversam, o crescimento aumenta urgência, retrabalho e desalinhamento interno.</p></article>
+            <article class="glass-card"><h3>Decisão sem dado acionável</h3><p>Relatório parado não muda resultado. A métrica precisa virar decisão, ação e nova leitura.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section id="sistema" data-section="d4">
+        <div class="container">
+          <div class="section-head">
+            <div class="eyebrow">Mecanismo</div>
+            <h2>O problema não é falta de ferramenta. Ferramenta solta só acelera a desordem que já existe.</h2>
+            <p class="section-lead">A Continuum trabalha com um sistema de receita e operação: diagnóstico, fluxo, ativos, cadência e iteração por dado.</p>
+          </div>
+          <div class="mechanism-wrap">
+            <aside class="mechanism-intro">
+              <h3>Sistema Continuum de Receita e Operação</h3>
+              <p>Não é agência, não é chatbot genérico e não é automação isolada. É uma forma de organizar venda, atendimento, entrega, onboarding e dados para que crescimento deixe de depender de improviso.</p>
+            </aside>
+            <div class="steps">
+              <article class="step-card"><span class="number">01</span><div><h3>Diagnosticar o gargalo</h3><p>Mapeamos onde a receita escapa entre demanda, atendimento, follow-up, entrega, onboarding e dados.</p></div></article>
+              <article class="step-card"><span class="number">02</span><div><h3>Arquitetar o fluxo</h3><p>Definimos processo, responsáveis, critérios de passagem e indicadores que orientam a próxima ação.</p></div></article>
+              <article class="step-card"><span class="number">03</span><div><h3>Construir os ativos</h3><p>Página, scripts, pipeline, SDR AI, dashboards, rituais e onboarding entram conforme o gargalo real.</p></div></article>
+              <article class="step-card"><span class="number">04</span><div><h3>Operar com cadência</h3><p>Acompanhamos follow-up, pipeline, first value, alertas e decisões para reduzir perda entre etapas.</p></div></article>
+              <article class="step-card"><span class="number">05</span><div><h3>Iterar por dado</h3><p>BI não fica parado. Ele vira decisão coordenada, ação executável e nova leitura da operação.</p></div></article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section data-section="d5">
+        <div class="container">
+          <div class="section-head">
+            <div class="eyebrow">Pilha de valor</div>
+            <h2>O que a Continuum monta na sua operação.</h2>
+            <p class="section-lead">A consultoria identifica o que precisa ser organizado primeiro. A assessoria executa com método, mão de obra e IA quando existe compatibilidade.</p>
+          </div>
+          <div class="grid cols-4">
+            <article class="glass-card"><h3>Mapa do gargalo</h3><p>Leitura da operação para localizar onde a receita escapa e qual ponto tem maior alavanca.</p></article>
+            <article class="glass-card"><h3>Pipeline com critério</h3><p>Etapas, responsáveis, qualificação, forecast inicial e cadência para não depender de memória.</p></article>
+            <article class="glass-card"><h3>Scripts e follow-up</h3><p>Abordagem, diagnóstico e próximo passo organizados para reduzir perda de oportunidade.</p></article>
+            <article class="glass-card"><h3>SDR AI no WhatsApp</h3><p>Entra quando há fluxo e canal acoplável para apoiar qualificação, cadência e agendamento.</p></article>
+            <article class="glass-card"><h3>Páginas e funis</h3><p>Ativos de conversão quando a mensagem e a jornada precisam preparar melhor a conversa comercial.</p></article>
+            <article class="glass-card"><h3>Dashboards</h3><p>Leads, MRR, gargalos ou indicadores críticos organizados para apoiar decisão operacional.</p></article>
+            <article class="glass-card"><h3>Onboarding orquestrado</h3><p>First value, responsáveis, passagem venda-entrega e alertas para reduzir vácuo após o fechamento.</p></article>
+            <article class="glass-card"><h3>Ritual de iteração</h3><p>Loop entre dado, diagnóstico, decisão, ação e novo dado para melhorar o sistema continuamente.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section id="processo" data-section="d6">
+        <div class="container">
+          <div class="section-head center">
+            <div class="eyebrow">Demonstração de processo</div>
+            <h2>Como o diagnóstico encontra a receita que escapa.</h2>
+            <p class="section-lead">Nesta versão, não vamos usar prova social inventada. A prova é o processo: como a Continuum lê, classifica e transforma gargalo em plano de ação.</p>
+          </div>
+          <div class="process-line">
+            <article class="process-item"><span class="number">01</span><strong>Entrada</strong><p>Aplicação, conversa, lead, venda ou gargalo operacional entram no mapa.</p></article>
+            <article class="process-item"><span class="number">02</span><strong>Leitura</strong><p>Identificamos onde a oportunidade trava na operação real.</p></article>
+            <article class="process-item"><span class="number">03</span><strong>Critério</strong><p>Classificamos entre demanda, conversão, atendimento, entrega, onboarding, dados ou gestão.</p></article>
+            <article class="process-item"><span class="number">04</span><strong>Decisão</strong><p>Escolhemos o maior ponto de alavanca para começar.</p></article>
+            <article class="process-item"><span class="number">05</span><strong>Plano</strong><p>Apresentamos um plano prático de ação para o negócio.</p></article>
+            <article class="process-item"><span class="number">06</span><strong>Execução</strong><p>Se houver continuidade conosco, começamos pelo ponto aceito pelo cliente.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section data-section="d7">
+        <div class="container">
+          <div class="section-head">
+            <div class="eyebrow">Compatibilidade</div>
+            <h2>É para empresas que já sentem a perda entre áreas.</h2>
+            <p class="section-lead">O filtro não é setor. É prontidão estrutural: dor real, operação rodando, abertura para processo e capacidade de implementar.</p>
+          </div>
+          <div class="fit-grid">
+            <article class="fit-card">
+              <h3>É para você se</h3>
+              <ul class="value-list">
+                <li><span class="check">✓</span><span>Sua empresa já vende, mas a previsibilidade ainda depende demais do dono.</span></li>
+                <li><span class="check">✓</span><span>O WhatsApp faz parte real do atendimento, venda ou relacionamento.</span></li>
+                <li><span class="check">✓</span><span>Você tem oportunidade, mas perde timing, follow-up ou clareza de pipeline.</span></li>
+                <li><span class="check">✓</span><span>A entrega sente o impacto do que foi vendido sem onboarding bem conduzido.</span></li>
+                <li><span class="check">✓</span><span>Você aceita revisar processo antes de colocar mais ferramenta em cima.</span></li>
+              </ul>
+            </article>
+            <article class="fit-card no">
+              <h3>Talvez ainda não seja se</h3>
+              <ul class="value-list">
+                <li><span class="check">×</span><span>Você quer só tráfego, só chatbot ou só automação isolada.</span></li>
+                <li><span class="check">×</span><span>A operação ainda não suporta uma assessoria estratégica com setup, rotina e implementação.</span></li>
+                <li><span class="check">×</span><span>Não há decisor com autoridade para mudar processo.</span></li>
+                <li><span class="check">×</span><span>A empresa não opera em canal acoplável, como WhatsApp, para SDR ou onboarding.</span></li>
+                <li><span class="check">×</span><span>A expectativa é uma solução mágica de IA sem mudar rotina.</span></li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="oferta" class="offer" data-section="d8">
+        <span id="aplicacao" class="anchor-target" aria-hidden="true"></span>
+        <div class="container">
+          <div class="offer-panel">
+            <div class="offer-content">
+              <div>
+                <div class="eyebrow">Aplicação</div>
+                <h2>Aplique para descobrir onde a receita está escapando.</h2>
+                <p class="section-lead">Se houver compatibilidade, chamamos você para uma Consultoria Estratégica gratuita de 45 a 60 minutos. Nela, diagnosticamos o seu negócio e apresentamos um plano prático de ação.</p>
+                <div class="offer-actions">
+                  <a class="cta-dark" href="https://form.typeform.com/to/mggPWs1W" target="_blank" rel="noopener noreferrer" data-cta="oferta-aplicar">
+                    Aplicar para diagnóstico estratégico
+                    <svg class="arrow" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </a>
+                  <p class="offer-micro">Primeiro avaliamos compatibilidade. Se fizer sentido, você é chamado para uma consultoria gratuita de 45 a 60 minutos.</p>
+                </div>
+              </div>
+              <div class="offer-steps" aria-label="O que acontece depois da aplicação">
+                <article class="offer-step"><span class="number">01</span><div><h3>Você preenche a aplicação</h3><p>Ela serve para entendermos o momento, a operação e o gargalo percebido.</p></div></article>
+                <article class="offer-step"><span class="number">02</span><div><h3>Verificamos compatibilidade</h3><p>Avaliamos se a Continuum é o caminho certo para o tipo de problema e estrutura atual.</p></div></article>
+                <article class="offer-step"><span class="number">03</span><div><h3>Agendamos a consultoria</h3><p>Se houver encaixe, chamamos você para uma conversa estratégica de 45 a 60 minutos.</p></div></article>
+                <article class="offer-step"><span class="number">04</span><div><h3>Entregamos um plano prático</h3><p>Você pode aplicar sozinho ou seguir conosco com mais facilidade e assertividade.</p></div></article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section data-section="d8b">
+        <div class="container">
+          <div class="section-head">
+            <div class="eyebrow">Se decidirmos seguir juntos</div>
+            <h2>Como começa a Assessoria Estratégica Continuum AI.</h2>
+            <p class="section-lead">A venda não fica separada da entrega. Se houver decisão de continuidade, entramos com processo de ativação, aprofundamento e implementação pelo maior ponto de alavanca.</p>
+          </div>
+          <div class="entry-flow">
+            <div class="grid cols-3" style="margin-top:0">
+              <article class="glass-card"><span class="number">1-3</span><h3>Boas-vindas e próximos passos</h3><p>Nos primeiros 1 a 3 dias fazemos a reunião de entrada do cliente na estrutura e marcamos o aprofundamento.</p></article>
+              <article class="glass-card"><span class="number">02</span><h3>Aprofundamento no negócio</h3><p>Entramos no dia a dia, enxergamos gargalos reais, mapeamos processos, produtos, serviços e operação.</p></article>
+              <article class="glass-card"><span class="number">03</span><h3>Planejamento e implementação</h3><p>Durante a semana estruturamos o plano estratégico, tático e operacional. Com aceite, começamos pelo maior ponto de alavanca.</p></article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section data-section="d9">
+        <div class="container">
+          <div class="section-head center">
+            <div class="eyebrow">FAQ</div>
+            <h2>Perguntas antes de aplicar.</h2>
+            <p class="section-lead">A aplicação não é uma compra imediata. É o primeiro passo para verificar se existe compatibilidade.</p>
+          </div>
+          <div class="faq">
+            <details><summary>A Consultoria Estratégica é gratuita mesmo?</summary><p>Sim. Primeiro avaliamos compatibilidade. Se houver encaixe, chamamos você para uma conversa de 45 a 60 minutos para diagnosticar o negócio e apresentar um plano prático de ação.</p></details>
+            <details><summary>O que acontece depois que eu aplico?</summary><p>Nós analisamos se existe compatibilidade entre sua operação, seu momento e o tipo de gargalo que a Continuum resolve. Se fizer sentido, chamamos você para agendar a consultoria.</p></details>
+            <details><summary>Sou obrigado a contratar depois da consultoria?</summary><p>Não. Você sai com um plano prático que pode aplicar sozinho. Se quiser executar conosco, a continuidade acontece pela Assessoria Estratégica Continuum AI.</p></details>
+            <details><summary>A Continuum faz só tráfego pago?</summary><p>Não. Tráfego só entra quando existe estrutura para converter e sustentar a demanda. O ponto de partida é o gargalo real da operação.</p></details>
+            <details><summary>O SDR AI substitui meu time comercial?</summary><p>Não como promessa geral. Ele entra como parte do fluxo para reduzir perda de lead, organizar cadência e apoiar qualificação quando existe processo.</p></details>
+            <details><summary>Preciso usar WhatsApp?</summary><p>Para frentes de SDR AI e onboarding, o WhatsApp é um canal operacional importante. Se sua operação não usa um canal acoplável, o encaixe precisa ser avaliado.</p></details>
+            <details><summary>Já tentei tráfego, automação ou CRM e não funcionou. Por que seria diferente?</summary><p>Porque a Continuum começa pelo processo e pelo gargalo. Ferramenta entra depois de fluxo, critério e responsáveis.</p></details>
+            <details><summary>Como começa se eu entrar para a Assessoria Estratégica Continuum AI?</summary><p>Nos primeiros 1 a 3 dias fazemos uma reunião de boas-vindas e início dos próximos passos. Nela, já marcamos o encontro de aprofundamento no negócio.</p></details>
+            <details><summary>O que acontece no aprofundamento?</summary><p>Entramos no dia a dia da operação, enxergamos gargalos reais, mapeamos processos e depois estruturamos o planejamento estratégico, tático e operacional.</p></details>
+            <details><summary>A implementação começa por onde?</summary><p>Pelo maior ponto de alavanca identificado e aceito pelo cliente. Pode ser processo comercial, SDR AI, tráfego pago, onboarding, produtos, serviços ou outro gargalo dominante.</p></details>
+          </div>
+        </div>
+      </section>
+
+      <section class="final" data-section="d10">
+        <div class="container">
+          <div class="final-card">
+            <div class="eyebrow">Próximo passo</div>
+            <h2>Mais leads não resolvem um sistema que continua vazando.</h2>
+            <p class="section-lead">Se a sua empresa já vende, mas ainda perde oportunidade entre marketing, atendimento, entrega e dados, o próximo passo não é acelerar no escuro. É diagnosticar onde a receita escapa e decidir o que precisa ser organizado primeiro.</p>
+            <div class="hero-actions">
+              <a class="cta-primary" href="https://form.typeform.com/to/mggPWs1W" target="_blank" rel="noopener noreferrer" data-cta="final-aplicar">
+                Aplicar para diagnóstico estratégico
+                <svg class="arrow" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+            <p class="microcopy">Se houver compatibilidade, chamamos você para uma Consultoria Estratégica gratuita de 45 a 60 minutos.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div>© 2026 Continuum AI Systems</div>
+        <div>Arquitetura de Receita e Operação com IA</div>
+      </div>
+    </footer>
+
+    <a class="sticky-cta is-hidden" href="https://form.typeform.com/to/mggPWs1W" target="_blank" rel="noopener noreferrer" data-cta="sticky-aplicar" aria-label="Aplicar para diagnóstico estratégico">
+      <span class="signal-dot" aria-hidden="true"></span>
+      Aplicar
+      <svg class="arrow" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+  </div>
+
+  <script>
+    (function () {
+      const reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      const canvas = document.querySelector("#top canvas");
+      if (!canvas) return;
+
+      const gl = canvas.getContext("webgl", { antialias: false, alpha: true }) ||
+        canvas.getContext("experimental-webgl", { antialias: false, alpha: true });
+      if (!gl) return;
+
+      const vertexShaderSource = `
+        attribute vec3 position;
+        void main() { gl_Position = vec4(position, 1.0); }
+      `;
+
+      const fragmentShaderSource = `
+        precision highp float;
+        uniform vec2 resolution;
+        uniform float time;
+
+        float line(vec2 p, float yOffset, float freq, float amp, float thickness) {
+          float y = p.y + yOffset + sin((p.x + time) * freq) * amp
+                                + sin((p.x * 0.5 - time * 0.7) * freq * 0.5) * amp * 0.6;
+          return thickness / abs(y);
+        }
+
+        void main() {
+          vec2 p = (gl_FragCoord.xy * 2.0 - resolution) / min(resolution.x, resolution.y);
+          p *= 1.15;
+
+          float d = length(p) * 0.08;
+
+          vec3 cyan = vec3(0.25, 0.85, 1.0) *
+            line(vec2(p.x * (1.0 + d), p.y), 0.0, 1.1, 0.45, 0.012);
+          vec3 blue = vec3(0.30, 0.55, 1.0) *
+            line(vec2(p.x, p.y), 0.08, 0.9, 0.55, 0.010);
+          vec3 green = vec3(0.30, 1.0, 0.65) *
+            line(vec2(p.x * (1.0 - d), p.y), -0.07, 1.3, 0.50, 0.009);
+          vec3 white = vec3(0.95, 0.97, 1.0) *
+            line(vec2(p.x, p.y), -0.18, 0.7, 0.35, 0.006);
+
+          vec3 col = cyan + blue + green + white;
+
+          float vig = smoothstep(1.6, 0.2, length(p));
+          col *= mix(0.55, 1.0, vig);
+
+          col += vec3(0.02, 0.06, 0.10) * (1.0 - smoothstep(0.0, 1.4, abs(p.y)));
+
+          gl_FragColor = vec4(col, 1.0);
+        }
+      `;
+
+      function createShader(type, source) {
+        const shader = gl.createShader(type);
+        gl.shaderSource(shader, source);
+        gl.compileShader(shader);
+        if (!gl.getShaderParameter(shader, gl.COMPILE_STATUS)) {
+          console.error(gl.getShaderInfoLog(shader));
+          gl.deleteShader(shader);
+          return null;
+        }
+        return shader;
+      }
+
+      const vertexShader = createShader(gl.VERTEX_SHADER, vertexShaderSource);
+      const fragmentShader = createShader(gl.FRAGMENT_SHADER, fragmentShaderSource);
+      if (!vertexShader || !fragmentShader) return;
+
+      const program = gl.createProgram();
+      gl.attachShader(program, vertexShader);
+      gl.attachShader(program, fragmentShader);
+      gl.linkProgram(program);
+      if (!gl.getProgramParameter(program, gl.LINK_STATUS)) {
+        console.error(gl.getProgramInfoLog(program));
+        return;
+      }
+
+      const vertices = new Float32Array([
+        -1, -1, 0,
+         1, -1, 0,
+        -1,  1, 0,
+         1, -1, 0,
+        -1,  1, 0,
+         1,  1, 0
+      ]);
+
+      const buffer = gl.createBuffer();
+      gl.bindBuffer(gl.ARRAY_BUFFER, buffer);
+      gl.bufferData(gl.ARRAY_BUFFER, vertices, gl.STATIC_DRAW);
+
+      const positionLocation = gl.getAttribLocation(program, "position");
+      const resolutionLocation = gl.getUniformLocation(program, "resolution");
+      const timeLocation = gl.getUniformLocation(program, "time");
+
+      gl.useProgram(program);
+      gl.enableVertexAttribArray(positionLocation);
+      gl.vertexAttribPointer(positionLocation, 3, gl.FLOAT, false, 0, 0);
+      gl.clearColor(0, 0, 0, 1);
+
+      function resize() {
+        const dpr = Math.min(window.devicePixelRatio || 1, 2);
+        const width = window.innerWidth;
+        const height = window.innerHeight;
+        canvas.width = Math.floor(width * dpr);
+        canvas.height = Math.floor(height * dpr);
+        gl.viewport(0, 0, canvas.width, canvas.height);
+        gl.uniform2f(resolutionLocation, width, height);
+      }
+
+      resize();
+      window.addEventListener("resize", resize, { passive: true });
+
+      let frame = 0;
+      let raf = 0;
+      let shaderTime = 0;
+
+      function render() {
+        if (!reduce || frame % 3 === 0) {
+          shaderTime += reduce ? 0.002 : 0.008;
+          gl.uniform1f(timeLocation, shaderTime);
+          gl.clear(gl.COLOR_BUFFER_BIT);
+          gl.drawArrays(gl.TRIANGLES, 0, 6);
+        }
+        frame += 1;
+        raf = requestAnimationFrame(render);
+      }
+
+      render();
+
+      window.addEventListener("pagehide", function () {
+        cancelAnimationFrame(raf);
+        window.removeEventListener("resize", resize);
+        gl.deleteBuffer(buffer);
+        gl.deleteProgram(program);
+        gl.deleteShader(vertexShader);
+        gl.deleteShader(fragmentShader);
+      }, { once: true });
+    })();
+
+    (function () {
+      const sticky = document.querySelector(".sticky-cta");
+      if (!sticky) return;
+
+      function updateSticky() {
+        const shouldShow = window.scrollY > window.innerHeight * 0.72;
+        sticky.classList.toggle("is-hidden", !shouldShow);
+      }
+
+      updateSticky();
+      requestAnimationFrame(updateSticky);
+      setTimeout(updateSticky, 150);
+      window.addEventListener("scroll", updateSticky, { passive: true });
+      window.addEventListener("resize", updateSticky, { passive: true });
+    })();
+  </script>
+</body>
+</html>

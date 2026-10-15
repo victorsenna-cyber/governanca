@@ -3,6 +3,17 @@
 > **Protocolo de contexto entre sessões de terminal.** Toda sessão ABRE lendo: `CLAUDE.md` → `DIRETRIZES-EXECUCAO-LANCAMENTO.md` (sua tarefa) → as 3 últimas entradas daqui → `03 - tráfego pago/LOG-DECISOES.md` (se tráfego). Toda sessão FECHA registrando entrada abaixo. **Sessão sem entrada no diário = trabalho perdido.**
 > A cada passo relevante DENTRO da sessão (arquivo criado, decisão aplicada, bloqueio), registrar na hora, não no final (terminal cai, contexto não).
 
+### 2026-10-15 · Opus (Claude Code CLI, CEO-orquestrador) · ⭐ **VSL: rodada 3 fechada — roteiro v4.2 grava no funil B; mídia só como teste declarado**
+
+- Rodada em `12 - Direct Response/vsl/2026-10-11/`, trilha completa em `LOG.md` R3-7 a R3-28 (modelo por disparo). Retomada da sessão caída em 13/10, no lote 2 da auditoria.
+- **Ciclo 1:** A2 e A3 reprovaram (passos 3 e 4 sem portador; D18 invertia o mecanismo; *"desde 2018"* com fonte em roteiro redigido para ela). Decisões de estrutura nossas E1–E4. Juiz: 20 ordens por script + DV-1 a DV-3. **Ciclo 2:** seis de seis aprovados.
+- **Victor, 15/10:** VSL sai do ar no primeiro encontro; segundo encontro em janeiro → calendário **16/12 · 06/01 · 20/01 · 03/02** (nosso, dentro da decisão). Conferências da oferta fechadas (12×, reembolso PagTrust, 12 meses, materiais e grupo na plataforma, mentoria) e *"a VSL vende o curso, não a mentoria., foco"* → D29 só com a âncora de seis mil.
+- **Áudio 11.23.00 conferido por transcrição local** (faster-whisper, 4 passadas sem viés): *"saindo do trabalho na hora"* — o *"na hora"* voltou ao roteiro. ⚠️ Passadas com prompt de viés colapsaram; não usar prompt nesse tipo de conferência.
+- **Juiz final:** passa · DV-4 (última) pôs em D27 que página o líder abre — a do tipo que supõe, nunca dito, conferido perguntando — conferida por A3, A2 e A4 · prova/promessa 3,0 (v2: 1,5); prova de resultado de time segue zero · **gate: grava e testa; escala não**.
+- **Registrado:** `BRIEFING-VSL.md` §12 #13 a #17 e ajustes em §5, §9, §10, §11 · `DECISOES.md` 15/10 · `STATUS.md` §1–§5 e §8.
+- **Bloqueios p/ humano (Victor):** checkout desativado em 16/12 (destrava D31 e D36) · capital para 2–3 tentativas · horário de 16/12 · INPI.
+- **Próximo passo exato:** página de vendas e checkout batendo com a peça; reescrever a conferência promessa × curso como resposta às duas objeções; depois, correção do quiz (funil A).
+
 ### 2026-10-13 · Opus (Claude Code CLI, CEO-orquestrador) · ⭐ **retomada da VSL: roteiro v2, módulo de aplicação, conferência promessa × curso e mensagem — nada enviado**
 
 - Rodada em `12 - Direct Response/vsl/2026-10-11/` (11/10 22h53 → 13/10), a partir de `vsl/PROMPT-RETOMADA-VSL-2026-10-11.md`. Trilha completa, com modelo por disparo, em `2026-10-11/LOG.md`. A rodada de 02/10 não foi tocada.
