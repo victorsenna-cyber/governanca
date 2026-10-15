@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Criativos Paola · teste 01</title>
+<!-- Uso: criativo.html?c=1..4&f=feed|story  ·  feed = 1080x1350, story = 1080x1920
+     Render: Chrome headless, --window-size igual ao formato, --screenshot. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&display=block" rel="stylesheet">
+<style>
+  :root {
+    --fundo: #F3ECE0;
+    --tinta: #1E1B3A;
+    --acento: #6142D4;
+    --suave: rgba(30, 27, 58, .62);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 100%; height: 100%; overflow: hidden; background: var(--fundo); }
+  body {
+    position: relative;
+    font-family: "Inter", "Segoe UI", sans-serif;
+    color: var(--tinta);
+    -webkit-font-smoothing: antialiased;
+  }
+  .motivo { position: absolute; right: -230px; bottom: -230px; width: 860px; height: 860px; }
+  .story .motivo { right: -260px; bottom: 120px; width: 940px; height: 940px; }
+
+  .quadro {
+    position: absolute; inset: 0;
+    display: flex; flex-direction: column;
+    padding: 84px 84px 80px;
+  }
+  .story .quadro { padding: 270px 84px 350px; }
+
+  .topo {
+    display: flex; justify-content: space-between; align-items: center;
+    font-size: 25px; font-weight: 600; letter-spacing: .2em; text-transform: uppercase;
+  }
+  .topo span:last-child { font-weight: 500; letter-spacing: .12em; color: var(--suave); }
+
+  .miolo { flex: 1; display: flex; flex-direction: column; justify-content: center; padding-bottom: 20px; }
+  h1 {
+    font-family: "Fraunces", Georgia, serif;
+    font-weight: 600;
+    font-size: 122px; line-height: 1.04; letter-spacing: -.012em; word-spacing: .05em;
+  }
+  .story h1 { font-size: 122px; }
+  h1.longa { font-size: 104px; }
+  .story h1.longa { font-size: 110px; }
+  .virada {
+    margin-top: 44px;
+    font-family: "Fraunces", Georgia, serif;
+    font-style: italic; font-weight: 400;
+    font-size: 54px; line-height: 1.2;
+    color: var(--acento);
+    max-width: 800px;
+  }
+  .story .virada { font-size: 58px; margin-top: 52px; }
+
+  .base { display: flex; flex-direction: column; gap: 30px; }
+  .fatos { font-size: 30px; line-height: 1.42; font-weight: 500; max-width: 640px; }
+  .botao {
+    align-self: flex-start;
+    background: var(--tinta); color: var(--fundo);
+    font-size: 32px; font-weight: 600;
+    padding: 24px 42px; border-radius: 999px;
+  }
+</style>
+</head>
+<body>
+<svg class="motivo" viewBox="0 0 860 860" fill="none" aria-hidden="true">
+  <g stroke="#1E1B3A" stroke-opacity=".13" stroke-width="2">
+    <circle cx="430" cy="430" r="420"/>
+    <circle cx="430" cy="430" r="340"/>
+    <circle cx="430" cy="430" r="260"/>
+    <circle cx="430" cy="430" r="180"/>
+    <circle cx="430" cy="430" r="100"/>
+    <g id="raios"></g>
+  </g>
+  <path d="M 461 253 A 180 180 0 0 1 568 546" stroke="#6142D4" stroke-opacity=".55" stroke-width="4"/>
+</svg>
+
+<div class="quadro">
+  <div class="topo"><span>Mesa Arcturiana</span><span>à distância</span></div>
+  <div class="miolo">
+    <h1 id="gancho"></h1>
+    <p class="virada" id="virada"></p>
+  </div>
+  <div class="base">
+    <p class="fatos" id="fatos">Você traz uma questão.<br>Devolutiva em até 3 dias úteis.<br>Jogo de direção na semana seguinte.</p>
+    <div class="botao">Me chama no WhatsApp</div>
+  </div>
+</div>
+
+<script>
+  const PECAS = {
+    1: { gancho: "Começa bem.<br>Quando ia avançar,<br>desanda.", virada: "De novo. Com outra pessoa." },
+    2: { gancho: "Tem uma área<br>da vida que<br>não anda.", virada: "E racionalmente você não entende por quê." },
+    3: { gancho: "\"Tá, mas<br>o que eu<br>faço?\"", virada: "Por isso a minha mesa não termina na devolutiva." },
+    4: { gancho: "Espiritualista<br>e cética.", virada: "Eu desconfio de tudo. Por isso começo medindo." },
+    5: { gancho: "Começa bem.<br>Quando ia avançar,<br>desanda.", virada: "Muda a pessoa. O final cai no mesmo ponto.", base: "Uma situação tratada por vez.<br>Devolutiva em até 3 dias úteis.<br>Jogo de direção na semana seguinte." }
+  };
+  const q = new URLSearchParams(location.search);
+  const peca = PECAS[q.get("c") || "1"];
+  if (q.get("f") === "story") document.body.classList.add("story");
+  const h = document.getElementById("gancho");
+  h.innerHTML = peca.gancho;
+  if (peca.longa) h.classList.add("longa");
+  document.getElementById("virada").textContent = peca.virada;
+  if (peca.base) document.getElementById("fatos").innerHTML = peca.base;
+
+  const g = document.getElementById("raios");
+  for (let i = 0; i < 36; i++) {
+    const a = (i * 10) * Math.PI / 180;
+    const r1 = i % 3 === 0 ? 340 : 396, r2 = 420;
+    const l = document.createElementNS("http://www.w3.org/2000/svg", "line");
+    l.setAttribute("x1", 430 + r1 * Math.cos(a)); l.setAttribute("y1", 430 + r1 * Math.sin(a));
+    l.setAttribute("x2", 430 + r2 * Math.cos(a)); l.setAttribute("y2", 430 + r2 * Math.sin(a));
+    g.appendChild(l);
+  }
+</script>
+</body>
+</html>

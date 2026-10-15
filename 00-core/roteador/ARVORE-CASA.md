@@ -17,7 +17,7 @@ Nenhuma de entrada. 🔴 **De saída, uma:** tarefa que criou ou alterou artefat
 | **framework** | `00-core/TAXONOMIA-DE-ARTEFATOS.md` (os seis tipos e o PROCESSO, §4.2) |
 | **trilho** | **REGRA Nº 1** (§8 — os cinco atos) · `40-operacao-rotinas/RITO-INTEGRACAO-CODEX.md` |
 | **método** | *— esta árvore não produz peça; ordena e confere* |
-| **blueprint** | `90-templates/CONTRATO-EXECUTOR.md` (tarefa para o Codex) |
+| **blueprint** | ~~`90-templates/CONTRATO-EXECUTOR.md` (tarefa para o Codex)~~ *(11/10/2026: Codex desativado — não se abre tarefa para executor)* |
 | **política** | `CLAUDE.md` §3 (carga e precedência) · §7.1 (ponteiro, legado, substituição) |
 | **gate** | 🔴 `40-operacao-rotinas/ferramentas/verificar-propagacao.py` · `100-métodos/METODO-GATE-DE-CONGRUENCIA.md` |
 

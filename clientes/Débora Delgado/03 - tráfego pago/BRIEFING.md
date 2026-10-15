@@ -1,5 +1,7 @@
 # BRIEFING — Débora Delgado
 
+> STATUS: HISTÓRICO · **workshop encerrado** (Victor, 08/10/2026 — `../DECISOES.md`) · não usar como fonte.
+
 > Preenchido em: 08/07/2026 · Cliente **legado** (contrato 29/05, anterior ao método). Gate de entrada §1: G1 ⚠️ (promessa/nome em fechamento) · G2 ✅ (escada até mentoria R$ 4k) · G3 ⚠️ (verba `a calibrar`) · G4 ⚠️ (página a refazer) · G5 ⚠️ (fee anti-padrão registrado em POLITICAS §5 — cumprir, não repetir) → **ativo, com pendências no plano**.
 
 ## Negócio e oferta

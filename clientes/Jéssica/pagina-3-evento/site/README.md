@@ -1,61 +1,60 @@
 # Ladies Fluency Experience — página de eventos
 
-## Como publicar uma nova edição
+> **Atualizado em 13/10/2026.** A versão anterior deste arquivo descrevia o `CONFIG` de agosto (vagas, lotes por quantidade, Casa Viva). O `CONFIG` mudou em 27/09 e este arquivo não tinha acompanhado.
 
-**Você edita um bloco só.** Abra `script.js`, mude o `CONFIG` no topo, salve, publique. Nenhum texto da página precisa ser reescrito.
+## Estado
+
+- **Conteúdo:** janeiro de 2027, Florianópolis/SC, só mulheres, pré-venda R$ 147 até 29/11, sem número de vagas (`?v=20260927a`).
+- 🔴 **Publicação:** **nunca foi publicada.** Vai para o domínio dela, na Hostinger, em `/experience/` (DEC-032). Pacote e passos: `../../DEPLOY-HOSTINGER.md`. Depois de editar este `site/`, rodar `py -I montar-hostinger.py` na raiz da conta e subir `hostinger/experience.zip`.
+- **Conferido em 13/10/2026:** nenhuma ocorrência de 17/10, outubro, Casa Viva, Campeche, 15 vagas ou `{{ }}` no HTML e no JS · os dois links do InfinitePay respondem · o endpoint da planilha grava (`?teste=1` devolveu `ok`) · layout em 1440 px e em 390 px sem estouro.
+
+## Como publicar uma mudança
+
+**Você edita um bloco só.** Abra `script.js`, mude o `CONFIG` no topo, salve, publique.
 
 ```js
 const CONFIG = Object.freeze({
   edicao: "1ª edição",
   nomeEvento: "Ladies Fluency Experience",
 
-  data: "{{DATA}}",                // ← ÚNICO CAMPO PENDENTE
-  dataCurta: "{{DATA_CURTA}}",     // ← ex.: "25/10"
-  horario: "14h às 18h",
-  local: "Casa Viva",              // ← trocar quando mudar de espaço
-  bairro: "Campeche, Florianópolis",
+  data: "janeiro de 2027",          // ← no anúncio: "20 de janeiro de 2027"
+  dataCurta: "jan/2027",            // ← no anúncio: "20/01"
+  horario: "dia anunciado primeiro a quem já garantiu",   // ← no anúncio: "quarta, 14h às 18h"
+  local: "Florianópolis",           // ← no anúncio: nome do espaço
+  bairro: "Santa Catarina",         // ← no anúncio: "bairro, Florianópolis"
 
-  vagasTotais: 15,
-  vagasRestantes: 15,              // ← atualizar conforme vende
   lotes: [
-    { nome: "Primeiro lote", vagas: 6, preco: "R$ 147",
-      link: "https://link.infinitepay.io/teacherjey/VC1D-GZWvcpKFXt-147,00" },
-    { nome: "Segundo lote",  vagas: 9, preco: "R$ 197",
-      link: "https://link.infinitepay.io/teacherjey/VC1D-rnPhOh3Bcu-197,00" },
+    { nome: "Pré-venda",     preco: "R$ 147", ate: "até 29/11",         link: "…147,00" },
+    { nome: "Primeiro lote", preco: "R$ 197", ate: "a partir de 30/11", link: "…197,00" },
   ],
-  loteVigente: 0,                  // ← 0 = primeiro lote · 1 = segundo
+  loteVigente: 0,                   // ← em 30/11: trocar para 1
 
-  prazoInscricao: "As inscrições fecham 7 dias antes.",
+  prazoInscricao: "O valor de pré-venda vale até 29/11.",
+  leadsEndpoint: "https://script.google.com/…/exec",
   whatsapp: "",
-
-  status: "abertas",               // ← ver abaixo
+  status: "abertas",                // "abertas" | "ultimas" | "esgotado" | "proxima"
 });
 ```
 
-**Cada lote carrega o próprio link de pagamento.** O botão da página aponta sempre para o link do lote vigente. Ao trocar `loteVigente` de `0` para `1`, o preço, as vagas e **o link de cobrança viram juntos**. Não há nada mais a editar.
+**A troca de lote é por data.** Nenhum lote tem cota de vagas. Cada lote carrega o próprio link de pagamento: ao trocar `loteVigente` de `0` para `1`, o preço, o prazo e o link de cobrança viram juntos.
+
+## As duas atualizações que já têm data
+
+| Quando | O que mudar | Onde |
+|---|---|---|
+| **no anúncio da data** (novembro) | `data`, `dataCurta`, `horario`, `local`, `bairro` | `CONFIG` |
+| **seg. 30/11/2026** | `loteVigente: 1` e `prazoInscricao` | `CONFIG` |
+
+Depois de mexer: trocar o `?v=` do `styles.css` e do `script.js` no `index.html`, para o navegador não servir a versão antiga.
 
 ## Os quatro estados
 
 | `status` | O que a página faz |
 |---|---|
-| `"abertas"` | comportamento normal, CTA leva ao pagamento |
-| `"ultimas"` | acende o selo "Últimas vagas" acima do botão |
-| `"esgotado"` | CTA vira "Entrar na lista da próxima edição" e aparece o aviso |
-| `"proxima"` | CTA vira "Quero ser avisada", para quando a próxima ainda não abriu |
-
-Trocar o estado **não quebra o layout**. Foi previsto no desenho.
-
-## Trocar de lote
-
-Quando as 6 primeiras vagas forem vendidas, mude `loteVigente: 0` para `loteVigente: 1`. O segundo lote acende, o primeiro fica apagado, e o preço no topo e na oferta acompanham sozinhos.
-
-## Pendência antes de publicar
-
-| # | O que | Onde |
-|:--:|---|---|
-| 1 | **Data e horário** | `CONFIG.data` e `CONFIG.dataCurta` — hoje estão como `{{DATA}}` |
-
-**É a única.** Os links de pagamento dos dois lotes já estão integrados e conferidos: o valor no fim de cada URL bate com o preço do lote.
+| `"abertas"` | comportamento normal: CTA abre o popup, o popup registra e leva ao pagamento |
+| `"ultimas"` | acende o selo "Últimas vagas". **Só usar com capacidade real definida** |
+| `"esgotado"` | CTA vira "Entrar na lista da próxima edição" |
+| `"proxima"` | CTA vira "Quero ser avisada" |
 
 ## Arquivos
 
@@ -64,16 +63,15 @@ site/
   index.html     estrutura e copy
   styles.css     sistema visual (tokens herdados da página 1)
   script.js      CONFIG + comportamento
-  assets/
-    logo-ladies-fluency-academy.png
-    logo-ladies-fluency-selo.png
-    jessica-oliveira.jpeg
+  assets/        logo (2) e foto dela
+  index1/        variante antiga do hero, de 25/08. Não é publicada
 ```
 
-Sem dependência externa além das fontes do Google (Fraunces e Inter). Abre direto no navegador com dois cliques, sem servidor.
+Sem dependência externa além das fontes do Google (Fraunces e Inter).
 
 ## O que não está aqui, por decisão
 
-- **Foto do local.** O local muda a cada edição; foto de espaço envelheceria a página. As fotos da Casa Viva vão para os posts de feed.
-- **Depoimentos.** Os que existem são de aula, e provam aula, não vivência. O bloco de prova em D6 aceita depoimentos de evento a partir da 2ª edição sem redesenho.
-- **Menção à mentoria.** Ela é vendida na sala, não na página.
+- **Foto do local.** O local muda a cada edição. As fotos vão para os posts.
+- **Depoimentos.** Os que existem são de aula e provam aula. O bloco de prova aceita depoimentos de evento a partir da 2ª edição.
+- **Menção à turma de English Therapy.** Ela é vendida na sala, não na página.
+- **Número de vagas.** Só entra quando o local definir a capacidade (DEC-024).

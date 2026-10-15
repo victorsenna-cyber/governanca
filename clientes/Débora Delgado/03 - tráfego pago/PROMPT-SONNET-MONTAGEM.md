@@ -1,6 +1,6 @@
 # PROMPT DE ABERTURA — Sonnet (Claude Code) · montagem da campanha
 
-> STATUS: VIGENTE · derivado de `TASK-EXECUTOR-MONTAGEM-CAMPANHA.md` (fonte) · sync 16/07
+> STATUS: HISTÓRICO · **workshop encerrado** (Victor, 08/10/2026 — `../DECISOES.md`) · não usar como fonte · ~~VIGENTE · derivado de `TASK-EXECUTOR-MONTAGEM-CAMPANHA.md` (fonte) · sync 16/07~~
 > Colar o bloco abaixo como primeira mensagem, com o Sonnet aberto na raiz do repo (`Z:\01 - Governança\clientes\Débora Delgado`).
 
 ```

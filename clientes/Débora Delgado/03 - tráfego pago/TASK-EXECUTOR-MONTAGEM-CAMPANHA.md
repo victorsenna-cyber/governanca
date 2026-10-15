@@ -1,6 +1,6 @@
 # TASK EXECUTOR — Montagem da campanha (100% PAUSADA) · Seu Eixo · agosto/26
 
-> STATUS: VIGENTE · fonte (contrato de montagem da campanha) · criado 18/07 (Fable 5, planejamento)
+> STATUS: HISTÓRICO · **workshop encerrado** (Victor, 08/10/2026 — `../DECISOES.md`) · não usar como fonte · ~~VIGENTE · fonte (contrato de montagem da campanha) · criado 18/07 (Fable 5, planejamento)~~
 > Deriva de: `MATEMATICA-REVERSA-LANCAMENTO.md` (16/07) · `PLANO-DE-MIDIA.md` · `CALENDARIO-LOTES.md` · `criativos/COPY-CRIATIVOS-ESTATICOS.md` v4 · `00 - governança continuum/METODO-TRAFEGO-PAGO.md` §§4-7.
 > Propaga p/: `campanha/estrutura-campanhas.md` (executor cria) · `LOG-DECISOES.md` (registro da montagem) · `PLANO-DE-MIDIA.md` §2 (quando Victor assinar A/B).
 > **Executor previsto:** Sonnet (Claude Code) com MCP Meta Ads. **Autorização de montagem pausada:** pedido do Victor em 18/07 + parecer da MATEMATICA §5 (16/07). **Ativação NÃO faz parte desta task.**

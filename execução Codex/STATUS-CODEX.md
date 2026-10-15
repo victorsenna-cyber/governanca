@@ -1,5 +1,7 @@
 # STATUS-CODEX — estado do trabalho isolado
 
+> 🔴 **FILA CONGELADA EM 11/10/2026 — Codex desativado por decisão do Victor.** Nenhum pacote novo entra. Os pendentes abaixo seguem como proposta e são promovidos ou arquivados pelo Claude via `40-operacao-rotinas/RITO-INTEGRACAO-CODEX.md`, até zerar. Este arquivo saiu da carga obrigatória (`CLAUDE.md` §3).
+
 > **Tipo:** estado (camada 3) · **Aberto:** 17/09/2026 · **Escrito pelo:** Codex · **Lido pelo:** Claude e Victor
 > 🔴 **Este arquivo é a ÚNICA porta de entrada do trabalho do Codex para o resto da casa.** Pacote que não aparece aqui não existe para quem integra.
 > **Não é o `STATUS.md` da empresa.** Aquele é canônico e o Codex não escreve nele (§0 do `AGENTS.md`). Este é o espelho do que está na antessala.
@@ -53,7 +55,7 @@
 | 15/09 23h18 | `execução Codex/REGISTRO-ISOLAMENTO-CODEX-2026-09-15.md` | instituição da §0 | — | ✅ **auto-contido** (regra já vive no `AGENTS.md`) |
 | 15/09 23h00 | `910 - execução Codex/REGISTRO-REORGANIZACAO-AGENTS-2026-09-15.md` | clonagem do `AGENTS.md` | — | ✅ **auto-contido** · 🔴 **e os dois defeitos que ele documentou seguem abertos** (`RITO-INTEGRACAO-CODEX.md` §8.1) |
 
-| **22/09** | `clientes/Jéssica/execução Codex/call-2026-09-22/` | destilação da call, transcript limpo, validação e proposta de propagação; auditoria textual da fala Victor, ainda sem conferência de áudio | `clientes/Jéssica/STATUS.md` · `DECISOES.md` · `DIARIO-DE-BORDO.md` · página do evento · Plano Estratégico · eventual skill de voz após audição | 🟡 **promovido em parte (27/09):** evento, capacidade, data e local em DEC-024; English Therapy e lotes em DEC-025; página e plano rev. 4 aplicados. **Falta:** eixo 13 (L-01 a L-09) para `voz-victor`, após audição do áudio |
+| **22/09** | `clientes/Jéssica/execução Codex/call-2026-09-22/` | destilação da call, transcript limpo, validação e proposta de propagação; auditoria textual da fala Victor, ainda sem conferência de áudio | `clientes/Jéssica/STATUS.md` · `DECISOES.md` · `DIARIO-DE-BORDO.md` · página do evento · Plano Estratégico · eventual skill de voz após audição | 🟢 **PROMOVIDO E FECHADO em 13/10/2026** (rito, pelo Claude). 27/09: evento, capacidade, data e local em DEC-024; English Therapy e lotes em DEC-025. 13/10: DEC-026 a DEC-029, diário com tom e conduta, plano §17, e o eixo 13 em `voz-victor` §5 como **reincidência textual** (L-02, L-04, L-08, L-09). **Fora, com razão:** contagens de marcadores e L-03, porque a fonte é ASR e **não há áudio desta call no repositório**; a espera pela audição não tinha como terminar |
 
 | **29/09/2026** | `clientes/Débora Delgado/execução Codex/analise-2026-09-29/` | análise de 10 transcrições ASR, 3 prints e PDF Expressar de 8 páginas; 30 pontos C e 6 L; camada de tom/conduta registrada. Conclusão: alinhar promessa do funil à entrega e retirar 30% do papel de promessa no B2B | estado · decisões · diário · contexto/funil · voz Débora/Victor · léxico R · carteira sem receita inferida | 🟡 **pendente de integração canônica**; exige aval de Victor para encaminhar revisão, resolver R$297 × teto verbal R$497 e escolher ajustes estruturais. ASR sem audição; faltam 2 áudios curtos de 12h13. PDF original intacto |
 

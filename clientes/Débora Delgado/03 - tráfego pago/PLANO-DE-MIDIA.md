@@ -1,5 +1,7 @@
 # PLANO DE MÍDIA — Débora Delgado · lançamento agosto/2026
 
+> STATUS: HISTÓRICO · **workshop encerrado** (Victor, 08/10/2026 — `../DECISOES.md`) · não usar como fonte.
+
 > Método §2.2. **Bloqueado por: verba mensal confirmada (Débora) + datas de virada de lote.** Linha de meta ainda NÃO assinada.
 
 ## 1. Matemática reversa (preliminar — fechar com verba real)

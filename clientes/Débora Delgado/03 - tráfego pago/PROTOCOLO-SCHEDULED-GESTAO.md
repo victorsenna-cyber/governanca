@@ -1,6 +1,6 @@
 # PROTOCOLO — Scheduled de gestão e otimização da campanha · 18/07
 
-> STATUS: VIGENTE · fonte (contrato da rotina agendada de gestão) · criado 18/07 (Fable 5)
+> STATUS: HISTÓRICO · **workshop encerrado** (Victor, 08/10/2026 — `../DECISOES.md`) · não usar como fonte · ~~VIGENTE · fonte (contrato da rotina agendada de gestão) · criado 18/07 (Fable 5)~~
 > Deriva de: método §7 (rotina por regras) · `PLANO-FUNIL-LANCAMENTO.md` (cronograma/verba/mitigação) · DIRETRIZES fila #9 ("executores leem e propõem; Victor decide").
 > **Executor recomendado: Sonnet.** A rotina é aplicação mecânica de regras escritas sobre dados lidos — não exige modelo maior. Escalar para Opus/Fable APENAS quando este protocolo mandar parar (§6). O que garante qualidade aqui é o protocolo, não o modelo.
 > Cadência recomendada: **diária às 09h** (dados do dia anterior consolidados). A própria rotina detecta terça/sexta e roda o ciclo de decisão completo.

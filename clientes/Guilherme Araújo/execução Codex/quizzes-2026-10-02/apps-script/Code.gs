@@ -1,20 +1,22 @@
-const ABAS = { permissao: 'permissao', signos: 'signos', teto: 'teto' };
-const FIXAS = ['recebido_em', 'lead_id', 'quiz', 'quiz_versao', 'momento',
-               'nome', 'whatsapp', 'email', 'resultado', 'pontos',
-               'clicou_checkout', 'checkout_em'];
+const ABAS = { permissao: 'permissao', signos: 'signos', teto: 'teto', permissao_mentoras: 'permissao_mentoras', teto_mentoras: 'teto_mentoras' };
+// ordem pedida pelo Victor em 15/10/2026: nome, telefone, email, quiz e o resto
+const FIXAS = ['nome', 'telefone', 'email', 'quiz', 'resultado', 'pontos',
+               'momento', 'recebido_em', 'clicou_checkout', 'checkout_em',
+               'quiz_versao', 'lead_id'];
 
 function doPost(e) {
   const lock = LockService.getScriptLock();
   lock.waitLock(20000);
   try {
     const d = JSON.parse(e.postData.contents);
-    if (d.hp) return out({ ok: true });                       // robô: finge que gravou
+    const suspeito = d.hp ? 'sim' : '';                       // campo-armadilha preenchido: grava e marca, nunca descarta (autopreenchimento do navegador também cai aqui)
     const aba = ABAS[d.quiz];
     if (!aba || !d.lead_id) return out({ ok: false, erro: 'payload' });
 
     const ss = SpreadsheetApp.getActiveSpreadsheet();
     const sh = ss.getSheetByName(aba) || ss.insertSheet(aba);
     const flat = achatar(d);
+    if (suspeito) flat.suspeito_robo = suspeito;
 
     let head = sh.getLastColumn()
       ? sh.getRange(1, 1, 1, sh.getLastColumn()).getValues()[0].filter(String)
@@ -54,6 +56,7 @@ function achatar(d) {
     if (k === 'hp') return;
     if (k === 'respostas') Object.keys(d[k] || {}).forEach(j => o[j] = d[k][j]);
     else if (k === 'utm') Object.keys(d[k] || {}).forEach(j => o['utm_' + j] = d[k][j]);
+    else if (k === 'whatsapp') o.telefone = d[k];             // a coluna se chama telefone
     else o[k] = d[k];
   });
   return o;

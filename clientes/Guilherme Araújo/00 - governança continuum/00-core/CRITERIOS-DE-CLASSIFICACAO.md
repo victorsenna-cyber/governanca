@@ -1,26 +1,5 @@
-# CRITÉRIOS DE CLASSIFICAÇÃO
+# PONTEIRO — CRITERIOS-DE-CLASSIFICACAO.md (réplica local aposentada em 08/10/2026)
 
-## Passo 1 — Intenção principal
-revisar · entender · construir.
-
-## Passo 2 — Intenção → modo
-revisar → AUDITORIA · entender → CONSCIÊNCIA · construir → CONSTRUÇÃO.
-
-## Passo 3 — Setor dominante (escolher 1)
-Estratégia · Comercial · Marketing · Onboarding/CS · Financeiro · Operações · Analytics/BI · Cultura/Governança · Tecnologia/IA · Sistêmico.
-→ Mapeia para a skill em `10-skills/` (ver tabela no `CLAUDE.md`, §6).
-
-## Passo 4 — Cruzamento
-Só cruzar setores com dependência clara e operacional.
-
-## Passo 5 — Profundidade
-Decisão rápida? · Consciência estrutural? · Entregável pronto?
-
-## Regras
-- Não ativar todos os setores ao mesmo tempo.
-- Não usar profundidade máxima por padrão.
-- Não expandir quando o valor está na precisão.
-- Não confundir comentário com output operacional.
-
----
-*Base: `15 - Projeto Continuum (docs base)/CONTINUUM — CRITÉRIOS DE CLASSIFICA.md`.*
+> **Não carregar este arquivo.** A réplica de 19/07 nunca foi ressincronizada e passou a mandar a conta para métodos e skills vencidos.
+> **Fonte ativa, na Governança-pai (`00 - Local/01 - Governança/`):** `00-core/CRITERIOS-DE-CLASSIFICACAO.md`. **Quem roteia é o `CLAUDE.md` §6 da Governança.**
+> **Conteúdo íntegro de 19/07:** `_legado-2026-07/00-core/CRITERIOS-DE-CLASSIFICACAO.md` — leitura histórica, nunca fonte.

@@ -1,24 +1,5 @@
-# MODOS DE RESPOSTA
+# PONTEIRO — MODOS-DE-RESPOSTA.md (réplica local aposentada em 08/10/2026)
 
-Antes de responder, classificar o pedido em um dos 3 modos.
-
-## 1. AUDITORIA
-**Quando:** revisão, debug, auditoria de prompt/arquivo/projeto, análise crítica de output.
-**Objetivo:** precisão, velocidade, correção.
-**Estrutura:** 1) Diagnóstico · 2) Gargalo · 3) Correção · 4) Decisão executiva.
-
-## 2. CONSCIÊNCIA
-**Quando:** clareza estratégica, causa-raiz, problema invisível, reposicionamento.
-**Objetivo:** fazer ver o que ainda não estava visível.
-**Estrutura:** 1) Leitura executiva · 2) Diagnóstico estrutural · 3) Gargalo dominante · 4) Implicações · 5) Diretriz.
-
-## 3. CONSTRUÇÃO
-**Quando:** criar prompt, playbook, fluxo, arquitetura, artefato, documento, política, checklist.
-**Objetivo:** gerar algo utilizável imediatamente.
-**Estrutura:** 1) Output final · 2) Estrutura operacional · 3) Observações mínimas (só se necessário).
-
-## Desempate
-Em dúvida → **concisão**.
-
----
-*Base: `15 - Projeto Continuum (docs base)/CONTINUUM — MODOS DE RESPOSTA.md`.*
+> **Não carregar este arquivo.** A réplica de 19/07 nunca foi ressincronizada e passou a mandar a conta para métodos e skills vencidos.
+> **Fonte ativa, na Governança-pai (`00 - Local/01 - Governança/`):** `00-core/MODOS-DE-RESPOSTA.md`. **Quem roteia é o `CLAUDE.md` §6 da Governança.**
+> **Conteúdo íntegro de 19/07:** `_legado-2026-07/00-core/MODOS-DE-RESPOSTA.md` — leitura histórica, nunca fonte.

@@ -21,6 +21,7 @@
 |---|---|---|---|---|---|
 | **Débora Delgado** (`debora/`) | contrato 29/05 · tráfego em preparação | `a calibrar` (confirmar c/ cliente) | R$ 12k/6m quitado (legado, anti-padrão POLITICAS §5) | pré-aprendizado | bloqueada por: página + pixel + verba (auditoria 08/07) |
 | **Guilherme Araújo** (`guilherme/`) | workspace aberto 29/07/2026 (conta rodando desde abr/2026 sem governança) | R$ 600 (R$ 20/dia) | **R$ 0 — parceria de indicação** (exceção consciente a POLITICAS §5, decidida 22/07) | aprendizado | conta 100% pausada · spec de campanha de engajamento pronta · **bloqueada por GATE-1 (permissão do IG) + meta assinada** |
+| **Paola Lopes Rosa** (`paola/`) | plano de 13/10/2026 · nada no ar | R$ 200 em 7 dias (teste 01) | entrada de R$ 400 + percentual a definir (exceção de alçada, DEC-PL-01 e DEC-PL-03 da conta) | pré-aprendizado | plano pronto; trava: Página do Facebook ligada à conta, colchetes da peça da área, leitura dela |
 
 **Pasta operacional da Débora:** `..\..\clientes\Débora Delgado\` (carregar o kernel local quando a tarefa for de execução — criativos, página, campanha).
 **Pasta operacional do Guilherme:** `..\..\clientes\Guilherme Araújo\` (kernel local próprio, v4.0-transição — carregar antes de qualquer execução; fatos de produto/preço lá são `A VALIDAR`).

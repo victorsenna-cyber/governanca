@@ -181,6 +181,31 @@ Criar uma decisão sinaliza propagação; não autoriza editar arquivos que este
 | estado da propagação | registrada em `STATUS.md` em 02/10/2026; nenhuma peça foi aprovada ou publicada por esta decisão |
 | observações | divergência a resolver com Guilherme: o `STATUS.md` de 01/10 diz que o **mapa mental é entregue depois da sessão**; esta decisão diz que a pessoa leva o mapeamento + passo a passo. Podem ser a mesma entrega em momentos diferentes; **não foi conciliado por suposição**. Promessa de prazo ("em apenas 2h") só vale se 2h for a duração da sessão, não o prazo de um resultado |
 
+### DEC-2026-10-08-001 — Direção de produto declarada pelo Guilherme: foco no terapeuta, escada nova e Conselho gratuito
+
+| Campo | Registro |
+|---|---|
+| data/hora | 2026-10-08, 19:42–21:56 · registrada em 2026-10-10 · America/Sao_Paulo |
+| escopo | linha de produto e comunicação do Guilherme |
+| decisão | (1) foco na linha do terapeuta / Permissão; (2) programa de implementação de 28 dias, individual, 4 encontros, R$ 1.500 ou até 12x; (3) grupo Venda com Permissão, trimestral, R$ 1.500 por 3 meses, aula semanal (pode virar quinzenal), que depois será fundido ao grupo de segunda; (4) Conselho do Cigano gratuito em outubro, possivelmente gratuito de vez, voltado a profissionais do autoconhecimento; (5) Instagram com mais conteúdo de "Venda com Permissão" |
+| fonte/evidência | áudios do Guilherme de 08/10 (19.42.30 a 21.56.28) em `01 - contexto/WhatsApp/execução Codex/transcricoes-2026-10-05-a-08/`; destilação §11 |
+| autoridade | Guilherme (produto, preço, entrega) |
+| estado | **declarada pelo cliente em áudio, ainda não formalizada.** Itens (3) e (4) estão com "estou pensando" na fala dele |
+| substitui | não revoga formalmente nada; conflita com a escada registrada anteriormente (Desafio R$ 997, Jornada R$ 2.997) e com o fecho pago do quiz de Signos (R$ 297/trimestre) |
+| Propaga p/ | `STATUS.md` (feito em 10/10), quiz de Signos e roteiro V3 (A DECIDIR) |
+
+### DEC-2026-10-15-001 — Pilares de estrutura: ICP, promessa e narrativa (alçada Continuum)
+
+| Campo | Registro |
+|---|---|
+| data | 2026-10-15 |
+| escopo | ICP, promessa e narrativa da linha Permissão (todas as peças ao público) |
+| decisão | ICP, promessa e narrativa conforme `PILARES.md` (P1, P2, P3) |
+| autoridade | Continuum (REGRA Nº 0: estrutura é nossa). Gui tem direito de objeção de congruência, respondida por escrito |
+| fonte | foco do Gui no terapeuta (`DEC-2026-10-08-001`); respostas e textos do quiz da Permissão no ar |
+| aberto | P4 (oferta) reprova: cinco perguntas de fato ao Gui em `PILARES.md` |
+| Propaga p/ | `STATUS.md`, `lexico-icp/`, toda peça nova ao público |
+
 ## Propostas não vigentes
 
 As decisões acima registram direção de ICP, experimento e as condições confirmadas do Grupo. Preço da Jornada, cashback, teto numérico de calls/vagas, promessa, página publicada, campanha, Pixel e conteúdo vigente continuam sem nova decisão nesta tarefa.

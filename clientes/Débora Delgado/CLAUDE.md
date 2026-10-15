@@ -6,6 +6,8 @@ léxico em `GOVERNANCA-REPO.md`) e seu funil. Leia junto com `PROJECT.md` (o qu�
 Este arquivo diz **como trabalhar** e **o que carregar em cada requisição** — para
 gastar menos contexto e acertar mais.
 
+> 🔴 **08/10/2026 — o workshop está ENCERRADO** (`DECISOES.md` 08/10). **A frente ativa é o funil de resposta direta do curso *Eneagrama para Líderes*** — estado em `STATUS.md`, peças em `12 - Direct Response/`. Tudo o que este arquivo diz sobre workshop, lotes e lançamento é histórico.
+
 > **Repo operacional canônico:** este (`00 - Local/01 - Governança/clientes/Débora Delgado`).
 > `00 - Local/clientes/Débora Delgado` e `04 - Onboarding/Operação/Débora Delgado`
 > permanecem como origens preservadas/legado: leitura apenas, sem writeback ou espelhamento.
@@ -34,15 +36,26 @@ desta tarefa?"* Se não, não abra.
 
 **`GOVERNANCA-REPO.md` (raiz) é leitura obrigatória de abertura junto com este arquivo.** Resumo do que ele impõe: (1) todo doc operacional carrega linha `STATUS:` (fonte / derivado+sync / histórico / superado) — doc sem status ou superado NÃO se usa como fonte; (2) toda decisão nova no DECISOES declara **"Propaga p/:"** e a sessão sinaliza as propagações na fila (regra 16/07: sinalizar, não implementar automaticamente); (3) criar versão nova obriga marcar a anterior SUPERADA na mesma sessão; (4) toda copy nova passa pela varredura do **léxico morto** (§4 de lá) antes de fechar; (5) gate de fechamento de sessão (§6 de lá) soma-se ao diário. Origem: postmortem de 16/07 (`10 - Registros de análises/`).
 
-## 0b. Governança Continuum (métodos que mandam aqui) — atualizado 08/07
+## 0b. Governança Continuum (métodos que mandam aqui) — 🔴 reescrito em 08/10/2026
 
-Os métodos e skills da Continuum estão **replicados localmente em `00 - governança continuum/`**. A fonte canônica é a **Governança-pai desta árvore** (`../..`, isto é, `00 - Local/01 - Governança/`); as réplicas não se editam aqui — ver README de lá. Carregar o método da tarefa a partir da réplica local. Regras que nunca se contrariam:
+> 🔴 **A réplica local foi aposentada em 08/10/2026.** ~~Os métodos e skills da Continuum estão replicados localmente em `00 - governança continuum/`… Carregar o método da tarefa a partir da réplica local.~~ *(vigente de 08/07 a 08/10)* — **a réplica nunca foi re-replicada e, em 08/10, mandava a copy da conta para skills no legado e o tráfego para um método de 20/07.** Conteúdo íntegro em `00 - governança continuum/_legado-2026-07/`; os caminhos antigos viraram ponteiros.
 
-- **Precedência de fato/decisão neste projeto:** `DECISOES.md` (mais recente vence) > `OFERTA-CANONICA.md` > qualquer outro artefato. Divergiu → atualiza o artefato, nunca o contrário.
-- **Tráfego pago** → `00 - governança continuum/METODO-TRAFEGO-PAGO.md` + `gestao-trafego.skill.md`. Gates inegociáveis: matemática reversa assinada · página aprovada · Pixel+CAPI verdes · kill/scale por regra (3× CPA sem conversão = kill · +20%/48-72h = escala · 72h sem mexer) · toda decisão registrada em `03 - tráfego pago/LOG-DECISOES.md`. **Estado ativo de tráfego (BRIEFING · PLANO-DE-MIDIA · LOG-DECISOES) vive em `03 - tráfego pago/` desta pasta** — a Governança guarda só ponteiro.
-- **Páginas** → `METODO-PAGINA-DE-VENDAS.md` + checklist de aprovação p/ mídia (message match, 1 CTA, mobile < 3s, prova social, pixel testado).
-- **Toda copy p/ humano** → `copywriting-fable5` + `stop-slop` + `debora-voice` (skills locais em `07 - skills/`). **Nunca** voz do Victor em peça da Débora.
-- **Posicionamento vigente (30/06):** ICP líder **que já lidera bem**; promessa = do bom ao pleno (completar, não consertar). Nenhuma peça diagnostica o lead como quebrado.
+**Passa a valer — a fronteira do §6.2 da Governança:**
+
+| Quem governa | O quê | Onde |
+|---|---|---|
+| **Governança-pai** (`../../`) | **método, skill, política, alçada, gate** — o que carregar e em que ordem | `../../CLAUDE.md` §6 → `../../00-core/roteador/ARVORE-<X>.md` |
+| **Esta conta** | **fato, voz, oferta, decisão e estado** | `STATUS.md` · `DECISOES.md` · `PILARES.md` · `lexico-icp/` · `07 - skills/debora-voice` · `03 - tráfego pago/` |
+
+🔴 **Regra de carga:** pedido de **copy, anúncio, VSL, quiz, página ou tráfego** desta conta roteia pela árvore da Governança (ESCRITA ou OPERAÇÃO), **mesmo com a sessão aberta nesta pasta.** Se `../../CLAUDE.md` não estiver acessível na sessão, **parar e pedir** — nunca cair numa cópia local. **Melhor ainda: abrir as criações da Débora pela pasta da Governança.**
+
+Regras que nunca se contrariam:
+
+- **Precedência de fato/decisão neste projeto:** `DECISOES.md` (mais recente vence) > ~~`OFERTA-CANONICA.md`~~ *(workshop, histórico desde 08/10)* **`12 - Direct Response/vsl/BRIEFING-VSL.md` §6 (oferta vigente)** > qualquer outro artefato. Divergiu → atualiza o artefato, nunca o contrário.
+- **Tráfego pago** → `../../100-métodos/METODO-TRAFEGO-PAGO.md` + `../../10-skills/gestao-trafego.skill.md` (pela árvore OPERAÇÃO). Gates inegociáveis: matemática reversa assinada · página aprovada · Pixel+CAPI verdes · kill/scale por regra (3× CPA sem conversão = kill · +20%/48-72h = escala · 72h sem mexer) · toda decisão registrada em `03 - tráfego pago/LOG-DECISOES.md`. ~~Estado ativo de tráfego (BRIEFING · PLANO-DE-MIDIA · LOG-DECISOES) vive em `03 - tráfego pago/`~~ *(eram do workshop, histórico desde 08/10)* — **o estado do funil DR vive em `STATUS.md` e `12 - Direct Response/`; `03 - tráfego pago/` recebe o plano de mídia e de criativos do funil DR quando ele nascer** — a Governança guarda só ponteiro.
+- **Páginas** → circuito de página da Governança (`../../00-core/roteador/ARVORE-ESCRITA.md` §6) + checklist de aprovação p/ mídia (message match, 1 CTA, mobile < 3s, prova social, pixel testado).
+- **Toda copy p/ humano** → ~~`copywriting-fable5` + `stop-slop`~~ *(legado desde 20/09)* → **`../../10-skills/copywriter-senior-continuum/`** (com o gate anti-slop no módulo 04) + **`debora-voice`** (local, `07 - skills/`) + **`lexico-icp/`** (fala do público, grau `D`). Anúncio DR, VSL e quiz carregam também os métodos da linha deles na `ARVORE-ESCRITA`. **Nunca** voz do Victor em peça da Débora.
+- ~~**Posicionamento vigente (30/06):** ICP líder que já lidera bem; promessa = do bom ao pleno~~ → **ICP e promessa vigentes estão no `PILARES.md` (fonte canônica desde 12/09) e no `STATUS.md` §2** (promessa fechada em 02/10). *Mantido do 30/06, porque nada o revogou:* nenhuma peça diagnostica o lead como quebrado.
 - Nada sobe (página, campanha, verba, mensagem) sem **aprovação humana** (Débora copy/página · Victor mídia/verba).
 
 ## 1. Princípios da operação
@@ -83,6 +96,8 @@ Os métodos e skills da Continuum estão **replicados localmente em `00 - govern
 
 ## 3. O que usar em cada tipo de requisição
 
+> 🔴 **08/10/2026 — precedência sobre esta seção inteira:** para **copy, anúncio, VSL, quiz, página e tráfego**, a carga é a da árvore da Governança (§0b). As skills genéricas listadas abaixo (`marketing:*`, `sales:*`, `ui-ux-pro-max`) foram escritas para o workshop de julho e **só entram como ferramenta de formato quando a árvore não cobre o pedido.** Frentes E, F e G (design, cadernos, planejamento) seguem como estão.
+
 Para cada frente: **skill a invocar**, **arquivos mínimos** e **saída**. Carregue só o
 que está na linha.
 
@@ -95,8 +110,7 @@ que está na linha.
 - **Saída:** `.md` na pasta da frente (workshop → `02`, social → `05`).
 
 ### B. TRÁFEGO PAGO (Meta/Instagram)
-- **Skill:** `marketing:campaign-plan` (estrutura de campanha) + `marketing:draft-content`
-  (criativos/ângulos). Para conectar/medir contas, MCP de ads (Meta) sob aprovação.
+- **Skill:** ~~`marketing:campaign-plan` + `marketing:draft-content` (criativos/ângulos)~~ → **anúncio DR pela `ARVORE-ESCRITA`** (`METODO-CONSTRUCAO-DE-CRIATIVOS-DR` + empilhamento/lateralização conforme o caso) **+ mídia pela `METODO-TRAFEGO-PAGO` §4.** O plano de criativos do funil DR nasce do `../../30-comercial/trafego-clientes/_template/matriz-criativos.md` (com a esteira semanal). `03 - tráfego pago/PLANO-CRIATIVOS.md` é do workshop — **histórico desde 08/10.** Para conectar/medir contas, MCP de ads (Meta) sob aprovação.
 - **Arquivos mínimos:** PROJECT.md §5–6 (oferta, lotes, público) + brief da campanha.
 - **Saída:** plano de campanha + variações de criativo em `03 - tráfego pago`.
 - **Regra:** nunca subir/pausar campanha ou mexer em orçamento sem o Victor confirmar.

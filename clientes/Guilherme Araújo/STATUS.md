@@ -2,8 +2,68 @@
 
 > STATUS: VIGENTE · estado operacional
 > Baseline estrutural verificado em: 2026-07-19T00:56:47-03:00
+> Atualização parcial mais recente em: 2026-10-14 · escopo: WhatsApp de 10 a 14/10 (criativo para o grupo do Conselho, link errado do quiz-filtro, Pixel e planilha no ar); conta de anúncios **não relida**
+> Atualização parcial anterior em: 2026-10-10 · escopo: WhatsApp de 05 a 08/10 (direção nova do Guilherme, grupo gratuito do Conselho, quiz-filtro, anúncios dos reels); estado de mídia **não revalidado na conta**
 > Integração do Codex em: 2026-10-02 · escopo: pacotes de 29/09 a 02/10 (ver seção própria abaixo); estado de mídia da conta **não revalidado nesta data**
 > Atualização parcial anterior em: 2026-10-01 (mantida, não revogada) · escopo: destilação do WhatsApp de 19/09 a 01/10, duas linhas de produto, conta parada, criativos e quiz do Diagnóstico. Anterior: 2026-09-05 · escopo: verificação da conta, diagnóstico de fadiga do criativo do topo e criação da camada 2 em pausa; demais domínios não foram revalidados
+
+## Atualização de estado — WhatsApp de 10 a 14/10/2026, registrada em 14/10/2026
+
+> Fonte: `DESTILACAO-WHATSAPP-2026-09-19-A-10-01.md` §12 (4 áudios transcritos + 3 prints). Páginas conferidas por HTTP em 14/10; conta de anúncios **não relida**.
+
+| Domínio | Estado |
+|---|---|
+| **Quiz-filtro** | **No ar** em `/permissao-mentoras/` (e `/teto-mentoras/`). Mentora → grupo `chat.whatsapp.com/IVUsj5LpC8AECMIJibXIVv`. Gui confirmou a regra em 12/10 ("Isso mesmo, Vitão. Aí manda direto para o grupo"). |
+| 🔴 **Link errado com o Gui** | Em 10/10 o Victor mandou `/permissao/`, que é o **original sem filtro**: mentora vai para a oferta, não para o grupo. Resultado do teste do Gui: sem registro. |
+| **Medição** | Pixel `1259363302489132` e URL do Apps Script **configurados** em `/permissao/` e `/permissao-mentoras/` (corrige "Pixel ausente" de 10/10). Lead real chegando na planilha: **não confirmado**. |
+| **Campanha para o grupo** | **Nenhuma.** Roda só o reel que chama para comentário. Gui pediu arte com o texto do convite (14/10 11:18); Victor assumiu ("Faço aqui o criativo", 12:02). |
+| **Plano do Gui para o grupo** | Conselhos no grupo → conversa no privado → "presentinhos". Prioriza gente do autoconhecimento e da espiritualidade. Presentinho e oferta seguinte **não descritos**. |
+
+### Campanha planejada (14/10, noite) · 🟡 em rascunho na conta
+
+**Fecho 14/10:** rascunhos zerados; os 7 anúncios do quiz **aprovados** (entregam a partir de 15/10 0h); tráfego do reel rodando.
+
+**Execução 14/10, ~22h:** campanha do quiz completa: conjunto ativo (15–31/10, só IG Stories + Reels, `LEAD` padrão) + 7 anúncios em análise; tráfego do reel aprovado e rodando. ✅ quiz v3 no ar e conferido no site publicado (cadastro sai como `track:Lead`).
+
+**Execução 14/10, ~21h:** engajamento **pausado**; tráfego para o perfil com o reel `DZu9VpARUsE` **ativo** (R$ 12/dia, só IG Stories + Reels, anúncio em análise); campanha do quiz ativa, conjunto dela ainda em rascunho até ter anúncios. Detalhe no plano.
+
+**Execução 14/10, noite:** quiz v2 conferido no ar · campanha de vendas do quiz antigo **pausada** (`120255556333180210`) · campanha nova `120255723458970210` e conjunto `120255723461560210` **em rascunho** (só IG Stories + Reels, evento `Lead` do Pixel) · **7 anúncios pendentes**: as artes não aparecem na biblioteca da conta para o conector. Detalhe no plano.
+
+
+`30-comercial/trafego-clientes/guilherme/PLANO-CAMPANHA-QUIZ-GRUPO-CONSELHO-2026-10.md`: Leads, R$ 20/dia, 15 a 31/10, 1 conjunto só em Instagram Stories + Reels (regra da casa de 14/10), 7 anúncios. **Bloqueios:** ~~(B1) quiz só manda "Mentora" ao grupo~~ ✅ corrigido localmente em 14/10 (as quatro opções vão ao grupo, testado), **falta subir `execução Codex/quizzes-2026-10-02/hostinger/permissao-mentoras-v2.zip`** · (B2) o `Lead` do quiz é evento personalizado; criar conversão personalizada para otimizar. **Conta lida em 14/10:** ativas o reel de engajamento (R$ 12/dia) e o quiz de vendas (R$ 15/dia, R$ 160,28 → 1 compra); recomendação de pausar o segundo. Pixel: 10 cadastros entre 06 e 13/10; `JoinGroup` nunca disparou.
+
+### Decisão de destino do criativo do grupo (Continuum, alçada de estrutura)
+
+**Destino: link direto do grupo, não o quiz-filtro.** O anúncio promete o grupo a quem trabalha com "terapias, mentorias ou cartomancia". O quiz-filtro só manda **Mentora** ao grupo; terapeuta e cartomante caem na oferta. Um anúncio que promete o grupo e entrega um checkout quebra a promessa no primeiro clique.
+
+- **Custo da escolha:** não há cadastro nem evento de Pixel. A medição é a contagem de membros do grupo antes e depois de cada dia de verba, anotada à mão.
+- **A conferir antes de subir:** se a Meta aceita `chat.whatsapp.com` como URL de destino neste formato. Se recusar, o plano B é uma cópia do quiz com todas as profissões levando ao grupo.
+- 🔴 **Portão de ESCRITA não passado** (`PILARES.md` e `lexico-icp/` inexistentes). A peça só sai como **exceção declarada pelo Victor**, como teste de verba limitada, e a exceção é registrada aqui.
+
+**Atualização 14/10, mais tarde:** Victor declarou a exceção (*"faz o criativo do grupo, exceção declarada. use as referências"*). **Feito:** 4 artes (rica R14 e lisa R03/R04, feed e story) + texto do anúncio em `01 - Criativos/Conselho do Cigano - grupo 2026-10-14/CRIATIVO.md`. Todo o texto vem do convite do Gui. A exceção vale só para esta peça; **ela vence em 31/10** ("gratuito durante outubro"). Nada criado na conta de anúncios. Antes de subir: número atual de membros do grupo, OK do Gui para o link ir em anúncio, orçamento e conjunto.
+
+**Atualização 14/10, noite:** Victor decidiu que **o destino é o quiz** (`/permissao-mentoras/`), com CTA "responda o quiz e entre no grupo gratuito"; substitui o link direto. Lote de 7 artes (feed e story) pronto: `01 - Criativos/Conselho do Cigano - grupo 2026-10-14/CRIATIVO.md` §0. 🔴 **Bloqueio:** no quiz no ar só "Mentora" recebe o link do grupo; terapeuta, cartomante e iniciante vão ao checkout. Corrigir a cópia `permissao-mentoras/` para mandar as quatro opções ao grupo, ou rodar só a abertura "Mentora,".
+
+## Atualização de estado — WhatsApp de 05 a 08/10/2026, registrada em 10/10/2026
+
+> Fonte completa: `DESTILACAO-WHATSAPP-2026-09-19-A-10-01.md` §11 (16 áudios transcritos + prints do grupo). Quatro áudios do Gui de 05/10 não foram transcritos (12:32, 12:55, 12:58, 12:59).
+
+### O que mudou
+
+| Domínio | Estado |
+|---|---|
+| **Foco declarado pelo Gui (08/10)** | Linha do terapeuta / Permissão, "porque esse está me dando retorno financeiro". Signos "ainda não está chegando". |
+| **Escada nova declarada pelo Gui** | Programa de implementação de 28 dias, individual, 4 encontros, **R$ 1.500 ou até 12x** → grupo **Venda com Permissão**, trimestral, **R$ 1.500 por 3 meses**, aula semanal (ainda pode virar quinzenal) → depois funde no grupo de segunda. Ele diz ter puxado **3 pessoas** para o processo individual; em 05/10: "Ofereci p duas pessoas aqui a 1.500. Tô quase fechando". |
+| **Conselho do Cigano (Signos)** | Grupo **"Outubro- Conselho do Cigano"**, **gratuito durante outubro**, voltado a quem trabalha com terapias, mentorias ou cartomancia; ~16 pessoas entraram pelo convite (relato do Gui). Ele pensa em deixar o grupo gratuito de vez, como captação de lead. |
+| **Quiz de Signos no ar** | Continua com fecho em R$ 297 no trimestre e 4 checkouts. **Conflita com o grupo gratuito: A DECIDIR com o Gui.** |
+| **Quiz-filtro (feito em 10/10)** | Cópias `permissao-mentoras/` e `teto-mentoras/`: quem marca **Mentora** faz o teste e o cadastro e recebe o link do grupo gratuito; os demais seguem para a oferta original. Originais intactos, para outro funil. Falta subir na Hostinger e definir o pós-outubro. |
+| **Anúncios dos reels** | Gui pediu em 06/10 para rodar dois reels. Em 08/10 Victor subiu um; o outro (`Dd3vXCHMHf1`) não existe mais (Gui acha que excluiu) e será repostado no fim de semana, com impulsionamento na segunda. Gui relatou em 08/10: "até agora não teve nenhuma aplicação". |
+| **Criativos gravados** | Gui disse em 05/10 que gravaria no mesmo dia. Sem registro de envio. Victor propôs em 08/10 gravar junto, presencialmente. |
+| **Medição** | **Planilha:** Apps Script implantado pelo Victor em 10/10; URL colocada nos 5 configs (falta subir na Hostinger e confirmar um lead real na planilha). **Pixel:** continua ausente nas páginas. |
+
+### Não usar até decidir
+- Roteiro **V3** (venda direta do grupo de Signos a R$ 297) de `05 - design e criativos/ROTEIROS-CRIATIVOS-GUI-QUIZZES-E-VENDA-2026-10-04.md`: o grupo pode ter virado gratuito.
+- Escada antiga (Desafio R$ 997, Jornada R$ 2.997) em peça nova: o Gui descreveu outra.
 
 ## Atualização de estado — integração do trabalho do Codex (29/09 a 02/10), 02/10/2026
 
@@ -36,6 +96,8 @@ Rito: `40-operacao-rotinas/RITO-INTEGRACAO-CODEX.md`. Fonte: pacotes em `execuç
 > **Atualização 05/10/2026:** Victor informou que o Guilherme **autorizou** o uso desta lista. A vedação "NÃO SUBIR" de 01/10 está levantada por decisão do cliente. A contradição de números apontada acima não existe: é o mesmo arquivo (3.096 e-mails + 460 @ de Instagram = 3.556, mais uma linha). A subida para a Meta continua sendo ação do Victor e não foi feita. Só os e-mails servem como identificador de público; os @ não entram.
 
 ### Estado dos portões de peça ao público (`00-core/roteador/ARVORE-ESCRITA.md`)
+
+> **Atualização 15/10/2026:** `PILARES.md` criado: **3 de 5, P4 reprova** (oferta com versões divergentes; cinco perguntas ao Gui). `lexico-icp/` criado: **0 `D` confirmado**, 6 frases `D?` dos prints de alunas aguardando o Gui confirmar a origem. **Portão segue fechado** até P4 + lacuna 1. Planilha do quiz: implantação do script corrigida e conferida (acesso público). O texto abaixo é de 02/10.
 
 - `PILARES.md` da conta: **inexistente**. `CRIATIVOS/01_PILARES.md` é orientação criativa histórica de outra oferta e não substitui o teste P1/P4. **Portão não passado.**
 - `lexico-icp/`: **inexistente**, logo **sem fonte de grau D**. A fala do Guilherme sobre compradores não é fala de compradora. **Portão não passado.**

@@ -3,6 +3,36 @@
 > **Protocolo de contexto entre sessões de terminal.** Toda sessão ABRE lendo: `CLAUDE.md` → `DIRETRIZES-EXECUCAO-LANCAMENTO.md` (sua tarefa) → as 3 últimas entradas daqui → `03 - tráfego pago/LOG-DECISOES.md` (se tráfego). Toda sessão FECHA registrando entrada abaixo. **Sessão sem entrada no diário = trabalho perdido.**
 > A cada passo relevante DENTRO da sessão (arquivo criado, decisão aplicada, bloqueio), registrar na hora, não no final (terminal cai, contexto não).
 
+### 2026-10-13 · Opus (Claude Code CLI, CEO-orquestrador) · ⭐ **retomada da VSL: roteiro v2, módulo de aplicação, conferência promessa × curso e mensagem — nada enviado**
+
+- Rodada em `12 - Direct Response/vsl/2026-10-11/` (11/10 22h53 → 13/10), a partir de `vsl/PROMPT-RETOMADA-VSL-2026-10-11.md`. Trilha completa, com modelo por disparo, em `2026-10-11/LOG.md`. A rodada de 02/10 não foi tocada.
+- **Etapa 1 · reconciliação** dos 25 `[[ FALTA ]]`: 7 resolvidos, 13 de estrutura (decididos na Parada 1), 7 de fato dela, 5 nossos (`00-RECONCILIACAO.md`). **Etapa 2 · briefing corrigido na origem** (22 trocas no dia 12 e mais as ordens dos juízes, todas com ⟲ e data).
+- **Etapa 3 · história (D10–D11):** esqueleto aprovado pelo Victor (Parada 2); texto, seis auditores em dois ciclos, duas devoluções do juiz. **O que saiu por causa da régua de nunca sugerir cura:** o reencontro inteiro e, na última devolução, **o burnout** — o juiz reabriu decisões do dono com a alçada que ele delegou (*"não pare mais para meu ok"*). Entrou a cena da sobrecarga, de fala dela. D10 fecha em 210 palavras, com tolerância.
+- **Etapa 4 · módulo de aplicação:** esqueleto nosso, 5 aulas, ~40 min, auditado em três passadas. 🔴 **Erro meu registrado:** mandei o redator fingir um índice "por necessidade" que o Sistema dela não tem (ele é por tipo); corrigido na devolução seguinte.
+- **Etapa 5 · oferta (D23–D36):** esqueleto de delta aprovado (Parada 3); texto, seis auditores em dois ciclos, duas devoluções. **Achado de fato:** a mentoria tem **quatro** individuais, não "quatro a cinco" (a destilação de 17/08 corrige a própria linha 42). O defeito do bloco era de tempo: frases do regime antigo ao lado do novo.
+- **Etapa 6 · roteiro v2 + juiz global:** montado por script e marcado por roteirista proibido de tocar em palavra; diff por palavra limpo; 12 ordens do juiz global executadas por script. **Veredito: serve de roteiro de conferência; não grava inteiro (8 bloqueios, 7 dela); não recebe mídia (razão prova/promessa 1,5 contra 3).**
+- **Etapa 7 · conferência promessa × curso** (`CONFERENCIA-PROMESSA-CURSO.md` + PDF), auditada por quem não escreveu. **Etapa 8 · mensagem única** (`MENSAGEM-DEBORA.md`, voz do Victor, duas mensagens, 11 perguntas de fato). **Ambas 🟡 aguardando o ok do Victor. Nada foi enviado.**
+- **Pendente do Victor antes de enviar:** decidir a garantia que alcance dezembro · varredura externa de *"As Nove Línguas"* · ouvir o áudio de 09/10 13h04. **Pendente dela:** a lista do `STATUS.md` §4.
+- **Tom e conduta com ela (não mudou):** só fato vira pergunta; ela pode apontar onde não bate; o episódio de saúde não entra no vídeo e a mensagem diz isso em uma linha, sem nomear; nenhum prazo que não seja o dela (dezembro).
+- **Método:** defeitos 14 a 18 registrados em `2026-10-11/LOG.md`. A sessão bateu no limite de uso três vezes; nada gravado se perdeu, e a retomada pelo `LOG.md` funcionou.
+
+### 2026-10-09 · Opus (Claude Code CLI, CEO-orquestrador) · ⭐ **conselho de agentes sobre os 24 `[[ FALTA ]]` da VSL**
+
+- Rodado em `12 - Direct Response/vsl/2026-10-02/conselho/` (08/10 22h35 → 23h28), etapas 0–5 com política de modelo: haiku em localização, consolidação e conferência · sonnet em extração B1–B4 · opus no conselho C1/C2/C3 (R1+R2) e no moderador. Trilha em `conselho/LOG.md`. B1–B3 caíram por limite de sessão (429) e foram retomados sem refazer arquivo.
+- Entregas: `VEREDITO.md` (✅ 2 · 🧭 10 · ❓ 12) · `MENSAGEM-DEBORA.md` (5 perguntas por áudio, voz do Victor; P8 e P13 ficam para a próxima rodada com decisão provisória) · `CONFERENCIA.md` (24/24 citações conferidas). `G6-ROTEIRO.md` **não alterado**.
+- Recomendações sem esperar a Débora (Victor confirma): bloquear âncora "R$ 4.000, 3 meses, 10 vagas" · 16/12 volta a ser lacuna · "mais de oitenta" → "sessenta" · módulo de aplicação sai do que o curso entrega.
+- Ressalva: "privacidade… é inegociável" (D14) apoia-se em fala de 30/09 com falante não identificado; "Quatro encontros em grupo…" (C-21) não foi conferida por não ter arquivo:linha.
+- Transcrição bruta copiada para `vsl/2026-10-02/conselho/_transcript/`.
+- Próximo: Victor confirma os 10 🧭 e envia a `MENSAGEM-DEBORA.md`; com as respostas, aplicar no G6-ROTEIRO. **Dono:** Victor.
+
+### 2026-10-08 · Opus (Claude Code CLI, CEO-orquestrador) · ⭐ **VSL concluída: roteiro pronto com bloqueios de fato**
+
+- Retomada da rodada `12 - Direct Response/vsl/2026-10-02/`: blocos 2 (história), 4–5 (construção e oferta) e 1 (abertura) em 2 ciclos de 6 auditores + juiz cada · G6 roteiro · juiz global. Trilha em `LOG.md` (disparos 24–66, com o modelo de cada um).
+- Entregas: `G6-ROTEIRO.md` (teleprompter, ≈3.433 palavras, ≈20 min) · `JUIZ-GLOBAL.md` (veredito **PRONTA COM BLOQUEIOS DE FATO**; §8 = 24 perguntas, 17 dela e 7 nossas).
+- Briefing corrigido na origem: D10/D23 (E30-40, E30-37), faixa da oferta, peças abertas no site, D30 (desvio declarado), nível 2 da promessa, ID de D24.
+- Transcrição bruta copiada para `vsl/2026-10-02/_transcript-2026-10-08/`.
+- Próximo: Victor leva as perguntas à Débora + decide âncora R$ 4.000 × DECISOES 17/08, data de corte e duração dos encontros, e leva o apelido para a objeção de congruência dela **antes** de gravar.
+
 ### 2026-10-02 (noite) · Opus (Cowork, CEO) · ⭐ **produção da VSL por agentes montada; VSL ainda não iniciada**
 
 - Criados: método `100-métodos/METODO-PRODUCAO-VSL-POR-AGENTES.md` · 13 agentes (`.claude/agents/vsl-*.md`, oficina em `900-…/agentes-vsl/`) · **briefing da conta** `12 - Direct Response/vsl/BRIEFING-VSL.md` (consolida as decisões até 02/10, a estrutura R1 com as trocas de 01/10, a pilha done-for-you e os vetos de linguagem).
@@ -1524,3 +1554,26 @@ Propagação feita na mesma tarefa: `DECISOES.md` (3 linhas) · `STATUS.md` da G
 - Método de produção por agentes vigente; a VSL roda no **Claude Code CLI**.
 
 **Próximo passo:** Victor pede a VSL → G1. **Dono:** Victor.
+
+
+---
+
+## 08/10/2026 — registro de 03 a 07/10
+
+Quiz no ar e pacote enviado (04/10). Ela respondeu os fatos (06/10), recusou a permuta por aperto financeiro, aceitou a turma fundadora em 16/12 e rodou um anúncio próprio com clique a R$ 0,13 e conversão zero (07/10). Registro completo: `REGISTRO-WHATSAPP-2026-10-07.md`. Propagado para `DECISOES`, `STATUS` e `vsl/BRIEFING-VSL.md` (D03, D09, D31).
+
+**Próximo passo:** horário de 16/12, colher depoimentos de Jacque e Bia, propor esqueleto do módulo de aplicação. **Dono:** Victor.
+
+### 2026-10-08 11h45 · Claude (Cowork, papel CEO) · correção de carga de método da conta
+- Feito: **réplica `00 - governança continuum/` aposentada** — 8 arquivos íntegros em `00 - governança continuum/_legado-2026-07/`, caminhos antigos viraram `# PONTEIRO —` para a fonte ativa na Governança, README reescrito como índice de ponteiros. **`CLAUDE.md` §0b reescrito** (Governança governa método; esta conta governa fato, voz, decisão e estado — §6.2 de lá) · copy: `fable5`+`stop-slop` (legado desde 20/09) → `copywriter-senior-continuum` + `debora-voice` + `lexico-icp/` · posicionamento de 30/06 → aponta para `PILARES.md` · **§3 ganhou bloco de precedência** (copy, anúncio, VSL, quiz, página e tráfego pela árvore da Governança) · §3.B criativos → `CONSTRUCAO-DE-CRIATIVOS-DR` + `TRAFEGO-PAGO` §4 + template de matriz com esteira. Nota em `03 - tráfego pago/PLANO-CRIATIVOS.md`: plano do workshop, não é fonte do funil DR.
+- Regra/contrato aplicado: `CLAUDE.md` da Governança §6.2 (fronteira) · §7.1 item 3 (substituição em 4 passos) · REGRA Nº 1 (método que depende de memória de operador não está em produção).
+- Decisões tomadas dentro da alçada: nenhuma de conta — correção estrutural de repositório, pedida pelo Victor ("pode corrigir"). STATUS do `PLANO-CRIATIVOS.md` **não** foi alterado.
+- Bloqueios/dúvidas p/ humano: confirmar se o lançamento do workshop está encerrado — se sim, marcar `PLANO-CRIATIVOS.md` como HISTÓRICO via `DECISOES.md`.
+- Próximo passo exato: abrir as criações da Débora pela pasta da Governança; o plano de criativos do funil DR nasce de `../../30-comercial/trafego-clientes/_template/matriz-criativos.md`.
+
+### 2026-10-08 12h00 · Claude (Cowork, papel CEO) · VSL: caso real de um critério novo
+- Feito: nada nesta conta além deste registro. Na Governança, o auditor A6 (`vsl-auditor-cetico`) ganhou uma **segunda leitura de retenção linha a linha**, em teste e sem veto.
+- Regra/contrato aplicado: `CLAUDE.md` da Governança §7.1 item 4 — critério novo de auditoria roda num caso real antes de virar veto. **O caso real é esta VSL.**
+- Decisões tomadas dentro da alçada: nenhuma.
+- Bloqueios/dúvidas p/ humano: nenhum.
+- Próximo passo exato: ao rodar os blocos 2 (história) e 4 (construção + oferta), ler o laudo do A6 na seção de retenção e registrar se ele apontou algo que os outros cinco auditores não pegaram — é esse o dado que decide se vira veto.

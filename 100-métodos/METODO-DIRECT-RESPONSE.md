@@ -105,6 +105,7 @@
 - **O espaço vazio** (`METODO-BENCHMARKING.md` §7.3) **nunca vira estrutura principal.** Vira, no máximo, um ângulo lateral de teste — e se declara assim.
 - **O gate de evidência do benchmarking sobe de "prova de que vende" para "prova de escala".** Vender uma vez não é o critério; sustentar volume é.
 - **Quando não há referência escalada em nenhuma das quatro fontes**, o que se constrói **é teste, com verba limitada e declarado como teste** — nunca a estrutura principal de uma conta.
+- ⚠️ **Viral no orgânico não é "escalado"** *(08/10/2026)*. Milhões de views provam atenção, não que a combinação paga mídia. Serve de **hipótese de ângulo e gancho** (exploração, declarada), nunca de base de promessa. Régua e fontes: `METODO-BENCHMARKING.md` §3.1.
 
 ### A limitação do instrumento, para não ler o que ele não mostra
 

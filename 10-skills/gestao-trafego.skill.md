@@ -1,6 +1,6 @@
 # SKILL — Gestão de Tráfego Pago (método)
 
-> **Tipo:** skill de método · **Fonte completa:** `METODO-TRAFEGO-PAGO.md` (prevalece em conflito) · **Atualizado em:** 2026-07-08
+> **Tipo:** skill de método · **Fonte completa:** `METODO-TRAFEGO-PAGO.md` (prevalece em conflito) · **Atualizado em:** 2026-10-14
 > Carregar quando o pedido envolve: plano de mídia, campanha, criativo de anúncio, otimização, escala, relatório de tráfego, diagnóstico de CPA.
 > Estado do cliente: `30-comercial/trafego-clientes/<cliente>/`. Números de alçada/preço: `00-core/POLITICAS-DE-DECISAO.md`.
 
@@ -20,10 +20,11 @@
 8. **Diagnóstico de CPA alto nesta ordem:** tracking → oferta → página/atendimento → criativo → estrutura/leilão.
 9. **Verba na conta do cliente**, cap de gasto configurado, mudança > 30% do plano = aprovação escrita.
 10. **Relatório:** manchete é resultado de negócio, nunca vanity metric; plataforma + fonte de verdade lado a lado; cruza `stop-slop`.
+11. 🔴 **Posicionamento na Meta (14/10/2026):** todo conjunto com posicionamento **personalizado**, só **Instagram Stories + Instagram Reels**; todo o resto desmarcado, Advantage+ de posicionamento proibido. Cada anúncio leva a arte **4:5 na mídia principal ("feed")** e a **9:16 em Stories e Reels**. Conjunto já no ar fora da regra: corrigir é decisão do Victor (reinicia aprendizado). Método §5.2.
 
 ## Nomenclaturas (lei)
 
-Campanha `[cliente]-[canal]-[objetivo]-[funil]-[data]` · Criativo `[cliente]-[ângulo]-[formato]-[hook]-[versão]` · UTM travada (método §6.3).
+Campanha `[cliente]-[canal]-[objetivo]-[funil]-[data]` · Criativo `[cliente]-[ângulo]-[formato]-[hook]-[versão]` · UTM travada (método §6.3). Campos da conta (`[produto]`, `[linha]`), funil `topo·meio·fundo`, data `aaaammdd` e nome imutável depois de rodar: método §5.5.
 
 ## Saída mínima
 

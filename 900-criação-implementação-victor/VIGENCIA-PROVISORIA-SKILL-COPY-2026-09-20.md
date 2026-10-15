@@ -48,3 +48,9 @@
 - Se o passe 3 instrumentado pega pivô ausente que a versão anterior deixava passar.
 
 ⚠️ **O `.zip` segue congelado, agora por dois motivos.** Nenhuma instalação nova herda gate que ainda não passou por caso real.
+
+---
+
+*08/10/2026 — `referencias/03-escrita-e-formatos.md`, seção "Anúncios (tráfego frio)": cinco linhas de **escrita** vindas de `criativos/DESTILACAO-CRIATIVOS-FILEMON-2026-10-08.md` (C-09/C-13, C-14/C-15, C-19, C-27/C-29, C-31). Editado na oficina e copiado para `10-skills/`. **Nenhum gate tocado** — o "cópia arrogante" entrou na escrita (03) e não no gate anti-slop (04) de propósito, porque item novo no 04 é mudança de gate e espera caso real (`CLAUDE.md` §7.1 item 4). **`.zip` continua congelado**, pelos mesmos dois motivos acima.*
+
+*12/10/2026 — padrão de copy da conta Paola Lopes Rosa propagado por ordem do Victor (*"sobre o padrão de copy: isso precisa ser propagado para o repo"*). **`referencias/03-escrita-e-formatos.md`**, seção "Anúncios (tráfego frio)": quatro linhas de escrita (ordem do corpo desenvolvido, abrir pelo que a pessoa faz, lógica no lugar de resultado sem prova, bloco da solução com o quê, quem, quando e como). **`referencias/04-gate-antislop.md`: 🔴 o gate foi tocado.** Entrou em "O que preservar" a linha da informação (o gate corta enchimento, nunca informação) e o passo 4 do loop. **Caso real que sustenta a mudança de gate (`CLAUDE.md` §7.1 item 4):** os criativos da própria conta, em 12/10: a versão 2 passou no gate antigo com deleção e foi reprovada pelo Victor; a versão 3, escrita com a linha nova, foi aprovada (`clientes/Paola Lopes Rosa/03 - criativos/2026-10-12-teste-01/V3-MODELO-RELACIONAMENTO.md` §3 traz a recuperação frase por frase). **É um caso, de uma conta, sem dado de mídia.** Editado na oficina e copiado para `10-skills/`. **`.zip` continua congelado.** Método que recebeu a estrutura: `100-métodos/METODO-CONSTRUCAO-DE-CRIATIVOS-DR.md` §4.2-bis e §7.*

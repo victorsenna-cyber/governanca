@@ -1,18 +1,11 @@
-# RÉPLICA LOCAL DA GOVERNANÇA CONTINUUM
+# PONTEIRO — réplica local da Governança (aposentada em 08/10/2026)
 
-> STATUS: VIGENTE · réplica imutável
-> Sincronizada em: 2026-07-19
+> STATUS: SUPERADO por `../CLAUDE.md` §6.1 (v4.1) em 2026-10-08 · não usar como fonte
 
-Este diretório contém cópias byte a byte de um subconjunto aprovado da Governança canônica da Continuum. Seu objetivo é disponibilizar métodos e capacidades gerais dentro do repositório sem importar políticas internas, estado societário, preços, alçadas internas, personas ou conteúdo de outros clientes.
+> **A réplica de 19/07 era "imutável" por desenho, e esse foi o defeito:** sem task de ressincronização em 81 dias, ela mandava a copy da conta para `copywriting-fable5` + `stop-slop` (legado desde 20/09) e o tráfego para um `METODO-TRAFEGO-PAGO` de julho — sem o trio de criativos de 20/09, sem a REGRA Nº 2 de 22/09 e sem as árvores do roteador de 26/09. **Cópia que depende de alguém lembrar de ressincronizar é a falha que a REGRA Nº 1 da Governança fecha: memória de operador não é mecanismo.**
+>
+> **Agora:** método, skill, política e gate vêm do roteador da Governança-pai (`../../../CLAUDE.md` §6 → `00-core/roteador/`). A conta governa fato, voz, oferta, decisão e estado (§6.2 de lá).
+>
+> **Sobre o objetivo original da réplica — "não importar políticas internas":** ponteiro não importa conteúdo, só caminho. Se este repositório for entregue a terceiros, **as fontes ativas não vão junto**, como antes não iam as políticas.
 
-## Regras
-
-- não editar, formatar, corrigir, renomear ou inserir headers nos arquivos replicados;
-- consultar `MANIFESTO-SYNC.md` antes de usar ou ressincronizar;
-- mudança só entra por task explícita de sync, comparando origem e destino por SHA-256;
-- exemplos, números, ferramentas ou referências temporais dentro da réplica não são fatos vigentes de Guilherme;
-- o roteamento local e as alçadas vigentes ficam no `CLAUDE.md` raiz;
-- adaptações e overlays vivem fora deste diretório.
-
-Os mecanismos estruturais observados em Débora não foram copiados para cá. Foram generalizados nos documentos locais de governança, sem conteúdo do cliente de origem.
-
+Cada arquivo neste diretório é ponteiro. **Conteúdo íntegro de 19/07, com o `MANIFESTO-SYNC.md` e os hashes:** `_legado-2026-07/`.

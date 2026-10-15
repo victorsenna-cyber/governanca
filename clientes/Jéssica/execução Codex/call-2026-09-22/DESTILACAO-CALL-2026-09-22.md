@@ -1,5 +1,7 @@
 # DESTILAÇÃO — Call Jéssica Oliveira · 22/09/2026
 
+> 🟢 **PROMOVIDO em 13/10/2026 pelo Claude (rito de integração) · pacote fechado.** Destinos: `DECISOES.md` DEC-024 e DEC-025 (27/09), DEC-026 a DEC-029 (13/10) · `STATUS.md` §11 a §13 · `DIARIO-DE-BORDO.md` (entrada de 22/09, com a camada de tom e conduta) · `PLANO-ESTRATEGICO-90D.md` §16 e §17 · `lexico-icp/` (§4: nenhuma fala `D` nesta call) · `10-skills/voz-victor.skill.md` §5 (L-02, L-04, L-08 e L-09 como reincidência textual). **Ficou de fora, e por quê:** as contagens de marcadores do §12.2 (dependem de palavra exata e a fonte é ASR sem áudio no repositório) · L-03 (faixa de preço ilegível na transcrição) · C-13 (custo da Casa Viva lembrado de forma incerta). O arquivo não se apaga nem se move.
+
 > **Tipo:** fonte primária destilada · artefato multiuso · proposta de propagação separada
 > **Método:** `100-métodos/METODO-DESTILACAO-DE-CALLS.md` · 7 etapas · 13 eixos
 > **Fonte bruta:** `clientes/Jéssica/contexto/_transcripts/Reunião Zoom de Continuum AI Systems & Jéssica 2026-09-22 15h05(GMT-3h00).txt` · preservada intacta

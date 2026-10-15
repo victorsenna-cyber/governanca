@@ -236,6 +236,8 @@ flowchart TD
 | **Desejo** | do público, colhido — `lexico-icp/`, grau `D` | pega-se o lado **emocional**, nunca o resultado físico |
 | **Apelido** | de §4 e §5 | é o recomendado, sem alteração |
 
+⭐ **A Nova Oportunidade quase sempre derruba uma crença** *(08/10/2026 — `900-criação-implementação-victor/criativos/DESTILACAO-CRIATIVOS-FILEMON-2026-10-08.md` C-67)*. Se a pessoa precisa FAZER algo novo, é porque acreditava que outra coisa resolvia. **Nomear essa crença ao lado da Nova Oportunidade** — e checar que ela é do tipo que a pessoa *tem sem saber provar* (`METODO-PONTOS-LOGICOS.md` §3.2-bis) — é o que dá ao G2 o elo 3 pronto.
+
 🔴 **A Nova Oportunidade e o Desejo são decisão de estrutura — nossa, sempre** (`CLAUDE.md` §8, REGRA Nº 0). **O que se pergunta ao cliente é o FATO por trás: o que o produto faz de diferente, e o que o público disse querer.** Perguntar a ele *"qual é a sua promessa?"* é o erro que a REGRA Nº 0 existe para impedir.
 
 ### 7.3 🔴 Validação obrigatória — as quatro, antes de entregar

@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Criativos Paola · linha lisa · v3</title>
+<!-- Uso: criativo-liso.html?c=rel|area&f=feed|story  ·  feed = 1080x1350, story = 1080x1920
+     Modelo de estrutura: 960-referências criativos / "WhatsApp Image 2026-10-07 at 18.46.08 (1).jpeg" e "(2).jpeg"
+     (tela clara lisa, etiqueta preta no topo como o texto com fundo do Instagram, parágrafos em negrito centralizados). -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@700;800&family=Noto+Color+Emoji&display=block" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 100%; height: 100%; overflow: hidden; }
+  body {
+    position: relative; color: #0B0B0B;
+    font-family: "Figtree", "Segoe UI", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    background: linear-gradient(180deg, #E4E4E4 0%, #F6F6F6 7%, #FFFFFF 17%, #FFFFFF 66%, #F2F2F2 80%, #DADADA 100%);
+  }
+  .quadro {
+    position: absolute; inset: 0;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    text-align: center;
+  }
+  .feed  .quadro { padding: 0 96px; }
+  .story .quadro { padding: 0 80px 250px; }
+
+  /* etiqueta: texto com fundo, uma caixa por linha, cantos unidos */
+  .etiqueta { position: relative; font-weight: 800; font-size: 53px; line-height: 1.26; letter-spacing: -.005em; }
+  .etiqueta .fundo { position: absolute; inset: 0; filter: url(#une); }
+  .etiqueta span {
+    padding: 7px 20px 9px; border-radius: 14px;
+    -webkit-box-decoration-break: clone; box-decoration-break: clone;
+  }
+  .etiqueta .fundo span { background: #000; color: transparent; }
+  .etiqueta .texto { position: relative; }
+  .etiqueta .texto span { color: #fff; }
+
+  .corpo { margin-top: 80px; font-weight: 800; font-size: 49px; line-height: 1.19; letter-spacing: -.004em; max-width: 900px; text-wrap: pretty; }
+  .corpo p + p { margin-top: 50px; }
+  .feed .corpo { margin-top: 58px; font-size: 44px; max-width: 880px; }
+  .feed .corpo p + p { margin-top: 40px; }
+  .feed .etiqueta { font-size: 49px; }
+  .feed .quadro { padding: 0 80px; }
+  .mao { margin-top: 10px; font-family: "Noto Color Emoji", "Segoe UI Emoji", sans-serif; font-size: 44px; line-height: 1; }
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <filter id="une"><feGaussianBlur in="SourceGraphic" stdDeviation="5"/><feColorMatrix values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 22 -10"/></filter>
+</svg>
+
+<div class="quadro">
+  <div class="etiqueta">
+    <div class="fundo"><span id="e1"></span></div>
+    <div class="texto"><span id="e2"></span></div>
+  </div>
+  <div class="corpo" id="corpo"></div>
+  <div class="mao">👇🏽</div>
+</div>
+
+<script>
+  const COMUM = [
+    "Na Mesa Arcturiana eu trato a energia dessa situação. Você me traz as questões, e eu trato uma por uma.",
+    "(Meço a sua aura e os seus 7 chakras e te mando a devolutiva em áudio, com os números.)",
+    "Me chama no WhatsApp e me conta as suas questões."
+  ];
+  const PECAS = {
+    rel: {
+      etiqueta: "Seu relacionamento começa bem<br>e desanda quando ia avançar?",
+      p1: "Se mudou a pessoa e travou na mesma fase, a causa não está em nenhuma delas. Está numa situação antiga sua, que ficou sem equalizar."
+    },
+    area: {
+      etiqueta: "Você faz a sua parte e uma área<br>da sua vida não anda?",
+      p1: "Quando a lógica não explica, a causa não está no que você faz hoje. Está numa situação antiga sua, que ficou sem equalizar."
+    }
+  };
+  const q = new URLSearchParams(location.search);
+  const peca = PECAS[q.get("c")] || PECAS.rel;
+  document.body.classList.add(q.get("f") === "story" ? "story" : "feed");
+  document.getElementById("e1").innerHTML = peca.etiqueta;
+  document.getElementById("e2").innerHTML = peca.etiqueta;
+  document.getElementById("corpo").innerHTML = [peca.p1, ...COMUM].map(t => "<p>" + t + "</p>").join("");
+</script>
+</body>
+</html>

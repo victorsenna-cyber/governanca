@@ -234,3 +234,136 @@ O mapa mental é o item mais forte da oferta e hoje não aparece em nenhuma peç
 
 **Segurança**
 - O print da conversa de 01/10 mostra de novo o e-mail e o que parece ser uma senha do Gui. Não foram registrados nem usados.
+
+---
+
+## 11. Adendo · 05 a 08/10/2026 (13 áudios do Gui, 3 do Victor, prints do grupo)
+
+> Fontes: `01 - contexto/WhatsApp/execução Codex/transcricoes-2026-10-05-a-08/` (17 transcrições automáticas, não revisadas por escuta) e prints do grupo "Assessoria Guilherme | Continuum AI" enviados pelo Victor em 10/10/2026. Registro feito em 10/10/2026.
+> ⚠️ **Quatro áudios do Gui de 05/10 não foram exportados nem transcritos:** 12:32 (0:29), 12:55 (0:47), 12:58 (1:34) e 12:59 (0:34). Os três últimos são a "ideia interessante" que o Victor chamou de upsell do Diagnóstico. O conteúdo deles só aparece aqui pelas respostas do Victor.
+
+### 11.1 Cronologia
+
+| Data / hora | Quem | O que | Fonte |
+|---|---|---|---|
+| 04/10, 01:24 | Victor | Envia no grupo os roteiros dos criativos (estrutura hook, corpo, pivô, CTA), incluindo o do Grupo de Conselho Semanal a R$ 297 no trimestre | print |
+| 05/10, 11:04 | Gui | "Maravilha" | print |
+| 05/10, 12:24 | Victor | "me envia um de cada ainda hoje? voltados para os quizzes" | print |
+| 05/10, 12:30 | Gui | Consegue gravar tudo hoje, depois dos atendimentos da tarde | áudio 12.30.47 |
+| 05/10, 12:31 | Gui | "coloca aqueles lá já para rodar"; está criando um convite para outubro, chamando pessoas para o grupo "nesse primeiro mês gratuito" | áudio 12.31.09 |
+| 05/10, 12:31 | Gui | Encaminha o convite **"Outubro- Conselho do Cigano"** (texto em 11.3) | print |
+| 05/10, 12:47–12:59 | Gui | "Puts / Tive uma ideia aqui interessante" + três áudios **não transcritos** | print |
+| 05/10, 15:10–15:11 | Victor | "esse é upsell do Diagnóstico da Permissão" · "show demais" · "está vindo as ideias dos upsells.. sensacional" | print |
+| 05/10, 16:24 | Gui | **"Ofereci p duas pessoas aqui a 1.500. Tô quase fechando"** | print |
+| 06/10, 12:00 | Victor | Envia print de anúncio estático do Teto: "Qual PERMISSÃO está segurando seu Teto Financeiro? Responda algumas perguntas e descubra onde está a sua trava · Faça o teste gratuito da Permissão agora · GRATUITO", botão Saiba mais | print |
+| 06/10, 20:12–20:14 | Gui | Encaminha dois reels (`instagram.com/reel/Dd3vXCHMHf1` e `instagram.com/reel/DZu9VpARUsE`) e pede: "ative esses aí para mim, conforme a gente tinha combinado, coloque esses aí para rodar também" | print + áudio 20.14.03 |
+| 06/10, 20:28 | Victor | "subo sim / pela manhã implemento ambos" | print |
+| 08/10, 15:48 | Gui | Pergunta se os dois anúncios subiram; **"até agora, a princípio, não teve nenhuma aplicação"** | áudio 15.48.19 |
+| 08/10, 17:20–17:22 | Victor | Subiu um; o outro (`Dd3vXCHMHf1`) não é encontrado no Gerenciador | áudio 17.20.48 + print |
+| 08/10, 17:55 | Gui | Acha que excluiu o post; vai repostar no fim de semana, porque é previsão da semana e "é bom pegar a galera no domingão"; sugere o Victor impulsionar na segunda | áudio 17.55.39 |
+| 08/10, 18:07 | Victor | Propõe encontro presencial para gravar o Gui com a estrutura dos roteiros; defende o desenho: criativo leva ao quiz, quiz funciona como espelho da Permissão, e no fim de cada quiz há a página de venda de cada produto | áudio 18.07.08 |
+| 08/10, 19:42–21:56 | Gui | Direção nova de produto e de comunicação (11.2) e pedido do quiz-filtro do grupo gratuito (11.4) | 9 áudios |
+| 08/10, 19:56 | Victor | "Boaaa.. tem como sim.." + áudio: se marcou que não é, um caminho; se marcou que é, vai para o grupo; "é fácil, vou implementar" | print + áudio 19.56.37 |
+
+### 11.2 Direção do Gui em 08/10 (palavras dele, resumidas)
+
+- **Foco na linha do terapeuta.** "quero até focar nesse do terapeuta, porque esse está me dando retorno financeiro legal". **Signos "ainda não está chegando"**, apesar de a proposta ser boa.
+- **Conselho dos Signos redirecionado** para quem é do autoconhecimento e espiritualidade, "para ter mais uma coisa para pegar ele".
+- **Instagram:** daqui para frente, mais conteúdo de **"Venda com Permissão"**: comunicação para terapeutas romperem o teto financeiro aumentando a Permissão.
+- **Estratégia que ele diz estar funcionando, offline:** testou no grupo, levou pessoas ao desafio de 28 dias e puxou **três pessoas** para um processo de implementação individual.
+- **Escada nova que ele descreveu:**
+  1. **Desafio / programa de implementação de 28 dias:** individual, **4 encontros**, **R$ 1.500 ou até 12x**. Funciona melhor individual do que em grupo.
+  2. Depois, o **grupo "Venda com Permissão"**: assinatura **trimestral, R$ 1.500 por 3 meses**, uma aula por semana (ainda decidindo entre semanal e quinzenal; por ora, semanal).
+  3. Mais adiante, vai **fundir o grupo da Permissão no grupo de segunda-feira**.
+- **Grupo do Conselho do Cigano (Signos):** "estou pensando em fazer ele até gratuito". Diz que só com o convite entraram **cerca de 16 pessoas**, e vê o grupo como captação de leads para depois chamar no privado.
+- Quer **rodar um criativo** chamando para esse grupo, **exclusivo para terapeuta, doutora, profissional do autoconhecimento**, com entrada gratuita.
+
+### 11.3 Texto do convite "Outubro- Conselho do Cigano" (05/10, 12:31, literal)
+
+> E SE OUTUBRO FOSSE O MÊS DE ROMPER SEU TETO FINANCEIRO?
+> Se você trabalha com terapias, mentorias ou cartomancia e sente que seu faturamento ainda não acompanha o tamanho do seu trabalho, esse grupo é para você.
+> Durante outubro, você receberá um conselho profundo em vídeo para o seu signo, usando Tarô e Baralho Cigano.
+> E o mais importante: cada elemento do signo receberá uma direção concreta do que fazer e quais ações colocar em prática naquela semana.
+> Não é previsão. É direcionamento profissional para vendas, clientes, dinheiro, posicionamento, decisões e crescimento.
+> 🎁 Grupo gratuito durante outubro.
+> 👇 Entre aqui: (link de convite de grupo do WhatsApp)
+
+### 11.4 Pedido: quiz-filtro para o grupo gratuito
+
+- O Gui pediu (19:47) um criativo + quiz que **só libera o link do grupo** se a pessoa marcar que é **profissional do autoconhecimento, espiritualidade, terapeuta, mentora, cartomante** ou similar. Objetivo: entrada gratuita, captação de lead, e depois ele chama no privado.
+- Victor (19:56): se marcou que não é, um caminho; se marcou que é, vai para o grupo. **"é fácil, vou implementar"**.
+- Gui (21:56): se é, cai direto no grupo (prefere o grupo ao WhatsApp dele, "fica mais fácil"). **O caminho de quem não é ficou em aberto.**
+
+### 11.5 Conflitos com o que está no ar ou registrado
+
+| Registrado / no ar | O que mudou em 05–08/10 | Situação |
+|---|---|---|
+| Quiz de Signos (`/signos/`) para público geral, fecho no Grupo de Conselho Semanal por elemento a **R$ 297 no trimestre**, com 4 checkouts | Gui quer o Conselho voltado a profissionais do autoconhecimento, com grupo **gratuito** (outubro) e talvez gratuito de vez | **A DECIDIR** com o Gui: o quiz de Signos e os checkouts trimestrais seguem no ar? |
+| Escada anterior: Diagnóstico R$ 97 → Desafio R$ 997 → Jornada R$ 2.997 → Mentoria R$ 5.000; carrossel de 09/09 cita "28 dias / 5 encontros" | Programa de implementação de 28 dias, **4 encontros, R$ 1.500**, individual; depois grupo Venda com Permissão a R$ 1.500 por trimestre | Nova escada **declarada pelo Gui**, sem decisão registrada sobre a anterior |
+| Roteiro V3 (venda direta do grupo de Signos a R$ 297) entregue em 04/10 | Grupo pode virar gratuito | V3 **não deve rodar** até o Gui decidir |
+| Anúncios rodando sem Pixel e quizzes sem URL da planilha (constatado em 06/10) | Gui relata "nenhuma aplicação" em 08/10 | Sem Pixel não há como medir; sem planilha, leads dos quizzes não ficam guardados |
+
+### 11.6 Pendências
+
+| Dono | Pendência |
+|---|---|
+| Victor | Implementar o quiz-filtro do grupo gratuito e definir o caminho de quem não é profissional |
+| Victor | Impulsionar o reel do Conselho na segunda, depois que o Gui repostar no fim de semana |
+| Victor | Pixel nos quizzes e URL do Apps Script (pendências de 06/10, ainda abertas) |
+| Gui | Gravar os criativos dos quizzes (disse em 05/10 que gravaria no mesmo dia; não há registro de envio). Victor propôs gravar junto, presencialmente |
+| Gui | Decidir o destino do quiz de Signos e dos checkouts trimestrais diante do grupo gratuito |
+| Victor | Exportar e transcrever os quatro áudios de 05/10 que faltaram (12:32, 12:55, 12:58, 12:59) |
+
+### 11.7 Execução do quiz-filtro (10/10/2026)
+
+- Decisão do Victor em 10/10: **Mentoras** (opção "Mentora" na primeira pergunta) vão para o grupo gratuito "Outubro - Conselho do Cigano"; fazem o teste e o cadastro antes; vale para os quizzes da Permissão e do Teto.
+- Feito como **cópia**, por pedido do Victor, para manter os originais em outro funil: `hostinger/permissao-mentoras/` e `hostinger/teto-mentoras/`. Originais intactos.
+- Testado em navegador local: mentora com resultado BAIXO e ALTO chega ao grupo; terapeuta e cartomante seguem para os checkouts originais.
+- Em aberto: o que acontece com o link e com quem entrou depois de outubro.
+
+## 12. Adendo · 10 a 14/10/2026 (4 áudios do Gui + 3 prints da conversa)
+
+> Fontes: prints de 14/10/2026 (18:41) da conversa "Assessoria Guilherme | Continuum AI" e transcrições automáticas em `01 - contexto/WhatsApp/WhatsApp Ptt 2026-10-12 at 12.34.06.md` e `WhatsApp Ptt 2026-10-14 at 10.59.17.md`, `11.02.26.md`, `11.18.07.md` (faster-whisper large-v3-turbo, não revisadas por escuta). Registrado em 14/10/2026.
+
+### 12.1 Cronologia (literal)
+
+| Data · hora | Quem | Texto |
+|---|---|---|
+| sáb 10/10 · 17:55–17:58 | Victor | "Oh Gui" · "respondendo aqui sua questão: no início do quiz tem as opções de "Mentora", " Terapeuta" e outras duas opções.. o quiz manda direto para o grupo quem aperta em "mentora". é isso mesmo o que você quer, certo!?" |
+| sáb 10/10 · 17:58–17:59 | Victor | "vou fazer um criativo top aqui.. já até tenho o modelo ahahahahaha" · "estava agoniado pra subir ele pra alguém e serve certinho para o seu caso. principalmente agora" |
+| sáb 10/10 · 18:32 | Victor | "Gui" · "você trafegou até o final nesse quiz?" + link `https://professorguilhermearaujo.com.br/permissao/` |
+| seg 12/10 · 12:34 (áudio 0:11) | Gui | "Isso mesmo, Vitão. Aí manda direto para o grupo. Vou testar agora. Vou fazer o teste para ver." |
+| ter 13/10 · 11:51 | Victor | "Muito bom dia Guizão" · "como está por aí meu querido?" |
+| qua 14/10 · 10:59 (áudio 0:03) | Gui | "E aí, Vintão, meu querido! Jóia!" |
+| qua 14/10 · 11:02 (áudio 0:17) | Gui | "Então, uma dúvida, tá rolando alguma campanha levando a pessoa para o grupo de aconselhamento do Cigano, ou não?" |
+| qua 14/10 · 11:15–11:16 | Victor | "não diretamente.. está rodando o reels que você pediu, que chama para comentário" · "quer que monte uma enviando direto pro grupo?" · "me envia o link de convite do grupo que eu coloco" |
+| qua 14/10 · 11:17 | Gui | reenvia o convite "Outubro- Conselho do Cigano" (`chat.whatsapp.com/IVUsj5LpC8AECMIJibXIVv`), mesmo texto do §11.3 |
+| qua 14/10 · 11:18 (áudio 0:42) | Gui | "Ô Vitão, acho que dá até para criar uma arte para rodar baseado nesse textinho aí, sabe, que eu estou enviando em alguns grupos e tal, envio para algumas pessoas. O grupo até está com uma galerinha legal [...] E aí por enquanto o que? Estou enviando ali os conselhos, depois eu vou começar a bater um papo com a galera do privado, dar alguns presentinhos para eles e tal, então estou dando prioridade para colocar gente, sabe, do autoconhecimento, espiritualidade ali dentro, sabe?" |
+| qua 14/10 · 12:02 | Victor | "Feshow" · "Faço aqui o criativo" |
+
+### 12.2 O que isto estabelece
+
+- **Fato:** o Gui confirmou em 12/10 a regra do quiz-filtro (mentora → grupo). Ele disse que ia testar; **não há registro do resultado do teste.**
+- **Fato:** nenhuma campanha leva ao grupo hoje. O que roda é o reel que chama para comentário (declaração do Victor, 14/10 11:15; conta **não relida** nesta tarefa).
+- **Fato:** o Gui pediu uma arte baseada no texto do convite e o Victor assumiu fazer o criativo enviando direto para o grupo.
+- **Fato:** o plano do Gui para o grupo é captação: conselhos no grupo → conversa no privado → "presentinhos". Prioridade declarada: gente do autoconhecimento e da espiritualidade.
+- **Leitura (não confirmada):** o Gui trata o grupo como topo do funil da linha do terapeuta (DEC-2026-10-08-001, item 4). O "presentinho" e a oferta seguinte não foram descritos.
+
+### 12.3 Conferência do que está no ar (14/10, leitura por HTTP)
+
+| URL | Estado | O que faz com quem marca "Mentora" |
+|---|---|---|
+| `professorguilhermearaujo.com.br/permissao/` | no ar · Pixel `1259363302489132` e Apps Script configurados | **segue para a oferta original, não para o grupo** (config sem `link_grupo_mentoras`) |
+| `professorguilhermearaujo.com.br/permissao-mentoras/` | no ar · mesmo Pixel e Apps Script | **vai para o grupo** `chat.whatsapp.com/IVUsj5LpC8AECMIJibXIVv` |
+| `professorguilhermearaujo.com.br/teto-mentoras/` | no ar (HTTP 200) | não conferido em detalhe |
+
+🔴 **O link mandado ao Gui em 10/10 18:32 é o `/permissao/`, que não tem o filtro.** Se ele testou por esse link marcando "Mentora", caiu na oferta e não no grupo. Corrigir com ele mandando o `/permissao-mentoras/`.
+
+### 12.4 Pendências
+
+| Dono | Pendência |
+|---|---|
+| Victor | Mandar ao Gui o link certo (`/permissao-mentoras/`) e perguntar o resultado do teste |
+| Victor | ~~Criativo para o grupo do Conselho~~ **feito em 14/10** (`01 - Criativos/Conselho do Cigano - grupo 2026-10-14/`), destino: link direto do grupo. Falta subir |
+| Gui | Dizer qual é o "presentinho" e o que oferece no privado depois do grupo |
+| Gui | Decidir o pós-outubro do grupo (pendência do §11.7, ainda aberta) |

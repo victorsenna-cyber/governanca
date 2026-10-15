@@ -1,5 +1,7 @@
 # CALENDÁRIO DE LOTES — Workshop "Seu Eixo" (nome confirmado 08/07)
 
+> STATUS: HISTÓRICO · **workshop encerrado** (Victor, 08/10/2026 — `../DECISOES.md`) · não usar como fonte.
+
 > Calculado em 08/07/2026 pela lógica do `METODO-TRAFEGO-PAGO.md` (§2.3 estágios + §7.2 aprendizado). **Status: CONFIRMADO pelo Victor em 08/07** — registrado em `DECISOES.md`, propagado à `OFERTA-CANONICA.md` e ao plano da página.
 > Âncoras fixas: turma fim de semana **14-15/08** · turma meio de semana **19-21/08** · campanha no ar **15/07** (premissa: página refeita + pixel verdes até 14/07; se atrasar, tudo desliza junto, ver §5).
 

@@ -3,7 +3,7 @@
 > ⚠️ **NOTA DE SUPERAÇÃO (27/08/2026).** Este plano foi escrito em 22/07, **antes** da refutação do Victor do mesmo dia. Onde ele diz que a campanha A rodou com "tracking quebrado", **leia: o tracking estava validado.** A causa real do 0 IC foi **Lead 0** — a página não convertia (140 PageViews, 5 cliques no CTA, 0 inscrições). O pixel PagTrust fora do produto era falha real e foi corrigida, mas não era a causa. Fonte: `LOG-DECISOES.md`, linha "REFUTAÇÃO". **A regra de ouro deste plano continua válida como higiene; o gate que protege verba de verdade é o de conversão.**
 
 
-> STATUS: VIGENTE · criado 00:05 de 22/07 (Cowork) · fonte: call Victor+Débora 21/07 + incidente de tracking 21/07.
+> STATUS: HISTÓRICO · **workshop encerrado** (Victor, 08/10/2026 — `../DECISOES.md`) · não usar como fonte · ~~VIGENTE · criado 00:05 de 22/07 (Cowork) · fonte: call Victor+Débora 21/07 + incidente de tracking 21/07.~~
 > **Contexto:** Cenário B AUTORIZADO pela Débora (R$3.500 total · diária ~R$117 · até 3 conjuntos · thresholds normais — kill em 3 dias). Causa-raiz do 0 IC corrigida (pixel PagTrust agora no produto). Ver LOG-DECISOES 21/07.
 > **REGRA DE OURO:** testar o tracking end-to-end ANTES de deixar a campanha B gastar. Não repetir 18–21/07 (3 dias / R$233 sem sinal de conversão chegando à Meta).
 

@@ -1,5 +1,7 @@
 # Dados operacionais das páginas
 
+> 🔴 **Conferido na URL em 13/10/2026:** P1 e P2 em produção ainda são o deploy de **11/08** (número de 12 dígitos, `isPreview: true`, sem popup). As correções de 19/08 existem só no repositório. A página do evento nunca foi publicada. **Destino novo (DEC-032, 13/10): o domínio dela na Hostinger**, em `/ingles/`, `/portuguese/` e `/experience/`; passos em `DEPLOY-HOSTINGER.md`. As URLs da Vercel abaixo passam a ser legado, a redirecionar. Registro: `DECISOES.md`, CORR-2026-10-13-030.
+
 > **Fontes:** decisões de Victor em 24/07/2026 + conversa da Jéssica em 28/07/2026
 > **Status:** Página 1 publicada em produção como prévia segura; ativação do WhatsApp e da planilha pendente
 

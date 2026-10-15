@@ -359,7 +359,7 @@ flowchart LR
 | Ação | Dono |
 |---|---|
 | **Ladies Fluency Experience, 1ª edição · janeiro de 2027 (preferência: 20/01), Florianópolis, local a confirmar** | Jéssica |
-| **Turma 1 de Lapidação aberta**, com início declarado no palco | Jéssica |
+| **English Therapy, turma 1, aberta na sala**, com início declarado (~~Lapidação~~: nome retirado em 13/10, DEC-028) | Jéssica |
 | Registro em foto e vídeo do evento → alimenta o pilar de prova por meses | Jéssica |
 | Escalar o que provou CPA saudável (Google e/ou Meta); matar o que não provou | Continuum |
 | Decisão de capacidade: agenda ≥ 80% cheia → subir preço de novas matrículas e/ou abrir lista de espera; priorizar grupos/duplas (melhor R$/hora dela) | Jéssica + Continuum |
@@ -684,6 +684,26 @@ Na call de 22/09 a Jéssica apresentou para onde o inglês dela vai, e o evento 
 ### 16.6 O que este ciclo não vai fazer
 
 Não usa tráfego pago antes de a data existir. Não usa verba em dezembro. Não anuncia número de vagas antes de o local existir. Não lança o English Therapy antes de fevereiro. Não abre segunda edição do evento. Não abre nenhuma das frentes do próximo ciclo.
+
+---
+
+## 17. Revisão 7 · 13/10/2026
+
+### 17.1 A divulgação tem calendário, e ele cabe em três posts por semana
+
+De 13/10/2026 a 31/01/2027, dezesseis semanas, **três publicações por semana no total**: duas peças escritas e um reel dela. A fatia do evento sobe de 1 para 2 no anúncio da data e para 3 em janeiro. Calendário e textos em `conteudo-instagram/` (versão 2); para ela, em `entregas-cliente/Plano-de-Divulgacao-Ladies-Fluency-Experience.pdf`.
+
+### 17.2 O que se vende na sala tem um nome só
+
+**English Therapy, turma 1.** O nome *Lapidação* sai. A comunidade fica fora do pitch até ter nome que sirva a homens e mulheres. Preço e data de início são dela, e fecham até o primeiro ensaio do pitch (proposta: R$ 4.997, semana de 22/02/2027).
+
+### 17.3 O funil de resposta direta entra no próximo ciclo, não neste
+
+A conversa aberta na call de 22/09 fica para a primeira semana de fevereiro, com os números do evento. O evento faz o papel de primeira validação: testa a promessa numa sala, abre a turma e produz a prova que o funil precisaria. Explicação para ela em `entregas-cliente/Funil-de-Resposta-Direta-Jessica.pdf`.
+
+### 17.4 As três páginas precisam ir ao ar
+
+As correções de 19/08 nas páginas 1 e 2 e a página do evento ainda não estão em produção. **Nenhuma métrica do §7 que dependa de página existe antes disso.**
 
 ---
 

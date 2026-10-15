@@ -265,3 +265,127 @@ Ele registrou a aprovação do esqueleto como não verificável no perímetro de
 O A5 classificou o *"muito"* de *"seria muito reducionista"* como acréscimo nosso e **ofereceu a palavra como compensação de dose**; o juiz repassou. **Fui à fonte: é verbatim dela em `E30-19`.** O gerador recusou cortar e registrou.
 
 🔴 **A fronteira que isto institui: auditor de slop não classifica procedência.** O A5 mede linguagem; dizer o que é verbatim e o que é acréscimo é rubrica do A3 — que não foi consultado nesse ponto. Se o gerador tivesse obedecido, teríamos removido fala da expert com base numa atribuição errada, **com o registro dizendo que dois aprovaram.**
+
+---
+
+# RETOMADA 08/10/2026 — G3 → G4 → G5 → G6 → juiz global
+
+> **Pedido do Victor (08/10):** ir até o fim sem parar entre blocos · briefing atualizado em 08/10 (D03 "mais de 80 pessoas", D09 Jacque e Bia autorizadas, D29 R$ 4.000 / 3 meses, D31 quarta 16/12; fonte `REGISTRO-WHATSAPP-2026-10-07.md`) · **modelo explícito por disparo** (economia de token) · contagem, diff e varreduras por script, sem agente.
+> **Artefatos aprovados que entram na carga:** `G1-MECANISMO.md` · `G1-APELIDO-HOMOLOGADO.md` · `G2-TESE-v3.md` (bloco 3 fechado, `CONFERENCIA-FINAL-BLOCO-3.md`).
+> **Isolamento (defeito 4 resolvido por mecanismo):** o orquestrador extrai os blocos `FALA` de cada texto por script para `<ARQ>-FALA.md` antes de disparar os auditores.
+
+| # | Hora | Agente | Modelo | Etapa | Bloco | Arquivo | Veredito |
+|---:|---|---|---|---|---|---|---|
+| 24 | 12h00–12h04 | `vsl-g3-historia` | opus | esqueleto | 2 · história (D10–D12) | `G3-HISTORIA.md` | ✅ entregue · 7 momentos comprimidos (busca omitida, fundo do poço = `[[ FALTA ]]`) · D11 volta no tempo de propósito · **bloco ~320 com lacunas vazias, contra piso 330** · 8 `[[ FALTA ]]` · 2 conflitos de fonte com o briefing (E30-40, E30-37) |
+| 25 | 12h10 | **orquestrador** | — | aprovação do esqueleto | 2 | — | ✅ **APROVADO com 3 decisões** (abaixo) · alçada delegada 02/10 |
+
+### Aprovação do esqueleto do bloco 2 — conferências e decisões
+
+| # | Conferência | Resultado |
+|---:|---|---|
+| 1 | Ordem e dose contra a base | ✅ D10 → D11 → D12 · alvos dentro das faixas · **déficit só onde há `[[ FALTA ]]`** (D10 ~210/225, D12 ~50/55) — lacuna de FATO, não de escrita. **Segue declarado; não se enche com plausível** |
+| 2 | Apelido fora da história | ✅ zero menções (zona de silêncio) |
+| 3 | Procedência | ✅ todo beat com ID e grau; o que falta virou `[[ FALTA ]]` |
+| 4 | Números de D12 | ✅ 60 + 20 + 6 sustenta *"mais de 80"* de D03; "compraram", nunca "fizeram" (REGISTRO 07/10 §1.1) |
+| 5 | Texto antes do esqueleto aprovado | ✅ nenhum |
+
+**Decisões do orquestrador:**
+1. 🔴 **A reação do colega (*"Como é que você não me mostrou isso antes?"*, grau `R`) SAI.** É fala de terceiro sem autorização e funciona como depoimento — exceção que nunca segue (procedência). O beat c fica só com a parte `D`. Entra `[[ FALTA 4 ]]` pedindo autorização do caso.
+2. **E30-40 fora de D10** ✅ (já consumido em D13 congelado). **E30-37 (*"artesanal na mentoria"*) refere-se à Maestria Natural** — conflito de procedência no briefing §5 D23. **Vai ao G4 como restrição:** D23 não usa E30-37 sem fonte que o ligue ao Eneagrama para líderes.
+3. **D11 volta no tempo** ✅ — estrutura nossa (REGRA Nº 0), com frase de passagem.
+| 26 | 12h10–12h16 | `vsl-g3-historia` | opus | texto | 2 | `G3-HISTORIA-TEXTO.md` | ✅ entregue · decisões 1–3 aplicadas · reação do colega fora |
+| 27 | 12h17 | **orquestrador** (script) | — | extração + contagem | 2 | `G3-HISTORIA-FALA.md` | ✅ **D10 186** (🔴 abaixo de 225, só lacuna de fato) · D11 63 ✅ · D12 64 ✅ · **bloco 313/330** declarado · varredura de veto: 0 travessão, 0 apelido, 0 léxico vetado |
+| 28 | 12h18 | **A1–A6** | A1 sonnet · A2 opus · A3 sonnet · A4 opus · A5 sonnet · A6 sonnet | auditoria em paralelo | 2 | `A*-BLOCO-2.md` | ⏳ |
+| 28 | 12h18–12h21 | **A1–A6** | A1 sonnet · A2 opus · A3 sonnet · A4 opus · A5 sonnet · A6 sonnet | auditoria em paralelo | 2 | `A*-BLOCO-2.md` | **A1 ✅ PASSA** · **A5 ✅ PASSA 44/60** · A2 🔴 (lição com duas causas D10×D12; contraste puxa para inventário; credencial solta) · **A3 🔴 procedência** ("Eu venho do corporativo de resultado" muda o sentido de E30-38; "trabalhei ao lado de líder" sem fonte; "me incomodava") · A4 🔴 (referente de "Essa necessidade é minha"; ponte de redator D10→D11; gravabilidade) · A6 informa: colega sem desfecho, D12 "se identificar" contradiz D05, ~40% de queda de retenção |
+| 29 | 12h22 | `vsl-juiz` | opus | juízo · devolução 1 de 2 | 2 | `JUIZ-BLOCO-2.md` | ⏳ |
+| 29 | 12h22–12h26 | `vsl-juiz` | opus | juízo · devolução 1 de 2 | 2 | `JUIZ-BLOCO-2.md` | 🔴 **O BLOCO VOLTA** · **12 sítios** (9 em D10) · **4 never-pass de procedência** (sítios 1, 3, 6, 9) · 10 divergências resolvidas · **FALTA 9 nova:** 60/20/6 se sobrepõem? · seguem declarados: colega sem desfecho, "por isso" em relação e não liderança, "se identificar" × D05, credencial repetida D03/D12 |
+| 30 | 12h27 | `vsl-g3-historia` | opus | correção · ciclo 1 | 2 | `G3-HISTORIA-TEXTO-v2.md` | ⏳ |
+| 30 | 12h27–12h33 | `vsl-g3-historia` | opus | correção · ciclo 1 | 2 | `G3-HISTORIA-TEXTO-v2.md` | ✅ 12 sítios + FALTA 9 · 4 discordâncias registradas (sítios 6, 8, 10, 11), todas corrigidas como mandado |
+| 31 | 12h34 | **orquestrador** (script) | — | extração + diff + varredura | 2 | `G3-HISTORIA-v2-FALA.md` | ✅ D10 181 · D11 72 (teto 70, tolerância do juiz até 80) · D12 56 · bloco 309 · diff confina a mudança aos 12 sítios · varredura: 0 travessão, 0 apelido, 0 léxico vetado, 3 never-pass extintos por string |
+| 32 | 12h35 | **A1–A6** | mesma tabela do disparo 28 | auditoria · ciclo 2 (última) | 2 | `A*-BLOCO-2-CICLO-2.md` | ⏳ |
+| 32 | 12h35–12h40 | **A1–A6** | A1 sonnet · A2 opus · A3 sonnet · A4 opus · A5 sonnet · A6 sonnet | auditoria · ciclo 2 | 2 | `A*-BLOCO-2-CICLO-2.md` | **A5 ✅ 44/60** · A1 🔴 (D10 não cobre "muitos passos"/"artesanal" do briefing → **defeito de ORIGEM, meu**) · A2 🔴 (colega e credencial soltos; contraste mistura duas medidas; D12 "se identificar" × D10) · **A3 🔴 procedência: "Muita gente" — fonte diz "algumas pessoas"** · A4 🔴 (4 ambiguidades: mentoria "juntos", "o que falava dela", 18 palavras antes do verbo, "a quem… se identificar com") · A6: credencial contradiz argumento; história sem cena de liderança |
+| 33 | 12h41 | **orquestrador** | — | correção de defeito de origem | — | `BRIEFING-VSL.md` D10 · D23 | ✅ E30-40 e E30-37 tachados com a razão (o G3 tinha apontado no esqueleto, eu homologuei e **não corrigi a origem** — o A1 cobrou do texto um conteúdo que o próprio orquestrador já tinha retirado). D23 ganha `[[ FALTA ]]` |
+| 34 | 12h42 | `vsl-juiz` | opus | juízo · **devolução 2 de 2 (final)** | 2 | `JUIZ-BLOCO-2-CICLO-2.md` | ⏳ |
+| 35 | 12h45–12h48 | `vsl-juiz` | opus | veredito final | 2 | `JUIZ-BLOCO-2-CICLO-2.md` | 🔴→✅ **passada final de 1 sítio** (P1: "Muita gente" → literal "Algumas pessoas") · o defeito decisivo do A1 caiu com o briefing corrigido · **11 itens seguem declarados** · o mais pesado: D12 "ajudei a se identificar" × D10 (pedir à Débora contagem que não seja de identificação de tipo) |
+| 36 | 12h49 | `vsl-g3-historia` | opus | passada final | 2 | `G3-HISTORIA-TEXTO-v3.md` | ✅ 1 linha alterada (diff do orquestrador) · fonte confere por grep `[30/09 13:45:22]` "algumas pessoas" · bloco 309 |
+| 37 | 12h50 | `vsl-auditor-procedencia` | sonnet | conferência do sítio P1 | 2 | `A3-BLOCO-2-PASSADA-FINAL.md` | ⏳ |
+| 38 | 12h50 | `vsl-g4-oferta` | opus | esqueleto | 4–5 · construção + oferta (D23–D36) | `G4-OFERTA.md` | ⏳ disparado em paralelo à conferência de 1 palavra do bloco 2 (risco nulo para o G4) |
+| 37 | 12h50–12h51 | `vsl-auditor-procedencia` | sonnet | conferência do sítio P1 | 2 | `A3-BLOCO-2-PASSADA-FINAL.md` | ✅ **PASSA** · ⚠️ a observação dele ("descobriam" seria erro de "descobriram") **não procede**: é o imperfeito habitual, concordante com "assistiam/paravam" — nada muda |
+| — | 12h52 | **orquestrador** | — | fechamento | 2 | `G3-HISTORIA-TEXTO-v3.md` | ✅ **BLOCO 2 FECHADO** · D10 181 (🔴 abaixo de 225, só por `[[ FALTA 1–5 ]]`) · D11 72 · D12 56 · **bloco 309/330 declarado** · 11 itens declarados em `JUIZ-BLOCO-2-CICLO-2.md` · 9 `[[ FALTA ]]` |
+| 38 | 12h50–12h55 | `vsl-g4-oferta` | opus | esqueleto | 4–5 · D23–D36 | `G4-OFERTA.md` | ✅ entregue · D33/D34 omitidos · 13 `[[ FALTA ]]` · 8 conflitos (C1–C8) |
+| 39 | 13h00 | **orquestrador** | — | aprovação do esqueleto + correção de origem | 4–5 | `BRIEFING-VSL.md` (OFERTA, §6) | ✅ **APROVADO com 5 decisões** (abaixo) |
+
+### Aprovação do esqueleto dos blocos 4–5 — decisões
+
+1. **C1 ✅** faixa da OFERTA corrigida na origem para **1.150–1.570** (a medida incluía D33/D34 omitidos).
+2. **C3 ✅** vale o `REGISTRO` 07/10 sobre o briefing §6: só as histórias estão abertas. Briefing corrigido.
+3. 🔴 **C4 — divergência de PREÇO sinalizada ao Victor, não resolvida por mim.** A âncora de D29 (R$ 4.000 / 3 meses / 10 vagas) vem de `OFERTA-CANONICA.md` §80, **decisão de 19/06** — e o `DECISOES.md` de 17/08 registra que ela foi **substituída** (grupo 4 meses, 16 encontros + 4 individuais, **R$ 6.000 cheio / R$ 4.000 pré-venda**; "os R$ 4.000/3 meses… nunca praticados"). **Preço é FATO (REGRA Nº 0) e âncora falsa é risco de promessa.** Segue com R$ 4.000 / 3 meses **porque é a instrução explícita e mais recente do Victor (08/10)** — e vai para a lista final como `[[ CONFIRMAR ]]` bloqueante de gravação.
+4. **D24:** o `[[ FALTA: FALA de D07 ]]` **sai** — não é fato da cliente; D07 ainda não existe e é o G5 que, escrevendo por último, não repete D24.
+5. **D32:** o lugar do botão é estrutura nossa → *"o botão aqui embaixo deste vídeo"*; sem `[[ FALTA ]]`. Valor da parcela, condição da garantia e período de acesso (valor diário de D36) **seguem `[[ FALTA ]]`** — dependem do checkout.
+C2 (seguir os 2 CTAs da base) ✅ · C5 (módulo entra "a gravar") ✅ · C6–C8 ✅.
+| 40 | 13h00–13h05 | `vsl-g4-oferta` | opus | texto | 4–5 | `G4-OFERTA-TEXTO.md` | ✅ entregue · 5 decisões aplicadas |
+| 41 | 13h06 | **orquestrador** (script) | — | extração + contagem | 4–5 | `G4-OFERTA-FALA.md` | CONSTRUÇÃO **235** (🔴 abaixo de 255, D23 63/95 só por `[[ FALTA ]]`) · OFERTA **1.217** ✅ (1.150–1.570) · apelido 2× (D26, D35) · 0 travessão · 0 léxico vetado · 2 CTAs |
+| 42 | 13h07 | **A1–A6** | A1 sonnet · A2 opus · A3 sonnet · A4 opus · A5 sonnet · A6 sonnet | auditoria em paralelo | 4–5 | `A*-BLOCO-4.md` | ⏳ |
+| 42 | 13h07–13h11 | **A1–A6** | A1 sonnet · A2 opus · A3 sonnet · A4 opus · A5 sonnet · A6 sonnet | auditoria em paralelo | 4–5 | `A*-BLOCO-4.md` | 🔴 **CINCO DE CINCO REPROVAM** · A1: recapitulação de 41 palavras em D30 fora da base · A2: **nível 3 afirmado como promessa (D30)** · D27 pressupõe que o líder já sabe o tipo · encontro "ao vivo" × "primeiro em 16/12" · A3: D23 sem ID · **D35 "passam a confiar mais" de DD-LEX-39 sem autorização** · Sistema/Espelho afirmados sem `[[ FALTA ]]` · âncora de fonte HISTÓRICO · garantia com condição inventada · A4: 4 voz + 6 gravabilidade · A5 **41/60** (contraste binário ×7) · A6: construção sem prova, bônus "minado" |
+| 43 | 13h12 | `vsl-juiz` | opus | juízo · devolução 1 de 2 | 4–5 | `JUIZ-BLOCO-4.md` | ⏳ |
+| 43 | 13h12–13h17 | `vsl-juiz` | opus | juízo · devolução 1 de 2 | 4–5 | `JUIZ-BLOCO-4.md` | 🔴 **O BLOCO VOLTA** · **19 ordens** · 3 never-pass: D23 l.5 some · D29 "é o meu tempo" some · **D30 "devolve em tempo e em desgaste" → moldura de EFEITO** · âncora R$ 4.000 passa (fonte = instrução do Victor) **+ `[[ CONFIRMAR ]]` dentro da FALA** · D27 amarrado à eliminação de D19 · D35 "confiar mais" **segue** (léxico grau D como desejo, G1 homologado — diverge do A3) · garantia segue (CDC) |
+| 44 | 13h18 | **orquestrador** | — | desvio declarado | 4 | `BRIEFING-VSL.md` §5 D30 | ✅ recapitulação curta = função do preço (ordem do juiz). **Régua do defeito 9 respeitada:** o §5 não está na carga do A6 (§2, §3, §8) |
+| 45 | 13h19 | `vsl-g4-oferta` | opus | correção · ciclo 1 | 4–5 | `G4-OFERTA-TEXTO-v2.md` | ⏳ |
+| 45 | 13h19–13h22 | `vsl-g4-oferta` | opus | correção · ciclo 1 | 4–5 | `G4-OFERTA-TEXTO-v2.md` | ✅ 19 ordens · 3 discordâncias registradas (moldura de efeito repetida de D22 → G5/juiz global; contraste residual em D28; "ajusta a forma de pedir") |
+| 46 | 13h23 | **orquestrador** (script) | — | extração + varredura | 4–5 | `G4-OFERTA-v2-FALA.md` | ✅ CONSTRUÇÃO 218 (D23 44, só `[[ FALTA ]]`) · OFERTA 1.246 · 3 `[[ CONFIRMAR ]]` na FALA · never-pass extintos por string · 40 linhas de diff |
+| 47 | 13h24 | **A1–A6** | mesma tabela do disparo 42 | auditoria · ciclo 2 (última) | 4–5 | `A*-BLOCO-4-CICLO-2.md` | ⏳ |
+| 48 | 13h25 | `vsl-g5-abertura` | opus | esqueleto | 1 · lead (D01–D09) + funil A | `G5-ABERTURA.md` | ⏳ disparado em paralelo ao ciclo 2 do bloco 4 · **aprovação do esqueleto só depois do bloco 4 fechado** (a ordem do método é preservada na aprovação, não no disparo) |
+| 47 | 13h24–13h29 | **A1–A6** | A1 sonnet · A2 opus · A3 sonnet · A4 opus · A5 sonnet · A6 sonnet | auditoria · ciclo 2 | 4–5 | `A*-BLOCO-4-CICLO-2.md` | **A1 ✅** · **A5 ✅ 47/60 (era 41)** · A2 🔴 (D27 eliminação pula passos 2–3 → "o produto classifica meu time"; dois pontos de entrada na pilha; "isso" de D30 prende o efeito ao instrumento) · **A3 🔴 procedência:** D35 "confiar mais" (diverge do juiz ciclo 1) · D27 uso do Sistema muda E30-28 · D28 formato de encontro sem fonte · D29 "acompanhamento meu, de perto" · A4 🔴 4 voz + 6 gravabilidade · A6: lacuna de ~10 semanas até 16/12 sem dizer o que acontece; escassez ambígua |
+| 49 | 13h30 | `vsl-juiz` | opus | **veredito final** · devolução 2 de 2 | 4–5 | `JUIZ-BLOCO-4-CICLO-2.md` | ⏳ |
+
+### 🔧 Defeito 10 do método (para a revisão do §7)
+~~O A6 reporta que `agentes/cetico.md` não existe~~ — 🔴 **conferido no disco às 13h31: o arquivo EXISTE** em `10-skills/copywriter-senior-continuum/agentes/cetico.md`. O defeito real é outro: **o auditor não achou o arquivo de base e seguiu só a descrição do papel, sem avisar até o fim** — provavelmente resolveu o caminho relativo a partir do diretório da conta. **Régua para a revisão do §7: as definições de agente citam caminho a partir da raiz da Governança, e o disparo informa a raiz** (já fazemos; o A6 ignorou). Os laudos do A6 desta retomada valem como leitura do papel, não da base.
+| 48 | 13h25–13h32 | `vsl-g5-abertura` | opus | esqueleto | 1 + funil A | `G5-ABERTURA.md` | ✅ entregue · lead ~510 (440–590) · funil A ~170 · zero apelido nos dois funis · 4 `[[ FALTA ]]` · 6 conflitos · **aguarda o bloco 4 fechar para aprovação** |
+| 49 | 13h30–13h34 | `vsl-juiz` | opus | veredito final | 4–5 | `JUIZ-BLOCO-4-CICLO-2.md` | 🔴→✅ **passada final de 2 sítios, ambos SUMIR:** D27 a frase da "eliminação" (o defeito **nasceu da ordem do juiz no ciclo 1** — 2º caso medido nesta rodada) · D30 "E repara no que isso costuma causar…" (teto: o "isso" prende o nível 3 à compra) · **D35 "confiar mais" SEGUE: o A3 errou o fato** (DD-LEX-39 existe, grau D, `BANCO.md` l.101) · seguem declarados: ordem Espelho × curso, hot seat, "acompanhamento de perto", 10 de voz do A4, repetições do A5, prazo/corte do A6, doses de D23/D29/D30-preço por lacuna |
+| 50 | 13h35 | **orquestrador** (script) | — | execução mecânica da passada final | 4–5 | `G4-OFERTA-TEXTO-v3.md` | ✅ **2 excisões literais dentro da FALA, nenhuma palavra acrescentada** (ordem "sumir" é execução, não escrita — economia de um disparo de ~230 mil tokens) · diff: exatamente 2 linhas · D27 318 ✅ · D30 118 (preço ~67, 🔴 abaixo de 70, declarado pelo juiz) · OFERTA 1.197 ✅ |
+| 51 | 13h36 | **orquestrador** | — | correção de origem | — | `BRIEFING-VSL.md` §3 nível 2 · §5 D24 | ✅ "confiar mais" entra no nível 2 com fonte · ID de "que se cobra" corrigido para DD-LEX-18 (R) |
+| — | 13h36 | **orquestrador** | — | fechamento | 4–5 | `G4-OFERTA-TEXTO-v3.md` | ✅ **BLOCOS 4–5 FECHADOS** · CONSTRUÇÃO 218 (🔴 D23 por `[[ FALTA ]]`) · OFERTA 1.197 · `[[ CONFIRMAR ]]` ×3 na FALA |
+| 52 | 13h37 | **orquestrador** | — | aprovação do esqueleto | 1 + funil A | — | ✅ **APROVADO** · C1 zero apelido no lead (G1 prevalece sobre a descrição genérica do papel) ✅ · C2 D07 com DD-LEX-28/-12/-05 ✅ · C5 "feedback" fora de D08 ✅ · C6 ✅ · **C3 e C4 (quiz usa "Nove Línguas"/"o seu time fala nove" e promete "sua maior alavanca") → FORA desta rodada**, vão à lista de pendências: corrigir o quiz antes da mídia do funil A · referência ao G4 atualizada para v3 |
+| 53 | 13h37 | `vsl-g5-abertura` | opus | texto | 1 + funil A | `G5-ABERTURA-TEXTO.md` | ⏳ |
+| 53 | 13h37–13h42 | `vsl-g5-abertura` | opus | texto | 1 + funil A | `G5-ABERTURA-TEXTO.md` | ✅ entregue · conferido contra D13–D36 (D02 reordenado para não repetir D26) |
+| 54 | 13h43 | **orquestrador** (script) | — | extração + varredura | 1 | `G5-ABERTURA-FALA.md` | ✅ lead B **505** (440–590) · troca do funil A 175 · 0 travessão · 0 apelido · 0 preço/produto (anti-venda) · ⚠️ FALTA 9 só na anatomia de D03 — vai aos auditores como está |
+| 55 | 13h44 | **A1–A6** | A1 sonnet · A2 opus · A3 sonnet · A4 opus · A5 sonnet · A6 sonnet | auditoria em paralelo | 1 | `A*-BLOCO-1.md` | ⏳ |
+| 55 | 13h44–13h48 | **A1–A6** | A1 sonnet · A2 opus · A3 sonnet · A4 opus · A5 sonnet · A6 sonnet | auditoria em paralelo | 1 | `A*-BLOCO-1.md` | **A1 ✅** (507; D09 abaixo do piso só por `[[ FALTA ]]`) · **A5 ✅ 44/60** · A2 🔴 **D08 "a conversa difícil deixa de ocupar a sua semana inteira" = nível 3 como promessa** · D07 pressupõe desengajamento · funil A sem o elo "você explicou" · A3 🔴 **"mais de 80": os 20 provavelmente estão nos 60, piso seguro 66** · D07 três linhas de espelho grau `I` · A4 🔴 **D06 "um teste resolve"** (teste entrega tipo = fere §3/§8) · gravabilidade · A6: funil A recapitula nos segundos 5–20; credencial "se reconhecer" × D05 |
+| 56 | 13h49 | `vsl-juiz` | opus | juízo · devolução 1 de 2 | 1 | `JUIZ-BLOCO-1.md` | ⏳ |
+| 56 | 13h49–13h54 | `vsl-juiz` | opus | juízo · devolução 1 de 2 | 1 | `JUIZ-BLOCO-1.md` | 🔴 **O BLOCO VOLTA** · 14 itens em 9 elementos · never-pass: D08 nível 3 (some) · D06 "um teste resolve" (sai a certeza, fica a exclusão) · D07 3 linhas grau `I` · **"mais de 80": basta `[[ CONFIRMAR ]]` na FALA** (mesmo critério da âncora) · ⭐ **o juiz previu o defeito que a própria ordem cria (D07 cairia a ~65) e já mandou recompor só com DD-LEX-28/-16/-05/-12** — primeira vez nesta rodada · ciclo 2 com perímetro congelado |
+| 57 | 13h55 | `vsl-g5-abertura` | opus | correção · ciclo 1 | 1 | `G5-ABERTURA-TEXTO-v2.md` | ⏳ |
+| 57 | 13h55–13h59 | `vsl-g5-abertura` | opus | correção · ciclo 1 | 1 | `G5-ABERTURA-TEXTO-v2.md` | ✅ 14 itens · 3 discordâncias (D07 recomposto com DD-LEX-16 volta a colidir com D24/D35; DD-LEX-12 citado pelo juiz não está em D01; D01A sem folga) |
+| 58 | 14h00 | **A1–A6** | mesma tabela do disparo 55 | auditoria · ciclo 2 (última) | 1 | `A*-BLOCO-1-CICLO-2.md` | ⏳ |
+| 58 | 14h00–14h05 | **A1–A6** | A1 sonnet · A2 opus · A3 sonnet · A4 opus · A5 sonnet · A6 sonnet | auditoria · ciclo 2 | 1 | `A*-BLOCO-1-CICLO-2.md` | **A3 ✅ procedência limpa** · **A5 ✅ 47/60** · A1 🔴 D02A 41/40 (1 palavra) · A2 🔴 **D06 "você pode começar só fazendo um teste" ainda fura o teto** (a correção do ciclo 1 trocou a certeza por um convite — mesmo vetor) · D07 desengajamento presumido · funil A sem virada · laço "sua maior alavanca" nunca fecha · A4 🔴 D06 (idem) · D04A "no próximo" sem referente · ⚠️ **ressalva A3: DD-LEX-04/-05 atribuídos a "líder Victor" — se for o Victor da Continuum, não é fala do ICP** → `[[ CONFIRMAR ]]` ao Victor |
+| 59 | 14h06 | `vsl-juiz` | opus | veredito final | 1 | `JUIZ-BLOCO-1-CICLO-2.md` | ⏳ |
+| 59 | 14h06–14h08 | `vsl-juiz` | opus | veredito final | 1 | `JUIZ-BLOCO-1-CICLO-2.md` | 🔴→✅ **corte final de 1 sítio (teto):** D06 " Para isso, você pode começar só fazendo um teste." — **3º defeito nascido de ordem do juiz nesta rodada, o juiz reconheceu** · seguem declarados: D02A 41/40, "seja qual for a sua alavanca", D01A sem virada, D04A "no próximo", D07 a 4 do piso, contrastes binários · D07 "desengajam" não reabre (DD-LEX-05 literal) |
+| 60 | 14h09 | **orquestrador** (script) | — | execução mecânica do corte | 1 | `G5-ABERTURA-TEXTO-v3.md` | ✅ 1 excisão literal na FALA · diff = 1 linha · D06 60 (55–75) · **BLOCO 1 FECHADO** · lead B ~488 + lacunas |
+| 61 | 14h10 | `vsl-g6-roteirista-fala` | sonnet | esqueleto (plano de marcação) | VSL inteira | `G6-ROTEIRO-PLANO.md` | ⏳ |
+| 61 | 14h10–14h15 | `vsl-g6-roteirista-fala` | sonnet | plano | VSL inteira | `G6-ROTEIRO-PLANO.md` | ✅ ≈3.422 palavras ≈20,1 min (alvo 3.500–3.900; déficit só nas lacunas) · 2 pontes faltando (D12→D13, D22→D23) · 31 FALTA/CONFIRMAR |
+| 62 | 14h16 | **orquestrador** | — | aprovação do plano | — | — | ✅ **APROVADO** · (a) "E" maiúsculo nas quebras ✅ · (b) [TELA] só com texto que a fala diz ✅ · (c) **números por extenso na fala** (teleprompter), algarismo só no [TELA] · **pontes: são ESTRUTURA (REGRA Nº 0), não fato → o G6 escreve as duas, ≤15 palavras cada, sem argumento novo, marcadas `[PONTE NOVA]` para o juiz global auditar** |
+| 63 | 14h17 | `vsl-g6-roteirista-fala` | sonnet | roteiro | VSL inteira | `G6-ROTEIRO.md` | ⏳ |
+| 63 | 14h17–14h22 | `vsl-g6-roteirista-fala` | sonnet | roteiro | VSL inteira | `G6-ROTEIRO.md` | ✅ ≈3.433 palavras · ≈20,2 min · 1 ponte nova (D22→D23, 11 palavras) · D12→D13 declarada desnecessária · 13 grupos de bloqueio de gravação |
+| 64 | 14h23 | **orquestrador** (script) | — | **diff por palavra: roteiro × os quatro textos aprovados** | — | — | ✅ **3.461 palavras aprovadas preservadas; só 4 diferenças:** "80"→"oitenta" (decidido) · a ponte nova · 2 linhas de legenda. **Uma legenda estava no corpo da fala (l.262) e seria lida no teleprompter** → convertida em `[NOTA, não se lê: …]` por script |
+| 65 | 14h24 | `vsl-juiz` | opus | **passada global** | VSL inteira | `JUIZ-GLOBAL.md` | ⏳ |
+| 65 | 14h24–14h32 | `vsl-juiz` | opus | **passada global** | VSL inteira | `JUIZ-GLOBAL.md` | ✅ **PRONTA COM BLOQUEIOS DE FATO** · procedência e teto limpos na peça inteira · gate §3 **PASSA COM DESVIO DECLARADO** · pivô único D16 (~34%) · apelido 6/6 · razão prova/promessa **1,5 contra 3** (travada em fato) · **24 perguntas** (17 Débora · 7 Victor) + 5 decisões do dono |
+| 66 | 14h33 | **orquestrador** (script) | — | correção mecânica de marcação (§6 do juiz global) | — | `G6-ROTEIRO.md` | ✅ blocos 8, 10 e 11 estendidos às frases que dependem deles (D18, D27, D29, D30) · **diff: só linhas `>>> BLOQUEIO <<<` movidas, zero palavra de fala** |
+
+## ✅ RODADA ENCERRADA — 08/10/2026, 14h35
+
+**Entregas:** `G6-ROTEIRO.md` (teleprompter, funil B + apêndice funil A, ≈3.433 palavras, ≈20 min) · `JUIZ-GLOBAL.md` · lista de perguntas em `JUIZ-GLOBAL.md` §8.
+**Pergunta 25, acrescentada pelo orquestrador (ressalva do A3, blocos 1):** DD-LEX-04 e DD-LEX-05 estão atribuídos no `BANCO.md` a um "líder Victor". **Se for o Victor da Continuum, não é fala do ICP** e o espelho de D07 ("o líder desengaja") perde a fonte `D`.
+**Modelos usados nesta retomada:** opus — G3, G4, G5, A2, A4, juiz (×7) · sonnet — A1, A3, A5, A6 (×4 ciclos cada), G6 · script (sem agente) — extração de FALA, contagem, varreduras de léxico, diffs, 3 passadas finais de "sumir", correção de marcação.
+
+### ⭐ O número que esta retomada confirma
+**Três defeitos nasceram de ordem do juiz** (bloco 4 D27 "eliminação", bloco 1 D06 "teste" ×2) — somados aos 7 em 17 do bloco 3. **Correção por ordem de juiz é a principal fonte de defeito novo do método.** Contramedida que funcionou: no bloco 1, o juiz previu o defeito da própria ordem (D07 abaixo do piso) e já ordenou a recomposição com fonte. **Candidata à revisão do §7:** o juiz declara, para cada ordem, o risco de defeito que ela cria.
+
+### 🔧 Defeitos do método registrados nesta retomada (para a revisão do §7)
+| # | Defeito |
+|---:|---|
+| 10 | o A6 não achou o próprio arquivo de base (`agentes/cetico.md` existe) e seguiu sem avisar até o fim |
+| 11 | o orquestrador homologou no esqueleto do G3 um conflito de fonte do briefing (E30-40/E30-37) **sem corrigir a origem** — o A1 cobrou do texto um conteúdo que o próprio orquestrador já tinha retirado. Régua: **conflito de fonte homologado no esqueleto corrige o briefing na mesma hora** |
+| 12 | "sumir" ordenado pelo juiz é execução, não escrita: o orquestrador executou por script (3×), com diff de 1–2 linhas, economizando um disparo de gerador por bloco. Deve virar etapa nomeada |
+| 13 | o G6 não tinha regra para legenda dentro do corpo da fala; uma nota seria lida no teleprompter. Régua: diff por palavra roteiro × aprovados é conferência obrigatória antes do juiz global |
+| 67 | 19h40 | **orquestrador** | — | registro | — | `_transcript-2026-10-08/` | ✅ transcrição bruta copiada a pedido do Victor: sessão principal + 48 subagentes nomeados por papel, bloco e ciclo (~26 MB) · README no padrão do `_transcript/` de 03/10 |
+
+- 23:28 · 2026-10-08 · CONSELHO [[ FALTA ]]: rodado em conselho/ (veredito ✅2 · 🧭10 · ❓12; conferência 24/24 OK). G6-ROTEIRO.md não alterado. Pendências: Victor confirmar os 🧭 e enviar MENSAGEM-DEBORA.md.

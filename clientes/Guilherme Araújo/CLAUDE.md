@@ -1,13 +1,22 @@
 # CLAUDE.md — KERNEL DA OPERAÇÃO GUILHERME
 
 > STATUS: VIGENTE · política local
-> Versão: 4.0-transição
+> Versão: 4.1 · 2026-10-08 — kernel local subordinado à Governança-pai; réplica aposentada (v4.0 íntegra em `10 - registros e arquivo/CLAUDE-v4.0-transicao-2026-10-08.md`)
 > Instalado em: 2026-07-19 · America/Sao_Paulo
 > Governança operacional: Continuum
 
 ## 1. Contrato deste arquivo
 
-Este é o único kernel do repositório inteiro. Ele governa como uma solicitação encontra política, decisão, estado, método, fonte, artefato e local de writeback.
+~~Este é o único kernel do repositório inteiro.~~ *(v4.0 — escrito quando esta conta era repositório próprio)* **Esta conta vive em `01 - Governança/clientes/Guilherme Araújo/`, e o kernel acima dela é o `../../CLAUDE.md`.** A fronteira é a do §6.2 de lá:
+
+| Quem governa | O quê | Onde |
+|---|---|---|
+| **Governança-pai** (`../../`) | **método, skill, política, alçada geral, gate** — o que carregar e em que ordem | `../../CLAUDE.md` §6 → `../../00-core/roteador/ARVORE-<X>.md` |
+| **Este kernel** | **como esta conta organiza fato, decisão, estado, voz, oferta e writeback** — e a exceção de execução dirigida (§8) | este arquivo + `MODUS-OPERANDI.md` + `DECISOES.md` + `STATUS.md` |
+
+🔴 **Regra de carga (08/10/2026):** pedido de **copy, anúncio, criativo, VSL, quiz, página ou mídia** desta conta roteia pela árvore da Governança (ESCRITA ou OPERAÇÃO), **mesmo com a sessão aberta nesta pasta.** Se `../../CLAUDE.md` não estiver acessível, **parar e pedir** — nunca usar a réplica antiga.
+
+Este arquivo governa como uma solicitação desta conta encontra decisão, estado, fonte, artefato e local de writeback.
 
 Este arquivo não é fonte de preço, promessa, produto, campanha, página vigente, métricas, IDs ou voz. Fatos do negócio permanecem nas fontes catalogadas e, enquanto não forem canonizados, recebem estado `A VALIDAR`.
 
@@ -61,7 +70,7 @@ Não misturar política, decisão, estado e artefato em uma fila única.
 
 ### 4.1 Política e método
 
-`ordem humana atual → este kernel → GOVERNANCA-REPO.md + SCOPE.md → método geral aplicável → skill/capacidade dominante → contrato da task → artefato`
+`ordem humana atual → ../../CLAUDE.md (política, alçada, roteador) → este kernel → GOVERNANCA-REPO.md + SCOPE.md → método da árvore da Governança → skill/capacidade dominante → contrato da task → artefato`
 
 ### 4.2 Fato e decisão de negócio
 
@@ -90,11 +99,11 @@ Os caminhos atuais abaixo continuam válidos para leitura. Os destinos 01–08 s
 | Pedido | Onde ler agora | Capacidade geral | Área de saída/writeback |
 |---|---|---|---|
 | decisão de produto, preço ou promessa | `CONTEXTO_NEGOCIO_GUILHERME.md`, `Ecossistema Guilherme Araújo.md`, `ESTEIRA_JORNADA_CONSTELACAO/`, `FUNIL_CONSTELACAO/` | classificação e contrato de decisão | `DECISOES.md`; futuro `02 - produtos e método/` ou `03 - ofertas e funis/` |
-| copy ou conteúdo | fonte/oferta catalogada; materiais em `Cartomancia Sistêmica/`, `CRIATIVOS/` ou subprojeto explícito | `00 - governança continuum/10-skills/copywriting-fable5.skill.md` + `stop-slop.skill.md`; voz somente por overlay validado | artefato contratado + diário; não iterar por padrão |
-| peça-mestra | fontes da oferta + contrato explícito | capacidades de copy + `copywriting-avancado.skill.md` | artefato contratado + auditoria |
-| página | `Páginas de vendas/`, `páginas script de vendas/` ou workspace explicitado | `METODO-PAGINA-DE-VENDAS.md` + `pagina-de-vendas.skill.md` | área original durante transição; futuro `04 - web design/` |
-| criativo de mídia | `MODUS-OPERANDI.md` + `CRIATIVOS/`, `01 - Criativos/` e oferta explicitada | `METODO-TRAFEGO-PAGO.md` + gestão de tráfego | área original durante transição; futuro `05 - design e criativos/` |
-| gestão Meta Ads | `MODUS-OPERANDI.md` + `meta-ads/` e `URLs ADS.txt`; dados atuais sempre `A VALIDAR` até verificação | `METODO-TRAFEGO-PAGO.md` + `gestao-trafego.skill.md` | diagnóstico ou ação proposta; futuro `06 - mídia paga/` |
+| copy ou conteúdo | fonte/oferta catalogada; materiais em `Cartomancia Sistêmica/`, `CRIATIVOS/` ou subprojeto explícito | **`../../ARVORE-ESCRITA`** → `../../10-skills/copywriter-senior-continuum/` (gate anti-slop no módulo 04) + `lexico-icp/` da conta (grau `D`); voz somente por overlay validado · ~~`copywriting-fable5` + `stop-slop`~~ *(legado desde 20/09)* | artefato contratado + diário; não iterar por padrão |
+| peça-mestra | fontes da oferta + contrato explícito | skill de copy da Governança (modo peça-mestra) · ~~`copywriting-avancado`~~ *(legado)* | artefato contratado + auditoria |
+| página | `Páginas de vendas/`, `páginas script de vendas/` ou workspace explicitado | circuito de página da Governança (`../../00-core/roteador/ARVORE-ESCRITA.md` §6, entrada pelo `gerador-web-designer-senior-continuum`) | área original durante transição; futuro `04 - web design/` |
+| criativo de mídia | `MODUS-OPERANDI.md` + `CRIATIVOS/`, `01 - Criativos/` e oferta explicitada | **linha de anúncio da `ARVORE-ESCRITA`**: `METODO-CONSTRUCAO-DE-CRIATIVOS-DR` + `EMPILHAMENTO-DE-HOOKS` / `LATERALIZACAO-DE-CRIATIVOS` conforme o caso + `METODO-TRAFEGO-PAGO` §4 (todos em `../../100-métodos/`) · matriz a partir de `../../30-comercial/trafego-clientes/_template/matriz-criativos.md` | área original durante transição; futuro `05 - design e criativos/` |
+| gestão Meta Ads | `MODUS-OPERANDI.md` + `meta-ads/` e `URLs ADS.txt`; dados atuais sempre `A VALIDAR` até verificação | `../../100-métodos/METODO-TRAFEGO-PAGO.md` + `../../10-skills/gestao-trafego.skill.md` (árvore OPERAÇÃO) | diagnóstico ou ação proposta; futuro `06 - mídia paga/` |
 | dashboard ou dados | `00 - Governança/index.html` é dashboard legado, não política; usar a fonte operacional explicitada | análise orientada pela fonte | futuro `08 - dados e dashboards/`; registrar data e limitação |
 | operação ou task | documentos raiz + `09 - operação/` + task explícita | classificação, execução contratada e compliance | diário, log, fila, status e handoff |
 | fonte bruta | PDFs, `arquivos aulas/`, mapas mentais, `insights/`, `Provas sociais/` ou arquivo listado no manifesto | extração/síntese sem alterar origem | síntese assinada; futuro `01 - contexto/` ou `02 - produtos e método/` |
@@ -107,14 +116,13 @@ Quando houver dúvida sobre localização, consultar:
 
 ## 6. Métodos, skills e overlays
 
-### 6.1 Réplica imutável
+### 6.1 ~~Réplica imutável~~ → réplica aposentada (08/10/2026)
 
-`00 - governança continuum/` contém cópias byte a byte de métodos e skills selecionados da Governança canônica. Essas cópias:
+~~`00 - governança continuum/` contém cópias byte a byte… somente mudam por task explícita de ressincronização, com manifesto e hashes.~~ *(vigente de 19/07 a 08/10)*
 
-- são somente leitura;
-- não recebem ajuste local, header, correção ou fatos do cliente;
-- não tornam exemplos, números, ferramentas ou referências internas em fatos deste repositório;
-- somente mudam por task explícita de ressincronização, com manifesto e hashes.
+**Por que caiu:** a task de ressincronização nunca rodou. Em 81 dias a réplica ficou sem o trio de criativos (20/09), sem a REGRA Nº 2 (22/09) e sem as árvores do roteador (26/09), e seguia mandando a copy para skills que estão no legado. **Imutabilidade sem mecanismo de sync é congelamento.**
+
+**Agora:** `00 - governança continuum/` contém só ponteiros; o conteúdo de 19/07, com o manifesto de hashes, está em `00 - governança continuum/_legado-2026-07/`. **Método e skill vêm da Governança-pai, pelo roteador.** O que a regra antiga protegia continua valendo: **fato do cliente nunca entra em método, e método nunca é editado a partir desta conta.**
 
 ### 6.2 Generalização obrigatória
 

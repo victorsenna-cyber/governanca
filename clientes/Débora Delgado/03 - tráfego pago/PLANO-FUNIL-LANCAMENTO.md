@@ -1,6 +1,6 @@
 # PLANO DO FUNIL COMPLETO — mês de lançamento · Seu Eixo · 18/07
 
-> STATUS: VIGENTE · fonte (operação do mês de tráfego) · criado 18/07 (Fable 5)
+> STATUS: HISTÓRICO · **workshop encerrado** (Victor, 08/10/2026 — `../DECISOES.md`) · não usar como fonte · ~~VIGENTE · fonte (operação do mês de tráfego) · criado 18/07 (Fable 5)~~
 > Deriva de: `MATEMATICA-REVERSA-LANCAMENTO.md` (fases/cenários) · `CALENDARIO-LOTES.md` (datas/contingências) · `criativos/COPY-CRIATIVOS-ESTATICOS.md` (copy, fonte) · método §§4-7. Precedência: DECISOES > OFERTA-CANONICA > matemática > este plano.
 > Relação com os outros docs: `TASK-EXECUTOR-MONTAGEM-CAMPANHA.md` = montagem inicial (F1, pausada) · **este doc = o mês inteiro** (o que entra, o que pausa, verba por fase e objetivo, mitigação) · `PLANO-CRIATIVOS.md` v2 = inventário das ~42 peças · `criativos/ROTEIROS-VIDEO-DEBORA.md` v2 = o que a Débora grava.
 > Propaga p/: PLANO-DE-MIDIA §2 (na assinatura) · LOG-DECISOES (cada ativação/kill/entrada) · TASK-EXECUTOR §8.

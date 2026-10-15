@@ -1,5 +1,7 @@
 # OFERTA CANÔNICA — Workshop "Eixo"
 
+> STATUS: HISTÓRICO · **workshop encerrado** (Victor, 08/10/2026 — `../DECISOES.md`) · não usar como fonte.
+
 > **Fonte única de verdade da oferta.** Toda página, criativo, anúncio, script e
 > mensagem deve referenciar este arquivo. Se houver divergência entre qualquer
 > material e este documento, **este documento prevalece** — atualize o material.

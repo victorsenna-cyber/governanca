@@ -1,6 +1,6 @@
 # MATEMÁTICA REVERSA + ESTRATÉGIA DE VERBA — lançamento agosto (16/07)
 
-> STATUS: VIGENTE · fonte (após assinatura Victor) · deriva de: PLANO-DE-MIDIA §1, CALENDARIO-LOTES, OFERTA-CANONICA §1-2
+> STATUS: HISTÓRICO · **workshop encerrado** (Victor, 08/10/2026 — `../DECISOES.md`) · não usar como fonte · ~~VIGENTE · fonte (após assinatura Victor) · deriva de: PLANO-DE-MIDIA §1, CALENDARIO-LOTES, OFERTA-CANONICA §1-2~~
 > **Decisão pendente: Victor escolhe cenário A ou B e assina a meta.** Assinada → preencher PLANO-DE-MIDIA §2 e destravar a montagem da campanha. Propaga p/: PLANO-DE-MIDIA §2 · LOG-DECISOES (abertura de campanha) · DECISOES (verba).
 
 ## 1. Fatos (calendário e economia)

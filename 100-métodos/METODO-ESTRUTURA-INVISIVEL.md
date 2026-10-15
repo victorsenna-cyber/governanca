@@ -2,6 +2,7 @@
 
 > **Tipo:** framework · secundário: método (§7), gate (§7.3) *(reclassificado 26/09/2026 por auditoria independente de leitura integral; antes: "método-raiz (camada 2)")* · **Instituído:** 13/09/2026 · **Alçada:** Victor
 > **Origem:** `900-criação-implementação-victor/DESTILACAO-VSL-FILEMON.md` F-31/F-32/F-33, destrinchado e estendido.
+> ⚠️ **Autoria do procedimento — hipótese (08/10/2026):** no podcast #046 o próprio Filemon credita o procedimento de rotular a intenção de cada frase para *bater um controle* a **"Alan sutan"** — transcrição automática, **provável Alen Sultanic**, não conferido (`900-criação-implementação-victor/criativos/DESTILACAO-CRIATIVOS-FILEMON-2026-10-08.md` §1-bis, C-37). **Filemon é a nossa fonte; a autoria original provavelmente não é dele.** Trocar a linha só depois de conferir a grafia.
 > 🔴 ⭐ **GALHO DE `METODO-DIRECT-RESPONSE.md` (tronco instituído 18/09/2026).** Este método foi escrito ANTES do tronco — os princípios gerais de resposta direta (40/40/20, hierarquia de lista, prova vence promessa, **done for you**) vivem lá e não se repetem aqui. **Em conflito, vence este arquivo: ele conhece a física do formato. Mas formato não revoga princípio — se aplicar este método parece exigir violar a fronteira de margem do DFY ou a régua de prova, o que está errado é a aplicação.**
 > **Transversal:** governa copy, benchmarking, VSL, página, anúncio, e-mail e mensagem. **Não pertence a nenhum formato.**
 > **Consome:** `METODO-BENCHMARKING.md` (a captura) · **Alimenta:** `10-skills/copywriter-senior-continuum/` (a escrita)
@@ -245,6 +246,7 @@ Duas limitações que precisam estar à vista:
 - **Não vira gate isolado.** É camada de análise e de construção; o gate continua sendo o do formato.
 - **Não substitui a régua de linguagem.** Sequência correta com frase morta continua morta — o gate anti-slop é ortogonal a este método.
 - **Não se aplica a documento interno.** Governança não persuade.
+- 🔴 **Não é a "modelagem preguiçosa"** *(08/10/2026)*. A fonte #046 descreve três formas de modelar anúncio (`900-criação-implementação-victor/criativos/DESTILACAO-CRIATIVOS-FILEMON-2026-10-08.md` §4-C): **preguiçosa** — mantém a mensagem do anúncio alheio e troca só gancho e formato — **é cópia de texto com roupa nova e está vetada** (REGRA Nº 2: texto nunca se copia); **estudiosa** — rotular a intenção de cada frase, tirar o esqueleto e escrever com as próprias palavras — **é este método**; **de outro nicho** — permitida como fonte "adjacente" do `METODO-DIRECT-RESPONSE.md` §2-bis, **declarada, e só se o que atravessa é estrutura**: IA reescrevendo o texto alheio para outro nicho não satisfaz isso.
 
 ---
 
