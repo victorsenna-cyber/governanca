@@ -3,6 +3,7 @@
 > **Tipo:** método · secundário: gate (§5), trilho (§3)
 > **Instituído:** 02/10/2026 · alçada Victor (*"aprovo, pode fazer"*) · ✅ **VIGENTE** — ~~🟡 vigência provisória~~ retirada pelo Victor no mesmo dia (*"tire o método de 'provisório', implemente o que precisa ser implementado e acabou"*). **Exceção declarada ao `CLAUDE.md` §7.1, item 4, por alçada do dono:** a primeira VSL (conta Débora) deixa de ser condição de vigência e passa a ser **a primeira revisão** — o que ela mostrar entra como versão nova deste arquivo (`CLAUDE.md` §8, REGRA Nº 1).
 > **Galho de:** `METODO-FUNIL-DE-VSL.md` (é a forma de executar a escrita do roteiro) · usa `METODO-MECANISMO-E-ONE-BELIEF.md`, `METODO-PONTOS-LOGICOS.md`, `METODO-DESTILACAO-DE-VSL.md` e a skill de copy
+> ⟲ **Revisão 1 (16/10/2026, alçada Victor), pelo primeiro uso (VSL da Débora): §5 e §6 reescritos, §8 novo.** Gate de fato antes do G1 · estrutura-base com função e tempo · A7 também sobre a estrutura · orçamento por rodada · auditoria proporcional · juiz não reabre decisão do dono.
 > **Os agentes:** fonte em `900-criação-implementação-victor/agentes-vsl/` · publicados em `.claude/agents/` (`vsl-*.md`, 13 arquivos). **Edita-se na oficina e copia-se para a publicação, nunca o inverso.**
 
 ---
@@ -141,7 +142,9 @@ Não leia o raciocínio de outro agente. Não leia este pedido como permissão p
 
 **Não se dispara o G1 sem:**
 - pilares **P1 e P4 passando** (`METODO-TESTE-DE-PILARES.md`)
-- **estrutura-base medida** — a referência escalada destilada elemento a elemento (`METODO-DESTILACAO-DE-VSL.md`)
+- **estrutura-base medida** — a referência escalada destilada elemento a elemento (`METODO-DESTILACAO-DE-VSL.md`) · ⟲ **16/10: com `função` e `tempo` por elemento e a linha do tempo de compreensão** (Etapas 5 e 7). Sem isso, o gerador copia o rótulo sem saber o trabalho do elemento, e o A7 mede contra limite inventado
+- 🔴 ⟲ **16/10 · GATE DE FATO: nenhuma lacuna de fato aberta.** Cada `[[ FALTA ]]` sai **decidido** (REGRA Nº 0, quando é estrutura), **contornado** com o que o repositório já tem, **cortado**, ou **respondido** antes do primeiro gerador. *Origem: na Débora, as rodadas 1 e 2 (02 a 13/10) foram escritas com 24 lacunas abertas e terminaram as duas em "não grava"; a rodada 3, depois de "não perguntamos mais nada, contornamos", fechou em um dia.*
+- 🔴 ⟲ **16/10 · A7 SOBRE A ESTRUTURA:** a estrutura da conta (`ESTRUTURA-VSL-*.md`) e os esqueletos passam pelo **A7 em modo estrutura** (nível de consciência, veículo, eixo e congruência com o produto da expert) **antes de qualquer texto**. *Origem: o nível de consciência errado e a crítica ao produto da Débora nasceram na estrutura de 30/09 (D01 e D05) e só foram pegos no texto, três rodadas depois.*
 - **briefing** com promessa e teto, oferta com a pilha real, falas com ID e grau, regras de linguagem e skill de voz
 
 **Régua de veto (vai na tabela do gate de congruência):**
@@ -151,16 +154,49 @@ Não leia o raciocínio de outro agente. Não leia este pedido como permissão p
 - 🔴 texto escrito **antes do esqueleto aprovado**
 - 🔴 bloco que segue com defeito de **procedência** ou de **promessa acima do teto** (nunca seguem, nem no teto de devoluções)
 - 🔴 **rodada fechada sem `COMPOSICAO-VSL.md` + `.pdf` (≤ 2 páginas) na pasta da VSL** (§4.4, 16/10)
+- 🔴 **G1 disparado com lacuna de fato aberta**, ou com estrutura-base **sem função e tempo** (16/10)
+- 🔴 **rodada acima do orçamento (§6) sem reporte ao Victor antes de seguir** (16/10)
+- 🔴 **juiz que reabre decisão registrada do dono** sem subir a divergência ao Victor (16/10)
 - 🔴 **peça gravada sem o laudo do A7 sobre a versão final**, ou com veto do A7 aberto: o ouvinte frio não sabe **em até 1:00 o que é** (o veículo), **em até 1:30 para quem é**, ou descobre o produto **só na oferta** · afirmação de disponibilidade/prazo falsa contra o briefing · crítica ao que a própria expert vende (16/10)
 
 ---
 
-## 6. CUSTO
+## 6. CUSTO E ORÇAMENTO *(reescrito 16/10/2026, revisão 1)*
 
-Seis gerações em duas etapas + seis auditorias por bloco nos quatro blocos centrais + passada global ≈ **35–40 execuções de agente.** **É o preço de cada peça ser criada e auditada por quem não a escreveu.** Para baratear sem perder o isolamento: o briefing único (cada agente lê um arquivo, não redescobre a conta) e os auditores em paralelo.
+~~Seis gerações em duas etapas + seis auditorias por bloco nos quatro blocos centrais + passada global ≈ 35–40 execuções de agente.~~ **Medido na primeira VSL (Débora, 02 a 16/10): cerca de 290 disparos registrados em três rodadas, e uma segunda conta para terminar.** O desenho estava certo no isolamento e errado na proporção. Cada agente custa de 75 mil a 300 mil tokens só para ler o contexto.
+
+**Orçamento por peça:**
+
+| Etapa | Agentes | Teto |
+|---|---|---|
+| Bloco **novo** (texto que não existia) | gerador + **A2, A3, A4** em paralelo + juiz · A1 e A5 **por script** sempre que possível (contagem e léxico) · A6 só na peça inteira | 1 ciclo + 1 devolução |
+| **Delta** (troca de frases numa peça já auditada) | **um gerador** + **A3** (procedência) + **o auditor do que a troca toca** (A4 se há fala nova; A2 se muda a cadeia; A7 se mexe em lead ou oferta) | 1 ciclo · a segunda reprovação **fecha por corte**, nunca por nova rodada |
+| **Peça inteira** | **A7** (compreensão e coerência) + juiz na passada global | 1 |
+| **Mecânico** (contagem, montagem, PDF, composição, linha do tempo, diff) | **script**, nunca agente | — |
+
+🔴 **Passou do teto, para e reporta ao Victor** com o custo até ali e o que falta. Nunca segue por conta própria.
+
+**Para baratear sem perder o isolamento:** o briefing único, os auditores em paralelo, e **um gerador só para um delta que atravessa blocos** (ele carrega as regras dos geradores envolvidos), em vez de um por bloco.
 
 ---
 
 ## 7. O QUE ESTE MÉTODO NÃO FAZ
 
 Não escolhe a referência (isso é a `METODO-DESTILACAO-DE-VSL.md`), não decide promessa nem oferta (decisões do Victor, registradas antes — `REGRA Nº 0`), e **não dispensa a revisão pelo primeiro uso**: a primeira VSL produzida por ele (Débora) tem o `LOG.md` lido no fim — devolução recorrente, auditor que nunca reprova ou etapa pulada viram versão nova deste método.
+
+---
+
+## 8. REVISÃO 1 — o que a primeira VSL ensinou (16/10/2026)
+
+> O §7 manda ler o `LOG.md` da primeira VSL no fim: *"devolução recorrente, auditor que nunca reprova ou etapa pulada viram versão nova deste método"*. Trilha: `clientes/Débora Delgado/12 - Direct Response/vsl/2026-10-02/LOG.md` e `2026-10-11/LOG.md` · conversa: `2026-10-11/TRANSCRIPT-SESSAO-2026-10-15-16.md`.
+
+| # | O que aconteceu | O que mudou |
+|---:|---|---|
+| 1 | Duas rodadas escritas sobre 24 lacunas de fato que a cliente não ia responder; as duas terminaram em "não grava" | gate de fato antes do G1 (§5) |
+| 2 | A estrutura copiou o rótulo `contrarian` da referência sem saber o que ele fazia para o ouvinte; o lead nasceu falando a quem já conhece o Eneagrama | destilação com função e tempo (`METODO-DESTILACAO-DE-VSL`, Etapas 5 e 7) · o gerador recebe o trabalho do elemento |
+| 3 | A peça criticava o produto da própria expert (teste de comportamento); seis auditores de bloco e dois juízes não viram | auditor **A7**, peça inteira, também sobre a estrutura (§2, §3, §5) |
+| 4 | O veículo do curso só ficava claro aos 4:45, e o produto aos 14 min | o A7 mede por tempo, contra a linha do tempo da referência |
+| 5 | Cerca de 290 disparos e uma segunda conta | orçamento e auditoria proporcional (§6) |
+| 6 | O juiz reabriu decisões do dono (o burnout entrou, saiu e voltou a ser discutido) | juiz não reabre decisão registrada do dono (§5) |
+| 7 | O gerador "explicou por que não" em vez de executar uma decisão de estrutura | o disparo de delta leva as decisões como contrato; gerador não decide estrutura |
+| 8 | Ninguém via a peça inteira | composição da VSL em 2 páginas (§4.4) |

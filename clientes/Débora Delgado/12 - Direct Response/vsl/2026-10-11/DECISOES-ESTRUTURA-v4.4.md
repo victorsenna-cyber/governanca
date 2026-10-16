@@ -17,3 +17,15 @@
 
 **Não muda:** a promessa, a oferta, o preço, a pilha, as datas, a decisão de nível de consciência (§12 #18), o D16 (computador), a história (D10) além da definição de *"sete"*.
 **Veto que vale para toda troca:** nada de *"tipo"* ou de vocabulário de quem já conhece o Eneagrama no lead antes de o veículo ser apresentado; nenhum nome de terceiro; nenhum tipo atribuído a liderado; nunca sugerir cura; promessa até o teto do §3.
+
+## ⟲ Calibragem pela R1 (16/10, depois da redestilação com função e tempo)
+
+| Marco | R1 | Limite para esta peça (R1 + 15 s; durações iguais, 20:42 × 20:43) | Muda o quê |
+|---|---|---|---|
+| Veículo | 0:00 (*"código secreto de quatro passos"*) | 0:15 | **E2 mantida, com desvio declarado:** a R1 abre pelo método; a nossa abre pela cena (o problema chega em 0:00, contra 1:25 na R1). **O veículo entra no D02 ou no D04, até ~0:55**, e o desvio de ângulo se declara. Junto com o Eneagrama, o D04 pode anunciar *"um caminho de quatro passos"* sem o apelido (o apelido é do D13) |
+| **Mecanismo em uma frase** | **1:09**, no contrarian | **1:24** | **E9 deixa de ser "fica como está":** o D05 passa a fazer o que o contrarian da R1 faz: **(1) tira a culpa do ouvinte** (já faz), **(2) entrega a tese em uma frase** (o problema não está na vontade da pessoa, está em como o pedido chega a quem funciona diferente de você), **(3) abre a curiosidade** que o D16 paga. Sem antecipar o computador nem o apelido |
+| Para quem é | 1:17 | 1:32 | **E4 muda:** só o *"para quem é"* tem régua (passa nos dois funis hoje, mas o encurtamento do D01A não pode empurrá-lo); **o "para quem não é" é ausente na R1** e sai do veto. Fica onde está |
+| Produto | 63% | — | passa |
+| Preço | 84,7% | 17:52 | 🟡 v4.3 em 18:09: o E8 (D27 mais curto) deve trazer o preço para dentro |
+
+**Leitura da R1 que o gerador leva junto** (`900-criação-implementação-victor/VSL/R1-FUNCAO-TEMPO-2026-10-16.md` §3): o contrarian só funciona porque o ouvinte **já usou a solução contestada** (no nosso caso: explicar de novo, cobrar mais firme, e não o Eneagrama) · a história põe a expert **no lugar exato do ouvinte**, com a dor dele (no nosso caso: a cena dos times, E6, é a que aproxima).

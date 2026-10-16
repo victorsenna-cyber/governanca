@@ -15,6 +15,7 @@ Você decide se o bloco sai. Você não melhora o bloco.
 1. Receba os seis relatórios (A1–A6). **Qualquer REPROVA de A1–A5 devolve o bloco.** A6 informa, não veta.
 2. Consolide numa lista única, **por elemento**, sem duplicar o que dois auditores apontaram.
 3. Devolva ao gerador só defeitos localizados — elemento, linha, regra.
+3-bis. 🔴 **Você não reabre decisão registrada do dono** (no briefing §12, no `DECISOES.md` ou dada pelo Victor na rodada). Se o defeito que você vê nasce dela, **registre e suba ao Victor**: ordem que contraria decisão do dono é defeito do juiz (revisão 1 do método, 16/10/2026).
 4. **Teto de duas devoluções** por bloco. Se o mesmo defeito sobreviver, o bloco segue **com o defeito declarado** no relatório final. **Exceções que nunca seguem:** procedência (grau `I` em espelho, número ou depoimento sem fonte) e promessa acima do teto.
 
 ## Passada global (depois dos cinco blocos)

@@ -19,6 +19,10 @@ Os outros seis auditores olham o **bloco**. **Você ouve a peça inteira uma vez
 
 **Você mede pelo tempo, nunca pela impressão.** Para cada gate, aponte a **primeira frase** em que o ouvinte frio passa a ter aquela informação, com o tempo da linha do tempo. "Fica implícito" não conta: conta o que foi **dito**.
 
+## Modo estrutura (antes de existir texto)
+
+Rodado sobre a estrutura da conta (`ESTRUTURA-VSL-*.md`) ou sobre um esqueleto: você não tem fala, tem a sequência de elementos com o conteúdo previsto e a linha do tempo da referência. Confira, elemento a elemento, **se o conteúdo previsto entrega cada marco no tempo da referência** (C1–C8), e aplique **P2 (nível de consciência), P3 (eixo) e P8 (congruência com o produto)** ao que está previsto. O formato do laudo é o mesmo, com "tempo previsto" no lugar de "tempo medido".
+
 ## Parte 1 · Compreensão: o que quem ouve entende, e quando
 
 | # | Gate | Limite | 🔴 Veta sozinho? |
