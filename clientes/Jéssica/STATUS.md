@@ -277,10 +277,13 @@ O número **funcionava com 12 dígitos** — o Victor abriu a conversa e caiu ce
 | **Três páginas no domínio dela (Hostinger)** | ✅ **no ar.** Victor, 16/10: *"testei todas as páginas e leads estão entrando na planilha"*. Fecha o item 2b do §10 (aberto desde 19/08) e a CORR-030 |
 | **Planilha de leads** | ✅ gravando nas três abas · link para a Jéssica: `https://docs.google.com/spreadsheets/d/1sgujPSCUs_sfvXRC-yChUbi6egguPpodCjAVMWNro3Y/edit` · ⚠️ compartilhada por link: recomendado restringir ao e-mail dela (contém nome e telefone de leads, LGPD) |
 | **Envio para ela** | 🟡 Victor enviando em 16/10: links das páginas, planilha, plano de divulgação e as cinco perguntas da mensagem 3 · **mensagem 4 (funil) segura até a DEC-029** |
-| **Domínio** | **A CONFIRMAR em arquivo.** Sem ele não se redirecionam as duas URLs da Vercel nem se corrige a imagem de compartilhamento |
-| 🔴 **17/10 (data antiga)** | é amanhã. Pergunta 1 da mensagem 3 checa se houve compra para essa data |
+| **Domínio** | ✅ **`jessicaoliveira.space`** · `/ingles/` · `/portuguese/` · `/experience/` (as três respondendo 200 em 16/10) |
+| **17/10 (data antiga)** | **premissa do Victor: ninguém comprou.** Não confirmado por ela (DEC-033) |
+| **Depoimentos** | nome e foto **borrados por padrão** (DEC-033). 🔴 **no ar ainda está a versão sem desfoque:** subir de novo o `hostinger/ingles.zip` (e o `experience.zip`, que ganhou a imagem de prévia com endereço completo) |
+| **Perguntas a ela** | das cinco, ficaram duas: **preço do English Therapy** e a **base de cálculo de receita**, que ela faz sozinha (`MENSAGENS-JESSICA-2026-10-13.md` §3-bis) |
+| **URLs antigas da Vercel** | 🟡 `redirecionar-vercel.sh` pronto · CLI deslogado |
 
-**Próximo passo e dono:** Jéssica responde as cinco perguntas · Victor passa o domínio e decide a DEC-029 · Continuum redireciona a Vercel e atualiza a imagem de prévia.
+**Próximo passo e dono:** Victor sobe `ingles.zip` + `experience.zip`, roda `npx vercel login` + `bash redirecionar-vercel.sh`, manda a 3-bis e decide a DEC-029 · Jéssica responde o preço da turma.
 
 ---
 

@@ -65,6 +65,37 @@
 
 ---
 
+## 3-bis · Versão de 16/10 — substitui a mensagem 3
+
+*Decisões do Victor em 16/10, que tiraram três das cinco perguntas:* **(1)** compra para 17/10 → **considerada não feita** (premissa, não fato confirmado) · **(3)** capacidade → ela já respondeu na call de 22/09: Casa Viva *"pra no máximo umas dez"*, *"quinze pessoas bem espremidas"*; Natureza tem *"um deck enorme"*, aberto, com risco de chuva, e ela ainda precisa ver o deck [22/09, linhas 761 a 797 do transcript] · **(4)** depoimentos → **nome e foto borrados por padrão** (DEC-033).
+
+*Sobra a 2 (preço da turma), que é fato dela, e a 5, que vira base de cálculo para ela mesma preencher. **O exemplo é inventado e diz isso.** Os preços são os da tabela dela de 28/07 (`OFERTA.md`); o custo de R$ 22 por pessoa é o do `STATUS.md` §2.*
+
+> mais duas coisas pra eu fechar a parte de número..
+>
+> **1.** o English Therapy que começa em fevereiro, depois da tua formação: quanto vai custar? minha sugestão pra turma que você abre na sala do evento é R$ 4.997, em até 12 vezes. fecha assim ou você ajusta?
+>
+> **2.** essa aqui você não precisa me responder, é pra você fazer a conta. são dados mais concretos com base no que você fatura hoje. vou te mostrar com um exemplo inventado, só pra você ver como funciona, e depois você troca pelos teus números:
+>
+> passo 1, quanto entra hoje das aulas:
+> 8 alunos de 1x por semana × R$ 497 = R$ 3.976
+> 3 alunos de 2x por semana × R$ 798 = R$ 2.394
+> 1 grupo de 3 × R$ 350 = R$ 1.050
+> total: R$ 7.420 por mês
+>
+> passo 2, quanto sai com os alunos que você vai encaminhar:
+> 4 alunos de 1x × R$ 497 = R$ 1.988 por mês a menos
+>
+> passo 3, o que cobre esse buraco:
+> cada vaga do evento a R$ 147 deixa uns R$ 125 pra você, tirando o custo por pessoa. pra cobrir R$ 1.988 seriam 16 vagas, todo mês. o evento se paga, mas não é ele que repõe a renda.
+> quem repõe é a venda na sala: uma matrícula de R$ 4.997 cobre dois meses e meio do que saiu.
+>
+> com os teus números, a conta te diz quantas matrículas na sala de janeiro deixam você tranquila pra encaminhar os alunos. se quiser me mandar o resultado, eu já coloco a meta do evento em cima dele..
+
+**Por que assim:** a pergunta 5 original pedia a ela um número sensível no grupo. A base de cálculo entrega a conta e deixa o número com ela; se ela devolver o resultado, a meta do evento sai com dado real (`STATUS.md` §4, aberta desde 11/08). **Leitura que o exemplo carrega, e vale com qualquer número dela:** o evento não repõe renda de aula; a venda na sala sim. É a razão de a turma precisar de preço antes de janeiro.
+
+---
+
 ## 4 · O funil
 
 *Anexo: `Funil-de-Resposta-Direta-Jessica.pdf`*

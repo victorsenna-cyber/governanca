@@ -475,6 +475,21 @@ Criar decisão sinaliza propagação; não autoriza publicar fora da tarefa vige
 
 ## Propostas — não vigentes
 
+### DEC-2026-10-16-033 — Páginas no domínio dela · depoimentos sem identidade · três perguntas fechadas
+
+| Campo | Registro |
+|---|---|
+| fato | **as três páginas estão no ar em `jessicaoliveira.space`** (`/ingles/`, `/portuguese/`, `/experience/`), testadas pelo Victor em 16/10: *"testei todas as páginas e leads estão entrando na planilha"*. Fecha a CORR-030 e o teste de fumaça aberto desde 19/08 |
+| decisão (Victor) | **depoimentos com nome e foto borrados, por padrão**, em página e em post. Vale até ela trazer autorização por escrito, aluna por aluna |
+| aplicado | 9 dos 15 prints da página 1 (02, 03, 05, 06, 09, 10, 12, 14, 15) + `depoimento-divisor-de-aguas.jpeg`, que não aparece na página mas era servido. Pixelado + desfoque, irreversível no arquivo publicado. **Originais intactos em `contexto/depoimentos/`.** 🔴 o domínio ainda serve a versão sem desfoque até o `ingles.zip` ser subido de novo |
+| premissa (Victor) | **ninguém comprou vaga para 17/10.** Registrada como premissa, não como fato confirmado por ela |
+| fato já respondido | capacidade: Casa Viva *"pra no máximo umas dez"*, *"quinze pessoas bem espremidas"*; Natureza com *"um deck enorme"*, aberto, risco de chuva, deck ainda não visto por ela (call 22/09). Vagas seguem sem número até o local (DEC-024) |
+| pergunta 5 → base de cálculo | em vez de pedir a receita no grupo, ela recebe a conta para fazer, com exemplo inventado e declarado como tal (`MENSAGENS-JESSICA-2026-10-13.md` §3-bis) |
+| aplicado também | `og:image` e `og:url` da página do evento com endereço absoluto · `redirecionar-vercel.sh` pronto (CLI da Vercel deslogado em 16/10) |
+| estado | ✅ vigente · 🟡 re-upload do `ingles.zip` e do `experience.zip` · 🟡 redirecionamento da Vercel |
+
+---
+
 ### PROP-2026-10-13-031 — O limite das "modificações inclusas por um ano"
 
 | Campo | Registro |
