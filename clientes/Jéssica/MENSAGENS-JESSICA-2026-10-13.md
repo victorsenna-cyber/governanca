@@ -17,6 +17,33 @@
 
 ---
 
+## 1+2 · Versão de 16/10 — páginas, planilha e plano, num envio só
+
+*Substitui as mensagens 1 e 2. Anexo: `Plano-de-Divulgacao-Ladies-Fluency-Experience.pdf`. 🔴 Antes de enviar, subir de novo o `hostinger/ingles.zip`: o domínio ainda serve os depoimentos sem desfoque (DEC-033).*
+
+> Jéssica, boa tarde! as páginas estão no ar, no teu domínio:
+>
+> evento: https://jessicaoliveira.space/experience/
+> inglês: https://jessicaoliveira.space/ingles/
+> português: https://jessicaoliveira.space/portuguese/
+>
+> a do evento já está com janeiro, Florianópolis e a pré-venda de R$ 147 até 29/11. o dia e o local entram quando você fechar com o espaço. essa é a que vai na bio..
+>
+> toda pessoa que clica no botão de qualquer uma delas deixa nome e telefone antes de seguir. cai tudo aqui, uma aba por página:
+> https://docs.google.com/spreadsheets/d/1sgujPSCUs_sfvXRC-yChUbi6egguPpodCjAVMWNro3Y/edit?usp=sharing
+>
+> na aba do evento, quem aparece lá e não pagou é gente que chegou até o preço e parou. vale chamar no WhatsApp.
+>
+> os depoimentos ficaram sem nome e sem foto das alunas. se alguma autorizar, eu coloco..
+
+> e segue o plano de divulgação, de agora até janeiro. três posts por semana: duas peças com arte e legenda prontas pra copiar e um reel teu, com o tema já escolhido.
+>
+> o documento traz o texto das sete primeiras semanas, até a virada do preço em 29/11. as de dezembro e janeiro eu te mando junto com o anúncio do dia, já com a data e o local dentro.
+>
+> o primeiro post é o anúncio da pré-venda, e pode sair essa semana. tem duas legendas com uma marcação pra você conferir antes de publicar, são frases que só você sabe se acontecem..
+
+---
+
 ## 1 · O plano de divulgação
 
 *Anexo: `Plano-de-Divulgacao-Ladies-Fluency-Experience.pdf`*
