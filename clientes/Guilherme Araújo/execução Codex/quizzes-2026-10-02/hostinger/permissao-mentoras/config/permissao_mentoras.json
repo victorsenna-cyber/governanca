@@ -1,5 +1,5 @@
 {
-  "quiz_versao": "1.1-capa-grupo",
+  "quiz_versao": "1.2-raiox",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbycieKc37wkdwxdHRC_ssxQLqKtVCy18RstX5Y2srOTlIknLj3zIVFurLBRXwpzX9gD/exec",
   "pixel_id": "1259363302489132",
   "dados_legais": "© 2026 Guilherme Araújo · Todos os direitos reservados.",
@@ -619,19 +619,50 @@
       "blocks": [
         {
           "type": "text",
-          "text": "Aqui está o seu resultado.",
-          "style": "body"
+          "text": "Aqui está o seu <g>Raio-X da Permissão</g>.",
+          "style": "h2",
+          "emphasis": true
         },
         {
           "type": "resultBanner",
           "text": "SEU NÍVEL DE PERMISSÃO HOJE: {{NIVEL}}"
         },
         {
-          "type": "metric",
-          "text": "Permissão para receber"
+          "type": "gauge",
+          "text": "Onde você está hoje, de 0 a 21 pontos",
+          "marker": "você"
         },
         {
           "type": "resultParagraph"
+        },
+        {
+          "type": "text",
+          "text": "As 4 portas da Permissão",
+          "style": "h1",
+          "emphasis": true
+        },
+        {
+          "type": "text",
+          "text": "Cada porta é um momento em que o dinheiro passa ou trava. A porcentagem mostra o quanto ela está aberta hoje.",
+          "style": "body"
+        },
+        {
+          "type": "portas",
+          "principal": "porta principal"
+        },
+        {
+          "type": "text",
+          "text": "Sua porta principal: {{PORTA}}",
+          "resultVariants": {
+            "ALTO": "A porta menos aberta hoje: {{PORTA}}"
+          },
+          "style": "h2",
+          "emphasis": true
+        },
+        {
+          "type": "text",
+          "raiox": "leitura",
+          "style": "body"
         },
         {
           "type": "text",
@@ -673,6 +704,27 @@
         },
         {
           "type": "text",
+          "text": "De onde isso costuma vir",
+          "style": "h2",
+          "emphasis": true
+        },
+        {
+          "type": "text",
+          "raiox": "origem",
+          "style": "body"
+        },
+        {
+          "type": "text",
+          "text": "Para os próximos 7 dias",
+          "style": "h2",
+          "emphasis": true
+        },
+        {
+          "type": "cards",
+          "raiox": "acoes"
+        },
+        {
+          "type": "text",
           "text": "O teste mostra onde a trava aparece. Ele não mostra de onde ela vem.",
           "resultVariants": {
             "ALTO": "O teste não encontrou uma trava forte de Permissão. Ele não mostra o que mais pode estar segurando o seu resultado."
@@ -685,7 +737,7 @@
           "style": "small"
         }
       ],
-      "button": "Entender o próximo passo",
+      "button": "Receber o Raio-X por e-mail",
       "nextByResult": {
         "ALTO": {
           "id": "T23",
@@ -815,8 +867,8 @@
     {
       "id": "T23",
       "type": "capture",
-      "title": "Para onde eu envio o seu resultado e o próximo passo?",
-      "button": "Ver o próximo passo",
+      "title": "Para onde eu envio o seu Raio-X completo e o convite do grupo?",
+      "button": "Receber o Raio-X e o convite",
       "nextByAnswer": {
         "key": "p01_atuacao",
         "cases": {
@@ -1093,8 +1145,21 @@
         },
         {
           "type": "text",
+          "text": "O seu Raio-X completo chega no seu e-mail em alguns minutos. Se não aparecer, olhe a caixa de promoções.",
+          "style": "small"
+        },
+        {
+          "type": "text",
           "text": "O botão abre o convite do grupo no WhatsApp.",
           "style": "small"
+        },
+        {
+          "type": "ask",
+          "key": "fala_preco",
+          "title": "Se quiser, me conte: <g>o que acontece com você na hora de falar o valor?</g>",
+          "placeholder": "Escreva do seu jeito…",
+          "button": "Enviar para o Guilherme",
+          "thanks": "Recebi. Obrigado por contar."
         },
         {
           "type": "footer",
@@ -1103,5 +1168,131 @@
       ]
     }
   ],
-  "link_grupo_mentoras": "https://chat.whatsapp.com/IVUsj5LpC8AECMIJibXIVv"
+  "link_grupo_mentoras": "https://chat.whatsapp.com/IVUsj5LpC8AECMIJibXIVv",
+  "funil": true,
+  "raiox": {
+    "portas": [
+      {
+        "id": "crescer",
+        "label": "Crescer",
+        "keys": [
+          "p10_teto",
+          "p11_familia_origem"
+        ],
+        "hint": "Quando o faturamento sobe e volta para o mesmo lugar."
+      },
+      {
+        "id": "receber",
+        "label": "Receber",
+        "keys": [
+          "p08_culpa"
+        ],
+        "hint": "O que você sente depois que o dinheiro entra."
+      },
+      {
+        "id": "pedir",
+        "label": "Pedir",
+        "keys": [
+          "p06_hora_do_preco",
+          "p07_desconto"
+        ],
+        "hint": "O momento de dizer o seu valor."
+      },
+      {
+        "id": "trocar",
+        "label": "Trocar justo",
+        "keys": [
+          "p05_recebe_equivalente",
+          "p09_entrega_a_mais"
+        ],
+        "hint": "O equilíbrio entre o que você entrega e o que recebe."
+      }
+    ],
+    "origemKey": "p11_familia_origem",
+    "leituras": {
+      "pedir": "A sua porta mais fechada é a do <g>Pedir</g>. O atendimento você sabe fazer. O que trava é o segundo em que o valor precisa sair da sua boca: ele sai menor, ou já vem com um desconto que ninguém pediu. Técnica ajuda, mas enquanto dizer o preço parecer pedir um favor, qualquer frase decorada sai pela metade.",
+      "receber": "A sua porta mais fechada é a do <g>Receber</g>. Você cobra, a pessoa paga, e logo depois vem a culpa: a sensação de que pediu demais, de que agora deve alguma coisa. Essa culpa cobra juros, porque na próxima vez o valor já sai menor para não sentir de novo. Na constelação, a culpa muitas vezes é o preço de continuar pertencendo.",
+      "trocar": "A sua porta mais fechada é a do <g>Trocar justo</g>. Você entrega mais do que combinou: a sessão que passa da hora, o áudio extra, o material de presente. Parece generosidade, e em parte é. Mas quando a troca nunca fica igual, quem atende se esvazia, e a cliente aprende que o seu trabalho vale menos do que custa. Pessoas maduras têm prazer de pagar pela própria transformação.",
+      "crescer": "A sua porta mais fechada é a do <g>Crescer</g>. O faturamento sobe e depois volta para o mesmo lugar, como se existisse um teto que ninguém vê. Na constelação, esse teto costuma ter endereço: crescer além de quem veio antes pode parecer abandono, e a gente se segura para continuar pertencendo. Eu sempre pergunto: quanto você está pagando para não crescer?"
+    },
+    "origem": {
+      "0": "Você disse que pensar em ganhar bem mais do que a sua família ganhou traz desconforto ou culpa. É um dos sinais mais claros de uma Permissão que ainda não foi dada. Soltar a mão de alguém não quer dizer abandonar. Quem te trouxe até aqui merece respeito, e ainda assim não vai te levar para o próximo nível.",
+      "1": "Você disse que sente vontade e medo ao mesmo tempo. É o retrato de quem está na porta: uma parte quer ir, a outra ainda pergunta se pode. O medo não precisa sumir para você andar. Ele só precisa parar de decidir por você.",
+      "2": "Você disse que pensa nisso com tranquilidade. É um bom sinal: a lealdade à família não parece ser o que segura o seu crescimento. Vale olhar primeiro para a porta que ficou mais fechada no seu Raio-X."
+    },
+    "acoes": {
+      "pedir": [
+        {
+          "title": "1 · Diga o seu valor em voz alta",
+          "text": "Escreva o preço do seu atendimento num papel e leia em voz alta todos os dias desta semana, até a voz sair firme. Primeiro o corpo se acostuma, depois a conversa."
+        },
+        {
+          "title": "2 · Pergunte antes de falar o preço",
+          "text": "Na próxima conversa de venda, antes do valor, pergunte: \"Tirando o preço, o que é mais importante para você num atendimento?\" Depois mostre como o seu trabalho cumpre isso."
+        },
+        {
+          "title": "3 · Troque desconto por negociação",
+          "text": "Se ouvir que está caro, não baixe o valor. Mude a forma: parcelas, um formato menor, outra data. Desconto diz que o seu trabalho valia menos. Negociar diz que ele cabe de outro jeito."
+        }
+      ],
+      "receber": [
+        {
+          "title": "1 · Receba sem se explicar",
+          "text": "Na próxima vez que alguém te pagar, responda só \"recebi, obrigada\". Sem justificar o valor e sem oferecer nada a mais em troca."
+        },
+        {
+          "title": "2 · Use a palavra \"ainda\"",
+          "text": "Quando a culpa disser \"eu não mereço cobrar isso\", troque por \"eu ainda não me sinto à vontade com isso\". A frase deixa de ser sentença e vira caminho."
+        },
+        {
+          "title": "3 · Anote o que mudou na vida dela",
+          "text": "Depois de cada atendimento desta semana, escreva uma linha sobre o que mudou para a pessoa. Em sete dias você tem, por escrito, a prova de que recebeu por algo que entregou."
+        }
+      ],
+      "trocar": [
+        {
+          "title": "1 · Combine o que entra no atendimento",
+          "text": "Antes da próxima sessão, escreva o que está incluído: tempo, retorno, material. O que passar disso vira escolha sua, não obrigação."
+        },
+        {
+          "title": "2 · Termine no horário",
+          "text": "Feche a próxima sessão no horário combinado. Se precisar de mais tempo, ofereça um novo encontro, com valor."
+        },
+        {
+          "title": "3 · Conte o que você deu de graça",
+          "text": "Durante sete dias, anote tudo o que entregou sem cobrar: áudios, mensagens, conselhos. No fim, calcule quanto isso valeria no seu preço."
+        }
+      ],
+      "crescer": [
+        {
+          "title": "1 · Tome a decisão que você vem adiando",
+          "text": "Escolha uma decisão de trabalho que está parada, como um reajuste, um formato novo ou um não, e tome nesta semana. O teto cede com decisão, não com espera."
+        },
+        {
+          "title": "2 · Honre quem veio antes",
+          "text": "Escreva o nome de quem te trouxe até aqui e uma frase de gratidão. Embaixo, escreva: \"Eu vou mais longe, e isso não diminui vocês.\""
+        },
+        {
+          "title": "3 · Responda por escrito",
+          "text": "Quanto você deixou de faturar no último ano por ficar no mesmo lugar? E para quem esse lugar é confortável? A resposta mostra o que o teto está protegendo."
+        }
+      ]
+    },
+    "email": {
+      "assunto": "{{nome}}, o seu Raio-X da Permissão",
+      "abertura": "{{nome}}, Guilherme aqui. Este é o seu Raio-X da Permissão, montado a partir das suas respostas no teste. Guarde este e-mail: as ações do fim valem para os próximos 7 dias.",
+      "titulo_nivel": "Seu nível de Permissão hoje: {{NIVEL}}",
+      "titulo_portas": "As 4 portas da Permissão",
+      "selo_principal": "porta principal",
+      "titulo_leitura": "A sua porta principal: {{porta}}",
+      "titulo_origem": "De onde isso costuma vir",
+      "titulo_acoes": "Para os próximos 7 dias",
+      "fronteira": "O teste mostra onde a trava aparece. Ele não mostra de onde ela vem. Esse é o trabalho da Diagnóstica da Permissão: uma sessão individual de 2 horas comigo para mapear a origem da sua trava e o passo a passo para destravar.",
+      "botao_diagnostica": "Quero a Diagnóstica · R$ 97",
+      "grupo": "E o convite continua de pé: o grupo Conselho do Cigano, gratuito durante outubro, para quem trabalha com terapias, mentorias ou cartomancia.",
+      "botao_grupo": "Entrar no grupo gratuito",
+      "assinatura": "Um abraço, Guilherme Araújo",
+      "rodape": "Este teste é um indicativo com base nas suas respostas. Não é diagnóstico clínico, não substitui acompanhamento profissional e não garante resultado financeiro. Você recebeu este e-mail porque fez o Teste da Permissão; para não receber mais, responda com a palavra SAIR."
+    }
+  }
 }

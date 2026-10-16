@@ -186,6 +186,11 @@ function html(cfg, rx, vars) {
     h += '<div style="border:1px solid #e5e5e5;border-radius:12px;padding:12px;margin:0 0 10px"><strong>' + rico(a.title, vars) + '</strong><br>' + rico(a.text, vars) + '</div>';
   });
   h += '<p>' + rico(em.fronteira, vars) + '</p>';
+  const diag = cfg.checkout_diagnostico;
+  if (diag && em.botao_diagnostica && /^https:\/\/checkout\.pagtrust\.com\.br\//.test(diag)) {
+    const u = diag + (diag.indexOf('?') < 0 ? '?' : '&') + 'utm_source=email&utm_medium=raiox&utm_campaign=' + encodeURIComponent(cfg.quiz) + '&nivel=' + encodeURIComponent(rx.banda.label);
+    h += '<p style="margin:16px 0"><a href="' + esc(u) + '" style="background:#111827;color:#fff;text-decoration:none;padding:12px 20px;border-radius:12px;display:inline-block;font-weight:bold">' + esc(em.botao_diagnostica) + '</a></p>';
+  }
   const grupo = cfg.link_grupo_mentoras;
   if (grupo && /^https:\/\/chat\.whatsapp\.com\//.test(grupo)) {
     h += '<p>' + rico(em.grupo, vars) + '</p>';
@@ -205,6 +210,7 @@ function texto(cfg, rx, vars) {
   L.push('', plano(em.titulo_acoes, vars));
   (cfg.raiox.acoes[rx.principal.id] || []).forEach(a => L.push('- ' + plano(a.title, vars) + ' ' + plano(a.text, vars)));
   L.push('', plano(em.fronteira, vars));
+  if (cfg.checkout_diagnostico) L.push(cfg.checkout_diagnostico);
   if (cfg.link_grupo_mentoras) L.push('', plano(em.grupo, vars), cfg.link_grupo_mentoras);
   L.push('', plano(em.assinatura, vars), '', plano(em.rodape, vars));
   return L.join('\n');

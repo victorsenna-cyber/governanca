@@ -610,3 +610,13 @@ Victor reprovou o uso de desenhos abstratos, linhas e geometrias usadas como pre
 - **Plano:** `PLANO-QUIZ-RESULTADO-E-CADASTRO-2026-10.md`. "Raio-X da Permissão": medidor + 4 portas (Pedir, Receber, Trocar justo, Crescer) a partir das 7 perguntas que já pontuam + ações de 7 dias + e-mail automático. Rastreio por tela antes de cortar perguntas.
 - **Descartado:** chamar de "mapa" (é o entregável da Diagnóstica paga); trancar o resultado atrás do cadastro (86% já se cadastram).
 - **Pendente:** Gui manda as 12 ações; Victor decide a exceção de portão para a tela de resultado; Victor sobe a v5.
+
+## 2026-10-16 (noite) — Oferta fechada e quiz v6 construído
+
+- **Pedido do Victor:** "como envia email direto da planilha sem ferramenta? pode iterar. feche oferta com o que já tem do contexto dele.. falas reais não precisa.. só o que o Gui trás nos materiais sobre a permissão e constelação. tudo precisa ser no automático, se não for, faça de outra forma"
+- **Resposta:** o e-mail sai pelo `MailApp`, serviço nativo do Apps Script; uma autorização na implantação e depois é automático (100/dia na conta gratuita; teto nosso 90).
+- **Decisão:** `DEC-2026-10-16-001` (oferta, fonte de texto, automação). `PILARES.md` 4/5; `LACUNAS.md` deixou de ser portão.
+- **Feito:** v6 (`permissao-mentoras-v6.zip`) + `Code.gs` novo. Testado localmente: tela de resultado, cadastro e grupo renderizados no Chrome; cálculo das portas igual no navegador e no servidor; e-mail montado e conferido; texto vindo do formulário é escapado e o servidor só usa texto do config publicado (não serve de relé de spam).
+- **Fonte dos textos:** levantamento do material do Gui (aula introdutória da Cartomancia Sistêmica, script de vendas Mi5D, áudios de 08/10, call de 04/08). Frases dele usadas: "quanto você está pagando para não crescer?", "soltar a mão de alguém não quer dizer abandonar", "pessoas maduras têm prazer de pagar pela sua transformação", a prática do "ainda", "não dê desconto, negocie os valores", "tirando o preço, o que é mais importante…". Elton Euler não é citado.
+- **Descartado:** ações gravadas ou ditadas pelo Gui e vídeo por porta (dependem de ação manual; regra "tudo no automático").
+- **Próximo:** Victor implanta Code.gs + sobe v6 → Claude testa ao vivo (cadastro real, e-mail recebido, aba de funil). Releitura das campanhas em 18/10.

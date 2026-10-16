@@ -22,3 +22,4 @@
 .ask{text-align:left;display:flex;flex-direction:column;gap:10px}
 .ask textarea{width:100%;border:1px solid #dbdbdb;border-radius:12px;padding:12px;font:inherit;resize:vertical}
 .ask-thanks{font-weight:600;color:#0b6e2d}
+.arguments.one{grid-template-columns:1fr}.arguments.one .argument{text-align:left}

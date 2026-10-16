@@ -7,6 +7,14 @@
 > Integração do Codex em: 2026-10-02 · escopo: pacotes de 29/09 a 02/10 (ver seção própria abaixo); estado de mídia da conta **não revalidado nesta data**
 > Atualização parcial anterior em: 2026-10-01 (mantida, não revogada) · escopo: destilação do WhatsApp de 19/09 a 01/10, duas linhas de produto, conta parada, criativos e quiz do Diagnóstico. Anterior: 2026-09-05 · escopo: verificação da conta, diagnóstico de fadiga do criativo do topo e criação da camada 2 em pausa; demais domínios não foram revalidados
 
+## Atualização de estado — 16/10/2026: oferta fechada e quiz v6 (Raio-X)
+
+- **P4 fechado** (`DEC-2026-10-16-001`, alçada Victor): Conselho do Cigano (gratuito) → Teste da Permissão → **Diagnóstica R$ 97** → **Programa de 28 dias R$ 1.500** → **Venda com Permissão R$ 1.500/tri**. Desafio R$ 997, Jornada, Mentoria e Script avulso fora das peças. `PILARES.md` em 4/5.
+- **Texto ao público:** apoiado nos materiais do Gui sobre Permissão e constelação; portão de léxico dispensado pelo Victor.
+- **Campanhas (dia 2):** quiz do grupo R$ 41,23 → 4 cadastros (R$ 10,31); perfil IG R$ 0,04 por visita. Sem mudança até 18/10 0h. Relatório: `../../30-comercial/trafego-clientes/guilherme/relatorios/2026-10-16-analise-quiz-grupo-dia2.md`.
+- **Quiz `/permissao-mentoras/` v6 pronto, não publicado:** Raio-X da Permissão (medidor + 4 portas + leitura + origem + 3 ações), e-mail automático do Raio-X pelo Apps Script (`MailApp`, com CTA da Diagnóstica e do grupo), percurso tela a tela na aba `funil_permissao_mentoras`, pergunta aberta depois do cadastro. Plano: `PLANO-QUIZ-RESULTADO-E-CADASTRO-2026-10.md`.
+- **Pendente (Victor):** colar o `Code.gs`, rodar `autorizar`, nova versão da implantação; limpar a aba `permissao_mentoras`; subir `permissao-mentoras-v6.zip`. Depois: teste ao vivo (Claude).
+
 ## Atualização de estado — WhatsApp de 10 a 14/10/2026, registrada em 14/10/2026
 
 > Fonte: `DESTILACAO-WHATSAPP-2026-09-19-A-10-01.md` §12 (4 áudios transcritos + 3 prints). Páginas conferidas por HTTP em 14/10; conta de anúncios **não relida**.

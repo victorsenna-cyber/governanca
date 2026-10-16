@@ -1,6 +1,6 @@
 # PLANO — Resultado do quiz e taxa de cadastro · `/permissao-mentoras/`
 
-> STATUS: 🟡 PROPOSTA · alçada: estrutura = nossa (REGRA Nº 0) · fatos do método e upload = Gui/Victor · 16/10/2026
+> STATUS: ✅ EXECUTADO em 16/10 (noite) como v6, aguardando publicação · `DEC-2026-10-16-001` mudou o §4: as ações e os textos saíram do material do Gui, sem esperar áudio dele; o vídeo por porta saiu (não é automático); o e-mail leva também o botão da Diagnóstica R$ 97. O percurso por tela entrou já na v6.
 > Pedido do Victor (16/10): *"precisamos de um resultado mais robusto e elaborado para o quiz.. para aumentar a percepção de valor de recebimento. planeje. outra coisa: como aumentamos a taxa de cadastro em relação à visualização de página?"*
 > Dados: Pixel `1259363302489132` de 15/10 0h a 16/10 13h; conector Meta, campanha `120255723458970210`. Análise do dia 2: `../../30-comercial/trafego-clientes/guilherme/relatorios/2026-10-16-analise-quiz-grupo-dia2.md`.
 

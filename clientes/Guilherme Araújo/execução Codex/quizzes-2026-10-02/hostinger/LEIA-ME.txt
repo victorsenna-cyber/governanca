@@ -106,3 +106,19 @@ ATUALIZACAO 2026-10-16 - PERMISSAO-MENTORAS V5: CAPA FALA DO GRUPO (CONTEM A V4)
   quiz_versao "1.0" -> "1.1-capa-grupo" (separa antes/depois na planilha)
 - SUBIR: permissao-mentoras-v5.zip -> trocar engine.js E config/permissao_mentoras.json em public_html/permissao-mentoras/.
 - Rollback: v3 (engine) + config da v4.
+
+ATUALIZACAO 2026-10-16 (noite) - PERMISSAO-MENTORAS V6: RAIO-X DA PERMISSAO + E-MAIL + PERCURSO (CONTEM V4 E V5)
+- Pedido do Victor: resultado mais robusto, mais cadastro por visualizacao, tudo automatico.
+- Resultado (T19) vira o "Raio-X da Permissao": medidor 0-21, as 4 portas (Crescer, Receber, Pedir, Trocar justo)
+  calculadas das 7 perguntas que ja pontuam, porta principal com leitura, origem pela resposta da familia, 3 acoes de 7 dias.
+  Textos a partir do material do Gui (aula de introducao, script de vendas, fala de 08/10). DEC-2026-10-16-001.
+- Cadastro (T23) promete o Raio-X completo por e-mail + convite do grupo.
+- Tela do grupo (T24M): aviso do e-mail + pergunta aberta opcional "o que acontece com voce na hora de falar o valor?" (coluna fala_preco).
+- engine.js: blocos gauge, portas, ask; leitura/origem/acoes por porta; percurso tela a tela por beacon (aba funil_permissao_mentoras).
+- quiz_versao 1.2-raiox. Testado em navegador local (telas T19, T23, T24M) e e-mail montado por teste local do Code.gs.
+- SUBIR (tudo junto, nesta ordem):
+  1. Apps Script: colar apps-script/Code.gs, salvar, rodar a funcao "autorizar" uma vez (aceitar as permissoes de e-mail e de acesso externo),
+     Implantar > Gerenciar implantacoes > editar > Nova versao (a URL nao muda). Limpar a aba permissao_mentoras antes (cabecalho novo).
+  2. Hostinger: permissao-mentoras-v6.zip -> substituir public_html/permissao-mentoras/ (engine.js, styles.css, config/permissao_mentoras.json).
+- O e-mail sai da conta Google dona do Apps Script, com o nome "Guilherme Araujo". Limite: 90 por dia.
+- Rollback: v5 (ou v3 + config da v4) e Code.gs anterior.
