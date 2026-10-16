@@ -5,7 +5,7 @@
 
 ## Em uma página
 
-**O que é este documento.** É a nossa resposta por escrito às duas objeções que você fez em 09/10, sobre o método e sobre a coqueria. Ele vai junto com o roteiro do vídeo de vendas do Eneagrama para Líderes, que está pronto para você gravar. Aqui você vê, lado a lado, cada coisa que o vídeo promete ou oferece e onde o seu curso ou o seu Sistema de Conhecimento entrega aquilo.
+**O que é este documento.** É a nossa resposta por escrito às duas objeções que você fez em 09/10, sobre o método e sobre a coqueria. Ele vai junto com o roteiro do vídeo de vendas do Eneagrama para Líderes. O roteiro está pronto para gravar; duas frases da oferta, que dizem que a entrada fecha no primeiro encontro, esperam só a conferência do checkout, que é nossa. Aqui você vê, lado a lado, cada coisa que o vídeo promete ou oferece e onde o seu curso ou o seu Sistema de Conhecimento entrega aquilo.
 
 **Não há nada para você responder.** As decisões sobre como o vídeo vende (promessa, ordem, o que entra na oferta, preço) são nossas, e este documento as explica. Os fatos saíram das suas aulas, dos seus áudios, das nossas conversas e das suas mensagens.
 
@@ -39,17 +39,17 @@ Você escreveu: *"o curso do Eneagrama não tem método.. colocar isso não é p
 
 Na oferta, a frase ficou: *"As Nove Línguas, você aprende no curso de Eneagrama e no Sistema de Conhecimento."* Os encontros ficaram fora dessa frase, porque neles se aplica, não se aprende conteúdo novo.
 
-**A pergunta que esse quadro deixava aberta, e como o vídeo responde.** O seu Sistema é organizado por tipo. Então, quem compra pergunta: *"que página eu abro, se eu não sei o tipo da pessoa?"*. O vídeo responde com a postura que você ensina na aula "Processo da descoberta da personalidade": *"Professores de Eneagrama que são bons professores eles não contam a sua personalidade pra você. Primeiro que ele só pode ter uma suposição."* Ficou assim, logo depois da descrição do Sistema:
+**A pergunta que esse quadro deixava aberta, e como o vídeo responde.** O seu Sistema é organizado por tipo. Então, quem compra pode ficar sem saber que página abrir, se não sabe o tipo da pessoa. O vídeo responde com a postura que você ensina na aula "Processo da descoberta da personalidade": *"Professores de Eneagrama que são bons professores eles não contam a sua personalidade pra você. Primeiro que ele só pode ter uma suposição."* Ficou assim, logo depois da descrição do Sistema:
 
 > *"Você abre no tipo que supõe, sem dizer a ele. Você não sabe o que ele precisa. Você pergunta."*
 
-A suposição é do líder, só para uso dele. Ele nunca a diz à pessoa e nunca fecha em cima dela, e quem confirma é a pessoa, quando ele pergunta. *"Você não sabe o que ele precisa"* é fala sua da conversa de 16/09. Antes, no vídeo, você mesma diz: *"então me diz qual língua cada um do meu time fala. Eu não respondo isso, e o curso também não. Chegar rápido no tipo de alguém dá, mas existe erro."*
+A suposição é do líder, só para uso dele. Ele nunca a diz à pessoa e nunca fecha em cima dela, e quem confirma é a pessoa, quando ele pergunta. *"Você não sabe o que ele precisa"* é um recorte da sua fala de 16/09: *"se você não sabe que tipo é o seu liderado, você não sabe o que ele precisa para performar"*. No vídeo, a frase é montagem nossa: como o líder só supõe o tipo, ele ainda não sabe o que a pessoa precisa, e por isso pergunta. Antes, no vídeo, você mesma diz: *"então me diz qual língua cada um do meu time fala. Eu não respondo isso, e o curso também não. Chegar rápido no tipo de alguém dá, mas existe erro."*
 
 **O que não mudamos, e por quê.** O nome do caminho, As Nove Línguas, e os quatro passos ficam. O líder que chega ao vídeo pergunta *"isso é teórico, como eu uso na segunda-feira?"*, e o caminho é a resposta a essa pergunta. O nome é do caminho, e não de um método novo que você teria inventado. O vídeo responde à mesma pergunta com uma fala sua: *"Não adianta eu dar o meu remédio. Eu tenho que dar o que ele precisa."*
 
 ### A coqueria
 
-**Acatada.** Ela saiu inteira do vídeo. Você disse que não era "puro eneagrama", e o vídeo precisa provar uma coisa só: que julgar pelo comportamento apaga gente competente. Entrou a história que você mesma ofereceu, e ela é contada só com o que veio de você.
+**Acatada.** Ela saiu inteira do vídeo. Você disse que não era "puro eneagrama", e o vídeo precisa provar uma coisa só: que julgar pelo comportamento apaga gente competente. Entrou a história que você mesma ofereceu, contada com as suas palavras; o que é nosso está declarado logo abaixo.
 
 **Como ficou:**
 
@@ -75,7 +75,7 @@ Depois vem a virada, com palavras suas da conversa de setembro: *"Na minha cabe�
 
 **Três coisas que queremos dizer com clareza:**
 
-1. **O que é redação nossa, e não fala sua.** Três trechos são nossos: *"que é a minha"*, *"Naquela mesma empresa"* e *"O Eneagrama me ajudou a entender o que estava acontecendo comigo"*. Também é nossa a ordem dos trechos. O resto vem do seu áudio de 09/10. Conferimos no áudio a frase *"saindo do trabalho na hora"*.
+1. **O que é redação nossa, e não fala sua.** Três trechos são nossos: *"que é a minha"*, *"Naquela mesma empresa"* e *"O Eneagrama me ajudou a entender o que estava acontecendo comigo"*. Também são nossos a ordem dos trechos e três ajustes pequenos: um *"Mas"* que virou *"E"*, um *"minha"* que virou *"a minha"*, e o corte de *"se eu estivesse cuidando de mim, fazendo as coisas por mim"* na frase do trabalho. O resto vem do seu áudio de 09/10, e conferimos nele a frase *"saindo do trabalho na hora"*.
 2. **A empresa não é nomeada,** mas quem conhece o seu currículo pode reconhecê-la. Se você preferir tirar algum detalhe, aponte a frase.
 3. **O episódio de saúde que você contou ao Victor não entra.** O vídeo não diz nem sugere que o Eneagrama ou o curso tratam qualquer condição de saúde.
 
@@ -86,14 +86,15 @@ Estados: ✅ o curso, o Sistema ou os encontros entregam · **declarado** = o v�
 | O que o vídeo diz | Onde está | Estado |
 |---|---|---|
 | Promessa central: quando você entende como cada pessoa funciona, sabe direcionar cada uma | Entender: o curso e o Sistema. Direcionar: a parte do Sistema sobre o que move cada tipo no trabalho, e a aplicação nos encontros | ✅ |
-| *"Estudo o Eneagrama há mais de cinco anos"* | A sua fala na conversa de 16/09 (*"dois mil e vinte"*) | ✅ |
+| *"Estudo o Eneagrama há mais de cinco anos"* | A sua fala na conversa de 16/09: a primeira mentoria em *"dois mil e vinte"*. Por isso o vídeo diz *"mais de cinco anos"*, que é o mínimo que essa data sustenta, e não um ano exato | ✅ |
 | *"já ajudei sessenta pessoas a se reconhecer por ele"* e *"sessenta pessoas que dei curso ou ajudei a se identificar"* | A sua mensagem de 06/10. O número aparece duas vezes, e só ele: saíram os vinte e os seis | ✅ |
 | Teste de personalidade pergunta sobre comportamento e erra | Aulas "Processo da descoberta da personalidade" e "Dicas no processo de identificação" | ✅ |
 | Um espelho, não um veredito; *"Eu não respondo isso, e o curso também não"* | A mesma aula: *"a única pessoa que pode descobrir o seu tipo é você mesmo"* | ✅ |
 | O comportamento que incomoda muitas vezes é proteção | As suas falas de setembro e a aula sobre motivação | ✅ |
 | Os dois exemplos de pedido: quem vê a falha de longe e quem precisa de privacidade | Sistema, tipos 6 e 5. *"Inegociável"* é palavra sua, de 30/09 | ✅ |
 | Os três casos: o liderado que ninguém percebia estressado, o líder que queria largar tudo, a pessoa que escreveu dizendo que você a ajudou a ser uma líder melhor | A sua fala na conversa de 16/09. Ninguém é nomeado e nenhum tipo é atribuído a ninguém | ✅ |
-| *"Os relacionamentos tendem a ficar mais leves"* · *"O combinado passa a acontecer"* | Falas suas. O vídeo diz *"tendem"* e *"costuma"*: nenhum caso de líder com time mostra isso ainda | declarado |
+| *"Os relacionamentos tendem a ficar mais leves"* | Fala sua, de 16/09. Nenhum caso de líder com time mostra isso ainda | declarado |
+| *"O combinado passa a acontecer"* | É a nossa promessa de resultado, no teto que definimos em 02/10, e não fala sua. O vídeo diz que isso *"costuma"* acontecer: nenhum caso de líder com time mostra isso ainda | declarado |
 
 ## O que o vídeo oferece × o que existe
 
@@ -104,7 +105,7 @@ Estados: ✅ o curso, o Sistema ou os encontros entregam · **declarado** = o v�
 | Luz e Sombra da sua Liderança | Quando a liderança de cada tipo brilha, e o ponto cego que cobra caro | ✅ na plataforma |
 | A sua liderança pela raiz | A força natural de cada tipo na liderança, e as armadilhas | ✅ na plataforma |
 | Os quatro encontros ao vivo | Bônus, fora do curso, para quem entra agora. O primeiro em dezembro, os outros três a partir de janeiro, a cada quinze dias. É onde a pessoa aplica no time e tira dúvida. Quem não puder ir manda a pergunta antes. A resposta vem no encontro, ou em vídeo ou áudio | ✅ **16/12 · 06/01 · 20/01 · 03/02**, quartas-feiras. As datas e o horário vão na página, não no vídeo; se alguma não funcionar para você, muda só a página |
-| A turma fundadora | A entrada fecha no primeiro encontro, em dezembro | ✅ o vídeo sai do ar em 16/12, e a compra fecha no mesmo dia |
+| A turma fundadora | A entrada fecha no primeiro encontro, em dezembro | o vídeo sai do ar em 16/12. Que a compra feche no mesmo dia é conferência nossa do checkout, ainda em curso; até lá essas duas frases não se gravam |
 | Preço | R$ 297, ou em até doze vezes no cartão | ✅ |
 | Garantia | Sete dias. O dinheiro volta pela própria plataforma | ✅ |
 | Acesso | Doze meses. *"Dividido por um ano, dá menos de um real por dia"* | ✅ |
@@ -117,7 +118,7 @@ Estados: ✅ o curso, o Sistema ou os encontros entregam · **declarado** = o v�
 |---|---|
 | O Espelho | Está aberto no seu site e é a sua isca no LinkedIn. Vender como parte do curso algo que está aberto prometeria mais do que o curso entrega. Não pedimos que você feche |
 | O módulo de aplicação | Não existe gravado. A aplicação no time fica nos encontros |
-| Depoimentos | Não existe depoimento gravado de ninguém hoje. Ficam para uma próxima versão |
+| Depoimentos | Os retornos que você colheu em 15/09 são da mentoria, não deste curso, e não têm autorização para uso público. Falta, sobretudo, o de um líder cujo time mudou. Ficam para uma próxima versão |
 | *"Dez vagas"* | Não encontramos você falando em número de vagas |
 | A descrição da mentoria (encontros em grupo e individuais) | O vídeo vende o curso. Da mentoria fica só o preço, como comparação |
 
