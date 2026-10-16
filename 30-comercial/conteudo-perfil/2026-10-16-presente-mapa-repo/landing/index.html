@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mapa do repositório Continuum</title>
+<meta name="description" content="Faça a IA trabalhar sozinha, do seu jeito. O mapa do repositório que roda a operação da Continuum, grátis em PDF.">
+<meta property="og:title" content="Faça a IA trabalhar sozinha. Do seu jeito.">
+<meta property="og:description" content="O mapa do repositório que roda a operação da Continuum. 18 telas e um prompt para montar o seu. Grátis, em PDF.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600&family=Montserrat:wght@600;700;800&display=swap">
+<style>
+  :root {
+    --fundo:#05070F; --painel:#0C1122; --borda:#1B2544; --azul:#2F6BFF; --azul-claro:#5B8CFF;
+    --preto:#000000; --branco:#FFFFFF; --texto:#E4E8F3; --fraco:#8A93AD; --erro:#FF7A7A; --ok:#5B8CFF;
+    color-scheme: dark;
+  }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; margin: 0; }
+  body {
+    background: var(--fundo); color: var(--texto); font-family: "Inter", system-ui, sans-serif;
+    min-height: 100svh; display: flex; flex-direction: column; justify-content: center;
+    padding: max(24px, env(safe-area-inset-top)) max(20px, env(safe-area-inset-right)) max(24px, env(safe-area-inset-bottom)) max(20px, env(safe-area-inset-left));
+    position: relative; overflow-x: hidden;
+  }
+
+  /* ---------- faixas: preta atrás, azul na frente, texto correndo em sentidos opostos ---------- */
+  .fitas { position: absolute; inset: 0 0 auto 0; height: 170px; pointer-events: none; overflow: hidden; }
+  .fita {
+    position: absolute; left: -15%; width: 130%; height: 34px; overflow: hidden; display: flex; align-items: center;
+  }
+  .fita .trilho { display: flex; flex: none; white-space: nowrap; will-change: transform; }
+  .fita .trilho span {
+    font-family: "Anton", Impact, "Arial Narrow", sans-serif; font-weight: 400; font-size: 19px; line-height: 34px;
+    letter-spacing: 1.2px; text-transform: uppercase; padding-right: 0.6em;
+  }
+  .fita.preta { top: clamp(52px, 8.4vh, 76px); transform: rotate(6deg); background: var(--preto); z-index: 1;
+                border-top: 1px solid #1B2544; border-bottom: 1px solid #1B2544; }
+  .fita.preta span { color: var(--branco); }
+  .fita.azul  { top: clamp(26px, 4.4vh, 42px); transform: rotate(-5deg); background: linear-gradient(90deg, var(--azul), var(--azul-claro)); z-index: 2;
+                box-shadow: 0 6px 18px rgba(0,0,0,.55); }
+  .fita.azul span { color: var(--fundo); }
+  /* azul: sentido de ida (texto andando para a direita) · preta: volta (para a esquerda) */
+  .fita.azul  .trilho { animation: ida 40s linear infinite; }
+  .fita.preta .trilho { animation: volta 40s linear infinite; }
+  @keyframes ida   { from { transform: translateX(-50%); } to { transform: translateX(0); } }
+  @keyframes volta { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+  @media (prefers-reduced-motion: reduce) { .fita .trilho { animation-duration: 90s; } }
+
+  main { width: 100%; max-width: 440px; margin: clamp(96px, 15vh, 136px) auto 0; display: flex; flex-direction: column; gap: clamp(12px, 2.2vh, 18px); position: relative; }
+  .kicker { font-family: "Montserrat", sans-serif; font-weight: 600; font-size: 11px; letter-spacing: .3em; text-transform: uppercase; color: var(--fraco); }
+  h1 { font-family: "Anton", Impact, "Arial Narrow", sans-serif; font-weight: 400; text-transform: uppercase; font-size: clamp(40px, 11.5vw, 58px); line-height: .98; margin: 0; color: var(--branco); text-wrap: balance; }
+  h1 span { color: var(--azul-claro); }
+  .sub { margin: 0; font-size: 16px; line-height: 1.5; color: var(--texto); }
+  .sub b { color: var(--branco); font-weight: 600; }
+  form { display: flex; flex-direction: column; gap: 10px; margin-top: 4px; }
+  label { font-family: "Montserrat", sans-serif; font-weight: 700; font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--fraco); }
+  input[type=text], input[type=tel] {
+    width: 100%; font: 16px "Inter", sans-serif; color: var(--branco); background: var(--painel);
+    border: 1px solid var(--borda); border-radius: 10px; padding: 14px; outline: none;
+  }
+  input:focus-visible { border-color: var(--azul-claro); box-shadow: 0 0 0 3px rgba(91,140,255,.25); }
+  .campo { display: flex; flex-direction: column; gap: 6px; }
+  .isca { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
+  button {
+    margin-top: 6px; border: 0; border-radius: 999px; padding: 16px 20px; cursor: pointer;
+    background: linear-gradient(90deg, var(--azul), var(--azul-claro)); color: var(--branco);
+    font-family: "Montserrat", sans-serif; font-weight: 800; font-size: 14px; letter-spacing: .16em; text-transform: uppercase;
+  }
+  button:focus-visible { outline: 3px solid var(--branco); outline-offset: 3px; }
+  .erro { color: var(--erro); font-size: 13px; min-height: 1em; margin: 0; }
+  .lgpd { font-size: 12px; line-height: 1.45; color: var(--fraco); margin: 0; }
+
+  /* ---------- confirmação que se estende sob o botão ---------- */
+  .pronto {
+    display: grid; grid-template-rows: 0fr; opacity: 0; transition: grid-template-rows .45s ease, opacity .35s ease, margin .45s ease;
+    margin-top: 0;
+  }
+  .pronto > div { overflow: hidden; }
+  .pronto.aberto { grid-template-rows: 1fr; opacity: 1; margin-top: 4px; }
+  .pronto .caixa {
+    border: 1px solid var(--azul); background: rgba(47,107,255,.10); border-radius: 12px; padding: 14px 16px;
+    display: flex; gap: 12px; align-items: flex-start;
+  }
+  .pronto .check { flex: none; width: 26px; height: 26px; border-radius: 50%; background: var(--azul); display: grid; place-items: center; }
+  .pronto .check svg { width: 15px; height: 15px; }
+  .pronto strong { display: block; font-family: "Montserrat", sans-serif; font-weight: 800; font-size: 13px; letter-spacing: .1em; text-transform: uppercase; color: var(--branco); margin-bottom: 4px; }
+  .pronto p { margin: 0; font-size: 14px; line-height: 1.45; color: var(--texto); }
+  .pronto a { color: var(--azul-claro); font-weight: 600; }
+
+  /* tela baixa (celular pequeno, notebook): aperta para caber numa dobra */
+  @media (max-height: 820px) {
+    body { padding-top: 12px; padding-bottom: 12px; }
+    h1 { font-size: clamp(34px, 9.6vw, 50px); }
+    .sub { font-size: 15px; line-height: 1.42; }
+    input[type=text], input[type=tel] { padding: 11px 14px; }
+    button { padding: 14px 20px; }
+    .lgpd { font-size: 11px; }
+  }
+  footer { margin-top: clamp(12px, 3vh, 28px); text-align: center; font-family: "Montserrat", sans-serif; font-size: 10px; letter-spacing: .14em; text-transform: uppercase; color: #4A5373; }
+  @media (prefers-reduced-motion: no-preference) { button { transition: transform .15s ease; } button:active { transform: scale(.98); } }
+</style>
+</head>
+<body>
+  <div class="fitas" aria-hidden="true">
+    <div class="fita preta"><div class="trilho" id="trilho-preto"></div></div>
+    <div class="fita azul"><div class="trilho" id="trilho-azul"></div></div>
+  </div>
+  <main>
+    <h1>Faça a IA trabalhar <span>sozinha.</span> Do seu jeito.</h1>
+    <p class="sub">O mapa do repositório que roda a minha operação: a IA lê as regras antes de agir, decide em cima do método e <b>entrega sem pedir ok</b>. 18 telas e um prompt para montar o seu.</p>
+    <form id="form" novalidate>
+      <div class="campo">
+        <label for="nome">Seu nome</label>
+        <input id="nome" name="nome" type="text" autocomplete="given-name" required maxlength="80">
+      </div>
+      <div class="campo">
+        <label for="whatsapp">WhatsApp com DDD</label>
+        <input id="whatsapp" name="whatsapp" type="tel" inputmode="tel" autocomplete="tel" placeholder="(48) 99999-9999" required maxlength="20">
+      </div>
+      <input class="isca" type="text" name="site" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <p class="erro" id="erro" role="alert"></p>
+      <button type="submit" id="botao">Quero o mapa</button>
+      <div class="pronto" id="pronto" aria-live="polite">
+        <div>
+          <div class="caixa">
+            <span class="check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
+            <div>
+              <strong>Pronto, o mapa é seu</strong>
+              <p>Ele abriu numa aba nova e o download começou. Não apareceu? <a href="Mapa-Repositorio-Continuum.pdf" target="_blank" rel="noopener">Abrir o PDF</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="lgpd">Seus dados ficam só comigo e servem para eu falar com você pelo WhatsApp sobre este material. Para sair, é só responder "sair".</p>
+    </form>
+  </main>
+  <footer>Victor Senna · Continuum AI Systems</footer>
+<script>
+  var SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxZU1XGWRwa_9W6SFXwvPtPOx9aDdoGfj1q1V98raTAJLAwGYeTe37xugAtlHY9AsGw/exec';
+  var PDF = 'Mapa-Repositorio-Continuum.pdf';
+  var FAIXA = 'Mapa do repositório · Continuum - PDF grátis - ';
+
+  // faixas: o mesmo texto repetido; duas metades iguais fazem o loop sem emenda
+  ['trilho-preto', 'trilho-azul'].forEach(function (id) {
+    var t = document.getElementById(id), metade = '';
+    for (var i = 0; i < 6; i++) metade += '<span>' + FAIXA + '</span>';
+    t.innerHTML = metade + metade;
+  });
+
+  var f = document.getElementById('form'), erro = document.getElementById('erro'), botao = document.getElementById('botao');
+  var pronto = document.getElementById('pronto'), wpp = document.getElementById('whatsapp');
+  var origem = (location.search.match(/[?&]o=([\w.-]{1,30})/) || [])[1] || 'perfil';
+  var enviado = false;
+
+  wpp.addEventListener('input', function () {
+    var d = wpp.value.replace(/\D/g, '').slice(0, 11), r = d;
+    if (d.length > 2) r = '(' + d.slice(0, 2) + ') ' + d.slice(2);
+    if (d.length > 7) r = '(' + d.slice(0, 2) + ') ' + d.slice(2, d.length - 4) + '-' + d.slice(d.length - 4);
+    wpp.value = r;
+  });
+
+  function registrar(nome, d) {
+    if (enviado) return;
+    enviado = true;
+    var dados = new URLSearchParams({ nome: nome, whatsapp: d, origem: origem, site: f.site.value });
+    // sendBeacon segue mesmo que a pessoa saia da página para ler o PDF
+    if (!(navigator.sendBeacon && navigator.sendBeacon(SCRIPT_URL, dados))) {
+      try { fetch(SCRIPT_URL, { method: 'POST', mode: 'no-cors', keepalive: true, body: dados }); } catch (e) {}
+    }
+  }
+
+  f.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var nome = f.nome.value.trim(), d = wpp.value.replace(/\D/g, '');
+    if (nome.length < 2) { erro.textContent = 'Coloca o seu nome.'; f.nome.focus(); return; }
+    if (d.length < 10 || d.length > 11) { erro.textContent = 'Confere o WhatsApp: DDD e número, 10 ou 11 dígitos.'; wpp.focus(); return; }
+    erro.textContent = '';
+
+    registrar(nome, d);
+
+    // abre e baixa no mesmo toque (fora do toque, o navegador bloqueia a aba nova)
+    var aba = null;
+    try { aba = window.open(PDF, '_blank', 'noopener'); } catch (err) {}
+    var a = document.createElement('a');
+    a.href = PDF; a.download = PDF;
+    document.body.appendChild(a); a.click(); a.remove();
+
+    pronto.classList.add('aberto');
+    botao.textContent = 'Abrir de novo';
+
+    // navegador de dentro do Instagram costuma bloquear aba nova: abre o PDF aqui mesmo
+    var ehApp = /Instagram|FBAN|FBAV/i.test(navigator.userAgent);
+    if (ehApp) setTimeout(function () { location.href = PDF; }, 1400);
+  });
+</script>
+</body>
+</html>

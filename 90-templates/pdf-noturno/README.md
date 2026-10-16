@@ -52,6 +52,18 @@ python3 -m weasyprint documento.html documento.pdf
 
 **Primeira aplicação:** `clientes/Paola Lopes Rosa/05 - instagram/ROTEIROS-REELS-LOTE-01.pdf` (classe ESTRUTURA, 17 páginas), fonte em `05 - instagram/pdf/roteiros-lote-01.html`.
 
+### ⭐ Variante elétrica: o MODELO PADRÃO de PDF da casa *(16/10/2026, alçada Victor)*
+
+`eletrico.css`, carregado **depois** do `noturno.css` (e do `noturno-celular.css`, se for celular). Fundo `#05070F`, azul `#2F6BFF → #5B8CFF`, branco puro; títulos em **Anton** caixa alta, rótulos em **Montserrat** espaçada, corpo em **Inter** (as três por `<link>` do Google Fonts). Acrescenta `.fita` (faixa diagonal da capa), `.rotulo`, `.passo`, `.arquivos` e `.fluxo.alto` (diagrama limitado pela altura da página).
+
+🔴 **Padrão desde 16/10/2026, para todo PDF que sai do gerador noturno** (Victor, sobre o presente do perfil: *"quero até fazer desse o nosso novo modelo de PDF.. ficou absurdo!"*). ~~Só para material de marca; documento de conta e de método no noturno puro~~ *(vigente por algumas horas em 16/10, revogado pela mesma alçada)*. **O noturno puro continua disponível, mas só quando o Victor pedir.** Carga padrão: `noturno.css` → (`noturno-celular.css`, se celular) → `eletrico.css`.
+
+**Página de prompt** (`.prompt`, 16/10): texto para o leitor colar na IA dele, em fonte de 4,4 pt de propósito, para caber numa página e ser lido como prompt, não como texto. **Sempre acompanhado do mesmo texto em `.md`**, porque texto copiado de PDF leva as quebras de linha.
+
+⚠️ **No Chrome, o `<style>` de um SVG vale para o documento inteiro.** Dois SVGs com a mesma classe (`.bx`, `.ts`) brigam, e o último vence. **Prefixar as classes de cada SVG** (`p-bx`, `q-ts`). O WeasyPrint isola; o Chrome não.
+
+**Primeira aplicação:** `30-comercial/conteudo-perfil/2026-10-16-presente-mapa-repo/Mapa-Repositorio-Continuum.pdf` (classe ESTRUTURA, 17 páginas, celular).
+
 ### Gerar no Windows, sem WeasyPrint *(12/10/2026)*
 
 Nesta máquina o WeasyPrint não está instalado. O Chrome sem interface gera o mesmo resultado, incluindo o fundo da página e o rodapé numerado:
@@ -160,6 +172,8 @@ A fonte Lato entra por `<link>` do Google Fonts no `<head>`; os títulos caem pa
 | 18/09 | `clientes/Débora Delgado/entregas-cliente/Metodo-Direct-Response-Debora.pdf` (7p) | **DECISÃO** — exemplar | `04 - web design/metodo-debora-noturno.html` |
 | **19/09** | **`clientes/Débora Delgado/entregas-cliente/Funil-Debora-19-09.pdf` (8p)** | ⭐ **ESTRUTURA** — exemplar | `04 - web design/funil-debora-noturno.html` |
 | 25/09 | `clientes/Débora Delgado/entregas-cliente/Encaixe-Debora-25-09.pdf` (6p) | **ESTRUTURA** — variante *encaixe*: onde o que o cliente já está criando entra na estrutura. ⭐ **Página nova no padrão: "por que encaixar numa forma que já existe"** — o padrão repetido nas referências escaladas, **sem nome de concorrente**. Lição de montagem: seção curta que sobra sozinha na página sobe para a página do mapa (modo de falha "síntese órfã") | `04 - web design/encaixe-debora-noturno.html` |
+
+| 16/10/2026 | `30-comercial/conteudo-perfil/2026-10-16-presente-mapa-repo/Mapa-Repositorio-Continuum.pdf` (18p, celular + elétrica) | ⭐ **ESTRUTURA — exemplar da linha elétrica.** O presente do story *"método"*. Mapa na p. 2, uma seção por caixa, página de prompt para a IA do leitor (fonte mínima), última página com o limite e a porta para o treinamento | `mapa-repositorio-continuum.html`, na mesma pasta |
 
 > 🔴 ⭐ **A segunda NÃO substitui a primeira, e a correção é de 19/09** (Victor: *"não elimine o outro, mas faça uma distinção"*). **São classes diferentes, não versões.** A de 18/09 abre pela projeção porque responde *"por que fazer isso"*; a de 19/09 abre pelo diagrama porque responde *"como isso funciona"*. **Cada uma é o exemplar de referência da sua classe** — quem for escrever uma das duas, copia a que corresponde.
 >
