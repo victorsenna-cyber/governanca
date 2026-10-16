@@ -17,4 +17,4 @@
 | roteiro, página, VSL, criativo **novo** ao público | lacunas 1 a 3 (sem `D` confirmado) **e** P4 em `../PILARES.md` | não se escreve; a entrega é o pedido de colheita |
 | criativos já no ar (lote de 7, 14/10) | — | seguem: saíram por exceção declarada, com texto do convite do Gui |
 
-**Fecha o bloqueio:** lacuna 1 confirmada (6 frases viram `D`, acima do piso de 3) **mais** P4 respondido.
+~~**Fecha o bloqueio:** lacuna 1 confirmada mais P4 respondido.~~ **16/10: bloqueio dispensado pelo Victor** (`DEC-2026-10-16-001`): o texto ao público se apoia nos materiais do Gui. As lacunas seguem abertas como colheita, não como portão. A lacuna 5 entra no quiz v6 (pergunta aberta depois do cadastro).

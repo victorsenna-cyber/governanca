@@ -206,6 +206,21 @@ Criar uma decisão sinaliza propagação; não autoriza editar arquivos que este
 | aberto | P4 (oferta) reprova: cinco perguntas de fato ao Gui em `PILARES.md` |
 | Propaga p/ | `STATUS.md`, `lexico-icp/`, toda peça nova ao público |
 
+### DEC-2026-10-16-001 — Oferta fechada (P4) com o contexto existente e fonte de texto da linha Permissão
+
+| Campo | Registro |
+|---|---|
+| data | 2026-10-16 |
+| pedido literal | Victor: *"feche oferta com o que já tem do contexto dele.. falas reais não precisa.. só o que o Gui trás nos materiais sobre a permissão e constelação. tudo precisa ser no automático, se não for, faça de outra forma"* |
+| decisão 1 · escada (um produto por degrau) | **topo:** Conselho do Cigano, gratuito (outubro; depois, gratuito até o Gui dizer o contrário) → **isca:** Teste da Permissão com Raio-X → **entrada:** Diagnóstica da Permissão, R$ 97, sessão individual de 2h com o mapa da Permissão e o passo a passo → **núcleo:** programa de implementação de 28 dias, individual, 4 encontros, R$ 1.500 ou até 12x → **continuidade:** grupo Venda com Permissão, R$ 1.500 por 3 meses, aula semanal |
+| decisão 2 · fora das peças | Desafio R$ 997, Jornada R$ 2.997, Mentoria R$ 5.000 e Script de Vendas avulso **saem de circulação nas peças**. Critério: vale a fonte mais recente (áudio do Gui de 08/10, `DEC-2026-10-08-001`), e o que não tem preço atual não entra |
+| decisão 3 · fonte de texto | para esta conta, **o texto ao público pode se apoiar nos materiais do Gui sobre Permissão e constelação**, sem exigir frase `D` do público. O portão de léxico fica dispensado por alçada do Victor; a pergunta aberta do quiz segue colhendo falas para uso futuro |
+| decisão 4 · automação | o que depende de ação manual recorrente (do Gui ou nossa) não entra no funil. As ações do Raio-X saem do material dele, sem esperar áudio novo; vídeo por porta fica fora |
+| autoridade | Victor (alçada de estrutura e exceção de portão). Gui mantém o direito de objeção de congruência sobre fatos (preço, entrega), respondida por escrito |
+| fonte | `DEC-2026-10-01-001` (Diagnóstica) · `DEC-2026-10-08-001` (escada declarada em áudio) · `PILARES.md` §P4 |
+| risco declarado | itens 3 e 4 da fala de 08/10 vieram com "estou pensando". Se o Gui mudar preço ou formato, muda a decisão 1, não a estrutura |
+| Propaga p/ | `PILARES.md` (P4 ✅), `lexico-icp/LACUNAS.md`, quiz `/permissao-mentoras/` v6, `STATUS.md` |
+
 ## Propostas não vigentes
 
 As decisões acima registram direção de ICP, experimento e as condições confirmadas do Grupo. Preço da Jornada, cashback, teto numérico de calls/vagas, promessa, página publicada, campanha, Pixel e conteúdo vigente continuam sem nova decisão nesta tarefa.

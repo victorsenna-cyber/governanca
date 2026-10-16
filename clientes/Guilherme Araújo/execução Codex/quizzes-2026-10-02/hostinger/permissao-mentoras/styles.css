@@ -7,3 +7,18 @@
 .alert.danger{border-color:#fecdc8}.alert.full.danger{border-color:#fb2c36}.result .argument h3{font-weight:700}.offer .argument h3{font-size:15.6px;line-height:19.5px}.insertion .alert.success{padding:16px}
 .result .arguments{grid-template-columns:repeat(2,minmax(0,1fr));gap:6.4px;align-items:start}.argument{overflow-wrap:break-word}.opening footer{margin-top:172.8px}
 @media(min-width:768px){.screen{padding:20px;gap:24px}.header{display:flex;justify-content:space-between;gap:16px}.back-wrap,.header-end{display:flex;flex:1}.progress{margin-top:16px}.header-end{display:block}.opening .back-wrap{height:auto}}
+.gauge{position:relative;padding-top:30px}
+.gauge-track{height:14px;border-radius:12px;background:linear-gradient(90deg,#fb2c36 0%,#fb2c36 30%,#ffb900 38%,#ffb900 63%,#09de5e 71%,#09de5e 100%)}
+.gauge-marker{position:absolute;top:0;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center}
+.gauge-marker span{font-size:12px;font-weight:700;background:#030712;color:#fff;border-radius:8px;padding:2px 8px;white-space:nowrap}
+.gauge-marker::after{content:"";width:3px;height:22px;background:#030712;border-radius:2px;margin-top:2px}
+.gauge-labels{display:flex;justify-content:space-between;font-size:12px;font-weight:700;color:#585b60;padding-top:6px}
+.portas{display:flex;flex-direction:column;gap:12px}
+.porta{padding:12px 14px;border:1px solid #e5e5e5;border-radius:14px}
+.porta.principal{border:2px solid #030712}
+.porta-head{display:flex;justify-content:space-between;align-items:baseline;gap:8px;font-weight:700;padding-bottom:6px}
+.porta-label em{font-style:normal;font-size:11px;font-weight:700;background:#030712;color:#fff;border-radius:6px;padding:2px 6px;margin-left:6px;text-transform:uppercase}
+.porta-hint{font-size:13px;line-height:18px;color:#585b60;padding-top:6px}
+.ask{text-align:left;display:flex;flex-direction:column;gap:10px}
+.ask textarea{width:100%;border:1px solid #dbdbdb;border-radius:12px;padding:12px;font:inherit;resize:vertical}
+.ask-thanks{font-weight:600;color:#0b6e2d}

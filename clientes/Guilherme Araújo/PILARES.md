@@ -1,27 +1,27 @@
 # PILARES — Guilherme Araújo
 
-> **Método:** `../../100-métodos/METODO-TESTE-DE-PILARES.md` · **Rodado em:** 15/10/2026 · **Próxima rodada:** quando P4 fechar, ou 15/01/2027
+> **Método:** `../../100-métodos/METODO-TESTE-DE-PILARES.md` · **Rodado em:** 15/10/2026 · **P4 fechado em 16/10/2026** (`DEC-2026-10-16-001`) · **Próxima rodada:** 15/01/2027, ou se o Gui mudar preço ou formato
 > **Regra do arquivo:** não acumula histórico. Pilar que muda sai daqui; a decisão que o mudou vai para `DECISOES.md`.
 > **Alçada:** ICP, promessa e narrativa são **estrutura: decisão nossa** (REGRA Nº 0, registrada em `DEC-2026-10-15-001`). Preço, encontros e o que existe de fato são **fato: decisão do Gui**.
 
-## Resultado: 3 de 5 · 🔴 P4 reprova, e P4 bloqueia copy nova ao público
+## Resultado: 4 de 5 · P5 não testado (não bloqueia)
 
 | # | Pilar | Frase vigente | Teste |
 |---|---|---|---|
 | 1 | **ICP** | Terapeuta, mentora ou cartomante que já atende e entrega bem, mas trava na hora de falar de preço e fechar; já tentou técnica e script de venda, e o faturamento continua abaixo do tamanho do trabalho. | ✅ P1 |
 | 2 | **Promessa** | Cobrar o valor que você acha justo e fechar atendimentos sem se sentir vendendo. | ✅ P2 |
 | 3 | **Narrativa** | O que trava não é falta de técnica nem de capacidade: é uma **Permissão para receber** que ainda não foi dada, com origem mais antiga que o consultório. Técnica ensina o que dizer; não muda o que você sente na hora de dizer. | ✅ P3 |
-| 4 | **Oferta** | **não existe uma lista só** (abaixo) | 🔴 P4 |
+| 4 | **Oferta** | Conselho do Cigano (gratuito) → Teste da Permissão (Raio-X) → **Diagnóstica da Permissão, R$ 97**, 2h individual, mapa + passo a passo → **Programa de 28 dias**, individual, 4 encontros, R$ 1.500 ou 12x → **Grupo Venda com Permissão**, R$ 1.500/trimestre | ✅ P4 |
 | 5 | **Produto** | sem teste de terceiro | 🔴 P5 (não testado) |
 
 **Por que cada um passou ou não:**
 - **P1:** uma frase, com quem é **e o que já tentou** (técnica de venda). Fecha a convivência de duas leituras, Signos para público geral e Permissão para terapeutas, porque o próprio Gui pôs o foco no terapeuta em 08/10 (`DEC-2026-10-08-001`) e o Conselho do Cigano foi redirecionado a profissionais. **Não é ICP:** quem busca horóscopo ou previsão pessoal.
 - **P2:** cabe numa frase dita em voz alta e não promete faturamento. As duas metades vêm das respostas do quiz da Permissão ("Cobraria o valor que acho justo", "Teria mais clientes sem me sentir vendendo").
 - **P3:** mecanismo nomeado e diagnóstico ("Permissão para receber"), não adjetivo. Já está no quiz no ar.
-- **P4:** o inventário diverge em preço e formato do mesmo produto. **Reprova automática** pelo método.
+- **P4:** fechado por alçada do Victor em 16/10 com a fonte mais recente (áudio do Gui de 08/10): um produto por degrau. ~~O inventário diverge em preço e formato do mesmo produto.~~ A tabela abaixo fica como registro do que saiu.
 - **P5:** nunca foi pedido a quem comprou que explicasse a oferta. Os prints de alunas falam do **script**, não da oferta atual.
 
-## P4 · as versões que convivem hoje (não harmonizadas)
+## P4 · as versões que conviviam até 16/10 (a coluna B venceu; o que não tem preço atual saiu das peças)
 
 | Produto | Versão A | Versão B | Fonte |
 |---|---|---|---|
@@ -42,5 +42,5 @@
 
 ## O que está bloqueado
 
-- **Copy nova ao público** (roteiro, página, VSL, criativo novo): bloqueada por P4 **e** pelo léxico sem grau `D` confirmado (`lexico-icp/LACUNAS.md`).
-- **Não bloqueado:** o lote de 7 criativos no ar, que saiu por exceção declarada pelo Victor em 14/10, com texto 100% do convite do Gui.
+- ~~Copy nova ao público bloqueada por P4 e pelo léxico sem `D`.~~ **Desbloqueada em 16/10** (`DEC-2026-10-16-001`): P4 fechado; o texto se apoia nos materiais do Gui sobre Permissão e constelação, por alçada do Victor.
+- A regra de procedência continua: cena, dor ou fala atribuída ao público só entra com fonte apontável. O que vem do material do Gui entra **na voz dele**, nunca como fala de aluna.
