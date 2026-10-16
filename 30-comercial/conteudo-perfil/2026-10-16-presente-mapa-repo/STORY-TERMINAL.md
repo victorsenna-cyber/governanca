@@ -9,7 +9,7 @@ Link: `https://continuumsystems.com.br/mapa/?o=story` (página no ar e testada p
 |---:|---|---|---|---|
 | 1 | **Modern** | azul | `A IA TRABALHANDO` / `SOZINHA.` | topo, **em cima das abas do terminal** (cobre os nomes de cliente). A 1ª linha estica até a borda direita |
 | 2 | traço do pincel, azul | — | seta da chamada até a linha destacada | lado esquerdo |
-| 3 | **Typewriter** | branco | `00h55. Mandei isso e ela saiu` / `fazendo: página, checkout` / `e quiz.` | logo abaixo da linha destacada |
+| 3 | **Typewriter** | branco | `00h55. Mandei isso e ela saiu` / `acertando: página,` / `pagamento e quiz.` *(16/10: "fazendo… checkout" trocado, ver nota abaixo)* | logo abaixo da linha destacada |
 | 4 | **Classic** | preto | `Ela não precisa me perguntar porque lê as minhas regras antes de agir. O mapa de como montei isso é seu, de graça:` | terço inferior, centralizado |
 | 5 | figurinha **Link** | — | `QUERO O MAPA` | abaixo do texto 4, levemente inclinada, **acima da faixa de 250 px que a interface cobre** |
 
@@ -17,9 +17,23 @@ Link: `https://continuumsystems.com.br/mapa/?o=story` (página no ar e testada p
 
 **Depois de postar:** a planilha separa quem veio do story pela origem `story`. Anotar o total de 24 h e de 7 dias em `../REGISTRO.md`.
 
-## Legenda (campo "Adicione uma legenda") · v3
+## Legenda · v4 (a postada)
 
-> v1 (*"IA sem regra escrita pergunta tudo..."*) e v2 (três frases curtas) recusadas pelo Victor: *"não gostei do copy"* e *"tem que desenvolver mais.."*. A v3 desenvolve: cena, problema de quem lê, causa, mecanismo, prova e convite.
+> v3 aprovada pelo Victor (*"gostei muito"*) e reduzida para caber na tela. **Correção de fato na mesma hora:** a sessão do print não "fazia" checkout. O item era *"a página de vendas e o checkout batendo com a peça"*: conferir a página de pagamento que já existe na plataforma contra o roteiro v4.2 (pilar P4 da conta, `clientes/Débora Delgado/STATUS.md`). "Fazendo checkout" sugeria construir um sistema de pagamento. Trocado por **acertando** e **pagamento**, na legenda e no texto em Typewriter.
+
+```
+Essa linha marcada foi a única ordem que eu dei.
+
+A maioria usa IA como estagiário: pede, corrige, pede de novo. E ela pergunta tudo, porque não sabe como você decide.
+
+O modelo é o mesmo que todo mundo usa. A diferença está no que ela lê antes de agir: a minha operação inteira escrita num repositório. Ela abre, encontra a regra e segue.
+
+Por isso dá pra mandar "faça tudo sem parar" à meia-noite e ela sair acertando página de vendas, pagamento e quiz.
+
+O mapa desse repositório tá no link, de graça.
+```
+
+<details><summary>v3, a versão longa que originou esta</summary>
 
 ```
 Essa linha marcada foi a única ordem que eu dei.
@@ -33,4 +47,4 @@ Por isso dá pra mandar "faça tudo sem parar" à meia-noite e ela sair fazendo 
 Montei um mapa de como esse repositório funciona, com o nome de todos os arquivos e um prompt pra sua IA montar o seu. Tá no link, de graça.
 ```
 
-**Procedência:** a ordem e o horário estão no print; "página, checkout e quiz" é o que o terminal mostra que ela começou; o que o repositório contém é o que o PDF mostra.
+</details>
