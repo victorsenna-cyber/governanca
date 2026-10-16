@@ -1,6 +1,6 @@
 # ROTEIRO DE GRAVAÇÃO · VSL · Eneagrama para Líderes · Débora Delgado
 
-> STATUS: **roteiro v4.2 · 15/10/2026 · versão sem perguntas, rodada 3 fechada** (`JUIZ-RODADA-3-CICLO-2.md`: ordens O-21 a O-38 + DV-4 em D27, conferida por A3, A2 e A4) · substitui o v4.1 (`G6-ROTEIRO-v4.1.md`, trilha), o v4 e o v3 · o ciclo 1 foram **20 ordens** (`JUIZ-RODADA-3.md`) + DV-1 a DV-3 · ✅ **funil B: GRAVA** — D31 e D36 depois de o checkout desativar a entrada em 16/12 · ✅ **mídia só como TESTE declarado, verba limitada; escala: não** (gate de congruência, REGRA Nº 2) · o funil A (apêndice) espera a correção do quiz · ⟲ **conferências fechadas em 15/10 (Victor):** 12× · reembolso pela própria plataforma (PagTrust) · acesso de 12 meses · materiais e link do grupo na plataforma · mentoria R$ 6.000 / 4 meses / 16 + 4 (a VSL vende o curso: D29 só com a âncora) · *"saindo do trabalho na hora"* conferido no áudio · ⟲ **v4.1: calendário 16/12 · 06/01 · 20/01 · 03/02; 🔴 a VSL SAI DO AR NO DIA DO PRIMEIRO ENCONTRO (16/12) — depois dele, D28 a D36 prometem os quatro encontros a quem assiste, e isso fica falso**
+> STATUS: **roteiro v4.2 · 15/10/2026 · versão sem perguntas, rodada 3 fechada** (`JUIZ-RODADA-3-CICLO-2.md`: ordens O-21 a O-38 + DV-4 em D27, conferida por A3, A2 e A4) · substitui o v4.1 (`G6-ROTEIRO-v4.1.md`, trilha), o v4 e o v3 · o ciclo 1 foram **20 ordens** (`JUIZ-RODADA-3.md`) + DV-1 a DV-3 · ✅ **funil B: GRAVA** — D31 e D36 depois de o checkout desativar a entrada em 16/12 · ✅ **mídia só como TESTE declarado, verba limitada; escala: não** (gate de congruência, REGRA Nº 2) · ⟲ 16/10: **funil A (apêndice) também grava** — quiz corrigido (v7, `../../quiz/CORRECAO-QUIZ-v7-2026-10-16.md`) e D01A conferida contra as situações dele · ⟲ **conferências fechadas em 15/10 (Victor):** 12× · reembolso pela própria plataforma (PagTrust) · acesso de 12 meses · materiais e link do grupo na plataforma · mentoria R$ 6.000 / 4 meses / 16 + 4 (a VSL vende o curso: D29 só com a âncora) · *"saindo do trabalho na hora"* conferido no áudio · ⟲ **v4.1: calendário 16/12 · 06/01 · 20/01 · 03/02; 🔴 a VSL SAI DO AR NO DIA DO PRIMEIRO ENCONTRO (16/12) — depois dele, D28 a D36 prometem os quatro encontros a quem assiste, e isso fica falso**
 
 ## Como ler as marcações
 
@@ -16,7 +16,7 @@
 
 | # | Elemento | O que falta | De quem depende |
 |---|---|---|---|
-| 6 | D01A (só funil A, apêndice) | conferir a abertura do funil A contra as situações do quiz v6, depois da correção do quiz | nós (próxima tarefa) |
+| — | nenhum | ⟲ 16/10: o bloqueio 6 (D01A, funil A) saiu — a frase foi conferida contra as 12 situações do quiz v7 e corrigida (`G5-D01A-CORRECAO.md`, `A4-D01A-TRECHO.md`) | — |
 
 **Nenhuma fala do funil B depende de resposta da Débora.** O consentimento e a capacidade dela se dão na leitura e na gravação: o que ela não quiser dizer, ela aponta, e nós alteramos ou explicamos por escrito por que não.
 
@@ -718,9 +718,7 @@ Se você veio do quiz, já tem um primeiro norte: o seu nível em cada área e a
 
 Repara que o quiz mostrou como você lidera hoje. Não disse o seu tipo, nem o de ninguém do seu time.
 
->>> BLOQUEIO 6 <<<
 E todas as situações que você respondeu têm uma coisa em comum: do outro lado, sempre uma pessoa do seu time.
->>> FIM DO BLOQUEIO <<<
 
 [PAUSA]
 
@@ -766,7 +764,7 @@ Nesta aula, você vai entender por que um pedido claro para você nem sempre é 
 | **OFERTA** | D26–D36 | 1.153 | 1.150–1.570 | 6,8 min |
 | `[PONTE NOVA]` D22 → D23 | fora de elemento | 11 | — | — |
 | **VSL, funil B** | D01–D36 + ponte | **3.536** | 3.500–3.900 | **20,8 min** |
-| Funil A (troca D01–D04 pela abertura do apêndice) | D01A–D04A | 180 no lugar de 170 | — | VSL com 3.546 palavras |
+| Funil A (troca D01–D04 pela abertura do apêndice) | D01A–D04A | 178 no lugar de 170 | — | VSL com 3.544 palavras |
 
 | Elemento | Palavras | | Elemento | Palavras | | Elemento | Palavras |
 |---|---:|---|---|---:|---|---|---:|
@@ -781,7 +779,7 @@ Nesta aula, você vai entender por que um pedido claro para você nem sempre é 
 | D25 | 67 | | D26 | 72 | | D27 | 285 |
 | D28 | 175 | | D29 | 187 | | D30 | 129 |
 | D31 | 99 | | D32 | 44 | | D35 | 84 |
-| D36 | 78 | | D01A | 85 | | D02A | 41 |
+| D36 | 78 | | D01A | 83 | | D02A | 41 |
 | D03A | 23 | | D04A | 31 | |  |  |
 
 **Desvios de dose declarados (`JUIZ-RODADA-3-CICLO-2.md` §10, `BRIEFING-VSL.md` §5 e §12):** D03 e D03A com 23 (piso 25) · **D10 com 212** (piso 225, tolerância do juiz do bloco 2; *"na hora"* restituído da fonte, §12 #16) · D11 com 72 (teto 70, tolerância até 80) · D12 com 41 (§12.5 + O-03) · D18 com 223 (tolerância até 225) · D19 com 80 (§12.6 + O-07) · D23 com 148 (tolerância até 150) · **D27 com 285** (piso 295; saíram O Espelho e o módulo) · **D29 com 187** (piso 205; decisão do Victor de 15/10, foco no curso, §12 #15) · D30 com a garantia em 66 (tolerância até 68) · D31 com 99 (piso 125) · D09 reduzido à ponte; D33 e D34 omitidos · **HISTÓRIA 325** (piso 330) · **peso da oferta ≈32,6%** (alvo 33–40%) · distância até o preço ≈87,7% (alvo 80–86%). VSL dentro da faixa.
