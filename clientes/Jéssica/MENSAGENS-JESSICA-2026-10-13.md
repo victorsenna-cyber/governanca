@@ -36,7 +36,7 @@
 >
 > os depoimentos ficaram sem nome e sem foto das alunas. se alguma autorizar, eu coloco..
 
-> e segue o plano de divulgação, de agora até janeiro. três posts por semana: duas peças com arte e legenda prontas pra copiar e um reel teu, com o tema já escolhido.
+> e segue o plano de divulgação, de agora até janeiro. três posts por semana: duas peças com o texto da arte e a legenda prontos pra copiar e um reel teu, com o tema já escolhido.
 >
 > o documento traz o texto das sete primeiras semanas, até a virada do preço em 29/11. as de dezembro e janeiro eu te mando junto com o anúncio do dia, já com a data e o local dentro.
 >
@@ -50,7 +50,7 @@
 
 > Jéssica, boa tarde! segue o plano de divulgação da Ladies Fluency Experience, de agora até janeiro..
 >
-> montei em cima do que você me disse na call: três posts por semana. cada semana tem duas peças com arte e legenda prontas pra copiar e um reel teu, com o tema já escolhido.
+> montei em cima do que você me disse na call: três posts por semana. cada semana tem duas peças com o texto da arte e a legenda prontos pra copiar e um reel teu, com o tema já escolhido.
 >
 > o documento traz o texto das sete primeiras semanas, até a virada do preço em 29/11. as de dezembro e janeiro eu te mando junto com o anúncio do dia, já com a data e o local dentro.
 >

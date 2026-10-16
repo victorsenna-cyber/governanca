@@ -37,14 +37,28 @@ def inline(s):
     return s
 
 
+def tipo(formato):
+    """Só o tipo da peça. A arte em si é dela (decisão do Victor, 16/10)."""
+    f = formato.strip().lower()
+    if f.startswith("foto dela ou estático"):
+        return "Foto sua ou arte estática"
+    if f.startswith("estático"):
+        return "Arte estática"
+    if f.startswith("foto"):
+        return "Foto sua" if "dela" in f else "Fotos do espaço, em carrossel"
+    if f.startswith("vídeo"):
+        return "Vídeo curto ou foto sua"
+    return inline(formato.strip())
+
+
 def peca(cod, quando):
     titulo, corpo = bloco(cod)
     corpo = corpo.replace("{{QUANDO}}", quando)
     out = ["<h3>%s · %s</h3>" % (cod, html.escape(titulo))]
     fmt = re.search(r"\*\*Formato:\*\* (.+)", corpo)
     telas = re.search(r"\*\*Telas:\*\* (\d+)", corpo)
-    if fmt:
-        out.append('<p class="sub">Formato: %s</p>' % inline(fmt.group(1).strip()))
+    if fmt and not telas:
+        out.append('<p class="sub">%s</p>' % tipo(fmt.group(1)))
     if telas:
         out.append('<p class="sub">Carrossel de %s telas</p>' % telas.group(1))
     arte = re.search(r"\*\*Arte[^*]*\*\*\s*\n((?:>.*\n?)+)", corpo)
