@@ -48,3 +48,17 @@ Montei um mapa de como esse repositório funciona, com o nome de todos os arquiv
 ```
 
 </details>
+
+## ✅ Versão POSTADA (literal, print do Victor, 16/10/2026 ~07h40)
+
+A versão no ar difere da composição sugerida. O que vale como registro é esta:
+
+| Elemento | Texto literal | Forma |
+|---|---|---|
+| chamada | `A IA TRABALHANDO SOZINHA.` | Modern, fundo azul, uma linha, cobrindo as abas |
+| seta | ↓ azul, da chamada até a linha destacada | pincel |
+| bloco branco | `Mandei isso e ela saiu fazendo: página, pagamento e quiz. sem parar e com assertividade alta` | Classic, fundo branco |
+| texto solto | `Ela não me pergunta porque lê as minhas regras antes de agir.. O mapa de como montei isso está aqui, grátis. Só baixar e usar:` 👇 | Classic, sem fundo |
+| figurinha | `PDF MAPA` | link, estilo padrão |
+
+**Diferenças em relação ao sugerido, decisão do Victor:** saiu o "00h55"; "fazendo" no lugar de "acertando"; entrou *"sem parar e com assertividade alta"*; o fecho virou *"Só baixar e usar"*; a figurinha virou *"PDF MAPA"*. As abas com nomes de cliente ficaram cobertas.
