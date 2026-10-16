@@ -1,16 +1,18 @@
-# Story do terminal · copy e composição · 16/10/2026
+# Story do terminal · copy e composição · v2 · 16/10/2026
 
-Fundo: print do terminal com a ordem *"faça tudo sem parar até finalizar sem me solicitar ok"* destacada (sessão da página, checkout e quiz).
-CTA: figurinha de link para a página do presente, `continuumsystems.com.br/mapa/?o=story` (só depois que a página estiver no ar).
+> **v2** (pedido do Victor: *"troca o copy e composição do story agora"*, depois de testar a página no ar). A v1 abria por *"00H55. A ORDEM FOI UMA SÓ"* e fechava com *"O MAPA DO MEU REPO"*. **Trocada porque a página passou a prometer *"Faça a IA trabalhar sozinha. Do seu jeito."*:** o story agora abre com a mesma promessa e fecha com o mesmo botão da página (*"Quero o mapa"*). Quem toca no link chega na página e lê a frase que acabou de ler no story.
+
+Fundo: print do terminal com a ordem *"faça tudo sem parar até finalizar sem me solicitar ok"* destacada.
+Link: `https://continuumsystems.com.br/mapa/?o=story` (página no ar e testada pelo Victor em 16/10).
 
 | Ordem | Fonte do Instagram | Fundo do texto | Texto | Posição |
 |---:|---|---|---|---|
-| 1 | **Modern** | azul | `00H55. A ORDEM` / `FOI UMA SÓ:` | topo, **em cima das abas do terminal** (cobre os nomes de cliente). A 1ª linha estica até a borda direita |
+| 1 | **Modern** | azul | `A IA TRABALHANDO` / `SOZINHA.` | topo, **em cima das abas do terminal** (cobre os nomes de cliente). A 1ª linha estica até a borda direita |
 | 2 | traço do pincel, azul | — | seta da chamada até a linha destacada | lado esquerdo |
-| 3 | **Typewriter** | branco | `e ela saiu fazendo: página,` / `checkout e quiz.` | logo abaixo da linha destacada |
-| 4 | **Classic** | preto | `Só dá pra soltar assim porque cada regra da operação está escrita. A IA decide em cima do método.` | terço inferior, centralizado |
-| 5 | figurinha **Link** | — | `O MAPA DO MEU REPO` | abaixo do texto 4, levemente inclinada, **acima da faixa de 250 px que a interface cobre** |
+| 3 | **Typewriter** | branco | `00h55. Mandei isso e ela saiu` / `fazendo: página, checkout` / `e quiz.` | logo abaixo da linha destacada |
+| 4 | **Classic** | preto | `Ela não precisa me perguntar porque lê as minhas regras antes de agir. O mapa de como montei isso é seu, de graça:` | terço inferior, centralizado |
+| 5 | figurinha **Link** | — | `QUERO O MAPA` | abaixo do texto 4, levemente inclinada, **acima da faixa de 250 px que a interface cobre** |
 
-**Procedência:** "00h55" é o horário do print; "página, checkout e quiz" é o que o terminal mostra que ela começou (*"Vou avançar nas três frentes: página de vendas e checkout"*). Nada de número, nem de "terminou", porque o print não mostra o fim.
+**Procedência:** "00h55" é o horário do print; "página, checkout e quiz" é o que o terminal mostra que ela começou; "não precisa me perguntar" é o que a ordem destacada pede. Nada de "terminou", porque o print não mostra o fim.
 
-**Antes de postar:** a página `/mapa/` precisa estar no ar. Se ainda não estiver, troque a figurinha por texto Classic: `Quer o mapa? Me manda "método".`
+**Depois de postar:** a planilha separa quem veio do story pela origem `story`. Anotar o total de 24 h e de 7 dias em `../REGISTRO.md`.
