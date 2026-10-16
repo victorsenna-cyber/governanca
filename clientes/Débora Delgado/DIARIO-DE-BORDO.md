@@ -3,6 +3,15 @@
 > **Protocolo de contexto entre sessões de terminal.** Toda sessão ABRE lendo: `CLAUDE.md` → `DIRETRIZES-EXECUCAO-LANCAMENTO.md` (sua tarefa) → as 3 últimas entradas daqui → `03 - tráfego pago/LOG-DECISOES.md` (se tráfego). Toda sessão FECHA registrando entrada abaixo. **Sessão sem entrada no diário = trabalho perdido.**
 > A cada passo relevante DENTRO da sessão (arquivo criado, decisão aplicada, bloqueio), registrar na hora, não no final (terminal cai, contexto não).
 
+### 2026-10-16 (tarde) · Opus (Claude Code CLI, CEO-orquestrador) · ⭐ **VSL v4.4: objeção da Débora, auditor A7 e revisão 1 dos métodos**
+
+- A Débora leu o roteiro e objetou ao trecho 1: o vídeo falava como se o espectador já conhecesse o Eneagrama. O Victor nomeou o defeito como nível de consciência. Na mesma tarde ela mostrou o site (`deboradelgado.netlify.app`), com um teste de Eneagrama de comportamento.
+- **Novo auditor A7** (compreensão do ouvinte frio por tempo + coerência da peça inteira), com a ferramenta `tempo-vsl.py`. No v4.3 ele vetou quatro coisas, a mais grave: **a VSL criticava o produto dela** (o teste). Seis auditores de bloco e dois juízes não tinham visto.
+- **Revisão 1 dos métodos de VSL:** a destilação passa a modelar a **função e o tempo** de cada elemento; a R1 foi redestilada (a tese do mecanismo chega em 1:09, no contrarian). Gate de fato, orçamento e auditoria proporcional entram no método.
+- **v4.4** por um gerador só e três conferências, fechada por corte: **sem veto do A7**. 7 disparos.
+- **Decisões minhas registradas:** recusei 2 trocas do gerador (cortavam os nomes dos passos 3 e 4) · mantive a cena dos times na história.
+- **Pendente:** Victor envia a v2 com a mensagem pronta (`vsl/2026-10-11/MENSAGEM-DEBORA-OBJECAO-2026-10-16.md`) · a página de vendas ainda tem *"decorar tipo nenhum"* (V5 R5) e precisa ser conferida contra o v4.4 · onde publicar (Netlify × Hostinger).
+
 ### 2026-10-16 · Opus (Claude Code CLI, CEO-orquestrador) · ⭐ **funil da VSL fechado do nosso lado: objeções respondidas, quiz corrigido, funil A liberado, página de vendas construída**
 
 - Pedido do Victor: *"faça tudo sem parar até finalizar sem me solicitar ok"*. Trilha completa em `12 - Direct Response/vsl/2026-10-11/LOG.md`, seção PÓS-RODADA 3.

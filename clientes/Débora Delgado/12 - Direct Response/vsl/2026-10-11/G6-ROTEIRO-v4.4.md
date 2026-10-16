@@ -1,6 +1,6 @@
 # ROTEIRO DE GRAVAÇÃO · VSL · Eneagrama para Líderes · Débora Delgado
 
-> STATUS: **roteiro v4.3 · 16/10/2026 · objeção de congruência da Débora + decisão de nível de consciência** (o lead fala ao líder consciente do PROBLEMA; o Eneagrama entra como novo, na credencial) · trocas em D01, D03, D03A, D05, D19, D01A e D04A (`G5-OBJECAO-D01-2026-10-16.md`), conferidas por A2, A3 e A4; última devolução fechada por corte em D05 · substitui o v4.2 (trilha) · ✅ **grava nos dois funis** — D31 e D36 depois de o checkout desativar a entrada em 16/12 · ✅ **mídia só como TESTE declarado; escala: não** · 🔴 a VSL SAI DO AR NO DIA DO PRIMEIRO ENCONTRO (16/12)
+> STATUS: **roteiro v4.4 · 16/10/2026 · primeira versão auditada pelo A7 (compreensão e coerência) contra a linha do tempo da R1** · decisões `DECISOES-ESTRUTURA-v4.4.md` (E1–E9) · delta `G-DELTA-v4.4.md` (21 de 23 trocas; recusadas as que cortavam os nomes dos passos 3 e 4) · conferência A3, A4, A7 → fechado por corte (D10, D14, D21) e reversão (D27) · substitui o v4.3 (trilha) · **o que mudou:** a VSL não critica mais teste nem autodescoberta (o alvo é o líder que julga pelo comportamento) · o D04 nomeia o Eneagrama · o D05 entrega a tese em 1:13 · a frase falsa de compra depois de 16/12 saiu · a cena dos times subiu para a história · ✅ **grava nos dois funis** — D31 e D36 depois de o checkout desativar a entrada em 16/12 · ✅ **mídia só como TESTE declarado; escala: não** · 🔴 a VSL SAI DO AR NO DIA DO PRIMEIRO ENCONTRO (16/12)
 
 ## Como ler as marcações
 
@@ -170,7 +170,7 @@ Eu estava em um cargo de liderança, e era recém-contratada. A cultura daquela 
 
 [PAUSA]
 
-Era fácil perceber, nos processos seletivos, que eles julgavam a personalidade sete, que é a minha. No Eneagrama, são nove maneiras de funcionar, cada uma com um número. Tinha alguns comentários assim: ah, não, a pessoa que fala muito bem geralmente não faz nada, ela só fala. Pessoa muito comunicativa não resolve problema, ela só fica comunicando e não resolve.
+Era fácil perceber, nos processos seletivos, que eles julgavam a personalidade sete, que é a minha. Tinha alguns comentários assim: ah, não, a pessoa que fala muito bem geralmente não faz nada, ela só fala. Pessoa muito comunicativa não resolve problema, ela só fica comunicando e não resolve.
 
 [PAUSA]
 
@@ -283,7 +283,7 @@ Mesmo pedido. Mesma frase. Duas leituras diferentes.
 
 E agora a parte que interessa: você não descobre isso olhando o comportamento.
 
-O comportamento apenas é a superfície do iceberg. [PAUSA] Olha, às vezes até eu gosto de um momento de solidão. E eu não sou nada assim.
+O comportamento apenas é a superfície do iceberg.
 
 Ninguém adivinha como uma pessoa funciona pela superfície. Nem eu. E isso muda o que você faz com o seu pedido.
 
@@ -404,8 +404,6 @@ Quando você enxerga o que a pessoa protege, o comportamento dela começa a faze
 Passo três: escutar pelo computador do outro.
 
 Sem aquela camada de julgamento, a sua escuta muda de nível. E eu não estou falando de ouvir mais, nem de ouvir com paciência. É como se eu passasse a olhar pelo computador dele, e não pelo meu. Eu escuto o que ele está me dizendo dentro da organização dele.
-
-Você só pode ter uma suposição de como ele funciona: não diz isso a ele, e confirma perguntando.
 
 Na prática, é o que faz você perguntar antes de cobrar. O prazo estourou e, em vez de subir o tom, você pergunta o que travou. [PAUSA] Muitas vezes, o que travou estava visível desde o começo, e você não tinha como ver pela sua organização.
 
@@ -530,13 +528,13 @@ Você abre no tipo que supõe, sem dizer a ele, e pergunta.
 
 [TELA: Luz e Sombra da sua Liderança]
 
-Depois vem o material Luz e Sombra da sua Liderança. Ele mostra o ponto cego que cobra caro na liderança de cada tipo.
+Depois vem o material Luz e Sombra da sua Liderança. Ele mostra quando a liderança de cada tipo brilha, e o ponto cego que cobra caro. Inclusive a sua.
 
 [CORTE]
 
 [TELA: A sua liderança pela raiz]
 
-O material A sua liderança pela raiz mostra o outro lado: a força natural de cada tipo. Os dois olham para a sua liderança.
+Tem também um material que se chama A sua liderança pela raiz. Ele mostra a força natural de cada tipo na liderança, e as armadilhas em que ela costuma cair.
 
 [PAUSA]
 
@@ -755,33 +753,33 @@ E vai entender por que um pedido claro para você nem sempre é o que a outra pe
 
 # CONTAGEM E DURAÇÃO
 
-> Contagem **por script** (15/10/2026, v4.2: depois das ordens O-21 a O-33 e O-36 a O-38 do `JUIZ-RODADA-3-CICLO-2.md` e das trocas de 16/10 no lead (v4.3); ordem O-35) sobre a fala deste arquivo, sem marcações, sem marcadores `[[ ]]` e sem linhas `>>> <<<`. Ritmo presumido de 170 palavras por minuto (o ritmo dela não foi medido). Script calibrado contra o v3: 3.496 palavras, idêntico ao rodapé de 13/10.
+> Contagem **por script** (15/10/2026, v4.2: depois das ordens O-21 a O-33 e O-36 a O-38 do `JUIZ-RODADA-3-CICLO-2.md` e do delta v4.4 com os cortes de fechamento; ordem O-35) sobre a fala deste arquivo, sem marcações, sem marcadores `[[ ]]` e sem linhas `>>> <<<`. Ritmo presumido de 170 palavras por minuto (o ritmo dela não foi medido). Script calibrado contra o v3: 3.496 palavras, idêntico ao rodapé de 13/10.
 
 | Bloco | Elementos | Palavras | Faixa da estrutura-base | Duração a 170/min |
 |---|---|---:|---|---:|
-| **LEAD** | D01–D09 | 456 | 440–590 | 2,7 min |
-| **HISTÓRIA** | D10–D12 | 325 | 330–445 | 1,9 min |
-| **MECANISMO** | D13–D22 | 1.255 | 1.030–1.395 | 7,4 min |
+| **LEAD** | D01–D09 | 472 | 440–590 | 2,8 min |
+| **HISTÓRIA** | D10–D12 | 377 | 330–445 | 2,2 min |
+| **MECANISMO** | D13–D22 | 1.151 | 1.030–1.395 | 6,8 min |
 | **CONSTRUÇÃO** | D23–D25 | 322 | 255–345 | 1,9 min |
-| **OFERTA** | D26–D36 | 1.153 | 1.150–1.570 | 6,8 min |
+| **OFERTA** | D26–D36 | 1.082 | 1.150–1.570 | 6,4 min |
 | `[PONTE NOVA]` D22 → D23 | fora de elemento | 11 | — | — |
-| **VSL, funil B** | D01–D36 + ponte | **3.522** | 3.500–3.900 | **20,7 min** |
-| Funil A (troca D01–D04 pela abertura do apêndice) | D01A–D04A | 196 no lugar de 177 | — | VSL com 3.541 palavras |
+| **VSL, funil B** | D01–D36 + ponte | **3.415** | 3.500–3.900 | **20,1 min** |
+| Funil A (troca D01–D04 pela abertura do apêndice) | D01A–D04A | 199 no lugar de 193 | — | VSL com 3.421 palavras |
 
 | Elemento | Palavras | | Elemento | Palavras | | Elemento | Palavras |
 |---|---:|---|---|---:|---|---|---:|
 | D01 | 72 | | D02 | 36 | | D03 | 31 |
-| D04 | 38 | | D05 | 36 | | D06 | 60 |
+| D04 | 54 | | D05 | 36 | | D06 | 60 |
 | D07 | 78 | | D08 | 92 | | D09 | 13 |
-| D10 | 212 | | D11 | 72 | | D12 | 41 |
-| D13 | 109 | | D14 | 193 | | D15 | 34 |
-| D16 | 128 | | D17 | 124 | | D18 | 223 |
-| D19 | 80 | | D20 | 78 | | D21 | 115 |
+| D10 | 212 | | D11 | 124 | | D12 | 41 |
+| D13 | 99 | | D14 | 150 | | D15 | 34 |
+| D16 | 128 | | D17 | 124 | | D18 | 181 |
+| D19 | 71 | | D20 | 78 | | D21 | 115 |
 | D22 | 171 | | D23 | 148 | | D24 | 107 |
-| D25 | 67 | | D26 | 72 | | D27 | 285 |
+| D25 | 67 | | D26 | 72 | | D27 | 249 |
 | D28 | 175 | | D29 | 187 | | D30 | 129 |
-| D31 | 99 | | D32 | 44 | | D35 | 84 |
-| D36 | 78 | | D01A | 90 | | D02A | 41 |
-| D03A | 31 | | D04A | 34 | |  |  |
+| D31 | 64 | | D32 | 44 | | D35 | 84 |
+| D36 | 78 | | D01A | 77 | | D02A | 41 |
+| D03A | 31 | | D04A | 50 | |  |  |
 
-**Desvios de dose declarados (`JUIZ-RODADA-3-CICLO-2.md` §10, `BRIEFING-VSL.md` §5 e §12):** D05 com 36 (piso 51; fechado por corte, 16/10) · **D10 com 212** (piso 225, tolerância do juiz do bloco 2; *"na hora"* restituído da fonte, §12 #16) · D11 com 72 (teto 70, tolerância até 80) · D12 com 41 (§12.5 + O-03) · D18 com 223 (tolerância até 225) · D19 com 80 (§12.6 + O-07) · D23 com 148 (tolerância até 150) · **D27 com 285** (piso 295; saíram O Espelho e o módulo) · **D29 com 187** (piso 205; decisão do Victor de 15/10, foco no curso, §12 #15) · D30 com a garantia em 66 (tolerância até 68) · D31 com 99 (piso 125) · D09 reduzido à ponte; D33 e D34 omitidos · **HISTÓRIA 325** (piso 330) · **peso da oferta ≈32,6%** (alvo 33–40%) · distância até o preço ≈87,7% (alvo 80–86%). VSL dentro da faixa.
+**Desvios de dose declarados (`JUIZ-RODADA-3-CICLO-2.md` §10, `BRIEFING-VSL.md` §5 e §12):** D05 com 36 (piso 51; fechado por corte, 16/10) · **D10 com 212** (piso 225, tolerância do juiz do bloco 2; *"na hora"* restituído da fonte, §12 #16) · D11 com 124 (teto 70, tolerância até 80) · D12 com 41 (§12.5 + O-03) · D18 com 181 (tolerância até 225) · D19 com 71 (§12.6 + O-07) · D23 com 148 (tolerância até 150) · **D27 com 249** (piso 295; saíram O Espelho e o módulo) · **D29 com 187** (piso 205; decisão do Victor de 15/10, foco no curso, §12 #15) · D30 com a garantia em 66 (tolerância até 68) · D31 com 64 (piso 125) · D09 reduzido à ponte; D33 e D34 omitidos · **HISTÓRIA 377** (piso 330) · **OFERTA 1.082** (piso 1.150) · **VSL abaixo do piso de 3.500** (cortes de fechamento) · **nome do produto +55 s e preço +30 s em relação à R1** (mecanismo e construção mais longos que os dela; A7 v4.4) · **Sistema de Conhecimento nomeado 33 s antes de explicado** (A7 C9) · **sete sem definição** (definição cortada por quebrar a história; A4) · **P5 parcial:** a regra da suposição está dita na oferta (D27), não no mecanismo. VSL dentro da faixa.

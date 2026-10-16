@@ -1,6 +1,6 @@
 # Roteiro de gravação · Eneagrama para Líderes
 
-> Para: Débora Delgado · De: Continuum AI Systems · 16/10/2026 · versão 2 (abertura refeita a partir do que você apontou)
+> Para: Débora Delgado · De: Continuum AI Systems · 16/10/2026 · versão 2 (abertura e caminho refeitos a partir do que você apontou)
 
 ## Como gravar
 
@@ -30,13 +30,15 @@ Eu sou a Débora Delgado.
 Há mais de cinco anos eu estudo o Eneagrama, um jeito de entender como as pessoas funcionam. Já ajudei sessenta pessoas a se reconhecer por ele.
 ### Trecho 4
 
-Nesta aula, você vai entender por que um pedido claro para você nem sempre é o pedido que a outra pessoa entende.
+Nesta aula, você vai ver como aplicar o Eneagrama na liderança, em quatro passos, mesmo sem conhecer ele.
+
+E vai entender por que um pedido claro para você nem sempre é o pedido que a outra pessoa entende.
 
 E o que fazer diferente já no próximo pedido, sem deixar de ser quem você é.
 ### Trecho 5
 
 Quando a pessoa não entrega, explicar de novo e cobrar com mais firmeza não resolve.
-O primeiro passo é entender como funciona quem recebe o seu pedido. E é desse olhar que a gente vai falar.
+O problema está em como o seu pedido chega a quem funciona diferente de você. E dá para ver por quê.
 ### Trecho 6
 
 Esta aula é para quem toma decisão e influencia outras pessoas. Na empresa ou no próprio negócio.
@@ -86,6 +88,9 @@ Na minha cabeça, eu tinha que tirar todo mundo do sofrimento.
 Essa necessidade é minha. Eu não gosto de estar em sofrimento. Quando eu tirava o outro do sofrimento, era porque eu não conseguia lidar com a pessoa sofrendo.
 
 Isso mudou totalmente a minha forma de me relacionar.
+Uma coisa que eu fiz com meus times: antes de começar a liderar, eu me mostrava. Gente, eu sou assim. Eu tendo a não olhar tanto para detalhe. Eu não sou de microgerenciar.
+
+À medida que a gente ia se descobrindo, cada um ia descobrindo, a gente ia tendo comunicações mais assertivas.
 ### Trecho 12
 
 E isso eu não guardei só para mim. Na minha lista, são sessenta pessoas que dei curso ou ajudei a se identificar com o Eneagrama.
@@ -96,7 +101,7 @@ Eu ensino em curso presencial, em curso gravado, e hoje também num grupo de Tea
 
 ### Trecho 13
 
-O que eu vou te mostrar aqui não é informação sobre personalidade. Informação não falta. Relatório de personalidade já existe de sobra, e boa parte dele termina na gaveta.
+No dia a dia, a gente costuma usar o comportamento pra bater o martelo sobre uma pessoa do time.
 Quando eu fui pegar o Eneagrama para aplicar de verdade, para trazer um ganho real na liderança, eu descobri que eu precisava de muitos passos. Eu tive que montar o caminho. Eu acho que a ferramenta encaixada no seu dia tem um poder muito maior do que a ferramenta solta.
 E esse caminho tem nome: as Nove Línguas. São quatro passos.
 
@@ -107,11 +112,11 @@ A primeira pessoa do seu time escuta esse pedido e a cabeça dela vai direto par
 A segunda escuta o mesmo pedido e precisa de uma coisa que você nem pensou em dar: espaço para fazer sozinha. Para ela, privacidade não é preferência, é inegociável. Se você senta do lado para acompanhar, você atrasa a entrega.
 
 Mesmo pedido. Mesma frase. Duas leituras diferentes.
-E agora a parte que interessa: você não descobre isso perguntando sobre comportamento.
+E agora a parte que interessa: você não descobre isso olhando o comportamento.
 
-Teste de personalidade pergunta assim: você valoriza momentos de solidão para refletir e recarregar as energias? Olha, até eu responderia que às vezes eu gosto de um momento de solidão. E eu não sou nada assim. A pergunta ficou no comportamento, e a pessoa não necessariamente percebe isso nela.
+O comportamento apenas é a superfície do iceberg.
 
-Ninguém adivinha como uma pessoa funciona com uma pergunta dessas. Nem eu. E isso muda o que você faz com o seu pedido.
+Ninguém adivinha como uma pessoa funciona pela superfície. Nem eu. E isso muda o que você faz com o seu pedido.
 ### Trecho 15
 
 Explicar de novo, cobrar. Tudo o que você já tentou partiu da mesma suposição: que a outra pessoa pensa como você pensa, e precisa do que você precisa.
@@ -135,19 +140,15 @@ E aqui vem a pergunta: Débora, isso não é colocar gente em caixinha?
 A minha resposta é não. Caixa fecha: diz o que a pessoa é, e serve para carimbar e alocar. O Eneagrama não te promete um lugar, e eu não trabalho assim, senão a gente seria muito reducionista.
 
 A diferença é essa. Quem aprende as Nove Línguas não ganha um veredito sobre ninguém. Quem aprende é você, e o que você aprende é como a sua mensagem precisa chegar. A pessoa continua sendo o que ela é.
-E se a pergunta seguinte for: então me diz qual língua cada um do meu time fala. Eu não respondo isso, e o curso também não. Chegar rápido no tipo de alguém dá, mas existe erro.
+E se a pergunta seguinte for: então me diz qual língua cada um do meu time fala. Eu não respondo isso, e o curso também não. No Eneagrama, as nove maneiras de funcionar se chamam tipos. Chegar rápido no tipo de alguém dá, mas existe erro.
 Isso é um espelho, não um veredito.
 A outra pergunta é a mais prática: isso é teórico, como eu uso na segunda-feira? Essa foi a minha pergunta também.
 
 Com cada liderado: Não adianta eu dar o meu remédio. Eu tenho que dar o que ele precisa.
-
-Uma coisa que eu fiz com meus times: antes de começar a liderar, eu me mostrava. Gente, eu sou assim. Eu tendo a não olhar tanto para detalhe. Eu não sou de microgerenciar.
-
-À medida que a gente ia se descobrindo, cada um ia descobrindo, a gente ia tendo comunicações mais assertivas.
 ### Trecho 19
 Passo um: conhecer as maneiras de funcionar. São nove, e elas não se decoram: elas se reconhecem.
 
-E isso é o contrário do que o mercado vende. O mercado vende descobrir quem você é. Isso te explica, e não te ajuda a liderar ninguém.
+O mercado te ajuda a descobrir quem você é. Liderar pede mais: entender quem recebe o seu pedido.
 Quando você conhece todas elas, você passa a ver as pessoas por outra perspectiva.
 
 Conhecer é o começo, e sozinho ele não muda o seu dia. Falta saber o que olhar dentro de cada uma delas.
@@ -208,15 +209,15 @@ O Eneagrama para Líderes é o curso para quem lidera entender como cada pessoa 
 
 A direção continua sendo sua. O que muda é o idioma em que o seu pedido chega. É menos esforço, e mais resultado, para o seu time e para você.
 ### Trecho 27
-Você começa pelo curso de Eneagrama. É o passo um: conhecer as maneiras de funcionar. São nove, e os subtipos como aprofundamento, para quem quiser ir mais longe. É a base. Sem conhecer as maneiras de funcionar, o resto não tem onde se apoiar.
+Você começa pelo curso de Eneagrama. É o passo um: conhecer as maneiras de funcionar. São nove, e os subtipos, as variações de cada uma, para quem quiser ir mais longe. É a base.
 
-E o resto vem em material pronto, para usar no dia a dia de quem lidera.
-O primeiro é o Sistema de Conhecimento do Eneagrama. Com ele, você faz o passo dois: ler o que move a pessoa. Para cada tipo, você vê como aquela maneira de funcionar lê o mundo, o que ela aprendeu cedo a proteger, e aquilo que ela faz melhor sem esforço. E o ponto cego, os subtipos e o caminho de crescimento.
+E o resto vem em material pronto, para o dia a dia de quem lidera.
+O primeiro é o Sistema de Conhecimento do Eneagrama. Com ele, você faz o passo dois: ler o que move a pessoa. Para cada tipo, você vê como aquela maneira de funcionar lê o mundo, e o que ela aprendeu cedo a proteger.
 E duas partes que você vai abrir muito. Uma mostra como quem funciona assim se comunica, e você abre antes de uma conversa. É o passo três: escutar pelo computador do outro. A outra mostra o que move essa pessoa no trabalho, e você abre antes de fazer um pedido. É o passo quatro: direcionar cada um para o resultado que você pediu.
 
 Você consulta quando precisar, sem decorar nada.
 
-Você abre no tipo que supõe, sem dizer a ele. Você não sabe o que ele precisa. Você pergunta.
+Você abre no tipo que supõe, sem dizer a ele, e pergunta.
 Depois vem o material Luz e Sombra da sua Liderança. Ele mostra quando a liderança de cada tipo brilha, e o ponto cego que cobra caro. Inclusive a sua.
 Tem também um material que se chama A sua liderança pela raiz. Ele mostra a força natural de cada tipo na liderança, e as armadilhas em que ela costuma cair.
 A parte de pesquisar, organizar e traduzir isso para a liderança, eu já fiz por você.
@@ -259,11 +260,9 @@ Entrou, assistiu, abriu o material, e sentiu que não é para você? Você pede 
 Eu não vou te prometer que o seu time muda em sete dias. O que eu te garanto é que você pode olhar com calma, e decidir.
 ### Trecho 31
 
-Duas coisas sobre o tempo.
+Uma coisa sobre o tempo, para quem entra agora.
 
-A primeira é para quem entra agora. Você entra na turma fundadora do Eneagrama para Líderes, e os quatro encontros comigo são seus. A entrada nessa turma fecha no primeiro encontro ao vivo, em dezembro. Entrando agora, você chega ao primeiro encontro com o curso visto, e o curso é a base. E chega com uma situação do seu time para trazer.
-
-A segunda é para quem entrar depois desse encontro. Vaga, eu não limito, e o curso continua aqui para você, mas os quatro encontros ficam com a turma que abriu isso comigo.
+Você entra na turma fundadora do Eneagrama para Líderes, e os quatro encontros comigo são seus. A entrada nessa turma fecha no primeiro encontro ao vivo, em dezembro. Entrando agora, você chega ao primeiro encontro com o curso visto, e o curso é a base. E chega com uma situação do seu time para trazer.
 ### Trecho 32
 Se faz sentido para você, o botão está aqui embaixo deste vídeo.
 
@@ -291,7 +290,7 @@ Grave também esta abertura. Ela substitui os trechos 1 a 4 para quem chega ao v
 ### Trecho 1A
 Se você veio do quiz, já tem um primeiro norte: o seu nível em cada área e a sua maior alavanca.
 
-Repara que o quiz mostrou como você lidera hoje. Não disse quem você é, nem como as pessoas do seu time funcionam.
+Repara que o quiz mostrou como você lidera hoje.
 
 E todas as situações que você respondeu têm uma coisa em comum: do outro lado, sempre uma pessoa do seu time.
 Você explicou, combinou, e ela não entregou. E a conclusão vem rápido: ela não liga para o que eu falo. Muitas vezes, essa conclusão está errada.
@@ -305,4 +304,6 @@ Eu sou a Débora Delgado.
 Há mais de cinco anos eu estudo o Eneagrama, um jeito de entender como as pessoas funcionam. Já ajudei sessenta pessoas a se reconhecer por ele.
 ### Trecho 4A
 
-Nesta aula, você vai entender por que um pedido claro para você nem sempre é o que a outra pessoa entende. E o que fazer no próximo, sem deixar de ser quem você é.
+Nesta aula, você vai ver como aplicar o Eneagrama na liderança, em quatro passos, mesmo sem conhecer ele.
+
+E vai entender por que um pedido claro para você nem sempre é o que a outra pessoa entende. E o que fazer no próximo, sem deixar de ser quem você é.
