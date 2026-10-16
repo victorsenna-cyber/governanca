@@ -68,7 +68,7 @@
 
 > Detalhe técnico da publicação: `04 - web design/eneagrama-para-lideres/05-GATE.md`.
 
-1. 🔴 **enviar à Débora os dois PDFs:** `vsl/2026-10-11/ROTEIRO-GRAVACAO-DEBORA.pdf` (o vídeo inteiro + a abertura alternativa do quiz, sem nada interno) e `vsl/2026-10-11/CONFERENCIA-PROMESSA-CURSO.pdf` (a resposta às duas objeções). Nenhuma pergunta; o que ela não quiser dizer, marca e devolve. **A gravação é o caminho crítico: tudo depois dela espera o vídeo.**
+1. 🔴 **enviar à Débora os dois PDFs, com a mensagem pronta em `vsl/2026-10-11/MENSAGEM-DEBORA-2026-10-16.md`:** `vsl/2026-10-11/ROTEIRO-GRAVACAO-DEBORA.pdf` (o vídeo inteiro + a abertura alternativa do quiz, sem nada interno) e `vsl/2026-10-11/CONFERENCIA-PROMESSA-CURSO.pdf` (a resposta às duas objeções). Nenhuma pergunta; o que ela não quiser dizer, marca e devolve. **A gravação é o caminho crítico: tudo depois dela espera o vídeo.**
 2. 🔴 **enquanto ela grava:** checkout PagTrust da oferta nova (R$ 297 ou 12×, entrega na plataforma com o link do grupo, fecha sozinho em 16/12 na hora do encontro) · **horário dos encontros** · rodapé legal (nome, CPF/CNPJ, e-mail, termos, privacidade) · Apps Script de leads do quiz · tirar do ar `/eneagrama` e o checkout `cka1d66532` · reservar o **capital para 2 a 3 tentativas**
 3. **objeção dela, se vier:** nós respondemos por escrito antes de ela regravar
 4. **com o vídeo gravado:** edição com legendas, num YouTube ou Vimeo · medir o segundo em que o preço é dito · preencher o CONFIG da página
