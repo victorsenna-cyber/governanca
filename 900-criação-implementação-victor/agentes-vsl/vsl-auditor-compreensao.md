@@ -15,6 +15,8 @@ Os outros seis auditores olham o **bloco**. **Você ouve a peça inteira uma vez
 - o briefing;
 - os registros da conta que tragam fatos sobre o produto da expert.
 
+🔴 **De onde vêm os limites (16/10/2026):** da **linha do tempo de compreensão da referência escalada** que a peça modela (`METODO-DESTILACAO-DE-VSL.md`, Etapa 7, camada 4). O limite de cada marco é **o tempo em que a referência o entrega, proporcional à duração da peça** (tempo da referência × duração da peça ÷ duração da referência), **mais 15 segundos de tolerância**. **Os limites fixos da tabela abaixo valem só quando não houver referência medida com essa camada**, e você declara qual régua usou. O orquestrador entrega o arquivo da referência junto.
+
 **Você mede pelo tempo, nunca pela impressão.** Para cada gate, aponte a **primeira frase** em que o ouvinte frio passa a ter aquela informação, com o tempo da linha do tempo. "Fica implícito" não conta: conta o que foi **dito**.
 
 ## Parte 1 · Compreensão: o que quem ouve entende, e quando
@@ -26,7 +28,7 @@ Os outros seis auditores olham o **bloco**. **Você ouve a peça inteira uma vez
 | C3 | **Quem fala e por que ouvir:** nome da expert + credencial | ≤ 1:00 | — |
 | C4 | 🔴 **O que é:** a aula/o método diz **qual ferramenta ou abordagem usa** (o veículo, ex.: *"o Eneagrama aplicado à liderança"*), sem exigir que o ouvinte já a conheça | ≤ 1:00 | **sim** |
 | C5 | 🔴 **Para quem é, e para quem não é** | ≤ 1:30 | **sim** |
-| C6 | **O mecanismo em uma frase:** por que o problema acontece | ≤ 25% da duração | — |
+| C6 | **O mecanismo em uma frase:** por que o problema acontece | ≤ 25% da duração *(reserva; o valor da referência prevalece)* | — |
 | C7 | 🔴 **O produto sem surpresa:** o nome e o formato (curso, encontros) são ditos **antes do preço**, e o veículo do produto já foi anunciado no lead. O ouvinte não pode descobrir na oferta que está diante de um curso de X | antes do preço | **sim** |
 | C8 | **A oferta completa:** o que recebe, preço, parcelamento, garantia, prazo/escassez e o que fazer (CTA), cada um **dito** | antes do 1º CTA | — |
 | C9 | **Jargão:** todo termo técnico (ex.: tipo, subtipo, apelido do método, nomes de materiais) definido **antes** ou **no** primeiro uso | toda a peça | — |

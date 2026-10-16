@@ -208,6 +208,8 @@ Transcript grande: ler em blocos sequenciais, **na ordem**, sem pular para a ofe
 | **Bloco** | lead · história · mecanismo · oferta |
 | **Rótulo** | um dos 34. **Um só** |
 | **Palavras** | a contagem do trecho |
+| 🔴 **Função** *(16/10/2026)* | **o que o ouvinte passa a saber, sentir ou decidir** neste elemento, com verbo e do ponto de vista dele: *"descobre que a aula é sobre X"*, *"se reconhece na cena"*, *"entende por que o que tentou não funcionou"*. **Não é o rótulo reescrito.** O rótulo diz a forma; a função diz o trabalho |
+| 🔴 **Tempo** *(16/10/2026)* | início em mm:ss **da transcrição com tempo** e % da duração total |
 
 **E dois campos quando houver:** `âncora` (trecho literal curto entre aspas, só quando a forma for o achado) e `tela` (o que aparece em imagem enquanto aquilo é dito).
 
@@ -226,6 +228,8 @@ Os três níveis, na ordem: **bloco → elemento → métricas derivadas.** Proc
 1. **A cadeia lógica** do mecanismo, elo a elo, com o teste de encadeamento (§7)
 2. **A anatomia da oferta**, nas onze posições canônicas, com presença e ordem real
 3. **A anatomia da lead**: ângulo · os quatro elementos essenciais · o que cabe nos primeiros 30 segundos
+4. 🔴 ⭐ **A linha do tempo de compreensão** *(instituída 16/10/2026, alçada Victor: "precisamos modelar não somente blocos elementos mas o que cada um deles faz e em que momento")*: **em que segundo o ouvinte da referência passa a saber cada coisa.** Marcos obrigatórios, cada um com tempo, % da duração e a frase literal que o entrega: **problema** (a cena ou a dor) · **promessa** · **quem fala e por que ouvir** · **o veículo** (que método, ferramenta ou abordagem a aula usa) · **para quem é, e para quem não é** · **o mecanismo em uma frase** (por que o problema acontece) · **o produto** (nome e formato) · **o preço** · **o primeiro CTA**. Marco que a referência não entrega se registra como **ausente**, nunca se infere.
+   **Para que serve:** é a régua do auditor A7 (`METODO-PRODUCAO-VSL-POR-AGENTES.md` §2). A peça nossa é medida contra **o momento** em que a referência escalada entrega cada coisa, e não contra um limite inventado. **E é o que impede o erro da VSL da Débora:** copiar o rótulo de um elemento (*contrarian*) sem perguntar que trabalho ele fazia para aquele ouvinte, naquele segundo.
 
 ### Etapa 8 — Ler o negativo
 

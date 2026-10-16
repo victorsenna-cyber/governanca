@@ -60,7 +60,7 @@
 
 **Um rótulo por trecho, do vocabulário fechado de 35. Função dominante conta uma vez; a secundária vai em observação, sem somar as mesmas palavras duas vezes.**
 
-| ID | Bloco | Rótulo | Palavras | Âncora (curta, só se a forma for o achado) | Observação / função secundária |
+| ID | Bloco | Rótulo | Palavras | **Tempo** (mm:ss · %) | **Função** — o que o ouvinte passa a saber, sentir ou decidir | Âncora (curta, só se a forma for o achado) | Observação / função secundária |
 |---|---|---|---:|---|---|
 | `R1-E01` | lead | | | | |
 | `R1-E02` | lead | | | | |
@@ -138,6 +138,24 @@ OFERTA:     {{oferta → benefício → exclusão → descrição → ancoragem 
 ⚠️ **Nada deste bloco vai para o `lexico-icp/`.** É o que o concorrente **acha** que a dor é.
 
 ---
+
+
+## Linha do tempo de compreensão (Etapa 7, camada 4 · 16/10/2026)
+
+> Em que segundo o ouvinte desta referência passa a saber cada coisa. **Marco ausente se escreve "ausente", nunca se infere.** É a régua do auditor A7.
+
+| Marco | Tempo (mm:ss) | % da duração | Elemento (ID) | Frase literal que entrega |
+|---|---|---|---|---|
+| Problema (cena ou dor) | | | | |
+| Promessa | | | | |
+| Quem fala e por que ouvir | | | | |
+| Veículo (que método/ferramenta a aula usa) | | | | |
+| Para quem é | | | | |
+| Para quem não é | | | | |
+| Mecanismo em uma frase | | | | |
+| Produto (nome e formato) | | | | |
+| Preço | | | | |
+| Primeiro CTA | | | | |
 
 ## 6. CADEIA LÓGICA
 
