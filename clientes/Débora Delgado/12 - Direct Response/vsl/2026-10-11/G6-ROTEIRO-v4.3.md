@@ -1,6 +1,6 @@
 # ROTEIRO DE GRAVAÇÃO · VSL · Eneagrama para Líderes · Débora Delgado
 
-> STATUS: **roteiro v4.2 · 15/10/2026 · versão sem perguntas, rodada 3 fechada** (`JUIZ-RODADA-3-CICLO-2.md`: ordens O-21 a O-38 + DV-4 em D27, conferida por A3, A2 e A4) · substitui o v4.1 (`G6-ROTEIRO-v4.1.md`, trilha), o v4 e o v3 · o ciclo 1 foram **20 ordens** (`JUIZ-RODADA-3.md`) + DV-1 a DV-3 · ✅ **funil B: GRAVA** — D31 e D36 depois de o checkout desativar a entrada em 16/12 · ✅ **mídia só como TESTE declarado, verba limitada; escala: não** (gate de congruência, REGRA Nº 2) · ⟲ 16/10: **funil A (apêndice) também grava** — quiz corrigido (v7, `../../quiz/CORRECAO-QUIZ-v7-2026-10-16.md`) e D01A conferida contra as situações dele · ⟲ **conferências fechadas em 15/10 (Victor):** 12× · reembolso pela própria plataforma (PagTrust) · acesso de 12 meses · materiais e link do grupo na plataforma · mentoria R$ 6.000 / 4 meses / 16 + 4 (a VSL vende o curso: D29 só com a âncora) · *"saindo do trabalho na hora"* conferido no áudio · ⟲ **v4.1: calendário 16/12 · 06/01 · 20/01 · 03/02; 🔴 a VSL SAI DO AR NO DIA DO PRIMEIRO ENCONTRO (16/12) — depois dele, D28 a D36 prometem os quatro encontros a quem assiste, e isso fica falso**
+> STATUS: **roteiro v4.3 · 16/10/2026 · objeção de congruência da Débora + decisão de nível de consciência** (o lead fala ao líder consciente do PROBLEMA; o Eneagrama entra como novo, na credencial) · trocas em D01, D03, D03A, D05, D19, D01A e D04A (`G5-OBJECAO-D01-2026-10-16.md`), conferidas por A2, A3 e A4; última devolução fechada por corte em D05 · substitui o v4.2 (trilha) · ✅ **grava nos dois funis** — D31 e D36 depois de o checkout desativar a entrada em 16/12 · ✅ **mídia só como TESTE declarado; escala: não** · 🔴 a VSL SAI DO AR NO DIA DO PRIMEIRO ENCONTRO (16/12)
 
 ## Como ler as marcações
 
@@ -92,7 +92,7 @@ Quando a pessoa não entrega, explicar de novo e cobrar com mais firmeza não re
 
 [PAUSA]
 
-Quem lidera não precisa começar por uma técnica de conversa. A gente pode ter isso depois. O primeiro passo é entender como funciona quem recebe o pedido dele. E é desse olhar que a gente vai falar.
+O primeiro passo é entender como funciona quem recebe o seu pedido. E é desse olhar que a gente vai falar.
 
 [CORTE]
 
@@ -749,23 +749,23 @@ Nesta aula, você vai entender por que um pedido claro para você nem sempre é 
 
 # CONTAGEM E DURAÇÃO
 
-> Contagem **por script** (15/10/2026, v4.2: depois das ordens O-21 a O-33 e O-36 a O-38 do `JUIZ-RODADA-3-CICLO-2.md` e da montagem da DV-4; ordem O-35) sobre a fala deste arquivo, sem marcações, sem marcadores `[[ ]]` e sem linhas `>>> <<<`. Ritmo presumido de 170 palavras por minuto (o ritmo dela não foi medido). Script calibrado contra o v3: 3.496 palavras, idêntico ao rodapé de 13/10.
+> Contagem **por script** (15/10/2026, v4.2: depois das ordens O-21 a O-33 e O-36 a O-38 do `JUIZ-RODADA-3-CICLO-2.md` e das trocas de 16/10 no lead (v4.3); ordem O-35) sobre a fala deste arquivo, sem marcações, sem marcadores `[[ ]]` e sem linhas `>>> <<<`. Ritmo presumido de 170 palavras por minuto (o ritmo dela não foi medido). Script calibrado contra o v3: 3.496 palavras, idêntico ao rodapé de 13/10.
 
 | Bloco | Elementos | Palavras | Faixa da estrutura-base | Duração a 170/min |
 |---|---|---:|---|---:|
-| **LEAD** | D01–D09 | 470 | 440–590 | 2,8 min |
+| **LEAD** | D01–D09 | 456 | 440–590 | 2,7 min |
 | **HISTÓRIA** | D10–D12 | 325 | 330–445 | 1,9 min |
 | **MECANISMO** | D13–D22 | 1.255 | 1.030–1.395 | 7,4 min |
 | **CONSTRUÇÃO** | D23–D25 | 322 | 255–345 | 1,9 min |
 | **OFERTA** | D26–D36 | 1.153 | 1.150–1.570 | 6,8 min |
 | `[PONTE NOVA]` D22 → D23 | fora de elemento | 11 | — | — |
-| **VSL, funil B** | D01–D36 + ponte | **3.536** | 3.500–3.900 | **20,8 min** |
-| Funil A (troca D01–D04 pela abertura do apêndice) | D01A–D04A | 178 no lugar de 170 | — | VSL com 3.544 palavras |
+| **VSL, funil B** | D01–D36 + ponte | **3.522** | 3.500–3.900 | **20,7 min** |
+| Funil A (troca D01–D04 pela abertura do apêndice) | D01A–D04A | 196 no lugar de 177 | — | VSL com 3.541 palavras |
 
 | Elemento | Palavras | | Elemento | Palavras | | Elemento | Palavras |
 |---|---:|---|---|---:|---|---|---:|
-| D01 | 73 | | D02 | 36 | | D03 | 23 |
-| D04 | 38 | | D05 | 57 | | D06 | 60 |
+| D01 | 72 | | D02 | 36 | | D03 | 31 |
+| D04 | 38 | | D05 | 36 | | D06 | 60 |
 | D07 | 78 | | D08 | 92 | | D09 | 13 |
 | D10 | 212 | | D11 | 72 | | D12 | 41 |
 | D13 | 109 | | D14 | 193 | | D15 | 34 |
@@ -775,7 +775,7 @@ Nesta aula, você vai entender por que um pedido claro para você nem sempre é 
 | D25 | 67 | | D26 | 72 | | D27 | 285 |
 | D28 | 175 | | D29 | 187 | | D30 | 129 |
 | D31 | 99 | | D32 | 44 | | D35 | 84 |
-| D36 | 78 | | D01A | 83 | | D02A | 41 |
-| D03A | 23 | | D04A | 31 | |  |  |
+| D36 | 78 | | D01A | 90 | | D02A | 41 |
+| D03A | 31 | | D04A | 34 | |  |  |
 
-**Desvios de dose declarados (`JUIZ-RODADA-3-CICLO-2.md` §10, `BRIEFING-VSL.md` §5 e §12):** D03 e D03A com 23 (piso 25) · **D10 com 212** (piso 225, tolerância do juiz do bloco 2; *"na hora"* restituído da fonte, §12 #16) · D11 com 72 (teto 70, tolerância até 80) · D12 com 41 (§12.5 + O-03) · D18 com 223 (tolerância até 225) · D19 com 80 (§12.6 + O-07) · D23 com 148 (tolerância até 150) · **D27 com 285** (piso 295; saíram O Espelho e o módulo) · **D29 com 187** (piso 205; decisão do Victor de 15/10, foco no curso, §12 #15) · D30 com a garantia em 66 (tolerância até 68) · D31 com 99 (piso 125) · D09 reduzido à ponte; D33 e D34 omitidos · **HISTÓRIA 325** (piso 330) · **peso da oferta ≈32,6%** (alvo 33–40%) · distância até o preço ≈87,7% (alvo 80–86%). VSL dentro da faixa.
+**Desvios de dose declarados (`JUIZ-RODADA-3-CICLO-2.md` §10, `BRIEFING-VSL.md` §5 e §12):** D05 com 36 (piso 51; fechado por corte, 16/10) · **D10 com 212** (piso 225, tolerância do juiz do bloco 2; *"na hora"* restituído da fonte, §12 #16) · D11 com 72 (teto 70, tolerância até 80) · D12 com 41 (§12.5 + O-03) · D18 com 223 (tolerância até 225) · D19 com 80 (§12.6 + O-07) · D23 com 148 (tolerância até 150) · **D27 com 285** (piso 295; saíram O Espelho e o módulo) · **D29 com 187** (piso 205; decisão do Victor de 15/10, foco no curso, §12 #15) · D30 com a garantia em 66 (tolerância até 68) · D31 com 99 (piso 125) · D09 reduzido à ponte; D33 e D34 omitidos · **HISTÓRIA 325** (piso 330) · **peso da oferta ≈32,6%** (alvo 33–40%) · distância até o preço ≈87,7% (alvo 80–86%). VSL dentro da faixa.

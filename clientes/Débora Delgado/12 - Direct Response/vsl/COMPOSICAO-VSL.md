@@ -1,6 +1,6 @@
 # Composição da VSL · Eneagrama para Líderes
 
-> Roteiro **v4.2** (16/10/2026) · fonte: `2026-10-11/G6-ROTEIRO-v4.2.md` · estrutura-base: R1, *Meta Batida em 15 Dias* (36 elementos) · **funil B 3.536 palavras ≈ 20,8 min** · funil A 3.544 · aula solo, a Débora fala sozinha para a câmera
+> Roteiro **v4.3** (16/10/2026) · fonte: `2026-10-11/G6-ROTEIRO-v4.3.md` · estrutura-base: R1, *Meta Batida em 15 Dias* (36 elementos) · **funil B 3.522 palavras ≈ 20,7 min** · funil A 3.541 · **o lead fala ao líder consciente do problema; o Eneagrama entra como novo, na credencial** · aula solo, a Débora fala sozinha para a câmera
 
 **Promessa:** menos esforço, mais resultado, para o seu time e para você: quando você entende como cada pessoa funciona, sabe direcionar cada uma para entregar o que você pediu.
 **Mecanismo:** o líder pede achando que todo mundo pensa como ele. O pedido chega num idioma que o liderado não lê (analogia do computador, dela). **Apelido:** *As Nove Línguas*, quatro passos.
@@ -8,12 +8,12 @@
 
 | # | Elemento | O que faz | Palavras |
 |---|---|---|---:|
-| **1** | **LEAD** | | **470** |
-| D01 | gancho | a cena: combinou o prazo e a pessoa não entregou | 73 |
+| **1** | **LEAD** | | **456** |
+| D01 | gancho | a cena: combinou o prazo e a pessoa não entregou; o problema não está na vontade dela | 72 |
 | D02 | promessa | mais resultado, com menos esforço, o seu e o do seu time | 36 |
-| D03 | credencial | Eneagrama há mais de cinco anos, sessenta pessoas | 23 |
+| D03 | credencial | há mais de cinco anos estuda o Eneagrama, *"um jeito de entender como as pessoas funcionam"*; sessenta pessoas | 31 |
 | D04 | curiosidade | por que o pedido claro para você chega de outro jeito | 38 |
-| D05 | contrarian | o Eneagrama olha para dentro; liderar pede o movimento contrário | 57 |
+| D05 | contrarian | explicar de novo e cobrar mais firme não resolve; o primeiro passo é entender quem recebe o pedido | 36 |
 | D06 | segmentação + exclusão | para quem toma decisão; não é para quem só quer se entender | 60 |
 | D07 | custo da inação | o combinado não acontece, você puxa mais, até desengajar | 78 |
 | D08 | futuro | a mesma tarefa explicada de mais de um jeito; relações mais leves | 92 |
@@ -29,7 +29,7 @@
 | D16 | ponto lógico | o computador com os quinhentos arquivos: **o pivô** | 128 |
 | D17 | reason-why | explicar de novo muda o volume, não o idioma; o comportamento é proteção | 124 |
 | D18 | objeção | "caixinha?": não · "qual tipo cada um tem?": o curso não responde · segunda-feira: "não adianta eu dar o meu remédio" | 223 |
-| D19 | passo 1 | conhecer as nove maneiras de funcionar | 80 |
+| D19 | passo 1 | conhecer as nove maneiras de funcionar (o mercado vende *"descobrir quem você é"*) | 80 |
 | D20 | passo 2 | ler o que move a pessoa, não o comportamento | 78 |
 | D21 | passo 3 | escutar pelo computador do outro: perguntar antes de cobrar | 115 |
 | D22 | passo 4 | direcionar para o resultado pedido, no idioma de quem executa | 171 |
@@ -49,7 +49,7 @@
 | D35 | dois caminhos | pedir mais alto ou aprender as Nove Línguas | 84 |
 | D36 | CTA final | preço, 12 meses, garantia, fecho; "eu te encontro lá dentro" | 78 |
 
-**Funil A (quem vem do quiz):** troca D01–D04 por D01A gancho (o resultado do quiz: do outro lado, sempre uma pessoa do seu time) · D02A promessa (seja qual for a sua alavanca) · D03A credencial · D04A curiosidade · 178 palavras no lugar de 170. Do D05 em diante, igual.
+**Funil A (quem vem do quiz):** troca D01–D04 por D01A gancho (o resultado do quiz: do outro lado, sempre uma pessoa do seu time; a conclusão de que ela não liga está errada) · D02A promessa (seja qual for a sua alavanca) · D03A credencial · D04A curiosidade · 196 palavras no lugar de 177. Do D05 em diante, igual.
 
-**Fora desta versão:** D33 e D34 da estrutura-base (omitidos) · depoimento de terceiro · O Espelho · módulo de aplicação · burnout. **Desvios de dose declarados no rodapé do roteiro:** D10, D12, D18, D19, D23, D27, D29, D31 · HISTÓRIA 325 (piso 330) · peso da oferta ≈32,6% (alvo 33–40%).
-**Estado:** grava nos dois funis · com a Débora desde 16/10 · mídia só como **teste declarado**; escala não (`2026-10-11/JUIZ-RODADA-3-CICLO-2.md`).
+**Fora desta versão:** D33 e D34 da estrutura-base (omitidos) · depoimento de terceiro · O Espelho · módulo de aplicação · burnout. **Desvios de dose declarados no rodapé do roteiro:** D05 (36, fechado por corte), D10, D12, D18, D19, D23, D27, D29, D31 · HISTÓRIA 325 (piso 330) · peso da oferta ≈32,6% (alvo 33–40%).
+**Estado:** grava nos dois funis · v1 com a Débora desde 16/10 15h16; v4.3 responde à objeção dela ao trecho 1 (16/10 15h19–15h22) · mídia só como **teste declarado**; escala não (`2026-10-11/JUIZ-RODADA-3-CICLO-2.md`).
