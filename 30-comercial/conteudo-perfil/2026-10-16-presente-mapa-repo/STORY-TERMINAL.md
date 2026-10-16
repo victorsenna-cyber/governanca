@@ -17,10 +17,20 @@ Link: `https://continuumsystems.com.br/mapa/?o=story` (página no ar e testada p
 
 **Depois de postar:** a planilha separa quem veio do story pela origem `story`. Anotar o total de 24 h e de 7 dias em `../REGISTRO.md`.
 
-## Legenda (campo "Adicione uma legenda")
+## Legenda (campo "Adicione uma legenda") · v3
 
-**Escolhida:** `IA sem regra escrita pergunta tudo. Com regra, ela trabalha enquanto você dorme... ou faz outra coisa. O mapa do meu repositório está no link, de graça.`
+> v1 (*"IA sem regra escrita pergunta tudo..."*) e v2 (três frases curtas) recusadas pelo Victor: *"não gostei do copy"* e *"tem que desenvolver mais.."*. A v3 desenvolve: cena, problema de quem lê, causa, mecanismo, prova e convite.
 
-Alternativas descartadas:
-- `O segredo não é o modelo. É o que ele lê antes de agir.` (boa frase, mas não leva ao link)
-- `Toca em "quero o mapa" e monta o seu.` (só repete a figurinha)
+```
+Essa linha marcada foi a única ordem que eu dei.
+
+A maioria das pessoas usa IA como estagiário: pede, recebe um rascunho, corrige, pede de novo. E ela volta toda hora perguntando, porque não sabe como você decide.
+
+O modelo que eu uso é o mesmo que todo mundo usa. A diferença está no que ela lê antes de agir. A minha operação inteira está escrita num repositório: quem decide o quê, em que ordem as coisas acontecem, o que nunca se faz e como se confere antes de entregar. Ela abre, encontra a regra e segue.
+
+Por isso dá pra mandar "faça tudo sem parar" à meia-noite e ela sair fazendo página, checkout e quiz.
+
+Montei um mapa de como esse repositório funciona, com o nome de todos os arquivos e um prompt pra sua IA montar o seu. Tá no link, de graça.
+```
+
+**Procedência:** a ordem e o horário estão no print; "página, checkout e quiz" é o que o terminal mostra que ela começou; o que o repositório contém é o que o PDF mostra.
