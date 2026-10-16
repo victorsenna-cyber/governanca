@@ -253,3 +253,12 @@ Victor (14:06): *"Compreendo perfeitamente"*. **Não houve contraproposta nem in
 **Tom (camada 3):** leve, colaborativo, com humor. Ela lê, aponta e aprova. **Conduta:** a resposta à objeção vem com a frase nova, nunca com justificativa longa. Não citar o terceiro que fez o teste.
 
 **Próximo passo:** reescrita de D01 e do pressuposto do lead, pelo G5 com conferência, e devolver a ela o trecho novo. **Dono:** CEO.
+
+## Adendo 16/10, 17h56 — aviso do Victor antes da v2 (fonte: print do Victor, 16/10 18h32)
+
+| Hora | Quem | Mensagem |
+|---|---|---|
+| 16h05 | Victor | *"olha.. percorri sua aplicação e tá muito boa também"* · ❤️ dela |
+| 17h56 | Victor | *"descobri o motivo de alguns erros.. itero o método de criação primeiro e em seguida a VSL.. sai já já"* · ❤️ dela |
+
+**Próxima mensagem:** a v2, abrindo com *"saiu a versão 2.."* (`vsl/2026-10-11/MENSAGEM-DEBORA-OBJECAO-2026-10-16.md`). 🟡 Envio do Victor.
