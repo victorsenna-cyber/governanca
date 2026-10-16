@@ -27,8 +27,8 @@ var CONFIG = {
   /* P0. URL do checkout PagTrust da oferta nova. Vazio = os botões de compra levam a #oferta
      e logam aviso no console (nunca link quebrado). Pode ou não trazer "?": a montagem trata. */
   CHECKOUT_URL: '',
-  /* SEM JAVASCRIPT os botões só compram se o href estiver no HTML: procurar por   href="#oferta" data-checkout
-     (3 ocorrências: V2, V3, V6) e trocar o "#oferta" pela URL do checkout (em atributo HTML, & vira &amp;).
+  /* SEM JAVASCRIPT os botões só compram se o href estiver no HTML: nos 3 <a> que têm o atributo data-checkout
+     (V2, V3, V6) trocar o href="#oferta" pela URL do checkout (em atributo HTML, & vira &amp;).
      Com JS o href é remontado a partir de CHECKOUT_URL, com as UTMs. */
 
   /* P0. Vídeo do funil B e do funil A (D01A–D04A). Aceita: URL .mp4/.webm (arquivo próprio),
@@ -380,7 +380,7 @@ html[data-f="a"] .t-b{display:none}
 /* "Pagamento seguro via PagTrust" só depois do pitch (DV-P2): fora do estado gated e fora do encerrado */
 :is(.is-gated,.is-closed) .ps,:is(.is-gated,.is-closed) .termos .sep{display:none}
 :is(.is-gated,.is-closed) .termos[hidden]+.priv .sep{display:none}
-.links:not(:has(> :not([hidden]))){display:none}
+:is(.is-gated,.is-closed) .links:not(:has(> :not(.ps):not([hidden]))){display:none}
 .rodape a{color:var(--txt-medio);text-underline-offset:3px;display:inline-block;padding:12px 4px;margin:-12px 0}
 @media (min-width:1024px){.rodape{padding-bottom:var(--e-7);text-align:left}}
 
@@ -812,7 +812,7 @@ html[data-f="a"] .t-b{display:none}
             else if (e.data === 0) { clearInterval(pollTimer); onEnded(); }
             else if (e.data === 2) clearInterval(pollTimer);
           },
-          onError: onFail
+          onError: function (e) { console.warn('[lideres] YouTube erro ' + e.data); onFail(); }
         } });
     }
     if (window.YT && YT.Player) make(); else { window.onYouTubeIframeAPIReady = make; loadScript('https://www.youtube.com/iframe_api', function () {}); }
