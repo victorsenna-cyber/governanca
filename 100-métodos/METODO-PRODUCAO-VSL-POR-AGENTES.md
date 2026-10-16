@@ -74,7 +74,7 @@ O orquestrador é o agente principal (o CEO, nesta casa). Ele **não escreve nem
 
 | Antes | Durante | Depois |
 |---|---|---|
-| monta o **briefing da conta** (`clientes/<cliente>/.../vsl/BRIEFING-VSL.md`) a partir do repositório — **o cliente não preenche formulário** | dispara cada agente com: o caminho do briefing, os artefatos anteriores aprovados, o arquivo de saída | registra na conta (`DECISOES`, diário) e no swipe file quando houver dado |
+| monta o **briefing da conta** (`clientes/<cliente>/.../vsl/BRIEFING-VSL.md`) a partir do repositório — **o cliente não preenche formulário** | dispara cada agente com: o caminho do briefing, os artefatos anteriores aprovados, o arquivo de saída | registra na conta (`DECISOES`, diário) e no swipe file quando houver dado · 🔴 **gera a composição da VSL (§4.4)** |
 | confirma as **pré-condições** (§5) | leva o esqueleto ao Victor · roda os 6 auditores **em paralelo** · leva os relatórios ao juiz | aplica o gate de congruência com declaração de carga |
 
 **Onde os artefatos moram:** `clientes/<cliente>/12 - Direct Response/vsl/<AAAA-MM-DD>/` — um arquivo por papel e por ciclo (`G2-TESE.md`, `A1-BLOCO-3.md`, `JUIZ-BLOCO-3.md`…). **Nada se apaga: a trilha é a prova de que cada peça foi auditada.**
@@ -106,6 +106,8 @@ Não leia o raciocínio de outro agente. Não leia este pedido como permissão p
 
 **Nomes de arquivo da rodada:** `G1-MECANISMO.md` · `G2-TESE-ESQUELETO.md` / `G2-TESE.md` · `G3-HISTORIA…` · `G4-OFERTA…` · `G5-ABERTURA…` · `A1-BLOCO-<n>.md` … `A6-BLOCO-<n>.md` · `JUIZ-BLOCO-<n>.md` · `G6-ROTEIRO.md` · `JUIZ-GLOBAL.md` · **`LOG.md`** — uma linha por disparo: hora, agente, etapa, arquivo, veredito.
 
+**Fechamento:** `../COMPOSICAO-VSL.md` + `.pdf`, na pasta da VSL da conta, um nível acima da rodada (§4.4).
+
 **Retomada:** a rodada se retoma lendo `LOG.md`. A última linha diz qual agente roda a seguir. **Sessão que cai não perde nada, e qualquer ambiente continua de onde o outro parou.**
 
 ### 4.3 Fallback por arquivo
@@ -113,6 +115,21 @@ Não leia o raciocínio de outro agente. Não leia este pedido como permissão p
 **Se o ambiente não reconhecer os agentes de `.claude/agents/`:** dispara-se um agente genérico com a instrução *"siga integralmente `.claude/agents/<nome>.md`"*. **O isolamento de contexto é o que importa, não o tipo do agente.**
 
 **Sem subagentes no ambiente:** modo sequencial da skill de copy — um papel por resposta, declarado, e **nunca escrever e auditar na mesma resposta.** É o modo degradado, e se declara assim no relatório final.
+
+### 4.4 🔴 A COMPOSIÇÃO DA VSL — saída obrigatória de toda rodada fechada (instituída 16/10/2026, alçada Victor)
+
+> Victor, 16/10, ao ver a primeira: *"top.. isso faz parte do método agora tá"*.
+
+**Toda rodada que fecha um roteiro gera `COMPOSICAO-VSL.md` + `COMPOSICAO-VSL.pdf` na pasta da VSL da conta** (`clientes/<cliente>/12 - Direct Response/vsl/`, um nível acima da rodada), **com no máximo duas páginas.** Versão nova do roteiro, composição nova, sobrescrevendo a anterior (a trilha fica no LOG).
+
+**O que ela tem, nesta ordem:** cabeçalho (versão do roteiro, data, estrutura-base, palavras e minutos por funil, formato) · promessa, mecanismo e apelido, e o pivô **E · Mas · Por isso**, uma frase cada, com o elemento da virada · **tabela bloco → sequência de elementos → o que cada um faz, em uma linha → palavras** · a abertura alternativa (funil A) em uma linha · o que ficou fora da versão, os desvios de dose declarados e o estado (grava? mídia? escala?).
+
+**Como se faz, e por quem:**
+1. **Script** (mecânico): `py -I -X utf8 40-operacao-rotinas/ferramentas/composicao-vsl.py <roteiro G6> <pasta-da-vsl>/COMPOSICAO-VSL.md` — blocos, elementos e contagem, calibrada contra o roteiro (3.496 no v3 e 3.536 no v4.2 da Débora, idênticos ao rodapé).
+2. **Orquestrador** preenche os `{{…}}`: a função de cada elemento em uma linha e as frases de promessa, mecanismo e pivô — **tiradas do roteiro e do juízo global, nunca inventadas.**
+3. **PDF** pelo template da casa (`90-templates/pdf-continuum/`, sem capa; no Windows, o contorno `pdf_chrome.py` da rodada da Débora). **Conferir que coube em duas páginas**, abrindo a página renderizada.
+
+**Por que existe:** depois de dezenas de arquivos por rodada, ninguém — nem o Victor, nem o próximo agente — enxergava a peça inteira de uma vez. A composição é o mapa de uma página que diz o que a VSL é, sem abrir o roteiro. **Exemplo de referência:** `clientes/Débora Delgado/12 - Direct Response/vsl/COMPOSICAO-VSL.pdf`.
 
 ---
 
@@ -129,6 +146,7 @@ Não leia o raciocínio de outro agente. Não leia este pedido como permissão p
 - 🔴 auditor que **reescreve**
 - 🔴 texto escrito **antes do esqueleto aprovado**
 - 🔴 bloco que segue com defeito de **procedência** ou de **promessa acima do teto** (nunca seguem, nem no teto de devoluções)
+- 🔴 **rodada fechada sem `COMPOSICAO-VSL.md` + `.pdf` (≤ 2 páginas) na pasta da VSL** (§4.4, 16/10)
 
 ---
 
