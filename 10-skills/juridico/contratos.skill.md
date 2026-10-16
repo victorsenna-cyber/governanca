@@ -20,6 +20,7 @@
 | Site (R$ 997/1.497) | `TEMPLATE-CONTRATO-SITE.md` | proposta + aceite escrito | 50/50 · prazo conta do material completo · direito de portfólio |
 | Assessoria (R$ 2.5k+/mês) | `TEMPLATE-CONTRATO-ASSESSORIA.md` | contrato assinado | escopo em anexo · mês antecipado · aviso 30 dias |
 | Gestão de tráfego | adaptar template Assessoria | contrato assinado | verba de mídia é do cliente, na conta do cliente — nunca transita por nós |
+| Formação Repositório Continuum (R$ 2.497 a 6.997) | `TEMPLATE-TERMO-FORMACAO-REPOSITORIO.md` | contrato assinado | formação + licença num termo só · modalidade no Anexo I · CDC 7 dias · acesso ao template só no 1º encontro · ⚖️ advogado antes do 1º Implementador padrão |
 | SaaS (futuro, gate MRR ≥ 20k) | construir ToS + privacidade + DPA | aceite eletrônico | **antes** da 1ª venda (`POLITICAS` §6) |
 | Infoproduto (futuro, gate MRR ≥ 10k) | termos de compra + reembolso | aceite no checkout | CDC 7 dias obrigatório |
 

@@ -16,7 +16,7 @@ Me conta uma coisa: você quer montar isso pra sua própria operação ou pra en
 
 **Por que a pergunta no fim:** é ela que separa quem tem operação (pode virar conversa) de quem está colecionando material. Registrar a resposta em `../REGISTRO.md`.
 
-**Se responder "treinamento":** a oferta ainda não tem preço nem escopo (STATUS 16/10). Não improvisar valor na DM: dizer que te explica em uma conversa e marcar.
+**Se responder "treinamento":** a oferta está vigente (`30-comercial/OFERTA-FORMACAO-REPOSITORIO.md`). Primeiro a pergunta que separa as licenças (*"pra sua operação ou pra entregar pra cliente?"*), depois a modalidade e o preço da turma fundadora: Operador R$ 2.497, Implementador R$ 4.997. Fechou, vai o termo (`80-juridico/contratos/TEMPLATE-TERMO-FORMACAO-REPOSITORIO.md`).
 
 **O prompt (p. 17 do PDF):** mandar também o texto puro de `PROMPT-MONTAR-REPO.md` quando a pessoa pedir, porque o texto copiado do PDF sai com quebras de linha.
 

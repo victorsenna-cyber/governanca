@@ -1,6 +1,6 @@
 # OFERTA — Formação Repositório Continuum (treinamento + repositório completo)
 
-> **Tipo:** política (oferta ancorada) · **Criado em:** 16/10/2026 · **Alçada:** Victor · **Status:** 🟡 em revisão (preços propostos, aguardam o ok do Victor)
+> **Tipo:** política (oferta ancorada) · **Criado em:** 16/10/2026 · **Alçada:** Victor · **Status:** ✅ vigente (preços aprovados pelo Victor em 16/10/2026: *"aprovado os preços"*)
 > **Origem:** o presente do perfil (`conteudo-perfil/2026-10-16-presente-mapa-repo/`) fecha com *"me manda 'treinamento'"*. Pedido do Victor (16/10): *"se a pessoa quiser um treinamento e o nosso método completo, com todos os arquivos, aí ela pode contratar o treinamento que o repo vem junto (nesse caso, vale o esforço de templatear)"*.
 > **Ancorada por:** `100-métodos/METODO-ANCORAGEM-DE-PROPOSTA.md` (7 âncoras) · pisos de `00-core/POLITICAS-DE-DECISAO.md` §5 · camadas de `ARQUITETURA-DE-CAMADAS-E-CATALOGO.md`.
 
@@ -37,7 +37,7 @@ A pergunta da DM (*"pra sua própria operação ou pra entregar pra cliente?"*) 
 | **Operador** | usar o repositório na própria operação | redistribuir ou instanciar para terceiros |
 | **Implementador** | instanciar para os clientes dele, quantos quiser | revender o template, ou montar curso ou formação com ele |
 
-🔴 **Termo de licença escrito antes da primeira venda** (árvore JURÍDICO, `80-juridico/`). Sem instrumento, não se vende.
+🔴 **Termo assinado antes do primeiro encontro:** `80-juridico/contratos/TEMPLATE-TERMO-FORMACAO-REPOSITORIO.md` (formação + licença, com a modalidade no Anexo I). Sem instrumento, não se vende.
 
 ## 2. Referências escaladas (REGRA Nº 2)
 
@@ -105,7 +105,7 @@ O aluno continua com a IA decidindo pelo que soa bonito, ou constrói sozinho a 
 2. 🔴 **Abre com 5 inscritos.** Abaixo disso, devolve ou adia.
 3. O aluno usa uma ferramenta que lê arquivo raiz (Claude Code, Codex, Cursor ou equivalente) e aceita usar git.
 4. **O aluno escreve.** Quem não aceita registrar decisão não passa da semana 2. É recusa, não desconto (mesma régua do Repo de Governança).
-5. Termo de licença assinado.
+5. Termo assinado (`80-juridico/contratos/TEMPLATE-TERMO-FORMACAO-REPOSITORIO.md`). ⚖️ Revisão por advogado antes da primeira licença Implementador a preço padrão (acima de R$ 5.000, `POLITICAS-JURIDICAS.md` §0).
 
 ### Âncora 6 · Três cenários (turma fundadora)
 
@@ -142,7 +142,7 @@ O aluno continua com a IA decidindo pelo que soa bonito, ou constrói sozinho a 
 
 ## 7. Próximos passos, com dono
 
-1. **Victor:** aprovar ou ajustar os preços da §4. Até lá, esta oferta fica 🟡 e **não se cita valor na DM**.
-2. **Victor + Claude:** templatear o repositório (condição 1). Já foi feito antes e será refeito.
-3. **Claude:** termo de licença Operador e Implementador (árvore JURÍDICO).
-4. **Victor:** data da turma fundadora, depois do ok de capacidade.
+1. ✅ ~~Victor: aprovar os preços~~ *(16/10)*.
+2. ✅ ~~Claude: termo de licença~~ *(16/10, `80-juridico/contratos/TEMPLATE-TERMO-FORMACAO-REPOSITORIO.md`)*.
+3. **Victor + Claude:** templatear o repositório (condição 1). Já foi feito antes e será refeito. **Sem isso, a venda pode ser aberta, mas a turma não começa.**
+4. **Victor:** data da turma fundadora e data-limite para os 5 inscritos (cl. 2.2 do termo), depois do ok de capacidade.

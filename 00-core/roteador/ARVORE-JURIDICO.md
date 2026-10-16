@@ -17,7 +17,7 @@
 | **framework** | *— não há framework jurídico próprio; a régua é a política* |
 | **trilho** | *— o caso decide: conflito ativo → blue-team · gerar instrumento → contratos* |
 | **método** | `10-skills/juridico/blue-team.skill.md` · `10-skills/juridico/contratos.skill.md` |
-| **blueprint** | `80-juridico/contratos/` (site · Assessoria) |
+| **blueprint** | `80-juridico/contratos/` (site · Assessoria · Formação Repositório) |
 | **política** | `80-juridico/POLITICAS-JURIDICAS.md` (regras e red lines) |
 | **gate** | `10-skills/c-level/CLO.skill.md` · **nada sem instrumento escrito** |
 

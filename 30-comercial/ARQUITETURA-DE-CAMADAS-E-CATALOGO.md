@@ -89,7 +89,7 @@ CAMADA 3 · CONSULTORIA  Mapa da Ordem · Núcleo ....... R$ 1.997
                         Mapa da Ordem · Operação ..... R$ 5.000+
                         Consultorias de escopo único . R$ 2.500–4.500   ⭐ novo
 
-CAMADA 2 · MENTORIA     Formação Repositório Continuum  R$ 2.497 / R$ 4.997 fundador · 6 semanas, turma   🟡 16/10 (OFERTA-FORMACAO-REPOSITORIO.md)
+CAMADA 2 · MENTORIA     Formação Repositório Continuum  R$ 2.497 / R$ 4.997 fundador · 6 semanas, turma   ✅ 16/10 (OFERTA-FORMACAO-REPOSITORIO.md)
                         Mentoria de Operador ......... R$ 1.500/mês, 6 meses   ⭐ novo
                         Mentoria em grupo ............ R$ 997/mês, turma       ⭐ novo
 
