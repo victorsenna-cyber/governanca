@@ -46,11 +46,11 @@ E a conclusão vem rápido: essa pessoa não liga para o que eu falo.
 
 Eu entendo essa conclusão, porque ela parece óbvia. Muitas vezes, ela está errada.
 
-O problema não está onde você está olhando: na vontade da pessoa. E enquanto você olha para lá, ele continua acontecendo.
+Nesses casos, o problema não está onde você está olhando: na vontade da pessoa. E enquanto você olha para lá, ele continua acontecendo.
 
 [PAUSA]
 
-E para enxergar onde ele está, você não precisa de nenhuma técnica de conversa.
+E dá para enxergar onde ele está.
 
 [CORTE]
 
@@ -72,7 +72,7 @@ Quando você entende como cada pessoa funciona, sabe como direcionar cada uma pa
 
 Eu sou a Débora Delgado.
 
-Estudo o Eneagrama, um jeito de entender como as pessoas funcionam, há mais de cinco anos. Já ajudei sessenta pessoas a se reconhecer por ele.
+Há mais de cinco anos eu estudo o Eneagrama, um jeito de entender como as pessoas funcionam. Já ajudei sessenta pessoas a se reconhecer por ele.
 
 [CORTE]
 
@@ -88,13 +88,11 @@ E o que fazer diferente já no próximo pedido, sem deixar de ser quem você é.
 
 ### D05 · contrarian
 
-Quase tudo o que se tenta nessa hora é isto: explicar de novo, cobrar com mais firmeza, ser mais duro. Isso não resolve.
+Quando a pessoa não entrega, explicar de novo e cobrar com mais firmeza não resolve.
 
 [PAUSA]
 
-Mas liderar pede o movimento contrário.
-
-Quem lidera não precisa só pedir mais: precisa entender como funciona quem recebe o pedido dele. E é desse olhar que a gente vai falar.
+Quem lidera não precisa começar por uma técnica de conversa. A gente pode ter isso depois. O primeiro passo é entender como funciona quem recebe o pedido dele. E é desse olhar que a gente vai falar.
 
 [CORTE]
 
@@ -370,7 +368,7 @@ Uma coisa que eu fiz com meus times: antes de começar a liderar, eu me mostrava
 
 Passo um: conhecer as maneiras de funcionar. São nove, e elas não se decoram: elas se reconhecem.
 
-E isso é o contrário do que o mercado vende. O mercado vende descobrir a sua maneira de funcionar. Isso te explica, e não te ajuda a liderar ninguém.
+E isso é o contrário do que o mercado vende. O mercado vende descobrir quem você é. Isso te explica, e não te ajuda a liderar ninguém.
 
 [PAUSA]
 
@@ -720,7 +718,7 @@ E todas as situações que você respondeu têm uma coisa em comum: do outro lad
 
 [PAUSA]
 
-Você explicou, combinou, e ela não entregou. E a conclusão vem rápido: ela não liga para o que eu falo.
+Você explicou, combinou, e ela não entregou. E a conclusão vem rápido: ela não liga para o que eu falo. Muitas vezes, essa conclusão está errada.
 
 [CORTE]
 
@@ -736,7 +734,7 @@ Seja qual for a sua alavanca, é disso que esta aula trata: [PAUSA] mais resulta
 
 Eu sou a Débora Delgado.
 
-Estudo o Eneagrama, um jeito de entender como as pessoas funcionam, há mais de cinco anos. Já ajudei sessenta pessoas a se reconhecer por ele.
+Há mais de cinco anos eu estudo o Eneagrama, um jeito de entender como as pessoas funcionam. Já ajudei sessenta pessoas a se reconhecer por ele.
 
 [CORTE]
 
