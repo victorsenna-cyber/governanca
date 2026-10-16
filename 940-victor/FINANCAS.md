@@ -62,5 +62,6 @@
 |---|---:|---|---|---|
 | Mãe | 1.000 | 10/10/2026 | com os R$ 1.000 do Patricck, quando ele pagar | aberta |
 | Anfitrião (Airbnb) | ~~560~~ | 03/10/2026 | diária R$ 80 | ✅ quitada em 10/10 |
+| **Anfitrião (Décio) — noites de 13, 14, 15 e 16/10** | **320** | 13/10/2026 | diária R$ 80 · regra dele desde 22/09: *"tem que ser enviado todos os dias"* | 🔴 **em aberto** · em 14/10, 10h54, você escreveu *"logo faço a transferência do de ontem e hoje"* e não há comprovante depois disso (export de 16/10, `Décio/chat.md`). ⚠️ A noite de 10/10 não aparece em nenhum comprovante: os R$ 560 cobriram 03 a 09/10 e o de 11/10 cobriu 11 e 12. Conferir |
 | **Marta — distrato, 1ª parcela** (honorários R$ 640 + R$ 885,86) | **1.525,86** | **vencida em 15/09/2026** | não paga · **Cleiton: judicial se virar o mês → prazo real 31/10** | 🔴 **em atraso** |
 | **Marta — parcelas 2 a 12** | 812,14/mês | de 15/10/2026 a 15/08/2027 | 2ª vence 15/10 | aberta |
