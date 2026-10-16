@@ -186,3 +186,20 @@ Victor (14:06): *"Compreendo perfeitamente"*. **Não houve contraproposta nem in
 | decidir verba e capital de 2–3 tentativas | **Victor** |
 | responder os 3 fatos e pausar o anúncio | Débora |
 | com os fatos: fechar o anúncio A e montar a campanha (objetivo Vendas, só Stories/Reels) | Victor / Claude |
+
+---
+
+## Adendo 16/10 — mensagens literais do grupo, de 09/10 a 13/10 (fonte: print do Victor, 16/10 14h52)
+
+> Camada 4 do §11.1. Transcrição do print; nada foi resumido.
+
+| Data · hora | Quem | Mensagem |
+|---|---|---|
+| 09/10 14h09 | Victor | *"Nossa, que forte Débora"* |
+| 09/10 14h11 | Victor | *"Essa história é excelente também pra expressar onde chega esse processo sem conhecer muito de si e se respeitar.. e estar no local que poderia ser melhor"* |
+| 10/10 (sábado) 22h32 | Victor | *"Débora, muito boa noite"* |
+| 10/10 22h38 | Victor | *"estou extremamente incomodado com a questão do tempo pra gerar a VSL pra ti.. / realmente calculei que sairia com baixo uso de token por se tratar de texto limpo mas ela roda num circuito que cria e audita, calcula e recalcula até passar nos critérios definidos.. / somente passando pra te dar um feedback do operacional por trás da criação, pra você entender o motivo por trás da demora. / obrigado pela paciência. excepcional final de semana pra ti. / te atualizo aqui do andamento logo"* |
+| 13/10 (terça) 13h30 | Débora | *"Booom dia!! Tudo bem?"* · *"Tá joiaa! To mega curiosa.. hehe"* |
+| 13/10 15h55 | Victor | *"Oi Débora!! muito boa tarde! tudo ótimo, e contigo?"* · em resposta a *"To mega curiosa"*: *"heheh.. está em andamento aqui"* |
+
+**Tom e conduta (camada 3):** ela está leve e curiosa, sem cobrança. Ele já se desculpou pela demora (10/10) e prometeu atualizar. **A próxima mensagem entrega o roteiro, sem nova desculpa e sem pergunta** (`vsl/2026-10-11/MENSAGEM-DEBORA-2026-10-16.md`). 🟡 Envio pendente do Victor.
