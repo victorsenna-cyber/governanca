@@ -54,3 +54,17 @@ Na call das 15h31 o Victor disse a ela: *"já está tudo pronto. Já os anúncio
 **Decisão: nomenclatura instituída e aplicada na campanha ativa** (pedido do Victor: *"planeje nomenclaturas das campanhas, conjuntos e anúncios. faça as alterações na campanha ativa"*). Convenção, mapa vivo e de → para em `estrutura-campanhas.md`. Renomear não reinicia o aprendizado nem a revisão; os seis nomes foram conferidos pelo conector depois da troca, todos sem pausa.
 
 **A conferir pelo Victor:** se a parte A da mensagem de 14/10 (verba, o que esperar, o que fazer quando a conversa chegar) saiu **antes** da ativação, como pedia a ordem. Se não saiu, sai agora, antes da primeira conversa chegar.
+
+## 16/10/2026, 05h50 · 🔴 os quatro anúncios rejeitados: o número do WhatsApp
+
+**Fato (conector, lido 16/10 05h50):** os quatro anúncios em `DISAPPROVED`, subestado `ad_not_approved_ctwa_number`, atualizados em 15/10 entre 23h51 e 23h52. Gasto R$ 0, 0 impressões desde a ativação de 14/10 18h03. Texto do Gerenciador (print 054417): *"O número do WhatsApp precisa de atenção. Seu anúncio não foi aprovado. O número de telefone do WhatsApp está indisponível devido a uma possível violação dos nossos Termos de Serviço. Você pode pedir uma análise ou duplicar o anúncio para usar outro número."*
+
+**Leitura:** a recusa é do **número**, não do anúncio: texto, arte e público não foram julgados. **Não sabemos o que a Meta viu no número.** Hipótese, não confirmada: alguma coisa mudou na conta do WhatsApp Business dela entre 14/10 e 15/10 (o agente de IA da Meta foi ativado em 14/10 às 22h06). Ajuda da Meta: [conta do WhatsApp Business restrita](https://www.facebook.com/business/help/1039383743778558) (análise pela Central de Suporte, com documento com foto, decisão em até 48 horas) · [aplicação de políticas no WhatsApp Business](https://www.facebook.com/business/help/675932353644024).
+
+**Decisão:**
+1. **Agora:** o Victor pede análise dos quatro anúncios no Gerenciador, e a Paola confere se o WhatsApp dela manda e recebe mensagem e se apareceu aviso (`MSG-PAOLA-2026-10-16.md`).
+2. **Se o número estiver restrito:** ela pede a análise do número na Central de Suporte da empresa. É dela: pede código no celular e documento com foto.
+3. **Estrutura parada até o resultado.** Sem gasto, o teste não andou; **a data de fim (20/10) se estende quando os anúncios voltarem**, para manter os seis dias de veiculação. Mudança de data não muda a verba.
+4. **Plano B, só se a análise não sair até 18/10 de manhã ou for negada:** duplicar o conjunto com destino Direct do Instagram, os mesmos quatro anúncios, a mesma verba. Ela responde no Direct com as mesmas mensagens. **Descartado agora:** trocar já. Recomeça o aprendizado, troca o canal que a IA e o processo usam, e pode ser desnecessário se a análise sair em 48 horas. **Descartado:** outro número (ela tem um celular só).
+
+**Não se mede nada desta semana até a veiculação voltar.** A leitura do 4º dia (18/10) vira leitura do 4º dia de veiculação.

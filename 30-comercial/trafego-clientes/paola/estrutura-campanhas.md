@@ -45,7 +45,7 @@ O mesmo nome do arquivo da arte em `clientes/Paola Lopes Rosa/03 - criativos/`, 
 
 | Campanha (nome) | Canal | Objetivo/evento | Conjuntos | Criativos ativos | Verba | Estágio | Desde |
 |---|---|---|---|---|---|---|---|
-| `paola-meta-mesa-conversa-topo-20261014` (`120253883442420785`) · conta `CA - 01` (`4531343710438456`) | Meta · só Instagram | conversa no WhatsApp (objetivo Engajamento, otimização Conversas) | 1 · `mulheres-25a60-br-ig-aberto` (`120253883758390785`) | 4 (abaixo) | R$ 200 no total, fim 20/10 23h59 | 🟢 ativa · anúncios em processamento em 14/10 18h | 14/10/2026 |
+| `paola-meta-mesa-conversa-topo-20261014` (`120253883442420785`) · conta `CA - 01` (`4531343710438456`) | Meta · só Instagram | conversa no WhatsApp (objetivo Engajamento, otimização Conversas) | 1 · `mulheres-25a60-br-ig-aberto` (`120253883758390785`) | 4 (abaixo) | R$ 200 no total, fim 20/10 23h59 | 🔴 **anúncios recusados em 15/10 23h51** pelo número do WhatsApp (`ad_not_approved_ctwa_number`), gasto R$ 0 · `LOG-DECISOES.md` 16/10 | 14/10/2026 |
 
 | Anúncio | ID | Texto | Arte |
 |---|---|---|---|
