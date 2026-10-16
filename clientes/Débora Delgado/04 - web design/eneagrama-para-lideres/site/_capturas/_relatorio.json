@@ -1,0 +1,1318 @@
+[
+ {
+  "base": "360x800__base",
+  "logs": [
+   "info: [pixel:local] [\"track\",\"PageView\"]",
+   "info: [pixel:local] [\"track\",\"ViewContent\",{\"content_name\":\"eneagrama-para-lideres\",\"value\":297,\"currency\":\"BRL\",\"funil\":\"b\"}]"
+  ],
+  "m": {
+   "overflowX": false,
+   "scrollW": 360,
+   "h1": {
+    "x": 20,
+    "y": 98,
+    "w": 320,
+    "h": 132
+   },
+   "h1lines": 4,
+   "h1text": "Combinou o prazo e não entregaram? Mais resultado, com menos esforço.",
+   "player": {
+    "x": 0,
+    "y": 246,
+    "w": 360,
+    "h": 203
+   },
+   "play": {
+    "x": 144,
+    "y": 311,
+    "w": 72,
+    "h": 72
+   },
+   "cred": {
+    "x": 20,
+    "y": 513,
+    "w": 320,
+    "h": 45
+   },
+   "oferta": null,
+   "cartao": null,
+   "preco": null,
+   "btnclx": null,
+   "sticky": {
+    "x": 0,
+    "y": 0,
+    "w": 0,
+    "h": 0
+   },
+   "total": 800,
+   "cls": "js is-gated",
+   "f": "b",
+   "fonts": "Fraunces 600 italic|Fraunces 600 normal|Inter 400 normal|Inter 600 normal"
+  }
+ },
+ {
+  "base": "360x800__preview",
+  "logs": [
+   "info: [pixel:preview] [\"track\",\"PageView\"]",
+   "info: [pixel:preview] [\"track\",\"ViewContent\",{\"content_name\":\"eneagrama-para-lideres\",\"value\":297,\"currency\":\"BRL\",\"funil\":\"b\"}]"
+  ],
+  "m": {
+   "overflowX": false,
+   "scrollW": 360,
+   "h1": {
+    "x": 20,
+    "y": 98,
+    "w": 320,
+    "h": 132
+   },
+   "h1lines": 4,
+   "h1text": "Combinou o prazo e não entregaram? Mais resultado, com menos esforço.",
+   "player": {
+    "x": 0,
+    "y": 246,
+    "w": 360,
+    "h": 203
+   },
+   "play": {
+    "x": 144,
+    "y": 311,
+    "w": 72,
+    "h": 72
+   },
+   "cred": {
+    "x": 20,
+    "y": 513,
+    "w": 320,
+    "h": 45
+   },
+   "oferta": null,
+   "cartao": null,
+   "preco": null,
+   "btnclx": null,
+   "sticky": {
+    "x": 0,
+    "y": 0,
+    "w": 0,
+    "h": 0
+   },
+   "total": 872,
+   "cls": "js is-gated",
+   "f": "b",
+   "fonts": "Fraunces 600 italic|Fraunces 600 normal|Inter 400 normal|Inter 600 normal"
+  }
+ },
+ {
+  "base": "360x800__oferta",
+  "logs": [
+   "info: [pixel:local] [\"track\",\"PageView\"]",
+   "info: [pixel:local] [\"track\",\"ViewContent\",{\"content_name\":\"eneagrama-para-lideres\",\"value\":297,\"currency\":\"BRL\",\"funil\":\"b\"}]"
+  ],
+  "m": {
+   "overflowX": false,
+   "scrollW": 360,
+   "h1": {
+    "x": 20,
+    "y": 98,
+    "w": 320,
+    "h": 132
+   },
+   "h1lines": 4,
+   "h1text": "Combinou o prazo e não entregaram? Mais resultado, com menos esforço.",
+   "player": {
+    "x": 0,
+    "y": 246,
+    "w": 360,
+    "h": 203
+   },
+   "play": {
+    "x": 144,
+    "y": 311,
+    "w": 72,
+    "h": 72
+   },
+   "cred": {
+    "x": 20,
+    "y": 461,
+    "w": 320,
+    "h": 45
+   },
+   "oferta": {
+    "x": 0,
+    "y": 554,
+    "w": 360,
+    "h": 1123
+   },
+   "cartao": {
+    "x": 12,
+    "y": 650,
+    "w": 336,
+    "h": 963
+   },
+   "preco": {
+    "x": 36,
+    "y": 1185,
+    "w": 288,
+    "h": 72
+   },
+   "btnclx": {
+    "x": 36,
+    "y": 1427,
+    "w": 288,
+    "h": 64
+   },
+   "sticky": {
+    "x": 0,
+    "y": 735,
+    "w": 360,
+    "h": 65
+   },
+   "total": 5988,
+   "cls": "js is-revealed",
+   "f": "b",
+   "fonts": "Fraunces 600 italic|Fraunces 600 normal|Fraunces 700 normal|Inter 400 normal|Inter 600 normal"
+  }
+ },
+ {
+  "base": "360x800__preview-oferta",
+  "logs": [
+   "info: [pixel:preview] [\"track\",\"PageView\"]",
+   "info: [pixel:preview] [\"track\",\"ViewContent\",{\"content_name\":\"eneagrama-para-lideres\",\"value\":297,\"currency\":\"BRL\",\"funil\":\"b\"}]"
+  ],
+  "m": {
+   "overflowX": false,
+   "scrollW": 360,
+   "h1": {
+    "x": 20,
+    "y": 98,
+    "w": 320,
+    "h": 132
+   },
+   "h1lines": 4,
+   "h1text": "Combinou o prazo e não entregaram? Mais resultado, com menos esforço.",
+   "player": {
+    "x": 0,
+    "y": 246,
+    "w": 360,
+    "h": 203
+   },
+   "play": {
+    "x": 144,
+    "y": 311,
+    "w": 72,
+    "h": 72
+   },
+   "cred": {
+    "x": 20,
+    "y": 461,
+    "w": 320,
+    "h": 45
+   },
+   "oferta": {
+    "x": 0,
+    "y": 554,
+    "w": 360,
+    "h": 1123
+   },
+   "cartao": {
+    "x": 12,
+    "y": 650,
+    "w": 336,
+    "h": 963
+   },
+   "preco": {
+    "x": 36,
+    "y": 1185,
+    "w": 288,
+    "h": 72
+   },
+   "btnclx": {
+    "x": 36,
+    "y": 1427,
+    "w": 288,
+    "h": 64
+   },
+   "sticky": {
+    "x": 0,
+    "y": 735,
+    "w": 360,
+    "h": 65
+   },
+   "total": 6127,
+   "cls": "js is-revealed",
+   "f": "b",
+   "fonts": "Fraunces 600 italic|Fraunces 600 normal|Fraunces 700 normal|Inter 400 normal|Inter 600 normal"
+  }
+ },
+ {
+  "base": "360x800__funil-a-f",
+  "logs": [
+   "info: [pixel:local] [\"track\",\"PageView\"]",
+   "info: [pixel:local] [\"track\",\"ViewContent\",{\"content_name\":\"eneagrama-para-lideres\",\"value\":297,\"currency\":\"BRL\",\"funil\":\"a\"}]"
+  ],
+  "m": {
+   "overflowX": false,
+   "scrollW": 360,
+   "h1": {
+    "x": 20,
+    "y": 98,
+    "w": 320,
+    "h": 132
+   },
+   "h1lines": 4,
+   "h1text": "Seja qual for a sua alavanca: mais resultado, com menos esforço.",
+   "player": {
+    "x": 0,
+    "y": 246,
+    "w": 360,
+    "h": 203
+   },
+   "play": {
+    "x": 144,
+    "y": 311,
+    "w": 72,
+    "h": 72
+   },
+   "cred": {
+    "x": 20,
+    "y": 513,
+    "w": 320,
+    "h": 45
+   },
+   "oferta": null,
+   "cartao": null,
+   "preco": null,
+   "btnclx": null,
+   "sticky": {
+    "x": 0,
+    "y": 0,
+    "w": 0,
+    "h": 0
+   },
+   "total": 800,
+   "cls": "js is-gated",
+   "f": "a",
+   "fonts": "Fraunces 600 italic|Fraunces 600 normal|Inter 400 normal|Inter 600 normal"
+  }
+ },
+ {
+  "base": "360x800__funil-a-quiz",
+  "logs": [
+   "info: [pixel:local] [\"track\",\"PageView\"]",
+   "info: [pixel:local] [\"track\",\"ViewContent\",{\"content_name\":\"eneagrama-para-lideres\",\"value\":297,\"currency\":\"BRL\",\"funil\":\"a\",\"nivel\":\"3\",\"alavanca\":\"d4\"}]"
+  ],
+  "m": {
+   "overflowX": false,
+   "scrollW": 360,
+   "h1": {
+    "x": 20,
+    "y": 98,
+    "w": 320,
+    "h": 132
+   },
+   "h1lines": 4,
+   "h1text": "Seja qual for a sua alavanca: mais resultado, com menos esforço.",
+   "player": {
+    "x": 0,
+    "y": 246,
+    "w": 360,
+    "h": 203
+   },
+   "play": {
+    "x": 144,
+    "y": 311,
+    "w": 72,
+    "h": 72
+   },
+   "cred": {
+    "x": 20,
+    "y": 513,
+    "w": 320,
+    "h": 45
+   },
+   "oferta": null,
+   "cartao": null,
+   "preco": null,
+   "btnclx": null,
+   "sticky": {
+    "x": 0,
+    "y": 0,
+    "w": 0,
+    "h": 0
+   },
+   "total": 800,
+   "cls": "js is-gated",
+   "f": "a",
+   "fonts": "Fraunces 600 italic|Fraunces 600 normal|Inter 400 normal|Inter 600 normal"
+  }
+ },
+ {
+  "base": "360x800__encerrada",
+  "logs": [
+   "info: [pixel:preview] [\"track\",\"PageView\"]"
+  ],
+  "m": {
+   "overflowX": false,
+   "scrollW": 360,
+   "h1": {
+    "x": 20,
+    "y": 98,
+    "w": 320,
+    "h": 132
+   },
+   "h1lines": 4,
+   "h1text": "Combinou o prazo e não entregaram? Mais resultado, com menos esforço.",
+   "player": {
+    "x": 0,
+    "y": 246,
+    "w": 360,
+    "h": 203
+   },
+   "play": {
+    "x": 144,
+    "y": 311,
+    "w": 72,
+    "h": 72
+   },
+   "cred": {
+    "x": 20,
+    "y": 513,
+    "w": 320,
+    "h": 45
+   },
+   "oferta": {
+    "x": 0,
+    "y": 606,
+    "w": 360,
+    "h": 329
+   },
+   "cartao": null,
+   "preco": null,
+   "btnclx": null,
+   "sticky": {
+    "x": 0,
+    "y": 0,
+    "w": 0,
+    "h": 0
+   },
+   "total": 1201,
+   "cls": "js is-closed",
+   "f": "b",
+   "fonts": "Fraunces 600 italic|Fraunces 600 normal|Inter 400 normal|Inter 600 normal"
+  }
+ },
+ {
+  "base": "360x800__agora-sem-preview",
+  "logs": [
+   "info: [pixel:local] [\"track\",\"PageView\"]",
+   "info: [pixel:local] [\"track\",\"ViewContent\",{\"content_name\":\"eneagrama-para-lideres\",\"value\":297,\"currency\":\"BRL\",\"funil\":\"b\"}]"
+  ],
+  "m": {
+   "overflowX": false,
+   "scrollW": 360,
+   "h1": {
+    "x": 20,
+    "y": 98,
+    "w": 320,
+    "h": 132
+   },
+   "h1lines": 4,
+   "h1text": "Combinou o prazo e não entregaram? Mais resultado, com menos esforço.",
+   "player": {
+    "x": 0,
+    "y": 246,
+    "w": 360,
+    "h": 203
+   },
+   "play": {
+    "x": 144,
+    "y": 311,
+    "w": 72,
+    "h": 72
+   },
+   "cred": {
+    "x": 20,
+    "y": 513,
+    "w": 320,
+    "h": 45
+   },
+   "oferta": null,
+   "cartao": null,
+   "preco": null,
+   "btnclx": null,
+   "sticky": {
+    "x": 0,
+    "y": 0,
+    "w": 0,
+    "h": 0
+   },
+   "total": 800,
+   "cls": "js is-gated",
+   "f": "b",
+   "fonts": "Fraunces 600 italic|Fraunces 600 normal|Inter 400 normal|Inter 600 normal"
+  }
+ },
+ {
+  "base": "390x844__base",
+  "logs": [
+   "info: [pixel:local] [\"track\",\"PageView\"]",
+   "info: [pixel:local] [\"track\",\"ViewContent\",{\"content_name\":\"eneagrama-para-lideres\",\"value\":297,\"currency\":\"BRL\",\"funil\":\"b\"}]"
+  ],
+  "m": {
+   "overflowX": false,
+   "scrollW": 390,
+   "h1": {
+    "x": 20,
+    "y": 98,
+    "w": 350,
+    "h": 132
+   },
+   "h1lines": 4,
+   "h1text": "Combinou o prazo e não entregaram? Mais resultado, com menos esforço.",
+   "player": {
+    "x": 0,
+    "y": 246,
+    "w": 390,
+    "h": 219
+   },
+   "play": {
+    "x": 159,
+    "y": 319,
+    "w": 72,
+    "h": 72
+   },
+   "cred": {
+    "x": 20,
+    "y": 530,
+    "w": 350,
+    "h": 45
+   },
+   "oferta": null,
+   "cartao": null,
+   "preco": null,
+   "btnclx": null,
+   "sticky": {
+    "x": 0,
+    "y": 0,
+    "w": 0,
+    "h": 0
+   },
+   "total": 844,
+   "cls": "js is-gated",
+   "f": "b",
+   "fonts": "Fraunces 600 italic|Fraunces 600 normal|Inter 400 normal|Inter 600 normal"
+  }
+ },
+ {
+  "base": "390x844__preview",
+  "logs": [
+   "info: [pixel:preview] [\"track\",\"PageView\"]",
+   "info: [pixel:preview] [\"track\",\"ViewContent\",{\"content_name\":\"eneagrama-para-lideres\",\"value\":297,\"currency\":\"BRL\",\"funil\":\"b\"}]"
+  ],
+  "m": {
+   "overflowX": false,
+   "scrollW": 390,
+   "h1": {
+    "x": 20,
+    "y": 98,
+    "w": 350,
+    "h": 132
+   },
+   "h1lines": 4,
+   "h1text": "Combinou o prazo e não entregaram? Mais resultado, com menos esforço.",
+   "player": {
+    "x": 0,
+    "y": 246,
+    "w": 390,
+    "h": 219
+   },
+   "play": {
+    "x": 159,
+    "y": 319,
+    "w": 72,
+    "h": 72
+   },
+   "cred": {
+    "x": 20,
+    "y": 530,
+    "w": 350,
+    "h": 45
+   },
+   "oferta": null,
+   "cartao": null,
+   "preco": null,
+   "btnclx": null,
+   "sticky": {
+    "x": 0,
+    "y": 0,
+    "w": 0,
+    "h": 0
+   },
+   "total": 889,
+   "cls": "js is-gated",
+   "f": "b",
+   "fonts": "Fraunces 600 italic|Fraunces 600 normal|Inter 400 normal|Inter 600 normal"
+  }
+ },
+ {
+  "base": "390x844__oferta",
+  "logs": [
+   "info: [pixel:local] [\"track\",\"PageView\"]",
+   "info: [pixel:local] [\"track\",\"ViewContent\",{\"content_name\":\"eneagrama-para-lideres\",\"value\":297,\"currency\":\"BRL\",\"funil\":\"b\"}]"
+  ],
+  "m": {
+   "overflowX": false,
+   "scrollW": 390,
+   "h1": {
+    "x": 20,
+    "y": 98,
+    "w": 350,
+    "h": 132
+   },
+   "h1lines": 4,
+   "h1text": "Combinou o prazo e não entregaram? Mais resultado, com menos esforço.",
+   "player": {
+    "x": 0,
+    "y": 246,
+    "w": 390,
+    "h": 219
+   },
+   "play": {
+    "x": 159,
+    "y": 319,
+    "w": 72,
+    "h": 72
+   },
+   "cred": {
+    "x": 20,
+    "y": 478,
+    "w": 350,
+    "h": 45
+   },
+   "oferta": {
+    "x": 0,
+    "y": 571,
+    "w": 390,
+    "h": 1101
+   },
+   "cartao": {
+    "x": 12,
+    "y": 667,
+    "w": 366,
+    "h": 941
+   },
+   "preco": {
+    "x": 36,
+    "y": 1202,
+    "w": 318,
+    "h": 72
+   },
+   "btnclx": {
+    "x": 36,
+    "y": 1444,
+    "w": 318,
+    "h": 64
+   },
+   "sticky": {
+    "x": 0,
+    "y": 779,
+    "w": 390,
+    "h": 65
+   },
+   "total": 5891,
+   "cls": "js is-revealed",
+   "f": "b",
+   "fonts": "Fraunces 600 italic|Fraunces 600 normal|Fraunces 700 normal|Inter 400 normal|Inter 600 normal"
+  }
+ },
+ {
+  "base": "390x844__preview-oferta",
+  "logs": [
+   "info: [pixel:preview] [\"track\",\"PageView\"]",
+   "info: [pixel:preview] [\"track\",\"ViewContent\",{\"content_name\":\"eneagrama-para-lideres\",\"value\":297,\"currency\":\"BRL\",\"funil\":\"b\"}]"
+  ],
+  "m": {
+   "overflowX": false,
+   "scrollW": 390,
+   "h1": {
+    "x": 20,
+    "y": 98,
+    "w": 350,
+    "h": 132
+   },
+   "h1lines": 4,
+   "h1text": "Combinou o prazo e não entregaram? Mais resultado, com menos esforço.",
+   "player": {
+    "x": 0,
+    "y": 246,
+    "w": 390,
+    "h": 219
+   },
+   "play": {
+    "x": 159,
+    "y": 319,
+    "w": 72,
+    "h": 72
+   },
+   "cred": {
+    "x": 20,
+    "y": 478,
+    "w": 350,
+    "h": 45
+   },
+   "oferta": {
+    "x": 0,
+    "y": 571,
+    "w": 390,
+    "h": 1101
+   },
+   "cartao": {
+    "x": 12,
+    "y": 667,
+    "w": 366,
+    "h": 941
+   },
+   "preco": {
+    "x": 36,
+    "y": 1202,
+    "w": 318,
+    "h": 72
+   },
+   "btnclx": {
+    "x": 36,
+    "y": 1444,
+    "w": 318,
+    "h": 64
+   },
+   "sticky": {
+    "x": 0,
+    "y": 779,
+    "w": 390,
+    "h": 65
+   },
+   "total": 6030,
+   "cls": "js is-revealed",
+   "f": "b",
+   "fonts": "Fraunces 600 italic|Fraunces 600 normal|Fraunces 700 normal|Inter 400 normal|Inter 600 normal"
+  }
+ },
+ {
+  "base": "390x844__funil-a-f",
+  "logs": [
+   "info: [pixel:local] [\"track\",\"PageView\"]",
+   "info: [pixel:local] [\"track\",\"ViewContent\",{\"content_name\":\"eneagrama-para-lideres\",\"value\":297,\"currency\":\"BRL\",\"funil\":\"a\"}]"
+  ],
+  "m": {
+   "overflowX": false,
+   "scrollW": 390,
+   "h1": {
+    "x": 20,
+    "y": 98,
+    "w": 350,
+    "h": 99
+   },
+   "h1lines": 3,
+   "h1text": "Seja qual for a sua alavanca: mais resultado, com menos esforço.",
+   "player": {
+    "x": 0,
+    "y": 213,
+    "w": 390,
+    "h": 219
+   },
+   "play": {
+    "x": 159,
+    "y": 286,
+    "w": 72,
+    "h": 72
+   },
+   "cred": {
+    "x": 20,
+    "y": 497,
+    "w": 350,
+    "h": 45
+   },
+   "oferta": null,
+   "cartao": null,
+   "preco": null,
+   "btnclx": null,
+   "sticky": {
+    "x": 0,
+    "y": 0,
+    "w": 0,
+    "h": 0
+   },
+   "total": 844,
+   "cls": "js is-gated",
+   "f": "a",
+   "fonts": "Fraunces 600 italic|Fraunces 600 normal|Inter 400 normal|Inter 600 normal"
+  }
+ },
+ {
+  "base": "390x844__funil-a-quiz",
+  "logs": [
+   "info: [pixel:local] [\"track\",\"PageView\"]",
+   "info: [pixel:local] [\"track\",\"ViewContent\",{\"content_name\":\"eneagrama-para-lideres\",\"value\":297,\"currency\":\"BRL\",\"funil\":\"a\",\"nivel\":\"3\",\"alavanca\":\"d4\"}]"
+  ],
+  "m": {
+   "overflowX": false,
+   "scrollW": 390,
+   "h1": {
+    "x": 20,
+    "y": 98,
+    "w": 350,
+    "h": 99
+   },
+   "h1lines": 3,
+   "h1text": "Seja qual for a sua alavanca: mais resultado, com menos esforço.",
+   "player": {
+    "x": 0,
+    "y": 213,
+    "w": 390,
+    "h": 219
+   },
+   "play": {
+    "x": 159,
+    "y": 286,
+    "w": 72,
+    "h": 72
+   },
+   "cred": {
+    "x": 20,
+    "y": 497,
+    "w": 350,
+    "h": 45
+   },
+   "oferta": null,
+   "cartao": null,
+   "preco": null,
+   "btnclx": null,
+   "sticky": {
+    "x": 0,
+    "y": 0,
+    "w": 0,
+    "h": 0
+   },
+   "total": 844,
+   "cls": "js is-gated",
+   "f": "a",
+   "fonts": "Fraunces 600 italic|Fraunces 600 normal|Inter 400 normal|Inter 600 normal"
+  }
+ },
+ {
+  "base": "390x844__encerrada",
+  "logs": [
+   "info: [pixel:preview] [\"track\",\"PageView\"]"
+  ],
+  "m": {
+   "overflowX": false,
+   "scrollW": 390,
+   "h1": {
+    "x": 20,
+    "y": 98,
+    "w": 350,
+    "h": 132
+   },
+   "h1lines": 4,
+   "h1text": "Combinou o prazo e não entregaram? Mais resultado, com menos esforço.",
+   "player": {
+    "x": 0,
+    "y": 246,
+    "w": 390,
+    "h": 219
+   },
+   "play": {
+    "x": 159,
+    "y": 319,
+    "w": 72,
+    "h": 72
+   },
+   "cred": {
+    "x": 20,
+    "y": 530,
+    "w": 350,
+    "h": 45
+   },
+   "oferta": {
+    "x": 0,
+    "y": 623,
+    "w": 390,
+    "h": 329
+   },
+   "cartao": null,
+   "preco": null,
+   "btnclx": null,
+   "sticky": {
+    "x": 0,
+    "y": 0,
+    "w": 0,
+    "h": 0
+   },
+   "total": 1218,
+   "cls": "js is-closed",
+   "f": "b",
+   "fonts": "Fraunces 600 italic|Fraunces 600 normal|Inter 400 normal|Inter 600 normal"
+  }
+ },
+ {
+  "base": "390x844__agora-sem-preview",
+  "logs": [
+   "info: [pixel:local] [\"track\",\"PageView\"]",
+   "info: [pixel:local] [\"track\",\"ViewContent\",{\"content_name\":\"eneagrama-para-lideres\",\"value\":297,\"currency\":\"BRL\",\"funil\":\"b\"}]"
+  ],
+  "m": {
+   "overflowX": false,
+   "scrollW": 390,
+   "h1": {
+    "x": 20,
+    "y": 98,
+    "w": 350,
+    "h": 132
+   },
+   "h1lines": 4,
+   "h1text": "Combinou o prazo e não entregaram? Mais resultado, com menos esforço.",
+   "player": {
+    "x": 0,
+    "y": 246,
+    "w": 390,
+    "h": 219
+   },
+   "play": {
+    "x": 159,
+    "y": 319,
+    "w": 72,
+    "h": 72
+   },
+   "cred": {
+    "x": 20,
+    "y": 530,
+    "w": 350,
+    "h": 45
+   },
+   "oferta": null,
+   "cartao": null,
+   "preco": null,
+   "btnclx": null,
+   "sticky": {
+    "x": 0,
+    "y": 0,
+    "w": 0,
+    "h": 0
+   },
+   "total": 844,
+   "cls": "js is-gated",
+   "f": "b",
+   "fonts": "Fraunces 600 italic|Fraunces 600 normal|Inter 400 normal|Inter 600 normal"
+  }
+ },
+ {
+  "base": "1440x900__base",
+  "logs": [
+   "info: [pixel:local] [\"track\",\"PageView\"]",
+   "info: [pixel:local] [\"track\",\"ViewContent\",{\"content_name\":\"eneagrama-para-lideres\",\"value\":297,\"currency\":\"BRL\",\"funil\":\"b\"}]"
+  ],
+  "m": {
+   "overflowX": false,
+   "scrollW": 1440,
+   "h1": {
+    "x": 160,
+    "y": 130,
+    "w": 880,
+    "h": 106
+   },
+   "h1lines": 2,
+   "h1text": "Combinou o prazo e não entregaram? Mais resultado, com menos esforço.",
+   "player": {
+    "x": 160,
+    "y": 252,
+    "w": 960,
+    "h": 540
+   },
+   "play": {
+    "x": 604,
+    "y": 486,
+    "w": 72,
+    "h": 72
+   },
+   "cred": {
+    "x": 160,
+    "y": 836,
+    "w": 1120,
+    "h": 23
+   },
+   "oferta": null,
+   "cartao": null,
+   "preco": null,
+   "btnclx": null,
+   "sticky": null,
+   "total": 1050,
+   "cls": "js is-gated",
+   "f": "b",
+   "fonts": "Fraunces 600 italic|Fraunces 600 normal|Inter 400 normal|Inter 600 normal"
+  }
+ },
+ {
+  "base": "1440x900__preview",
+  "logs": [
+   "info: [pixel:preview] [\"track\",\"PageView\"]",
+   "info: [pixel:preview] [\"track\",\"ViewContent\",{\"content_name\":\"eneagrama-para-lideres\",\"value\":297,\"currency\":\"BRL\",\"funil\":\"b\"}]"
+  ],
+  "m": {
+   "overflowX": false,
+   "scrollW": 1440,
+   "h1": {
+    "x": 160,
+    "y": 130,
+    "w": 880,
+    "h": 106
+   },
+   "h1lines": 2,
+   "h1text": "Combinou o prazo e não entregaram? Mais resultado, com menos esforço.",
+   "player": {
+    "x": 160,
+    "y": 252,
+    "w": 960,
+    "h": 540
+   },
+   "play": {
+    "x": 604,
+    "y": 486,
+    "w": 72,
+    "h": 72
+   },
+   "cred": {
+    "x": 160,
+    "y": 836,
+    "w": 1120,
+    "h": 23
+   },
+   "oferta": null,
+   "cartao": null,
+   "preco": null,
+   "btnclx": null,
+   "sticky": null,
+   "total": 1103,
+   "cls": "js is-gated",
+   "f": "b",
+   "fonts": "Fraunces 600 italic|Fraunces 600 normal|Inter 400 normal|Inter 600 normal"
+  }
+ },
+ {
+  "base": "1440x900__oferta",
+  "logs": [
+   "info: [pixel:local] [\"track\",\"PageView\"]",
+   "info: [pixel:local] [\"track\",\"ViewContent\",{\"content_name\":\"eneagrama-para-lideres\",\"value\":297,\"currency\":\"BRL\",\"funil\":\"b\"}]"
+  ],
+  "m": {
+   "overflowX": false,
+   "scrollW": 1440,
+   "h1": {
+    "x": 160,
+    "y": 130,
+    "w": 880,
+    "h": 106
+   },
+   "h1lines": 2,
+   "h1text": "Combinou o prazo e não entregaram? Mais resultado, com menos esforço.",
+   "player": {
+    "x": 160,
+    "y": 252,
+    "w": 960,
+    "h": 540
+   },
+   "play": {
+    "x": 604,
+    "y": 486,
+    "w": 72,
+    "h": 72
+   },
+   "cred": {
+    "x": 160,
+    "y": 836,
+    "w": 1120,
+    "h": 23
+   },
+   "oferta": {
+    "x": 0,
+    "y": 923,
+    "w": 1440,
+    "h": 854
+   },
+   "cartao": {
+    "x": 200,
+    "y": 1051,
+    "w": 1040,
+    "h": 630
+   },
+   "preco": {
+    "x": 845,
+    "y": 1204,
+    "w": 347,
+    "h": 112
+   },
+   "btnclx": {
+    "x": 845,
+    "y": 1493,
+    "w": 347,
+    "h": 64
+   },
+   "sticky": null,
+   "total": 5071,
+   "cls": "js is-revealed",
+   "f": "b",
+   "fonts": "Fraunces 600 italic|Fraunces 600 normal|Fraunces 700 normal|Inter 400 normal|Inter 600 normal"
+  }
+ },
+ {
+  "base": "1440x900__preview-oferta",
+  "logs": [
+   "info: [pixel:preview] [\"track\",\"PageView\"]",
+   "info: [pixel:preview] [\"track\",\"ViewContent\",{\"content_name\":\"eneagrama-para-lideres\",\"value\":297,\"currency\":\"BRL\",\"funil\":\"b\"}]"
+  ],
+  "m": {
+   "overflowX": false,
+   "scrollW": 1440,
+   "h1": {
+    "x": 160,
+    "y": 130,
+    "w": 880,
+    "h": 106
+   },
+   "h1lines": 2,
+   "h1text": "Combinou o prazo e não entregaram? Mais resultado, com menos esforço.",
+   "player": {
+    "x": 160,
+    "y": 252,
+    "w": 960,
+    "h": 540
+   },
+   "play": {
+    "x": 604,
+    "y": 486,
+    "w": 72,
+    "h": 72
+   },
+   "cred": {
+    "x": 160,
+    "y": 836,
+    "w": 1120,
+    "h": 23
+   },
+   "oferta": {
+    "x": 0,
+    "y": 923,
+    "w": 1440,
+    "h": 854
+   },
+   "cartao": {
+    "x": 200,
+    "y": 1051,
+    "w": 1040,
+    "h": 630
+   },
+   "preco": {
+    "x": 845,
+    "y": 1204,
+    "w": 347,
+    "h": 112
+   },
+   "btnclx": {
+    "x": 845,
+    "y": 1493,
+    "w": 347,
+    "h": 64
+   },
+   "sticky": null,
+   "total": 5124,
+   "cls": "js is-revealed",
+   "f": "b",
+   "fonts": "Fraunces 600 italic|Fraunces 600 normal|Fraunces 700 normal|Inter 400 normal|Inter 600 normal"
+  }
+ },
+ {
+  "base": "1440x900__funil-a-f",
+  "logs": [
+   "info: [pixel:local] [\"track\",\"PageView\"]",
+   "info: [pixel:local] [\"track\",\"ViewContent\",{\"content_name\":\"eneagrama-para-lideres\",\"value\":297,\"currency\":\"BRL\",\"funil\":\"a\"}]"
+  ],
+  "m": {
+   "overflowX": false,
+   "scrollW": 1440,
+   "h1": {
+    "x": 160,
+    "y": 130,
+    "w": 880,
+    "h": 106
+   },
+   "h1lines": 2,
+   "h1text": "Seja qual for a sua alavanca: mais resultado, com menos esforço.",
+   "player": {
+    "x": 160,
+    "y": 252,
+    "w": 960,
+    "h": 540
+   },
+   "play": {
+    "x": 604,
+    "y": 486,
+    "w": 72,
+    "h": 72
+   },
+   "cred": {
+    "x": 160,
+    "y": 836,
+    "w": 1120,
+    "h": 23
+   },
+   "oferta": null,
+   "cartao": null,
+   "preco": null,
+   "btnclx": null,
+   "sticky": null,
+   "total": 1050,
+   "cls": "js is-gated",
+   "f": "a",
+   "fonts": "Fraunces 600 italic|Fraunces 600 normal|Inter 400 normal|Inter 600 normal"
+  }
+ },
+ {
+  "base": "1440x900__funil-a-quiz",
+  "logs": [
+   "info: [pixel:local] [\"track\",\"PageView\"]",
+   "info: [pixel:local] [\"track\",\"ViewContent\",{\"content_name\":\"eneagrama-para-lideres\",\"value\":297,\"currency\":\"BRL\",\"funil\":\"a\",\"nivel\":\"3\",\"alavanca\":\"d4\"}]"
+  ],
+  "m": {
+   "overflowX": false,
+   "scrollW": 1440,
+   "h1": {
+    "x": 160,
+    "y": 130,
+    "w": 880,
+    "h": 106
+   },
+   "h1lines": 2,
+   "h1text": "Seja qual for a sua alavanca: mais resultado, com menos esforço.",
+   "player": {
+    "x": 160,
+    "y": 252,
+    "w": 960,
+    "h": 540
+   },
+   "play": {
+    "x": 604,
+    "y": 486,
+    "w": 72,
+    "h": 72
+   },
+   "cred": {
+    "x": 160,
+    "y": 836,
+    "w": 1120,
+    "h": 23
+   },
+   "oferta": null,
+   "cartao": null,
+   "preco": null,
+   "btnclx": null,
+   "sticky": null,
+   "total": 1050,
+   "cls": "js is-gated",
+   "f": "a",
+   "fonts": "Fraunces 600 italic|Fraunces 600 normal|Inter 400 normal|Inter 600 normal"
+  }
+ },
+ {
+  "base": "1440x900__encerrada",
+  "logs": [
+   "info: [pixel:preview] [\"track\",\"PageView\"]"
+  ],
+  "m": {
+   "overflowX": false,
+   "scrollW": 1440,
+   "h1": {
+    "x": 160,
+    "y": 130,
+    "w": 880,
+    "h": 106
+   },
+   "h1lines": 2,
+   "h1text": "Combinou o prazo e não entregaram? Mais resultado, com menos esforço.",
+   "player": {
+    "x": 160,
+    "y": 252,
+    "w": 960,
+    "h": 540
+   },
+   "play": {
+    "x": 604,
+    "y": 486,
+    "w": 72,
+    "h": 72
+   },
+   "cred": {
+    "x": 160,
+    "y": 836,
+    "w": 1120,
+    "h": 23
+   },
+   "oferta": {
+    "x": 0,
+    "y": 923,
+    "w": 1440,
+    "h": 288
+   },
+   "cartao": null,
+   "preco": null,
+   "btnclx": null,
+   "sticky": null,
+   "total": 1391,
+   "cls": "js is-closed",
+   "f": "b",
+   "fonts": "Fraunces 600 italic|Fraunces 600 normal|Inter 400 normal|Inter 600 normal"
+  }
+ },
+ {
+  "base": "1440x900__agora-sem-preview",
+  "logs": [
+   "info: [pixel:local] [\"track\",\"PageView\"]",
+   "info: [pixel:local] [\"track\",\"ViewContent\",{\"content_name\":\"eneagrama-para-lideres\",\"value\":297,\"currency\":\"BRL\",\"funil\":\"b\"}]"
+  ],
+  "m": {
+   "overflowX": false,
+   "scrollW": 1440,
+   "h1": {
+    "x": 160,
+    "y": 130,
+    "w": 880,
+    "h": 106
+   },
+   "h1lines": 2,
+   "h1text": "Combinou o prazo e não entregaram? Mais resultado, com menos esforço.",
+   "player": {
+    "x": 160,
+    "y": 252,
+    "w": 960,
+    "h": 540
+   },
+   "play": {
+    "x": 604,
+    "y": 486,
+    "w": 72,
+    "h": 72
+   },
+   "cred": {
+    "x": 160,
+    "y": 836,
+    "w": 1120,
+    "h": 23
+   },
+   "oferta": null,
+   "cartao": null,
+   "preco": null,
+   "btnclx": null,
+   "sticky": null,
+   "total": 1050,
+   "cls": "js is-gated",
+   "f": "b",
+   "fonts": "Fraunces 600 italic|Fraunces 600 normal|Inter 400 normal|Inter 600 normal"
+  }
+ }
+]

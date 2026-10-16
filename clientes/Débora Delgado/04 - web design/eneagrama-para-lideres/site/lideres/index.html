@@ -1,0 +1,860 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aula para quem lidera · Débora Delgado</title>
+<meta name="description" content="Combinou o prazo e não entregaram? Uma aula sobre por que o pedido não chega, e o que fazer no próximo.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#F6F1EA">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Combinou o prazo e não entregaram?">
+<meta property="og:description" content="Mais resultado, com menos esforço, o seu e o do seu time. Uma aula com Débora Delgado.">
+<!-- og:image: ver 04-EXECUCAO.md (checklist). Depois de subir o frame final, descomentar e preencher:
+<meta property="og:image" content="https://deboradelgado.space/lideres/img/og.jpg">
+-->
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,600&family=Inter:wght@400;600&display=swap">
+
+<script>
+/* =====================================================================
+   CONFIG  ·  único bloco a editar antes de publicar (ver 04-EXECUCAO.md)
+   ===================================================================== */
+var CONFIG = {
+  /* P0. URL do checkout PagTrust da oferta nova. Vazio = os botões de compra levam a #oferta
+     e logam aviso no console (nunca link quebrado). Pode ou não trazer "?": a montagem trata. */
+  CHECKOUT_URL: '',
+
+  /* P0. Vídeo do funil B e do funil A (D01A–D04A). Aceita: URL .mp4/.webm (arquivo próprio),
+     URL ou ID do YouTube, URL ou ID numérico do Vimeo, ou URL https de outro player (iframe). */
+  VIDEO_B: '',
+  VIDEO_A: '',
+  /* Legendas (.vtt, pt-BR). Só para arquivo .mp4/.webm. YouTube/Vimeo usam as do provedor. */
+  LEGENDAS_B: '',
+  LEGENDAS_A: '',
+
+  /* P0. Segundo do vídeo em que o preço é dito (início de D30). Medir no arquivo final.
+     18 min 15 s = 1095 (estimativa). PITCH_SECONDS_A: se a abertura do funil A mudar a duração. */
+  PITCH_SECONDS: 1095,
+  PITCH_SECONDS_A: null,
+
+  /* Encerramento automático (E10). Depois dele: oferta sai, sem botão, sem checkout. */
+  DATA_ENCERRAMENTO: '2026-12-16T00:00:00-03:00',
+
+  /* Pixel Meta (o mesmo da página de julho). Vazio = sem pixel. */
+  PIXEL_ID: '4060021607461178',
+
+  /* Beacons de funil (Apps Script de julho, page:'lideres'). Vazio = sem beacons. */
+  LEADS_ENDPOINT: 'https://script.google.com/macros/s/AKfycbykXCnjSUFUNSUwAEJxS1XIwKxFg-kvFTISRMua8TsMsgre0GWZbcmLtxlVtA6oqx-hJg/exec',
+
+  /* Sticky do celular: false = leva a #oferta (física §3, Sticky CTA); true = vai direto ao checkout. */
+  STICKY_VAI_PARA_CHECKOUT: false,
+
+  /* Marcas {{...}} do 03-COPY. Preencher com o fato. Vazio: com ?preview=1 aparece o texto
+     {{MARCA}} destacado; sem preview, o elemento que depende da marca é OMITIDO. */
+  MARCAS: {
+    HORARIO: '',            /* ladrilhos de V3: "quarta · 19h30" (se vazio, só "quarta") */
+    DURACAO: '',            /* só o número, ex. "21": chip do player (se vazio, o chip some) */
+    NOME_DE_QUEM_VENDE: '', /* rodapé, bloco 1 (omitido se faltar este ou o CPF/CNPJ) */
+    CPF_OU_CNPJ: '',
+    EMAIL_SUPORTE: '',      /* rodapé, bloco 2 */
+    URL_TERMOS: '',         /* rodapé, link (omitido se vazio) */
+    URL_PRIVACIDADE: ''     /* rodapé, link (omitido se vazio) */
+  }
+};
+
+/* Estado inicial, resolvido antes do primeiro paint (sem flash da oferta para quem ainda não ouviu o pitch). */
+(function () {
+  var d = document.documentElement, q, L = {};
+  try { q = new URLSearchParams(location.search); } catch (e) { q = { get: function () { return null; } }; }
+  function safe(v, re) { return v && re.test(v) ? v : ''; }
+  function ss(k, v) { try { if (v === undefined) return sessionStorage.getItem(k); sessionStorage.setItem(k, v); } catch (e) {} return null; }
+  L.preview = q.get('preview') === '1';
+  /* funil: ?f=a ou ?origem=quiz = funil A. Persiste na sessão. ?f=b volta ao B. */
+  var fq = (q.get('f') || '').charAt(0).toLowerCase();
+  var funil = (fq === 'a' || q.get('origem') === 'quiz') ? 'a' : (fq === 'b' ? 'b' : (ss('lideres_f') || 'b'));
+  if (funil !== 'a') funil = 'b';
+  ss('lideres_f', funil);
+  /* nivel e alavanca (quiz): só caracteres seguros, persistem na sessão */
+  L.nivel = safe(q.get('nivel'), /^[0-9]{1,2}$/) || ss('lideres_nivel') || '';
+  L.alavanca = safe(q.get('alavanca'), /^[A-Za-z0-9_-]{1,20}$/) || ss('lideres_alavanca') || '';
+  if (L.nivel) ss('lideres_nivel', L.nivel);
+  if (L.alavanca) ss('lideres_alavanca', L.alavanca);
+  L.funil = funil;
+  /* data (simulável só em preview) */
+  var agora = Date.now();
+  if (L.preview && q.get('agora')) { var t = Date.parse(q.get('agora')); if (!isNaN(t)) agora = t; }
+  var fim = Date.parse(CONFIG.DATA_ENCERRAMENTO);
+  L.closed = !isNaN(fim) && agora >= fim;
+  /* revelação: param > memória. O tempo do vídeo revela depois. */
+  L.via = null;
+  if (!L.closed) {
+    if (q.get('oferta') === '1') L.via = 'param';
+    else { try { if (localStorage.getItem('lideres_pitch_v1') === '1') L.via = 'memoria'; } catch (e) {} }
+  }
+  d.classList.add('js');
+  d.setAttribute('data-f', funil);
+  if (L.closed) d.classList.add('is-closed');
+  else d.classList.add(L.via ? 'is-revealed' : 'is-gated');
+  window.__L = L;
+})();
+</script>
+
+<style>
+/* ===================== TOKENS (02-DIRECAO-VISUAL §3) ===================== */
+:root{
+  /* primitivos: só definem a semântica */
+  --p-papel-100:#FFFDF9; --p-papel-200:#F6F1EA; --p-papel-300:#EDE4D7;
+  --p-tinta-900:#2E2924; --p-tinta-600:#5B5046;
+  --p-verde-600:#3F6B57; --p-verde-700:#2F5245; --p-verde-900:#1E3A2F;
+  --p-argila-700:#8A4B2F; --p-ambar-300:#EBB07C;
+
+  --sup-base:var(--p-papel-200); --sup-elevada:var(--p-papel-100); --sup-densa:var(--p-papel-300);
+  --sup-invertida:var(--p-verde-900);
+  --txt-forte:var(--p-tinta-900); --txt-medio:var(--p-tinta-600); --txt-titulo:var(--p-verde-700);
+  --txt-sobre-inverso:var(--p-papel-200); --txt-medio-sobre-inverso:rgba(246,241,234,.78);
+  --cor-marca:var(--p-verde-700); --cor-marca-suave:var(--p-verde-600);
+  --cor-acao:var(--p-argila-700); --cor-acao-sobre:var(--p-argila-700);
+  --cor-acento:var(--p-ambar-300); --cor-acento-sobre:var(--p-ambar-300);
+  --borda-sutil:rgba(46,41,36,.14); --borda-forte:var(--p-verde-700); --borda-inversa:rgba(246,241,234,.24);
+  --foco:var(--p-verde-700); --foco-inverso:var(--p-ambar-300);
+
+  /* tipografia (rem, 1rem = 16px: respeita a preferência de quem usa) */
+  --f-display:'Fraunces',Georgia,serif; --f-leitura:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --t-micro:.875rem; --t-corpo-p:.9375rem; --t-corpo:1.0625rem; --t-corpo-g:1.25rem;
+  --t-titulo-p:1.25rem; --t-titulo:1.5rem; --t-display:1.875rem; --t-data:2.5rem; --t-preco:4.5rem;
+  --t-eyebrow:.875rem; --t-botao:1.0625rem;
+
+  /* espaço (base 4) */
+  --e-1:4px; --e-2:8px; --e-3:12px; --e-4:16px; --e-5:24px; --e-6:32px; --e-7:48px; --e-8:64px; --e-9:96px; --e-10:128px;
+  --m-lateral:20px;
+  --larg-leitura:680px; --larg-titulo:880px; --larg-player:960px; --larg-bloco:1120px;
+
+  /* forma, borda, elevação */
+  --r-0:0; --r-1:6px; --r-2:12px; --r-3:24px;
+  --bw-1:1px; --bw-2:2px; --bw-3:3px;
+  --elev-1:0 1px 2px rgba(46,41,36,.06),0 6px 20px rgba(46,41,36,.07);
+  --elev-2:0 24px 64px -16px rgba(30,58,47,.45);
+  --elev-sticky:0 -6px 20px rgba(46,41,36,.12);
+  --clarao:radial-gradient(ellipse at 50% 0%,rgba(235,176,124,.42) 0%,rgba(235,176,124,0) 68%);
+  --grao:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2'/></filter><rect width='160' height='160' filter='url(%23n)' opacity='.05'/></svg>");
+
+  /* movimento */
+  --dur-toque:100ms; --dur-micro:150ms; --dur-estado:250ms; --curva:cubic-bezier(.2,.7,.2,1);
+}
+@supports (color:color-mix(in srgb,red 50%,blue)){
+  :root{
+    --cor-acao-sobre:color-mix(in srgb,var(--p-argila-700) 88%,var(--p-tinta-900));
+    --cor-acento-sobre:color-mix(in srgb,var(--p-ambar-300) 88%,var(--p-papel-100));
+  }
+}
+@media (min-width:768px){:root{--m-lateral:32px;--t-display:2.5rem}}
+@media (min-width:1024px){
+  :root{
+    --t-corpo:1.125rem; --t-corpo-g:1.375rem; --t-titulo-p:1.375rem; --t-titulo:2.125rem;
+    --t-display:3rem; --t-data:3rem; --t-preco:7rem; --t-botao:1.125rem;
+  }
+}
+
+/* ===================== BASE ===================== */
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%;scroll-padding-bottom:80px;font-optical-sizing:auto}
+body{margin:0;background:var(--sup-base);color:var(--txt-forte);font:400 var(--t-corpo)/1.6 var(--f-leitura);font-variant-numeric:lining-nums;-webkit-font-smoothing:antialiased}
+h1,h2,h3,p,ul,ol,figure{margin:0;padding:0}
+h2,h3{text-wrap:balance}
+p{text-wrap:pretty}
+ul,ol{list-style:none}
+img{display:block;max-width:100%}
+a{color:var(--txt-titulo)}
+em{font-style:italic}
+.wrap{width:100%;margin-inline:auto;padding-inline:var(--m-lateral)}
+@media (min-width:1024px){.wrap{max-width:calc(var(--larg-bloco) + 2 * var(--m-lateral))}}
+.leitura{max-width:var(--larg-leitura)}
+.sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+[hidden]{display:none!important}
+
+:focus-visible{outline:var(--bw-3) solid var(--foco);outline-offset:3px}
+
+/* superfícies */
+.sup-a{background:var(--sup-base)}
+.sup-b{background-color:var(--sup-densa);background-image:var(--grao);background-size:160px 160px}
+
+/* tipos */
+.eyebrow{font:600 var(--t-eyebrow)/1.3 var(--f-leitura);letter-spacing:.08em;text-transform:uppercase;color:var(--txt-titulo)}
+.h-bloco{font:600 var(--t-titulo)/1.2 var(--f-display);color:var(--txt-titulo);margin-top:var(--e-2)}
+.corpo-p{font-size:var(--t-corpo-p);line-height:1.5}
+.micro{font-size:var(--t-micro);line-height:1.45}
+
+/* botões */
+.btn{display:flex;align-items:center;justify-content:center;gap:var(--e-2);min-height:56px;padding:0 var(--e-5);border-radius:var(--r-2);border:var(--bw-2) solid transparent;
+  font:600 var(--t-botao)/1.2 var(--f-leitura);text-decoration:none;text-align:center;cursor:pointer;
+  transition:background-color var(--dur-micro) var(--curva),transform var(--dur-toque) var(--curva)}
+.btn-primario{background:var(--cor-acao);color:var(--sup-elevada);border-color:var(--cor-acao)}
+.btn-primario:hover{background:var(--cor-acao-sobre);border-color:var(--cor-acao-sobre);box-shadow:inset 0 0 0 1px var(--cor-acao-sobre)}
+.btn-secundario{min-height:48px;background:transparent;color:var(--txt-titulo);border-color:var(--borda-forte)}
+.btn-secundario:hover{background:var(--sup-elevada)}
+.btn:active{transform:translateY(1px)}
+.btn.is-loading{pointer-events:none}
+.btn.is-loading::before{content:"";width:16px;height:16px;border-radius:50%;border:2px solid currentColor;border-right-color:transparent;animation:gira .8s linear infinite}
+@keyframes gira{to{transform:rotate(360deg)}}
+
+/* ===================== V0 ===================== */
+.v0{height:48px;background:var(--sup-base);border-bottom:var(--bw-1) solid var(--borda-sutil)}
+.v0 .wrap{height:100%;display:flex;align-items:center;justify-content:space-between}
+.marca{font:600 1.125rem/1 var(--f-display);color:var(--txt-titulo)}
+.link-topo{display:none;min-width:44px;min-height:44px;align-items:center;font:600 var(--t-corpo-p)/1 var(--f-leitura);color:var(--txt-titulo);text-decoration:underline;text-underline-offset:3px}
+.is-revealed .link-topo{display:inline-flex}
+@media (min-width:1024px){.v0{height:56px}}
+
+/* ===================== V1 ===================== */
+.v1{padding:var(--e-5) 0 var(--e-7)}
+.v1 h1{font:600 var(--t-display)/1.1 var(--f-display);letter-spacing:-.01em;color:var(--txt-titulo);margin-top:var(--e-2);max-width:var(--larg-titulo)}
+.v1 h1 em{font-style:italic;font-weight:600}
+.t-a{display:none}
+html[data-f="a"] .t-a{display:inline}
+html[data-f="a"] .t-b{display:none}
+.player-wrap{margin-top:var(--e-4);margin-inline:calc(var(--m-lateral) * -1)}
+.player{position:relative;aspect-ratio:16/9;background:var(--sup-densa);border-bottom:var(--bw-1) solid var(--borda-sutil);overflow:hidden}
+.player img.poster{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.player-slot{position:absolute;inset:0;background:var(--p-tinta-900)}
+.player-slot iframe,.player-slot video{position:absolute;inset:0;width:100%;height:100%;border:0;background:var(--p-tinta-900)}
+.player-slot[hidden]{display:none}
+.play{position:absolute;inset:0;width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:transparent;border:0;padding:0;cursor:pointer;color:var(--txt-titulo)}
+.play-disco{width:72px;height:72px;border-radius:50%;background:var(--sup-elevada);box-shadow:var(--elev-1);display:flex;align-items:center;justify-content:center;transition:transform var(--dur-micro) var(--curva)}
+.play-disco svg{width:30px;height:30px;margin-left:4px}
+.play-disco .spin{display:none;width:28px;height:28px;border-radius:50%;border:3px solid var(--txt-titulo);border-right-color:transparent;animation:gira .8s linear infinite;margin:0}
+.play:hover .play-disco{transform:scale(1.04)}
+.play:hover~img.poster,.player:hover img.poster{filter:brightness(1.03)}
+.play:active .play-disco{transform:scale(.96);transition-duration:var(--dur-toque)}
+.play:focus-visible{outline:var(--bw-3) solid var(--foco);outline-offset:-3px;box-shadow:inset 0 0 0 6px var(--sup-elevada)}
+.player[data-estado="carregando"] .play-disco svg.tri{display:none}
+.player[data-estado="carregando"] .play-disco .spin{display:block}
+.player[data-estado="carregando"] .play{pointer-events:none}
+.player[data-estado="tocando"] .play,.player[data-estado="tocando"] img.poster,.player[data-estado="tocando"] .chip{display:none}
+.chip{position:absolute;left:var(--e-3);bottom:var(--e-3);background:var(--sup-elevada);opacity:.96;border-radius:var(--r-1);padding:4px 10px;font:600 var(--t-micro)/1.45 var(--f-leitura);color:var(--txt-forte);pointer-events:none}
+.aviso-video{position:absolute;left:var(--e-3);top:var(--e-3);right:var(--e-3);background:var(--sup-elevada);border-left:var(--bw-3) solid var(--cor-acao);border-radius:var(--r-1);padding:6px 12px;font:600 var(--t-micro)/1.45 var(--f-leitura);color:var(--txt-forte)}
+.player-erro{display:flex;flex-wrap:wrap;align-items:center;gap:var(--e-3) var(--e-4);margin:var(--e-3) var(--m-lateral) 0;padding:var(--e-3) var(--e-4);background:var(--sup-elevada);border-left:var(--bw-3) solid var(--cor-acao);border-radius:var(--r-1)}
+.player-erro p{flex:1 1 220px;font-size:var(--t-corpo);line-height:1.5}
+.microcopy{margin-top:var(--e-3);color:var(--txt-medio);font-size:var(--t-micro);line-height:1.45}
+.credencial{margin-top:var(--e-3);color:var(--txt-medio);font-size:var(--t-corpo-p);line-height:1.5}
+@media (max-width:767px){.is-revealed .microcopy{display:none}}
+@media (min-width:768px){
+  .player-wrap{margin-inline:0;max-width:var(--larg-player)}
+  .player{border-radius:var(--r-2);box-shadow:var(--elev-1);border:var(--bw-1) solid var(--borda-sutil)}
+  .player-erro{margin-inline:0}
+  .v1{padding:var(--e-5) 0 var(--e-7)}
+}
+@media (min-width:1024px){
+  .v1{padding:var(--e-7) 0 var(--e-8)}
+  .player-wrap{width:clamp(640px,calc((100svh - 300px) * 16 / 9),var(--larg-player))}
+}
+
+/* ===================== pós-pitch: revelação ===================== */
+.is-gated .pos-pitch{display:none}
+.pos-pitch.anim-in{animation:entra var(--dur-estado) var(--curva) both}
+@keyframes entra{from{opacity:0}to{opacity:1}}
+
+/* ===================== V2 · O CLÍMAX ===================== */
+.v2{position:relative;padding:var(--e-9) 0 var(--e-8);overflow:hidden}
+.v2-ref{position:relative}
+.clarao{position:absolute;left:50%;top:-110px;transform:translateX(-50%);width:120%;height:280px;background:var(--clarao);pointer-events:none}
+.cartao{position:relative;z-index:1;background:var(--sup-invertida);color:var(--txt-sobre-inverso);border-radius:var(--r-3);box-shadow:var(--elev-2);
+  margin-inline:calc(var(--m-lateral) * -1 + var(--e-3));padding:var(--e-5)}
+.cartao .tag{font:600 var(--t-eyebrow)/1.3 var(--f-leitura);letter-spacing:.08em;text-transform:uppercase;color:var(--cor-acento)}
+.cartao h2{font:600 var(--t-titulo)/1.2 var(--f-display);margin-top:var(--e-2);color:var(--txt-sobre-inverso)}
+.cartao .filete{border:0;border-top:var(--bw-1) solid var(--borda-inversa);margin:var(--e-4) 0}
+.pilha li{position:relative;padding-left:20px;font-size:var(--t-corpo);line-height:1.5}
+.pilha li+li{margin-top:var(--e-3)}
+.pilha li::before{content:"";position:absolute;left:0;top:.8em;width:10px;height:2px;background:var(--cor-acento)}
+.col-b{margin-top:var(--e-4);padding-top:var(--e-4);border-top:var(--bw-1) solid var(--borda-inversa)}
+.ancora{font-size:var(--t-corpo);line-height:1.5;color:var(--txt-medio-sobre-inverso)}
+.preco{margin-top:var(--e-5);font:700 var(--t-preco)/1 var(--f-display);color:var(--txt-sobre-inverso);font-variant-numeric:lining-nums}
+.preco .moeda{font-size:.4em;vertical-align:top;position:relative;top:.18em;margin-right:.1em}
+.parcela{margin-top:var(--e-2);font-size:var(--t-corpo-g);line-height:1.4}
+.filete-preco{width:48px;height:2px;background:var(--cor-acento);margin:var(--e-4) 0}
+.escassez{font-size:var(--t-corpo);line-height:1.5}
+.btn-clx{margin-top:var(--e-5);min-height:64px;width:100%;background:var(--cor-acento);color:var(--p-verde-900);border-color:var(--cor-acento);font-size:var(--t-botao)}
+.btn-clx:hover{background:var(--cor-acento-sobre);border-color:var(--cor-acento-sobre)}
+.btn-clx:focus-visible{outline-color:var(--foco-inverso);outline-offset:3px}
+.garantia{margin-top:var(--e-2);font-size:var(--t-corpo-p);line-height:1.5;color:var(--txt-medio-sobre-inverso)}
+@media (min-width:768px){.cartao{margin-inline:0;padding:var(--e-6)}}
+@media (min-width:1024px){
+  .v2{padding:var(--e-10) 0 var(--e-9)}
+  .clarao{top:-170px;height:420px}
+  .cartao{max-width:1040px;margin-inline:auto;padding:var(--e-7);display:grid;grid-template-columns:7fr 5fr;column-gap:var(--e-6)}
+  .col-b{margin-top:0;padding-top:0;border-top:0;padding-left:var(--e-6);border-left:var(--bw-1) solid var(--borda-inversa)}
+  .col-a .filete{display:none}
+  .pilha{margin-top:var(--e-5)}
+  .pilha li+li{margin-top:var(--e-4)}
+}
+
+/* estado encerrado (E10): claro, sem clarão, sem âmbar, sem botão */
+.so-encerrada{display:none}
+.is-closed .so-encerrada{display:block}
+.is-closed .so-aberta{display:none!important}
+.cartao-fim{background:var(--sup-elevada);border:var(--bw-1) solid var(--borda-sutil);border-radius:var(--r-2);padding:var(--e-5);max-width:var(--larg-leitura)}
+.cartao-fim h2{font:600 var(--t-titulo)/1.2 var(--f-display);color:var(--txt-titulo)}
+.cartao-fim p{margin-top:var(--e-3)}
+.is-closed .v2{padding:var(--e-8) 0}
+
+/* ===================== V3 ===================== */
+.v3,.v4,.v5,.v6{padding:var(--e-8) 0}
+.itens{display:grid;gap:var(--e-4);margin-top:var(--e-5)}
+.item{background:var(--sup-elevada);border:var(--bw-1) solid var(--borda-sutil);border-radius:var(--r-2);padding:var(--e-4)}
+.item h3{font:600 var(--t-titulo-p)/1.25 var(--f-display);color:var(--txt-titulo);margin-top:var(--e-1)}
+.item p.desc{margin-top:var(--e-2)}
+.nota-entrega{margin-top:var(--e-5)}
+.v3 h3.sub{margin-top:var(--e-7);font:600 var(--t-titulo-p)/1.25 var(--f-display);color:var(--txt-titulo)}
+.datas{display:grid;grid-template-columns:1fr 1fr;gap:var(--e-3);margin-top:var(--e-4)}
+.tile{background:var(--sup-elevada);border-radius:var(--r-1);box-shadow:var(--elev-1);padding:var(--e-3) var(--e-4)}
+.tile .l1{display:flex;align-items:baseline;gap:var(--e-2);flex-wrap:wrap}
+.tile .dia{font:700 var(--t-data)/1 var(--f-display);color:var(--txt-titulo)}
+.tile.corte .dia{border-bottom:var(--bw-2) solid var(--cor-marca-suave)}
+.tile .mes,.tile .l2,.tile .l3{font-size:var(--t-micro);line-height:1.45;color:var(--txt-medio);font-variant-numeric:lining-nums tabular-nums}
+.tile .l2{margin-top:var(--e-1)}
+.encontro{margin-top:var(--e-5)}
+.encontro p+p{margin-top:var(--e-3)}
+.btn-porta2{margin-top:var(--e-5);width:100%}
+@media (min-width:768px){
+  .itens{grid-template-columns:1fr 1fr}
+  .datas{grid-template-columns:repeat(4,1fr)}
+  .btn-porta2{width:auto;display:inline-flex}
+  .item{padding:var(--e-5)}
+}
+@media (min-width:1024px){.v3,.v4,.v5,.v6{padding:var(--e-9) 0}.datas{gap:var(--e-5)}.tile{padding:var(--e-4) var(--e-5)}}
+
+/* ===================== V4 ===================== */
+.v4 .foto{margin-inline:calc(var(--m-lateral) * -1)}
+.v4 .foto img{width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;object-position:50% 22%;background:var(--sup-densa)}
+.v4 .texto{margin-top:var(--e-5)}
+.v4 .credencial-v4{margin-top:var(--e-4)}
+.v4 .razao{margin-top:var(--e-3)}
+.criterios{margin-top:var(--e-6);display:grid;gap:var(--e-5)}
+.criterios h3{font:600 var(--t-corpo)/1.3 var(--f-leitura);color:var(--txt-titulo)}
+.criterios li{position:relative;padding-left:24px;margin-top:var(--e-3);line-height:1.5}
+.criterios li::before{content:"";position:absolute;left:0;top:.85em;width:12px;height:2px;background:var(--cor-marca-suave)}
+@media (min-width:768px){
+  .v4 .foto{margin-inline:0;margin-top:0;max-width:420px}
+  .v4 .foto img{aspect-ratio:4/5;border-radius:var(--r-2)}
+}
+@media (min-width:1024px){
+  .v4 .grade{display:grid;grid-template-columns:5fr 7fr;column-gap:var(--e-6);align-items:start}
+  .v4 .foto{max-width:none}
+  .v4 .texto{margin-top:0;padding-left:var(--e-6);border-left:var(--bw-2) solid var(--cor-marca-suave)}
+  .criterios{grid-template-columns:1fr 1fr;column-gap:var(--e-6)}
+}
+
+/* ===================== V5 ===================== */
+.faq{margin-top:var(--e-5)}
+.faq details{border-bottom:var(--bw-1) solid var(--borda-sutil)}
+.faq details:first-child{border-top:var(--bw-1) solid var(--borda-sutil)}
+.faq summary{list-style:none;display:flex;align-items:center;justify-content:space-between;gap:var(--e-4);min-height:56px;padding:var(--e-3) 0;cursor:pointer;font:600 var(--t-corpo)/1.4 var(--f-leitura);color:var(--txt-forte)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";flex:none;width:24px;text-align:center;font:400 1.5rem/1 var(--f-leitura);color:var(--txt-titulo)}
+.faq details[open] summary::after{content:"\2212"}
+.faq details[open]{border-left:var(--bw-2) solid var(--cor-marca-suave);padding-left:var(--e-3)}
+.faq summary:focus-visible{outline-offset:2px}
+.faq .resp{padding:0 var(--e-2) var(--e-4) 0;color:var(--txt-forte)}
+
+/* ===================== V6 ===================== */
+.v6{text-align:center}
+.v6 .eco{font:600 var(--t-titulo)/1.2 var(--f-display);color:var(--txt-titulo);max-width:var(--larg-leitura);margin-inline:auto}
+.v6 .eco em{font-style:italic;font-weight:600}
+.v6 .convite{margin:var(--e-4) auto 0;max-width:var(--larg-leitura)}
+.v6 .btn{margin:var(--e-6) auto 0;width:100%}
+.v6 .lembrete{margin-top:var(--e-3);color:var(--txt-medio);font-size:var(--t-micro);line-height:1.45}
+@media (min-width:768px){.v6 .btn{width:360px}}
+@media (min-width:1024px){.v6 .convite{font-size:var(--t-corpo-g)}}
+.v6{padding-block:var(--e-9)}
+@media (min-width:1024px){.v6{padding-block:var(--e-10)}}
+
+/* ===================== rodapé e sticky ===================== */
+.rodape{padding:var(--e-7) 0 88px;text-align:center;border-top:var(--bw-1) solid var(--borda-sutil);color:var(--txt-medio);font-size:var(--t-corpo-p);line-height:1.5}
+.rodape p+p{margin-top:var(--e-2)}
+.rodape a{color:var(--txt-medio);text-underline-offset:3px;display:inline-block;padding:12px 4px;margin:-12px 0}
+@media (min-width:1024px){.rodape{padding-bottom:var(--e-7);text-align:left}}
+
+.sticky{display:none}
+@media (max-width:767px){
+  .is-revealed .sticky:not(.esconde){display:flex}
+  .sticky{position:fixed;left:0;right:0;bottom:0;z-index:20;align-items:center;gap:var(--e-3);justify-content:space-between;
+    padding:var(--e-2) var(--e-4) calc(var(--e-2) + env(safe-area-inset-bottom));min-height:64px;
+    background:var(--sup-elevada);border-top:var(--bw-1) solid var(--borda-sutil);border-radius:var(--r-2) var(--r-2) 0 0;box-shadow:var(--elev-sticky)}
+  .sticky .st-txt{width:168px;flex:none}
+  .sticky .st-prod{font:600 var(--t-micro)/1.3 var(--f-leitura);color:var(--txt-forte)}
+  .sticky .st-preco{font:400 var(--t-micro)/1.3 var(--f-leitura);color:var(--txt-medio)}
+  .sticky .btn{min-height:48px;width:140px;padding:0 var(--e-2);font-size:1rem}
+}
+.is-closed .sticky{display:none!important}
+
+/* ===================== marcas e ferramentas de preview ===================== */
+.is-marca{background:Mark;color:MarkText;outline:1px dashed MarkText;padding:0 2px}
+.dev{position:fixed;left:8px;bottom:88px;z-index:50;display:flex;flex-direction:column;gap:4px;padding:6px;background:Canvas;color:CanvasText;border:1px solid CanvasText;font:12px/1.2 system-ui,sans-serif}
+.dev button{font:12px/1.2 system-ui,sans-serif;min-height:28px;cursor:pointer}
+@media (min-width:768px){.dev{bottom:8px}}
+
+/* ===================== movimento reduzido ===================== */
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important}
+  .btn.is-loading::before,.play-disco .spin{animation:none}
+  .play:hover .play-disco,.play:active .play-disco{transform:none}
+  .btn:active{transform:none}
+}
+</style>
+</head>
+
+<body>
+
+<header class="v0" data-view="v0">
+  <div class="wrap">
+    <span class="marca">Débora Delgado</span>
+    <a class="link-topo so-pos so-aberta" href="#oferta" data-cta="topo">Ver a oferta</a>
+  </div>
+</header>
+
+<main>
+
+<!-- ===================== V1 · primeira dobra ===================== -->
+<section class="v1 sup-a" data-view="v1" aria-labelledby="t1">
+  <div class="wrap">
+    <p class="eyebrow">Aula para quem lidera</p>
+    <h1 id="t1"><span class="t-b">Combinou o prazo e não entregaram? <em>Mais resultado, com menos esforço.</em></span><span class="t-a">Seja qual for a sua alavanca: <em>mais resultado, com menos esforço.</em></span></h1>
+
+    <div class="player-wrap">
+      <div class="player" id="player" data-estado="repouso">
+        <img class="poster" src="img/poster-720.webp" srcset="img/poster-720.webp 720w, img/poster-1440.webp 1440w" sizes="(min-width:1024px) 960px, 100vw" width="1440" height="810" alt="Débora Delgado olhando para a câmera, no início da aula" fetchpriority="high">
+        <button class="play" id="play" type="button" aria-label="Assistir à aula">
+          <span class="play-disco" aria-hidden="true">
+            <svg class="tri" viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15a1 1 0 0 0 1.5.86l12.5-7.5a1 1 0 0 0 0-1.72L8.5 3.64A1 1 0 0 0 7 4.5z"/></svg>
+            <span class="spin"></span>
+          </span>
+        </button>
+        <p class="chip" data-dep="DURACAO" hidden><span data-marca="DURACAO">{{DURACAO}}</span> min · com legendas</p>
+        <p class="aviso-video" id="avisoVideo" hidden>Vídeo em breve</p>
+        <div class="player-slot" id="playerSlot" hidden></div>
+      </div>
+      <div class="player-erro" id="playerErro" role="alert" hidden>
+        <p>O vídeo não carregou. Tente de novo ou recarregue a página.</p>
+        <button class="btn btn-secundario" id="tentar" type="button">Tentar de novo</button>
+      </div>
+    </div>
+
+    <noscript><p class="microcopy">Para assistir à aula, ative o JavaScript do navegador.</p></noscript>
+    <p class="microcopy">Assista com som: por que o pedido não chega, e o que fazer no próximo.</p>
+    <p class="credencial">Estudo o Eneagrama há mais de 5 anos. Já ajudei 60 pessoas a se reconhecer.</p>
+  </div>
+</section>
+
+<div class="pos-pitch" id="posPitch">
+
+<!-- ===================== V2 · OFERTA (clímax) ===================== -->
+<section class="v2 sup-a" id="oferta" data-view="v2" aria-labelledby="t2">
+  <div class="wrap">
+    <div class="v2-ref so-aberta">
+      <div class="clarao" aria-hidden="true"></div>
+      <div class="cartao">
+        <div class="col-a">
+          <p class="tag">Turma fundadora</p>
+          <h2 id="t2">Eneagrama para Líderes</h2>
+          <hr class="filete">
+          <ul class="pilha">
+            <li>Curso de Eneagrama</li>
+            <li>Sistema de Conhecimento do Eneagrama</li>
+            <li>Luz e Sombra da sua Liderança</li>
+            <li>A sua liderança pela raiz</li>
+            <li>Bônus: 4 encontros ao vivo, dezembro a fevereiro</li>
+            <li>Acesso de 12 meses, tudo na plataforma</li>
+          </ul>
+        </div>
+        <div class="col-b">
+          <p class="ancora">A mentoria em grupo comigo é R$&nbsp;6.000 por 4 meses. Este curso não é a mentoria.</p>
+          <p class="preco"><span class="moeda">R$</span> 297</p>
+          <p class="parcela">ou em até 12× no cartão</p>
+          <div class="filete-preco" aria-hidden="true"></div>
+          <p class="escassez">A entrada fecha em 16/12, no primeiro encontro. Os encontros ficam com quem entrou.</p>
+          <a class="btn btn-clx" href="#oferta" data-cta="oferta" data-checkout>Quero entrar na turma</a>
+          <p class="garantia">Garantia de 7 dias. Abriu o material e sentiu que não é para você? Você pede o dinheiro de volta pela própria plataforma.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="cartao-fim so-encerrada">
+      <h2>A turma fundadora fechou</h2>
+      <p>A entrada fechou em 16/12, no primeiro encontro. Os encontros ficaram com quem entrou.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== V3 · o que você recebe + encontros ===================== -->
+<section class="v3 sup-b so-aberta" data-view="v3" aria-labelledby="t3">
+  <div class="wrap">
+    <p class="eyebrow">O que você recebe</p>
+    <h2 class="h-bloco" id="t3">Onde está cada passo das Nove Línguas</h2>
+
+    <ul class="itens">
+      <li class="item">
+        <p class="eyebrow">Passo 1</p>
+        <h3>Curso de Eneagrama</h3>
+        <p class="desc">As nove maneiras de funcionar, e os subtipos para quem quiser ir mais longe.</p>
+      </li>
+      <li class="item">
+        <p class="eyebrow">Passos 2, 3 e 4</p>
+        <h3>Sistema de Conhecimento do Eneagrama</h3>
+        <p class="desc">Antes da conversa e do pedido, abra no tipo que supõe para a pessoa, e pergunte.</p>
+      </li>
+      <li class="item">
+        <p class="eyebrow">Material de liderança</p>
+        <h3>Luz e Sombra da sua Liderança</h3>
+        <p class="desc">Quando a liderança de cada tipo brilha, e o ponto cego que cobra caro.</p>
+      </li>
+      <li class="item">
+        <p class="eyebrow">Material de liderança</p>
+        <h3>A sua liderança pela raiz</h3>
+        <p class="desc">A força natural de cada tipo na liderança, e as armadilhas em que ela costuma cair.</p>
+      </li>
+    </ul>
+    <p class="nota-entrega leitura">Tudo fica na plataforma, com o link do grupo. Você consulta quando precisar, sem decorar nada.</p>
+
+    <h3 class="sub">Bônus: os quatro encontros ao vivo</h3>
+    <ol class="datas">
+      <li class="tile corte"><p class="l1"><time datetime="2026-12-16"><span class="dia">16</span> <span class="mes">dezembro</span></time></p><p class="l2">quarta<span data-dep="HORARIO" hidden> · <span data-marca="HORARIO">{{HORARIO}}</span></span></p><p class="l3">entrada fecha</p></li>
+      <li class="tile"><p class="l1"><time datetime="2027-01-06"><span class="dia">06</span> <span class="mes">janeiro</span></time></p><p class="l2">quarta<span data-dep="HORARIO" hidden> · <span data-marca="HORARIO">{{HORARIO}}</span></span></p></li>
+      <li class="tile"><p class="l1"><time datetime="2027-01-20"><span class="dia">20</span> <span class="mes">janeiro</span></time></p><p class="l2">quarta<span data-dep="HORARIO" hidden> · <span data-marca="HORARIO">{{HORARIO}}</span></span></p></li>
+      <li class="tile"><p class="l1"><time datetime="2027-02-03"><span class="dia">03</span> <span class="mes">fevereiro</span></time></p><p class="l2">quarta<span data-dep="HORARIO" hidden> · <span data-marca="HORARIO">{{HORARIO}}</span></span></p></li>
+    </ol>
+    <div class="encontro leitura">
+      <p>Você traz a situação que está vivendo com o seu time, e a gente olha junto.</p>
+      <p>Se não puder ir, mande a pergunta antes. Eu respondo no encontro, em vídeo ou em áudio.</p>
+    </div>
+    <a class="btn btn-secundario btn-porta2" href="#oferta" data-cta="encontros" data-checkout>Quero entrar na turma</a>
+  </div>
+</section>
+
+<!-- ===================== V4 · quem conduz + para quem é ===================== -->
+<section class="v4 sup-a so-aberta" data-view="v4" aria-labelledby="t4">
+  <div class="wrap">
+    <div class="grade">
+      <figure class="foto">
+        <img src="img/debora-d6.webp" srcset="img/debora-d6.webp 1000w, img/debora-d6@2x.webp 1600w" sizes="(min-width:1024px) 440px, (min-width:768px) 420px, 100vw" width="1000" height="1250" loading="lazy" alt="Retrato de Débora Delgado, com uma planta verde ao fundo">
+      </figure>
+      <div class="texto">
+        <h2 class="h-bloco" id="t4" style="margin-top:0">Quem conduz, e para quem é</h2>
+        <p class="credencial-v4">Estudo o Eneagrama há mais de 5 anos. Ensino em curso presencial, gravado e em Team Building.</p>
+        <p class="razao">Vejo este curso como legado: o que aprendi sobre as pessoas, organizado para mais gente usar.</p>
+        <div class="criterios">
+          <div>
+            <h3>É para você se</h3>
+            <ul>
+              <li>toma decisão e influencia outras pessoas</li>
+              <li>quer entender como as outras pessoas funcionam</li>
+              <li>já explicou, cobrou, e o combinado não acontece</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Talvez ainda não seja, se</h3>
+            <ul>
+              <li>o seu foco é só você e o seu próprio tipo</li>
+              <li>quer que alguém diga o tipo de cada pessoa do time</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== V5 · objeções ===================== -->
+<section class="v5 sup-b so-aberta" data-view="v5" aria-labelledby="t5">
+  <div class="wrap">
+    <div class="leitura">
+      <p class="eyebrow">Dúvidas</p>
+      <h2 class="h-bloco" id="t5">Perguntas antes de entrar</h2>
+      <div class="faq">
+        <details data-faq="1"><summary>Isso não é colocar gente em caixinha?</summary><p class="resp">Não. Caixa fecha: diz o que a pessoa é, e serve para carimbar e alocar. Quem aprende é você: como a sua mensagem precisa chegar. A pessoa continua sendo o que ela é. É um espelho, não um veredito.</p></details>
+        <details data-faq="2"><summary>É teórico? Como eu uso na segunda-feira?</summary><p class="resp">Essa foi a minha pergunta também. Antes de uma conversa ou de um pedido, você abre o Sistema no tipo que supõe. Nos encontros ao vivo, você traz a situação do seu time, e a gente olha junto.</p></details>
+        <details data-faq="3"><summary>Vou saber o tipo de cada pessoa do meu time?</summary><p class="resp">Não. Eu não respondo isso, e o curso também não. Chegar rápido no tipo de alguém dá, mas existe erro. Você abre o material no tipo que supõe, não diz isso à pessoa, e confere perguntando.</p></details>
+        <details data-faq="4"><summary>Já expliquei e já cobrei. Por que mudaria?</summary><p class="resp">Explicar de novo e cobrar partem da mesma suposição: que a outra pessoa pensa como você. Os dois mudam o volume do pedido. O idioma continua o mesmo, e é nele que o pedido se perde.</p></details>
+        <details data-faq="5"><summary>Preciso saber Eneagrama antes?</summary><p class="resp">Não. Você não precisa decorar tipo nenhum. O curso começa pelas nove maneiras de funcionar, e é a base de tudo o que vem depois.</p></details>
+        <details data-faq="6"><summary>Quanto tempo isso me toma?</summary><p class="resp">Você vai no seu ritmo, com 12 meses de acesso. O material é de consulta: você abre quando precisar, sem decorar nada.</p></details>
+        <details data-faq="7"><summary>E se eu não puder ir a um encontro?</summary><p class="resp">Manda a sua pergunta antes. Eu respondo ali, no encontro. Se não der para responder ali, eu faço um vídeo respondendo, ou um áudio.</p></details>
+        <details data-faq="8"><summary>Se não for para mim, perco o dinheiro?</summary><p class="resp">Não. Você tem 7 dias de garantia. Abriu o material e sentiu que não é para você? Você pede o seu dinheiro de volta, pela própria plataforma. Eu não vou te prometer que o seu time muda em sete dias.</p></details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== V6 · fecho ===================== -->
+<section class="v6 sup-a so-aberta" data-view="v6" aria-labelledby="t6">
+  <div class="wrap">
+    <h2 class="eco" id="t6">Pedir no seu idioma, e mais alto. <em>Ou no idioma de quem vai entregar.</em></h2>
+    <p class="convite">Os dois têm custo. No segundo, aos poucos, as pessoas passam a confiar mais em você.</p>
+    <a class="btn btn-primario" href="#oferta" data-cta="fecho" data-checkout>Quero entrar na turma</a>
+    <p class="lembrete">R$&nbsp;297 ou 12× · 12 meses de acesso · 7 dias de garantia · entrada até 16/12</p>
+  </div>
+</section>
+
+</div><!-- /pos-pitch -->
+</main>
+
+<footer class="rodape sup-b" data-view="rodape">
+  <div class="wrap">
+    <p data-dep="NOME_DE_QUEM_VENDE CPF_OU_CNPJ" hidden><span data-marca="NOME_DE_QUEM_VENDE">{{NOME_DE_QUEM_VENDE}}</span> · <span data-marca="CPF_OU_CNPJ">{{CPF_OU_CNPJ}}</span></p>
+    <p data-dep="EMAIL_SUPORTE" hidden>Suporte: <a data-marca-href="EMAIL_SUPORTE" data-href-prefix="mailto:"><span data-marca="EMAIL_SUPORTE">{{EMAIL_SUPORTE}}</span></a></p>
+    <p>Pagamento seguro via PagTrust<span data-dep="URL_TERMOS" hidden> · <a data-marca-href="URL_TERMOS" target="_blank" rel="noopener">Termos de uso</a></span><span data-dep="URL_PRIVACIDADE" hidden> · <a data-marca-href="URL_PRIVACIDADE" target="_blank" rel="noopener">Política de privacidade</a></span></p>
+  </div>
+</footer>
+
+<aside class="sticky so-pos so-aberta" id="sticky" aria-label="Atalho para a oferta">
+  <div class="st-txt"><p class="st-prod">Eneagrama para Líderes</p><p class="st-preco">R$&nbsp;297 ou 12×</p></div>
+  <a class="btn btn-primario" href="#oferta" data-cta="sticky" data-sticky>Quero entrar</a>
+</aside>
+
+<script>
+(function () {
+  'use strict';
+  var C = CONFIG, L = window.__L, M = C.MARCAS || {};
+  var PREVIEW = L.preview, FUNIL = L.funil, CLOSED = L.closed;
+  var D = document.documentElement;
+  function qs(s, r) { return (r || document).querySelector(s); }
+  function qsa(s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); }
+  var LOCAL = !/^https?:$/.test(location.protocol) || /^(localhost|127\.|0\.0\.0\.0|\[::1\])/.test(location.hostname);
+  var TRACK = !LOCAL && !PREVIEW;   /* local e preview nunca poluem o pixel nem os beacons */
+
+  /* ---------- marcas {{...}}: preenchidas, destacadas (preview) ou omitidas ---------- */
+  qsa('[data-dep]').forEach(function (el) {
+    var ok = el.getAttribute('data-dep').split(' ').every(function (n) { return !!M[n]; });
+    if (ok || PREVIEW) el.hidden = false;
+  });
+  qsa('[data-marca]').forEach(function (el) {
+    var n = el.getAttribute('data-marca');
+    if (M[n]) el.textContent = M[n];
+    else if (PREVIEW) el.classList.add('is-marca');
+  });
+  qsa('[data-marca-href]').forEach(function (el) {
+    var n = el.getAttribute('data-marca-href');
+    if (M[n]) el.setAttribute('href', (el.getAttribute('data-href-prefix') || '') + M[n]);
+    else if (PREVIEW) { el.setAttribute('href', '#'); el.classList.add('is-marca'); }
+  });
+
+  /* ---------- parâmetros, UTMs, pixel, beacons ---------- */
+  function ssGet(k) { try { return sessionStorage.getItem(k); } catch (e) { return null; } }
+  function ssSet(k, v) { try { sessionStorage.setItem(k, v); } catch (e) {} }
+  var UTM_KEYS = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term', 'fbclid'];
+  var utms = {};
+  (function () {
+    var q = new URLSearchParams(location.search), saved = {};
+    try { saved = JSON.parse(ssGet('lideres_utm') || '{}') || {}; } catch (e) {}
+    UTM_KEYS.forEach(function (k) { var v = q.get(k); if (v) utms[k] = v; else if (saved[k]) utms[k] = saved[k]; });
+    ssSet('lideres_utm', JSON.stringify(utms));
+  })();
+  var sid = ssGet('lideres_sid');
+  if (!sid) { sid = Date.now().toString(36) + Math.random().toString(36).slice(2, 8); ssSet('lideres_sid', sid); }
+
+  var BASE = { content_name: 'eneagrama-para-lideres', value: 297, currency: 'BRL', funil: FUNIL };
+  if (L.nivel) BASE.nivel = L.nivel;
+  if (L.alavanca) BASE.alavanca = L.alavanca;
+  function baseParams(extra) { var o = {}; Object.keys(BASE).forEach(function (k) { o[k] = BASE[k]; }); if (extra) Object.keys(extra).forEach(function (k) { o[k] = extra[k]; }); return o; }
+
+  /* Pixel Meta. TRACK falso: stub que só loga. */
+  if (TRACK && C.PIXEL_ID) {
+    !function (f, b, e, v, n, t, s) { if (f.fbq) return; n = f.fbq = function () { n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments); }; if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0'; n.queue = []; t = b.createElement(e); t.async = !0; t.src = v; s = b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s); }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', C.PIXEL_ID);
+  } else {
+    window.fbq = function () { console.info('[pixel:' + (PREVIEW ? 'preview' : 'local') + '] ' + JSON.stringify(Array.prototype.slice.call(arguments))); };
+  }
+  fbq('track', 'PageView');
+  if (!CLOSED) fbq('track', 'ViewContent', baseParams());
+
+  function pxCustom(name) { try { fbq('trackCustom', name, { content_name: BASE.content_name, funil: FUNIL }); } catch (e) {} }
+  function beacon(ev, extra) {
+    if (!TRACK || !C.LEADS_ENDPOINT) return;
+    try {
+      var p = { tipo: 'funil', ev: ev, page: 'lideres', sid: sid, ts: new Date().toISOString(), funil: FUNIL };
+      if (L.nivel) p.nivel = L.nivel; if (L.alavanca) p.alavanca = L.alavanca;
+      Object.keys(utms).forEach(function (k) { p[k] = utms[k]; });
+      if (extra) Object.keys(extra).forEach(function (k) { p[k] = extra[k]; });
+      var body = JSON.stringify(p);
+      if (navigator.sendBeacon) navigator.sendBeacon(C.LEADS_ENDPOINT, body);
+      else fetch(C.LEADS_ENDPOINT, { method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body: body });
+    } catch (e) { /* telemetria nunca bloqueia a página */ }
+  }
+  var fired = {};
+  function once(key, fn) { if (fired[key]) return; fired[key] = 1; fn(); }
+  if (document.readyState === 'complete') beacon('pageview'); else window.addEventListener('load', function () { beacon('pageview'); }, { once: true });
+
+  /* ---------- botões de compra ---------- */
+  function checkoutUrl() {
+    var u = new URL(C.CHECKOUT_URL, location.href);
+    Object.keys(utms).forEach(function (k) { u.searchParams.set(k, utms[k]); });
+    return u.toString();
+  }
+  var HAS_CHECKOUT = !!C.CHECKOUT_URL;
+  qsa('[data-cta]').forEach(function (a) {
+    var cta = a.getAttribute('data-cta');
+    var vaiAoCheckout = a.hasAttribute('data-checkout') || (a.hasAttribute('data-sticky') && C.STICKY_VAI_PARA_CHECKOUT);
+    if (vaiAoCheckout && HAS_CHECKOUT) { try { a.setAttribute('href', checkoutUrl()); } catch (e) { console.warn('[lideres] CHECKOUT_URL inválido:', C.CHECKOUT_URL); } }
+    a.addEventListener('click', function (ev) {
+      beacon('cta_click_' + cta);
+      if (!vaiAoCheckout) return;                       /* topo e sticky: só rolam até #oferta */
+      if (!HAS_CHECKOUT) { console.warn('[lideres] CHECKOUT_URL vazio: o botão leva a #oferta. Preencher CONFIG.CHECKOUT_URL antes de publicar.'); return; }
+      if (ev.defaultPrevented || ev.button !== 0 || ev.metaKey || ev.ctrlKey || ev.shiftKey || ev.altKey) return;
+      ev.preventDefault();
+      a.classList.add('is-loading'); a.setAttribute('aria-busy', 'true');
+      fbq('track', 'InitiateCheckout', baseParams());
+      beacon('checkout_start');
+      var href = a.getAttribute('href');
+      setTimeout(function () { location.href = href; }, 200);
+    });
+  });
+
+  /* ---------- revelação da oferta ---------- */
+  var revealed = !!L.via, posPitch = qs('#posPitch');
+  function rememberPitch() { try { localStorage.setItem('lideres_pitch_v1', '1'); } catch (e) {} }
+  function reveal(via) {
+    if (revealed || CLOSED) return;
+    revealed = true;
+    D.classList.remove('is-gated'); D.classList.add('is-revealed');
+    posPitch.classList.add('anim-in');
+    beacon('reveal_' + via);
+    if (via === 'tempo') { rememberPitch(); pxCustom('VSLPitch'); beacon('video_pitch'); }
+    watchOfertaBtn();
+  }
+  if (L.via) beacon('reveal_' + L.via);
+
+  /* sticky: some enquanto o botão de V2 está na tela */
+  var stickyEl = qs('#sticky'), stickyObs;
+  function watchOfertaBtn() {
+    if (stickyObs || !('IntersectionObserver' in window) || CLOSED) return;
+    var btn = qs('[data-cta="oferta"]');
+    stickyObs = new IntersectionObserver(function (es) { es.forEach(function (e) { stickyEl.classList.toggle('esconde', e.isIntersecting); }); });
+    stickyObs.observe(btn);
+  }
+  if (revealed) watchOfertaBtn();
+
+  /* ---------- player ---------- */
+  var player = qs('#player'), slot = qs('#playerSlot'), erro = qs('#playerErro'), aviso = qs('#avisoVideo');
+  var src = FUNIL === 'a' ? C.VIDEO_A : C.VIDEO_B;
+  var legendas = FUNIL === 'a' ? C.LEGENDAS_A : C.LEGENDAS_B;
+  var pitchAt = (FUNIL === 'a' && C.PITCH_SECONDS_A) ? C.PITCH_SECONDS_A : C.PITCH_SECONDS;
+  if (!src && PREVIEW) aviso.hidden = false;
+
+  function setEstado(s) { player.setAttribute('data-estado', s); player.setAttribute('aria-busy', s === 'carregando' ? 'true' : 'false'); }
+  var started = false, loadTimer = null, pollTimer = null;
+
+  function onTime(t, dur) {
+    if (t >= pitchAt) reveal('tempo');
+    if (dur > 0) {
+      var p = t / dur;
+      if (p >= .25) once('v25', function () { pxCustom('VSL25'); beacon('video_25'); });
+      if (p >= .5) once('v50', function () { pxCustom('VSL50'); beacon('video_50'); });
+      if (p >= .75) once('v75', function () { pxCustom('VSL75'); beacon('video_75'); });
+    }
+  }
+  function onPlaying() {
+    clearTimeout(loadTimer); setEstado('tocando'); erro.hidden = true;
+    once('play', function () { pxCustom('VSLPlay'); beacon('video_play'); });
+  }
+  function onEnded() { once('v100', function () { beacon('video_100'); }); }
+  function onFail() { clearTimeout(loadTimer); clearInterval(pollTimer); slot.hidden = true; slot.innerHTML = ''; setEstado('repouso'); erro.hidden = false; started = false; }
+
+  function parse(s) {
+    if (/\.(mp4|webm|ogv)(\?|#|$)/i.test(s)) return { t: 'file', u: s };
+    var m = s.match(/(?:youtu\.be\/|youtube\.com\/(?:watch\?v=|embed\/|shorts\/))([\w-]{11})/); if (m) return { t: 'yt', id: m[1] };
+    if (/^[\w-]{11}$/.test(s) && !/^\d+$/.test(s)) return { t: 'yt', id: s };
+    m = s.match(/vimeo\.com\/(?:video\/)?(\d+)/); if (m) return { t: 'vimeo', id: m[1] };
+    if (/^\d{6,}$/.test(s)) return { t: 'vimeo', id: s };
+    if (/^https:\/\//.test(s)) return { t: 'iframe', u: s };
+    return null;
+  }
+  function loadScript(url, ok) { var s = document.createElement('script'); s.src = url; s.async = true; s.onload = ok; s.onerror = onFail; document.head.appendChild(s); }
+
+  function startFile(v) {
+    var el = document.createElement('video');
+    el.controls = true; el.setAttribute('playsinline', ''); el.preload = 'auto';
+    el.setAttribute('aria-label', 'Aula em vídeo');
+    var so = document.createElement('source'); so.src = v.u; el.appendChild(so);
+    if (legendas) { var tr = document.createElement('track'); tr.kind = 'captions'; tr.srclang = 'pt-BR'; tr.label = 'Português'; tr.src = legendas; tr.default = true; el.appendChild(tr); }
+    el.addEventListener('playing', onPlaying);
+    el.addEventListener('timeupdate', function () { onTime(el.currentTime, el.duration); });
+    el.addEventListener('ended', onEnded);
+    el.addEventListener('error', onFail);
+    slot.appendChild(el);
+    var pr = el.play(); if (pr && pr.catch) pr.catch(function () { /* o usuário aperta play nos controles */ setEstado('tocando'); });
+    if (legendas && el.textTracks && el.textTracks[0]) el.textTracks[0].mode = 'showing';
+  }
+  function startYT(v) {
+    var holder = document.createElement('div'); slot.appendChild(holder);
+    function make() {
+      new YT.Player(holder, { videoId: v.id, host: 'https://www.youtube-nocookie.com',
+        playerVars: { autoplay: 1, playsinline: 1, rel: 0, modestbranding: 1, cc_load_policy: 1, cc_lang_pref: 'pt', hl: 'pt-BR' },
+        events: {
+          onStateChange: function (e) {
+            if (e.data === 1) { onPlaying(); clearInterval(pollTimer); pollTimer = setInterval(function () { try { onTime(e.target.getCurrentTime(), e.target.getDuration()); } catch (x) {} }, 500); }
+            else if (e.data === 0) { clearInterval(pollTimer); onEnded(); }
+            else if (e.data === 2) clearInterval(pollTimer);
+          },
+          onError: onFail
+        } });
+    }
+    if (window.YT && YT.Player) make(); else { window.onYouTubeIframeAPIReady = make; loadScript('https://www.youtube.com/iframe_api', function () {}); }
+  }
+  function startVimeo(v) {
+    var f = document.createElement('iframe');
+    f.src = 'https://player.vimeo.com/video/' + v.id + '?autoplay=1&dnt=1&texttrack=pt';
+    f.allow = 'autoplay; fullscreen; picture-in-picture'; f.title = 'Aula em vídeo'; slot.appendChild(f);
+    function make() {
+      var p = new Vimeo.Player(f);
+      p.on('play', onPlaying); p.on('timeupdate', function (d) { onTime(d.seconds, d.duration); }); p.on('ended', onEnded); p.on('error', onFail);
+    }
+    if (window.Vimeo && Vimeo.Player) make(); else loadScript('https://player.vimeo.com/api/player.js', make);
+  }
+  function startIframe(v) {
+    /* player sem API de tempo: a revelação cai para um relógio que parte do play (menos exata) */
+    var f = document.createElement('iframe'); f.src = v.u; f.allow = 'autoplay; fullscreen; picture-in-picture'; f.title = 'Aula em vídeo'; slot.appendChild(f);
+    console.warn('[lideres] player genérico sem API de tempo: revelação por relógio desde o clique (PITCH_SECONDS).');
+    f.addEventListener('load', function () { onPlaying(); var t0 = Date.now(); clearInterval(pollTimer); pollTimer = setInterval(function () { onTime((Date.now() - t0) / 1000, 0); }, 1000); });
+  }
+
+  function start() {
+    if (started) return;
+    if (!src) { console.warn('[lideres] vídeo do funil ' + FUNIL.toUpperCase() + ' não configurado (CONFIG.VIDEO_' + FUNIL.toUpperCase() + ').'); if (PREVIEW) aviso.hidden = false; return; }
+    var v = parse(src);
+    if (!v) { console.warn('[lideres] formato de vídeo não reconhecido:', src); return; }
+    started = true; erro.hidden = true; setEstado('carregando'); slot.hidden = false; slot.innerHTML = '';
+    clearTimeout(loadTimer); loadTimer = setTimeout(onFail, 20000);
+    ({ file: startFile, yt: startYT, vimeo: startVimeo, iframe: startIframe })[v.t](v);
+  }
+  qs('#play').addEventListener('click', start);
+  qs('#tentar').addEventListener('click', start);
+
+  /* ---------- instrumentação: view_v1..v6, faq_open_N ---------- */
+  if ('IntersectionObserver' in window) {
+    var vo = new IntersectionObserver(function (es) {
+      es.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        var n = e.target.getAttribute('data-view');
+        if (/^v[1-6]$/.test(n)) once('view_' + n, function () { beacon('view_' + n); });
+        vo.unobserve(e.target);
+      });
+    }, { threshold: .35 });
+    qsa('[data-view]').forEach(function (el) { vo.observe(el); });
+  }
+  qsa('details[data-faq]').forEach(function (d) {
+    d.addEventListener('toggle', function () { if (d.open) beacon('faq_open_' + d.getAttribute('data-faq')); });
+  });
+
+  /* ---------- ferramentas de preview (só com ?preview=1; ?barra=0 esconde) ---------- */
+  if (PREVIEW && new URLSearchParams(location.search).get('barra') !== '0') {
+    var bar = document.createElement('div'); bar.className = 'dev'; bar.setAttribute('role', 'group'); bar.setAttribute('aria-label', 'Ferramentas de pré-visualização');
+    function mk(txt, fn) { var b = document.createElement('button'); b.type = 'button'; b.textContent = txt; b.addEventListener('click', fn); bar.appendChild(b); }
+    mk('Simular pitch', function () { reveal('tempo'); });
+    mk('Limpar memória', function () { try { localStorage.removeItem('lideres_pitch_v1'); } catch (e) {} location.reload(); });
+    document.body.appendChild(bar);
+  }
+})();
+</script>
+</body>
+</html>
