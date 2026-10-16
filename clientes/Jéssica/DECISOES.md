@@ -475,6 +475,22 @@ Criar decisão sinaliza propagação; não autoriza publicar fora da tarefa vige
 
 ## Propostas — não vigentes
 
+### DEC-2026-10-16-034 — Mecanismo, apelido e One Belief · painel da conta aberto
+
+| Campo | Registro |
+|---|---|
+| pedido | Victor, 16/10: criar o `PAINEL.md` e o One Belief, para a conta estar pronta para virar assessorada em fevereiro |
+| decisão (estrutura, nossa) | **apelido do mecanismo: Primeira Palavra.** One Belief: *"Calar a correção que chega depois da fala, começando pelo corpo e não pela gramática, é a chave para falar inglês com confiança, como algo natural, e só é possível através da Primeira Palavra."* |
+| razão | re-elicia o mecanismo inteiro (primeira palavra certa → segundo pensamento corrige → corpo antes), é verificável na experiência de quem lê, sai do bordão dela, e **é a mesma frase que resolve o P5** |
+| descartado | *Inglês Intuitivo* (reprova em Único) · *ROPE* (re-elicia o procedimento, não a descoberta; fica livre para o material dela) · *Corpo antes da Palavra* (é o método, não o porquê) · *Corte do Segundo Pensamento* (nomeia o inimigo, não a saída) |
+| correção | `PILARES.md` §3 tratava English Therapy como nome do mecanismo. É produto e marca |
+| instalação | pitch da sala de janeiro, no fim do bloco de mecanismo. **Não vira nome em post antes de fevereiro** (DEC-025) |
+| lacuna | prova sem resultado medido: vale para a sala, não sustenta VSL nem anúncio de resposta direta |
+| aplicado | `MECANISMO-E-ONE-BELIEF.md` · `PAINEL.md` · `PILARES.md` §3 |
+| estado | ✅ vigente · objeção de congruência dela aberta, como em toda decisão de estrutura |
+
+---
+
 ### DEC-2026-10-16-033 — Páginas no domínio dela · depoimentos sem identidade · três perguntas fechadas
 
 | Campo | Registro |

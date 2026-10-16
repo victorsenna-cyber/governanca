@@ -64,18 +64,18 @@
 
 > 🔴 **13/10 — decisão do Victor: não se pergunta mais nada a ela sobre a VSL.** ✅ **15/10: nada do roteiro depende dela.** Consentimento e capacidade se dão na leitura e na gravação: o que ela não quiser dizer, aponta, e nós alteramos ou explicamos por escrito por que não (REGRA Nº 0). A lista de 13/10 (resposta à conferência, casos de líder, encontros, ok da história, números) foi resolvida por decisão do Victor, por fato do repositório ou por corte — `vsl/BRIEFING-VSL.md` §12 #1 a #17.
 
-## 5. Faltam do Victor
+## 5. Faltam do Victor — ⟲ ordem refeita em 16/10 (Victor: *"primeiro mando para a Débora"*)
 
-> Ordem completa de publicação, passo a passo: `04 - web design/eneagrama-para-lideres/05-GATE.md`.
+> Detalhe técnico da publicação: `04 - web design/eneagrama-para-lideres/05-GATE.md`.
 
-- 🔴 **checkout PagTrust da oferta nova** (R$ 297 ou 12×, entrega na plataforma com o link do grupo, fecha sozinho em 16/12 na hora do encontro) — destrava D31 e D36 no vídeo e todos os botões da página
-- 🔴 **horário dos encontros** (16/12 · 06/01 · 20/01 · 03/02) — entra na página e no horário de encerramento
-- 🔴 **levar à Débora:** o roteiro v4.2 e a resposta às objeções (PDF), para ela gravar · depois, o vídeo editado com legendas num provedor (YouTube/Vimeo), com o segundo do pitch medido
-- 🔴 **rodapé legal:** nome, CPF/CNPJ e e-mail de suporte · URLs de termos e privacidade
-- **publicar** `site/lideres/` e `site/quiz/` em `public_html` da Hostinger · compra de teste · teste no celular dentro do Instagram
-- **antes da mídia:** tirar do ar `/eneagrama` e o checkout `cka1d66532` · CAPI da PagTrust confirmada · Apps Script de leads do quiz · **capital para 2 a 3 tentativas**
-- **em 16/12:** checkout fechado, anúncios pausados, pasta `/lideres/` retirada
-- registro de *"As Nove Línguas"* no INPI · número da renovação
+1. 🔴 **enviar à Débora os dois PDFs:** `vsl/2026-10-11/ROTEIRO-GRAVACAO-DEBORA.pdf` (o vídeo inteiro + a abertura alternativa do quiz, sem nada interno) e `vsl/2026-10-11/CONFERENCIA-PROMESSA-CURSO.pdf` (a resposta às duas objeções). Nenhuma pergunta; o que ela não quiser dizer, marca e devolve. **A gravação é o caminho crítico: tudo depois dela espera o vídeo.**
+2. 🔴 **enquanto ela grava:** checkout PagTrust da oferta nova (R$ 297 ou 12×, entrega na plataforma com o link do grupo, fecha sozinho em 16/12 na hora do encontro) · **horário dos encontros** · rodapé legal (nome, CPF/CNPJ, e-mail, termos, privacidade) · Apps Script de leads do quiz · tirar do ar `/eneagrama` e o checkout `cka1d66532` · reservar o **capital para 2 a 3 tentativas**
+3. **objeção dela, se vier:** nós respondemos por escrito antes de ela regravar
+4. **com o vídeo gravado:** edição com legendas, num YouTube ou Vimeo · medir o segundo em que o preço é dito · preencher o CONFIG da página
+5. **publicar** `site/lideres/` e `site/quiz/` em `public_html` da Hostinger · compra de teste ponta a ponta · teste no celular dentro do Instagram · CAPI da PagTrust confirmada
+6. **mídia:** plano rotulado TESTE, verba limitada
+7. **em 16/12:** checkout fechado, anúncios pausados, `/lideres/` retirada
+- sem urgência: INPI de *"As Nove Línguas"* · número da renovação
 
 ## 6. Antessala do Codex — o que ainda não foi promovido
 
@@ -91,11 +91,12 @@ Não interromper o fluxo dela, direcionar (princípio 7) · nenhuma promessa aci
 
 ## 8. Próximo passo e dono
 
-| Passo | Dono |
-|---|---|
-| checkout novo, horário, rodapé legal; levar roteiro + PDF à Débora para gravar | **Victor** |
-| com o vídeo editado: preencher o CONFIG da página (`CHECKOUT_URL`, `VIDEO_B`, `PITCH_SECONDS`, legendas), publicar, compra de teste | **Victor** (CEO confere o que ele mandar) |
-| vídeo do funil A (só a abertura muda) e Apps Script de leads → publicar o quiz | Débora grava · Victor publica |
-| plano de mídia rotulado TESTE, verba limitada, com o capital de 2–3 tentativas reservado | CEO + Victor |
-| em 16/12: checkout fechado, anúncios pausados, `/lideres/` retirada | **Victor** |
-| número da renovação | Victor |
+| # | Passo | Dono |
+|---:|---|---|
+| 1 | enviar os dois PDFs à Débora para gravar | **Victor** |
+| 2 | checkout, horário, rodapé legal, Apps Script, página antiga fora do ar, capital — em paralelo à gravação | **Victor** |
+| 3 | responder por escrito qualquer objeção dela ao roteiro | CEO |
+| 4 | com o vídeo: edição + legendas + segundo do pitch → CONFIG da página | Victor (CEO confere) |
+| 5 | publicar página e quiz, compra de teste, teste no Instagram | **Victor** |
+| 6 | plano de mídia rotulado TESTE | CEO + Victor |
+| 7 | 16/12: checkout fechado, anúncios pausados, `/lideres/` retirada | **Victor** |

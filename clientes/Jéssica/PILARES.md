@@ -56,7 +56,7 @@
 
 É diagnóstico, não conselho: dá um lugar para olhar, e quem trava reconhece na hora. Tem inimigo (o segundo pensamento) e tem ordem de trabalho (**o corpo antes da palavra**: respiração, postura, olhar).
 
-**Nome do mecanismo:** *Emotional Speaking* até janeiro; ***English Therapy* a partir de fevereiro**. Um nome por vez em peça pública: trocar no meio da campanha do evento divide a mensagem (DEC-025, item 2).
+~~**Nome do mecanismo:** *Emotional Speaking* até janeiro; ***English Therapy* a partir de fevereiro**.~~ *(corrigido em 16/10, DEC-034: English Therapy é produto e marca, não mecanismo)* **Apelido do mecanismo: Primeira Palavra**, instalado no pitch da sala de janeiro (`MECANISMO-E-ONE-BELIEF.md`). Nome do método em peça pública: *Emotional Speaking* até janeiro, *English Therapy* a partir de fevereiro. Um nome por vez em peça pública: trocar no meio da campanha do evento divide a mensagem (DEC-025, item 2).
 
 ## 4. Oferta
 
