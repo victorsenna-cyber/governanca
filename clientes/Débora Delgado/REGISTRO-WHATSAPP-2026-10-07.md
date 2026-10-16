@@ -216,3 +216,40 @@ Victor (14:06): *"Compreendo perfeitamente"*. **Não houve contraproposta nem in
 
 **Decisões (CEO):** não retratar o PDF das objeções (está correto e diz que não há nada a responder; retratar chama mais atenção) · o `.md` pode ser apagado para todos, sem obrigação · **nenhuma mensagem nova agora.** ⚠️ **Ponto que pode voltar:** o PDF das objeções diz que as frases de *"a entrada fecha no primeiro encontro"* não se gravam até conferirmos o checkout. **Se ela perguntar:** *"pode gravar tudo normal, o checkout é do nosso lado.."*
 **Tom (camada 3):** ela estava curiosa e leve; a entrega fecha o *"te atualizo aqui"* de 10/10. **Próximo passo:** ela grava; frase marcada por ela → resposta por escrito nossa antes da regravação. **Dono:** Débora (gravar) · CEO (responder objeção).
+
+## Adendo 16/10, 15h19–16h05 — primeira leitura dela do roteiro (fonte: 4 prints do Victor, 16/10 16h27–16h28)
+
+| Hora | Quem | Mensagem |
+|---|---|---|
+| 15h19 | Débora | *"Tava passando o olho aqui"* · *"tudo bem?"* |
+| 15h19 | Victor | *"bom demais, e ti?"* |
+| 15h19 | Débora | 🔴 *"tem uma frase no trecho um que não fez sentido... / \"O problema não está onde você está olhando. E enquanto você olha para lá, ele continua acontecendo. E para enxergar onde ele está, você não precisa decorar tipo nenhum de Eneagrama.\""* |
+| 15h20 | Débora | *"tudo joia tbb"* |
+| 15h20 | Victor | *"dê uma passada geral e aponta os trechos que eu itero tudo"* |
+| 15h22 | Débora | 🔴 *"To com a sensação de quem vê essa aula já sabe o que é Eneagrama, certo?"* · *"mas faz pouco sentido na minha cabeça.. pq se ela já sabe o que é Eneagrama.. pq vai comprar o curso?"* |
+| 15h26 | Victor | *"faz sentido o que você trouxe"* |
+| 15h27 | Débora | ✅ *"passando o olho no resto parece bom, tudo na minha linguagem mesmo"* |
+| 15h27–15h28 | Victor | *"que maravilha heheh"* · *"itero os pontos que você trouxe agora então"* · *"caso pense algo sobre mais alguma coisa, pode trazer que eu itero na hora"* |
+| 15h28 | Débora | *"Eu fiz o teste também"* · *"[um terceiro] testou"* · ⭐ *"e to acabando de fazer uma versão melhor do conteúdo do Eneagrama para o líder"* |
+| 15h29 | Victor | *"olhaa, deu certo então!?"* · *"manda pra mim, por gentileza"* |
+| 15h29–15h30 | Débora | *"vc já consegue acessar o teste pelo site"* · comentário sobre o resultado do teste de um terceiro (subtipos) · link **`https://deboradelgado.netlify.app/`** · senha da área de membros (**enviada no grupo às 15h30; não registrada aqui**) |
+| 15h31 | Victor | *"show demais"* · *"vou fazer agoraaa"* · *"haahaha"* |
+| 15h32 | Débora | *"curiosa"* · *"eu chuto 5 ou 7auto"* |
+| 15h32 | Victor | ⭐ *"um produto de Eneagrama que está escalado no momento é um teste gringo.."* · *"tem um funil subsequente que vende formações e treinamentos salvo engano"* |
+| 15h33 | Victor | *"hehehe, vou testar e te falo qual é"* |
+| 15h56–15h57 | Débora | *"chegou aqui"* · *"hehe"* · resultado do Victor: *"1 auto"* · leitura das flechas 1 e 7 |
+| 15h58–15h59 | Victor | *"heheheh"* · *"olha só que interessante"* · *"tô lendo mais aqui do relatório"* · *"nossa, muito bom esse teste Débora"* |
+| 16h00 | Débora | *"no site vc consegue ir no sistema de conhecimento pra ler mais"* · *"pq eu não fiz a devolutiva bem feita"* · *"só fiz pra terminar o teste"* · *"kkkkk"* |
+| 16h05 | Victor | *"olha.. percorri sua aplicação e tá muito boa também"* |
+
+**Fatos novos (camada 1):**
+- **Objeção de congruência** ao trecho 1 (D01) e ao pressuposto de que o espectador já conhece o Eneagrama. O resto, ela aprovou: *"tudo na minha linguagem mesmo"*. **Victor se comprometeu a iterar.**
+- **O site dela está na Netlify** (`deboradelgado.netlify.app`), com área de membros, um **teste de Eneagrama com relatório** e o Sistema de Conhecimento. ⚠️ **Diverge do nosso plano de publicação** (`deboradelgado.space`, Hostinger), e a decisão é do Victor.
+- **Ela está fazendo uma versão melhor do conteúdo de Eneagrama para o líder.** O Victor pediu para ela mandar.
+- **Hipótese do Victor** (leitura, não fato verificado): um teste gringo de Eneagrama está escalado e tem funil subsequente de formações. Candidato a referência pela REGRA Nº 2.
+
+**Leitura nossa (camada 2):** ⚠️ **risco de congruência a verificar.** D14 critica *"teste de personalidade"* que pergunta sobre comportamento. Se o teste dela pergunta sobre comportamento, a VSL ataca o produto dela. Ela não apontou isso.
+
+**Tom (camada 3):** leve, colaborativo, com humor. Ela lê, aponta e aprova. **Conduta:** a resposta à objeção vem com a frase nova, nunca com justificativa longa. Não citar o terceiro que fez o teste.
+
+**Próximo passo:** reescrita de D01 e do pressuposto do lead, pelo G5 com conferência, e devolver a ela o trecho novo. **Dono:** CEO.
