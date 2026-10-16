@@ -203,3 +203,16 @@ Victor (14:06): *"Compreendo perfeitamente"*. **Não houve contraproposta nem in
 | 13/10 15h55 | Victor | *"Oi Débora!! muito boa tarde! tudo ótimo, e contigo?"* · em resposta a *"To mega curiosa"*: *"heheh.. está em andamento aqui"* |
 
 **Tom e conduta (camada 3):** ela está leve e curiosa, sem cobrança. Ele já se desculpou pela demora (10/10) e prometeu atualizar. **A próxima mensagem entrega o roteiro, sem nova desculpa e sem pergunta** (`vsl/2026-10-11/MENSAGEM-DEBORA-2026-10-16.md`). 🟡 Envio pendente do Victor.
+
+## Adendo 16/10, 15h16–15h17 — envio do roteiro (fonte: prints do Victor, 16/10 15h18–15h19)
+
+| Hora | Quem | Mensagem / anexo |
+|---|---|---|
+| 15h16 | Victor | *"Débora, muito boa tarde! / pra matar a curiosidade hehe.. o roteiro do vídeo de vendas do Eneagrama para Líderes está pronto pra você gravar. vão dois PDFs: / 1. o roteiro, em 34 trechos, só o texto. no final tem uma abertura alternativa, pra quem chega no vídeo depois de responder o quiz / 2. a resposta às duas coisas que você apontou, o método e a coqueria. a coqueria saiu, e entrou a história que você me mandou em áudio / o vídeo não fala mais de módulo de aplicação. a aplicação no time fica nos quatro encontros ao vivo, que entram como bônus pra turma fundadora: 16/12, 06/01, 20/01 e 03/02, todos numa quarta.."* |
+| 15h16 | Victor | 📎 `ROTEIRO-GRAVACAO-DEBORA.pdf` (10 p.) |
+| 15h17 | Victor | 📎 `ROTEIRO-GRAVACAO-DEBORA.md` (22 KB) — **por engano** |
+| 15h17 | Victor | 📎 `CONFERENCIA-PROMESSA-CURSO.pdf` (6 p.) |
+| 15h17 | Victor | *"pra gravar: cada trecho numerado pode ser gravado separado, até em dias diferentes. se errar, volta pro começo do trecho. a edição fica comigo. / se alguma frase não bater com o que você ensina ou acredita, não grava: me marca qual que eu te respondo por escrito antes.. / excelente final de semana pra ti!"* |
+
+**Decisões (CEO):** não retratar o PDF das objeções (está correto e diz que não há nada a responder; retratar chama mais atenção) · o `.md` pode ser apagado para todos, sem obrigação · **nenhuma mensagem nova agora.** ⚠️ **Ponto que pode voltar:** o PDF das objeções diz que as frases de *"a entrada fecha no primeiro encontro"* não se gravam até conferirmos o checkout. **Se ela perguntar:** *"pode gravar tudo normal, o checkout é do nosso lado.."*
+**Tom (camada 3):** ela estava curiosa e leve; a entrega fecha o *"te atualizo aqui"* de 10/10. **Próximo passo:** ela grava; frase marcada por ela → resposta por escrito nossa antes da regravação. **Dono:** Débora (gravar) · CEO (responder objeção).

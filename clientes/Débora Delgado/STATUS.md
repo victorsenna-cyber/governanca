@@ -68,7 +68,7 @@
 
 > Detalhe técnico da publicação: `04 - web design/eneagrama-para-lideres/05-GATE.md`.
 
-1. 🔴 **enviar à Débora o roteiro, com a mensagem pronta em `vsl/2026-10-11/MENSAGEM-DEBORA-2026-10-16.md`:** `vsl/2026-10-11/ROTEIRO-GRAVACAO-DEBORA.pdf` (o vídeo inteiro + a abertura alternativa do quiz, só o texto). A resposta às objeções **não vai**: ela não pediu, e as duas se fecharam em 09/10; fica como registro nosso. Nenhuma pergunta; o que ela não quiser dizer, marca e devolve. **A gravação é o caminho crítico: tudo depois dela espera o vídeo.**
+1. ✅ **ENVIADO 16/10 15h16–15h17** (roteiro + resposta às objeções + o `.md` do roteiro por engano) · aguardando ela gravar · se ela perguntar sobre as frases da entrada que fecha no primeiro encontro, a resposta é gravar tudo normal · ~~enviar à Débora o roteiro, com a mensagem pronta em `vsl/2026-10-11/MENSAGEM-DEBORA-2026-10-16.md`:** `vsl/2026-10-11/ROTEIRO-GRAVACAO-DEBORA.pdf` (o vídeo inteiro + a abertura alternativa do quiz, só o texto). A resposta às objeções **não vai**: ela não pediu, e as duas se fecharam em 09/10; fica como registro nosso. Nenhuma pergunta; o que ela não quiser dizer, marca e devolve. **A gravação é o caminho crítico: tudo depois dela espera o vídeo.**
 2. 🔴 **enquanto ela grava:** checkout PagTrust da oferta nova (R$ 297 ou 12×, entrega na plataforma com o link do grupo, fecha sozinho em 16/12 na hora do encontro) · **horário dos encontros** · rodapé legal (nome, CPF/CNPJ, e-mail, termos, privacidade) · Apps Script de leads do quiz · tirar do ar `/eneagrama` e o checkout `cka1d66532` · reservar o **capital para 2 a 3 tentativas**
 3. **objeção dela, se vier:** nós respondemos por escrito antes de ela regravar
 4. **com o vídeo gravado:** edição com legendas, num YouTube ou Vimeo · medir o segundo em que o preço é dito · preencher o CONFIG da página
@@ -93,7 +93,7 @@ Não interromper o fluxo dela, direcionar (princípio 7) · nenhuma promessa aci
 
 | # | Passo | Dono |
 |---:|---|---|
-| 1 | enviar o roteiro à Débora para gravar | **Victor** |
+| 1 | ~~enviar o roteiro~~ ✅ 16/10 15h17 · aguardar gravação e responder por escrito qualquer frase que ela marcar | Débora grava · CEO responde |
 | 2 | checkout, horário, rodapé legal, Apps Script, página antiga fora do ar, capital — em paralelo à gravação | **Victor** |
 | 3 | responder por escrito qualquer objeção dela ao roteiro | CEO |
 | 4 | com o vídeo: edição + legendas + segundo do pitch → CONFIG da página | Victor (CEO confere) |
