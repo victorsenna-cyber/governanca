@@ -9,8 +9,8 @@ Link: `https://continuumsystems.com.br/mapa/?o=story` (página no ar e testada p
 |---:|---|---|---|---|
 | 1 | **Modern** | azul | `A IA TRABALHANDO` / `SOZINHA.` | topo, **em cima das abas do terminal** (cobre os nomes de cliente). A 1ª linha estica até a borda direita |
 | 2 | traço do pincel, azul | — | seta da chamada até a linha destacada | lado esquerdo |
-| 3 | **Typewriter** | branco | `00h55. Mandei isso e ela saiu` / `acertando: página,` / `pagamento e quiz.` *(16/10: "fazendo… checkout" trocado, ver nota abaixo)* | logo abaixo da linha destacada |
-| 4 | **Classic** | preto | `Ela não precisa me perguntar porque lê as minhas regras antes de agir. O mapa de como montei isso é seu, de graça:` | terço inferior, centralizado |
+| 3 | **Typewriter** | branco | `00h55. Mandei isso e ela` / `saiu acertando: página,` / `pagamento e quiz.` *(16/10: "fazendo… checkout" trocado, ver nota abaixo)* | logo abaixo da linha destacada |
+| 4 | **Classic** | preto | `Ela não me pergunta porque lê as minhas regras antes de agir. O mapa disso é seu, de graça:` *(reduzido 16/10)* | terço inferior, centralizado |
 | 5 | figurinha **Link** | — | `QUERO O MAPA` | abaixo do texto 4, levemente inclinada, **acima da faixa de 250 px que a interface cobre** |
 
 **Procedência:** "00h55" é o horário do print; "página, checkout e quiz" é o que o terminal mostra que ela começou; "não precisa me perguntar" é o que a ordem destacada pede. Nada de "terminou", porque o print não mostra o fim.
