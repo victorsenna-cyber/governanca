@@ -602,3 +602,11 @@ Victor reprovou o uso de desenhos abstratos, linhas e geometrias usadas como pre
 - **Feito:** v5 local (`permissao-mentoras-v5.zip`, inclui a v4) com a capa falando do grupo e incluindo cartomantes. LEIA-ME atualizado (v4 e v5). Campanhas sem alteração (72h até 18/10 0h).
 - **Próximo:** Victor sobe a v5 (engine.js + config) → Claude confere ao vivo e faz um cadastro de teste. Releitura em 18/10.
 - Relatório: `30-comercial/trafego-clientes/guilherme/relatorios/2026-10-16-analise-quiz-grupo-dia2.md`.
+
+## 2026-10-16 (tarde) — Plano do resultado robusto e da taxa de cadastro
+
+- **Pedido do Victor:** "precisamos de um resultado mais robusto e elaborado para o quiz.. para aumentar a percepção de valor de recebimento. planeje. outra coisa: como aumentamos a taxa de cadastro em relação à visualização de página?"
+- **Dado:** visualização→cadastro 14% (capa 26% · meio 64% · cadastro 86%). Por posicionamento: Reels 26 visualizações→2 cadastros, Stories 14→2 (n insuficiente).
+- **Plano:** `PLANO-QUIZ-RESULTADO-E-CADASTRO-2026-10.md`. "Raio-X da Permissão": medidor + 4 portas (Pedir, Receber, Trocar justo, Crescer) a partir das 7 perguntas que já pontuam + ações de 7 dias + e-mail automático. Rastreio por tela antes de cortar perguntas.
+- **Descartado:** chamar de "mapa" (é o entregável da Diagnóstica paga); trancar o resultado atrás do cadastro (86% já se cadastram).
+- **Pendente:** Gui manda as 12 ações; Victor decide a exceção de portão para a tela de resultado; Victor sobe a v5.
