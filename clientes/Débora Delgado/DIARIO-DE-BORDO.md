@@ -3,6 +3,19 @@
 > **Protocolo de contexto entre sessões de terminal.** Toda sessão ABRE lendo: `CLAUDE.md` → `DIRETRIZES-EXECUCAO-LANCAMENTO.md` (sua tarefa) → as 3 últimas entradas daqui → `03 - tráfego pago/LOG-DECISOES.md` (se tráfego). Toda sessão FECHA registrando entrada abaixo. **Sessão sem entrada no diário = trabalho perdido.**
 > A cada passo relevante DENTRO da sessão (arquivo criado, decisão aplicada, bloqueio), registrar na hora, não no final (terminal cai, contexto não).
 
+### 2026-10-16 · Opus (Claude Code CLI, CEO-orquestrador) · ⭐ **funil da VSL fechado do nosso lado: objeções respondidas, quiz corrigido, funil A liberado, página de vendas construída**
+
+- Pedido do Victor: *"faça tudo sem parar até finalizar sem me solicitar ok"*. Trilha completa em `12 - Direct Response/vsl/2026-10-11/LOG.md`, seção PÓS-RODADA 3.
+- **Mapeamento (Explore):** o quiz **nunca foi publicado**; **não havia página nem checkout** da oferta nova; publicação no domínio dela é upload manual na Hostinger.
+- **Resposta às objeções** reescrita sem perguntas; o A3 reprovou com 7 defeitos de procedência (o mais sério: um recorte de fala dela não declarado), corrigidos e reconferidos; PDF gerado (⚠️ sem conferência visual: falta `pdftoppm`).
+- **Quiz v7:** promovido pelo rito de integração; *"o seu time fala nove"* e *"sua maior alavanca"* saíram; aponta para `/lideres/` e repassa UTMs e `fbclid`.
+- **D01A:** a frase *"quase todas as situações têm um pedido seu"* era falsa contra o quiz (só metade tem pedido) → corrigida pelo G5, conferida pelo A4. **O funil A grava.**
+- **Página de vendas:** circuito de cinco etapas, uma por agente (física opus · direção sonnet · copy opus · código sonnet · gate opus). Gate: pronta para publicar quando os P0 do Victor estiverem preenchidos; os defeitos de código que ele achou voltaram à etapa 4.
+- **Decisão minha (REGRA Nº 0):** teste sem upsell e sem página de obrigado própria, como desvio declarado.
+- ⚠️ **Conduta:** subagentes dividem o scratchpad; o da copy sobrescreveu o `conta.py` da VSL. Recriado como `conta_vsl.py`. Em disparo futuro, dar nome de arquivo exclusivo.
+- **Bloqueios p/ humano (Victor):** checkout, horário, rodapé legal, levar roteiro + PDF à Débora, publicar, compra de teste, capital.
+- **Próximo passo exato:** Victor cria o checkout e leva o roteiro à Débora; com o vídeo editado, preencher o CONFIG da página e publicar pela ordem do `05-GATE.md`.
+
 ### 2026-10-15 · Opus (Claude Code CLI, CEO-orquestrador) · ⭐ **VSL: rodada 3 fechada — roteiro v4.2 grava no funil B; mídia só como teste declarado**
 
 - Rodada em `12 - Direct Response/vsl/2026-10-11/`, trilha completa em `LOG.md` R3-7 a R3-28 (modelo por disparo). Retomada da sessão caída em 13/10, no lote 2 da auditoria.
@@ -1578,7 +1591,7 @@ Propagação feita na mesma tarefa: `DECISOES.md` (3 linhas) · `STATUS.md` da G
 
 ## 08/10/2026 — registro de 03 a 07/10
 
-Quiz no ar e pacote enviado (04/10). Ela respondeu os fatos (06/10), recusou a permuta por aperto financeiro, aceitou a turma fundadora em 16/12 e rodou um anúncio próprio com clique a R$ 0,13 e conversão zero (07/10). Registro completo: `REGISTRO-WHATSAPP-2026-10-07.md`. Propagado para `DECISOES`, `STATUS` e `vsl/BRIEFING-VSL.md` (D03, D09, D31).
+Quiz no ar e pacote enviado (04/10). ⟲ *16/10: **o quiz não estava no ar** — era o pacote entregue, sem deploy, endpoint nem URL da VSL (`STATUS-CODEX.md`, READMEs do pacote). Ver `12 - Direct Response/quiz/CORRECAO-QUIZ-v7-2026-10-16.md`.* Ela respondeu os fatos (06/10), recusou a permuta por aperto financeiro, aceitou a turma fundadora em 16/12 e rodou um anúncio próprio com clique a R$ 0,13 e conversão zero (07/10). Registro completo: `REGISTRO-WHATSAPP-2026-10-07.md`. Propagado para `DECISOES`, `STATUS` e `vsl/BRIEFING-VSL.md` (D03, D09, D31).
 
 **Próximo passo:** horário de 16/12, colher depoimentos de Jacque e Bia, propor esqueleto do módulo de aplicação. **Dono:** Victor.
 

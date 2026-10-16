@@ -27,6 +27,9 @@ var CONFIG = {
   /* P0. URL do checkout PagTrust da oferta nova. Vazio = os botões de compra levam a #oferta
      e logam aviso no console (nunca link quebrado). Pode ou não trazer "?": a montagem trata. */
   CHECKOUT_URL: '',
+  /* SEM JAVASCRIPT os botões só compram se o href estiver no HTML: procurar por   href="#oferta" data-checkout
+     (3 ocorrências: V2, V3, V6) e trocar o "#oferta" pela URL do checkout (em atributo HTML, & vira &amp;).
+     Com JS o href é remontado a partir de CHECKOUT_URL, com as UTMs. */
 
   /* P0. Vídeo do funil B e do funil A (D01A–D04A). Aceita: URL .mp4/.webm (arquivo próprio),
      URL ou ID do YouTube, URL ou ID numérico do Vimeo, ou URL https de outro player (iframe). */
@@ -374,6 +377,10 @@ html[data-f="a"] .t-b{display:none}
 /* ===================== rodapé e sticky ===================== */
 .rodape{padding:var(--e-7) 0 88px;text-align:center;border-top:var(--bw-1) solid var(--borda-sutil);color:var(--txt-medio);font-size:var(--t-corpo-p);line-height:1.5}
 .rodape p+p{margin-top:var(--e-2)}
+/* "Pagamento seguro via PagTrust" só depois do pitch (DV-P2): fora do estado gated e fora do encerrado */
+:is(.is-gated,.is-closed) .ps,:is(.is-gated,.is-closed) .termos .sep{display:none}
+:is(.is-gated,.is-closed) .termos[hidden]+.priv .sep{display:none}
+.links:not(:has(> :not([hidden]))){display:none}
 .rodape a{color:var(--txt-medio);text-underline-offset:3px;display:inline-block;padding:12px 4px;margin:-12px 0}
 @media (min-width:1024px){.rodape{padding-bottom:var(--e-7);text-align:left}}
 
@@ -475,7 +482,7 @@ html[data-f="a"] .t-b{display:none}
           <p class="parcela">ou em até 12× no cartão</p>
           <div class="filete-preco" aria-hidden="true"></div>
           <p class="escassez">A entrada fecha em 16/12, no primeiro encontro. Os encontros ficam com quem entrou.</p>
-          <a class="btn btn-clx" href="#oferta" data-cta="oferta" data-checkout>Quero entrar na turma</a>
+          <a class="btn btn-clx" href="#oferta" data-checkout data-cta="oferta">Quero entrar na turma</a>
           <p class="garantia">Garantia de 7 dias. Abriu o material e sentiu que não é para você? Você pede o dinheiro de volta pela própria plataforma.</p>
         </div>
       </div>
@@ -529,7 +536,7 @@ html[data-f="a"] .t-b{display:none}
       <p>Você traz a situação que está vivendo com o seu time, e a gente olha junto.</p>
       <p>Se não puder ir, mande a pergunta antes. Eu respondo no encontro, em vídeo ou em áudio.</p>
     </div>
-    <a class="btn btn-secundario btn-porta2" href="#oferta" data-cta="encontros" data-checkout>Quero entrar na turma</a>
+    <a class="btn btn-secundario btn-porta2" href="#oferta" data-checkout data-cta="encontros">Quero entrar na turma</a>
   </div>
 </section>
 
@@ -591,7 +598,7 @@ html[data-f="a"] .t-b{display:none}
   <div class="wrap">
     <h2 class="eco" id="t6">Pedir no seu idioma, e mais alto. <em>Ou no idioma de quem vai entregar.</em></h2>
     <p class="convite">Os dois têm custo. No segundo, aos poucos, as pessoas passam a confiar mais em você.</p>
-    <a class="btn btn-primario" href="#oferta" data-cta="fecho" data-checkout>Quero entrar na turma</a>
+    <a class="btn btn-primario" href="#oferta" data-checkout data-cta="fecho">Quero entrar na turma</a>
     <p class="lembrete">R$&nbsp;297 ou 12× · 12 meses de acesso · 7 dias de garantia · entrada até 16/12</p>
   </div>
 </section>
@@ -603,7 +610,7 @@ html[data-f="a"] .t-b{display:none}
   <div class="wrap">
     <p data-dep="NOME_DE_QUEM_VENDE CPF_OU_CNPJ" hidden><span data-marca="NOME_DE_QUEM_VENDE">{{NOME_DE_QUEM_VENDE}}</span> · <span data-marca="CPF_OU_CNPJ">{{CPF_OU_CNPJ}}</span></p>
     <p data-dep="EMAIL_SUPORTE" hidden>Suporte: <a data-marca-href="EMAIL_SUPORTE" data-href-prefix="mailto:"><span data-marca="EMAIL_SUPORTE">{{EMAIL_SUPORTE}}</span></a></p>
-    <p>Pagamento seguro via PagTrust<span data-dep="URL_TERMOS" hidden> · <a data-marca-href="URL_TERMOS" target="_blank" rel="noopener">Termos de uso</a></span><span data-dep="URL_PRIVACIDADE" hidden> · <a data-marca-href="URL_PRIVACIDADE" target="_blank" rel="noopener">Política de privacidade</a></span></p>
+    <p class="links"><span class="ps">Pagamento seguro via PagTrust</span><span class="termos" data-dep="URL_TERMOS" hidden><span class="sep"> · </span><a data-marca-href="URL_TERMOS" target="_blank" rel="noopener">Termos de uso</a></span><span class="priv" data-dep="URL_PRIVACIDADE" hidden><span class="sep"> · </span><a data-marca-href="URL_PRIVACIDADE" target="_blank" rel="noopener">Política de privacidade</a></span></p>
   </div>
 </footer>
 
@@ -736,9 +743,12 @@ html[data-f="a"] .t-b{display:none}
 
   /* ---------- player ---------- */
   var player = qs('#player'), slot = qs('#playerSlot'), erro = qs('#playerErro'), aviso = qs('#avisoVideo');
-  var src = FUNIL === 'a' ? C.VIDEO_A : C.VIDEO_B;
-  var legendas = FUNIL === 'a' ? C.LEGENDAS_A : C.LEGENDAS_B;
-  var pitchAt = (FUNIL === 'a' && C.PITCH_SECONDS_A) ? C.PITCH_SECONDS_A : C.PITCH_SECONDS;
+  /* Funil A sem VIDEO_A: cai no vídeo do B (com legendas e PITCH_SECONDS do B), mantendo o título do A. */
+  var useA = FUNIL === 'a' && !!C.VIDEO_A;
+  if (FUNIL === 'a' && !useA) console.info('[lideres] CONFIG.VIDEO_A vazio: o funil A usa o vídeo, as legendas e o PITCH_SECONDS do B.');
+  var src = useA ? C.VIDEO_A : C.VIDEO_B;
+  var legendas = useA ? C.LEGENDAS_A : C.LEGENDAS_B;
+  var pitchAt = (useA && C.PITCH_SECONDS_A) ? C.PITCH_SECONDS_A : C.PITCH_SECONDS;
   if (!src && PREVIEW) aviso.hidden = false;
 
   function setEstado(s) { player.setAttribute('data-estado', s); player.setAttribute('aria-busy', s === 'carregando' ? 'true' : 'false'); }
@@ -753,8 +763,12 @@ html[data-f="a"] .t-b{display:none}
       if (p >= .75) once('v75', function () { pxCustom('VSL75'); beacon('video_75'); });
     }
   }
+  /* O timer de 20 s vigia só o CARREGAMENTO. Pronto o player (onReady/loaded/loadedmetadata/load), o timer cai e o
+     player nativo do provedor fica visível: se o autoplay foi bloqueado (iOS, navegador do Instagram) o segundo toque
+     é no play dele. O vídeo nunca é descartado por não ter começado a tocar. */
+  function onReady() { clearTimeout(loadTimer); if (player.getAttribute('data-estado') === 'carregando') setEstado('tocando'); }
   function onPlaying() {
-    clearTimeout(loadTimer); setEstado('tocando'); erro.hidden = true;
+    onReady(); erro.hidden = true;
     once('play', function () { pxCustom('VSLPlay'); beacon('video_play'); });
   }
   function onEnded() { once('v100', function () { beacon('video_100'); }); }
@@ -777,12 +791,13 @@ html[data-f="a"] .t-b{display:none}
     el.setAttribute('aria-label', 'Aula em vídeo');
     var so = document.createElement('source'); so.src = v.u; el.appendChild(so);
     if (legendas) { var tr = document.createElement('track'); tr.kind = 'captions'; tr.srclang = 'pt-BR'; tr.label = 'Português'; tr.src = legendas; tr.default = true; el.appendChild(tr); }
+    el.addEventListener('loadedmetadata', onReady);
     el.addEventListener('playing', onPlaying);
     el.addEventListener('timeupdate', function () { onTime(el.currentTime, el.duration); });
     el.addEventListener('ended', onEnded);
     el.addEventListener('error', onFail);
     slot.appendChild(el);
-    var pr = el.play(); if (pr && pr.catch) pr.catch(function () { /* o usuário aperta play nos controles */ setEstado('tocando'); });
+    var pr = el.play(); if (pr && pr.catch) pr.catch(function () { /* autoplay bloqueado: os controles nativos ficam visíveis para o segundo toque */ onReady(); });
     if (legendas && el.textTracks && el.textTracks[0]) el.textTracks[0].mode = 'showing';
   }
   function startYT(v) {
@@ -791,6 +806,7 @@ html[data-f="a"] .t-b{display:none}
       new YT.Player(holder, { videoId: v.id, host: 'https://www.youtube-nocookie.com',
         playerVars: { autoplay: 1, playsinline: 1, rel: 0, modestbranding: 1, cc_load_policy: 1, cc_lang_pref: 'pt', hl: 'pt-BR' },
         events: {
+          onReady: onReady,
           onStateChange: function (e) {
             if (e.data === 1) { onPlaying(); clearInterval(pollTimer); pollTimer = setInterval(function () { try { onTime(e.target.getCurrentTime(), e.target.getDuration()); } catch (x) {} }, 500); }
             else if (e.data === 0) { clearInterval(pollTimer); onEnded(); }
@@ -807,7 +823,7 @@ html[data-f="a"] .t-b{display:none}
     f.allow = 'autoplay; fullscreen; picture-in-picture'; f.title = 'Aula em vídeo'; slot.appendChild(f);
     function make() {
       var p = new Vimeo.Player(f);
-      p.on('play', onPlaying); p.on('timeupdate', function (d) { onTime(d.seconds, d.duration); }); p.on('ended', onEnded); p.on('error', onFail);
+      p.on('loaded', onReady); p.on('play', onPlaying); p.on('timeupdate', function (d) { onTime(d.seconds, d.duration); }); p.on('ended', onEnded); p.on('error', onFail);
     }
     if (window.Vimeo && Vimeo.Player) make(); else loadScript('https://player.vimeo.com/api/player.js', make);
   }
@@ -820,7 +836,7 @@ html[data-f="a"] .t-b{display:none}
 
   function start() {
     if (started) return;
-    if (!src) { console.warn('[lideres] vídeo do funil ' + FUNIL.toUpperCase() + ' não configurado (CONFIG.VIDEO_' + FUNIL.toUpperCase() + ').'); if (PREVIEW) aviso.hidden = false; return; }
+    if (!src) { console.warn('[lideres] vídeo não configurado (CONFIG.VIDEO_B' + (FUNIL === 'a' ? ' e VIDEO_A' : '') + ').'); if (PREVIEW) aviso.hidden = false; return; }
     var v = parse(src);
     if (!v) { console.warn('[lideres] formato de vídeo não reconhecido:', src); return; }
     started = true; erro.hidden = true; setEstado('carregando'); slot.hidden = false; slot.innerHTML = '';
