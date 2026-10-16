@@ -3,9 +3,12 @@
 > Auditor A3 · 16/10/2026 · Documento para a cliente (não é o roteiro). Tabela montada por mim, sem tabela do redator.
 > Fontes abertas: `G6-ROTEIRO-v4.2.md` (vigente) · `BRIEFING-VSL.md` §12 (prevalece) · `INDICE-CURSO-E-SISTEMA.md` + aulas do curso · `execução Codex/DESTILACAO-2026-09-16/TRANSCRIPT-LIMPO.md` · `execução Codex/call-2026-09-30/TRANSCRIPT-LIMPO.md` · áudios 09/10 (`11.23.00`, `11.17.22`, `09.44.37`) · `REGISTRO-WHATSAPP-2026-10-07.md` · `DEPOIMENTOS-2026-09-15.md` · `PROMESSA-CASCATA-2026-10-02.md` · `eneagrama-data.js`.
 
-## VEREDITO: REPROVA
+## VEREDITO
 
-Sete defeitos (P1 a P7). Nenhum reprova por grau `I` em espelho, por número sem fonte ou por promessa acima do teto; reprovam a atribuição falsa (P1), a fala fora de contexto apresentada como "fala sua" (P2), o estado ✅ sem fato (P3), a afirmação factual contrária ao repositório (P4) e a pergunta de comprador inventada entre aspas (P5). P6 e P7 são de precisão.
+- **1ª passada: REPROVA** (P1 a P7, abaixo).
+- **Reconferência (seção 7): PASSA.** P1 a P7 e a observação da l.8 foram tratados; nenhum defeito novo.
+
+Sete defeitos na 1ª passada (P1 a P7). Nenhum reprovava por grau `I` em espelho, por número sem fonte ou por promessa acima do teto; reprovavam a atribuição falsa (P1), a fala fora de contexto apresentada como "fala sua" (P2), o estado ✅ sem fato (P3), a afirmação factual contrária ao repositório (P4) e a pergunta de comprador inventada entre aspas (P5). P6 e P7 eram de precisão.
 
 ## 1. Citações atribuídas ao vídeo × `G6-ROTEIRO-v4.2.md` (literal)
 
@@ -25,10 +28,10 @@ Sete defeitos (P1 a P7). Nenhum reprova por grau `I` em espelho, por número sem
 | 12 | 78 | "saindo do trabalho na hora" | D10 | ✅ |
 | 13 | 89-90 | "Estudo o Eneagrama há mais de cinco anos" · "já ajudei sessenta pessoas a se reconhecer por ele" · "sessenta pessoas que dei curso ou ajudei a se identificar" | D03, D12 | ✅ |
 | 14 | 92 | "Eu não respondo isso, e o curso também não" | D18 | ✅ |
-| 15 | 96 | "tendem" · "costuma" · "Os relacionamentos tendem a ficar mais leves" · "O combinado passa a acontecer" | D17, D22 | ✅ literal (a atribuição da segunda é o defeito P1) |
-| 16 | 102 | "É a base" | D27 | ✅ |
-| 17 | 110 | "Dividido por um ano, dá menos de um real por dia" | D36 | ✅ |
-| 18 | 112 | "Quem trabalha comigo na mentoria em grupo investe seis mil reais, por quatro meses." · "O Eneagrama para Líderes não é a mentoria, e eu não vou te dizer que é" | D29 | ✅ |
+| 15 | 96-97 | "tendem" · "costuma" · "Os relacionamentos tendem a ficar mais leves" · "O combinado passa a acontecer" | D17, D22 | ✅ literal (a atribuição da segunda era o defeito P1) |
+| 16 | 103 | "É a base" | D27 | ✅ |
+| 17 | 111 | "Dividido por um ano, dá menos de um real por dia" | D36 | ✅ |
+| 18 | 113 | "Quem trabalha comigo na mentoria em grupo investe seis mil reais, por quatro meses." · "O Eneagrama para Líderes não é a mentoria, e eu não vou te dizer que é" | D29 | ✅ |
 
 ## 2. Falas atribuídas à Débora × fonte
 
@@ -47,7 +50,7 @@ Sete defeitos (P1 a P7). Nenhum reprova por grau `I` em espelho, por número sem
 | 94 | "Inegociável" (30/09) | `call-2026-09-30/TRANSCRIPT-LIMPO.md` `[15:04:10-15:04:28]` ("privacidade é algo inegociável pra você"); Sistema tipos 6 e 5 em `eneagrama-data.js` | D | ✅ |
 | 95 | os três casos (16/09) | `[10:44:26-10:46:17]` · `[10:07:05-10:07:34]` · `[10:07:47-10:08:02]`; nenhum nome nem tipo no documento | D | ✅ |
 | 96 | "Os relacionamentos tendem a ficar mais leves" | 16/09 `[10:27:35]` ("todos os relacionamentos vão tender a ficar mais leves") | D | ✅ |
-| 96 | "O combinado passa a acontecer" | `PROMESSA-CASCATA-2026-10-02.md` l.34 (nível 2, marcado 🟡; `DD-LEX-28` grau `R` é o *antes*) · não há fala dela com essa frase em 16/09 nem em 30/09 | N (nossa) | ❌ P1 |
+| 96 (1ª passada) | "O combinado passa a acontecer" | `PROMESSA-CASCATA-2026-10-02.md` l.34 (nível 2, marcado 🟡; `DD-LEX-28` grau `R` é o *antes*) · não há fala dela com essa frase em 16/09 nem em 30/09 | N (nossa) | ❌ P1 |
 
 ## 3. Fatos de oferta × `BRIEFING-VSL.md` §12
 
@@ -71,24 +74,41 @@ Sete defeitos (P1 a P7). Nenhum reprova por grau `I` em espelho, por número sem
 | Sugestão de cura | ✅ l.80 só nega; nenhum detalhe do episódio de saúde |
 | Nome de terceiro | ✅ nenhum (sem Usiminas, sem Danilo, sem nomes de depoimento) |
 | Tipo atribuído a liderado | ✅ l.95 declara que nenhum é atribuído; l.94 liga as duas pessoas do exemplo aos tipos 6 e 5 do Sistema, são pessoas hipotéticas do vídeo, não liderados reais |
-| Pergunta à Débora (decisão de 13/10) | ✅ nenhuma. As três interrogações do arquivo são a objeção dela (l.26) e duas perguntas de leitor/líder entre aspas (l.42, l.48). Observação não bloqueante: l.12 e l.79 convidam a apontar frase (direito de objeção, REGRA Nº 0) e l.106 diz "se alguma não funcionar para você, muda só a página"; nenhuma é pergunta |
+| Pergunta à Débora (decisão de 13/10) | ✅ nenhuma. As interrogações do arquivo são a objeção dela (l.26) e a pergunta do líder entre aspas (l.48). Observação não bloqueante: l.12 e l.79 convidam a apontar frase (direito de objeção, REGRA Nº 0) e a linha dos encontros diz "se alguma não funcionar para você, muda só a página"; nenhuma é pergunta |
 
-## 5. Defeitos
+## 5. Defeitos da 1ª passada
 
 | # | Linha | Elemento (citado) | Regra violada | Correção exigida (sem redação) |
 |---|---:|---|---|---|
-| P1 | 96 | "Falas suas." aplicado a *"Os relacionamentos tendem a ficar mais leves"* · *"O combinado passa a acontecer"* | Fala atribuída a Débora sem fonte `D`: a segunda frase é nível 2 da cascata nossa (`PROMESSA-CASCATA` l.34, 🟡). A Débora disse "se o meu liderado atinge o resultado, eu atinjo o resultado" (30/09 `[13:49:04-13:49:15]`), e a primeira frase é dela (16/09 `[10:27:35]`) | separar as duas: "falas suas" só para a primeira (e, se quiser, para o liderado/líder, com a fonte de 30/09); a segunda sai da atribuição e fica como redação nossa |
-| P2 | 46 | *"Você não sabe o que ele precisa"* é fala sua da conversa de 16/09 | Fragmento fora de contexto: no original é a consequência de *não saber o tipo do liderado* ("você não sabe o que ele precisa para performar"), isto é, mais perto do inverso do uso no vídeo (supor o tipo e perguntar). Sentido deslocado apresentado como fala dela | dizer que é fragmento recortado de frase condicional e que a frase do vídeo é montagem nossa (o §12 #17 já declara 10 palavras nossas + 7 dela); dar a frase original ou a faixa `[10:44:10-10:44:26]` |
-| P3 | 107 | "✅ o vídeo sai do ar em 16/12, e a compra fecha no mesmo dia" · estado ✅ para a turma fundadora | Estado ✅ sem fato: o fecho do checkout em 16/12 está pendente do Victor (§12, última linha; `[[ CONFIRMAR ]]` em D31 e D36) | trocar o estado dessa linha para "declarado/em conferência nossa" e não afirmar que a compra fecha enquanto o Victor não confirmar |
-| P4 | 120 | "Não existe depoimento gravado de ninguém hoje." | Afirmação contrária ao repositório: `DEPOIMENTOS-2026-09-15.md` registra um vídeo de encontro de mentoria e um print de LinkedIn que ela mesma enviou em 15/09; ela sabe disso. O que falta é depoimento autorizado de líder com time (REGISTRO l.15: "falta o depoimento em si") | corrigir a razão: não há depoimento autorizado de líder sobre este curso/aplicação no time; os de 15/09 são da mentoria, sem autorização de uso escrita |
-| P5 | 42 | *"que página eu abro, se eu não sei o tipo da pessoa?"* — "quem compra pergunta" | Fala de comprador entre aspas sem fonte; a origem é o atrito levantado pelo auditor A6 (N9b/N9a), não fala do público (nem em `lexico-icp/`) | tirar as aspas e dizer que é pergunta que nós prevemos, ou apontar fonte `D` |
-| P6 | 89 | anos ✅: "A sua fala na conversa de 16/09 (*"dois mil e vinte"*)" | Precisão: o "dois mil e vinte" (com "sei lá") é a data da primeira mentoria dela; o que ela diz é que já sabia o Eneagrama antes ("Eu já sabia o enagrama e não tinha mostrado pra ele", `[10:06:52-10:07:05]`). Sustenta "mais de cinco anos" como piso, não como "desde 2020" | explicitar que o piso vem de "já sabia o Eneagrama" antes de uma mentoria de "dois mil e vinte, sei lá" |
-| P7 | 52 e 78 | "ela é contada só com o que veio de você" × "Três trechos são nossos" · "O resto vem do seu áudio de 09/10" | Contradição interna e omissão: além dos três trechos nossos e da ordem, há "Mas o mais importante" virado "E o mais importante", "minha" virado "a minha" e o corte de "se eu estivesse cuidando de mim, fazendo as coisas por mim" dentro da frase de `11.23.00` [01:12-01:30] | alinhar l.52 com l.78 e declarar o corte da frase e os ajustes de conectivo |
+| P1 | 96 | "Falas suas." aplicado a *"Os relacionamentos tendem a ficar mais leves"* · *"O combinado passa a acontecer"* | Fala atribuída a Débora sem fonte `D`: a segunda frase é nível 2 da cascata nossa (`PROMESSA-CASCATA` l.34, 🟡). A Débora disse "se o meu liderado atinge o resultado, eu atinjo o resultado" (30/09 `[13:49:04-13:49:15]`), e a primeira frase é dela (16/09 `[10:27:35]`) | separar as duas: "falas suas" só para a primeira; a segunda sai da atribuição e fica como redação nossa |
+| P2 | 46 | *"Você não sabe o que ele precisa"* é fala sua da conversa de 16/09 | Fragmento fora de contexto: no original é a consequência de *não saber o tipo do liderado*, isto é, mais perto do inverso do uso no vídeo. Sentido deslocado apresentado como fala dela | declarar o recorte da frase condicional e que a frase do vídeo é montagem nossa |
+| P3 | 107 | "✅ o vídeo sai do ar em 16/12, e a compra fecha no mesmo dia" | Estado ✅ sem fato: o fecho do checkout em 16/12 está pendente do Victor (§12, última linha; `[[ CONFIRMAR ]]` em D31 e D36) | rebaixar o estado; não afirmar o fecho enquanto o Victor não confirmar |
+| P4 | 120 | "Não existe depoimento gravado de ninguém hoje." | Contrária ao repositório: `DEPOIMENTOS-2026-09-15.md` (vídeo de encontro de mentoria e print de LinkedIn que ela mesma enviou) | corrigir a razão: faltam depoimento autorizado e de líder com time; os de 15/09 são da mentoria |
+| P5 | 42 | *"que página eu abro, se eu não sei o tipo da pessoa?"* — "quem compra pergunta" | Fala de comprador entre aspas sem fonte (origem: atrito do auditor A6) | tirar as aspas/atribuição ao comprador ou apontar fonte `D` |
+| P6 | 89 | anos ✅ "dois mil e vinte" | Precisão: é a data da primeira mentoria dela; sustenta "mais de cinco anos" como piso | explicitar que é piso |
+| P7 | 52 e 78 | "contada só com o que veio de você" × "Três trechos são nossos" | Contradição interna e omissão de ajustes ("Mas"→"E", "minha"→"a minha", corte de "cuidando de mim, fazendo as coisas por mim") | alinhar e declarar os ajustes |
 
-## 6. Observação para o dono (não é defeito de procedência)
+## 6. Observação da 1ª passada
 
-- L.8 diz que o roteiro "está pronto para você gravar"; o v4.2 ainda carrega `[[ CONFIRMAR ]]` em D31 e D36 e o INPI de D13 em aberto, e o topo do roteiro condiciona a gravação a esses fatos. Alinhar o texto ao estado real.
+- L.8 dizia "pronto para você gravar" sem a ressalva do checkout; o roteiro condiciona a gravação das frases de D31 e D36 à conferência.
 
-## Artefato de reaprovação
+## 7. RECONFERÊNCIA (16/10/2026, após as correções do orquestrador) · PASSA
 
-Reenviar o arquivo com P1 a P7 tratados; reconfiro só as linhas 42, 46, 52, 78, 89, 96, 107 e 120.
+Conferi só os trechos tocados, contra o arquivo atual (numeração atual de linhas).
+
+| Item | Linha atual | Conferência | Resultado |
+|---|---:|---|---|
+| Observação da l.8 | 8 | Diz que o roteiro está pronto para gravar e que "duas frases da oferta, que dizem que a entrada fecha no primeiro encontro, esperam só a conferência do checkout, que é nossa". Bate com o roteiro (D31 e D36 com `[[ CONFIRMAR ]]`; status "GRAVA depois de o checkout desativar a entrada em 16/12"). O escopo do "só" é essas duas frases | ✅ |
+| P5 · pergunta de quem compra | 42 | Sem aspas e sem fala atribuída ao comprador ("quem compra pode ficar sem saber que página abrir"); redação nossa. A citação seguinte da aula bate com `5.` l.116 e l.120 | ✅ |
+| P2 · recorte de "Você não sabe o que ele precisa" | 46 | Cita "se você não sabe que tipo é o seu liderado, você não sabe o que ele precisa para performar" (original `[10:44:10-10:44:26]`, só muda a pontuação), declara que é recorte e que a frase do vídeo é "montagem nossa", com a razão | ✅ |
+| P7 · abertura da coqueria | 52 | "contada com as suas palavras; o que é nosso está declarado logo abaixo": não contradiz mais a l.78 | ✅ |
+| P7 · item 1 de "redação nossa" | 78 | Lista os três trechos nossos, a ordem e os três ajustes (Mas→E, minha→a minha, corte de "se eu estivesse cuidando de mim, fazendo as coisas por mim"), todos conferidos contra `11.23.00` [01:12-01:30] e [04:44-04:49]. A frase "saindo do trabalho na hora" segue conferida | ✅ |
+| P6 · cinco anos | 89 | Cita a primeira mentoria em "dois mil e vinte" (16/09 `[10:06:52-10:07:05]`) e diz que "mais de cinco anos" é o mínimo que a data sustenta, não ano exato | ✅ |
+| P1 · "mais leves" | 96 | "Fala sua, de 16/09" (`[10:27:35]`); sem caso de líder, estado declarado | ✅ |
+| P1 · "combinado" | 97 | "É a nossa promessa de resultado, no teto que definimos em 02/10, e não fala sua" (`PROMESSA-CASCATA-2026-10-02.md`); estado declarado | ✅ |
+| P3 · turma fundadora | 108 | Sem ✅; "o vídeo sai do ar em 16/12" (§12 #14); fecho da compra descrito como conferência nossa do checkout "ainda em curso", frases não se gravam até lá. Coerente com a l.8 e com o §12 | ✅ |
+| P4 · depoimentos | 121 | Passa a dizer que os retornos de 15/09 são da mentoria, sem autorização para uso público, e que falta o de um líder cujo time mudou. Bate com `DEPOIMENTOS-2026-09-15.md` (cabeçalho, ressalva 2) | ✅ |
+
+Re-varredura do arquivo inteiro: nenhuma pergunta à Débora (as interrogações restantes são a objeção dela, l.26, e a pergunta do líder, l.48); nenhum nome de terceiro; nenhum tipo atribuído a liderado; nenhuma sugestão de cura; nenhuma promessa acima do teto. As demais citações do vídeo e os fatos de oferta não foram tocados e seguem como nas seções 1 a 3.
+
+**Veredito final: PASSA.** Nenhum defeito aberto.

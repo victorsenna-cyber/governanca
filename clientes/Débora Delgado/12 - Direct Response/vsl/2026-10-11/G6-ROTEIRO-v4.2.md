@@ -719,7 +719,7 @@ Se você veio do quiz, já tem um primeiro norte: o seu nível em cada área e a
 Repara que o quiz mostrou como você lidera hoje. Não disse o seu tipo, nem o de ninguém do seu time.
 
 >>> BLOQUEIO 6 <<<
-E quase todas as situações que você respondeu têm uma coisa em comum: de um lado, um pedido seu. Do outro, uma pessoa. [[ CONFIRMAR: conferir contra as situações do quiz v6 ]]
+E todas as situações que você respondeu têm uma coisa em comum: do outro lado, sempre uma pessoa do seu time.
 >>> FIM DO BLOQUEIO <<<
 
 [PAUSA]

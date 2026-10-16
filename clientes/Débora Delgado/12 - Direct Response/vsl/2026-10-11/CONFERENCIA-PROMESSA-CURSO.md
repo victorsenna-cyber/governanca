@@ -1,7 +1,7 @@
 # Resposta às suas duas objeções: o que o vídeo promete e onde o curso entrega
 
 > Data: 16/10/2026 · Para: Débora Delgado · De: Continuum AI Systems
-> *(substitui a versão de 13/10, que tinha perguntas; aquela fica como trilha em `CONFERENCIA-PROMESSA-CURSO-2026-10-13.md`)*
+> *(substitui a versão de 13/10, que tinha perguntas)*
 
 ## Em uma página
 

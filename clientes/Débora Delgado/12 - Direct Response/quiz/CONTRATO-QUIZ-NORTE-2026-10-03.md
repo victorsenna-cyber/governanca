@@ -1,5 +1,7 @@
 # CONTRATO DE EXECUTOR — Quiz "Um primeiro norte" (funil A da Débora)
 
+> ⟲ **16/10/2026 — corrigido e promovido (v7):** o destaque *"Você lidera em uma língua. O seu time fala nove."* (I5 e card 2 da T10) e o card 4 *"O que muda na sua maior alavanca"* **saíram** — feriam a regra-mãe do apelido e prometiam o que a aula não paga (G5, 08/10). Texto vigente e código canônico: `CORRECAO-QUIZ-v7-2026-10-16.md` · `site/quiz/`. **Onde este contrato diverge do v7, vale o v7.** O apelido *As Nove Línguas* saiu do bloqueio em 13/10 (`vsl/BRIEFING-VSL.md` §12).
+
 > **Tipo:** contrato de executor (`90-templates/CONTRATO-EXECUTOR.md`) · **Escrito:** 03/10/2026 · Opus (Cowork, CEO) · **Dono:** Victor
 > **Executor:** Codex · **Alçada da estrutura e da copy:** nossa (`REGRA Nº 0`) — **o executor não decide nada de texto, ordem ou lógica.**
 > **Funil:** A = anúncio → **quiz** → VSL. O quiz **puxa o problema para a consciência** e entrega a pessoa na VSL. **Não vende, não tipifica.**

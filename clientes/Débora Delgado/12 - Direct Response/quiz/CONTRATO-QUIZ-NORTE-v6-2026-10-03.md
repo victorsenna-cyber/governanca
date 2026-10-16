@@ -1,5 +1,7 @@
 # CONTRATO DE EXECUTOR — Quiz da Débora · v6 (ritmo, alinhamento, inserções, contexto do resultado)
 
+> ⟲ **16/10/2026 — corrigido e promovido (v7):** o destaque *"Você lidera em uma língua. O seu time fala nove."* (I5 e card 2 da T10) e o card 4 *"O que muda na sua maior alavanca"* **saíram** — feriam a regra-mãe do apelido e prometiam o que a aula não paga (G5, 08/10). Texto vigente e código canônico: `CORRECAO-QUIZ-v7-2026-10-16.md` · `site/quiz/`. **Onde este contrato diverge do v7, vale o v7.** O apelido *As Nove Línguas* saiu do bloqueio em 13/10 (`vsl/BRIEFING-VSL.md` §12).
+
 > **Escrito:** 03/10/2026 · Opus (Cowork, CEO) · **Dono:** Victor (aprovado: "pode fazer") · **Executor:** Codex
 > **É um ajuste sobre o quiz v5 que já está no ar.** Editar o código existente em `clientes/Débora Delgado/execução Codex/quiz-norte-v5-2026-10-03/quiz/`. **Tudo o que este contrato não muda continua como está** (v5 e anexos).
 > **Referência de UI:** a mesma da v5 (`920-referências lp/lp02-profissaohomesales-com-clone-local-integral-2026-10-03/`) e o seu `MAPA-REFERENCIA.md`.

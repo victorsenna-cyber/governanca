@@ -111,6 +111,8 @@ Victor (14:06): *"Compreendo perfeitamente"*. **Não houve contraproposta nem in
 
 **Decisões (CEO):** ✅ a história da personalidade 7 entra · ✅ o burnout entra **em uma frase factual** (*"cheguei a um burnout: três dias sem conseguir levantar, como se o corpo tivesse pifado"*) · ❌ ficam fora: medicação, alergia, "remédios quânticos", diagnóstico psiquiátrico, perda de visão · 🔴 **a VSL nunca diz nem sugere que o Eneagrama ou o curso curam depressão/burnout** (princípio 8 + risco ético/jurídico): o Eneagrama "me ajudou a entender o que estava acontecendo comigo e me reencontrar" · ❌ a parte de maestria/carreira é **onda 2** (curso Reconhecer a sua Maestria) — não entra nesta VSL · ❌ "desenho humano" nunca.
 
+> ⟲ **16/10 — o que deste adendo foi superado, e onde está a decisão vigente:** (1) **o *"ok"* de 13.04.12 é AMBÍGUO** (*"não posso falar"* × *"pode falar"*, transcrição automática) e **não vale como consentimento**; o consentimento passou a ser a própria leitura e gravação do roteiro, sem pergunta a ela (`vsl/BRIEFING-VSL.md` §12 #11, Victor 13/10) · (2) **o burnout NÃO entra**, nem em uma frase: saiu por ordem do juiz em 13/10 pela régua de nunca sugerir cura (`vsl/2026-10-11/JUIZ-BLOCO-2-CICLO-2.md`; briefing §11) · (3) a frase *"me ajudou a entender o que estava acontecendo comigo e me reencontrar"* é redação nossa; ficou só *"O Eneagrama me ajudou a entender o que estava acontecendo comigo"*, declarada como nossa (`vsl/2026-10-11/CONFERENCIA-PROMESSA-CURSO.md`) · o resto (fora: medicação, alergia, diagnóstico, perda de visão; maestria é onda 2; *"desenho humano"* nunca) segue valendo.
+
 ---
 
 ## ANEXO — registro da sessão web: 07/10/2026 · o anúncio que ela subiu sozinha
