@@ -1,7 +1,7 @@
 # DEPLOY — as três páginas no domínio dela, pela Hostinger
 
 > **Decisão do Victor, 13/10/2026:** *"vamos passar todos os arquivos para o gerenciador de arquivos do domínio dela na Hostinger.. sem Vercel"* (DEC-032).
-> **Pacote:** `hostinger/` · **Remontar:** `py -I montar-hostinger.py` · **Estado:** 🟡 pacote pronto e conferido localmente, **upload não feito**
+> **Pacote:** `hostinger/` · **Remontar:** `py -I montar-hostinger.py` · **Estado:** ✅ **no ar desde 16/10/2026**, testado pelo Victor nas três páginas, leads gravando na planilha
 > **Domínio:** `{{DOMINIO}}` — **não está registrado em nenhum arquivo desta conta.** Preencher aqui quando for usado.
 
 ---

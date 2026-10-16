@@ -3,7 +3,7 @@
 > STATUS: VIGENTE · fonte única do estado operacional desta conta
 > Estado verificado em: **13/10/2026**, com as três URLs conferidas no ar · America/Sao_Paulo
 > Próxima revisão obrigatória: **no dia em que as páginas forem publicadas**, e de novo no anúncio da data do evento (novembro)
-> 🔴 **Leia o §13 primeiro.** Os §0 a §12 são histórico, e parte do que afirmam sobre as páginas estava errada (CORR-030).
+> 🔴 **Leia o §14 e o §13 primeiro.** Os §0 a §12 são histórico, e parte do que afirmam sobre as páginas estava errada (CORR-030).
 > Regra: fato desconhecido permanece `A CONFIRMAR`. Data sem ano não entra neste arquivo.
 
 ---
@@ -270,7 +270,21 @@ O número **funcionava com 12 dígitos** — o Victor abriu a conversa e caiu ce
 
 ---
 
-## 13. ⭐ ESTADO EM 13/10/2026 — o que vale hoje
+## 14. ⭐ ATUALIZAÇÃO 16/10/2026 — páginas no ar, planilha gravando
+
+| Frente | Estado |
+|---|---|
+| **Três páginas no domínio dela (Hostinger)** | ✅ **no ar.** Victor, 16/10: *"testei todas as páginas e leads estão entrando na planilha"*. Fecha o item 2b do §10 (aberto desde 19/08) e a CORR-030 |
+| **Planilha de leads** | ✅ gravando nas três abas · link para a Jéssica: `https://docs.google.com/spreadsheets/d/1sgujPSCUs_sfvXRC-yChUbi6egguPpodCjAVMWNro3Y/edit` · ⚠️ compartilhada por link: recomendado restringir ao e-mail dela (contém nome e telefone de leads, LGPD) |
+| **Envio para ela** | 🟡 Victor enviando em 16/10: links das páginas, planilha, plano de divulgação e as cinco perguntas da mensagem 3 · **mensagem 4 (funil) segura até a DEC-029** |
+| **Domínio** | **A CONFIRMAR em arquivo.** Sem ele não se redirecionam as duas URLs da Vercel nem se corrige a imagem de compartilhamento |
+| 🔴 **17/10 (data antiga)** | é amanhã. Pergunta 1 da mensagem 3 checa se houve compra para essa data |
+
+**Próximo passo e dono:** Jéssica responde as cinco perguntas · Victor passa o domínio e decide a DEC-029 · Continuum redireciona a Vercel e atualiza a imagem de prévia.
+
+---
+
+## 13. ESTADO EM 13/10/2026 — o que valia até 16/10
 
 ### 13.1 O P0: nada do que construímos está no ar como o repositório diz
 
