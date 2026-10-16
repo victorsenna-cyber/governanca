@@ -1,6 +1,9 @@
 """Esqueleto da COMPOSICAO-VSL.md a partir de um roteiro do G6.
 
-Uso:  py -I -X utf8 composicao-vsl.py <roteiro G6.md> <saida COMPOSICAO-VSL.md>
+Uso:  py -I -X utf8 composicao-vsl.py <roteiro G6.md> <saida COMPOSICAO-VSL.md> [<TEMPO-funil-B.md>]
+
+Com a linha do tempo (de tempo-vsl.py), acrescenta a página 3 em esqueleto: "o que cada
+elemento faz, e quando", com o tempo de entrada de cada elemento.
 
 Lê os títulos `# BLOCO n · NOME`, `### Dxx · elemento` e `# APÊNDICE`, conta as
 palavras de fala de cada elemento (sem marcações [..], marcadores [[..]], linhas
@@ -71,5 +74,16 @@ for i, b in enumerate(blocos, 1):
         L.append(f"| — | ponte | {{{{texto da ponte}}}} | {b['ponte']} |")
 L += ["", f"**Total (sem apêndice):** {total_b:,} palavras ≈ {total_b / 170:.1f} min a 170/min".replace(",", "."), "",
       "**Fora desta versão:** {{...}} · **Desvios de dose declarados:** {{...}} · **Estado:** {{grava? mídia?}}"]
+if len(sys.argv) > 3:
+    inicio = {}
+    for linha in io.open(sys.argv[3], encoding="utf-8"):
+        mm = re.match(r"\| (\d\d:\d\d) \| (\S+) ", linha)
+        if mm and mm.group(2) not in inicio:
+            inicio[mm.group(2)] = mm.group(1)
+    L += ["", '<div style="page-break-before: always"></div>', "", "## O que cada elemento faz, e quando", "",
+          "> O que quem ouve passa a **saber, sentir ou decidir**, e em que segundo. Contra a linha do tempo de compreensão da referência.", "",
+          "| Tempo | Elemento | O que o ouvinte passa a ter |", "|---|---|---|"]
+    L += [f"| {t} | {e} | {{{{o que o ouvinte passa a ter}}}} |" for e, t in inicio.items() if e != "ponte"]
+    L += ["", "**Contra a referência:** {{marco a marco}}"]
 io.open(dst, "w", encoding="utf-8", newline="").write("\n".join(L) + "\n")
 print(f"ok · {len(blocos)} blocos · {sum(len(b['elementos']) for b in blocos)} elementos · {total_b} palavras")

@@ -125,12 +125,12 @@ Não leia o raciocínio de outro agente. Não leia este pedido como permissão p
 
 > Victor, 16/10, ao ver a primeira: *"top.. isso faz parte do método agora tá"*.
 
-**Toda rodada que fecha um roteiro gera `COMPOSICAO-VSL.md` + `COMPOSICAO-VSL.pdf` na pasta da VSL da conta** (`clientes/<cliente>/12 - Direct Response/vsl/`, um nível acima da rodada), **com no máximo duas páginas.** Versão nova do roteiro, composição nova, sobrescrevendo a anterior (a trilha fica no LOG).
+**Toda rodada que fecha um roteiro gera `COMPOSICAO-VSL.md` + `COMPOSICAO-VSL.pdf` na pasta da VSL da conta** (`clientes/<cliente>/12 - Direct Response/vsl/`, um nível acima da rodada), **com três páginas: duas de estrutura e ⟲ uma de função** *(16/10, Victor: "composição agora precisa ter uma página a mais, explicando o que cada coisa FAZ")*: **cada elemento, o segundo em que entra (pela linha do tempo) e o que o ouvinte passa a saber, sentir ou decidir ali**, e uma linha comparando os marcos com a referência. Versão nova do roteiro, composição nova, sobrescrevendo a anterior (a trilha fica no LOG).
 
 **O que ela tem, nesta ordem:** cabeçalho (versão do roteiro, data, estrutura-base, palavras e minutos por funil, formato) · promessa, mecanismo e apelido, e o pivô **E · Mas · Por isso**, uma frase cada, com o elemento da virada · **tabela bloco → sequência de elementos → o que cada um faz, em uma linha → palavras** · a abertura alternativa (funil A) em uma linha · o que ficou fora da versão, os desvios de dose declarados e o estado (grava? mídia? escala?).
 
 **Como se faz, e por quem:**
-1. **Script** (mecânico): `py -I -X utf8 40-operacao-rotinas/ferramentas/composicao-vsl.py <roteiro G6> <pasta-da-vsl>/COMPOSICAO-VSL.md` — blocos, elementos e contagem, calibrada contra o roteiro (3.496 no v3 e 3.536 no v4.2 da Débora, idênticos ao rodapé).
+1. **Script** (mecânico): `py -I -X utf8 40-operacao-rotinas/ferramentas/composicao-vsl.py <roteiro G6> <pasta-da-vsl>/COMPOSICAO-VSL.md <TEMPO-funil-B.md>` — com a linha do tempo, ele já monta a página 3 com o tempo de cada elemento — blocos, elementos e contagem, calibrada contra o roteiro (3.496 no v3 e 3.536 no v4.2 da Débora, idênticos ao rodapé).
 2. **Orquestrador** preenche os `{{…}}`: a função de cada elemento em uma linha e as frases de promessa, mecanismo e pivô — **tiradas do roteiro e do juízo global, nunca inventadas.**
 3. **PDF** pelo template da casa (`90-templates/pdf-continuum/`, sem capa; no Windows, o contorno `pdf_chrome.py` da rodada da Débora). **Conferir que coube em duas páginas**, abrindo a página renderizada.
 
@@ -153,7 +153,7 @@ Não leia o raciocínio de outro agente. Não leia este pedido como permissão p
 - 🔴 auditor que **reescreve**
 - 🔴 texto escrito **antes do esqueleto aprovado**
 - 🔴 bloco que segue com defeito de **procedência** ou de **promessa acima do teto** (nunca seguem, nem no teto de devoluções)
-- 🔴 **rodada fechada sem `COMPOSICAO-VSL.md` + `.pdf` (≤ 2 páginas) na pasta da VSL** (§4.4, 16/10)
+- 🔴 **rodada fechada sem `COMPOSICAO-VSL.md` + `.pdf` na pasta da VSL** — duas páginas de estrutura + uma de função (o que cada elemento faz, e quando) (§4.4, 16/10)
 - 🔴 **G1 disparado com lacuna de fato aberta**, ou com estrutura-base **sem função e tempo** (16/10)
 - 🔴 **rodada acima do orçamento (§6) sem reporte ao Victor antes de seguir** (16/10)
 - 🔴 **juiz que reabre decisão registrada do dono** sem subir a divergência ao Victor (16/10)
