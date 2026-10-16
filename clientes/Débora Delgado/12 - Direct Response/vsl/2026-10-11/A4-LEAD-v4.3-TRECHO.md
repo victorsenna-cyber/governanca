@@ -1,8 +1,8 @@
 # A4 · voz e gravabilidade · LEAD v4.3 (trechos novos) · Débora Delgado
 
-STATUS: laudo do auditor A4, 16/10/2026 · alvo `G6-ROTEIRO-v4.3.md` · comparado com `G6-ROTEIRO-v4.2.md` · fontes de régua: `07 - skills/debora-voice/SKILL.md`, `GOVERNANCA-REPO.md` §4, `BRIEFING-VSL.md` §8 · `G5-OBJECAO-D01-2026-10-16.md` não lido (ordem do caller).
+STATUS: laudo do auditor A4, 16/10/2026 · alvo `G6-ROTEIRO-v4.3.md` · comparado com `G6-ROTEIRO-v4.2.md` · fontes de régua: `07 - skills/debora-voice/SKILL.md`, `GOVERNANCA-REPO.md` §4, `BRIEFING-VSL.md` §8 · `G5-OBJECAO-D01-2026-10-16.md` não lido (ordem do caller). Contém a 1ª conferência (REPROVA) e a Reconferência (final, no fim do arquivo).
 
-Trechos conferidos: D01, D03/D03A, D05, D01A, D04A, D19 (frase do mercado). Números de linha são os do v4.3.
+Trechos conferidos: D01, D03/D03A, D05, D01A, D04A, D19 (frase do mercado). Números de linha da 1ª conferência são os do v4.3 antes da devolução.
 
 ## 1. Varredura de léxico morto e vetos (GOVERNANCA §4 · BRIEFING §8)
 
@@ -26,30 +26,56 @@ Sem violação de regra de linguagem.
 
 ## 3. Voz (comparação com a amostra e com debora-voice)
 
-Defeitos:
+Defeitos (1ª conferência):
 
-1. **D05 · linha 97 · "Mas liderar pede o movimento contrário."** Em v4.2 o "contrário" tinha referente claro: olhar para dentro versus olhar para fora. Em v4.3 o referente anterior virou "explicar de novo, cobrar com mais firmeza, ser mais duro. Isso não resolve." O contrário disso, ouvido, é soltar ou pedir menos, e a frase seguinte ("entender como funciona quem recebe o pedido dele") não é isso. O ouvinte fica com uma promessa de inversão que não fecha. Regra: clareza falada / ordem do argumento.
+1. **D05 · "Mas liderar pede o movimento contrário."** O "contrário" perdeu o referente (em v4.2 era olhar para dentro versus para fora); depois de "explicar de novo, cobrar com mais firmeza, ser mais duro", o ouvinte espera soltar ou pedir menos, e a frase seguinte não é isso.
 
-2. **D05 × D07 · linhas 91 e 125 · "ser mais duro" / "a ser mais duro do que você é".** A mesma expressão volta com cerca de 85 palavras de distância (D06 no meio). A dor mais forte do lead em D07 (a fala dela da call de 04/08, "ser mais duro do que eu queria") chega gasta, porque D05 já a gastou sem o complemento. Além disso, "cobrar com mais firmeza" e "ser mais duro" são quase sinônimos dentro do mesmo tricolon. Repetição que enfraquece o elemento seguinte.
+2. **D05 × D07 · "ser mais duro" / "a ser mais duro do que você é".** Mesma expressão com cerca de 85 palavras de distância; a dor de D07 chega gasta. "Cobrar com mais firmeza" e "ser mais duro" quase sinônimos no mesmo tricolon.
 
 ## 4. Gravabilidade (leitura em voz alta)
 
-3. **D03 · linha 75 e D03A · linha 739 · "Estudo o Eneagrama, um jeito de entender como as pessoas funcionam, há mais de cinco anos."** O aposto separa o verbo do tempo. Dito de uma vez, "há mais de cinco anos" cai grudado em "funcionam" (como as pessoas funcionam há cinco anos) e a credencial perde força, justamente no único lugar em que ela é dita. O aposto também é construção escrita: nas falas dela da amostra a explicação de termo vem solta ("o Eneagrama me ajudou a entender...", D10), sem oração intercalada. A inserção em si é defensável e "funcionam" é palavra dela; o defeito é a posição, que não soa natural na boca dela.
+3. **D03 / D03A · "Estudo o Eneagrama, um jeito de entender como as pessoas funcionam, há mais de cinco anos."** O aposto separa o verbo do tempo; "há mais de cinco anos" cai em "funcionam". Construção escrita.
 
-4. **D19 · linha 373 · "O mercado vende descobrir a sua maneira de funcionar."** Três linhas acima, o passo 1 é "conhecer as maneiras de funcionar". O contraste entre o que o mercado vende e o que ela ensina passa a depender, no ouvido, só de "a sua" versus "as". Em v4.2 o contraste era "tipo" versus nove maneiras e se ouvia. Agora o "isso" de "E isso é o contrário do que o mercado vende" (antecedente: "não se decoram, se reconhecem") também não fecha com o que vem depois. A frase do mercado existia em v4.2 e ela a aprovou; o defeito é da troca de "tipo" por "maneira de funcionar".
+4. **D19 · "O mercado vende descobrir a sua maneira de funcionar."** Colide com o passo 1 ("conhecer as maneiras de funcionar"): o contraste fica só em "a sua" versus "as".
 
-## 5. Conferido, sem defeito
+## 5. Conferido, sem defeito (1ª conferência)
 
 | Ponto | Leitura |
 |---|---|
-| D01 · linha 49 · "O problema não está onde você está olhando: na vontade da pessoa." | Lê-se em voz alta sem ambiguidade com a pausa de dois-pontos; "ele" (linha 49) volta a "o problema" |
-| D01 · linha 53 · "nenhuma técnica de conversa" | Vocabulário dela ("não é falta de técnica, é falta de consciência", debora-voice). A negação vale para enxergar onde está o problema, não para o curso inteiro |
-| D05 × D15 · linha 289 · "Explicar de novo, cobrar" | Retomada com cerca de 700 palavras de distância, depois da história; funciona como volta ao tema e prepara D17 ("mudou o volume, não o idioma"). Não reprova |
-| D01A / D04A | "um primeiro norte", "como você lidera hoje", "quem você é" negado: linguagem dela. "No próximo" sem substantivo em D04A é herança de v4.2 e não foi alterado nesta rodada |
-| Aviso fora de escopo de voz | Tabela de contagem (linhas 767 a 783) ainda traz D03/D03A com 23 palavras e o cabeçalho diz v4.2; o D03 novo tem 28 palavras. Isso é do orquestrador, não afeta o veredito |
+| D05 × D15 "Explicar de novo, cobrar" | Retomada com cerca de 700 palavras de distância; prepara D17. Não reprova |
+| D01A / D04A | "um primeiro norte", "como você lidera hoje": linguagem dela |
+| Aviso fora de escopo | Tabela de contagem ainda diz v4.2 e D03/D03A = 23 palavras; o D03 novo tem 28. Do orquestrador |
 
-## Veredito
+Veredito da 1ª conferência: REPROVA (defeitos 1 a 4).
 
-**REPROVA.** Quatro defeitos: D05 (referente de "movimento contrário", linha 97), D05 × D07 (eco de "ser mais duro", linhas 91 e 125), D03/D03A (aposto que separa "há mais de cinco anos", linhas 75 e 739) e D19 (colisão de "a sua maneira de funcionar" com o passo 1, linha 373).
-Léxico morto, vetos do briefing e travessão: zero hit. D01, D01A, D04A e o eco D05 × D15: sem defeito.
-Quem corrige é o G6; a conferência volta pelo mesmo trecho.
+---
+
+## Reconferência (16/10/2026, após a devolução aplicada em D01, D03/D03A, D05, D19, D01A)
+
+Linhas do v4.3 reconferido: D01 37-55 · D03 75 · D05 91-95 · D19 369-371 · D01A 713-721 · D03A 737.
+
+| # | Defeito anterior | Situação | Evidência |
+|---|---|---|---|
+| 1 | D05 "movimento contrário" sem referente | **Resolvido** | A frase saiu. D05 abre com "Quando a pessoa não entrega, explicar de novo e cobrar com mais firmeza não resolve." e não promete inversão |
+| 2 | Eco D05 × D07 "ser mais duro" | **Resolvido** | "ser mais duro" saiu de D05; D07 e D24 ficam como únicos donos da expressão. Resta "cobrar com mais firmeza" (D05) e "cobrou mais forte" (D08), com cerca de 150 palavras de distância, funcionando como retomada |
+| 3 | Aposto em D03/D03A | **Resolvido** | "Há mais de cinco anos eu estudo o Eneagrama, um jeito de entender como as pessoas funcionam. Já ajudei sessenta pessoas a se reconhecer por ele." O tempo vai à frente e o aposto fecha a frase; "eu estudo" e "Há mais de cinco anos" soam falados |
+| 4 | D19 "a sua maneira de funcionar" | **Resolvido** | Agora "O mercado vende descobrir quem você é." O contraste com "conhecer as maneiras de funcionar" se ouve sem depender de artigo |
+
+Trechos novos lidos em voz alta:
+
+- **D01** (L49 a L53): "Nesses casos, o problema não está onde você está olhando: na vontade da pessoa. E enquanto você olha para lá, ele continua acontecendo." e "E dá para enxergar onde ele está." Lê-se sem tropeço; "Nesses casos" amarra em "Muitas vezes, ela está errada"; "ele" volta a "o problema". Sem defeito.
+- **D01A** (L721): "Muitas vezes, essa conclusão está errada." repete o movimento de D01. Sem defeito.
+- **Léxico morto, vetos §8, travessão:** zero hit nos trechos novos.
+
+### Defeito novo (5)
+
+5. **D05 · L95 · "Quem lidera não precisa começar por uma técnica de conversa. A gente pode ter isso depois."**
+   - **"A gente pode ter isso depois."** não soa dita por ela. "Ter" não é o verbo dela para técnica (a amostra usa ver, trabalhar, olhar, falar; D05 mesmo fecha com "é desse olhar que a gente vai falar"). "Isso" volta a "técnica de conversa", duas orações atrás, e "depois" não tem lugar nem momento (nas próximas aulas? na mentoria? no encontro?).
+   - Dito de uma vez, ouve-se como adiamento vago, e "pode ter" não deixa claro se há ou não há técnica a seguir. Quem ouve pode entender que a técnica vem depois e é outro produto, o que atrapalha D29 ("o curso não é a mentoria") e se confunde com D21 e D27, em que o curso entrega o que fazer antes de cobrar e antes de uma conversa.
+   - "Uma técnica de conversa" também entra em D05 sem preparo: D01 deixou de mencionar técnica, então o ouvinte nunca pensou nela e a negação responde a uma pergunta que ninguém fez.
+   - Regra: voz (verbo e registro estranhos à amostra) e gravabilidade (referente de "isso" e de "depois" ausentes).
+
+### Veredito da Reconferência
+
+**REPROVA.** Os defeitos 1 a 4 estão resolvidos e os trechos novos de D01, D03/D03A, D19 e D01A leem bem em voz alta; resta um defeito novo na linha introduzida em D05 ("A gente pode ter isso depois.", e a "técnica de conversa" sem preparo), L95.
+Léxico morto, vetos do briefing e travessão: zero hit. Quem corrige é o G6; a reconferência volta só por D05.
