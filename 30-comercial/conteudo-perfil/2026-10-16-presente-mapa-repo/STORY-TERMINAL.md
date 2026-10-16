@@ -16,3 +16,11 @@ Link: `https://continuumsystems.com.br/mapa/?o=story` (página no ar e testada p
 **Procedência:** "00h55" é o horário do print; "página, checkout e quiz" é o que o terminal mostra que ela começou; "não precisa me perguntar" é o que a ordem destacada pede. Nada de "terminou", porque o print não mostra o fim.
 
 **Depois de postar:** a planilha separa quem veio do story pela origem `story`. Anotar o total de 24 h e de 7 dias em `../REGISTRO.md`.
+
+## Legenda (campo "Adicione uma legenda")
+
+**Escolhida:** `IA sem regra escrita pergunta tudo. Com regra, ela trabalha enquanto você dorme... ou faz outra coisa. O mapa do meu repositório está no link, de graça.`
+
+Alternativas descartadas:
+- `O segredo não é o modelo. É o que ele lê antes de agir.` (boa frase, mas não leva ao link)
+- `Toca em "quero o mapa" e monta o seu.` (só repete a figurinha)
