@@ -91,3 +91,18 @@ ATUALIZACAO 2026-10-14 (noite, mais tarde) - PERMISSAO-MENTORAS V3: LEAD COMO EV
 - Motivo: a campanha GA|HG|TOFU|LEADS|QUIZ-GRUPO-CONSELHO|20261015 otimiza o Lead PADRAO; antes o cadastro saia como personalizado.
 - Testado em navegador local: Terapeuta -> trackCustom:QuizStart, trackCustom:QuizResult, track:Lead -> tela do grupo.
 - SUBIR: permissao-mentoras-v3.zip -> basta trocar public_html/permissao-mentoras/engine.js. Rollback: v2.
+
+ATUALIZACAO 2026-10-15 - PERMISSAO-MENTORAS V4: CADASTRO ENVIADO POR BEACON (NAO SUBIDA ATE 16/10)
+- engine.js: o envio do cadastro a planilha usa beacon (send(payload(),0,true)), que sobrevive a saida da pagina.
+- Motivo: o teste do Victor gravou so o clique no grupo, sem nome/telefone/email.
+- SUBIR: basta trocar public_html/permissao-mentoras/engine.js. Rollback: v3.
+
+ATUALIZACAO 2026-10-16 - PERMISSAO-MENTORAS V5: CAPA FALA DO GRUPO (CONTEM A V4)
+- Dado (Pixel, 15-16/10): de cada 100 PageView, so 26 respondem a 1a pergunta; quem comeca, 55% chega ao cadastro.
+  O anuncio promete "Grupo gratuito durante outubro" e a capa so falava de teste de Permissao.
+- config/permissao_mentoras.json, tela T01:
+  banner "RESPONDA E DESCUBRA O SEU NIVEL DE PERMISSAO:" -> "GRUPO CONSELHO DO CIGANO, GRATUITO EM OUTUBRO: RESPONDA E RECEBA O CONVITE"
+  subheadline "...PARA TERAPEUTAS E MENTORAS..." -> "...PARA TERAPEUTAS, MENTORAS E CARTOMANTES..." (a 1a pergunta ja oferece Cartomante)
+  quiz_versao "1.0" -> "1.1-capa-grupo" (separa antes/depois na planilha)
+- SUBIR: permissao-mentoras-v5.zip -> trocar engine.js E config/permissao_mentoras.json em public_html/permissao-mentoras/.
+- Rollback: v3 (engine) + config da v4.

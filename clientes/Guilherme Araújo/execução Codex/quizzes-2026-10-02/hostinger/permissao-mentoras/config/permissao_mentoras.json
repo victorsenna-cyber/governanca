@@ -1,5 +1,5 @@
 {
-  "quiz_versao": "1.0",
+  "quiz_versao": "1.1-capa-grupo",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbycieKc37wkdwxdHRC_ssxQLqKtVCy18RstX5Y2srOTlIknLj3zIVFurLBRXwpzX9gD/exec",
   "pixel_id": "1259363302489132",
   "dados_legais": "© 2026 Guilherme Araújo · Todos os direitos reservados.",
@@ -113,9 +113,9 @@
       "layout": "grid",
       "columns": 2,
       "variable": "atuacao",
-      "banner": "RESPONDA E DESCUBRA O SEU NÍVEL DE PERMISSÃO:",
+      "banner": "GRUPO CONSELHO DO CIGANO, GRATUITO EM OUTUBRO: RESPONDA E RECEBA O CONVITE",
       "headline": "QUAL É O SEU <g>NÍVEL DE PERMISSÃO</g> PARA PROSPERAR COM O SEU TRABALHO?",
-      "subheadline": "<u>TESTE GRATUITO</u> PARA TERAPEUTAS E MENTORAS QUE ESTUDAM, ATENDEM BEM E SENTEM QUE O FINANCEIRO NÃO ACOMPANHA.",
+      "subheadline": "<u>TESTE GRATUITO</u> PARA TERAPEUTAS, MENTORAS E CARTOMANTES QUE ESTUDAM, ATENDEM BEM E SENTEM QUE O FINANCEIRO NÃO ACOMPANHA.",
       "cue": "↓ RESPONDA PARA COMEÇAR ↓"
     },
     {

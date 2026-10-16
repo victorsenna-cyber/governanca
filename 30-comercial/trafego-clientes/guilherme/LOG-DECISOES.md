@@ -48,6 +48,16 @@
 | 14/10/2026 | **Pausada a campanha de engajamento do reel e criada a de tráfego para o perfil com o mesmo reel** (pedido do Victor), R$ 12/dia, mesmo público, só IG Stories + Reels | §5.2 regra de posicionamento | pedido direto; o reel tinha 17.912 engajamentos por R$ 67,99 em 14 dias | visitas ao perfil no lugar de engajamento no post | anúncio em análise |
 | 14/10/2026 | **Evento de otimização do quiz trocado de personalizado (`Lead`) para `LEAD` padrão**; quiz v3 manda `track:Lead` | §6 tracking | o conjunto com evento personalizado não publicava (3 tentativas, sem erro); com o padrão publicou | campanha publicada e aprendendo sobre o cadastro | conjunto ACTIVE, 7 anúncios em análise |
 
+## 16/10/2026 — análise do dia 2 da campanha do quiz do grupo
+
+| Decisão | Por quê | Descartado |
+|---|---|---|
+| **Não mexer em campanha, conjunto nem anúncio até 18/10 0h** | regra de 72h do plano; nenhuma regra de pausa disparou (R$ 41,23 → 4 cadastros, R$ 10,31) | pausar os 5 anúncios sem verba: a CBO ainda está distribuindo, e eles gastaram menos de R$ 2 cada |
+| **Corrigir a capa do quiz (v5), não o anúncio** | Pixel: 74% saem na capa; quem começa, 55% se cadastra. A capa não falava do grupo que o anúncio promete | trocar criativo: o clique está barato (CTR de 2% a 6%); a perda vem depois do clique |
+| Perfil IG (R$ 0,04 por visita) segue como está | CTR 12%, frequência 1,02 | — |
+
+Detalhe e números: `relatorios/2026-10-16-analise-quiz-grupo-dia2.md`. Publicar a v5 depende do Victor (upload na Hostinger).
+
 ## Gates abertos (o que trava)
 
 | ID | Gate | Dono | Bloqueia |

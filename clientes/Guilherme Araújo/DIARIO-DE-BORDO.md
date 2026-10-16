@@ -593,3 +593,12 @@ Victor reprovou o uso de desenhos abstratos, linhas e geometrias usadas como pre
 **Pedido do Victor:** criar os pré-requisitos de peça ao público. **Entrega:** `PILARES.md` (3/5; P4 reprova por inventário divergente; cinco perguntas de fato ao Gui), `lexico-icp/` (BANCO com 6 frases `D?`, FONTES, LACUNAS com 5 colheitas), `DEC-2026-10-15-001`. Script da planilha conferido: responde sem pedir login. **Pendências:** Gui responder P4 e confirmar a origem dos prints.
 
 **Adendo 15/10 (planilha, 02h50):** teste do Victor gravou só o clique no grupo, sem nome/telefone/email. Script ajustado (`apps-script/Code.gs`): colunas na ordem nome, telefone, email, quiz…; `whatsapp` vira `telefone`; campo-armadilha preenchido passa a gravar com `suspeito_robo` em vez de descartar. Quiz v4 (`permissao-mentoras-v4.zip`): cadastro enviado por beacon, resistente a sair da página. Teste real "TESTE CLAUDE" enviado ao vivo para diagnóstico. Pendente: Victor limpar a aba, colar o Code.gs, nova versão, subir v4.
+
+## 2026-10-16 — Análise do dia 2 e capa do quiz (v5)
+
+- **Pedido do Victor:** "analise e otimize as campanhas do Guilherme".
+- **Números (14–16/10):** quiz do grupo, R$ 41,23 → 4 cadastros (R$ 10,31; alvo R$ 8). Perfil IG, R$ 22,98 → 560 visitas (R$ 0,04).
+- **Achado:** no Pixel, só 26% de quem abre a capa responde a 1ª pergunta. Depois disso o quiz converte bem. O anúncio promete o grupo, e a capa não falava dele.
+- **Feito:** v5 local (`permissao-mentoras-v5.zip`, inclui a v4) com a capa falando do grupo e incluindo cartomantes. LEIA-ME atualizado (v4 e v5). Campanhas sem alteração (72h até 18/10 0h).
+- **Próximo:** Victor sobe a v5 (engine.js + config) → Claude confere ao vivo e faz um cadastro de teste. Releitura em 18/10.
+- Relatório: `30-comercial/trafego-clientes/guilherme/relatorios/2026-10-16-analise-quiz-grupo-dia2.md`.
