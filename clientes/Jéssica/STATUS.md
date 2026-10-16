@@ -282,6 +282,7 @@ O número **funcionava com 12 dígitos** — o Victor abriu a conversa e caiu ce
 | **Depoimentos** | nome e foto **borrados por padrão** (DEC-033). 🔴 **no ar ainda está a versão sem desfoque:** subir de novo o `hostinger/ingles.zip` (e o `experience.zip`, que ganhou a imagem de prévia com endereço completo) |
 | **Perguntas a ela** | das cinco, ficaram duas: **preço do English Therapy** e a **base de cálculo de receita**, que ela faz sozinha (`MENSAGENS-JESSICA-2026-10-13.md` §3-bis) |
 | **URLs antigas da Vercel** | 🟡 `redirecionar-vercel.sh` pronto · CLI deslogado |
+| **Plano de divulgação (PDF)** | ✅ **regerado em 16/10:** semana 1 virou 16 a 18/10, curta, com regra de transbordo para seg/ter · pendência "publicar a página" marcada como feita. Fonte: `entregas-cliente/fonte/gerar_plano_divulgacao.py` + `molde.html` |
 
 **Próximo passo e dono:** Victor sobe `ingles.zip` + `experience.zip`, roda `npx vercel login` + `bash redirecionar-vercel.sh`, manda a 3-bis e decide a DEC-029 · Jéssica responde o preço da turma.
 

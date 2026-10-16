@@ -80,8 +80,10 @@ ANTES = "Janeiro, em Florianópolis"
 DEPOIS = "[dia] de janeiro, [local]"
 
 SEMANAS = [
-    ("Semana 1", "13 a 18 de outubro", [("EV-01", ANTES), ("ES-01", ANTES)],
-     "A primeira palavra que vem quase sempre é a certa.", None),
+    ("Semana 1", "16 a 18 de outubro", [("EV-01", ANTES), ("ES-01", ANTES)],
+     "A primeira palavra que vem quase sempre é a certa.",
+     "Semana curta: começa no dia em que você recebe este plano. O anúncio sai primeiro. "
+     "Se a ES-01 e o reel não couberem até domingo, eles entram na segunda e na terça, e a semana 2 segue com as peças dela."),
     ("Semana 2", "19 a 25 de outubro", [("EV-C1", ANTES), ("ES-09", ANTES)],
      "O laptop rosa da Xuxa que você ganhou quando era criança.", None),
     ("Semana 3", "26 de outubro a 1º de novembro", [("EV-02", ANTES), ("ES-05", ANTES)],

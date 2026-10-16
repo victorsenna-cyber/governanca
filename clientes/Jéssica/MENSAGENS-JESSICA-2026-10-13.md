@@ -40,7 +40,7 @@
 >
 > o documento traz o texto das sete primeiras semanas, até a virada do preço em 29/11. as de dezembro e janeiro eu te mando junto com o anúncio do dia, já com a data e o local dentro.
 >
-> o primeiro post é o anúncio da pré-venda, e pode sair essa semana. tem duas legendas com uma marcação pra você conferir antes de publicar, são frases que só você sabe se acontecem..
+> o primeiro post é o anúncio da pré-venda, e pode sair hoje ou amanhã. tem duas legendas com uma marcação pra você conferir antes de publicar, são frases que só você sabe se acontecem..
 
 ---
 

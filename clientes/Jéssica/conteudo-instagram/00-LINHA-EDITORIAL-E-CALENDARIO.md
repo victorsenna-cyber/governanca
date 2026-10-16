@@ -46,7 +46,7 @@ Semana de segunda a domingo. **A semana do anúncio (S6) é previsão**: ela aco
 
 | Sem. | Datas | Peça 1 | Peça 2 | Reel dela | Evento |
 |:--:|---|---|---|---|:--:|
-| **S1** | 13 a 18/10 | **EV-01** O anúncio | ES-01 A trava não é vocabulário | R1 A primeira palavra é a certa | 1/3 |
+| **S1** | 16 a 18/10 (curta: plano entregue em 16/10) | **EV-01** O anúncio | ES-01 A trava não é vocabulário | R1 A primeira palavra é a certa | 1/3 |
 | **S2** | 19 a 25/10 | **EV-C1** 5 sinais *(carrossel)* | ES-09 A atleta que aprendeu sozinha | R6 O laptop da Xuxa | 1/3 |
 | **S3** | 26/10 a 01/11 | **EV-02** Por que só mulheres | ES-05 O aluno de dois anos | R2 O que fazer quando dá branco | 1/3 |
 | **S4** | 02 a 08/11 | **EV-13** Por que janeiro | ES-02 O segundo pensamento | R3 Por que eu começo pelo corpo | 1/3 |
