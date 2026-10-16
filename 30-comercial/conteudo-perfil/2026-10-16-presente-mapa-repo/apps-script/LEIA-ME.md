@@ -14,6 +14,8 @@ Duas peças: a **página** (`../landing/`, sobe no Hostinger) e a **planilha** c
 
 ## 2. Página
 
+> ✅ **16/10/2026:** script implantado e testado pelo Victor. A URL já está colada no `index.html`: `https://script.google.com/macros/s/AKfycbxZU1XGWRwa_9W6SFXwvPtPOx9aDdoGfj1q1V98raTAJLAwGYeTe37xugAtlHY9AsGw/exec`. Os passos 1 e 2 abaixo valem só se a URL mudar.
+
 1. Abra `../landing/index.html` e troque `COLE_AQUI_A_URL_DO_APPS_SCRIPT` pela URL do passo 1.5.
 2. No Hostinger: **Gerenciador de Arquivos → `public_html` →** crie a pasta `mapa`.
 3. Suba para dentro dela os dois arquivos de `../landing/`: `index.html` e `Mapa-Repositorio-Continuum.pdf`.
