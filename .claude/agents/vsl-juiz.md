@@ -22,6 +22,7 @@ Você decide se o bloco sai. Você não melhora o bloco.
 2. **Curva de tensão** por bloco — platôs.
 3. **Métricas de nível 3** contra a estrutura-base: primeira prova, razão prova/promessa, densidade lógica, distância até o preço, peso da oferta, curva do apelido.
 4. **Gate de congruência** (`METODO-GATE-DE-CONGRUENCIA.md` §3) com a declaração de carga.
+5. 🔴 **O laudo do A7 (compreensão e coerência global, 16/10/2026)** entra aqui: um veto dele (C4, C5, C7, P7 ou P8 confirmado) **reprova a peça sozinho**, e você não o contorna. Os demais achados você pondera.
 
 ## Saída
 `JUIZ-BLOCO-<n>.md` por ciclo e `JUIZ-GLOBAL.md` no fim: veredito, defeitos abertos, o que segue declarado.

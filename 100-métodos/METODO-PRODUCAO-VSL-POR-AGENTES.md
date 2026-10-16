@@ -21,7 +21,7 @@
 
 ---
 
-## 2. OS 13 AGENTES
+## 2. OS 14 AGENTES *(13 até 16/10/2026; + A7)*
 
 | # | Agente | Faz | Equivale no Filemon |
 |---|---|---|---|
@@ -36,6 +36,7 @@
 | A3 | `vsl-auditor-procedencia` | origem de toda fala, cena, número e depoimento | — |
 | A4 | `vsl-auditor-voz` | voz do expert, léxico da conta, gravabilidade | — |
 | A5 | `vsl-auditor-antislop` | gate anti-slop da skill de copy | — |
+| A7 | `vsl-auditor-compreensao` | 🔴 **a VSL inteira, como o ouvinte frio, com a linha do tempo falada:** em que segundo fica claro o que é (o método/veículo), para quem é, por que ouvir, o que se compra · e a coerência da peça (eixo, nível de consciência, prova, verdade operacional, congruência com o produto da expert). **Instituído 16/10/2026** | — |
 | A6 | `vsl-auditor-cetico` | o público desconfiado — relata, não veta · 🟡 **+ leitura de retenção linha a linha** (08/10/2026, em teste na Débora, blocos 2 e 4) | — |
 | J | `vsl-juiz` | consolida, devolve, decide · passada global no fim | — |
 
@@ -53,7 +54,8 @@ flowchart TD
     G3 --> G4[G4 construção e oferta]
     G4 --> G5[G5 abertura]
     G5 --> G6[G6 roteiro de fala]
-    G6 --> JG[Juiz · passada global]
+    G6 --> A7[A7 · compreensão e coerência, peça inteira]
+    A7 --> JG[Juiz · passada global]
 ```
 
 **Cada caixa de G2 a G5 é um ciclo inteiro:**
@@ -63,6 +65,8 @@ flowchart TD
 3. **A1 a A6 em paralelo, cada um em contexto próprio** — recebem o texto, o briefing e a rubrica; **nunca o raciocínio do gerador**
 4. **o juiz** consolida e devolve; **teto de duas devoluções**
 5. bloco aprovado → próximo gerador
+
+**Depois do G6, e em toda revisão de lead ou de oferta:** o orquestrador gera a linha do tempo falada de cada funil (`py -I -X utf8 40-operacao-rotinas/ferramentas/tempo-vsl.py <roteiro> <pasta>/TEMPO-<versão>-FUNIL-B.md` e `--funil a`) e dispara o **A7** sobre a peça inteira. O laudo dele vai ao juiz na passada global. *(Instituído 16/10/2026: na VSL da Débora, o veículo do curso só ficava claro aos 14 minutos, e nenhum auditor de bloco tinha como ver isso.)*
 
 **Ordem de trás para frente** (`METODO-FUNIL-DE-VSL.md`): mecanismo → tese → história → oferta → abertura. **A abertura por último**, porque só então o mapa existe.
 
@@ -147,6 +151,7 @@ Não leia o raciocínio de outro agente. Não leia este pedido como permissão p
 - 🔴 texto escrito **antes do esqueleto aprovado**
 - 🔴 bloco que segue com defeito de **procedência** ou de **promessa acima do teto** (nunca seguem, nem no teto de devoluções)
 - 🔴 **rodada fechada sem `COMPOSICAO-VSL.md` + `.pdf` (≤ 2 páginas) na pasta da VSL** (§4.4, 16/10)
+- 🔴 **peça gravada sem o laudo do A7 sobre a versão final**, ou com veto do A7 aberto: o ouvinte frio não sabe **em até 1:00 o que é** (o veículo), **em até 1:30 para quem é**, ou descobre o produto **só na oferta** · afirmação de disponibilidade/prazo falsa contra o briefing · crítica ao que a própria expert vende (16/10)
 
 ---
 
