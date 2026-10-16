@@ -1,6 +1,6 @@
 (()=>{
 window.dataLayer=window.dataLayer||[];
-const LEADS_ENDPOINT=""; const VSL_URL="";
+const LEADS_ENDPOINT=""; const VSL_URL="https://deboradelgado.space/lideres/";
 const areas=["Pedir e delegar","Feedback e cobrança","Escuta e comunicação","Conflitos e relações","Conhecer quem você lidera"];
 const leverage=["É onde o combinado se perde: o pedido sai claro para você e chega de outro modo para quem recebe.","É onde mais esforço se perde: o feedback sai como você gostaria de ouvir, e não como a pessoa consegue ouvir.","É onde mais coisa passa sem ser vista: você escuta o que a pessoa diz, mas ainda não o que aquilo mostra sobre ela.","É onde está o maior desgaste: o comportamento que incomoda costuma ser proteção, e enquanto isso não fica claro, a relação pesa.","É a base de todas as outras: sem saber como cada pessoa funciona, todo pedido vira tentativa."];
 const questions=[
