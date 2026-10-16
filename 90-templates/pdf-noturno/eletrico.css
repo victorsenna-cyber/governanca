@@ -1,9 +1,9 @@
 /* =========================================================
    PDF NOTURNO · variante ELÉTRICA · instituída 16/10/2026, alçada Victor
    Carregar DEPOIS de noturno.css (e de noturno-celular.css, se for celular).
-   Para material que sai da casa como PEÇA DE MARCA (presente, isca, material de perfil):
-   contraste alto, azul vibrante, título condensado em caixa alta.
-   Documento de conta e de método continua no noturno puro.
+   🔴 MODELO PADRÃO DE PDF DA CASA desde 16/10/2026 (Victor: "quero fazer desse o nosso novo modelo de PDF").
+   Contraste alto, azul vibrante, título condensado em caixa alta. O noturno puro continua
+   disponível, mas só quando pedido.
    Fontes por <link> do Google Fonts no <head>: Anton · Montserrat · Inter.
    Não muda classe nenhuma: só cor, fonte e a capa. Acrescenta .fita e .passo.
    ========================================================= */
@@ -115,3 +115,8 @@ td strong { color: var(--branco); }
 
 /* diagrama que ocupa a página inteira: limita pela altura, não pela largura */
 .fluxo.alto { display: block; width: auto; height: 92mm; margin: 1mm auto 1mm auto; }
+
+/* página de prompt: fonte mínima de propósito. O leitor vê que é um texto para a IA, não para ler */
+.prompt { background: var(--painel); border: 1px solid var(--borda); border-radius: 1.5mm; padding: 2.4mm 2.6mm; margin-top: 1mm; }
+.prompt p { font-family: "Inter", sans-serif; font-size: 4.4pt; line-height: 1.28; color: #C7D4FF; margin: 0 0 1.1mm 0; }
+.prompt p:last-child { margin-bottom: 0; }

@@ -406,19 +406,36 @@ Se não, falta a camada 3 ou a 4.</div>
 </svg>
 <p class="legenda-fluxo">Regras 0, 1 e 2 valem em todas as caixas.</p>
 
+<!-- ========== O PROMPT ========== -->
+<div class="page-break"></div>
+<div class="rotulo">para a sua ia</div>
+<h2>O <span>prompt</span></h2>
+<p class="sub">Cole na sua IA. Ela entrevista você e monta o seu repositório.</p>
+<div class="prompt">
+<p>Você vai montar comigo o repositório de governança da minha operação, no padrão do Mapa do repositório Continuum. Ele é a memória da minha empresa e o que a IA lê antes de agir. Trabalhe em etapas, na ordem, e não pule nenhuma.</p>
+<p>ETAPA 1 · ENTREVISTA. Antes de criar qualquer arquivo, me faça perguntas, uma de cada vez, e espere cada resposta. Cubra: o que eu vendo e para quem; quantas pessoas operam e quem decide o quê; os pedidos que eu mais faço à IA (peça exemplos reais meus); as decisões que tomo toda semana; as regras que eu já sigo sem ter escrito; os números que limitam decisão (preço mínimo, desconto máximo, prazo, margem); os erros que já me custaram dinheiro ou cliente; as ferramentas que uso (git, Drive, Notion, Claude Code, outra). Se uma resposta vier vaga, peça um exemplo concreto. No fim, me devolva um resumo e peça confirmação.</p>
+<p>ETAPA 2 · A RAIZ. Escreva o arquivo raiz com o nome que a minha ferramenta lê primeiro (CLAUDE.md, AGENTS.md ou equivalente): papel da IA e a escala real da operação; linguagem; o que se carrega sempre; precedência quando dois arquivos discordam; ordem de prioridade; modos de resposta (revisar, entender, construir); a tabela do roteador; o índice de pastas; as regras permanentes; a pergunta de dinheiro que toda recomendação responde; as regras de registro. Curto. Método não mora na raiz, só o caminho até ele.</p>
+<p>ETAPA 3 · TRÊS CAMADAS. Identidade em 00-core/ (princípio, cultura). Política em 00-core/POLITICAS-DE-DECISAO.md, com os números da etapa 1. Estado em um STATUS.md único, fonte do fato atual, com data em cada atualização. Depois, só as pastas numeradas que eu vou usar: comercial, operação e rotinas, planos, jurídico, templates, métodos, clientes, _legado.</p>
+<p>ETAPA 4 · ROTEADOR. Agrupe os pedidos da etapa 1 pela natureza, não pelo assunto, em árvores: uma por família de pedido. Para cada uma, crie 00-core/roteador/ARVORE-&lt;NOME&gt;.md com: quando se carrega; a carga na ordem framework, trilho, método, blueprint, política, gate; linhas sinal, carga e veto; a pré-condição; o desempate (abre primeiro a árvore que produz o insumo da outra). Na raiz fica só a tabela das árvores.</p>
+<p>ETAPA 5 · TIPOS E MÉTODOS. Para cada procedimento que eu descrevi, crie um arquivo em 100-métodos/ com o campo Tipo: no cabeçalho. Teste do tipo: explica por que funciona = framework; tem etapa 1 e saída com nome = método; ordena outros arquivos = trilho; copia e preenche = blueprint; tem número, piso, teto ou alçada = política; tem item que reprova sozinho = gate. Todo arquivo leva uma régua de veto. Escreva com o que eu disse. Onde faltar fato, marque [PERGUNTAR] e não invente.</p>
+<p>ETAPA 6 · PROPAGAÇÃO E FECHO. Escreva na raiz a regra: todo método novo sai, na mesma tarefa, com arquivo no lugar certo, linha na árvore, linha no índice, registro no STATUS.md e régua de veto. Se a minha ferramenta roda código, crie um script que confere esses atos e só dá verde quando todos existem. Se eu uso git, crie a rotina que commita e sincroniza ao abrir e ao fechar a sessão.</p>
+<p>ETAPA 7 · RASTRO. Crie o modelo de registro de conversa externa em quatro camadas: fatos e números; decisões e o descartado, com o porquê; tom e conduta; mensagens literais com data e hora. Feche com o teste: outra IA, abrindo só este arquivo, escreveria a próxima mensagem no tom certo?</p>
+<p>REGRAS PARA VOCÊ DURANTE O TRABALHO. Fato sobre o meu negócio, você pergunta, nunca inventa. Decisão de estrutura (como organizar, qual árvore, qual tipo) é sua: proponha e explique por quê. Mostre a árvore de pastas antes de criar os arquivos e espere o meu ok. No fim, pegue um pedido real meu, rode pelo roteador do começo ao fim e me mostre onde travou ou o que faltou. Corrija antes de dizer que terminou.</p>
+</div>
+
 <!-- ========== O QUE ESTE MAPA NÃO FAZ ========== -->
 <div class="page-break"></div>
 <div class="rotulo">o limite</div>
 <h2>O que este<br>mapa <span>não faz</span></h2>
-<p class="sub">Melhor dizer aqui do que você descobrir no passo 3.</p>
 
-<p><strong>Não traz o conteúdo dos arquivos.</strong> E não é por segredo. O nosso foi escrito em cima dos nossos erros, e um arquivo de regra sem o erro que gerou ela é só opinião bem formatada. O seu precisa nascer dos seus.</p>
-<p><strong>Não funciona no primeiro dia.</strong> Regra que parece completa no papel tem furo no primeiro uso real. A nossa rotina é rodar toda regra nova contra um caso de verdade antes de confiar nela.</p>
-<p><strong>Não decide por você.</strong> A estrutura garante que a IA leia a coisa certa. O que está escrito na coisa certa continua sendo trabalho seu.</p>
+<p><strong>Não traz o conteúdo dos arquivos.</strong> O que está dentro de cada um é o método completo da Continuum, testado em operação real.</p>
+<p><strong>Não trabalha vazio.</strong> A estrutura funciona desde o primeiro dia com o prompt da página anterior. O que ela entrega depende do que você põe dentro.</p>
+<p><strong>Não decide por você.</strong> A IA passa a ler a coisa certa. Escrever a coisa certa continua sendo trabalho seu.</p>
 
-<div class="destaque"><span class="lead">Isto é um presente. Não tem oferta no fim.</span>
-Se você montar o seu e travar em algum dos sete passos, me manda qual foi. Eu respondo.</div>
+<div class="destaque"><span class="lead">Isto é um presente, e funciona sozinho.</span>
+Se montar o seu e travar em algum dos sete passos, me manda qual foi. Eu respondo.</div>
 
+<div class="nota"><strong>Se você quiser o método inteiro,</strong> com todos os arquivos preenchidos e prontos para adaptar à sua operação, ele vem junto com o treinamento. Me manda "treinamento" que eu te explico como funciona.</div>
 
 </body>
 </html>

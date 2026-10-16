@@ -16,4 +16,8 @@ Me conta uma coisa: você quer montar isso pra sua própria operação ou pra en
 
 **Por que a pergunta no fim:** é ela que separa quem tem operação (pode virar conversa) de quem está colecionando material. Registrar a resposta em `../REGISTRO.md`.
 
+**Se responder "treinamento":** a oferta ainda não tem preço nem escopo (STATUS 16/10). Não improvisar valor na DM: dizer que te explica em uma conversa e marcar.
+
+**O prompt (p. 17 do PDF):** mandar também o texto puro de `PROMPT-MONTAR-REPO.md` quando a pessoa pedir, porque o texto copiado do PDF sai com quebras de linha.
+
 **Se a pessoa travar depois:** "Me fala em que passo travou." Sem diagnóstico não pedido (`GUIA-VOZ-VICTOR-PROSPECCAO-VENDAS.md` §10.2).
