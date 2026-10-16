@@ -23,7 +23,7 @@ o vídeo não fala mais de módulo de aplicação. a aplicação no time fica no
 ## MENSAGEM 2
 
 ```
-pra gravar: pode ser por partes, em dias diferentes. cada [CORTE] é um ponto de parada, se errar volta pro último. o que está em [TELA] não se fala, entra escrito na edição.
+pra gravar: cada trecho numerado pode ser gravado separado, até em dias diferentes. se errar, volta pro começo do trecho. a edição fica com a gente.
 
 se alguma frase não bater com o que você ensina ou acredita, não grava: me marca qual que eu te respondo por escrito antes..
 
