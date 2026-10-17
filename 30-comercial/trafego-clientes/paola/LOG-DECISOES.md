@@ -90,3 +90,5 @@ Na call das 15h31 o Victor disse a ela: *"já está tudo pronto. Já os anúncio
 **Descartado:** ir para o Direct agora. Isso recomeça o processo dela em outro canal e é pior para a conversão, como o Victor disse a ela. **Descartado:** esperar a análise do número antigo, porque a tela diz que não cabe análise.
 
 Mensagem para ela: `clientes/Paola Lopes Rosa/04 - processo comercial/MSG-PAOLA-2026-10-17.md`.
+
+**17/10, depois das 17h30 (Victor):** mensagem enviada · troca do número na Página iniciada · aguardando o código dela. Upsell do Harmonia martelado em **R$ 67** (DEC-PL-27). **Data de publicação não dita a ela por escrito**: o fim da campanha se ajusta para seis dias contados da publicação.

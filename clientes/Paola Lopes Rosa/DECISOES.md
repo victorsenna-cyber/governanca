@@ -330,7 +330,7 @@
 
 **Descartado:** reenviar os roteiros de 12/10 como estão · deixar a voz pública só por conta dela (perde a estrutura da conversão) · aceitar preço riscado (W-09; já descartado na DEC-PL-15).
 
-### DEC-PL-27 · O Harmonia vira upsell da mesa; o número novo entra sem IA · 🟡 17/10/2026 (fatos dos áudios de 14 a 17/10)
+### DEC-PL-27 · O Harmonia vira upsell da mesa a R$ 67; o número novo entra sem IA · ✅ 17/10/2026 (alçada Victor) (fatos dos áudios de 14 a 17/10)
 
 **Fonte:** sete áudios transcritos em 17/10 (`01 - contexto/WhatsApp/`, 14/10 23.33.05 a 17/10 17.20.39; transcrição automática).
 
@@ -343,7 +343,7 @@
 - 17/10 17:20 · Paola: como no começo *"não deve também chover cliente"*, quer deixar uma mensagem salva na nota e mandar *"como se fosse a IA respondendo"*, porque acha que gera curiosidade e a pessoa não desiste. E: *"vamos rodar os anúncios em segunda"*, com o reel e os stories postados na segunda.
 
 **Decisões:**
-1. **DEC-PL-24 fechada pelo Victor em 15/10: o Harmonia é upsell pago depois do sim da mesa, entre R$ 67 e R$ 97, e não bônus.** O preço exato fica com o Victor. Ela entrega o produto até 20/10; o treino da IA e as mensagens de fechamento mudam na mesma data.
+1. **DEC-PL-24 fechada pelo Victor em 15/10: o Harmonia é upsell pago depois do sim da mesa, a **R$ 67** (martelado pelo Victor em 17/10, depois das 17h30), e não bônus.** Ela entrega o produto até 20/10; o treino da IA e as mensagens de fechamento mudam na mesma data.
 2. **Número novo sem agente de IA por enquanto** (bate com o `LOG-DECISOES.md` de 17/10). O que ela quer, uma resposta automática, existe sem IA: **a mensagem de saudação do WhatsApp Business**. Recomendamos isso no lugar de copiar e colar da nota.
 3. 🔴 **Divergência de data:** ela entende que os anúncios rodam na segunda (20/10); o plano de 17/10 é publicar assim que o número novo for ligado à Página. Quem decide é o Victor, e ela precisa saber a data por escrito.
 
