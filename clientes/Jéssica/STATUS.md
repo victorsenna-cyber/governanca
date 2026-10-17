@@ -287,6 +287,7 @@ O número **funcionava com 12 dígitos** — o Victor abriu a conversa e caiu ce
 | **Reembolso** | ✅ **7 dias a partir da compra, sempre antes do encontro**, aceito por ela em 16/10 (DEC-035). Na página do repositório e no `experience.zip`; 🟡 no ar depois do upload |
 | **Local** | ela vai tentar o **Espaço Natureza** (áudio 16/10). Endereço e fotos virão dela; entram na página quando chegarem |
 | **Retorno dela sobre as páginas** | *"a página ficou excelente, assim, a copy, o design, adorei, parabéns"* (16/10) |
+| **Transcript da sessão de 15 a 17/10** | `contexto/sessoes/SESSAO-CLAUDE-2026-10-15-a-17.md` (registro, não fonte de regra) |
 | **Prontidão para Assessoria** | `PAINEL.md` aberto (Ato I: falta G0 com número e proposta) · **One Belief e apelido "Primeira Palavra"** em `MECANISMO-E-ONE-BELIEF.md` (DEC-034) |
 
 **Próximo passo e dono:** Victor sobe `ingles.zip` + `experience.zip`, roda `npx vercel login` + `bash redirecionar-vercel.sh`, manda a 3-bis e decide a DEC-029 · Jéssica responde o preço da turma.
