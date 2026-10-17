@@ -3,7 +3,7 @@
 > Pedido do Victor: *"sem pitch, somente um story sobre o que estou fazendo"* e depois *"monte a composição"*. Fundo: print do terminal, 17/10 18h27 (`clientes/Victor Senna/WhatsApp Image 2026-10-17 at 18.28.04.jpeg`). Bastidor, sem link e sem CTA.
 > 🟡 não postado.
 
-**Arte pronta:** `story-craft.jpg` nesta pasta (1080 × 1920, fora do git). Refazer: `py -I compor.py "<print>" story-craft.jpg`.
+**Arte pronta:** `story-craft.jpg` nesta pasta (1080 × 1920, versionada no git a pedido do Victor). Refazer: `py -I compor.py "<print>" story-craft.jpg`.
 
 **Procedência:** os 11 programas e o que cada um substitui estão na tabela do print; "edita e exporta sem abrir janela" é o que o terminal diz. **Ainda não tem uso real registrado**, por isso o fecho fala em "próximo teste" e não em resultado.
 
