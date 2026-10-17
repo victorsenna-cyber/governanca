@@ -7,6 +7,7 @@
 |---|---|
 | `pagina-iteracao/index.html` | **a página v2, iterada em 17/10/2026.** Copy nova, design original mantido, teste das cinco perguntas, formulário na dobra da oferta e obrigado com WhatsApp. Usa `assets/styles-7pl-t798.css` (cabeçalho e primeira dobra) e a folha embutida na própria página |
 | `pagina-iteracao/privacidade.html` | política de privacidade, 🟡 rascunho a revisar pela árvore JURÍDICO |
+| `hostinger/.htaccess` | o `.htaccess` da `public_html` com o bloco que faz a raiz abrir o `index.html` antes do WordPress. Original em `hostinger/htaccess-original-2026-10-17.bak` |
 | `apps-script/Code.gs` | script da planilha de leads, com o passo a passo de implantação no topo |
 | `PLANEJAMENTO-COPY-COMPOSICAO-2026-10-15.md` | o plano da página: diagnóstico, headline, esqueleto, fluxo de conversão, lacunas e registro da execução (§12) |
 
@@ -14,7 +15,7 @@ Os outros arquivos de `pagina-iteracao/` (`assets/index-*.js`, `~flock.js`, `__l
 
 **Original (não editar):** `01 - Continuum\24 - Codex\Página de Vendas CONTINUUM\Continuum AI Systems\continuumsystems.com.br\continuum-growth-engine.lovable.app\`
 
-**Estado:** 🟡 página construída e testada localmente (computador e celular). `CONFIG` preenchido e planilha testada em 17/10. **Não publicável enquanto a política de privacidade tiver campo `.pendente`** (plano §12.3).
+**Estado:** 🟡 página construída e testada localmente (computador e celular). `CONFIG` preenchido, planilha testada e política fechada em 17/10. **Pronta para subir** (plano §12.4); revisão jurídica da política e teste em celular ficam para depois.
 
 ## Para ver localmente
 
