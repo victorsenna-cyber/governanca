@@ -7,7 +7,7 @@
 |---|---|
 | `pagina-iteracao/index.html` | **a página v2, iterada em 17/10/2026.** Copy nova, design original mantido, teste das cinco perguntas, formulário na dobra da oferta e obrigado com WhatsApp. Usa `assets/styles-7pl-t798.css` (cabeçalho e primeira dobra) e a folha embutida na própria página |
 | `pagina-iteracao/privacidade.html` | política de privacidade, 🟡 rascunho a revisar pela árvore JURÍDICO |
-| `hostinger/.htaccess` | o `.htaccess` da `public_html` com o bloco que faz a raiz abrir o `index.html` antes do WordPress. Original em `hostinger/htaccess-original-2026-10-17.bak` |
+| `hostinger/.htaccess` | o `.htaccess` da `public_html` com o bloco que faz a raiz abrir o `index.html` antes do WordPress. Original em `hostinger/htaccess-original-2026-10-17.txt` |
 | `apps-script/Code.gs` | script da planilha de leads, com o passo a passo de implantação no topo |
 | `PLANEJAMENTO-COPY-COMPOSICAO-2026-10-15.md` | o plano da página: diagnóstico, headline, esqueleto, fluxo de conversão, lacunas e registro da execução (§12) |
 
