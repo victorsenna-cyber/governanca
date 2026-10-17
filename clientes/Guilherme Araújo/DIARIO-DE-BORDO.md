@@ -625,3 +625,11 @@ Victor reprovou o uso de desenhos abstratos, linhas e geometrias usadas como pre
 
 - Pedido do Victor: "salve o transcript da sessão no repo do Gui. tem como usar pouco token pra isso? fazer por script?"
 - Feito por script, sem passar o texto pela IA: `../../40-operacao-rotinas/ferramentas/exportar-sessao.py` → `10 - registros e arquivo/sessoes-claude/2026-10-17-sessao-trafego-quiz-raiox-6030aa9f.md` (14 a 17/10; falas, respostas e nomes das ferramentas; resultados de ferramenta e raciocínio omitidos).
+
+## 2026-10-17 — Plano de copy do lote 2 (Raio-X) e escolha de referências
+
+- Pedido do Victor: "adicionei diversos criaativos referência no repo.. vamos criar mais variações para o Gui. mas antes, vamos planejar a copy para os criativos, depois, analise os criativos e veja os que mais se encaixam e aponte quais serão e com qual copy"
+- 71 referências novas em `960-referências criativos/` (16/10, 23h35–23h37), lidas em 6 folhas de contato (`01 - Criativos/Permissao Raio-X - lote 2 2026-10-17/referencias/`).
+- Plano: `01 - Criativos/Permissao Raio-X - lote 2 2026-10-17/PLANO-COPY.md`. 8 artes: 3 lateralizações da base (retrato, CPL R$ 7,09, n=2) e 5 explorações do conceito teste/diagnóstico (escalado: 7 anunciantes do lote usam a mesma arquitetura). Escolhidas: Q14, Q31, Q42, Q71, Q61, Q15, Q26, Q51. Reservas: Q13, Q37, Q30.
+- Dependência: peças que prometem Raio-X só sobem com o quiz v6 no ar.
+- Próximo: OK do Victor → produção das artes.
