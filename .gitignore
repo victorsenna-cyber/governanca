@@ -61,5 +61,7 @@ service-account*.json
 30-comercial/conteudo-perfil/**/*.m4a
 30-comercial/conteudo-perfil/**/*.wav
 30-comercial/conteudo-perfil/**/*.png
+30-comercial/conteudo-perfil/**/*.jpg
+30-comercial/conteudo-perfil/**/*.jpeg
 40-operacao-rotinas/ferramentas/edicao-video/fontes/*.ttf
 40-operacao-rotinas/ferramentas/edicao-video/fontes/*.otf
