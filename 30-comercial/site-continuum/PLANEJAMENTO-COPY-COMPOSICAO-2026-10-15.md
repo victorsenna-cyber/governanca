@@ -316,5 +316,15 @@ Nenhum trecho passa de 2 telas sem porta (D2–D4 somam cerca de 2,3 telas: a po
 
 A `public_html` hoje roda WordPress (`index.php`). Decisão do Victor: subir direto. **Como:** bloco `DirectoryIndex index.html index.php` no topo do `.htaccess`, fora dos marcadores do LiteSpeed e do WordPress (que reescrevem só o que está entre eles). A raiz abre o `index.html`; o WordPress continua respondendo pelo que não existe como arquivo. **Reversão:** apagar o bloco. Arquivo novo em `hostinger/.htaccess`, original em `hostinger/htaccess-original-2026-10-17.bak`. Pacote de envio: `Downloads\continuum-site-2026-10-17.zip` (index, privacidade, CSS e `.htaccess`). **Depois de subir: limpar o cache do LiteSpeed (`CacheLookup on` serve a home antiga do cache) e conferir na URL de produção.**
 
+
+**✅ No ar em 17/10/2026, conferido em produção.** Raiz, `www`, `http` (301 para `https`) e URL com UTM/fbclid entregam o `index.html` idêntico byte a byte ao local; `privacidade.html` e o CSS idênticos; cache do LiteSpeed e da CDN limpo pelo Victor (`x-hcdn-cache-status: DYNAMIC`). Primeira dobra em 1440 px com o botão em 872 px, formulário íntegro no celular, sem rolagem lateral, zero `.pendente`, GTM carregando.
+
+**Achados da conferência:**
+1. 🔴 **Pixel da Meta bloqueado no domínio.** Console: *"558787062985620 is unavailable on this website due to it's traffic permission settings"*. O GTM carrega o pixel, mas a Meta descarta o que vem de `continuumsystems.com.br`. Correção no Gerenciador de Eventos (Configurações → Permissões de tráfego → incluir o domínio na lista de permissões). Dono: Victor.
+2. `favicon.ico` em 404: a aba fica sem ícone. Cosmético.
+3. Envio para `0.1.178.7` falha (`ERR_ADDRESS_UNREACHABLE`): tentativa de rota própria do Google Analytics; o envio principal do GA4 volta 204, a medição não se perde.
+4. **Não testado em produção, de propósito:** envio real do formulário. Dispara conversão no Google Ads e no GA4 e grava linha na planilha; fica para o Victor fazer do celular, o que fecha também o teste em aparelho real (§12.3, item 7).
+5. O WordPress continua vivo nos outros endereços (`/wp-login.php` 200, página 404 do tema). Esperado: o bloco só muda a raiz.
+
 ---
-*Criado em 15/10/2026. Execução registrada em 17/10/2026 (§12).*
+*Criado em 15/10/2026. Execução registrada em 17/10/2026 (§12). Publicado em 17/10/2026 (§12.4).*

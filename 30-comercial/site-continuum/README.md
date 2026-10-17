@@ -15,7 +15,7 @@ Os outros arquivos de `pagina-iteracao/` (`assets/index-*.js`, `~flock.js`, `__l
 
 **Original (não editar):** `01 - Continuum\24 - Codex\Página de Vendas CONTINUUM\Continuum AI Systems\continuumsystems.com.br\continuum-growth-engine.lovable.app\`
 
-**Estado:** 🟡 página construída e testada localmente (computador e celular). `CONFIG` preenchido, planilha testada e política fechada em 17/10. **Pronta para subir** (plano §12.4); revisão jurídica da política e teste em celular ficam para depois.
+**Estado:** 🟡 página construída e testada localmente (computador e celular). `CONFIG` preenchido, planilha testada e política fechada em 17/10. ✅ **No ar desde 17/10/2026** em `continuumsystems.com.br`, servida pela Hostinger (plano §12.4). Pendentes: pixel da Meta bloqueado no domínio, revisão jurídica da política e teste de envio real pelo celular.
 
 ## Para ver localmente
 
