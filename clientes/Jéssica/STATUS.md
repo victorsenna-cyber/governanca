@@ -284,6 +284,9 @@ O número **funcionava com 12 dígitos** — o Victor abriu a conversa e caiu ce
 | **URLs antigas da Vercel** | 🟡 `redirecionar-vercel.sh` pronto · CLI deslogado |
 | **Plano de divulgação (PDF)** | ✅ **regerado em 16/10:** semana 1 virou 16 a 18/10, curta, com regra de transbordo para seg/ter · pendência "publicar a página" marcada como feita · **formato da peça reduzido ao tipo** ("Arte estática", "Carrossel de N telas", "Foto sua"): a arte em si é dela (Victor, 16/10) · mensagem corrigida para "o texto da arte e a legenda prontos". Fonte: `entregas-cliente/fonte/gerar_plano_divulgacao.py` + `molde.html` |
 
+| **Reembolso** | ✅ **7 dias a partir da compra, sempre antes do encontro**, aceito por ela em 16/10 (DEC-035). Na página do repositório e no `experience.zip`; 🟡 no ar depois do upload |
+| **Local** | ela vai tentar o **Espaço Natureza** (áudio 16/10). Endereço e fotos virão dela; entram na página quando chegarem |
+| **Retorno dela sobre as páginas** | *"a página ficou excelente, assim, a copy, o design, adorei, parabéns"* (16/10) |
 | **Prontidão para Assessoria** | `PAINEL.md` aberto (Ato I: falta G0 com número e proposta) · **One Belief e apelido "Primeira Palavra"** em `MECANISMO-E-ONE-BELIEF.md` (DEC-034) |
 
 **Próximo passo e dono:** Victor sobe `ingles.zip` + `experience.zip`, roda `npx vercel login` + `bash redirecionar-vercel.sh`, manda a 3-bis e decide a DEC-029 · Jéssica responde o preço da turma.

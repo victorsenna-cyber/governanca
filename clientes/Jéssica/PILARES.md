@@ -69,7 +69,7 @@
 | Onde | Florianópolis, SC; local anunciado em novembro | página, plano |
 | Preço | **R$ 147 até 29/11 · R$ 197 a partir de 30/11** | página, plano, posts |
 | Vagas | sem número até o local existir | página, plano, posts |
-| Reembolso | até 30 dias da compra e no máximo 7 dias antes do encontro | página |
+| Reembolso | **até 7 dias da compra**, sempre antes do encontro (DEC-035, 16/10) | página |
 
 Passa **a partir de 13/10/2026**: até esta data os posts do combo ainda diziam *"15 vagas"*, *"primeiro lote com seis vagas"* e *"Casa Viva"*. Corrigidos em `conteudo-instagram/01-COMBO-EVENTO.md`.
 

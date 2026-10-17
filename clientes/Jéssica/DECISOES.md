@@ -475,6 +475,20 @@ Criar decisão sinaliza propagação; não autoriza publicar fora da tarefa vige
 
 ## Propostas — não vigentes
 
+### DEC-2026-10-16-035 — Reembolso de 7 dias a partir da compra · substitui DEC-012
+
+| Campo | Registro |
+|---|---|
+| decisão | **reembolso integral em até 7 dias da compra, sempre antes do encontro.** Depois disso, a vaga pode ir para outra pessoa ou para a próxima edição |
+| origem | Jéssica pediu 30 dias da compra, sem reembolso perto do evento (áudios 13:13, 16/10) · Victor propôs 7, o padrão do consumidor (áudio 13:19) · Jéssica: *"Ótimo! Gostei!!!"* (15:38) · Victor, ao repo: *"reembolso padrão de 7 dias a partir da compra"* |
+| substitui | DEC-012 (30 dias da compra e no máximo 7 dias antes do encontro) |
+| aplicado | `pagina-3-evento/site/index.html` (oferta e pergunta frequente) · `hostinger/experience.zip` remontado · `PILARES.md` §4 |
+| não alterado (histórico) | `PLANO-ESTRATEGICO-90D.md`, `vivencia-presencial/BRIEF-PAGINA-EVENTO.md`, `pagina-3-evento/site/index1/` (fora do pacote) |
+| também saiu da conversa | local: ela vai tentar o **Espaço Natureza** · fotos do espaço entram na página quando ela mandar (*"Combinado!"*) · registro completo em `vivencia-presencial/REGISTRO-WHATSAPP-2026-10-16.md` |
+| estado | ✅ vigente no repositório · 🟡 no ar depois do upload do `experience.zip` |
+
+---
+
 ### DEC-2026-10-16-034 — Mecanismo, apelido e One Belief · painel da conta aberto
 
 | Campo | Registro |
@@ -525,7 +539,7 @@ Criar decisão sinaliza propagação; não autoriza publicar fora da tarefa vige
 | **o furo** | a janela conta da compra, não do evento. Quem compra em agosto fica 7 semanas sem proteção; **quem compra na última semana pode pedir reembolso depois do evento acontecer** |
 | decisão final | 30 dias após a compra **e no máximo até 7 dias antes do evento**, o que vier primeiro. Depois disso, transferência de vaga para outra pessoa ou para a próxima edição |
 | autoridade | Jéssica definiu o prazo de 30 dias; Continuum propôs o teto; **ela aprovou em 19/08** — *"Ótimo fecha sim!"* |
-| estado | ✅ vigente. O texto já está em D8 e D9 da página |
+| estado | ~~✅ vigente. O texto já está em D8 e D9 da página~~ → **substituída pela DEC-035 em 16/10/2026: 7 dias a partir da compra** |
 
 ### PROP-2026-08-11-B — Registro de marca
 
