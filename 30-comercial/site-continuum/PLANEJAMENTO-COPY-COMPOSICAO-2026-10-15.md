@@ -272,4 +272,43 @@ Nenhum trecho passa de 2 telas sem porta (D2–D4 somam cerca de 2,3 telas: a po
 **Pivô da página, para a etapa 3 (E · Mas · Por isso):** você já vende **E** acha que o próximo passo é trazer mais gente. **MAS** com uma das cinco perguntas aberta, mais gente é mais gente que não compra, e o anúncio aprende a trazer essa pessoa. **POR ISSO** as cinco se fecham primeiro, na ordem, e o volume entra por último.
 
 ---
-*Criado em 15/10/2026. Nenhum texto final foi escrito: as frases entre aspas são da fonte citada ou direção de bloco. Iteração bloqueada até as respostas do §9.*
+
+## 12. Execução (17/10/2026)
+
+**Pedido do Victor:** *"pode iterar"*, com os fatos do §9 ainda em aberto. **Leitura adotada:** a falta de fato trava a **publicação**, não a construção. Cada fato que falta entrou na página **marcado à vista** (classe `.pendente`, contorno amarelo tracejado) ou como `CONFIG` vazio no script, que avisa no console. Nada foi inventado.
+
+### 12.1 Feito
+
+| Etapa | Resultado |
+|---|---|
+| 2 · inventário do design | a página tem folha própria embutida com componentes nomeados (`hero-card`, `glass-card`, `step-card`, `mechanism-wrap`, `fit-card`, `offer-panel`, `offer-step`, `faq`, `final`, `sticky-cta`). **Cada dobra nova usa um deles.** Só ganharam estilo novo, com os mesmos tokens: o teste, os campos, o obrigado, a etiqueta da inversão e o marcador `.pendente` |
+| 3 · copy | escrita a partir das fontes do §4. O teste usa **as cinco em sim ou não da `PECA-DR-01` §5-bis** (a lista pública canônica) e devolve **a primeira pergunta aberta** com a leitura da tabela do passo 2, como a DM faz |
+| 4 · execução | `pagina-iteracao/index.html` reconstruída: cabeçalho, primeira dobra e fundo animado com o código original, só com o texto trocado. Dobras D2 a D10 novas. Typeform removido (zero ocorrências). `privacidade.html` e `apps-script/Code.gs` criados |
+| teste em navegador | 1440 px e 390 px. **Sem rolagem lateral.** Botão da D1 visível sem rolar nos dois tamanhos (872 px de 900 no computador, a mesma posição do original; 694 px de 844 no celular). Teste: resposta sim/não/sim/não/sim → *"2 nãos. A primeira aberta é a 2, pra quê."* ✅ · validação dos três campos ✅ · máscara `(11) 9 8765-4321` ✅ · obrigado no mesmo cartão com o primeiro nome ✅ · mensagem pré-preenchida com o número de nãos ✅ · eventos `teste_concluido`, `form_iniciado` e `lead_enviado` no `dataLayer` ✅ |
+
+### 12.2 Decisões tomadas na execução (revisáveis pelo Victor)
+
+| Decisão | O que foi feito | Por quê |
+|---|---|---|
+| **Linha 2 do H1** | *"Antes do próximo anúncio, decidimos quem compra e por quanto."* | a versão com "a gente decide" quebrou em **7 linhas** e empurrou o botão para fora da primeira tela (946 px de 900). Esta cabe nas **mesmas 6 linhas do título original**, com o botão no mesmo ponto. Mantém "próximo" (a concessão) e "por quanto". O "junto" desceu para o subtítulo |
+| **Fecho (D10)** | *"Com as cinco fechadas, quem chega é o seu cliente."* | o *"Agora, quem chega é o seu cliente"* do §5.3 lia como afirmação de resultado já obtido. Esta mantém o eco de "chega" e fica no teto (R7): é a lógica, não a promessa |
+| **Marca no topo** | só "Continuum". Rodapé: "Continuum AI Systems · Victor Senna" | recomendação do §9 item 5. Trocar é uma linha |
+| **GTM** | mantido | já existe e remover é decisão. ⚠️ **Fato novo: o GTM dispara um pixel da Meta (`558787062985620`)**, conferido no console. A política de privacidade já cita a Meta |
+| **Jéssica** | fora | sem autorização escrita (§9 item 4) |
+| **Foto** | fora, com o lugar marcado em comentário no bloco "Quem conduz" | §9 item 3 |
+| **Cabeçalho ao rolar** | ganha o fundo e o desfoque da classe `.nav` que já existe na folha | defeito herdado do original: no celular o texto passava por baixo da marca. É o estilo da própria página, não um desenho novo |
+| **REGRA Nº 2** | sem referência escalada buscada | **a página sobe declarada como teste** (§10). Ela não recebe tráfego pago: o canal é indicação |
+| **Folha `continuum-v2.css`** | não criada como arquivo: o estilo novo entrou na folha embutida, num bloco marcado "v2" | a página inteira já usa folha embutida. Um arquivo à parte seria a única exceção ao padrão dela |
+
+### 12.3 O que impede a publicação
+
+1. `CONFIG.whatsapp` e `CONFIG.planilha` vazios no script (o console avisa).
+2. Campos `.pendente` visíveis: prazo de resposta (2 lugares) e, na política, data, e-mail de contato, prazo de guarda e a linha do GTM.
+3. Planilha não implantada (`apps-script/Code.gs`, passo a passo no topo).
+4. Política de privacidade 🟡, sem a revisão da árvore JURÍDICO.
+5. A origem da frase do H1 (*"chega gente, mas não é o meu cliente"*) ainda está sem ID de call (§5.3, R2).
+6. Etapa 5 do circuito (gate dos 8 passes, com juiz) não rodou. A varredura de proibições no texto visível rodou e passou: zero travessão, quantificador universal, diminutivo e superlativo.
+7. Teste em **aparelho real** e envio de verdade para a planilha. Só se faz com os itens 1 e 3 prontos.
+
+---
+*Criado em 15/10/2026. Execução registrada em 17/10/2026 (§12). Nada publicado.*

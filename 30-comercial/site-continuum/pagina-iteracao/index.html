@@ -1310,6 +1310,14 @@
       }
     }
 
+    /* Cabeçalho ganha o fundo da .nav original ao rolar, para o texto não passar por baixo da marca. */
+    header[data-section="d0"].is-scrolled {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      background: rgba(2, 5, 6, 0.62);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+    }
+
     .offer-content .section-lead + .offer-steps {
       margin-top: 26px;
     }
@@ -1499,7 +1507,7 @@
                 <p class="section-lead">O Mapa da Ordem custa <strong>R$ 1.997</strong> e fica pronto em 7 dias. Se a Assessoria fechar em até 15 dias da devolutiva, o valor é abatido inteiro no setup.</p>
                 <div class="offer-steps" aria-label="Como começa">
                   <article class="offer-step"><span class="number">01</span><div><h3>Você deixa o seu contato</h3><p>Nome, WhatsApp e e-mail. Eu respondo em <span class="pendente" data-pendente="prazo">[PRAZO DE RESPOSTA]</span>.</p></div></article>
-                  <article class="offer-step"><span class="number">02</span><div><h3>A gente conversa</h3><p>45 minutos para ver qual das cinco perguntas está aberta no seu negócio. Você não sai dessa conversa com um plano, porque o plano é o Mapa, e eu digo isso antes.</p></div></article>
+                  <article class="offer-step"><span class="number">02</span><div><h3>A gente conversa</h3><p>45 minutos para ver qual das cinco perguntas está aberta no seu negócio. Você não sai dessa conversa com um plano, porque o plano é o Mapa.</p></div></article>
                   <article class="offer-step"><span class="number">03</span><div><h3>Se fizer sentido, o Mapa</h3><p>Pronto em 7 dias. A Assessoria tem o valor escrito depois do Mapa, com o breakeven calculado no número do seu negócio.</p></div></article>
                 </div>
                 <p class="offer-micro">Eu conduzo poucas construções ao mesmo tempo. Quando duas colidem, muda a data de início, não o preço.</p>
@@ -1557,7 +1565,7 @@
           </div>
           <div class="faq">
             <details><summary>R$ 1.997 por um diagnóstico não é caro?</summary><p>A descoberta é a parte que mais exige trabalho, e é ela que decide o resto. Paga, ela vem inteira e fica com você: dá para executar sozinho. Se a Assessoria fechar em até 15 dias da devolutiva, o valor é abatido inteiro no setup.</p></details>
-            <details><summary>Por que a primeira conversa não sai com um plano?</summary><p>Porque um plano feito em 45 minutos seria meio plano. A conversa serve para ver se existe encaixe e qual pergunta está aberta. A leitura completa da operação é o Mapa, e eu digo isso antes de a gente começar.</p></details>
+            <details><summary>Por que a primeira conversa não sai com um plano?</summary><p>Porque um plano feito em 45 minutos seria meio plano. A conversa serve para ver se existe encaixe e qual pergunta está aberta. A leitura completa da operação é o Mapa.</p></details>
             <details><summary>Quanto tempo até dar retorno?</summary><p>Na Assessoria, em 30 dias você tem o número que hoje não existe. Em 60, o funil corrigido em cima dele. Em 90, a faixa que permite decidir se vale subir verba. O que eu não digo é “você vai vender X”, porque isso eu não controlo.</p></details>
             <details><summary>Eu já tenho quem faz o meu tráfego.</summary><p>Ótimo, e ele fica. Eu não cobro para gerir o que já funciona. O que eu faço é a camada de cima: o que ele está anunciando, para quem, e para onde a pessoa vai depois de clicar.</p></details>
             <details><summary>Você garante resultado?</summary><p>Se uma entrega marcada como minha não sair na data marcada, e o atraso for meu, você não paga aquele mês. Eu não garanto faturamento. Quem garante faturamento está garantindo uma coisa que não controla.</p></details>
@@ -1942,6 +1950,13 @@
           evento("whatsapp_click", { origem: estado.origem || "direto" });
           enviar({ tipo: "whatsapp_click", id: estado.id, data: new Date().toISOString() });
         });
+      }
+
+      const topo = document.querySelector('header[data-section="d0"]');
+      if (topo) {
+        const marcarTopo = function () { topo.classList.toggle("is-scrolled", window.scrollY > 12); };
+        marcarTopo();
+        window.addEventListener("scroll", marcarTopo, { passive: true });
       }
 
       /* O botão fixo some quando o formulário está na tela. */
