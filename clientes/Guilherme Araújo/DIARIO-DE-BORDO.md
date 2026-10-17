@@ -19,6 +19,16 @@ Cada entrada informa:
 
 ---
 
+## 2026-10-17 (tarde) — Onda 1 do lote 2 publicada; cinco anúncios pausados
+
+**Executor:** Claude Code (Opus 5.5). **Pedido:** Victor, 17/10: *"criativos na conta. pode subir e pausar o que precisa ser pausado"* (as 16 artes subidas por ele na biblioteca da CA 01).
+**Gate conferido antes:** quiz v6 no ar (site publicado 17/10 03:19, Raio-X no `engine.js`). Sem isso, as peças do Raio-X não subiriam.
+**Leitura da autorização:** "subir" + "pausar o que precisa" = executar o `PLANO-COPY.md` §5 já aprovado (trocar os cinco sem verba pela onda 1), então a onda 1 foi publicada **ativa**, não em pausa. A onda 2 ficou só como criativo: o plano a põe em 22/10, com dado. Antecipar a decisão de 18/10 custa meio dia de 72h; os cinco pausados somavam R$ 5,03 de R$ 52,04 gastos no conjunto.
+**Alterações na conta:** 8 criativos (PAC 4:5 + 9:16 IG Stories/Reels, melhorias desligadas) · 4 anúncios novos no conjunto `120255723461560210` · 5 anúncios pausados. Verba, público e posicionamento intactos. IDs: `01 - Criativos/Permissao Raio-X - lote 2 2026-10-17/CRIATIVO.md` §5.
+**Verificação:** releitura da conta: 4 novos em `PENDING_REVIEW` (status ACTIVE), 5 pausados, retrato e moldura ativos, zero rascunhos. Prévia de Stories do C2 gerada.
+**Rollback:** pausar os 4 novos e reativar os 5.
+**Próximo:** conferir aprovação; teste ao vivo do quiz v6 (e-mail do Raio-X, planilha, aba de percurso); números em 20/10; onda 2 em 22/10.
+
 ## 2026-10-17 — Lote 2 de criativos (Teste da Permissão / Raio-X) produzido
 
 **Executor:** Claude Code (Opus 5.5). **Pedido:** Victor, 17/10: *"os novos criativos do Guilherme foram feitos? se não, faça."*

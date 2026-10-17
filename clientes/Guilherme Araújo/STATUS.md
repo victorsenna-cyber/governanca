@@ -7,6 +7,12 @@
 > Integração do Codex em: 2026-10-02 · escopo: pacotes de 29/09 a 02/10 (ver seção própria abaixo); estado de mídia da conta **não revalidado nesta data**
 > Atualização parcial anterior em: 2026-10-01 (mantida, não revogada) · escopo: destilação do WhatsApp de 19/09 a 01/10, duas linhas de produto, conta parada, criativos e quiz do Diagnóstico. Anterior: 2026-09-05 · escopo: verificação da conta, diagnóstico de fadiga do criativo do topo e criação da camada 2 em pausa; demais domínios não foram revalidados
 
+## Atualização de estado — 17/10/2026, ~13h45: onda 1 do lote 2 na conta
+
+- **Quiz v6 no ar:** `/permissao-mentoras/` publicado em 17/10 03:19, com o Raio-X no `engine.js` (conferido por leitura do site). **E-mail do Raio-X e aba de percurso ainda sem teste ao vivo.**
+- **Conjunto do quiz `120255723461560210`:** onda 1 publicada e **em análise** (C2, C3, C1, C4); **pausados** liso, whatsapp, roda, spoiler e rico; **mantidos** retrato e moldura. Verba, público e posicionamento sem mudança. Onda 2 (C5–C8): criativos prontos na conta, sem anúncio, para 22/10. IDs e reversão: `01 - Criativos/Permissao Raio-X - lote 2 2026-10-17/CRIATIVO.md` §5.
+- **Próximo:** conferir a aprovação dos 4 anúncios; teste ao vivo do quiz v6 (cadastro → e-mail do Raio-X → planilha); leitura dos números em 20/10 e onda 2 em 22/10.
+
 ## Atualização de estado — 17/10/2026: lote 2 de criativos (Raio-X) produzido
 
 - **8 criativos × 2 formatos prontos, não subidos:** `01 - Criativos/Permissao Raio-X - lote 2 2026-10-17/` (`CRIATIVO.md`, `artes/`, `criativos-permissao-raiox-lote2.zip`). Copy e textos do anúncio: `PLANO-COPY.md`.

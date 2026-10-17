@@ -1,6 +1,6 @@
 # CRIATIVO · Lote 2 · Teste da Permissão (Raio-X) · 17/10/2026
 
-> STATUS: VIGENTE · artes produzidas · não subidas na conta
+> STATUS: VIGENTE · onda 1 publicada na conta em 17/10 (em análise) · onda 2 com criativos prontos, sem anúncio (§5)
 > Pedido do Victor (17/10): *"os novos criativos do Guilherme foram feitos? se não, faça."* Vale como o OK do `PLANO-COPY.md` §6.
 > Executor: Claude Code CLI. Copy, procedência, réguas e textos do anúncio: **`PLANO-COPY.md`** (este arquivo não repete; registra a produção).
 
@@ -40,6 +40,27 @@ Em `artes/`, nome `guilherme-permissao-raiox-<c>-<nome>-v1-<feed|story>.png` (fe
 - **Política:** C3 tem "O faturamento sobe e volta ao mesmo lugar?" como pergunta de comportamento; se a revisão recusar, tirar a 3ª linha (ficam duas caixas) ou usar a reserva Q13.
 - **Subida em ondas e pausas:** decisão de 18/10, `PLANO-COPY.md` §5. Subida e ativação pedem autorização do Victor (kernel §8).
 
-## 4. Fonte e render
+## 5. Na conta (17/10/2026, ~13h45)
+
+Pedido do Victor: *"criativos na conta. pode subir e pausar o que precisa ser pausado"* (ele subiu as 16 artes na biblioteca da CA 01). Gate do quiz conferido antes: `/permissao-mentoras/` publicado em 17/10 03:19 com o código do Raio-X no `engine.js` (v6 no ar).
+
+**Onde:** CA 01 `605257748612701` · campanha `120255723458970210` · conjunto `120255723461560210` (sem mudança de verba, público ou posicionamento). Cada criativo: 4:5 de fallback + 9:16 em Instagram Stories e Reels, melhorias automáticas desligadas, botão Saiba mais, URL com UTMs do `PLANO-COPY.md` §3.3. T1 com a linha extra de outubro.
+
+| Peça | Anúncio | ID do anúncio | Criativo | Estado |
+|---|---|---|---|---|
+| C2 | `AD\|PERMISSAO\|C2\|PERGUNTA\|V1\|20261017` | `120255770999310210` | `1426142786323737` | ativo · em análise |
+| C3 | `AD\|PERMISSAO\|C3\|CHECKLIST\|V1\|20261017` | `120255770999920210` | `2021390188575932` | ativo · em análise |
+| C1 | `AD\|PERMISSAO\|C1\|IDENTIFICA\|V1\|20261017` | `120255771000860210` | `938138659119368` | ativo · em análise |
+| C4 | `AD\|CONSELHO\|C4\|PREVISAO\|V1\|20261017` | `120255771002190210` | `1427843105445442` | ativo · em análise · vence 31/10 |
+| C5 | — | — | `1582392419791717` (T2) | só criativo · onda 2 |
+| C6 | — | — | `28451745031174681` | só criativo · onda 2 |
+| C7 | — | — | `1663365678461043` | só criativo · onda 2 |
+| C8 | — | — | `1693450468876367` | só criativo · onda 2 |
+
+**Pausados (§5 do plano):** liso `120255723698570210`, whatsapp `120255723699600210`, roda `120255723699710210`, spoiler `120255723699070210`, rico `120255723687340210`. **Mantidos:** retrato `120255723699480210` e moldura-terapeuta `120255723698850210`. Rascunhos na campanha: zero.
+
+**Onda 2 em 22/10:** criar os anúncios com `{"creative_id": …}` da tabela, trocando pelos da onda 1 que não entregarem. **Reversão:** pausar os 4 novos e reativar os 5 pausados.
+
+## 6. Fonte e render
 
 `fonte/c1-identifica.html` … `fonte/c8-conta.html` (`?f=feed|story`) · `fonte/render-todas.sh [c1 c2 …]` (Git Bash + Chrome) · fotos `fonte/foto-gui-*.jpg` (de `05 - design e criativos/fotos Guilherme/`) · tela do Raio-X `fonte/raiox-tela.png`.
