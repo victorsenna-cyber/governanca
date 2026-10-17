@@ -330,5 +330,24 @@
 
 **Descartado:** reenviar os roteiros de 12/10 como estão · deixar a voz pública só por conta dela (perde a estrutura da conversão) · aceitar preço riscado (W-09; já descartado na DEC-PL-15).
 
+### DEC-PL-27 · O Harmonia vira upsell da mesa; o número novo entra sem IA · 🟡 17/10/2026 (fatos dos áudios de 14 a 17/10)
+
+**Fonte:** sete áudios transcritos em 17/10 (`01 - contexto/WhatsApp/`, 14/10 23.33.05 a 17/10 17.20.39; transcrição automática).
+
+**Fatos e falas:**
+- 14/10 23:33 · Paola: o texto da mesa *"não tá muito profissional"*, *"parece que a mesa só faz [chakras] e aura"*; quer a equipe espiritual como **possibilidade**: *"Pode botar mentor espiritual no lugar de equipe"* · *"Nunca aconteceu de não se apresentar. Mas eu não posso afirmar"* · *"para a pessoa gerar também curiosidade"*. Às 23:34 pede para destacar *"fractal da sua Mônada"* e as experiências de outras encarnações, em negrito ou itálico.
+- 15/10 14:23 · Paola: entendeu que o Harmonia exigiria página e tráfego próprios: *"eu investi 4k para divulgar um negocinho que vai ser 10 reais"* · *"prefiro esperar para fazer um mini curso, com todos os códigos"*.
+- 15/10 17:06 · Victor: *"dá pra colocar mesmo. Como, tipo, um upsell ali pra pessoa que fecha a mesa contigo"* · *"um upsell ali de 97 reais, 67 reais"*. A estrutura de resposta direta com tráfego próprio é a do **infoproduto maior**, não a deste.
+- 15/10 17:07 · Victor: ela termina o produto até segunda (20/10); **na segunda se altera o treino do agente**, *"para não mexer nele agora sem ter o produto já com ele todo pronto"*. O produto vai para a plataforma.
+- 17/10 17:17 · Victor no grupo: *"Espera um pouco pra iniciar a IA"* · *"Te envio novo doc antes"*.
+- 17/10 17:20 · Paola: como no começo *"não deve também chover cliente"*, quer deixar uma mensagem salva na nota e mandar *"como se fosse a IA respondendo"*, porque acha que gera curiosidade e a pessoa não desiste. E: *"vamos rodar os anúncios em segunda"*, com o reel e os stories postados na segunda.
+
+**Decisões:**
+1. **DEC-PL-24 fechada pelo Victor em 15/10: o Harmonia é upsell pago depois do sim da mesa, entre R$ 67 e R$ 97, e não bônus.** O preço exato fica com o Victor. Ela entrega o produto até 20/10; o treino da IA e as mensagens de fechamento mudam na mesma data.
+2. **Número novo sem agente de IA por enquanto** (bate com o `LOG-DECISOES.md` de 17/10). O que ela quer, uma resposta automática, existe sem IA: **a mensagem de saudação do WhatsApp Business**. Recomendamos isso no lugar de copiar e colar da nota.
+3. 🔴 **Divergência de data:** ela entende que os anúncios rodam na segunda (20/10); o plano de 17/10 é publicar assim que o número novo for ligado à Página. Quem decide é o Victor, e ela precisa saber a data por escrito.
+
+**Descartado:** página e tráfego próprios para o Harmonia agora (é a estrutura do infoproduto maior, depois da mesa) · mexer no treino da IA antes de o produto existir.
+
 ---
 *Aberto em 11/10/2026 por Claude Code CLI, a partir do WhatsApp de 14/09 a 11/10/2026. Atualizado em 11/10/2026 com a call das 19h21 (DEC-PL-03, 04 e 06 atualizadas; DEC-PL-07 a 09 novas) e com os pilares (DEC-PL-10). Atualizado em 12/10/2026 com os criativos do teste 01 (DEC-PL-11) o processo comercial do WhatsApp (DEC-PL-12) e a bio (DEC-PL-13); DEC-PL-11 reaberta na mesma data. Fonte de cada `C-xx`: `DESTILACAO-CALL-2026-10-11.md`.*
