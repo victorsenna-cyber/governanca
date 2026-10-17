@@ -7,6 +7,12 @@
 > Integração do Codex em: 2026-10-02 · escopo: pacotes de 29/09 a 02/10 (ver seção própria abaixo); estado de mídia da conta **não revalidado nesta data**
 > Atualização parcial anterior em: 2026-10-01 (mantida, não revogada) · escopo: destilação do WhatsApp de 19/09 a 01/10, duas linhas de produto, conta parada, criativos e quiz do Diagnóstico. Anterior: 2026-09-05 · escopo: verificação da conta, diagnóstico de fadiga do criativo do topo e criação da camada 2 em pausa; demais domínios não foram revalidados
 
+## Atualização de estado — 17/10/2026: lote 2 de criativos (Raio-X) produzido
+
+- **8 criativos × 2 formatos prontos, não subidos:** `01 - Criativos/Permissao Raio-X - lote 2 2026-10-17/` (`CRIATIVO.md`, `artes/`, `criativos-permissao-raiox-lote2.zip`). Copy e textos do anúncio: `PLANO-COPY.md`.
+- 🔴 **Dependência:** C1–C3 e C6–C8 levam ao Raio-X; **só sobem com o quiz v6 no ar.** C4 e C5 (grupo, até 31/10) podem subir antes.
+- **Próximo:** decisão de 18/10 (pausas + onda 1: C2, C3, C1, C4), com autorização do Victor para subir.
+
 ## Atualização de estado — 16/10/2026: oferta fechada e quiz v6 (Raio-X)
 
 - **P4 fechado** (`DEC-2026-10-16-001`, alçada Victor): Conselho do Cigano (gratuito) → Teste da Permissão → **Diagnóstica R$ 97** → **Programa de 28 dias R$ 1.500** → **Venda com Permissão R$ 1.500/tri**. Desafio R$ 997, Jornada, Mentoria e Script avulso fora das peças. `PILARES.md` em 4/5.

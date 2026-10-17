@@ -19,6 +19,17 @@ Cada entrada informa:
 
 ---
 
+## 2026-10-17 — Lote 2 de criativos (Teste da Permissão / Raio-X) produzido
+
+**Executor:** Claude Code (Opus 5.5). **Pedido:** Victor, 17/10: *"os novos criativos do Guilherme foram feitos? se não, faça."*
+**Leituras:** `PLANO-COPY.md` do lote (copy já planejada) · `STATUS.md` 16/10 · lote 1 (`Conselho do Cigano - grupo 2026-10-14/CRIATIVO.md`) · referências Q14, Q31, Q42, Q71, Q61, Q15, Q21/Q26, Q51.
+**Alterações:** 8 HTML em `fonte/` (C1–C4 já rascunhados, C5–C8 novos) · 16 PNG em `artes/` · zip · 4 folhas de comparação em `referencias/` · `CRIATIVO.md` · `PLANO-COPY.md` marcado como produzido · `STATUS.md`.
+**Verificação:** cada peça conferida lado a lado com a referência; corrigidas quebras com palavra sozinha (C3, C4, C5, C8) e sobreposição do celular no rodapé (C7 story). C2 com "6 de 16" (contagem real da v6).
+**Decisões de produção:** C5 sem a resposta da referência ("ainda não"), para não inventar fala · C7 com etiqueta "EXEMPLO DO RESULTADO" · C8 com o exemplo declarado no topo e no cartão.
+**Bloqueio:** peças do Raio-X dependem do quiz v6 no ar. **Nada subido na conta.**
+**Rollback:** apagar a pasta `artes/` e o zip; os HTML ficam.
+**Próximo:** decisão de 18/10 (`PLANO-COPY.md` §5); subir com autorização do Victor.
+
 ## 2026-10-05 — Três campanhas de Vendas dos quizzes (Permissão, Teto, Signos) criadas em rascunho
 
 **Executor:** Claude Code (Opus 5.5, orquestrador) + 3 subagentes Sonnet, um por campanha. Pedido direto de Victor (alçada para campanha nova, objetivo e verba).

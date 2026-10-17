@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<title>Lote 2 · C7 Raio-X no celular</title>
+<!-- ?f=feed|story · Modelo: "WhatsApp Image 2026-10-16 at 23.36.47 (1).jpeg" (Q21) e "(6).jpeg" (Q26)
+     fundo claro quadriculado, cabeçalho mínimo (nome · ano), etiqueta com ponto, título condensado em caixa alta
+     com palavra em marca-texto, apoio curto com trecho em negrito, celular mostrando o produto com etiqueta
+     lateral ("perfil fictício" na referência → "exemplo do resultado"), rodapé em três pontos.
+     Tela: fonte/raiox-tela.png (print do Raio-X da v6). -->
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=block" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:100%;height:100%;overflow:hidden}
+body{background:#F7F7F4;color:#111;font-family:Inter,sans-serif;-webkit-font-smoothing:antialiased}
+.grade{position:absolute;inset:0;background-image:linear-gradient(#ECECE6 2px,transparent 2px),linear-gradient(90deg,#ECECE6 2px,transparent 2px);background-size:54px 54px}
+.tela{position:absolute;inset:0;padding:0 78px}
+.cab,.rod{position:absolute;left:78px;right:78px;display:flex;justify-content:space-between;font-size:18px;letter-spacing:.3em;color:#8E8E86;font-weight:600}
+.story .cab{top:240px} .feed .cab{top:56px}
+.story .rod{bottom:320px} .feed .rod{bottom:50px}
+.rod span:nth-child(2){letter-spacing:.1em}
+.miolo{position:absolute;left:78px;right:78px}
+.story .miolo{top:330px} .feed .miolo{top:120px}
+.etiqueta{display:inline-block;background:#fff;border:2px solid #DADAD2;border-radius:30px;padding:8px 20px;font-size:21px;font-weight:700;letter-spacing:.12em}
+.etiqueta:before{content:"●";color:#E2A800;margin-right:10px}
+h1{margin-top:22px;font-family:Anton,sans-serif;font-weight:400;font-size:112px;line-height:1.02;letter-spacing:-.005em;text-transform:uppercase}
+h1 mark{background:#FFBF00;color:#111;padding:0 10px}
+.apoio{margin-top:26px;font-size:30px;line-height:1.4;color:#444;max-width:820px}
+.apoio b{color:#111}
+.cel{position:absolute;left:78px;width:370px;height:760px;border-radius:58px;background:#111;padding:14px;box-shadow:0 30px 60px rgba(0,0,0,.22)}
+.cel .tela-cel{width:100%;height:100%;border-radius:46px;background:#fff url("raiox-tela.png") center 58px / 100% auto no-repeat}
+.cel:before{content:"";position:absolute;left:50%;top:26px;transform:translateX(-50%);width:110px;height:30px;border-radius:20px;background:#111;z-index:2}
+.story .cel{top:860px;height:660px} .feed .cel{top:560px;height:620px;width:330px}
+.lado{position:absolute;background:#fff;border:2px solid #DADAD2;border-radius:12px;padding:12px 20px;font-size:20px;font-weight:700;letter-spacing:.16em;color:#555}
+.story .lado{left:500px;top:1060px} .feed .lado{left:450px;top:740px}
+.nota{position:absolute;font-size:30px;line-height:1.4;color:#333}
+.nota b{color:#111}
+.story .nota{left:500px;right:78px;top:1140px} .feed .nota{left:450px;right:78px;top:820px}
+.feed h1{font-size:100px}
+.feed .apoio{font-size:28px;margin-top:20px}
+</style></head>
+<body><div class="grade"></div><div class="tela">
+<div class="cab"><span>GUILHERME ARAÚJO</span><span>2026</span></div>
+<div class="miolo">
+ <div class="etiqueta">RAIO-X GRATUITO</div>
+ <h1>O valor sai <mark>menor</mark><br>do que o trabalho</h1>
+ <div class="apoio">Terapeuta, mentora, cartomante: o teste mostra <b>em qual das 4 portas da Permissão está a trava.</b></div>
+</div>
+<div class="cel"><div class="tela-cel"></div></div>
+<div class="lado">EXEMPLO DO RESULTADO</div>
+<div class="nota">Seu nível de Permissão, a <b>porta principal</b> e 3 ações para os próximos 7 dias, no seu e-mail.</div>
+<div class="rod"><span>TESTE DA PERMISSÃO</span><span>● ● ● ●</span><span>GRATUITO</span></div>
+</div>
+<script>document.body.className=new URLSearchParams(location.search).get('f')||'feed'</script>
+</body></html>

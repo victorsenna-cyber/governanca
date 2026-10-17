@@ -1,6 +1,6 @@
 # PLANO DE COPY · Lote 2 · Teste da Permissão (Raio-X) · 17/10/2026
 
-> STATUS: 🟡 PLANO · aguarda o OK do Victor para produzir as artes
+> STATUS: ✅ PRODUZIDO em 17/10 · OK do Victor ("se não, faça") · artes e registro em `CRIATIVO.md`
 > Pedido do Victor (17/10): *"adicionei diversos criaativos referência no repo.. vamos criar mais variações para o Gui. mas antes, vamos planejar a copy para os criativos, depois, analise os criativos e veja os que mais se encaixam e aponte quais serão e com qual copy"*
 > Base: `PILARES.md` (4/5) · `DEC-2026-10-16-001` (oferta e fonte de texto) · quiz v6 (`PLANO-QUIZ-RESULTADO-E-CADASTRO-2026-10.md`) · lote 1 (`../Conselho do Cigano - grupo 2026-10-14/CRIATIVO.md`) · relatório do dia 2 (`30-comercial/trafego-clientes/guilherme/relatorios/2026-10-16-analise-quiz-grupo-dia2.md`)
 > Métodos: `METODO-CONSTRUCAO-DE-CRIATIVOS-DR` · `METODO-LATERALIZACAO-DE-CRIATIVOS` · `METODO-TRAFEGO-PAGO` §4 e §5.2
