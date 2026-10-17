@@ -302,13 +302,14 @@ Nenhum trecho passa de 2 telas sem porta (D2–D4 somam cerca de 2,3 telas: a po
 
 ### 12.3 O que impede a publicação
 
-1. `CONFIG.whatsapp` e `CONFIG.planilha` vazios no script (o console avisa).
-2. Campos `.pendente` visíveis: prazo de resposta (2 lugares) e, na política, data, e-mail de contato, prazo de guarda e a linha do GTM.
-3. Planilha não implantada (`apps-script/Code.gs`, passo a passo no topo).
+1. ~~`CONFIG.whatsapp` e `CONFIG.planilha` vazios no script~~ ✅ 17/10: preenchidos (WhatsApp `5565996338199`; Apps Script implantado pelo Victor).
+2. ~~Prazo de resposta (2 lugares)~~ ✅ 17/10: decisão do Victor, *"não diga prazo de resposta, diga 'em breve'"*. Os dois lugares dizem *"Eu respondo em breve."* **Continuam pendentes, na política:** data, e-mail de contato, prazo de guarda e a linha do GTM.
+3. ~~Planilha não implantada~~ ✅ 17/10: implantada. Testada com três envios (um por `curl`, o formulário no navegador e um `fetch` no navegador), todos aceitos; o servidor do Apps Script leva cerca de 12 s na primeira chamada, e a página não espera por ele. **Falta o Victor conferir as três linhas de teste na aba `leads` e apagá-las.**
+   - **Fato novo do teste:** além do pixel da Meta, o GTM dispara Google Analytics 4 (`G-PKNKFKBRNX`) e Google Ads (`AW-596624755`). A política já cita o Google; a linha do GTM continua pendente.
 4. Política de privacidade 🟡, sem a revisão da árvore JURÍDICO.
 5. A origem da frase do H1 (*"chega gente, mas não é o meu cliente"*) ainda está sem ID de call (§5.3, R2).
 6. Etapa 5 do circuito (gate dos 8 passes, com juiz) não rodou. A varredura de proibições no texto visível rodou e passou: zero travessão, quantificador universal, diminutivo e superlativo.
-7. Teste em **aparelho real** e envio de verdade para a planilha. Só se faz com os itens 1 e 3 prontos.
+7. Teste em **aparelho real**. ~~Envio de verdade para a planilha~~ ✅ 17/10, do computador.
 
 ---
 *Criado em 15/10/2026. Execução registrada em 17/10/2026 (§12). Nada publicado.*
