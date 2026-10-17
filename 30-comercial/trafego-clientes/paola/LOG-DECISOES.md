@@ -68,3 +68,25 @@ Na call das 15h31 o Victor disse a ela: *"já está tudo pronto. Já os anúncio
 4. **Plano B, só se a análise não sair até 18/10 de manhã ou for negada:** duplicar o conjunto com destino Direct do Instagram, os mesmos quatro anúncios, a mesma verba. Ela responde no Direct com as mesmas mensagens. **Descartado agora:** trocar já. Recomeça o aprendizado, troca o canal que a IA e o processo usam, e pode ser desnecessário se a análise sair em 48 horas. **Descartado:** outro número (ela tem um celular só).
 
 **Não se mede nada desta semana até a veiculação voltar.** A leitura do 4º dia (18/10) vira leitura do 4º dia de veiculação.
+
+## 17/10/2026, 17h15 · número antigo banido de vez, número novo ativo: volta ao WhatsApp, não ao Direct
+
+**Fatos (Direct do Instagram com a Paola, 16 e 17/10, prints 171348 a 171535):**
+- O WhatsApp `+55 21 98974-8565` foi **banido**, não só restringido. Tela dela: *"Esta conta não pode usar o WhatsApp"* · *"Algumas atividades da sua conta podem não estar de acordo com os Termos de Serviço do WhatsApp Business"* · *"Não é possível pedir uma análise."* Ela diz que bloqueou perto de 00h de 15 para 16/10 (*"Foi a hora que bloqueou"*), o que bate com a recusa dos anúncios às 23h51 de 15/10.
+- Ela pediu análise mesmo assim; 24h depois nada (*"Passou 24 horas e o WhatsApp não voltou"*, 17/10 09h40).
+- Ela perguntou se foi o WhatsApp configurado no computador do Victor; o Victor respondeu *"Não não, nada a ver"* · *"Pode ter sido o treinamento da IA"* · *"Isso é uma possibilidade apenas, mas não certeza"*.
+- 17/10 13h23, áudio do Victor: se demorar, *"vou passar a campanha pra ser pra enviar pro seu direct"*.
+- 17/10: ela comprou chip Claro, recebeu o mesmo número, pediu outro e **ativou número novo às 17h09** (`wa.me/message/UWNLFOBZZNBIN1`, nome *Paola Rosa*: link curto de WhatsApp Business).
+- Conector, 17/10 17h15: conjunto `mulheres-25a60-br-ig-aberto` ativo, destino WhatsApp, gasto R$ 0, fim em 20/10 23h59. Os quatro anúncios continuam recusados. O conector não mostra qual número está ligado à Página e não troca o número.
+- No print do Gerenciador de 17h13 há **1 alteração não publicada** (*"Conferir e publicar (1)"*). O conector não lê rascunho nesta conta.
+
+**Decisão:**
+1. **O plano B muda de Direct para o número novo.** O Direct era a saída para quando não havia número. Agora há. O processo comercial, as mensagens e os PDFs foram feitos para o WhatsApp, e o próprio Victor disse a ela que *"é melhor pelo WhatsApp"*. O Direct fica como reserva se a ligação do número novo falhar.
+2. **Ligar o número novo à Página** `584465801414887`: o Victor faz pelo Facebook (Configurações da Página → Contas vinculadas → WhatsApp, troca o número), e a Paola manda o código que chega no número novo.
+3. **Duplicar o conjunto escolhendo o número novo**, que é o caminho que a própria recusa indica (*"duplicar o anúncio para usar outro número"*). Nada se perde: o conjunto atual não gastou nada. Conjunto novo `mulheres-25a60-br-igsr-aberto`, os quatro anúncios com os mesmos nomes, e o conjunto recusado desligado. **Fim da campanha passa de 20/10 para 23/10, 23h59**, para manter seis dias de veiculação. A verba continua R$ 200.
+4. **Antes de publicar, olhar a alteração pendente no Gerenciador** e saber o que ela é. Se for a tentativa de trocar o número no anúncio antigo, descartar.
+5. **Proteção do número novo, enquanto não se sabe a causa:** sem agente de IA da Meta e sem WhatsApp Web em outro computador até a campanha rodar três dias sem problema. É hipótese, não causa: a única mudança registrada entre a ativação (14/10 18h03) e o banimento foi o agente de IA ligado às 22h06 de 14/10. Desligar custa pouco e se desfaz em minutos; perder o segundo número para a semana.
+
+**Descartado:** ir para o Direct agora. Isso recomeça o processo dela em outro canal e é pior para a conversão, como o Victor disse a ela. **Descartado:** esperar a análise do número antigo, porque a tela diz que não cabe análise.
+
+Mensagem para ela: `clientes/Paola Lopes Rosa/04 - processo comercial/MSG-PAOLA-2026-10-17.md`.
