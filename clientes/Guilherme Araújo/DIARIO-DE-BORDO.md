@@ -620,3 +620,8 @@ Victor reprovou o uso de desenhos abstratos, linhas e geometrias usadas como pre
 - **Fonte dos textos:** levantamento do material do Gui (aula introdutória da Cartomancia Sistêmica, script de vendas Mi5D, áudios de 08/10, call de 04/08). Frases dele usadas: "quanto você está pagando para não crescer?", "soltar a mão de alguém não quer dizer abandonar", "pessoas maduras têm prazer de pagar pela sua transformação", a prática do "ainda", "não dê desconto, negocie os valores", "tirando o preço, o que é mais importante…". Elton Euler não é citado.
 - **Descartado:** ações gravadas ou ditadas pelo Gui e vídeo por porta (dependem de ação manual; regra "tudo no automático").
 - **Próximo:** Victor implanta Code.gs + sobe v6 → Claude testa ao vivo (cadastro real, e-mail recebido, aba de funil). Releitura das campanhas em 18/10.
+
+## 2026-10-17 — Transcrição da sessão arquivada
+
+- Pedido do Victor: "salve o transcript da sessão no repo do Gui. tem como usar pouco token pra isso? fazer por script?"
+- Feito por script, sem passar o texto pela IA: `../../40-operacao-rotinas/ferramentas/exportar-sessao.py` → `10 - registros e arquivo/sessoes-claude/2026-10-17-sessao-trafego-quiz-raiox-6030aa9f.md` (14 a 17/10; falas, respostas e nomes das ferramentas; resultados de ferramenta e raciocínio omitidos).
