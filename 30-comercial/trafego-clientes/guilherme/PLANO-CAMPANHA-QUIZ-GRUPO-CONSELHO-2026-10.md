@@ -92,10 +92,10 @@
 
 | Campo | Valor |
 |---|---|
-| Nome | `CJ\|BR\|ABERTO\|25-65\|IG-STORY-REELS\|20261015` |
+| Nome | ~~`CJ\|BR\|ABERTO\|25-65\|IG-STORY-REELS\|20261015`~~ → `CJ\|BR\|LISTA+LAL1\|25-65\|IG-STORY-REELS\|20261017` (17/10) |
 | Local da conversão | site |
 | Meta de desempenho | maximizar conversões · evento **`Lead quiz grupo`** (B2) |
-| Público | Brasil · Advantage+ de público ligado · 25–65 como sugestão · **sem restrição de gênero** (o criativo segmenta: `LOG-DECISOES.md` 29/07) · sem interesses |
+| Público | ~~Brasil · Advantage+ de público ligado · 25–65 como sugestão · sem interesses~~ *(15 a 17/10)* → 🔴 **17/10, Victor: lista `Leads da lista` (`120255557651650210`, 2,1–2,5 mil mentores, terapeutas e espiritualidade) + `Semelhante (1%) - Leads da lista` (`120255557654680210`)** · Advantage+ de público **desligado** (só esses dois) · Brasil · 25–65 · sem restrição de gênero. **Escada:** frequência > 3 ou custo por cadastro subindo → somar `1% to 2%` (`120255557654930210`), depois `2% to 5%` (`120255557654940210`) |
 | 🔴 **Posicionamento** | **personalizado: só Instagram Stories e Instagram Reels.** Todo o resto desmarcado (regra da casa de 14/10, método §5.2) |
 | Atribuição | 7 dias após o clique, 1 dia após a visualização |
 

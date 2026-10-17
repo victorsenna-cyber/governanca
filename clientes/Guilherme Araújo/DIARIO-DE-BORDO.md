@@ -19,6 +19,14 @@ Cada entrada informa:
 
 ---
 
+## 2026-10-17 (~14h45) — Conjunto do quiz passa para lista + semelhante 1%
+
+**Pedido:** Victor, 17/10, com prints dos públicos da CA 01: *"essa lista de leads é de mentores, terapeutas e todos da espiritualidade.. é exatamente o público do Guilherme. o conjunto foi criado aberto, mas é para a lista e, como alternativa, look a like 1% e assim por diante."*
+**Feito:** conjunto `120255723461560210` com `Leads da lista` (`120255557651650210`) + `Semelhante (1%) - Leads da lista` (`120255557654680210`) incluídos, **Advantage+ de público desligado** (sem expansão; `targeting_relaxation lookalike: 0`), Brasil, 25–65, só IG Stories e Reels. Renomeado `CJ|BR|LISTA+LAL1|25-65|IG-STORY-REELS|20261017`. Releitura confirmada; zero rascunhos meus.
+**Decisão e o descartado:** lista e 1% **no mesmo conjunto**. Descartado: só a lista, porque 2,1–2,5 mil (menos ainda só em Stories e Reels) com R$ 20/dia satura em 2–3 dias; descartado também dois conjuntos (lista | 1%), porque partiria em dois um aprendizado que tinha só 4 conversões. Custo aceito: o aprendizado reinicia.
+**"E assim por diante":** somar `1% to 2%` (`120255557654930210`) e depois `2% to 5%` (`120255557654940210`) quando a frequência passar de 3 ou o custo por cadastro subir.
+**Rollback:** voltar o público para Brasil aberto com Advantage+ ligado.
+
 ## 2026-10-17 (tarde) — Onda 1 do lote 2 publicada; cinco anúncios pausados
 
 **Executor:** Claude Code (Opus 5.5). **Pedido:** Victor, 17/10: *"criativos na conta. pode subir e pausar o que precisa ser pausado"* (as 16 artes subidas por ele na biblioteca da CA 01).

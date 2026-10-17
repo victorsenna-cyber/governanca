@@ -11,6 +11,7 @@
 
 - **Quiz v6 no ar:** `/permissao-mentoras/` publicado em 17/10 03:19, com o Raio-X no `engine.js` (conferido por leitura do site). **E-mail do Raio-X e aba de percurso ainda sem teste ao vivo.**
 - **Conjunto do quiz `120255723461560210`:** onda 1 publicada e **em análise** (C2, C3, C1, C4); **pausados** liso, whatsapp, roda, spoiler e rico; **mantidos** retrato e moldura. Verba, público e posicionamento sem mudança. Onda 2 (C5–C8): criativos prontos na conta, sem anúncio, para 22/10. IDs e reversão: `01 - Criativos/Permissao Raio-X - lote 2 2026-10-17/CRIATIVO.md` §5.
+- 🔴 **Público trocado (17/10, ~14h45, Victor):** o conjunto saiu do aberto para **lista `Leads da lista` (2,1–2,5 mil, mentores/terapeutas/espiritualidade) + semelhante 1% dessa lista**, Advantage+ de público desligado. Renomeado `CJ|BR|LISTA+LAL1|25-65|IG-STORY-REELS|20261017`. **O aprendizado reiniciou** (tinha 4 conversões). Escada: 1–2% e depois 2–5% quando a frequência passar de 3 ou o custo por cadastro subir. Plano: `../../30-comercial/trafego-clientes/guilherme/PLANO-CAMPANHA-QUIZ-GRUPO-CONSELHO-2026-10.md` §3.
 - **Próximo:** conferir a aprovação dos 4 anúncios; teste ao vivo do quiz v6 (cadastro → e-mail do Raio-X → planilha); leitura dos números em 20/10 e onda 2 em 22/10.
 
 ## Atualização de estado — 17/10/2026: lote 2 de criativos (Raio-X) produzido
